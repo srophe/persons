@@ -16,11 +16,19 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-8">
-                  <persName xml:lang="syr-Syrc" resp="syriaca.org" type="sic">ܡܝܠܣ</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" resp="syriaca.org" type="sic">Miles of Susa</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" type="sic">ܡܝܠܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Miles of Susa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib8-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry"/>
                      <citedRange unit="pp"/>

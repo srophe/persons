@@ -16,10 +16,16 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-328">
-                  <persName xml:lang="syr-Latn-x-gedsh" resp="syriaca.org" type="sic">Authors/Translators of the Alexander Cycle</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Authors/Translators of the Alexander Cycle</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib328-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">29</citedRange>
                      <citedRange unit="pp"/>

@@ -16,13 +16,16 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-466">
-                  <persName xml:lang="syr-Latn-x-gedsh"
-                            source="#bib466-1"
-                            resp="syriaca.org"
-                            type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib466-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">186</citedRange>
                      <citedRange unit="pp"/>

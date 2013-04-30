@@ -16,13 +16,16 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-837">
-                  <persName xml:lang="syr-Latn-x-gedsh"
-                            source="#bib837-1"
-                            resp="syriaca.org"
-                            type="sic">Zingerle, Pius (Jacob)</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib837-1" type="sic">Zingerle, Pius (Jacob)</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib837-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">621</citedRange>
                      <citedRange unit="pp"/>

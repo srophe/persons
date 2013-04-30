@@ -16,13 +16,16 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-454">
-                  <persName xml:lang="syr-Latn-x-gedsh"
-                            source="#bib454-1"
-                            resp="syriaca.org"
-                            type="sic">Dolabani, Philoxenos Yuḥanon</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib454-1" type="sic">Dolabani, Philoxenos Yuḥanon</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib454-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">174</citedRange>
                      <citedRange unit="pp"/>

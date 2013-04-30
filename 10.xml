@@ -16,14 +16,19 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-10">
-                  <persName xml:lang="syr-Syrc" resp="syriaca.org" type="sic">ܐܦܪܗܛ</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh"
-                            source="#bib10-1"
-                            resp="syriaca.org"
-                            type="sic">Aphrahaṭ</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" type="sic">ܐܦܪܗܛ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib10-1" type="sic">Aphrahaṭ</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib10-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry"/>
                      <citedRange unit="pp"/>

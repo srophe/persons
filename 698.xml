@@ -16,13 +16,16 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-698">
-                  <persName xml:lang="syr-Latn-x-gedsh"
-                            source="#bib698-1"
-                            resp="syriaca.org"
-                            type="sic">Qoro, Elias Malke</persName>
+                  <persName resp="syriaca.org">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib698-1" type="sic">Qoro, Elias Malke</persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib698-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
-                                                Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
+                                                of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">447</citedRange>
                      <citedRange unit="pp"/>
