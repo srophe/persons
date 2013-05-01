@@ -16,16 +16,26 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-468">
-                  <persName resp="syriaca.org">
+                  <persName resp="syriaca.org" type="sic">
                      <choice>
                         <seg>
                            <persName xml:lang="syr-Latn-x-gedsh" source="#bib468-1" type="sic">Eliya I of Ṭirhan</persName>
                         </seg>
                      </choice>
                   </persName>
+                  <persName resp="syriaca.org" type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib468-1" type="split">
+                              <forename>Eliya</forename>
+                              <addName type="untagged-title">I of Ṭirhan</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib468-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
-                                                of the Syriac Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">188</citedRange>
                   </bibl>

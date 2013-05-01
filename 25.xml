@@ -16,7 +16,7 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-25">
-                  <persName resp="syriaca.org">
+                  <persName resp="syriaca.org" type="sic">
                      <choice>
                         <seg>
                            <persName xml:lang="syr-Syrc" type="sic">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
@@ -26,9 +26,25 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName resp="syriaca.org" type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" type="split">
+                              <forename>ܡܪܘܬܐ</forename>
+                              <addName type="office">ܐܦܣܩܘܦܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib25-1" type="split">
+                              <forename>Marutha</forename>
+                              <addName type="untagged-title">of Maypherqaṭ</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib25-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary
-                                                of the Syriac Heritage</title>
+                     <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
                      <ptr target="http://syriaca.org/bibl/1"/>
                   </bibl>
                </person>

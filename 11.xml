@@ -16,13 +16,29 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-11">
-                  <persName resp="syriaca.org">
+                  <persName resp="syriaca.org" type="sic">
                      <choice>
                         <seg>
                            <persName xml:lang="syr-Syrc" type="sic">ܒܣܝܠܝܘܣ ܕܚܡܨ</persName>
                         </seg>
                         <seg>
                            <persName xml:lang="syr-Latn-x-gedsh" type="sic">Basil of Emesa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName resp="syriaca.org" type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" type="split">
+                              <forename>ܒܣܝܠܝܘܣ</forename>
+                              <addName type="terms-of-address">ܕܚܡܨ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                              <forename>Basil</forename>
+                              <addName type="untagged-title">of Emesa</addName>
+                           </persName>
                         </seg>
                      </choice>
                   </persName>

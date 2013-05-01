@@ -16,10 +16,20 @@
          <particDesc>
             <listPerson>
                <person xml:id="person-930">
-                  <persName resp="syriaca.org">
+                  <persName resp="syriaca.org" type="sic">
                      <choice>
                         <seg>
                            <persName xml:lang="syr-Latn-x-gedsh" type="sic">Mushe Karkaya</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName resp="syriaca.org" type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                              <forename>Mushe</forename>
+                              <addName type="untagged-title">Karkaya</addName>
+                           </persName>
                         </seg>
                      </choice>
                   </persName>
