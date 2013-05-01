@@ -47,11 +47,47 @@
                      <forename>Grigorios</forename>
                      <addName type="untagged-title">of Cyprus</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib21-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib21-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib21-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib21-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib21-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">239</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib21-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="pp">230</citedRange>
                   </bibl>
                </person>
             </listPerson>

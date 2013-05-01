@@ -32,11 +32,63 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib398-4" type="sic">ܟܬܒܐ ܕܕܪ̈ܓܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib398-4" type="sic">ܟܬܳܒܐ ܕܕܰܪ̈ܓܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib398-3" type="sic">كتب الدرج</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib398-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib398-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib398-3" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib398-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">111</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib398-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">121</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib398-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

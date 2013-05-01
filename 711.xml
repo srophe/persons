@@ -38,11 +38,75 @@
                      <forename>Sahdona</forename>
                      <addName type="untagged-title">(Martyrius)</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib711-4" type="sic">ܣܗܕܘܢܐ (ܡܐܪܬܝܪܣ) ܐܦܝܣܩܘܦܐ ܕܡܚܘ̈ܙܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib711-4" type="sic">ܣܳܗܕܘܢܐ (ܡܐܰܪܬܝܺܪܣ) ܐܶܦܝܺܣܩܘܽܦܳܐ ܕܡܰܚܘ̈ܙܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib711-3" type="sic">سهدونا (مرطيريوس) اسقف ماحوزا</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib711-2" type="sic">Sahduna (Martyrius), bishop of Mahuza</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib711-4" type="split">
+                              <forename>ܣܗܕܘܢܐ</forename>
+                              <addName type="untagged-title">(ܡܐܪܬܝܪܣ) ܐܦܝܣܩܘܦܐ ܕܡܚܘ̈ܙܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib711-4" type="split">
+                              <forename>ܣܳܗܕܘܢܐ</forename>
+                              <addName type="untagged-title">(ܡܐܰܪܬܝܺܪܣ) ܐܶܦܝܺܣܩܘܽܦܳܐ ܕܡܰܚܘ̈ܙܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib711-3" type="split">
+                              <forename>سهدونا</forename>
+                              <addName type="untagged-title">(مرطيريوس) اسقف ماحوزا</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib711-2" type="split">
+                              <forename>Sahduna</forename>
+                              <addName type="untagged-title">(Martyrius), bishop of Mahuza</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib711-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">463</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib711-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib711-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">124</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib711-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

@@ -36,11 +36,76 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib474-1" type="split">
                      <forename>ʿEnanishoʿ</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib474-4" type="sic">ܚܢܢܝܫܘܥ ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib474-4" type="sic">ܚܰܢܢܝܶܫܘܥ ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib474-3" type="sic">حنانيشوع الكلداني راهب دير بيث عابي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib474-2" type="sic">Hannan Yeshuʿ the Chaldean monk of Beth ʿAbi</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib474-4" type="split">
+                              <forename>ܚܢܢܝܫܘܥ</forename>
+                              <addName type="untagged-title">ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib474-4" type="split">
+                              <forename>ܚܰܢܢܝܶܫܘܥ</forename>
+                              <addName type="untagged-title">ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib474-3" type="split">
+                              <forename>حنانيشوع</forename>
+                              <surname>الكلداني راهب دير بيث عابي</surname>
+                              <addName type="untagged-title">الكلداني راهب دير بيث عابي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib474-2" type="split">
+                              <forename>Hannan Yeshuʿ</forename>
+                              <addName type="untagged-title">the Chaldean monk of Beth ʿAbi</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib474-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">195</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib474-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib474-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">149</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib474-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

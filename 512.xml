@@ -38,11 +38,60 @@
                      <forename>Gregory</forename>
                      <addName type="untagged-title">of Nyssa</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib512-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib512-4" type="sic">ܓܪܺܝܓܳܘܪܝܘܣ ܕܢܰܘܣܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib512-3" type="sic">غريغوريوس النوسي</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib512-4" type="split">
+                              <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܢܘܣܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib512-4" type="split">
+                              <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܢܰܘܣܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib512-3" type="split">
+                              <forename>غريغوريوس</forename>
+                              <addName type="untagged-title">النوسي</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib512-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">236</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib512-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">145</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib512-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

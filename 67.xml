@@ -38,10 +38,79 @@
                      <forename>Aḥudemmeh</forename>
                      <addName type="untagged-title">of Balad</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib67-4" type="sic">ܡܪܝ ܐܚܘܕܐܡܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib67-4" type="sic">ܡܳܪܝ ܐܰܚܘܕܶܐܡܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib67-3" type="sic">مار احودامه</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib67-2" type="sic">Mar Aḥudemeh</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib67-4" type="split">
+                              <forename>ܐܚܘܕܐܡܗ</forename>
+                              <addName type="untagged-title">ܡܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib67-4" type="split">
+                              <forename>ܐܰܚܘܕܶܐܡܗ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib67-3" type="split">
+                              <forename>احودامه</forename>
+                              <addName type="untagged-title">مار</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib67-2" type="split">
+                              <forename>Aḥudemeh</forename>
+                              <addName type="untagged-title">Mar</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib67-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib67-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">62</citedRange>
+                     <citedRange unit="pp">299</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib67-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">62</citedRange>
+                     <citedRange unit="pp">259</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib67-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">62</citedRange>
+                     <citedRange unit="pp">285</citedRange>
                   </bibl>
                </person>
             </listPerson>

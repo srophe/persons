@@ -38,10 +38,79 @@
                      <forename>Yaʿqub</forename>
                      <addName type="untagged-title">of Edessa</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib113-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܕܐܘܪܗܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib113-4" type="sic">ܡܳܪܝ ܝܰܥܩܘܒ ܕܐܘܪܗܳܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib113-3" type="sic">مار يعقوب الرهاوي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib113-2" type="sic">Mar Jacob of Edessa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib113-4" type="split">
+                              <forename>ܝܥܩܘܒ</forename>
+                              <addName type="untagged-title">ܡܪܝ ܕܐܘܪܗܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib113-4" type="split">
+                              <forename>ܝܰܥܩܘܒ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ ܕܐܘܪܗܳܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib113-3" type="split">
+                              <forename>يعقوب</forename>
+                              <addName type="untagged-title">مار الرهاوي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib113-2" type="split">
+                              <forename>Jacob</forename>
+                              <addName type="untagged-title">Mar, of Edessa</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib113-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib113-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">109</citedRange>
+                     <citedRange unit="pp">334</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib113-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">109</citedRange>
+                     <citedRange unit="pp">291</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib113-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">109</citedRange>
+                     <citedRange unit="pp">317</citedRange>
                   </bibl>
                </person>
             </listPerson>

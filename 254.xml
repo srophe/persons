@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib254-4" type="sic">ܕܝܪܝܐ ܐܒܪܗܡ ܡܪܕܝܢܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib254-4" type="sic">ܕܰܝܪܳܝܐ ܐܰܒܪܳܗܡ ܡܪܕܝܢܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib254-3" type="sic">الراهب ابرهيم المارديني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib254-2" type="sic">The Monk Abraham of Mardin</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib254-4" type="split">
+                              <forename>ܐܒܪܗܡ</forename>
+                              <addName type="untagged-title">ܕܝܪܝܐ ܡܪܕܝܢܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib254-4" type="split">
+                              <forename>ܐܰܒܪܳܗܡ</forename>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܪܕܝܢܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib254-3" type="split">
+                              <forename>ابرهيم</forename>
+                              <addName type="untagged-title">الراهب , المارديني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib254-2" type="split">
+                              <forename>Abraham</forename>
+                              <addName type="untagged-title">The Monk, of Mardin</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib254-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">249</citedRange>
+                     <citedRange unit="pp">492</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib254-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">249</citedRange>
+                     <citedRange unit="pp">441</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib254-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">249</citedRange>
+                     <citedRange unit="pp">472</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

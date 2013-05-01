@@ -32,6 +32,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib208-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib208-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib208-3" type="sic">اغناطيوس الثاني مفريان المشرق</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib208-2" type="sic">Ignatius II, Maphryono of the East</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib208-4" type="split">
+                              <forename>ܐܝܓܢܐܛܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib208-4" type="split">
+                              <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib208-3" type="split">
+                              <forename>اغناطيوس</forename>
+                              <addName type="untagged-title">الثاني , مفريان المشرق</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib208-2" type="split">
+                              <forename>Ignatius</forename>
+                              <addName type="untagged-title">II, Maphryono of the East</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib208-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">205</citedRange>
+                     <citedRange unit="pp">429</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib208-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">205</citedRange>
+                     <citedRange unit="pp">380</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib208-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">205</citedRange>
+                     <citedRange unit="pp">410</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

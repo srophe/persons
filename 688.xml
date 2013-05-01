@@ -38,11 +38,51 @@
                      <forename>Proclus</forename>
                      <addName type="untagged-title">of Constantinople</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib688-4" type="sic">ܦܪܘܩܠܘܣ ܕܩܘܣܛܢܛܝܢܘܦܘܠܝܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib688-3" type="sic">فروقلس القسطنطيني</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib688-4" type="split">
+                              <forename>ܦܪܘܩܠܘܣ</forename>
+                              <addName type="untagged-title">ܕܩܘܣܛܢܛܝܢܘܦܘܠܝܣ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib688-3" type="split">
+                              <forename>فروقلس</forename>
+                              <addName type="untagged-title">القسطنطيني</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib688-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">437</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib688-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">63</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib688-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

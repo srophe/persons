@@ -38,11 +38,55 @@
                      <forename>Stephanus Evodius</forename>
                      <surname>Assemani</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܣܛܝܦܐܢ ܥܘܐܕ ܫܡܥܘܢܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܶܣܛܰܝܦܰܐܢ ܥܰܘܰܐܕ ܫܶܡܥܘܢܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib350-3" type="sic">المطران اسطيفان عوَّاد السمعاني</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib350-4" type="split"/>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib350-4" type="split"/>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib350-3" type="split">
+                              <forename>اسطيفان عوَّاد</forename>
+                              <surname>السمعاني</surname>
+                              <addName type="untagged-title">المطران</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib350-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">55</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib350-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">474</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib350-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

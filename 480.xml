@@ -38,11 +38,60 @@
                      <forename>Eusebius</forename>
                      <addName type="untagged-title">of Caesarea</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib480-4" type="sic">ܐܘܣܐܒܝܘܣ ܕܩܣܪܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib480-4" type="sic">ܐܽܘܣܰܐܒܺܝܘܣ ܕܩܶܣܰܪܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib480-3" type="sic">اوسابيوس القيسري</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib480-4" type="split">
+                              <forename>ܐܘܣܐܒܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܩܣܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib480-4" type="split">
+                              <forename>ܐܽܘܣܰܐܒܺܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܩܶܣܰܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib480-3" type="split">
+                              <forename>اوسابيوس</forename>
+                              <addName type="untagged-title">القيسري</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib480-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">202</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib480-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">171</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib480-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

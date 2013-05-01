@@ -22,6 +22,74 @@
                   <persName resp="syriaca.org" type="split">
                      <choice/>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib177-4" type="sic">ܕܢܚܐ ܦܝܠܣܘܦܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib177-4" type="sic">ܕܢܚܳܐ ܦܝܠܳܣܘܦܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib177-3" type="sic">دنحا الفيلسوف</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib177-2" type="sic">Denḥa the Philosopher</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib177-4" type="split">
+                              <forename>ܕܢܚܐ</forename>
+                              <addName type="untagged-title">ܦܝܠܣܘܦܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib177-4" type="split">
+                              <forename>ܕܢܚܳܐ</forename>
+                              <addName type="untagged-title">ܦܝܠܳܣܘܦܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib177-3" type="split">
+                              <forename>دنحا</forename>
+                              <addName type="untagged-title">الفيلسوف</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib177-2" type="split">
+                              <forename>Denḥa</forename>
+                              <addName type="untagged-title">the Philosopher</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib177-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">177</citedRange>
+                     <citedRange unit="pp">405</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib177-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">177</citedRange>
+                     <citedRange unit="pp">356</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib177-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">177</citedRange>
+                     <citedRange unit="pp">384</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

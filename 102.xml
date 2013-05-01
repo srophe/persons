@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib102-4" type="sic">ܡܬܝ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib102-4" type="sic">ܡܰܬܰܝ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib102-3" type="sic">متي مطران حلب</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib102-2" type="sic">Matthew, metropolitan of Aleppo</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib102-4" type="split">
+                              <forename>ܡܬܝ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib102-4" type="split">
+                              <forename>ܡܰܬܰܝ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib102-3" type="split">
+                              <forename>متي</forename>
+                              <addName type="untagged-title">مطران حلب</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib102-2" type="split">
+                              <forename>Matthew</forename>
+                              <addName type="untagged-title">Metropolitan of Aleppo</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib102-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">97</citedRange>
+                     <citedRange unit="pp">329</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib102-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">97</citedRange>
+                     <citedRange unit="pp">286</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib102-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">97</citedRange>
+                     <citedRange unit="pp">313</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

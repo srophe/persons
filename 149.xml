@@ -38,10 +38,81 @@
                      <forename>Loʿozar</forename>
                      <surname>bar Sobtho</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib149-4" type="sic">ܠܥܙܪ ܒܪ ܣܒܬܐ ܕܒܓܕܕ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib149-4" type="sic">ܠܳܥܳܙܪ ܒܰܪ ܣܳܒܬܐ ܕܒܰܓܕܕ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib149-3" type="sic">لعازر ابن العجوز</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib149-2" type="sic">Lazarus bar Sobto</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib149-4" type="split">
+                              <forename>ܠܥܙܪ</forename>
+                              <surname>ܒܪ ܣܒܬܐ</surname>
+                              <addName type="untagged-title">ܕܒܓܕܕ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib149-4" type="split">
+                              <forename>ܠܳܥܳܙܪ</forename>
+                              <surname>ܒܰܪ ܣܳܒܬܐ</surname>
+                              <addName type="untagged-title">ܕܒܰܓܕܕ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib149-3" type="split">
+                              <forename>لعازر</forename>
+                              <surname>ابن العجوز</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib149-2" type="split">
+                              <forename>Lazarus</forename>
+                              <surname>bar Sobto</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib149-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib149-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">148</citedRange>
+                     <citedRange unit="pp">380</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib149-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">148</citedRange>
+                     <citedRange unit="pp">332</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib149-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">148</citedRange>
+                     <citedRange unit="pp">361</citedRange>
                   </bibl>
                </person>
             </listPerson>

@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib234-4" type="sic">ܒܣܝܠܝܘܣ ܣܒܝܪܝܢܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib234-4" type="sic">ܒܰܣܝܠܝܘܣ ܣܒܝܺܪܝܢܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib234-3" type="sic">باسيليوس السبيريني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib234-2" type="sic">Basilius of Basibrina</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib234-4" type="split">
+                              <forename>ܒܣܝܠܝܘܣ</forename>
+                              <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib234-4" type="split">
+                              <forename>ܒܰܣܝܠܝܘܣ</forename>
+                              <addName type="untagged-title">ܣܒܝܺܪܝܢܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib234-3" type="split">
+                              <forename>باسيليوس</forename>
+                              <addName type="untagged-title">السبيريني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib234-2" type="split">
+                              <forename>Basilius</forename>
+                              <addName type="untagged-title">of Basibrina</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib234-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">231</citedRange>
+                     <citedRange unit="pp">459</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib234-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">231</citedRange>
+                     <citedRange unit="pp">408</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib234-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">231</citedRange>
+                     <citedRange unit="pp">439</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

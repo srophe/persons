@@ -32,6 +32,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib222-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib222-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܰܥܩܘܒ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib222-3" type="sic">غريغوريوس يعقوب مفريان المشرق</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib222-2" type="sic">Gregorius Jacob, Maphryono of the East</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib222-4" type="split">
+                              <forename>ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ</forename>
+                              <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib222-4" type="split">
+                              <forename>ܓܪܺܝܓܘܪܝܘܣ ܝܰܥܩܘܒ</forename>
+                              <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib222-3" type="split">
+                              <forename>غريغوريوس يعقوب</forename>
+                              <addName type="untagged-title">مفريان المشرق</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib222-2" type="split">
+                              <forename>Gregorius Jacob</forename>
+                              <addName type="untagged-title">Maphryono of the East</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib222-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">219</citedRange>
+                     <citedRange unit="pp">450</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib222-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">219</citedRange>
+                     <citedRange unit="pp">399</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib222-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">219</citedRange>
+                     <citedRange unit="pp">430</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

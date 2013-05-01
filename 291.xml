@@ -36,10 +36,76 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib291-1" type="split">
                      <forename>Basileios Shemʿun II</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib291-4" type="sic">ܡܦܪܝܢܐ ܫܡܥܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib291-4" type="sic">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib291-3" type="sic">المفريان شمعون</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib291-2" type="sic">Maphryono Simon</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib291-4" type="split">
+                              <forename>ܫܡܥܘܢ</forename>
+                              <addName type="untagged-title">ܡܦܪܝܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib291-4" type="split"/>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib291-3" type="split">
+                              <forename>شمعون</forename>
+                              <addName type="untagged-title">المفريان</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib291-2" type="split">
+                              <forename>Simon</forename>
+                              <addName type="untagged-title">Maphryono</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib291-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib291-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">281</citedRange>
+                     <citedRange unit="pp">516</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib291-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">281</citedRange>
+                     <citedRange unit="pp">463</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib291-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">281</citedRange>
+                     <citedRange unit="pp">493</citedRange>
                   </bibl>
                </person>
             </listPerson>

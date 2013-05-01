@@ -38,10 +38,79 @@
                      <forename>Athanasios II</forename>
                      <addName type="untagged-title">of Balad</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib109-4" type="sic">ܐܬܢܐܣܝܘܣ ܕܬܪܝܢ ܒܠܕܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib109-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܕܰܬܪܶܝܢ ܒܳܠܳܕܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib109-3" type="sic">اثناسيوس البلدي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib109-2" type="sic">Athanasius II of Balad</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib109-4" type="split">
+                              <forename>ܐܬܢܐܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܬܪܝܢ ܒܠܕܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib109-4" type="split">
+                              <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܕܰܬܪܶܝܢ ܒܳܠܳܕܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib109-3" type="split">
+                              <forename>اثناسيوس</forename>
+                              <addName type="untagged-title">البلدي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib109-2" type="split">
+                              <forename>Athanasius II</forename>
+                              <addName type="untagged-title">of Balad</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib109-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib109-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">105</citedRange>
+                     <citedRange unit="pp">331</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib109-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">105</citedRange>
+                     <citedRange unit="pp">289</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib109-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">105</citedRange>
+                     <citedRange unit="pp">315</citedRange>
                   </bibl>
                </person>
             </listPerson>

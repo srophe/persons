@@ -44,10 +44,75 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib3-1" type="split">
                      <surname>Bardaiṣan</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib3-4" type="sic">ܒܪ ܕܝܨܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib3-4" type="sic">ܒܰܪ ܕܰܝܨܳܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib3-3" type="sic">برديصان</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib3-2" type="sic">Bar Daysan</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib3-4" type="split">
+                              <surname>ܒܪ ܕܝܨܢ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib3-4" type="split">
+                              <surname>ܒܰܪ ܕܰܝܨܳܢ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib3-3" type="split">
+                              <forename>برديصان</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib3-2" type="split">
+                              <surname>Bar Daysan</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib3-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib3-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">3</citedRange>
+                     <citedRange unit="pp">225</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib3-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">3</citedRange>
+                     <citedRange unit="pp">191</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib3-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">3</citedRange>
+                     <citedRange unit="pp">214</citedRange>
                   </bibl>
                </person>
             </listPerson>

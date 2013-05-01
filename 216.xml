@@ -38,10 +38,75 @@
                      <forename>Theodoros</forename>
                      <surname>bar Wahbun</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib216-4" type="sic">ܒܪ ܘܗܒܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib216-4" type="sic">ܒܰܪ ܘܰܗܒܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib216-3" type="sic">ابن وهبون</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib216-2" type="sic">Bar Wahbun</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib216-4" type="split">
+                              <forename>ܒܪ ܘܗܒܘܢ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib216-4" type="split">
+                              <forename>ܒܰܪ ܘܰܗܒܘܢ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib216-3" type="split">
+                              <forename>ابن وهبون</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib216-2" type="split">
+                              <forename>Bar Wahbun</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib216-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib216-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">213</citedRange>
+                     <citedRange unit="pp">443</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib216-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">213</citedRange>
+                     <citedRange unit="pp">393</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib216-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">213</citedRange>
+                     <citedRange unit="pp">423</citedRange>
                   </bibl>
                </person>
             </listPerson>

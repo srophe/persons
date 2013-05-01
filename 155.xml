@@ -38,10 +38,79 @@
                      <forename>Dionysios</forename>
                      <addName type="untagged-title">of Tel Maḥre</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib155-4" type="sic">ܡܪܝ ܕܝܘܢܢܘܣܝܘܣ ܬܠܡܚܪܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib155-4" type="sic">ܡܳܪܝ ܕܝܘܢܢܘܣܝܘܣ ܬܰܠܡܚܪܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib155-3" type="sic">مار ديونيسيوس التلمحري</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib155-2" type="sic">Mar Dionysius of Tell Maḥre</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib155-4" type="split">
+                              <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܡܪܝ ܬܠܡܚܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib155-4" type="split">
+                              <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ ܬܰܠܡܚܪܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib155-3" type="split">
+                              <forename>ديونيسيوس</forename>
+                              <addName type="untagged-title">مار, التلمحري</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib155-2" type="split">
+                              <forename>Dionysius</forename>
+                              <addName type="untagged-title">Mar, of Tell Maḥre</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib155-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib155-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">154</citedRange>
+                     <citedRange unit="pp">386</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib155-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">154</citedRange>
+                     <citedRange unit="pp">338</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib155-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">154</citedRange>
+                     <citedRange unit="pp">367</citedRange>
                   </bibl>
                </person>
             </listPerson>

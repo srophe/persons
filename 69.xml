@@ -38,10 +38,83 @@
                      <forename>Yaʿqub</forename>
                      <surname>Burdʿoyo</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib69-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܒܘܪܕܥܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib69-4" type="sic">ܡܪܝ ܝܰܥܩܘܒ ܒܘܪܕܥܳܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib69-3" type="sic">مار يعقوب البرادعي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib69-2" type="sic">Mar Jacob Baradaeus</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib69-4" type="split">
+                              <forename>ܝܥܩܘܒ</forename>
+                              <surname>ܒܘܪܕܥܢܐ</surname>
+                              <addName type="untagged-title">ܡܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib69-4" type="split">
+                              <forename>ܝܰܥܩܘܒ</forename>
+                              <surname>ܒܘܪܕܥܳܢܐ</surname>
+                              <addName type="untagged-title">ܡܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib69-3" type="split">
+                              <forename>يعقوب</forename>
+                              <surname>البرادعي</surname>
+                              <addName type="untagged-title">مار</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib69-2" type="split">
+                              <forename>Jacob</forename>
+                              <surname>Baradaeus</surname>
+                              <addName type="untagged-title">Mar</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib69-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib69-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">64</citedRange>
+                     <citedRange unit="pp">300</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib69-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">64</citedRange>
+                     <citedRange unit="pp">260</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib69-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">64</citedRange>
+                     <citedRange unit="pp">286</citedRange>
                   </bibl>
                </person>
             </listPerson>

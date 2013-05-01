@@ -38,11 +38,63 @@
                      <forename>Agnes</forename>
                      <surname>Smith</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib751-4" type="sic">ܡܪܬܝ ܐܓܢܝܣ ܠܘܝܙ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib751-4" type="sic">ܡܳܪܬܝ ܐܰܓܢܝܣ ܠܘܶܝܙ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib751-3" type="sic">السيدة اغنيس لويز</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib751-4" type="split">
+                              <forename>ܐܓܢܝܣ</forename>
+                              <surname>ܠܘܝܙ</surname>
+                              <addName type="untagged-title">ܡܪܬܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib751-4" type="split">
+                              <forename>ܐܰܓܢܝܣ</forename>
+                              <surname>ܠܘܶܝܙ</surname>
+                              <addName type="untagged-title">ܡܳܪܬܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib751-3" type="split">
+                              <forename>اغنيس</forename>
+                              <surname>لويز</surname>
+                              <addName type="untagged-title">السيدة</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib751-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">514</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib751-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">475</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib751-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

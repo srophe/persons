@@ -36,10 +36,79 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib119-1" type="split">
                      <forename>Eliya</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib119-4" type="sic">ܐܠܝܐ ܩܕܡܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib119-4" type="sic">ܐܠܺܝܐ ܩܰܕܡܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib119-3" type="sic">ايليا الاول</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib119-2" type="sic">Elijah I</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib119-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib119-4" type="split">
+                              <forename>ܐܠܺܝܐ</forename>
+                              <addName type="untagged-title">ܩܰܕܡܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib119-3" type="split">
+                              <forename>ايليا</forename>
+                              <addName type="untagged-title">الاول</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib119-2" type="split">
+                              <forename>Elijah</forename>
+                              <addName type="untagged-title">I</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib119-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib119-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">115</citedRange>
+                     <citedRange unit="pp">352</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib119-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">115</citedRange>
+                     <citedRange unit="pp">307</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib119-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">115</citedRange>
+                     <citedRange unit="pp">335</citedRange>
                   </bibl>
                </person>
             </listPerson>

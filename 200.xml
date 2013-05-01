@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib200-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܡܘܕܝܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib200-4" type="sic">ܕܝܽܘܢܳܢܘܣܝܘܣ ܒܰܪ ܡܰܘܕܝܢܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib200-3" type="sic">ديونيسيوس ابن موديانا</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib200-2" type="sic">Dionysius Bar Mawdyana</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib200-4" type="split">
+                              <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                              <surname>ܒܪ ܡܘܕܝܢܐ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib200-4" type="split">
+                              <forename>ܕܝܽܘܢܳܢܘܣܝܘܣ</forename>
+                              <surname>ܒܰܪ ܡܰܘܕܝܢܳܐ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib200-3" type="split">
+                              <forename>ديونيسيوس</forename>
+                              <surname>ابن موديانا</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib200-2" type="split">
+                              <forename>Dionysius</forename>
+                              <surname>Bar Mawdyana</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib200-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">197</citedRange>
+                     <citedRange unit="pp">423</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib200-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">197</citedRange>
+                     <citedRange unit="pp">373</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib200-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">197</citedRange>
+                     <citedRange unit="pp">403</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

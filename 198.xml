@@ -22,6 +22,74 @@
                   <persName resp="syriaca.org" type="split">
                      <choice/>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib198-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܬܠܝܬܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib198-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib198-3" type="sic">اغناطيوس الثالث مطران ملطية</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib198-2" type="sic">Ignatius III, metropolitan of Melitene</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib198-4" type="split">
+                              <forename>ܐܝܓܢܐܛܝܘܣ</forename>
+                              <addName type="untagged-title">ܬܠܝܬܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib198-4" type="split">
+                              <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
+                              <addName type="untagged-title">ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib198-3" type="split">
+                              <forename>اغناطيوس</forename>
+                              <addName type="untagged-title">الثالث مطران ملطية</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib198-2" type="split">
+                              <forename>Ignatius</forename>
+                              <addName type="untagged-title">III, Metropolitan of Melitene</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib198-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">195</citedRange>
+                     <citedRange unit="pp">418</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib198-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">195</citedRange>
+                     <citedRange unit="pp">369</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib198-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">195</citedRange>
+                     <citedRange unit="pp">399</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

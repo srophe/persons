@@ -38,11 +38,75 @@
                      <forename>Shemʿun</forename>
                      <addName type="untagged-title">the Stylite</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib744-4" type="sic">ܫܡܥܘܢ ܕܐܣܛܘܢܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib744-4" type="sic">ܫܶܡܥܘܢ ܕܐܶܣܛܽܘܢܶܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib744-3" type="sic">سمعان العمودي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib744-2" type="sic">Simon the Stylite</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib744-4" type="split">
+                              <forename>ܫܡܥܘܢ</forename>
+                              <addName type="untagged-title">ܕܐܣܛܘܢܗ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib744-4" type="split">
+                              <forename>ܫܶܡܥܘܢ</forename>
+                              <addName type="untagged-title">ܕܐܶܣܛܽܘܢܶܗ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib744-3" type="split">
+                              <forename>سمعان</forename>
+                              <addName type="untagged-title">العمودي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib744-2" type="split">
+                              <forename>Simon</forename>
+                              <addName type="untagged-title">the Stylite</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib744-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">507</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib744-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib744-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">148</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib744-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

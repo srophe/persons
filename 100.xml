@@ -32,6 +32,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib100-4" type="sic">ܕܝܪܝܐ ܐܝܬܐܠܗܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib100-4" type="sic">ܕܰܝܪܳܝܐ ܐܝܬܐܠܳܗܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib100-3" type="sic">الراهب ايثالاها</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib100-2" type="sic">The Monk Ithalaha</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib100-4" type="split">
+                              <forename>ܐܝܬܐܠܗܐ</forename>
+                              <addName type="untagged-title">ܕܝܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib100-4" type="split">
+                              <forename>ܐܝܬܐܠܳܗܐ</forename>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib100-3" type="split">
+                              <forename>ايثالاها</forename>
+                              <addName type="untagged-title">الراهب</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib100-2" type="split">
+                              <forename>Ithalaha</forename>
+                              <addName type="untagged-title">The Monk</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib100-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">95</citedRange>
+                     <citedRange unit="pp">328</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib100-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">95</citedRange>
+                     <citedRange unit="pp">286</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib100-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">95</citedRange>
+                     <citedRange unit="pp">312</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

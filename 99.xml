@@ -38,10 +38,79 @@
                      <forename>Severos</forename>
                      <addName type="untagged-title">Sebokht</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib99-4" type="sic">ܣܐܘܝܪܐ ܣܐܒܘܟܬ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib99-4" type="sic">ܣܶܐܘܝܪܶܐ ܣܰܐܒܘܟܬ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib99-3" type="sic">ساويرا سابوخت</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib99-2" type="sic">Severus Sabukht</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib99-4" type="split">
+                              <forename>ܣܐܘܝܪܐ</forename>
+                              <addName type="untagged-title">ܣܐܒܘܟܬ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib99-4" type="split">
+                              <forename>ܣܶܐܘܝܪܶܐ</forename>
+                              <addName type="untagged-title">ܣܰܐܒܘܟܬ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib99-3" type="split">
+                              <forename>ساويرا</forename>
+                              <addName type="untagged-title">سابوخت</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib99-2" type="split">
+                              <forename>Severus</forename>
+                              <addName type="untagged-title">Sabukht</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib99-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib99-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">94</citedRange>
+                     <citedRange unit="pp">325</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib99-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">94</citedRange>
+                     <citedRange unit="pp">283</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib99-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">94</citedRange>
+                     <citedRange unit="pp">310</citedRange>
                   </bibl>
                </person>
             </listPerson>

@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib159-4" type="sic">ܕܝܪܝܐ ܒܪ ܚܕ ܒܫܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib159-4" type="sic">ܕܰܝܪܳܝܐ ܒܰܪ ܚܰܕ ܒܫܰܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib159-3" type="sic">الراهب بر حذبشابا</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib159-2" type="sic">The Monk Bar Ḥadhbshabba</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib159-4" type="split">
+                              <forename>ܒܪ ܚܕ ܒܫܒܐ</forename>
+                              <addName type="untagged-title">ܕܝܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib159-4" type="split">
+                              <forename>ܒܰܪ ܚܰܕ ܒܫܰܒܐ</forename>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib159-3" type="split">
+                              <forename>بر حذبشابا</forename>
+                              <addName type="untagged-title">الراهب</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib159-2" type="split">
+                              <forename>Bar Ḥadhbshabba</forename>
+                              <addName type="untagged-title">The Monk</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib159-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">158</citedRange>
+                     <citedRange unit="pp">390</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib159-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">158</citedRange>
+                     <citedRange unit="pp">342</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib159-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">158</citedRange>
+                     <citedRange unit="pp">370</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

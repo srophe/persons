@@ -38,10 +38,79 @@
                      <forename>Marutha</forename>
                      <addName type="untagged-title">of Tagrit</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib93-4" type="sic">ܡܪܘܬܐ ܕܬܓܪܝܬ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib93-4" type="sic">ܡܰܪܘܬܶܐ ܕܬܰܓܪܝܬ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib93-3" type="sic">ماروثا التكريتي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib93-2" type="sic">Marutha of Takrit</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib93-4" type="split">
+                              <forename>ܡܪܘܬܐ</forename>
+                              <addName type="untagged-title">ܕܬܓܪܝܬ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib93-4" type="split">
+                              <forename>ܡܰܪܘܬܶܐ</forename>
+                              <addName type="untagged-title">ܕܬܰܓܪܝܬ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib93-3" type="split">
+                              <forename>ماروثا</forename>
+                              <addName type="untagged-title">التكريتي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib93-2" type="split">
+                              <forename>Marutha</forename>
+                              <addName type="untagged-title">of Takrit</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib93-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib93-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">88</citedRange>
+                     <citedRange unit="pp">322</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib93-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">88</citedRange>
+                     <citedRange unit="pp">280</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib93-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">88</citedRange>
+                     <citedRange unit="pp">306</citedRange>
                   </bibl>
                </person>
             </listPerson>

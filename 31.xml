@@ -32,6 +32,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib31-4" type="sic">ܩܫܝܫܐ ܩܘܙܡܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib31-4" type="sic">ܩܰܫܝܫܳܐ ܩܘܙܡܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib31-3" type="sic">القس قزما</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib31-2" type="sic">The Priest Cosmas</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib31-4" type="split">
+                              <forename>ܩܘܙܡܐ</forename>
+                              <addName type="untagged-title">ܩܫܝܫܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib31-4" type="split">
+                              <forename>ܩܘܙܡܳܐ</forename>
+                              <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib31-3" type="split">
+                              <forename>قزما</forename>
+                              <addName type="untagged-title">القس</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib31-2" type="split">
+                              <forename>Cosmas</forename>
+                              <addName type="untagged-title">The Priest</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib31-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">28</citedRange>
+                     <citedRange unit="pp">245</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib31-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">28</citedRange>
+                     <citedRange unit="pp">211</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib31-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">28</citedRange>
+                     <citedRange unit="pp">237</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

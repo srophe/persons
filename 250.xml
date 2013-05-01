@@ -38,10 +38,83 @@
                      <forename>Yeshuʿ</forename>
                      <surname>bar Khayrun</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib250-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܪܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib250-4" type="sic">ܕܰܝܪܳܝܳܐ ܝܶܫܘܥ ܒܰܪ ܟܰܝܪܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib250-3" type="sic">الراهب يشوع ابن خيرون</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib250-2" type="sic">The Monk Yeshu‛ Bar Khayrun</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib250-4" type="split">
+                              <forename>ܝܫܘܥ</forename>
+                              <surname>ܒܪ ܟܝܪܘܢ</surname>
+                              <addName type="untagged-title">ܕܝܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib250-4" type="split">
+                              <forename>ܝܶܫܘܥ</forename>
+                              <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib250-3" type="split">
+                              <forename>يشوع</forename>
+                              <surname>ابن خيرون</surname>
+                              <addName type="untagged-title">الراهب</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib250-2" type="split">
+                              <forename>Yeshu‛</forename>
+                              <surname>Bar Khayrun</surname>
+                              <addName type="untagged-title">The Monk</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib250-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib250-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">245</citedRange>
+                     <citedRange unit="pp">489</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib250-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">245</citedRange>
+                     <citedRange unit="pp">438</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib250-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">245</citedRange>
+                     <citedRange unit="pp">470</citedRange>
                   </bibl>
                </person>
             </listPerson>

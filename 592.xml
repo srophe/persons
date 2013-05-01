@@ -38,11 +38,60 @@
                      <forename>Paul Anton</forename>
                      <surname>de Lagarde</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib592-4" type="sic">ܦܘܠܘܣ ܠܐܟܐܪܕ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib592-4" type="sic">ܦܰܘܠܘܣ ܠܐܰܟܰܐܪܕ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib592-3" type="sic">بولس لاكارد</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib592-4" type="split">
+                              <forename>ܦܘܠܘܣ</forename>
+                              <surname>ܠܐܟܐܪܕ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib592-4" type="split">
+                              <forename>ܦܰܘܠܘܣ</forename>
+                              <surname>ܠܐܰܟܰܐܪܕ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib592-3" type="split">
+                              <forename>بولس</forename>
+                              <surname>لاكارد</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib592-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">324</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib592-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">51</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib592-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

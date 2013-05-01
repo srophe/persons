@@ -38,10 +38,76 @@
                      <forename>Severus</forename>
                      <addName type="untagged-title">of Antioch</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib51-4" type="sic">ܡܪܝ ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib51-4" type="sic">ܡܳܪܝ ܣܶܘܝܪܝܘܣ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib51-3" type="sic">القديس سويريوس الانطاكي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib51-2" type="sic">St. Severus of Antioch</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib51-4" type="split">
+                              <forename>ܣܘܝܪܝܘܣ</forename>
+                              <addName type="untagged-title">ܡܪܝ ܕܐܢܛܝܘܟܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib51-4" type="split">
+                              <forename>ܣܶܘܝܪܝܘܣ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib51-3" type="split">
+                              <forename>سويريوس</forename>
+                              <addName type="untagged-title">القديس , الانطاكي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib51-2" type="split"/>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib51-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib51-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">47</citedRange>
+                     <citedRange unit="pp">276</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib51-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">47</citedRange>
+                     <citedRange unit="pp">238</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib51-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">47</citedRange>
+                     <citedRange unit="pp">265</citedRange>
                   </bibl>
                </person>
             </listPerson>

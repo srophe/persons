@@ -38,11 +38,80 @@
                      <forename>Behnam</forename>
                      <addName type="untagged-title">Ḥadloyo</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib263-4" type="sic">ܦܛܪܝܪܟܐ ܒܗܢܡ ܚܕܠܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib263-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܒܶܗܢܰܡ ܚܶܕܠܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib263-3" type="sic">البطريرك بهنام الحدلي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib263-2" type="sic">Patriarch Bahnam of Ḥidl</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib263-4" type="split">
+                              <forename>ܒܗܢܡ</forename>
+                              <addName type="untagged-title">ܦܛܪܝܪܟܐ ܚܕܠܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib263-4" type="split">
+                              <forename>ܒܶܗܢܰܡ</forename>
+                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܚܶܕܠܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib263-3" type="split">
+                              <forename>بهنام</forename>
+                              <addName type="untagged-title">البطريرك , الحدلي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib263-2" type="split">
+                              <forename>Bahnam</forename>
+                              <addName type="untagged-title">Patriarch of Ḥidl</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib263-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">92</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib263-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">258</citedRange>
+                     <citedRange unit="pp">497</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib263-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">258</citedRange>
+                     <citedRange unit="pp">446</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib263-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">258</citedRange>
+                     <citedRange unit="pp">476</citedRange>
                   </bibl>
                </person>
             </listPerson>

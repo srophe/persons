@@ -38,11 +38,36 @@
                      <forename>Isidore</forename>
                      <addName type="untagged-title">of Pelusium</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib564-3" type="sic">ايسيدورس القس البيلوزي (الفرمي)</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib564-3" type="split">
+                              <forename>ايسيدورس</forename>
+                              <addName type="untagged-title">القس البيلوزي (الفرمي)</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib564-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">292</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib564-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">122</citedRange>
                   </bibl>
                </person>
             </listPerson>

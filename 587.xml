@@ -38,11 +38,75 @@
                      <forename>Khamis</forename>
                      <surname>bar Qardaḥe</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib587-4" type="sic">ܟܡܝܣ ܒܪ ܩܪܕܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib587-4" type="sic">ܟܰܡܝܣ ܒܰܪ ܩܰܪܕܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib587-3" type="sic">خميس ابن قرداحي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib587-2" type="sic">Khamis Cardahi</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib587-4" type="split">
+                              <forename>ܟܡܝܣ</forename>
+                              <surname>ܒܪ ܩܪܕܚܐ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib587-4" type="split">
+                              <forename>ܟܰܡܝܣ</forename>
+                              <surname>ܒܰܪ ܩܰܪܕܚܐ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib587-3" type="split">
+                              <forename>خميس</forename>
+                              <surname>ابن قرداحي</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib587-2" type="split">
+                              <forename>Khamis</forename>
+                              <surname>Cardahi</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib587-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">318</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib587-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib587-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">35</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib587-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

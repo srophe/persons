@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib61-4" type="sic">ܝܘܚܢܢ ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib61-4" type="sic">ܝܘܚܰܢܢ ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib61-3" type="sic">يوحنا الثاني رئيس دير قنسرين</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib61-2" type="sic">John II, abbot of the Monastery of Qenneshrin</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib61-4" type="split">
+                              <forename>ܝܘܚܢܢ</forename>
+                              <addName type="untagged-title">ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib61-4" type="split">
+                              <forename>ܝܘܚܰܢܢ</forename>
+                              <addName type="untagged-title">ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib61-3" type="split">
+                              <forename>يوحنا</forename>
+                              <addName type="untagged-title">رئيس دير قنسرين , الثاني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib61-2" type="split">
+                              <forename>John II</forename>
+                              <addName type="untagged-title">Abbot of the Monastery of Qenneshrin</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib61-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">57</citedRange>
+                     <citedRange unit="pp">296</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib61-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">57</citedRange>
+                     <citedRange unit="pp">257</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib61-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">57</citedRange>
+                     <citedRange unit="pp">283</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

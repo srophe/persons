@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib116-4" type="sic">ܩܫܝܫܐ ܫܡܥܘܢ ܫܡܝܫܛܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib116-4" type="sic">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܫܰܡܝܫܛܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib116-3" type="sic">القس شمعون السميساطي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib116-2" type="sic">Presbyter Simon of Samosata</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib116-4" type="split">
+                              <forename>ܫܡܥܘܢ</forename>
+                              <addName type="untagged-title">ܩܫܝܫܐ ܫܡܝܫܛܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib116-4" type="split">
+                              <forename>ܫܶܡܥܘܢ</forename>
+                              <addName type="untagged-title">ܩܰܫܝܫܳܐ ܫܰܡܝܫܛܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib116-3" type="split">
+                              <forename>شمعون</forename>
+                              <addName type="untagged-title">القس السميساطي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib116-2" type="split">
+                              <forename>Simon</forename>
+                              <addName type="untagged-title">Presbyter of Samosata</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib116-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">112</citedRange>
+                     <citedRange unit="pp">351</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib116-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">112</citedRange>
+                     <citedRange unit="pp">306</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib116-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">112</citedRange>
+                     <citedRange unit="pp">334</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

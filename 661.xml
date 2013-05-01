@@ -38,11 +38,60 @@
                      <forename>Theodor</forename>
                      <surname>Nöldeke</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib661-4" type="sic">ܬܐܘܕܘܪ ܢܘܠܕܟܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib661-4" type="sic">ܬܶܐܘܳܕܘܪ ܢܳܘܠܕܰܟܶܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib661-3" type="sic">ثاودر نلدكه</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib661-4" type="split">
+                              <forename>ܬܐܘܕܘܪ</forename>
+                              <surname>ܢܘܠܕܟܗ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib661-4" type="split">
+                              <forename>ܬܶܐܘܳܕܘܪ</forename>
+                              <surname>ܢܳܘܠܕܰܟܶܗ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib661-3" type="split">
+                              <forename>ثاودر</forename>
+                              <surname>نلدكه</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib661-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">402</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib661-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">474</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib661-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

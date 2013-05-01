@@ -38,10 +38,79 @@
                      <forename>Anṭun</forename>
                      <addName type="untagged-title">of Tagrit</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib154-4" type="sic">ܪܒܢ ܐܢܛܘܢ ܬܓܪܝܬܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib154-4" type="sic">ܪܰܒܢ ܐܰܢܛܘܢ ܬܰܓܪܝܬܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib154-3" type="sic">الربان انطون التكريتي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib154-2" type="sic">Rabban Anton of Takrit</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib154-4" type="split">
+                              <forename>ܐܢܛܘܢ</forename>
+                              <addName type="untagged-title">ܪܒܢ ܬܓܪܝܬܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib154-4" type="split">
+                              <forename>ܐܰܢܛܘܢ</forename>
+                              <addName type="untagged-title">ܪܰܒܢ ܬܰܓܪܝܬܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib154-3" type="split">
+                              <forename>انطون</forename>
+                              <addName type="untagged-title">التكريتي , الربان</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib154-2" type="split">
+                              <forename>Anton</forename>
+                              <addName type="untagged-title">Rabban, of Takrit</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib154-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib154-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">153</citedRange>
+                     <citedRange unit="pp">383</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib154-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">153</citedRange>
+                     <citedRange unit="pp">336</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib154-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">153</citedRange>
+                     <citedRange unit="pp">364</citedRange>
                   </bibl>
                </person>
             </listPerson>

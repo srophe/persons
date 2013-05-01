@@ -38,11 +38,80 @@
                      <forename>Giwargis</forename>
                      <addName type="untagged-title">of Bʿeltan</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib139-4" type="sic">ܡܪܝ ܓܘܪܓܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib139-4" type="sic">ܡܳܪܝ ܓܶܘܰܪܓܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib139-3" type="sic">مار جاورجي الاول بطريرك انطاكية</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib139-2" type="sic">Mar George I, Patriarch of Antioch</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib139-4" type="split">
+                              <forename>ܓܘܪܓܝ</forename>
+                              <addName type="untagged-title">ܡܪܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib139-4" type="split">
+                              <forename>ܓܶܘܰܪܓܝ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib139-3" type="split">
+                              <forename>جاورجي</forename>
+                              <addName type="untagged-title">مار , الاول ,  بطريرك انطاكية</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib139-2" type="split">
+                              <forename>George I</forename>
+                              <addName type="untagged-title">Mar, Patriarch of Antioch</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib139-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">230</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib139-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">138</citedRange>
+                     <citedRange unit="pp">369</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib139-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">138</citedRange>
+                     <citedRange unit="pp">322</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib139-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">138</citedRange>
+                     <citedRange unit="pp">351</citedRange>
                   </bibl>
                </person>
             </listPerson>

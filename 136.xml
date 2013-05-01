@@ -38,10 +38,79 @@
                      <forename>Loʿozar</forename>
                      <addName type="untagged-title">of Beth Qandasa</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib136-4" type="sic">ܕܝܪܝܐ ܠܥܙܪ ܕܒܝܬ ܩܢܕܐܣܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib136-4" type="sic">ܕܰܝܪܳܝܐ ܠܳܥܳܙܳܪ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib136-3" type="sic">الراهب لعازار آل قنداسا</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib136-2" type="sic">The Monk Lazarus of Beth Qandasa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib136-4" type="split">
+                              <forename>ܠܥܙܪ</forename>
+                              <addName type="untagged-title">ܕܝܪܝܐ ܕܒܝܬ ܩܢܕܐܣܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib136-4" type="split">
+                              <forename>ܠܳܥܳܙܳܪ</forename>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib136-3" type="split">
+                              <forename>لعازار</forename>
+                              <addName type="untagged-title">الراهب , آل قنداسا</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib136-2" type="split">
+                              <forename>Lazarus</forename>
+                              <addName type="untagged-title">The Monk, of Beth Qandasa</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib136-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib136-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">135</citedRange>
+                     <citedRange unit="pp">365</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib136-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">135</citedRange>
+                     <citedRange unit="pp">319</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib136-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">135</citedRange>
+                     <citedRange unit="pp">347</citedRange>
                   </bibl>
                </person>
             </listPerson>

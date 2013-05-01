@@ -32,6 +32,45 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib855-3" type="sic">امّونيوس كاتب الرسائل</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib855-2" type="sic">Ammonius</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib855-3" type="split">
+                              <forename>امّونيوس</forename>
+                              <addName type="untagged-title">كاتب الرسائل</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib855-2" type="split">
+                              <forename>Ammonius</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib855-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="pp">137</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib855-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">121</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

@@ -38,10 +38,83 @@
                      <forename>Dawid</forename>
                      <surname>bar Pawlos</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib144-4" type="sic">ܐܒܐ ܕܘܝܕ ܒܪ ܦܘܠܘܣ ܕܒܝܬ ܪܒܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib144-4" type="sic">ܐܰܒܐ ܕܰܘܝܕ ܒܰܪ ܦܰܘܠܘܣ ܕܒܶܝܬ ܪܰܒܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib144-3" type="sic">الانبا داود بن بولس آل ربان</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib144-2" type="sic">Anba David Bar Paul of Beth Rabban</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib144-4" type="split">
+                              <forename>ܕܘܝܕ</forename>
+                              <surname>ܒܪ ܦܘܠܘܣ</surname>
+                              <addName type="untagged-title">ܐܒܐ ܕܒܝܬ ܪܒܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib144-4" type="split">
+                              <forename>ܕܰܘܝܕ</forename>
+                              <surname>ܒܰܪ ܦܰܘܠܘܣ</surname>
+                              <addName type="untagged-title">ܐܰܒܐ ܕܒܶܝܬ ܪܰܒܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib144-3" type="split">
+                              <forename>داود</forename>
+                              <surname>بن بولس</surname>
+                              <addName type="untagged-title">الانبا ,   آل ربان</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib144-2" type="split">
+                              <forename>David</forename>
+                              <surname>Bar Paul</surname>
+                              <addName type="untagged-title">Anba, of Beth Rabban</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib144-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib144-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">143</citedRange>
+                     <citedRange unit="pp">372</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib144-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">143</citedRange>
+                     <citedRange unit="pp">325</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib144-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">143</citedRange>
+                     <citedRange unit="pp">354</citedRange>
                   </bibl>
                </person>
             </listPerson>

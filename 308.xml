@@ -36,11 +36,74 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib308-1" type="split">
                      <forename>Aba</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib308-4" type="sic">ܐܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib308-4" type="sic">ܐܰܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib308-3" type="sic">آبا</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib308-2" type="sic">Aba</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib308-4" type="split">
+                              <forename>ܐܒܐ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib308-4" type="split">
+                              <forename>ܐܰܒܐ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib308-3" type="split">
+                              <forename>آبا</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib308-2" type="split">
+                              <forename>Aba</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib308-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">3</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib308-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">10 to 13</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib308-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">10 to 13</citedRange>
+                     <citedRange unit="pp">203</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib308-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">10 to 13</citedRange>
                   </bibl>
                </person>
             </listPerson>

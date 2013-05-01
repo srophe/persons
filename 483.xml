@@ -38,11 +38,75 @@
                      <forename>Evagrius</forename>
                      <addName type="untagged-title">of Pontus</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib483-4" type="sic">ܐܘܓܪܝܣ ܦܘܐܝܛܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib483-4" type="sic">ܐܶܘܰܓܪܺܝܣ ܦܘܐܝܺܛܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib483-3" type="sic">اوغريوس البنطي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib483-2" type="sic">Euagrius Pontius</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib483-4" type="split">
+                              <forename>ܐܘܓܪܝܣ</forename>
+                              <addName type="untagged-title">ܦܘܐܝܛܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib483-4" type="split">
+                              <forename>ܐܶܘܰܓܪܺܝܣ</forename>
+                              <addName type="untagged-title">ܦܘܐܝܺܛܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib483-3" type="split">
+                              <forename>اوغريوس</forename>
+                              <addName type="untagged-title">البنطي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib483-2" type="split">
+                              <forename>Euagrius</forename>
+                              <addName type="untagged-title">Pontius</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib483-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">205</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib483-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib483-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">387</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib483-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

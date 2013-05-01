@@ -44,10 +44,80 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib13-1" type="split">
                      <forename>Ephrem</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib13-4" type="sic">ܡܪܝ ܐܦܪܝܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib13-4" type="sic">ܡܳܪܝ ܐܰܦܪܶܝܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib13-3" type="sic">مار افرام الملفان السرياني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib13-2" type="sic">St. Ephraim the Syrian</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib13-4" type="split">
+                              <forename>ܐܦܪܝܡ</forename>
+                              <addName type="untagged-title">ܡܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib13-4" type="split">
+                              <forename>ܐܰܦܪܶܝܡ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib13-3" type="split">
+                              <forename>افرام</forename>
+                              <addName type="untagged-title">السرياني، مار، الملفان</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib13-2" type="split">
+                              <forename>Ephraim</forename>
+                              <surname>the Syrian</surname>
+                              <addName type="untagged-title">St.</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib13-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib13-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">9</citedRange>
+                     <citedRange unit="pp">229</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib13-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">9</citedRange>
+                     <citedRange unit="pp">196</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib13-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">9</citedRange>
+                     <citedRange unit="pp">218</citedRange>
                   </bibl>
                </person>
             </listPerson>

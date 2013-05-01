@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib133-4" type="sic">ܐܠܝܐ ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib133-4" type="sic">ܐܠܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib133-3" type="sic">ايليا اسقف سنجار</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib133-2" type="sic">Elijah, bishop of Sinjar</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib133-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib133-4" type="split">
+                              <forename>ܐܠܝܳܐ</forename>
+                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib133-3" type="split">
+                              <forename>ايليا</forename>
+                              <addName type="untagged-title">اسقف سنجار</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib133-2" type="split">
+                              <forename>Elijah</forename>
+                              <addName type="untagged-title">bishop of Sinjar</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib133-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">133</citedRange>
+                     <citedRange unit="pp">364</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib133-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">133</citedRange>
+                     <citedRange unit="pp">318</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib133-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">133</citedRange>
+                     <citedRange unit="pp">346</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

@@ -38,11 +38,60 @@
                      <forename>John</forename>
                      <addName type="untagged-title">Climacus</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib574-4" type="sic">ܝܘܚܢܢ ܩܠܝܡܐܟܘܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib574-4" type="sic">ܝܘܽܚܰܢܳܢ ܩܠܝܺܡܳܐܟܳܘܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib574-3" type="sic">اياونيس كليماكس</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib574-4" type="split">
+                              <forename>ܝܘܚܢܢ</forename>
+                              <addName type="untagged-title">ܩܠܝܡܐܟܘܣ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib574-4" type="split">
+                              <forename>ܝܘܽܚܰܢܳܢ</forename>
+                              <addName type="untagged-title">ܩܠܝܺܡܳܐܟܳܘܣ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib574-3" type="split">
+                              <forename>اياونيس</forename>
+                              <addName type="untagged-title">كليماكس</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib574-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">304</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib574-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">124</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib574-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

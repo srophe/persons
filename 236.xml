@@ -38,10 +38,83 @@
                      <forename>Yuḥanon</forename>
                      <surname>bar Maʿdani</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib236-4" type="sic">ܦܛܪܝܪܟܐ ܝܘܚܢܢ ܒܪ ܡܥܕܢܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib236-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܝܘܚܰܢܢ ܒܰܪ ܡܰܥܕܰܢܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib236-3" type="sic">البطريرك يوحنا ابن المعدني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib236-2" type="sic">Patriarch John Bar Ma‛dani</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib236-4" type="split">
+                              <forename>ܝܘܚܢܢ</forename>
+                              <surname>ܒܪ ܡܥܕܢܝ</surname>
+                              <addName type="untagged-title">ܦܛܪܝܪܟܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib236-4" type="split">
+                              <forename>ܝܘܚܰܢܢ</forename>
+                              <surname>ܒܰܪ ܡܰܥܕܰܢܝ</surname>
+                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib236-3" type="split">
+                              <forename>يوحنا</forename>
+                              <surname>ابن المعدني</surname>
+                              <addName type="untagged-title">البطريرك</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib236-2" type="split">
+                              <forename>John</forename>
+                              <surname>Bar Ma‛dani</surname>
+                              <addName type="untagged-title">Patriarch</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib236-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib236-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">233</citedRange>
+                     <citedRange unit="pp">460</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib236-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">233</citedRange>
+                     <citedRange unit="pp">409</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib236-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">233</citedRange>
+                     <citedRange unit="pp">440</citedRange>
                   </bibl>
                </person>
             </listPerson>

@@ -32,11 +32,79 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib507-4" type="sic">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib507-4" type="sic">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib507-3" type="sic">انجيل الرسل الاثني عشر</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib507-2" type="sic">Gospel of the Apostles</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib507-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib507-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib507-3" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib507-2" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib507-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">231</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib507-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib507-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">50</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib507-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

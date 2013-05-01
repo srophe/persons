@@ -38,11 +38,84 @@
                      <forename>Pawlos</forename>
                      <addName type="untagged-title">of Kallinikos</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib47-4" type="sic">ܦܘܠܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib47-4" type="sic">ܦܰܘܠܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib47-3" type="sic">بولس اسقف الرقة</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib47-2" type="sic">Paul, bishop of al-Raqqa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib47-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib47-4" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib47-3" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib47-2" type="split">
+                              <forename>#REF!</forename>
+                              <surname>#REF!</surname>
+                              <addName type="untagged-title">#REF!</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib47-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">417</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib47-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">43</citedRange>
+                     <citedRange unit="pp">271</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib47-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">43</citedRange>
+                     <citedRange unit="pp">233</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib47-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">43</citedRange>
+                     <citedRange unit="pp">259</citedRange>
                   </bibl>
                </person>
             </listPerson>

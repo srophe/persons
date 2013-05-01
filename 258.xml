@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܬܘܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܳܬܘܒܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib258-3" type="sic">فيلكسينس الكاتب</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib258-2" type="sic">Philoxenus the Scribe</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib258-4" type="split">
+                              <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
+                              <addName type="untagged-title">ܟܬܘܒܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib258-4" type="split">
+                              <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
+                              <addName type="untagged-title">ܟܳܬܘܒܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib258-3" type="split">
+                              <forename>فيلكسينس</forename>
+                              <addName type="untagged-title">الكاتب</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib258-2" type="split">
+                              <forename>Philoxenus</forename>
+                              <addName type="untagged-title">the Scribe</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib258-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">253</citedRange>
+                     <citedRange unit="pp">495</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib258-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">253</citedRange>
+                     <citedRange unit="pp">443</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib258-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">253</citedRange>
+                     <citedRange unit="pp">474</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

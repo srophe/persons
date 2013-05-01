@@ -38,10 +38,76 @@
                      <forename>Sargis</forename>
                      <addName type="untagged-title">the Stylite</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib81-4" type="sic">ܣܪܓܝܣ ܐܣܛܘܢܪܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib81-4" type="sic">ܣܰܪܓܝܣ ܐܶܣܛܘܢܳܪܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib81-3" type="sic">سرجيس العمودي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib81-2" type="sic">Sergius the Stylite</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib81-4" type="split">
+                              <forename>ܣܪܟܓܣ</forename>
+                              <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib81-4" type="split">
+                              <forename>ܣܰܪܓܝܣ</forename>
+                              <addName type="untagged-title">ܐܶܣܛܘܢܳܪܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib81-3" type="split">
+                              <forename>سرجيس</forename>
+                              <addName type="untagged-title">العمودي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib81-2" type="split"/>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib81-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib81-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">76</citedRange>
+                     <citedRange unit="pp">312</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib81-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">76</citedRange>
+                     <citedRange unit="pp">272</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib81-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">76</citedRange>
+                     <citedRange unit="pp">298</citedRange>
                   </bibl>
                </person>
             </listPerson>

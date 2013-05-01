@@ -38,11 +38,80 @@
                      <forename>Severos</forename>
                      <addName type="untagged-title">the monk</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib164-4" type="sic">ܕܝܪܝܐ ܣܘܝܪܐ ܐܢܛܝܘܟܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib164-4" type="sic">ܕܰܝܪܳܝܐ ܣܶܘܝܪܶܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib164-3" type="sic">الراهب ساويرا الانطاكي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib164-2" type="sic">The Monk Severus of Antioch</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib164-4" type="split">
+                              <forename>ܣܘܝܪܐ</forename>
+                              <addName type="untagged-title">ܕܝܪܝܐ ܐܢܛܝܘܟܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib164-4" type="split">
+                              <forename>ܣܶܘܝܪܶܐ</forename>
+                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܐܰܢܛܝܘܟܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib164-3" type="split">
+                              <forename>ساويرا</forename>
+                              <addName type="untagged-title">الراهب  الانطاكي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib164-2" type="split">
+                              <forename>Severus</forename>
+                              <addName type="untagged-title">The Monk, of Antioch</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib164-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">486</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib164-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">163</citedRange>
+                     <citedRange unit="pp">393</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib164-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">163</citedRange>
+                     <citedRange unit="pp">345</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib164-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">163</citedRange>
+                     <citedRange unit="pp">373</citedRange>
                   </bibl>
                </person>
             </listPerson>

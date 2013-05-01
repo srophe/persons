@@ -38,10 +38,76 @@
                      <forename>Yuḥanon</forename>
                      <addName type="untagged-title">of Mardin</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib209-4" type="sic">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܪܕܝܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib209-4" type="sic">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܰܪܕܝܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib209-3" type="sic">يوحنا مطران ماردين</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib209-2" type="sic">John, metropolitan of Mardin</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib209-4" type="split">
+                              <forename>ܝܘܚܢܢ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܪܕܝܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib209-4" type="split">
+                              <forename>ܝܘܚܰܢܢ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܰܪܕܝܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib209-3" type="split"/>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib209-2" type="split">
+                              <forename>John</forename>
+                              <addName type="untagged-title">Metropolitan of Mardin</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib209-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib209-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">206</citedRange>
+                     <citedRange unit="pp">429</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib209-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">206</citedRange>
+                     <citedRange unit="pp">380</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib209-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">206</citedRange>
+                     <citedRange unit="pp">410</citedRange>
                   </bibl>
                </person>
             </listPerson>

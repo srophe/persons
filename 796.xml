@@ -38,11 +38,75 @@
                      <forename>Toma</forename>
                      <addName type="untagged-title">of Marga</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib796-4" type="sic">ܬܐܘܡܐ ܕܡܪܓܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib796-4" type="sic">ܬܳܐܘܡܐ ܕܡܰܪܰܓܰܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib796-3" type="sic">توما المرجي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib796-2" type="sic">Thomas of Maraga</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib796-4" type="split">
+                              <forename>ܬܐܘܡܐ</forename>
+                              <addName type="untagged-title">ܕܡܪܓܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib796-4" type="split">
+                              <forename>ܬܳܐܘܡܐ</forename>
+                              <addName type="untagged-title">ܕܡܰܪܰܓܰܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib796-3" type="split">
+                              <forename>توما</forename>
+                              <addName type="untagged-title">المرجي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib796-2" type="split">
+                              <forename>Thomas</forename>
+                              <addName type="untagged-title">of Maraga</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib796-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">562</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib796-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib796-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">108</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib796-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

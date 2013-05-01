@@ -33,6 +33,73 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib132-4" type="sic">ܐܝܘܐܢܝܣ ܩܕܡܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib132-4" type="sic">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib132-3" type="sic">اياونيس الاول</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib132-2" type="sic">John I</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib132-4" type="split">
+                              <forename>ܐܝܘܐܢܝܣ</forename>
+                              <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib132-4" type="split">
+                              <forename>ܐܝܘܰܐܢܝܣ</forename>
+                              <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib132-3" type="split">
+                              <forename>اياونيس</forename>
+                              <addName type="untagged-title">الاول</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib132-2" type="split">
+                              <forename>John I</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib132-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">132</citedRange>
+                     <citedRange unit="pp">363</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib132-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">132</citedRange>
+                     <citedRange unit="pp">317</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib132-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">132</citedRange>
+                     <citedRange unit="pp">345</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

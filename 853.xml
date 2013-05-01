@@ -32,6 +32,69 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib853-4" type="sic">ܡܫܡܫܢܐ ܙܝܢܘܒ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib853-4" type="sic">ܡܫܰܡܫܳܢܐ ܙܰܝܢܽܘܒ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib853-3" type="sic">الشماس زينوبيوس</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib853-2" type="sic">Deacon Zenobius</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib853-4" type="split">
+                              <forename>ܙܝܢܘܒ</forename>
+                              <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib853-4" type="split">
+                              <forename>ܙܰܝܢܽܘܒ</forename>
+                              <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib853-3" type="split">
+                              <forename>زينوبيوس</forename>
+                              <addName type="untagged-title">الشماس</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib853-2" type="split">
+                              <forename>Zenobius</forename>
+                              <addName type="untagged-title">Deacon</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib853-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib853-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">203</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib853-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

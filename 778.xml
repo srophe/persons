@@ -36,11 +36,57 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib778-1" type="split">
                      <forename>Theano</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib778-4" type="sic">ܬܝܐܢܘ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib778-4" type="sic">ܬܺܝܰܐܢܳܘ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib778-3" type="sic">تيانو</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib778-4" type="split">
+                              <forename>ܬܝܐܢܘ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib778-4" type="split">
+                              <forename>ܬܺܝܰܐܢܳܘ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib778-3" type="split">
+                              <forename>تيانو</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib778-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">541</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib778-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">160</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib778-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

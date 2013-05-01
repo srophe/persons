@@ -42,6 +42,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib1-4" type="sic">ܘܦܐ ܐܪܡܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib1-4" type="sic">ܘܰܦܰܐ ܐܳܪܳܡܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib1-3" type="sic">وفا الآرامي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib1-2" type="sic">Wafā the Aramaean</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib1-4" type="split">
+                              <forename>ܘܦܐ</forename>
+                              <addName type="untagged-title">ܐܪܡܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib1-4" type="split">
+                              <forename>ܘܰܦܰܐ</forename>
+                              <addName type="untagged-title">ܐܳܪܳܡܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib1-3" type="split">
+                              <forename>وفا</forename>
+                              <addName type="untagged-title">الآرامي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib1-2" type="split">
+                              <forename>Wafā</forename>
+                              <addName type="untagged-title">the Aramaean</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib1-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">1</citedRange>
+                     <citedRange unit="pp">224</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib1-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">1</citedRange>
+                     <citedRange unit="pp">190</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib1-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">1</citedRange>
+                     <citedRange unit="pp">213</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

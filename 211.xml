@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib211-4" type="sic">ܐܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܟܝܫܘܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib211-4" type="sic">ܐܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܟܝܺܫܘܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib211-3" type="sic">ايليا مطران كيسوم</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib211-2" type="sic">Elijah, metropolitan of Kesum</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib211-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܟܝܫܘܡ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib211-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܟܝܺܫܘܡ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib211-3" type="split">
+                              <forename>ايليا</forename>
+                              <addName type="untagged-title">مطران كيسوم</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib211-2" type="split">
+                              <forename>Elijah</forename>
+                              <addName type="untagged-title">Metropolitan of Kesum</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib211-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">208</citedRange>
+                     <citedRange unit="pp">431</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib211-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">208</citedRange>
+                     <citedRange unit="pp">382</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib211-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">208</citedRange>
+                     <citedRange unit="pp">412</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

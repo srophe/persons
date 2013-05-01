@@ -36,10 +36,79 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib160-1" type="split">
                      <forename>Denḥa</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib160-4" type="sic">ܩܫܝܫܐ ܕܢܚܐ ܦܝܠܣܘܦܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib160-4" type="sic">ܩܰܫܝܫܳܐ ܕܰܢܚܳܐ ܦܺܝܠܳܣܘܦܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib160-3" type="sic">القس دنحا الفيلسوف</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib160-2" type="sic">The Priest-Philosopher Denḥa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib160-4" type="split">
+                              <forename>ܕܢܚܐ</forename>
+                              <addName type="untagged-title">ܩܫܝܫܐ ܦܝܠܣܘܦܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib160-4" type="split">
+                              <forename>ܕܰܢܚܳܐ</forename>
+                              <addName type="untagged-title">ܩܰܫܝܫܳܐ ܦܺܝܠܳܣܘܦܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib160-3" type="split">
+                              <forename>دنحا</forename>
+                              <addName type="untagged-title">القس , الفيلسوف</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib160-2" type="split">
+                              <forename>Denḥa</forename>
+                              <addName type="untagged-title">The Priest-Philosopher</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib160-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib160-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">159</citedRange>
+                     <citedRange unit="pp">390</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib160-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">159</citedRange>
+                     <citedRange unit="pp">342</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib160-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">159</citedRange>
+                     <citedRange unit="pp">371</citedRange>
                   </bibl>
                </person>
             </listPerson>

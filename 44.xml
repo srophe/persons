@@ -38,10 +38,76 @@
                      <forename>Philoxenos</forename>
                      <addName type="untagged-title">of Mabbug</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib44-4" type="sic">ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib44-4" type="sic">ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib44-3" type="sic">مار فيلكسينس المنبجي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib44-2" type="sic">Mar Philoxenus of Mabug</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib44-4" type="split">
+                              <forename>ܦܝܠܠܘܟܣܝܢܘܣ</forename>
+                              <addName type="untagged-title">ܡܪܝ ܕܡܒܘܓ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib44-4" type="split">
+                              <forename>ܦܺܝܠܠܘܟܣܺܝܢܘܣ</forename>
+                              <addName type="untagged-title">ܡܳܪܝ ܕܡܰܒܘܓ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib44-3" type="split">
+                              <forename>فيلكسينس</forename>
+                              <addName type="untagged-title">المنبجي ،  مار</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib44-2" type="split"/>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib44-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib44-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">40</citedRange>
+                     <citedRange unit="pp">262</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib44-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">40</citedRange>
+                     <citedRange unit="pp">226</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib44-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">40</citedRange>
+                     <citedRange unit="pp">252</citedRange>
                   </bibl>
                </person>
             </listPerson>

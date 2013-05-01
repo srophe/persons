@@ -33,6 +33,77 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib268-4" type="sic">ܦܛܪܝܪܟܐ ܥܙܝܙ ܒܪ ܣܒܬܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib268-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܥܰܙܝܙ ܒܰܪ ܣܳܒܬܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib268-3" type="sic">البطريرك عزيز ابن العجوز</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib268-2" type="sic">Patriarch ‛Aziz (Bar Sobto)</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib268-4" type="split">
+                              <forename>ܥܙܝܙ</forename>
+                              <surname>ܒܪ ܣܒܬܐ</surname>
+                              <addName type="untagged-title">ܦܛܪܝܪܟܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib268-4" type="split">
+                              <forename>ܥܰܙܝܙ</forename>
+                              <surname>ܒܰܪ ܣܳܒܬܐ</surname>
+                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib268-3" type="split">
+                              <forename>عزيز</forename>
+                              <addName type="untagged-title">البطريرك , ابن العجوز</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib268-2" type="split">
+                              <forename>‛Aziz</forename>
+                              <surname>(Bar Sobto)</surname>
+                              <addName type="untagged-title">Patriarch</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib268-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">261</citedRange>
+                     <citedRange unit="pp">500</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib268-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">261</citedRange>
+                     <citedRange unit="pp">448</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib268-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">261</citedRange>
+                     <citedRange unit="pp">479</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

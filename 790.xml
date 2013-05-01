@@ -38,11 +38,75 @@
                      <forename>Timotheos</forename>
                      <addName type="untagged-title">I</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib790-4" type="sic">ܛܝܡܬܐܘܣ ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib790-4" type="sic">ܛܺܝܡܰܬܐܘܳܣ ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib790-3" type="sic">طيمثاوس الاول جاثليق النساطرة</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib790-2" type="sic">Catholicos Timothy I</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib790-4" type="split">
+                              <forename>ܛܝܡܬܐܘܣ</forename>
+                              <addName type="untagged-title">ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib790-4" type="split">
+                              <forename>ܛܺܝܡܰܬܐܘܳܣ</forename>
+                              <addName type="untagged-title">ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib790-3" type="split">
+                              <forename>طيمثاوس</forename>
+                              <addName type="untagged-title">الاول جاثليق النساطرة</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib790-2" type="split">
+                              <forename>Timothy</forename>
+                              <addName type="untagged-title">I, Catholicos</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib790-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">556</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib790-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib790-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">273</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib790-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

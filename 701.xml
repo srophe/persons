@@ -40,11 +40,77 @@
                      <surname>Raḥmani</surname>
                      <addName type="untagged-title">II</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib701-4" type="sic">ܡܪܝ ܪܚܡܐܢܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib701-4" type="sic">ܡܳܪܝ ܪܰܚܡܰܐܢܺܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib701-3" type="sic">البطريرك افريم رحماني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib701-2" type="sic">Patriarch Aphram Rahmani</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib701-4" type="split">
+                              <surname>ܪܚܡܐܢܝ</surname>
+                              <addName type="untagged-title">ܡܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib701-4" type="split">
+                              <surname>ܪܰܚܡܰܐܢܺܝ</surname>
+                              <addName type="untagged-title">ܡܳܪܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib701-3" type="split">
+                              <forename>افريم</forename>
+                              <surname>رحماني</surname>
+                              <addName type="untagged-title">البطريرك</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib701-2" type="split">
+                              <forename>Aphram</forename>
+                              <surname>Rahmani</surname>
+                              <addName type="untagged-title">Patriarch</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib701-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">453</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib701-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib701-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">90</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib701-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib186-4" type="sic">ܐܬܢܐܣܝܘܣ ܪܒܝܥܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib186-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܪܒܝܥܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib186-3" type="sic">اثناسيوس الرابع</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib186-2" type="sic">Athanasius IV</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib186-4" type="split">
+                              <forename>ܐܬܢܐܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܪܒܝܥܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib186-4" type="split">
+                              <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܪܒܝܥܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib186-3" type="split">
+                              <forename>اثناسيوس</forename>
+                              <addName type="untagged-title">الرابع</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib186-2" type="split">
+                              <forename>Athanasius</forename>
+                              <addName type="untagged-title">IV</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib186-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">186</citedRange>
+                     <citedRange unit="pp">412</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib186-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">186</citedRange>
+                     <citedRange unit="pp">363</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib186-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">186</citedRange>
+                     <citedRange unit="pp">391</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

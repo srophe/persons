@@ -38,10 +38,79 @@
                      <forename>Pawla</forename>
                      <addName type="untagged-title">of Edessa</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib84-4" type="sic">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib84-4" type="sic">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib84-3" type="sic">بولس مطران الرها</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib84-2" type="sic">Paul, metropolitan of Edessa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib84-4" type="split">
+                              <forename>ܦܘܠܘܣ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib84-4" type="split">
+                              <forename>ܦܰܘܠܘܣ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib84-3" type="split">
+                              <forename>بولس</forename>
+                              <addName type="untagged-title">مطران الرها</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib84-2" type="split">
+                              <forename>Paul</forename>
+                              <addName type="untagged-title">Metropolitan of Edessa</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib84-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib84-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">79</citedRange>
+                     <citedRange unit="pp">315</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib84-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">79</citedRange>
+                     <citedRange unit="pp">275</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib84-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">79</citedRange>
+                     <citedRange unit="pp">301</citedRange>
                   </bibl>
                </person>
             </listPerson>

@@ -38,11 +38,75 @@
                      <forename>Awgen</forename>
                      <addName type="untagged-title">Mar</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib356-4" type="sic">ܐܘܓܝܢ ܐܝܓܘܦܛܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib356-4" type="sic">ܐܰܘܓܺܝܢ ܐܺܝܓܘܽܦܛܳܝ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib356-3" type="sic">اوجين القبطي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib356-2" type="sic">Eugene the Copt</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib356-4" type="split">
+                              <forename>ܐܘܓܝܢ</forename>
+                              <addName type="untagged-title">ܐܝܓܘܦܛܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib356-4" type="split">
+                              <forename>ܐܰܘܓܺܝܢ</forename>
+                              <addName type="untagged-title">ܐܺܝܓܘܽܦܛܳܝ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib356-3" type="split">
+                              <forename>اوجين</forename>
+                              <addName type="untagged-title">القبطي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib356-2" type="split">
+                              <forename>Eugene</forename>
+                              <addName type="untagged-title">the Copt</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib356-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">63</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib356-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib356-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">147</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib356-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

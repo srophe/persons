@@ -33,6 +33,71 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib175-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܬܪܝܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib175-4" type="sic">ܕܝܺܘܢܢܘܣܝܘܣ ܬܪܰܝܳܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib175-3" type="sic">ديونيسيوس الثاني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib175-2" type="sic">Dionysius II</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib175-4" type="split">
+                              <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܬܪܝܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib175-4" type="split">
+                              <forename>ܕܝܺܘܢܢܘܣܝܘܣ</forename>
+                              <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib175-3" type="split"/>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib175-2" type="split">
+                              <forename>Dionysius</forename>
+                              <addName type="untagged-title">II</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib175-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">174</citedRange>
+                     <citedRange unit="pp">404</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib175-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">174</citedRange>
+                     <citedRange unit="pp">356</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib175-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">174</citedRange>
+                     <citedRange unit="pp">384</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

@@ -32,6 +32,51 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib849-4" type="sic">ܣܘܩܪܐܛ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib849-4" type="sic">ܣܽܘܩܪܰܐܛ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib849-3" type="sic">سقراط</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib849-4" type="split">
+                              <forename>ܣܘܩܪܐܛ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib849-4" type="split">
+                              <forename>ܣܽܘܩܪܰܐܛ</forename>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib849-3" type="split">
+                              <forename>سقراط</forename>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib849-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">128</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib849-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

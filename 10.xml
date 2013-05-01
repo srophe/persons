@@ -44,10 +44,76 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib10-1" type="split">
                      <forename>Aphrahaṭ</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib10-4" type="sic">ܐܦܪܗܛ ܦܪܣܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib10-4" type="sic">ܐܰܦܪܗܰܛ ܦܳܪܣܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib10-3" type="sic">افرهاط الفارسي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib10-2" type="sic">Aphrahat the Persian</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib10-4" type="split">
+                              <forename>ܐܦܪܗܛ</forename>
+                              <addName type="untagged-title">ܦܪܣܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib10-4" type="split">
+                              <forename>ܐܰܦܪܗܰܛ</forename>
+                              <addName type="untagged-title">ܦܳܪܣܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib10-3" type="split">
+                              <forename>افرهاط</forename>
+                              <addName type="untagged-title">الفارسي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib10-2" type="split"/>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib10-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
+                  </bibl>
+                  <bibl xml:id="bib10-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">8</citedRange>
+                     <citedRange unit="pp">228</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib10-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">8</citedRange>
+                     <citedRange unit="pp">195</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib10-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">8</citedRange>
+                     <citedRange unit="pp">217</citedRange>
                   </bibl>
                </person>
             </listPerson>

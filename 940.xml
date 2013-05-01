@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib940-4" type="sic">ܡܫܡܫܢܐ ܐܒܘ ܣܥܕ ܐܘܪܗܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib940-4" type="sic">ܡܫܰܡܫܳܢܐ ܐܰܒܳܘ ܣܰܥܕ ܐܘܽܪܗܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib940-3" type="sic">الشماس ابو سعد الرهاوي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib940-2" type="sic">Deacon Abu Sa‘d of Edessa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib940-4" type="split">
+                              <forename>ܐܒܘ ܣܥܕ</forename>
+                              <addName type="untagged-title">ܡܫܡܫܢܐ، ܐܘܪܗܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib940-4" type="split">
+                              <forename>ܐܰܒܳܘ ܣܰܥܕ</forename>
+                              <addName type="untagged-title">ܡܫܰܡܫܳܢܐ، ܐܘܽܪܗܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib940-3" type="split">
+                              <forename>ابو سعد</forename>
+                              <addName type="untagged-title">الشماس, الرهاوي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib940-2" type="split">
+                              <forename>Abu Sa‘d</forename>
+                              <addName type="untagged-title">Deacon, of Edessa</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib940-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">215</citedRange>
+                     <citedRange unit="pp">448</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib940-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">215</citedRange>
+                     <citedRange unit="pp">397</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib940-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">215</citedRange>
+                     <citedRange unit="pp">428</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

@@ -42,6 +42,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib6-4" type="sic">ܬܐܘܦܝܠ ܐܘܪܗܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib6-4" type="sic">ܬܶܐܘܳܦܝܠ ܐܘܪܗܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib6-3" type="sic">ثئوفيل الرهاوي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib6-2" type="sic">Theophilus of Edessa</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib6-4" type="split">
+                              <forename>ܬܐܘܦܝܠ</forename>
+                              <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib6-4" type="split">
+                              <forename>ܬܶܐܘܳܦܝܠ</forename>
+                              <addName type="untagged-title">ܐܘܪܗܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib6-3" type="split">
+                              <forename>ثئوفيل</forename>
+                              <addName type="untagged-title">الرهاوي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib6-2" type="split">
+                              <forename>Theophilus</forename>
+                              <addName type="untagged-title">of Edessa</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib6-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">4</citedRange>
+                     <citedRange unit="pp">227</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib6-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">4</citedRange>
+                     <citedRange unit="pp">194</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib6-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">4</citedRange>
+                     <citedRange unit="pp">216</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

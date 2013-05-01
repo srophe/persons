@@ -38,11 +38,60 @@
                      <forename>Andreas</forename>
                      <surname>Masius</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib625-4" type="sic">ܐܢܕܪܐܘܣ ܡܐܣܝܘܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib625-4" type="sic">ܐܰܢܕܪܰܐܘܣ ܡܰܐܣܝܘܣ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib625-3" type="sic">اندراوس ماسيوس</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib625-4" type="split">
+                              <forename>ܐܢܕܪܐܘܣ</forename>
+                              <surname>ܡܐܣܝܘܣ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib625-4" type="split">
+                              <forename>ܐܰܢܕܪܰܐܘܣ</forename>
+                              <surname>ܡܰܐܣܝܘܣ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib625-3" type="split">
+                              <forename>اندراوس</forename>
+                              <surname>ماسيوس</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib625-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">361</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib625-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">473</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib625-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

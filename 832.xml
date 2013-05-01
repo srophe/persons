@@ -36,11 +36,75 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib832-1" type="split">
                      <forename>Yuḥanon Maron</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib832-4" type="sic">ܝܘܚܢܢ ܡܐܪܘܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib832-4" type="sic">ܝܘܚܰܢܢ ܡܰܐܪܘܽܢ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib832-3" type="sic">يوحنا مارون</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib832-2" type="sic">John Marun</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib832-4" type="split">
+                              <forename>ܝܘܚܢܢ</forename>
+                              <addName type="untagged-title">ܡܐܪܘܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib832-4" type="split">
+                              <forename>ܝܘܚܰܢܢ</forename>
+                              <addName type="untagged-title">ܡܰܐܪܘܽܢ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib832-3" type="split">
+                              <forename>يوحنا</forename>
+                              <addName type="untagged-title">مارون</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib832-2" type="split">
+                              <forename>John</forename>
+                              <addName type="untagged-title">Marun</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib832-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">612</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib832-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib832-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">363</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib832-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

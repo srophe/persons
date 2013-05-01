@@ -33,6 +33,78 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib229-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܝܥܩܘܒ ܒܪ ܬܫܟܟܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib229-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܳܐ ܝܰܥܩܘܒ ܒܰܪ ܬܫܟܟܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib229-3" type="sic">المطران يعقوب ابن تشككو</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib229-2" type="sic">Metropolitan Jacob Bar Shakkoko</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib229-4" type="split">
+                              <forename>ܝܥܩܘܒ</forename>
+                              <surname>ܒܪ ܬܫܟܟܐ</surname>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܡܟܬܒܢܐ ܐܘܪܗܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib229-4" type="split">
+                              <forename>ܝܰܥܩܘܒ</forename>
+                              <surname>ܒܰܪ ܬܫܟܟܳܐ</surname>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib229-3" type="split">
+                              <forename>يعقوب</forename>
+                              <surname>ابن تشككو</surname>
+                              <addName type="untagged-title">المطران</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib229-2" type="split">
+                              <forename>Jacob</forename>
+                              <surname>Bar Shakkoko</surname>
+                              <addName type="untagged-title">Metropolitan</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib229-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">226</citedRange>
+                     <citedRange unit="pp">454</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib229-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">226</citedRange>
+                     <citedRange unit="pp">403</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib229-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">226</citedRange>
+                     <citedRange unit="pp">434</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

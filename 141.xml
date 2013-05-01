@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib141-4" type="sic">ܐܠܝܐ ܚܪܢܝܐ ܐܦܝܣܩܘܦܐ ܕܣܠܡܝܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib141-4" type="sic">ܐܠܝܐ ܚܳܪܳܢܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܣܰܠܡܝܗ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib141-3" type="sic">ايليا الحراني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib141-2" type="sic">Elijah of Ḥarran</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib141-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܚܪܢܝܐ ܐܦܝܣܩܘܦܐ ܕܣܠܡܝܗ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib141-4" type="split">
+                              <forename>ܐܠܝܐ</forename>
+                              <addName type="untagged-title">ܚܳܪܳܢܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܣܰܠܡܝܗ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib141-3" type="split">
+                              <forename>ايليا</forename>
+                              <addName type="untagged-title">الحراني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib141-2" type="split">
+                              <forename>Elijah</forename>
+                              <addName type="untagged-title">of Ḥarran</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib141-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">140</citedRange>
+                     <citedRange unit="pp">371</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib141-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">140</citedRange>
+                     <citedRange unit="pp">324</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib141-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">140</citedRange>
+                     <citedRange unit="pp">353</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

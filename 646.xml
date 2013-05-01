@@ -38,11 +38,75 @@
                      <forename>Mushe</forename>
                      <addName type="untagged-title">of Mardin</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib646-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܡܘܫܐ ܨܘܪܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib646-4" type="sic">ܡܺܝܛܪܘܦܘܠܝܛܐ ܡܘܫܶܐ ܨܰܘܪܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib646-3" type="sic">المطران موسى الصَّوري</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib646-2" type="sic">Moses al-Ṣawri</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib646-4" type="split">
+                              <forename>ܡܘܫܐ</forename>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ, ܨܘܪܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib646-4" type="split">
+                              <forename>ܡܘܫܶܐ</forename>
+                              <addName type="untagged-title">ܡܺܝܛܪܘܦܘܠܝܛܐ, ܨܰܘܪܳܝܳܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib646-3" type="split">
+                              <forename>موسى</forename>
+                              <addName type="untagged-title">المطران, الصَّوري</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib646-2" type="split">
+                              <forename>Moses</forename>
+                              <addName type="untagged-title">al-Ṣawri</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib646-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">386</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib646-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib646-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">473</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib646-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

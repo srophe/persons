@@ -38,11 +38,60 @@
                      <forename>Anton</forename>
                      <surname>Baumstark</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib377-4" type="sic">ܐܢܛܘܢ ܒܘܡܫܬܪܟ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib377-4" type="sic">ܐܰܢܛܘܢ ܒܰܘܡܶܫܬܪܰܟ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib377-3" type="sic">انطون بومشترك</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib377-4" type="split">
+                              <forename>ܐܢܛܘܢ</forename>
+                              <surname>ܒܘܡܫܬܪܟ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib377-4" type="split">
+                              <forename>ܐܰܢܛܘܢ</forename>
+                              <surname>ܒܰܘܡܶܫܬܪܰܟ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib377-3" type="split">
+                              <forename>انطون</forename>
+                              <surname>بومشترك</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib377-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">88</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib377-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">3</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib377-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

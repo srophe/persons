@@ -38,11 +38,60 @@
                      <forename>Paul-Rubens</forename>
                      <surname>Duval</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib459-4" type="sic">ܪܘܒܢܣ ܕܘܦܐܠ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib459-4" type="sic">ܪܘܒܢܣ ܕܘܦܰܐܠ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib459-3" type="sic">روبنس دوفال</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib459-4" type="split">
+                              <forename>ܪܘܒܢܣ</forename>
+                              <surname>ܕܘܦܐܠ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib459-4" type="split">
+                              <forename>ܪܘܒܢܣ</forename>
+                              <surname>ܕܘܦܰܐܠ</surname>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib459-3" type="split">
+                              <forename>روبنس</forename>
+                              <surname>دوفال</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib459-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">179</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib459-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">482</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib459-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

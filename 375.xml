@@ -36,11 +36,79 @@
                   <persName xml:lang="syr-Latn-x-gedsh" source="#bib375-1" type="split">
                      <forename>Baselios Gewargis</forename>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib375-4" type="sic">ܓܘܪܓܝܣ ܒܪ ܐܒܪܗܡ ܥܒܕܐܠܢܘܪ ܚܠܒܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib375-4" type="sic">ܓܶܘܰܪܓܝܣ ܒܰܪ ܐܰܒܪܗܡ ܥܰܒܕܐܠܢܽܘܪ ܚܳܠܒܳܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib375-3" type="sic">جرجس بن ابراهيم عبدالنور الحلبي</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib375-2" type="sic">George, son of Abraham ʿAbd al-Nur of Aleppo</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib375-4" type="split">
+                              <forename>ܓܘܪܓܝܣ</forename>
+                              <surname>ܒܪ ܐܒܪܗܡ ܥܒܕܐܠܢܘܪ</surname>
+                              <addName type="untagged-title">ܚܠܒܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib375-4" type="split">
+                              <forename>ܓܶܘܰܪܓܝܣ</forename>
+                              <surname>ܒܰܪ ܐܰܒܪܗܡ ܥܰܒܕܐܠܢܽܘܪ</surname>
+                              <addName type="untagged-title">ܚܳܠܒܳܝܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib375-3" type="split">
+                              <forename>جرجس</forename>
+                              <surname>بن ابراهيم عبدالنور</surname>
+                              <addName type="untagged-title">الحلبي</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib375-2" type="split">
+                              <forename>George</forename>
+                              <surname>son of Abraham ʿAbd al-Nur</surname>
+                              <addName type="untagged-title">of Aleppo</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib375-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">86</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib375-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib375-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">496</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib375-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

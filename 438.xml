@@ -38,11 +38,75 @@
                      <forename>Daniel</forename>
                      <addName type="untagged-title">bar Maryam</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib438-4" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib438-4" type="sic">ܕܳܢܝܐܝܠ ܒܰܪ ܡܰܪܝܰܡ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib438-3" type="sic">دانيال ابن مريم</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib438-2" type="sic">Daniel bar Mariam</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib438-4" type="split">
+                              <forename>ܕܢܝܐܝܠ</forename>
+                              <addName type="untagged-title">ܒܪ ܡܪܝܡ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib438-4" type="split">
+                              <forename>ܕܳܢܝܐܝܠ</forename>
+                              <addName type="untagged-title">ܒܰܪ ܡܰܪܝܰܡ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib438-3" type="split">
+                              <forename>دانيال</forename>
+                              <addName type="untagged-title">ابن مريم</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib438-2" type="split">
+                              <forename>Daniel</forename>
+                              <addName type="untagged-title">bar Mariam</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib438-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">151</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib438-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib438-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">206</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib438-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

@@ -33,6 +33,74 @@
                         </seg>
                      </choice>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib247-4" type="sic">ܦܛܪܝܪܟܐ ܡܝܟܐܝܠ ܬܪܝܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib247-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܡܝܟܳܐܝܠ ܬܪܰܝܳܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib247-3" type="sic">البطريرك ميخائيل الثاني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib247-2" type="sic">Patriarch Michael II</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib247-4" type="split">
+                              <forename>ܡܝܟܐܝܠ</forename>
+                              <addName type="untagged-title">ܦܛܪܝܪܟܐ ܬܪܝܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib247-4" type="split">
+                              <forename>ܡܝܟܳܐܝܠ</forename>
+                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܬܪܰܝܳܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib247-3" type="split">
+                              <forename>ميخائيل</forename>
+                              <addName type="untagged-title">البطريرك , الثاني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib247-2" type="split">
+                              <forename>Michael</forename>
+                              <addName type="untagged-title">Patriarch, II</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib247-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="entry">242</citedRange>
+                     <citedRange unit="pp">488</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib247-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="entry">242</citedRange>
+                     <citedRange unit="pp">437</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib247-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="entry">242</citedRange>
+                     <citedRange unit="pp">469</citedRange>
+                  </bibl>
                </person>
             </listPerson>
          </particDesc>

@@ -38,11 +38,75 @@
                      <forename>Ignatius</forename>
                      <addName type="untagged-title">of Antioch</addName>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib544-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܢܘܪܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib544-4" type="sic">ܐܺܝܓܢܰܐܛܺܝܘܣ ܢܘܽܪܳܢܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib544-3" type="sic">اغناطيوس النوراني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib544-2" type="sic">Ignatius the Illuminator</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib544-4" type="split">
+                              <forename>ܐܝܓܢܐܛܝܘܣ</forename>
+                              <addName type="untagged-title">ܢܘܪܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib544-4" type="split">
+                              <forename>ܐܺܝܓܢܰܐܛܺܝܘܣ</forename>
+                              <addName type="untagged-title">ܢܘܽܪܳܢܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib544-3" type="split">
+                              <forename>اغناطيوس</forename>
+                              <addName type="untagged-title">النوراني</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib544-2" type="split">
+                              <forename>Ignatius</forename>
+                              <addName type="untagged-title">the Illuminator</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib544-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">268</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib544-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib544-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">170</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib544-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>

@@ -38,11 +38,79 @@
                      <forename>Josephus Simonius</forename>
                      <surname>Assemani</surname>
                   </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib349-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܬܐ ܫܡܥܘܢ ܫܡܥܘܢܝܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib349-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܫܶܡܥܘܢ ܫܶܡܥܘܢܳܝܳܐ</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib349-3" type="sic">المطران يوسف سمعان السمعاني</persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib349-2" type="sic">Metropolitan Joseph Simʿan al-Simʿani</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Syrc" source="#bib349-4" type="split">
+                              <forename>ܫܡܥܘܢ</forename>
+                              <surname>ܫܡܥܘܢܝܐ</surname>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܬܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="syr-Syrj" source="#bib349-4" type="split">
+                              <forename>ܫܶܡܥܘܢ</forename>
+                              <surname>ܫܶܡܥܘܢܳܝܳܐ</surname>
+                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib349-3" type="split">
+                              <forename>يوسف سمعان</forename>
+                              <surname>السمعاني</surname>
+                              <addName type="untagged-title">المطران</addName>
+                           </persName>
+                        </seg>
+                        <seg>
+                           <persName xml:lang="en" source="#bib349-2" type="split">
+                              <forename>Joseph Simʿan</forename>
+                              <surname>al-Simʿani</surname>
+                              <addName type="untagged-title">Metropolitan</addName>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
                   <bibl xml:id="bib349-1">
                      <title xml:lang="en">The Gorgias Encyclopedic
                                                   Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
                      <ptr target="http://syriaca.org/bibl/1"/>
                      <citedRange unit="entry">54</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib349-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                     <abbr>Barsoum (English)</abbr>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                  </bibl>
+                  <bibl xml:id="bib349-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">473</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib349-4">
+                     <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                     <abbr>Barsoum (Syriac)</abbr>
+                     <ptr target="http://syriaca.org/bibl/3"/>
                   </bibl>
                </person>
             </listPerson>
