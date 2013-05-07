@@ -17,14 +17,19 @@
       <body>
          <listPerson>
             <person xml:id="person-42">
-               <persName resp="syriaca.org" type="sic">
+               <persName xml:lang="syr-Latn-x-gedsh">Yaʿqub of Serugh</persName>
+               <persName xml:lang="syr-Latn-x-barsoum">Mar Jacob of Sarug, the Malphono</persName>
+               <persName xml:lang="ar">مار يعقوب السروجي الملفان</persName>
+               <persName xml:lang="syr">ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</persName>
+               <persName xml:lang="syr-Syrj">ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</persName>
+               <persName type="sic" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="sic">Yaʿqub of Serugh</persName>
                      </seg>
                   </choice>
                </persName>
-               <persName resp="syriaca.org" type="split">
+               <persName type="split" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="split">

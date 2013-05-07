@@ -17,14 +17,19 @@
       <body>
          <listPerson>
             <person xml:id="person-52">
-               <persName resp="syriaca.org" type="sic">
+               <persName xml:lang="syr-Latn-x-gedsh">John bar Aphtonia</persName>
+               <persName xml:lang="syr-Latn-x-barsoum">John Bar Aphtonia</persName>
+               <persName xml:lang="ar">يوحنا ابن افتونيا</persName>
+               <persName xml:lang="syr">ܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</persName>
+               <persName xml:lang="syr-Syrj">ܝܘܚܰܢܢ ܒܪ ܐܰܦܬܘܢܝܰܐ</persName>
+               <persName type="sic" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="sic">John bar Aphtonia</persName>
                      </seg>
                   </choice>
                </persName>
-               <persName resp="syriaca.org" type="split">
+               <persName type="split" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="split">

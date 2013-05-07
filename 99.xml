@@ -17,14 +17,19 @@
       <body>
          <listPerson>
             <person xml:id="person-99">
-               <persName resp="syriaca.org" type="sic">
+               <persName xml:lang="syr-Latn-x-gedsh">Severos Sebokht</persName>
+               <persName xml:lang="syr-Latn-x-barsoum">Severus Sabukht</persName>
+               <persName xml:lang="ar">ساويرا سابوخت</persName>
+               <persName xml:lang="syr">ܣܐܘܝܪܐ ܣܐܒܘܟܬ</persName>
+               <persName xml:lang="syr-Syrj">ܣܶܐܘܝܪܶܐ ܣܰܐܒܘܟܬ</persName>
+               <persName type="sic" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib99-1" type="sic">Severos Sebokht</persName>
                      </seg>
                   </choice>
                </persName>
-               <persName resp="syriaca.org" type="split">
+               <persName type="split" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" source="#bib99-1" type="split">

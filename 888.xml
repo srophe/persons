@@ -17,14 +17,17 @@
       <body>
          <listPerson>
             <person xml:id="person-888">
-               <persName resp="syriaca.org" type="sic">
+               <persName xml:lang="syr">ܦܘܦܠܝܘܣ</persName>
+               <persName xml:lang="syr-Syrn">ܦܘܼܦܠܝܼܘܿܣ</persName>
+               <persName xml:lang="syr-Latn-x-gedsh">Publius</persName>
+               <persName type="sic" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" type="sic">Publius</persName>
                      </seg>
                   </choice>
                </persName>
-               <persName resp="syriaca.org" type="split">
+               <persName type="split" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Latn-x-gedsh" type="split">

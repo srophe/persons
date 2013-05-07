@@ -17,7 +17,11 @@
       <body>
          <listPerson>
             <person xml:id="person-11">
-               <persName resp="syriaca.org" type="sic">
+               <persName xml:lang="syr">ܒܣܝܠܝܘܣ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
+               <persName xml:lang="syr-Syrj">ܒܰܣܝܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܚܡܶܨ</persName>
+               <persName xml:lang="syr">ܒܣܝܠܝܘܣ ܕܚܡܨ</persName>
+               <persName xml:lang="syr-Latn-x-gedsh">Basil of Emesa</persName>
+               <persName type="sic" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Syrc" type="sic">ܒܣܝܠܝܘܣ ܕܚܡܨ</persName>
@@ -27,7 +31,7 @@
                      </seg>
                   </choice>
                </persName>
-               <persName resp="syriaca.org" type="split">
+               <persName type="split" subtype="syriaca-authorized">
                   <choice>
                      <seg>
                         <persName xml:lang="syr-Syrc" type="split">
