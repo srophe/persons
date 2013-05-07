@@ -12,102 +12,97 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-174">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ḥazqiel of Melitene</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Ḥazqiel</forename>
-                              <addName type="untagged-title">of Melitene</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib174-4" type="sic">ܚܙܩܝܐܝܠ ܬܪܝܢܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib174-4" type="sic">ܚܰܙܩܝܐܝܠ ܬܪܰܝܳܢܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܡܝܺܠܝܛܝܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib174-3" type="sic">حزقيال الثاني مطران ملطية</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib174-2" type="sic">Ezekiel II, metropolitan of Melitene</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib174-4" type="split">
-                              <forename>ܚܙܩܝܐܝܠ</forename>
-                              <addName type="untagged-title">ܬܪܝܢܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib174-4" type="split">
-                              <forename>ܚܰܙܩܝܐܝܠ</forename>
-                              <addName type="untagged-title">ܬܪܰܝܳܢܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib174-3" type="split">
-                              <forename>حزقيال</forename>
-                              <addName type="untagged-title">الثاني ,  مطران ملطية</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib174-2" type="split">
-                              <forename>Ezekiel</forename>
-                              <addName type="untagged-title">II, Metropolitan of Melitene</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib174-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">173</citedRange>
-                     <citedRange unit="pp">404</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib174-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">173</citedRange>
-                     <citedRange unit="pp">355</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib174-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">173</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-174">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ḥazqiel of Melitene</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Ḥazqiel</forename>
+                           <addName type="untagged-title">of Melitene</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib174-4" type="sic">ܚܙܩܝܐܝܠ ܬܪܝܢܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib174-4" type="sic">ܚܰܙܩܝܐܝܠ ܬܪܰܝܳܢܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܡܝܺܠܝܛܝܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib174-3" type="sic">حزقيال الثاني مطران ملطية</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib174-2" type="sic">Ezekiel II, metropolitan of Melitene</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib174-4" type="split">
+                           <forename>ܚܙܩܝܐܝܠ</forename>
+                           <addName type="untagged-title">ܬܪܝܢܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib174-4" type="split">
+                           <forename>ܚܰܙܩܝܐܝܠ</forename>
+                           <addName type="untagged-title">ܬܪܰܝܳܢܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib174-3" type="split">
+                           <forename>حزقيال</forename>
+                           <addName type="untagged-title">الثاني ,  مطران ملطية</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib174-2" type="split">
+                           <forename>Ezekiel</forename>
+                           <addName type="untagged-title">II, Metropolitan of Melitene</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib174-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">173</citedRange>
+                  <citedRange unit="pp">404</citedRange>
+               </bibl>
+               <bibl xml:id="bib174-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">173</citedRange>
+                  <citedRange unit="pp">355</citedRange>
+               </bibl>
+               <bibl xml:id="bib174-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">173</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

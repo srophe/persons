@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-97">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
-                              <forename>Denḥa</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
-                     <forename>Denḥa</forename>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib97-4" type="sic">ܕܢܚܐ ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib97-4" type="sic">ܕܢܚܳܐ ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib97-3" type="sic">دنحا الاول مفريان المشرق</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib97-2" type="sic">Denḥa I, Maphryono of the East</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib97-4" type="split">
-                              <forename>ܕܢܚܐ</forename>
-                              <addName type="untagged-title">ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib97-4" type="split">
-                              <forename>ܕܢܚܳܐ</forename>
-                              <addName type="untagged-title">ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib97-3" type="split">
-                              <forename>دنحا</forename>
-                              <addName type="untagged-title">الاول  مفريان المشرق</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib97-2" type="split">
-                              <forename>Denḥa I</forename>
-                              <addName type="untagged-title">Maphryono of the East</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib97-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib97-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">92</citedRange>
-                     <citedRange unit="pp">325</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib97-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">92</citedRange>
-                     <citedRange unit="pp">283</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib97-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">92</citedRange>
-                     <citedRange unit="pp">309</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-97">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
+                           <forename>Denḥa</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
+                  <forename>Denḥa</forename>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib97-4" type="sic">ܕܢܚܐ ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib97-4" type="sic">ܕܢܚܳܐ ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib97-3" type="sic">دنحا الاول مفريان المشرق</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib97-2" type="sic">Denḥa I, Maphryono of the East</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib97-4" type="split">
+                           <forename>ܕܢܚܐ</forename>
+                           <addName type="untagged-title">ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib97-4" type="split">
+                           <forename>ܕܢܚܳܐ</forename>
+                           <addName type="untagged-title">ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib97-3" type="split">
+                           <forename>دنحا</forename>
+                           <addName type="untagged-title">الاول  مفريان المشرق</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib97-2" type="split">
+                           <forename>Denḥa I</forename>
+                           <addName type="untagged-title">Maphryono of the East</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib97-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib97-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">92</citedRange>
+                  <citedRange unit="pp">325</citedRange>
+               </bibl>
+               <bibl xml:id="bib97-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">92</citedRange>
+                  <citedRange unit="pp">283</citedRange>
+               </bibl>
+               <bibl xml:id="bib97-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">92</citedRange>
+                  <citedRange unit="pp">309</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

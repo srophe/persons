@@ -12,95 +12,90 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-537">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
-                              <forename>Hippolytus</forename>
-                              <addName type="untagged-title">of Rome</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
-                     <forename>Hippolytus</forename>
-                     <addName type="untagged-title">of Rome</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib537-4" type="sic">ܐܝܦܘܠܝܛܘܣ ܕܪܘܡܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib537-4" type="sic">ܐܺܝܦܽܘܠܺܝܛܳܘܣ ܕܪܽܘܡܺܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib537-3" type="sic">هيبوليطس الروماني</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib537-4" type="split">
-                              <forename>ܐܝܦܘܠܝܛܘܣ</forename>
-                              <addName type="untagged-title">ܕܪܘܡܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib537-4" type="split">
-                              <forename>ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename>
-                              <addName type="untagged-title">ܕܪܽܘܡܺܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib537-3" type="split">
-                              <forename>هيبوليطس</forename>
-                              <addName type="untagged-title">الروماني</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib537-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">261</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib537-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">170</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib537-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-537">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
+                           <forename>Hippolytus</forename>
+                           <addName type="untagged-title">of Rome</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
+                  <forename>Hippolytus</forename>
+                  <addName type="untagged-title">of Rome</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib537-4" type="sic">ܐܝܦܘܠܝܛܘܣ ܕܪܘܡܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib537-4" type="sic">ܐܺܝܦܽܘܠܺܝܛܳܘܣ ܕܪܽܘܡܺܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib537-3" type="sic">هيبوليطس الروماني</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib537-4" type="split">
+                           <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+                           <addName type="untagged-title">ܕܪܘܡܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib537-4" type="split">
+                           <forename>ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename>
+                           <addName type="untagged-title">ܕܪܽܘܡܺܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib537-3" type="split">
+                           <forename>هيبوليطس</forename>
+                           <addName type="untagged-title">الروماني</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib537-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">261</citedRange>
+               </bibl>
+               <bibl xml:id="bib537-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">170</citedRange>
+               </bibl>
+               <bibl xml:id="bib537-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

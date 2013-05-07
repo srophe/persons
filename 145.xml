@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-145">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
-                              <forename>Quryaqos</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
-                     <forename>Quryaqos</forename>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib145-4" type="sic">ܩܘܪܝܐܩܘܣ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib145-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib145-3" type="sic">قرياقس بطريرك انطاكية</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib145-2" type="sic">Quryaqos, Patriarch of Antioch</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib145-4" type="split">
-                              <forename>ܩܘܪܝܐܩܘܣ</forename>
-                              <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib145-4" type="split">
-                              <forename>ܩܘܪܝܰܐܩܘܣ</forename>
-                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib145-3" type="split">
-                              <forename>قرياقس</forename>
-                              <addName type="untagged-title">بطريرك انطاكية</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib145-2" type="split">
-                              <forename>Quryaqos</forename>
-                              <addName type="untagged-title">Patriarch of Antioch</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib145-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib145-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">144</citedRange>
-                     <citedRange unit="pp">376</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib145-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">144</citedRange>
-                     <citedRange unit="pp">329</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib145-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">144</citedRange>
-                     <citedRange unit="pp">358</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-145">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
+                           <forename>Quryaqos</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
+                  <forename>Quryaqos</forename>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib145-4" type="sic">ܩܘܪܝܐܩܘܣ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib145-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib145-3" type="sic">قرياقس بطريرك انطاكية</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib145-2" type="sic">Quryaqos, Patriarch of Antioch</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib145-4" type="split">
+                           <forename>ܩܘܪܝܐܩܘܣ</forename>
+                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib145-4" type="split">
+                           <forename>ܩܘܪܝܰܐܩܘܣ</forename>
+                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib145-3" type="split">
+                           <forename>قرياقس</forename>
+                           <addName type="untagged-title">بطريرك انطاكية</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib145-2" type="split">
+                           <forename>Quryaqos</forename>
+                           <addName type="untagged-title">Patriarch of Antioch</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib145-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib145-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">144</citedRange>
+                  <citedRange unit="pp">376</citedRange>
+               </bibl>
+               <bibl xml:id="bib145-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">144</citedRange>
+                  <citedRange unit="pp">329</citedRange>
+               </bibl>
+               <bibl xml:id="bib145-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">144</citedRange>
+                  <citedRange unit="pp">358</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

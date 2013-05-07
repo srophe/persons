@@ -12,92 +12,87 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-788">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Acts of Thomas</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <addName type="untagged-title">Author of the Acts of Thomas</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib788-4" type="sic">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib788-4" type="sic">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib788-3" type="sic">اعمال توما الرسول</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib788-4" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib788-4" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib788-3" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib788-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">554</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib788-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">51</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib788-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-788">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Acts of Thomas</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <addName type="untagged-title">Author of the Acts of Thomas</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib788-4" type="sic">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib788-4" type="sic">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib788-3" type="sic">اعمال توما الرسول</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib788-4" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib788-4" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib788-3" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib788-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">554</citedRange>
+               </bibl>
+               <bibl xml:id="bib788-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">51</citedRange>
+               </bibl>
+               <bibl xml:id="bib788-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

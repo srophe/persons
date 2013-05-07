@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-244">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Tumo of Ḥaḥ</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Tumo</forename>
-                              <addName type="untagged-title">of Ḥaḥ</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܐܚܝܐ ܥܢܘܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib244-3" type="sic">توما الحاحي الناسك</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib244-2" type="sic">The Ascetic Thomas of Ḥaḥ</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib244-4" type="split">
-                              <forename>ܬܐܘܡܐ</forename>
-                              <addName type="untagged-title">ܚܐܚܝܐ ܥܢܘܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib244-4" type="split">
-                              <forename>ܬܐܘܡܐ</forename>
-                              <addName type="untagged-title">ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib244-3" type="split">
-                              <forename>توما</forename>
-                              <addName type="untagged-title">الحاحي , الناسك</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib244-2" type="split">
-                              <forename>Thomas</forename>
-                              <addName type="untagged-title">The Ascetic, of Ḥaḥ</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib244-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">239</citedRange>
-                     <citedRange unit="pp">486</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib244-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">239</citedRange>
-                     <citedRange unit="pp">435</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib244-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">239</citedRange>
-                     <citedRange unit="pp">467</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-244">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Tumo of Ḥaḥ</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Tumo</forename>
+                           <addName type="untagged-title">of Ḥaḥ</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܐܚܝܐ ܥܢܘܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib244-3" type="sic">توما الحاحي الناسك</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib244-2" type="sic">The Ascetic Thomas of Ḥaḥ</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib244-4" type="split">
+                           <forename>ܬܐܘܡܐ</forename>
+                           <addName type="untagged-title">ܚܐܚܝܐ ܥܢܘܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib244-4" type="split">
+                           <forename>ܬܐܘܡܐ</forename>
+                           <addName type="untagged-title">ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib244-3" type="split">
+                           <forename>توما</forename>
+                           <addName type="untagged-title">الحاحي , الناسك</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib244-2" type="split">
+                           <forename>Thomas</forename>
+                           <addName type="untagged-title">The Ascetic, of Ḥaḥ</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib244-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">239</citedRange>
+                  <citedRange unit="pp">486</citedRange>
+               </bibl>
+               <bibl xml:id="bib244-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">239</citedRange>
+                  <citedRange unit="pp">435</citedRange>
+               </bibl>
+               <bibl xml:id="bib244-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">239</citedRange>
+                  <citedRange unit="pp">467</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

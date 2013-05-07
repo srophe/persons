@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-161">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="sic">Iwannis of Dara</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="split">
-                              <forename>Iwannis</forename>
-                              <addName type="untagged-title">of Dara</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="sic">Iwannis of Dara</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="split">
-                     <forename>Iwannis</forename>
-                     <addName type="untagged-title">of Dara</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib161-4" type="sic">ܐܝܘܐܢܝܣ ܐܦܝܣܩܘܦܐ ܕܕܪܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib161-4" type="sic">ܐܺܝܘܰܐܢܝܣ ܐܶܦܝܣܩܘܦܳܐ ܕܕܳܪܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib161-3" type="sic">اياونيس مطران دارا</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib161-2" type="sic">John, metropolitan of Dara</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib161-4" type="split">
-                              <forename>ܐܝܘܐܢܝܣ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܕܪܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib161-4" type="split">
-                              <forename>ܐܺܝܘܰܐܢܝܣ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܕܳܪܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib161-3" type="split">
-                              <forename>اياونيس</forename>
-                              <addName type="untagged-title">مطران دارا</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib161-2" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">metropolitan of Dara</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib161-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib161-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">160</citedRange>
-                     <citedRange unit="pp">390</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib161-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">160</citedRange>
-                     <citedRange unit="pp">343</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib161-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">160</citedRange>
-                     <citedRange unit="pp">371</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-161">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="sic">Iwannis of Dara</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="split">
+                           <forename>Iwannis</forename>
+                           <addName type="untagged-title">of Dara</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="sic">Iwannis of Dara</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib161-1" type="split">
+                  <forename>Iwannis</forename>
+                  <addName type="untagged-title">of Dara</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib161-4" type="sic">ܐܝܘܐܢܝܣ ܐܦܝܣܩܘܦܐ ܕܕܪܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib161-4" type="sic">ܐܺܝܘܰܐܢܝܣ ܐܶܦܝܣܩܘܦܳܐ ܕܕܳܪܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib161-3" type="sic">اياونيس مطران دارا</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib161-2" type="sic">John, metropolitan of Dara</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib161-4" type="split">
+                           <forename>ܐܝܘܐܢܝܣ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܕܪܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib161-4" type="split">
+                           <forename>ܐܺܝܘܰܐܢܝܣ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܕܳܪܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib161-3" type="split">
+                           <forename>اياونيس</forename>
+                           <addName type="untagged-title">مطران دارا</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib161-2" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">metropolitan of Dara</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib161-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib161-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">160</citedRange>
+                  <citedRange unit="pp">390</citedRange>
+               </bibl>
+               <bibl xml:id="bib161-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">160</citedRange>
+                  <citedRange unit="pp">343</citedRange>
+               </bibl>
+               <bibl xml:id="bib161-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">160</citedRange>
+                  <citedRange unit="pp">371</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

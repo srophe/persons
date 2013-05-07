@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-280">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignatius Yaʿqub I</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Ignatius Yaʿqub</forename>
-                              <addName type="untagged-title">I</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib280-4" type="sic">ܦܛܪܝܪܟܐ ܝܥܩܘܒ ܩܕܡܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib280-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܝܰܥܩܘܒ ܩܰܕܡܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib280-3" type="sic">يعقوب الاول بطريرك انطاكية</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib280-2" type="sic">Jacob I, Patriarch of Antioch</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib280-4" type="split">
-                              <forename>ܝܥܩܘܒ</forename>
-                              <addName type="untagged-title">ܦܛܪܝܪܟܐ ܩܕܡܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib280-4" type="split">
-                              <forename>ܝܰܥܩܘܒ</forename>
-                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܩܰܕܡܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib280-3" type="split">
-                              <forename>يعقوب</forename>
-                              <addName type="untagged-title">الاول ,  بطريرك انطاكية</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib280-2" type="split">
-                              <forename>Jacob</forename>
-                              <addName type="untagged-title">I, Patriarch of Antioch</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib280-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">272</citedRange>
-                     <citedRange unit="pp">511</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib280-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">272</citedRange>
-                     <citedRange unit="pp">457</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib280-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">272</citedRange>
-                     <citedRange unit="pp">487</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-280">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignatius Yaʿqub I</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Ignatius Yaʿqub</forename>
+                           <addName type="untagged-title">I</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib280-4" type="sic">ܦܛܪܝܪܟܐ ܝܥܩܘܒ ܩܕܡܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib280-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܝܰܥܩܘܒ ܩܰܕܡܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib280-3" type="sic">يعقوب الاول بطريرك انطاكية</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib280-2" type="sic">Jacob I, Patriarch of Antioch</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib280-4" type="split">
+                           <forename>ܝܥܩܘܒ</forename>
+                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܩܕܡܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib280-4" type="split">
+                           <forename>ܝܰܥܩܘܒ</forename>
+                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܩܰܕܡܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib280-3" type="split">
+                           <forename>يعقوب</forename>
+                           <addName type="untagged-title">الاول ,  بطريرك انطاكية</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib280-2" type="split">
+                           <forename>Jacob</forename>
+                           <addName type="untagged-title">I, Patriarch of Antioch</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib280-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">272</citedRange>
+                  <citedRange unit="pp">511</citedRange>
+               </bibl>
+               <bibl xml:id="bib280-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">272</citedRange>
+                  <citedRange unit="pp">457</citedRange>
+               </bibl>
+               <bibl xml:id="bib280-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">272</citedRange>
+                  <citedRange unit="pp">487</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

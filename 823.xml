@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-823">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
-                              <forename>Yoḥannan</forename>
-                              <surname>bar Zoʿbi</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
-                     <forename>Yoḥannan</forename>
-                     <surname>bar Zoʿbi</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib823-4" type="sic">ܝܘܚܢܢ ܒܪ ܙܘܥܒܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib823-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܙܘܥܒܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib823-3" type="sic">يوحنا ابن زعبي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib823-2" type="sic">John of Zuʿbi</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib823-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <surname>ܒܪ ܙܘܥܒܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib823-4" type="split">
-                              <forename>ܝܘܚܰܢܢ</forename>
-                              <surname>ܒܰܪ ܙܘܥܒܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib823-3" type="split">
-                              <forename>يوحنا</forename>
-                              <surname>ابن زعبي</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib823-2" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">of Zuʿbi</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib823-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">598</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib823-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib823-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">405</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib823-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-823">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
+                           <forename>Yoḥannan</forename>
+                           <surname>bar Zoʿbi</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
+                  <forename>Yoḥannan</forename>
+                  <surname>bar Zoʿbi</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib823-4" type="sic">ܝܘܚܢܢ ܒܪ ܙܘܥܒܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib823-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܙܘܥܒܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib823-3" type="sic">يوحنا ابن زعبي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib823-2" type="sic">John of Zuʿbi</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib823-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <surname>ܒܪ ܙܘܥܒܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib823-4" type="split">
+                           <forename>ܝܘܚܰܢܢ</forename>
+                           <surname>ܒܰܪ ܙܘܥܒܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib823-3" type="split">
+                           <forename>يوحنا</forename>
+                           <surname>ابن زعبي</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib823-2" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">of Zuʿbi</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib823-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">598</citedRange>
+               </bibl>
+               <bibl xml:id="bib823-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib823-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">405</citedRange>
+               </bibl>
+               <bibl xml:id="bib823-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

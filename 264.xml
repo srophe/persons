@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-264">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Barṣawmo Maʿdanoyo</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Barṣawmo</forename>
-                              <addName type="untagged-title">Maʿdanoyo</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib264-4" type="sic">ܒܪܨܘܡ ܡܥܕܢܝܐ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib264-4" type="sic">ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib264-3" type="sic">برصوم المعدني مفريان المشرق </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib264-2" type="sic">Barṣoum Ma‛dani, Maphryono of the East</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib264-4" type="split">
-                              <forename>ܒܪܨܘܡ ܡܥܕܢܝܐ</forename>
-                              <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib264-4" type="split">
-                              <forename>ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ</forename>
-                              <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib264-3" type="split">
-                              <forename>برصوم المعدني</forename>
-                              <addName type="untagged-title">مفريان المشرق</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib264-2" type="split">
-                              <forename>Barṣoum Ma‛dani</forename>
-                              <addName type="untagged-title">Maphryono of the East</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib264-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">259</citedRange>
-                     <citedRange unit="pp">499</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib264-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">259</citedRange>
-                     <citedRange unit="pp">447</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib264-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">259</citedRange>
-                     <citedRange unit="pp">478</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-264">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Barṣawmo Maʿdanoyo</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Barṣawmo</forename>
+                           <addName type="untagged-title">Maʿdanoyo</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib264-4" type="sic">ܒܪܨܘܡ ܡܥܕܢܝܐ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib264-4" type="sic">ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib264-3" type="sic">برصوم المعدني مفريان المشرق </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib264-2" type="sic">Barṣoum Ma‛dani, Maphryono of the East</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib264-4" type="split">
+                           <forename>ܒܪܨܘܡ ܡܥܕܢܝܐ</forename>
+                           <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib264-4" type="split">
+                           <forename>ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ</forename>
+                           <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib264-3" type="split">
+                           <forename>برصوم المعدني</forename>
+                           <addName type="untagged-title">مفريان المشرق</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib264-2" type="split">
+                           <forename>Barṣoum Ma‛dani</forename>
+                           <addName type="untagged-title">Maphryono of the East</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib264-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">259</citedRange>
+                  <citedRange unit="pp">499</citedRange>
+               </bibl>
+               <bibl xml:id="bib264-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">259</citedRange>
+                  <citedRange unit="pp">447</citedRange>
+               </bibl>
+               <bibl xml:id="bib264-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">259</citedRange>
+                  <citedRange unit="pp">478</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

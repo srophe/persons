@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-89">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Severus of Samosata</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Severus</forename>
-                              <addName type="untagged-title">of Samosata</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib89-4" type="sic">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib89-4" type="sic">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib89-3" type="sic">ساويريوس اسقف سيميساط</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib89-2" type="sic">Severus, bishop of Samosata</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib89-4" type="split">
-                              <forename>ܣܘܝܪܝܘܘܣ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib89-4" type="split">
-                              <forename>ܣܶܘܝܪܝܘܘܣ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib89-3" type="split">
-                              <forename>ساويريوس</forename>
-                              <addName type="untagged-title">اسقف سيميساط</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib89-2" type="split">
-                              <forename>Severus</forename>
-                              <addName type="untagged-title">Bishop of Samosata</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib89-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">84</citedRange>
-                     <citedRange unit="pp">319</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib89-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">84</citedRange>
-                     <citedRange unit="pp">278</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib89-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">84</citedRange>
-                     <citedRange unit="pp">304</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-89">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Severus of Samosata</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Severus</forename>
+                           <addName type="untagged-title">of Samosata</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib89-4" type="sic">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib89-4" type="sic">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib89-3" type="sic">ساويريوس اسقف سيميساط</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib89-2" type="sic">Severus, bishop of Samosata</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib89-4" type="split">
+                           <forename>ܣܘܝܪܝܘܘܣ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib89-4" type="split">
+                           <forename>ܣܶܘܝܪܝܘܘܣ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib89-3" type="split">
+                           <forename>ساويريوس</forename>
+                           <addName type="untagged-title">اسقف سيميساط</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib89-2" type="split">
+                           <forename>Severus</forename>
+                           <addName type="untagged-title">Bishop of Samosata</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib89-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">84</citedRange>
+                  <citedRange unit="pp">319</citedRange>
+               </bibl>
+               <bibl xml:id="bib89-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">84</citedRange>
+                  <citedRange unit="pp">278</citedRange>
+               </bibl>
+               <bibl xml:id="bib89-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">84</citedRange>
+                  <citedRange unit="pp">304</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

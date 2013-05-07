@@ -12,95 +12,90 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-411">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
-                              <forename>Jean-Baptiste</forename>
-                              <surname>Chabot</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
-                     <forename>Jean-Baptiste</forename>
-                     <surname>Chabot</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib411-4" type="sic">ܝܘܚܢܢ ܫܒܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib411-4" type="sic">ܝܘܚܰܢܢ ܫܰܒܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib411-3" type="sic">يوحنا شابو</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib411-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <surname>ܫܒܐ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib411-4" type="split">
-                              <forename>ܝܘܚܰܢܢ</forename>
-                              <surname>ܫܰܒܳܐ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib411-3" type="split">
-                              <forename>يوحنا</forename>
-                              <surname>شابو</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib411-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">124</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib411-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">9</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib411-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-411">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
+                           <forename>Jean-Baptiste</forename>
+                           <surname>Chabot</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
+                  <forename>Jean-Baptiste</forename>
+                  <surname>Chabot</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib411-4" type="sic">ܝܘܚܢܢ ܫܒܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib411-4" type="sic">ܝܘܚܰܢܢ ܫܰܒܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib411-3" type="sic">يوحنا شابو</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib411-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <surname>ܫܒܐ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib411-4" type="split">
+                           <forename>ܝܘܚܰܢܢ</forename>
+                           <surname>ܫܰܒܳܐ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib411-3" type="split">
+                           <forename>يوحنا</forename>
+                           <surname>شابو</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib411-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">124</citedRange>
+               </bibl>
+               <bibl xml:id="bib411-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">9</citedRange>
+               </bibl>
+               <bibl xml:id="bib411-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

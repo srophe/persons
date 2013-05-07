@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-101">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawnan of Tella</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yawnan</forename>
-                              <addName type="untagged-title">of Tella</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib101-4" type="sic">ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib101-4" type="sic">ܝܘܚܰܢܢ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib101-3" type="sic">يونان اسقف تلّ موزلت</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib101-2" type="sic">Jonah, bishop of Tell Mawzalt</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib101-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib101-4" type="split">
-                              <forename>ܝܘܚܰܢܢ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib101-3" type="split">
-                              <forename>يونان</forename>
-                              <addName type="untagged-title">اسقف تلّ موزلت</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib101-2" type="split">
-                              <forename>Jonah</forename>
-                              <addName type="untagged-title">Bishop of Tell Mawzalt</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib101-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">96</citedRange>
-                     <citedRange unit="pp">329</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib101-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">96</citedRange>
-                     <citedRange unit="pp">286</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib101-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">96</citedRange>
-                     <citedRange unit="pp">313</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-101">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawnan of Tella</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yawnan</forename>
+                           <addName type="untagged-title">of Tella</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib101-4" type="sic">ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib101-4" type="sic">ܝܘܚܰܢܢ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib101-3" type="sic">يونان اسقف تلّ موزلت</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib101-2" type="sic">Jonah, bishop of Tell Mawzalt</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib101-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib101-4" type="split">
+                           <forename>ܝܘܚܰܢܢ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib101-3" type="split">
+                           <forename>يونان</forename>
+                           <addName type="untagged-title">اسقف تلّ موزلت</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib101-2" type="split">
+                           <forename>Jonah</forename>
+                           <addName type="untagged-title">Bishop of Tell Mawzalt</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib101-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">96</citedRange>
+                  <citedRange unit="pp">329</citedRange>
+               </bibl>
+               <bibl xml:id="bib101-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">96</citedRange>
+                  <citedRange unit="pp">286</citedRange>
+               </bibl>
+               <bibl xml:id="bib101-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">96</citedRange>
+                  <citedRange unit="pp">313</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

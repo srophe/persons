@@ -12,105 +12,100 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-298">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yūḥannā al-Bustānī of Beth Manʿem</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yūḥannā</forename>
-                              <addName type="untagged-title">al-Bustānī of Beth Manʿem</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib298-3" type="sic">الاسقف يوحنا البستاني المانعمي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib298-2" type="sic">Bishop John al-Bustani of Man‛im</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib298-4" type="split">
-                              <forename>ܝܘܚܢܢ ܓܢܢܐ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܢܥܡܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib298-4" type="split">
-                              <forename>ܝܘܚܰܢܢ ܓܰܢܢܳܐ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܰܢܥܡܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib298-3" type="split">
-                              <forename>يوحنا</forename>
-                              <surname>البستاني</surname>
-                              <addName type="untagged-title">الاسقف, المانعمي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib298-2" type="split">
-                              <forename>John</forename>
-                              <surname>al-Bustani</surname>
-                              <addName type="untagged-title">Bishop, of Man‛im</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib298-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">287</citedRange>
-                     <citedRange unit="pp">521</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib298-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">287</citedRange>
-                     <citedRange unit="pp">467</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib298-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">287</citedRange>
-                     <citedRange unit="pp">497</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-298">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yūḥannā al-Bustānī of Beth Manʿem</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yūḥannā</forename>
+                           <addName type="untagged-title">al-Bustānī of Beth Manʿem</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib298-3" type="sic">الاسقف يوحنا البستاني المانعمي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib298-2" type="sic">Bishop John al-Bustani of Man‛im</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib298-4" type="split">
+                           <forename>ܝܘܚܢܢ ܓܢܢܐ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܢܥܡܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib298-4" type="split">
+                           <forename>ܝܘܚܰܢܢ ܓܰܢܢܳܐ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܰܢܥܡܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib298-3" type="split">
+                           <forename>يوحنا</forename>
+                           <surname>البستاني</surname>
+                           <addName type="untagged-title">الاسقف, المانعمي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib298-2" type="split">
+                           <forename>John</forename>
+                           <surname>al-Bustani</surname>
+                           <addName type="untagged-title">Bishop, of Man‛im</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib298-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">287</citedRange>
+                  <citedRange unit="pp">521</citedRange>
+               </bibl>
+               <bibl xml:id="bib298-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">287</citedRange>
+                  <citedRange unit="pp">467</citedRange>
+               </bibl>
+               <bibl xml:id="bib298-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">287</citedRange>
+                  <citedRange unit="pp">497</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

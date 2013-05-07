@@ -12,115 +12,110 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-212">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="sic">Dionysios bar Ṣalibi</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="split">
-                              <forename>Dionysios</forename>
-                              <surname>bar Ṣalibi</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="sic">Dionysios bar Ṣalibi</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="split">
-                     <forename>Dionysios</forename>
-                     <surname>bar Ṣalibi</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib212-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܨܠܝܒܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib212-4" type="sic">ܕܝܺܘܢܢܘܣܝܘܣ ܒܰܪ ܨܰܠܝܒܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib212-3" type="sic">ديونيسيوس يعقوب ابن الصليبي مطران آمد</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib212-2" type="sic">Dionysius Jacob Bar Ṣalibi</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib212-4" type="split">
-                              <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
-                              <surname>ܒܪ ܨܠܝܒܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib212-4" type="split">
-                              <forename>ܕܝܺܘܢܢܘܣܝܘܣ</forename>
-                              <surname>ܒܰܪ ܨܰܠܝܒܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib212-3" type="split">
-                              <forename>ديونيسيوس يعقوب</forename>
-                              <surname>ابن الصليبي</surname>
-                              <addName type="untagged-title">مطران آمد</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib212-2" type="split">
-                              <forename>Dionysius Jacob</forename>
-                              <surname>Bar Ṣalibi</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib212-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib212-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">209</citedRange>
-                     <citedRange unit="pp">432</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib212-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">209</citedRange>
-                     <citedRange unit="pp">382</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib212-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">209</citedRange>
-                     <citedRange unit="pp">413</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-212">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="sic">Dionysios bar Ṣalibi</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="split">
+                           <forename>Dionysios</forename>
+                           <surname>bar Ṣalibi</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="sic">Dionysios bar Ṣalibi</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib212-1" type="split">
+                  <forename>Dionysios</forename>
+                  <surname>bar Ṣalibi</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib212-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܨܠܝܒܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib212-4" type="sic">ܕܝܺܘܢܢܘܣܝܘܣ ܒܰܪ ܨܰܠܝܒܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib212-3" type="sic">ديونيسيوس يعقوب ابن الصليبي مطران آمد</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib212-2" type="sic">Dionysius Jacob Bar Ṣalibi</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib212-4" type="split">
+                           <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                           <surname>ܒܪ ܨܠܝܒܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib212-4" type="split">
+                           <forename>ܕܝܺܘܢܢܘܣܝܘܣ</forename>
+                           <surname>ܒܰܪ ܨܰܠܝܒܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib212-3" type="split">
+                           <forename>ديونيسيوس يعقوب</forename>
+                           <surname>ابن الصليبي</surname>
+                           <addName type="untagged-title">مطران آمد</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib212-2" type="split">
+                           <forename>Dionysius Jacob</forename>
+                           <surname>Bar Ṣalibi</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib212-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib212-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">209</citedRange>
+                  <citedRange unit="pp">432</citedRange>
+               </bibl>
+               <bibl xml:id="bib212-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">209</citedRange>
+                  <citedRange unit="pp">382</citedRange>
+               </bibl>
+               <bibl xml:id="bib212-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">209</citedRange>
+                  <citedRange unit="pp">413</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

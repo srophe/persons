@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-72">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
-                              <forename>Pawlos</forename>
-                              <surname>of Beth Ukome</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
-                     <forename>Pawlos</forename>
-                     <surname>of Beth Ukome</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib72-4" type="sic">ܦܘܠܘܣ ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib72-4" type="sic">ܦܰܘܠܘܣ ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib72-3" type="sic">بولس الثاني بطريرك انطاكية</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib72-2" type="sic">Paul II, Patriarch of Antioch</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib72-4" type="split">
-                              <forename>ܦܘܠܘܣ</forename>
-                              <addName type="untagged-title">ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib72-4" type="split">
-                              <forename>ܦܰܘܠܘܣ</forename>
-                              <addName type="untagged-title">ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib72-3" type="split">
-                              <forename>بولس</forename>
-                              <addName type="untagged-title">الثاني , بطريرك انطاكية</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib72-2" type="split">
-                              <forename>Paul</forename>
-                              <addName type="untagged-title">II, Patriarch of Antioch</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib72-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib72-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">67</citedRange>
-                     <citedRange unit="pp">302</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib72-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">67</citedRange>
-                     <citedRange unit="pp">263</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib72-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">67</citedRange>
-                     <citedRange unit="pp">289</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-72">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
+                           <forename>Pawlos</forename>
+                           <surname>of Beth Ukome</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
+                  <forename>Pawlos</forename>
+                  <surname>of Beth Ukome</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib72-4" type="sic">ܦܘܠܘܣ ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib72-4" type="sic">ܦܰܘܠܘܣ ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib72-3" type="sic">بولس الثاني بطريرك انطاكية</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib72-2" type="sic">Paul II, Patriarch of Antioch</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib72-4" type="split">
+                           <forename>ܦܘܠܘܣ</forename>
+                           <addName type="untagged-title">ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib72-4" type="split">
+                           <forename>ܦܰܘܠܘܣ</forename>
+                           <addName type="untagged-title">ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib72-3" type="split">
+                           <forename>بولس</forename>
+                           <addName type="untagged-title">الثاني , بطريرك انطاكية</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib72-2" type="split">
+                           <forename>Paul</forename>
+                           <addName type="untagged-title">II, Patriarch of Antioch</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib72-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib72-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">67</citedRange>
+                  <citedRange unit="pp">302</citedRange>
+               </bibl>
+               <bibl xml:id="bib72-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">67</citedRange>
+                  <citedRange unit="pp">263</citedRange>
+               </bibl>
+               <bibl xml:id="bib72-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">67</citedRange>
+                  <citedRange unit="pp">289</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

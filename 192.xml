@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-192">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawsep of Melitene</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yawsep</forename>
-                              <addName type="untagged-title">of Melitene</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib192-4" type="sic">ܕܝܪܝܐ ܝܘܣܦ ܡܝܠܝܛܝܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib192-4" type="sic">ܕܰܝܪܳܝܐ ܝܰܘܣܦ ܡܝܠܝܛܝܢܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib192-3" type="sic">الراهب يوسف الملطي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib192-2" type="sic">The Monk Joseph of Melitene</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib192-4" type="split">
-                              <forename>ܝܘܣܦ</forename>
-                              <addName type="untagged-title">ܕܝܪܝܐ ܡܝܠܝܛܝܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib192-4" type="split">
-                              <forename>ܝܰܘܣܦ</forename>
-                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܝܠܝܛܝܢܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib192-3" type="split">
-                              <forename>يوسف</forename>
-                              <addName type="untagged-title">الراهب , الملطي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib192-2" type="split">
-                              <forename>Joseph</forename>
-                              <addName type="untagged-title">The Monk, of Melitene</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib192-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">192</citedRange>
-                     <citedRange unit="pp">415</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib192-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">192</citedRange>
-                     <citedRange unit="pp">367</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib192-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">192</citedRange>
-                     <citedRange unit="pp">394</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-192">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawsep of Melitene</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yawsep</forename>
+                           <addName type="untagged-title">of Melitene</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib192-4" type="sic">ܕܝܪܝܐ ܝܘܣܦ ܡܝܠܝܛܝܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib192-4" type="sic">ܕܰܝܪܳܝܐ ܝܰܘܣܦ ܡܝܠܝܛܝܢܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib192-3" type="sic">الراهب يوسف الملطي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib192-2" type="sic">The Monk Joseph of Melitene</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib192-4" type="split">
+                           <forename>ܝܘܣܦ</forename>
+                           <addName type="untagged-title">ܕܝܪܝܐ ܡܝܠܝܛܝܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib192-4" type="split">
+                           <forename>ܝܰܘܣܦ</forename>
+                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܝܠܝܛܝܢܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib192-3" type="split">
+                           <forename>يوسف</forename>
+                           <addName type="untagged-title">الراهب , الملطي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib192-2" type="split">
+                           <forename>Joseph</forename>
+                           <addName type="untagged-title">The Monk, of Melitene</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib192-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">192</citedRange>
+                  <citedRange unit="pp">415</citedRange>
+               </bibl>
+               <bibl xml:id="bib192-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">192</citedRange>
+                  <citedRange unit="pp">367</citedRange>
+               </bibl>
+               <bibl xml:id="bib192-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">192</citedRange>
+                  <citedRange unit="pp">394</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

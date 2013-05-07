@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-782">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="sic">Theodoros Abū Qurra</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="split">
-                              <forename>Theodoros</forename>
-                              <surname>Abū Qurra</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="sic">Theodoros Abū Qurra</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="split">
-                     <forename>Theodoros</forename>
-                     <surname>Abū Qurra</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib782-4" type="sic">ܬܐܘܕܘܪܘܣ ܐܒܘ ܩܘܪܪܗ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib782-4" type="sic">ܬܶܐܘܳܕܳܘܪܳܘܣ ܐܰܒܘ ܩܘܽܪܪܰܗ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib782-3" type="sic">ثاودورس ابو قرَّة</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib782-2" type="sic">Theodore Ibn Qurra</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib782-4" type="split">
-                              <forename>ܬܐܘܕܘܪܘܣ</forename>
-                              <surname>ܐܒܘ ܩܘܪܪܗ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib782-4" type="split">
-                              <forename>ܬܶܐܘܳܕܳܘܪܳܘܣ</forename>
-                              <surname>ܐܰܒܘ ܩܘܽܪܪܰܗ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib782-3" type="split">
-                              <forename>ثاودورس</forename>
-                              <surname>ابو قرَّة</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib782-2" type="split">
-                              <forename>Theodore</forename>
-                              <surname>Ibn Qurra</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib782-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">545</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib782-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib782-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">340</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib782-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-782">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="sic">Theodoros Abū Qurra</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="split">
+                           <forename>Theodoros</forename>
+                           <surname>Abū Qurra</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="sic">Theodoros Abū Qurra</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib782-1" type="split">
+                  <forename>Theodoros</forename>
+                  <surname>Abū Qurra</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib782-4" type="sic">ܬܐܘܕܘܪܘܣ ܐܒܘ ܩܘܪܪܗ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib782-4" type="sic">ܬܶܐܘܳܕܳܘܪܳܘܣ ܐܰܒܘ ܩܘܽܪܪܰܗ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib782-3" type="sic">ثاودورس ابو قرَّة</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib782-2" type="sic">Theodore Ibn Qurra</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib782-4" type="split">
+                           <forename>ܬܐܘܕܘܪܘܣ</forename>
+                           <surname>ܐܒܘ ܩܘܪܪܗ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib782-4" type="split">
+                           <forename>ܬܶܐܘܳܕܳܘܪܳܘܣ</forename>
+                           <surname>ܐܰܒܘ ܩܘܽܪܪܰܗ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib782-3" type="split">
+                           <forename>ثاودورس</forename>
+                           <surname>ابو قرَّة</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib782-2" type="split">
+                           <forename>Theodore</forename>
+                           <surname>Ibn Qurra</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib782-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">545</citedRange>
+               </bibl>
+               <bibl xml:id="bib782-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib782-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">340</citedRange>
+               </bibl>
+               <bibl xml:id="bib782-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

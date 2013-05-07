@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-278">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAziz of Midyat</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>ʿAziz</forename>
-                              <addName type="untagged-title">of Midyat</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib278-4" type="sic">ܕܝܪܝܐ ܥܙܝܙ ܡܕܝܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib278-4" type="sic">ܕܰܝܪܳܝܐ ܥܰܙܝܙ ܡܶܕܝܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib278-3" type="sic">الراهب عزيز المذياتي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib278-2" type="sic">The Monk ‛Aziz of Midyat</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib278-4" type="split">
-                              <forename>ܥܙܝܙ</forename>
-                              <addName type="untagged-title">ܕܝܪܝܐ ܡܕܝܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib278-4" type="split">
-                              <forename>ܥܰܙܝܙ</forename>
-                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܶܕܝܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib278-3" type="split">
-                              <forename>عزيز</forename>
-                              <addName type="untagged-title">الراهب ,  المذياتي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib278-2" type="split">
-                              <forename>‛Aziz</forename>
-                              <addName type="untagged-title">The Monk, of Midyat</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib278-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">270</citedRange>
-                     <citedRange unit="pp">509</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib278-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">270</citedRange>
-                     <citedRange unit="pp">456</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib278-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">270</citedRange>
-                     <citedRange unit="pp">486</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-278">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAziz of Midyat</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>ʿAziz</forename>
+                           <addName type="untagged-title">of Midyat</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib278-4" type="sic">ܕܝܪܝܐ ܥܙܝܙ ܡܕܝܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib278-4" type="sic">ܕܰܝܪܳܝܐ ܥܰܙܝܙ ܡܶܕܝܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib278-3" type="sic">الراهب عزيز المذياتي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib278-2" type="sic">The Monk ‛Aziz of Midyat</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib278-4" type="split">
+                           <forename>ܥܙܝܙ</forename>
+                           <addName type="untagged-title">ܕܝܪܝܐ ܡܕܝܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib278-4" type="split">
+                           <forename>ܥܰܙܝܙ</forename>
+                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܶܕܝܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib278-3" type="split">
+                           <forename>عزيز</forename>
+                           <addName type="untagged-title">الراهب ,  المذياتي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib278-2" type="split">
+                           <forename>‛Aziz</forename>
+                           <addName type="untagged-title">The Monk, of Midyat</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib278-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">270</citedRange>
+                  <citedRange unit="pp">509</citedRange>
+               </bibl>
+               <bibl xml:id="bib278-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">270</citedRange>
+                  <citedRange unit="pp">456</citedRange>
+               </bibl>
+               <bibl xml:id="bib278-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">270</citedRange>
+                  <citedRange unit="pp">486</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

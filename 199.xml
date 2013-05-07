@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-199">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Saʿīd bar Sabouni</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Saʿīd</forename>
-                              <surname>bar Sabouni</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib199-4" type="sic">ܣܥܝܕ ܒܪ ܨܒܘܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib199-4" type="sic">ܣܰܥܝܕ ܒܰܪ ܨܰܒܘܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib199-3" type="sic">سعيد ابن الصابوني</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib199-2" type="sic">Sa‛īd Bar Ṣabuni</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib199-4" type="split">
-                              <forename>ܣܥܝܕ</forename>
-                              <surname>ܒܪ ܨܒܘܢܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib199-4" type="split">
-                              <forename>ܣܰܥܝܕ</forename>
-                              <surname>ܒܰܪ ܨܰܒܘܢܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib199-3" type="split">
-                              <forename>سعيد</forename>
-                              <surname>ابن الصابوني</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib199-2" type="split">
-                              <forename>Sa‛īd</forename>
-                              <surname>Bar Ṣabuni</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib199-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">196</citedRange>
-                     <citedRange unit="pp">419</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib199-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">196</citedRange>
-                     <citedRange unit="pp">371</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib199-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">196</citedRange>
-                     <citedRange unit="pp">400</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-199">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Saʿīd bar Sabouni</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Saʿīd</forename>
+                           <surname>bar Sabouni</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib199-4" type="sic">ܣܥܝܕ ܒܪ ܨܒܘܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib199-4" type="sic">ܣܰܥܝܕ ܒܰܪ ܨܰܒܘܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib199-3" type="sic">سعيد ابن الصابوني</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib199-2" type="sic">Sa‛īd Bar Ṣabuni</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib199-4" type="split">
+                           <forename>ܣܥܝܕ</forename>
+                           <surname>ܒܪ ܨܒܘܢܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib199-4" type="split">
+                           <forename>ܣܰܥܝܕ</forename>
+                           <surname>ܒܰܪ ܨܰܒܘܢܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib199-3" type="split">
+                           <forename>سعيد</forename>
+                           <surname>ابن الصابوني</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib199-2" type="split">
+                           <forename>Sa‛īd</forename>
+                           <surname>Bar Ṣabuni</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib199-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">196</citedRange>
+                  <citedRange unit="pp">419</citedRange>
+               </bibl>
+               <bibl xml:id="bib199-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">196</citedRange>
+                  <citedRange unit="pp">371</citedRange>
+               </bibl>
+               <bibl xml:id="bib199-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">196</citedRange>
+                  <citedRange unit="pp">400</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

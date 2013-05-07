@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-472">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
-                              <forename>Eliya</forename>
-                              <addName type="untagged-title">of Nisibis</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
-                     <forename>Eliya</forename>
-                     <addName type="untagged-title">of Nisibis</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib472-4" type="sic">ܐܠܝܐ ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib472-4" type="sic">ܐܶܠܝܐ ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib472-3" type="sic">المطران ايليا النصيبيني المعروف بابن السنّي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib472-2" type="sic">Elijah Bar Shinaya, metropolitan of Nisibin</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib472-4" type="split">
-                              <forename>ܐܠܝܐ</forename>
-                              <addName type="untagged-title">ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib472-4" type="split">
-                              <forename>ܐܶܠܝܐ</forename>
-                              <addName type="untagged-title">ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib472-3" type="split">
-                              <forename>ايليا</forename>
-                              <addName type="untagged-title">المطران ,النصيبيني المعروف بابن السنّي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib472-2" type="split">
-                              <forename>Elijah</forename>
-                              <addName type="untagged-title">Bar Shinaya, metropolitan of Nisibin</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib472-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">193</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib472-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="pp">405-406</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib472-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">357</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib472-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="pp">385</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-472">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
+                           <forename>Eliya</forename>
+                           <addName type="untagged-title">of Nisibis</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
+                  <forename>Eliya</forename>
+                  <addName type="untagged-title">of Nisibis</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib472-4" type="sic">ܐܠܝܐ ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib472-4" type="sic">ܐܶܠܝܐ ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib472-3" type="sic">المطران ايليا النصيبيني المعروف بابن السنّي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib472-2" type="sic">Elijah Bar Shinaya, metropolitan of Nisibin</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib472-4" type="split">
+                           <forename>ܐܠܝܐ</forename>
+                           <addName type="untagged-title">ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib472-4" type="split">
+                           <forename>ܐܶܠܝܐ</forename>
+                           <addName type="untagged-title">ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib472-3" type="split">
+                           <forename>ايليا</forename>
+                           <addName type="untagged-title">المطران ,النصيبيني المعروف بابن السنّي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib472-2" type="split">
+                           <forename>Elijah</forename>
+                           <addName type="untagged-title">Bar Shinaya, metropolitan of Nisibin</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib472-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">193</citedRange>
+               </bibl>
+               <bibl xml:id="bib472-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">405-406</citedRange>
+               </bibl>
+               <bibl xml:id="bib472-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">357</citedRange>
+               </bibl>
+               <bibl xml:id="bib472-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">385</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

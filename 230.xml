@@ -12,113 +12,108 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-230">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Chronicle of 1234</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <addName type="untagged-title">Author of the Chronicle of 1234</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib230-4" type="sic">ܡܟܬܒܢܐ ܐܘܪܗܝܐ </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib230-4" type="sic">ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܳܐ </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib230-3" type="sic">المؤرخ الرهاوي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib230-2" type="sic">The Edessene Chronicler</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib230-4" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib230-4" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib230-3" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib230-2" type="split">
-                              <forename>#REF!</forename>
-                              <surname>#REF!</surname>
-                              <addName type="untagged-title">#REF!</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib230-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">131</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib230-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">227</citedRange>
-                     <citedRange unit="pp">454</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib230-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">227</citedRange>
-                     <citedRange unit="pp">403</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib230-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">227</citedRange>
-                     <citedRange unit="pp">434</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-230">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Chronicle of 1234</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <addName type="untagged-title">Author of the Chronicle of 1234</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib230-4" type="sic">ܡܟܬܒܢܐ ܐܘܪܗܝܐ </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib230-4" type="sic">ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܳܐ </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib230-3" type="sic">المؤرخ الرهاوي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib230-2" type="sic">The Edessene Chronicler</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib230-4" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib230-4" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib230-3" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib230-2" type="split">
+                           <forename>#REF!</forename>
+                           <surname>#REF!</surname>
+                           <addName type="untagged-title">#REF!</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib230-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">131</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">227</citedRange>
+                  <citedRange unit="pp">454</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">227</citedRange>
+                  <citedRange unit="pp">403</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">227</citedRange>
+                  <citedRange unit="pp">434</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

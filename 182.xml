@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-182">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Matay of al-Ḥaṣṣāṣa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Matay</forename>
-                              <addName type="untagged-title">of al-Ḥaṣṣāṣa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib182-4" type="sic">ܡܬܝ ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib182-4" type="sic">ܡܰܬܝ ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib182-3" type="sic">متي اسقف الحصَّاصة</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib182-2" type="sic">Matthew, bishop of al-Ḥaṣṣaṣa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib182-4" type="split">
-                              <forename>ܡܬܝ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib182-4" type="split">
-                              <forename>ܡܰܬܝ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib182-3" type="split">
-                              <forename>متي</forename>
-                              <addName type="untagged-title">اسقف الحصَّاصة</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib182-2" type="split">
-                              <forename>Matthew</forename>
-                              <addName type="untagged-title">Bishop of al-Ḥaṣṣaṣa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib182-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">182</citedRange>
-                     <citedRange unit="pp">407</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib182-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">182</citedRange>
-                     <citedRange unit="pp">359</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib182-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">182</citedRange>
-                     <citedRange unit="pp">386</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-182">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Matay of al-Ḥaṣṣāṣa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Matay</forename>
+                           <addName type="untagged-title">of al-Ḥaṣṣāṣa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib182-4" type="sic">ܡܬܝ ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib182-4" type="sic">ܡܰܬܝ ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib182-3" type="sic">متي اسقف الحصَّاصة</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib182-2" type="sic">Matthew, bishop of al-Ḥaṣṣaṣa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib182-4" type="split">
+                           <forename>ܡܬܝ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib182-4" type="split">
+                           <forename>ܡܰܬܝ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib182-3" type="split">
+                           <forename>متي</forename>
+                           <addName type="untagged-title">اسقف الحصَّاصة</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib182-2" type="split">
+                           <forename>Matthew</forename>
+                           <addName type="untagged-title">Bishop of al-Ḥaṣṣaṣa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib182-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">182</citedRange>
+                  <citedRange unit="pp">407</citedRange>
+               </bibl>
+               <bibl xml:id="bib182-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">182</citedRange>
+                  <citedRange unit="pp">359</citedRange>
+               </bibl>
+               <bibl xml:id="bib182-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">182</citedRange>
+                  <citedRange unit="pp">386</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

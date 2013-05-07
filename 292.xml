@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-292">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAbdishuʿ of Quṣur</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>ʿAbdishuʿ</forename>
-                              <addName type="untagged-title">of Quṣur</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib292-4" type="sic">ܟܘܪܝ ܥܒܕ ܝܫܘܥ ܩܨܘܪܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib292-4" type="sic">ܟܘܪܝ ܥܒܶܕ ܝܶܫܘܥ ܩܨܘܪܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib292-3" type="sic">الخوري عبد يشوع القصوري</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib292-2" type="sic">Chorepiscopus ‛Abd Yeshu‛ of Quṣur</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib292-4" type="split">
-                              <forename>ܥܒܕ ܝܫܘܥ</forename>
-                              <addName type="untagged-title">ܟܘܪܝ ܩܨܘܪܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib292-4" type="split">
-                              <forename>ܥܒܶܕ ܝܶܫܘܥ</forename>
-                              <addName type="untagged-title">ܟܘܪܝ ܩܨܘܪܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib292-3" type="split">
-                              <forename>عبد يشوع</forename>
-                              <addName type="untagged-title">الخوري , القصوري</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib292-2" type="split">
-                              <forename>‛Abd Yeshu‛</forename>
-                              <addName type="untagged-title">Chorepiscopus, of Quṣur</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib292-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">282</citedRange>
-                     <citedRange unit="pp">518</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib292-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">282</citedRange>
-                     <citedRange unit="pp">464</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib292-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">282</citedRange>
-                     <citedRange unit="pp">495</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-292">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAbdishuʿ of Quṣur</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>ʿAbdishuʿ</forename>
+                           <addName type="untagged-title">of Quṣur</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib292-4" type="sic">ܟܘܪܝ ܥܒܕ ܝܫܘܥ ܩܨܘܪܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib292-4" type="sic">ܟܘܪܝ ܥܒܶܕ ܝܶܫܘܥ ܩܨܘܪܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib292-3" type="sic">الخوري عبد يشوع القصوري</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib292-2" type="sic">Chorepiscopus ‛Abd Yeshu‛ of Quṣur</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib292-4" type="split">
+                           <forename>ܥܒܕ ܝܫܘܥ</forename>
+                           <addName type="untagged-title">ܟܘܪܝ ܩܨܘܪܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib292-4" type="split">
+                           <forename>ܥܒܶܕ ܝܶܫܘܥ</forename>
+                           <addName type="untagged-title">ܟܘܪܝ ܩܨܘܪܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib292-3" type="split">
+                           <forename>عبد يشوع</forename>
+                           <addName type="untagged-title">الخوري , القصوري</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib292-2" type="split">
+                           <forename>‛Abd Yeshu‛</forename>
+                           <addName type="untagged-title">Chorepiscopus, of Quṣur</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib292-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">282</citedRange>
+                  <citedRange unit="pp">518</citedRange>
+               </bibl>
+               <bibl xml:id="bib292-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">282</citedRange>
+                  <citedRange unit="pp">464</citedRange>
+               </bibl>
+               <bibl xml:id="bib292-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">282</citedRange>
+                  <citedRange unit="pp">495</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

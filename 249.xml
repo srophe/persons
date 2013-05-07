@@ -12,100 +12,95 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-249">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignatius V bar Wahib</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Ignatius</forename>
-                              <surname>bar Wahib</surname>
-                              <addName type="untagged-title">V</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib249-4" type="sic"> ܒܪ ܘܗܝܒ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib249-4" type="sic"> ܒܰܪ ܘܰܗܝܒ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib249-3" type="sic">ابن ُوهيب</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib249-2" type="sic">Bar Wuhayb</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib249-4" type="split">
-                              <forename>ܒܪ ܘܗܝܒ</forename>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib249-4" type="split">
-                              <forename>ܒܰܪ ܘܰܗܝܒ</forename>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib249-3" type="split">
-                              <forename>ابن ُوهيب</forename>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib249-2" type="split">
-                              <forename>Bar Wuhayb</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib249-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">244</citedRange>
-                     <citedRange unit="pp">488</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib249-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">244</citedRange>
-                     <citedRange unit="pp">437</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib249-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">244</citedRange>
-                     <citedRange unit="pp">470</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-249">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignatius V bar Wahib</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Ignatius</forename>
+                           <surname>bar Wahib</surname>
+                           <addName type="untagged-title">V</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib249-4" type="sic"> ܒܪ ܘܗܝܒ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib249-4" type="sic"> ܒܰܪ ܘܰܗܝܒ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib249-3" type="sic">ابن ُوهيب</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib249-2" type="sic">Bar Wuhayb</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib249-4" type="split">
+                           <forename>ܒܪ ܘܗܝܒ</forename>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib249-4" type="split">
+                           <forename>ܒܰܪ ܘܰܗܝܒ</forename>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib249-3" type="split">
+                           <forename>ابن ُوهيب</forename>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib249-2" type="split">
+                           <forename>Bar Wuhayb</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib249-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">244</citedRange>
+                  <citedRange unit="pp">488</citedRange>
+               </bibl>
+               <bibl xml:id="bib249-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">244</citedRange>
+                  <citedRange unit="pp">437</citedRange>
+               </bibl>
+               <bibl xml:id="bib249-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">244</citedRange>
+                  <citedRange unit="pp">470</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

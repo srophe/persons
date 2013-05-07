@@ -12,86 +12,81 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-548">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
-                              <forename>Isaiah</forename>
-                              <addName type="untagged-title">of Scetis</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
-                     <forename>Isaiah</forename>
-                     <addName type="untagged-title">of Scetis</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib548-3" type="sic">اشعيا ناسك الاسقيط</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib548-2" type="sic">Isaiah of Scete</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib548-3" type="split">
-                              <forename>اشعيا</forename>
-                              <addName type="untagged-title">ناسك الاسقيط</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib548-2" type="split">
-                              <forename>Isaiah</forename>
-                              <addName type="untagged-title">of Scete</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib548-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">272</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib548-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib548-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">122</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-548">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
+                           <forename>Isaiah</forename>
+                           <addName type="untagged-title">of Scetis</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
+                  <forename>Isaiah</forename>
+                  <addName type="untagged-title">of Scetis</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib548-3" type="sic">اشعيا ناسك الاسقيط</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib548-2" type="sic">Isaiah of Scete</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib548-3" type="split">
+                           <forename>اشعيا</forename>
+                           <addName type="untagged-title">ناسك الاسقيط</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib548-2" type="split">
+                           <forename>Isaiah</forename>
+                           <addName type="untagged-title">of Scete</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib548-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">272</citedRange>
+               </bibl>
+               <bibl xml:id="bib548-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib548-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">122</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

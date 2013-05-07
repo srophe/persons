@@ -12,106 +12,101 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-283">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAbd al-Ghanī al-Manṣūrī</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>ʿAbd al-Ghanī</forename>
-                              <addName type="untagged-title">al-Manṣūrī</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib283-4" type="sic">ܥܒܕܐܠܓܢܝ ܡܢܨܘܪܝܐ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib283-4" type="sic">ܥܰܒܕܐܠܓܰܢܝ ܡܰܢܨܘܪܳܝܐ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib283-3" type="sic">عبد الغني المنصوري مفريان المشرق</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib283-2" type="sic">‛Abd al-Ghani al-Manṣuri</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib283-4" type="split">
-                              <forename>ܥܒܕܐܠܓܢܝ</forename>
-                              <surname>ܡܢܨܘܪܝܐ</surname>
-                              <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib283-4" type="split">
-                              <forename>ܥܰܒܕܐܠܓܰܢܝ</forename>
-                              <surname>ܡܰܢܨܘܪܳܝܐ</surname>
-                              <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib283-3" type="split">
-                              <forename>عبد الغني</forename>
-                              <surname>المنصوري</surname>
-                              <addName type="untagged-title">مفريان المشرق</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib283-2" type="split">
-                              <forename>‛Abd al-Ghani</forename>
-                              <surname>al-Manṣuri</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib283-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">274</citedRange>
-                     <citedRange unit="pp">512</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib283-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">274</citedRange>
-                     <citedRange unit="pp">459</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib283-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">274</citedRange>
-                     <citedRange unit="pp">489</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-283">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAbd al-Ghanī al-Manṣūrī</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>ʿAbd al-Ghanī</forename>
+                           <addName type="untagged-title">al-Manṣūrī</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib283-4" type="sic">ܥܒܕܐܠܓܢܝ ܡܢܨܘܪܝܐ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib283-4" type="sic">ܥܰܒܕܐܠܓܰܢܝ ܡܰܢܨܘܪܳܝܐ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib283-3" type="sic">عبد الغني المنصوري مفريان المشرق</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib283-2" type="sic">‛Abd al-Ghani al-Manṣuri</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib283-4" type="split">
+                           <forename>ܥܒܕܐܠܓܢܝ</forename>
+                           <surname>ܡܢܨܘܪܝܐ</surname>
+                           <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib283-4" type="split">
+                           <forename>ܥܰܒܕܐܠܓܰܢܝ</forename>
+                           <surname>ܡܰܢܨܘܪܳܝܐ</surname>
+                           <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib283-3" type="split">
+                           <forename>عبد الغني</forename>
+                           <surname>المنصوري</surname>
+                           <addName type="untagged-title">مفريان المشرق</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib283-2" type="split">
+                           <forename>‛Abd al-Ghani</forename>
+                           <surname>al-Manṣuri</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib283-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">274</citedRange>
+                  <citedRange unit="pp">512</citedRange>
+               </bibl>
+               <bibl xml:id="bib283-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">274</citedRange>
+                  <citedRange unit="pp">459</citedRange>
+               </bibl>
+               <bibl xml:id="bib283-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">274</citedRange>
+                  <citedRange unit="pp">489</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

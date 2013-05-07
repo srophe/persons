@@ -12,111 +12,106 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-58">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="sic">Zacharias Rhetor</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="split">
-                              <forename>Zacharias</forename>
-                              <addName type="untagged-title">Rhetor</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="sic">Zacharias Rhetor</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="split">
-                     <forename>Zacharias</forename>
-                     <addName type="untagged-title">Rhetor</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib58-4" type="sic">ܙܟܪܝܐ ܡܠܝܠܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib58-4" type="sic">ܙܟܰܪܝܳܐ ܡܠܝܠܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib58-3" type="sic">زكريا الفصيح</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib58-2" type="sic">Zachariah the Rhetor</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib58-4" type="split">
-                              <forename>ܙܟܪܝܐ</forename>
-                              <addName type="untagged-title">ܡܠܝܠܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib58-4" type="split">
-                              <forename>ܙܟܰܪܝܳܐ</forename>
-                              <addName type="untagged-title">ܡܠܻܝܠܳܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib58-3" type="split">
-                              <forename>زكريا</forename>
-                              <addName type="untagged-title">الفصيح</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib58-2" type="split"/>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib58-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib58-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">54</citedRange>
-                     <citedRange unit="pp">293</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib58-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">54</citedRange>
-                     <citedRange unit="pp">254</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib58-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">54</citedRange>
-                     <citedRange unit="pp">280</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-58">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="sic">Zacharias Rhetor</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="split">
+                           <forename>Zacharias</forename>
+                           <addName type="untagged-title">Rhetor</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="sic">Zacharias Rhetor</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib58-1" type="split">
+                  <forename>Zacharias</forename>
+                  <addName type="untagged-title">Rhetor</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib58-4" type="sic">ܙܟܪܝܐ ܡܠܝܠܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib58-4" type="sic">ܙܟܰܪܝܳܐ ܡܠܝܠܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib58-3" type="sic">زكريا الفصيح</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib58-2" type="sic">Zachariah the Rhetor</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib58-4" type="split">
+                           <forename>ܙܟܪܝܐ</forename>
+                           <addName type="untagged-title">ܡܠܝܠܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib58-4" type="split">
+                           <forename>ܙܟܰܪܝܳܐ</forename>
+                           <addName type="untagged-title">ܡܠܻܝܠܳܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib58-3" type="split">
+                           <forename>زكريا</forename>
+                           <addName type="untagged-title">الفصيح</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib58-2" type="split"/>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib58-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib58-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">54</citedRange>
+                  <citedRange unit="pp">293</citedRange>
+               </bibl>
+               <bibl xml:id="bib58-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">54</citedRange>
+                  <citedRange unit="pp">254</citedRange>
+               </bibl>
+               <bibl xml:id="bib58-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">54</citedRange>
+                  <citedRange unit="pp">280</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

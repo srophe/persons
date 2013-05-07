@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-64">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="sic">Mushe of Aggel</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="split">
-                              <forename>Mushe</forename>
-                              <addName type="untagged-title">of Aggel</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="sic">Mushe of Aggel</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="split">
-                     <forename>Mushe</forename>
-                     <addName type="untagged-title">of Aggel</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib64-4" type="sic">ܡܘܫܐ ܐܓܠܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib64-4" type="sic">ܡܘܫܐ ܐܓܠܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib64-3" type="sic">موسى الاجلي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib64-2" type="sic">Moses of Agel</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib64-4" type="split">
-                              <forename>ܡܘܫܐ</forename>
-                              <addName type="untagged-title">ܐܓܠܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib64-4" type="split">
-                              <forename>ܡܘܫܐ</forename>
-                              <addName type="untagged-title">ܐܓܠܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib64-3" type="split">
-                              <forename>موسى</forename>
-                              <addName type="untagged-title">الاجلي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib64-2" type="split">
-                              <forename>Moses</forename>
-                              <addName type="untagged-title">of Agel</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib64-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib64-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">60</citedRange>
-                     <citedRange unit="pp">297</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib64-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">60</citedRange>
-                     <citedRange unit="pp">258</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib64-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">60</citedRange>
-                     <citedRange unit="pp">284</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-64">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="sic">Mushe of Aggel</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="split">
+                           <forename>Mushe</forename>
+                           <addName type="untagged-title">of Aggel</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="sic">Mushe of Aggel</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib64-1" type="split">
+                  <forename>Mushe</forename>
+                  <addName type="untagged-title">of Aggel</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib64-4" type="sic">ܡܘܫܐ ܐܓܠܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib64-4" type="sic">ܡܘܫܐ ܐܓܠܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib64-3" type="sic">موسى الاجلي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib64-2" type="sic">Moses of Agel</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib64-4" type="split">
+                           <forename>ܡܘܫܐ</forename>
+                           <addName type="untagged-title">ܐܓܠܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib64-4" type="split">
+                           <forename>ܡܘܫܐ</forename>
+                           <addName type="untagged-title">ܐܓܠܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib64-3" type="split">
+                           <forename>موسى</forename>
+                           <addName type="untagged-title">الاجلي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib64-2" type="split">
+                           <forename>Moses</forename>
+                           <addName type="untagged-title">of Agel</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib64-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib64-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">60</citedRange>
+                  <citedRange unit="pp">297</citedRange>
+               </bibl>
+               <bibl xml:id="bib64-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">60</citedRange>
+                  <citedRange unit="pp">258</citedRange>
+               </bibl>
+               <bibl xml:id="bib64-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">60</citedRange>
+                  <citedRange unit="pp">284</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

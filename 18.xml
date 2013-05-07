@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-18">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="sic">ܕܕܐ ܐܡܝܕܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Dādā of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="split">
-                              <forename>ܕܕܐ</forename>
-                              <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Dādā</forename>
-                              <addName type="untagged-title">of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib18-4" type="sic">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib18-4" type="sic">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib18-3" type="sic">دادا الراهب الآمدي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib18-2" type="sic">The Monk Dada of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib18-4" type="split">
-                              <forename>ܕܕܐ</forename>
-                              <addName type="untagged-title">ܕܝܪܝܐ ܐܡܝܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib18-4" type="split">
-                              <forename>ܕܳܕܳܐ</forename>
-                              <addName type="untagged-title">ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib18-3" type="split">
-                              <forename>دادا</forename>
-                              <addName type="untagged-title">الراهب الآمدي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib18-2" type="split">
-                              <forename>Dada</forename>
-                              <addName type="untagged-title">The Monk, of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib18-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">17</citedRange>
-                     <citedRange unit="pp">239</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib18-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">17</citedRange>
-                     <citedRange unit="pp">205</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib18-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">17</citedRange>
-                     <citedRange unit="pp">228</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-18">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="sic">ܕܕܐ ܐܡܝܕܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Dādā of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="split">
+                           <forename>ܕܕܐ</forename>
+                           <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Dādā</forename>
+                           <addName type="untagged-title">of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib18-4" type="sic">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib18-4" type="sic">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib18-3" type="sic">دادا الراهب الآمدي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib18-2" type="sic">The Monk Dada of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib18-4" type="split">
+                           <forename>ܕܕܐ</forename>
+                           <addName type="untagged-title">ܕܝܪܝܐ ܐܡܝܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib18-4" type="split">
+                           <forename>ܕܳܕܳܐ</forename>
+                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib18-3" type="split">
+                           <forename>دادا</forename>
+                           <addName type="untagged-title">الراهب الآمدي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib18-2" type="split">
+                           <forename>Dada</forename>
+                           <addName type="untagged-title">The Monk, of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib18-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">17</citedRange>
+                  <citedRange unit="pp">239</citedRange>
+               </bibl>
+               <bibl xml:id="bib18-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">17</citedRange>
+                  <citedRange unit="pp">205</citedRange>
+               </bibl>
+               <bibl xml:id="bib18-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">17</citedRange>
+                  <citedRange unit="pp">228</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

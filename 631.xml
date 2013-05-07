@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-631">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="sic">Meliton the Philosopher</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="split">
-                              <forename>Meliton</forename>
-                              <addName type="untagged-title">the Philosopher</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="sic">Meliton the Philosopher</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="split">
-                     <forename>Meliton</forename>
-                     <addName type="untagged-title">the Philosopher</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib631-4" type="sic">ܡܪܝ ܡܝܠܝܛܘܢ ܐܦܝܣܩܘܦܐ ܕܣܐܪܕܝܣ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib631-4" type="sic">ܡܳܪܝ ܡܺܝܠܝܛܘܢ ܐܶܦܝܣܩܘܦܐ ܕܣܰܐܪܕܝܣ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib631-3" type="sic">مار ميليطون اسقف ساردة</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib631-2" type="sic">St. Meliton, bishop of Sardis</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib631-4" type="split">
-                              <forename>ܡܝܠܝܛܘܢ</forename>
-                              <addName type="untagged-title">ܡܪܝ, ܐܦܝܣܩܘܦܐ ܕܣܐܪܕܝܣ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib631-4" type="split">
-                              <forename>ܡܺܝܠܝܛܘܢ</forename>
-                              <addName type="untagged-title">ܡܳܪܝ, ܐܶܦܝܣܩܘܦܐ ܕܣܰܐܪܕܝܣ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib631-3" type="split">
-                              <forename>ميليطون</forename>
-                              <addName type="untagged-title">مار, اسقف ساردة</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib631-2" type="split">
-                              <forename>Meliton</forename>
-                              <addName type="untagged-title">St., bishop of Sardis</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib631-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">368</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib631-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib631-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">115</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib631-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-631">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="sic">Meliton the Philosopher</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="split">
+                           <forename>Meliton</forename>
+                           <addName type="untagged-title">the Philosopher</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="sic">Meliton the Philosopher</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib631-1" type="split">
+                  <forename>Meliton</forename>
+                  <addName type="untagged-title">the Philosopher</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib631-4" type="sic">ܡܪܝ ܡܝܠܝܛܘܢ ܐܦܝܣܩܘܦܐ ܕܣܐܪܕܝܣ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib631-4" type="sic">ܡܳܪܝ ܡܺܝܠܝܛܘܢ ܐܶܦܝܣܩܘܦܐ ܕܣܰܐܪܕܝܣ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib631-3" type="sic">مار ميليطون اسقف ساردة</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib631-2" type="sic">St. Meliton, bishop of Sardis</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib631-4" type="split">
+                           <forename>ܡܝܠܝܛܘܢ</forename>
+                           <addName type="untagged-title">ܡܪܝ, ܐܦܝܣܩܘܦܐ ܕܣܐܪܕܝܣ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib631-4" type="split">
+                           <forename>ܡܺܝܠܝܛܘܢ</forename>
+                           <addName type="untagged-title">ܡܳܪܝ, ܐܶܦܝܣܩܘܦܐ ܕܣܰܐܪܕܝܣ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib631-3" type="split">
+                           <forename>ميليطون</forename>
+                           <addName type="untagged-title">مار, اسقف ساردة</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib631-2" type="split">
+                           <forename>Meliton</forename>
+                           <addName type="untagged-title">St., bishop of Sardis</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib631-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">368</citedRange>
+               </bibl>
+               <bibl xml:id="bib631-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib631-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">115</citedRange>
+               </bibl>
+               <bibl xml:id="bib631-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

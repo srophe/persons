@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-343">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
-                              <forename>Isḥāq</forename>
-                              <surname>Armalah</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
-                     <forename>Isḥāq</forename>
-                     <surname>Armalah</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib343-4" type="sic">ܟܘܪܝ ܐܝܣܚܩ ܕܒܝܬ ܐܪܡܠܬܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib343-4" type="sic">ܟܳܘܪܝ ܐܝܣܚܳܩ ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib343-3" type="sic">اسحق ارملة</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib343-2" type="sic">Isḥāq Armala</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib343-4" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
-                              <addName type="untagged-title">ܟܘܪܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib343-4" type="split">
-                              <forename>ܐܝܣܚܳܩ</forename>
-                              <surname>ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
-                              <addName type="untagged-title">ܟܳܘܪܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib343-3" type="split">
-                              <forename>اسحق</forename>
-                              <surname>ارملة</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib343-2" type="split">
-                              <forename>Isḥāq</forename>
-                              <surname>Armala</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib343-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">48</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib343-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib343-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">406</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib343-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-343">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
+                           <forename>Isḥāq</forename>
+                           <surname>Armalah</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
+                  <forename>Isḥāq</forename>
+                  <surname>Armalah</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib343-4" type="sic">ܟܘܪܝ ܐܝܣܚܩ ܕܒܝܬ ܐܪܡܠܬܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib343-4" type="sic">ܟܳܘܪܝ ܐܝܣܚܳܩ ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib343-3" type="sic">اسحق ارملة</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib343-2" type="sic">Isḥāq Armala</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib343-4" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
+                           <addName type="untagged-title">ܟܘܪܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib343-4" type="split">
+                           <forename>ܐܝܣܚܳܩ</forename>
+                           <surname>ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
+                           <addName type="untagged-title">ܟܳܘܪܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib343-3" type="split">
+                           <forename>اسحق</forename>
+                           <surname>ارملة</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib343-2" type="split">
+                           <forename>Isḥāq</forename>
+                           <surname>Armala</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib343-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">48</citedRange>
+               </bibl>
+               <bibl xml:id="bib343-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib343-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">406</citedRange>
+               </bibl>
+               <bibl xml:id="bib343-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

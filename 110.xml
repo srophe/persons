@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-110">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="sic">Abrohom Naḥshirtono</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="split">
-                              <forename>Abrohom</forename>
-                              <addName type="untagged-title">Naḥshirtono</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="sic">Abrohom Naḥshirtono</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="split">
-                     <forename>Abrohom</forename>
-                     <addName type="untagged-title">Naḥshirtono</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib110-4" type="sic">ܐܒܪܗܡ ܢܚܫܝܪܬܢܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib110-4" type="sic">ܐܰܒܪܳܗܡ ܢܰܚܫܝܪܬܳܢܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib110-3" type="sic">ابراهيم الصياد</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib110-2" type="sic">Abraham al-Ṣayyaḍ</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib110-4" type="split">
-                              <forename>ܐܒܪܗܡ</forename>
-                              <addName type="untagged-title">ܢܚܫܝܪܬܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib110-4" type="split">
-                              <forename>ܐܰܒܪܳܗܡ</forename>
-                              <addName type="untagged-title">ܢܰܚܫܝܪܬܳܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib110-3" type="split">
-                              <forename>ابراهيم</forename>
-                              <addName type="untagged-title">الصياد</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib110-2" type="split">
-                              <forename>Abraham</forename>
-                              <addName type="untagged-title">al-Ṣayyaḍ</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib110-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib110-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">106</citedRange>
-                     <citedRange unit="pp">333</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib110-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">106</citedRange>
-                     <citedRange unit="pp">291</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib110-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">106</citedRange>
-                     <citedRange unit="pp">316</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-110">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="sic">Abrohom Naḥshirtono</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="split">
+                           <forename>Abrohom</forename>
+                           <addName type="untagged-title">Naḥshirtono</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="sic">Abrohom Naḥshirtono</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib110-1" type="split">
+                  <forename>Abrohom</forename>
+                  <addName type="untagged-title">Naḥshirtono</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib110-4" type="sic">ܐܒܪܗܡ ܢܚܫܝܪܬܢܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib110-4" type="sic">ܐܰܒܪܳܗܡ ܢܰܚܫܝܪܬܳܢܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib110-3" type="sic">ابراهيم الصياد</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib110-2" type="sic">Abraham al-Ṣayyaḍ</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib110-4" type="split">
+                           <forename>ܐܒܪܗܡ</forename>
+                           <addName type="untagged-title">ܢܚܫܝܪܬܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib110-4" type="split">
+                           <forename>ܐܰܒܪܳܗܡ</forename>
+                           <addName type="untagged-title">ܢܰܚܫܝܪܬܳܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib110-3" type="split">
+                           <forename>ابراهيم</forename>
+                           <addName type="untagged-title">الصياد</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib110-2" type="split">
+                           <forename>Abraham</forename>
+                           <addName type="untagged-title">al-Ṣayyaḍ</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib110-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib110-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">106</citedRange>
+                  <citedRange unit="pp">333</citedRange>
+               </bibl>
+               <bibl xml:id="bib110-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">106</citedRange>
+                  <citedRange unit="pp">291</citedRange>
+               </bibl>
+               <bibl xml:id="bib110-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">106</citedRange>
+                  <citedRange unit="pp">316</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

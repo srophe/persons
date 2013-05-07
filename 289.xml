@@ -12,115 +12,110 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-289">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
-                              <forename>Isḥoq</forename>
-                              <surname>ʿAzar</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
-                     <forename>Isḥoq</forename>
-                     <surname>ʿAzar</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib289-3" type="sic">اسحق بطريارك انطاكية</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib289-2" type="sic">Isaac, Patriarch of Antioch</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib289-4" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <addName type="untagged-title">ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib289-4" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <addName type="untagged-title">ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib289-3" type="split">
-                              <forename>اسحق</forename>
-                              <addName type="untagged-title">بطريارك انطاكية</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib289-2" type="split">
-                              <forename>Isaac</forename>
-                              <addName type="untagged-title">Patriarch of Antioch</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib289-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">285</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib289-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">279</citedRange>
-                     <citedRange unit="pp">516</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib289-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">279</citedRange>
-                     <citedRange unit="pp">462</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib289-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">279</citedRange>
-                     <citedRange unit="pp">492</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-289">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
+                           <forename>Isḥoq</forename>
+                           <surname>ʿAzar</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
+                  <forename>Isḥoq</forename>
+                  <surname>ʿAzar</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib289-3" type="sic">اسحق بطريارك انطاكية</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib289-2" type="sic">Isaac, Patriarch of Antioch</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib289-4" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib289-4" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib289-3" type="split">
+                           <forename>اسحق</forename>
+                           <addName type="untagged-title">بطريارك انطاكية</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib289-2" type="split">
+                           <forename>Isaac</forename>
+                           <addName type="untagged-title">Patriarch of Antioch</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib289-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">285</citedRange>
+               </bibl>
+               <bibl xml:id="bib289-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">279</citedRange>
+                  <citedRange unit="pp">516</citedRange>
+               </bibl>
+               <bibl xml:id="bib289-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">279</citedRange>
+                  <citedRange unit="pp">462</citedRange>
+               </bibl>
+               <bibl xml:id="bib289-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">279</citedRange>
+                  <citedRange unit="pp">492</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

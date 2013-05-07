@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-75">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="sic">Peter of Kallinikos</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="split">
-                              <forename>Peter</forename>
-                              <addName type="untagged-title">of Kallinikos</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="sic">Peter of Kallinikos</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="split">
-                     <forename>Peter</forename>
-                     <addName type="untagged-title">of Kallinikos</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib75-4" type="sic">ܦܛܪܘܣ ܏ܓ ܩܠܘܢܝܩܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib75-4" type="sic">ܦܶܛܪܘܣ ܏ܓ ܩܰܠܘܢܝܩܳܝܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib75-3" type="sic">بطرس الثالث القلونيقي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib75-2" type="sic">Peter III of al-Raqqa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib75-4" type="split">
-                              <forename>ܦܛܪܘܣ</forename>
-                              <addName type="untagged-title">ܓ ܩܠܘܢܝܩܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib75-4" type="split">
-                              <forename>ܦܶܛܪܘܣ</forename>
-                              <addName type="untagged-title">ܓ ܩܰܠܘܢܝܩܳܝܳܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib75-3" type="split">
-                              <forename>بطرس</forename>
-                              <addName type="untagged-title">الثالث  القلونيقي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib75-2" type="split">
-                              <forename>Peter</forename>
-                              <addName type="untagged-title">III of al-Raqqa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib75-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib75-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">70</citedRange>
-                     <citedRange unit="pp">309</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib75-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">70</citedRange>
-                     <citedRange unit="pp">269</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib75-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">70</citedRange>
-                     <citedRange unit="pp">295</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-75">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="sic">Peter of Kallinikos</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="split">
+                           <forename>Peter</forename>
+                           <addName type="untagged-title">of Kallinikos</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="sic">Peter of Kallinikos</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib75-1" type="split">
+                  <forename>Peter</forename>
+                  <addName type="untagged-title">of Kallinikos</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib75-4" type="sic">ܦܛܪܘܣ ܏ܓ ܩܠܘܢܝܩܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib75-4" type="sic">ܦܶܛܪܘܣ ܏ܓ ܩܰܠܘܢܝܩܳܝܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib75-3" type="sic">بطرس الثالث القلونيقي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib75-2" type="sic">Peter III of al-Raqqa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib75-4" type="split">
+                           <forename>ܦܛܪܘܣ</forename>
+                           <addName type="untagged-title">ܓ ܩܠܘܢܝܩܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib75-4" type="split">
+                           <forename>ܦܶܛܪܘܣ</forename>
+                           <addName type="untagged-title">ܓ ܩܰܠܘܢܝܩܳܝܳܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib75-3" type="split">
+                           <forename>بطرس</forename>
+                           <addName type="untagged-title">الثالث  القلونيقي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib75-2" type="split">
+                           <forename>Peter</forename>
+                           <addName type="untagged-title">III of al-Raqqa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib75-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib75-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">70</citedRange>
+                  <citedRange unit="pp">309</citedRange>
+               </bibl>
+               <bibl xml:id="bib75-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">70</citedRange>
+                  <citedRange unit="pp">269</citedRange>
+               </bibl>
+               <bibl xml:id="bib75-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">70</citedRange>
+                  <citedRange unit="pp">295</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

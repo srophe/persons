@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-150">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="sic">Theodosios of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="split">
-                              <forename>Theodosios</forename>
-                              <addName type="untagged-title">of Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="sic">Theodosios of Edessa</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="split">
-                     <forename>Theodosios</forename>
-                     <addName type="untagged-title">of Edessa</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib150-4" type="sic">ܬܐܘܕܘܣܝܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib150-4" type="sic">ܬܶܐܘܳܕܳܘܣܝܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܽܪܗܳܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib150-3" type="sic">ثاودوسيوس مطران الرها</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib150-2" type="sic">Theodosius, metropolitan of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib150-4" type="split">
-                              <forename>ܬܐܘܕܘܣܝܘܣ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib150-4" type="split">
-                              <forename>ܬܶܐܘܳܕܳܘܣܝܘܣ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܽܪܗܳܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib150-3" type="split">
-                              <forename>ثاودوسيوس</forename>
-                              <addName type="untagged-title">مطران الرها</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib150-2" type="split">
-                              <forename>Theodosius</forename>
-                              <addName type="untagged-title">Metropolitan of Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib150-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib150-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">149</citedRange>
-                     <citedRange unit="pp">381</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib150-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">149</citedRange>
-                     <citedRange unit="pp">333</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib150-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">149</citedRange>
-                     <citedRange unit="pp">462</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-150">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="sic">Theodosios of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="split">
+                           <forename>Theodosios</forename>
+                           <addName type="untagged-title">of Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="sic">Theodosios of Edessa</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib150-1" type="split">
+                  <forename>Theodosios</forename>
+                  <addName type="untagged-title">of Edessa</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib150-4" type="sic">ܬܐܘܕܘܣܝܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib150-4" type="sic">ܬܶܐܘܳܕܳܘܣܝܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܽܪܗܳܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib150-3" type="sic">ثاودوسيوس مطران الرها</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib150-2" type="sic">Theodosius, metropolitan of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib150-4" type="split">
+                           <forename>ܬܐܘܕܘܣܝܘܣ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib150-4" type="split">
+                           <forename>ܬܶܐܘܳܕܳܘܣܝܘܣ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܽܪܗܳܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib150-3" type="split">
+                           <forename>ثاودوسيوس</forename>
+                           <addName type="untagged-title">مطران الرها</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib150-2" type="split">
+                           <forename>Theodosius</forename>
+                           <addName type="untagged-title">Metropolitan of Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib150-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib150-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">149</citedRange>
+                  <citedRange unit="pp">381</citedRange>
+               </bibl>
+               <bibl xml:id="bib150-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">149</citedRange>
+                  <citedRange unit="pp">333</citedRange>
+               </bibl>
+               <bibl xml:id="bib150-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">149</citedRange>
+                  <citedRange unit="pp">462</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

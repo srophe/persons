@@ -12,117 +12,112 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-281">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="sic">Grigorios Yawseph</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="split">
-                              <forename>Grigorios Yawseph</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="sic">Grigorios Yawseph</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="split">
-                     <forename>Grigorios Yawseph</forename>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib281-4" type="sic">ܝܘܣܦ ܐܝܒܪܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib281-4" type="sic">ܝܰܘܣܦ ܐܝܒܰܪܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib281-3" type="sic">يوسف الكرجي مطران اورشليم</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib281-2" type="sic">Joseph al-Gurji, metropolitan of Jerusalem</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib281-4" type="split">
-                              <forename>ܝܘܣܦ</forename>
-                              <surname>ܐܝܒܪܝܐ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib281-4" type="split">
-                              <forename>ܝܰܘܣܦ</forename>
-                              <surname>ܐܝܒܰܪܝܐ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib281-3" type="split">
-                              <forename>يوسف</forename>
-                              <surname>الكرجي</surname>
-                              <addName type="untagged-title">مطران اورشليم</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib281-2" type="split">
-                              <forename>Joseph</forename>
-                              <surname>al-Gurji</surname>
-                              <addName type="untagged-title">Metropolitan of Jerusalem</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib281-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">240</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib281-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">273</citedRange>
-                     <citedRange unit="pp">511</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib281-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">273</citedRange>
-                     <citedRange unit="pp">458</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib281-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">273</citedRange>
-                     <citedRange unit="pp">488</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-281">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="sic">Grigorios Yawseph</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="split">
+                           <forename>Grigorios Yawseph</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="sic">Grigorios Yawseph</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib281-1" type="split">
+                  <forename>Grigorios Yawseph</forename>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib281-4" type="sic">ܝܘܣܦ ܐܝܒܪܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib281-4" type="sic">ܝܰܘܣܦ ܐܝܒܰܪܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib281-3" type="sic">يوسف الكرجي مطران اورشليم</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib281-2" type="sic">Joseph al-Gurji, metropolitan of Jerusalem</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib281-4" type="split">
+                           <forename>ܝܘܣܦ</forename>
+                           <surname>ܐܝܒܪܝܐ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib281-4" type="split">
+                           <forename>ܝܰܘܣܦ</forename>
+                           <surname>ܐܝܒܰܪܝܐ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib281-3" type="split">
+                           <forename>يوسف</forename>
+                           <surname>الكرجي</surname>
+                           <addName type="untagged-title">مطران اورشليم</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib281-2" type="split">
+                           <forename>Joseph</forename>
+                           <surname>al-Gurji</surname>
+                           <addName type="untagged-title">Metropolitan of Jerusalem</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib281-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">240</citedRange>
+               </bibl>
+               <bibl xml:id="bib281-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">273</citedRange>
+                  <citedRange unit="pp">511</citedRange>
+               </bibl>
+               <bibl xml:id="bib281-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">273</citedRange>
+                  <citedRange unit="pp">458</citedRange>
+               </bibl>
+               <bibl xml:id="bib281-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">273</citedRange>
+                  <citedRange unit="pp">488</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

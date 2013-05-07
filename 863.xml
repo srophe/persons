@@ -12,98 +12,93 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-863">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Teadore of Merv</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Teadore</forename>
-                              <addName type="untagged-title">of Merv</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib863-4" type="sic">ܬܐܘܕܘܪ ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib863-4" type="sic">ܬܶܐܘܕܘܪ ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib863-3" type="sic">ثاودور الذي تسقّف على مرو</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib863-2" type="sic">Theodore, bishop of Merv</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib863-4" type="split">
-                              <forename>ܬܐܘܕܘܪ</forename>
-                              <addName type="untagged-title">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib863-4" type="split">
-                              <forename>ܬܶܐܘܕܘܪ</forename>
-                              <addName type="untagged-title">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib863-3" type="split">
-                              <forename>ثاودور</forename>
-                              <addName type="untagged-title">الذي تسقّف على مرو</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib863-2" type="split">
-                              <forename>Theodore</forename>
-                              <addName type="untagged-title">bishop of Merv</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib863-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib863-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">157</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib863-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-863">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Teadore of Merv</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Teadore</forename>
+                           <addName type="untagged-title">of Merv</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib863-4" type="sic">ܬܐܘܕܘܪ ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib863-4" type="sic">ܬܶܐܘܕܘܪ ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib863-3" type="sic">ثاودور الذي تسقّف على مرو</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib863-2" type="sic">Theodore, bishop of Merv</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib863-4" type="split">
+                           <forename>ܬܐܘܕܘܪ</forename>
+                           <addName type="untagged-title">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib863-4" type="split">
+                           <forename>ܬܶܐܘܕܘܪ</forename>
+                           <addName type="untagged-title">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib863-3" type="split">
+                           <forename>ثاودور</forename>
+                           <addName type="untagged-title">الذي تسقّف على مرو</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib863-2" type="split">
+                           <forename>Theodore</forename>
+                           <addName type="untagged-title">bishop of Merv</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib863-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib863-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">157</citedRange>
+               </bibl>
+               <bibl xml:id="bib863-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

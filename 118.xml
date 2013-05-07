@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-118">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Mushe of Anḥil</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Mushe</forename>
-                              <addName type="untagged-title">of Anḥil</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib118-4" type="sic">ܡܟܬܒܢܐ ܡܘܫܐ ܕܒܝܬ ܢܚ̈ܠܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib118-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܡܘܫܶܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib118-3" type="sic">موسى النحلي المؤرخ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib118-2" type="sic">The Historian Moses of Anḥil</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib118-4" type="split">
-                              <forename>ܡܘܫܐ</forename>
-                              <addName type="untagged-title">ܡܟܬܒܢܐ ܕܒܝܬ ܢܚ̈ܠܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib118-4" type="split">
-                              <forename>ܡܘܫܶܐ</forename>
-                              <addName type="untagged-title">ܡܰܟܬܒܳܢܳܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib118-3" type="split">
-                              <forename>موسى</forename>
-                              <addName type="untagged-title">النحلي , المؤرخ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib118-2" type="split">
-                              <forename>Moses</forename>
-                              <addName type="untagged-title">The Historian, of Anḥil</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib118-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">114</citedRange>
-                     <citedRange unit="pp">352</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib118-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">114</citedRange>
-                     <citedRange unit="pp">307</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib118-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">114</citedRange>
-                     <citedRange unit="pp">334</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-118">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Mushe of Anḥil</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Mushe</forename>
+                           <addName type="untagged-title">of Anḥil</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib118-4" type="sic">ܡܟܬܒܢܐ ܡܘܫܐ ܕܒܝܬ ܢܚ̈ܠܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib118-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܡܘܫܶܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib118-3" type="sic">موسى النحلي المؤرخ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib118-2" type="sic">The Historian Moses of Anḥil</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib118-4" type="split">
+                           <forename>ܡܘܫܐ</forename>
+                           <addName type="untagged-title">ܡܟܬܒܢܐ ܕܒܝܬ ܢܚ̈ܠܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib118-4" type="split">
+                           <forename>ܡܘܫܶܐ</forename>
+                           <addName type="untagged-title">ܡܰܟܬܒܳܢܳܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib118-3" type="split">
+                           <forename>موسى</forename>
+                           <addName type="untagged-title">النحلي , المؤرخ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib118-2" type="split">
+                           <forename>Moses</forename>
+                           <addName type="untagged-title">The Historian, of Anḥil</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib118-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">114</citedRange>
+                  <citedRange unit="pp">352</citedRange>
+               </bibl>
+               <bibl xml:id="bib118-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">114</citedRange>
+                  <citedRange unit="pp">307</citedRange>
+               </bibl>
+               <bibl xml:id="bib118-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">114</citedRange>
+                  <citedRange unit="pp">334</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

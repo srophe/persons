@@ -12,112 +12,107 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-173">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
-                              <forename>Mushe</forename>
-                              <surname>bar Kipho</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
-                     <forename>Mushe</forename>
-                     <surname>bar Kipho</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib173-4" type="sic">ܡܘܫܐ ܒܪ ܟܐܦܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib173-4" type="sic">ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib173-3" type="sic">مار موسي ابن كيفا</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib173-2" type="sic">Mar Moses Bar Kepha</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib173-4" type="split">
-                              <forename>ܡܘܫܐ</forename>
-                              <surname>ܒܪ ܟܐܦܐ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib173-4" type="split">
-                              <forename>ܡܘܫܶܐ</forename>
-                              <surname>ܒܰܪ ܟܺܐܦܳܐ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib173-3" type="split">
-                              <forename>موسي</forename>
-                              <surname>ابن كيفا</surname>
-                              <addName type="untagged-title">مار</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib173-2" type="split"/>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib173-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib173-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">172</citedRange>
-                     <citedRange unit="pp">398</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib173-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">172</citedRange>
-                     <citedRange unit="pp">350</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib173-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">172</citedRange>
-                     <citedRange unit="pp">378</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-173">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
+                           <forename>Mushe</forename>
+                           <surname>bar Kipho</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
+                  <forename>Mushe</forename>
+                  <surname>bar Kipho</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib173-4" type="sic">ܡܘܫܐ ܒܪ ܟܐܦܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib173-4" type="sic">ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib173-3" type="sic">مار موسي ابن كيفا</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib173-2" type="sic">Mar Moses Bar Kepha</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib173-4" type="split">
+                           <forename>ܡܘܫܐ</forename>
+                           <surname>ܒܪ ܟܐܦܐ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib173-4" type="split">
+                           <forename>ܡܘܫܶܐ</forename>
+                           <surname>ܒܰܪ ܟܺܐܦܳܐ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib173-3" type="split">
+                           <forename>موسي</forename>
+                           <surname>ابن كيفا</surname>
+                           <addName type="untagged-title">مار</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib173-2" type="split"/>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib173-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib173-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">172</citedRange>
+                  <citedRange unit="pp">398</citedRange>
+               </bibl>
+               <bibl xml:id="bib173-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">172</citedRange>
+                  <citedRange unit="pp">350</citedRange>
+               </bibl>
+               <bibl xml:id="bib173-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">172</citedRange>
+                  <citedRange unit="pp">378</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-39">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="sic">John Rufus</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="split">
-                              <forename>John</forename>
-                              <surname>Rufus</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="sic">John Rufus</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="split">
-                     <forename>John</forename>
-                     <surname>Rufus</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib39-4" type="sic">ܝܘܚܢܢ ܪܘܦܘܣ ܐܢܛܝܘܟܝܐ ܐܦܝܣܩܘܦܐ ܕܡܐܝܘܡܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib39-4" type="sic">ܝܘܚܰܢܢ ܪܳܘܦܘܣ ܐܰܢܛܝܘܟܳܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܡܰܐܝܘܡܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib39-3" type="sic">يوحنا روفس الانطاكي اسقف مايوما</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib39-2" type="sic">John Rufus the Antiochian, bishop of Mayoma</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib39-4" type="split">
-                              <forename>ܝܘܚܢܢ ܪܘܦܘܣ</forename>
-                              <addName type="untagged-title">ܐܢܛܝܘܟܝܐ, ܐܦܝܣܩܘܦܐ ܕܡܐܝܘܡܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib39-4" type="split">
-                              <forename>ܝܘܚܰܢܢ ܪܳܘܦܘܣ</forename>
-                              <addName type="untagged-title">ܐܰܢܛܝܘܟܳܝܳܐ, ܐܶܦܝܣܩܘܦܳܐ ܕܡܰܐܝܘܡܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib39-3" type="split">
-                              <forename>يوحنا روفس</forename>
-                              <addName type="untagged-title">الانطاكي ، اسقف مايوما</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib39-2" type="split">
-                              <forename>John Rufus</forename>
-                              <addName type="untagged-title">the Antiochian, bishop of Mayoma</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib39-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib39-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">36</citedRange>
-                     <citedRange unit="pp">253</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib39-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">36</citedRange>
-                     <citedRange unit="pp">218</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib39-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">36</citedRange>
-                     <citedRange unit="pp">244</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-39">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="sic">John Rufus</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="split">
+                           <forename>John</forename>
+                           <surname>Rufus</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="sic">John Rufus</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib39-1" type="split">
+                  <forename>John</forename>
+                  <surname>Rufus</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib39-4" type="sic">ܝܘܚܢܢ ܪܘܦܘܣ ܐܢܛܝܘܟܝܐ ܐܦܝܣܩܘܦܐ ܕܡܐܝܘܡܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib39-4" type="sic">ܝܘܚܰܢܢ ܪܳܘܦܘܣ ܐܰܢܛܝܘܟܳܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܡܰܐܝܘܡܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib39-3" type="sic">يوحنا روفس الانطاكي اسقف مايوما</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib39-2" type="sic">John Rufus the Antiochian, bishop of Mayoma</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib39-4" type="split">
+                           <forename>ܝܘܚܢܢ ܪܘܦܘܣ</forename>
+                           <addName type="untagged-title">ܐܢܛܝܘܟܝܐ, ܐܦܝܣܩܘܦܐ ܕܡܐܝܘܡܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib39-4" type="split">
+                           <forename>ܝܘܚܰܢܢ ܪܳܘܦܘܣ</forename>
+                           <addName type="untagged-title">ܐܰܢܛܝܘܟܳܝܳܐ, ܐܶܦܝܣܩܘܦܳܐ ܕܡܰܐܝܘܡܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib39-3" type="split">
+                           <forename>يوحنا روفس</forename>
+                           <addName type="untagged-title">الانطاكي ، اسقف مايوما</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib39-2" type="split">
+                           <forename>John Rufus</forename>
+                           <addName type="untagged-title">the Antiochian, bishop of Mayoma</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib39-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib39-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">36</citedRange>
+                  <citedRange unit="pp">253</citedRange>
+               </bibl>
+               <bibl xml:id="bib39-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">36</citedRange>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib39-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">36</citedRange>
+                  <citedRange unit="pp">244</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

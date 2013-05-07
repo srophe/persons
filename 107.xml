@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-107">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ahrun the Persian</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Ahrun</forename>
-                              <addName type="untagged-title">the Persian</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib107-4" type="sic">ܪܒܢ ܐܗܪܘܢ ܦܪܣܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib107-4" type="sic">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib107-3" type="sic">الربان هارون الفارسي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib107-2" type="sic">Rabban Aaron the Persian</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib107-4" type="split">
-                              <forename>ܐܘܪܗܝܐ</forename>
-                              <addName type="untagged-title">ܪܒܢ ܦܪܣܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib107-4" type="split">
-                              <forename>ܐܘܪܗܳܝܳܐ</forename>
-                              <addName type="untagged-title">ܪܰܒܰܢ ܦܳܪܣܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib107-3" type="split">
-                              <forename>هارون</forename>
-                              <addName type="untagged-title">الربان , الفارسي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib107-2" type="split">
-                              <forename>Aaron</forename>
-                              <addName type="untagged-title">Rabban, the Persian</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib107-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">103</citedRange>
-                     <citedRange unit="pp">331</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib107-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">103</citedRange>
-                     <citedRange unit="pp">288</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib107-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">103</citedRange>
-                     <citedRange unit="pp">315</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-107">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ahrun the Persian</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Ahrun</forename>
+                           <addName type="untagged-title">the Persian</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib107-4" type="sic">ܪܒܢ ܐܗܪܘܢ ܦܪܣܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib107-4" type="sic">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib107-3" type="sic">الربان هارون الفارسي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib107-2" type="sic">Rabban Aaron the Persian</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib107-4" type="split">
+                           <forename>ܐܘܪܗܝܐ</forename>
+                           <addName type="untagged-title">ܪܒܢ ܦܪܣܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib107-4" type="split">
+                           <forename>ܐܘܪܗܳܝܳܐ</forename>
+                           <addName type="untagged-title">ܪܰܒܰܢ ܦܳܪܣܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib107-3" type="split">
+                           <forename>هارون</forename>
+                           <addName type="untagged-title">الربان , الفارسي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib107-2" type="split">
+                           <forename>Aaron</forename>
+                           <addName type="untagged-title">Rabban, the Persian</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib107-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">103</citedRange>
+                  <citedRange unit="pp">331</citedRange>
+               </bibl>
+               <bibl xml:id="bib107-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">103</citedRange>
+                  <citedRange unit="pp">288</citedRange>
+               </bibl>
+               <bibl xml:id="bib107-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">103</citedRange>
+                  <citedRange unit="pp">315</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

@@ -12,115 +12,110 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-305">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="sic">Saka, Yaʿqub</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="split">
-                              <forename>Yaʿqub</forename>
-                              <surname>Saka</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="sic">Saka, Yaʿqub</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="split">
-                     <forename>Yaʿqub</forename>
-                     <surname>Saka</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib305-4" type="sic">ܩܫܝܫܐ ܝܥܩܘܒ ܣܐܟܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib305-4" type="sic">ܩܰܫܝܫܳܐ ܝܰܥܩܘܒ ܣܰܐܟܰܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib305-3" type="sic">القس يعقوب ساكا</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib305-2" type="sic">The Priest Ya‛qub Saka</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib305-4" type="split">
-                              <forename>ܝܥܩܘܒ</forename>
-                              <surname>ܣܐܟܐ</surname>
-                              <addName type="untagged-title">ܩܫܝܫܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib305-4" type="split">
-                              <forename>ܝܰܥܩܘܒ</forename>
-                              <surname>ܣܰܐܟܰܐ</surname>
-                              <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib305-3" type="split">
-                              <forename>يعقوب</forename>
-                              <surname>ساكا</surname>
-                              <addName type="untagged-title">القس</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib305-2" type="split"/>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib305-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">465</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib305-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">292</citedRange>
-                     <citedRange unit="pp">523</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib305-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">292</citedRange>
-                     <citedRange unit="pp">468</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib305-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">292</citedRange>
-                     <citedRange unit="pp">500</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-305">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="sic">Saka, Yaʿqub</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="split">
+                           <forename>Yaʿqub</forename>
+                           <surname>Saka</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="sic">Saka, Yaʿqub</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib305-1" type="split">
+                  <forename>Yaʿqub</forename>
+                  <surname>Saka</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib305-4" type="sic">ܩܫܝܫܐ ܝܥܩܘܒ ܣܐܟܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib305-4" type="sic">ܩܰܫܝܫܳܐ ܝܰܥܩܘܒ ܣܰܐܟܰܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib305-3" type="sic">القس يعقوب ساكا</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib305-2" type="sic">The Priest Ya‛qub Saka</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib305-4" type="split">
+                           <forename>ܝܥܩܘܒ</forename>
+                           <surname>ܣܐܟܐ</surname>
+                           <addName type="untagged-title">ܩܫܝܫܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib305-4" type="split">
+                           <forename>ܝܰܥܩܘܒ</forename>
+                           <surname>ܣܰܐܟܰܐ</surname>
+                           <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib305-3" type="split">
+                           <forename>يعقوب</forename>
+                           <surname>ساكا</surname>
+                           <addName type="untagged-title">القس</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib305-2" type="split"/>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib305-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">465</citedRange>
+               </bibl>
+               <bibl xml:id="bib305-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">292</citedRange>
+                  <citedRange unit="pp">523</citedRange>
+               </bibl>
+               <bibl xml:id="bib305-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">292</citedRange>
+                  <citedRange unit="pp">468</citedRange>
+               </bibl>
+               <bibl xml:id="bib305-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">292</citedRange>
+                  <citedRange unit="pp">500</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

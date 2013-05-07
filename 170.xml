@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-170">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Zurʿo of Nisibis</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Zurʿo</forename>
-                              <addName type="untagged-title">of Nisibis</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib170-4" type="sic">ܙܘܪܥܐ ܡܫܡܫܢܐ ܢܨܝܒܝܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib170-4" type="sic">ܙܘܪܥܳܐ ܡܫܰܡܫܳܢܐ ܢܨܝܒܝܢܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib170-3" type="sic">الشماس زُرعة النصيبيني</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib170-2" type="sic">Deacon Zur‛a of Nisibin</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib170-4" type="split">
-                              <forename>ܙܘܪܥܐ</forename>
-                              <addName type="untagged-title">ܡܫܡܫܢܐ ܢܨܝܒܝܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib170-4" type="split">
-                              <forename>ܙܘܪܥܳܐ</forename>
-                              <addName type="untagged-title">ܡܫܰܡܫܳܢܐ ܢܨܝܒܝܢܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib170-3" type="split">
-                              <forename>زُرعة</forename>
-                              <addName type="untagged-title">الشماس , النصيبيني</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib170-2" type="split">
-                              <forename>Zur‛a</forename>
-                              <addName type="untagged-title">Deacon of Nisibin</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib170-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">169</citedRange>
-                     <citedRange unit="pp">396</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib170-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">169</citedRange>
-                     <citedRange unit="pp">348</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib170-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">169</citedRange>
-                     <citedRange unit="pp">377</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-170">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Zurʿo of Nisibis</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Zurʿo</forename>
+                           <addName type="untagged-title">of Nisibis</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib170-4" type="sic">ܙܘܪܥܐ ܡܫܡܫܢܐ ܢܨܝܒܝܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib170-4" type="sic">ܙܘܪܥܳܐ ܡܫܰܡܫܳܢܐ ܢܨܝܒܝܢܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib170-3" type="sic">الشماس زُرعة النصيبيني</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib170-2" type="sic">Deacon Zur‛a of Nisibin</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib170-4" type="split">
+                           <forename>ܙܘܪܥܐ</forename>
+                           <addName type="untagged-title">ܡܫܡܫܢܐ ܢܨܝܒܝܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib170-4" type="split">
+                           <forename>ܙܘܪܥܳܐ</forename>
+                           <addName type="untagged-title">ܡܫܰܡܫܳܢܐ ܢܨܝܒܝܢܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib170-3" type="split">
+                           <forename>زُرعة</forename>
+                           <addName type="untagged-title">الشماس , النصيبيني</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib170-2" type="split">
+                           <forename>Zur‛a</forename>
+                           <addName type="untagged-title">Deacon of Nisibin</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib170-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">169</citedRange>
+                  <citedRange unit="pp">396</citedRange>
+               </bibl>
+               <bibl xml:id="bib170-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">169</citedRange>
+                  <citedRange unit="pp">348</citedRange>
+               </bibl>
+               <bibl xml:id="bib170-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">169</citedRange>
+                  <citedRange unit="pp">377</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

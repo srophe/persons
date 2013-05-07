@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-550">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="sic">Isḥaq of Nineveh</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="split">
-                              <forename>Isḥaq</forename>
-                              <addName type="untagged-title">of Nineveh</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="sic">Isḥaq of Nineveh</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="split">
-                     <forename>Isḥaq</forename>
-                     <addName type="untagged-title">of Nineveh</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib550-4" type="sic">ܐܝܣܚܩ ܕܢܝܢܘܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib550-4" type="sic">ܐܝܺܣܚܳܩ ܕܢܝܺܢܘܶܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib550-3" type="sic">اسحق النينوي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib550-2" type="sic">Isaac of Nineveh</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib550-4" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <addName type="untagged-title">ܕܢܝܢܘܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib550-4" type="split">
-                              <forename>ܐܝܺܣܚܳܩ</forename>
-                              <addName type="untagged-title">ܕܢܝܺܢܘܶܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib550-3" type="split">
-                              <forename>اسحق</forename>
-                              <addName type="untagged-title">النينوي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib550-2" type="split">
-                              <forename>Isaac</forename>
-                              <addName type="untagged-title">of Nineveh</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib550-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">277</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib550-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib550-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">124</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib550-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-550">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="sic">Isḥaq of Nineveh</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="split">
+                           <forename>Isḥaq</forename>
+                           <addName type="untagged-title">of Nineveh</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="sic">Isḥaq of Nineveh</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib550-1" type="split">
+                  <forename>Isḥaq</forename>
+                  <addName type="untagged-title">of Nineveh</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib550-4" type="sic">ܐܝܣܚܩ ܕܢܝܢܘܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib550-4" type="sic">ܐܝܺܣܚܳܩ ܕܢܝܺܢܘܶܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib550-3" type="sic">اسحق النينوي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib550-2" type="sic">Isaac of Nineveh</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib550-4" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <addName type="untagged-title">ܕܢܝܢܘܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib550-4" type="split">
+                           <forename>ܐܝܺܣܚܳܩ</forename>
+                           <addName type="untagged-title">ܕܢܝܺܢܘܶܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib550-3" type="split">
+                           <forename>اسحق</forename>
+                           <addName type="untagged-title">النينوي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib550-2" type="split">
+                           <forename>Isaac</forename>
+                           <addName type="untagged-title">of Nineveh</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib550-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">277</citedRange>
+               </bibl>
+               <bibl xml:id="bib550-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib550-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">124</citedRange>
+               </bibl>
+               <bibl xml:id="bib550-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

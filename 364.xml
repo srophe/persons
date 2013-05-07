@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-364">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
-                              <forename>Ishoʿ</forename>
-                              <surname>Bar ʿAli</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
-                     <forename>Ishoʿ</forename>
-                     <surname>Bar ʿAli</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib364-4" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib364-4" type="sic">ܝܶܫܘܥ ܒܰܪ ܥܰܠܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib364-3" type="sic">يشوع بن علي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib364-2" type="sic">Yeshuʿ Bar ʿAli</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib364-4" type="split">
-                              <forename>ܝܫܘܥ</forename>
-                              <surname>ܒܪ ܥܠܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib364-4" type="split">
-                              <forename>ܝܶܫܘܥ</forename>
-                              <surname>ܒܰܪ ܥܰܠܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib364-3" type="split">
-                              <forename>يشوع</forename>
-                              <surname>بن علي</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib364-2" type="split">
-                              <forename>Yeshuʿ</forename>
-                              <surname>Bar ʿAli</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib364-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">72</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib364-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib364-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">33</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib364-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-364">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
+                           <forename>Ishoʿ</forename>
+                           <surname>Bar ʿAli</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
+                  <forename>Ishoʿ</forename>
+                  <surname>Bar ʿAli</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib364-4" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib364-4" type="sic">ܝܶܫܘܥ ܒܰܪ ܥܰܠܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib364-3" type="sic">يشوع بن علي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib364-2" type="sic">Yeshuʿ Bar ʿAli</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib364-4" type="split">
+                           <forename>ܝܫܘܥ</forename>
+                           <surname>ܒܪ ܥܠܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib364-4" type="split">
+                           <forename>ܝܶܫܘܥ</forename>
+                           <surname>ܒܰܪ ܥܰܠܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib364-3" type="split">
+                           <forename>يشوع</forename>
+                           <surname>بن علي</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib364-2" type="split">
+                           <forename>Yeshuʿ</forename>
+                           <surname>Bar ʿAli</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib364-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">72</citedRange>
+               </bibl>
+               <bibl xml:id="bib364-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib364-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">33</citedRange>
+               </bibl>
+               <bibl xml:id="bib364-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

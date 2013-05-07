@@ -12,110 +12,105 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-511">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
-                              <forename>Gregory</forename>
-                              <addName type="untagged-title">of Nazianzus</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
-                     <forename>Gregory</forename>
-                     <addName type="untagged-title">of Nazianzus</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib511-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib511-4" type="sic">ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib511-3" type="sic">غريغوريوس النزينزي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib511-2" type="sic">Gregory Nazianzen</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib511-4" type="split">
-                              <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                              <addName type="untagged-title">ܕܢܐܙܝܢܙܘ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib511-4" type="split">
-                              <forename>ܓܪܺܝܓܘܽܪܝܘܣ</forename>
-                              <addName type="untagged-title">ܕܢܰܐܙܰܝܢܰܙܘ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib511-3" type="split">
-                              <forename>غريغوريوس</forename>
-                              <addName type="untagged-title">النزينزي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib511-2" type="split">
-                              <forename>Gregory</forename>
-                              <addName type="untagged-title">Nazianzen</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib511-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">235</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib511-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib511-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">147</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib511-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-511">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
+                           <forename>Gregory</forename>
+                           <addName type="untagged-title">of Nazianzus</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
+                  <forename>Gregory</forename>
+                  <addName type="untagged-title">of Nazianzus</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib511-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib511-4" type="sic">ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib511-3" type="sic">غريغوريوس النزينزي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib511-2" type="sic">Gregory Nazianzen</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib511-4" type="split">
+                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                           <addName type="untagged-title">ܕܢܐܙܝܢܙܘ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib511-4" type="split">
+                           <forename>ܓܪܺܝܓܘܽܪܝܘܣ</forename>
+                           <addName type="untagged-title">ܕܢܰܐܙܰܝܢܰܙܘ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib511-3" type="split">
+                           <forename>غريغوريوس</forename>
+                           <addName type="untagged-title">النزينزي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib511-2" type="split">
+                           <forename>Gregory</forename>
+                           <addName type="untagged-title">Nazianzen</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib511-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">235</citedRange>
+               </bibl>
+               <bibl xml:id="bib511-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib511-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">147</citedRange>
+               </bibl>
+               <bibl xml:id="bib511-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

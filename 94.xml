@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-94">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon of Buṣra</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yuḥanon</forename>
-                              <addName type="untagged-title">of Buṣra</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib94-4" type="sic">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib94-4" type="sic">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib94-3" type="sic">يوحنا مطران بصرى</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib94-2" type="sic">John, metropolitan of Buṣra</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib94-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib94-4" type="split">
-                              <forename>ܝܘܚܰܢܢ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib94-3" type="split">
-                              <forename>يوحنا</forename>
-                              <addName type="untagged-title">مطران بصرى</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib94-2" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">Metropolitan of Buṣra</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib94-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">89</citedRange>
-                     <citedRange unit="pp">323</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib94-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">89</citedRange>
-                     <citedRange unit="pp">281</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib94-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">89</citedRange>
-                     <citedRange unit="pp">307</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-94">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon of Buṣra</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yuḥanon</forename>
+                           <addName type="untagged-title">of Buṣra</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib94-4" type="sic">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib94-4" type="sic">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib94-3" type="sic">يوحنا مطران بصرى</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib94-2" type="sic">John, metropolitan of Buṣra</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib94-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib94-4" type="split">
+                           <forename>ܝܘܚܰܢܢ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib94-3" type="split">
+                           <forename>يوحنا</forename>
+                           <addName type="untagged-title">مطران بصرى</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib94-2" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">Metropolitan of Buṣra</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib94-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">89</citedRange>
+                  <citedRange unit="pp">323</citedRange>
+               </bibl>
+               <bibl xml:id="bib94-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">89</citedRange>
+                  <citedRange unit="pp">281</citedRange>
+               </bibl>
+               <bibl xml:id="bib94-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">89</citedRange>
+                  <citedRange unit="pp">307</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-96">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="sic">Yuḥanon Naqar</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="split">
-                              <forename>Yuḥanon</forename>
-                              <addName type="untagged-title">Naqar</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="sic">Yuḥanon Naqar</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="split">
-                     <forename>Yuḥanon</forename>
-                     <addName type="untagged-title">Naqar</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib96-4" type="sic">ܝܘܚܢܢ ܢܝܩܪ ܥܢܘܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib96-4" type="sic">ܝܘܚܰܢܢ ܢܺܝܩܰܪ ܥܶܢܘܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib96-3" type="sic">يوحنا نقر الناسك</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib96-2" type="sic">The Ascetic John of Naqar</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib96-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <addName type="untagged-title">ܢܝܩܪ ܥܢܘܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib96-4" type="split">
-                              <forename>ܝܘܚܰܢܢ</forename>
-                              <addName type="untagged-title">ܢܺܝܩܰܪ ܥܶܢܘܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib96-3" type="split">
-                              <forename>يوحنا</forename>
-                              <addName type="untagged-title">نقر الناسك</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib96-2" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">The Ascetic, of Naqar</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib96-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib96-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">91</citedRange>
-                     <citedRange unit="pp">324</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib96-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">91</citedRange>
-                     <citedRange unit="pp">282</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib96-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">91</citedRange>
-                     <citedRange unit="pp">309</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-96">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="sic">Yuḥanon Naqar</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="split">
+                           <forename>Yuḥanon</forename>
+                           <addName type="untagged-title">Naqar</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="sic">Yuḥanon Naqar</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib96-1" type="split">
+                  <forename>Yuḥanon</forename>
+                  <addName type="untagged-title">Naqar</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib96-4" type="sic">ܝܘܚܢܢ ܢܝܩܪ ܥܢܘܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib96-4" type="sic">ܝܘܚܰܢܢ ܢܺܝܩܰܪ ܥܶܢܘܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib96-3" type="sic">يوحنا نقر الناسك</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib96-2" type="sic">The Ascetic John of Naqar</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib96-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <addName type="untagged-title">ܢܝܩܪ ܥܢܘܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib96-4" type="split">
+                           <forename>ܝܘܚܰܢܢ</forename>
+                           <addName type="untagged-title">ܢܺܝܩܰܪ ܥܶܢܘܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib96-3" type="split">
+                           <forename>يوحنا</forename>
+                           <addName type="untagged-title">نقر الناسك</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib96-2" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">The Ascetic, of Naqar</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib96-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib96-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">91</citedRange>
+                  <citedRange unit="pp">324</citedRange>
+               </bibl>
+               <bibl xml:id="bib96-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">91</citedRange>
+                  <citedRange unit="pp">282</citedRange>
+               </bibl>
+               <bibl xml:id="bib96-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">91</citedRange>
+                  <citedRange unit="pp">309</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

@@ -12,95 +12,90 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-576">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="sic">John Philoponos</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">Philoponos</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="sic">John Philoponos</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="split">
-                     <forename>John</forename>
-                     <addName type="untagged-title">Philoponos</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib576-4" type="sic">ܝܘܚܢܢ ܦܝܠܠܘܦܘܢܘܣ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib576-4" type="sic">ܝܘܚܰܢܳܢ ܦܝܺܠܠܘܦܘܢܘܣ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib576-3" type="sic">يوحنا فيلوفونس</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib576-4" type="split">
-                              <forename>ܝܘܚܢܢ</forename>
-                              <addName type="untagged-title">ܦܝܠܠܘܦܘܢܘܣ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib576-4" type="split">
-                              <forename>ܝܘܚܰܢܳܢ</forename>
-                              <addName type="untagged-title">ܦܝܺܠܠܘܦܘܢܘܣ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib576-3" type="split">
-                              <forename>يوحنا</forename>
-                              <addName type="untagged-title">فيلوفونس</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib576-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">306</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib576-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">156</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib576-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-576">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="sic">John Philoponos</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">Philoponos</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="sic">John Philoponos</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib576-1" type="split">
+                  <forename>John</forename>
+                  <addName type="untagged-title">Philoponos</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib576-4" type="sic">ܝܘܚܢܢ ܦܝܠܠܘܦܘܢܘܣ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib576-4" type="sic">ܝܘܚܰܢܳܢ ܦܝܺܠܠܘܦܘܢܘܣ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib576-3" type="sic">يوحنا فيلوفونس</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib576-4" type="split">
+                           <forename>ܝܘܚܢܢ</forename>
+                           <addName type="untagged-title">ܦܝܠܠܘܦܘܢܘܣ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib576-4" type="split">
+                           <forename>ܝܘܚܰܢܳܢ</forename>
+                           <addName type="untagged-title">ܦܝܺܠܠܘܦܘܢܘܣ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib576-3" type="split">
+                           <forename>يوحنا</forename>
+                           <addName type="untagged-title">فيلوفونس</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib576-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">306</citedRange>
+               </bibl>
+               <bibl xml:id="bib576-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">156</citedRange>
+               </bibl>
+               <bibl xml:id="bib576-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

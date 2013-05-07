@@ -12,95 +12,90 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-400">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="sic">Braun, Oskar</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="split">
-                              <forename>Oskar</forename>
-                              <surname>Braun</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="sic">Braun, Oskar</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="split">
-                     <forename>Oskar</forename>
-                     <surname>Braun</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib400-4" type="sic">ܐܘܣܟܐܪ ܒܪܘܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib400-4" type="sic">ܐܘܣܟܰܐܪ ܒܪܰܘܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib400-3" type="sic">اوسكار برون</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib400-4" type="split">
-                              <forename>ܐܘܣܟܐܪ</forename>
-                              <surname>ܒܪܘܢ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib400-4" type="split">
-                              <forename>ܐܘܣܟܰܐܪ</forename>
-                              <surname>ܒܪܰܘܢ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib400-3" type="split">
-                              <forename>اوسكار</forename>
-                              <surname>برون</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib400-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">113</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib400-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">475</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib400-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-400">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="sic">Braun, Oskar</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="split">
+                           <forename>Oskar</forename>
+                           <surname>Braun</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="sic">Braun, Oskar</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib400-1" type="split">
+                  <forename>Oskar</forename>
+                  <surname>Braun</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib400-4" type="sic">ܐܘܣܟܐܪ ܒܪܘܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib400-4" type="sic">ܐܘܣܟܰܐܪ ܒܪܰܘܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib400-3" type="sic">اوسكار برون</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib400-4" type="split">
+                           <forename>ܐܘܣܟܐܪ</forename>
+                           <surname>ܒܪܘܢ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib400-4" type="split">
+                           <forename>ܐܘܣܟܰܐܪ</forename>
+                           <surname>ܒܪܰܘܢ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib400-3" type="split">
+                           <forename>اوسكار</forename>
+                           <surname>برون</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib400-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">113</citedRange>
+               </bibl>
+               <bibl xml:id="bib400-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">475</citedRange>
+               </bibl>
+               <bibl xml:id="bib400-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

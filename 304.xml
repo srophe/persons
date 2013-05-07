@@ -12,115 +12,110 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-304">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="sic">Fāʾiq, Naʿʿūm</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="split">
-                              <forename>Naʿʿūm</forename>
-                              <surname>Fāʾiq</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="sic">Fāʾiq, Naʿʿūm</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="split">
-                     <forename>Naʿʿūm</forename>
-                     <surname>Fāʾiq</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib304-4" type="sic">ܡܫܡܫܢܐ ܢܥܘܡ ܦܐܝܩ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib304-4" type="sic">ܡܫܰܡܫܳܢܐ ܢܰܥܘܡ ܦܰܐܝܩ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib304-3" type="sic">الشماس نعوم فائق</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib304-2" type="sic">Deacon Na‛‛um Fa'iq</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib304-4" type="split">
-                              <forename>ܢܥܘܡ ܦܐܝܩ</forename>
-                              <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib304-4" type="split">
-                              <forename>ܢܰܥܘܡ ܦܰܐܝܩ</forename>
-                              <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib304-3" type="split">
-                              <forename>نعوم فائق</forename>
-                              <addName type="untagged-title">الشماس</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib304-2" type="split">
-                              <forename>Na‛‛um Fa'iq</forename>
-                              <addName type="untagged-title">Deacon</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib304-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">208</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib304-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">291</citedRange>
-                     <citedRange unit="pp">523</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib304-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">291</citedRange>
-                     <citedRange unit="pp">468</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib304-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">291</citedRange>
-                     <citedRange unit="pp">500</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-304">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="sic">Fāʾiq, Naʿʿūm</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="split">
+                           <forename>Naʿʿūm</forename>
+                           <surname>Fāʾiq</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="sic">Fāʾiq, Naʿʿūm</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib304-1" type="split">
+                  <forename>Naʿʿūm</forename>
+                  <surname>Fāʾiq</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib304-4" type="sic">ܡܫܡܫܢܐ ܢܥܘܡ ܦܐܝܩ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib304-4" type="sic">ܡܫܰܡܫܳܢܐ ܢܰܥܘܡ ܦܰܐܝܩ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib304-3" type="sic">الشماس نعوم فائق</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib304-2" type="sic">Deacon Na‛‛um Fa'iq</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib304-4" type="split">
+                           <forename>ܢܥܘܡ ܦܐܝܩ</forename>
+                           <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib304-4" type="split">
+                           <forename>ܢܰܥܘܡ ܦܰܐܝܩ</forename>
+                           <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib304-3" type="split">
+                           <forename>نعوم فائق</forename>
+                           <addName type="untagged-title">الشماس</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib304-2" type="split">
+                           <forename>Na‛‛um Fa'iq</forename>
+                           <addName type="untagged-title">Deacon</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib304-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">208</citedRange>
+               </bibl>
+               <bibl xml:id="bib304-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">291</citedRange>
+                  <citedRange unit="pp">523</citedRange>
+               </bibl>
+               <bibl xml:id="bib304-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">291</citedRange>
+                  <citedRange unit="pp">468</citedRange>
+               </bibl>
+               <bibl xml:id="bib304-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">291</citedRange>
+                  <citedRange unit="pp">500</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

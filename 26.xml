@@ -12,120 +12,115 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-26">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="sic">ܪܒܘܠܐ ܕܐܘܪܗܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="sic">Rabbula of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="split">
-                              <forename>ܪܒܘܠܐ</forename>
-                              <addName type="terms-of-address">ܕܐܘܪܗܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="split">
-                              <forename>Rabbula</forename>
-                              <addName type="untagged-title">of Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="sic">Rabbula of Edessa</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="split">
-                     <forename>Rabbula</forename>
-                     <addName type="untagged-title">of Edessa</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib26-4" type="sic">ܪܒܘܠܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib26-4" type="sic">ܪܰܒܘܠܐ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib26-3" type="sic">رابولا مطران الرها</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib26-2" type="sic">Rabula, metropolitan of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib26-4" type="split">
-                              <forename>ܪܒܘܠܐ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib26-4" type="split">
-                              <forename>ܪܰܒܘܠܐ</forename>
-                              <addName type="untagged-title">ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib26-3" type="split">
-                              <forename>رابولا</forename>
-                              <addName type="untagged-title">مطران الرها</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib26-2" type="split"/>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib26-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib26-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">23</citedRange>
-                     <citedRange unit="pp">242</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib26-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">23</citedRange>
-                     <citedRange unit="pp">208</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib26-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">23</citedRange>
-                     <citedRange unit="pp">234</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-26">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="sic">ܪܒܘܠܐ ܕܐܘܪܗܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="sic">Rabbula of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="split">
+                           <forename>ܪܒܘܠܐ</forename>
+                           <addName type="terms-of-address">ܕܐܘܪܗܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="split">
+                           <forename>Rabbula</forename>
+                           <addName type="untagged-title">of Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="sic">Rabbula of Edessa</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib26-1" type="split">
+                  <forename>Rabbula</forename>
+                  <addName type="untagged-title">of Edessa</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib26-4" type="sic">ܪܒܘܠܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib26-4" type="sic">ܪܰܒܘܠܐ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib26-3" type="sic">رابولا مطران الرها</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib26-2" type="sic">Rabula, metropolitan of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib26-4" type="split">
+                           <forename>ܪܒܘܠܐ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib26-4" type="split">
+                           <forename>ܪܰܒܘܠܐ</forename>
+                           <addName type="untagged-title">ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib26-3" type="split">
+                           <forename>رابولا</forename>
+                           <addName type="untagged-title">مطران الرها</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib26-2" type="split"/>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib26-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib26-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">23</citedRange>
+                  <citedRange unit="pp">242</citedRange>
+               </bibl>
+               <bibl xml:id="bib26-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">23</citedRange>
+                  <citedRange unit="pp">208</citedRange>
+               </bibl>
+               <bibl xml:id="bib26-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">23</citedRange>
+                  <citedRange unit="pp">234</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

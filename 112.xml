@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-112">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿun of Qenneshre</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Shemʿun</forename>
-                              <addName type="untagged-title">of Qenneshre</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib112-4" type="sic">ܩܫܝܫܐ ܫܡܥܘܢ ܕܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib112-4" type="sic">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib112-3" type="sic">القس شمعون من دير قنسرين</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib112-2" type="sic">Presbyter Simon of the Monastery of Qenneshrin</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib112-4" type="split">
-                              <forename>ܫܡܥܘܢ</forename>
-                              <addName type="untagged-title">ܩܫܝܫܐ ܕܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib112-4" type="split">
-                              <forename>ܫܶܡܥܘܢ</forename>
-                              <addName type="untagged-title">ܩܰܫܝܫܳܐ ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib112-3" type="split">
-                              <forename>شمعون</forename>
-                              <addName type="untagged-title">القس من دير قنسرين</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib112-2" type="split">
-                              <forename>Simon</forename>
-                              <addName type="untagged-title">Presbyter of the Monastery of Qenneshrin</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib112-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">108</citedRange>
-                     <citedRange unit="pp">334</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib112-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">108</citedRange>
-                     <citedRange unit="pp">291</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib112-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">108</citedRange>
-                     <citedRange unit="pp">317</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-112">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿun of Qenneshre</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Shemʿun</forename>
+                           <addName type="untagged-title">of Qenneshre</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib112-4" type="sic">ܩܫܝܫܐ ܫܡܥܘܢ ܕܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib112-4" type="sic">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib112-3" type="sic">القس شمعون من دير قنسرين</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib112-2" type="sic">Presbyter Simon of the Monastery of Qenneshrin</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib112-4" type="split">
+                           <forename>ܫܡܥܘܢ</forename>
+                           <addName type="untagged-title">ܩܫܝܫܐ ܕܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib112-4" type="split">
+                           <forename>ܫܶܡܥܘܢ</forename>
+                           <addName type="untagged-title">ܩܰܫܝܫܳܐ ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib112-3" type="split">
+                           <forename>شمعون</forename>
+                           <addName type="untagged-title">القس من دير قنسرين</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib112-2" type="split">
+                           <forename>Simon</forename>
+                           <addName type="untagged-title">Presbyter of the Monastery of Qenneshrin</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib112-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">108</citedRange>
+                  <citedRange unit="pp">334</citedRange>
+               </bibl>
+               <bibl xml:id="bib112-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">108</citedRange>
+                  <citedRange unit="pp">291</citedRange>
+               </bibl>
+               <bibl xml:id="bib112-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">108</citedRange>
+                  <citedRange unit="pp">317</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

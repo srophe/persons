@@ -12,47 +12,42 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-466">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
-                              <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
-                              <surname>Elias</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
-                     <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
-                     <surname>Elias</surname>
-                  </persName>
-                  <bibl xml:id="bib466-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">186</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-466">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
+                           <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
+                           <surname>Elias</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
+                  <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
+                  <surname>Elias</surname>
+               </persName>
+               <bibl xml:id="bib466-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">186</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

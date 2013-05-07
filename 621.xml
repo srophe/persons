@@ -12,108 +12,103 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-621">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="sic">Maron</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="split">
-                              <forename>Maron</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="sic">Maron</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="split">
-                     <forename>Maron</forename>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib621-4" type="sic">ܡܪܝ ܡܪܘܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib621-4" type="sic">ܡܳܪܝ ܡܰܪܘܢ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib621-3" type="sic">مار مارون</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib621-2" type="sic">Mar Marun</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib621-4" type="split">
-                              <forename>ܡܪܘܢ</forename>
-                              <addName type="untagged-title">ܡܪܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib621-4" type="split">
-                              <forename>ܡܰܪܘܢ</forename>
-                              <addName type="untagged-title">ܡܳܪܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib621-3" type="split">
-                              <forename>مارون</forename>
-                              <addName type="untagged-title">مار</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib621-2" type="split">
-                              <forename>Marun</forename>
-                              <addName type="untagged-title">Mar</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib621-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">355</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib621-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib621-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">73</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib621-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-621">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="sic">Maron</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="split">
+                           <forename>Maron</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="sic">Maron</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib621-1" type="split">
+                  <forename>Maron</forename>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib621-4" type="sic">ܡܪܝ ܡܪܘܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib621-4" type="sic">ܡܳܪܝ ܡܰܪܘܢ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib621-3" type="sic">مار مارون</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib621-2" type="sic">Mar Marun</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib621-4" type="split">
+                           <forename>ܡܪܘܢ</forename>
+                           <addName type="untagged-title">ܡܪܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib621-4" type="split">
+                           <forename>ܡܰܪܘܢ</forename>
+                           <addName type="untagged-title">ܡܳܪܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib621-3" type="split">
+                           <forename>مارون</forename>
+                           <addName type="untagged-title">مار</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib621-2" type="split">
+                           <forename>Marun</forename>
+                           <addName type="untagged-title">Mar</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib621-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">355</citedRange>
+               </bibl>
+               <bibl xml:id="bib621-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib621-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">73</citedRange>
+               </bibl>
+               <bibl xml:id="bib621-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

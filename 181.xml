@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-181">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Athanasios of Qlisuro</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Athanasios</forename>
-                              <addName type="untagged-title">of Qlisuro</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib181-4" type="sic">ܐܬܢܐܣܝܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib181-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib181-3" type="sic">اثناسيوس اسقف قليسورا</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib181-2" type="sic">Athanasius, bishop of Qallisura</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib181-4" type="split">
-                              <forename>ܐܬܢܐܣܝܘܣ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib181-4" type="split">
-                              <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib181-3" type="split">
-                              <forename>اثناسيوس</forename>
-                              <addName type="untagged-title">اسقف قليسورا</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib181-2" type="split">
-                              <forename>Athanasius</forename>
-                              <addName type="untagged-title">Bishop of Qallisura</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib181-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">181</citedRange>
-                     <citedRange unit="pp">407</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib181-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">181</citedRange>
-                     <citedRange unit="pp">538</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib181-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">181</citedRange>
-                     <citedRange unit="pp">386</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-181">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Athanasios of Qlisuro</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Athanasios</forename>
+                           <addName type="untagged-title">of Qlisuro</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib181-4" type="sic">ܐܬܢܐܣܝܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib181-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib181-3" type="sic">اثناسيوس اسقف قليسورا</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib181-2" type="sic">Athanasius, bishop of Qallisura</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib181-4" type="split">
+                           <forename>ܐܬܢܐܣܝܘܣ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib181-4" type="split">
+                           <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib181-3" type="split">
+                           <forename>اثناسيوس</forename>
+                           <addName type="untagged-title">اسقف قليسورا</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib181-2" type="split">
+                           <forename>Athanasius</forename>
+                           <addName type="untagged-title">Bishop of Qallisura</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib181-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">181</citedRange>
+                  <citedRange unit="pp">407</citedRange>
+               </bibl>
+               <bibl xml:id="bib181-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">181</citedRange>
+                  <citedRange unit="pp">538</citedRange>
+               </bibl>
+               <bibl xml:id="bib181-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">181</citedRange>
+                  <citedRange unit="pp">386</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

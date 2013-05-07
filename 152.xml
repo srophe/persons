@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-152">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="sic">Benjamin of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="split">
-                              <forename>Benjamin</forename>
-                              <addName type="untagged-title">of Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="sic">Benjamin of Edessa</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="split">
-                     <forename>Benjamin</forename>
-                     <addName type="untagged-title">of Edessa</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib152-4" type="sic">ܒܢܝܡܝܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib152-4" type="sic">ܒܶܢܝܳܡܝܢ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib152-3" type="sic">بنيامين مطران الرها</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib152-2" type="sic">Benjamin, metropolitan of Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib152-4" type="split">
-                              <forename>ܒܢܝܡܝܢ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib152-4" type="split">
-                              <forename>ܒܶܢܝܳܡܝܢ</forename>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib152-3" type="split">
-                              <forename>بنيامين</forename>
-                              <addName type="untagged-title">مطران الرها</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib152-2" type="split">
-                              <forename>Benjamin</forename>
-                              <addName type="untagged-title">Metropolitan of Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib152-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib152-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">151</citedRange>
-                     <citedRange unit="pp">382</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib152-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">151</citedRange>
-                     <citedRange unit="pp">335</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib152-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">151</citedRange>
-                     <citedRange unit="pp">363</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-152">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="sic">Benjamin of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="split">
+                           <forename>Benjamin</forename>
+                           <addName type="untagged-title">of Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="sic">Benjamin of Edessa</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib152-1" type="split">
+                  <forename>Benjamin</forename>
+                  <addName type="untagged-title">of Edessa</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib152-4" type="sic">ܒܢܝܡܝܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib152-4" type="sic">ܒܶܢܝܳܡܝܢ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib152-3" type="sic">بنيامين مطران الرها</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib152-2" type="sic">Benjamin, metropolitan of Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib152-4" type="split">
+                           <forename>ܒܢܝܡܝܢ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib152-4" type="split">
+                           <forename>ܒܶܢܝܳܡܝܢ</forename>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib152-3" type="split">
+                           <forename>بنيامين</forename>
+                           <addName type="untagged-title">مطران الرها</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib152-2" type="split">
+                           <forename>Benjamin</forename>
+                           <addName type="untagged-title">Metropolitan of Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib152-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib152-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">151</citedRange>
+                  <citedRange unit="pp">382</citedRange>
+               </bibl>
+               <bibl xml:id="bib152-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">151</citedRange>
+                  <citedRange unit="pp">335</citedRange>
+               </bibl>
+               <bibl xml:id="bib152-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">151</citedRange>
+                  <citedRange unit="pp">363</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

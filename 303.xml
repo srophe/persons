@@ -12,97 +12,92 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-303">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="sic">Konat, Matta</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="split">
-                              <forename>Matta</forename>
-                              <surname>Konat</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="sic">Konat, Matta</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="split">
-                     <forename>Matta</forename>
-                     <surname>Konat</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib303-4" type="sic">ܟܘܪܝܐ ܡܬܝ ܟܘܢܐܛ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib303-4" type="sic">ܟܘܪܳܝܐ ܡܰܬܝ ܟܘܢܰܐܛ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib303-2" type="sic">Chorepiscopus Matthew Konat</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib303-4" type="split">
-                              <forename>ܡܬܝ ܟܘܢܐܛ</forename>
-                              <addName type="untagged-title">ܟܘܪܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib303-4" type="split">
-                              <forename>ܡܰܬܝ ܟܘܢܰܐܛ</forename>
-                              <addName type="untagged-title">ܟܘܪܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib303-2" type="split">
-                              <forename>Matthew Konat</forename>
-                              <addName type="untagged-title">Chorepiscopus</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib303-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib303-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">290</citedRange>
-                     <citedRange unit="pp">522</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib303-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">290</citedRange>
-                     <citedRange unit="pp">499</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-303">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="sic">Konat, Matta</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="split">
+                           <forename>Matta</forename>
+                           <surname>Konat</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="sic">Konat, Matta</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib303-1" type="split">
+                  <forename>Matta</forename>
+                  <surname>Konat</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib303-4" type="sic">ܟܘܪܝܐ ܡܬܝ ܟܘܢܐܛ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib303-4" type="sic">ܟܘܪܳܝܐ ܡܰܬܝ ܟܘܢܰܐܛ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib303-2" type="sic">Chorepiscopus Matthew Konat</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib303-4" type="split">
+                           <forename>ܡܬܝ ܟܘܢܐܛ</forename>
+                           <addName type="untagged-title">ܟܘܪܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib303-4" type="split">
+                           <forename>ܡܰܬܝ ܟܘܢܰܐܛ</forename>
+                           <addName type="untagged-title">ܟܘܪܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib303-2" type="split">
+                           <forename>Matthew Konat</forename>
+                           <addName type="untagged-title">Chorepiscopus</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib303-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib303-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">290</citedRange>
+                  <citedRange unit="pp">522</citedRange>
+               </bibl>
+               <bibl xml:id="bib303-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">290</citedRange>
+                  <citedRange unit="pp">499</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

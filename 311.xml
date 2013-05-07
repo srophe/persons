@@ -12,86 +12,81 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-311">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
-                              <forename>ʿAbdishoʿ</forename>
-                              <addName type="untagged-title">of Gazarta</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
-                     <forename>ʿAbdishoʿ</forename>
-                     <addName type="untagged-title">of Gazarta</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib311-3" type="sic">عبد يشوع اسقف الجزيرة</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib311-2" type="sic">ʿAbd Yeshuʿ of the Jazira</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib311-3" type="split">
-                              <forename>عبد يشوع</forename>
-                              <addName type="untagged-title">اسقف الجزيرة</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib311-2" type="split">
-                              <forename>ʿAbd Yeshuʿ</forename>
-                              <addName type="untagged-title">of the Jazira</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib311-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">6</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib311-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib311-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">126</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-311">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
+                           <forename>ʿAbdishoʿ</forename>
+                           <addName type="untagged-title">of Gazarta</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
+                  <forename>ʿAbdishoʿ</forename>
+                  <addName type="untagged-title">of Gazarta</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib311-3" type="sic">عبد يشوع اسقف الجزيرة</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib311-2" type="sic">ʿAbd Yeshuʿ of the Jazira</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib311-3" type="split">
+                           <forename>عبد يشوع</forename>
+                           <addName type="untagged-title">اسقف الجزيرة</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib311-2" type="split">
+                           <forename>ʿAbd Yeshuʿ</forename>
+                           <addName type="untagged-title">of the Jazira</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib311-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">6</citedRange>
+               </bibl>
+               <bibl xml:id="bib311-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib311-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">126</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

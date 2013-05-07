@@ -12,100 +12,95 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-286">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon of Wank</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yuḥanon</forename>
-                              <addName type="untagged-title">of Wank</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib286-4" type="sic">ܐܝܘܐܢܝܣ ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib286-4" type="sic">ܐܺܝܘܰܐܢܝܣ ܘܰܐܢܟܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܰܦܰܕܘܩܳܝܐ ܘܕܐܽܘܪܗܳܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib286-3" type="sic">وانيس الونكي مطران قبادوقية و الرها</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib286-2" type="sic">John Wanki, metropolitan of Cappadocia and Edessa</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib286-4" type="split">
-                              <forename>ܐܝܘܐܢܝܣ</forename>
-                              <addName type="untagged-title">ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib286-4" type="split"/>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib286-3" type="split">
-                              <forename>وانيس</forename>
-                              <addName type="untagged-title">الونكي ,   مطران قبادوقية و الرها</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib286-2" type="split">
-                              <forename>John</forename>
-                              <addName type="untagged-title">Wanki, metropolitan of Cappadocia and Edessa</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib286-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">276</citedRange>
-                     <citedRange unit="pp">514</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib286-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">276</citedRange>
-                     <citedRange unit="pp">460</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib286-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">276</citedRange>
-                     <citedRange unit="pp">491</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-286">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon of Wank</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yuḥanon</forename>
+                           <addName type="untagged-title">of Wank</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib286-4" type="sic">ܐܝܘܐܢܝܣ ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib286-4" type="sic">ܐܺܝܘܰܐܢܝܣ ܘܰܐܢܟܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܰܦܰܕܘܩܳܝܐ ܘܕܐܽܘܪܗܳܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib286-3" type="sic">وانيس الونكي مطران قبادوقية و الرها</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib286-2" type="sic">John Wanki, metropolitan of Cappadocia and Edessa</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib286-4" type="split">
+                           <forename>ܐܝܘܐܢܝܣ</forename>
+                           <addName type="untagged-title">ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib286-4" type="split"/>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib286-3" type="split">
+                           <forename>وانيس</forename>
+                           <addName type="untagged-title">الونكي ,   مطران قبادوقية و الرها</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib286-2" type="split">
+                           <forename>John</forename>
+                           <addName type="untagged-title">Wanki, metropolitan of Cappadocia and Edessa</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib286-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">276</citedRange>
+                  <citedRange unit="pp">514</citedRange>
+               </bibl>
+               <bibl xml:id="bib286-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">276</citedRange>
+                  <citedRange unit="pp">460</citedRange>
+               </bibl>
+               <bibl xml:id="bib286-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">276</citedRange>
+                  <citedRange unit="pp">491</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

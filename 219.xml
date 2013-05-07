@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-219">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon Dawid of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yuḥanon Dawid</forename>
-                              <addName type="untagged-title">of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib219-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܕܘܝܕ ܐܡܝܕܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib219-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܕܰܘܝܕ ܐܳܡܝܕܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib219-3" type="sic">الاسقف يوحنا داود الآمدي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib219-2" type="sic">Bishop John David of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib219-4" type="split">
-                              <forename>ܝܘܚܢܢ ܕܘܝܕ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܐܡܝܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib219-4" type="split">
-                              <forename>ܝܘܚܰܢܢ ܕܰܘܝܕ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ ܐܳܡܝܕܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib219-3" type="split">
-                              <forename>يوحنا داود</forename>
-                              <addName type="untagged-title">الاسقف , الآمدي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib219-2" type="split">
-                              <forename>John David</forename>
-                              <addName type="untagged-title">Bishop, of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib219-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">216</citedRange>
-                     <citedRange unit="pp">448</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib219-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">216</citedRange>
-                     <citedRange unit="pp">398</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib219-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">216</citedRange>
-                     <citedRange unit="pp">428</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-219">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon Dawid of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yuḥanon Dawid</forename>
+                           <addName type="untagged-title">of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib219-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܕܘܝܕ ܐܡܝܕܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib219-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܕܰܘܝܕ ܐܳܡܝܕܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib219-3" type="sic">الاسقف يوحنا داود الآمدي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib219-2" type="sic">Bishop John David of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib219-4" type="split">
+                           <forename>ܝܘܚܢܢ ܕܘܝܕ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܐܡܝܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib219-4" type="split">
+                           <forename>ܝܘܚܰܢܢ ܕܰܘܝܕ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ ܐܳܡܝܕܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib219-3" type="split">
+                           <forename>يوحنا داود</forename>
+                           <addName type="untagged-title">الاسقف , الآمدي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib219-2" type="split">
+                           <forename>John David</forename>
+                           <addName type="untagged-title">Bishop, of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib219-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">216</citedRange>
+                  <citedRange unit="pp">448</citedRange>
+               </bibl>
+               <bibl xml:id="bib219-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">216</citedRange>
+                  <citedRange unit="pp">398</citedRange>
+               </bibl>
+               <bibl xml:id="bib219-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">216</citedRange>
+                  <citedRange unit="pp">428</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

@@ -12,111 +12,106 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-40">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
-                              <forename>Yeshuʿ</forename>
-                              <addName type="untagged-title">the Stylite</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
-                     <forename>Yeshuʿ</forename>
-                     <addName type="untagged-title">the Stylite</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib40-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܡܒܝܬܝ ܠܩܫܝܫܐ ܝܫܘܥ ܐܣܛܘܢܪܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib40-4" type="sic">ܡܰܟܬܰܒܙܒܢ̈ܐ ܕܰܡܒܰܝܬܰܝ ܠܩܰܫܝܫܳܐ ܝܶܫܘܥ ܐܶܣܛܘܢܳܪܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib40-3" type="sic">التاريخ المنسوب الى القس يشوع العمودي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib40-2" type="sic">The History Ascribed to the Priest Joshua the Stylite</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib40-4" type="split">
-                              <forename>ܝܫܘܥ</forename>
-                              <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib40-4" type="split">
-                              <forename>ܝܶܫܘܥ</forename>
-                              <addName type="untagged-title">ܐܶܣܛܘܢܳܪܳܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib40-3" type="split">
-                              <forename>يشوع</forename>
-                              <addName type="untagged-title">القس ، العمودي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib40-2" type="split"/>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib40-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib40-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">37</citedRange>
-                     <citedRange unit="pp">254</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib40-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">37</citedRange>
-                     <citedRange unit="pp">218</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib40-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">37</citedRange>
-                     <citedRange unit="pp">245</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-40">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
+                           <forename>Yeshuʿ</forename>
+                           <addName type="untagged-title">the Stylite</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
+                  <forename>Yeshuʿ</forename>
+                  <addName type="untagged-title">the Stylite</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib40-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܡܒܝܬܝ ܠܩܫܝܫܐ ܝܫܘܥ ܐܣܛܘܢܪܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib40-4" type="sic">ܡܰܟܬܰܒܙܒܢ̈ܐ ܕܰܡܒܰܝܬܰܝ ܠܩܰܫܝܫܳܐ ܝܶܫܘܥ ܐܶܣܛܘܢܳܪܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib40-3" type="sic">التاريخ المنسوب الى القس يشوع العمودي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib40-2" type="sic">The History Ascribed to the Priest Joshua the Stylite</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib40-4" type="split">
+                           <forename>ܝܫܘܥ</forename>
+                           <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib40-4" type="split">
+                           <forename>ܝܶܫܘܥ</forename>
+                           <addName type="untagged-title">ܐܶܣܛܘܢܳܪܳܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib40-3" type="split">
+                           <forename>يشوع</forename>
+                           <addName type="untagged-title">القس ، العمودي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib40-2" type="split"/>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib40-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib40-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">37</citedRange>
+                  <citedRange unit="pp">254</citedRange>
+               </bibl>
+               <bibl xml:id="bib40-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">37</citedRange>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib40-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">37</citedRange>
+                  <citedRange unit="pp">245</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

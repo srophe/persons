@@ -12,102 +12,97 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-274">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Addai of Beth Sbirino</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Addai</forename>
-                              <addName type="untagged-title">of Beth Sbirino</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib274-4" type="sic">ܩܫܝܫܐ ܐܕܝ ܣܒܝܪܝܢܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib274-4" type="sic">ܩܰܫܝܫܐ ܐܰܕܰܝ ܣܒܝܪܝܢܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib274-3" type="sic">القس ادى السبيريني</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib274-2" type="sic">The Priest Addai of Basibrina</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib274-4" type="split">
-                              <forename>ܐܕܝ</forename>
-                              <addName type="untagged-title">ܩܫܝܫܐ ܣܒܝܪܝܢܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib274-4" type="split">
-                              <forename>ܐܰܕܰܝ</forename>
-                              <addName type="untagged-title">ܩܰܫܝܫܐ ܣܒܝܪܝܢܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib274-3" type="split">
-                              <forename>ادى</forename>
-                              <addName type="untagged-title">القس , السبيريني</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib274-2" type="split">
-                              <forename>Addai</forename>
-                              <addName type="untagged-title">The Priest, of Basibrina</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib274-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">267</citedRange>
-                     <citedRange unit="pp">506</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib274-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">267</citedRange>
-                     <citedRange unit="pp">453</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib274-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">267</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-274">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Addai of Beth Sbirino</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Addai</forename>
+                           <addName type="untagged-title">of Beth Sbirino</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib274-4" type="sic">ܩܫܝܫܐ ܐܕܝ ܣܒܝܪܝܢܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib274-4" type="sic">ܩܰܫܝܫܐ ܐܰܕܰܝ ܣܒܝܪܝܢܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib274-3" type="sic">القس ادى السبيريني</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib274-2" type="sic">The Priest Addai of Basibrina</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib274-4" type="split">
+                           <forename>ܐܕܝ</forename>
+                           <addName type="untagged-title">ܩܫܝܫܐ ܣܒܝܪܝܢܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib274-4" type="split">
+                           <forename>ܐܰܕܰܝ</forename>
+                           <addName type="untagged-title">ܩܰܫܝܫܐ ܣܒܝܪܝܢܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib274-3" type="split">
+                           <forename>ادى</forename>
+                           <addName type="untagged-title">القس , السبيريني</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib274-2" type="split">
+                           <forename>Addai</forename>
+                           <addName type="untagged-title">The Priest, of Basibrina</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib274-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">267</citedRange>
+                  <citedRange unit="pp">506</citedRange>
+               </bibl>
+               <bibl xml:id="bib274-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">267</citedRange>
+                  <citedRange unit="pp">453</citedRange>
+               </bibl>
+               <bibl xml:id="bib274-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">267</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

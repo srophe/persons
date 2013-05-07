@@ -12,92 +12,87 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-70">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice/>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice/>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib70-4" type="sic">ܩܘܪܝܩܘܣ ܕܬܠܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib70-4" type="sic">ܩܘܪܝܰܩܘܣ ܕܬܶܠܐܰ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib70-3" type="sic">قرياقس التلي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib70-2" type="sic">Quryaqos of Tella</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib70-4" type="split">
-                              <forename>ܩܘܪܝܩܘܣ</forename>
-                              <addName type="untagged-title">ܕܬܠܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib70-4" type="split">
-                              <forename>ܩܘܪܝܰܩܘܣ</forename>
-                              <addName type="untagged-title">ܕܬܶܠܐܰ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib70-3" type="split">
-                              <forename>قرياقس</forename>
-                              <addName type="untagged-title">التلي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib70-2" type="split">
-                              <forename>Quryaqos</forename>
-                              <addName type="untagged-title">of Tella</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib70-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">65</citedRange>
-                     <citedRange unit="pp">301</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib70-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">65</citedRange>
-                     <citedRange unit="pp">261</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib70-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">65</citedRange>
-                     <citedRange unit="pp">288</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-70">
+               <persName resp="syriaca.org" type="sic">
+                  <choice/>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice/>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib70-4" type="sic">ܩܘܪܝܩܘܣ ܕܬܠܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib70-4" type="sic">ܩܘܪܝܰܩܘܣ ܕܬܶܠܐܰ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib70-3" type="sic">قرياقس التلي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib70-2" type="sic">Quryaqos of Tella</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib70-4" type="split">
+                           <forename>ܩܘܪܝܩܘܣ</forename>
+                           <addName type="untagged-title">ܕܬܠܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib70-4" type="split">
+                           <forename>ܩܘܪܝܰܩܘܣ</forename>
+                           <addName type="untagged-title">ܕܬܶܠܐܰ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib70-3" type="split">
+                           <forename>قرياقس</forename>
+                           <addName type="untagged-title">التلي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib70-2" type="split">
+                           <forename>Quryaqos</forename>
+                           <addName type="untagged-title">of Tella</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib70-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">65</citedRange>
+                  <citedRange unit="pp">301</citedRange>
+               </bibl>
+               <bibl xml:id="bib70-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">65</citedRange>
+                  <citedRange unit="pp">261</citedRange>
+               </bibl>
+               <bibl xml:id="bib70-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">65</citedRange>
+                  <citedRange unit="pp">288</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

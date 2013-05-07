@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-231">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="sic">Yaʿqub bar Shakko</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="split">
-                              <forename>Yaʿqub</forename>
-                              <surname>bar Shakko</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="sic">Yaʿqub bar Shakko</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="split">
-                     <forename>Yaʿqub</forename>
-                     <surname>bar Shakko</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib231-4" type="sic">ܝܥܩܘܒ ܒܪ ܛܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܝܪܐ ܕܡܪܝ ܡܬܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib231-4" type="sic">ܝܰܥܩܘܒ ܒܰܪ ܛܰܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܕܰܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib231-3" type="sic">يعقوب البرطلي مطران دير مار متى</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib231-2" type="sic">Jacob of Barṭelli</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib231-4" type="split">
-                              <forename>ܝܥܩܘܒ</forename>
-                              <addName type="untagged-title">ܒܪ ܛܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܝܪܐ ܕܡܪܝ ܡܬܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib231-4" type="split">
-                              <forename>ܝܰܥܩܘܒ</forename>
-                              <addName type="untagged-title">ܒܰܪ ܛܰܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܕܰܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib231-3" type="split">
-                              <forename>يعقوب</forename>
-                              <addName type="untagged-title">البرطلي , مطران دير مار متى</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib231-2" type="split">
-                              <forename>Jacob</forename>
-                              <addName type="untagged-title">of Barṭelli</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib231-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib231-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">228</citedRange>
-                     <citedRange unit="pp">455</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib231-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">228</citedRange>
-                     <citedRange unit="pp">404</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib231-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">228</citedRange>
-                     <citedRange unit="pp">435</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-231">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="sic">Yaʿqub bar Shakko</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="split">
+                           <forename>Yaʿqub</forename>
+                           <surname>bar Shakko</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="sic">Yaʿqub bar Shakko</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib231-1" type="split">
+                  <forename>Yaʿqub</forename>
+                  <surname>bar Shakko</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib231-4" type="sic">ܝܥܩܘܒ ܒܪ ܛܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܝܪܐ ܕܡܪܝ ܡܬܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib231-4" type="sic">ܝܰܥܩܘܒ ܒܰܪ ܛܰܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܕܰܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib231-3" type="sic">يعقوب البرطلي مطران دير مار متى</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib231-2" type="sic">Jacob of Barṭelli</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib231-4" type="split">
+                           <forename>ܝܥܩܘܒ</forename>
+                           <addName type="untagged-title">ܒܪ ܛܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܝܪܐ ܕܡܪܝ ܡܬܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib231-4" type="split">
+                           <forename>ܝܰܥܩܘܒ</forename>
+                           <addName type="untagged-title">ܒܰܪ ܛܰܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܕܰܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib231-3" type="split">
+                           <forename>يعقوب</forename>
+                           <addName type="untagged-title">البرطلي , مطران دير مار متى</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib231-2" type="split">
+                           <forename>Jacob</forename>
+                           <addName type="untagged-title">of Barṭelli</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib231-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib231-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">228</citedRange>
+                  <citedRange unit="pp">455</citedRange>
+               </bibl>
+               <bibl xml:id="bib231-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">228</citedRange>
+                  <citedRange unit="pp">404</citedRange>
+               </bibl>
+               <bibl xml:id="bib231-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">228</citedRange>
+                  <citedRange unit="pp">435</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

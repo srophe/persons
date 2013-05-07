@@ -12,98 +12,93 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-807">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
-                              <forename>William</forename>
-                              <surname>Wright</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
-                     <forename>William</forename>
-                     <surname>Wright</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib807-4" type="sic">ܘܠܝܡ ܪܐܝܬ ܐܢܓܠܝܙܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib807-4" type="sic">ܘܶܠܝܰܡ ܪܰܐܝܬ ܐܶܢܓܠܝܙܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib807-3" type="sic">وليم رايت الانكليزي</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib807-4" type="split">
-                              <forename>ܘܠܝܡ</forename>
-                              <surname>ܪܐܝܬ</surname>
-                              <addName type="untagged-title">ܐܢܓܠܝܙܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib807-4" type="split">
-                              <forename>ܘܶܠܝܰܡ</forename>
-                              <surname>ܪܰܐܝܬ</surname>
-                              <addName type="untagged-title">ܐܶܢܓܠܝܙܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib807-3" type="split">
-                              <forename>وليم</forename>
-                              <surname>رايت</surname>
-                              <addName type="untagged-title">الانكليزي</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib807-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">575</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib807-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">476</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib807-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-807">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
+                           <forename>William</forename>
+                           <surname>Wright</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
+                  <forename>William</forename>
+                  <surname>Wright</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib807-4" type="sic">ܘܠܝܡ ܪܐܝܬ ܐܢܓܠܝܙܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib807-4" type="sic">ܘܶܠܝܰܡ ܪܰܐܝܬ ܐܶܢܓܠܝܙܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib807-3" type="sic">وليم رايت الانكليزي</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib807-4" type="split">
+                           <forename>ܘܠܝܡ</forename>
+                           <surname>ܪܐܝܬ</surname>
+                           <addName type="untagged-title">ܐܢܓܠܝܙܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib807-4" type="split">
+                           <forename>ܘܶܠܝܰܡ</forename>
+                           <surname>ܪܰܐܝܬ</surname>
+                           <addName type="untagged-title">ܐܶܢܓܠܝܙܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib807-3" type="split">
+                           <forename>وليم</forename>
+                           <surname>رايت</surname>
+                           <addName type="untagged-title">الانكليزي</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib807-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">575</citedRange>
+               </bibl>
+               <bibl xml:id="bib807-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">476</citedRange>
+               </bibl>
+               <bibl xml:id="bib807-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

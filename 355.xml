@@ -12,113 +12,108 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-355">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
-                              <forename>Toma</forename>
-                              <surname>Audo</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
-                     <forename>Toma</forename>
-                     <surname>Audo</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ ܬܐܘܡܐ ܐܘܕܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ ܬܐܘܡܰܐ ܐܘܕܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib355-3" type="sic">المطران توما اودو</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib355-2" type="sic">Tuma Odo</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib355-4" type="split">
-                              <forename>ܬܐܘܡܐ</forename>
-                              <surname>ܐܘܕܐ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib355-4" type="split">
-                              <forename>ܬܐܘܡܰܐ</forename>
-                              <surname>ܐܘܕܳܐ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib355-3" type="split">
-                              <forename>توما</forename>
-                              <surname>اودو</surname>
-                              <addName type="untagged-title">المطران توما</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib355-2" type="split">
-                              <forename>Tuma</forename>
-                              <surname>Odo</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib355-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                     <citedRange unit="entry">62</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib355-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                  </bibl>
-                  <bibl xml:id="bib355-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="pp">34</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib355-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-355">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
+                           <forename>Toma</forename>
+                           <surname>Audo</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
+                  <forename>Toma</forename>
+                  <surname>Audo</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ ܬܐܘܡܐ ܐܘܕܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ ܬܐܘܡܰܐ ܐܘܕܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib355-3" type="sic">المطران توما اودو</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib355-2" type="sic">Tuma Odo</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib355-4" type="split">
+                           <forename>ܬܐܘܡܐ</forename>
+                           <surname>ܐܘܕܐ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib355-4" type="split">
+                           <forename>ܬܐܘܡܰܐ</forename>
+                           <surname>ܐܘܕܳܐ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib355-3" type="split">
+                           <forename>توما</forename>
+                           <surname>اودو</surname>
+                           <addName type="untagged-title">المطران توما</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib355-2" type="split">
+                           <forename>Tuma</forename>
+                           <surname>Odo</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib355-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">62</citedRange>
+               </bibl>
+               <bibl xml:id="bib355-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+               <bibl xml:id="bib355-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">34</citedRange>
+               </bibl>
+               <bibl xml:id="bib355-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

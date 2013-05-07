@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-217">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
-                              <forename>Michael I</forename>
-                              <addName type="untagged-title">Rabo</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
-                     <forename>Michael I</forename>
-                     <addName type="untagged-title">Rabo</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib217-4" type="sic">ܡܪܝ ܡܝܟܐܝܠ ܪܒܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib217-4" type="sic">ܡܳܪܝ ܡܝܟܳܐܝܠ ܪܰܒܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib217-3" type="sic">مار ميخائيل الكبير</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib217-2" type="sic">Mar Michael the Great</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib217-4" type="split">
-                              <forename>ܡܝܟܐܝܠ</forename>
-                              <addName type="untagged-title">ܡܪܝ ܪܒܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib217-4" type="split">
-                              <forename>ܡܝܟܳܐܝܠ</forename>
-                              <addName type="untagged-title">ܡܳܪܝ ܪܰܒܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib217-3" type="split">
-                              <forename>ميخائيل</forename>
-                              <addName type="untagged-title">مار ,  الكبير</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib217-2" type="split">
-                              <forename>Michael</forename>
-                              <addName type="untagged-title">Mar, the Great</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib217-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib217-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">214</citedRange>
-                     <citedRange unit="pp">445</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib217-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">214</citedRange>
-                     <citedRange unit="pp">394</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib217-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">214</citedRange>
-                     <citedRange unit="pp">425</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-217">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
+                           <forename>Michael I</forename>
+                           <addName type="untagged-title">Rabo</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
+                  <forename>Michael I</forename>
+                  <addName type="untagged-title">Rabo</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib217-4" type="sic">ܡܪܝ ܡܝܟܐܝܠ ܪܒܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib217-4" type="sic">ܡܳܪܝ ܡܝܟܳܐܝܠ ܪܰܒܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib217-3" type="sic">مار ميخائيل الكبير</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib217-2" type="sic">Mar Michael the Great</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib217-4" type="split">
+                           <forename>ܡܝܟܐܝܠ</forename>
+                           <addName type="untagged-title">ܡܪܝ ܪܒܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib217-4" type="split">
+                           <forename>ܡܝܟܳܐܝܠ</forename>
+                           <addName type="untagged-title">ܡܳܪܝ ܪܰܒܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib217-3" type="split">
+                           <forename>ميخائيل</forename>
+                           <addName type="untagged-title">مار ,  الكبير</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib217-2" type="split">
+                           <forename>Michael</forename>
+                           <addName type="untagged-title">Mar, the Great</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib217-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib217-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">214</citedRange>
+                  <citedRange unit="pp">445</citedRange>
+               </bibl>
+               <bibl xml:id="bib217-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">214</citedRange>
+                  <citedRange unit="pp">394</citedRange>
+               </bibl>
+               <bibl xml:id="bib217-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">214</citedRange>
+                  <citedRange unit="pp">425</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

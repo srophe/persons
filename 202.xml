@@ -12,103 +12,98 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-202">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Baselios Abū Ghālib bar Sabouni</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Baselios Abū Ghālib</forename>
-                              <surname>bar Sabouni</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib202-4" type="sic">ܒܣܝܠܝܘܣ ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib202-4" type="sic">ܒܰܣܝܠܝܘܣ ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib202-3" type="sic">باسيليوس ابو غالب ابن الصابوني</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib202-2" type="sic">Basilius Abu Ghalib Ibn al-Ṣabuni</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib202-4" type="split">
-                              <forename>ܒܣܝܠܝܘܣ</forename>
-                              <surname>ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib202-4" type="split">
-                              <forename>ܒܰܣܝܠܝܘܣ</forename>
-                              <surname>ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib202-3" type="split">
-                              <forename>باسيليوس</forename>
-                              <surname>ابو غالب ابن الصابوني</surname>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib202-2" type="split">
-                              <forename>Basilius</forename>
-                              <surname>Abu Ghalib Ibn al-Ṣabuni</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib202-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">199</citedRange>
-                     <citedRange unit="pp">424</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib202-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">199</citedRange>
-                     <citedRange unit="pp">374</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib202-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">199</citedRange>
-                     <citedRange unit="pp">404</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-202">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Baselios Abū Ghālib bar Sabouni</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Baselios Abū Ghālib</forename>
+                           <surname>bar Sabouni</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib202-4" type="sic">ܒܣܝܠܝܘܣ ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib202-4" type="sic">ܒܰܣܝܠܝܘܣ ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib202-3" type="sic">باسيليوس ابو غالب ابن الصابوني</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib202-2" type="sic">Basilius Abu Ghalib Ibn al-Ṣabuni</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib202-4" type="split">
+                           <forename>ܒܣܝܠܝܘܣ</forename>
+                           <surname>ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib202-4" type="split">
+                           <forename>ܒܰܣܝܠܝܘܣ</forename>
+                           <surname>ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib202-3" type="split">
+                           <forename>باسيليوس</forename>
+                           <surname>ابو غالب ابن الصابوني</surname>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib202-2" type="split">
+                           <forename>Basilius</forename>
+                           <surname>Abu Ghalib Ibn al-Ṣabuni</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib202-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">199</citedRange>
+                  <citedRange unit="pp">424</citedRange>
+               </bibl>
+               <bibl xml:id="bib202-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">199</citedRange>
+                  <citedRange unit="pp">374</citedRange>
+               </bibl>
+               <bibl xml:id="bib202-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">199</citedRange>
+                  <citedRange unit="pp">404</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

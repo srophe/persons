@@ -12,123 +12,118 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-17">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
-                              <forename>Isḥaq</forename>
-                              <addName type="untagged-title">of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
-                     <forename>Isḥaq</forename>
-                     <addName type="untagged-title">of Amid</addName>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib17-4" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib17-4" type="sic">ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib17-3" type="sic">اسحق الآمدي</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib17-2" type="sic">Isaac of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib17-4" type="split">
-                              <forename>ܐܝܣܚܩ</forename>
-                              <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib17-4" type="split">
-                              <forename>ܐܝܣܚܳܩ</forename>
-                              <addName type="untagged-title">ܐܳܡܝܕܳܝܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib17-3" type="split">
-                              <forename>اسحق</forename>
-                              <addName type="untagged-title">الآمدي</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib17-2" type="split">
-                              <forename>Isaac</forename>
-                              <addName type="untagged-title">of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib17-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib17-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">16</citedRange>
-                     <citedRange unit="pp">238</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib17-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">16</citedRange>
-                     <citedRange unit="pp">204</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib17-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">16</citedRange>
-                     <citedRange unit="pp">228</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-17">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
+                           <forename>Isḥaq</forename>
+                           <addName type="untagged-title">of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
+                  <forename>Isḥaq</forename>
+                  <addName type="untagged-title">of Amid</addName>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib17-4" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib17-4" type="sic">ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib17-3" type="sic">اسحق الآمدي</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib17-2" type="sic">Isaac of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib17-4" type="split">
+                           <forename>ܐܝܣܚܩ</forename>
+                           <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib17-4" type="split">
+                           <forename>ܐܝܣܚܳܩ</forename>
+                           <addName type="untagged-title">ܐܳܡܝܕܳܝܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib17-3" type="split">
+                           <forename>اسحق</forename>
+                           <addName type="untagged-title">الآمدي</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib17-2" type="split">
+                           <forename>Isaac</forename>
+                           <addName type="untagged-title">of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib17-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib17-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">16</citedRange>
+                  <citedRange unit="pp">238</citedRange>
+               </bibl>
+               <bibl xml:id="bib17-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">16</citedRange>
+                  <citedRange unit="pp">204</citedRange>
+               </bibl>
+               <bibl xml:id="bib17-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">16</citedRange>
+                  <citedRange unit="pp">228</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

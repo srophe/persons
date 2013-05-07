@@ -12,102 +12,97 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-114">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Euthalius</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Euthalius</forename>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib114-4" type="sic">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib114-4" type="sic">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib114-3" type="sic">الاسقف اوثاليوس</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib114-2" type="sic">Bishop Euthalius</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib114-4" type="split">
-                              <forename>ܐܘܬܐܠܝܘܣ</forename>
-                              <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib114-4" type="split">
-                              <forename>ܐܘܬܐܰܠܝܘܣ</forename>
-                              <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib114-3" type="split">
-                              <forename>اوثاليوس</forename>
-                              <addName type="untagged-title">الاسقف</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib114-2" type="split">
-                              <forename>Euthalius</forename>
-                              <addName type="untagged-title">Bishop</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib114-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">110</citedRange>
-                     <citedRange unit="pp">351</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib114-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">110</citedRange>
-                     <citedRange unit="pp">306</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib114-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">110</citedRange>
-                     <citedRange unit="pp">332</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-114">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Euthalius</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Euthalius</forename>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib114-4" type="sic">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib114-4" type="sic">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib114-3" type="sic">الاسقف اوثاليوس</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib114-2" type="sic">Bishop Euthalius</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib114-4" type="split">
+                           <forename>ܐܘܬܐܠܝܘܣ</forename>
+                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib114-4" type="split">
+                           <forename>ܐܘܬܐܰܠܝܘܣ</forename>
+                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib114-3" type="split">
+                           <forename>اوثاليوس</forename>
+                           <addName type="untagged-title">الاسقف</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib114-2" type="split">
+                           <forename>Euthalius</forename>
+                           <addName type="untagged-title">Bishop</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib114-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">110</citedRange>
+                  <citedRange unit="pp">351</citedRange>
+               </bibl>
+               <bibl xml:id="bib114-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">110</citedRange>
+                  <citedRange unit="pp">306</citedRange>
+               </bibl>
+               <bibl xml:id="bib114-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">110</citedRange>
+                  <citedRange unit="pp">332</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

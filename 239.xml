@@ -12,114 +12,109 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-239">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
-                              <forename>Grigorios</forename>
-                              <surname>Bar ʿEbroyo</surname>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
-                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
-                     <forename>Grigorios</forename>
-                     <surname>Bar ʿEbroyo</surname>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib239-4" type="sic">ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib239-4" type="sic">ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib239-3" type="sic">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib239-2" type="sic">Mar Gregorius Bar Hebraeus</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib239-4" type="split">
-                              <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                              <surname>ܒܪ ܥܒܪܝܐ</surname>
-                              <addName type="untagged-title">ܡܪܝ  ܡܦܪܝܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib239-4" type="split">
-                              <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
-                              <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
-                              <addName type="untagged-title">ܡܳܪܝ ܡܰܦܪܝܳܢܐ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib239-3" type="split"/>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib239-2" type="split">
-                              <forename>Gregorius</forename>
-                              <surname>Bar Hebraeus</surname>
-                              <addName type="untagged-title">Mar</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib239-1">
-                     <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
-                     <abbr>GEDSH</abbr>
-                     <ptr target="http://syriaca.org/bibl/1"/>
-                  </bibl>
-                  <bibl xml:id="bib239-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">235</citedRange>
-                     <citedRange unit="pp">463</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib239-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">235</citedRange>
-                     <citedRange unit="pp">411</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib239-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">235</citedRange>
-                     <citedRange unit="pp">443</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-239">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
+                           <forename>Grigorios</forename>
+                           <surname>Bar ʿEbroyo</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
+                  <forename>Grigorios</forename>
+                  <surname>Bar ʿEbroyo</surname>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib239-4" type="sic">ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib239-4" type="sic">ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib239-3" type="sic">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib239-2" type="sic">Mar Gregorius Bar Hebraeus</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib239-4" type="split">
+                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                           <surname>ܒܪ ܥܒܪܝܐ</surname>
+                           <addName type="untagged-title">ܡܪܝ  ܡܦܪܝܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib239-4" type="split">
+                           <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
+                           <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
+                           <addName type="untagged-title">ܡܳܪܝ ܡܰܦܪܝܳܢܐ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib239-3" type="split"/>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib239-2" type="split">
+                           <forename>Gregorius</forename>
+                           <surname>Bar Hebraeus</surname>
+                           <addName type="untagged-title">Mar</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib239-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib239-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">235</citedRange>
+                  <citedRange unit="pp">463</citedRange>
+               </bibl>
+               <bibl xml:id="bib239-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">235</citedRange>
+                  <citedRange unit="pp">411</citedRange>
+               </bibl>
+               <bibl xml:id="bib239-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">235</citedRange>
+                  <citedRange unit="pp">443</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>

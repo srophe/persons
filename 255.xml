@@ -12,108 +12,103 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="person-255">
-                  <persName resp="syriaca.org" type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawsep bar Gharib of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName resp="syriaca.org" type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                              <forename>Yawsep</forename>
-                              <surname>bar Gharib</surname>
-                              <addName type="untagged-title">of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="sic">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib255-4" type="sic">ܝܘܣܦ ܒܪ ܓܪܝܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib255-4" type="sic">ܝܘܣܶܦ ܒܰܪ ܓܰܪܝܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib255-3" type="sic">يوسف ابن غريب مطران آمد</persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib255-2" type="sic">Joseph Bar Gharīb, metropolitan of Amid</persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <persName type="split">
-                     <choice>
-                        <seg>
-                           <persName xml:lang="syr-Syrc" source="#bib255-4" type="split">
-                              <forename>ܝܘܣܦ</forename>
-                              <surname>ܒܪ ܓܪܝܒ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="syr-Syrj" source="#bib255-4" type="split">
-                              <forename>ܝܘܣܶܦ</forename>
-                              <surname>ܒܰܪ ܓܰܪܝܒ</surname>
-                              <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="ar" source="#bib255-3" type="split">
-                              <forename>يوسف</forename>
-                              <surname>ابن غريب</surname>
-                              <addName type="untagged-title">مطران آمد</addName>
-                           </persName>
-                        </seg>
-                        <seg>
-                           <persName xml:lang="en" source="#bib255-2" type="split">
-                              <forename>Joseph</forename>
-                              <surname>Bar Gharīb</surname>
-                              <addName type="untagged-title">Metropolitan of Amid</addName>
-                           </persName>
-                        </seg>
-                     </choice>
-                  </persName>
-                  <bibl xml:id="bib255-2">
-                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
-                     <abbr>Barsoum (English)</abbr>
-                     <ptr target="http://syriaca.org/bibl/4"/>
-                     <citedRange unit="entry">250</citedRange>
-                     <citedRange unit="pp">492</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib255-3">
-                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
-                     <abbr>Barsoum (Arabic)</abbr>
-                     <ptr target="http://syriaca.org/bibl/2"/>
-                     <citedRange unit="entry">250</citedRange>
-                     <citedRange unit="pp">441</citedRange>
-                  </bibl>
-                  <bibl xml:id="bib255-4">
-                     <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
-                     <abbr>Barsoum (Syriac)</abbr>
-                     <ptr target="http://syriaca.org/bibl/3"/>
-                     <citedRange unit="entry">250</citedRange>
-                     <citedRange unit="pp">473</citedRange>
-                  </bibl>
-               </person>
-            </listPerson>
-         </particDesc>
-      </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <p>Some text here.</p>
+         <listPerson>
+            <person xml:id="person-255">
+               <persName resp="syriaca.org" type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawsep bar Gharib of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName resp="syriaca.org" type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Yawsep</forename>
+                           <surname>bar Gharib</surname>
+                           <addName type="untagged-title">of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="sic">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib255-4" type="sic">ܝܘܣܦ ܒܪ ܓܪܝܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib255-4" type="sic">ܝܘܣܶܦ ܒܰܪ ܓܰܪܝܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib255-3" type="sic">يوسف ابن غريب مطران آمد</persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib255-2" type="sic">Joseph Bar Gharīb, metropolitan of Amid</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Syrc" source="#bib255-4" type="split">
+                           <forename>ܝܘܣܦ</forename>
+                           <surname>ܒܪ ܓܪܝܒ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="syr-Syrj" source="#bib255-4" type="split">
+                           <forename>ܝܘܣܶܦ</forename>
+                           <surname>ܒܰܪ ܓܰܪܝܒ</surname>
+                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="ar" source="#bib255-3" type="split">
+                           <forename>يوسف</forename>
+                           <surname>ابن غريب</surname>
+                           <addName type="untagged-title">مطران آمد</addName>
+                        </persName>
+                     </seg>
+                     <seg>
+                        <persName xml:lang="en" source="#bib255-2" type="split">
+                           <forename>Joseph</forename>
+                           <surname>Bar Gharīb</surname>
+                           <addName type="untagged-title">Metropolitan of Amid</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <bibl xml:id="bib255-2">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                                                    Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="entry">250</citedRange>
+                  <citedRange unit="pp">492</citedRange>
+               </bibl>
+               <bibl xml:id="bib255-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="entry">250</citedRange>
+                  <citedRange unit="pp">441</citedRange>
+               </bibl>
+               <bibl xml:id="bib255-4">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                    Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="entry">250</citedRange>
+                  <citedRange unit="pp">473</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
       </body>
    </text>
 </TEI>
