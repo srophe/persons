@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-657">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib657-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib657-1"
                          resp="http://syriaca.org">Nilus the Solitary</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib657-2" type="sic">Nilus the Recluse</persName>
-               <persName xml:lang="ar" source="bib657-3" type="sic">نيلس الناسك</persName>
-               <persName xml:lang="syr" source="bib657-4" type="sic">ܢܝܠܘܣ ܥܢܘܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib657-4" type="sic">ܢܝܠܘܣ ܥܶܢܘܳܝܳܐ</persName>
-               <persName xml:lang="syr" source="bib657-5" type="sic">ܢܝܠܘܣ ܕܝܪܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib657-5" type="sic">ܢܝܼܠܘܿܣ ܕܲܝܪܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib657-6" type="sic">ܢܝܠܘܣ ܕܝܪܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib657-1" type="sic">Nilus the Solitary</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib657-1" type="split">
-                           <forename>Nilus</forename>
-                           <addName type="untagged-title">the Solitary</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib657-1" type="sic">Nilus the Solitary</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib657-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib657-2">Nilus the Recluse</persName>
+               <persName type="sic" xml:lang="ar" source="#bib657-3">نيلس الناسك</persName>
+               <persName type="sic" xml:lang="syr" source="#bib657-4">ܢܝܠܘܣ ܥܢܘܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib657-4">ܢܝܠܘܣ ܥܶܢܘܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib657-5">ܢܝܠܘܣ ܕܝܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib657-5">ܢܝܼܠܘܿܣ ܕܲܝܪܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib657-6">ܢܝܠܘܣ ܕܝܪܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib657-1"
+                         resp="http://syriaca.org">
                   <forename>Nilus</forename>
-                  <addName type="untagged-title">the Solitary</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib657-4" type="sic">ܢܝܠܘܣ ܥܢܘܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib657-4" type="sic">ܢܝܠܘܣ ܥܶܢܘܳܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib657-3" type="sic">نيلس الناسك</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib657-2" type="sic">Nilus the Recluse</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib657-2">
+                  <forename>Nilus</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib657-3">
+                  <forename>نيلس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib657-4">
+                  <forename>ܢܝܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib657-4">
+                  <forename>ܢܝܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib657-5">
+                  <forename>ܢܝܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib657-5">
+                  <forename>ܢܝܼܠܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib657-4" type="split">
-                           <forename>ܢܝܠܘܣ</forename>
-                           <addName type="untagged-title">ܥܢܘܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib657-4" type="split">
-                           <forename>ܢܝܠܘܣ</forename>
-                           <addName type="untagged-title">ܥܶܢܘܳܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib657-3" type="split">
-                           <forename>نيلس</forename>
-                           <addName type="untagged-title">الناسك</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib657-2" type="split">
-                           <forename>Nilus</forename>
-                           <addName type="untagged-title">the Recluse</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܢܝܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib657-6">
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
                <bibl xml:id="bib657-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

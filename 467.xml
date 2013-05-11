@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-467">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib467-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib467-1"
                          resp="http://syriaca.org">Elishaʿ bar Quzbaye</persName>
-               <persName xml:lang="syr" source="bib467-5" type="sic">ܐܠܝܫܥ ܡܦܫܩܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib467-5" type="sic">ܐܹܠܝܼܫܵܥ ܡܦܲܫܩܵܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib467-6" type="sic">ܐܠܝܫܥ ܡܦܫܩܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib467-1" type="sic">Elishaʿ bar Quzbaye</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib467-1" type="split">
-                           <forename>Elishaʿ</forename>
-                           <surname>bar Quzbaye</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib467-1" type="sic">Elishaʿ bar Quzbaye</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib467-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib467-5">ܐܠܝܫܥ ܡܦܫܩܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib467-5">ܐܹܠܝܼܫܵܥ ܡܦܲܫܩܵܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib467-6">ܐܠܝܫܥ ܡܦܫܩܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib467-1"
+                         resp="http://syriaca.org">
                   <forename>Elishaʿ</forename>
                   <surname>bar Quzbaye</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib467-5">
+                  <forename>ܐܠܝܫܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib467-5">
+                  <forename>ܐܹܠܝܼܫܵܥ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܠܝܫܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib467-6">
+                  <addName type="untagged-title">ܡܦܫܩܢܐ</addName>
                </persName>
                <bibl xml:id="bib467-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

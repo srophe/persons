@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-239">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib239-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib239-1"
                          resp="http://syriaca.org">Bar ʿEbroyo, Grigorios</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib239-2" type="sic">Mar Gregorius Bar Hebraeus</persName>
-               <persName xml:lang="ar" source="bib239-3" type="sic">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
-               <persName xml:lang="syr" source="bib239-4" type="sic">ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib239-4" type="sic">ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
-                           <forename>Grigorios</forename>
-                           <surname>Bar ʿEbroyo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="sic">Bar ʿEbroyo, Grigorios</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib239-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib239-2">Mar Gregorius Bar Hebraeus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib239-3">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib239-4">ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib239-4">ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib239-1"
+                         resp="http://syriaca.org">
                   <forename>Grigorios</forename>
                   <surname>Bar ʿEbroyo</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib239-4" type="sic">ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib239-4" type="sic">ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib239-3" type="sic">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib239-2" type="sic">Mar Gregorius Bar Hebraeus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib239-2">
+                  <forename>Gregorius</forename>
+                  <surname>Bar Hebraeus</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib239-4" type="split">
-                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                           <surname>ܒܪ ܥܒܪܝܐ</surname>
-                           <addName type="untagged-title">ܡܪܝ  ܡܦܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib239-4" type="split">
-                           <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
-                           <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
-                           <addName type="untagged-title">ܡܳܪܝ ܡܰܦܪܝܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib239-3" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib239-2" type="split">
-                           <forename>Gregorius</forename>
-                           <surname>Bar Hebraeus</surname>
-                           <addName type="untagged-title">Mar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib239-4">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                  <surname>ܒܪ ܥܒܪܝܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib239-4">
+                  <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
+                  <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
                </persName>
                <bibl xml:id="bib239-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

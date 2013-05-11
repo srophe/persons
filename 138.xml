@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-138">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib138-2" type="sic">The Translators of Canons (Hymns)</persName>
-               <persName xml:lang="ar" source="bib138-3" type="sic">نقلة القوانين (النشائد)</persName>
-               <persName xml:lang="syr" source="bib138-4" type="sic">ܡܥܒܪ̈ܢܐ ܕܩܢܘ̈ܢܐ ܙܡܝܪ̈ܬܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib138-4" type="sic">ܡܰܥܒܪ̈ܳܢܐ ܕܩܳܢܘ̈ܢܐ ܙܡܝܪ̈ܳܬܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Translators of Liturgical Canons</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Translators of Liturgical Canons</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib138-2">The Translators of Canons (Hymns)</persName>
+               <persName type="sic" xml:lang="ar" source="#bib138-3">نقلة القوانين (النشائد)</persName>
+               <persName type="sic" xml:lang="syr" source="#bib138-4">ܡܥܒܪ̈ܢܐ ܕܩܢܘ̈ܢܐ ܙܡܝܪ̈ܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib138-4">ܡܰܥܒܪ̈ܳܢܐ ܕܩܳܢܘ̈ܢܐ ܙܡܝܪ̈ܳܬܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Translators of Liturgical Canons</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib138-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Translators of Liturgical Canons</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib138-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib138-4" type="sic">ܡܥܒܪ̈ܢܐ ܕܩܢܘ̈ܢܐ ܙܡܝܪ̈ܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib138-4" type="sic">ܡܰܥܒܪ̈ܳܢܐ ܕܩܳܢܘ̈ܢܐ ܙܡܝܪ̈ܳܬܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib138-3" type="sic">نقلة القوانين (النشائد)</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib138-2" type="sic">The Translators of Canons (Hymns)</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib138-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib138-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib138-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib138-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib138-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib138-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Translators of Liturgical Canons</addName>
                </persName>
                <bibl xml:id="bib138-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

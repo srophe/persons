@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-294">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib294-2" type="sic">Maphryono Shukr Allah of Aleppo</persName>
-               <persName xml:lang="ar" source="bib294-3" type="sic">المفريان شكر اللّٰه الحلبي</persName>
-               <persName xml:lang="syr" source="bib294-4" type="sic">ܡܦܪܝܢܐ ܫܟܪܐܠܠܗ ܚܠܒܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib294-4" type="sic">ܡܰܦܪܝܢܐ ܫܰܟܪܐܠܠܗ ܚܳܠܒܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shukrallāh of Aleppo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shukrallāh of Aleppo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib294-2">Maphryono Shukr Allah of Aleppo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib294-3">المفريان شكر اللّٰه الحلبي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib294-4">ܡܦܪܝܢܐ ܫܟܪܐܠܠܗ ܚܠܒܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib294-4">ܡܰܦܪܝܢܐ ܫܰܟܪܐܠܠܗ ܚܳܠܒܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shukrallāh of Aleppo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib294-2">
+                  <forename>Shukr Allah</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shukrallāh</forename>
-                           <addName type="untagged-title">of Aleppo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib294-3">
+                  <forename>شكر اللّٰه</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib294-4" type="sic">ܡܦܪܝܢܐ ܫܟܪܐܠܠܗ ܚܠܒܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib294-4" type="sic">ܡܰܦܪܝܢܐ ܫܰܟܪܐܠܠܗ ܚܳܠܒܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib294-3" type="sic">المفريان شكر اللّٰه الحلبي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib294-2" type="sic">Maphryono Shukr Allah of Aleppo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib294-4">
+                  <forename>ܫܟܪܐܠܠܗ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib294-4" type="split">
-                           <forename>ܫܟܪܐܠܠܗ</forename>
-                           <addName type="untagged-title">ܡܦܪܝܢܐ ܚܠܒܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib294-4" type="split">
-                           <forename>ܫܰܟܪܐܠܠܗ</forename>
-                           <addName type="untagged-title">ܡܰܦܪܝܢܐ ܚܳܠܒܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib294-3" type="split">
-                           <forename>شكر اللّٰه</forename>
-                           <addName type="untagged-title">المفريان , الحلبي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib294-2" type="split">
-                           <forename>Shukr Allah</forename>
-                           <addName type="untagged-title">Maphryono, of Aleppo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib294-4">
+                  <forename>ܫܰܟܪܐܠܠܗ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shukrallāh</forename>
                </persName>
                <bibl xml:id="bib294-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

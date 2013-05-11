@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-140">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib140-2" type="sic">The Monk Theodosius</persName>
-               <persName xml:lang="ar" source="bib140-3" type="sic">الراهب ثاودوسي</persName>
-               <persName xml:lang="syr" source="bib140-4" type="sic">ܕܝܪܝܐ ܬܐܘܕܘܣܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib140-4" type="sic">ܕܰܝܪܳܝܐ ܬܶܐܘܕܘܣܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Theodosios of Dayro d-ʿAmudo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Theodosios of Dayro d-ʿAmudo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib140-2">The Monk Theodosius</persName>
+               <persName type="sic" xml:lang="ar" source="#bib140-3">الراهب ثاودوسي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib140-4">ܕܝܪܝܐ ܬܐܘܕܘܣܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib140-4">ܕܰܝܪܳܝܐ ܬܶܐܘܕܘܣܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Theodosios of Dayro d-ʿAmudo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib140-2">
+                  <forename>Theodosius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Theodosios</forename>
-                           <addName type="untagged-title">of Dayro d-ʿAmudo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib140-3">
+                  <forename>ثاودوسي</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib140-4" type="sic">ܕܝܪܝܐ ܬܐܘܕܘܣܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib140-4" type="sic">ܕܰܝܪܳܝܐ ܬܶܐܘܕܘܣܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib140-3" type="sic">الراهب ثاودوسي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib140-2" type="sic">The Monk Theodosius</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib140-4">
+                  <forename>ܬܐܘܕܘܣܝ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib140-4" type="split">
-                           <forename>ܬܐܘܕܘܣܝ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib140-4" type="split">
-                           <forename>ܬܶܐܘܕܘܣܝ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib140-3" type="split">
-                           <forename>ثاودوسي</forename>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib140-2" type="split">
-                           <forename>Theodosius</forename>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib140-4">
+                  <forename>ܬܶܐܘܕܘܣܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Theodosios</forename>
                </persName>
                <bibl xml:id="bib140-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

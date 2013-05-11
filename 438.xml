@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-438">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib438-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib438-1"
                          resp="http://syriaca.org">Daniel bar Maryam</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib438-2" type="sic">Daniel bar Mariam</persName>
-               <persName xml:lang="ar" source="bib438-3" type="sic">دانيال ابن مريم</persName>
-               <persName xml:lang="syr" source="bib438-4" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
-               <persName xml:lang="syr-Syrj" source="bib438-4" type="sic">ܕܳܢܝܐܝܠ ܒܰܪ ܡܰܪܝܰܡ</persName>
-               <persName xml:lang="syr" source="bib438-5" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
-               <persName xml:lang="syr-Syrn" source="bib438-5" type="sic">ܕܵܢܝܼܐܹܝܠ ܒܲܪ ܡܲܪܝܲܡ</persName>
-               <persName xml:lang="syr" source="bib438-6" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib438-1" type="sic">Daniel bar Maryam</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib438-1" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">bar Maryam</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib438-1" type="sic">Daniel bar Maryam</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib438-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib438-2">Daniel bar Mariam</persName>
+               <persName type="sic" xml:lang="ar" source="#bib438-3">دانيال ابن مريم</persName>
+               <persName type="sic" xml:lang="syr" source="#bib438-4">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib438-4">ܕܳܢܝܐܝܠ ܒܰܪ ܡܰܪܝܰܡ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib438-5">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib438-5">ܕܵܢܝܼܐܹܝܠ ܒܲܪ ܡܲܪܝܲܡ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib438-6">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib438-1"
+                         resp="http://syriaca.org">
                   <forename>Daniel</forename>
-                  <addName type="untagged-title">bar Maryam</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib438-4" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܪܝܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib438-4" type="sic">ܕܳܢܝܐܝܠ ܒܰܪ ܡܰܪܝܰܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib438-3" type="sic">دانيال ابن مريم</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib438-2" type="sic">Daniel bar Mariam</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib438-2">
+                  <forename>Daniel</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib438-3">
+                  <forename>دانيال</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib438-4">
+                  <forename>ܕܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib438-4">
+                  <forename>ܕܳܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib438-5">
+                  <forename>ܕܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib438-5">
+                  <forename>ܕܵܢܝܼܐܹܝܠ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib438-4" type="split">
-                           <forename>ܕܢܝܐܝܠ</forename>
-                           <addName type="untagged-title">ܒܪ ܡܪܝܡ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib438-4" type="split">
-                           <forename>ܕܳܢܝܐܝܠ</forename>
-                           <addName type="untagged-title">ܒܰܪ ܡܰܪܝܰܡ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib438-3" type="split">
-                           <forename>دانيال</forename>
-                           <addName type="untagged-title">ابن مريم</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib438-2" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">bar Mariam</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܕܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib438-6">
+                  <addName type="untagged-title">ܒܪ ܡܪܝܡ</addName>
                </persName>
                <bibl xml:id="bib438-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

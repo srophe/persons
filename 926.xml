@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-926">
-               <persName xml:lang="syr" source="bib926-5" type="sic">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib926-5" type="sic">ܐܲܒܙܘܿܕ ܐܸܣܟܘܿܠܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib926-6" type="sic">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abzod Eskolaya</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abzod Eskolaya</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib926-5">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib926-5">ܐܲܒܙܘܿܕ ܐܸܣܟܘܿܠܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib926-6">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abzod Eskolaya</persName>
+               <persName type="split" xml:lang="syr" source="#bib926-5">
+                  <forename>ܐܒܙܘܕ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abzod</forename>
-                           <addName type="untagged-title">Eskolaya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib926-5">
+                  <forename>ܐܲܒܙܘܿܕ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܒܙܘܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib926-6">
+                  <addName type="untagged-title">ܐܣܟܘܠܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abzod</forename>
                </persName>
             </person>
          </listPerson>

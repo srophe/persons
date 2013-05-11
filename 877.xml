@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-877">
-               <persName xml:lang="syr" source="bib877-5" type="sic">ܝܥܩܘܒ ܩܠܛܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib877-5" type="sic">ܝܲܥܩܘܿܒ ܩܠܹܛܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib877-6" type="sic">ܝܥܩܘܒ ܩܠܛܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib877-6" type="sic">ܝܰܥܩܽܘܒ ܩܰܠܛܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yaʿqob Qleṭaya</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yaʿqob Qleṭaya</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib877-5">ܝܥܩܘܒ ܩܠܛܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib877-5">ܝܲܥܩܘܿܒ ܩܠܹܛܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib877-6">ܝܥܩܘܒ ܩܠܛܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib877-6">ܝܰܥܩܽܘܒ ܩܰܠܛܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yaʿqob Qleṭaya</persName>
+               <persName type="split" xml:lang="syr" source="#bib877-5">
+                  <forename>ܝܥܩܘܒ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yaʿqob</forename>
-                           <addName type="untagged-title">Qleṭaya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib877-5">
+                  <forename>ܝܲܥܩܘܿܒ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܝܥܩܘܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib877-6">
+                  <addName type="untagged-title">ܩܠܛܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib877-6">
+                  <forename>ܝܰܥܩܽܘܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yaʿqob</forename>
                </persName>
             </person>
          </listPerson>

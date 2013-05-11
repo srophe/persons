@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,29 +17,14 @@
       <body>
          <listPerson>
             <person xml:id="person-448">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib448-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib448-1"
                          resp="http://syriaca.org">al-Dibs, Yūsuf</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib448-1" type="sic">al-Dibs, Yūsuf</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib448-1" type="split">
-                           <forename>Yūsuf</forename>
-                           <surname>al-Dibs</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib448-1" type="sic">al-Dibs, Yūsuf</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib448-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib448-1"
+                         resp="http://syriaca.org">
                   <forename>Yūsuf</forename>
                   <surname>al-Dibs</surname>
                </persName>

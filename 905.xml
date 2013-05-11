@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,55 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-905">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib905-2" type="sic">Periodeutes Bodh, the Chaldean</persName>
-               <persName xml:lang="ar" source="bib905-3" type="sic">البريودوط بود الكلداني</persName>
-               <persName xml:lang="syr" source="bib905-5" type="sic">ܒܘܕ ܦܪܝܕܘܛܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib905-5" type="sic">ܒܘܼܕ ܦܸܪܝܵܕܘܿܛܵܐ</persName>
-               <persName xml:lang="syr" source="bib905-6" type="sic">ܒܘܕ ܦܪܝܕܘܛܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib905-6" type="sic">ܒܽܘܕ ܦܶܪܝܳܕܶܘܛܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Bud the Periodeutes</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Bud the Periodeutes</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib905-2">Periodeutes Bodh, the Chaldean</persName>
+               <persName type="sic" xml:lang="ar" source="#bib905-3">البريودوط بود الكلداني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib905-5">ܒܘܕ ܦܪܝܕܘܛܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib905-5">ܒܘܼܕ ܦܸܪܝܵܕܘܿܛܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib905-6">ܒܘܕ ܦܪܝܕܘܛܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib905-6">ܒܽܘܕ ܦܶܪܝܳܕܶܘܛܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Bud the Periodeutes</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib905-2">
+                  <forename>Bodh</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Bud</forename>
-                           <addName type="untagged-title">the Periodeutes</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib905-3">
+                  <forename>بود</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib905-3" type="sic">البريودوط بود الكلداني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib905-2" type="sic">Periodeutes Bodh, the Chaldean</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib905-5">
+                  <forename>ܒܘܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib905-5">
+                  <forename>ܒܘܼܕ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib905-3" type="split">
-                           <forename>بود</forename>
-                           <addName type="untagged-title">البريودوط، الكلداني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib905-2" type="split">
-                           <forename>Bodh</forename>
-                           <addName type="untagged-title">Periodeutes, the Chaldean</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܒܘܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib905-6">
+                  <addName type="untagged-title">ܦܪܝܕܘܛܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib905-6">
+                  <forename>ܒܽܘܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Bud</forename>
                </persName>
                <bibl xml:id="bib905-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

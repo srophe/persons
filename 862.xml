@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-862">
-               <persName xml:lang="syr" source="bib862-5" type="sic">ܩܘܦܪܝܢܘܣ ܕܢܨܝܒܝܢ</persName>
-               <persName xml:lang="syr-Syrn" source="bib862-5" type="sic">ܩܘܼܦܸܪܝܵܢܘܿܣ ܕܲܢܨܝܼܒܝܿܢ</persName>
-               <persName xml:lang="syr" source="bib862-6" type="sic">ܩܘܦܪܝܢܘܣ ܕܢܨܝܒܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib862-6" type="sic">ܩܽܘܦܪܝܰܢܳܘܣ ܕܰܢܨܺܝܒܺܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Qupryanos of Nisibis</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Qupryanos of Nisibis</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib862-5">ܩܘܦܪܝܢܘܣ ܕܢܨܝܒܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib862-5">ܩܘܼܦܸܪܝܵܢܘܿܣ ܕܲܢܨܝܼܒܝܿܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib862-6">ܩܘܦܪܝܢܘܣ ܕܢܨܝܒܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib862-6">ܩܽܘܦܪܝܰܢܳܘܣ ܕܰܢܨܺܝܒܺܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Qupryanos of Nisibis</persName>
+               <persName type="split" xml:lang="syr" source="#bib862-5">
+                  <forename>ܩܘܦܪܝܢܘܣ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Qupryanos</forename>
-                           <addName type="untagged-title">of Nisibis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib862-5">
+                  <forename>ܩܘܼܦܸܪܝܵܢܘܿܣ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܩܘܦܪܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib862-6">
+                  <addName type="untagged-title">ܕܢܨܝܒܝܢ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib862-6">
+                  <forename>ܩܽܘܦܪܝܰܢܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Qupryanos</forename>
                </persName>
             </person>
          </listPerson>

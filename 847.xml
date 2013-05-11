@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-847">
-               <persName xml:lang="syr" source="bib847-5" type="sic">ܐܝܪܢܐܘܣ ܨܘܪܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib847-5" type="sic">ܐܝܼܪܹܢܹܐܘܿܣ ܨܘܿܪܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib847-6" type="sic">ܐܝܪܝܢܐܘܣ ܨܘܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib847-6" type="sic">ܐܝܺܪܺܝܢܶܐܘܳܣ ܨܽܘܪܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Irenaeus of Tyre</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Irenaeus of Tyre</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib847-5">ܐܝܪܢܐܘܣ ܨܘܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib847-5">ܐܝܼܪܹܢܹܐܘܿܣ ܨܘܿܪܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib847-6">ܐܝܪܝܢܐܘܣ ܨܘܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib847-6">ܐܝܺܪܺܝܢܶܐܘܳܣ ܨܽܘܪܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Irenaeus of Tyre</persName>
+               <persName type="split" xml:lang="syr" source="#bib847-5">
+                  <forename>ܐܝܪܢܐܘܣ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Irenaeus</forename>
-                           <addName type="untagged-title">of Tyre</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib847-5">
+                  <forename>ܐܝܼܪܹܢܹܐܘܿܣ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܝܪܝܢܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib847-6">
+                  <addName type="untagged-title">ܨܘܪܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib847-6">
+                  <forename>ܐܝܺܪܺܝܢܶܐܘܳܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Irenaeus</forename>
                </persName>
             </person>
          </listPerson>

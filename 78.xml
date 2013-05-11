@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-78">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib78-2" type="sic">John the Chanter</persName>
-               <persName xml:lang="ar" source="bib78-3" type="sic">يوحنا بسالطس</persName>
-               <persName xml:lang="syr" source="bib78-4" type="sic">ܝܘܚܢܢ ܦܣܐܠܛܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib78-4" type="sic">ܝܘܚܰܢܢ ܦܣܰܐܠܛܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yuḥanon Psaltes</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon Psaltes</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib78-2">John the Chanter</persName>
+               <persName type="sic" xml:lang="ar" source="#bib78-3">يوحنا بسالطس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib78-4">ܝܘܚܢܢ ܦܣܐܠܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib78-4">ܝܘܚܰܢܢ ܦܣܰܐܠܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon Psaltes</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib78-2">
+                  <forename>John</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">Psaltes</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib78-3">
+                  <forename>يوحنا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib78-4" type="sic">ܝܘܚܢܢ ܦܣܐܠܛܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib78-4" type="sic">ܝܘܚܰܢܢ ܦܣܰܐܠܛܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib78-3" type="sic">يوحنا بسالطس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib78-2" type="sic">John the Chanter</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib78-4">
+                  <forename>ܝܘܚܢܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib78-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܦܣܐܠܛܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib78-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܦܣܰܐܠܛܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib78-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">بسالطس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib78-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">the Chanter</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib78-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yuḥanon</forename>
                </persName>
                <bibl xml:id="bib78-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

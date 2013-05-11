@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-473">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib473-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib473-1"
                          resp="http://syriaca.org">Emmanuel bar Shahhare</persName>
-               <persName xml:lang="syr" source="bib473-5" type="sic">ܥܡܢܘܐܝܠ ܡܠܦܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib473-5" type="sic">ܥܲܡܵܢܘܼܐܹܝܠ ܡܲܠܦܵܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib473-6" type="sic">ܥܡܢܘܐܝܠ ܡܠܦܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib473-1" type="sic">Emmanuel bar Shahhare</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib473-1" type="split">
-                           <forename>Emmanuel</forename>
-                           <surname>bar Shahhare</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib473-1" type="sic">Emmanuel bar Shahhare</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib473-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib473-5">ܥܡܢܘܐܝܠ ܡܠܦܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib473-5">ܥܲܡܵܢܘܼܐܹܝܠ ܡܲܠܦܵܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib473-6">ܥܡܢܘܐܝܠ ܡܠܦܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib473-1"
+                         resp="http://syriaca.org">
                   <forename>Emmanuel</forename>
                   <surname>bar Shahhare</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib473-5">
+                  <forename>ܥܡܢܘܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib473-5">
+                  <forename>ܥܲܡܵܢܘܼܐܹܝܠ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܥܡܢܘܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib473-6">
+                  <addName type="untagged-title">ܡܠܦܢܐ</addName>
                </persName>
                <bibl xml:id="bib473-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

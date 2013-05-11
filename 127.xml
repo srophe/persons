@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-127">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib127-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib127-1"
                          resp="http://syriaca.org">Yuḥanon of Litarba</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib127-2" type="sic">John the Stylite of Atharb</persName>
-               <persName xml:lang="ar" source="bib127-3" type="sic">يوحنا الاثاربي العمودي</persName>
-               <persName xml:lang="syr" source="bib127-4" type="sic">ܝܘܚܢܢ ܐܬܐܪܒܝܐ ܐܣܛܘܢܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib127-4" type="sic">ܝܘܚܰܢܢ ܐܰܬܰܐܪܒܳܝܳܐ ܐܶܣܛܘܢܳܪܐ</persName>
-               <persName xml:lang="syr" source="bib127-5" type="sic">ܝܘܚܢܢ ܐܣܛܘܢܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib127-5" type="sic">ܝܘܿܚܲܢܵܢ ܐܸܣܛܘܿܢܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib127-6" type="sic">ܝܘܚܢܢ ܐܣܛܘܢܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib127-1" type="sic">Yuḥanon of Litarba</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib127-1" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">of Litarba</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib127-1" type="sic">Yuḥanon of Litarba</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib127-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib127-2">John the Stylite of Atharb</persName>
+               <persName type="sic" xml:lang="ar" source="#bib127-3">يوحنا الاثاربي العمودي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib127-4">ܝܘܚܢܢ ܐܬܐܪܒܝܐ ܐܣܛܘܢܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib127-4">ܝܘܚܰܢܢ ܐܰܬܰܐܪܒܳܝܳܐ ܐܶܣܛܘܢܳܪܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib127-5">ܝܘܚܢܢ ܐܣܛܘܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib127-5">ܝܘܿܚܲܢܵܢ ܐܸܣܛܘܿܢܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib127-6">ܝܘܚܢܢ ܐܣܛܘܢܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib127-1"
+                         resp="http://syriaca.org">
                   <forename>Yuḥanon</forename>
-                  <addName type="untagged-title">of Litarba</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib127-4" type="sic">ܝܘܚܢܢ ܐܬܐܪܒܝܐ ܐܣܛܘܢܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib127-4" type="sic">ܝܘܚܰܢܢ ܐܰܬܰܐܪܒܳܝܳܐ ܐܶܣܛܘܢܳܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib127-3" type="sic">يوحنا الاثاربي العمودي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib127-2" type="sic">John the Stylite of Atharb</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib127-3">
+                  <forename>يوحنا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib127-4">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib127-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib127-5">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib127-5">
+                  <forename>ܝܘܿܚܲܢܵܢ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib127-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܐܬܐܪܒܝܐ ܐܣܛܘܢܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib127-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܐܰܬܰܐܪܒܳܝܳܐ ܐܶܣܛܘܢܳܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib127-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">الاثاربي ,  العمودي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib127-2" type="split"/>
-                     </seg>
-                  </choice>
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib127-6">
+                  <addName type="untagged-title">ܐܣܛܘܢܝܐ</addName>
                </persName>
                <bibl xml:id="bib127-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

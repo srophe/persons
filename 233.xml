@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-233">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib233-2" type="sic">Gregorius John, bishop of St. Matthew’s Monastery</persName>
-               <persName xml:lang="ar" source="bib233-3" type="sic"> غريغوريوس يوحنا مطران دير مار متى و اذربيجان</persName>
-               <persName xml:lang="syr" source="bib233-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib233-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Gregorios Yuḥanon of Mor Matay</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Gregorios Yuḥanon of Mor Matay</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib233-2">Gregorius John, bishop of St. Matthew’s Monastery</persName>
+               <persName type="sic" xml:lang="ar" source="#bib233-3"> غريغوريوس يوحنا مطران دير مار متى و اذربيجان</persName>
+               <persName type="sic" xml:lang="syr" source="#bib233-4">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib233-4">ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Gregorios Yuḥanon of Mor Matay</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib233-2">
+                  <forename>Gregorius John</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Gregorios Yuḥanon</forename>
-                           <addName type="untagged-title">of Mor Matay</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib233-3">
+                  <forename>غريغوريوس يوحنا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib233-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib233-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib233-3" type="sic"> غريغوريوس يوحنا مطران دير مار متى و اذربيجان</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib233-2" type="sic">Gregorius John, bishop of St. Matthew’s Monastery</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib233-4">
+                  <forename>ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib233-4" type="split">
-                           <forename>ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib233-4" type="split">
-                           <forename>ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib233-3" type="split">
-                           <forename>غريغوريوس يوحنا</forename>
-                           <addName type="untagged-title">مطران دير مار متى و اذربيجان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib233-2" type="split">
-                           <forename>Gregorius John</forename>
-                           <addName type="untagged-title">Bishop of St. Matthew’s Monastery</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib233-4">
+                  <forename>ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Gregorios Yuḥanon</forename>
                </persName>
                <bibl xml:id="bib233-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

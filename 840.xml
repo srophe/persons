@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,62 +17,37 @@
       <body>
          <listPerson>
             <person xml:id="person-840">
-               <persName xml:lang="ar" source="bib840-3" type="sic">افريقيانس</persName>
-               <persName xml:lang="syr" source="bib840-4" type="sic">ܐܦܪܝܩܝܐܢܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib840-4" type="sic">ܐܰܦܪܝܩܝܰܐܢܘܣ</persName>
-               <persName xml:lang="syr" source="bib840-5" type="sic">ܐܦܪܩܝܢܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib840-5" type="sic">ܐܲܦܪܸܩܝܵܢܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib840-6" type="sic">ܐܦܪܝܩܝܢܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib840-6" type="sic">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Julius Africanus</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Julius Africanus</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib840-3">افريقيانس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib840-4">ܐܦܪܝܩܝܐܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib840-4">ܐܰܦܪܝܩܝܰܐܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib840-5">ܐܦܪܩܝܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib840-5">ܐܲܦܪܸܩܝܵܢܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib840-6">ܐܦܪܝܩܝܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib840-6">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Julius Africanus</persName>
+               <persName type="split" xml:lang="ar" source="#bib840-3">
+                  <addName type="untagged-title">افريقيانس</addName>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Julius</forename>
-                           <addName type="untagged-title">Africanus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib840-4">
+                  <addName type="untagged-title">ܐܦܪܝܩܝܐܢܘܣ</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib840-4" type="sic">ܐܦܪܝܩܝܐܢܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib840-4" type="sic">ܐܰܦܪܝܩܝܰܐܢܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib840-3" type="sic">افريقيانس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib840-4">
+                  <addName type="untagged-title">ܐܰܦܪܝܩܝܰܐܢܘܣ</addName>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib840-4" type="split">
-                           <addName type="untagged-title">ܐܦܪܝܩܝܐܢܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib840-4" type="split">
-                           <addName type="untagged-title">ܐܰܦܪܝܩܝܰܐܢܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib840-3" type="split">
-                           <addName type="untagged-title">افريقيانس</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib840-5">
+                  <addName type="untagged-title">ܐܦܪܩܝܢܘܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib840-5">
+                  <addName type="untagged-title">ܐܲܦܪܸܩܝܵܢܘܿܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib840-6">
+                  <addName type="untagged-title">ܐܦܪܝܩܝܢܘܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib840-6">
+                  <addName type="untagged-title">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Julius</forename>
                </persName>
                <bibl xml:id="bib840-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

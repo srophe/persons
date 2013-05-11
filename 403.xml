@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,66 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-403">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib403-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib403-1"
                          resp="http://syriaca.org">Brooks, Ernest Walter</persName>
-               <persName xml:lang="ar" source="bib403-3" type="sic">بروكس</persName>
-               <persName xml:lang="syr" source="bib403-4" type="sic">ܒܪܘܟܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib403-4" type="sic">ܒܪܳܘܟܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib403-1" type="sic">Brooks, Ernest Walter</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib403-1" type="split">
-                           <forename>Ernest Walter</forename>
-                           <surname>Brooks</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib403-1" type="sic">Brooks, Ernest Walter</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib403-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib403-3">بروكس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib403-4">ܒܪܘܟܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib403-4">ܒܪܳܘܟܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib403-1"
+                         resp="http://syriaca.org">
                   <forename>Ernest Walter</forename>
                   <surname>Brooks</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib403-4" type="sic">ܒܪܘܟܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib403-4" type="sic">ܒܪܳܘܟܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib403-3" type="sic">بروكس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib403-3">
+                  <surname>بروكس</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib403-4" type="split">
-                           <surname>ܒܪܘܟܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib403-4" type="split">
-                           <surname>ܒܪܳܘܟܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib403-3" type="split">
-                           <surname>بروكس</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib403-4">
+                  <surname>ܒܪܘܟܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib403-4">
+                  <surname>ܒܪܳܘܟܣ</surname>
                </persName>
                <bibl xml:id="bib403-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

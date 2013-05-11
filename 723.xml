@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-723">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib723-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib723-1"
                          resp="http://syriaca.org">Scher, Addai</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib723-2" type="sic">Adai Scher</persName>
-               <persName xml:lang="ar" source="bib723-3" type="sic">المطران ادى شير</persName>
-               <persName xml:lang="syr" source="bib723-4" type="sic">ܐܕܝ ܫܝܪ ܡܛܪܘܦܘܠܝܛܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib723-4" type="sic">ܐܰܕܰܝ ܫܝܺܪ ܡܶܛܪܘܦܘܠܝܛܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib723-1" type="sic">Scher, Addai</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib723-1" type="split">
-                           <forename>Addai</forename>
-                           <surname>Scher</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib723-1" type="sic">Scher, Addai</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib723-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib723-2">Adai Scher</persName>
+               <persName type="sic" xml:lang="ar" source="#bib723-3">المطران ادى شير</persName>
+               <persName type="sic" xml:lang="syr" source="#bib723-4">ܐܕܝ ܫܝܪ ܡܛܪܘܦܘܠܝܛܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib723-4">ܐܰܕܰܝ ܫܝܺܪ ܡܶܛܪܘܦܘܠܝܛܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib723-1"
+                         resp="http://syriaca.org">
                   <forename>Addai</forename>
                   <surname>Scher</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib723-4" type="sic">ܐܕܝ ܫܝܪ ܡܛܪܘܦܘܠܝܛܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib723-4" type="sic">ܐܰܕܰܝ ܫܝܺܪ ܡܶܛܪܘܦܘܠܝܛܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib723-3" type="sic">المطران ادى شير</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib723-2" type="sic">Adai Scher</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib723-2">
+                  <forename>Adai</forename>
+                  <surname>Scher</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib723-4" type="split">
-                           <forename>ܐܕܝ</forename>
-                           <surname>ܫܝܪ</surname>
-                           <addName type="untagged-title">ܡܛܪܘܦܘܠܝܛܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib723-4" type="split">
-                           <forename>ܐܰܕܰܝ</forename>
-                           <surname>ܫܝܺܪ</surname>
-                           <addName type="untagged-title">ܡܶܛܪܘܦܘܠܝܛܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib723-3" type="split">
-                           <forename>ادى</forename>
-                           <surname>شير</surname>
-                           <addName type="untagged-title">المطران</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib723-2" type="split">
-                           <forename>Adai</forename>
-                           <surname>Scher</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib723-3">
+                  <forename>ادى</forename>
+                  <surname>شير</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib723-4">
+                  <forename>ܐܕܝ</forename>
+                  <surname>ܫܝܪ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib723-4">
+                  <forename>ܐܰܕܰܝ</forename>
+                  <surname>ܫܝܺܪ</surname>
                </persName>
                <bibl xml:id="bib723-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

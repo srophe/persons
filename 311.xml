@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,59 +17,23 @@
       <body>
          <listPerson>
             <person xml:id="person-311">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib311-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib311-1"
                          resp="http://syriaca.org">ʿAbdishoʿ of Gazarta</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib311-2" type="sic">ʿAbd Yeshuʿ of the Jazira</persName>
-               <persName xml:lang="ar" source="bib311-3" type="sic">عبد يشوع اسقف الجزيرة</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
-                           <forename>ʿAbdishoʿ</forename>
-                           <addName type="untagged-title">of Gazarta</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="sic">ʿAbdishoʿ of Gazarta</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib311-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib311-2">ʿAbd Yeshuʿ of the Jazira</persName>
+               <persName type="sic" xml:lang="ar" source="#bib311-3">عبد يشوع اسقف الجزيرة</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib311-1"
+                         resp="http://syriaca.org">
                   <forename>ʿAbdishoʿ</forename>
-                  <addName type="untagged-title">of Gazarta</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib311-3" type="sic">عبد يشوع اسقف الجزيرة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib311-2" type="sic">ʿAbd Yeshuʿ of the Jazira</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib311-2">
+                  <forename>ʿAbd Yeshuʿ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib311-3" type="split">
-                           <forename>عبد يشوع</forename>
-                           <addName type="untagged-title">اسقف الجزيرة</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib311-2" type="split">
-                           <forename>ʿAbd Yeshuʿ</forename>
-                           <addName type="untagged-title">of the Jazira</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib311-3">
+                  <forename>عبد يشوع</forename>
                </persName>
                <bibl xml:id="bib311-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

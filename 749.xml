@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,46 +17,19 @@
       <body>
          <listPerson>
             <person xml:id="person-749">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib749-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib749-1"
                          resp="http://syriaca.org">Sindbad</persName>
-               <persName xml:lang="ar" source="bib749-3" type="sic">سندباد</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib749-1" type="sic">Sindbad</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib749-1" type="split">
-                           <forename>Sindbad</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib749-1" type="sic">Sindbad</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib749-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib749-3">سندباد</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib749-1"
+                         resp="http://syriaca.org">
                   <forename>Sindbad</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib749-3" type="sic">سندباد</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib749-3" type="split">
-                           <forename>سندباد</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib749-3">
+                  <forename>سندباد</forename>
                </persName>
                <bibl xml:id="bib749-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-244">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib244-2" type="sic">The Ascetic Thomas of Ḥaḥ</persName>
-               <persName xml:lang="ar" source="bib244-3" type="sic">توما الحاحي الناسك</persName>
-               <persName xml:lang="syr" source="bib244-4" type="sic">ܬܐܘܡܐ ܚܐܚܝܐ ܥܢܘܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib244-4" type="sic">ܬܐܘܡܐ ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Tumo of Ḥaḥ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Tumo of Ḥaḥ</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib244-2">The Ascetic Thomas of Ḥaḥ</persName>
+               <persName type="sic" xml:lang="ar" source="#bib244-3">توما الحاحي الناسك</persName>
+               <persName type="sic" xml:lang="syr" source="#bib244-4">ܬܐܘܡܐ ܚܐܚܝܐ ܥܢܘܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib244-4">ܬܐܘܡܐ ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Tumo of Ḥaḥ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib244-2">
+                  <forename>Thomas</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Tumo</forename>
-                           <addName type="untagged-title">of Ḥaḥ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib244-3">
+                  <forename>توما</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܐܚܝܐ ܥܢܘܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib244-4" type="sic">ܬܐܘܡܐ ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib244-3" type="sic">توما الحاحي الناسك</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib244-2" type="sic">The Ascetic Thomas of Ḥaḥ</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib244-4">
+                  <forename>ܬܐܘܡܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib244-4" type="split">
-                           <forename>ܬܐܘܡܐ</forename>
-                           <addName type="untagged-title">ܚܐܚܝܐ ܥܢܘܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib244-4" type="split">
-                           <forename>ܬܐܘܡܐ</forename>
-                           <addName type="untagged-title">ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib244-3" type="split">
-                           <forename>توما</forename>
-                           <addName type="untagged-title">الحاحي , الناسك</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib244-2" type="split">
-                           <forename>Thomas</forename>
-                           <addName type="untagged-title">The Ascetic, of Ḥaḥ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib244-4">
+                  <forename>ܬܐܘܡܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Tumo</forename>
                </persName>
                <bibl xml:id="bib244-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

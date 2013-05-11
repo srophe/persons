@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-867">
-               <persName xml:lang="syr" source="bib867-5" type="sic">ܐܦܪܝܡ ܕܥܝܠܡ</persName>
-               <persName xml:lang="syr-Syrn" source="bib867-5" type="sic">ܐܲܦܪܹܝܡ ܕܥܝܼܠܵܡ</persName>
-               <persName xml:lang="syr" source="bib867-6" type="sic">ܐܦܪܝܡ ܕܥܝܠܡ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Aphrem of ʿIlam</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Aphrem of ʿIlam</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib867-5">ܐܦܪܝܡ ܕܥܝܠܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib867-5">ܐܲܦܪܹܝܡ ܕܥܝܼܠܵܡ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib867-6">ܐܦܪܝܡ ܕܥܝܠܡ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Aphrem of ʿIlam</persName>
+               <persName type="split" xml:lang="syr" source="#bib867-5">
+                  <forename>ܐܦܪܝܡ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Aphrem</forename>
-                           <addName type="untagged-title">of ʿIlam</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib867-5">
+                  <forename>ܐܲܦܪܹܝܡ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܦܪܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib867-6">
+                  <addName type="untagged-title">ܕܥܝܠܡ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Aphrem</forename>
                </persName>
             </person>
          </listPerson>

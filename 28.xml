@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-28">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib28-2" type="sic">Deacon Jacob</persName>
-               <persName xml:lang="ar" source="bib28-3" type="sic">الشماس يعقوب</persName>
-               <persName xml:lang="syr" source="bib28-4" type="sic">ܡܫܡܫܢܐ ܝܥܩܘܒ ܐܘܪܗܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib28-4" type="sic">ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ ܐܘܪܗܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yaʿqub</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yaʿqub</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib28-2">Deacon Jacob</persName>
+               <persName type="sic" xml:lang="ar" source="#bib28-3">الشماس يعقوب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib28-4">ܡܫܡܫܢܐ ܝܥܩܘܒ ܐܘܪܗܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib28-4">ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ ܐܘܪܗܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yaʿqub</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib28-2">
+                  <forename>Deacon Jacob</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yaʿqub</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib28-3">
+                  <forename>يعقوب</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib28-4" type="sic">ܡܫܡܫܢܐ ܝܥܩܘܒ ܐܘܪܗܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib28-4" type="sic">ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ ܐܘܪܗܳܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib28-3" type="sic">الشماس يعقوب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib28-2" type="sic">Deacon Jacob</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib28-4">
+                  <forename>ܡܫܡܫܢܐ ܝܥܩܘܒ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib28-4" type="split">
-                           <forename>ܡܫܡܫܢܐ ܝܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib28-4" type="split">
-                           <forename>ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܳܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib28-3" type="split">
-                           <forename>يعقوب</forename>
-                           <addName type="untagged-title">الشماس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib28-2" type="split">
-                           <forename>Deacon Jacob</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib28-4">
+                  <forename>ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yaʿqub</forename>
                </persName>
                <bibl xml:id="bib28-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-154">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib154-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib154-1"
                          resp="http://syriaca.org">Anṭun of Tagrit</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib154-2" type="sic">Rabban Anton of Takrit</persName>
-               <persName xml:lang="ar" source="bib154-3" type="sic">الربان انطون التكريتي</persName>
-               <persName xml:lang="syr" source="bib154-4" type="sic">ܪܒܢ ܐܢܛܘܢ ܬܓܪܝܬܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib154-4" type="sic">ܪܰܒܢ ܐܰܢܛܘܢ ܬܰܓܪܝܬܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib154-1" type="sic">Anṭun of Tagrit</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib154-1" type="split">
-                           <forename>Anṭun</forename>
-                           <addName type="untagged-title">of Tagrit</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib154-1" type="sic">Anṭun of Tagrit</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib154-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib154-2">Rabban Anton of Takrit</persName>
+               <persName type="sic" xml:lang="ar" source="#bib154-3">الربان انطون التكريتي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib154-4">ܪܒܢ ܐܢܛܘܢ ܬܓܪܝܬܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib154-4">ܪܰܒܢ ܐܰܢܛܘܢ ܬܰܓܪܝܬܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib154-1"
+                         resp="http://syriaca.org">
                   <forename>Anṭun</forename>
-                  <addName type="untagged-title">of Tagrit</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib154-4" type="sic">ܪܒܢ ܐܢܛܘܢ ܬܓܪܝܬܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib154-4" type="sic">ܪܰܒܢ ܐܰܢܛܘܢ ܬܰܓܪܝܬܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib154-3" type="sic">الربان انطون التكريتي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib154-2" type="sic">Rabban Anton of Takrit</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib154-2">
+                  <forename>Anton</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib154-4" type="split">
-                           <forename>ܐܢܛܘܢ</forename>
-                           <addName type="untagged-title">ܪܒܢ ܬܓܪܝܬܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib154-4" type="split">
-                           <forename>ܐܰܢܛܘܢ</forename>
-                           <addName type="untagged-title">ܪܰܒܢ ܬܰܓܪܝܬܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib154-3" type="split">
-                           <forename>انطون</forename>
-                           <addName type="untagged-title">التكريتي , الربان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib154-2" type="split">
-                           <forename>Anton</forename>
-                           <addName type="untagged-title">Rabban, of Takrit</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib154-3">
+                  <forename>انطون</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib154-4">
+                  <forename>ܐܢܛܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib154-4">
+                  <forename>ܐܰܢܛܘܢ</forename>
                </persName>
                <bibl xml:id="bib154-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

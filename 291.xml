@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-291">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib291-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib291-1"
                          resp="http://syriaca.org">Shemʿun II, Basileios</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib291-2" type="sic">Maphryono Simon</persName>
-               <persName xml:lang="ar" source="bib291-3" type="sic">المفريان شمعون</persName>
-               <persName xml:lang="syr" source="bib291-4" type="sic">ܡܦܪܝܢܐ ܫܡܥܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib291-4" type="sic">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib291-1" type="sic">Shemʿun II, Basileios</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib291-1" type="split">
-                           <forename>Basileios Shemʿun II</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib291-1" type="sic">Shemʿun II, Basileios</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib291-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib291-2">Maphryono Simon</persName>
+               <persName type="sic" xml:lang="ar" source="#bib291-3">المفريان شمعون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib291-4">ܡܦܪܝܢܐ ܫܡܥܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib291-4">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib291-1"
+                         resp="http://syriaca.org">
                   <forename>Basileios Shemʿun II</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib291-4" type="sic">ܡܦܪܝܢܐ ܫܡܥܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib291-4" type="sic">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib291-3" type="sic">المفريان شمعون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib291-2" type="sic">Maphryono Simon</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib291-2">
+                  <forename>Simon</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib291-4" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܡܦܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib291-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib291-3" type="split">
-                           <forename>شمعون</forename>
-                           <addName type="untagged-title">المفريان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib291-2" type="split">
-                           <forename>Simon</forename>
-                           <addName type="untagged-title">Maphryono</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib291-3">
+                  <forename>شمعون</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib291-4">
+                  <forename>ܫܡܥܘܢ</forename>
                </persName>
                <bibl xml:id="bib291-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

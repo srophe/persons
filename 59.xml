@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,76 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-59">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib59-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib59-1"
                          resp="http://syriaca.org">Daniel of Ṣalaḥ</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib59-2" type="sic">Daniel of Salah</persName>
-               <persName xml:lang="ar" source="bib59-3" type="sic">دانيال الصلحي</persName>
-               <persName xml:lang="syr" source="bib59-4" type="sic">ܕܢܝܐܝܠ ܨܠܚܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib59-4" type="sic">ܕܳܢܝܺܐܝܠ ܨܰܠܚܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib59-1" type="sic">Daniel of Ṣalaḥ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib59-1" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">of Ṣalaḥ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib59-1" type="sic">Daniel of Ṣalaḥ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib59-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib59-2">Daniel of Salah</persName>
+               <persName type="sic" xml:lang="ar" source="#bib59-3">دانيال الصلحي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib59-4">ܕܢܝܐܝܠ ܨܠܚܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib59-4">ܕܳܢܝܺܐܝܠ ܨܰܠܚܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib59-1"
+                         resp="http://syriaca.org">
                   <forename>Daniel</forename>
-                  <addName type="untagged-title">of Ṣalaḥ</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib59-4" type="sic">ܕܢܝܐܝܠ ܨܠܚܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib59-4" type="sic">ܕܳܢܝܺܐܝܠ ܨܰܠܚܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib59-3" type="sic">دانيال الصلحي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib59-2" type="sic">Daniel of Salah</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib59-3">
+                  <forename>دانيال</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib59-4" type="split">
-                           <forename>ܕܢܝܐܝܠ</forename>
-                           <addName type="untagged-title">ܨܠܚܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib59-4" type="split">
-                           <forename>ܕܳܢܝܺܐܝܠ</forename>
-                           <addName type="untagged-title">ܨܰܠܚܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib59-3" type="split">
-                           <forename>دانيال</forename>
-                           <addName type="untagged-title">الصلحي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib59-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib59-4">
+                  <forename>ܕܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib59-4">
+                  <forename>ܕܳܢܝܺܐܝܠ</forename>
                </persName>
                <bibl xml:id="bib59-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-115">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib115-2" type="sic">Presbyter Simon, abbot of the Monastery of the Arabs</persName>
-               <persName xml:lang="ar" source="bib115-3" type="sic">القس شمعون رئيس دير العرب</persName>
-               <persName xml:lang="syr" source="bib115-4" type="sic">ܩܫܝܫܐ ܫܡܥܘܢ ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib115-4" type="sic">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shemʿun, abbot of Dayro d-ʿAraboye</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿun, abbot of Dayro d-ʿAraboye</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib115-2">Presbyter Simon, abbot of the Monastery of the Arabs</persName>
+               <persName type="sic" xml:lang="ar" source="#bib115-3">القس شمعون رئيس دير العرب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib115-4">ܩܫܝܫܐ ܫܡܥܘܢ ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib115-4">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shemʿun, abbot of Dayro d-ʿAraboye</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib115-2">
+                  <forename>Simon</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shemʿun</forename>
-                           <addName type="untagged-title">abbot of Dayro d-ʿAraboye</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib115-3">
+                  <forename>شمعون</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib115-4" type="sic">ܩܫܝܫܐ ܫܡܥܘܢ ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib115-4" type="sic">ܩܰܫܝܫܳܐ ܫܶܡܥܘܢ ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib115-3" type="sic">القس شمعون رئيس دير العرب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib115-2" type="sic">Presbyter Simon, abbot of the Monastery of the Arabs</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib115-4">
+                  <forename>ܫܡܥܘܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib115-4" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib115-4" type="split">
-                           <forename>ܫܶܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib115-3" type="split">
-                           <forename>شمعون</forename>
-                           <addName type="untagged-title">القس رئيس دير العرب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib115-2" type="split">
-                           <forename>Simon</forename>
-                           <addName type="untagged-title">Presbyter, abbot of the Monastery of the Arabs</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib115-4">
+                  <forename>ܫܶܡܥܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shemʿun</forename>
                </persName>
                <bibl xml:id="bib115-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

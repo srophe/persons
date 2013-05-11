@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-251">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib251-2" type="sic">Malphono Ṣaliba Bar Khayrun</persName>
-               <persName xml:lang="ar" source="bib251-3" type="sic">الربان صليبا ابن خيرون</persName>
-               <persName xml:lang="syr" source="bib251-4" type="sic">ܪܒܢ ܨܠܝܒܐ ܒܪ ܟܝܪܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib251-4" type="sic">ܪܰܒܢ ܨܰܠܝܒܐ ܒܰܪ ܟܰܝܪܘܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ṣlibo bar Khayrun</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ṣlibo bar Khayrun</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib251-2">Malphono Ṣaliba Bar Khayrun</persName>
+               <persName type="sic" xml:lang="ar" source="#bib251-3">الربان صليبا ابن خيرون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib251-4">ܪܒܢ ܨܠܝܒܐ ܒܪ ܟܝܪܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib251-4">ܪܰܒܢ ܨܰܠܝܒܐ ܒܰܪ ܟܰܝܪܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ṣlibo bar Khayrun</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib251-2">
+                  <forename>Ṣaliba</forename>
+                  <surname>Bar Khayrun</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ṣlibo</forename>
-                           <surname>bar Khayrun</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib251-3">
+                  <forename>صليبا</forename>
+                  <surname>ابن خيرون</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib251-4" type="sic">ܪܒܢ ܨܠܝܒܐ ܒܪ ܟܝܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib251-4" type="sic">ܪܰܒܢ ܨܰܠܝܒܐ ܒܰܪ ܟܰܝܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib251-3" type="sic">الربان صليبا ابن خيرون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib251-2" type="sic">Malphono Ṣaliba Bar Khayrun</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib251-4">
+                  <forename>ܨܠܝܒܐ</forename>
+                  <surname>ܒܪ ܟܝܪܘܢ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib251-4" type="split">
-                           <forename>ܨܠܝܒܐ</forename>
-                           <surname>ܒܪ ܟܝܪܘܢ</surname>
-                           <addName type="untagged-title">ܪܒܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib251-4" type="split">
-                           <forename>ܨܰܠܝܒܐ</forename>
-                           <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
-                           <addName type="untagged-title">ܪܰܒܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib251-3" type="split">
-                           <forename>صليبا</forename>
-                           <surname>ابن خيرون</surname>
-                           <addName type="untagged-title">الربان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib251-2" type="split">
-                           <forename>Ṣaliba</forename>
-                           <surname>Bar Khayrun</surname>
-                           <addName type="untagged-title">Malphono</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib251-4">
+                  <forename>ܨܰܠܝܒܐ</forename>
+                  <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ṣlibo</forename>
+                  <surname>bar Khayrun</surname>
                </persName>
                <bibl xml:id="bib251-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

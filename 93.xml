@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-93">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib93-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib93-1"
                          resp="http://syriaca.org">Marutha of Tagrit</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib93-2" type="sic">Marutha of Takrit</persName>
-               <persName xml:lang="ar" source="bib93-3" type="sic">ماروثا التكريتي</persName>
-               <persName xml:lang="syr" source="bib93-4" type="sic">ܡܪܘܬܐ ܕܬܓܪܝܬ</persName>
-               <persName xml:lang="syr-Syrj" source="bib93-4" type="sic">ܡܰܪܘܬܶܐ ܕܬܰܓܪܝܬ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib93-1" type="sic">Marutha of Tagrit</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib93-1" type="split">
-                           <forename>Marutha</forename>
-                           <addName type="untagged-title">of Tagrit</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib93-1" type="sic">Marutha of Tagrit</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib93-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib93-2">Marutha of Takrit</persName>
+               <persName type="sic" xml:lang="ar" source="#bib93-3">ماروثا التكريتي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib93-4">ܡܪܘܬܐ ܕܬܓܪܝܬ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib93-4">ܡܰܪܘܬܶܐ ܕܬܰܓܪܝܬ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib93-1"
+                         resp="http://syriaca.org">
                   <forename>Marutha</forename>
-                  <addName type="untagged-title">of Tagrit</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib93-4" type="sic">ܡܪܘܬܐ ܕܬܓܪܝܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib93-4" type="sic">ܡܰܪܘܬܶܐ ܕܬܰܓܪܝܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib93-3" type="sic">ماروثا التكريتي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib93-2" type="sic">Marutha of Takrit</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib93-2">
+                  <forename>Marutha</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib93-4" type="split">
-                           <forename>ܡܪܘܬܐ</forename>
-                           <addName type="untagged-title">ܕܬܓܪܝܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib93-4" type="split">
-                           <forename>ܡܰܪܘܬܶܐ</forename>
-                           <addName type="untagged-title">ܕܬܰܓܪܝܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib93-3" type="split">
-                           <forename>ماروثا</forename>
-                           <addName type="untagged-title">التكريتي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib93-2" type="split">
-                           <forename>Marutha</forename>
-                           <addName type="untagged-title">of Takrit</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib93-3">
+                  <forename>ماروثا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib93-4">
+                  <forename>ܡܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib93-4">
+                  <forename>ܡܰܪܘܬܶܐ</forename>
                </persName>
                <bibl xml:id="bib93-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

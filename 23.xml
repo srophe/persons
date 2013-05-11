@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-23">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib23-2" type="sic">Aḥai, Catholicos of Ctesiphon</persName>
-               <persName xml:lang="ar" source="bib23-3" type="sic">آحى جاثليق المداىٔن</persName>
-               <persName xml:lang="syr" source="bib23-4" type="sic">ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib23-4" type="sic">ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܐܚܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Aḥai</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܐܚܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Aḥai</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib23-2">Aḥai, Catholicos of Ctesiphon</persName>
+               <persName type="sic" xml:lang="ar" source="#bib23-3">آحى جاثليق المداىٔن</persName>
+               <persName type="sic" xml:lang="syr" source="#bib23-4">ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib23-4">ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܚܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Aḥai</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib23-2">
+                  <forename>Aḥai</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܐܚܝ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Aḥai</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib23-3">
+                  <forename>آحى</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib23-4" type="sic">ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib23-4" type="sic">ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib23-3" type="sic">آحى جاثليق المداىٔن</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib23-2" type="sic">Aḥai, Catholicos of Ctesiphon</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib23-4">
+                  <forename>ܐܚܝ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib23-4" type="split">
-                           <forename>ܐܚܝ</forename>
-                           <addName type="untagged-title">ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib23-4" type="split">
-                           <forename>ܐܰܚܝ</forename>
-                           <addName type="untagged-title">ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib23-3" type="split">
-                           <forename>آحى</forename>
-                           <addName type="untagged-title">جاثليق المداىٔن</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib23-2" type="split">
-                           <forename>Aḥai</forename>
-                           <addName type="untagged-title">Catholicos of Ctesiphon</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib23-4">
+                  <forename>ܐܰܚܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܐܚܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Aḥai</forename>
                </persName>
                <bibl xml:id="bib23-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

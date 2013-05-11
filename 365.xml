@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,86 +17,48 @@
       <body>
          <listPerson>
             <person xml:id="person-365">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib365-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib365-1"
                          resp="http://syriaca.org">Bar Bahlul, Ḥasan</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib365-2" type="sic">al-Ḥasan Bar Bahlul al-Awāni al-Ṭirhāni</persName>
-               <persName xml:lang="ar" source="bib365-3" type="sic">الحسن بن بهلول الاواني الطيرهاني</persName>
-               <persName xml:lang="syr" source="bib365-4" type="sic">ܚܣܢ ܒܪ ܒܗܠܘܠ ܐܠܐܘܐܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib365-4" type="sic">ܚܰܣܢ ܒܰܪ ܒܰܗܠܘܠ ܐܠܐܘܐܢܳܝܐ</persName>
-               <persName xml:lang="syr" source="bib365-5" type="sic">ܒܪ ܒܗܠܘܠ</persName>
-               <persName xml:lang="syr-Syrn" source="bib365-5" type="sic">ܒܲܪ ܒܲܗܠܘܼܠ</persName>
-               <persName xml:lang="syr" source="bib365-6" type="sic">ܒܪ ܒܗܠܘܠ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib365-1" type="sic">Bar Bahlul, Ḥasan</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib365-1" type="split">
-                           <forename>Ḥasan</forename>
-                           <surname>Bar Bahlul</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib365-1" type="sic">Bar Bahlul, Ḥasan</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib365-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib365-2">al-Ḥasan Bar Bahlul al-Awāni al-Ṭirhāni</persName>
+               <persName type="sic" xml:lang="ar" source="#bib365-3">الحسن بن بهلول الاواني الطيرهاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib365-4">ܚܣܢ ܒܪ ܒܗܠܘܠ ܐܠܐܘܐܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib365-4">ܚܰܣܢ ܒܰܪ ܒܰܗܠܘܠ ܐܠܐܘܐܢܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib365-5">ܒܪ ܒܗܠܘܠ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib365-5">ܒܲܪ ܒܲܗܠܘܼܠ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib365-6">ܒܪ ܒܗܠܘܠ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib365-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥasan</forename>
                   <surname>Bar Bahlul</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib365-4" type="sic">ܚܣܢ ܒܪ ܒܗܠܘܠ ܐܠܐܘܐܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib365-4" type="sic">ܚܰܣܢ ܒܰܪ ܒܰܗܠܘܠ ܐܠܐܘܐܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib365-3" type="sic">الحسن بن بهلول الاواني الطيرهاني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib365-2" type="sic">al-Ḥasan Bar Bahlul al-Awāni al-Ṭirhāni</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib365-2">
+                  <forename>al-Ḥasan</forename>
+                  <surname>Bar Bahlul</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib365-4" type="split">
-                           <forename>ܚܣܢ</forename>
-                           <surname>ܒܪ ܒܗܠܘܠ</surname>
-                           <addName type="untagged-title">ܐܠܐܘܐܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib365-4" type="split">
-                           <forename>ܚܰܣܢ</forename>
-                           <surname>ܒܰܪ ܒܰܗܠܘܠ</surname>
-                           <addName type="untagged-title">ܐܠܐܘܐܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib365-3" type="split">
-                           <forename>الحسن</forename>
-                           <surname>بن بهلول</surname>
-                           <addName type="untagged-title">الاواني الطيرهاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib365-2" type="split">
-                           <forename>al-Ḥasan</forename>
-                           <surname>Bar Bahlul</surname>
-                           <addName type="untagged-title">al-Awāni al-Ṭirhāni</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib365-3">
+                  <forename>الحسن</forename>
+                  <surname>بن بهلول</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib365-4">
+                  <forename>ܚܣܢ</forename>
+                  <surname>ܒܪ ܒܗܠܘܠ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib365-4">
+                  <forename>ܚܰܣܢ</forename>
+                  <surname>ܒܰܪ ܒܰܗܠܘܠ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib365-5">
+                  <surname>ܒܪ ܒܗܠܘܠ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib365-5">
+                  <surname>ܒܲܪ ܒܲܗܠܘܼܠ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib365-6">
+                  <surname>ܒܪ ܒܗܠܘܠ</surname>
                </persName>
                <bibl xml:id="bib365-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

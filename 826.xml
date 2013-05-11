@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-826">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib826-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib826-1"
                          resp="http://syriaca.org">Yoḥannan of Dalyatha</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib826-2" type="sic">John Dalyatha</persName>
-               <persName xml:lang="ar" source="bib826-3" type="sic">يوحنا الدلياثي</persName>
-               <persName xml:lang="syr" source="bib826-4" type="sic">ܝܘܚܢܢ ܕܕܠܝ̈ܬܗ</persName>
-               <persName xml:lang="syr-Syrj" source="bib826-4" type="sic">ܝܘܽܚܰܢܢ ܕܕܰܠܝܳ̈ܬܶܗ</persName>
-               <persName xml:lang="syr" source="bib826-5" type="sic">ܝܘܚܢܢ ܕܕܠܝܬ̈ܗ</persName>
-               <persName xml:lang="syr-Syrn" source="bib826-5" type="sic">ܝܘܿܚܲܢܵܢ ܕܕܵܠܝܵܬܹ̈ܗ</persName>
-               <persName xml:lang="syr" source="bib826-6" type="sic">ܝܘܚܢܢ ܕܕܠܝܬ̈ܗ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib826-1" type="sic">Yoḥannan of Dalyatha</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib826-1" type="split">
-                           <forename>Yoḥannan</forename>
-                           <addName type="untagged-title">of Dalyatha</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib826-1" type="sic">Yoḥannan of Dalyatha</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib826-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib826-2">John Dalyatha</persName>
+               <persName type="sic" xml:lang="ar" source="#bib826-3">يوحنا الدلياثي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib826-4">ܝܘܚܢܢ ܕܕܠܝ̈ܬܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib826-4">ܝܘܽܚܰܢܢ ܕܕܰܠܝܳ̈ܬܶܗ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib826-5">ܝܘܚܢܢ ܕܕܠܝܬ̈ܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib826-5">ܝܘܿܚܲܢܵܢ ܕܕܵܠܝܵܬܹ̈ܗ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib826-6">ܝܘܚܢܢ ܕܕܠܝܬ̈ܗ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib826-1"
+                         resp="http://syriaca.org">
                   <forename>Yoḥannan</forename>
-                  <addName type="untagged-title">of Dalyatha</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib826-4" type="sic">ܝܘܚܢܢ ܕܕܠܝ̈ܬܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib826-4" type="sic">ܝܘܽܚܰܢܢ ܕܕܰܠܝܳ̈ܬܶܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib826-3" type="sic">يوحنا الدلياثي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib826-2" type="sic">John Dalyatha</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib826-2">
+                  <forename>John</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib826-3">
+                  <forename>يوحنا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib826-4">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib826-4">
+                  <forename>ܝܘܽܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib826-5">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib826-5">
+                  <forename>ܝܘܿܚܲܢܵܢ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib826-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܕܕܠܝ̈ܬܗ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib826-4" type="split">
-                           <forename>ܝܘܽܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܕܕܰܠܝܳ̈ܬܶܗ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib826-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">الدلياثي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib826-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">Dalyatha</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib826-6">
+                  <addName type="untagged-title">ܕܕܠܝܬ̈ܗ</addName>
                </persName>
                <bibl xml:id="bib826-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

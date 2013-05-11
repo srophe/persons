@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,41 @@
       <body>
          <listPerson>
             <person xml:id="person-8">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib8-2" type="sic">Miles, bishop of Sus</persName>
-               <persName xml:lang="ar" source="bib8-3" type="sic">ميلس اسقف السوس</persName>
-               <persName xml:lang="syr" source="bib8-4" type="sic">ܡܝܠܝܣ ܐܦܝܣܩܘܦܐ ܕܫܘܫ</persName>
-               <persName xml:lang="syr-Syrj" source="bib8-4" type="sic">ܡܺܝܠܝܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܡܝܠܣ</persName>
-               <persName xml:lang="syr" source="bib8-5" type="sic">ܡܝܠܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib8-5" type="sic">ܡܝܼܠܸܣ</persName>
-               <persName xml:lang="syr" source="bib8-6" type="sic">ܡܝܠܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Miles of Susa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܡܝܠܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Miles of Susa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib8-2">Miles, bishop of Sus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib8-3">ميلس اسقف السوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib8-4">ܡܝܠܝܣ ܐܦܝܣܩܘܦܐ ܕܫܘܫ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib8-4">ܡܺܝܠܝܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܡܝܠܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib8-5">ܡܝܠܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib8-5">ܡܝܼܠܸܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib8-6">ܡܝܠܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Miles of Susa</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib8-2">
+                  <forename>Miles</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܡܝܠܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Miles</forename>
-                           <addName type="untagged-title">of Susa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib8-3">
+                  <forename>ميلس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib8-4" type="sic">ܡܝܠܝܣ ܐܦܝܣܩܘܦܐ ܕܫܘܫ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib8-4" type="sic">ܡܺܝܠܝܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib8-3" type="sic">ميلس اسقف السوس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib8-2" type="sic">Miles, bishop of Sus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib8-4">
+                  <forename>ܡܝܠܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib8-4">
+                  <forename>ܡܺܝܠܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܡܝܠܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib8-5">
+                  <forename>ܡܝܠܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib8-5">
+                  <forename>ܡܝܼܠܸܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib8-4" type="split">
-                           <forename>ܡܝܠܝܣ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܘܫ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib8-4" type="split">
-                           <forename>ܡܺܝܠܝܣ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib8-3" type="split">
-                           <forename>ميلس</forename>
-                           <addName type="untagged-title">اسقف السوس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib8-2" type="split">
-                           <forename>Miles</forename>
-                           <addName type="untagged-title">bishop of Sus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܡܝܠܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Miles</forename>
                </persName>
                <bibl xml:id="bib8-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

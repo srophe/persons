@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-34">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib34-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib34-1"
                          resp="http://syriaca.org">Isḥaq of Edessa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib34-2" type="sic">Isaac the Second of Edessa</persName>
-               <persName xml:lang="ar" source="bib34-3" type="sic">اسحاق الرهاوي الثاني</persName>
-               <persName xml:lang="syr" source="bib34-4" type="sic">ܐܝܣܚܩ ܐܘܪܗܝܐ ܬܪܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib34-4" type="sic">ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib34-1" type="sic">Isḥaq of Edessa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib34-1" type="split">
-                           <forename>Isḥaq</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib34-1" type="sic">Isḥaq of Edessa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib34-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib34-2">Isaac the Second of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib34-3">اسحاق الرهاوي الثاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib34-4">ܐܝܣܚܩ ܐܘܪܗܝܐ ܬܪܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib34-4">ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib34-1"
+                         resp="http://syriaca.org">
                   <forename>Isḥaq</forename>
-                  <addName type="untagged-title">of Edessa</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib34-4" type="sic">ܐܝܣܚܩ ܐܘܪܗܝܐ ܬܪܝܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib34-4" type="sic">ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib34-3" type="sic">اسحاق الرهاوي الثاني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib34-2" type="sic">Isaac the Second of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib34-2">
+                  <forename>Isaac</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib34-4" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܝܐ ܬܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib34-4" type="split">
-                           <forename>ܐܝܣܚܳܩ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib34-3" type="split">
-                           <forename>اسحاق</forename>
-                           <addName type="untagged-title">الرهاوي الثاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib34-2" type="split">
-                           <forename>Isaac</forename>
-                           <addName type="untagged-title">the Second of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib34-3">
+                  <forename>اسحاق</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib34-4">
+                  <forename>ܐܝܣܚܩ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib34-4">
+                  <forename>ܐܝܣܚܳܩ</forename>
                </persName>
                <bibl xml:id="bib34-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

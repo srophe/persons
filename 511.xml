@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-511">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib511-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib511-1"
                          resp="http://syriaca.org">Gregory of Nazianzus</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib511-2" type="sic">Gregory Nazianzen</persName>
-               <persName xml:lang="ar" source="bib511-3" type="sic">غريغوريوس النزينزي</persName>
-               <persName xml:lang="syr" source="bib511-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib511-4" type="sic">ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</persName>
-               <persName xml:lang="syr" source="bib511-5" type="sic">ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</persName>
-               <persName xml:lang="syr-Syrn" source="bib511-5" type="sic">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܪܲܒܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܐܵܢܙܝܵܢܙܘܼ</persName>
-               <persName xml:lang="syr" source="bib511-6" type="sic">ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib511-6" type="sic">ܓܪܺܝܓܘܽܪܝܺܘܳܣ ܪܰܒܳܐ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܢܰܐܙܝܰܢܙܽܘ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
-                           <forename>Gregory</forename>
-                           <addName type="untagged-title">of Nazianzus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="sic">Gregory of Nazianzus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib511-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib511-2">Gregory Nazianzen</persName>
+               <persName type="sic" xml:lang="ar" source="#bib511-3">غريغوريوس النزينزي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib511-4">ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib511-4">ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib511-5">ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib511-5">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܪܲܒܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܐܵܢܙܝܵܢܙܘܼ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib511-6">ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib511-6">ܓܪܺܝܓܘܽܪܝܺܘܳܣ ܪܰܒܳܐ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܢܰܐܙܝܰܢܙܽܘ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib511-1"
+                         resp="http://syriaca.org">
                   <forename>Gregory</forename>
-                  <addName type="untagged-title">of Nazianzus</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib511-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib511-4" type="sic">ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib511-3" type="sic">غريغوريوس النزينزي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib511-2" type="sic">Gregory Nazianzen</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib511-2">
+                  <forename>Gregory</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib511-3">
+                  <forename>غريغوريوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib511-4">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib511-4">
+                  <forename>ܓܪܺܝܓܘܽܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib511-5">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib511-5">
+                  <forename>ܓܪܝܼܓܘܿܪܝܼܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib511-4" type="split">
-                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܢܐܙܝܢܙܘ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib511-4" type="split">
-                           <forename>ܓܪܺܝܓܘܽܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܢܰܐܙܰܝܢܰܙܘ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib511-3" type="split">
-                           <forename>غريغوريوس</forename>
-                           <addName type="untagged-title">النزينزي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib511-2" type="split">
-                           <forename>Gregory</forename>
-                           <addName type="untagged-title">Nazianzen</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib511-6">
+                  <addName type="untagged-title">ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib511-6">
+                  <forename>ܓܪܺܝܓܘܽܪܝܺܘܳܣ</forename>
                </persName>
                <bibl xml:id="bib511-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

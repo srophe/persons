@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-527">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib527-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib527-1"
                          resp="http://syriaca.org">Harris, James Rendel</persName>
-               <persName xml:lang="ar" source="bib527-3" type="sic">رندل هاريس</persName>
-               <persName xml:lang="syr" source="bib527-4" type="sic">ܪܢܕܠ ܗܐܪܝܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib527-4" type="sic">ܪܢܕܠ ܗܰܐܪܝܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib527-1" type="sic">Harris, James Rendel</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib527-1" type="split">
-                           <forename>Harris</forename>
-                           <surname>James Rendel</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib527-1" type="sic">Harris, James Rendel</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib527-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib527-3">رندل هاريس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib527-4">ܪܢܕܠ ܗܐܪܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib527-4">ܪܢܕܠ ܗܰܐܪܝܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib527-1"
+                         resp="http://syriaca.org">
                   <forename>Harris</forename>
                   <surname>James Rendel</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib527-4" type="sic">ܪܢܕܠ ܗܐܪܝܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib527-4" type="sic">ܪܢܕܠ ܗܰܐܪܝܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib527-3" type="sic">رندل هاريس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib527-3">
+                  <forename>رندل</forename>
+                  <surname>هاريس</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib527-4" type="split">
-                           <forename>ܪܢܕܠ</forename>
-                           <surname>ܗܐܪܝܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib527-4" type="split">
-                           <forename>ܪܢܕܠ</forename>
-                           <surname>ܗܰܐܪܝܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib527-3" type="split">
-                           <forename>رندل</forename>
-                           <surname>هاريس</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib527-4">
+                  <forename>ܪܢܕܠ</forename>
+                  <surname>ܗܐܪܝܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib527-4">
+                  <forename>ܪܢܕܠ</forename>
+                  <surname>ܗܰܐܪܝܣ</surname>
                </persName>
                <bibl xml:id="bib527-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,80 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-556">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib556-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib556-1"
                          resp="http://syriaca.org">Ishoʿdnaḥ</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib556-2" type="sic">Yeshoʿdnaḥ of Baṣra </persName>
-               <persName xml:lang="ar" source="bib556-3" type="sic">يشوعدناح البصري</persName>
-               <persName xml:lang="syr" source="bib556-4" type="sic">ܝܫܘܥ ܕܢܚ ܕܒܘܨܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib556-4" type="sic">ܝܶܫܘܥ ܕܢܰܚ ܕܒܘܨܪܳܐ</persName>
-               <persName xml:lang="syr" source="bib556-5" type="sic">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib556-5" type="sic">ܡܵܪܝ ܝܑܼܫܘܿܥܕܢܲܚ ܕܒܲܨܪܵܐ</persName>
-               <persName xml:lang="syr" source="bib556-6" type="sic">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib556-1" type="sic">Ishoʿdnaḥ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib556-1" type="split">
-                           <forename>Ishoʿdnaḥ</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib556-1" type="sic">Ishoʿdnaḥ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib556-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib556-2">Yeshoʿdnaḥ of Baṣra </persName>
+               <persName type="sic" xml:lang="ar" source="#bib556-3">يشوعدناح البصري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib556-4">ܝܫܘܥ ܕܢܚ ܕܒܘܨܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib556-4">ܝܶܫܘܥ ܕܢܰܚ ܕܒܘܨܪܳܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib556-5">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib556-5">ܡܵܪܝ ܝܑܼܫܘܿܥܕܢܲܚ ܕܒܲܨܪܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib556-6">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib556-1"
+                         resp="http://syriaca.org">
                   <forename>Ishoʿdnaḥ</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib556-4" type="sic">ܝܫܘܥ ܕܢܚ ܕܒܘܨܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib556-4" type="sic">ܝܶܫܘܥ ܕܢܰܚ ܕܒܘܨܪܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib556-3" type="sic">يشوعدناح البصري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib556-2" type="sic">Yeshoʿdnaḥ of Baṣra </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib556-2">
+                  <forename>Yeshoʿdnaḥ</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib556-3">
+                  <forename>يشوعدناح</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib556-4">
+                  <forename>ܝܫܘܥ ܕܢܚ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib556-4">
+                  <forename>ܝܶܫܘܥ ܕܢܰܚ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib556-5">
+                  <forename>ܝܫܘܥܕܢܚ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib556-5">
+                  <forename>ܝܑܼܫܘܿܥܕܢܲܚ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib556-4" type="split">
-                           <forename>ܝܫܘܥ ܕܢܚ</forename>
-                           <addName type="untagged-title">ܕܒܘܨܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib556-4" type="split">
-                           <forename>ܝܶܫܘܥ ܕܢܰܚ</forename>
-                           <addName type="untagged-title">ܕܒܘܨܪܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib556-3" type="split">
-                           <forename>يشوعدناح</forename>
-                           <addName type="untagged-title">البصري</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib556-2" type="split">
-                           <forename>Yeshoʿdnaḥ</forename>
-                           <addName type="untagged-title">of Baṣra</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܫܘܥܕܢܚ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib556-6">
+                  <addName type="untagged-title">ܡܪܝ, ܕܒܨܪܐ</addName>
                </persName>
                <bibl xml:id="bib556-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

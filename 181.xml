@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-181">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib181-2" type="sic">Athanasius, bishop of Qallisura</persName>
-               <persName xml:lang="ar" source="bib181-3" type="sic">اثناسيوس اسقف قليسورا</persName>
-               <persName xml:lang="syr" source="bib181-4" type="sic">ܐܬܢܐܣܝܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib181-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Athanasios of Qlisuro</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Athanasios of Qlisuro</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib181-2">Athanasius, bishop of Qallisura</persName>
+               <persName type="sic" xml:lang="ar" source="#bib181-3">اثناسيوس اسقف قليسورا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib181-4">ܐܬܢܐܣܝܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib181-4">ܐܰܬܰܢܐܣܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Athanasios of Qlisuro</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib181-2">
+                  <forename>Athanasius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Athanasios</forename>
-                           <addName type="untagged-title">of Qlisuro</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib181-3">
+                  <forename>اثناسيوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib181-4" type="sic">ܐܬܢܐܣܝܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib181-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib181-3" type="sic">اثناسيوس اسقف قليسورا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib181-2" type="sic">Athanasius, bishop of Qallisura</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib181-4">
+                  <forename>ܐܬܢܐܣܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib181-4" type="split">
-                           <forename>ܐܬܢܐܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib181-4" type="split">
-                           <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib181-3" type="split">
-                           <forename>اثناسيوس</forename>
-                           <addName type="untagged-title">اسقف قليسورا</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib181-2" type="split">
-                           <forename>Athanasius</forename>
-                           <addName type="untagged-title">Bishop of Qallisura</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib181-4">
+                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Athanasios</forename>
                </persName>
                <bibl xml:id="bib181-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

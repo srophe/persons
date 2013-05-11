@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,76 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-40">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib40-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib40-1"
                          resp="http://syriaca.org">Yeshuʿ the Stylite</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib40-2" type="sic">The History Ascribed to the Priest Joshua the Stylite</persName>
-               <persName xml:lang="ar" source="bib40-3" type="sic">التاريخ المنسوب الى القس يشوع العمودي</persName>
-               <persName xml:lang="syr" source="bib40-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܡܒܝܬܝ ܠܩܫܝܫܐ ܝܫܘܥ ܐܣܛܘܢܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib40-4" type="sic">ܡܰܟܬܰܒܙܒܢ̈ܐ ܕܰܡܒܰܝܬܰܝ ܠܩܰܫܝܫܳܐ ܝܶܫܘܥ ܐܶܣܛܘܢܳܪܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
-                           <forename>Yeshuʿ</forename>
-                           <addName type="untagged-title">the Stylite</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="sic">Yeshuʿ the Stylite</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib40-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib40-2">The History Ascribed to the Priest Joshua the Stylite</persName>
+               <persName type="sic" xml:lang="ar" source="#bib40-3">التاريخ المنسوب الى القس يشوع العمودي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib40-4">ܡܟܬܒܙܒܢ̈ܐ ܕܡܒܝܬܝ ܠܩܫܝܫܐ ܝܫܘܥ ܐܣܛܘܢܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib40-4">ܡܰܟܬܰܒܙܒܢ̈ܐ ܕܰܡܒܰܝܬܰܝ ܠܩܰܫܝܫܳܐ ܝܶܫܘܥ ܐܶܣܛܘܢܳܪܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib40-1"
+                         resp="http://syriaca.org">
                   <forename>Yeshuʿ</forename>
-                  <addName type="untagged-title">the Stylite</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib40-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܡܒܝܬܝ ܠܩܫܝܫܐ ܝܫܘܥ ܐܣܛܘܢܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib40-4" type="sic">ܡܰܟܬܰܒܙܒܢ̈ܐ ܕܰܡܒܰܝܬܰܝ ܠܩܰܫܝܫܳܐ ܝܶܫܘܥ ܐܶܣܛܘܢܳܪܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib40-3" type="sic">التاريخ المنسوب الى القس يشوع العمودي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib40-2" type="sic">The History Ascribed to the Priest Joshua the Stylite</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib40-3">
+                  <forename>يشوع</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib40-4" type="split">
-                           <forename>ܝܫܘܥ</forename>
-                           <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib40-4" type="split">
-                           <forename>ܝܶܫܘܥ</forename>
-                           <addName type="untagged-title">ܐܶܣܛܘܢܳܪܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib40-3" type="split">
-                           <forename>يشوع</forename>
-                           <addName type="untagged-title">القس ، العمودي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib40-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib40-4">
+                  <forename>ܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib40-4">
+                  <forename>ܝܶܫܘܥ</forename>
                </persName>
                <bibl xml:id="bib40-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

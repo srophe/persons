@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,62 +17,40 @@
       <body>
          <listPerson>
             <person xml:id="person-841">
-               <persName xml:lang="ar" source="bib841-3" type="sic">داماسوس</persName>
-               <persName xml:lang="syr" source="bib841-4" type="sic">ܕܐܡܐܣܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib841-4" type="sic">ܕܰܐܡܰܐܣܘܣ</persName>
-               <persName xml:lang="syr" source="bib841-5" type="sic">ܕܡܣܘܣ ܐܦܣܩܘܦܐ ܕܪܗܘܡܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib841-5" type="sic">ܕܵܡܵܣܘܿܣ ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܗܘܿܡܹܐ</persName>
-               <persName xml:lang="syr" source="bib841-6" type="sic">ܕܡܣܘܣ ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib841-6" type="sic">ܕܰܡܰܣܳܘܣ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܪܗܽܘܡܺܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Damasus of Rome</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Damasus of Rome</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib841-3">داماسوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib841-4">ܕܐܡܐܣܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib841-4">ܕܰܐܡܰܐܣܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib841-5">ܕܡܣܘܣ ܐܦܣܩܘܦܐ ܕܪܗܘܡܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib841-5">ܕܵܡܵܣܘܿܣ ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܗܘܿܡܹܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib841-6">ܕܡܣܘܣ ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib841-6">ܕܰܡܰܣܳܘܣ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܪܗܽܘܡܺܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Damasus of Rome</persName>
+               <persName type="split" xml:lang="ar" source="#bib841-3">
+                  <forename>داماسوس</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Damasus</forename>
-                           <addName type="untagged-title">of Rome</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib841-4">
+                  <forename>ܕܐܡܐܣܘܣ</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib841-4" type="sic">ܕܐܡܐܣܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib841-4" type="sic">ܕܰܐܡܰܐܣܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib841-3" type="sic">داماسوس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib841-4">
+                  <forename>ܕܰܐܡܰܐܣܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib841-5">
+                  <forename>ܕܡܣܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib841-5">
+                  <forename>ܕܵܡܵܣܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib841-4" type="split">
-                           <forename>ܕܐܡܐܣܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib841-4" type="split">
-                           <forename>ܕܰܐܡܰܐܣܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib841-3" type="split">
-                           <forename>داماسوس</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܕܡܣܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib841-6">
+                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib841-6">
+                  <forename>ܕܰܡܰܣܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Damasus</forename>
                </persName>
                <bibl xml:id="bib841-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

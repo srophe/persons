@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-289">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib289-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib289-1"
                          resp="http://syriaca.org">Isḥoq ʿAzar</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib289-2" type="sic">Isaac, Patriarch of Antioch</persName>
-               <persName xml:lang="ar" source="bib289-3" type="sic">اسحق بطريارك انطاكية</persName>
-               <persName xml:lang="syr" source="bib289-4" type="sic">ܐܝܣܚܩ ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib289-4" type="sic">ܐܝܣܚܩ ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
-                           <forename>Isḥoq</forename>
-                           <surname>ʿAzar</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="sic">Isḥoq ʿAzar</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib289-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib289-2">Isaac, Patriarch of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib289-3">اسحق بطريارك انطاكية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib289-4">ܐܝܣܚܩ ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib289-4">ܐܝܣܚܩ ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib289-1"
+                         resp="http://syriaca.org">
                   <forename>Isḥoq</forename>
                   <surname>ʿAzar</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib289-4" type="sic">ܐܝܣܚܩ ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib289-3" type="sic">اسحق بطريارك انطاكية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib289-2" type="sic">Isaac, Patriarch of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib289-2">
+                  <forename>Isaac</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib289-4" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܐܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib289-4" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܳܐ ܐܰܢܛܝܘܟܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib289-3" type="split">
-                           <forename>اسحق</forename>
-                           <addName type="untagged-title">بطريارك انطاكية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib289-2" type="split">
-                           <forename>Isaac</forename>
-                           <addName type="untagged-title">Patriarch of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib289-3">
+                  <forename>اسحق</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib289-4">
+                  <forename>ܐܝܣܚܩ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib289-4">
+                  <forename>ܐܝܣܚܩ</forename>
                </persName>
                <bibl xml:id="bib289-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-543">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib543-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib543-1"
                          resp="http://syriaca.org">Ibn al-Ṭayyib</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib543-2" type="sic">Abu al-Faraj ʿAbd Allah Ibn al-Ṭayyib</persName>
-               <persName xml:lang="ar" source="bib543-3" type="sic">ابو الفرج عبدالله ابن الطيب</persName>
-               <persName xml:lang="syr" source="bib543-4" type="sic">ܕܝܪܝܐ ܐܒܘ ܐܠܦܪܓ ܥܒܕ ܐܠܗ ܒܪ ܛܝܒ</persName>
-               <persName xml:lang="syr-Syrj" source="bib543-4" type="sic">ܕܰܝܪܳܝܐ ܐܰܒܘ ܐܠܦܰܪܓ ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib543-1" type="sic">Ibn al-Ṭayyib</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib543-1" type="split">
-                           <surname>Ibn al-Ṭayyib</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib543-1" type="sic">Ibn al-Ṭayyib</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib543-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib543-2">Abu al-Faraj ʿAbd Allah Ibn al-Ṭayyib</persName>
+               <persName type="sic" xml:lang="ar" source="#bib543-3">ابو الفرج عبدالله ابن الطيب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib543-4">ܕܝܪܝܐ ܐܒܘ ܐܠܦܪܓ ܥܒܕ ܐܠܗ ܒܪ ܛܝܒ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib543-4">ܕܰܝܪܳܝܐ ܐܰܒܘ ܐܠܦܰܪܓ ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib543-1"
+                         resp="http://syriaca.org">
                   <surname>Ibn al-Ṭayyib</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib543-4" type="sic">ܕܝܪܝܐ ܐܒܘ ܐܠܦܪܓ ܥܒܕ ܐܠܗ ܒܪ ܛܝܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib543-4" type="sic">ܕܰܝܪܳܝܐ ܐܰܒܘ ܐܠܦܰܪܓ ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib543-3" type="sic">ابو الفرج عبدالله ابن الطيب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib543-2" type="sic">Abu al-Faraj ʿAbd Allah Ibn al-Ṭayyib</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib543-2">
+                  <forename>ʿAbd Allah</forename>
+                  <surname>Abu al-Faraj, Ibn al-Ṭayyib</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib543-4" type="split">
-                           <forename>ܥܒܕ ܐܠܗ</forename>
-                           <surname>ܐܒܘ ܐܠܦܪܓ, ܒܪ ܛܝܒ</surname>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib543-4" type="split">
-                           <forename>ܥܰܒܕ ܐܠܗ, ܒܰܪ ܛܰܝܒ</forename>
-                           <surname>ܐܰܒܘ ܐܠܦܰܪܓ</surname>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib543-3" type="split">
-                           <forename>عبدالله</forename>
-                           <surname>ابو الفرج, ابن الطيب</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib543-2" type="split">
-                           <forename>ʿAbd Allah</forename>
-                           <surname>Abu al-Faraj, Ibn al-Ṭayyib</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib543-3">
+                  <forename>عبدالله</forename>
+                  <surname>ابو الفرج, ابن الطيب</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib543-4">
+                  <forename>ܥܒܕ ܐܠܗ</forename>
+                  <surname>ܐܒܘ ܐܠܦܪܓ, ܒܪ ܛܝܒ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib543-4">
+                  <forename>ܥܰܒܕ ܐܠܗ, ܒܰܪ ܛܰܝܒ</forename>
+                  <surname>ܐܰܒܘ ܐܠܦܰܪܓ</surname>
                </persName>
                <bibl xml:id="bib543-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

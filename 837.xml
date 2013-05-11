@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,66 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-837">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib837-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib837-1"
                          resp="http://syriaca.org">Zingerle, Pius (Jacob)</persName>
-               <persName xml:lang="ar" source="bib837-3" type="sic">زينجلر</persName>
-               <persName xml:lang="syr" source="bib837-4" type="sic">ܙܝܢܓܠܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib837-4" type="sic">ܙܶܝܢܓܠܶܪ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib837-1" type="sic">Zingerle, Pius (Jacob)</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib837-1" type="split">
-                           <forename>Pius (Jacob)</forename>
-                           <surname>Zingerle</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib837-1" type="sic">Zingerle, Pius (Jacob)</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib837-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib837-3">زينجلر</persName>
+               <persName type="sic" xml:lang="syr" source="#bib837-4">ܙܝܢܓܠܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib837-4">ܙܶܝܢܓܠܶܪ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib837-1"
+                         resp="http://syriaca.org">
                   <forename>Pius (Jacob)</forename>
                   <surname>Zingerle</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib837-4" type="sic">ܙܝܢܓܠܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib837-4" type="sic">ܙܶܝܢܓܠܶܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib837-3" type="sic">زينجلر</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib837-3">
+                  <surname>زينجلر</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib837-4" type="split">
-                           <surname>ܙܝܢܓܠܪ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib837-4" type="split">
-                           <surname>ܙܶܝܢܓܠܶܪ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib837-3" type="split">
-                           <surname>زينجلر</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib837-4">
+                  <surname>ܙܝܢܓܠܪ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib837-4">
+                  <surname>ܙܶܝܢܓܠܶܪ</surname>
                </persName>
                <bibl xml:id="bib837-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-298">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib298-2" type="sic">Bishop John al-Bustani of Man‛im</persName>
-               <persName xml:lang="ar" source="bib298-3" type="sic">الاسقف يوحنا البستاني المانعمي</persName>
-               <persName xml:lang="syr" source="bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yūḥannā al-Bustānī of Beth Manʿem</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yūḥannā al-Bustānī of Beth Manʿem</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib298-2">Bishop John al-Bustani of Man‛im</persName>
+               <persName type="sic" xml:lang="ar" source="#bib298-3">الاسقف يوحنا البستاني المانعمي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yūḥannā al-Bustānī of Beth Manʿem</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib298-2">
+                  <forename>John</forename>
+                  <surname>al-Bustani</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yūḥannā</forename>
-                           <addName type="untagged-title">al-Bustānī of Beth Manʿem</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib298-3">
+                  <forename>يوحنا</forename>
+                  <surname>البستاني</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib298-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib298-3" type="sic">الاسقف يوحنا البستاني المانعمي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib298-2" type="sic">Bishop John al-Bustani of Man‛im</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib298-4">
+                  <forename>ܝܘܚܢܢ ܓܢܢܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib298-4" type="split">
-                           <forename>ܝܘܚܢܢ ܓܢܢܐ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܢܥܡܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib298-4" type="split">
-                           <forename>ܝܘܚܰܢܢ ܓܰܢܢܳܐ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܰܢܥܡܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib298-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>البستاني</surname>
-                           <addName type="untagged-title">الاسقف, المانعمي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib298-2" type="split">
-                           <forename>John</forename>
-                           <surname>al-Bustani</surname>
-                           <addName type="untagged-title">Bishop, of Man‛im</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib298-4">
+                  <forename>ܝܘܚܰܢܢ ܓܰܢܢܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yūḥannā</forename>
                </persName>
                <bibl xml:id="bib298-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,72 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-624">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib624-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib624-1"
                          resp="http://syriaca.org">Mary</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib624-2" type="sic">Virgin Mary</persName>
-               <persName xml:lang="ar" source="bib624-3" type="sic">العذرآء مريم</persName>
-               <persName xml:lang="syr" source="bib624-4" type="sic">ܡܪܝܡ</persName>
-               <persName xml:lang="syr-Syrj" source="bib624-4" type="sic">ܡܰܪܝܰܡ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib624-1" type="sic">Mary</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib624-1" type="split">
-                           <forename>Mary</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib624-1" type="sic">Mary</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib624-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib624-2">Virgin Mary</persName>
+               <persName type="sic" xml:lang="ar" source="#bib624-3">العذرآء مريم</persName>
+               <persName type="sic" xml:lang="syr" source="#bib624-4">ܡܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib624-4">ܡܰܪܝܰܡ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib624-1"
+                         resp="http://syriaca.org">
                   <forename>Mary</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib624-4" type="sic">ܡܪܝܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib624-4" type="sic">ܡܰܪܝܰܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib624-3" type="sic">العذرآء مريم</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib624-2" type="sic">Virgin Mary</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib624-3">
+                  <forename>مريم</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib624-4" type="split">
-                           <forename>ܡܪܝܡ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib624-4" type="split">
-                           <forename>ܡܰܪܝܰܡ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib624-3" type="split">
-                           <forename>مريم</forename>
-                           <addName type="untagged-title">العذرآء</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib624-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib624-4">
+                  <forename>ܡܪܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib624-4">
+                  <forename>ܡܰܪܝܰܡ</forename>
                </persName>
                <bibl xml:id="bib624-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,53 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-856">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib856-2" type="sic">Macarius the Great and Egyptian</persName>
-               <persName xml:lang="ar" source="bib856-3" type="sic">مقاريوس المصري</persName>
-               <persName xml:lang="syr" source="bib856-5" type="sic">ܡܩܪܝܣ ܐܚܪܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib856-5" type="sic">ܡܲܩܵܪܝܼܣ ܐܚܪܹܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib856-6" type="sic">ܡܩܪܝܣ ܐܚܪܢܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Macarius</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Macarius</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib856-2">Macarius the Great and Egyptian</persName>
+               <persName type="sic" xml:lang="ar" source="#bib856-3">مقاريوس المصري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib856-5">ܡܩܪܝܣ ܐܚܪܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib856-5">ܡܲܩܵܪܝܼܣ ܐܚܪܹܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib856-6">ܡܩܪܝܣ ܐܚܪܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Macarius</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib856-2">
+                  <forename>Macarius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Macarius</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib856-3">
+                  <forename>مقاريوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib856-3" type="sic">مقاريوس المصري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib856-2" type="sic">Macarius the Great and Egyptian</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib856-5">
+                  <forename>ܡܩܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib856-5">
+                  <forename>ܡܲܩܵܪܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib856-3" type="split">
-                           <forename>مقاريوس</forename>
-                           <addName type="untagged-title">المصري</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib856-2" type="split">
-                           <forename>Macarius</forename>
-                           <addName type="untagged-title">the Great and Egyptian</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܡܩܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib856-6">
+                  <addName type="untagged-title">ܐܚܪܢܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Macarius</forename>
                </persName>
                <bibl xml:id="bib856-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

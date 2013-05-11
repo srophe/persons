@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-938">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib938-2" type="sic">Rabban Ram Yeshu‛</persName>
-               <persName xml:lang="ar" source="bib938-3" type="sic">الربان راميشوع</persName>
-               <persName xml:lang="syr" source="bib938-4" type="sic">ܪܡܝܫܘܥ ܕܒܝܬ ܪܒܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib938-4" type="sic">ܪܰܡܝܺܫܘܥ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ramishuʿ of Beth Rabban</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ramishuʿ of Beth Rabban</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib938-2">Rabban Ram Yeshu‛</persName>
+               <persName type="sic" xml:lang="ar" source="#bib938-3">الربان راميشوع</persName>
+               <persName type="sic" xml:lang="syr" source="#bib938-4">ܪܡܝܫܘܥ ܕܒܝܬ ܪܒܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib938-4">ܪܰܡܝܺܫܘܥ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ramishuʿ of Beth Rabban</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib938-2">
+                  <forename>Ram Yeshu‛</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ramishuʿ</forename>
-                           <addName type="untagged-title">of Beth Rabban</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib938-3">
+                  <forename>راميشوع</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib938-4" type="sic">ܪܡܝܫܘܥ ܕܒܝܬ ܪܒܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib938-4" type="sic">ܪܰܡܝܺܫܘܥ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib938-3" type="sic">الربان راميشوع</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib938-2" type="sic">Rabban Ram Yeshu‛</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib938-4">
+                  <forename>ܪܡܝܫܘܥ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib938-4" type="split">
-                           <forename>ܪܡܝܫܘܥ</forename>
-                           <addName type="untagged-title">ܕܒܝܬ ܪܒܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib938-4" type="split">
-                           <forename>ܪܰܡܝܺܫܘܥ</forename>
-                           <addName type="untagged-title">ܕܒܶܝܬ ܪܰܒܰܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib938-3" type="split">
-                           <forename>راميشوع</forename>
-                           <addName type="untagged-title">الربان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib938-2" type="split">
-                           <forename>Ram Yeshu‛</forename>
-                           <addName type="untagged-title">Rabban</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib938-4">
+                  <forename>ܪܰܡܝܺܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ramishuʿ</forename>
                </persName>
                <bibl xml:id="bib938-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

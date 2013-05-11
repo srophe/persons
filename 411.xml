@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-411">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib411-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib411-1"
                          resp="http://syriaca.org">Chabot, Jean-Baptiste</persName>
-               <persName xml:lang="ar" source="bib411-3" type="sic">يوحنا شابو</persName>
-               <persName xml:lang="syr" source="bib411-4" type="sic">ܝܘܚܢܢ ܫܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib411-4" type="sic">ܝܘܚܰܢܢ ܫܰܒܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
-                           <forename>Jean-Baptiste</forename>
-                           <surname>Chabot</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="sic">Chabot, Jean-Baptiste</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib411-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib411-3">يوحنا شابو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib411-4">ܝܘܚܢܢ ܫܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib411-4">ܝܘܚܰܢܢ ܫܰܒܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib411-1"
+                         resp="http://syriaca.org">
                   <forename>Jean-Baptiste</forename>
                   <surname>Chabot</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib411-4" type="sic">ܝܘܚܢܢ ܫܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib411-4" type="sic">ܝܘܚܰܢܢ ܫܰܒܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib411-3" type="sic">يوحنا شابو</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib411-3">
+                  <forename>يوحنا</forename>
+                  <surname>شابو</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib411-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܫܒܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib411-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <surname>ܫܰܒܳܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib411-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>شابو</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib411-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܫܒܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib411-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+                  <surname>ܫܰܒܳܐ</surname>
                </persName>
                <bibl xml:id="bib411-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

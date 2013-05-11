@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-496">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib496-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib496-1"
                          resp="http://syriaca.org">Galen</persName>
-               <persName xml:lang="ar" source="bib496-3" type="sic">جالينس</persName>
-               <persName xml:lang="syr" source="bib496-4" type="sic">ܓܐܠܝܢܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib496-4" type="sic">ܓܰܐܠܝܺܢܘܽܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib496-1" type="sic">Galen</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib496-1" type="split">
-                           <forename>Galen</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib496-1" type="sic">Galen</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib496-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib496-3">جالينس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib496-4">ܓܐܠܝܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib496-4">ܓܰܐܠܝܺܢܘܽܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib496-1"
+                         resp="http://syriaca.org">
                   <forename>Galen</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib496-4" type="sic">ܓܐܠܝܢܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib496-4" type="sic">ܓܰܐܠܝܺܢܘܽܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib496-3" type="sic">جالينس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib496-3">
+                  <forename>جالينس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib496-4" type="split">
-                           <forename>ܓܐܠܝܢܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib496-4" type="split">
-                           <forename>ܓܰܐܠܝܺܢܘܽܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib496-3" type="split">
-                           <forename>جالينس</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib496-4">
+                  <forename>ܓܐܠܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib496-4">
+                  <forename>ܓܰܐܠܝܺܢܘܽܣ</forename>
                </persName>
                <bibl xml:id="bib496-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

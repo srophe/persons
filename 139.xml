@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-139">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib139-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib139-1"
                          resp="http://syriaca.org">Giwargis of Bʿeltan</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib139-2" type="sic">Mar George I, Patriarch of Antioch</persName>
-               <persName xml:lang="ar" source="bib139-3" type="sic">مار جاورجي الاول بطريرك انطاكية</persName>
-               <persName xml:lang="syr" source="bib139-4" type="sic">ܡܪܝ ܓܘܪܓܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib139-4" type="sic">ܡܳܪܝ ܓܶܘܰܪܓܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib139-1" type="sic">Giwargis of Bʿeltan</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib139-1" type="split">
-                           <forename>Giwargis</forename>
-                           <addName type="untagged-title">of Bʿeltan</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib139-1" type="sic">Giwargis of Bʿeltan</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib139-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib139-2">Mar George I, Patriarch of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib139-3">مار جاورجي الاول بطريرك انطاكية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib139-4">ܡܪܝ ܓܘܪܓܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib139-4">ܡܳܪܝ ܓܶܘܰܪܓܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib139-1"
+                         resp="http://syriaca.org">
                   <forename>Giwargis</forename>
-                  <addName type="untagged-title">of Bʿeltan</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib139-4" type="sic">ܡܪܝ ܓܘܪܓܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib139-4" type="sic">ܡܳܪܝ ܓܶܘܰܪܓܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib139-3" type="sic">مار جاورجي الاول بطريرك انطاكية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib139-2" type="sic">Mar George I, Patriarch of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib139-2">
+                  <forename>George I</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib139-4" type="split">
-                           <forename>ܓܘܪܓܝ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib139-4" type="split">
-                           <forename>ܓܶܘܰܪܓܝ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib139-3" type="split">
-                           <forename>جاورجي</forename>
-                           <addName type="untagged-title">مار , الاول ,  بطريرك انطاكية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib139-2" type="split">
-                           <forename>George I</forename>
-                           <addName type="untagged-title">Mar, Patriarch of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib139-3">
+                  <forename>جاورجي</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib139-4">
+                  <forename>ܓܘܪܓܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib139-4">
+                  <forename>ܓܶܘܰܪܓܝ</forename>
                </persName>
                <bibl xml:id="bib139-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

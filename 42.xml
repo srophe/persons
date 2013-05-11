@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-42">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib42-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib42-1"
                          resp="http://syriaca.org">Yaʿqub of Serugh</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib42-2" type="sic">Mar Jacob of Sarug, the Malphono</persName>
-               <persName xml:lang="ar" source="bib42-3" type="sic">مار يعقوب السروجي الملفان</persName>
-               <persName xml:lang="syr" source="bib42-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib42-4" type="sic">ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="sic">Yaʿqub of Serugh</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="split">
-                           <forename>Yaʿqub</forename>
-                           <addName type="untagged-title">of Serugh</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="sic">Yaʿqub of Serugh</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib42-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib42-2">Mar Jacob of Sarug, the Malphono</persName>
+               <persName type="sic" xml:lang="ar" source="#bib42-3">مار يعقوب السروجي الملفان</persName>
+               <persName type="sic" xml:lang="syr" source="#bib42-4">ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib42-4">ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib42-1"
+                         resp="http://syriaca.org">
                   <forename>Yaʿqub</forename>
-                  <addName type="untagged-title">of Serugh</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib42-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib42-4" type="sic">ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib42-3" type="sic">مار يعقوب السروجي الملفان</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib42-2" type="sic">Mar Jacob of Sarug, the Malphono</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib42-2">
+                  <forename>Jacob</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib42-4" type="split">
-                           <forename>ܝܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܕܣܪܘܓ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib42-4" type="split">
-                           <forename>ܝܰܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܕܰܣܪܘܓ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib42-3" type="split">
-                           <forename>يعقوب</forename>
-                           <addName type="untagged-title">مار  ، السروجي ، الملفان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib42-2" type="split">
-                           <forename>Jacob</forename>
-                           <addName type="untagged-title">Mar, of Sarug, the Malphono</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib42-3">
+                  <forename>يعقوب</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib42-4">
+                  <forename>ܝܥܩܘܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib42-4">
+                  <forename>ܝܰܥܩܘܒ</forename>
                </persName>
                <bibl xml:id="bib42-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

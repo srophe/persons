@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-834">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib834-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib834-1"
                          resp="http://syriaca.org">Yulyana Saba</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib834-2" type="sic">Julian Sobo</persName>
-               <persName xml:lang="ar" source="bib834-3" type="sic">يوليان الشيخ</persName>
-               <persName xml:lang="syr" source="bib834-4" type="sic">ܝܘܠܝܢܐ ܣܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib834-4" type="sic">ܝܘܽܠܝܰܢܶܐ ܣܳܒܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib834-1" type="sic">Yulyana Saba</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib834-1" type="split">
-                           <forename>Yulyana</forename>
-                           <addName type="untagged-title">Saba</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib834-1" type="sic">Yulyana Saba</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib834-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib834-2">Julian Sobo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib834-3">يوليان الشيخ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib834-4">ܝܘܠܝܢܐ ܣܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib834-4">ܝܘܽܠܝܰܢܶܐ ܣܳܒܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib834-1"
+                         resp="http://syriaca.org">
                   <forename>Yulyana</forename>
-                  <addName type="untagged-title">Saba</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib834-4" type="sic">ܝܘܠܝܢܐ ܣܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib834-4" type="sic">ܝܘܽܠܝܰܢܶܐ ܣܳܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib834-3" type="sic">يوليان الشيخ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib834-2" type="sic">Julian Sobo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib834-2">
+                  <forename>Julian</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib834-4" type="split">
-                           <forename>ܝܘܠܝܢܐ</forename>
-                           <addName type="untagged-title">ܣܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib834-4" type="split">
-                           <forename>ܝܘܽܠܝܰܢܶܐ</forename>
-                           <addName type="untagged-title">ܣܳܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib834-3" type="split">
-                           <forename>يوليان</forename>
-                           <addName type="untagged-title">الشيخ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib834-2" type="split">
-                           <forename>Julian</forename>
-                           <addName type="untagged-title">Sobo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib834-3">
+                  <forename>يوليان</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib834-4">
+                  <forename>ܝܘܠܝܢܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib834-4">
+                  <forename>ܝܘܽܠܝܰܢܶܐ</forename>
                </persName>
                <bibl xml:id="bib834-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

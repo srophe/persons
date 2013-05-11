@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-168">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib168-2" type="sic">Ignatius II</persName>
-               <persName xml:lang="ar" source="bib168-3" type="sic">اغناطيوس الثاني</persName>
-               <persName xml:lang="syr" source="bib168-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܬܪܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib168-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܬܪܰܝܳܢܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ignaṭius II (I)</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignaṭius II (I)</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib168-2">Ignatius II</persName>
+               <persName type="sic" xml:lang="ar" source="#bib168-3">اغناطيوس الثاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib168-4">ܐܝܓܢܐܛܝܘܣ ܬܪܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib168-4">ܐܝܓܢܰܐܛܝܘܣ ܬܪܰܝܳܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ignaṭius II (I)</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib168-2">
+                  <forename>Ignatius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ignaṭius</forename>
-                           <addName type="untagged-title">II (I)</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib168-3">
+                  <forename>اغناطيوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib168-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܬܪܝܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib168-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܬܪܰܝܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib168-3" type="sic">اغناطيوس الثاني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib168-2" type="sic">Ignatius II</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib168-4">
+                  <forename>ܐܝܓܢܐܛܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib168-4" type="split">
-                           <forename>ܐܝܓܢܐܛܝܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib168-4" type="split">
-                           <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib168-3" type="split">
-                           <forename>اغناطيوس</forename>
-                           <addName type="untagged-title">الثاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib168-2" type="split">
-                           <forename>Ignatius</forename>
-                           <addName type="untagged-title">II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib168-4">
+                  <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ignaṭius</forename>
                </persName>
                <bibl xml:id="bib168-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

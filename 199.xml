@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-199">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib199-2" type="sic">Sa‛īd Bar Ṣabuni</persName>
-               <persName xml:lang="ar" source="bib199-3" type="sic">سعيد ابن الصابوني</persName>
-               <persName xml:lang="syr" source="bib199-4" type="sic">ܣܥܝܕ ܒܪ ܨܒܘܢܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib199-4" type="sic">ܣܰܥܝܕ ܒܰܪ ܨܰܒܘܢܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Saʿīd bar Sabouni</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Saʿīd bar Sabouni</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib199-2">Sa‛īd Bar Ṣabuni</persName>
+               <persName type="sic" xml:lang="ar" source="#bib199-3">سعيد ابن الصابوني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib199-4">ܣܥܝܕ ܒܪ ܨܒܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib199-4">ܣܰܥܝܕ ܒܰܪ ܨܰܒܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Saʿīd bar Sabouni</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib199-2">
+                  <forename>Sa‛īd</forename>
+                  <surname>Bar Ṣabuni</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Saʿīd</forename>
-                           <surname>bar Sabouni</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib199-3">
+                  <forename>سعيد</forename>
+                  <surname>ابن الصابوني</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib199-4" type="sic">ܣܥܝܕ ܒܪ ܨܒܘܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib199-4" type="sic">ܣܰܥܝܕ ܒܰܪ ܨܰܒܘܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib199-3" type="sic">سعيد ابن الصابوني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib199-2" type="sic">Sa‛īd Bar Ṣabuni</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib199-4">
+                  <forename>ܣܥܝܕ</forename>
+                  <surname>ܒܪ ܨܒܘܢܝ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib199-4" type="split">
-                           <forename>ܣܥܝܕ</forename>
-                           <surname>ܒܪ ܨܒܘܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib199-4" type="split">
-                           <forename>ܣܰܥܝܕ</forename>
-                           <surname>ܒܰܪ ܨܰܒܘܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib199-3" type="split">
-                           <forename>سعيد</forename>
-                           <surname>ابن الصابوني</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib199-2" type="split">
-                           <forename>Sa‛īd</forename>
-                           <surname>Bar Ṣabuni</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib199-4">
+                  <forename>ܣܰܥܝܕ</forename>
+                  <surname>ܒܰܪ ܨܰܒܘܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Saʿīd</forename>
+                  <surname>bar Sabouni</surname>
                </persName>
                <bibl xml:id="bib199-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

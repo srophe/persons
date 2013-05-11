@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,81 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-343">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib343-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib343-1"
                          resp="http://syriaca.org">Armalah, Isḥāq</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib343-2" type="sic">Isḥāq Armala</persName>
-               <persName xml:lang="ar" source="bib343-3" type="sic">اسحق ارملة</persName>
-               <persName xml:lang="syr" source="bib343-4" type="sic">ܟܘܪܝ ܐܝܣܚܩ ܕܒܝܬ ܐܪܡܠܬܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib343-4" type="sic">ܟܳܘܪܝ ܐܝܣܚܳܩ ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
-                           <forename>Isḥāq</forename>
-                           <surname>Armalah</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="sic">Armalah, Isḥāq</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib343-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib343-2">Isḥāq Armala</persName>
+               <persName type="sic" xml:lang="ar" source="#bib343-3">اسحق ارملة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib343-4">ܟܘܪܝ ܐܝܣܚܩ ܕܒܝܬ ܐܪܡܠܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib343-4">ܟܳܘܪܝ ܐܝܣܚܳܩ ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib343-1"
+                         resp="http://syriaca.org">
                   <forename>Isḥāq</forename>
                   <surname>Armalah</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib343-4" type="sic">ܟܘܪܝ ܐܝܣܚܩ ܕܒܝܬ ܐܪܡܠܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib343-4" type="sic">ܟܳܘܪܝ ܐܝܣܚܳܩ ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib343-3" type="sic">اسحق ارملة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib343-2" type="sic">Isḥāq Armala</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib343-2">
+                  <forename>Isḥāq</forename>
+                  <surname>Armala</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib343-4" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
-                           <addName type="untagged-title">ܟܘܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib343-4" type="split">
-                           <forename>ܐܝܣܚܳܩ</forename>
-                           <surname>ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
-                           <addName type="untagged-title">ܟܳܘܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib343-3" type="split">
-                           <forename>اسحق</forename>
-                           <surname>ارملة</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib343-2" type="split">
-                           <forename>Isḥāq</forename>
-                           <surname>Armala</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib343-3">
+                  <forename>اسحق</forename>
+                  <surname>ارملة</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib343-4">
+                  <forename>ܐܝܣܚܩ</forename>
+                  <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib343-4">
+                  <forename>ܐܝܣܚܳܩ</forename>
+                  <surname>ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
                </persName>
                <bibl xml:id="bib343-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

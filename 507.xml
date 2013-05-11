@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-507">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib507-2" type="sic">Gospel of the Apostles</persName>
-               <persName xml:lang="ar" source="bib507-3" type="sic">انجيل الرسل الاثني عشر</persName>
-               <persName xml:lang="syr" source="bib507-4" type="sic">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib507-4" type="sic">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Gospel of the Twelve Apostles</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Gospel of the Twelve Apostles</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib507-2">Gospel of the Apostles</persName>
+               <persName type="sic" xml:lang="ar" source="#bib507-3">انجيل الرسل الاثني عشر</persName>
+               <persName type="sic" xml:lang="syr" source="#bib507-4">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib507-4">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Gospel of the Twelve Apostles</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib507-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the Gospel of the Twelve Apostles</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib507-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib507-4" type="sic">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib507-4" type="sic">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib507-3" type="sic">انجيل الرسل الاثني عشر</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib507-2" type="sic">Gospel of the Apostles</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib507-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib507-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib507-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib507-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib507-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib507-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib507-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Gospel of the Twelve Apostles</addName>
                </persName>
                <bibl xml:id="bib507-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

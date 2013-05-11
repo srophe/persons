@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-842">
-               <persName xml:lang="syr" source="bib842-5" type="sic">ܣܘܡܟܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib842-5" type="sic">ܣܘܼܡܵܟܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib842-6" type="sic">ܣܘܡܟܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib842-6" type="sic">ܣܘܽܡܰܟܳܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Symmachus</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Symmachus</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib842-5">ܣܘܡܟܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib842-5">ܣܘܼܡܵܟܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib842-6">ܣܘܡܟܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib842-6">ܣܘܽܡܰܟܳܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Symmachus</persName>
+               <persName type="split" xml:lang="syr" source="#bib842-5">
+                  <forename>ܣܘܡܟܘܣ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Symmachus</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib842-5">
+                  <forename>ܣܘܼܡܵܟܘܿܣ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܣܘܡܟܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib842-6">
+                  <forename>ܣܘܽܡܰܟܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Symmachus</forename>
                </persName>
             </person>
          </listPerson>

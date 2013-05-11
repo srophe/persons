@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-237">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib237-2" type="sic">Dionysius Ṣalība, bishop of Claudia</persName>
-               <persName xml:lang="ar" source="bib237-3" type="sic">ديونيسيوس صليبا اسقف قلوذية</persName>
-               <persName xml:lang="syr" source="bib237-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib237-4" type="sic">ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Dionysios Ṣlibo of Claudia</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Dionysios Ṣlibo of Claudia</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib237-2">Dionysius Ṣalība, bishop of Claudia</persName>
+               <persName type="sic" xml:lang="ar" source="#bib237-3">ديونيسيوس صليبا اسقف قلوذية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib237-4">ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib237-4">ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Dionysios Ṣlibo of Claudia</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib237-2">
+                  <forename>Dionysius Ṣalība</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Dionysios Ṣlibo</forename>
-                           <addName type="untagged-title">of Claudia</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib237-3">
+                  <forename>ديونيسيوس صليبا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib237-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib237-4" type="sic">ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib237-3" type="sic">ديونيسيوس صليبا اسقف قلوذية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib237-2" type="sic">Dionysius Ṣalība, bishop of Claudia</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib237-4">
+                  <forename>ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib237-4" type="split">
-                           <forename>ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib237-4" type="split">
-                           <forename>ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib237-3" type="split">
-                           <forename>ديونيسيوس صليبا</forename>
-                           <addName type="untagged-title">اسقف قلوذية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib237-2" type="split">
-                           <forename>Dionysius Ṣalība</forename>
-                           <addName type="untagged-title">Bishop of Claudia</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib237-4">
+                  <forename>ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Dionysios Ṣlibo</forename>
                </persName>
                <bibl xml:id="bib237-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-60">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib60-2" type="sic">The Writer of the History of the Ḥimyarite Martyrs</persName>
-               <persName xml:lang="ar" source="bib60-3" type="sic">مؤرخ شهادة الحميريين</persName>
-               <persName xml:lang="syr" source="bib60-4" type="sic">ܡܟܬܒܢܐ ܕܣܗܕܘܬ ܚܡܝܪ̈ܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib60-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܕܣܳܗܕܘܬ ܚܡܝܪ̈ܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Book of the Ḥimyarites</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Book of the Ḥimyarites</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib60-2">The Writer of the History of the Ḥimyarite Martyrs</persName>
+               <persName type="sic" xml:lang="ar" source="#bib60-3">مؤرخ شهادة الحميريين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib60-4">ܡܟܬܒܢܐ ܕܣܗܕܘܬ ܚܡܝܪ̈ܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib60-4">ܡܰܟܬܒܳܢܳܐ ܕܣܳܗܕܘܬ ܚܡܝܪ̈ܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Book of the Ḥimyarites</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib60-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the Book of the Ḥimyarites</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib60-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib60-4" type="sic">ܡܟܬܒܢܐ ܕܣܗܕܘܬ ܚܡܝܪ̈ܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib60-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܕܣܳܗܕܘܬ ܚܡܝܪ̈ܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib60-3" type="sic">مؤرخ شهادة الحميريين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib60-2" type="sic">The Writer of the History of the Ḥimyarite Martyrs</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib60-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib60-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib60-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib60-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib60-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib60-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Book of the Ḥimyarites</addName>
                </persName>
                <bibl xml:id="bib60-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

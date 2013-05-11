@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-701">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib701-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib701-1"
                          resp="http://syriaca.org">Raḥmani, Ignatius Ephrem II</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib701-2" type="sic">Patriarch Aphram Rahmani</persName>
-               <persName xml:lang="ar" source="bib701-3" type="sic">البطريرك افريم رحماني</persName>
-               <persName xml:lang="syr" source="bib701-4" type="sic">ܡܪܝ ܪܚܡܐܢܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib701-4" type="sic">ܡܳܪܝ ܪܰܚܡܰܐܢܺܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib701-1" type="sic">Raḥmani, Ignatius Ephrem II</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib701-1" type="split">
-                           <forename>Ignatius Ephrem</forename>
-                           <surname>Raḥmani</surname>
-                           <addName type="untagged-title">II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib701-1" type="sic">Raḥmani, Ignatius Ephrem II</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib701-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib701-2">Patriarch Aphram Rahmani</persName>
+               <persName type="sic" xml:lang="ar" source="#bib701-3">البطريرك افريم رحماني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib701-4">ܡܪܝ ܪܚܡܐܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib701-4">ܡܳܪܝ ܪܰܚܡܰܐܢܺܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib701-1"
+                         resp="http://syriaca.org">
                   <forename>Ignatius Ephrem</forename>
                   <surname>Raḥmani</surname>
-                  <addName type="untagged-title">II</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib701-4" type="sic">ܡܪܝ ܪܚܡܐܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib701-4" type="sic">ܡܳܪܝ ܪܰܚܡܰܐܢܺܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib701-3" type="sic">البطريرك افريم رحماني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib701-2" type="sic">Patriarch Aphram Rahmani</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib701-2">
+                  <forename>Aphram</forename>
+                  <surname>Rahmani</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib701-4" type="split">
-                           <surname>ܪܚܡܐܢܝ</surname>
-                           <addName type="untagged-title">ܡܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib701-4" type="split">
-                           <surname>ܪܰܚܡܰܐܢܺܝ</surname>
-                           <addName type="untagged-title">ܡܳܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib701-3" type="split">
-                           <forename>افريم</forename>
-                           <surname>رحماني</surname>
-                           <addName type="untagged-title">البطريرك</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib701-2" type="split">
-                           <forename>Aphram</forename>
-                           <surname>Rahmani</surname>
-                           <addName type="untagged-title">Patriarch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib701-3">
+                  <forename>افريم</forename>
+                  <surname>رحماني</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib701-4">
+                  <surname>ܪܚܡܐܢܝ</surname>
+                  <addName type="untagged-title">ܡܪܝ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib701-4">
+                  <surname>ܪܰܚܡܰܐܢܺܝ</surname>
+                  <addName type="untagged-title">ܡܳܪܝ</addName>
                </persName>
                <bibl xml:id="bib701-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

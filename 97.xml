@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-97">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib97-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib97-1"
                          resp="http://syriaca.org">Denḥa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib97-2" type="sic">Denḥa I, Maphryono of the East</persName>
-               <persName xml:lang="ar" source="bib97-3" type="sic">دنحا الاول مفريان المشرق</persName>
-               <persName xml:lang="syr" source="bib97-4" type="sic">ܕܢܚܐ ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</persName>
-               <persName xml:lang="syr-Syrj" source="bib97-4" type="sic">ܕܢܚܳܐ ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
-                           <forename>Denḥa</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="sic">Denḥa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib97-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib97-2">Denḥa I, Maphryono of the East</persName>
+               <persName type="sic" xml:lang="ar" source="#bib97-3">دنحا الاول مفريان المشرق</persName>
+               <persName type="sic" xml:lang="syr" source="#bib97-4">ܕܢܚܐ ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib97-4">ܕܢܚܳܐ ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib97-1"
+                         resp="http://syriaca.org">
                   <forename>Denḥa</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib97-4" type="sic">ܕܢܚܐ ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib97-4" type="sic">ܕܢܚܳܐ ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib97-3" type="sic">دنحا الاول مفريان المشرق</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib97-2" type="sic">Denḥa I, Maphryono of the East</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib97-2">
+                  <forename>Denḥa I</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib97-4" type="split">
-                           <forename>ܕܢܚܐ</forename>
-                           <addName type="untagged-title">ܩܕܡܝܐ ܡܦܪܝܢܐ ܕܬܓܪܝܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib97-4" type="split">
-                           <forename>ܕܢܚܳܐ</forename>
-                           <addName type="untagged-title">ܩܰܕܡܳܝܐ ܡܰܦܪܝܳܢܐ ܕܬܰܓܪܺܝܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib97-3" type="split">
-                           <forename>دنحا</forename>
-                           <addName type="untagged-title">الاول  مفريان المشرق</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib97-2" type="split">
-                           <forename>Denḥa I</forename>
-                           <addName type="untagged-title">Maphryono of the East</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib97-3">
+                  <forename>دنحا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib97-4">
+                  <forename>ܕܢܚܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib97-4">
+                  <forename>ܕܢܚܳܐ</forename>
                </persName>
                <bibl xml:id="bib97-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

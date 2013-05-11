@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,89 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-17">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib17-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib17-1"
                          resp="http://syriaca.org">Isḥaq of Amid</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib17-2" type="sic">Isaac of Amid</persName>
-               <persName xml:lang="ar" source="bib17-3" type="sic">اسحق الآمدي</persName>
-               <persName xml:lang="syr" source="bib17-4" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib17-4" type="sic">ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
-                           <forename>Isḥaq</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="sic">Isḥaq of Amid</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib17-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib17-2">Isaac of Amid</persName>
+               <persName type="sic" xml:lang="ar" source="#bib17-3">اسحق الآمدي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib17-4">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib17-4">ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib17-1"
+                         resp="http://syriaca.org">
                   <forename>Isḥaq</forename>
-                  <addName type="untagged-title">of Amid</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib17-4" type="sic">ܐܝܣܚܩ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib17-4" type="sic">ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib17-3" type="sic">اسحق الآمدي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib17-2" type="sic">Isaac of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib17-2">
+                  <forename>Isaac</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib17-4" type="split">
-                           <forename>ܐܝܣܚܩ</forename>
-                           <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib17-4" type="split">
-                           <forename>ܐܝܣܚܳܩ</forename>
-                           <addName type="untagged-title">ܐܳܡܝܕܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib17-3" type="split">
-                           <forename>اسحق</forename>
-                           <addName type="untagged-title">الآمدي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib17-2" type="split">
-                           <forename>Isaac</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib17-3">
+                  <forename>اسحق</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib17-4">
+                  <forename>ܐܝܣܚܩ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib17-4">
+                  <forename>ܐܝܣܚܳܩ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܐܝܣܚܩ</forename>
                </persName>
                <bibl xml:id="bib17-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

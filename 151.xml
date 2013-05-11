@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-151">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib151-2" type="sic">Thomas the Stylite</persName>
-               <persName xml:lang="ar" source="bib151-3" type="sic">توما العمودي</persName>
-               <persName xml:lang="syr" source="bib151-4" type="sic">ܬܐܘܡܐ ܐܣܛܘܢܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib151-4" type="sic">ܬܳܐܘܡܰܐ ܐܣܛܘܢܳܪܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Tumo the Stylite</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Tumo the Stylite</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib151-2">Thomas the Stylite</persName>
+               <persName type="sic" xml:lang="ar" source="#bib151-3">توما العمودي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib151-4">ܬܐܘܡܐ ܐܣܛܘܢܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib151-4">ܬܳܐܘܡܰܐ ܐܣܛܘܢܳܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Tumo the Stylite</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib151-2">
+                  <forename>Thomas</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Tumo</forename>
-                           <addName type="untagged-title">the Stylite</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib151-3">
+                  <forename>توما</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib151-4" type="sic">ܬܐܘܡܐ ܐܣܛܘܢܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib151-4" type="sic">ܬܳܐܘܡܰܐ ܐܣܛܘܢܳܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib151-3" type="sic">توما العمودي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib151-2" type="sic">Thomas the Stylite</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib151-4">
+                  <forename>ܬܐܘܡܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib151-4" type="split">
-                           <forename>ܬܐܘܡܐ</forename>
-                           <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib151-4" type="split">
-                           <forename>ܬܳܐܘܡܰܐ</forename>
-                           <addName type="untagged-title">ܐܣܛܘܢܳܪܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib151-3" type="split">
-                           <forename>توما</forename>
-                           <addName type="untagged-title">العمودي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib151-2" type="split">
-                           <forename>Thomas</forename>
-                           <addName type="untagged-title">the Stylite</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib151-4">
+                  <forename>ܬܳܐܘܡܰܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Tumo</forename>
                </persName>
                <bibl xml:id="bib151-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

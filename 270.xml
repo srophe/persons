@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-270">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib270-2" type="sic">Rabban Yeshu‛ of Basibrina</persName>
-               <persName xml:lang="ar" source="bib270-3" type="sic">الربان يشوع السبيريني</persName>
-               <persName xml:lang="syr" source="bib270-4" type="sic">ܪܒܢ ܝܫܘܥ ܣܒܝܪܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib270-4" type="sic">ܪܰܒܢ ܝܶܫܘܥ ܣܒܝܺܪܝܢܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yeshuʿ of Beth Sbirino</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yeshuʿ of Beth Sbirino</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib270-2">Rabban Yeshu‛ of Basibrina</persName>
+               <persName type="sic" xml:lang="ar" source="#bib270-3">الربان يشوع السبيريني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib270-4">ܪܒܢ ܝܫܘܥ ܣܒܝܪܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib270-4">ܪܰܒܢ ܝܶܫܘܥ ܣܒܝܺܪܝܢܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yeshuʿ of Beth Sbirino</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib270-2">
+                  <forename>Yeshu‛</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yeshuʿ</forename>
-                           <addName type="untagged-title">of Beth Sbirino</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib270-3">
+                  <forename>يشوع</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib270-4" type="sic">ܪܒܢ ܝܫܘܥ ܣܒܝܪܝܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib270-4" type="sic">ܪܰܒܢ ܝܶܫܘܥ ܣܒܝܺܪܝܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib270-3" type="sic">الربان يشوع السبيريني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib270-2" type="sic">Rabban Yeshu‛ of Basibrina</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib270-4">
+                  <forename>ܝܫܘܥ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib270-4" type="split">
-                           <forename>ܝܫܘܥ</forename>
-                           <addName type="untagged-title">ܪܒܢ ܣܒܝܪܝܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib270-4" type="split">
-                           <forename>ܝܶܫܘܥ</forename>
-                           <addName type="untagged-title">ܪܰܒܢ ܣܒܝܺܪܝܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib270-3" type="split">
-                           <forename>يشوع</forename>
-                           <addName type="untagged-title">الربان , السبيريني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib270-2" type="split">
-                           <forename>Yeshu‛</forename>
-                           <addName type="untagged-title">Rabban, of Basibrina</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib270-4">
+                  <forename>ܝܶܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yeshuʿ</forename>
                </persName>
                <bibl xml:id="bib270-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

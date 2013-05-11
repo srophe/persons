@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-215">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib215-2" type="sic">The Monk Aaron</persName>
-               <persName xml:lang="ar" source="bib215-3" type="sic">الراهب هارون</persName>
-               <persName xml:lang="syr" source="bib215-4" type="sic">ܕܝܪܝܐ ܐܗܪܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib215-4" type="sic">ܕܰܝܪܳܝܐ ܐܰܗܪܘܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ahrun Dayroyo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ahrun Dayroyo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib215-2">The Monk Aaron</persName>
+               <persName type="sic" xml:lang="ar" source="#bib215-3">الراهب هارون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib215-4">ܕܝܪܝܐ ܐܗܪܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib215-4">ܕܰܝܪܳܝܐ ܐܰܗܪܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ahrun Dayroyo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib215-2">
+                  <forename>Aaron</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ahrun</forename>
-                           <addName type="untagged-title">Dayroyo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib215-3">
+                  <forename>هارون</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib215-4" type="sic">ܕܝܪܝܐ ܐܗܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib215-4" type="sic">ܕܰܝܪܳܝܐ ܐܰܗܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib215-3" type="sic">الراهب هارون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib215-2" type="sic">The Monk Aaron</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib215-4">
+                  <forename>ܐܗܪܘܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib215-4" type="split">
-                           <forename>ܐܗܪܘܢ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib215-4" type="split">
-                           <forename>ܐܰܗܪܘܢ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib215-3" type="split">
-                           <forename>هارون</forename>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib215-2" type="split">
-                           <forename>Aaron</forename>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib215-4">
+                  <forename>ܐܰܗܪܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ahrun</forename>
                </persName>
                <bibl xml:id="bib215-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

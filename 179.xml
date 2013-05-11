@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,68 +17,22 @@
       <body>
          <listPerson>
             <person xml:id="person-179">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib179-2" type="sic">Jacob, metropolitan of Miyapharqin</persName>
-               <persName xml:lang="ar" source="bib179-3" type="sic">يعقوب مطران ميافارقين</persName>
-               <persName xml:lang="syr" source="bib179-4" type="sic">ܝܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</persName>
-               <persName xml:lang="syr-Syrj" source="bib179-4" type="sic">ܝܰܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yaʿqub of Maypherqaṭ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yaʿqub of Maypherqaṭ</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib179-2">Jacob, metropolitan of Miyapharqin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib179-3">يعقوب مطران ميافارقين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib179-4">ܝܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib179-4">ܝܰܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yaʿqub of Maypherqaṭ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib179-2">
+                  <forename>Jacob</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yaʿqub</forename>
-                           <addName type="untagged-title">of Maypherqaṭ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib179-4">
+                  <forename>ܝܥܩܘܒ</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib179-4" type="sic">ܝܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib179-4" type="sic">ܝܰܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib179-3" type="sic">يعقوب مطران ميافارقين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib179-2" type="sic">Jacob, metropolitan of Miyapharqin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib179-4">
+                  <forename>ܝܰܥܩܘܒ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib179-4" type="split">
-                           <forename>ܝܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib179-4" type="split">
-                           <forename>ܝܰܥܩܘܒ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib179-3" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib179-2" type="split">
-                           <forename>Jacob</forename>
-                           <addName type="untagged-title">Metropolitan of Miyapharqin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yaʿqub</forename>
                </persName>
                <bibl xml:id="bib179-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-846">
-               <persName xml:lang="syr" source="bib846-5" type="sic">ܩܝܘܪܐ ܝܘܢܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib846-5" type="sic">ܩܝܼܘܿܪܹܐ ܝܵܘܢܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib846-6" type="sic">ܩܝܘܪܐ ܝܘܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib846-6" type="sic">ܩܝܽܘܪܳܐ ܝܰܘܢܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Cyrus the Greek</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Cyrus the Greek</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib846-5">ܩܝܘܪܐ ܝܘܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib846-5">ܩܝܼܘܿܪܹܐ ܝܵܘܢܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib846-6">ܩܝܘܪܐ ܝܘܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib846-6">ܩܝܽܘܪܳܐ ܝܰܘܢܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Cyrus the Greek</persName>
+               <persName type="split" xml:lang="syr" source="#bib846-5">
+                  <forename>ܩܝܘܪܐ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Cyrus</forename>
-                           <addName type="untagged-title">the Greek</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib846-5">
+                  <forename>ܩܝܼܘܿܪܹܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܩܝܘܪܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib846-6">
+                  <addName type="untagged-title">ܝܘܢܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib846-6">
+                  <forename>ܩܝܽܘܪܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Cyrus</forename>
                </persName>
             </person>
          </listPerson>

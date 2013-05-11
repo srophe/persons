@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-661">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib661-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib661-1"
                          resp="http://syriaca.org">Nöldeke, Theodor</persName>
-               <persName xml:lang="ar" source="bib661-3" type="sic">ثاودر نلدكه</persName>
-               <persName xml:lang="syr" source="bib661-4" type="sic">ܬܐܘܕܘܪ ܢܘܠܕܟܗ</persName>
-               <persName xml:lang="syr-Syrj" source="bib661-4" type="sic">ܬܶܐܘܳܕܘܪ ܢܳܘܠܕܰܟܶܗ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib661-1" type="sic">Nöldeke, Theodor</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib661-1" type="split">
-                           <forename>Theodor</forename>
-                           <surname>Nöldeke</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib661-1" type="sic">Nöldeke, Theodor</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib661-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib661-3">ثاودر نلدكه</persName>
+               <persName type="sic" xml:lang="syr" source="#bib661-4">ܬܐܘܕܘܪ ܢܘܠܕܟܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib661-4">ܬܶܐܘܳܕܘܪ ܢܳܘܠܕܰܟܶܗ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib661-1"
+                         resp="http://syriaca.org">
                   <forename>Theodor</forename>
                   <surname>Nöldeke</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib661-4" type="sic">ܬܐܘܕܘܪ ܢܘܠܕܟܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib661-4" type="sic">ܬܶܐܘܳܕܘܪ ܢܳܘܠܕܰܟܶܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib661-3" type="sic">ثاودر نلدكه</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib661-3">
+                  <forename>ثاودر</forename>
+                  <surname>نلدكه</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib661-4" type="split">
-                           <forename>ܬܐܘܕܘܪ</forename>
-                           <surname>ܢܘܠܕܟܗ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib661-4" type="split">
-                           <forename>ܬܶܐܘܳܕܘܪ</forename>
-                           <surname>ܢܳܘܠܕܰܟܶܗ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib661-3" type="split">
-                           <forename>ثاودر</forename>
-                           <surname>نلدكه</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib661-4">
+                  <forename>ܬܐܘܕܘܪ</forename>
+                  <surname>ܢܘܠܕܟܗ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib661-4">
+                  <forename>ܬܶܐܘܳܕܘܪ</forename>
+                  <surname>ܢܳܘܠܕܰܟܶܗ</surname>
                </persName>
                <bibl xml:id="bib661-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-258">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib258-2" type="sic">Philoxenus the Scribe</persName>
-               <persName xml:lang="ar" source="bib258-3" type="sic">فيلكسينس الكاتب</persName>
-               <persName xml:lang="syr" source="bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܬܘܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܳܬܘܒܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Philoxenos the Scrib</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Philoxenos the Scrib</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib258-2">Philoxenus the Scribe</persName>
+               <persName type="sic" xml:lang="ar" source="#bib258-3">فيلكسينس الكاتب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib258-4">ܦܝܠܘܟܣܝܢܘܣ ܟܬܘܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib258-4">ܦܝܠܘܟܣܝܢܘܣ ܟܳܬܘܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Philoxenos the Scrib</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib258-2">
+                  <forename>Philoxenus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Philoxenos</forename>
-                           <addName type="untagged-title">the Scribe</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib258-3">
+                  <forename>فيلكسينس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܬܘܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib258-4" type="sic">ܦܝܠܘܟܣܝܢܘܣ ܟܳܬܘܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib258-3" type="sic">فيلكسينس الكاتب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib258-2" type="sic">Philoxenus the Scribe</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib258-4">
+                  <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib258-4" type="split">
-                           <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
-                           <addName type="untagged-title">ܟܬܘܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib258-4" type="split">
-                           <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
-                           <addName type="untagged-title">ܟܳܬܘܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib258-3" type="split">
-                           <forename>فيلكسينس</forename>
-                           <addName type="untagged-title">الكاتب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib258-2" type="split">
-                           <forename>Philoxenus</forename>
-                           <addName type="untagged-title">the Scribe</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib258-4">
+                  <forename>ܦܝܠܘܟܣܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Philoxenos</forename>
                </persName>
                <bibl xml:id="bib258-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

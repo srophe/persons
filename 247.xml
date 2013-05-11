@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-247">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib247-2" type="sic">Patriarch Michael II</persName>
-               <persName xml:lang="ar" source="bib247-3" type="sic">البطريرك ميخائيل الثاني</persName>
-               <persName xml:lang="syr" source="bib247-4" type="sic">ܦܛܪܝܪܟܐ ܡܝܟܐܝܠ ܬܪܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib247-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܡܝܟܳܐܝܠ ܬܪܰܝܳܢܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Michael I (III)</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Michael I (III)</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib247-2">Patriarch Michael II</persName>
+               <persName type="sic" xml:lang="ar" source="#bib247-3">البطريرك ميخائيل الثاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib247-4">ܦܛܪܝܪܟܐ ܡܝܟܐܝܠ ܬܪܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib247-4">ܦܰܛܪܝܰܪܟܐ ܡܝܟܳܐܝܠ ܬܪܰܝܳܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Michael I (III)</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib247-2">
+                  <forename>Michael</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Michael</forename>
-                           <addName type="untagged-title">I (III)</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib247-3">
+                  <forename>ميخائيل</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib247-4" type="sic">ܦܛܪܝܪܟܐ ܡܝܟܐܝܠ ܬܪܝܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib247-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܡܝܟܳܐܝܠ ܬܪܰܝܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib247-3" type="sic">البطريرك ميخائيل الثاني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib247-2" type="sic">Patriarch Michael II</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib247-4">
+                  <forename>ܡܝܟܐܝܠ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib247-4" type="split">
-                           <forename>ܡܝܟܐܝܠ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܬܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib247-4" type="split">
-                           <forename>ܡܝܟܳܐܝܠ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܬܪܰܝܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib247-3" type="split">
-                           <forename>ميخائيل</forename>
-                           <addName type="untagged-title">البطريرك , الثاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib247-2" type="split">
-                           <forename>Michael</forename>
-                           <addName type="untagged-title">Patriarch, II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib247-4">
+                  <forename>ܡܝܟܳܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Michael</forename>
                </persName>
                <bibl xml:id="bib247-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

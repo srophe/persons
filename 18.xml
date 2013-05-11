@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,81 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-18">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib18-2" type="sic">The Monk Dada of Amid</persName>
-               <persName xml:lang="ar" source="bib18-3" type="sic">دادا الراهب الآمدي</persName>
-               <persName xml:lang="syr" source="bib18-4" type="sic">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib18-4" type="sic">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܕܕܐ ܐܡܝܕܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Dādā of Amid</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܕܕܐ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Dādā of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib18-2">The Monk Dada of Amid</persName>
+               <persName type="sic" xml:lang="ar" source="#bib18-3">دادا الراهب الآمدي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib18-4">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib18-4">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܕܕܐ ܐܡܝܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Dādā of Amid</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib18-2">
+                  <forename>Dada</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܕܕܐ</forename>
-                           <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Dādā</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib18-3">
+                  <forename>دادا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib18-4" type="sic">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib18-4" type="sic">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib18-3" type="sic">دادا الراهب الآمدي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib18-2" type="sic">The Monk Dada of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib18-4">
+                  <forename>ܕܕܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib18-4" type="split">
-                           <forename>ܕܕܐ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib18-4" type="split">
-                           <forename>ܕܳܕܳܐ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib18-3" type="split">
-                           <forename>دادا</forename>
-                           <addName type="untagged-title">الراهب الآمدي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib18-2" type="split">
-                           <forename>Dada</forename>
-                           <addName type="untagged-title">The Monk, of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib18-4">
+                  <forename>ܕܳܕܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܕܕܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Dādā</forename>
                </persName>
                <bibl xml:id="bib18-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

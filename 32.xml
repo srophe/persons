@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-32">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib32-2" type="sic">Peter the presbyter of Edessa</persName>
-               <persName xml:lang="ar" source="bib32-3" type="sic">بطرس قسيس الرها</persName>
-               <persName xml:lang="syr" source="bib32-4" type="sic">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib32-4" type="sic">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Peter of Edessa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Peter of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib32-2">Peter the presbyter of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib32-3">بطرس قسيس الرها</persName>
+               <persName type="sic" xml:lang="syr" source="#bib32-4">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib32-4">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Peter of Edessa</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib32-2">
+                  <forename>Peter</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Peter</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib32-3">
+                  <forename>بطرس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib32-4" type="sic">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib32-4" type="sic">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib32-3" type="sic">بطرس قسيس الرها</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib32-2" type="sic">Peter the presbyter of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib32-4">
+                  <forename>ܦܛܪܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib32-4" type="split">
-                           <forename>ܦܛܪܘܣ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܕܐܘܪܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib32-4" type="split">
-                           <forename>ܦܶܛܪܘܣ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib32-3" type="split">
-                           <forename>بطرس</forename>
-                           <addName type="untagged-title">قسيس الرها</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib32-2" type="split">
-                           <forename>Peter</forename>
-                           <addName type="untagged-title">the presbyter of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib32-4">
+                  <forename>ܦܶܛܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Peter</forename>
                </persName>
                <bibl xml:id="bib32-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

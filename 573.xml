@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-573">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib573-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib573-1"
                          resp="http://syriaca.org">John Chrysostom</persName>
-               <persName xml:lang="ar" source="bib573-3" type="sic">مار ايونيس الذهبي فمه</persName>
-               <persName xml:lang="syr" source="bib573-4" type="sic">ܡܪܝ ܐܝܘܐܢܝܣ ܦܘܡܐ ܕܕܗܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib573-4" type="sic">ܡܳܪܝ ܐܝܘܰܐܢܝܣ ܦܘܡܐ ܕܕܰܗܒܐ</persName>
-               <persName xml:lang="syr" source="bib573-5" type="sic">ܝܘܐܢܝܣ ܟܪܘܣܘܣܛܘܡܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib573-5" type="sic">ܝܘܼܐܵܢܝܼܣ ܟܪܘܿܣܘܿܣܛܘܿܡܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib573-6" type="sic">ܐܝܘܐܢܢܝܣ ܟܪܘܣܘܣܛܘܡܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib573-6" type="sic">ܐܝܺܘܰܐܢܢܺܝܣ ܟܪܘܽܣܽܘܣܛܳܘܡܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib573-1" type="sic">John Chrysostom</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib573-1" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">Chrysostom</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib573-1" type="sic">John Chrysostom</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib573-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib573-3">مار ايونيس الذهبي فمه</persName>
+               <persName type="sic" xml:lang="syr" source="#bib573-4">ܡܪܝ ܐܝܘܐܢܝܣ ܦܘܡܐ ܕܕܗܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib573-4">ܡܳܪܝ ܐܝܘܰܐܢܝܣ ܦܘܡܐ ܕܕܰܗܒܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib573-5">ܝܘܐܢܝܣ ܟܪܘܣܘܣܛܘܡܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib573-5">ܝܘܼܐܵܢܝܼܣ ܟܪܘܿܣܘܿܣܛܘܿܡܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib573-6">ܐܝܘܐܢܢܝܣ ܟܪܘܣܘܣܛܘܡܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib573-6">ܐܝܺܘܰܐܢܢܺܝܣ ܟܪܘܽܣܽܘܣܛܳܘܡܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib573-1"
+                         resp="http://syriaca.org">
                   <forename>John</forename>
-                  <addName type="untagged-title">Chrysostom</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib573-4" type="sic">ܡܪܝ ܐܝܘܐܢܝܣ ܦܘܡܐ ܕܕܗܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib573-4" type="sic">ܡܳܪܝ ܐܝܘܰܐܢܝܣ ܦܘܡܐ ܕܕܰܗܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib573-3" type="sic">مار ايونيس الذهبي فمه</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib573-3">
+                  <forename>ايونيس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib573-4">
+                  <forename>ܐܝܘܐܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib573-4">
+                  <forename>ܐܝܘܰܐܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib573-5">
+                  <forename>ܝܘܐܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib573-5">
+                  <forename>ܝܘܼܐܵܢܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib573-4" type="split">
-                           <forename>ܐܝܘܐܢܝܣ</forename>
-                           <addName type="untagged-title">ܡܪܝ, ܦܘܡܐ ܕܕܗܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib573-4" type="split">
-                           <forename>ܐܝܘܰܐܢܝܣ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ, ܦܘܡܐ ܕܕܰܗܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib573-3" type="split">
-                           <forename>ايونيس</forename>
-                           <addName type="untagged-title">مار, الذهبي فمه</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܝܘܐܢܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib573-6">
+                  <addName type="untagged-title">ܟܪܘܣܘܣܛܘܡܘܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib573-6">
+                  <forename>ܐܝܺܘܰܐܢܢܺܝܣ</forename>
                </persName>
                <bibl xml:id="bib573-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

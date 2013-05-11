@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-894">
-               <persName xml:lang="syr" source="bib894-5" type="sic">ܡܪܝ ܫܠܝܡܘܢ ܐܦܣܩܘܦܐ ܕܚܕܬܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib894-5" type="sic">ܡܵܪܝ ܫܠܹܝܡܘܿܢ ܐܲܦܸܣܩܘܿܦܵܐ ܕܲܚܕܲܬܵܐ</persName>
-               <persName xml:lang="syr" source="bib894-6" type="sic">ܡܪܝ ܫܠܝܡܘܢ ܐܦܝܣܩܘܦܐ ܕܚܕܬܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib894-6" type="sic">ܡܳܪܝ ܫܠܶܝܡܽܘܢ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܰܚܕܰܬܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shlemon of Ḥdatta</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shlemon of Ḥdatta</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib894-5">ܡܪܝ ܫܠܝܡܘܢ ܐܦܣܩܘܦܐ ܕܚܕܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib894-5">ܡܵܪܝ ܫܠܹܝܡܘܿܢ ܐܲܦܸܣܩܘܿܦܵܐ ܕܲܚܕܲܬܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib894-6">ܡܪܝ ܫܠܝܡܘܢ ܐܦܝܣܩܘܦܐ ܕܚܕܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib894-6">ܡܳܪܝ ܫܠܶܝܡܽܘܢ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܰܚܕܰܬܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shlemon of Ḥdatta</persName>
+               <persName type="split" xml:lang="syr" source="#bib894-5">
+                  <forename>ܫܠܝܡܘܢ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shlemon</forename>
-                           <addName type="untagged-title">of Ḥdatta</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib894-5">
+                  <forename>ܫܠܹܝܡܘܿܢ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܫܠܝܡܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib894-6">
+                  <addName type="untagged-title">ܡܪܝ، ܐܦܝܣܩܘܦܐ ܕܚܕܬܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib894-6">
+                  <forename>ܫܠܶܝܡܽܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shlemon</forename>
                </persName>
             </person>
          </listPerson>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-529">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib529-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib529-1"
                          resp="http://syriaca.org">Ḥazqiel I</persName>
-               <persName xml:lang="syr" source="bib529-5" type="sic">ܚܙܩܝܐܝܠ</persName>
-               <persName xml:lang="syr-Syrn" source="bib529-5" type="sic">ܚܲܙܩܝܼܐܹܝܠ</persName>
-               <persName xml:lang="syr" source="bib529-6" type="sic">ܚܙܩܝܐܝܠ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib529-1" type="sic">Ḥazqiel I</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib529-1" type="split">
-                           <forename>Ḥazqiel</forename>
-                           <addName type="untagged-title">I</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib529-1" type="sic">Ḥazqiel I</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib529-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib529-5">ܚܙܩܝܐܝܠ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib529-5">ܚܲܙܩܝܼܐܹܝܠ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib529-6">ܚܙܩܝܐܝܠ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib529-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥazqiel</forename>
-                  <addName type="untagged-title">I</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib529-5">
+                  <forename>ܚܙܩܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib529-5">
+                  <forename>ܚܲܙܩܝܼܐܹܝܠ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܚܙܩܝܐܝܠ</forename>
                </persName>
                <bibl xml:id="bib529-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

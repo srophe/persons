@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,81 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-149">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib149-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib149-1"
                          resp="http://syriaca.org">Loʿozar bar Sobtho</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib149-2" type="sic">Lazarus bar Sobto</persName>
-               <persName xml:lang="ar" source="bib149-3" type="sic">لعازر ابن العجوز</persName>
-               <persName xml:lang="syr" source="bib149-4" type="sic">ܠܥܙܪ ܒܪ ܣܒܬܐ ܕܒܓܕܕ</persName>
-               <persName xml:lang="syr-Syrj" source="bib149-4" type="sic">ܠܳܥܳܙܪ ܒܰܪ ܣܳܒܬܐ ܕܒܰܓܕܕ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib149-1" type="sic">Loʿozar bar Sobtho</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib149-1" type="split">
-                           <forename>Loʿozar</forename>
-                           <surname>bar Sobtho</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib149-1" type="sic">Loʿozar bar Sobtho</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib149-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib149-2">Lazarus bar Sobto</persName>
+               <persName type="sic" xml:lang="ar" source="#bib149-3">لعازر ابن العجوز</persName>
+               <persName type="sic" xml:lang="syr" source="#bib149-4">ܠܥܙܪ ܒܪ ܣܒܬܐ ܕܒܓܕܕ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib149-4">ܠܳܥܳܙܪ ܒܰܪ ܣܳܒܬܐ ܕܒܰܓܕܕ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib149-1"
+                         resp="http://syriaca.org">
                   <forename>Loʿozar</forename>
                   <surname>bar Sobtho</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib149-4" type="sic">ܠܥܙܪ ܒܪ ܣܒܬܐ ܕܒܓܕܕ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib149-4" type="sic">ܠܳܥܳܙܪ ܒܰܪ ܣܳܒܬܐ ܕܒܰܓܕܕ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib149-3" type="sic">لعازر ابن العجوز</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib149-2" type="sic">Lazarus bar Sobto</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib149-2">
+                  <forename>Lazarus</forename>
+                  <surname>bar Sobto</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib149-4" type="split">
-                           <forename>ܠܥܙܪ</forename>
-                           <surname>ܒܪ ܣܒܬܐ</surname>
-                           <addName type="untagged-title">ܕܒܓܕܕ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib149-4" type="split">
-                           <forename>ܠܳܥܳܙܪ</forename>
-                           <surname>ܒܰܪ ܣܳܒܬܐ</surname>
-                           <addName type="untagged-title">ܕܒܰܓܕܕ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib149-3" type="split">
-                           <forename>لعازر</forename>
-                           <surname>ابن العجوز</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib149-2" type="split">
-                           <forename>Lazarus</forename>
-                           <surname>bar Sobto</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib149-3">
+                  <forename>لعازر</forename>
+                  <surname>ابن العجوز</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib149-4">
+                  <forename>ܠܥܙܪ</forename>
+                  <surname>ܒܪ ܣܒܬܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib149-4">
+                  <forename>ܠܳܥܳܙܪ</forename>
+                  <surname>ܒܰܪ ܣܳܒܬܐ</surname>
                </persName>
                <bibl xml:id="bib149-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

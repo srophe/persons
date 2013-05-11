@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-89">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib89-2" type="sic">Severus, bishop of Samosata</persName>
-               <persName xml:lang="ar" source="bib89-3" type="sic">ساويريوس اسقف سيميساط</persName>
-               <persName xml:lang="syr" source="bib89-4" type="sic">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
-               <persName xml:lang="syr-Syrj" source="bib89-4" type="sic">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Severus of Samosata</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Severus of Samosata</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib89-2">Severus, bishop of Samosata</persName>
+               <persName type="sic" xml:lang="ar" source="#bib89-3">ساويريوس اسقف سيميساط</persName>
+               <persName type="sic" xml:lang="syr" source="#bib89-4">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib89-4">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Severus of Samosata</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib89-2">
+                  <forename>Severus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Severus</forename>
-                           <addName type="untagged-title">of Samosata</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib89-3">
+                  <forename>ساويريوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib89-4" type="sic">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib89-4" type="sic">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib89-3" type="sic">ساويريوس اسقف سيميساط</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib89-2" type="sic">Severus, bishop of Samosata</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib89-4">
+                  <forename>ܣܘܝܪܝܘܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib89-4" type="split">
-                           <forename>ܣܘܝܪܝܘܘܣ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib89-4" type="split">
-                           <forename>ܣܶܘܝܪܝܘܘܣ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib89-3" type="split">
-                           <forename>ساويريوس</forename>
-                           <addName type="untagged-title">اسقف سيميساط</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib89-2" type="split">
-                           <forename>Severus</forename>
-                           <addName type="untagged-title">Bishop of Samosata</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib89-4">
+                  <forename>ܣܶܘܝܪܝܘܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Severus</forename>
                </persName>
                <bibl xml:id="bib89-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

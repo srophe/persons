@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-423">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib423-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib423-1"
                          resp="http://syriaca.org">Clement of Rome</persName>
-               <persName xml:lang="ar" source="bib423-3" type="sic">اقليميس الروماني</persName>
-               <persName xml:lang="syr" source="bib423-4" type="sic">ܩܠܝܡܝܣ ܕܪܘܡܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib423-4" type="sic">ܩܠܺܝܡܺܝܣ ܕܪܽܘܡܝܺ</persName>
-               <persName xml:lang="syr" source="bib423-5" type="sic">ܩܠܡܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib423-5" type="sic">ܩܠܹܡܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib423-6" type="sic">ܩܠܝܡܝܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib423-6" type="sic">ܩܠܝܡܺܝܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib423-1" type="sic">Clement of Rome</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib423-1" type="split">
-                           <forename>Clement</forename>
-                           <addName type="untagged-title">of Rome</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib423-1" type="sic">Clement of Rome</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib423-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib423-3">اقليميس الروماني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib423-4">ܩܠܝܡܝܣ ܕܪܘܡܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib423-4">ܩܠܺܝܡܺܝܣ ܕܪܽܘܡܝܺ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib423-5">ܩܠܡܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib423-5">ܩܠܹܡܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib423-6">ܩܠܝܡܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib423-6">ܩܠܝܡܺܝܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib423-1"
+                         resp="http://syriaca.org">
                   <forename>Clement</forename>
-                  <addName type="untagged-title">of Rome</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib423-4" type="sic">ܩܠܝܡܝܣ ܕܪܘܡܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib423-4" type="sic">ܩܠܺܝܡܺܝܣ ܕܪܽܘܡܝܺ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib423-3" type="sic">اقليميس الروماني</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib423-3">
+                  <forename>اقليميس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib423-4">
+                  <forename>ܩܠܝܡܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib423-4">
+                  <forename>ܩܠܺܝܡܺܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib423-5">
+                  <forename>ܩܠܡܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib423-5">
+                  <forename>ܩܠܹܡܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib423-4" type="split">
-                           <forename>ܩܠܝܡܝܣ</forename>
-                           <addName type="untagged-title">ܕܪܘܡܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib423-4" type="split">
-                           <forename>ܩܠܺܝܡܺܝܣ</forename>
-                           <addName type="untagged-title">ܕܪܽܘܡܝܺ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib423-3" type="split">
-                           <forename>اقليميس</forename>
-                           <addName type="untagged-title">الروماني</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܩܠܝܡܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib423-6">
+                  <forename>ܩܠܝܡܺܝܣ</forename>
                </persName>
                <bibl xml:id="bib423-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

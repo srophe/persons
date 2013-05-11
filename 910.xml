@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-910">
-               <persName xml:lang="syr" source="bib910-5" type="sic">ܫܡܥܘܢ ܩܘܪܕܠܚܢܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib910-5" type="sic">ܫܸܡܥܘܿܢ ܩܘܼܪܕܲܠܚܢܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib910-6" type="sic">ܫܡܥܘܢ ܩܘܪܕܠܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib910-6" type="sic">ܫܶܡܥܽܘܢ ܩܽܘܪܕܠܰܝܢܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shemʿon Qurdalḥnaya</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿon Qurdalḥnaya</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib910-5">ܫܡܥܘܢ ܩܘܪܕܠܚܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib910-5">ܫܸܡܥܘܿܢ ܩܘܼܪܕܲܠܚܢܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib910-6">ܫܡܥܘܢ ܩܘܪܕܠܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib910-6">ܫܶܡܥܽܘܢ ܩܽܘܪܕܠܰܝܢܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shemʿon Qurdalḥnaya</persName>
+               <persName type="split" xml:lang="syr" source="#bib910-5">
+                  <forename>ܫܡܥܘܢ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shemʿon</forename>
-                           <addName type="untagged-title">Qurdalḥnaya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib910-5">
+                  <forename>ܫܸܡܥܘܿܢ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܫܡܥܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib910-6">
+                  <addName type="untagged-title">ܩܘܪܕܠܝܢܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib910-6">
+                  <forename>ܫܶܡܥܽܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shemʿon</forename>
                </persName>
             </person>
          </listPerson>

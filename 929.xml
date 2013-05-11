@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-929">
-               <persName xml:lang="syr" source="bib929-5" type="sic">ܒܗܝܫܘܥ ܟܡܘܠܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib929-5" type="sic">ܒܹܗܝܼܫܘܿܥ ܟܡܘܿܠܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib929-6" type="sic">ܒܗܝܫܘܥ ܟܡܘܠܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Behishoʿ Kmolaya</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Behishoʿ Kmolaya</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib929-5">ܒܗܝܫܘܥ ܟܡܘܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib929-5">ܒܹܗܝܼܫܘܿܥ ܟܡܘܿܠܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib929-6">ܒܗܝܫܘܥ ܟܡܘܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Behishoʿ Kmolaya</persName>
+               <persName type="split" xml:lang="syr" source="#bib929-5">
+                  <forename>ܒܗܝܫܘܥ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Behishoʿ</forename>
-                           <addName type="untagged-title">Kmolaya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib929-5">
+                  <forename>ܒܹܗܝܼܫܘܿܥ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܒܗܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib929-6">
+                  <addName type="untagged-title">ܟܡܘܠܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Behishoʿ</forename>
                </persName>
             </person>
          </listPerson>

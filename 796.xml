@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-796">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib796-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib796-1"
                          resp="http://syriaca.org">Toma of Marga</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib796-2" type="sic">Thomas of Maraga</persName>
-               <persName xml:lang="ar" source="bib796-3" type="sic">توما المرجي</persName>
-               <persName xml:lang="syr" source="bib796-4" type="sic">ܬܐܘܡܐ ܕܡܪܓܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib796-4" type="sic">ܬܳܐܘܡܐ ܕܡܰܪܰܓܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib796-1" type="sic">Toma of Marga</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib796-1" type="split">
-                           <forename>Toma</forename>
-                           <addName type="untagged-title">of Marga</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib796-1" type="sic">Toma of Marga</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib796-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib796-2">Thomas of Maraga</persName>
+               <persName type="sic" xml:lang="ar" source="#bib796-3">توما المرجي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib796-4">ܬܐܘܡܐ ܕܡܪܓܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib796-4">ܬܳܐܘܡܐ ܕܡܰܪܰܓܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib796-1"
+                         resp="http://syriaca.org">
                   <forename>Toma</forename>
-                  <addName type="untagged-title">of Marga</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib796-4" type="sic">ܬܐܘܡܐ ܕܡܪܓܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib796-4" type="sic">ܬܳܐܘܡܐ ܕܡܰܪܰܓܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib796-3" type="sic">توما المرجي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib796-2" type="sic">Thomas of Maraga</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib796-2">
+                  <forename>Thomas</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib796-4" type="split">
-                           <forename>ܬܐܘܡܐ</forename>
-                           <addName type="untagged-title">ܕܡܪܓܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib796-4" type="split">
-                           <forename>ܬܳܐܘܡܐ</forename>
-                           <addName type="untagged-title">ܕܡܰܪܰܓܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib796-3" type="split">
-                           <forename>توما</forename>
-                           <addName type="untagged-title">المرجي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib796-2" type="split">
-                           <forename>Thomas</forename>
-                           <addName type="untagged-title">of Maraga</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib796-3">
+                  <forename>توما</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib796-4">
+                  <forename>ܬܐܘܡܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib796-4">
+                  <forename>ܬܳܐܘܡܐ</forename>
                </persName>
                <bibl xml:id="bib796-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

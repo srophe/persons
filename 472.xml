@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-472">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib472-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib472-1"
                          resp="http://syriaca.org">Eliya of Nisibis</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib472-2" type="sic">Elijah Bar Shinaya, metropolitan of Nisibin</persName>
-               <persName xml:lang="ar" source="bib472-3" type="sic">المطران ايليا النصيبيني المعروف بابن السنّي</persName>
-               <persName xml:lang="syr" source="bib472-4" type="sic">ܐܠܝܐ ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib472-4" type="sic">ܐܶܠܝܐ ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</persName>
-               <persName xml:lang="syr" source="bib472-5" type="sic">ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib472-5" type="sic">ܐܹܠܝܼܵܐ ܒܲܪ ܫܸܢܵܝܵܐ ܡܝܼܛܪܵܦܘܿܠܹܝܛܵܐ ܕܨܘܿܒܵܐ</persName>
-               <persName xml:lang="syr" source="bib472-6" type="sic">ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
-                           <forename>Eliya</forename>
-                           <addName type="untagged-title">of Nisibis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="sic">Eliya of Nisibis</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib472-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib472-2">Elijah Bar Shinaya, metropolitan of Nisibin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib472-3">المطران ايليا النصيبيني المعروف بابن السنّي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib472-4">ܐܠܝܐ ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib472-4">ܐܶܠܝܐ ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib472-5">ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib472-5">ܐܹܠܝܼܵܐ ܒܲܪ ܫܸܢܵܝܵܐ ܡܝܼܛܪܵܦܘܿܠܹܝܛܵܐ ܕܨܘܿܒܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib472-6">ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib472-1"
+                         resp="http://syriaca.org">
                   <forename>Eliya</forename>
-                  <addName type="untagged-title">of Nisibis</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib472-4" type="sic">ܐܠܝܐ ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib472-4" type="sic">ܐܶܠܝܐ ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib472-3" type="sic">المطران ايليا النصيبيني المعروف بابن السنّي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib472-2" type="sic">Elijah Bar Shinaya, metropolitan of Nisibin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib472-2">
+                  <forename>Elijah</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib472-3">
+                  <forename>ايليا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib472-4">
+                  <forename>ܐܠܝܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib472-4">
+                  <forename>ܐܶܠܝܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib472-5">
+                  <forename>ܐܠܝܐ</forename>
+                  <surname>ܒܪ ܫܢܝܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib472-5">
+                  <forename>ܐܹܠܝܼܵܐ</forename>
+                  <surname>ܒܲܪ ܫܸܢܵܝܵܐ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib472-4" type="split">
-                           <forename>ܐܠܝܐ</forename>
-                           <addName type="untagged-title">ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib472-4" type="split">
-                           <forename>ܐܶܠܝܐ</forename>
-                           <addName type="untagged-title">ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib472-3" type="split">
-                           <forename>ايليا</forename>
-                           <addName type="untagged-title">المطران ,النصيبيني المعروف بابن السنّي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib472-2" type="split">
-                           <forename>Elijah</forename>
-                           <addName type="untagged-title">Bar Shinaya, metropolitan of Nisibin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܠܝܐ</forename>
+                  <surname>ܒܪ ܫܢܝܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib472-6">
+                  <surname>ܒܪ ܫܢܝܐ</surname>
+                  <addName type="untagged-title">ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</addName>
                </persName>
                <bibl xml:id="bib472-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

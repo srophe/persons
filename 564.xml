@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,53 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-564">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib564-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib564-1"
                          resp="http://syriaca.org">Isidore of Pelusium</persName>
-               <persName xml:lang="ar" source="bib564-3" type="sic">ايسيدورس القس البيلوزي (الفرمي)</persName>
-               <persName xml:lang="syr" source="bib564-5" type="sic">ܐܝܣܝܕܘܪܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib564-5" type="sic">ܐܝܼܣܝܼܕܘܿܪܹܐ</persName>
-               <persName xml:lang="syr" source="bib564-6" type="sic">ܐܝܣܝܕܘܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib564-6" type="sic">ܐܺܝܣܺܝܕܳܘܪܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib564-1" type="sic">Isidore of Pelusium</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib564-1" type="split">
-                           <forename>Isidore</forename>
-                           <addName type="untagged-title">of Pelusium</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib564-1" type="sic">Isidore of Pelusium</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib564-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib564-3">ايسيدورس القس البيلوزي (الفرمي)</persName>
+               <persName type="sic" xml:lang="syr" source="#bib564-5">ܐܝܣܝܕܘܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib564-5">ܐܝܼܣܝܼܕܘܿܪܹܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib564-6">ܐܝܣܝܕܘܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib564-6">ܐܺܝܣܺܝܕܳܘܪܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib564-1"
+                         resp="http://syriaca.org">
                   <forename>Isidore</forename>
-                  <addName type="untagged-title">of Pelusium</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib564-3" type="sic">ايسيدورس القس البيلوزي (الفرمي)</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib564-3">
+                  <forename>ايسيدورس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib564-5">
+                  <forename>ܐܝܣܝܕܘܪܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib564-5">
+                  <forename>ܐܝܼܣܝܼܕܘܿܪܹܐ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib564-3" type="split">
-                           <forename>ايسيدورس</forename>
-                           <addName type="untagged-title">القس البيلوزي (الفرمي)</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܝܣܝܕܘܪܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib564-6">
+                  <forename>ܐܺܝܣܺܝܕܳܘܪܳܐ</forename>
                </persName>
                <bibl xml:id="bib564-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

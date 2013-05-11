@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-253">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib253-2" type="sic">Metropolitan Abu al-Wafa of Ḥiṣn Kifa</persName>
-               <persName xml:lang="ar" source="bib253-3" type="sic">المطران ابو الوفآء الحصكفي</persName>
-               <persName xml:lang="syr" source="bib253-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܒܘܐܠܘܦܐ ܚܣܢ ܟܐܦܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib253-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܰܒܘܐܠܘܦܐ ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abū al-Wafā of Hasankeyf</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abū al-Wafā of Hasankeyf</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib253-2">Metropolitan Abu al-Wafa of Ḥiṣn Kifa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib253-3">المطران ابو الوفآء الحصكفي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ ܐܒܘܐܠܘܦܐ ܚܣܢ ܟܐܦܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ ܐܰܒܘܐܠܘܦܐ ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū al-Wafā of Hasankeyf</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib253-2">
+                  <forename>Abu al-Wafa</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abū al-Wafā</forename>
-                           <addName type="untagged-title">of Hasankeyf</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib253-3">
+                  <forename>ابو الوفآء</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib253-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܒܘܐܠܘܦܐ ܚܣܢ ܟܐܦܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib253-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܰܒܘܐܠܘܦܐ ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib253-3" type="sic">المطران ابو الوفآء الحصكفي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib253-2" type="sic">Metropolitan Abu al-Wafa of Ḥiṣn Kifa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib253-4">
+                  <forename>ܐܒܘܐܠܘܦܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib253-4" type="split">
-                           <forename>ܐܒܘܐܠܘܦܐ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܚܣܢ ܟܐܦܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib253-4" type="split">
-                           <forename>ܐܰܒܘܐܠܘܦܐ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܚܰܣܢ ܟܺܐܦܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib253-3" type="split">
-                           <forename>ابو الوفآء</forename>
-                           <addName type="untagged-title">المطران , الحصكفي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib253-2" type="split">
-                           <forename>Abu al-Wafa</forename>
-                           <addName type="untagged-title">Metropolitan, of Ḥiṣn Kifa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib253-4">
+                  <forename>ܐܰܒܘܐܠܘܦܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abū al-Wafā</forename>
                </persName>
                <bibl xml:id="bib253-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

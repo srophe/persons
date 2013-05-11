@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-82">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib82-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib82-1"
                          resp="http://syriaca.org">Pawlos of Tella</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib82-2" type="sic">Paul, metropolitan of Tella</persName>
-               <persName xml:lang="ar" source="bib82-3" type="sic">بولس مطران تلاّ</persName>
-               <persName xml:lang="syr" source="bib82-4" type="sic">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܬܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib82-4" type="sic">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܬܠܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib82-1" type="sic">Pawlos of Tella</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib82-1" type="split">
-                           <forename>Pawlos</forename>
-                           <addName type="untagged-title">of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib82-1" type="sic">Pawlos of Tella</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib82-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib82-2">Paul, metropolitan of Tella</persName>
+               <persName type="sic" xml:lang="ar" source="#bib82-3">بولس مطران تلاّ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib82-4">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܬܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib82-4">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܬܠܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib82-1"
+                         resp="http://syriaca.org">
                   <forename>Pawlos</forename>
-                  <addName type="untagged-title">of Tella</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib82-4" type="sic">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܬܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib82-4" type="sic">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܬܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib82-3" type="sic">بولس مطران تلاّ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib82-2" type="sic">Paul, metropolitan of Tella</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib82-2">
+                  <forename>Paul</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib82-4" type="split">
-                           <forename>ܦܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܬܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib82-4" type="split">
-                           <forename>ܦܰܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܬܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib82-3" type="split">
-                           <forename>بولس</forename>
-                           <addName type="untagged-title">مطران تلاّ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib82-2" type="split">
-                           <forename>Paul</forename>
-                           <addName type="untagged-title">metropolitan of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib82-3">
+                  <forename>بولس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib82-4">
+                  <forename>ܦܘܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib82-4">
+                  <forename>ܦܰܘܠܘܣ</forename>
                </persName>
                <bibl xml:id="bib82-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

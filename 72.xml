@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-72">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib72-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib72-1"
                          resp="http://syriaca.org">Pawlos of Beth Ukome</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib72-2" type="sic">Paul II, Patriarch of Antioch</persName>
-               <persName xml:lang="ar" source="bib72-3" type="sic">بولس الثاني بطريرك انطاكية</persName>
-               <persName xml:lang="syr" source="bib72-4" type="sic">ܦܘܠܘܣ ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib72-4" type="sic">ܦܰܘܠܘܣ ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
-                           <forename>Pawlos</forename>
-                           <surname>of Beth Ukome</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="sic">Pawlos of Beth Ukome</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib72-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib72-2">Paul II, Patriarch of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib72-3">بولس الثاني بطريرك انطاكية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib72-4">ܦܘܠܘܣ ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib72-4">ܦܰܘܠܘܣ ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib72-1"
+                         resp="http://syriaca.org">
                   <forename>Pawlos</forename>
                   <surname>of Beth Ukome</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib72-4" type="sic">ܦܘܠܘܣ ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib72-4" type="sic">ܦܰܘܠܘܣ ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib72-3" type="sic">بولس الثاني بطريرك انطاكية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib72-2" type="sic">Paul II, Patriarch of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib72-2">
+                  <forename>Paul</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib72-4" type="split">
-                           <forename>ܦܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib72-4" type="split">
-                           <forename>ܦܰܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib72-3" type="split">
-                           <forename>بولس</forename>
-                           <addName type="untagged-title">الثاني , بطريرك انطاكية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib72-2" type="split">
-                           <forename>Paul</forename>
-                           <addName type="untagged-title">II, Patriarch of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib72-3">
+                  <forename>بولس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib72-4">
+                  <forename>ܦܘܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib72-4">
+                  <forename>ܦܰܘܠܘܣ</forename>
                </persName>
                <bibl xml:id="bib72-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

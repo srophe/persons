@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,92 +17,59 @@
       <body>
          <listPerson>
             <person xml:id="person-9">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib9-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib9-1"
                          resp="http://syriaca.org">Shemʿon bar Ṣabbaʿe</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib9-2" type="sic">Simon Bar Ṣabba‛i</persName>
-               <persName xml:lang="ar" source="bib9-3" type="sic">شمعون برصبَّاعي</persName>
-               <persName xml:lang="syr" source="bib9-4" type="sic">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib9-4" type="sic">ܫܶܡܥܘܢ ܒܰܪ ܨܰܒܳܥ̈ܐ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-               <persName xml:lang="syr" source="bib9-5" type="sic">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib9-5" type="sic">ܫܸܡܥܘܿܢ ܒܲܪ ܨܲܒܵܥܹ̈ܐ</persName>
-               <persName xml:lang="syr" source="bib9-6" type="sic">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib9-1" type="sic">Shemʿon bar Ṣabbaʿe</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <surname>ܒܪ ܨܒܥ̈ܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib9-1" type="split">
-                           <forename>Shemʿon</forename>
-                           <surname>bar Ṣabbaʿe</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib9-1" type="sic">Shemʿon bar Ṣabbaʿe</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib9-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib9-2">Simon Bar Ṣabba‛i</persName>
+               <persName type="sic" xml:lang="ar" source="#bib9-3">شمعون برصبَّاعي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib9-4">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib9-4">ܫܶܡܥܘܢ ܒܰܪ ܨܰܒܳܥ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib9-5">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib9-5">ܫܸܡܥܘܿܢ ܒܲܪ ܨܲܒܵܥܹ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib9-6">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib9-1"
+                         resp="http://syriaca.org">
                   <forename>Shemʿon</forename>
                   <surname>bar Ṣabbaʿe</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib9-4" type="sic">ܫܡܥܘܢ ܒܪ ܨܒܥ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib9-4" type="sic">ܫܶܡܥܘܢ ܒܰܪ ܨܰܒܳܥ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib9-3" type="sic">شمعون برصبَّاعي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib9-2" type="sic">Simon Bar Ṣabba‛i</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib9-2">
+                  <forename>Simon</forename>
+                  <surname>Bar Ṣabba‛i</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib9-3">
+                  <forename>شمعون</forename>
+                  <surname>برصبَّاعي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib9-4">
+                  <forename>ܫܡܥܘܢ</forename>
+                  <surname>ܒܪ ܨܒܥܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib9-4">
+                  <forename>ܫܶܡܥܘܢ</forename>
+                  <surname>ܒܰܪ ܨܰܒܳܥ̈ܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܫܡܥܘܢ</forename>
+                  <surname>ܒܪ ܨܒܥ̈ܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib9-5">
+                  <forename>ܫܡܥܘܢ</forename>
+                  <surname>ܒܪ ܨܒܥ̈ܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib9-5">
+                  <forename>ܫܸܡܥܘܿܢ</forename>
+                  <surname>ܒܲܪ ܨܲܒܵܥܹ̈ܐ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib9-4" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <surname>ܒܪ ܨܒܥܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib9-4" type="split">
-                           <forename>ܫܶܡܥܘܢ</forename>
-                           <surname>ܒܰܪ ܨܰܒܳܥ̈ܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib9-3" type="split">
-                           <forename>شمعون</forename>
-                           <surname>برصبَّاعي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib9-2" type="split">
-                           <forename>Simon</forename>
-                           <surname>Bar Ṣabba‛i</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܫܡܥܘܢ</forename>
+                  <surname>ܒܪ ܨܒܥ̈ܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib9-6">
+                  <surname>ܒܪ ܨܒܥ̈ܐ</surname>
                </persName>
                <bibl xml:id="bib9-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

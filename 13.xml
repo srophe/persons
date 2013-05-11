@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,90 +17,48 @@
       <body>
          <listPerson>
             <person xml:id="person-13">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib13-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib13-1"
                          resp="http://syriaca.org">Ephrem</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib13-2" type="sic">St. Ephraim the Syrian</persName>
-               <persName xml:lang="ar" source="bib13-3" type="sic">مار افرام الملفان السرياني</persName>
-               <persName xml:lang="syr" source="bib13-4" type="sic">ܡܪܝ ܐܦܪܝܡ</persName>
-               <persName xml:lang="syr-Syrj" source="bib13-4" type="sic">ܡܳܪܝ ܐܰܦܪܶܝܡ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܐܦܪܝܡ</persName>
-               <persName xml:lang="syr" source="bib13-5" type="sic">ܐܦܪܝܡ</persName>
-               <persName xml:lang="syr-Syrn" source="bib13-5" type="sic">ܐܲܦܪܹܝܡ</persName>
-               <persName xml:lang="syr" source="bib13-6" type="sic">ܐܦܪܝܡ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܐܦܪܝܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib13-1" type="sic">Ephrem</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܐܦܪܝܡ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib13-1" type="split">
-                           <forename>Ephrem</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib13-1" type="sic">Ephrem</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib13-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib13-2">St. Ephraim the Syrian</persName>
+               <persName type="sic" xml:lang="ar" source="#bib13-3">مار افرام الملفان السرياني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib13-4">ܡܪܝ ܐܦܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib13-4">ܡܳܪܝ ܐܰܦܪܶܝܡ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܦܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib13-5">ܐܦܪܝܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib13-5">ܐܲܦܪܹܝܡ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib13-6">ܐܦܪܝܡ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib13-1"
+                         resp="http://syriaca.org">
                   <forename>Ephrem</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib13-4" type="sic">ܡܪܝ ܐܦܪܝܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib13-4" type="sic">ܡܳܪܝ ܐܰܦܪܶܝܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib13-3" type="sic">مار افرام الملفان السرياني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib13-2" type="sic">St. Ephraim the Syrian</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib13-2">
+                  <forename>Ephraim</forename>
+                  <surname>the Syrian</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib13-3">
+                  <forename>افرام</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib13-4">
+                  <forename>ܐܦܪܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib13-4">
+                  <forename>ܐܰܦܪܶܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܐܦܪܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib13-5">
+                  <forename>ܐܦܪܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib13-5">
+                  <forename>ܐܲܦܪܹܝܡ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib13-4" type="split">
-                           <forename>ܐܦܪܝܡ</forename>
-                           <addName type="untagged-title">ܡܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib13-4" type="split">
-                           <forename>ܐܰܦܪܶܝܡ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib13-3" type="split">
-                           <forename>افرام</forename>
-                           <addName type="untagged-title">السرياني، مار، الملفان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib13-2" type="split">
-                           <forename>Ephraim</forename>
-                           <surname>the Syrian</surname>
-                           <addName type="untagged-title">St.</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܦܪܝܡ</forename>
                </persName>
                <bibl xml:id="bib13-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

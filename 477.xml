@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,47 @@
       <body>
          <listPerson>
             <person xml:id="person-477">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib477-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib477-1"
                          resp="http://syriaca.org">Epiphanius of Salamis</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib477-2" type="sic">St. Epiphanius, metropolitan of Cyprus</persName>
-               <persName xml:lang="ar" source="bib477-3" type="sic">مار ابيفانيوس مطران قبرص</persName>
-               <persName xml:lang="syr" source="bib477-4" type="sic">ܡܪܝ ܐܦܝܦܐܢܝܘܣ ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib477-4" type="sic">ܡܳܪܝ ܐܰܦܝܦܰܐܢܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
-               <persName xml:lang="syr" source="bib477-5" type="sic">ܐܦܝܦܢܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib477-5" type="sic">ܐܲܦܝܼܦܵܢܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib477-6" type="sic">ܐܦܝܦܢܝܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib477-6" type="sic">ܐܶܦܺܝܦܰܢܝܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib477-1" type="sic">Epiphanius of Salamis</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib477-1" type="split">
-                           <forename>Epiphanius</forename>
-                           <addName type="untagged-title">of Salamis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib477-1" type="sic">Epiphanius of Salamis</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib477-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib477-2">St. Epiphanius, metropolitan of Cyprus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib477-3">مار ابيفانيوس مطران قبرص</persName>
+               <persName type="sic" xml:lang="syr" source="#bib477-4">ܡܪܝ ܐܦܝܦܐܢܝܘܣ ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib477-4">ܡܳܪܝ ܐܰܦܝܦܰܐܢܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib477-5">ܐܦܝܦܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib477-5">ܐܲܦܝܼܦܵܢܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib477-6">ܐܦܝܦܢܝܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib477-6">ܐܶܦܺܝܦܰܢܝܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib477-1"
+                         resp="http://syriaca.org">
                   <forename>Epiphanius</forename>
-                  <addName type="untagged-title">of Salamis</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib477-4" type="sic">ܡܪܝ ܐܦܝܦܐܢܝܘܣ ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib477-4" type="sic">ܡܳܪܝ ܐܰܦܝܦܰܐܢܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib477-3" type="sic">مار ابيفانيوس مطران قبرص</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib477-2" type="sic">St. Epiphanius, metropolitan of Cyprus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib477-2">
+                  <forename>Epiphanius</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib477-3">
+                  <forename>ابيفانيوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib477-4">
+                  <forename>ܐܦܝܦܐܢܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib477-4">
+                  <forename>ܐܰܦܝܦܰܐܢܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib477-5">
+                  <forename>ܐܦܝܦܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib477-5">
+                  <forename>ܐܲܦܝܼܦܵܢܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib477-4" type="split">
-                           <forename>ܐܦܝܦܐܢܝܘܣ</forename>
-                           <addName type="untagged-title">ܡܪܝ, ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib477-4" type="split">
-                           <forename>ܐܰܦܝܦܰܐܢܝܘܣ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ, ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib477-3" type="split">
-                           <forename>ابيفانيوس</forename>
-                           <addName type="untagged-title">مار, مطران قبرص</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib477-2" type="split">
-                           <forename>Epiphanius</forename>
-                           <addName type="untagged-title">St., metropolitan of Cyprus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܦܝܦܢܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib477-6">
+                  <forename>ܐܶܦܺܝܦܰܢܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib477-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

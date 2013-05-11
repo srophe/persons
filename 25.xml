@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,91 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-25">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib25-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib25-1"
                          resp="http://syriaca.org">Marutha of Maypherqaṭ</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib25-2" type="sic">Marutha of Miyapharqin</persName>
-               <persName xml:lang="ar" source="bib25-3" type="sic">ماروثا الفارقي</persName>
-               <persName xml:lang="syr" source="bib25-4" type="sic">ܡܪܘܬܐ ܕܡܝܦܪܩܛ</persName>
-               <persName xml:lang="syr-Syrj" source="bib25-4" type="sic">ܡܰܪܘܬܐ ܕܡܺܝܦܰܪܩܰܛ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
-               <persName xml:lang="syr" source="bib25-5" type="sic">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib25-5" type="sic">ܡܵܪܘܼܬܵܐ ܐܲܦܸܣܩܘܿܦܵܐ</persName>
-               <persName xml:lang="syr" source="bib25-6" type="sic">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib25-1" type="sic">Marutha of Maypherqaṭ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܡܪܘܬܐ</forename>
-                           <addName type="office">ܐܦܣܩܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib25-1" type="split">
-                           <forename>Marutha</forename>
-                           <addName type="untagged-title">of Maypherqaṭ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib25-1" type="sic">Marutha of Maypherqaṭ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib25-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib25-2">Marutha of Miyapharqin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib25-3">ماروثا الفارقي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib25-4">ܡܪܘܬܐ ܕܡܝܦܪܩܛ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib25-4">ܡܰܪܘܬܐ ܕܡܺܝܦܰܪܩܰܛ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib25-5">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib25-5">ܡܵܪܘܼܬܵܐ ܐܲܦܸܣܩܘܿܦܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib25-6">ܡܪܘܬܐ ܐܦܣܩܘܦܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib25-1"
+                         resp="http://syriaca.org">
                   <forename>Marutha</forename>
-                  <addName type="untagged-title">of Maypherqaṭ</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib25-4" type="sic">ܡܪܘܬܐ ܕܡܝܦܪܩܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib25-4" type="sic">ܡܰܪܘܬܐ ܕܡܺܝܦܰܪܩܰܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib25-3" type="sic">ماروثا الفارقي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib25-2" type="sic">Marutha of Miyapharqin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib25-2">
+                  <forename>Marutha of Miyapharqin</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib25-3">
+                  <forename>ماروثا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib25-4">
+                  <forename>ܡܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib25-4">
+                  <forename>ܡܰܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܡܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib25-5">
+                  <forename>ܡܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib25-5">
+                  <forename>ܡܵܪܘܼܬܵܐ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib25-4" type="split">
-                           <forename>ܡܪܘܬܐ</forename>
-                           <addName type="untagged-title">ܕܡܝܦܪܩܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib25-4" type="split">
-                           <forename>ܡܰܪܘܬܐ</forename>
-                           <addName type="untagged-title">ܕܡܺܝܦܰܪܩܰܛ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib25-3" type="split">
-                           <forename>ماروثا</forename>
-                           <addName type="untagged-title">الفارقي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib25-2" type="split">
-                           <forename>Marutha of Miyapharqin</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܡܪܘܬܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib25-6">
+                  <addName type="untagged-title">ܐܦܣܩܘܦܐ</addName>
                </persName>
                <bibl xml:id="bib25-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

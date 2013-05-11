@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-36">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib36-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib36-1"
                          resp="http://syriaca.org">Sṭephanos bar Ṣudayli</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib36-2" type="sic">Stephen Bar Sudayli</persName>
-               <persName xml:lang="ar" source="bib36-3" type="sic">اصطيفان ابن  ُصوديلي</persName>
-               <persName xml:lang="syr" source="bib36-4" type="sic">ܐܣܛܦܐܢ ܒܪ ܨܘܕܐܝ̈ܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib36-4" type="sic">ܐܶܣܛܶܦܰܐܢ ܒܰܪ ܨܘܕܰܐܝ̈ܠܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib36-1" type="sic">Sṭephanos bar Ṣudayli</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib36-1" type="split">
-                           <forename>Sṭephanos</forename>
-                           <surname>bar Ṣudayli</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib36-1" type="sic">Sṭephanos bar Ṣudayli</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib36-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib36-2">Stephen Bar Sudayli</persName>
+               <persName type="sic" xml:lang="ar" source="#bib36-3">اصطيفان ابن  ُصوديلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib36-4">ܐܣܛܦܐܢ ܒܪ ܨܘܕܐܝ̈ܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib36-4">ܐܶܣܛܶܦܰܐܢ ܒܰܪ ܨܘܕܰܐܝ̈ܠܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib36-1"
+                         resp="http://syriaca.org">
                   <forename>Sṭephanos</forename>
                   <surname>bar Ṣudayli</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib36-4" type="sic">ܐܣܛܦܐܢ ܒܪ ܨܘܕܐܝ̈ܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib36-4" type="sic">ܐܶܣܛܶܦܰܐܢ ܒܰܪ ܨܘܕܰܐܝ̈ܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib36-3" type="sic">اصطيفان ابن  ُصوديلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib36-2" type="sic">Stephen Bar Sudayli</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib36-2">
+                  <forename>Stephen</forename>
+                  <surname>Bar Sudayli</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib36-4" type="split">
-                           <forename>ܐܣܛܦܐܢ</forename>
-                           <surname>ܒܪ ܨܘܕܐܝܠܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib36-4" type="split">
-                           <forename>ܐܶܣܛܶܦܰܐܢ</forename>
-                           <surname>ܒܰܪ ܨܘܕܰܐܝ̈ܠܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib36-3" type="split">
-                           <forename>اصطيفان</forename>
-                           <surname>ابن  ُصوديلي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib36-2" type="split">
-                           <forename>Stephen</forename>
-                           <surname>Bar Sudayli</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib36-3">
+                  <forename>اصطيفان</forename>
+                  <surname>ابن  ُصوديلي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib36-4">
+                  <forename>ܐܣܛܦܐܢ</forename>
+                  <surname>ܒܪ ܨܘܕܐܝܠܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib36-4">
+                  <forename>ܐܶܣܛܶܦܰܐܢ</forename>
+                  <surname>ܒܰܪ ܨܘܕܰܐܝ̈ܠܐ</surname>
                </persName>
                <bibl xml:id="bib36-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

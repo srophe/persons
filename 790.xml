@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,47 @@
       <body>
          <listPerson>
             <person xml:id="person-790">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib790-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib790-1"
                          resp="http://syriaca.org">Timotheos I</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib790-2" type="sic">Catholicos Timothy I</persName>
-               <persName xml:lang="ar" source="bib790-3" type="sic">طيمثاوس الاول جاثليق النساطرة</persName>
-               <persName xml:lang="syr" source="bib790-4" type="sic">ܛܝܡܬܐܘܣ ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib790-4" type="sic">ܛܺܝܡܰܬܐܘܳܣ ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</persName>
-               <persName xml:lang="syr" source="bib790-5" type="sic">ܛܝܡܬܐܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib790-5" type="sic">ܛܝܼܡܵܬܹܐܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib790-6" type="sic">ܛܝܡܘܬܐܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib790-6" type="sic">ܛܝܺܡܽܘܬܶܐܘܳܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib790-1" type="sic">Timotheos I</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib790-1" type="split">
-                           <forename>Timotheos</forename>
-                           <addName type="untagged-title">I</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib790-1" type="sic">Timotheos I</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib790-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib790-2">Catholicos Timothy I</persName>
+               <persName type="sic" xml:lang="ar" source="#bib790-3">طيمثاوس الاول جاثليق النساطرة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib790-4">ܛܝܡܬܐܘܣ ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib790-4">ܛܺܝܡܰܬܐܘܳܣ ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib790-5">ܛܝܡܬܐܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib790-5">ܛܝܼܡܵܬܹܐܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib790-6">ܛܝܡܘܬܐܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib790-6">ܛܝܺܡܽܘܬܶܐܘܳܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib790-1"
+                         resp="http://syriaca.org">
                   <forename>Timotheos</forename>
-                  <addName type="untagged-title">I</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib790-4" type="sic">ܛܝܡܬܐܘܣ ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib790-4" type="sic">ܛܺܝܡܰܬܐܘܳܣ ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib790-3" type="sic">طيمثاوس الاول جاثليق النساطرة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib790-2" type="sic">Catholicos Timothy I</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib790-2">
+                  <forename>Timothy</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib790-3">
+                  <forename>طيمثاوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib790-4">
+                  <forename>ܛܝܡܬܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib790-4">
+                  <forename>ܛܺܝܡܰܬܐܘܳܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib790-5">
+                  <forename>ܛܝܡܬܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib790-5">
+                  <forename>ܛܝܼܡܵܬܹܐܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib790-4" type="split">
-                           <forename>ܛܝܡܬܐܘܣ</forename>
-                           <addName type="untagged-title">ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib790-4" type="split">
-                           <forename>ܛܺܝܡܰܬܐܘܳܣ</forename>
-                           <addName type="untagged-title">ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib790-3" type="split">
-                           <forename>طيمثاوس</forename>
-                           <addName type="untagged-title">الاول جاثليق النساطرة</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib790-2" type="split">
-                           <forename>Timothy</forename>
-                           <addName type="untagged-title">I, Catholicos</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܛܝܡܘܬܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib790-6">
+                  <forename>ܛܝܺܡܽܘܬܶܐܘܳܣ</forename>
                </persName>
                <bibl xml:id="bib790-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

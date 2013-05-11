@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-205">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib205-2" type="sic">Timothy, metropolitan of Karkar</persName>
-               <persName xml:lang="ar" source="bib205-3" type="sic">طيمثاوس مطران كركر</persName>
-               <persName xml:lang="syr" source="bib205-4" type="sic">ܛܝܡܬܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib205-4" type="sic">ܛܺܝܡܰܬܶܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Timotheos of Gargar</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Timotheos of Gargar</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib205-2">Timothy, metropolitan of Karkar</persName>
+               <persName type="sic" xml:lang="ar" source="#bib205-3">طيمثاوس مطران كركر</persName>
+               <persName type="sic" xml:lang="syr" source="#bib205-4">ܛܝܡܬܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib205-4">ܛܺܝܡܰܬܶܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Timotheos of Gargar</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib205-2">
+                  <forename>Timothy</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Timotheos</forename>
-                           <addName type="untagged-title">of Gargar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib205-3">
+                  <forename>طيمثاوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib205-4" type="sic">ܛܝܡܬܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib205-4" type="sic">ܛܺܝܡܰܬܶܐܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib205-3" type="sic">طيمثاوس مطران كركر</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib205-2" type="sic">Timothy, metropolitan of Karkar</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib205-4">
+                  <forename>ܛܝܡܬܐܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib205-4" type="split">
-                           <forename>ܛܝܡܬܐܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib205-4" type="split">
-                           <forename>ܛܺܝܡܰܬܶܐܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib205-3" type="split">
-                           <forename>طيمثاوس</forename>
-                           <addName type="untagged-title">مطران كركر</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib205-2" type="split">
-                           <forename>Timothy</forename>
-                           <addName type="untagged-title">Metropolitan of Karkar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib205-4">
+                  <forename>ܛܺܝܡܰܬܶܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Timotheos</forename>
                </persName>
                <bibl xml:id="bib205-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-823">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib823-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib823-1"
                          resp="http://syriaca.org">Yoḥannan bar Zoʿbi</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib823-2" type="sic">John of Zuʿbi</persName>
-               <persName xml:lang="ar" source="bib823-3" type="sic">يوحنا ابن زعبي</persName>
-               <persName xml:lang="syr" source="bib823-4" type="sic">ܝܘܚܢܢ ܒܪ ܙܘܥܒܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib823-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܙܘܥܒܝ</persName>
-               <persName xml:lang="syr" source="bib823-5" type="sic">ܝܘܚܢܢ ܕܙܘܥܒܝ</persName>
-               <persName xml:lang="syr-Syrn" source="bib823-5" type="sic">ܝܘܿܚܲܢܵܢ ܕܙܘܿܥܒܝܼ</persName>
-               <persName xml:lang="syr" source="bib823-6" type="sic">ܝܘܚܢܢ ܕܙܘܥܒܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
-                           <forename>Yoḥannan</forename>
-                           <surname>bar Zoʿbi</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="sic">Yoḥannan bar Zoʿbi</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib823-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib823-2">John of Zuʿbi</persName>
+               <persName type="sic" xml:lang="ar" source="#bib823-3">يوحنا ابن زعبي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib823-4">ܝܘܚܢܢ ܒܪ ܙܘܥܒܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib823-4">ܝܘܚܰܢܢ ܒܰܪ ܙܘܥܒܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib823-5">ܝܘܚܢܢ ܕܙܘܥܒܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib823-5">ܝܘܿܚܲܢܵܢ ܕܙܘܿܥܒܝܼ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib823-6">ܝܘܚܢܢ ܕܙܘܥܒܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib823-1"
+                         resp="http://syriaca.org">
                   <forename>Yoḥannan</forename>
                   <surname>bar Zoʿbi</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib823-4" type="sic">ܝܘܚܢܢ ܒܪ ܙܘܥܒܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib823-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܙܘܥܒܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib823-3" type="sic">يوحنا ابن زعبي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib823-2" type="sic">John of Zuʿbi</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib823-2">
+                  <forename>John</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib823-3">
+                  <forename>يوحنا</forename>
+                  <surname>ابن زعبي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib823-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܒܪ ܙܘܥܒܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib823-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+                  <surname>ܒܰܪ ܙܘܥܒܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib823-5">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib823-5">
+                  <forename>ܝܘܿܚܲܢܵܢ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib823-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܒܪ ܙܘܥܒܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib823-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <surname>ܒܰܪ ܙܘܥܒܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib823-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>ابن زعبي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib823-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">of Zuʿbi</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib823-6">
+                  <addName type="untagged-title">ܕܙܘܥܒܝ</addName>
                </persName>
                <bibl xml:id="bib823-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

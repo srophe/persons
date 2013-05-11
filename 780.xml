@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-780">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib780-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib780-1"
                          resp="http://syriaca.org">Theodore of Mopsuestia</persName>
-               <persName xml:lang="ar" source="bib780-3" type="sic">ثاودورس المصّيصي</persName>
-               <persName xml:lang="syr" source="bib780-4" type="sic">ܬܐܘܕܘܪܘܣ ܕܡܣܝܣܛܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib780-4" type="sic">ܬܶܐܘܕܘܪܘܣ ܕܡܰܣܝܽܣܛܰܐ</persName>
-               <persName xml:lang="syr" source="bib780-5" type="sic">ܬܐܕܘܪܘܣ ܡܦܫܩܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib780-5" type="sic">ܬܹܐܵܕܘܿܪܘܿܣ ܡܦܲܫܩܵܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib780-6" type="sic">ܬܐܘܕܘܪܘܣ ܡܦܫܩܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib780-6" type="sic">ܬܶܐܘܳܕܳܘܪܘܣ ܡܦܰܫܩܳܢܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib780-1" type="sic">Theodore of Mopsuestia</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib780-1" type="split">
-                           <forename>Theodore</forename>
-                           <addName type="untagged-title">of  Mopsuestia</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib780-1" type="sic">Theodore of Mopsuestia</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib780-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib780-3">ثاودورس المصّيصي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib780-4">ܬܐܘܕܘܪܘܣ ܕܡܣܝܣܛܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib780-4">ܬܶܐܘܕܘܪܘܣ ܕܡܰܣܝܽܣܛܰܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib780-5">ܬܐܕܘܪܘܣ ܡܦܫܩܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib780-5">ܬܹܐܵܕܘܿܪܘܿܣ ܡܦܲܫܩܵܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib780-6">ܬܐܘܕܘܪܘܣ ܡܦܫܩܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib780-6">ܬܶܐܘܳܕܳܘܪܘܣ ܡܦܰܫܩܳܢܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib780-1"
+                         resp="http://syriaca.org">
                   <forename>Theodore</forename>
-                  <addName type="untagged-title">of  Mopsuestia</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib780-4" type="sic">ܬܐܘܕܘܪܘܣ ܕܡܣܝܣܛܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib780-4" type="sic">ܬܶܐܘܕܘܪܘܣ ܕܡܰܣܝܽܣܛܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib780-3" type="sic">ثاودورس المصّيصي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib780-3">
+                  <forename>ثاودورس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib780-4">
+                  <forename>ܬܐܘܕܘܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib780-4">
+                  <forename>ܬܶܐܘܕܘܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib780-5">
+                  <forename>ܬܐܕܘܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib780-5">
+                  <forename>ܬܹܐܵܕܘܿܪܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib780-4" type="split">
-                           <forename>ܬܐܘܕܘܪܘܣ</forename>
-                           <addName type="untagged-title">ܕܡܣܝܣܛܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib780-4" type="split">
-                           <forename>ܬܶܐܘܕܘܪܘܣ</forename>
-                           <addName type="untagged-title">ܕܡܰܣܝܽܣܛܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib780-3" type="split">
-                           <forename>ثاودورس</forename>
-                           <addName type="untagged-title">المصّيصي</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܬܐܘܕܘܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib780-6">
+                  <addName type="untagged-title">ܡܦܫܩܢܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib780-6">
+                  <forename>ܬܶܐܘܳܕܳܘܪܘܣ</forename>
                </persName>
                <bibl xml:id="bib780-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

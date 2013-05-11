@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-532">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib532-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib532-1"
                          resp="http://syriaca.org">Ḥenanishoʿ II</persName>
-               <persName xml:lang="syr" source="bib532-5" type="sic">ܚܢܢܝܫܘܥ ܩܬܘܠܝܩܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib532-5" type="sic">ܚܢܵܢܝܼܫܘܿܥ ܩܵܬܘܿܠܝܼܩܵܐ</persName>
-               <persName xml:lang="syr" source="bib532-6" type="sic">ܚܢܢܝܫܘܥ ܩܬܘܠܝܩܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib532-1" type="sic">Ḥenanishoʿ II</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib532-1" type="split">
-                           <forename>Ḥenanishoʿ</forename>
-                           <addName type="untagged-title">II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib532-1" type="sic">Ḥenanishoʿ II</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib532-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib532-5">ܚܢܢܝܫܘܥ ܩܬܘܠܝܩܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib532-5">ܚܢܵܢܝܼܫܘܿܥ ܩܵܬܘܿܠܝܼܩܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib532-6">ܚܢܢܝܫܘܥ ܩܬܘܠܝܩܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib532-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥenanishoʿ</forename>
-                  <addName type="untagged-title">II</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib532-5">
+                  <forename>ܚܢܢܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib532-5">
+                  <forename>ܚܢܵܢܝܼܫܘܿܥ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܚܢܢܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib532-6">
+                  <addName type="untagged-title">ܩܬܘܠܝܩܐ</addName>
                </persName>
                <bibl xml:id="bib532-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,63 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-185">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib185-2" type="sic">The Syrian Scholars of the Tenth Century</persName>
-               <persName xml:lang="ar" source="bib185-3" type="sic">علمآء السريان في القرن العاشر</persName>
-               <persName xml:lang="syr" source="bib185-4" type="sic">ܝܕܘܥܬܢ̈ܐ ܣܘܪ̈ܝܝܐ ܕܒܕܪܐ ܥܣܝܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib185-4" type="sic">ܝܰܕܘܥܬܳܢ̈ܐ ܣܘܪ̈ܝܳܝܐ ܕܰܒܕܳܪܳܐ ܥܣܝܪܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib185-2">The Syrian Scholars of the Tenth Century</persName>
+               <persName type="sic" xml:lang="ar" source="#bib185-3">علمآء السريان في القرن العاشر</persName>
+               <persName type="sic" xml:lang="syr" source="#bib185-4">ܝܕܘܥܬܢ̈ܐ ܣܘܪ̈ܝܝܐ ܕܒܕܪܐ ܥܣܝܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib185-4">ܝܰܕܘܥܬܳܢ̈ܐ ܣܘܪ̈ܝܳܝܐ ܕܰܒܕܳܪܳܐ ܥܣܝܪܳܝܐ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib185-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="split" xml:lang="ar" source="#bib185-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib185-4" type="sic">ܝܕܘܥܬܢ̈ܐ ܣܘܪ̈ܝܝܐ ܕܒܕܪܐ ܥܣܝܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib185-4" type="sic">ܝܰܕܘܥܬܳܢ̈ܐ ܣܘܪ̈ܝܳܝܐ ܕܰܒܕܳܪܳܐ ܥܣܝܪܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib185-3" type="sic">علمآء السريان في القرن العاشر</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib185-2" type="sic">The Syrian Scholars of the Tenth Century</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib185-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib185-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib185-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib185-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib185-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib185-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
                <bibl xml:id="bib185-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

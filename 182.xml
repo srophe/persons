@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-182">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib182-2" type="sic">Matthew, bishop of al-Ḥaṣṣaṣa</persName>
-               <persName xml:lang="ar" source="bib182-3" type="sic">متي اسقف الحصَّاصة</persName>
-               <persName xml:lang="syr" source="bib182-4" type="sic">ܡܬܝ ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib182-4" type="sic">ܡܰܬܝ ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Matay of al-Ḥaṣṣāṣa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Matay of al-Ḥaṣṣāṣa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib182-2">Matthew, bishop of al-Ḥaṣṣaṣa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib182-3">متي اسقف الحصَّاصة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib182-4">ܡܬܝ ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib182-4">ܡܰܬܝ ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Matay of al-Ḥaṣṣāṣa</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib182-2">
+                  <forename>Matthew</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Matay</forename>
-                           <addName type="untagged-title">of al-Ḥaṣṣāṣa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib182-3">
+                  <forename>متي</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib182-4" type="sic">ܡܬܝ ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib182-4" type="sic">ܡܰܬܝ ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib182-3" type="sic">متي اسقف الحصَّاصة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib182-2" type="sic">Matthew, bishop of al-Ḥaṣṣaṣa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib182-4">
+                  <forename>ܡܬܝ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib182-4" type="split">
-                           <forename>ܡܬܝ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܚܨܨܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib182-4" type="split">
-                           <forename>ܡܰܬܝ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܨܨܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib182-3" type="split">
-                           <forename>متي</forename>
-                           <addName type="untagged-title">اسقف الحصَّاصة</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib182-2" type="split">
-                           <forename>Matthew</forename>
-                           <addName type="untagged-title">Bishop of al-Ḥaṣṣaṣa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib182-4">
+                  <forename>ܡܰܬܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Matay</forename>
                </persName>
                <bibl xml:id="bib182-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

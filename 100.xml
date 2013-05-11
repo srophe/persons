@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-100">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib100-2" type="sic">The Monk Ithalaha</persName>
-               <persName xml:lang="ar" source="bib100-3" type="sic">الراهب ايثالاها</persName>
-               <persName xml:lang="syr" source="bib100-4" type="sic">ܕܝܪܝܐ ܐܝܬܐܠܗܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib100-4" type="sic">ܕܰܝܪܳܝܐ ܐܝܬܐܠܳܗܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Aitalaha</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Aitalaha</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib100-2">The Monk Ithalaha</persName>
+               <persName type="sic" xml:lang="ar" source="#bib100-3">الراهب ايثالاها</persName>
+               <persName type="sic" xml:lang="syr" source="#bib100-4">ܕܝܪܝܐ ܐܝܬܐܠܗܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib100-4">ܕܰܝܪܳܝܐ ܐܝܬܐܠܳܗܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Aitalaha</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib100-2">
+                  <forename>Ithalaha</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Aitalaha</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib100-3">
+                  <forename>ايثالاها</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib100-4" type="sic">ܕܝܪܝܐ ܐܝܬܐܠܗܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib100-4" type="sic">ܕܰܝܪܳܝܐ ܐܝܬܐܠܳܗܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib100-3" type="sic">الراهب ايثالاها</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib100-2" type="sic">The Monk Ithalaha</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib100-4">
+                  <forename>ܐܝܬܐܠܗܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib100-4" type="split">
-                           <forename>ܐܝܬܐܠܗܐ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib100-4" type="split">
-                           <forename>ܐܝܬܐܠܳܗܐ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib100-3" type="split">
-                           <forename>ايثالاها</forename>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib100-2" type="split">
-                           <forename>Ithalaha</forename>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib100-4">
+                  <forename>ܐܝܬܐܠܳܗܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Aitalaha</forename>
                </persName>
                <bibl xml:id="bib100-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,76 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-51">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib51-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib51-1"
                          resp="http://syriaca.org">Severus of Antioch</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib51-2" type="sic">St. Severus of Antioch</persName>
-               <persName xml:lang="ar" source="bib51-3" type="sic">القديس سويريوس الانطاكي</persName>
-               <persName xml:lang="syr" source="bib51-4" type="sic">ܡܪܝ ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib51-4" type="sic">ܡܳܪܝ ܣܶܘܝܪܝܘܣ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib51-1" type="sic">Severus of Antioch</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib51-1" type="split">
-                           <forename>Severus</forename>
-                           <addName type="untagged-title">of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib51-1" type="sic">Severus of Antioch</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib51-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib51-2">St. Severus of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib51-3">القديس سويريوس الانطاكي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib51-4">ܡܪܝ ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib51-4">ܡܳܪܝ ܣܶܘܝܪܝܘܣ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib51-1"
+                         resp="http://syriaca.org">
                   <forename>Severus</forename>
-                  <addName type="untagged-title">of Antioch</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib51-4" type="sic">ܡܪܝ ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib51-4" type="sic">ܡܳܪܝ ܣܶܘܝܪܝܘܣ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib51-3" type="sic">القديس سويريوس الانطاكي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib51-2" type="sic">St. Severus of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib51-3">
+                  <forename>سويريوس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib51-4" type="split">
-                           <forename>ܣܘܝܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܕܐܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib51-4" type="split">
-                           <forename>ܣܶܘܝܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib51-3" type="split">
-                           <forename>سويريوس</forename>
-                           <addName type="untagged-title">القديس , الانطاكي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib51-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib51-4">
+                  <forename>ܣܘܝܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib51-4">
+                  <forename>ܣܶܘܝܪܝܘܣ</forename>
                </persName>
                <bibl xml:id="bib51-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

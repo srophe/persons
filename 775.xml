@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-775">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib775-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib775-1"
                          resp="http://syriaca.org">Testament of Adam</persName>
-               <persName xml:lang="ar" source="bib775-3" type="sic">عهد آدم</persName>
-               <persName xml:lang="syr" source="bib775-4" type="sic">ܕܝܬܝܩܝ ܕܐܕܡ</persName>
-               <persName xml:lang="syr-Syrj" source="bib775-4" type="sic">ܕܺܝܰܬܝܩܝ ܕܐܕܡ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Testament of Adam</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib775-1" type="sic">Testament of Adam</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib775-1" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib775-1" type="sic">Testament of Adam</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib775-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib775-3">عهد آدم</persName>
+               <persName type="sic" xml:lang="syr" source="#bib775-4">ܕܝܬܝܩܝ ܕܐܕܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib775-4">ܕܺܝܰܬܝܩܝ ܕܐܕܡ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Testament of Adam</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib775-1"
+                         resp="http://syriaca.org">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
-                  <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib775-4" type="sic">ܕܝܬܝܩܝ ܕܐܕܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib775-4" type="sic">ܕܺܝܰܬܝܩܝ ܕܐܕܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib775-3" type="sic">عهد آدم</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib775-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib775-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib775-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib775-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib775-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib775-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Testament of Adam</addName>
                </persName>
                <bibl xml:id="bib775-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-125">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib125-2" type="sic">Mar Simon d-beth Zayte</persName>
-               <persName xml:lang="ar" source="bib125-3" type="sic">مار شمعون الزيتوني</persName>
-               <persName xml:lang="syr" source="bib125-4" type="sic">ܡܪܝ ܫܡܥܘܢ ܕܙܝ̈ܬܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib125-4" type="sic">ܡܳܪܝ ܫܶܡܥܘܢ ܕܙܰܝ̈ܬܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shemʿun d-Zayte</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿun d-Zayte</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib125-2">Mar Simon d-beth Zayte</persName>
+               <persName type="sic" xml:lang="ar" source="#bib125-3">مار شمعون الزيتوني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib125-4">ܡܪܝ ܫܡܥܘܢ ܕܙܝ̈ܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib125-4">ܡܳܪܝ ܫܶܡܥܘܢ ܕܙܰܝ̈ܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shemʿun d-Zayte</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib125-2">
+                  <forename>Simon</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shemʿun</forename>
-                           <addName type="untagged-title">d-Zayte</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib125-3">
+                  <forename>شمعون</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib125-4" type="sic">ܡܪܝ ܫܡܥܘܢ ܕܙܝ̈ܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib125-4" type="sic">ܡܳܪܝ ܫܶܡܥܘܢ ܕܙܰܝ̈ܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib125-3" type="sic">مار شمعون الزيتوني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib125-2" type="sic">Mar Simon d-beth Zayte</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib125-4">
+                  <forename>ܫܡܥܘܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib125-4" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܕܙܝ̈ܬܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib125-4" type="split">
-                           <forename>ܫܶܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܕܙܰܝ̈ܬܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib125-3" type="split">
-                           <forename>شمعون</forename>
-                           <addName type="untagged-title">مار ,  الزيتوني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib125-2" type="split">
-                           <forename>Simon</forename>
-                           <addName type="untagged-title">Mar, d-beth Zayte</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib125-4">
+                  <forename>ܫܶܡܥܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shemʿun</forename>
                </persName>
                <bibl xml:id="bib125-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

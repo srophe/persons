@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-65">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib65-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib65-1"
                          resp="http://syriaca.org">Zacharias, Pseudo-</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib65-2" type="sic">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</persName>
-               <persName xml:lang="ar" source="bib65-3" type="sic">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</persName>
-               <persName xml:lang="syr" source="bib65-4" type="sic">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib65-4" type="sic">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib65-1" type="sic">Zacharias, Pseudo-</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib65-1" type="split">
-                           <forename>Zacharias</forename>
-                           <addName type="untagged-title">Pseudo-</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib65-1" type="sic">Zacharias, Pseudo-</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib65-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib65-2">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</persName>
+               <persName type="sic" xml:lang="ar" source="#bib65-3">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</persName>
+               <persName type="sic" xml:lang="syr" source="#bib65-4">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib65-4">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib65-1"
+                         resp="http://syriaca.org">
                   <forename>Zacharias</forename>
-                  <addName type="untagged-title">Pseudo-</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib65-4" type="sic">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib65-4" type="sic">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib65-3" type="sic">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib65-2" type="sic">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib65-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib65-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib65-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib65-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib65-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib65-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib65-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib65-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
                <bibl xml:id="bib65-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

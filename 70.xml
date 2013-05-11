@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,59 +17,21 @@
       <body>
          <listPerson>
             <person xml:id="person-70">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib70-2" type="sic">Quryaqos of Tella</persName>
-               <persName xml:lang="ar" source="bib70-3" type="sic">قرياقس التلي</persName>
-               <persName xml:lang="syr" source="bib70-4" type="sic">ܩܘܪܝܩܘܣ ܕܬܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib70-4" type="sic">ܩܘܪܝܰܩܘܣ ܕܬܶܠܐܰ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib70-2">Quryaqos of Tella</persName>
+               <persName type="sic" xml:lang="ar" source="#bib70-3">قرياقس التلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib70-4">ܩܘܪܝܩܘܣ ܕܬܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib70-4">ܩܘܪܝܰܩܘܣ ܕܬܶܠܐܰ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib70-2">
+                  <forename>Quryaqos</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="split" xml:lang="ar" source="#bib70-3">
+                  <forename>قرياقس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib70-4" type="sic">ܩܘܪܝܩܘܣ ܕܬܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib70-4" type="sic">ܩܘܪܝܰܩܘܣ ܕܬܶܠܐܰ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib70-3" type="sic">قرياقس التلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib70-2" type="sic">Quryaqos of Tella</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib70-4">
+                  <forename>ܩܘܪܝܩܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib70-4" type="split">
-                           <forename>ܩܘܪܝܩܘܣ</forename>
-                           <addName type="untagged-title">ܕܬܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib70-4" type="split">
-                           <forename>ܩܘܪܝܰܩܘܣ</forename>
-                           <addName type="untagged-title">ܕܬܶܠܐܰ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib70-3" type="split">
-                           <forename>قرياقس</forename>
-                           <addName type="untagged-title">التلي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib70-2" type="split">
-                           <forename>Quryaqos</forename>
-                           <addName type="untagged-title">of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib70-4">
+                  <forename>ܩܘܪܝܰܩܘܣ</forename>
                </persName>
                <bibl xml:id="bib70-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

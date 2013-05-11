@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,80 +17,53 @@
       <body>
          <listPerson>
             <person xml:id="person-783">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib783-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib783-1"
                          resp="http://syriaca.org">Theodoros bar Koni</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib783-2" type="sic">Theodore Bar Kuni</persName>
-               <persName xml:lang="ar" source="bib783-3" type="sic">ثاودورس ابن كوني</persName>
-               <persName xml:lang="syr" source="bib783-4" type="sic">ܬܐܘܕܘܪܘܣ ܒܪܟܘܢܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib783-4" type="sic">ܬܶܐܘܳܕܳܘܪܳܘܣ ܒܰܪܟܽܘܢܺܝ</persName>
-               <persName xml:lang="syr" source="bib783-5" type="sic">ܬܐܕܘܪܘܣ ܒܪ ܟܘܢܝ</persName>
-               <persName xml:lang="syr-Syrn" source="bib783-5" type="sic">ܬܹܐܵܕܘܿܪܘܿܣ ܒܲܪ ܟܘܼܢܝܼ</persName>
-               <persName xml:lang="syr" source="bib783-6" type="sic">ܬܐܕܘܪܘܣ ܒܪ ܟܘܢܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib783-1" type="sic">Theodoros bar Koni</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib783-1" type="split">
-                           <forename>Theodoros bar Koni</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib783-1" type="sic">Theodoros bar Koni</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib783-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib783-2">Theodore Bar Kuni</persName>
+               <persName type="sic" xml:lang="ar" source="#bib783-3">ثاودورس ابن كوني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib783-4">ܬܐܘܕܘܪܘܣ ܒܪܟܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib783-4">ܬܶܐܘܳܕܳܘܪܳܘܣ ܒܰܪܟܽܘܢܺܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib783-5">ܬܐܕܘܪܘܣ ܒܪ ܟܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib783-5">ܬܹܐܵܕܘܿܪܘܿܣ ܒܲܪ ܟܘܼܢܝܼ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib783-6">ܬܐܕܘܪܘܣ ܒܪ ܟܘܢܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib783-1"
+                         resp="http://syriaca.org">
                   <forename>Theodoros bar Koni</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib783-4" type="sic">ܬܐܘܕܘܪܘܣ ܒܪܟܘܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib783-4" type="sic">ܬܶܐܘܳܕܳܘܪܳܘܣ ܒܰܪܟܽܘܢܺܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib783-3" type="sic">ثاودورس ابن كوني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib783-2" type="sic">Theodore Bar Kuni</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib783-2">
+                  <forename>Theodore</forename>
+                  <surname>Bar Kuni</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib783-3">
+                  <forename>ثاودورس</forename>
+                  <surname>ابن كوني</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib783-4">
+                  <forename>ܬܐܘܕܘܪܘܣ</forename>
+                  <surname>ܒܪܟܘܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib783-4">
+                  <forename>ܬܶܐܘܳܕܳܘܪܳܘܣ</forename>
+                  <surname>ܒܰܪܟܽܘܢܺܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib783-5">
+                  <forename>ܬܐܕܘܪܘܣ</forename>
+                  <surname>ܒܪ ܟܘܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib783-5">
+                  <forename>ܬܹܐܵܕܘܿܪܘܿܣ</forename>
+                  <surname>ܒܲܪ ܟܘܼܢܝܼ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib783-4" type="split">
-                           <forename>ܬܐܘܕܘܪܘܣ</forename>
-                           <surname>ܒܪܟܘܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib783-4" type="split">
-                           <forename>ܬܶܐܘܳܕܳܘܪܳܘܣ</forename>
-                           <surname>ܒܰܪܟܽܘܢܺܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib783-3" type="split">
-                           <forename>ثاودورس</forename>
-                           <surname>ابن كوني</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib783-2" type="split">
-                           <forename>Theodore</forename>
-                           <surname>Bar Kuni</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܬܐܕܘܪܘܣ</forename>
+                  <surname>ܒܪ ܟܘܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib783-6">
+                  <surname>ܒܪ ܟܘܢܝ</surname>
                </persName>
                <bibl xml:id="bib783-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

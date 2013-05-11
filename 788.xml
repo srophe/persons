@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,63 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-788">
-               <persName xml:lang="ar" source="bib788-3" type="sic">اعمال توما الرسول</persName>
-               <persName xml:lang="syr" source="bib788-4" type="sic">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib788-4" type="sic">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Acts of Thomas</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Acts of Thomas</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib788-3">اعمال توما الرسول</persName>
+               <persName type="sic" xml:lang="syr" source="#bib788-4">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib788-4">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Acts of Thomas</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib788-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the Acts of Thomas</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib788-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib788-4" type="sic">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib788-4" type="sic">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib788-3" type="sic">اعمال توما الرسول</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib788-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib788-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib788-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib788-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib788-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Acts of Thomas</addName>
                </persName>
                <bibl xml:id="bib788-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

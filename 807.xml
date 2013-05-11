@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,72 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-807">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib807-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib807-1"
                          resp="http://syriaca.org">Wright, William</persName>
-               <persName xml:lang="ar" source="bib807-3" type="sic">وليم رايت الانكليزي</persName>
-               <persName xml:lang="syr" source="bib807-4" type="sic">ܘܠܝܡ ܪܐܝܬ ܐܢܓܠܝܙܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib807-4" type="sic">ܘܶܠܝܰܡ ܪܰܐܝܬ ܐܶܢܓܠܝܙܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
-                           <forename>William</forename>
-                           <surname>Wright</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="sic">Wright, William</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib807-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib807-3">وليم رايت الانكليزي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib807-4">ܘܠܝܡ ܪܐܝܬ ܐܢܓܠܝܙܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib807-4">ܘܶܠܝܰܡ ܪܰܐܝܬ ܐܶܢܓܠܝܙܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib807-1"
+                         resp="http://syriaca.org">
                   <forename>William</forename>
                   <surname>Wright</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib807-4" type="sic">ܘܠܝܡ ܪܐܝܬ ܐܢܓܠܝܙܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib807-4" type="sic">ܘܶܠܝܰܡ ܪܰܐܝܬ ܐܶܢܓܠܝܙܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib807-3" type="sic">وليم رايت الانكليزي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib807-3">
+                  <forename>وليم</forename>
+                  <surname>رايت</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib807-4" type="split">
-                           <forename>ܘܠܝܡ</forename>
-                           <surname>ܪܐܝܬ</surname>
-                           <addName type="untagged-title">ܐܢܓܠܝܙܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib807-4" type="split">
-                           <forename>ܘܶܠܝܰܡ</forename>
-                           <surname>ܪܰܐܝܬ</surname>
-                           <addName type="untagged-title">ܐܶܢܓܠܝܙܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib807-3" type="split">
-                           <forename>وليم</forename>
-                           <surname>رايت</surname>
-                           <addName type="untagged-title">الانكليزي</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib807-4">
+                  <forename>ܘܠܝܡ</forename>
+                  <surname>ܪܐܝܬ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib807-4">
+                  <forename>ܘܶܠܝܰܡ</forename>
+                  <surname>ܪܰܐܝܬ</surname>
                </persName>
                <bibl xml:id="bib807-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

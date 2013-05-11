@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-376">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib376-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib376-1"
                          resp="http://syriaca.org">Basil of Caesarea</persName>
-               <persName xml:lang="ar" source="bib376-3" type="sic">باسيليوس القيسري</persName>
-               <persName xml:lang="syr" source="bib376-4" type="sic">ܒܣܝܠܠܝܘܣ ܕܩܣܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib376-4" type="sic">ܒܰܣܝܠܠܝܘܣ ܕܩܶܣܰܪܺܝܐ</persName>
-               <persName xml:lang="syr" source="bib376-5" type="sic">ܒܣܠܝܘܣ ܪܒܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib376-5" type="sic">ܒܵܣܹܠܝܼܘܿܣ ܪܲܒܵܐ</persName>
-               <persName xml:lang="syr" source="bib376-6" type="sic">ܒܣܝܠܝܘܣ ܪܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib376-6" type="sic">ܒܰܣܺܝܠܺܝܳܘܣ ܪܰܒܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib376-1" type="sic">Basil of Caesarea</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib376-1" type="split">
-                           <forename>Basil</forename>
-                           <addName type="untagged-title">of Caesarea</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib376-1" type="sic">Basil of Caesarea</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib376-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib376-3">باسيليوس القيسري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib376-4">ܒܣܝܠܠܝܘܣ ܕܩܣܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib376-4">ܒܰܣܝܠܠܝܘܣ ܕܩܶܣܰܪܺܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib376-5">ܒܣܠܝܘܣ ܪܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib376-5">ܒܵܣܹܠܝܼܘܿܣ ܪܲܒܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib376-6">ܒܣܝܠܝܘܣ ܪܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib376-6">ܒܰܣܺܝܠܺܝܳܘܣ ܪܰܒܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib376-1"
+                         resp="http://syriaca.org">
                   <forename>Basil</forename>
-                  <addName type="untagged-title">of Caesarea</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib376-4" type="sic">ܒܣܝܠܠܝܘܣ ܕܩܣܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib376-4" type="sic">ܒܰܣܝܠܠܝܘܣ ܕܩܶܣܰܪܺܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib376-3" type="sic">باسيليوس القيسري</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib376-3">
+                  <forename>باسيليوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib376-4">
+                  <forename>ܒܣܝܠܠܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib376-4">
+                  <forename>ܒܰܣܝܠܠܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib376-5">
+                  <forename>ܒܣܠܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib376-5">
+                  <forename>ܒܵܣܹܠܝܼܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib376-4" type="split">
-                           <forename>ܒܣܝܠܠܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܩܣܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib376-4" type="split">
-                           <forename>ܒܰܣܝܠܠܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܩܶܣܰܪܺܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib376-3" type="split">
-                           <forename>باسيليوس</forename>
-                           <addName type="untagged-title">القيسري</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܒܣܝܠܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib376-6">
+                  <addName type="untagged-title">ܪܒܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib376-6">
+                  <forename>ܒܰܣܺܝܠܺܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib376-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

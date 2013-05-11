@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,68 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-771">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib771-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib771-1"
                          resp="http://syriaca.org">Tatian</persName>
-               <persName xml:lang="ar" source="bib771-3" type="sic">ططيانس</persName>
-               <persName xml:lang="syr" source="bib771-4" type="sic">ܛܛܝܐܢܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib771-4" type="sic">ܛܰܛܝܰܐܢܘܣ</persName>
-               <persName xml:lang="syr" source="bib771-5" type="sic">ܛܛܝܢܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib771-5" type="sic">ܛܸܛܝܵܢܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib771-6" type="sic">ܛܛܝܢܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib771-6" type="sic">ܛܰܛܝܰܢܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib771-1" type="sic">Tatian</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib771-1" type="split">
-                           <forename>Tatian</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib771-1" type="sic">Tatian</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib771-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib771-3">ططيانس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib771-4">ܛܛܝܐܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib771-4">ܛܰܛܝܰܐܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib771-5">ܛܛܝܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib771-5">ܛܸܛܝܵܢܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib771-6">ܛܛܝܢܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib771-6">ܛܰܛܝܰܢܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib771-1"
+                         resp="http://syriaca.org">
                   <forename>Tatian</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib771-4" type="sic">ܛܛܝܐܢܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib771-4" type="sic">ܛܰܛܝܰܐܢܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib771-3" type="sic">ططيانس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib771-3">
+                  <forename>ططيانس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib771-4">
+                  <forename>ܛܛܝܐܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib771-4">
+                  <forename>ܛܰܛܝܰܐܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib771-5">
+                  <forename>ܛܛܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib771-5">
+                  <forename>ܛܸܛܝܵܢܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib771-4" type="split">
-                           <forename>ܛܛܝܐܢܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib771-4" type="split">
-                           <forename>ܛܰܛܝܰܐܢܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib771-3" type="split">
-                           <forename>ططيانس</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܛܛܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib771-6">
+                  <forename>ܛܰܛܝܰܢܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib771-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

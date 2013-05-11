@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,66 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-934">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib934-2" type="sic">Julian</persName>
-               <persName xml:lang="ar" source="bib934-3" type="sic">يوليان</persName>
-               <persName xml:lang="syr" source="bib934-4" type="sic">ܝܘܠܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib934-4" type="sic">ܝܘܽܠܝܰܢܐ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܝܘܠܝܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܝܘܠܝܢܐ</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib934-2">Julian</persName>
+               <persName type="sic" xml:lang="ar" source="#bib934-3">يوليان</persName>
+               <persName type="sic" xml:lang="syr" source="#bib934-4">ܝܘܠܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib934-4">ܝܘܽܠܝܰܢܐ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܝܘܠܝܢܐ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib934-2">
+                  <forename>Julian</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܝܘܠܝܢܐ</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib934-3">
+                  <forename>يوليان</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib934-4" type="sic">ܝܘܠܝܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib934-4" type="sic">ܝܘܽܠܝܰܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib934-3" type="sic">يوليان</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib934-2" type="sic">Julian</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib934-4">
+                  <forename>ܝܘܠܝܢܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib934-4" type="split">
-                           <forename>ܝܘܠܝܢܐ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib934-4" type="split">
-                           <forename>ܝܘܽܠܝܰܢܐ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib934-3" type="split">
-                           <forename>يوليان</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib934-2" type="split">
-                           <forename>Julian</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib934-4">
+                  <forename>ܝܘܽܠܝܰܢܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܝܘܠܝܢܐ</forename>
                </persName>
                <bibl xml:id="bib934-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

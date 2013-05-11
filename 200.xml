@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-200">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib200-2" type="sic">Dionysius Bar Mawdyana</persName>
-               <persName xml:lang="ar" source="bib200-3" type="sic">ديونيسيوس ابن موديانا</persName>
-               <persName xml:lang="syr" source="bib200-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܡܘܕܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib200-4" type="sic">ܕܝܽܘܢܳܢܘܣܝܘܣ ܒܰܪ ܡܰܘܕܝܢܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Dionysios bar Mawdyono</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Dionysios bar Mawdyono</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib200-2">Dionysius Bar Mawdyana</persName>
+               <persName type="sic" xml:lang="ar" source="#bib200-3">ديونيسيوس ابن موديانا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib200-4">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܡܘܕܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib200-4">ܕܝܽܘܢܳܢܘܣܝܘܣ ܒܰܪ ܡܰܘܕܝܢܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Dionysios bar Mawdyono</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib200-2">
+                  <forename>Dionysius</forename>
+                  <surname>Bar Mawdyana</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Dionysios</forename>
-                           <surname>bar Mawdyono</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib200-3">
+                  <forename>ديونيسيوس</forename>
+                  <surname>ابن موديانا</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib200-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܡܘܕܝܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib200-4" type="sic">ܕܝܽܘܢܳܢܘܣܝܘܣ ܒܰܪ ܡܰܘܕܝܢܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib200-3" type="sic">ديونيسيوس ابن موديانا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib200-2" type="sic">Dionysius Bar Mawdyana</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib200-4">
+                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                  <surname>ܒܪ ܡܘܕܝܢܐ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib200-4" type="split">
-                           <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
-                           <surname>ܒܪ ܡܘܕܝܢܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib200-4" type="split">
-                           <forename>ܕܝܽܘܢܳܢܘܣܝܘܣ</forename>
-                           <surname>ܒܰܪ ܡܰܘܕܝܢܳܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib200-3" type="split">
-                           <forename>ديونيسيوس</forename>
-                           <surname>ابن موديانا</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib200-2" type="split">
-                           <forename>Dionysius</forename>
-                           <surname>Bar Mawdyana</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib200-4">
+                  <forename>ܕܝܽܘܢܳܢܘܣܝܘܣ</forename>
+                  <surname>ܒܰܪ ܡܰܘܕܝܢܳܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Dionysios</forename>
+                  <surname>bar Mawdyono</surname>
                </persName>
                <bibl xml:id="bib200-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

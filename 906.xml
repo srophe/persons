@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-906">
-               <persName xml:lang="syr" source="bib906-5" type="sic">ܕܢܝܐܝܠ ܕܪܫܥܝܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib906-5" type="sic">ܕܵܢܝܼܐܹܝܠ ܕܪܹܫܥܲܝܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib906-6" type="sic">ܕܢܝܐܠ ܕܪܝܫܥܝܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib906-6" type="sic">ܕܳܢܺܝܶܐܠ ܕܪܺܝܫܥܰܝܢܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Daniel of Reshʿayna</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Daniel of Reshʿayna</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib906-5">ܕܢܝܐܝܠ ܕܪܫܥܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib906-5">ܕܵܢܝܼܐܹܝܠ ܕܪܹܫܥܲܝܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib906-6">ܕܢܝܐܠ ܕܪܝܫܥܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib906-6">ܕܳܢܺܝܶܐܠ ܕܪܺܝܫܥܰܝܢܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Daniel of Reshʿayna</persName>
+               <persName type="split" xml:lang="syr" source="#bib906-5">
+                  <forename>ܕܢܝܐܝܠ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">of Reshʿayna</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib906-5">
+                  <forename>ܕܵܢܝܼܐܹܝܠ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܕܢܝܐܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib906-6">
+                  <addName type="untagged-title">ܕܪܝܫܥܝܢܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib906-6">
+                  <forename>ܕܳܢܺܝܶܐܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Daniel</forename>
                </persName>
             </person>
          </listPerson>

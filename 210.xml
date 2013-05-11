@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-210">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib210-2" type="sic">Basilius Bar Shumanna</persName>
-               <persName xml:lang="ar" source="bib210-3" type="sic">باسيليوس ابن شومنة</persName>
-               <persName xml:lang="syr" source="bib210-4" type="sic">ܒܣܝܠܝܘܣ ܒܪ ܫܘܡܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib210-4" type="sic">ܒܰܣܝܠܝܘܣ ܒܰܪ ܫܘܡܢ̈ܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Baselios bar Shumone</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Baselios bar Shumone</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib210-2">Basilius Bar Shumanna</persName>
+               <persName type="sic" xml:lang="ar" source="#bib210-3">باسيليوس ابن شومنة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib210-4">ܒܣܝܠܝܘܣ ܒܪ ܫܘܡܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib210-4">ܒܰܣܝܠܝܘܣ ܒܰܪ ܫܘܡܢ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Baselios bar Shumone</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib210-2">
+                  <forename>Basilius</forename>
+                  <surname>Bar Shumanna</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Baselios</forename>
-                           <surname>bar Shumone</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib210-3">
+                  <forename>باسيليوس</forename>
+                  <surname>ابن شومنة</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib210-4" type="sic">ܒܣܝܠܝܘܣ ܒܪ ܫܘܡܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib210-4" type="sic">ܒܰܣܝܠܝܘܣ ܒܰܪ ܫܘܡܢ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib210-3" type="sic">باسيليوس ابن شومنة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib210-2" type="sic">Basilius Bar Shumanna</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib210-4">
+                  <forename>ܒܣܝܠܝܘܣ</forename>
+                  <surname>ܒܪ ܫܘܡܢܐ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib210-4" type="split">
-                           <forename>ܒܣܝܠܝܘܣ</forename>
-                           <surname>ܒܪ ܫܘܡܢܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib210-4" type="split">
-                           <forename>ܒܰܣܝܠܝܘܣ</forename>
-                           <surname>ܒܰܪ ܫܘܡܢܳܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib210-3" type="split">
-                           <forename>باسيليوس</forename>
-                           <surname>ابن شومنة</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib210-2" type="split">
-                           <forename>Basilius</forename>
-                           <surname>Bar Shumanna</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib210-4">
+                  <forename>ܒܰܣܝܠܝܘܣ</forename>
+                  <surname>ܒܰܪ ܫܘܡܢܳܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Baselios</forename>
+                  <surname>bar Shumone</surname>
                </persName>
                <bibl xml:id="bib210-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

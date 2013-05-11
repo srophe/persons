@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-930">
-               <persName xml:lang="syr" source="bib930-5" type="sic">ܡܘܫܐ ܟܪܟܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib930-5" type="sic">ܡܘܼܫܹܐ ܟܲܪܟܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib930-6" type="sic">ܡܘܫܐ ܟܪܟܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Mushe Karkaya</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Mushe Karkaya</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib930-5">ܡܘܫܐ ܟܪܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib930-5">ܡܘܼܫܹܐ ܟܲܪܟܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib930-6">ܡܘܫܐ ܟܪܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Mushe Karkaya</persName>
+               <persName type="split" xml:lang="syr" source="#bib930-5">
+                  <forename>ܡܘܫܐ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Mushe</forename>
-                           <addName type="untagged-title">Karkaya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib930-5">
+                  <forename>ܡܘܼܫܹܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܡܘܫܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib930-6">
+                  <addName type="untagged-title">ܟܪܟܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Mushe</forename>
                </persName>
             </person>
          </listPerson>

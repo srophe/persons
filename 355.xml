@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-355">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib355-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib355-1"
                          resp="http://syriaca.org">Audo, Toma</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib355-2" type="sic">Tuma Odo</persName>
-               <persName xml:lang="ar" source="bib355-3" type="sic">المطران توما اودو</persName>
-               <persName xml:lang="syr" source="bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ ܬܐܘܡܐ ܐܘܕܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ ܬܐܘܡܰܐ ܐܘܕܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
-                           <forename>Toma</forename>
-                           <surname>Audo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="sic">Audo, Toma</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib355-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib355-2">Tuma Odo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib355-3">المطران توما اودو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib355-4">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ ܬܐܘܡܐ ܐܘܕܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib355-4">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ ܬܐܘܡܰܐ ܐܘܕܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib355-1"
+                         resp="http://syriaca.org">
                   <forename>Toma</forename>
                   <surname>Audo</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ ܬܐܘܡܐ ܐܘܕܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib355-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ ܬܐܘܡܰܐ ܐܘܕܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib355-3" type="sic">المطران توما اودو</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib355-2" type="sic">Tuma Odo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib355-2">
+                  <forename>Tuma</forename>
+                  <surname>Odo</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib355-4" type="split">
-                           <forename>ܬܐܘܡܐ</forename>
-                           <surname>ܐܘܕܐ</surname>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib355-4" type="split">
-                           <forename>ܬܐܘܡܰܐ</forename>
-                           <surname>ܐܘܕܳܐ</surname>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib355-3" type="split">
-                           <forename>توما</forename>
-                           <surname>اودو</surname>
-                           <addName type="untagged-title">المطران توما</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib355-2" type="split">
-                           <forename>Tuma</forename>
-                           <surname>Odo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib355-3">
+                  <forename>توما</forename>
+                  <surname>اودو</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib355-4">
+                  <forename>ܬܐܘܡܐ</forename>
+                  <surname>ܐܘܕܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib355-4">
+                  <forename>ܬܐܘܡܰܐ</forename>
+                  <surname>ܐܘܕܳܐ</surname>
                </persName>
                <bibl xml:id="bib355-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

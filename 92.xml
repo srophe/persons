@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-92">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib92-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib92-1"
                          resp="http://syriaca.org">Yuḥanon of the Sedre</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib92-2" type="sic">John of the Sedros</persName>
-               <persName xml:lang="ar" source="bib92-3" type="sic">يوحنا ابو السدرات</persName>
-               <persName xml:lang="syr" source="bib92-4" type="sic">ܝܘܚܢܢ ܕܣܕܪ̈ܘܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib92-4" type="sic">ܝܘܚܰܢܢ ܕܣܶܕܪ̈ܰܘܗܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib92-1" type="sic">Yuḥanon of the Sedre</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib92-1" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">of the Sedre</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib92-1" type="sic">Yuḥanon of the Sedre</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib92-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib92-2">John of the Sedros</persName>
+               <persName type="sic" xml:lang="ar" source="#bib92-3">يوحنا ابو السدرات</persName>
+               <persName type="sic" xml:lang="syr" source="#bib92-4">ܝܘܚܢܢ ܕܣܕܪ̈ܘܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib92-4">ܝܘܚܰܢܢ ܕܣܶܕܪ̈ܰܘܗܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib92-1"
+                         resp="http://syriaca.org">
                   <forename>Yuḥanon</forename>
-                  <addName type="untagged-title">of the Sedre</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib92-4" type="sic">ܝܘܚܢܢ ܕܣܕܪ̈ܘܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib92-4" type="sic">ܝܘܚܰܢܢ ܕܣܶܕܪ̈ܰܘܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib92-3" type="sic">يوحنا ابو السدرات</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib92-2" type="sic">John of the Sedros</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib92-2">
+                  <forename>John</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib92-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܕܣܕܪ̈ܰܘܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib92-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܕܣܶܕܪ̈ܰܘܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib92-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">ابو السدرات</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib92-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">of the Sedros</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib92-3">
+                  <forename>يوحنا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib92-4">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib92-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
                </persName>
                <bibl xml:id="bib92-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

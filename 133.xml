@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-133">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib133-2" type="sic">Elijah, bishop of Sinjar</persName>
-               <persName xml:lang="ar" source="bib133-3" type="sic">ايليا اسقف سنجار</persName>
-               <persName xml:lang="syr" source="bib133-4" type="sic">ܐܠܝܐ ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib133-4" type="sic">ܐܠܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Eliya of Sinjar</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Eliya of Sinjar</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib133-2">Elijah, bishop of Sinjar</persName>
+               <persName type="sic" xml:lang="ar" source="#bib133-3">ايليا اسقف سنجار</persName>
+               <persName type="sic" xml:lang="syr" source="#bib133-4">ܐܠܝܐ ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib133-4">ܐܠܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Eliya of Sinjar</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib133-2">
+                  <forename>Elijah</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Eliya</forename>
-                           <addName type="untagged-title">of Sinjar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib133-3">
+                  <forename>ايليا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib133-4" type="sic">ܐܠܝܐ ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib133-4" type="sic">ܐܠܝܳܐ ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib133-3" type="sic">ايليا اسقف سنجار</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib133-2" type="sic">Elijah, bishop of Sinjar</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib133-4">
+                  <forename>ܐܠܝܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib133-4" type="split">
-                           <forename>ܐܠܝܐ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib133-4" type="split">
-                           <forename>ܐܠܝܳܐ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib133-3" type="split">
-                           <forename>ايليا</forename>
-                           <addName type="untagged-title">اسقف سنجار</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib133-2" type="split">
-                           <forename>Elijah</forename>
-                           <addName type="untagged-title">bishop of Sinjar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib133-4">
+                  <forename>ܐܠܝܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Eliya</forename>
                </persName>
                <bibl xml:id="bib133-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

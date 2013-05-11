@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,85 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-614">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib614-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib614-1"
                          resp="http://syriaca.org">Mara bar Serapion</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib614-2" type="sic">Mara Bar Seraphion</persName>
-               <persName xml:lang="ar" source="bib614-3" type="sic">مارا ابن سرافيون</persName>
-               <persName xml:lang="syr" source="bib614-4" type="sic">ܡܪܐ ܒܪ ܣܪܦܝܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib614-4" type="sic">ܡܰܪܐ ܒܰܪ ܣܪܰܦܝܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib614-1" type="sic">Mara bar Serapion</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib614-1" type="split">
-                           <forename>Mara</forename>
-                           <surname>bar Serapion</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib614-1" type="sic">Mara bar Serapion</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib614-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib614-2">Mara Bar Seraphion</persName>
+               <persName type="sic" xml:lang="ar" source="#bib614-3">مارا ابن سرافيون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib614-4">ܡܪܐ ܒܪ ܣܪܦܝܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib614-4">ܡܰܪܐ ܒܰܪ ܣܪܰܦܝܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib614-1"
+                         resp="http://syriaca.org">
                   <forename>Mara</forename>
                   <surname>bar Serapion</surname>
-                  <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib614-4" type="sic">ܡܪܐ ܒܪ ܣܪܦܝܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib614-4" type="sic">ܡܰܪܐ ܒܰܪ ܣܪܰܦܝܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib614-3" type="sic">مارا ابن سرافيون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib614-2" type="sic">Mara Bar Seraphion</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib614-2">
+                  <forename>Mara</forename>
+                  <surname>Bar Seraphion</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib614-4" type="split">
-                           <forename>ܡܪܐ</forename>
-                           <surname>ܒܪ ܣܪܦܝܘܢ</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib614-4" type="split">
-                           <forename>ܡܰܪܐ</forename>
-                           <surname>ܒܰܪ ܣܪܰܦܝܘܢ</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib614-3" type="split">
-                           <forename>مارا</forename>
-                           <surname>ابن سرافيون</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib614-2" type="split">
-                           <forename>Mara</forename>
-                           <surname>Bar Seraphion</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib614-3">
+                  <forename>مارا</forename>
+                  <surname>ابن سرافيون</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib614-4">
+                  <forename>ܡܪܐ</forename>
+                  <surname>ܒܪ ܣܪܦܝܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib614-4">
+                  <forename>ܡܰܪܐ</forename>
+                  <surname>ܒܰܪ ܣܪܰܦܝܘܢ</surname>
                </persName>
                <bibl xml:id="bib614-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

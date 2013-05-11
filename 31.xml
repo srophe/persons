@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-31">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib31-2" type="sic">The Priest Cosmas</persName>
-               <persName xml:lang="ar" source="bib31-3" type="sic">القس قزما</persName>
-               <persName xml:lang="syr" source="bib31-4" type="sic">ܩܫܝܫܐ ܩܘܙܡܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib31-4" type="sic">ܩܰܫܝܫܳܐ ܩܘܙܡܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Cosmas</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Cosmas</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib31-2">The Priest Cosmas</persName>
+               <persName type="sic" xml:lang="ar" source="#bib31-3">القس قزما</persName>
+               <persName type="sic" xml:lang="syr" source="#bib31-4">ܩܫܝܫܐ ܩܘܙܡܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib31-4">ܩܰܫܝܫܳܐ ܩܘܙܡܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Cosmas</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib31-2">
+                  <forename>Cosmas</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Cosmas</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib31-3">
+                  <forename>قزما</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib31-4" type="sic">ܩܫܝܫܐ ܩܘܙܡܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib31-4" type="sic">ܩܰܫܝܫܳܐ ܩܘܙܡܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib31-3" type="sic">القس قزما</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib31-2" type="sic">The Priest Cosmas</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib31-4">
+                  <forename>ܩܘܙܡܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib31-4" type="split">
-                           <forename>ܩܘܙܡܐ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib31-4" type="split">
-                           <forename>ܩܘܙܡܳܐ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib31-3" type="split">
-                           <forename>قزما</forename>
-                           <addName type="untagged-title">القس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib31-2" type="split">
-                           <forename>Cosmas</forename>
-                           <addName type="untagged-title">The Priest</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib31-4">
+                  <forename>ܩܘܙܡܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Cosmas</forename>
                </persName>
                <bibl xml:id="bib31-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

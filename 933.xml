@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-933">
-               <persName xml:lang="syr" source="bib933-5" type="sic">ܡܪܝ ܐܠܝܐ ܬܠܝܬܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib933-5" type="sic">ܡܵܪܝ ܐܹܠܝܼܵܐ ܬܠܝܼܬܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib933-6" type="sic">ܡܪܝ ܐܠܝܐ ܬܠܝܬܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Eliya III</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Eliya III</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib933-5">ܡܪܝ ܐܠܝܐ ܬܠܝܬܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib933-5">ܡܵܪܝ ܐܹܠܝܼܵܐ ܬܠܝܼܬܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib933-6">ܡܪܝ ܐܠܝܐ ܬܠܝܬܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Eliya III</persName>
+               <persName type="split" xml:lang="syr" source="#bib933-5">
+                  <forename>ܐܠܝܐ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Eliya</forename>
-                           <addName type="untagged-title">III</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib933-5">
+                  <forename>ܐܹܠܝܼܵܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܠܝܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib933-6">
+                  <addName type="untagged-title">ܡܪܝ، ܬܠܝܬܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Eliya</forename>
                </persName>
             </person>
          </listPerson>

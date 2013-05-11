@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,66 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-724">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib724-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib724-1"
                          resp="http://syriaca.org">Schulthess, Friedrich</persName>
-               <persName xml:lang="ar" source="bib724-3" type="sic">شوليتس</persName>
-               <persName xml:lang="syr" source="bib724-4" type="sic">ܫܘܠܬܝܙ</persName>
-               <persName xml:lang="syr-Syrj" source="bib724-4" type="sic">ܫܳܘܠܬܝܙ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib724-1" type="sic">Schulthess, Friedrich</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib724-1" type="split">
-                           <forename>Friedrich</forename>
-                           <surname>Schulthess</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib724-1" type="sic">Schulthess, Friedrich</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib724-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib724-3">شوليتس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib724-4">ܫܘܠܬܝܙ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib724-4">ܫܳܘܠܬܝܙ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib724-1"
+                         resp="http://syriaca.org">
                   <forename>Friedrich</forename>
                   <surname>Schulthess</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib724-4" type="sic">ܫܘܠܬܝܙ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib724-4" type="sic">ܫܳܘܠܬܝܙ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib724-3" type="sic">شوليتس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib724-3">
+                  <surname>شوليتس</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib724-4" type="split">
-                           <surname>ܫܘܠܬܝܙ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib724-4" type="split">
-                           <surname>ܫܳܘܠܬܝܙ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib724-3" type="split">
-                           <surname>شوليتس</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib724-4">
+                  <surname>ܫܘܠܬܝܙ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib724-4">
+                  <surname>ܫܳܘܠܬܝܙ</surname>
                </persName>
                <bibl xml:id="bib724-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

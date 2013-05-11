@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-208">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib208-2" type="sic">Ignatius II, Maphryono of the East</persName>
-               <persName xml:lang="ar" source="bib208-3" type="sic">اغناطيوس الثاني مفريان المشرق</persName>
-               <persName xml:lang="syr" source="bib208-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib208-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ignatius Loʿozar</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ignatius Loʿozar</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib208-2">Ignatius II, Maphryono of the East</persName>
+               <persName type="sic" xml:lang="ar" source="#bib208-3">اغناطيوس الثاني مفريان المشرق</persName>
+               <persName type="sic" xml:lang="syr" source="#bib208-4">ܐܝܓܢܐܛܝܘܣ ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib208-4">ܐܝܓܢܰܐܛܝܘܣ ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ignatius Loʿozar</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib208-2">
+                  <forename>Ignatius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ignatius Loʿozar</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib208-3">
+                  <forename>اغناطيوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib208-4" type="sic">ܐܝܓܢܐܛܝܘܣ ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib208-4" type="sic">ܐܝܓܢܰܐܛܝܘܣ ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib208-3" type="sic">اغناطيوس الثاني مفريان المشرق</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib208-2" type="sic">Ignatius II, Maphryono of the East</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib208-4">
+                  <forename>ܐܝܓܢܐܛܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib208-4" type="split">
-                           <forename>ܐܝܓܢܐܛܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib208-4" type="split">
-                           <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib208-3" type="split">
-                           <forename>اغناطيوس</forename>
-                           <addName type="untagged-title">الثاني , مفريان المشرق</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib208-2" type="split">
-                           <forename>Ignatius</forename>
-                           <addName type="untagged-title">II, Maphryono of the East</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib208-4">
+                  <forename>ܐܝܓܢܰܐܛܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ignatius Loʿozar</forename>
                </persName>
                <bibl xml:id="bib208-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

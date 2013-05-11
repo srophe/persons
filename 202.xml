@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-202">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib202-2" type="sic">Basilius Abu Ghalib Ibn al-Ṣabuni</persName>
-               <persName xml:lang="ar" source="bib202-3" type="sic">باسيليوس ابو غالب ابن الصابوني</persName>
-               <persName xml:lang="syr" source="bib202-4" type="sic">ܒܣܝܠܝܘܣ ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib202-4" type="sic">ܒܰܣܝܠܝܘܣ ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Baselios Abū Ghālib bar Sabouni</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Baselios Abū Ghālib bar Sabouni</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib202-2">Basilius Abu Ghalib Ibn al-Ṣabuni</persName>
+               <persName type="sic" xml:lang="ar" source="#bib202-3">باسيليوس ابو غالب ابن الصابوني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib202-4">ܒܣܝܠܝܘܣ ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib202-4">ܒܰܣܝܠܝܘܣ ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Baselios Abū Ghālib bar Sabouni</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib202-2">
+                  <forename>Basilius</forename>
+                  <surname>Abu Ghalib Ibn al-Ṣabuni</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Baselios Abū Ghālib</forename>
-                           <surname>bar Sabouni</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib202-3">
+                  <forename>باسيليوس</forename>
+                  <surname>ابو غالب ابن الصابوني</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib202-4" type="sic">ܒܣܝܠܝܘܣ ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib202-4" type="sic">ܒܰܣܝܠܝܘܣ ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib202-3" type="sic">باسيليوس ابو غالب ابن الصابوني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib202-2" type="sic">Basilius Abu Ghalib Ibn al-Ṣabuni</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib202-4">
+                  <forename>ܒܣܝܠܝܘܣ</forename>
+                  <surname>ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib202-4" type="split">
-                           <forename>ܒܣܝܠܝܘܣ</forename>
-                           <surname>ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib202-4" type="split">
-                           <forename>ܒܰܣܝܠܝܘܣ</forename>
-                           <surname>ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib202-3" type="split">
-                           <forename>باسيليوس</forename>
-                           <surname>ابو غالب ابن الصابوني</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib202-2" type="split">
-                           <forename>Basilius</forename>
-                           <surname>Abu Ghalib Ibn al-Ṣabuni</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib202-4">
+                  <forename>ܒܰܣܝܠܝܘܣ</forename>
+                  <surname>ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Baselios Abū Ghālib</forename>
+                  <surname>bar Sabouni</surname>
                </persName>
                <bibl xml:id="bib202-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

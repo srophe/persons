@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-54">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib54-2" type="sic">The Translators of the Canons and Laws of Kings</persName>
-               <persName xml:lang="ar" source="bib54-3" type="sic">نقلة مراسيم الملوك و نواسيمهم</persName>
-               <persName xml:lang="syr" source="bib54-4" type="sic">ܡܬܪ̈ܓܡܢܐ ܕܩܢܘ̈ܢܐ ܡܠܟܝ̈ܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib54-4" type="sic">ܡܬܰܪ̈ܓܡܳܢܐ ܕܩܳܢܘ̈ܢܐ ܡܰܠܟܳܝ̈ܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Translator(s) of the Canons and Laws of Kings</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Translator(s) of the Canons and Laws of Kings</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib54-2">The Translators of the Canons and Laws of Kings</persName>
+               <persName type="sic" xml:lang="ar" source="#bib54-3">نقلة مراسيم الملوك و نواسيمهم</persName>
+               <persName type="sic" xml:lang="syr" source="#bib54-4">ܡܬܪ̈ܓܡܢܐ ܕܩܢܘ̈ܢܐ ܡܠܟܝ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib54-4">ܡܬܰܪ̈ܓܡܳܢܐ ܕܩܳܢܘ̈ܢܐ ܡܰܠܟܳܝ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Translator(s) of the Canons and Laws of Kings</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib54-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Translator(s) of the Canons and Laws of Kings</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib54-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib54-4" type="sic">ܡܬܪ̈ܓܡܢܐ ܕܩܢܘ̈ܢܐ ܡܠܟܝ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib54-4" type="sic">ܡܬܰܪ̈ܓܡܳܢܐ ܕܩܳܢܘ̈ܢܐ ܡܰܠܟܳܝ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib54-3" type="sic">نقلة مراسيم الملوك و نواسيمهم</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib54-2" type="sic">The Translators of the Canons and Laws of Kings</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib54-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib54-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib54-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib54-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib54-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib54-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Translator(s) of the Canons and Laws of Kings</addName>
                </persName>
                <bibl xml:id="bib54-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

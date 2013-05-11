@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,80 +17,47 @@
       <body>
          <listPerson>
             <person xml:id="person-577">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib577-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib577-1"
                          resp="http://syriaca.org">Josephus</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib577-2" type="sic">Flavius Josephus</persName>
-               <persName xml:lang="ar" source="bib577-3" type="sic">فلافيوس يوسيفوس</persName>
-               <persName xml:lang="syr" source="bib577-4" type="sic">ܦܠܐܦܝܘܣ ܝܘܣܝܦܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib577-4" type="sic">ܦܰܠܐܦܝܘܣ ܝܽܘܣܝܦܘܣ</persName>
-               <persName xml:lang="syr" source="bib577-5" type="sic">ܝܘܣܝܦܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib577-5" type="sic">ܝܘܿܣܝܼܦܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib577-6" type="sic">ܝܘܣܝܦܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib577-1" type="sic">Josephus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib577-1" type="split">
-                           <forename>Josephus</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib577-1" type="sic">Josephus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib577-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib577-2">Flavius Josephus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib577-3">فلافيوس يوسيفوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib577-4">ܦܠܐܦܝܘܣ ܝܘܣܝܦܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib577-4">ܦܰܠܐܦܝܘܣ ܝܽܘܣܝܦܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib577-5">ܝܘܣܝܦܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib577-5">ܝܘܿܣܝܼܦܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib577-6">ܝܘܣܝܦܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib577-1"
+                         resp="http://syriaca.org">
                   <forename>Josephus</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib577-4" type="sic">ܦܠܐܦܝܘܣ ܝܘܣܝܦܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib577-4" type="sic">ܦܰܠܐܦܝܘܣ ܝܽܘܣܝܦܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib577-3" type="sic">فلافيوس يوسيفوس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib577-2" type="sic">Flavius Josephus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib577-2">
+                  <forename>Josephus</forename>
+                  <surname>Flavius</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib577-3">
+                  <forename>يوسيفوس</forename>
+                  <surname>فلافيوس</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib577-4">
+                  <forename>ܝܘܣܝܦܘܣ</forename>
+                  <surname>ܦܠܐܦܝܘܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib577-4">
+                  <forename>ܝܽܘܣܝܦܘܣ</forename>
+                  <surname>ܦܰܠܐܦܝܘܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib577-5">
+                  <forename>ܝܘܣܝܦܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib577-5">
+                  <forename>ܝܘܿܣܝܼܦܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib577-4" type="split">
-                           <forename>ܝܘܣܝܦܘܣ</forename>
-                           <surname>ܦܠܐܦܝܘܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib577-4" type="split">
-                           <forename>ܝܽܘܣܝܦܘܣ</forename>
-                           <surname>ܦܰܠܐܦܝܘܣ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib577-3" type="split">
-                           <forename>يوسيفوس</forename>
-                           <surname>فلافيوس</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib577-2" type="split">
-                           <forename>Josephus</forename>
-                           <surname>Flavius</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܘܣܝܦܘܣ</forename>
                </persName>
                <bibl xml:id="bib577-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

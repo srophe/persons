@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,34 @@
       <body>
          <listPerson>
             <person xml:id="person-318">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib318-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib318-1"
                          resp="http://syriaca.org">Abraham bar Lipeh</persName>
-               <persName xml:lang="syr" source="bib318-5" type="sic">ܐܒܪܗܡ ܒܪ ܠܝܦܗ</persName>
-               <persName xml:lang="syr-Syrn" source="bib318-5" type="sic">ܐܲܒܪܵܗܵܡ ܒܲܪ ܠܝܼܦܹܗ</persName>
-               <persName xml:lang="syr" source="bib318-6" type="sic">ܐܒܪܗܡ ܒܪ ܠܝܦܗ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib318-1" type="sic">Abraham bar Lipeh</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib318-1" type="split">
-                           <forename>Abraham</forename>
-                           <surname>bar Lipeh</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib318-1" type="sic">Abraham bar Lipeh</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib318-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib318-5">ܐܒܪܗܡ ܒܪ ܠܝܦܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib318-5">ܐܲܒܪܵܗܵܡ ܒܲܪ ܠܝܼܦܹܗ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib318-6">ܐܒܪܗܡ ܒܪ ܠܝܦܗ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib318-1"
+                         resp="http://syriaca.org">
                   <forename>Abraham</forename>
                   <surname>bar Lipeh</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib318-5">
+                  <forename>ܐܒܪܗܡ</forename>
+                  <surname>ܒܪ ܠܝܦܗ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib318-5">
+                  <forename>ܐܲܒܪܵܗܵܡ</forename>
+                  <surname>ܒܲܪ ܠܝܼܦܹܗ</surname>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܒܪܗܡ</forename>
+                  <surname>ܒܪ ܠܝܦܗ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib318-6">
+                  <surname>ܒܪ ܠܝܦܗ</surname>
                </persName>
                <bibl xml:id="bib318-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

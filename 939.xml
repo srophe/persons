@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-939">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib939-2" type="sic">Presbyter Muqim of Mesopotamia</persName>
-               <persName xml:lang="ar" source="bib939-3" type="sic">القس مقيم في ما بين النهرين</persName>
-               <persName xml:lang="syr" source="bib939-4" type="sic">ܡܩܝܡ ܩܫܝܫܐ ܕܒܝܬ ܢܗܪ̈ܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib939-4" type="sic">ܡܩܝܡ ܩܰܫܝܫܐ ܕܒܶܝܬ ܢܰܗܪ̈ܺܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Muqim of Mesopotamia</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Muqim of Mesopotamia</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib939-2">Presbyter Muqim of Mesopotamia</persName>
+               <persName type="sic" xml:lang="ar" source="#bib939-3">القس مقيم في ما بين النهرين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib939-4">ܡܩܝܡ ܩܫܝܫܐ ܕܒܝܬ ܢܗܪ̈ܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib939-4">ܡܩܝܡ ܩܰܫܝܫܐ ܕܒܶܝܬ ܢܰܗܪ̈ܺܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Muqim of Mesopotamia</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib939-2">
+                  <forename>Muqim</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Muqim</forename>
-                           <addName type="untagged-title">of Mesopotamia</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib939-3">
+                  <forename>مقيم</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib939-4" type="sic">ܡܩܝܡ ܩܫܝܫܐ ܕܒܝܬ ܢܗܪ̈ܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib939-4" type="sic">ܡܩܝܡ ܩܰܫܝܫܐ ܕܒܶܝܬ ܢܰܗܪ̈ܺܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib939-3" type="sic">القس مقيم في ما بين النهرين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib939-2" type="sic">Presbyter Muqim of Mesopotamia</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib939-4">
+                  <forename>ܡܩܝܡ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib939-4" type="split">
-                           <forename>ܡܩܝܡ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܕܒܝܬ ܢܗܪ̈ܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib939-4" type="split">
-                           <forename>ܡܩܝܡ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܐ ܕܒܶܝܬ ܢܰܗܪ̈ܺܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib939-3" type="split">
-                           <forename>مقيم</forename>
-                           <addName type="untagged-title">القس, في ما بين النهرين</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib939-2" type="split">
-                           <forename>Muqim</forename>
-                           <addName type="untagged-title">Presbyter, of Mesopotamia</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib939-4">
+                  <forename>ܡܩܝܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Muqim</forename>
                </persName>
                <bibl xml:id="bib939-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

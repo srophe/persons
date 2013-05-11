@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-537">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib537-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib537-1"
                          resp="http://syriaca.org">Hippolytus of Rome</persName>
-               <persName xml:lang="ar" source="bib537-3" type="sic">هيبوليطس الروماني</persName>
-               <persName xml:lang="syr" source="bib537-4" type="sic">ܐܝܦܘܠܝܛܘܣ ܕܪܘܡܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib537-4" type="sic">ܐܺܝܦܽܘܠܺܝܛܳܘܣ ܕܪܽܘܡܺܝ</persName>
-               <persName xml:lang="syr" source="bib537-5" type="sic">ܡܪܝ ܐܝܦܘܠܝܛܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib537-5" type="sic">ܡܵܪܝ ܐܝܼܦܘܿܠܝܼܛܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib537-6" type="sic">ܡܪܝ ܐܝܦܘܠܝܛܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib537-6" type="sic">ܡܳܪܝ ܐܝܺܦܘܽܠܺܝܛܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
-                           <forename>Hippolytus</forename>
-                           <addName type="untagged-title">of Rome</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="sic">Hippolytus of Rome</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib537-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib537-3">هيبوليطس الروماني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib537-4">ܐܝܦܘܠܝܛܘܣ ܕܪܘܡܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib537-4">ܐܺܝܦܽܘܠܺܝܛܳܘܣ ܕܪܽܘܡܺܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib537-5">ܡܪܝ ܐܝܦܘܠܝܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib537-5">ܡܵܪܝ ܐܝܼܦܘܿܠܝܼܛܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib537-6">ܡܪܝ ܐܝܦܘܠܝܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib537-6">ܡܳܪܝ ܐܝܺܦܘܽܠܺܝܛܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib537-1"
+                         resp="http://syriaca.org">
                   <forename>Hippolytus</forename>
-                  <addName type="untagged-title">of Rome</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib537-4" type="sic">ܐܝܦܘܠܝܛܘܣ ܕܪܘܡܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib537-4" type="sic">ܐܺܝܦܽܘܠܺܝܛܳܘܣ ܕܪܽܘܡܺܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib537-3" type="sic">هيبوليطس الروماني</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib537-3">
+                  <forename>هيبوليطس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib537-4">
+                  <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib537-4">
+                  <forename>ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib537-5">
+                  <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib537-5">
+                  <forename>ܐܝܼܦܘܿܠܝܼܛܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib537-4" type="split">
-                           <forename>ܐܝܦܘܠܝܛܘܣ</forename>
-                           <addName type="untagged-title">ܕܪܘܡܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib537-4" type="split">
-                           <forename>ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename>
-                           <addName type="untagged-title">ܕܪܽܘܡܺܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib537-3" type="split">
-                           <forename>هيبوليطس</forename>
-                           <addName type="untagged-title">الروماني</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib537-6">
+                  <addName type="untagged-title">ܡܪܝ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib537-6">
+                  <forename>ܐܝܺܦܘܽܠܺܝܛܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib537-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,81 +17,44 @@
       <body>
          <listPerson>
             <person xml:id="person-474">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib474-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib474-1"
                          resp="http://syriaca.org">ʿEnanishoʿ</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib474-2" type="sic">Hannan Yeshuʿ the Chaldean monk of Beth ʿAbi</persName>
-               <persName xml:lang="ar" source="bib474-3" type="sic">حنانيشوع الكلداني راهب دير بيث عابي</persName>
-               <persName xml:lang="syr" source="bib474-4" type="sic">ܚܢܢܝܫܘܥ ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib474-4" type="sic">ܚܰܢܢܝܶܫܘܥ ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</persName>
-               <persName xml:lang="syr" source="bib474-5" type="sic">ܥܢܢܝܫܘܥ</persName>
-               <persName xml:lang="syr-Syrn" source="bib474-5" type="sic">ܥܢܵܢܝܼܫܘܿܥ</persName>
-               <persName xml:lang="syr" source="bib474-6" type="sic">ܥܢܢܝܫܘܥ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib474-1" type="sic">ʿEnanishoʿ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib474-1" type="split">
-                           <forename>ʿEnanishoʿ</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib474-1" type="sic">ʿEnanishoʿ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib474-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib474-2">Hannan Yeshuʿ the Chaldean monk of Beth ʿAbi</persName>
+               <persName type="sic" xml:lang="ar" source="#bib474-3">حنانيشوع الكلداني راهب دير بيث عابي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib474-4">ܚܢܢܝܫܘܥ ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib474-4">ܚܰܢܢܝܶܫܘܥ ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib474-5">ܥܢܢܝܫܘܥ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib474-5">ܥܢܵܢܝܼܫܘܿܥ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib474-6">ܥܢܢܝܫܘܥ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib474-1"
+                         resp="http://syriaca.org">
                   <forename>ʿEnanishoʿ</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib474-4" type="sic">ܚܢܢܝܫܘܥ ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib474-4" type="sic">ܚܰܢܢܝܶܫܘܥ ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib474-3" type="sic">حنانيشوع الكلداني راهب دير بيث عابي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib474-2" type="sic">Hannan Yeshuʿ the Chaldean monk of Beth ʿAbi</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib474-2">
+                  <forename>Hannan Yeshuʿ</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib474-3">
+                  <forename>حنانيشوع</forename>
+                  <surname>الكلداني راهب دير بيث عابي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib474-4">
+                  <forename>ܚܢܢܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib474-4">
+                  <forename>ܚܰܢܢܝܶܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib474-5">
+                  <forename>ܥܢܢܝܫܘܥ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib474-5">
+                  <forename>ܥܢܵܢܝܼܫܘܿܥ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib474-4" type="split">
-                           <forename>ܚܢܢܝܫܘܥ</forename>
-                           <addName type="untagged-title">ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib474-4" type="split">
-                           <forename>ܚܰܢܢܝܶܫܘܥ</forename>
-                           <addName type="untagged-title">ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib474-3" type="split">
-                           <forename>حنانيشوع</forename>
-                           <surname>الكلداني راهب دير بيث عابي</surname>
-                           <addName type="untagged-title">الكلداني راهب دير بيث عابي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib474-2" type="split">
-                           <forename>Hannan Yeshuʿ</forename>
-                           <addName type="untagged-title">the Chaldean monk of Beth ʿAbi</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܥܢܢܝܫܘܥ</forename>
                </persName>
                <bibl xml:id="bib474-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

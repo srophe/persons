@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-101">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib101-2" type="sic">Jonah, bishop of Tell Mawzalt</persName>
-               <persName xml:lang="ar" source="bib101-3" type="sic">يونان اسقف تلّ موزلت</persName>
-               <persName xml:lang="syr" source="bib101-4" type="sic">ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</persName>
-               <persName xml:lang="syr-Syrj" source="bib101-4" type="sic">ܝܘܚܰܢܢ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yawnan of Tella</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yawnan of Tella</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib101-2">Jonah, bishop of Tell Mawzalt</persName>
+               <persName type="sic" xml:lang="ar" source="#bib101-3">يونان اسقف تلّ موزلت</persName>
+               <persName type="sic" xml:lang="syr" source="#bib101-4">ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib101-4">ܝܘܚܰܢܢ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yawnan of Tella</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib101-2">
+                  <forename>Jonah</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yawnan</forename>
-                           <addName type="untagged-title">of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib101-3">
+                  <forename>يونان</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib101-4" type="sic">ܝܘܚܢܢ ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib101-4" type="sic">ܝܘܚܰܢܢ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib101-3" type="sic">يونان اسقف تلّ موزلت</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib101-2" type="sic">Jonah, bishop of Tell Mawzalt</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib101-4">
+                  <forename>ܝܘܚܢܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib101-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib101-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib101-3" type="split">
-                           <forename>يونان</forename>
-                           <addName type="untagged-title">اسقف تلّ موزلت</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib101-2" type="split">
-                           <forename>Jonah</forename>
-                           <addName type="untagged-title">Bishop of Tell Mawzalt</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib101-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yawnan</forename>
                </persName>
                <bibl xml:id="bib101-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

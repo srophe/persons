@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-50">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib50-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib50-1"
                          resp="http://syriaca.org">Yuḥanon of Tella</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib50-2" type="sic">St. John of Tella</persName>
-               <persName xml:lang="ar" source="bib50-3" type="sic"> مار يوحنا التلي</persName>
-               <persName xml:lang="syr" source="bib50-4" type="sic">ܡܪܝ ܝܘܚܢܢ ܕܬܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib50-4" type="sic">ܡܳܪܝ ܝܘܚܰܢܢ ܕܬܶܠܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib50-1" type="sic">Yuḥanon of Tella</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib50-1" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib50-1" type="sic">Yuḥanon of Tella</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib50-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib50-2">St. John of Tella</persName>
+               <persName type="sic" xml:lang="ar" source="#bib50-3"> مار يوحنا التلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib50-4">ܡܪܝ ܝܘܚܢܢ ܕܬܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib50-4">ܡܳܪܝ ܝܘܚܰܢܢ ܕܬܶܠܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib50-1"
+                         resp="http://syriaca.org">
                   <forename>Yuḥanon</forename>
-                  <addName type="untagged-title">of Tella</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib50-4" type="sic">ܡܪܝ ܝܘܚܢܢ ܕܬܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib50-4" type="sic">ܡܳܪܝ ܝܘܚܰܢܢ ܕܬܶܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib50-3" type="sic"> مار يوحنا التلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib50-2" type="sic">St. John of Tella</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib50-2">
+                  <forename>John</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib50-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܕܬܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib50-4" type="split">
-                           <forename>ܝܘܚܰܢܢ ܕܬܶܠܐ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܕܬܶܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib50-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">مار , التلي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib50-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">of Tella</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib50-3">
+                  <forename>يوحنا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib50-4">
+                  <forename>ܝܘܚܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib50-4">
+                  <forename>ܝܘܚܰܢܢ ܕܬܶܠܐ</forename>
                </persName>
                <bibl xml:id="bib50-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

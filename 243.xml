@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-243">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib243-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib243-1"
                          resp="http://syriaca.org">Diosqoros of Gozarto</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib243-2" type="sic">Metropolitan Gabriel of Barṭelli</persName>
-               <persName xml:lang="ar" source="bib243-3" type="sic">المطران جبرائيل البرطلي</persName>
-               <persName xml:lang="syr" source="bib243-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܓܒܪܐܝܠ ܒܪܛܠܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib243-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܓܰܒܪܳܐܝܠ ܒܰܪܛܶܠܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib243-1" type="sic">Diosqoros of Gozarto</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib243-1" type="split">
-                           <forename>Diosqoros</forename>
-                           <addName type="untagged-title">of Gozarto</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib243-1" type="sic">Diosqoros of Gozarto</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib243-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib243-2">Metropolitan Gabriel of Barṭelli</persName>
+               <persName type="sic" xml:lang="ar" source="#bib243-3">المطران جبرائيل البرطلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ ܓܒܪܐܝܠ ܒܪܛܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ ܓܰܒܪܳܐܝܠ ܒܰܪܛܶܠܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib243-1"
+                         resp="http://syriaca.org">
                   <forename>Diosqoros</forename>
-                  <addName type="untagged-title">of Gozarto</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib243-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܓܒܪܐܝܠ ܒܪܛܠܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib243-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܓܰܒܪܳܐܝܠ ܒܰܪܛܶܠܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib243-3" type="sic">المطران جبرائيل البرطلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib243-2" type="sic">Metropolitan Gabriel of Barṭelli</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib243-2">
+                  <forename>Gabriel</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib243-4" type="split">
-                           <forename>ܓܒܪܐܝܠ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܒܪܛܠܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib243-4" type="split">
-                           <forename>ܓܰܒܪܳܐܝܠ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܒܰܪܛܶܠܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib243-3" type="split">
-                           <forename>جبرائيل</forename>
-                           <addName type="untagged-title">المطران , البرطلي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib243-2" type="split">
-                           <forename>Gabriel</forename>
-                           <addName type="untagged-title">Metropolitan of Barṭelli</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib243-3">
+                  <forename>جبرائيل</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib243-4">
+                  <forename>ܓܒܪܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib243-4">
+                  <forename>ܓܰܒܪܳܐܝܠ</forename>
                </persName>
                <bibl xml:id="bib243-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

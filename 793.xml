@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,29 +17,14 @@
       <body>
          <listPerson>
             <person xml:id="person-793">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib793-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib793-1"
                          resp="http://syriaca.org">Timotheus, Abimalek</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib793-1" type="sic">Timotheus, Abimalek</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib793-1" type="split">
-                           <forename>Abimalek</forename>
-                           <surname>Timotheus</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib793-1" type="sic">Timotheus, Abimalek</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib793-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib793-1"
+                         resp="http://syriaca.org">
                   <forename>Abimalek</forename>
                   <surname>Timotheus</surname>
                </persName>

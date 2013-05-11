@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,54 @@
       <body>
          <listPerson>
             <person xml:id="person-563">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib563-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib563-1"
                          resp="http://syriaca.org">Ishoʿyahb bar Malkon</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib563-2" type="sic">Yeshuʿyahb Bar Malkun</persName>
-               <persName xml:lang="ar" source="bib563-3" type="sic">يشوعياب بن ملكون</persName>
-               <persName xml:lang="syr" source="bib563-4" type="sic">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib563-4" type="sic">ܝܶܫܘܥܝܰܗܒ ܒܰܪ ܡܰܠܟܘܢ</persName>
-               <persName xml:lang="syr" source="bib563-5" type="sic">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
-               <persName xml:lang="syr-Syrn" source="bib563-5" type="sic">ܝܑܼܫܘܿܥܝܲܗܒ ܒܲܪ ܡܲܠܟܘܿܢ</persName>
-               <persName xml:lang="syr" source="bib563-6" type="sic">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib563-1" type="sic">Ishoʿyahb bar Malkon</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib563-1" type="split">
-                           <forename>Ishoʿyahb</forename>
-                           <surname>bar Malkon</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib563-1" type="sic">Ishoʿyahb bar Malkon</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib563-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib563-2">Yeshuʿyahb Bar Malkun</persName>
+               <persName type="sic" xml:lang="ar" source="#bib563-3">يشوعياب بن ملكون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib563-4">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib563-4">ܝܶܫܘܥܝܰܗܒ ܒܰܪ ܡܰܠܟܘܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib563-5">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib563-5">ܝܑܼܫܘܿܥܝܲܗܒ ܒܲܪ ܡܲܠܟܘܿܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib563-6">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib563-1"
+                         resp="http://syriaca.org">
                   <forename>Ishoʿyahb</forename>
                   <surname>bar Malkon</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib563-4" type="sic">ܝܫܘܥܝܗܒ ܒܪ ܡܠܟܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib563-4" type="sic">ܝܶܫܘܥܝܰܗܒ ܒܰܪ ܡܰܠܟܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib563-3" type="sic">يشوعياب بن ملكون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib563-2" type="sic">Yeshuʿyahb Bar Malkun</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib563-2">
+                  <forename>Yeshuʿyahb</forename>
+                  <surname>Bar Malkun</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib563-3">
+                  <forename>يشوعياب</forename>
+                  <surname>ابن ملكون</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib563-4">
+                  <forename>ܝܫܘܥܝܗܒ</forename>
+                  <surname>ܒܪ ܡܠܟܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib563-4">
+                  <forename>ܝܶܫܘܥܝܰܗܒ</forename>
+                  <surname>ܒܰܪ ܡܰܠܟܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib563-5">
+                  <forename>ܝܫܘܥܝܗܒ</forename>
+                  <surname>ܒܪ ܡܠܟܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib563-5">
+                  <forename>ܝܑܼܫܘܿܥܝܲܗܒ</forename>
+                  <surname>ܒܲܪ ܡܲܠܟܘܿܢ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib563-4" type="split">
-                           <forename>ܝܫܘܥܝܗܒ</forename>
-                           <surname>ܒܪ ܡܠܟܘܢ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib563-4" type="split">
-                           <forename>ܝܶܫܘܥܝܰܗܒ</forename>
-                           <surname>ܒܰܪ ܡܰܠܟܘܢ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib563-3" type="split">
-                           <forename>يشوعياب</forename>
-                           <surname>ابن ملكون</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib563-2" type="split">
-                           <forename>Yeshuʿyahb</forename>
-                           <surname>Bar Malkun</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܫܘܥܝܗܒ</forename>
+                  <surname>ܒܪ ܡܠܟܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib563-6">
+                  <surname>ܒܪ ܡܠܟܘܢ</surname>
                </persName>
                <bibl xml:id="bib563-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

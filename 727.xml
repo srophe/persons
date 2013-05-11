@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-727">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib727-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib727-1"
                          resp="http://syriaca.org">Secundus</persName>
-               <persName xml:lang="ar" source="bib727-3" type="sic">سكوندس</persName>
-               <persName xml:lang="syr" source="bib727-4" type="sic">ܣܩܘܢܕܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib727-4" type="sic">ܣܰܩܘܽܢܕܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib727-1" type="sic">Secundus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib727-1" type="split">
-                           <forename>Secundus</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib727-1" type="sic">Secundus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib727-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib727-3">سكوندس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib727-4">ܣܩܘܢܕܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib727-4">ܣܰܩܘܽܢܕܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib727-1"
+                         resp="http://syriaca.org">
                   <forename>Secundus</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib727-4" type="sic">ܣܩܘܢܕܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib727-4" type="sic">ܣܰܩܘܽܢܕܳܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib727-3" type="sic">سكوندس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib727-3">
+                  <forename>سكوندس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib727-4" type="split">
-                           <forename>ܣܩܘܢܕܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib727-4" type="split">
-                           <forename>ܣܰܩܘܽܢܕܳܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib727-3" type="split">
-                           <forename>سكوندس</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib727-4">
+                  <forename>ܣܩܘܢܕܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib727-4">
+                  <forename>ܣܰܩܘܽܢܕܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib727-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

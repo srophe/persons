@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,29 +17,14 @@
       <body>
          <listPerson>
             <person xml:id="person-466">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib466-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib466-1"
                          resp="http://syriaca.org">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
-                           <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
-                           <surname>Elias</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="sic">Elias, Ghaṭṭās (Danḥo) Maqdisi</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib466-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib466-1"
+                         resp="http://syriaca.org">
                   <forename>Ghaṭṭās (Danḥo) Maqdisi</forename>
                   <surname>Elias</surname>
                </persName>

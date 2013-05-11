@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,32 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-530">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib530-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib530-1"
                          resp="http://syriaca.org">Ḥenana</persName>
-               <persName xml:lang="syr" source="bib530-5" type="sic">ܚܢܢܐ ܚܕܝܒܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib530-5" type="sic">ܚܢܵܢܵܐ ܚܕܲܝܵܒܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib530-6" type="sic">ܚܢܢܐ ܚܕܝܒܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib530-1" type="sic">Ḥenana</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib530-1" type="split">
-                           <forename>Ḥenana</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib530-1" type="sic">Ḥenana</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib530-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib530-5">ܚܢܢܐ ܚܕܝܒܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib530-5">ܚܢܵܢܵܐ ܚܕܲܝܵܒܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib530-6">ܚܢܢܐ ܚܕܝܒܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib530-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥenana</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib530-5">
+                  <forename>ܚܢܢܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib530-5">
+                  <forename>ܚܢܵܢܵܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܚܢܢܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib530-6">
+                  <addName type="untagged-title">ܚܕܝܒܝܐ</addName>
                </persName>
                <bibl xml:id="bib530-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-107">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib107-2" type="sic">Rabban Aaron the Persian</persName>
-               <persName xml:lang="ar" source="bib107-3" type="sic">الربان هارون الفارسي</persName>
-               <persName xml:lang="syr" source="bib107-4" type="sic">ܪܒܢ ܐܗܪܘܢ ܦܪܣܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib107-4" type="sic">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ahrun the Persian</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ahrun the Persian</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib107-2">Rabban Aaron the Persian</persName>
+               <persName type="sic" xml:lang="ar" source="#bib107-3">الربان هارون الفارسي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib107-4">ܪܒܢ ܐܗܪܘܢ ܦܪܣܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib107-4">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ahrun the Persian</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib107-2">
+                  <forename>Aaron</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ahrun</forename>
-                           <addName type="untagged-title">the Persian</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib107-3">
+                  <forename>هارون</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib107-4" type="sic">ܪܒܢ ܐܗܪܘܢ ܦܪܣܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib107-4" type="sic">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib107-3" type="sic">الربان هارون الفارسي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib107-2" type="sic">Rabban Aaron the Persian</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib107-4">
+                  <forename>ܐܘܪܗܝܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib107-4" type="split">
-                           <forename>ܐܘܪܗܝܐ</forename>
-                           <addName type="untagged-title">ܪܒܢ ܦܪܣܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib107-4" type="split">
-                           <forename>ܐܘܪܗܳܝܳܐ</forename>
-                           <addName type="untagged-title">ܪܰܒܰܢ ܦܳܪܣܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib107-3" type="split">
-                           <forename>هارون</forename>
-                           <addName type="untagged-title">الربان , الفارسي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib107-2" type="split">
-                           <forename>Aaron</forename>
-                           <addName type="untagged-title">Rabban, the Persian</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib107-4">
+                  <forename>ܐܘܪܗܳܝܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ahrun</forename>
                </persName>
                <bibl xml:id="bib107-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-135">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib135-2" type="sic">Quryaqos, metropolitan of Tur ‛Abdin</persName>
-               <persName xml:lang="ar" source="bib135-3" type="sic">قرياقس مطران طور عبدين</persName>
-               <persName xml:lang="syr" source="bib135-4" type="sic">ܩܘܪܝܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib135-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܺܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Quryaqos of Segestan</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Quryaqos of Segestan</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib135-2">Quryaqos, metropolitan of Tur ‛Abdin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib135-3">قرياقس مطران طور عبدين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib135-4">ܩܘܪܝܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib135-4">ܩܘܪܝܰܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܺܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Quryaqos of Segestan</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib135-2">
+                  <forename>Quryaqos</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Quryaqos</forename>
-                           <addName type="untagged-title">of Segestan</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib135-3">
+                  <forename>قرياقس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib135-4" type="sic">ܩܘܪܝܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib135-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܺܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib135-3" type="sic">قرياقس مطران طور عبدين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib135-2" type="sic">Quryaqos, metropolitan of Tur ‛Abdin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib135-4">
+                  <forename>ܩܘܪܝܐܩܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib135-4" type="split">
-                           <forename>ܩܘܪܝܐܩܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib135-4" type="split">
-                           <forename>ܩܘܪܝܰܐܩܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܺܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib135-3" type="split">
-                           <forename>قرياقس</forename>
-                           <addName type="untagged-title">مطران طور عبدين</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib135-2" type="split">
-                           <forename>Quryaqos</forename>
-                           <addName type="untagged-title">metropolitan of Tur ‛Abdin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib135-4">
+                  <forename>ܩܘܪܝܰܐܩܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Quryaqos</forename>
                </persName>
                <bibl xml:id="bib135-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

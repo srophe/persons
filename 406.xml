@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-406">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib406-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib406-1"
                          resp="http://syriaca.org">Cardahi, Gabriel</persName>
-               <persName xml:lang="ar" source="bib406-3" type="sic">جبرائيل قرادحي</persName>
-               <persName xml:lang="syr" source="bib406-4" type="sic">ܓܒܪܐܝܠ ܩܪܕܚܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib406-4" type="sic">ܓܰܒܪܐܝܠ ܩܰܪܕܚܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib406-1" type="sic">Cardahi, Gabriel</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib406-1" type="split">
-                           <forename>Gabriel</forename>
-                           <surname>Cardahi</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib406-1" type="sic">Cardahi, Gabriel</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib406-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib406-3">جبرائيل قرادحي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib406-4">ܓܒܪܐܝܠ ܩܪܕܚܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib406-4">ܓܰܒܪܐܝܠ ܩܰܪܕܚܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib406-1"
+                         resp="http://syriaca.org">
                   <forename>Gabriel</forename>
                   <surname>Cardahi</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib406-4" type="sic">ܓܒܪܐܝܠ ܩܪܕܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib406-4" type="sic">ܓܰܒܪܐܝܠ ܩܰܪܕܚܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib406-3" type="sic">جبرائيل قرادحي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib406-3">
+                  <forename>جبرائيل</forename>
+                  <surname>قرادحي</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib406-4" type="split">
-                           <forename>ܓܒܪܐܝܠ</forename>
-                           <surname>ܩܪܕܚܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib406-4" type="split">
-                           <forename>ܓܰܒܪܐܝܠ</forename>
-                           <surname>ܩܰܪܕܚܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib406-3" type="split">
-                           <forename>جبرائيل</forename>
-                           <surname>قرادحي</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib406-4">
+                  <forename>ܓܒܪܐܝܠ</forename>
+                  <surname>ܩܪܕܚܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib406-4">
+                  <forename>ܓܰܒܪܐܝܠ</forename>
+                  <surname>ܩܰܪܕܚܐ</surname>
                </persName>
                <bibl xml:id="bib406-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,61 +17,37 @@
       <body>
          <listPerson>
             <person xml:id="person-857">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib857-2" type="sic">Hieronymus</persName>
-               <persName xml:lang="ar" source="bib857-3" type="sic">هيرونيمس</persName>
-               <persName xml:lang="syr" source="bib857-4" type="sic">ܗܝܪܘܢܝܡܘܣ</persName>
-               <persName xml:lang="syr" source="bib857-5" type="sic">ܐܝܪܢܘܡܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib857-5" type="sic">ܐܝܼܪܹܢܘܿܡܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib857-6" type="sic">ܐܝܪܘܢܝܡܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib857-6" type="sic">ܐܺܝܪܘܽܢܝܺܡܳܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Jerome</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Jerome</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib857-2">Hieronymus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib857-3">هيرونيمس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib857-4">ܗܝܪܘܢܝܡܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib857-5">ܐܝܪܢܘܡܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib857-5">ܐܝܼܪܹܢܘܿܡܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib857-6">ܐܝܪܘܢܝܡܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib857-6">ܐܺܝܪܘܽܢܝܺܡܳܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Jerome</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib857-2">
+                  <forename>Hieronymus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Jerome</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib857-3">
+                  <forename>هيرونيمس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib857-4" type="sic">ܗܝܪܘܢܝܡܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib857-3" type="sic">هيرونيمس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib857-2" type="sic">Hieronymus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib857-4">
+                  <forename>ܗܝܪܘܢܝܡܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib857-5">
+                  <forename>ܐܝܪܢܘܡܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib857-5">
+                  <forename>ܐܝܼܪܹܢܘܿܡܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib857-4" type="split">
-                           <forename>ܗܝܪܘܢܝܡܘܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib857-3" type="split">
-                           <forename>هيرونيمس</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib857-2" type="split">
-                           <forename>Hieronymus</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܝܪܘܢܝܡܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib857-6">
+                  <forename>ܐܺܝܪܘܽܢܝܺܡܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Jerome</forename>
                </persName>
                <bibl xml:id="bib857-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

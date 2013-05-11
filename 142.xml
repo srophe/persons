@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-142">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib142-2" type="sic">Theodorus Bar Zarūdī</persName>
-               <persName xml:lang="ar" source="bib142-3" type="sic">ثاودورس ابن زرودي</persName>
-               <persName xml:lang="syr" source="bib142-4" type="sic">ܬܐܘܕܘܪܘܣ ܒܪ ܙܪܘܕܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib142-4" type="sic">ܬܶܐܘܕܘܪܘܣ ܒܰܪ ܙܪܘܕܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Theodoros bar Zarudi</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Theodoros bar Zarudi</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib142-2">Theodorus Bar Zarūdī</persName>
+               <persName type="sic" xml:lang="ar" source="#bib142-3">ثاودورس ابن زرودي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib142-4">ܬܐܘܕܘܪܘܣ ܒܪ ܙܪܘܕܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib142-4">ܬܶܐܘܕܘܪܘܣ ܒܰܪ ܙܪܘܕܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Theodoros bar Zarudi</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib142-2">
+                  <forename>Theodorus</forename>
+                  <surname>Bar Zarūdī</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Theodoros</forename>
-                           <surname>bar Zarudi</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib142-3">
+                  <forename>ثاودورس</forename>
+                  <surname>ابن زرودي</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib142-4" type="sic">ܬܐܘܕܘܪܘܣ ܒܪ ܙܪܘܕܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib142-4" type="sic">ܬܶܐܘܕܘܪܘܣ ܒܰܪ ܙܪܘܕܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib142-3" type="sic">ثاودورس ابن زرودي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib142-2" type="sic">Theodorus Bar Zarūdī</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib142-4">
+                  <forename>ܬܐܘܕܘܪܘܣ</forename>
+                  <surname>ܒܪ ܙܪܘܕܝ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib142-4" type="split">
-                           <forename>ܬܐܘܕܘܪܘܣ</forename>
-                           <surname>ܒܪ ܙܪܘܕܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib142-4" type="split">
-                           <forename>ܬܶܐܘܕܘܪܘܣ</forename>
-                           <surname>ܒܰܪ ܙܪܘܕܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib142-3" type="split">
-                           <forename>ثاودورس</forename>
-                           <surname>ابن زرودي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib142-2" type="split">
-                           <forename>Theodorus</forename>
-                           <surname>Bar Zarūdī</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib142-4">
+                  <forename>ܬܶܐܘܕܘܪܘܣ</forename>
+                  <surname>ܒܰܪ ܙܪܘܕܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Theodoros</forename>
+                  <surname>bar Zarudi</surname>
                </persName>
                <bibl xml:id="bib142-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

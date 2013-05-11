@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-257">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib257-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib257-1"
                          resp="http://syriaca.org">Abrohom II Gharīb</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib257-2" type="sic">Patriarch Abraham bar Gharīb</persName>
-               <persName xml:lang="ar" source="bib257-3" type="sic">البطريرك برهيم ابن غريب</persName>
-               <persName xml:lang="syr" source="bib257-4" type="sic">ܦܛܪܝܪܟܐ ܐܒܪܗܡ ܒܪ ܓܪܝܒ</persName>
-               <persName xml:lang="syr-Syrj" source="bib257-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܐܰܒܪܗܡ ܒܰܪ ܓܰܪܝܒ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib257-1" type="sic">Abrohom II Gharīb</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib257-1" type="split">
-                           <forename>Abrohom</forename>
-                           <addName type="untagged-title">II Gharīb</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib257-1" type="sic">Abrohom II Gharīb</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib257-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib257-2">Patriarch Abraham bar Gharīb</persName>
+               <persName type="sic" xml:lang="ar" source="#bib257-3">البطريرك برهيم ابن غريب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib257-4">ܦܛܪܝܪܟܐ ܐܒܪܗܡ ܒܪ ܓܪܝܒ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib257-4">ܦܰܛܪܝܰܪܟܐ ܐܰܒܪܗܡ ܒܰܪ ܓܰܪܝܒ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib257-1"
+                         resp="http://syriaca.org">
                   <forename>Abrohom</forename>
-                  <addName type="untagged-title">II Gharīb</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib257-4" type="sic">ܦܛܪܝܪܟܐ ܐܒܪܗܡ ܒܪ ܓܪܝܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib257-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܐܰܒܪܗܡ ܒܰܪ ܓܰܪܝܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib257-3" type="sic">البطريرك برهيم ابن غريب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib257-2" type="sic">Patriarch Abraham bar Gharīb</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib257-2">
+                  <forename>Abraham</forename>
+                  <surname>bar Gharīb</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib257-4" type="split">
-                           <forename>ܐܒܪܗܡ</forename>
-                           <surname>ܒܪ ܓܪܝܒ</surname>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib257-4" type="split">
-                           <forename>ܐܰܒܪܗܡ</forename>
-                           <surname>ܒܰܪ ܓܰܪܝܒ</surname>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib257-3" type="split">
-                           <forename>برهيم</forename>
-                           <surname>ابن غريب</surname>
-                           <addName type="untagged-title">البطريرك</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib257-2" type="split">
-                           <forename>Abraham</forename>
-                           <surname>bar Gharīb</surname>
-                           <addName type="untagged-title">Patriarch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib257-3">
+                  <forename>برهيم</forename>
+                  <surname>ابن غريب</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib257-4">
+                  <forename>ܐܒܪܗܡ</forename>
+                  <surname>ܒܪ ܓܪܝܒ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib257-4">
+                  <forename>ܐܰܒܪܗܡ</forename>
+                  <surname>ܒܰܪ ܓܰܪܝܒ</surname>
                </persName>
                <bibl xml:id="bib257-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

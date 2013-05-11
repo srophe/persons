@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,33 +17,34 @@
       <body>
          <listPerson>
             <person xml:id="person-746">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib746-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib746-1"
                          resp="http://syriaca.org">Shubḥalmaran</persName>
-               <persName xml:lang="syr" source="bib746-5" type="sic">ܡܪܝ ܫܘܒܚܠܡܪܢ ܕܣܠܘܟ</persName>
-               <persName xml:lang="syr-Syrn" source="bib746-5" type="sic">ܡܵܪܝ ܫܘܼܒܚܵܠܡܵܪܲܢ ܕܲܣܠܘܿܟ</persName>
-               <persName xml:lang="syr" source="bib746-6" type="sic">ܡܪܝ ܫܘܒܚܐܠܡܪܢ ܕܣܠܘܟ</persName>
-               <persName xml:lang="syr-Syrj" source="bib746-6" type="sic">ܡܳܪܝ ܫܽܘܒܚܳܐܠܡܳܪܰܢ ܕܰܣܠܽܘܟ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib746-1" type="sic">Shubḥalmaran</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib746-1" type="split">
-                           <forename>Shubḥalmaran</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib746-1" type="sic">Shubḥalmaran</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib746-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib746-5">ܡܪܝ ܫܘܒܚܠܡܪܢ ܕܣܠܘܟ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib746-5">ܡܵܪܝ ܫܘܼܒܚܵܠܡܵܪܲܢ ܕܲܣܠܘܿܟ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib746-6">ܡܪܝ ܫܘܒܚܐܠܡܪܢ ܕܣܠܘܟ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib746-6">ܡܳܪܝ ܫܽܘܒܚܳܐܠܡܳܪܰܢ ܕܰܣܠܽܘܟ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib746-1"
+                         resp="http://syriaca.org">
                   <forename>Shubḥalmaran</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib746-5">
+                  <forename>ܫܘܒܚܠܡܪܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib746-5">
+                  <forename>ܫܘܼܒܚܵܠܡܵܪܲܢ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܫܘܒܚܐܠܡܪܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib746-6">
+                  <addName type="untagged-title">ܡܪܝ, ܕܣܠܘܟ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib746-6">
+                  <forename>ܫܽܘܒܚܳܐܠܡܳܪܰܢ</forename>
                </persName>
                <bibl xml:id="bib746-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

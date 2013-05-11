@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-49">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib49-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib49-1"
                          resp="http://syriaca.org">Sergios of Reshʿayna</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib49-2" type="sic">Sergius of Rish ‛Ayna</persName>
-               <persName xml:lang="ar" source="bib49-3" type="sic">سرجيس الراسعني</persName>
-               <persName xml:lang="syr" source="bib49-4" type="sic">ܣܪܓܝܣ ܪܝܫܥܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib49-4" type="sic">ܣܰܪܓܝܣ ܪܺܝܫܥܰܝܢܳܝܐ</persName>
-               <persName xml:lang="syr" source="bib49-5" type="sic">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib49-5" type="sic">ܣܲܪܓܝܼܣ ܪܹܫܥܲܝܢܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib49-6" type="sic">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib49-1" type="sic">Sergios of Reshʿayna</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib49-1" type="split">
-                           <forename>Sergios</forename>
-                           <addName type="untagged-title">of Reshʿayna</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib49-1" type="sic">Sergios of Reshʿayna</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib49-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib49-2">Sergius of Rish ‛Ayna</persName>
+               <persName type="sic" xml:lang="ar" source="#bib49-3">سرجيس الراسعني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib49-4">ܣܪܓܝܣ ܪܝܫܥܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib49-4">ܣܰܪܓܝܣ ܪܺܝܫܥܰܝܢܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib49-5">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib49-5">ܣܲܪܓܝܼܣ ܪܹܫܥܲܝܢܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib49-6">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib49-1"
+                         resp="http://syriaca.org">
                   <forename>Sergios</forename>
-                  <addName type="untagged-title">of Reshʿayna</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib49-4" type="sic">ܣܪܓܝܣ ܪܝܫܥܝܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib49-4" type="sic">ܣܰܪܓܝܣ ܪܺܝܫܥܰܝܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib49-3" type="sic">سرجيس الراسعني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib49-2" type="sic">Sergius of Rish ‛Ayna</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib49-2">
+                  <forename>Sergius</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib49-3">
+                  <forename>سرجيس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib49-4">
+                  <forename>ܣܪܓܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib49-4">
+                  <forename>ܣܰܪܓܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib49-5">
+                  <forename>ܣܪܓܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib49-5">
+                  <forename>ܣܲܪܓܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib49-4" type="split">
-                           <forename>ܣܪܓܝܣ</forename>
-                           <addName type="untagged-title">ܪܝܫܥܝܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib49-4" type="split">
-                           <forename>ܣܰܪܓܝܣ</forename>
-                           <addName type="untagged-title">ܪܺܝܫܥܰܝܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib49-3" type="split">
-                           <forename>سرجيس</forename>
-                           <addName type="untagged-title">الراسعني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib49-2" type="split">
-                           <forename>Sergius</forename>
-                           <addName type="untagged-title">of Rish ‛Ayna</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܣܪܓܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib49-6">
+                  <addName type="untagged-title">ܪܫܥܝܢܝܐ</addName>
                </persName>
                <bibl xml:id="bib49-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

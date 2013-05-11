@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-84">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib84-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib84-1"
                          resp="http://syriaca.org">Pawla of Edessa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib84-2" type="sic">Paul, metropolitan of Edessa</persName>
-               <persName xml:lang="ar" source="bib84-3" type="sic">بولس مطران الرها</persName>
-               <persName xml:lang="syr" source="bib84-4" type="sic">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib84-4" type="sic">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib84-1" type="sic">Pawla of Edessa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib84-1" type="split">
-                           <forename>Pawla</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib84-1" type="sic">Pawla of Edessa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib84-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib84-2">Paul, metropolitan of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib84-3">بولس مطران الرها</persName>
+               <persName type="sic" xml:lang="syr" source="#bib84-4">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib84-4">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib84-1"
+                         resp="http://syriaca.org">
                   <forename>Pawla</forename>
-                  <addName type="untagged-title">of Edessa</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib84-4" type="sic">ܦܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib84-4" type="sic">ܦܰܘܠܘܣ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib84-3" type="sic">بولس مطران الرها</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib84-2" type="sic">Paul, metropolitan of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib84-2">
+                  <forename>Paul</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib84-4" type="split">
-                           <forename>ܦܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib84-4" type="split">
-                           <forename>ܦܰܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib84-3" type="split">
-                           <forename>بولس</forename>
-                           <addName type="untagged-title">مطران الرها</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib84-2" type="split">
-                           <forename>Paul</forename>
-                           <addName type="untagged-title">Metropolitan of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib84-3">
+                  <forename>بولس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib84-4">
+                  <forename>ܦܘܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib84-4">
+                  <forename>ܦܰܘܠܘܣ</forename>
                </persName>
                <bibl xml:id="bib84-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-745">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib745-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib745-1"
                          resp="http://syriaca.org">Shlemon of Baṣra</persName>
-               <persName xml:lang="syr" source="bib745-5" type="sic">ܫܠܝܡܘܢ ܟܠܛܝܐ ܕܒܨܪܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib745-5" type="sic">ܫܠܹܝܡܘܿܢ ܟܠܵܛܵܝܵܐ ܕܒܲܨܪܵܐ</persName>
-               <persName xml:lang="syr" source="bib745-6" type="sic">ܫܠܝܡܘܢ ܟܠܛܝܐ ܕܒܨܪܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib745-1" type="sic">Shlemon of Baṣra</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib745-1" type="split">
-                           <forename>Shlemon</forename>
-                           <addName type="untagged-title">of Baṣra</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib745-1" type="sic">Shlemon of Baṣra</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib745-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib745-5">ܫܠܝܡܘܢ ܟܠܛܝܐ ܕܒܨܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib745-5">ܫܠܹܝܡܘܿܢ ܟܠܵܛܵܝܵܐ ܕܒܲܨܪܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib745-6">ܫܠܝܡܘܢ ܟܠܛܝܐ ܕܒܨܪܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib745-1"
+                         resp="http://syriaca.org">
                   <forename>Shlemon</forename>
-                  <addName type="untagged-title">of Baṣra</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib745-5">
+                  <forename>ܫܠܝܡܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib745-5">
+                  <forename>ܫܠܹܝܡܘܿܢ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܫܠܝܡܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib745-6">
+                  <addName type="untagged-title">ܟܠܛܝܐ ܕܒܨܪܐ</addName>
                </persName>
                <bibl xml:id="bib745-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

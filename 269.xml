@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-269">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib269-2" type="sic">The Monk Malke Sāqo</persName>
-               <persName xml:lang="ar" source="bib269-3" type="sic">الراهب ملكي ساقو</persName>
-               <persName xml:lang="syr" source="bib269-4" type="sic">ܕܝܪܝܐ ܡܠܟܐ ܣܩܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib269-4" type="sic">ܕܰܝܪܳܝܐ ܡܰܠܟܶܐ ܣܰܩܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Malke Saqo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Malke Saqo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib269-2">The Monk Malke Sāqo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib269-3">الراهب ملكي ساقو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib269-4">ܕܝܪܝܐ ܡܠܟܐ ܣܩܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib269-4">ܕܰܝܪܳܝܐ ܡܰܠܟܶܐ ܣܰܩܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Malke Saqo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib269-2">
+                  <forename>Malke Sāqo</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Malke</forename>
-                           <addName type="untagged-title">Saqo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib269-3">
+                  <forename>ملكي ساقو</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib269-4" type="sic">ܕܝܪܝܐ ܡܠܟܐ ܣܩܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib269-4" type="sic">ܕܰܝܪܳܝܐ ܡܰܠܟܶܐ ܣܰܩܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib269-3" type="sic">الراهب ملكي ساقو</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib269-2" type="sic">The Monk Malke Sāqo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib269-4">
+                  <forename>ܡܠܟܐ ܣܩܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib269-4" type="split">
-                           <forename>ܡܠܟܐ ܣܩܐ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib269-4" type="split">
-                           <forename>ܡܰܠܟܶܐ ܣܰܩܳܐ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib269-3" type="split">
-                           <forename>ملكي ساقو</forename>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib269-2" type="split">
-                           <forename>Malke Sāqo</forename>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib269-4">
+                  <forename>ܡܰܠܟܶܐ ܣܰܩܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Malke</forename>
                </persName>
                <bibl xml:id="bib269-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

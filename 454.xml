@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-454">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib454-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib454-1"
                          resp="http://syriaca.org">Dolabani, Philoxenos Yuḥanon</persName>
-               <persName xml:lang="ar" source="bib454-3" type="sic">يوحنا دولباني</persName>
-               <persName xml:lang="syr" source="bib454-4" type="sic">ܝܘܚܢܢ ܕܘܠܒܐܢܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib454-4" type="sic">ܝܘܚܢܢ ܕܽܘܠܰܒܰܐܢܺܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib454-1" type="sic">Dolabani, Philoxenos Yuḥanon</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib454-1" type="split">
-                           <forename>Philoxenos Yuḥanon</forename>
-                           <surname>Dolabani</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib454-1" type="sic">Dolabani, Philoxenos Yuḥanon</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib454-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib454-3">يوحنا دولباني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib454-4">ܝܘܚܢܢ ܕܘܠܒܐܢܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib454-4">ܝܘܚܢܢ ܕܽܘܠܰܒܰܐܢܺܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib454-1"
+                         resp="http://syriaca.org">
                   <forename>Philoxenos Yuḥanon</forename>
                   <surname>Dolabani</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib454-4" type="sic">ܝܘܚܢܢ ܕܘܠܒܐܢܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib454-4" type="sic">ܝܘܚܢܢ ܕܽܘܠܰܒܰܐܢܺܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib454-3" type="sic">يوحنا دولباني</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib454-3">
+                  <forename>يوحنا</forename>
+                  <surname>دولباني</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib454-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܕܘܠܒܐܢܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib454-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܕܽܘܠܰܒܰܐܢܺܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib454-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>دولباني</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib454-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܕܘܠܒܐܢܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib454-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܕܽܘܠܰܒܰܐܢܺܝ</surname>
                </persName>
                <bibl xml:id="bib454-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

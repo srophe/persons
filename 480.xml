@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-480">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib480-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib480-1"
                          resp="http://syriaca.org">Eusebius of Caesarea</persName>
-               <persName xml:lang="ar" source="bib480-3" type="sic">اوسابيوس القيسري</persName>
-               <persName xml:lang="syr" source="bib480-4" type="sic">ܐܘܣܐܒܝܘܣ ܕܩܣܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib480-4" type="sic">ܐܽܘܣܰܐܒܺܝܘܣ ܕܩܶܣܰܪܝܐ</persName>
-               <persName xml:lang="syr" source="bib480-5" type="sic">ܐܘܣܒܝܣ ܕܩܣܪܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib480-5" type="sic">ܐܹܘܣܹܒܝܼܣ ܕܩܹܣܲܪܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib480-6" type="sic">ܐܘܣܒܝܘܣ ܕܩܣܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib480-6" type="sic">ܐܶܘܣܶܒܝܳܘܣ ܕܩܶܣܰܪܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib480-1" type="sic">Eusebius of Caesarea</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib480-1" type="split">
-                           <forename>Eusebius</forename>
-                           <addName type="untagged-title">of Caesarea</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib480-1" type="sic">Eusebius of Caesarea</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib480-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib480-3">اوسابيوس القيسري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib480-4">ܐܘܣܐܒܝܘܣ ܕܩܣܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib480-4">ܐܽܘܣܰܐܒܺܝܘܣ ܕܩܶܣܰܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib480-5">ܐܘܣܒܝܣ ܕܩܣܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib480-5">ܐܹܘܣܹܒܝܼܣ ܕܩܹܣܲܪܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib480-6">ܐܘܣܒܝܘܣ ܕܩܣܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib480-6">ܐܶܘܣܶܒܝܳܘܣ ܕܩܶܣܰܪܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib480-1"
+                         resp="http://syriaca.org">
                   <forename>Eusebius</forename>
-                  <addName type="untagged-title">of Caesarea</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib480-4" type="sic">ܐܘܣܐܒܝܘܣ ܕܩܣܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib480-4" type="sic">ܐܽܘܣܰܐܒܺܝܘܣ ܕܩܶܣܰܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib480-3" type="sic">اوسابيوس القيسري</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib480-3">
+                  <forename>اوسابيوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib480-4">
+                  <forename>ܐܘܣܐܒܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib480-4">
+                  <forename>ܐܽܘܣܰܐܒܺܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib480-5">
+                  <forename>ܐܘܣܒܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib480-5">
+                  <forename>ܐܹܘܣܹܒܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib480-4" type="split">
-                           <forename>ܐܘܣܐܒܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܩܣܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib480-4" type="split">
-                           <forename>ܐܽܘܣܰܐܒܺܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܩܶܣܰܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib480-3" type="split">
-                           <forename>اوسابيوس</forename>
-                           <addName type="untagged-title">القيسري</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܘܣܒܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib480-6">
+                  <addName type="untagged-title">ܕܩܣܪܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib480-6">
+                  <forename>ܐܶܘܣܶܒܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib480-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

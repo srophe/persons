@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-616">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib616-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib616-1"
                          resp="http://syriaca.org">Marcion</persName>
-               <persName xml:lang="ar" source="bib616-3" type="sic">مرقيون</persName>
-               <persName xml:lang="syr" source="bib616-4" type="sic">ܡܪܩܝܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib616-4" type="sic">ܡܰܪܩܝܽܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib616-1" type="sic">Marcion</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib616-1" type="split">
-                           <forename>Marcion</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib616-1" type="sic">Marcion</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib616-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib616-3">مرقيون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib616-4">ܡܪܩܝܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib616-4">ܡܰܪܩܝܽܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib616-1"
+                         resp="http://syriaca.org">
                   <forename>Marcion</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib616-4" type="sic">ܡܪܩܝܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib616-4" type="sic">ܡܰܪܩܝܽܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib616-3" type="sic">مرقيون</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib616-3">
+                  <forename>مرقيون</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib616-4" type="split">
-                           <forename>ܡܪܩܝܘܢ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib616-4" type="split">
-                           <forename>ܡܰܪܩܝܽܘܢ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib616-3" type="split">
-                           <forename>مرقيون</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib616-4">
+                  <forename>ܡܪܩܝܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib616-4">
+                  <forename>ܡܰܪܩܝܽܘܢ</forename>
                </persName>
                <bibl xml:id="bib616-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

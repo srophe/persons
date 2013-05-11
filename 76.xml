@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-76">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib76-2" type="sic">Julian II</persName>
-               <persName xml:lang="ar" source="bib76-3" type="sic">يوليان الثاني</persName>
-               <persName xml:lang="syr" source="bib76-4" type="sic">ܝܘܠܝܢܐ ܬܪܝܢܐ </persName>
-               <persName xml:lang="syr-Syrj" source="bib76-4" type="sic">ܝܘܠܝܰܢܶܐ ܬܪܰܝܳܢܐ </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yulyanos I</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yulyanos I</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib76-2">Julian II</persName>
+               <persName type="sic" xml:lang="ar" source="#bib76-3">يوليان الثاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib76-4">ܝܘܠܝܢܐ ܬܪܝܢܐ </persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib76-4">ܝܘܠܝܰܢܶܐ ܬܪܰܝܳܢܐ </persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yulyanos I</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib76-2">
+                  <forename>Julian II</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yulyanos</forename>
-                           <addName type="untagged-title">I</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib76-3">
+                  <forename>يوليان</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib76-4" type="sic">ܝܘܠܝܢܐ ܬܪܝܢܐ </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib76-4" type="sic">ܝܘܠܝܰܢܶܐ ܬܪܰܝܳܢܐ </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib76-3" type="sic">يوليان الثاني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib76-2" type="sic">Julian II</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib76-4">
+                  <forename>ܝܘܠܝܢܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib76-4" type="split">
-                           <forename>ܝܘܠܝܢܐ</forename>
-                           <addName type="untagged-title">ܬܪܝܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib76-4" type="split">
-                           <forename>ܝܘܠܝܰܢܶܐ</forename>
-                           <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib76-3" type="split">
-                           <forename>يوليان</forename>
-                           <addName type="untagged-title">الثاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib76-2" type="split">
-                           <forename>Julian II</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib76-4">
+                  <forename>ܝܘܠܝܰܢܶܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yulyanos</forename>
                </persName>
                <bibl xml:id="bib76-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

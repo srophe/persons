@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,80 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-609">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib609-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib609-1"
                          resp="http://syriaca.org">Manna, Yaʿqob Awgen</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib609-2" type="sic">Jacob Awgen Manna</persName>
-               <persName xml:lang="ar" source="bib609-3" type="sic">المطران يعقوب اوجين منا</persName>
-               <persName xml:lang="syr" source="bib609-4" type="sic">ܝܥܩܘܒ ܐܘܓܝܢ ܡܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib609-4" type="sic">ܝܰܥܩܘܒ ܐܰܘܓܝܢ ܡܰܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib609-1" type="sic">Manna, Yaʿqob Awgen</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib609-1" type="split">
-                           <forename>Yaʿqob Awgen</forename>
-                           <surname>Manna</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib609-1" type="sic">Manna, Yaʿqob Awgen</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib609-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib609-2">Jacob Awgen Manna</persName>
+               <persName type="sic" xml:lang="ar" source="#bib609-3">المطران يعقوب اوجين منا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib609-4">ܝܥܩܘܒ ܐܘܓܝܢ ܡܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib609-4">ܝܰܥܩܘܒ ܐܰܘܓܝܢ ܡܰܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib609-1"
+                         resp="http://syriaca.org">
                   <forename>Yaʿqob Awgen</forename>
                   <surname>Manna</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib609-4" type="sic">ܝܥܩܘܒ ܐܘܓܝܢ ܡܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib609-4" type="sic">ܝܰܥܩܘܒ ܐܰܘܓܝܢ ܡܰܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib609-3" type="sic">المطران يعقوب اوجين منا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib609-2" type="sic">Jacob Awgen Manna</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib609-2">
+                  <forename>Jacob Awgen</forename>
+                  <surname>Manna</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib609-4" type="split">
-                           <forename>ܝܥܩܘܒ ܐܘܓܝܢ</forename>
-                           <surname>ܡܢܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib609-4" type="split">
-                           <forename>ܝܰܥܩܘܒ ܐܰܘܓܝܢ</forename>
-                           <surname>ܡܰܢܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib609-3" type="split">
-                           <forename>يعقوب اوجين</forename>
-                           <surname>منا</surname>
-                           <addName type="untagged-title">المطران</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib609-2" type="split">
-                           <forename>Jacob Awgen</forename>
-                           <surname>Manna</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib609-3">
+                  <forename>يعقوب اوجين</forename>
+                  <surname>منا</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib609-4">
+                  <forename>ܝܥܩܘܒ ܐܘܓܝܢ</forename>
+                  <surname>ܡܢܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib609-4">
+                  <forename>ܝܰܥܩܘܒ ܐܰܘܓܝܢ</forename>
+                  <surname>ܡܰܢܐ</surname>
                </persName>
                <bibl xml:id="bib609-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

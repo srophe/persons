@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-942">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib942-2" type="sic">Athanasius Denḥa, metropolitan of Edessa</persName>
-               <persName xml:lang="ar" source="bib942-3" type="sic">اثناسيوس دنحا مطران الرها</persName>
-               <persName xml:lang="syr" source="bib942-4" type="sic">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib942-4" type="sic">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Athanasius Denḥa of Edessa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Athanasius Denḥa of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib942-2">Athanasius Denḥa, metropolitan of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib942-3">اثناسيوس دنحا مطران الرها</persName>
+               <persName type="sic" xml:lang="syr" source="#bib942-4">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib942-4">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Athanasius Denḥa of Edessa</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib942-2">
+                  <forename>Athanasius Denḥa</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Athanasius Denḥa</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib942-3">
+                  <forename>اثناسيوس دنحا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib942-4" type="sic">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib942-4" type="sic">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib942-3" type="sic">اثناسيوس دنحا مطران الرها</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib942-2" type="sic">Athanasius Denḥa, metropolitan of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib942-4">
+                  <forename>ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib942-4" type="split">
-                           <forename>ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib942-4" type="split">
-                           <forename>ܐܰܬܰܢܰܐܣܝܘܣ ܕܶܢܚܳܐ</forename>
-                           <addName type="untagged-title">ܡܝܺܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܗܳܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib942-3" type="split">
-                           <forename>اثناسيوس دنحا</forename>
-                           <addName type="untagged-title">مطران الرها</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib942-2" type="split">
-                           <forename>Athanasius Denḥa</forename>
-                           <addName type="untagged-title">metropolitan of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib942-4">
+                  <forename>ܐܰܬܰܢܰܐܣܝܘܣ ܕܶܢܚܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Athanasius Denḥa</forename>
                </persName>
                <bibl xml:id="bib942-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

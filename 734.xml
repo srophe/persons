@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-734">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib734-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib734-1"
                          resp="http://syriaca.org">Shalliṭa of Reshʿayna</persName>
-               <persName xml:lang="syr" source="bib734-5" type="sic">ܫܠܝܛܐ ܐܦܣܩܘܦܐ ܕܪܫܥܝܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib734-5" type="sic">ܫܲܠܝܼܛܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܹܫܥܲܝܢܵܐ</persName>
-               <persName xml:lang="syr" source="bib734-6" type="sic">ܫܠܝܛܐ ܐܦܣܩܘܦܐ ܕܪܫܥܝܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib734-1" type="sic">Shalliṭa of Reshʿayna</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib734-1" type="split">
-                           <forename>Shalliṭa</forename>
-                           <addName type="untagged-title">of Reshʿayna</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib734-1" type="sic">Shalliṭa of Reshʿayna</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib734-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib734-5">ܫܠܝܛܐ ܐܦܣܩܘܦܐ ܕܪܫܥܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib734-5">ܫܲܠܝܼܛܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܹܫܥܲܝܢܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib734-6">ܫܠܝܛܐ ܐܦܣܩܘܦܐ ܕܪܫܥܝܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib734-1"
+                         resp="http://syriaca.org">
                   <forename>Shalliṭa</forename>
-                  <addName type="untagged-title">of Reshʿayna</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib734-5">
+                  <forename>ܫܠܝܛܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib734-5">
+                  <forename>ܫܲܠܝܼܛܵܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܫܠܝܛܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib734-6">
+                  <addName type="untagged-title">ܐܦܣܩܘܦܐ ܕܪܫܥܝܢܐ</addName>
                </persName>
                <bibl xml:id="bib734-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

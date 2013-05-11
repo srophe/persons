@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,33 @@
       <body>
          <listPerson>
             <person xml:id="person-908">
-               <persName xml:lang="syr" source="bib908-5" type="sic">ܐܠܝܫܥ ܒܪ ܣܒܝܢܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib908-5" type="sic">ܐܹܠܝܼܫܵܥ ܒܲܪ ܣܵܒܝܼܢܹܐ</persName>
-               <persName xml:lang="syr" source="bib908-6" type="sic">ܐܠܝܫܥ ܒܪ ܣ̈ܦܢܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib908-6" type="sic">ܐܶܠܺܝܫܳܥ ܒܰܪ ܣܰ̈ܦܢܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Elishaʿ bar Sabine</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Elishaʿ bar Sabine</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib908-5">ܐܠܝܫܥ ܒܪ ܣܒܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib908-5">ܐܹܠܝܼܫܵܥ ܒܲܪ ܣܵܒܝܼܢܹܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib908-6">ܐܠܝܫܥ ܒܪ ܣ̈ܦܢܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib908-6">ܐܶܠܺܝܫܳܥ ܒܰܪ ܣܰ̈ܦܢܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Elishaʿ bar Sabine</persName>
+               <persName type="split" xml:lang="syr" source="#bib908-5">
+                  <forename>ܐܠܝܫܥ</forename>
+                  <surname>ܒܪ ܣܒܝܢܐ</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Elishaʿ</forename>
-                           <surname>bar Sabine</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib908-5">
+                  <forename>ܐܹܠܝܼܫܵܥ</forename>
+                  <surname>ܒܲܪ ܣܵܒܝܼܢܹܐ</surname>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܠܝܫܥ</forename>
+                  <surname>ܒܪ ܣ̈ܦܢܝܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib908-6">
+                  <surname>ܒܪ ܣ̈ܦܢܝܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib908-6">
+                  <forename>ܐܶܠܺܝܫܳܥ</forename>
+                  <surname>ܒܰܪ ܣܰ̈ܦܢܝܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Elishaʿ</forename>
+                  <surname>bar Sabine</surname>
                </persName>
             </person>
          </listPerson>

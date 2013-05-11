@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-781">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib781-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib781-1"
                          resp="http://syriaca.org">Theodoret of Cyrrhus</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib781-2" type="sic">Theodoret of Cyrus</persName>
-               <persName xml:lang="ar" source="bib781-3" type="sic">ثاودريط القورسي</persName>
-               <persName xml:lang="syr" source="bib781-4" type="sic">ܬܐܘܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib781-4" type="sic">ܬܶܐܘܳܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
-               <persName xml:lang="syr" source="bib781-5" type="sic">ܬܐܕܘܪܝܛܘܣ ܕܩܘܪܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib781-5" type="sic">ܬܹܐܵܕܘܿܪܝܼܛܘܿܣ ܕܩܘܿܪܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib781-6" type="sic">ܬܐܘܕܘܪܝܛܘܣ ܕܩܘܪܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib781-6" type="sic">ܬܶܐܘܳܕܳܘܪܺܝܛܳܘܣ ܕܩܽܘܪܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib781-1" type="sic">Theodoret of Cyrrhus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib781-1" type="split">
-                           <forename>Theodoret</forename>
-                           <addName type="untagged-title">of Cyrrhus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib781-1" type="sic">Theodoret of Cyrrhus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib781-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib781-2">Theodoret of Cyrus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib781-3">ثاودريط القورسي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib781-4">ܬܐܘܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib781-4">ܬܶܐܘܳܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib781-5">ܬܐܕܘܪܝܛܘܣ ܕܩܘܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib781-5">ܬܹܐܵܕܘܿܪܝܼܛܘܿܣ ܕܩܘܿܪܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib781-6">ܬܐܘܕܘܪܝܛܘܣ ܕܩܘܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib781-6">ܬܶܐܘܳܕܳܘܪܺܝܛܳܘܣ ܕܩܽܘܪܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib781-1"
+                         resp="http://syriaca.org">
                   <forename>Theodoret</forename>
-                  <addName type="untagged-title">of Cyrrhus</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib781-4" type="sic">ܬܐܘܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib781-4" type="sic">ܬܶܐܘܳܕܘܪܝܛ ܕܩܘܪܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib781-3" type="sic">ثاودريط القورسي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib781-2" type="sic">Theodoret of Cyrus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib781-2">
+                  <forename>Theodoret</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib781-3">
+                  <forename>ثاودريط</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib781-4">
+                  <forename>ܬܐܘܕܘܪܝܛ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib781-4">
+                  <forename>ܬܶܐܘܳܕܘܪܝܛ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib781-5">
+                  <forename>ܬܐܕܘܪܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib781-5">
+                  <forename>ܬܹܐܵܕܘܿܪܝܼܛܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib781-4" type="split">
-                           <forename>ܬܐܘܕܘܪܝܛ</forename>
-                           <addName type="untagged-title">ܕܩܘܪܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib781-4" type="split">
-                           <forename>ܬܶܐܘܳܕܘܪܝܛ</forename>
-                           <addName type="untagged-title">ܕܩܘܪܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib781-3" type="split">
-                           <forename>ثاودريط</forename>
-                           <addName type="untagged-title">القورسي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib781-2" type="split">
-                           <forename>Theodoret</forename>
-                           <addName type="untagged-title">of Cyrus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܬܐܘܕܘܪܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib781-6">
+                  <addName type="untagged-title">ܕܩܘܪܘܣ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib781-6">
+                  <forename>ܬܶܐܘܳܕܳܘܪܺܝܛܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib781-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

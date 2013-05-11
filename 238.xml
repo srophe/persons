@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-238">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib238-2" type="sic">Dioscorus Theodorus, metropolitan of Ḥiṣn Ziyad</persName>
-               <persName xml:lang="ar" source="bib238-3" type="sic">ديوسقورس ثاودورس مطران حصن زياد</persName>
-               <persName xml:lang="syr" source="bib238-4" type="sic">ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</persName>
-               <persName xml:lang="syr-Syrj" source="bib238-4" type="sic">ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Diosqoros Theodoros of Ḥiṣn Ziyād</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Diosqoros Theodoros of Ḥiṣn Ziyād</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib238-2">Dioscorus Theodorus, metropolitan of Ḥiṣn Ziyad</persName>
+               <persName type="sic" xml:lang="ar" source="#bib238-3">ديوسقورس ثاودورس مطران حصن زياد</persName>
+               <persName type="sic" xml:lang="syr" source="#bib238-4">ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib238-4">ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Diosqoros Theodoros of Ḥiṣn Ziyād</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib238-2">
+                  <forename>Dioscorus Theodorus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Diosqoros Theodoros</forename>
-                           <addName type="untagged-title">of Ḥiṣn Ziyād</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib238-3">
+                  <forename>ديوسقورس ثاودورس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib238-4" type="sic">ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib238-4" type="sic">ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib238-3" type="sic">ديوسقورس ثاودورس مطران حصن زياد</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib238-2" type="sic">Dioscorus Theodorus, metropolitan of Ḥiṣn Ziyad</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib238-4">
+                  <forename>ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib238-4" type="split">
-                           <forename>ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib238-4" type="split">
-                           <forename>ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib238-3" type="split">
-                           <forename>ديوسقورس ثاودورس</forename>
-                           <addName type="untagged-title">مطران حصن زياد</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib238-2" type="split">
-                           <forename>Dioscorus Theodorus</forename>
-                           <addName type="untagged-title">Metropolitan of Ḥiṣn Ziyad</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib238-4">
+                  <forename>ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Diosqoros Theodoros</forename>
                </persName>
                <bibl xml:id="bib238-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

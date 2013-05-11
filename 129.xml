@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-129">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib129-2" type="sic">John Bar Samuel</persName>
-               <persName xml:lang="ar" source="bib129-3" type="sic">يوحنا بن صموئيل</persName>
-               <persName xml:lang="syr" source="bib129-4" type="sic">ܝܘܚܢܢ ܒܪ ܫܡܘܐܝܠ</persName>
-               <persName xml:lang="syr-Syrj" source="bib129-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܫܡܘܐܝܠ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yuḥanon bar Shmuel</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon bar Shmuel</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib129-2">John Bar Samuel</persName>
+               <persName type="sic" xml:lang="ar" source="#bib129-3">يوحنا بن صموئيل</persName>
+               <persName type="sic" xml:lang="syr" source="#bib129-4">ܝܘܚܢܢ ܒܪ ܫܡܘܐܝܠ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib129-4">ܝܘܚܰܢܢ ܒܰܪ ܫܡܘܐܝܠ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon bar Shmuel</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib129-2">
+                  <forename>John</forename>
+                  <surname>Bar Samuel</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yuḥanon</forename>
-                           <surname>bar Shmuel</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib129-3">
+                  <forename>يوحنا</forename>
+                  <surname>بن صموئيل</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib129-4" type="sic">ܝܘܚܢܢ ܒܪ ܫܡܘܐܝܠ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib129-4" type="sic">ܝܘܚܰܢܢ ܒܰܪ ܫܡܘܐܝܠ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib129-3" type="sic">يوحنا بن صموئيل</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib129-2" type="sic">John Bar Samuel</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib129-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܒܪ ܫܡܘܐܝܠ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib129-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܒܪ ܫܡܘܐܝܠ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib129-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <surname>ܒܰܪ ܫܡܘܐܝܠ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib129-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>بن صموئيل</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib129-2" type="split">
-                           <forename>John</forename>
-                           <surname>Bar Samuel</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib129-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+                  <surname>ܒܰܪ ܫܡܘܐܝܠ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yuḥanon</forename>
+                  <surname>bar Shmuel</surname>
                </persName>
                <bibl xml:id="bib129-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

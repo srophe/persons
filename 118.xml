@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-118">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib118-2" type="sic">The Historian Moses of Anḥil</persName>
-               <persName xml:lang="ar" source="bib118-3" type="sic">موسى النحلي المؤرخ</persName>
-               <persName xml:lang="syr" source="bib118-4" type="sic">ܡܟܬܒܢܐ ܡܘܫܐ ܕܒܝܬ ܢܚ̈ܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib118-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܡܘܫܶܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Mushe of Anḥil</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Mushe of Anḥil</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib118-2">The Historian Moses of Anḥil</persName>
+               <persName type="sic" xml:lang="ar" source="#bib118-3">موسى النحلي المؤرخ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib118-4">ܡܟܬܒܢܐ ܡܘܫܐ ܕܒܝܬ ܢܚ̈ܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib118-4">ܡܰܟܬܒܳܢܳܐ ܡܘܫܶܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Mushe of Anḥil</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib118-2">
+                  <forename>Moses</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Mushe</forename>
-                           <addName type="untagged-title">of Anḥil</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib118-3">
+                  <forename>موسى</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib118-4" type="sic">ܡܟܬܒܢܐ ܡܘܫܐ ܕܒܝܬ ܢܚ̈ܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib118-4" type="sic">ܡܰܟܬܒܳܢܳܐ ܡܘܫܶܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib118-3" type="sic">موسى النحلي المؤرخ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib118-2" type="sic">The Historian Moses of Anḥil</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib118-4">
+                  <forename>ܡܘܫܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib118-4" type="split">
-                           <forename>ܡܘܫܐ</forename>
-                           <addName type="untagged-title">ܡܟܬܒܢܐ ܕܒܝܬ ܢܚ̈ܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib118-4" type="split">
-                           <forename>ܡܘܫܶܐ</forename>
-                           <addName type="untagged-title">ܡܰܟܬܒܳܢܳܐ ܕܒܶܝܬ ܢܰܚ̈ܠܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib118-3" type="split">
-                           <forename>موسى</forename>
-                           <addName type="untagged-title">النحلي , المؤرخ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib118-2" type="split">
-                           <forename>Moses</forename>
-                           <addName type="untagged-title">The Historian, of Anḥil</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib118-4">
+                  <forename>ܡܘܫܶܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Mushe</forename>
                </persName>
                <bibl xml:id="bib118-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

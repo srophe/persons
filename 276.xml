@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-276">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib276-2" type="sic">Sergius, Metropolitan of Ḥaḥ</persName>
-               <persName xml:lang="ar" source="bib276-3" type="sic">المطران سرجيس الحاحي</persName>
-               <persName xml:lang="syr" source="bib276-4" type="sic">ܡܛܪܘܦܘܠܝܛܐ ܣܪܓܝܣ ܚܐܚܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib276-4" type="sic">ܡܶܛܪܘܦܘܠܝܛܐ ܣܰܪܓܝܣ ܚܰܐܚܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Sargis of Ḥaḥ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Sargis of Ḥaḥ</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib276-2">Sergius, Metropolitan of Ḥaḥ</persName>
+               <persName type="sic" xml:lang="ar" source="#bib276-3">المطران سرجيس الحاحي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib276-4">ܡܛܪܘܦܘܠܝܛܐ ܣܪܓܝܣ ܚܐܚܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib276-4">ܡܶܛܪܘܦܘܠܝܛܐ ܣܰܪܓܝܣ ܚܰܐܚܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Sargis of Ḥaḥ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib276-2">
+                  <forename>Sergius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Sargis</forename>
-                           <addName type="untagged-title">of Ḥaḥ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib276-3">
+                  <forename>سرجيس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib276-4" type="sic">ܡܛܪܘܦܘܠܝܛܐ ܣܪܓܝܣ ܚܐܚܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib276-4" type="sic">ܡܶܛܪܘܦܘܠܝܛܐ ܣܰܪܓܝܣ ܚܰܐܚܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib276-3" type="sic">المطران سرجيس الحاحي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib276-2" type="sic">Sergius, Metropolitan of Ḥaḥ</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib276-4">
+                  <forename>ܣܪܓܝܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib276-4" type="split">
-                           <forename>ܣܪܓܝܣ</forename>
-                           <addName type="untagged-title">ܡܛܪܘܦܘܠܝܛܐ ܚܐܚܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib276-4" type="split">
-                           <forename>ܣܰܪܓܝܣ</forename>
-                           <addName type="untagged-title">ܡܶܛܪܘܦܘܠܝܛܐ ܚܰܐܚܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib276-3" type="split">
-                           <forename>سرجيس</forename>
-                           <addName type="untagged-title">المطران ,  الحاحي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib276-2" type="split">
-                           <forename>Sergius</forename>
-                           <addName type="untagged-title">Metropolitan of Ḥaḥ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib276-4">
+                  <forename>ܣܰܪܓܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Sargis</forename>
                </persName>
                <bibl xml:id="bib276-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

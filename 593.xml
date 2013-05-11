@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,29 +17,14 @@
       <body>
          <listPerson>
             <person xml:id="person-593">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib593-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib593-1"
                          resp="http://syriaca.org">Lamsa, George</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="sic">Lamsa, George</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="split">
-                           <forename>George</forename>
-                           <surname>Lamsa</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="sic">Lamsa, George</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib593-1"
+                         resp="http://syriaca.org">
                   <forename>George</forename>
                   <surname>Lamsa</surname>
                </persName>

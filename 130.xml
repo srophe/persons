@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-130">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib130-2" type="sic">Phocas of Edessa</persName>
-               <persName xml:lang="ar" source="bib130-3" type="sic">فوقا الرهاوي</persName>
-               <persName xml:lang="syr" source="bib130-4" type="sic">ܦܘܩܐ ܐܘܪܗܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib130-4" type="sic">ܦܘܩܳܐ ܐܘܪܗܳܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Phocas of Edessa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Phocas of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib130-2">Phocas of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib130-3">فوقا الرهاوي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib130-4">ܦܘܩܐ ܐܘܪܗܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib130-4">ܦܘܩܳܐ ܐܘܪܗܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Phocas of Edessa</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib130-2">
+                  <forename>Phocas</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Phocas</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib130-3">
+                  <forename>فوقا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib130-4" type="sic">ܦܘܩܐ ܐܘܪܗܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib130-4" type="sic">ܦܘܩܳܐ ܐܘܪܗܳܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib130-3" type="sic">فوقا الرهاوي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib130-2" type="sic">Phocas of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib130-4">
+                  <forename>ܦܘܩܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib130-4" type="split">
-                           <forename>ܦܘܩܐ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib130-4" type="split">
-                           <forename>ܦܘܩܳܐ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܳܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib130-3" type="split">
-                           <forename>فوقا</forename>
-                           <addName type="untagged-title">الرهاوي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib130-2" type="split">
-                           <forename>Phocas</forename>
-                           <addName type="untagged-title">of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib130-4">
+                  <forename>ܦܘܩܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Phocas</forename>
                </persName>
                <bibl xml:id="bib130-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

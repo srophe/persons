@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-52">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib52-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib52-1"
                          resp="http://syriaca.org">John bar Aphtonia</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib52-2" type="sic">John Bar Aphtonia</persName>
-               <persName xml:lang="ar" source="bib52-3" type="sic">يوحنا ابن افتونيا</persName>
-               <persName xml:lang="syr" source="bib52-4" type="sic">ܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib52-4" type="sic">ܝܘܚܰܢܢ ܒܪ ܐܰܦܬܘܢܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="sic">John bar Aphtonia</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="split">
-                           <forename>John</forename>
-                           <surname>bar Aphtonia</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="sic">John bar Aphtonia</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib52-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib52-2">John Bar Aphtonia</persName>
+               <persName type="sic" xml:lang="ar" source="#bib52-3">يوحنا ابن افتونيا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib52-4">ܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib52-4">ܝܘܚܰܢܢ ܒܪ ܐܰܦܬܘܢܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib52-1"
+                         resp="http://syriaca.org">
                   <forename>John</forename>
                   <surname>bar Aphtonia</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib52-4" type="sic">ܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib52-4" type="sic">ܝܘܚܰܢܢ ܒܪ ܐܰܦܬܘܢܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib52-3" type="sic">يوحنا ابن افتونيا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib52-2" type="sic">John Bar Aphtonia</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib52-2">
+                  <forename>John</forename>
+                  <surname>bar Aphtonya</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib52-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <surname>ܒܪ ܐܦܬܘܢܝܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib52-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <surname>ܒܪ ܐܰܦܬܘܢܝܰܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib52-3" type="split">
-                           <forename>يوحنا</forename>
-                           <surname>ابن افتونيا</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib52-2" type="split">
-                           <forename>John</forename>
-                           <surname>bar Aphtonya</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib52-3">
+                  <forename>يوحنا</forename>
+                  <surname>ابن افتونيا</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib52-4">
+                  <forename>ܝܘܚܢܢ</forename>
+                  <surname>ܒܪ ܐܦܬܘܢܝܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib52-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+                  <surname>ܒܪ ܐܰܦܬܘܢܝܰܐ</surname>
                </persName>
                <bibl xml:id="bib52-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

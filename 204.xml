@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-204">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib204-2" type="sic">The Priest Ebdocos of Melitene</persName>
-               <persName xml:lang="ar" source="bib204-3" type="sic">القس ابدوكوس الملطي</persName>
-               <persName xml:lang="syr" source="bib204-4" type="sic">ܩܫܝܫܐ ܐܒܕܘܟܘܣ ܡܝܠܝܛܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib204-4" type="sic">ܩܰܫܝܫܳܐ ܐܰܒܕܘܟܘܣ ܡܝܠܝܛܝܢܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ebdokos of Melitene</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ebdokos of Melitene</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib204-2">The Priest Ebdocos of Melitene</persName>
+               <persName type="sic" xml:lang="ar" source="#bib204-3">القس ابدوكوس الملطي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib204-4">ܩܫܝܫܐ ܐܒܕܘܟܘܣ ܡܝܠܝܛܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib204-4">ܩܰܫܝܫܳܐ ܐܰܒܕܘܟܘܣ ܡܝܠܝܛܝܢܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ebdokos of Melitene</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib204-2">
+                  <forename>Ebdocos</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ebdokos</forename>
-                           <addName type="untagged-title">of Melitene</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib204-3">
+                  <forename>ابدوكوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib204-4" type="sic">ܩܫܝܫܐ ܐܒܕܘܟܘܣ ܡܝܠܝܛܝܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib204-4" type="sic">ܩܰܫܝܫܳܐ ܐܰܒܕܘܟܘܣ ܡܝܠܝܛܝܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib204-3" type="sic">القس ابدوكوس الملطي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib204-2" type="sic">The Priest Ebdocos of Melitene</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib204-4">
+                  <forename>ܐܒܕܘܟܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib204-4" type="split">
-                           <forename>ܐܒܕܘܟܘܣ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܡܝܠܝܛܝܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib204-4" type="split">
-                           <forename>ܐܰܒܕܘܟܘܣ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ ܡܝܠܝܛܝܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib204-3" type="split">
-                           <forename>ابدوكوس</forename>
-                           <addName type="untagged-title">القس ,  الملطي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib204-2" type="split">
-                           <forename>Ebdocos</forename>
-                           <addName type="untagged-title">The Priest, of Melitene</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib204-4">
+                  <forename>ܐܰܒܕܘܟܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ebdokos</forename>
                </persName>
                <bibl xml:id="bib204-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

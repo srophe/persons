@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,76 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-44">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib44-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib44-1"
                          resp="http://syriaca.org">Philoxenos of Mabbug</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib44-2" type="sic">Mar Philoxenus of Mabug</persName>
-               <persName xml:lang="ar" source="bib44-3" type="sic">مار فيلكسينس المنبجي</persName>
-               <persName xml:lang="syr" source="bib44-4" type="sic">ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName>
-               <persName xml:lang="syr-Syrj" source="bib44-4" type="sic">ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib44-1" type="sic">Philoxenos of Mabbug</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib44-1" type="split">
-                           <forename>Philoxenos</forename>
-                           <addName type="untagged-title">of Mabbug</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib44-1" type="sic">Philoxenos of Mabbug</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib44-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib44-2">Mar Philoxenus of Mabug</persName>
+               <persName type="sic" xml:lang="ar" source="#bib44-3">مار فيلكسينس المنبجي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib44-4">ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib44-4">ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib44-1"
+                         resp="http://syriaca.org">
                   <forename>Philoxenos</forename>
-                  <addName type="untagged-title">of Mabbug</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib44-4" type="sic">ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib44-4" type="sic">ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib44-3" type="sic">مار فيلكسينس المنبجي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib44-2" type="sic">Mar Philoxenus of Mabug</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib44-3">
+                  <forename>فيلكسينس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib44-4" type="split">
-                           <forename>ܦܝܠܠܘܟܣܝܢܘܣ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܕܡܒܘܓ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib44-4" type="split">
-                           <forename>ܦܺܝܠܠܘܟܣܺܝܢܘܣ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܕܡܰܒܘܓ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib44-3" type="split">
-                           <forename>فيلكسينس</forename>
-                           <addName type="untagged-title">المنبجي ،  مار</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib44-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib44-4">
+                  <forename>ܦܝܠܠܘܟܣܝܢܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib44-4">
+                  <forename>ܦܺܝܠܠܘܟܣܺܝܢܘܣ</forename>
                </persName>
                <bibl xml:id="bib44-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-419">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib419-2" type="sic">History of Edessa</persName>
-               <persName xml:lang="ar" source="bib419-3" type="sic">تاريخ الرها</persName>
-               <persName xml:lang="syr" source="bib419-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib419-4" type="sic">ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܕܐܽܘܪܗܳܝ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Chronicle of Edessa</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Chronicle of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib419-2">History of Edessa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib419-3">تاريخ الرها</persName>
+               <persName type="sic" xml:lang="syr" source="#bib419-4">ܡܟܬܒܙܒܢ̈ܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib419-4">ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܕܐܽܘܪܗܳܝ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Chronicle of Edessa</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib419-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the Chronicle of Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib419-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib419-4" type="sic">ܡܟܬܒܙܒܢ̈ܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib419-4" type="sic">ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܕܐܽܘܪܗܳܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib419-3" type="sic">تاريخ الرها</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib419-2" type="sic">History of Edessa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib419-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib419-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib419-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib419-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib419-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib419-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib419-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Chronicle of Edessa</addName>
                </persName>
                <bibl xml:id="bib419-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

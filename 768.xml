@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-768">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib768-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib768-1"
                          resp="http://syriaca.org">Syro-Hexapla</persName>
-               <persName xml:lang="ar" source="bib768-3" type="sic">السبعيني</persName>
-               <persName xml:lang="syr" source="bib768-4" type="sic">ܫܒܥܝܢܝܬܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib768-4" type="sic">ܫܰܒܥܝܢܳܝܬܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib768-1" type="sic">Syro-Hexapla</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib768-1" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib768-1" type="sic">Syro-Hexapla</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib768-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib768-3">السبعيني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib768-4">ܫܒܥܝܢܝܬܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib768-4">ܫܰܒܥܝܢܳܝܬܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib768-1"
+                         resp="http://syriaca.org">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
-                  <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib768-4" type="sic">ܫܒܥܝܢܝܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib768-4" type="sic">ܫܰܒܥܝܢܳܝܬܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib768-3" type="sic">السبعيني</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib768-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib768-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib768-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib768-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib768-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib768-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
                <bibl xml:id="bib768-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

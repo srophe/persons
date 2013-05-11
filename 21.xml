@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,44 @@
       <body>
          <listPerson>
             <person xml:id="person-21">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib21-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib21-1"
                          resp="http://syriaca.org">Grigorios of Cyprus</persName>
-               <persName xml:lang="syr" source="bib21-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib21-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
-               <persName xml:lang="syr" source="bib21-5" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib21-5" type="sic">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܕܲܝܪܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib21-6" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib21-1" type="sic">Grigorios of Cyprus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                           <addName type="office">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib21-1" type="split">
-                           <forename>Grigorios</forename>
-                           <addName type="untagged-title">of Cyprus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib21-1" type="sic">Grigorios of Cyprus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib21-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib21-4">ܓܪܝܓܘܪܝܘܣ ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib21-4">ܓܪܺܝܓܘܪܝܘܣ ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib21-5">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib21-5">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܕܲܝܪܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib21-6">ܓܪܝܓܘܪܝܘܣ ܕܝܪܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib21-1"
+                         resp="http://syriaca.org">
                   <forename>Grigorios</forename>
-                  <addName type="untagged-title">of Cyprus</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib21-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib21-4" type="sic">ܓܪܺܝܓܘܪܝܘܣ ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib21-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib21-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib21-5">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib21-5">
+                  <forename>ܓܪܝܼܓܘܿܪܝܼܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib21-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib21-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib21-6">
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
                <bibl xml:id="bib21-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

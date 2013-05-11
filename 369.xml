@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-369">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib369-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib369-1"
                          resp="http://syriaca.org">Barṣawma of Nisibis</persName>
-               <persName xml:lang="syr" source="bib369-5" type="sic">ܒܪ ܨܘܡܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib369-5" type="sic">ܒܲܪ ܨܵܘܡܵܐ</persName>
-               <persName xml:lang="syr" source="bib369-6" type="sic">ܒܪ ܨܘܡܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib369-1" type="sic">Barṣawma of Nisibis</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib369-1" type="split">
-                           <forename>Barṣawma</forename>
-                           <addName type="untagged-title">of Nisibis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib369-1" type="sic">Barṣawma of Nisibis</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib369-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib369-5">ܒܪ ܨܘܡܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib369-5">ܒܲܪ ܨܵܘܡܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib369-6">ܒܪ ܨܘܡܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib369-1"
+                         resp="http://syriaca.org">
                   <forename>Barṣawma</forename>
-                  <addName type="untagged-title">of Nisibis</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib369-5">
+                  <forename>ܒܪ ܨܘܡܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib369-5">
+                  <forename>ܒܲܪ ܨܵܘܡܵܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܒܪ ܨܘܡܐ</forename>
                </persName>
                <bibl xml:id="bib369-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

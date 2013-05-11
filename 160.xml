@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-160">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib160-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib160-1"
                          resp="http://syriaca.org">Denḥa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib160-2" type="sic">The Priest-Philosopher Denḥa</persName>
-               <persName xml:lang="ar" source="bib160-3" type="sic">القس دنحا الفيلسوف</persName>
-               <persName xml:lang="syr" source="bib160-4" type="sic">ܩܫܝܫܐ ܕܢܚܐ ܦܝܠܣܘܦܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib160-4" type="sic">ܩܰܫܝܫܳܐ ܕܰܢܚܳܐ ܦܺܝܠܳܣܘܦܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib160-1" type="sic">Denḥa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib160-1" type="split">
-                           <forename>Denḥa</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib160-1" type="sic">Denḥa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib160-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib160-2">The Priest-Philosopher Denḥa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib160-3">القس دنحا الفيلسوف</persName>
+               <persName type="sic" xml:lang="syr" source="#bib160-4">ܩܫܝܫܐ ܕܢܚܐ ܦܝܠܣܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib160-4">ܩܰܫܝܫܳܐ ܕܰܢܚܳܐ ܦܺܝܠܳܣܘܦܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib160-1"
+                         resp="http://syriaca.org">
                   <forename>Denḥa</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib160-4" type="sic">ܩܫܝܫܐ ܕܢܚܐ ܦܝܠܣܘܦܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib160-4" type="sic">ܩܰܫܝܫܳܐ ܕܰܢܚܳܐ ܦܺܝܠܳܣܘܦܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib160-3" type="sic">القس دنحا الفيلسوف</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib160-2" type="sic">The Priest-Philosopher Denḥa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib160-2">
+                  <forename>Denḥa</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib160-4" type="split">
-                           <forename>ܕܢܚܐ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܦܝܠܣܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib160-4" type="split">
-                           <forename>ܕܰܢܚܳܐ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ ܦܺܝܠܳܣܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib160-3" type="split">
-                           <forename>دنحا</forename>
-                           <addName type="untagged-title">القس , الفيلسوف</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib160-2" type="split">
-                           <forename>Denḥa</forename>
-                           <addName type="untagged-title">The Priest-Philosopher</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib160-3">
+                  <forename>دنحا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib160-4">
+                  <forename>ܕܢܚܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib160-4">
+                  <forename>ܕܰܢܚܳܐ</forename>
                </persName>
                <bibl xml:id="bib160-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

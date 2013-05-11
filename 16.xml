@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-16">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib16-2" type="sic">The Priest ‛Absmayya</persName>
-               <persName xml:lang="ar" source="bib16-3" type="sic">القس عبسميا</persName>
-               <persName xml:lang="syr" source="bib16-4" type="sic">ܩܫܝܫܐ ܥܒܫܡܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib16-4" type="sic">ܩܰܫܝܫܳܐ ܥܒܫܡܝܳܐ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܥܒܫܡܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">ʿAbshmayyā</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܥܒܫܡܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">ʿAbshmayyā</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib16-2">The Priest ‛Absmayya</persName>
+               <persName type="sic" xml:lang="ar" source="#bib16-3">القس عبسميا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib16-4">ܩܫܝܫܐ ܥܒܫܡܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib16-4">ܩܰܫܝܫܳܐ ܥܒܫܡܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܥܒܫܡܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">ʿAbshmayyā</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib16-2">
+                  <forename>‛Absmayya</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܥܒܫܡܝܐ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>ʿAbshmayyā</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib16-3">
+                  <forename>عبسميا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib16-4" type="sic">ܩܫܝܫܐ ܥܒܫܡܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib16-4" type="sic">ܩܰܫܝܫܳܐ ܥܒܫܡܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib16-3" type="sic">القس عبسميا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib16-2" type="sic">The Priest ‛Absmayya</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib16-4">
+                  <forename>ܥܒܫܡܝܐ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib16-4" type="split">
-                           <forename>ܥܒܫܡܝܐ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib16-4" type="split">
-                           <forename>ܥܒܫܡܝܳܐ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib16-3" type="split">
-                           <forename>عبسميا</forename>
-                           <addName type="untagged-title">القس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib16-2" type="split">
-                           <forename>‛Absmayya</forename>
-                           <addName type="untagged-title">The Priest</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib16-4">
+                  <forename>ܥܒܫܡܝܳܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܥܒܫܡܝܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>ʿAbshmayyā</forename>
                </persName>
                <bibl xml:id="bib16-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

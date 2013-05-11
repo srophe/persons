@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-250">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib250-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib250-1"
                          resp="http://syriaca.org">Yeshuʿ bar Khayrun</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib250-2" type="sic">The Monk Yeshu‛ Bar Khayrun</persName>
-               <persName xml:lang="ar" source="bib250-3" type="sic">الراهب يشوع ابن خيرون</persName>
-               <persName xml:lang="syr" source="bib250-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܪܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib250-4" type="sic">ܕܰܝܪܳܝܳܐ ܝܶܫܘܥ ܒܰܪ ܟܰܝܪܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib250-1" type="sic">Yeshuʿ bar Khayrun</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib250-1" type="split">
-                           <forename>Yeshuʿ</forename>
-                           <surname>bar Khayrun</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib250-1" type="sic">Yeshuʿ bar Khayrun</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib250-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib250-2">The Monk Yeshu‛ Bar Khayrun</persName>
+               <persName type="sic" xml:lang="ar" source="#bib250-3">الراهب يشوع ابن خيرون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib250-4">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܪܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib250-4">ܕܰܝܪܳܝܳܐ ܝܶܫܘܥ ܒܰܪ ܟܰܝܪܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib250-1"
+                         resp="http://syriaca.org">
                   <forename>Yeshuʿ</forename>
                   <surname>bar Khayrun</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib250-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib250-4" type="sic">ܕܰܝܪܳܝܳܐ ܝܶܫܘܥ ܒܰܪ ܟܰܝܪܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib250-3" type="sic">الراهب يشوع ابن خيرون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib250-2" type="sic">The Monk Yeshu‛ Bar Khayrun</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib250-2">
+                  <forename>Yeshu‛</forename>
+                  <surname>Bar Khayrun</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib250-4" type="split">
-                           <forename>ܝܫܘܥ</forename>
-                           <surname>ܒܪ ܟܝܪܘܢ</surname>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib250-4" type="split">
-                           <forename>ܝܶܫܘܥ</forename>
-                           <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib250-3" type="split">
-                           <forename>يشوع</forename>
-                           <surname>ابن خيرون</surname>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib250-2" type="split">
-                           <forename>Yeshu‛</forename>
-                           <surname>Bar Khayrun</surname>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib250-3">
+                  <forename>يشوع</forename>
+                  <surname>ابن خيرون</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib250-4">
+                  <forename>ܝܫܘܥ</forename>
+                  <surname>ܒܪ ܟܝܪܘܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib250-4">
+                  <forename>ܝܶܫܘܥ</forename>
+                  <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
                </persName>
                <bibl xml:id="bib250-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

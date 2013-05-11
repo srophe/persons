@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,31 +17,15 @@
       <body>
          <listPerson>
             <person xml:id="person-813">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib813-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib813-1"
                          resp="http://syriaca.org">Yawsep II</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib813-1" type="sic">Yawsep II</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib813-1" type="split">
-                           <forename>Yawsep</forename>
-                           <addName type="untagged-title">II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib813-1" type="sic">Yawsep II</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib813-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib813-1"
+                         resp="http://syriaca.org">
                   <forename>Yawsep</forename>
-                  <addName type="untagged-title">II</addName>
                </persName>
                <bibl xml:id="bib813-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

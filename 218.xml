@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-218">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib218-2" type="sic">Deacon Abu al-Yusr</persName>
-               <persName xml:lang="ar" source="bib218-3" type="sic">الشماس ابو اليسر</persName>
-               <persName xml:lang="syr" source="bib218-4" type="sic">ܡܫܡܫܢܐ ܐܒܘ ܐܠܝܣܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib218-4" type="sic">ܡܫܰܡܫܳܢܐ ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abū al-Yusr</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abū al-Yusr</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib218-2">Deacon Abu al-Yusr</persName>
+               <persName type="sic" xml:lang="ar" source="#bib218-3">الشماس ابو اليسر</persName>
+               <persName type="sic" xml:lang="syr" source="#bib218-4">ܡܫܡܫܢܐ ܐܒܘ ܐܠܝܣܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib218-4">ܡܫܰܡܫܳܢܐ ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū al-Yusr</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib218-2">
+                  <forename>Abu al-Yusr</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abū al-Yusr</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib218-3">
+                  <forename>ابو ابيسر</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib218-4" type="sic">ܡܫܡܫܢܐ ܐܒܘ ܐܠܝܣܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib218-4" type="sic">ܡܫܰܡܫܳܢܐ ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib218-3" type="sic">الشماس ابو اليسر</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib218-2" type="sic">Deacon Abu al-Yusr</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib218-4">
+                  <forename>ܐܒܘ ܐܠܝܣܪ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib218-4" type="split">
-                           <forename>ܐܒܘ ܐܠܝܣܪ</forename>
-                           <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib218-4" type="split">
-                           <forename>ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</forename>
-                           <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib218-3" type="split">
-                           <forename>ابو ابيسر</forename>
-                           <addName type="untagged-title">الشماس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib218-2" type="split">
-                           <forename>Abu al-Yusr</forename>
-                           <addName type="untagged-title">Deacon</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib218-4">
+                  <forename>ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abū al-Yusr</forename>
                </persName>
                <bibl xml:id="bib218-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

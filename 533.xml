@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,62 +17,44 @@
       <body>
          <listPerson>
             <person xml:id="person-533">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib533-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib533-1"
                          resp="http://syriaca.org">Ḥenanishoʿ bar Seroshway</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib533-2" type="sic">Ḥannan Yeshuʿ Bar Sarushawayh</persName>
-               <persName xml:lang="ar" source="bib533-3" type="sic">حنانيشوع ابن سروشويه</persName>
-               <persName xml:lang="syr" source="bib533-5" type="sic">ܚܢܢܝܫܘܥ ܒܪ ܣܪܘܫܘܝ</persName>
-               <persName xml:lang="syr-Syrn" source="bib533-5" type="sic">ܚܢܵܢܝܼܫܘܿܥ ܒܲܪ ܣܪܘܿܫܘܿܝ</persName>
-               <persName xml:lang="syr" source="bib533-6" type="sic">ܚܢܢܝܫܘܥ ܒܪ ܣܪܘܫܘܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib533-1" type="sic">Ḥenanishoʿ bar Seroshway</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib533-1" type="split">
-                           <forename>Ḥenanishoʿ</forename>
-                           <surname>bar Seroshway</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib533-1" type="sic">Ḥenanishoʿ bar Seroshway</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib533-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib533-2">Ḥannan Yeshuʿ Bar Sarushawayh</persName>
+               <persName type="sic" xml:lang="ar" source="#bib533-3">حنانيشوع ابن سروشويه</persName>
+               <persName type="sic" xml:lang="syr" source="#bib533-5">ܚܢܢܝܫܘܥ ܒܪ ܣܪܘܫܘܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib533-5">ܚܢܵܢܝܼܫܘܿܥ ܒܲܪ ܣܪܘܿܫܘܿܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib533-6">ܚܢܢܝܫܘܥ ܒܪ ܣܪܘܫܘܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib533-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥenanishoʿ</forename>
                   <surname>bar Seroshway</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib533-3" type="sic">حنانيشوع ابن سروشويه</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib533-2" type="sic">Ḥannan Yeshuʿ Bar Sarushawayh</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib533-2">
+                  <forename>Ḥannan Yeshuʿ</forename>
+                  <surname>Bar Sarushawayh</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib533-3">
+                  <forename>حنانيشوع</forename>
+                  <surname>ابن سروشويه</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib533-5">
+                  <forename>ܚܢܢܝܫܘܥ</forename>
+                  <surname>ܒܪ ܣܪܘܫܘܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib533-5">
+                  <forename>ܚܢܵܢܝܼܫܘܿܥ</forename>
+                  <surname>ܒܲܪ ܣܪܘܿܫܘܿܝ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib533-3" type="split">
-                           <forename>حنانيشوع</forename>
-                           <surname>ابن سروشويه</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib533-2" type="split">
-                           <forename>Ḥannan Yeshuʿ</forename>
-                           <surname>Bar Sarushawayh</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܚܢܢܝܫܘܥ</forename>
+                  <surname>ܒܪ ܣܪܘܫܘܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib533-6">
+                  <surname>ܒܪ ܣܪܘܫܘܝ</surname>
                </persName>
                <bibl xml:id="bib533-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

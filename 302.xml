@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,50 +17,16 @@
       <body>
          <listPerson>
             <person xml:id="person-302">
-               <persName xml:lang="syr" source="bib302-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܓܪܝܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib302-4" type="sic">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܓܰܪܝܒܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yeshuʿ Gharīb</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yeshuʿ Gharīb</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib302-4">ܕܝܪܝܐ ܝܫܘܥ ܓܪܝܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib302-4">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܓܰܪܝܒܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yeshuʿ Gharīb</persName>
+               <persName type="split" xml:lang="syr" source="#bib302-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split"/>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib302-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܓܪܝܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib302-4" type="sic">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܓܰܪܝܒܳܐ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib302-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib302-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib302-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
                <bibl xml:id="bib302-4">
                   <title>The Scattered Pearls: A History of Syriac

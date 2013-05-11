@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-172">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib172-2" type="sic">Job of Man‛im</persName>
-               <persName xml:lang="ar" source="bib172-3" type="sic">ايوب المانعمي</persName>
-               <persName xml:lang="syr" source="bib172-4" type="sic">ܐܝܘܒ ܡܢܥܡܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib172-4" type="sic">ܐܝܘܒ ܡܰܢܥܡܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Iyob of Manʿem</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Iyob of Manʿem</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib172-2">Job of Man‛im</persName>
+               <persName type="sic" xml:lang="ar" source="#bib172-3">ايوب المانعمي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib172-4">ܐܝܘܒ ܡܢܥܡܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib172-4">ܐܝܘܒ ܡܰܢܥܡܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Iyob of Manʿem</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib172-2">
+                  <forename>Job</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Iyob</forename>
-                           <addName type="untagged-title">of Manʿem</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib172-3">
+                  <forename>ايوب</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib172-4" type="sic">ܐܝܘܒ ܡܢܥܡܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib172-4" type="sic">ܐܝܘܒ ܡܰܢܥܡܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib172-3" type="sic">ايوب المانعمي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib172-2" type="sic">Job of Man‛im</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib172-4">
+                  <forename>ܐܝܘܒ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib172-4" type="split">
-                           <forename>ܐܝܘܒ</forename>
-                           <addName type="untagged-title">ܡܢܥܡܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib172-4" type="split">
-                           <forename>ܐܝܘܒ</forename>
-                           <addName type="untagged-title">ܡܰܢܥܡܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib172-3" type="split">
-                           <forename>ايوب</forename>
-                           <addName type="untagged-title">المانعمي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib172-2" type="split">
-                           <forename>Job</forename>
-                           <addName type="untagged-title">of Man‛im</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib172-4">
+                  <forename>ܐܝܘܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Iyob</forename>
                </persName>
                <bibl xml:id="bib172-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

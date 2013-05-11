@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,62 +17,38 @@
       <body>
          <listPerson>
             <person xml:id="person-548">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib548-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib548-1"
                          resp="http://syriaca.org">Isaiah of Scetis</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib548-2" type="sic">Isaiah of Scete</persName>
-               <persName xml:lang="ar" source="bib548-3" type="sic">اشعيا ناسك الاسقيط</persName>
-               <persName xml:lang="syr" source="bib548-5" type="sic">ܐܒܐ ܐܫܥܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib548-5" type="sic">ܐܲܒܵܐ ܐܹܫܲܥܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib548-6" type="sic">ܐܒܐ ܐܫܥܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
-                           <forename>Isaiah</forename>
-                           <addName type="untagged-title">of Scetis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="sic">Isaiah of Scetis</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib548-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib548-2">Isaiah of Scete</persName>
+               <persName type="sic" xml:lang="ar" source="#bib548-3">اشعيا ناسك الاسقيط</persName>
+               <persName type="sic" xml:lang="syr" source="#bib548-5">ܐܒܐ ܐܫܥܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib548-5">ܐܲܒܵܐ ܐܹܫܲܥܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib548-6">ܐܒܐ ܐܫܥܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib548-1"
+                         resp="http://syriaca.org">
                   <forename>Isaiah</forename>
-                  <addName type="untagged-title">of Scetis</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib548-3" type="sic">اشعيا ناسك الاسقيط</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib548-2" type="sic">Isaiah of Scete</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib548-2">
+                  <forename>Isaiah</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib548-3">
+                  <forename>اشعيا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib548-5">
+                  <forename>ܐܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib548-5">
+                  <forename>ܐܹܫܲܥܝܵܐ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib548-3" type="split">
-                           <forename>اشعيا</forename>
-                           <addName type="untagged-title">ناسك الاسقيط</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib548-2" type="split">
-                           <forename>Isaiah</forename>
-                           <addName type="untagged-title">of Scete</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib548-6">
+                  <addName type="untagged-title">ܐܫܥܝܐ</addName>
                </persName>
                <bibl xml:id="bib548-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

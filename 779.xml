@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-779">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib779-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib779-1"
                          resp="http://syriaca.org">Theodora (Empress)</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib779-2" type="sic">Empress Theodora</persName>
-               <persName xml:lang="ar" source="bib779-3" type="sic">القيصرة ثاودورة</persName>
-               <persName xml:lang="syr" source="bib779-4" type="sic">ܡܠܟܬܐ ܬܐܘܕܘܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib779-4" type="sic">ܡܰܠܟܬܐ ܬܶܐܘܳܕܳܘܪܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib779-1" type="sic">Theodora (Empress)</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib779-1" type="split">
-                           <forename>Theodora</forename>
-                           <addName type="untagged-title">(Empress)</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib779-1" type="sic">Theodora (Empress)</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib779-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib779-2">Empress Theodora</persName>
+               <persName type="sic" xml:lang="ar" source="#bib779-3">القيصرة ثاودورة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib779-4">ܡܠܟܬܐ ܬܐܘܕܘܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib779-4">ܡܰܠܟܬܐ ܬܶܐܘܳܕܳܘܪܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib779-1"
+                         resp="http://syriaca.org">
                   <forename>Theodora</forename>
-                  <addName type="untagged-title">(Empress)</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib779-4" type="sic">ܡܠܟܬܐ ܬܐܘܕܘܪܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib779-4" type="sic">ܡܰܠܟܬܐ ܬܶܐܘܳܕܳܘܪܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib779-3" type="sic">القيصرة ثاودورة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib779-2" type="sic">Empress Theodora</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib779-2">
+                  <forename>Theodora</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib779-4" type="split">
-                           <forename>ܬܐܘܕܘܪܐ</forename>
-                           <addName type="untagged-title">ܡܠܟܬܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib779-4" type="split">
-                           <forename>ܬܶܐܘܳܕܳܘܪܰܐ</forename>
-                           <addName type="untagged-title">ܡܰܠܟܬܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib779-3" type="split">
-                           <forename>ثاودورة</forename>
-                           <addName type="untagged-title">القيصرة</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib779-2" type="split">
-                           <forename>Theodora</forename>
-                           <addName type="untagged-title">Empress</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib779-3">
+                  <forename>ثاودورة</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib779-4">
+                  <forename>ܬܐܘܕܘܪܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib779-4">
+                  <forename>ܬܶܐܘܳܕܳܘܪܰܐ</forename>
                </persName>
                <bibl xml:id="bib779-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

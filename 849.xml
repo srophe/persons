@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,61 +17,37 @@
       <body>
          <listPerson>
             <person xml:id="person-849">
-               <persName xml:lang="ar" source="bib849-3" type="sic">سقراط</persName>
-               <persName xml:lang="syr" source="bib849-4" type="sic">ܣܘܩܪܐܛ</persName>
-               <persName xml:lang="syr-Syrj" source="bib849-4" type="sic">ܣܽܘܩܪܰܐܛ</persName>
-               <persName xml:lang="syr" source="bib849-5" type="sic">ܣܘܩܪܛܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib849-5" type="sic">ܣܘܼܩܪܵܛܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib849-6" type="sic">ܣܘܩܪܛܝܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib849-6" type="sic">ܣܽܘܩܪܰܛܝܺܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Socrates</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Socrates</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib849-3">سقراط</persName>
+               <persName type="sic" xml:lang="syr" source="#bib849-4">ܣܘܩܪܐܛ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib849-4">ܣܽܘܩܪܰܐܛ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib849-5">ܣܘܩܪܛܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib849-5">ܣܘܼܩܪܵܛܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib849-6">ܣܘܩܪܛܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib849-6">ܣܽܘܩܪܰܛܝܺܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Socrates</persName>
+               <persName type="split" xml:lang="ar" source="#bib849-3">
+                  <forename>سقراط</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Socrates</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib849-4">
+                  <forename>ܣܘܩܪܐܛ</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib849-4" type="sic">ܣܘܩܪܐܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib849-4" type="sic">ܣܽܘܩܪܰܐܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib849-3" type="sic">سقراط</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib849-4">
+                  <forename>ܣܽܘܩܪܰܐܛ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib849-5">
+                  <forename>ܣܘܩܪܛܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib849-5">
+                  <forename>ܣܘܼܩܪܵܛܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib849-4" type="split">
-                           <forename>ܣܘܩܪܐܛ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib849-4" type="split">
-                           <forename>ܣܽܘܩܪܰܐܛ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib849-3" type="split">
-                           <forename>سقراط</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܣܘܩܪܛܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib849-6">
+                  <forename>ܣܽܘܩܪܰܛܝܺܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Socrates</forename>
                </persName>
                <bibl xml:id="bib849-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

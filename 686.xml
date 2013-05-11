@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,80 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-686">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib686-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib686-1"
                          resp="http://syriaca.org">Proba</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib686-2" type="sic">̇Probus, archdeacon of Antioch</persName>
-               <persName xml:lang="ar" source="bib686-3" type="sic">فروبا ارخدياقون انطاكية</persName>
-               <persName xml:lang="syr" source="bib686-4" type="sic">ܦܪܘܒܐ ܐܪܟܕܝܩܘܢ ܕܐܢܛܝܘܟܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib686-4" type="sic">ܦܪܘܒܐ ܐܰܪܟܶܕܝܰܩܘܢ ܕܐܰܢܛܝܽܘܟܺܝ</persName>
-               <persName xml:lang="syr" source="bib686-5" type="sic">ܦܪܘܒܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib686-5" type="sic">ܦܪܘܿܒܵܐ</persName>
-               <persName xml:lang="syr" source="bib686-6" type="sic">ܦܪܘܒܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib686-1" type="sic">Proba</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib686-1" type="split">
-                           <forename>Proba</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib686-1" type="sic">Proba</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib686-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib686-2">̇Probus, archdeacon of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib686-3">فروبا ارخدياقون انطاكية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib686-4">ܦܪܘܒܐ ܐܪܟܕܝܩܘܢ ܕܐܢܛܝܘܟܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib686-4">ܦܪܘܒܐ ܐܰܪܟܶܕܝܰܩܘܢ ܕܐܰܢܛܝܽܘܟܺܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib686-5">ܦܪܘܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib686-5">ܦܪܘܿܒܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib686-6">ܦܪܘܒܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib686-1"
+                         resp="http://syriaca.org">
                   <forename>Proba</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib686-4" type="sic">ܦܪܘܒܐ ܐܪܟܕܝܩܘܢ ܕܐܢܛܝܘܟܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib686-4" type="sic">ܦܪܘܒܐ ܐܰܪܟܶܕܝܰܩܘܢ ܕܐܰܢܛܝܽܘܟܺܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib686-3" type="sic">فروبا ارخدياقون انطاكية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib686-2" type="sic">̇Probus, archdeacon of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib686-2">
+                  <forename>̇Probus</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib686-3">
+                  <forename>فروبا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib686-4">
+                  <forename>ܦܪܘܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib686-4">
+                  <forename>ܦܪܘܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib686-5">
+                  <forename>ܦܪܘܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib686-5">
+                  <forename>ܦܪܘܿܒܵܐ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib686-4" type="split">
-                           <forename>ܦܪܘܒܐ</forename>
-                           <addName type="untagged-title">ܐܪܟܕܝܩܘܢ ܕܐܢܛܝܘܟܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib686-4" type="split">
-                           <forename>ܦܪܘܒܐ</forename>
-                           <addName type="untagged-title">ܐܰܪܟܶܕܝܰܩܘܢ ܕܐܰܢܛܝܽܘܟܺܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib686-3" type="split">
-                           <forename>فروبا</forename>
-                           <addName type="untagged-title">ارخدياقون انطاكية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib686-2" type="split">
-                           <forename>̇Probus</forename>
-                           <addName type="untagged-title">archdeacon of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܦܪܘܒܐ</forename>
                </persName>
                <bibl xml:id="bib686-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

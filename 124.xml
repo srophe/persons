@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,63 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-124">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib124-2" type="sic">The Philologists of St. Matthew’s Monastery</persName>
-               <persName xml:lang="ar" source="bib124-3" type="sic">علماء اللغة في دير مار متى</persName>
-               <persName xml:lang="syr" source="bib124-4" type="sic">ܡܠܦܢܐ ܕܠܫܢܐ ܒܕܝܪܐ ܕܡܪܝ ܡܬܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib124-4" type="sic">ܡܰܠܦܳܢܳܐ ܕܠܶܫܢܳܐ ܒܕܰܝܪܐ ܕܡܳܪܝ ܡܰܬܰܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib124-2">The Philologists of St. Matthew’s Monastery</persName>
+               <persName type="sic" xml:lang="ar" source="#bib124-3">علماء اللغة في دير مار متى</persName>
+               <persName type="sic" xml:lang="syr" source="#bib124-4">ܡܠܦܢܐ ܕܠܫܢܐ ܒܕܝܪܐ ܕܡܪܝ ܡܬܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib124-4">ܡܰܠܦܳܢܳܐ ܕܠܶܫܢܳܐ ܒܕܰܝܪܐ ܕܡܳܪܝ ܡܰܬܰܝ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib124-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="split" xml:lang="ar" source="#bib124-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib124-4" type="sic">ܡܠܦܢܐ ܕܠܫܢܐ ܒܕܝܪܐ ܕܡܪܝ ܡܬܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib124-4" type="sic">ܡܰܠܦܳܢܳܐ ܕܠܶܫܢܳܐ ܒܕܰܝܪܐ ܕܡܳܪܝ ܡܰܬܰܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib124-3" type="sic">علماء اللغة في دير مار متى</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib124-2" type="sic">The Philologists of St. Matthew’s Monastery</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib124-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib124-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib124-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib124-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib124-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib124-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
                <bibl xml:id="bib124-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

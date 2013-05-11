@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-555">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib555-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib555-1"
                          resp="http://syriaca.org">Ishoʿdad of Merv</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib555-2" type="sic">Yeshuʿdad of Merv</persName>
-               <persName xml:lang="ar" source="bib555-3" type="sic">يشوعداد المروزي</persName>
-               <persName xml:lang="syr" source="bib555-4" type="sic">ܝܫܘܥܕܕ ܡܪܘܙܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib555-4" type="sic">ܝܶܫܘܥܕܳܕ ܡܰܪܘܽܙܳܝܳܐ</persName>
-               <persName xml:lang="syr" source="bib555-5" type="sic">ܝܫܘܥܕܕ</persName>
-               <persName xml:lang="syr-Syrn" source="bib555-5" type="sic">ܝܑܼܫܘܿܥܕܵܕ</persName>
-               <persName xml:lang="syr" source="bib555-6" type="sic">ܝܫܘܥܕܕ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib555-1" type="sic">Ishoʿdad of Merv</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib555-1" type="split">
-                           <forename>Ishoʿdad</forename>
-                           <addName type="untagged-title">of Merv</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib555-1" type="sic">Ishoʿdad of Merv</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib555-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib555-2">Yeshuʿdad of Merv</persName>
+               <persName type="sic" xml:lang="ar" source="#bib555-3">يشوعداد المروزي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib555-4">ܝܫܘܥܕܕ ܡܪܘܙܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib555-4">ܝܶܫܘܥܕܳܕ ܡܰܪܘܽܙܳܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib555-5">ܝܫܘܥܕܕ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib555-5">ܝܑܼܫܘܿܥܕܵܕ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib555-6">ܝܫܘܥܕܕ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib555-1"
+                         resp="http://syriaca.org">
                   <forename>Ishoʿdad</forename>
-                  <addName type="untagged-title">of Merv</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib555-4" type="sic">ܝܫܘܥܕܕ ܡܪܘܙܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib555-4" type="sic">ܝܶܫܘܥܕܳܕ ܡܰܪܘܽܙܳܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib555-3" type="sic">يشوعداد المروزي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib555-2" type="sic">Yeshuʿdad of Merv</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib555-2">
+                  <forename>Yeshuʿdad</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib555-3">
+                  <forename>يشوعداد</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib555-4">
+                  <forename>ܝܫܘܥܕܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib555-4">
+                  <forename>ܝܶܫܘܥܕܳܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib555-5">
+                  <forename>ܝܫܘܥܕܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib555-5">
+                  <forename>ܝܑܼܫܘܿܥܕܵܕ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib555-4" type="split">
-                           <forename>ܝܫܘܥܕܕ</forename>
-                           <addName type="untagged-title">ܡܪܘܙܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib555-4" type="split">
-                           <forename>ܝܶܫܘܥܕܳܕ</forename>
-                           <addName type="untagged-title">ܡܰܪܘܽܙܳܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib555-3" type="split">
-                           <forename>يشوعداد</forename>
-                           <addName type="untagged-title">المروزي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib555-2" type="split">
-                           <forename>Yeshuʿdad</forename>
-                           <addName type="untagged-title">of Merv</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܫܘܥܕܕ</forename>
                </persName>
                <bibl xml:id="bib555-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,87 +17,55 @@
       <body>
          <listPerson>
             <person xml:id="person-144">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib144-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib144-1"
                          resp="http://syriaca.org">Dawid bar Pawlos</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib144-2" type="sic">Anba David Bar Paul of Beth Rabban</persName>
-               <persName xml:lang="ar" source="bib144-3" type="sic">الانبا داود بن بولس آل ربان</persName>
-               <persName xml:lang="syr" source="bib144-4" type="sic">ܐܒܐ ܕܘܝܕ ܒܪ ܦܘܠܘܣ ܕܒܝܬ ܪܒܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib144-4" type="sic">ܐܰܒܐ ܕܰܘܝܕ ܒܰܪ ܦܰܘܠܘܣ ܕܒܶܝܬ ܪܰܒܢ</persName>
-               <persName xml:lang="syr" source="bib144-5" type="sic">ܡܪܝ ܕܘܝܕ ܕܒܝܬ ܪܒܢ</persName>
-               <persName xml:lang="syr-Syrn" source="bib144-5" type="sic">ܡܵܪܝ ܕܵܘܝܼܕ ܕܒܹܝܬ ܪܲܒܵܢ</persName>
-               <persName xml:lang="syr" source="bib144-6" type="sic">ܡܪܝ ܕܘܝܕ ܕܒܝܬ ܪܒܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib144-6" type="sic">ܡܳܪܝ ܕܰܘܝܺܕ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib144-1" type="sic">Dawid bar Pawlos</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib144-1" type="split">
-                           <forename>Dawid</forename>
-                           <surname>bar Pawlos</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib144-1" type="sic">Dawid bar Pawlos</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib144-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib144-2">Anba David Bar Paul of Beth Rabban</persName>
+               <persName type="sic" xml:lang="ar" source="#bib144-3">الانبا داود بن بولس آل ربان</persName>
+               <persName type="sic" xml:lang="syr" source="#bib144-4">ܐܒܐ ܕܘܝܕ ܒܪ ܦܘܠܘܣ ܕܒܝܬ ܪܒܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib144-4">ܐܰܒܐ ܕܰܘܝܕ ܒܰܪ ܦܰܘܠܘܣ ܕܒܶܝܬ ܪܰܒܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib144-5">ܡܪܝ ܕܘܝܕ ܕܒܝܬ ܪܒܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib144-5">ܡܵܪܝ ܕܵܘܝܼܕ ܕܒܹܝܬ ܪܲܒܵܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib144-6">ܡܪܝ ܕܘܝܕ ܕܒܝܬ ܪܒܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib144-6">ܡܳܪܝ ܕܰܘܝܺܕ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib144-1"
+                         resp="http://syriaca.org">
                   <forename>Dawid</forename>
                   <surname>bar Pawlos</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib144-4" type="sic">ܐܒܐ ܕܘܝܕ ܒܪ ܦܘܠܘܣ ܕܒܝܬ ܪܒܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib144-4" type="sic">ܐܰܒܐ ܕܰܘܝܕ ܒܰܪ ܦܰܘܠܘܣ ܕܒܶܝܬ ܪܰܒܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib144-3" type="sic">الانبا داود بن بولس آل ربان</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib144-2" type="sic">Anba David Bar Paul of Beth Rabban</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib144-2">
+                  <forename>David</forename>
+                  <surname>Bar Paul</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib144-3">
+                  <forename>داود</forename>
+                  <surname>بن بولس</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib144-4">
+                  <forename>ܕܘܝܕ</forename>
+                  <surname>ܒܪ ܦܘܠܘܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib144-4">
+                  <forename>ܕܰܘܝܕ</forename>
+                  <surname>ܒܰܪ ܦܰܘܠܘܣ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib144-5">
+                  <forename>ܕܘܝܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib144-5">
+                  <forename>ܕܵܘܝܼܕ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib144-4" type="split">
-                           <forename>ܕܘܝܕ</forename>
-                           <surname>ܒܪ ܦܘܠܘܣ</surname>
-                           <addName type="untagged-title">ܐܒܐ ܕܒܝܬ ܪܒܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib144-4" type="split">
-                           <forename>ܕܰܘܝܕ</forename>
-                           <surname>ܒܰܪ ܦܰܘܠܘܣ</surname>
-                           <addName type="untagged-title">ܐܰܒܐ ܕܒܶܝܬ ܪܰܒܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib144-3" type="split">
-                           <forename>داود</forename>
-                           <surname>بن بولس</surname>
-                           <addName type="untagged-title">الانبا ,   آل ربان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib144-2" type="split">
-                           <forename>David</forename>
-                           <surname>Bar Paul</surname>
-                           <addName type="untagged-title">Anba, of Beth Rabban</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܕܘܝܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib144-6">
+                  <addName type="untagged-title">ܡܪܝ، ܕܒܝܬ ܪܒܢ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib144-6">
+                  <forename>ܕܰܘܝܺܕ</forename>
                </persName>
                <bibl xml:id="bib144-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

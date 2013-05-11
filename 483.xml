@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-483">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib483-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib483-1"
                          resp="http://syriaca.org">Evagrius of Pontus</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib483-2" type="sic">Euagrius Pontius</persName>
-               <persName xml:lang="ar" source="bib483-3" type="sic">اوغريوس البنطي</persName>
-               <persName xml:lang="syr" source="bib483-4" type="sic">ܐܘܓܪܝܣ ܦܘܐܝܛܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib483-4" type="sic">ܐܶܘܰܓܪܺܝܣ ܦܘܐܝܺܛܐ</persName>
-               <persName xml:lang="syr" source="bib483-5" type="sic">ܐܘܓܪܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib483-5" type="sic">ܐܹܘܲܓܪܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib483-6" type="sic">ܐܘܓܪܝܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib483-1" type="sic">Evagrius of Pontus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib483-1" type="split">
-                           <forename>Evagrius</forename>
-                           <addName type="untagged-title">of Pontus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib483-1" type="sic">Evagrius of Pontus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib483-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib483-2">Euagrius Pontius</persName>
+               <persName type="sic" xml:lang="ar" source="#bib483-3">اوغريوس البنطي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib483-4">ܐܘܓܪܝܣ ܦܘܐܝܛܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib483-4">ܐܶܘܰܓܪܺܝܣ ܦܘܐܝܺܛܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib483-5">ܐܘܓܪܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib483-5">ܐܹܘܲܓܪܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib483-6">ܐܘܓܪܝܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib483-1"
+                         resp="http://syriaca.org">
                   <forename>Evagrius</forename>
-                  <addName type="untagged-title">of Pontus</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib483-4" type="sic">ܐܘܓܪܝܣ ܦܘܐܝܛܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib483-4" type="sic">ܐܶܘܰܓܪܺܝܣ ܦܘܐܝܺܛܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib483-3" type="sic">اوغريوس البنطي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib483-2" type="sic">Euagrius Pontius</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib483-2">
+                  <forename>Euagrius</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib483-3">
+                  <forename>اوغريوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib483-4">
+                  <forename>ܐܘܓܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib483-4">
+                  <forename>ܐܶܘܰܓܪܺܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib483-5">
+                  <forename>ܐܘܓܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib483-5">
+                  <forename>ܐܹܘܲܓܪܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib483-4" type="split">
-                           <forename>ܐܘܓܪܝܣ</forename>
-                           <addName type="untagged-title">ܦܘܐܝܛܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib483-4" type="split">
-                           <forename>ܐܶܘܰܓܪܺܝܣ</forename>
-                           <addName type="untagged-title">ܦܘܐܝܺܛܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib483-3" type="split">
-                           <forename>اوغريوس</forename>
-                           <addName type="untagged-title">البنطي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib483-2" type="split">
-                           <forename>Euagrius</forename>
-                           <addName type="untagged-title">Pontius</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܘܓܪܝܣ</forename>
                </persName>
                <bibl xml:id="bib483-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

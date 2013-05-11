@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-219">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib219-2" type="sic">Bishop John David of Amid</persName>
-               <persName xml:lang="ar" source="bib219-3" type="sic">الاسقف يوحنا داود الآمدي</persName>
-               <persName xml:lang="syr" source="bib219-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܕܘܝܕ ܐܡܝܕܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib219-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܕܰܘܝܕ ܐܳܡܝܕܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yuḥanon Dawid of Amid</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon Dawid of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib219-2">Bishop John David of Amid</persName>
+               <persName type="sic" xml:lang="ar" source="#bib219-3">الاسقف يوحنا داود الآمدي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib219-4">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܕܘܝܕ ܐܡܝܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib219-4">ܐܶܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܕܰܘܝܕ ܐܳܡܝܕܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon Dawid of Amid</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib219-2">
+                  <forename>John David</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yuḥanon Dawid</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib219-3">
+                  <forename>يوحنا داود</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib219-4" type="sic">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܕܘܝܕ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib219-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܕܰܘܝܕ ܐܳܡܝܕܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib219-3" type="sic">الاسقف يوحنا داود الآمدي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib219-2" type="sic">Bishop John David of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib219-4">
+                  <forename>ܝܘܚܢܢ ܕܘܝܕ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib219-4" type="split">
-                           <forename>ܝܘܚܢܢ ܕܘܝܕ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib219-4" type="split">
-                           <forename>ܝܘܚܰܢܢ ܕܰܘܝܕ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ ܐܳܡܝܕܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib219-3" type="split">
-                           <forename>يوحنا داود</forename>
-                           <addName type="untagged-title">الاسقف , الآمدي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib219-2" type="split">
-                           <forename>John David</forename>
-                           <addName type="untagged-title">Bishop, of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib219-4">
+                  <forename>ܝܘܚܰܢܢ ܕܰܘܝܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yuḥanon Dawid</forename>
                </persName>
                <bibl xml:id="bib219-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

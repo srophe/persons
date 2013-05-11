@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,78 +17,43 @@
       <body>
          <listPerson>
             <person xml:id="person-534">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib534-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib534-1"
                          resp="http://syriaca.org">Hiba</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib534-2" type="sic">Ibas</persName>
-               <persName xml:lang="ar" source="bib534-3" type="sic">هيبا</persName>
-               <persName xml:lang="syr" source="bib534-4" type="sic">ܗܝܒܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib534-4" type="sic">ܗܺܝܒܐ ܡܝܛܪܽܘܦܽܘܠܝܛܐ ܕܐܽܘܪܗܳܝ</persName>
-               <persName xml:lang="syr" source="bib534-5" type="sic">ܗܝܒܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib534-5" type="sic">ܗܝܼܒܵܐ</persName>
-               <persName xml:lang="syr" source="bib534-6" type="sic">ܗܝܒܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib534-1" type="sic">Hiba</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib534-1" type="split">
-                           <forename>Hiba</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib534-1" type="sic">Hiba</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib534-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib534-2">Ibas</persName>
+               <persName type="sic" xml:lang="ar" source="#bib534-3">هيبا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib534-4">ܗܝܒܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib534-4">ܗܺܝܒܐ ܡܝܛܪܽܘܦܽܘܠܝܛܐ ܕܐܽܘܪܗܳܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib534-5">ܗܝܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib534-5">ܗܝܼܒܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib534-6">ܗܝܒܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib534-1"
+                         resp="http://syriaca.org">
                   <forename>Hiba</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib534-4" type="sic">ܗܝܒܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib534-4" type="sic">ܗܺܝܒܐ ܡܝܛܪܽܘܦܽܘܠܝܛܐ ܕܐܽܘܪܗܳܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib534-3" type="sic">هيبا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib534-2" type="sic">Ibas</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib534-2">
+                  <forename>Ibas</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib534-3">
+                  <forename>هيبا</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib534-4">
+                  <forename>ܗܝܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib534-4">
+                  <forename>ܗܺܝܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib534-5">
+                  <forename>ܗܝܒܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib534-5">
+                  <forename>ܗܝܼܒܵܐ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib534-4" type="split">
-                           <forename>ܗܝܒܐ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib534-4" type="split">
-                           <forename>ܗܺܝܒܐ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܽܘܦܽܘܠܝܛܐ ܕܐܽܘܪܗܳܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib534-3" type="split">
-                           <forename>هيبا</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib534-2" type="split">
-                           <forename>Ibas</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܗܝܒܐ</forename>
                </persName>
                <bibl xml:id="bib534-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

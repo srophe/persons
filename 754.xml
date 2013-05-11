@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,29 +17,14 @@
       <body>
          <listPerson>
             <person xml:id="person-754">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib754-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib754-1"
                          resp="http://syriaca.org">Sobo, Malki al-Qas Afram</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib754-1" type="sic">Sobo, Malki al-Qas Afram</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib754-1" type="split">
-                           <forename>Malki al-Qas Afram</forename>
-                           <surname>Sobo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib754-1" type="sic">Sobo, Malki al-Qas Afram</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib754-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib754-1"
+                         resp="http://syriaca.org">
                   <forename>Malki al-Qas Afram</forename>
                   <surname>Sobo</surname>
                </persName>

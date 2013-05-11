@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-114">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib114-2" type="sic">Bishop Euthalius</persName>
-               <persName xml:lang="ar" source="bib114-3" type="sic">الاسقف اوثاليوس</persName>
-               <persName xml:lang="syr" source="bib114-4" type="sic">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib114-4" type="sic">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Euthalius</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Euthalius</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib114-2">Bishop Euthalius</persName>
+               <persName type="sic" xml:lang="ar" source="#bib114-3">الاسقف اوثاليوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib114-4">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib114-4">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Euthalius</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib114-2">
+                  <forename>Euthalius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Euthalius</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib114-3">
+                  <forename>اوثاليوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib114-4" type="sic">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib114-4" type="sic">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib114-3" type="sic">الاسقف اوثاليوس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib114-2" type="sic">Bishop Euthalius</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib114-4">
+                  <forename>ܐܘܬܐܠܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib114-4" type="split">
-                           <forename>ܐܘܬܐܠܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib114-4" type="split">
-                           <forename>ܐܘܬܐܰܠܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib114-3" type="split">
-                           <forename>اوثاليوس</forename>
-                           <addName type="untagged-title">الاسقف</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib114-2" type="split">
-                           <forename>Euthalius</forename>
-                           <addName type="untagged-title">Bishop</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib114-4">
+                  <forename>ܐܘܬܐܰܠܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Euthalius</forename>
                </persName>
                <bibl xml:id="bib114-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

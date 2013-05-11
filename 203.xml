@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-203">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib203-2" type="sic">The Monk Michael of Mar‛ash</persName>
-               <persName xml:lang="ar" source="bib203-3" type="sic">الراهب ميخائيل المرعشي</persName>
-               <persName xml:lang="syr" source="bib203-4" type="sic">ܕܝܪܝܐ ܡܝܟܐܝܠ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib203-4" type="sic">ܕܰܝܪܳܝܐ ܡܝܟܳܐܝܠ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Michael of Marʿash</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Michael of Marʿash</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib203-2">The Monk Michael of Mar‛ash</persName>
+               <persName type="sic" xml:lang="ar" source="#bib203-3">الراهب ميخائيل المرعشي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib203-4">ܕܝܪܝܐ ܡܝܟܐܝܠ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib203-4">ܕܰܝܪܳܝܐ ܡܝܟܳܐܝܠ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Michael of Marʿash</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib203-2">
+                  <forename>Michael</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Michael</forename>
-                           <addName type="untagged-title">of Marʿash</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib203-3">
+                  <forename>ميخائيل</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib203-4" type="sic">ܕܝܪܝܐ ܡܝܟܐܝܠ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib203-4" type="sic">ܕܰܝܪܳܝܐ ܡܝܟܳܐܝܠ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib203-3" type="sic">الراهب ميخائيل المرعشي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib203-2" type="sic">The Monk Michael of Mar‛ash</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib203-4">
+                  <forename>ܡܝܟܐܝܠ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib203-4" type="split">
-                           <forename>ܡܝܟܐܝܠ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib203-4" type="split">
-                           <forename>ܡܝܟܳܐܝܠ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib203-3" type="split">
-                           <forename>ميخائيل</forename>
-                           <addName type="untagged-title">الراهب , المرعشي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib203-2" type="split">
-                           <forename>Michael</forename>
-                           <addName type="untagged-title">The Monk, of Mar‛ash</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib203-4">
+                  <forename>ܡܝܟܳܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Michael</forename>
                </persName>
                <bibl xml:id="bib203-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

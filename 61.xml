@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-61">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib61-2" type="sic">John II, abbot of the Monastery of Qenneshrin</persName>
-               <persName xml:lang="ar" source="bib61-3" type="sic">يوحنا الثاني رئيس دير قنسرين</persName>
-               <persName xml:lang="syr" source="bib61-4" type="sic">ܝܘܚܢܢ ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib61-4" type="sic">ܝܘܚܰܢܢ ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yuḥanon II of Qenneshre</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon II of Qenneshre</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib61-2">John II, abbot of the Monastery of Qenneshrin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib61-3">يوحنا الثاني رئيس دير قنسرين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib61-4">ܝܘܚܢܢ ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib61-4">ܝܘܚܰܢܢ ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon II of Qenneshre</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib61-2">
+                  <forename>John II</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">II, of Qenneshre</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib61-3">
+                  <forename>يوحنا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib61-4" type="sic">ܝܘܚܢܢ ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib61-4" type="sic">ܝܘܚܰܢܢ ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib61-3" type="sic">يوحنا الثاني رئيس دير قنسرين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib61-2" type="sic">John II, abbot of the Monastery of Qenneshrin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib61-4">
+                  <forename>ܝܘܚܢܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib61-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib61-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib61-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">رئيس دير قنسرين , الثاني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib61-2" type="split">
-                           <forename>John II</forename>
-                           <addName type="untagged-title">Abbot of the Monastery of Qenneshrin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib61-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yuḥanon</forename>
                </persName>
                <bibl xml:id="bib61-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

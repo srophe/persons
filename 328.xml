@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-328">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib328-2" type="sic">The Pseudo-story of Alexander the Great</persName>
-               <persName xml:lang="ar" source="bib328-3" type="sic">قصة اسكندر الكبير المصنوعة</persName>
-               <persName xml:lang="syr" source="bib328-4" type="sic">ܬܫܥܝܬܐ ܨܢܝܥܬܐ ܕܐܠܟܣܢܕܪܘܣ ܪܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib328-4" type="sic">ܬܰܫܥܝܬܐ ܨܢܺܝܥܬܐ ܕܐܰܠܟܣܢܕܪܘܣ ܪܰܒܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Authors/Translators of the Alexander Cycle</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Authors/Translators of the Alexander Cycle</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib328-2">The Pseudo-story of Alexander the Great</persName>
+               <persName type="sic" xml:lang="ar" source="#bib328-3">قصة اسكندر الكبير المصنوعة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib328-4">ܬܫܥܝܬܐ ܨܢܝܥܬܐ ܕܐܠܟܣܢܕܪܘܣ ܪܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib328-4">ܬܰܫܥܝܬܐ ܨܢܺܝܥܬܐ ܕܐܰܠܟܣܢܕܪܘܣ ܪܰܒܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Authors/Translators of the Alexander Cycle</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib328-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Authors/Translators of the Alexander Cycle</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib328-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib328-4" type="sic">ܬܫܥܝܬܐ ܨܢܝܥܬܐ ܕܐܠܟܣܢܕܪܘܣ ܪܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib328-4" type="sic">ܬܰܫܥܝܬܐ ܨܢܺܝܥܬܐ ܕܐܰܠܟܣܢܕܪܘܣ ܪܰܒܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib328-3" type="sic">قصة اسكندر الكبير المصنوعة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib328-2" type="sic">The Pseudo-story of Alexander the Great</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib328-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib328-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib328-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib328-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib328-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib328-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib328-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Authors/Translators of the Alexander Cycle</addName>
                </persName>
                <bibl xml:id="bib328-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

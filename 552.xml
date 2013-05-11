@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,33 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-552">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib552-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib552-1"
                          resp="http://syriaca.org">Ishoʿ bar Nun</persName>
-               <persName xml:lang="syr" source="bib552-5" type="sic">ܝܫܘܥܒܪܢܘܢ</persName>
-               <persName xml:lang="syr-Syrn" source="bib552-5" type="sic">ܝܑܼܫܘܿܥܒܲܪܢܘܿܢ</persName>
-               <persName xml:lang="syr" source="bib552-6" type="sic">ܝܫܘܥ ܒܪ ܢܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib552-6" type="sic">ܝܶܫܘܽܥ ܒܰܪ ܢܽܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib552-1" type="sic">Ishoʿ bar Nun</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib552-1" type="split">
-                           <forename>Ishoʿ bar Nun</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib552-1" type="sic">Ishoʿ bar Nun</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib552-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib552-5">ܝܫܘܥܒܪܢܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib552-5">ܝܑܼܫܘܿܥܒܲܪܢܘܿܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib552-6">ܝܫܘܥ ܒܪ ܢܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib552-6">ܝܶܫܘܽܥ ܒܰܪ ܢܽܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib552-1"
+                         resp="http://syriaca.org">
                   <forename>Ishoʿ bar Nun</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib552-5">
+                  <forename>ܝܫܘܥܒܪܢܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib552-5">
+                  <forename>ܝܑܼܫܘܿܥܒܲܪܢܘܿܢ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܝܫܘܥ ܒܪ ܢܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib552-6">
+                  <forename>ܝܶܫܘܽܥ ܒܰܪ ܢܽܘܢ</forename>
                </persName>
                <bibl xml:id="bib552-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,67 +17,39 @@
       <body>
          <listPerson>
             <person xml:id="person-668">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib668-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib668-1"
                          resp="http://syriaca.org">Palladius</persName>
-               <persName xml:lang="ar" source="bib668-3" type="sic">بلاديوس</persName>
-               <persName xml:lang="syr" source="bib668-4" type="sic">ܦܠܐܕܝܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib668-4" type="sic">ܦܠܐܕܺܝܣ</persName>
-               <persName xml:lang="syr" source="bib668-5" type="sic">ܦܠܕܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib668-5" type="sic">ܦܵܠܵܕܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib668-6" type="sic">ܦܠܕܝܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib668-1" type="sic">Palladius</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib668-1" type="split">
-                           <forename>Palladius</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib668-1" type="sic">Palladius</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib668-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib668-3">بلاديوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib668-4">ܦܠܐܕܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib668-4">ܦܠܐܕܺܝܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib668-5">ܦܠܕܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib668-5">ܦܵܠܵܕܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib668-6">ܦܠܕܝܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib668-1"
+                         resp="http://syriaca.org">
                   <forename>Palladius</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib668-4" type="sic">ܦܠܐܕܝܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib668-4" type="sic">ܦܠܐܕܺܝܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib668-3" type="sic">بلاديوس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib668-3">
+                  <forename>بلاديوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib668-4">
+                  <forename>ܦܠܐܕܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib668-4">
+                  <forename>ܦܠܐܕܺܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib668-5">
+                  <forename>ܦܠܕܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib668-5">
+                  <forename>ܦܵܠܵܕܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib668-4" type="split">
-                           <forename>ܦܠܐܕܝܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib668-4" type="split">
-                           <forename>ܦܠܐܕܺܝܣ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib668-3" type="split">
-                           <forename>بلاديوس</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܦܠܕܝܣ</forename>
                </persName>
                <bibl xml:id="bib668-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

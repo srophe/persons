@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-180">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib180-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib180-1"
                          resp="http://syriaca.org">Yaḥyā b. ʿAdī</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib180-2" type="sic">Yaḥya Ibn ‛Adi</persName>
-               <persName xml:lang="ar" source="bib180-3" type="sic">يحي بن عدي </persName>
-               <persName xml:lang="syr" source="bib180-4" type="sic">ܝܚܝܐ ܒܪ ܥܕܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib180-4" type="sic">ܝܰܚܝܰܐ ܒܰܪ ܥܰܕܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib180-1" type="sic">Yaḥyā b. ʿAdī</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib180-1" type="split">
-                           <forename>Yaḥyā</forename>
-                           <surname>b. ʿAdī</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib180-1" type="sic">Yaḥyā b. ʿAdī</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib180-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib180-2">Yaḥya Ibn ‛Adi</persName>
+               <persName type="sic" xml:lang="ar" source="#bib180-3">يحي بن عدي </persName>
+               <persName type="sic" xml:lang="syr" source="#bib180-4">ܝܚܝܐ ܒܪ ܥܕܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib180-4">ܝܰܚܝܰܐ ܒܰܪ ܥܰܕܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib180-1"
+                         resp="http://syriaca.org">
                   <forename>Yaḥyā</forename>
                   <surname>b. ʿAdī</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib180-4" type="sic">ܝܚܝܐ ܒܪ ܥܕܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib180-4" type="sic">ܝܰܚܝܰܐ ܒܰܪ ܥܰܕܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib180-3" type="sic">يحي بن عدي </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib180-2" type="sic">Yaḥya Ibn ‛Adi</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib180-2">
+                  <forename>Yaḥya</forename>
+                  <surname>Ibn ‛Adi</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib180-4" type="split">
-                           <forename>ܝܚܝܐ</forename>
-                           <surname>ܒܪ ܥܕܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib180-4" type="split">
-                           <forename>ܝܰܚܝܰܐ</forename>
-                           <surname>ܒܰܪ ܥܰܕܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib180-3" type="split">
-                           <forename>يحي</forename>
-                           <surname>بن عدي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib180-2" type="split">
-                           <forename>Yaḥya</forename>
-                           <surname>Ibn ‛Adi</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib180-3">
+                  <forename>يحي</forename>
+                  <surname>بن عدي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib180-4">
+                  <forename>ܝܚܝܐ</forename>
+                  <surname>ܒܪ ܥܕܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib180-4">
+                  <forename>ܝܰܚܝܰܐ</forename>
+                  <surname>ܒܰܪ ܥܰܕܝ</surname>
                </persName>
                <bibl xml:id="bib180-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

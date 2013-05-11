@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,81 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-7">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib7-2" type="sic">Isaiah Bar Ḥadbo</persName>
-               <persName xml:lang="ar" source="bib7-3" type="sic">اشعيا بن حدبو</persName>
-               <persName xml:lang="syr" source="bib7-4" type="sic">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib7-4" type="sic">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
-               <persName xml:lang="syr" type="sic" resp="http://syriaca.org">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Eshaʿya bar Ḥadbo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="sic">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Eshaʿya bar Ḥadbo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib7-2">Isaiah Bar Ḥadbo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib7-3">اشعيا بن حدبو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib7-4">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib7-4">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
+               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Eshaʿya bar Ḥadbo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib7-2">
+                  <forename>Isaiah</forename>
+                  <surname>Bar Ḥadbo</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" type="split">
-                           <forename>ܐܫܥܝܐ</forename>
-                           <surname>ܒܪ ܚܕܒܘ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Eshaʿya</forename>
-                           <surname>bar Ḥadbo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib7-3">
+                  <forename>اشعيا</forename>
+                  <surname>بن حدبو</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib7-4" type="sic">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib7-4" type="sic">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib7-3" type="sic">اشعيا بن حدبو</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib7-2" type="sic">Isaiah Bar Ḥadbo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib7-4">
+                  <forename>ܐܫܥܝܐ</forename>
+                  <surname>ܒܪ ܚܕܒܘ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib7-4" type="split">
-                           <forename>ܐܫܥܝܐ</forename>
-                           <surname>ܒܪ ܚܕܒܘ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib7-4" type="split">
-                           <forename>ܐܶܫܰܥܝܐ</forename>
-                           <surname>ܒܰܪ ܚܕܒܘ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib7-3" type="split">
-                           <forename>اشعيا</forename>
-                           <surname>بن حدبو</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib7-2" type="split">
-                           <forename>Isaiah</forename>
-                           <surname>Bar Ḥadbo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib7-4">
+                  <forename>ܐܶܫܰܥܝܐ</forename>
+                  <surname>ܒܰܪ ܚܕܒܘ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+                  <forename>ܐܫܥܝܐ</forename>
+                  <surname>ܒܪ ܚܕܒܘ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Eshaʿya</forename>
+                  <surname>bar Ḥadbo</surname>
                </persName>
                <bibl xml:id="bib7-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

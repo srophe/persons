@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-136">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib136-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib136-1"
                          resp="http://syriaca.org">Loʿozar of Beth Qandasa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib136-2" type="sic">The Monk Lazarus of Beth Qandasa</persName>
-               <persName xml:lang="ar" source="bib136-3" type="sic">الراهب لعازار آل قنداسا</persName>
-               <persName xml:lang="syr" source="bib136-4" type="sic">ܕܝܪܝܐ ܠܥܙܪ ܕܒܝܬ ܩܢܕܐܣܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib136-4" type="sic">ܕܰܝܪܳܝܐ ܠܳܥܳܙܳܪ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib136-1" type="sic">Loʿozar of Beth Qandasa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib136-1" type="split">
-                           <forename>Loʿozar</forename>
-                           <addName type="untagged-title">of Beth Qandasa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib136-1" type="sic">Loʿozar of Beth Qandasa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib136-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib136-2">The Monk Lazarus of Beth Qandasa</persName>
+               <persName type="sic" xml:lang="ar" source="#bib136-3">الراهب لعازار آل قنداسا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib136-4">ܕܝܪܝܐ ܠܥܙܪ ܕܒܝܬ ܩܢܕܐܣܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib136-4">ܕܰܝܪܳܝܐ ܠܳܥܳܙܳܪ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib136-1"
+                         resp="http://syriaca.org">
                   <forename>Loʿozar</forename>
-                  <addName type="untagged-title">of Beth Qandasa</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib136-4" type="sic">ܕܝܪܝܐ ܠܥܙܪ ܕܒܝܬ ܩܢܕܐܣܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib136-4" type="sic">ܕܰܝܪܳܝܐ ܠܳܥܳܙܳܪ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib136-3" type="sic">الراهب لعازار آل قنداسا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib136-2" type="sic">The Monk Lazarus of Beth Qandasa</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib136-2">
+                  <forename>Lazarus</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib136-4" type="split">
-                           <forename>ܠܥܙܪ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ ܕܒܝܬ ܩܢܕܐܣܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib136-4" type="split">
-                           <forename>ܠܳܥܳܙܳܪ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܩܰܢܕܰܐܣܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib136-3" type="split">
-                           <forename>لعازار</forename>
-                           <addName type="untagged-title">الراهب , آل قنداسا</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib136-2" type="split">
-                           <forename>Lazarus</forename>
-                           <addName type="untagged-title">The Monk, of Beth Qandasa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib136-3">
+                  <forename>لعازار</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib136-4">
+                  <forename>ܠܥܙܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib136-4">
+                  <forename>ܠܳܥܳܙܳܪ</forename>
                </persName>
                <bibl xml:id="bib136-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

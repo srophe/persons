@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-277">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib277-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib277-1"
                          resp="http://syriaca.org">Nuḥ the Lebanese</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib277-2" type="sic">Patriarch Nuḥ the Lebanese</persName>
-               <persName xml:lang="ar" source="bib277-3" type="sic">البطريرك نوح اللبناني</persName>
-               <persName xml:lang="syr" source="bib277-4" type="sic">ܦܛܪܝܪܟܐ ܢܘܚ ܠܒܢܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib277-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܢܘܚ ܠܶܒܢܳܢܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib277-1" type="sic">Nuḥ the Lebanese</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib277-1" type="split">
-                           <forename>Nuḥ</forename>
-                           <addName type="untagged-title">the Lebanese</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib277-1" type="sic">Nuḥ the Lebanese</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib277-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib277-2">Patriarch Nuḥ the Lebanese</persName>
+               <persName type="sic" xml:lang="ar" source="#bib277-3">البطريرك نوح اللبناني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib277-4">ܦܛܪܝܪܟܐ ܢܘܚ ܠܒܢܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib277-4">ܦܰܛܪܝܰܪܟܐ ܢܘܚ ܠܶܒܢܳܢܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib277-1"
+                         resp="http://syriaca.org">
                   <forename>Nuḥ</forename>
-                  <addName type="untagged-title">the Lebanese</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib277-4" type="sic">ܦܛܪܝܪܟܐ ܢܘܚ ܠܒܢܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib277-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܢܘܚ ܠܶܒܢܳܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib277-3" type="sic">البطريرك نوح اللبناني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib277-2" type="sic">Patriarch Nuḥ the Lebanese</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib277-2">
+                  <forename>Nuḥ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib277-4" type="split">
-                           <forename>ܢܘܚ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܠܒܢܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib277-4" type="split">
-                           <forename>ܢܘܚ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܠܶܒܢܳܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib277-3" type="split">
-                           <forename>نوح</forename>
-                           <addName type="untagged-title">البطريرك,  اللبناني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib277-2" type="split">
-                           <forename>Nuḥ</forename>
-                           <addName type="untagged-title">Patriarch, the Lebanese</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib277-3">
+                  <forename>نوح</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib277-4">
+                  <forename>ܢܘܚ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib277-4">
+                  <forename>ܢܘܚ</forename>
                </persName>
                <bibl xml:id="bib277-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

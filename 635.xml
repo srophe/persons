@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,37 +17,20 @@
       <body>
          <listPerson>
             <person xml:id="person-635">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib635-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib635-1"
                          resp="http://syriaca.org">Methodius, Apocalypse of Pseudo-</persName>
-               <persName xml:lang="syr" source="bib635-5" type="sic">ܝܘܒܠܐ ܕܬܘܠܕ̈ܬܐ ܕܡܝܬܝܕܘܣ ܐܦܣܩܘܦܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib635-5" type="sic">ܝܘܼܒܵܠܵܐ ܕܬܵܘܠܕܵ̈ܬܵܐ ܕܡܝܼܬܝܼܕܘܿܣ ܐܲܦܸܣܩܘܿܦܵܐ</persName>
-               <persName xml:lang="syr" source="bib635-6" type="sic">ܝܘܒܠܐ ܕܬܘ̈ܠܕܬܐ ܕܡܝܬܝܕܘܣ ܐܦܝܣܩܘܦܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib635-6" type="sic">ܝܘܽܒܳܠܳܐ ܕܬܘ̈ܠܕܳܬܳܐ ܕܡܺܝܬܝܺܕܳܘܣ ܐܶܦܺܝܣܩܽܘܦܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib635-1" type="sic">Methodius, Apocalypse of Pseudo-</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib635-1" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib635-1" type="sic">Methodius, Apocalypse of Pseudo-</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib635-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib635-5">ܝܘܒܠܐ ܕܬܘܠܕ̈ܬܐ ܕܡܝܬܝܕܘܣ ܐܦܣܩܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib635-5">ܝܘܼܒܵܠܵܐ ܕܬܵܘܠܕܵ̈ܬܵܐ ܕܡܝܼܬܝܼܕܘܿܣ ܐܲܦܸܣܩܘܿܦܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib635-6">ܝܘܒܠܐ ܕܬܘ̈ܠܕܬܐ ܕܡܝܬܝܕܘܣ ܐܦܝܣܩܘܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib635-6">ܝܘܽܒܳܠܳܐ ܕܬܘ̈ܠܕܳܬܳܐ ܕܡܺܝܬܝܺܕܳܘܣ ܐܶܦܺܝܣܩܽܘܦܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib635-1"
+                         resp="http://syriaca.org">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
-                  <addName type="untagged-title">#REF!</addName>
                </persName>
                <bibl xml:id="bib635-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

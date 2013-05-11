@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,35 @@
       <body>
          <listPerson>
             <person xml:id="person-505">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib505-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib505-1"
                          resp="http://syriaca.org">Giwargis II, Ignatius</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib505-2" type="sic">Patriarch George II, son of ʿAbd al-Karīm of Mosul</persName>
-               <persName xml:lang="ar" source="bib505-3" type="sic">البطريرك جرجس الثاني ابن عبدالكريم الموصلي</persName>
-               <persName xml:lang="syr" source="bib505-4" type="sic">ܦܛܪܝܪܟܐ ܓܘܪܓܝܣ ܬܪܝܢܐ ܒܪ ܥܒܕ ܐܠܟܪܝܡ ܡܘܨܠܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib505-4" type="sic">ܦܰܛܪܝܰܪܟܳܐ ܓܶܘܰܪܓܝܣ ܬܪܰܝܳܢܐ ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ ܡܘܨܠܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib505-1" type="sic">Giwargis II, Ignatius</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib505-1" type="split">
-                           <forename>Ignatius Giwargis</forename>
-                           <addName type="untagged-title">II</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib505-1" type="sic">Giwargis II, Ignatius</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib505-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib505-2">Patriarch George II, son of ʿAbd al-Karīm of Mosul</persName>
+               <persName type="sic" xml:lang="ar" source="#bib505-3">البطريرك جرجس الثاني ابن عبدالكريم الموصلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib505-4">ܦܛܪܝܪܟܐ ܓܘܪܓܝܣ ܬܪܝܢܐ ܒܪ ܥܒܕ ܐܠܟܪܝܡ ܡܘܨܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib505-4">ܦܰܛܪܝܰܪܟܳܐ ܓܶܘܰܪܓܝܣ ܬܪܰܝܳܢܐ ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ ܡܘܨܠܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib505-1"
+                         resp="http://syriaca.org">
                   <forename>Ignatius Giwargis</forename>
-                  <addName type="untagged-title">II</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib505-4" type="sic">ܦܛܪܝܪܟܐ ܓܘܪܓܝܣ ܬܪܝܢܐ ܒܪ ܥܒܕ ܐܠܟܪܝܡ ܡܘܨܠܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib505-4" type="sic">ܦܰܛܪܝܰܪܟܳܐ ܓܶܘܰܪܓܝܣ ܬܪܰܝܳܢܐ ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ ܡܘܨܠܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib505-3" type="sic">البطريرك جرجس الثاني ابن عبدالكريم الموصلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib505-2" type="sic">Patriarch George II, son of ʿAbd al-Karīm of Mosul</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib505-2">
+                  <forename>George</forename>
+                  <surname>son of ʿAbd al-Karīm</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib505-4" type="split">
-                           <forename>ܓܘܪܓܝܣ</forename>
-                           <surname>ܒܪ ܥܒܕ ܐܠܟܪܝܡ</surname>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ, ܬܪܝܢܐ ܡܘܨܠܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib505-4" type="split">
-                           <forename>ܓܶܘܰܪܓܝܣ</forename>
-                           <surname>ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ</surname>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܳܐ, ܬܪܰܝܳܢܐ ܡܘܨܠܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib505-3" type="split">
-                           <forename>جرجس</forename>
-                           <surname>ابن عبدالكريم</surname>
-                           <addName type="untagged-title">البطريرك, الثاني الموصلي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib505-2" type="split">
-                           <forename>George</forename>
-                           <surname>son of ʿAbd al-Karīm</surname>
-                           <addName type="untagged-title">Patriarch, II, of Mosul</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib505-3">
+                  <forename>جرجس</forename>
+                  <surname>ابن عبدالكريم</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib505-4">
+                  <forename>ܓܘܪܓܝܣ</forename>
+                  <surname>ܒܪ ܥܒܕ ܐܠܟܪܝܡ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib505-4">
+                  <forename>ܓܶܘܰܪܓܝܣ</forename>
+                  <surname>ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ</surname>
                </persName>
                <bibl xml:id="bib505-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

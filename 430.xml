@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-430">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib430-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib430-1"
                          resp="http://syriaca.org">Cyril of Alexandria</persName>
-               <persName xml:lang="ar" source="bib430-3" type="sic">قورلس الاسكندري</persName>
-               <persName xml:lang="syr" source="bib430-4" type="sic">ܩܘܪܝܠܠܘܣ ܕܐܠܟܣܢܕܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib430-4" type="sic">ܩܘܪܝܠܠܘܣ ܕܰܐܠܟܣܰܢܕܪܝܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib430-1" type="sic">Cyril of Alexandria</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib430-1" type="split">
-                           <forename>Cyril</forename>
-                           <addName type="untagged-title">of Alexandria</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib430-1" type="sic">Cyril of Alexandria</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib430-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib430-3">قورلس الاسكندري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib430-4">ܩܘܪܝܠܠܘܣ ܕܐܠܟܣܢܕܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib430-4">ܩܘܪܝܠܠܘܣ ܕܰܐܠܟܣܰܢܕܪܝܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib430-1"
+                         resp="http://syriaca.org">
                   <forename>Cyril</forename>
-                  <addName type="untagged-title">of Alexandria</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib430-4" type="sic">ܩܘܪܝܠܠܘܣ ܕܐܠܟܣܢܕܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib430-4" type="sic">ܩܘܪܝܠܠܘܣ ܕܰܐܠܟܣܰܢܕܪܝܰܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib430-3" type="sic">قورلس الاسكندري</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib430-3">
+                  <forename>قورلس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib430-4" type="split">
-                           <forename>ܩܘܪܝܠܠܘܣ</forename>
-                           <addName type="untagged-title">ܕܐܠܟܣܢܕܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib430-4" type="split">
-                           <forename>ܩܘܪܝܠܠܘܣ</forename>
-                           <addName type="untagged-title">ܕܰܐܠܟܣܰܢܕܪܝܰܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib430-3" type="split">
-                           <forename>قورلس</forename>
-                           <addName type="untagged-title">الاسكندري</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib430-4">
+                  <forename>ܩܘܪܝܠܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib430-4">
+                  <forename>ܩܘܪܝܠܠܘܣ</forename>
                </persName>
                <bibl xml:id="bib430-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

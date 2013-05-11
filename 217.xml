@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-217">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib217-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib217-1"
                          resp="http://syriaca.org">Michael I Rabo</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib217-2" type="sic">Mar Michael the Great</persName>
-               <persName xml:lang="ar" source="bib217-3" type="sic">مار ميخائيل الكبير</persName>
-               <persName xml:lang="syr" source="bib217-4" type="sic">ܡܪܝ ܡܝܟܐܝܠ ܪܒܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib217-4" type="sic">ܡܳܪܝ ܡܝܟܳܐܝܠ ܪܰܒܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
-                           <forename>Michael I</forename>
-                           <addName type="untagged-title">Rabo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="sic">Michael I Rabo</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib217-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib217-2">Mar Michael the Great</persName>
+               <persName type="sic" xml:lang="ar" source="#bib217-3">مار ميخائيل الكبير</persName>
+               <persName type="sic" xml:lang="syr" source="#bib217-4">ܡܪܝ ܡܝܟܐܝܠ ܪܒܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib217-4">ܡܳܪܝ ܡܝܟܳܐܝܠ ܪܰܒܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib217-1"
+                         resp="http://syriaca.org">
                   <forename>Michael I</forename>
-                  <addName type="untagged-title">Rabo</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib217-4" type="sic">ܡܪܝ ܡܝܟܐܝܠ ܪܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib217-4" type="sic">ܡܳܪܝ ܡܝܟܳܐܝܠ ܪܰܒܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib217-3" type="sic">مار ميخائيل الكبير</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib217-2" type="sic">Mar Michael the Great</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib217-2">
+                  <forename>Michael</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib217-4" type="split">
-                           <forename>ܡܝܟܐܝܠ</forename>
-                           <addName type="untagged-title">ܡܪܝ ܪܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib217-4" type="split">
-                           <forename>ܡܝܟܳܐܝܠ</forename>
-                           <addName type="untagged-title">ܡܳܪܝ ܪܰܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib217-3" type="split">
-                           <forename>ميخائيل</forename>
-                           <addName type="untagged-title">مار ,  الكبير</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib217-2" type="split">
-                           <forename>Michael</forename>
-                           <addName type="untagged-title">Mar, the Great</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib217-3">
+                  <forename>ميخائيل</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib217-4">
+                  <forename>ܡܝܟܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib217-4">
+                  <forename>ܡܝܟܳܐܝܠ</forename>
                </persName>
                <bibl xml:id="bib217-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

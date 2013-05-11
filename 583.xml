@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,66 +17,28 @@
       <body>
          <listPerson>
             <person xml:id="person-583">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib583-2" type="sic">Kalila wa Dimna</persName>
-               <persName xml:lang="ar" source="bib583-3" type="sic">كتاب كليلة ودمنة</persName>
-               <persName xml:lang="syr" source="bib583-4" type="sic">ܟܬܒܐ ܕܩܠܝܠܓ ܘܕܡܢܓ</persName>
-               <persName xml:lang="syr-Syrj" source="bib583-4" type="sic">ܟܬܳܒܐ ܕܩܰܠܝܠܰܓ ܘܕܶܡܢܰܓ</persName>
-               <persName xml:lang="syr" source="bib583-5" type="sic">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
-               <persName xml:lang="syr-Syrn" source="bib583-5" type="sic">ܩܠܝܼܠܸܓ ܘܕܲܡܢܸܓ</persName>
-               <persName xml:lang="syr" source="bib583-6" type="sic">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
-               <persName xml:lang="syr-Syrj" source="bib583-6" type="sic">ܩܰܠܺܝܠܰܓ ܘܕܰܡܢܰܓ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of Kalila and Dimna</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of Kalila and Dimna</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib583-2">Kalila wa Dimna</persName>
+               <persName type="sic" xml:lang="ar" source="#bib583-3">كتاب كليلة ودمنة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib583-4">ܟܬܒܐ ܕܩܠܝܠܓ ܘܕܡܢܓ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib583-4">ܟܬܳܒܐ ܕܩܰܠܝܠܰܓ ܘܕܶܡܢܰܓ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib583-5">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib583-5">ܩܠܝܼܠܸܓ ܘܕܲܡܢܸܓ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib583-6">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib583-6">ܩܰܠܺܝܠܰܓ ܘܕܰܡܢܰܓ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of Kalila and Dimna</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib583-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of Kalila and Dimna</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib583-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib583-4" type="sic">ܟܬܒܐ ܕܩܠܝܠܓ ܘܕܡܢܓ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib583-4" type="sic">ܟܬܳܒܐ ܕܩܰܠܝܠܰܓ ܘܕܶܡܢܰܓ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib583-3" type="sic">كتاب كليلة ودمنة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib583-2" type="sic">Kalila wa Dimna</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib583-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib583-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib583-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib583-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of Kalila and Dimna</addName>
                </persName>
                <bibl xml:id="bib583-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

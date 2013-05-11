@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-102">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib102-2" type="sic">Matthew, metropolitan of Aleppo</persName>
-               <persName xml:lang="ar" source="bib102-3" type="sic">متي مطران حلب</persName>
-               <persName xml:lang="syr" source="bib102-4" type="sic">ܡܬܝ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</persName>
-               <persName xml:lang="syr-Syrj" source="bib102-4" type="sic">ܡܰܬܰܝ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Matay of Aleppo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Matay of Aleppo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib102-2">Matthew, metropolitan of Aleppo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib102-3">متي مطران حلب</persName>
+               <persName type="sic" xml:lang="syr" source="#bib102-4">ܡܬܝ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib102-4">ܡܰܬܰܝ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Matay of Aleppo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib102-2">
+                  <forename>Matthew</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Matay</forename>
-                           <addName type="untagged-title">of Aleppo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib102-3">
+                  <forename>متي</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib102-4" type="sic">ܡܬܝ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib102-4" type="sic">ܡܰܬܰܝ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib102-3" type="sic">متي مطران حلب</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib102-2" type="sic">Matthew, metropolitan of Aleppo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib102-4">
+                  <forename>ܡܬܝ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib102-4" type="split">
-                           <forename>ܡܬܝ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib102-4" type="split">
-                           <forename>ܡܰܬܰܝ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib102-3" type="split">
-                           <forename>متي</forename>
-                           <addName type="untagged-title">مطران حلب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib102-2" type="split">
-                           <forename>Matthew</forename>
-                           <addName type="untagged-title">Metropolitan of Aleppo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib102-4">
+                  <forename>ܡܰܬܰܝ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Matay</forename>
                </persName>
                <bibl xml:id="bib102-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

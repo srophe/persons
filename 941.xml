@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-941">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib941-2" type="sic">Deacon Sahdo of the Shumanna family</persName>
-               <persName xml:lang="ar" source="bib941-3" type="sic">الشماس سهدو آل شومنا</persName>
-               <persName xml:lang="syr" source="bib941-4" type="sic">ܡܫܡܫܢܐ ܣܗܕܐ ܕܒܝܬ ܫܘܡܢ̈ܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib941-4" type="sic">ܡܫܰܡܫܳܢܐ ܣܳܗܕܐ ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Sohdo d-Beth Shumone</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Sohdo d-Beth Shumone</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib941-2">Deacon Sahdo of the Shumanna family</persName>
+               <persName type="sic" xml:lang="ar" source="#bib941-3">الشماس سهدو آل شومنا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib941-4">ܡܫܡܫܢܐ ܣܗܕܐ ܕܒܝܬ ܫܘܡܢ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib941-4">ܡܫܰܡܫܳܢܐ ܣܳܗܕܐ ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Sohdo d-Beth Shumone</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib941-2">
+                  <forename>Sahdo</forename>
+                  <surname>of the Shumanna family</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Sohdo</forename>
-                           <surname>d-Beth Shumone</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib941-3">
+                  <forename>سهدو</forename>
+                  <surname>آل شومنا</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib941-4" type="sic">ܡܫܡܫܢܐ ܣܗܕܐ ܕܒܝܬ ܫܘܡܢ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib941-4" type="sic">ܡܫܰܡܫܳܢܐ ܣܳܗܕܐ ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib941-3" type="sic">الشماس سهدو آل شومنا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib941-2" type="sic">Deacon Sahdo of the Shumanna family</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib941-4">
+                  <forename>ܣܗܕܐ</forename>
+                  <surname>ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib941-4" type="split">
-                           <forename>ܣܗܕܐ</forename>
-                           <surname>ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
-                           <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib941-4" type="split">
-                           <forename>ܣܳܗܕܐ</forename>
-                           <surname>ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</surname>
-                           <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib941-3" type="split">
-                           <forename>سهدو</forename>
-                           <surname>آل شومنا</surname>
-                           <addName type="untagged-title">الشماس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib941-2" type="split">
-                           <forename>Sahdo</forename>
-                           <surname>of the Shumanna family</surname>
-                           <addName type="untagged-title">Deacon</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib941-4">
+                  <forename>ܣܳܗܕܐ</forename>
+                  <surname>ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Sohdo</forename>
+                  <surname>d-Beth Shumone</surname>
                </persName>
                <bibl xml:id="bib941-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

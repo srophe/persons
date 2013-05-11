@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-145">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib145-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib145-1"
                          resp="http://syriaca.org">Quryaqos</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib145-2" type="sic">Quryaqos, Patriarch of Antioch</persName>
-               <persName xml:lang="ar" source="bib145-3" type="sic">قرياقس بطريرك انطاكية</persName>
-               <persName xml:lang="syr" source="bib145-4" type="sic">ܩܘܪܝܐܩܘܣ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib145-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
-                           <forename>Quryaqos</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="sic">Quryaqos</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib145-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib145-2">Quryaqos, Patriarch of Antioch</persName>
+               <persName type="sic" xml:lang="ar" source="#bib145-3">قرياقس بطريرك انطاكية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib145-4">ܩܘܪܝܐܩܘܣ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib145-4">ܩܘܪܝܰܐܩܘܣ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib145-1"
+                         resp="http://syriaca.org">
                   <forename>Quryaqos</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib145-4" type="sic">ܩܘܪܝܐܩܘܣ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib145-4" type="sic">ܩܘܪܝܰܐܩܘܣ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib145-3" type="sic">قرياقس بطريرك انطاكية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib145-2" type="sic">Quryaqos, Patriarch of Antioch</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib145-2">
+                  <forename>Quryaqos</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib145-4" type="split">
-                           <forename>ܩܘܪܝܐܩܘܣ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib145-4" type="split">
-                           <forename>ܩܘܪܝܰܐܩܘܣ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib145-3" type="split">
-                           <forename>قرياقس</forename>
-                           <addName type="untagged-title">بطريرك انطاكية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib145-2" type="split">
-                           <forename>Quryaqos</forename>
-                           <addName type="untagged-title">Patriarch of Antioch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib145-3">
+                  <forename>قرياقس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib145-4">
+                  <forename>ܩܘܪܝܐܩܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib145-4">
+                  <forename>ܩܘܪܝܰܐܩܘܣ</forename>
                </persName>
                <bibl xml:id="bib145-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

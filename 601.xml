@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,44 +17,39 @@
       <body>
          <listPerson>
             <person xml:id="person-601">
-               <persName xml:lang="ar" source="bib601-3" type="sic">مقاريوس الاسكندري</persName>
-               <persName xml:lang="syr" source="bib601-5" type="sic">ܐܒܐ ܡܩܪܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib601-5" type="sic">ܐܲܒܵܐ ܡܵܩܵܪܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib601-6" type="sic">ܐܒܐ ܡܩܪܝܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib601-6" type="sic">ܐܰܒܳܐ ܡܰܩܰܪܝܳܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the Macarian homilies</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the Macarian homilies</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib601-3">مقاريوس الاسكندري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib601-5">ܐܒܐ ܡܩܪܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib601-5">ܐܲܒܵܐ ܡܵܩܵܪܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib601-6">ܐܒܐ ܡܩܪܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib601-6">ܐܰܒܳܐ ܡܰܩܰܪܝܳܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the Macarian homilies</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib601-1"
+                         resp="http://syriaca.org">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the Macarian homilies</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib601-3">
+                  <forename>مقاريوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib601-3" type="sic">مقاريوس الاسكندري</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib601-5">
+                  <forename>ܡܩܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib601-5">
+                  <forename>ܡܵܩܵܪܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib601-3" type="split">
-                           <forename>مقاريوس</forename>
-                           <addName type="untagged-title">الاسكندري</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܡܩܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib601-6">
+                  <addName type="untagged-title">ܐܒܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib601-6">
+                  <forename>ܡܰܩܰܪܝܳܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the Macarian homilies</addName>
                </persName>
                <bibl xml:id="bib601-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

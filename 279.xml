@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-279">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib279-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib279-1"
                          resp="http://syriaca.org">Masʿūd of Ṭur ʿAbdin</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib279-2" type="sic">Patriarch Mas‛ud of Zāz</persName>
-               <persName xml:lang="ar" source="bib279-3" type="sic">البطريرك مسعود الزازي</persName>
-               <persName xml:lang="syr" source="bib279-4" type="sic">ܦܛܪܝܪܟܐ ܡܣܥܘܕ ܙܐܙܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib279-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܡܰܣܥܘܕ ܙܰܐܙܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib279-1" type="sic">Masʿūd of Ṭur ʿAbdin</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib279-1" type="split">
-                           <forename>Masʿūd</forename>
-                           <addName type="untagged-title">of Ṭur ʿAbdin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib279-1" type="sic">Masʿūd of Ṭur ʿAbdin</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib279-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib279-2">Patriarch Mas‛ud of Zāz</persName>
+               <persName type="sic" xml:lang="ar" source="#bib279-3">البطريرك مسعود الزازي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib279-4">ܦܛܪܝܪܟܐ ܡܣܥܘܕ ܙܐܙܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib279-4">ܦܰܛܪܝܰܪܟܐ ܡܰܣܥܘܕ ܙܰܐܙܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib279-1"
+                         resp="http://syriaca.org">
                   <forename>Masʿūd</forename>
-                  <addName type="untagged-title">of Ṭur ʿAbdin</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib279-4" type="sic">ܦܛܪܝܪܟܐ ܡܣܥܘܕ ܙܐܙܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib279-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܡܰܣܥܘܕ ܙܰܐܙܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib279-3" type="sic">البطريرك مسعود الزازي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib279-2" type="sic">Patriarch Mas‛ud of Zāz</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib279-2">
+                  <forename>Mas‛ud</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib279-4" type="split">
-                           <forename>ܡܣܥܘܕ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܙܐܙܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib279-4" type="split">
-                           <forename>ܡܰܣܥܘܕ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܙܰܐܙܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib279-3" type="split">
-                           <forename>مسعود</forename>
-                           <addName type="untagged-title">البطريرك , الزازي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib279-2" type="split">
-                           <forename>Mas‛ud</forename>
-                           <addName type="untagged-title">Patriarch of Zāz</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib279-3">
+                  <forename>مسعود</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib279-4">
+                  <forename>ܡܣܥܘܕ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib279-4">
+                  <forename>ܡܰܣܥܘܕ</forename>
                </persName>
                <bibl xml:id="bib279-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

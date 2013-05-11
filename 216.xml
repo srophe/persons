@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-216">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib216-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib216-1"
                          resp="http://syriaca.org">Theodoros bar Wahbun</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib216-2" type="sic">Bar Wahbun</persName>
-               <persName xml:lang="ar" source="bib216-3" type="sic">ابن وهبون</persName>
-               <persName xml:lang="syr" source="bib216-4" type="sic">ܒܪ ܘܗܒܘܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib216-4" type="sic">ܒܰܪ ܘܰܗܒܘܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib216-1" type="sic">Theodoros bar Wahbun</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib216-1" type="split">
-                           <forename>Theodoros</forename>
-                           <surname>bar Wahbun</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib216-1" type="sic">Theodoros bar Wahbun</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib216-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib216-2">Bar Wahbun</persName>
+               <persName type="sic" xml:lang="ar" source="#bib216-3">ابن وهبون</persName>
+               <persName type="sic" xml:lang="syr" source="#bib216-4">ܒܪ ܘܗܒܘܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib216-4">ܒܰܪ ܘܰܗܒܘܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib216-1"
+                         resp="http://syriaca.org">
                   <forename>Theodoros</forename>
                   <surname>bar Wahbun</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib216-4" type="sic">ܒܪ ܘܗܒܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib216-4" type="sic">ܒܰܪ ܘܰܗܒܘܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib216-3" type="sic">ابن وهبون</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib216-2" type="sic">Bar Wahbun</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib216-2">
+                  <forename>Bar Wahbun</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib216-4" type="split">
-                           <forename>ܒܪ ܘܗܒܘܢ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib216-4" type="split">
-                           <forename>ܒܰܪ ܘܰܗܒܘܢ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib216-3" type="split">
-                           <forename>ابن وهبون</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib216-2" type="split">
-                           <forename>Bar Wahbun</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib216-3">
+                  <forename>ابن وهبون</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib216-4">
+                  <forename>ܒܪ ܘܗܒܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib216-4">
+                  <forename>ܒܰܪ ܘܰܗܒܘܢ</forename>
                </persName>
                <bibl xml:id="bib216-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

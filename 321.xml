@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-321">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib321-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib321-1"
                          resp="http://syriaca.org">Abraham of Nathpar</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib321-2" type="sic">Abraham of Naphtar</persName>
-               <persName xml:lang="ar" source="bib321-3" type="sic">ابرهيم النفتري</persName>
-               <persName xml:lang="syr" source="bib321-4" type="sic">ܐܒܪܗܡ ܢܦܬܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib321-4" type="sic">ܐܰܒܪܳܗܡܳ ܢܰܦܬܪܝܐ</persName>
-               <persName xml:lang="syr" source="bib321-5" type="sic">ܐܒܪܗܡ ܢܬܦܪܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib321-5" type="sic">ܐܲܒܪܵܗܵܡ ܢܲܬܦܪܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib321-6" type="sic">ܐܒܪܗܡ ܢܬܦܪܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib321-1" type="sic">Abraham of Nathpar</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib321-1" type="split">
-                           <forename>Abraham</forename>
-                           <addName type="untagged-title">of Nathpar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib321-1" type="sic">Abraham of Nathpar</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib321-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib321-2">Abraham of Naphtar</persName>
+               <persName type="sic" xml:lang="ar" source="#bib321-3">ابرهيم النفتري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib321-4">ܐܒܪܗܡ ܢܦܬܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib321-4">ܐܰܒܪܳܗܡܳ ܢܰܦܬܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib321-5">ܐܒܪܗܡ ܢܬܦܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib321-5">ܐܲܒܪܵܗܵܡ ܢܲܬܦܪܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib321-6">ܐܒܪܗܡ ܢܬܦܪܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib321-1"
+                         resp="http://syriaca.org">
                   <forename>Abraham</forename>
-                  <addName type="untagged-title">of Nathpar</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib321-4" type="sic">ܐܒܪܗܡ ܢܦܬܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib321-4" type="sic">ܐܰܒܪܳܗܡܳ ܢܰܦܬܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib321-3" type="sic">ابرهيم النفتري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib321-2" type="sic">Abraham of Naphtar</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib321-2">
+                  <forename>Abraham</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib321-3">
+                  <forename>ابرهيم</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib321-4">
+                  <forename>ܐܒܪܗܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib321-4">
+                  <forename>ܐܰܒܪܳܗܡܳ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib321-5">
+                  <forename>ܐܒܪܗܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib321-5">
+                  <forename>ܐܲܒܪܵܗܵܡ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib321-4" type="split">
-                           <forename>ܐܒܪܗܡ</forename>
-                           <addName type="untagged-title">ܢܦܬܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib321-4" type="split">
-                           <forename>ܐܰܒܪܳܗܡܳ</forename>
-                           <addName type="untagged-title">ܢܰܦܬܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib321-3" type="split">
-                           <forename>ابرهيم</forename>
-                           <addName type="untagged-title">النفتري</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib321-2" type="split">
-                           <forename>Abraham</forename>
-                           <addName type="untagged-title">of Naphtar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܒܪܗܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib321-6">
+                  <addName type="untagged-title">ܢܬܦܪܝܐ</addName>
                </persName>
                <bibl xml:id="bib321-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

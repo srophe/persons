@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-37">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib37-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib37-1"
                          resp="http://syriaca.org">Shemʿun Quqoyo</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib37-2" type="sic">Deacon Simon the Potter</persName>
-               <persName xml:lang="ar" source="bib37-3" type="sic">الشماس شمعون الفخاري</persName>
-               <persName xml:lang="syr" source="bib37-4" type="sic">ܡܫܡܫܢܐ ܫܡܥܘܢ ܩܘܩܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib37-4" type="sic">ܡܫܰܡܫܳܢܐ ܫܶܡܥܘܢ ܩܘܩܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib37-1" type="sic">Shemʿun Quqoyo</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib37-1" type="split">
-                           <forename>Shemʿun</forename>
-                           <addName type="untagged-title">Quqoyo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib37-1" type="sic">Shemʿun Quqoyo</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib37-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib37-2">Deacon Simon the Potter</persName>
+               <persName type="sic" xml:lang="ar" source="#bib37-3">الشماس شمعون الفخاري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib37-4">ܡܫܡܫܢܐ ܫܡܥܘܢ ܩܘܩܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib37-4">ܡܫܰܡܫܳܢܐ ܫܶܡܥܘܢ ܩܘܩܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib37-1"
+                         resp="http://syriaca.org">
                   <forename>Shemʿun</forename>
-                  <addName type="untagged-title">Quqoyo</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib37-4" type="sic">ܡܫܡܫܢܐ ܫܡܥܘܢ ܩܘܩܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib37-4" type="sic">ܡܫܰܡܫܳܢܐ ܫܶܡܥܘܢ ܩܘܩܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib37-3" type="sic">الشماس شمعون الفخاري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib37-2" type="sic">Deacon Simon the Potter</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib37-2">
+                  <forename>Simon</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib37-4" type="split">
-                           <forename>ܫܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܡܫܡܫܢܐ ܩܘܩܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib37-4" type="split">
-                           <forename>ܫܶܡܥܘܢ</forename>
-                           <addName type="untagged-title">ܡܫܰܡܫܳܢܐ ܩܘܩܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib37-3" type="split">
-                           <forename>شمعون</forename>
-                           <addName type="untagged-title">الفخاري , الشماس</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib37-2" type="split">
-                           <forename>Simon</forename>
-                           <addName type="untagged-title">Deacon, the Potter</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib37-3">
+                  <forename>شمعون</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib37-4">
+                  <forename>ܫܡܥܘܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib37-4">
+                  <forename>ܫܶܡܥܘܢ</forename>
                </persName>
                <bibl xml:id="bib37-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

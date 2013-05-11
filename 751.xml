@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,72 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-751">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib751-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib751-1"
                          resp="http://syriaca.org">Smith, Agnes</persName>
-               <persName xml:lang="ar" source="bib751-3" type="sic">السيدة اغنيس لويز</persName>
-               <persName xml:lang="syr" source="bib751-4" type="sic">ܡܪܬܝ ܐܓܢܝܣ ܠܘܝܙ</persName>
-               <persName xml:lang="syr-Syrj" source="bib751-4" type="sic">ܡܳܪܬܝ ܐܰܓܢܝܣ ܠܘܶܝܙ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib751-1" type="sic">Smith, Agnes</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib751-1" type="split">
-                           <forename>Agnes</forename>
-                           <surname>Smith</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib751-1" type="sic">Smith, Agnes</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib751-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib751-3">السيدة اغنيس لويز</persName>
+               <persName type="sic" xml:lang="syr" source="#bib751-4">ܡܪܬܝ ܐܓܢܝܣ ܠܘܝܙ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib751-4">ܡܳܪܬܝ ܐܰܓܢܝܣ ܠܘܶܝܙ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib751-1"
+                         resp="http://syriaca.org">
                   <forename>Agnes</forename>
                   <surname>Smith</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib751-4" type="sic">ܡܪܬܝ ܐܓܢܝܣ ܠܘܝܙ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib751-4" type="sic">ܡܳܪܬܝ ܐܰܓܢܝܣ ܠܘܶܝܙ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib751-3" type="sic">السيدة اغنيس لويز</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib751-3">
+                  <forename>اغنيس</forename>
+                  <surname>لويز</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib751-4" type="split">
-                           <forename>ܐܓܢܝܣ</forename>
-                           <surname>ܠܘܝܙ</surname>
-                           <addName type="untagged-title">ܡܪܬܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib751-4" type="split">
-                           <forename>ܐܰܓܢܝܣ</forename>
-                           <surname>ܠܘܶܝܙ</surname>
-                           <addName type="untagged-title">ܡܳܪܬܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib751-3" type="split">
-                           <forename>اغنيس</forename>
-                           <surname>لويز</surname>
-                           <addName type="untagged-title">السيدة</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib751-4">
+                  <forename>ܐܓܢܝܣ</forename>
+                  <surname>ܠܘܝܙ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib751-4">
+                  <forename>ܐܰܓܢܝܣ</forename>
+                  <surname>ܠܘܶܝܙ</surname>
                </persName>
                <bibl xml:id="bib751-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

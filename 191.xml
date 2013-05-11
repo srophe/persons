@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-191">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib191-2" type="sic">John, metropolitan of Tur ‛Abdin</persName>
-               <persName xml:lang="ar" source="bib191-3" type="sic">يوحنا مطران طور عبدين</persName>
-               <persName xml:lang="syr" source="bib191-4" type="sic">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib191-4" type="sic">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yuḥanon of Ṭur ʿAbdin</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yuḥanon of Ṭur ʿAbdin</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib191-2">John, metropolitan of Tur ‛Abdin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib191-3">يوحنا مطران طور عبدين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib191-4">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib191-4">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon of Ṭur ʿAbdin</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib191-2">
+                  <forename>John</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yuḥanon</forename>
-                           <addName type="untagged-title">of Ṭur ʿAbdin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib191-3">
+                  <forename>يوحنا</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib191-4" type="sic">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib191-4" type="sic">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib191-3" type="sic">يوحنا مطران طور عبدين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib191-2" type="sic">John, metropolitan of Tur ‛Abdin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib191-4">
+                  <forename>ܝܘܚܢܢ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib191-4" type="split">
-                           <forename>ܝܘܚܢܢ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܒܕܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib191-4" type="split">
-                           <forename>ܝܘܚܰܢܢ</forename>
-                           <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܛܘܪܥܰܒܕܝܢ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib191-3" type="split">
-                           <forename>يوحنا</forename>
-                           <addName type="untagged-title">مطران طور عبدين</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib191-2" type="split">
-                           <forename>John</forename>
-                           <addName type="untagged-title">Metropolitan of Tur ‛Abdin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib191-4">
+                  <forename>ܝܘܚܰܢܢ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yuḥanon</forename>
                </persName>
                <bibl xml:id="bib191-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

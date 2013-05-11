@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-186">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib186-2" type="sic">Athanasius IV</persName>
-               <persName xml:lang="ar" source="bib186-3" type="sic">اثناسيوس الرابع</persName>
-               <persName xml:lang="syr" source="bib186-4" type="sic">ܐܬܢܐܣܝܘܣ ܪܒܝܥܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib186-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܪܒܝܥܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Athanasios (V) Loʿozar Ṣalḥoyo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Athanasios (V) Loʿozar Ṣalḥoyo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib186-2">Athanasius IV</persName>
+               <persName type="sic" xml:lang="ar" source="#bib186-3">اثناسيوس الرابع</persName>
+               <persName type="sic" xml:lang="syr" source="#bib186-4">ܐܬܢܐܣܝܘܣ ܪܒܝܥܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib186-4">ܐܰܬܰܢܐܣܝܘܣ ܪܒܝܥܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Athanasios (V) Loʿozar Ṣalḥoyo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib186-2">
+                  <forename>Athanasius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Athanasios Loʿozar</forename>
-                           <addName type="untagged-title">(V) Ṣalḥoyo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib186-3">
+                  <forename>اثناسيوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib186-4" type="sic">ܐܬܢܐܣܝܘܣ ܪܒܝܥܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib186-4" type="sic">ܐܰܬܰܢܐܣܝܘܣ ܪܒܝܥܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib186-3" type="sic">اثناسيوس الرابع</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib186-2" type="sic">Athanasius IV</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib186-4">
+                  <forename>ܐܬܢܐܣܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib186-4" type="split">
-                           <forename>ܐܬܢܐܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܪܒܝܥܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib186-4" type="split">
-                           <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܪܒܝܥܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib186-3" type="split">
-                           <forename>اثناسيوس</forename>
-                           <addName type="untagged-title">الرابع</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib186-2" type="split">
-                           <forename>Athanasius</forename>
-                           <addName type="untagged-title">IV</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib186-4">
+                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Athanasios Loʿozar</forename>
                </persName>
                <bibl xml:id="bib186-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

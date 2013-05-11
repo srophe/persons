@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-35">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib35-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib35-1"
                          resp="http://syriaca.org">Polykarpos</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib35-2" type="sic">Chorepiscopus Polycarp</persName>
-               <persName xml:lang="ar" source="bib35-3" type="sic">الخوري بوليقربوس</persName>
-               <persName xml:lang="syr" source="bib35-4" type="sic">ܟܘܪܐܦܝܣܩܘܦܐ ܦܘܠܝܩܪܦܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib35-4" type="sic">ܟܘܪܐܶܦܝܣܩܘܦܳܐ ܦܘܠܝܩܰܪܦܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib35-1" type="sic">Polykarpos</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib35-1" type="split">
-                           <forename>Polykarpos</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib35-1" type="sic">Polykarpos</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib35-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib35-2">Chorepiscopus Polycarp</persName>
+               <persName type="sic" xml:lang="ar" source="#bib35-3">الخوري بوليقربوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib35-4">ܟܘܪܐܦܝܣܩܘܦܐ ܦܘܠܝܩܪܦܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib35-4">ܟܘܪܐܶܦܝܣܩܘܦܳܐ ܦܘܠܝܩܰܪܦܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib35-1"
+                         resp="http://syriaca.org">
                   <forename>Polykarpos</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib35-4" type="sic">ܟܘܪܐܦܝܣܩܘܦܐ ܦܘܠܝܩܪܦܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib35-4" type="sic">ܟܘܪܐܶܦܝܣܩܘܦܳܐ ܦܘܠܝܩܰܪܦܳܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib35-3" type="sic">الخوري بوليقربوس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib35-2" type="sic">Chorepiscopus Polycarp</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib35-2">
+                  <forename>Polycarp</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib35-4" type="split">
-                           <forename>ܦܘܠܝܩܪܦܘܣ</forename>
-                           <addName type="untagged-title">ܟܘܪܐܦܝܣܩܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib35-4" type="split">
-                           <forename>ܦܘܠܝܩܰܪܦܳܘܣ</forename>
-                           <addName type="untagged-title">ܟܘܪܐܶܦܝܣܩܘܦܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib35-3" type="split">
-                           <forename>بوليقربوس</forename>
-                           <addName type="untagged-title">الخوري</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib35-2" type="split">
-                           <forename>Polycarp</forename>
-                           <addName type="untagged-title">Chorepiscopus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib35-3">
+                  <forename>بوليقربوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib35-4">
+                  <forename>ܦܘܠܝܩܪܦܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib35-4">
+                  <forename>ܦܘܠܝܩܰܪܦܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib35-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

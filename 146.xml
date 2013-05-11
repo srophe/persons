@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-146">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib146-2" type="sic">Malphono Athanus</persName>
-               <persName xml:lang="ar" source="bib146-3" type="sic">آتنوس الملفان</persName>
-               <persName xml:lang="syr" source="bib146-4" type="sic">ܐܬܢܘܣ ܡܠܦܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib146-4" type="sic">ܐܰܬܰܢܘܳܣ ܡܰܠܦܳܢܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Atanos</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Atanos</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib146-2">Malphono Athanus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib146-3">آتنوس الملفان</persName>
+               <persName type="sic" xml:lang="syr" source="#bib146-4">ܐܬܢܘܣ ܡܠܦܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib146-4">ܐܰܬܰܢܘܳܣ ܡܰܠܦܳܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Atanos</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib146-2">
+                  <forename>Athanus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Atanos</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib146-3">
+                  <forename>آتنوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib146-4" type="sic">ܐܬܢܘܣ ܡܠܦܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib146-4" type="sic">ܐܰܬܰܢܘܳܣ ܡܰܠܦܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib146-3" type="sic">آتنوس الملفان</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib146-2" type="sic">Malphono Athanus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib146-4">
+                  <forename>ܐܬܢܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib146-4" type="split">
-                           <forename>ܐܬܢܘܣ</forename>
-                           <addName type="untagged-title">ܡܠܦܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib146-4" type="split">
-                           <forename>ܐܰܬܰܢܘܳܣ</forename>
-                           <addName type="untagged-title">ܡܰܠܦܳܢܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib146-3" type="split">
-                           <forename>آتنوس</forename>
-                           <addName type="untagged-title">الملفان</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib146-2" type="split">
-                           <forename>Athanus</forename>
-                           <addName type="untagged-title">Malphono</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib146-4">
+                  <forename>ܐܰܬܰܢܘܳܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Atanos</forename>
                </persName>
                <bibl xml:id="bib146-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

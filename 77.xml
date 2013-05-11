@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-77">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib77-2" type="sic">Abraham of Amid</persName>
-               <persName xml:lang="ar" source="bib77-3" type="sic">ابراهيم الآمدي</persName>
-               <persName xml:lang="syr" source="bib77-4" type="sic">ܐܒܪܗܡ ܐܡܝܕܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib77-4" type="sic">ܐܰܒܪܳܗܡ ܐܳܡܝܕܝܳܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abrohom of Amid</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abrohom of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib77-2">Abraham of Amid</persName>
+               <persName type="sic" xml:lang="ar" source="#bib77-3">ابراهيم الآمدي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib77-4">ܐܒܪܗܡ ܐܡܝܕܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib77-4">ܐܰܒܪܳܗܡ ܐܳܡܝܕܝܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abrohom of Amid</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib77-2">
+                  <forename>Abraham</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abrohom</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib77-3">
+                  <forename>ابراهيم</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib77-4" type="sic">ܐܒܪܗܡ ܐܡܝܕܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib77-4" type="sic">ܐܰܒܪܳܗܡ ܐܳܡܝܕܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib77-3" type="sic">ابراهيم الآمدي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib77-2" type="sic">Abraham of Amid</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib77-4">
+                  <forename>ܐܒܪܗܡ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib77-4" type="split">
-                           <forename>ܐܒܪܗܡ</forename>
-                           <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib77-4" type="split">
-                           <forename>ܐܰܒܪܳܗܡ</forename>
-                           <addName type="untagged-title">ܐܳܡܝܕܝܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib77-3" type="split">
-                           <forename>ابراهيم</forename>
-                           <addName type="untagged-title">الآمدي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib77-2" type="split">
-                           <forename>Abraham</forename>
-                           <addName type="untagged-title">of Amid</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib77-4">
+                  <forename>ܐܰܒܪܳܗܡ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abrohom</forename>
                </persName>
                <bibl xml:id="bib77-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

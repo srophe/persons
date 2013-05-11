@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,35 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-697">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib697-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib697-1"
                          resp="http://syriaca.org">Qiyore of Edessa</persName>
-               <persName xml:lang="syr" source="bib697-5" type="sic">ܩܝܘܪ̈ܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib697-5" type="sic">ܩܝܼܘܿܪܹ̈ܐ</persName>
-               <persName xml:lang="syr" source="bib697-6" type="sic">ܩܝܘܪܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib697-6" type="sic">ܩܝܽܘܪܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib697-1" type="sic">Qiyore of Edessa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib697-1" type="split">
-                           <forename>Qiyore</forename>
-                           <addName type="untagged-title">Edessa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib697-1" type="sic">Qiyore of Edessa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib697-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib697-5">ܩܝܘܪ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib697-5">ܩܝܼܘܿܪܹ̈ܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib697-6">ܩܝܘܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib697-6">ܩܝܽܘܪܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib697-1"
+                         resp="http://syriaca.org">
                   <forename>Qiyore</forename>
-                  <addName type="untagged-title">Edessa</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib697-5">
+                  <forename>ܩܝܘܪ̈ܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib697-5">
+                  <forename>ܩܝܼܘܿܪܹ̈ܐ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܩܝܘܪܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib697-6">
+                  <forename>ܩܝܽܘܪܳܐ</forename>
                </persName>
                <bibl xml:id="bib697-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

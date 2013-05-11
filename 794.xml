@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,47 @@
       <body>
          <listPerson>
             <person xml:id="person-794">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib794-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib794-1"
                          resp="http://syriaca.org">Titus of Bostra</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib794-2" type="sic">Titus of Buṣra</persName>
-               <persName xml:lang="ar" source="bib794-3" type="sic">طيطس البصري</persName>
-               <persName xml:lang="syr" source="bib794-4" type="sic">ܛܝܛܘܣ ܕܒܘܨܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib794-4" type="sic">ܛܺܝܛܳܘܣ ܕܒܽܘܨܳܪ</persName>
-               <persName xml:lang="syr" source="bib794-5" type="sic">ܛܛܘܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib794-5" type="sic">ܛܸܛܘܿܣ</persName>
-               <persName xml:lang="syr" source="bib794-6" type="sic">ܛܝܛܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib794-6" type="sic">ܛܝܺܛܳܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib794-1" type="sic">Titus of Bostra</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib794-1" type="split">
-                           <forename>Titus</forename>
-                           <addName type="untagged-title">of Bostra</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib794-1" type="sic">Titus of Bostra</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib794-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib794-2">Titus of Buṣra</persName>
+               <persName type="sic" xml:lang="ar" source="#bib794-3">طيطس البصري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib794-4">ܛܝܛܘܣ ܕܒܘܨܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib794-4">ܛܺܝܛܳܘܣ ܕܒܽܘܨܳܪ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib794-5">ܛܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib794-5">ܛܸܛܘܿܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib794-6">ܛܝܛܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib794-6">ܛܝܺܛܳܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib794-1"
+                         resp="http://syriaca.org">
                   <forename>Titus</forename>
-                  <addName type="untagged-title">of Bostra</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib794-4" type="sic">ܛܝܛܘܣ ܕܒܘܨܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib794-4" type="sic">ܛܺܝܛܳܘܣ ܕܒܽܘܨܳܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib794-3" type="sic">طيطس البصري</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib794-2" type="sic">Titus of Buṣra</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib794-2">
+                  <forename>Titus</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib794-3">
+                  <forename>طيطس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib794-4">
+                  <forename>ܛܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib794-4">
+                  <forename>ܛܺܝܛܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib794-5">
+                  <forename>ܛܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib794-5">
+                  <forename>ܛܸܛܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib794-4" type="split">
-                           <forename>ܛܝܛܘܣ</forename>
-                           <addName type="untagged-title">ܕܒܘܨܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib794-4" type="split">
-                           <forename>ܛܺܝܛܳܘܣ</forename>
-                           <addName type="untagged-title">ܕܒܽܘܨܳܪ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib794-3" type="split">
-                           <forename>طيطس</forename>
-                           <addName type="untagged-title">البصري</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib794-2" type="split">
-                           <forename>Titus</forename>
-                           <addName type="untagged-title">of Buṣra</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܛܝܛܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib794-6">
+                  <forename>ܛܝܺܛܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib794-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

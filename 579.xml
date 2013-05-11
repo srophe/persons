@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-579">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib579-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib579-1"
                          resp="http://syriaca.org">Julian of Halicarnassus</persName>
-               <persName xml:lang="ar" source="bib579-3" type="sic">يوليان اسقف هاليكرناس</persName>
-               <persName xml:lang="syr" source="bib579-4" type="sic">ܝܘܠܝܢܐ ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib579-4" type="sic">ܝܘܽܠܝܰܢܶܐ ܐܶܦܝܣܩܘܦܐ ܕܗܶܐܠܝܩܰܪܢܣܝܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib579-1" type="sic">Julian of Halicarnassus</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib579-1" type="split">
-                           <forename>Julian</forename>
-                           <addName type="untagged-title">of Halicarnassus</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib579-1" type="sic">Julian of Halicarnassus</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib579-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib579-3">يوليان اسقف هاليكرناس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib579-4">ܝܘܠܝܢܐ ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib579-4">ܝܘܽܠܝܰܢܶܐ ܐܶܦܝܣܩܘܦܐ ܕܗܶܐܠܝܩܰܪܢܣܝܘܣ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib579-1"
+                         resp="http://syriaca.org">
                   <forename>Julian</forename>
-                  <addName type="untagged-title">of Halicarnassus</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib579-4" type="sic">ܝܘܠܝܢܐ ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib579-4" type="sic">ܝܘܽܠܝܰܢܶܐ ܐܶܦܝܣܩܘܦܐ ܕܗܶܐܠܝܩܰܪܢܣܝܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib579-3" type="sic">يوليان اسقف هاليكرناس</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib579-3">
+                  <forename>يوليان</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib579-4" type="split">
-                           <forename>ܝܘܠܝܢܐ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib579-4" type="split">
-                           <forename>ܝܘܽܠܝܰܢܶܐ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ ܕܗܶܐܠܝܩܰܪܢܣܝܘܣ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib579-3" type="split">
-                           <forename>يوليان</forename>
-                           <addName type="untagged-title">اسقف هاليكرناس</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib579-4">
+                  <forename>ܝܘܠܝܢܐ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib579-4">
+                  <forename>ܝܘܽܠܝܰܢܶܐ</forename>
                </persName>
                <bibl xml:id="bib579-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

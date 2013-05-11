@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-69">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib69-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib69-1"
                          resp="http://syriaca.org">Yaʿqub Burdʿoyo</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib69-2" type="sic">Mar Jacob Baradaeus</persName>
-               <persName xml:lang="ar" source="bib69-3" type="sic">مار يعقوب البرادعي</persName>
-               <persName xml:lang="syr" source="bib69-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܒܘܪܕܥܢܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib69-4" type="sic">ܡܪܝ ܝܰܥܩܘܒ ܒܘܪܕܥܳܢܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib69-1" type="sic">Yaʿqub Burdʿoyo</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib69-1" type="split">
-                           <forename>Yaʿqub</forename>
-                           <surname>Burdʿoyo</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib69-1" type="sic">Yaʿqub Burdʿoyo</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib69-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib69-2">Mar Jacob Baradaeus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib69-3">مار يعقوب البرادعي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib69-4">ܡܪܝ ܝܥܩܘܒ ܒܘܪܕܥܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib69-4">ܡܪܝ ܝܰܥܩܘܒ ܒܘܪܕܥܳܢܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib69-1"
+                         resp="http://syriaca.org">
                   <forename>Yaʿqub</forename>
                   <surname>Burdʿoyo</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib69-4" type="sic">ܡܪܝ ܝܥܩܘܒ ܒܘܪܕܥܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib69-4" type="sic">ܡܪܝ ܝܰܥܩܘܒ ܒܘܪܕܥܳܢܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib69-3" type="sic">مار يعقوب البرادعي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib69-2" type="sic">Mar Jacob Baradaeus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib69-2">
+                  <forename>Jacob</forename>
+                  <surname>Baradaeus</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib69-4" type="split">
-                           <forename>ܝܥܩܘܒ</forename>
-                           <surname>ܒܘܪܕܥܢܐ</surname>
-                           <addName type="untagged-title">ܡܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib69-4" type="split">
-                           <forename>ܝܰܥܩܘܒ</forename>
-                           <surname>ܒܘܪܕܥܳܢܐ</surname>
-                           <addName type="untagged-title">ܡܪܝ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib69-3" type="split">
-                           <forename>يعقوب</forename>
-                           <surname>البرادعي</surname>
-                           <addName type="untagged-title">مار</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib69-2" type="split">
-                           <forename>Jacob</forename>
-                           <surname>Baradaeus</surname>
-                           <addName type="untagged-title">Mar</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib69-3">
+                  <forename>يعقوب</forename>
+                  <surname>البرادعي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib69-4">
+                  <forename>ܝܥܩܘܒ</forename>
+                  <surname>ܒܘܪܕܥܢܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib69-4">
+                  <forename>ܝܰܥܩܘܒ</forename>
+                  <surname>ܒܘܪܕܥܳܢܐ</surname>
                </persName>
                <bibl xml:id="bib69-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

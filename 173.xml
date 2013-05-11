@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,32 @@
       <body>
          <listPerson>
             <person xml:id="person-173">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib173-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib173-1"
                          resp="http://syriaca.org">Mushe bar Kipho</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib173-2" type="sic">Mar Moses Bar Kepha</persName>
-               <persName xml:lang="ar" source="bib173-3" type="sic">مار موسي ابن كيفا</persName>
-               <persName xml:lang="syr" source="bib173-4" type="sic">ܡܘܫܐ ܒܪ ܟܐܦܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib173-4" type="sic">ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
-                           <forename>Mushe</forename>
-                           <surname>bar Kipho</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="sic">Mushe bar Kipho</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib173-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib173-2">Mar Moses Bar Kepha</persName>
+               <persName type="sic" xml:lang="ar" source="#bib173-3">مار موسي ابن كيفا</persName>
+               <persName type="sic" xml:lang="syr" source="#bib173-4">ܡܘܫܐ ܒܪ ܟܐܦܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib173-4">ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib173-1"
+                         resp="http://syriaca.org">
                   <forename>Mushe</forename>
                   <surname>bar Kipho</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib173-4" type="sic">ܡܘܫܐ ܒܪ ܟܐܦܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib173-4" type="sic">ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib173-3" type="sic">مار موسي ابن كيفا</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib173-2" type="sic">Mar Moses Bar Kepha</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib173-3">
+                  <forename>موسي</forename>
+                  <surname>ابن كيفا</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib173-4" type="split">
-                           <forename>ܡܘܫܐ</forename>
-                           <surname>ܒܪ ܟܐܦܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib173-4" type="split">
-                           <forename>ܡܘܫܶܐ</forename>
-                           <surname>ܒܰܪ ܟܺܐܦܳܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib173-3" type="split">
-                           <forename>موسي</forename>
-                           <surname>ابن كيفا</surname>
-                           <addName type="untagged-title">مار</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib173-2" type="split"/>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib173-4">
+                  <forename>ܡܘܫܐ</forename>
+                  <surname>ܒܪ ܟܐܦܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib173-4">
+                  <forename>ܡܘܫܶܐ</forename>
+                  <surname>ܒܰܪ ܟܺܐܦܳܐ</surname>
                </persName>
                <bibl xml:id="bib173-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

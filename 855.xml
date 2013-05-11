@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,52 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-855">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib855-2" type="sic">Ammonius</persName>
-               <persName xml:lang="ar" source="bib855-3" type="sic">امّونيوس كاتب الرسائل</persName>
-               <persName xml:lang="syr" source="bib855-5" type="sic">ܐܡܘܢܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib855-5" type="sic">ܐܲܡܘܿܢܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib855-6" type="sic">ܐܡܘܢܝܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Ammonas</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ammonas</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib855-2">Ammonius</persName>
+               <persName type="sic" xml:lang="ar" source="#bib855-3">امّونيوس كاتب الرسائل</persName>
+               <persName type="sic" xml:lang="syr" source="#bib855-5">ܐܡܘܢܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib855-5">ܐܲܡܘܿܢܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib855-6">ܐܡܘܢܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ammonas</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib855-2">
+                  <forename>Ammonius</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ammonas</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib855-3">
+                  <forename>امّونيوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib855-3" type="sic">امّونيوس كاتب الرسائل</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib855-2" type="sic">Ammonius</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib855-5">
+                  <forename>ܐܡܘܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib855-5">
+                  <forename>ܐܲܡܘܿܢܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib855-3" type="split">
-                           <forename>امّونيوس</forename>
-                           <addName type="untagged-title">كاتب الرسائل</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib855-2" type="split">
-                           <forename>Ammonius</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܡܘܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ammonas</forename>
                </persName>
                <bibl xml:id="bib855-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

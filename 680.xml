@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-680">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib680-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib680-1"
                          resp="http://syriaca.org">Peter the Iberian</persName>
-               <persName xml:lang="ar" source="bib680-3" type="sic">بطرس الكرجي</persName>
-               <persName xml:lang="syr" source="bib680-4" type="sic">ܦܛܪܘܣ ܐܝܒܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib680-4" type="sic">ܦܶܛܪܽܘܣ ܐܺܝܒܰܪܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib680-1" type="sic">Peter the Iberian</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib680-1" type="split">
-                           <forename>Peter</forename>
-                           <addName type="untagged-title">the Iberian</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib680-1" type="sic">Peter the Iberian</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib680-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib680-3">بطرس الكرجي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib680-4">ܦܛܪܘܣ ܐܝܒܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib680-4">ܦܶܛܪܽܘܣ ܐܺܝܒܰܪܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib680-1"
+                         resp="http://syriaca.org">
                   <forename>Peter</forename>
-                  <addName type="untagged-title">the Iberian</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib680-4" type="sic">ܦܛܪܘܣ ܐܝܒܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib680-4" type="sic">ܦܶܛܪܽܘܣ ܐܺܝܒܰܪܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib680-3" type="sic">بطرس الكرجي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib680-3">
+                  <forename>بطرس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib680-4" type="split">
-                           <forename>ܦܛܪܘܣ</forename>
-                           <addName type="untagged-title">ܐܝܒܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib680-4" type="split">
-                           <forename>ܦܶܛܪܽܘܣ</forename>
-                           <addName type="untagged-title">ܐܺܝܒܰܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib680-3" type="split">
-                           <forename>بطرس</forename>
-                           <addName type="untagged-title">الكرجي</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib680-4">
+                  <forename>ܦܛܪܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib680-4">
+                  <forename>ܦܶܛܪܽܘܣ</forename>
                </persName>
                <bibl xml:id="bib680-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

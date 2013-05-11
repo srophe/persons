@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-852">
-               <persName xml:lang="syr" source="bib852-5" type="sic">ܐܘܬܪܝܣ</persName>
-               <persName xml:lang="syr-Syrn" source="bib852-5" type="sic">ܐܹܘܬܹܪܝܼܣ</persName>
-               <persName xml:lang="syr" source="bib852-6" type="sic">ܐܘܬܪܝܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib852-6" type="sic">ܐܶܘܬܶܪܝܳܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Eutherius of Tyana</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Eutherius of Tyana</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib852-5">ܐܘܬܪܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib852-5">ܐܹܘܬܹܪܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib852-6">ܐܘܬܪܝܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib852-6">ܐܶܘܬܶܪܝܳܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Eutherius of Tyana</persName>
+               <persName type="split" xml:lang="syr" source="#bib852-5">
+                  <forename>ܐܘܬܪܝܣ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Eutherius</forename>
-                           <addName type="untagged-title">of Tyana</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib852-5">
+                  <forename>ܐܹܘܬܹܪܝܼܣ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܘܬܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib852-6">
+                  <forename>ܐܶܘܬܶܪܝܳܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Eutherius</forename>
                </persName>
             </person>
          </listPerson>

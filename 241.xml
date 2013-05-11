@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-241">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib241-2" type="sic">Abu Naṣr of Barṭelli</persName>
-               <persName xml:lang="ar" source="bib241-3" type="sic">ابو نصر البرطلي</persName>
-               <persName xml:lang="syr" source="bib241-4" type="sic">ܐܒܘ ܢܨܪ ܒܪܛܠܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib241-4" type="sic">ܐܰܒܘ ܢܰܨܪ ܒܰܪܛܰܠܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abū Naṣr of Barṭelle</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abū Naṣr of Barṭelle</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib241-2">Abu Naṣr of Barṭelli</persName>
+               <persName type="sic" xml:lang="ar" source="#bib241-3">ابو نصر البرطلي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib241-4">ܐܒܘ ܢܨܪ ܒܪܛܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib241-4">ܐܰܒܘ ܢܰܨܪ ܒܰܪܛܰܠܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū Naṣr of Barṭelle</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib241-2">
+                  <forename>Abu Naṣr</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abū Naṣr</forename>
-                           <addName type="untagged-title">of Barṭelle</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib241-3">
+                  <forename>ابو نصر</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib241-4" type="sic">ܐܒܘ ܢܨܪ ܒܪܛܠܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib241-4" type="sic">ܐܰܒܘ ܢܰܨܪ ܒܰܪܛܰܠܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib241-3" type="sic">ابو نصر البرطلي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib241-2" type="sic">Abu Naṣr of Barṭelli</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib241-4">
+                  <forename>ܐܒܘ ܢܨܪ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib241-4" type="split">
-                           <forename>ܐܒܘ ܢܨܪ</forename>
-                           <addName type="untagged-title">ܒܪܛܠܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib241-4" type="split">
-                           <forename>ܐܰܒܘ ܢܰܨܪ</forename>
-                           <addName type="untagged-title">ܒܰܪܛܰܠܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib241-3" type="split">
-                           <forename>ابو نصر</forename>
-                           <addName type="untagged-title">البرطلي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib241-2" type="split">
-                           <forename>Abu Naṣr</forename>
-                           <addName type="untagged-title">of Barṭelli</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib241-4">
+                  <forename>ܐܰܒܘ ܢܰܨܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abū Naṣr</forename>
                </persName>
                <bibl xml:id="bib241-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

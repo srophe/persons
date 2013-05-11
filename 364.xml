@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,82 +17,54 @@
       <body>
          <listPerson>
             <person xml:id="person-364">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib364-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib364-1"
                          resp="http://syriaca.org">Bar ʿAli, Ishoʿ</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib364-2" type="sic">Yeshuʿ Bar ʿAli</persName>
-               <persName xml:lang="ar" source="bib364-3" type="sic">يشوع بن علي</persName>
-               <persName xml:lang="syr" source="bib364-4" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
-               <persName xml:lang="syr-Syrj" source="bib364-4" type="sic">ܝܶܫܘܥ ܒܰܪ ܥܰܠܝ</persName>
-               <persName xml:lang="syr" source="bib364-5" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
-               <persName xml:lang="syr-Syrn" source="bib364-5" type="sic">ܝܼܫܘܿܥ ܒܲܪ ܥܲܠܝܼ</persName>
-               <persName xml:lang="syr" source="bib364-6" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
-                           <forename>Ishoʿ</forename>
-                           <surname>Bar ʿAli</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="sic">Bar ʿAli, Ishoʿ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib364-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib364-2">Yeshuʿ Bar ʿAli</persName>
+               <persName type="sic" xml:lang="ar" source="#bib364-3">يشوع بن علي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib364-4">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib364-4">ܝܶܫܘܥ ܒܰܪ ܥܰܠܝ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib364-5">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib364-5">ܝܼܫܘܿܥ ܒܲܪ ܥܲܠܝܼ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib364-6">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib364-1"
+                         resp="http://syriaca.org">
                   <forename>Ishoʿ</forename>
                   <surname>Bar ʿAli</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib364-4" type="sic">ܝܫܘܥ ܒܪ ܥܠܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib364-4" type="sic">ܝܶܫܘܥ ܒܰܪ ܥܰܠܝ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib364-3" type="sic">يشوع بن علي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib364-2" type="sic">Yeshuʿ Bar ʿAli</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib364-2">
+                  <forename>Yeshuʿ</forename>
+                  <surname>Bar ʿAli</surname>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib364-3">
+                  <forename>يشوع</forename>
+                  <surname>بن علي</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib364-4">
+                  <forename>ܝܫܘܥ</forename>
+                  <surname>ܒܪ ܥܠܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib364-4">
+                  <forename>ܝܶܫܘܥ</forename>
+                  <surname>ܒܰܪ ܥܰܠܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib364-5">
+                  <forename>ܝܫܘܥ</forename>
+                  <surname>ܒܪ ܥܠܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib364-5">
+                  <forename>ܝܼܫܘܿܥ</forename>
+                  <surname>ܒܲܪ ܥܲܠܝܼ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib364-4" type="split">
-                           <forename>ܝܫܘܥ</forename>
-                           <surname>ܒܪ ܥܠܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib364-4" type="split">
-                           <forename>ܝܶܫܘܥ</forename>
-                           <surname>ܒܰܪ ܥܰܠܝ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib364-3" type="split">
-                           <forename>يشوع</forename>
-                           <surname>بن علي</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib364-2" type="split">
-                           <forename>Yeshuʿ</forename>
-                           <surname>Bar ʿAli</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܝܫܘܥ</forename>
+                  <surname>ܒܪ ܥܠܝ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib364-6">
+                  <surname>ܒܪ ܥܠܝ</surname>
                </persName>
                <bibl xml:id="bib364-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,68 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-655">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib655-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib655-1"
                          resp="http://syriaca.org">Nestorius</persName>
-               <persName xml:lang="ar" source="bib655-3" type="sic">نسطور</persName>
-               <persName xml:lang="syr" source="bib655-4" type="sic">ܢܣܛܘܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib655-4" type="sic">ܢܰܣܛܘܪ</persName>
-               <persName xml:lang="syr" source="bib655-5" type="sic">ܢܣܛܘܪܝܣ ܦܛܪܝܪܟܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib655-5" type="sic">ܢܸܣܛܘܿܪܝܼܣ ܦܵܛܲܪܝܵܪܟܵܐ</persName>
-               <persName xml:lang="syr" source="bib655-6" type="sic">ܢܣܛܘܪܝܘܣ ܦܛܪܝܪܟܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib655-6" type="sic">ܢܶܣܛܘܽܪܝܳܘܣ ܦܰܛܪܺܝܰܪܟܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib655-1" type="sic">Nestorius</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib655-1" type="split">
-                           <forename>Nestorius</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib655-1" type="sic">Nestorius</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib655-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib655-3">نسطور</persName>
+               <persName type="sic" xml:lang="syr" source="#bib655-4">ܢܣܛܘܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib655-4">ܢܰܣܛܘܪ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib655-5">ܢܣܛܘܪܝܣ ܦܛܪܝܪܟܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib655-5">ܢܸܣܛܘܿܪܝܼܣ ܦܵܛܲܪܝܵܪܟܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib655-6">ܢܣܛܘܪܝܘܣ ܦܛܪܝܪܟܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib655-6">ܢܶܣܛܘܽܪܝܳܘܣ ܦܰܛܪܺܝܰܪܟܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib655-1"
+                         resp="http://syriaca.org">
                   <forename>Nestorius</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib655-4" type="sic">ܢܣܛܘܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib655-4" type="sic">ܢܰܣܛܘܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib655-3" type="sic">نسطور</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib655-3">
+                  <forename>نسطور</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib655-4">
+                  <forename>ܢܣܛܘܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib655-4">
+                  <forename>ܢܰܣܛܘܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib655-5">
+                  <forename>ܢܣܛܘܪܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib655-5">
+                  <forename>ܢܸܣܛܘܿܪܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib655-4" type="split">
-                           <forename>ܢܣܛܘܪ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib655-4" type="split">
-                           <forename>ܢܰܣܛܘܪ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib655-3" type="split">
-                           <forename>نسطور</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܢܣܛܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib655-6">
+                  <addName type="untagged-title">ܦܛܪܝܪܟܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib655-6">
+                  <forename>ܢܶܣܛܘܽܪܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib655-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

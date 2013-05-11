@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-246">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib246-2" type="sic">The Monk Yeshu‛ Ibn Kilo</persName>
-               <persName xml:lang="ar" source="bib246-3" type="sic">الراهب يشوع ابن كيلو</persName>
-               <persName xml:lang="syr" source="bib246-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܠܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib246-4" type="sic">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܒܰܪ ܟܺܝܠܘ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Yeshuʿ bar Kilu</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Yeshuʿ bar Kilu</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib246-2">The Monk Yeshu‛ Ibn Kilo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib246-3">الراهب يشوع ابن كيلو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib246-4">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܠܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib246-4">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܒܰܪ ܟܺܝܠܘ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yeshuʿ bar Kilu</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib246-2">
+                  <forename>Yeshu‛</forename>
+                  <surname>Ibn Kilo</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Yeshuʿ</forename>
-                           <surname>bar Kilu</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib246-3">
+                  <forename>يشوع</forename>
+                  <surname>ابن كيلو</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib246-4" type="sic">ܕܝܪܝܐ ܝܫܘܥ ܒܪ ܟܝܠܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib246-4" type="sic">ܕܰܝܪܳܝܐ ܝܶܫܘܥ ܒܰܪ ܟܺܝܠܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib246-3" type="sic">الراهب يشوع ابن كيلو</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib246-2" type="sic">The Monk Yeshu‛ Ibn Kilo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib246-4">
+                  <forename>ܝܫܘܥ</forename>
+                  <surname>ܒܪ ܟܝܠܘ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib246-4" type="split">
-                           <forename>ܝܫܘܥ</forename>
-                           <surname>ܒܪ ܟܝܠܘ</surname>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib246-4" type="split">
-                           <forename>ܝܶܫܘܥ</forename>
-                           <surname>ܒܰܪ ܟܺܝܠܘ</surname>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib246-3" type="split">
-                           <forename>يشوع</forename>
-                           <surname>ابن كيلو</surname>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib246-2" type="split">
-                           <forename>Yeshu‛</forename>
-                           <surname>Ibn Kilo</surname>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib246-4">
+                  <forename>ܝܶܫܘܥ</forename>
+                  <surname>ܒܰܪ ܟܺܝܠܘ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Yeshuʿ</forename>
+                  <surname>bar Kilu</surname>
                </persName>
                <bibl xml:id="bib246-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

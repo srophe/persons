@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-103">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib103-2" type="sic">Bishop Severus</persName>
-               <persName xml:lang="ar" source="bib103-3" type="sic">الاسقف سويريوس</persName>
-               <persName xml:lang="syr" source="bib103-4" type="sic">ܐܦܝܣܩܘܦܐ ܣܘܝܪܝܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib103-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܣܶܘܝܪܝܘܣ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Severos</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Severos</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib103-2">Bishop Severus</persName>
+               <persName type="sic" xml:lang="ar" source="#bib103-3">الاسقف سويريوس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib103-4">ܐܦܝܣܩܘܦܐ ܣܘܝܪܝܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib103-4">ܐܶܦܝܣܩܘܦܐ ܣܶܘܝܪܝܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Severos</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib103-2">
+                  <forename>Severus</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Severos</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib103-3">
+                  <forename>سويريوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib103-4" type="sic">ܐܦܝܣܩܘܦܐ ܣܘܝܪܝܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib103-4" type="sic">ܐܶܦܝܣܩܘܦܐ ܣܶܘܝܪܝܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib103-3" type="sic">الاسقف سويريوس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib103-2" type="sic">Bishop Severus</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib103-4">
+                  <forename>ܣܘܝܪܝܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib103-4" type="split">
-                           <forename>ܣܘܝܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib103-4" type="split">
-                           <forename>ܣܶܘܝܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib103-3" type="split">
-                           <forename>سويريوس</forename>
-                           <addName type="untagged-title">الاسقف</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib103-2" type="split">
-                           <forename>Severus</forename>
-                           <addName type="untagged-title">Bishop</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib103-4">
+                  <forename>ܣܶܘܝܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Severos</forename>
                </persName>
                <bibl xml:id="bib103-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

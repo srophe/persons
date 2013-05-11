@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-778">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib778-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib778-1"
                          resp="http://syriaca.org">Theano</persName>
-               <persName xml:lang="ar" source="bib778-3" type="sic">تيانو</persName>
-               <persName xml:lang="syr" source="bib778-4" type="sic">ܬܝܐܢܘ</persName>
-               <persName xml:lang="syr-Syrj" source="bib778-4" type="sic">ܬܺܝܰܐܢܳܘ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib778-1" type="sic">Theano</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib778-1" type="split">
-                           <forename>Theano</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib778-1" type="sic">Theano</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib778-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib778-3">تيانو</persName>
+               <persName type="sic" xml:lang="syr" source="#bib778-4">ܬܝܐܢܘ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib778-4">ܬܺܝܰܐܢܳܘ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib778-1"
+                         resp="http://syriaca.org">
                   <forename>Theano</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib778-4" type="sic">ܬܝܐܢܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib778-4" type="sic">ܬܺܝܰܐܢܳܘ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib778-3" type="sic">تيانو</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib778-3">
+                  <forename>تيانو</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib778-4" type="split">
-                           <forename>ܬܝܐܢܘ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib778-4" type="split">
-                           <forename>ܬܺܝܰܐܢܳܘ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib778-3" type="split">
-                           <forename>تيانو</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib778-4">
+                  <forename>ܬܝܐܢܘ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib778-4">
+                  <forename>ܬܺܝܰܐܢܳܘ</forename>
                </persName>
                <bibl xml:id="bib778-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

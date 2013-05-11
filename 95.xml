@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-95">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib95-2" type="sic">The Priest Andrew of Jerusalem</persName>
-               <persName xml:lang="ar" source="bib95-3" type="sic">القس اندراوس الاورشليمي</persName>
-               <persName xml:lang="syr" source="bib95-4" type="sic">ܩܫܝܫܐ ܐܢܕܪܐܘܣ ܕܐܘܪܫܠܡ</persName>
-               <persName xml:lang="syr-Syrj" source="bib95-4" type="sic">ܩܰܫܝܫܳܐ ܐܰܢܕܪܰܐܘܣ ܕܐܘܪܫܠܶܡ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Andraus of Jerusalem</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Andraus of Jerusalem</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib95-2">The Priest Andrew of Jerusalem</persName>
+               <persName type="sic" xml:lang="ar" source="#bib95-3">القس اندراوس الاورشليمي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib95-4">ܩܫܝܫܐ ܐܢܕܪܐܘܣ ܕܐܘܪܫܠܡ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib95-4">ܩܰܫܝܫܳܐ ܐܰܢܕܪܰܐܘܣ ܕܐܘܪܫܠܶܡ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Andraus of Jerusalem</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib95-2">
+                  <forename>Andrew</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Andraus</forename>
-                           <addName type="untagged-title">of Jerusalem</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib95-3">
+                  <forename>اندراوس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib95-4" type="sic">ܩܫܝܫܐ ܐܢܕܪܐܘܣ ܕܐܘܪܫܠܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib95-4" type="sic">ܩܰܫܝܫܳܐ ܐܰܢܕܪܰܐܘܣ ܕܐܘܪܫܠܶܡ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib95-3" type="sic">القس اندراوس الاورشليمي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib95-2" type="sic">The Priest Andrew of Jerusalem</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib95-4">
+                  <forename>ܐܢܕܪܐܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib95-4" type="split">
-                           <forename>ܐܢܕܪܐܘܣ</forename>
-                           <addName type="untagged-title">ܩܫܝܫܐ ܕܐܘܪܫܠܡ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib95-4" type="split">
-                           <forename>ܐܰܢܕܪܰܐܘܣ</forename>
-                           <addName type="untagged-title">ܩܰܫܝܫܳܐ ܕܐܘܪܫܠܶܡ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib95-3" type="split">
-                           <forename>اندراوس</forename>
-                           <addName type="untagged-title">القس الاورشليمي</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib95-2" type="split">
-                           <forename>Andrew</forename>
-                           <addName type="untagged-title">Priest of Jerusalem</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib95-4">
+                  <forename>ܐܰܢܕܪܰܐܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Andraus</forename>
                </persName>
                <bibl xml:id="bib95-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

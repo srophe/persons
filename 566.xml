@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,31 +17,15 @@
       <body>
          <listPerson>
             <person xml:id="person-566">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib566-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib566-1"
                          resp="http://syriaca.org">Israel of Alqosh</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib566-1" type="sic">Israel of Alqosh</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib566-1" type="split">
-                           <forename>Israel</forename>
-                           <addName type="untagged-title">of Alqosh</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib566-1" type="sic">Israel of Alqosh</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib566-1" type="split">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib566-1"
+                         resp="http://syriaca.org">
                   <forename>Israel</forename>
-                  <addName type="untagged-title">of Alqosh</addName>
                </persName>
                <bibl xml:id="bib566-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

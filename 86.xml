@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,59 +17,21 @@
       <body>
          <listPerson>
             <person xml:id="person-86">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib86-2" type="sic">Anba Paul</persName>
-               <persName xml:lang="ar" source="bib86-3" type="sic">الانبا بولس</persName>
-               <persName xml:lang="syr" source="bib86-4" type="sic">ܐܒܐ ܦܘܠܘܣ</persName>
-               <persName xml:lang="syr-Syrj" source="bib86-4" type="sic">ܐܰܒܐ ܦܰܘܠܘܣ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib86-2">Anba Paul</persName>
+               <persName type="sic" xml:lang="ar" source="#bib86-3">الانبا بولس</persName>
+               <persName type="sic" xml:lang="syr" source="#bib86-4">ܐܒܐ ܦܘܠܘܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib86-4">ܐܰܒܐ ܦܰܘܠܘܣ</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib86-2">
+                  <forename>Paul</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice/>
+               <persName type="split" xml:lang="ar" source="#bib86-3">
+                  <forename>بولس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib86-4" type="sic">ܐܒܐ ܦܘܠܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib86-4" type="sic">ܐܰܒܐ ܦܰܘܠܘܣ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib86-3" type="sic">الانبا بولس</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib86-2" type="sic">Anba Paul</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib86-4">
+                  <forename>ܦܘܠܘܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib86-4" type="split">
-                           <forename>ܦܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܐܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib86-4" type="split">
-                           <forename>ܦܰܘܠܘܣ</forename>
-                           <addName type="untagged-title">ܐܰܒܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib86-3" type="split">
-                           <forename>بولس</forename>
-                           <addName type="untagged-title">الانبا</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib86-2" type="split">
-                           <forename>Paul</forename>
-                           <addName type="untagged-title">Anba</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib86-4">
+                  <forename>ܦܰܘܠܘܣ</forename>
                </persName>
                <bibl xml:id="bib86-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,73 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-512">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib512-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib512-1"
                          resp="http://syriaca.org">Gregory of Nyssa</persName>
-               <persName xml:lang="ar" source="bib512-3" type="sic">غريغوريوس النوسي</persName>
-               <persName xml:lang="syr" source="bib512-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib512-4" type="sic">ܓܪܺܝܓܳܘܪܝܘܣ ܕܢܰܘܣܳܐ</persName>
-               <persName xml:lang="syr" source="bib512-5" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib512-5" type="sic">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܕܢܵܘܣܵܐ</persName>
-               <persName xml:lang="syr" source="bib512-6" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib512-6" type="sic">ܓܪܝܺܓܽܘܪܺܝܘܳܣ ܕܢܽܘܣܰܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib512-1" type="sic">Gregory of Nyssa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib512-1" type="split">
-                           <forename>Gregory</forename>
-                           <addName type="untagged-title">of Nyssa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib512-1" type="sic">Gregory of Nyssa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib512-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib512-3">غريغوريوس النوسي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib512-4">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib512-4">ܓܪܺܝܓܳܘܪܝܘܣ ܕܢܰܘܣܳܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib512-5">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib512-5">ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܕܢܵܘܣܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib512-6">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib512-6">ܓܪܝܺܓܽܘܪܺܝܘܳܣ ܕܢܽܘܣܰܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib512-1"
+                         resp="http://syriaca.org">
                   <forename>Gregory</forename>
-                  <addName type="untagged-title">of Nyssa</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib512-4" type="sic">ܓܪܝܓܘܪܝܘܣ ܕܢܘܣܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib512-4" type="sic">ܓܪܺܝܓܳܘܪܝܘܣ ܕܢܰܘܣܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib512-3" type="sic">غريغوريوس النوسي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib512-3">
+                  <forename>غريغوريوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib512-4">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib512-4">
+                  <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib512-5">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib512-5">
+                  <forename>ܓܪܝܼܓܘܿܪܝܼܘܿܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib512-4" type="split">
-                           <forename>ܓܪܝܓܘܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܢܘܣܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib512-4" type="split">
-                           <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename>
-                           <addName type="untagged-title">ܕܢܰܘܣܳܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib512-3" type="split">
-                           <forename>غريغوريوس</forename>
-                           <addName type="untagged-title">النوسي</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib512-6">
+                  <addName type="untagged-title">ܕܢܘܣܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib512-6">
+                  <forename>ܓܪܝܺܓܽܘܪܺܝܘܳܣ</forename>
                </persName>
                <bibl xml:id="bib512-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

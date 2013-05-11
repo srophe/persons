@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,83 +17,50 @@
       <body>
          <listPerson>
             <person xml:id="person-481">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib481-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib481-1"
                          resp="http://syriaca.org">Eusebius of Emesa</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib481-2" type="sic">Eusebius of Edessa, bishop of Ḥomṣ</persName>
-               <persName xml:lang="ar" source="bib481-3" type="sic">اوسابيوس الرهاوي اسقف حمص</persName>
-               <persName xml:lang="syr" source="bib481-4" type="sic">ܐܘܣܐܒܝܘܣ ܐܘܪܗܝܐ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
-               <persName xml:lang="syr-Syrj" source="bib481-4" type="sic">ܐܘܣܰܐܒܝܘܣ ܐܘܽܪܗܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܰܚܡܶܨ</persName>
-               <persName xml:lang="syr" source="bib481-5" type="sic">ܐܘܣܒܝܣ ܚܡܨܝܐ</persName>
-               <persName xml:lang="syr-Syrn" source="bib481-5" type="sic">ܐܹܘܣܹܒܝܼܣ ܚܸܡܨܵܝܵܐ</persName>
-               <persName xml:lang="syr" source="bib481-6" type="sic">ܐܘܣܒܝܘܣ ܚܡܨܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib481-6" type="sic">ܐܶܘܣܶܒܝܳܘܣ ܚܶܡܨܳܝܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib481-1" type="sic">Eusebius of Emesa</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib481-1" type="split">
-                           <forename>Eusebius</forename>
-                           <addName type="untagged-title">of Emesa</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib481-1" type="sic">Eusebius of Emesa</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib481-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib481-2">Eusebius of Edessa, bishop of Ḥomṣ</persName>
+               <persName type="sic" xml:lang="ar" source="#bib481-3">اوسابيوس الرهاوي اسقف حمص</persName>
+               <persName type="sic" xml:lang="syr" source="#bib481-4">ܐܘܣܐܒܝܘܣ ܐܘܪܗܝܐ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib481-4">ܐܘܣܰܐܒܝܘܣ ܐܘܽܪܗܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܰܚܡܶܨ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib481-5">ܐܘܣܒܝܣ ܚܡܨܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib481-5">ܐܹܘܣܹܒܝܼܣ ܚܸܡܨܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib481-6">ܐܘܣܒܝܘܣ ܚܡܨܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib481-6">ܐܶܘܣܶܒܝܳܘܣ ܚܶܡܨܳܝܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib481-1"
+                         resp="http://syriaca.org">
                   <forename>Eusebius</forename>
-                  <addName type="untagged-title">of Emesa</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib481-4" type="sic">ܐܘܣܐܒܝܘܣ ܐܘܪܗܝܐ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib481-4" type="sic">ܐܘܣܰܐܒܝܘܣ ܐܘܽܪܗܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܰܚܡܶܨ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib481-3" type="sic">اوسابيوس الرهاوي اسقف حمص</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib481-2" type="sic">Eusebius of Edessa, bishop of Ḥomṣ</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib481-2">
+                  <forename>Eusebius</forename>
+               </persName>
+               <persName type="split" xml:lang="ar" source="#bib481-3">
+                  <forename>اوسابيوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib481-4">
+                  <forename>ܐܘܣܐܒܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib481-4">
+                  <forename>ܐܘܣܰܐܒܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib481-5">
+                  <forename>ܐܘܣܒܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib481-5">
+                  <forename>ܐܹܘܣܹܒܝܼܣ</forename>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib481-4" type="split">
-                           <forename>ܐܘܣܐܒܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܘܪܗܝܐ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib481-4" type="split">
-                           <forename>ܐܘܣܰܐܒܝܘܣ</forename>
-                           <addName type="untagged-title">ܐܘܽܪܗܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܰܚܡܶܨ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib481-3" type="split">
-                           <forename>اوسابيوس</forename>
-                           <addName type="untagged-title">الرهاوي اسقف حمص</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib481-2" type="split">
-                           <forename>Eusebius</forename>
-                           <addName type="untagged-title">of Edessa, bishop of Ḥomṣ</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܘܣܒܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib481-6">
+                  <addName type="untagged-title">ܚܡܨܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib481-6">
+                  <forename>ܐܶܘܣܶܒܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib481-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-784">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib784-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib784-1"
                          resp="http://syriaca.org">Theodosius of Alexandria</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib784-2" type="sic">Theodosius, Patriarch of Alexandria</persName>
-               <persName xml:lang="ar" source="bib784-3" type="sic">ثاودوسيوس بطريرك الاسكندرية</persName>
-               <persName xml:lang="syr" source="bib784-4" type="sic">ܬܐܘܕܘܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib784-4" type="sic">ܬܶܐܘܳܕܳܘܣܝܳܘܣ ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib784-1" type="sic">Theodosius of Alexandria</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib784-1" type="split">
-                           <forename>Theodosius</forename>
-                           <addName type="untagged-title">of Alexandria</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib784-1" type="sic">Theodosius of Alexandria</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib784-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib784-2">Theodosius, Patriarch of Alexandria</persName>
+               <persName type="sic" xml:lang="ar" source="#bib784-3">ثاودوسيوس بطريرك الاسكندرية</persName>
+               <persName type="sic" xml:lang="syr" source="#bib784-4">ܬܐܘܕܘܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib784-4">ܬܶܐܘܳܕܳܘܣܝܳܘܣ ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib784-1"
+                         resp="http://syriaca.org">
                   <forename>Theodosius</forename>
-                  <addName type="untagged-title">of Alexandria</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib784-4" type="sic">ܬܐܘܕܘܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib784-4" type="sic">ܬܶܐܘܳܕܳܘܣܝܳܘܣ ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib784-3" type="sic">ثاودوسيوس بطريرك الاسكندرية</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib784-2" type="sic">Theodosius, Patriarch of Alexandria</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib784-2">
+                  <forename>Theodosius</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib784-4" type="split">
-                           <forename>ܬܐܘܕܘܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib784-4" type="split">
-                           <forename>ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib784-3" type="split">
-                           <forename>ثاودوسيوس</forename>
-                           <addName type="untagged-title">بطريرك الاسكندرية</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib784-2" type="split">
-                           <forename>Theodosius</forename>
-                           <addName type="untagged-title">Patriarch of Alexandria</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib784-3">
+                  <forename>ثاودوسيوس</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib784-4">
+                  <forename>ܬܐܘܕܘܣܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib784-4">
+                  <forename>ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename>
                </persName>
                <bibl xml:id="bib784-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

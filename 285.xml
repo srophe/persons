@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,77 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-285">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib285-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib285-1"
                          resp="http://syriaca.org">Niʿmatullāh, Ignatius</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib285-2" type="sic">Patriarch Ni‛mat Allah</persName>
-               <persName xml:lang="ar" source="bib285-3" type="sic">البطرك نعمة اللّٰه</persName>
-               <persName xml:lang="syr" source="bib285-4" type="sic">ܦܛܪܝܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
-               <persName xml:lang="syr-Syrj" source="bib285-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib285-1" type="sic">Niʿmatullāh, Ignatius</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib285-1" type="split">
-                           <forename>Ignatius Niʿmatullāh</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib285-1" type="sic">Niʿmatullāh, Ignatius</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib285-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib285-2">Patriarch Ni‛mat Allah</persName>
+               <persName type="sic" xml:lang="ar" source="#bib285-3">البطرك نعمة اللّٰه</persName>
+               <persName type="sic" xml:lang="syr" source="#bib285-4">ܦܛܪܝܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib285-4">ܦܰܛܪܝܰܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib285-1"
+                         resp="http://syriaca.org">
                   <forename>Ignatius Niʿmatullāh</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib285-4" type="sic">ܦܛܪܝܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib285-4" type="sic">ܦܰܛܪܝܰܪܟܐ ܢܥܡܗ̈ ܐܠܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib285-3" type="sic">البطرك نعمة اللّٰه</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib285-2" type="sic">Patriarch Ni‛mat Allah</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib285-2">
+                  <forename>Ni‛mat Allah</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib285-4" type="split">
-                           <forename>ܢܥܡܗ̈ ܐܠܗ</forename>
-                           <addName type="untagged-title">ܦܛܪܝܪܟܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib285-4" type="split">
-                           <forename>ܢܥܡܗ̈ ܐܠܗ</forename>
-                           <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib285-3" type="split">
-                           <forename>نعمة اللّٰه</forename>
-                           <addName type="untagged-title">البطرك</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib285-2" type="split">
-                           <forename>Ni‛mat Allah</forename>
-                           <addName type="untagged-title">Patriarch</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib285-3">
+                  <forename>نعمة اللّٰه</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib285-4">
+                  <forename>ܢܥܡܗ̈ ܐܠܗ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib285-4">
+                  <forename>ܢܥܡܗ̈ ܐܠܗ</forename>
                </persName>
                <bibl xml:id="bib285-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

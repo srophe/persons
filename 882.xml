@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,26 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-882">
-               <persName xml:lang="syr" source="bib882-5" type="sic">ܡܪܝ ܝܗܒ</persName>
-               <persName xml:lang="syr-Syrn" source="bib882-5" type="sic">ܡܵܪܝ ܝܲܗܒ</persName>
-               <persName xml:lang="syr" source="bib882-6" type="sic">ܡܪܝܗܒ</persName>
-               <persName xml:lang="syr-Syrj" source="bib882-6" type="sic">ܡܳܪܝܰܗܒ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Maryahb</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Maryahb</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib882-5">ܡܪܝ ܝܗܒ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib882-5">ܡܵܪܝ ܝܲܗܒ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib882-6">ܡܪܝܗܒ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib882-6">ܡܳܪܝܰܗܒ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Maryahb</persName>
+               <persName type="split" xml:lang="syr" source="#bib882-5">
+                  <forename>ܡܪܝ ܝܗܒ</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Maryahb</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib882-5">
+                  <forename>ܡܵܪܝ ܝܲܗܒ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܡܪܝܗܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib882-6">
+                  <forename>ܡܳܪܝܰܗܒ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Maryahb</forename>
                </persName>
             </person>
          </listPerson>

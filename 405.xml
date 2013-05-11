@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,57 +17,24 @@
       <body>
          <listPerson>
             <person xml:id="person-405">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib405-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib405-1"
                          resp="http://syriaca.org">Burkitt, Francis Crawford</persName>
-               <persName xml:lang="ar" source="bib405-3" type="sic">بوركيت</persName>
-               <persName xml:lang="syr" source="bib405-4" type="sic">ܒܘܪܟܝܬ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib405-1" type="sic">Burkitt, Francis Crawford</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib405-1" type="split">
-                           <forename>Francis Crawford</forename>
-                           <surname>Burkitt</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib405-1" type="sic">Burkitt, Francis Crawford</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib405-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib405-3">بوركيت</persName>
+               <persName type="sic" xml:lang="syr" source="#bib405-4">ܒܘܪܟܝܬ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib405-1"
+                         resp="http://syriaca.org">
                   <forename>Francis Crawford</forename>
                   <surname>Burkitt</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib405-4" type="sic">ܒܘܪܟܝܬ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib405-3" type="sic">بوركيت</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib405-3">
+                  <surname>بوركيت</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib405-4" type="split">
-                           <surname>ܒܘܪܟܝܬ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib405-3" type="split">
-                           <surname>بوركيت</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib405-4">
+                  <surname>ܒܘܪܟܝܬ</surname>
                </persName>
                <bibl xml:id="bib405-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

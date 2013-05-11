@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,72 +17,49 @@
       <body>
          <listPerson>
             <person xml:id="person-542">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib542-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib542-1"
                          resp="http://syriaca.org">Ḥunayn b. Isḥāq</persName>
-               <persName xml:lang="ar" source="bib542-3" type="sic">حنين بن اسحق</persName>
-               <persName xml:lang="syr" source="bib542-4" type="sic">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
-               <persName xml:lang="syr-Syrj" source="bib542-4" type="sic">ܚܘܢܰܝܢ ܒܰܪ ܐܝܣܚܳܩ</persName>
-               <persName xml:lang="syr" source="bib542-5" type="sic">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
-               <persName xml:lang="syr-Syrn" source="bib542-5" type="sic">ܚܘܼܢܲܝܢ ܒܲܪ ܐܝܼܣܚܵܩ</persName>
-               <persName xml:lang="syr" source="bib542-6" type="sic">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib542-1" type="sic">Ḥunayn b. Isḥāq</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib542-1" type="split">
-                           <forename>Ḥunayn</forename>
-                           <surname>b. Isḥāq</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib542-1" type="sic">Ḥunayn b. Isḥāq</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib542-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib542-3">حنين بن اسحق</persName>
+               <persName type="sic" xml:lang="syr" source="#bib542-4">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib542-4">ܚܘܢܰܝܢ ܒܰܪ ܐܝܣܚܳܩ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib542-5">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib542-5">ܚܘܼܢܲܝܢ ܒܲܪ ܐܝܼܣܚܵܩ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib542-6">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib542-1"
+                         resp="http://syriaca.org">
                   <forename>Ḥunayn</forename>
                   <surname>b. Isḥāq</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib542-4" type="sic">ܚܘܢܝܢ ܒܪ ܐܝܣܚܩ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib542-4" type="sic">ܚܘܢܰܝܢ ܒܰܪ ܐܝܣܚܳܩ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib542-3" type="sic">حنين بن اسحق</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib542-3">
+                  <forename>حنين</forename>
+                  <surname>بن اسحق</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib542-4">
+                  <forename>ܚܘܢܝܢ</forename>
+                  <surname>ܒܪ ܐܝܣܚܩ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib542-4">
+                  <forename>ܚܘܢܰܝܢ</forename>
+                  <surname>ܒܰܪ ܐܝܣܚܳܩ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib542-5">
+                  <forename>ܚܘܢܝܢ</forename>
+                  <surname>ܒܪ ܐܝܣܚܩ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib542-5">
+                  <forename>ܚܘܼܢܲܝܢ</forename>
+                  <surname>ܒܲܪ ܐܝܼܣܚܵܩ</surname>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib542-4" type="split">
-                           <forename>ܚܘܢܝܢ</forename>
-                           <surname>ܒܪ ܐܝܣܚܩ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib542-4" type="split">
-                           <forename>ܚܘܢܰܝܢ</forename>
-                           <surname>ܒܰܪ ܐܝܣܚܳܩ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib542-3" type="split">
-                           <forename>حنين</forename>
-                           <surname>بن اسحق</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܚܘܢܝܢ</forename>
+                  <surname>ܒܪ ܐܝܣܚܩ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib542-6">
+                  <surname>ܒܪ ܐܝܣܚܩ</surname>
                </persName>
                <bibl xml:id="bib542-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

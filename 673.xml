@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-673">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib673-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib673-1"
                          resp="http://syriaca.org">Pawlos of Nisibis</persName>
-               <persName xml:lang="syr" source="bib673-5" type="sic">ܦܘܠܘܣ ܕܢܨܝܒܝܢ</persName>
-               <persName xml:lang="syr-Syrn" source="bib673-5" type="sic">ܦܵܘܠܘܿܣ ܕܲܢܨܝܼܒܝܼܢ</persName>
-               <persName xml:lang="syr" source="bib673-6" type="sic">ܦܘܠܘܣ ܕܢܨܝܒܝܢ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib673-1" type="sic">Pawlos of Nisibis</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib673-1" type="split">
-                           <forename>Pawlos</forename>
-                           <addName type="untagged-title">of Nisibis</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib673-1" type="sic">Pawlos of Nisibis</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib673-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib673-5">ܦܘܠܘܣ ܕܢܨܝܒܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib673-5">ܦܵܘܠܘܿܣ ܕܲܢܨܝܼܒܝܼܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib673-6">ܦܘܠܘܣ ܕܢܨܝܒܝܢ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib673-1"
+                         resp="http://syriaca.org">
                   <forename>Pawlos</forename>
-                  <addName type="untagged-title">of Nisibis</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib673-5">
+                  <forename>ܦܘܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib673-5">
+                  <forename>ܦܵܘܠܘܿܣ</forename>
+               </persName>
+               <persName type="split">
+                  <forename>ܦܘܠܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib673-6">
+                  <addName type="untagged-title">ܕܢܨܝܒܝܢ</addName>
                </persName>
                <bibl xml:id="bib673-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

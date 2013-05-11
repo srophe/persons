@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,34 +17,34 @@
       <body>
          <listPerson>
             <person xml:id="person-309">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib309-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib309-1"
                          resp="http://syriaca.org">ʿAbdishoʿ bar Bahrīz</persName>
-               <persName xml:lang="syr" source="bib309-5" type="sic">ܥܒܕܝܫܘܥ ܒܪ ܒܗܪܝܙ</persName>
-               <persName xml:lang="syr-Syrn" source="bib309-5" type="sic">ܥܲܒܕܝܼܫܘܿܥ ܒܲܪ ܒܲܗܪܝܼܙ</persName>
-               <persName xml:lang="syr" source="bib309-6" type="sic">ܥܒܕܝܫܘܥ ܒܪ ܒܗܪܝܙ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib309-1" type="sic">ʿAbdishoʿ bar Bahrīz</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib309-1" type="split">
-                           <forename>ʿAbdishoʿ</forename>
-                           <surname>bar Bahrīz</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib309-1" type="sic">ʿAbdishoʿ bar Bahrīz</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib309-1" type="split">
+               <persName type="sic" xml:lang="syr" source="#bib309-5">ܥܒܕܝܫܘܥ ܒܪ ܒܗܪܝܙ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib309-5">ܥܲܒܕܝܼܫܘܿܥ ܒܲܪ ܒܲܗܪܝܼܙ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib309-6">ܥܒܕܝܫܘܥ ܒܪ ܒܗܪܝܙ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib309-1"
+                         resp="http://syriaca.org">
                   <forename>ʿAbdishoʿ</forename>
                   <surname>bar Bahrīz</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib309-5">
+                  <forename>ܥܒܕܝܫܘܥ</forename>
+                  <surname>ܒܪ ܒܗܪܝܙ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib309-5">
+                  <forename>ܥܲܒܕܝܼܫܘܿܥ</forename>
+                  <surname>ܒܲܪ ܒܲܗܪܝܼܙ</surname>
+               </persName>
+               <persName type="split">
+                  <forename>ܥܒܕܝܫܘܥ</forename>
+                  <surname>ܒܪ ܒܗܪܝܙ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib309-6">
+                  <surname>ܒܪ ܒܗܪܝܙ</surname>
                </persName>
                <bibl xml:id="bib309-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-242">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib242-2" type="sic">Abu al-Ḥasan Ibn Maḥruma</persName>
-               <persName xml:lang="ar" source="bib242-3" type="sic">ابو الحسن ابن محرومة</persName>
-               <persName xml:lang="syr" source="bib242-4" type="sic">ܐܒܘ ܐܠܚܣܢ ܒܪ ܡܚܪܘܡܗ</persName>
-               <persName xml:lang="syr-Syrj" source="bib242-4" type="sic">ܐܰܒܘ ܐܠܚܰܣܢ ܒܰܪ ܡܰܚܪܘܡܗ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Abū al-Ḥasan Ibn Maḥrūma</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abū al-Ḥasan Ibn Maḥrūma</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib242-2">Abu al-Ḥasan Ibn Maḥruma</persName>
+               <persName type="sic" xml:lang="ar" source="#bib242-3">ابو الحسن ابن محرومة</persName>
+               <persName type="sic" xml:lang="syr" source="#bib242-4">ܐܒܘ ܐܠܚܣܢ ܒܪ ܡܚܪܘܡܗ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib242-4">ܐܰܒܘ ܐܠܚܰܣܢ ܒܰܪ ܡܰܚܪܘܡܗ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū al-Ḥasan Ibn Maḥrūma</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib242-2">
+                  <forename>Abu al-Ḥasan</forename>
+                  <surname>Ibn Maḥruma</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Abū al-Ḥasan</forename>
-                           <addName type="untagged-title">Ibn Maḥrūma</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib242-3">
+                  <forename>ابو الحسن</forename>
+                  <surname>ابن محرومة</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib242-4" type="sic">ܐܒܘ ܐܠܚܣܢ ܒܪ ܡܚܪܘܡܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib242-4" type="sic">ܐܰܒܘ ܐܠܚܰܣܢ ܒܰܪ ܡܰܚܪܘܡܗ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib242-3" type="sic">ابو الحسن ابن محرومة</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib242-2" type="sic">Abu al-Ḥasan Ibn Maḥruma</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib242-4">
+                  <forename>ܐܒܘ ܐܠܚܣܢ</forename>
+                  <surname>ܒܪ ܡܚܪܘܡܗ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib242-4" type="split">
-                           <forename>ܐܒܘ ܐܠܚܣܢ</forename>
-                           <surname>ܒܪ ܡܚܪܘܡܗ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib242-4" type="split">
-                           <forename>ܐܰܒܘ ܐܠܚܰܣܢ</forename>
-                           <surname>ܒܰܪ ܡܰܚܪܘܡܗ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib242-3" type="split">
-                           <forename>ابو الحسن</forename>
-                           <surname>ابن محرومة</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib242-2" type="split">
-                           <forename>Abu al-Ḥasan</forename>
-                           <surname>Ibn Maḥruma</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib242-4">
+                  <forename>ܐܰܒܘ ܐܠܚܰܣܢ</forename>
+                  <surname>ܒܰܪ ܡܰܚܪܘܡܗ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Abū al-Ḥasan</forename>
                </persName>
                <bibl xml:id="bib242-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

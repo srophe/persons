@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,85 +17,36 @@
       <body>
          <listPerson>
             <person xml:id="person-88">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib88-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib88-1"
                          resp="http://syriaca.org">Athanasios I Gamolo</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib88-2" type="sic">Athanasius I Gamolo</persName>
-               <persName xml:lang="ar" source="bib88-3" type="sic">اثناسيوس الاول الجَّمال</persName>
-               <persName xml:lang="syr" source="bib88-4" type="sic">ܐܬܢܐܣܝܘܣ ܩܕܡܝܐ ܓܡܠܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib88-4" type="sic">ܐܰܬܰܢܰܐܣܝܘܣ ܩܰܕܡܳܝܐ ܓܰܡܳܠܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib88-1" type="sic">Athanasios I Gamolo</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib88-1" type="split">
-                           <forename>Athanasios</forename>
-                           <surname>Gamolo</surname>
-                           <addName type="untagged-title">I</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib88-1" type="sic">Athanasios I Gamolo</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib88-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib88-2">Athanasius I Gamolo</persName>
+               <persName type="sic" xml:lang="ar" source="#bib88-3">اثناسيوس الاول الجَّمال</persName>
+               <persName type="sic" xml:lang="syr" source="#bib88-4">ܐܬܢܐܣܝܘܣ ܩܕܡܝܐ ܓܡܠܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib88-4">ܐܰܬܰܢܰܐܣܝܘܣ ܩܰܕܡܳܝܐ ܓܰܡܳܠܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib88-1"
+                         resp="http://syriaca.org">
                   <forename>Athanasios</forename>
                   <surname>Gamolo</surname>
-                  <addName type="untagged-title">I</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib88-4" type="sic">ܐܬܢܐܣܝܘܣ ܩܕܡܝܐ ܓܡܠܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib88-4" type="sic">ܐܰܬܰܢܰܐܣܝܘܣ ܩܰܕܡܳܝܐ ܓܰܡܳܠܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib88-3" type="sic">اثناسيوس الاول الجَّمال</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib88-2" type="sic">Athanasius I Gamolo</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib88-2">
+                  <forename>Athanasius</forename>
+                  <surname>Gamolo</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib88-4" type="split">
-                           <forename>ܐܬܢܐܣܝܘܣ</forename>
-                           <surname>ܓܡܠܐ</surname>
-                           <addName type="untagged-title">ܩܕܡܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib88-4" type="split">
-                           <forename>ܐܰܬܰܢܰܐܣܝܘܣ</forename>
-                           <surname>ܓܰܡܳܠܳܐ</surname>
-                           <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib88-3" type="split">
-                           <forename>اثناسيوس</forename>
-                           <surname>الجَّمال</surname>
-                           <addName type="untagged-title">الاول</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib88-2" type="split">
-                           <forename>Athanasius</forename>
-                           <surname>Gamolo</surname>
-                           <addName type="untagged-title">I</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib88-3">
+                  <forename>اثناسيوس</forename>
+                  <surname>الجَّمال</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib88-4">
+                  <forename>ܐܬܢܐܣܝܘܣ</forename>
+                  <surname>ܓܡܠܐ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib88-4">
+                  <forename>ܐܰܬܰܢܰܐܣܝܘܣ</forename>
+                  <surname>ܓܰܡܳܠܳܐ</surname>
                </persName>
                <bibl xml:id="bib88-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,70 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-132">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib132-2" type="sic">John I</persName>
-               <persName xml:lang="ar" source="bib132-3" type="sic">اياونيس الاول</persName>
-               <persName xml:lang="syr" source="bib132-4" type="sic">ܐܝܘܐܢܝܣ ܩܕܡܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib132-4" type="sic">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Iwannis (Yuḥanon III)</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Iwannis (Yuḥanon III)</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib132-2">John I</persName>
+               <persName type="sic" xml:lang="ar" source="#bib132-3">اياونيس الاول</persName>
+               <persName type="sic" xml:lang="syr" source="#bib132-4">ܐܝܘܐܢܝܣ ܩܕܡܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib132-4">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Iwannis (Yuḥanon III)</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib132-2">
+                  <forename>John I</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Iwannis (Yuḥanon)</forename>
-                           <addName type="untagged-title">III</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib132-3">
+                  <forename>اياونيس</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib132-4" type="sic">ܐܝܘܐܢܝܣ ܩܕܡܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib132-4" type="sic">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib132-3" type="sic">اياونيس الاول</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib132-2" type="sic">John I</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib132-4">
+                  <forename>ܐܝܘܐܢܝܣ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib132-4" type="split">
-                           <forename>ܐܝܘܐܢܝܣ</forename>
-                           <addName type="untagged-title">ܩܕܡܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib132-4" type="split">
-                           <forename>ܐܝܘܰܐܢܝܣ</forename>
-                           <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib132-3" type="split">
-                           <forename>اياونيس</forename>
-                           <addName type="untagged-title">الاول</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib132-2" type="split">
-                           <forename>John I</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib132-4">
+                  <forename>ܐܝܘܰܐܢܝܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Iwannis (Yuḥanon)</forename>
                </persName>
                <bibl xml:id="bib132-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

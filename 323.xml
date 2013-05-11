@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-323">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib323-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib323-1"
                          resp="http://syriaca.org">Aḥiqar</persName>
-               <persName xml:lang="ar" source="bib323-3" type="sic">قصة احيقار</persName>
-               <persName xml:lang="syr" source="bib323-4" type="sic">ܐܚܝܩܪ</persName>
-               <persName xml:lang="syr-Syrj" source="bib323-4" type="sic">ܐܰܚܝܩܪ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib323-1" type="sic">Aḥiqar</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib323-1" type="split">
-                           <forename>Aḥiqar</forename>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib323-1" type="sic">Aḥiqar</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib323-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib323-3">قصة احيقار</persName>
+               <persName type="sic" xml:lang="syr" source="#bib323-4">ܐܚܝܩܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib323-4">ܐܰܚܝܩܪ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib323-1"
+                         resp="http://syriaca.org">
                   <forename>Aḥiqar</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib323-4" type="sic">ܐܚܝܩܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib323-4" type="sic">ܐܰܚܝܩܪ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib323-3" type="sic">قصة احيقار</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib323-3">
+                  <forename>احيقار</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib323-4" type="split">
-                           <forename>ܐܚܝܩܪ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib323-4" type="split">
-                           <forename>ܐܰܚܝܩܪ</forename>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib323-3" type="split">
-                           <forename>احيقار</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib323-4">
+                  <forename>ܐܚܝܩܪ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib323-4">
+                  <forename>ܐܰܚܝܩܪ</forename>
                </persName>
                <bibl xml:id="bib323-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

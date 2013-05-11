@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,75 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-46">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib46-2" type="sic">Simon, abbot of the Monastery of Beth Liqin</persName>
-               <persName xml:lang="ar" source="bib46-3" type="sic">شمعون رئيس دير ليقين</persName>
-               <persName xml:lang="syr" source="bib46-4" type="sic">ܫܡܥܘܢ ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</persName>
-               <persName xml:lang="syr-Syrj" source="bib46-4" type="sic">ܫܶܡܥܘܢ ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Shemʿon, abbot of Dayro d-Liqin</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Shemʿon, abbot of Dayro d-Liqin</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib46-2">Simon, abbot of the Monastery of Beth Liqin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib46-3">شمعون رئيس دير ليقين</persName>
+               <persName type="sic" xml:lang="syr" source="#bib46-4">ܫܡܥܘܢ ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib46-4">ܫܶܡܥܘܢ ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shemʿon, abbot of Dayro d-Liqin</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib46-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Shemʿon</forename>
-                           <addName type="untagged-title">abbot of Dayro d-Liqin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib46-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib46-4" type="sic">ܫܡܥܘܢ ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib46-4" type="sic">ܫܶܡܥܘܢ ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib46-3" type="sic">شمعون رئيس دير ليقين</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib46-2" type="sic">Simon, abbot of the Monastery of Beth Liqin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib46-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib46-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib46-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib46-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib46-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib46-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Shemʿon</forename>
                </persName>
                <bibl xml:id="bib46-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

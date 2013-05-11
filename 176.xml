@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,71 +17,25 @@
       <body>
          <listPerson>
             <person xml:id="person-176">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib176-2" type="sic">The Monk Rufil</persName>
-               <persName xml:lang="ar" source="bib176-3" type="sic">الراهب روفيل</persName>
-               <persName xml:lang="syr" source="bib176-4" type="sic">ܪܘܦܝܠ ܕܝܪܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib176-4" type="sic">ܪܘܦܝܠ ܕܰܝܪܳܝܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Rupil Dayroyo</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Rupil Dayroyo</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib176-2">The Monk Rufil</persName>
+               <persName type="sic" xml:lang="ar" source="#bib176-3">الراهب روفيل</persName>
+               <persName type="sic" xml:lang="syr" source="#bib176-4">ܪܘܦܝܠ ܕܝܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib176-4">ܪܘܦܝܠ ܕܰܝܪܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Rupil Dayroyo</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib176-2">
+                  <forename>Rufil</forename>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Rupil</forename>
-                           <addName type="untagged-title">Dayroyo</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib176-3">
+                  <forename>روفيل</forename>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib176-4" type="sic">ܪܘܦܝܠ ܕܝܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib176-4" type="sic">ܪܘܦܝܠ ܕܰܝܪܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib176-3" type="sic">الراهب روفيل</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib176-2" type="sic">The Monk Rufil</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib176-4">
+                  <forename>ܪܘܦܝܠ</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib176-4" type="split">
-                           <forename>ܪܘܦܝܠ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib176-4" type="split">
-                           <forename>ܪܘܦܝܠ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib176-3" type="split">
-                           <forename>روفيل</forename>
-                           <addName type="untagged-title">الراهب</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib176-2" type="split">
-                           <forename>Rufil</forename>
-                           <addName type="untagged-title">The Monk</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib176-4">
+                  <forename>ܪܘܦܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Rupil</forename>
                </persName>
                <bibl xml:id="bib176-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,79 +17,31 @@
       <body>
          <listPerson>
             <person xml:id="person-256">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib256-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib256-1"
                          resp="http://syriaca.org">Daniel of Mardin</persName>
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib256-2" type="sic">The Monk Daniel of Mardin</persName>
-               <persName xml:lang="ar" source="bib256-3" type="sic">الراهب دنيال المارديني</persName>
-               <persName xml:lang="syr" source="bib256-4" type="sic">ܕܝܪܝܐ ܕܢܝܐܝܠ ܡܪܕܝܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib256-4" type="sic">ܕܰܝܪܳܝܐ ܕܳܢܝܐܝܠ ܡܰܪܕܝܢܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib256-1" type="sic">Daniel of Mardin</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib256-1" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">of Mardin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib256-1" type="sic">Daniel of Mardin</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib256-1" type="split">
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib256-2">The Monk Daniel of Mardin</persName>
+               <persName type="sic" xml:lang="ar" source="#bib256-3">الراهب دنيال المارديني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib256-4">ܕܝܪܝܐ ܕܢܝܐܝܠ ܡܪܕܝܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib256-4">ܕܰܝܪܳܝܐ ܕܳܢܝܐܝܠ ܡܰܪܕܝܢܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib256-1"
+                         resp="http://syriaca.org">
                   <forename>Daniel</forename>
-                  <addName type="untagged-title">of Mardin</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib256-4" type="sic">ܕܝܪܝܐ ܕܢܝܐܝܠ ܡܪܕܝܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib256-4" type="sic">ܕܰܝܪܳܝܐ ܕܳܢܝܐܝܠ ܡܰܪܕܝܢܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib256-3" type="sic">الراهب دنيال المارديني</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib256-2" type="sic">The Monk Daniel of Mardin</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib256-2">
+                  <forename>Daniel</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib256-4" type="split">
-                           <forename>ܕܢܝܐܝܠ</forename>
-                           <addName type="untagged-title">ܕܝܪܝܐ ܡܪܕܝܢܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib256-4" type="split">
-                           <forename>ܕܳܢܝܐܝܠ</forename>
-                           <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܰܪܕܝܢܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib256-3" type="split">
-                           <forename>دنيال</forename>
-                           <addName type="untagged-title">الراهب , المارديني</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib256-2" type="split">
-                           <forename>Daniel</forename>
-                           <addName type="untagged-title">The Monk, of Mardin</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib256-3">
+                  <forename>دنيال</forename>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib256-4">
+                  <forename>ܕܢܝܐܝܠ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib256-4">
+                  <forename>ܕܳܢܝܐܝܠ</forename>
                </persName>
                <bibl xml:id="bib256-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

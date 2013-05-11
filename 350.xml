@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,64 +17,23 @@
       <body>
          <listPerson>
             <person xml:id="person-350">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib350-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib350-1"
                          resp="http://syriaca.org">Assemani, Stephanus Evodius</persName>
-               <persName xml:lang="ar" source="bib350-3" type="sic">المطران اسطيفان عوَّاد السمعاني</persName>
-               <persName xml:lang="syr" source="bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܣܛܝܦܐܢ ܥܘܐܕ ܫܡܥܘܢܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܶܣܛܰܝܦܰܐܢ ܥܰܘܰܐܕ ܫܶܡܥܘܢܳܝܳܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib350-1" type="sic">Assemani, Stephanus Evodius</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib350-1" type="split">
-                           <forename>Stephanus Evodius</forename>
-                           <surname>Assemani</surname>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib350-1" type="sic">Assemani, Stephanus Evodius</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib350-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib350-3">المطران اسطيفان عوَّاد السمعاني</persName>
+               <persName type="sic" xml:lang="syr" source="#bib350-4">ܡܝܛܪܘܦܘܠܝܛܐ ܐܣܛܝܦܐܢ ܥܘܐܕ ܫܡܥܘܢܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib350-4">ܡܝܛܪܘܦܘܠܝܛܐ ܐܶܣܛܰܝܦܰܐܢ ܥܰܘܰܐܕ ܫܶܡܥܘܢܳܝܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib350-1"
+                         resp="http://syriaca.org">
                   <forename>Stephanus Evodius</forename>
                   <surname>Assemani</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܣܛܝܦܐܢ ܥܘܐܕ ܫܡܥܘܢܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib350-4" type="sic">ܡܝܛܪܘܦܘܠܝܛܐ ܐܶܣܛܰܝܦܰܐܢ ܥܰܘܰܐܕ ܫܶܡܥܘܢܳܝܳܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib350-3" type="sic">المطران اسطيفان عوَّاد السمعاني</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib350-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib350-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib350-3" type="split">
-                           <forename>اسطيفان عوَّاد</forename>
-                           <surname>السمعاني</surname>
-                           <addName type="untagged-title">المطران</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib350-3">
+                  <forename>اسطيفان عوَّاد</forename>
+                  <surname>السمعاني</surname>
                </persName>
                <bibl xml:id="bib350-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

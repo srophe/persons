@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,74 +17,29 @@
       <body>
          <listPerson>
             <person xml:id="person-19">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib19-2" type="sic">The Writer of the Biography of Eusebius of Samosata</persName>
-               <persName xml:lang="ar" source="bib19-3" type="sic">كاتب سيرة اوسابيوس السميساطي</persName>
-               <persName xml:lang="syr" source="bib19-4" type="sic">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</persName>
-               <persName xml:lang="syr-Syrj" source="bib19-4" type="sic">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Author of the biography of Eusebius of Samosata</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Author of the biography of Eusebius of Samosata</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib19-2">The Writer of the Biography of Eusebius of Samosata</persName>
+               <persName type="sic" xml:lang="ar" source="#bib19-3">كاتب سيرة اوسابيوس السميساطي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib19-4">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib19-4">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Author of the biography of Eusebius of Samosata</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib19-2">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <addName type="untagged-title">Author of the biography of Eusebius of Samosata</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib19-3">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib19-4" type="sic">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib19-4" type="sic">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib19-3" type="sic">كاتب سيرة اوسابيوس السميساطي</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib19-2" type="sic">The Writer of the Biography of Eusebius of Samosata</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib19-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib19-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib19-4" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib19-3" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib19-2" type="split">
-                           <forename>#REF!</forename>
-                           <surname>#REF!</surname>
-                           <addName type="untagged-title">#REF!</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib19-4">
+                  <forename>#REF!</forename>
+                  <surname>#REF!</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <addName type="untagged-title">Author of the biography of Eusebius of Samosata</addName>
                </persName>
                <bibl xml:id="bib19-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

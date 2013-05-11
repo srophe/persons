@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,69 +17,27 @@
       <body>
          <listPerson>
             <person xml:id="person-453">
-               <persName xml:lang="syr-Latn-x-gedsh"
-                         source="bib453-1"
-                         type="sic"
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib453-1"
                          resp="http://syriaca.org">Dionysius Thrax</persName>
-               <persName xml:lang="ar" source="bib453-3" type="sic">ديونيسيوس الثراقي</persName>
-               <persName xml:lang="syr" source="bib453-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܬܪܐܩܝܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib453-4" type="sic">ܕܺܝܘܢܢܘܣܝܘܣ ܬܪܐܩܳܝܐ</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib453-1" type="sic">Dionysius Thrax</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib453-1" type="split">
-                           <forename>Dionysius</forename>
-                           <addName type="untagged-title">Thrax</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib453-1" type="sic">Dionysius Thrax</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib453-1" type="split">
+               <persName type="sic" xml:lang="ar" source="#bib453-3">ديونيسيوس الثراقي</persName>
+               <persName type="sic" xml:lang="syr" source="#bib453-4">ܕܝܘܢܢܘܣܝܘܣ ܬܪܐܩܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib453-4">ܕܺܝܘܢܢܘܣܝܘܣ ܬܪܐܩܳܝܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib453-1"
+                         resp="http://syriaca.org">
                   <forename>Dionysius</forename>
-                  <addName type="untagged-title">Thrax</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib453-4" type="sic">ܕܝܘܢܢܘܣܝܘܣ ܬܪܐܩܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib453-4" type="sic">ܕܺܝܘܢܢܘܣܝܘܣ ܬܪܐܩܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib453-3" type="sic">ديونيسيوس الثراقي</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib453-3">
+                  <forename>ديونيسيوس</forename>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib453-4" type="split">
-                           <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܐܩܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib453-4" type="split">
-                           <forename>ܕܺܝܘܢܢܘܣܝܘܣ</forename>
-                           <addName type="untagged-title">ܬܪܐܩܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib453-3" type="split">
-                           <forename>ديونيسيوس</forename>
-                           <addName type="untagged-title">الثراقي</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib453-4">
+                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib453-4">
+                  <forename>ܕܺܝܘܢܢܘܣܝܘܣ</forename>
                </persName>
                <bibl xml:id="bib453-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

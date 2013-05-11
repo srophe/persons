@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,68 +17,26 @@
       <body>
          <listPerson>
             <person xml:id="person-128">
-               <persName xml:lang="syr-Latn-x-barsoum" source="bib128-2" type="sic">Daniel Bar Moses</persName>
-               <persName xml:lang="ar" source="bib128-3" type="sic">دنيال بن موسى</persName>
-               <persName xml:lang="syr" source="bib128-4" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܘܫܐ</persName>
-               <persName xml:lang="syr-Syrj" source="bib128-4" type="sic">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" type="sic" resp="http://syriaca.org">Daniel bar Mushe</persName>
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Daniel bar Mushe</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib128-2">Daniel Bar Moses</persName>
+               <persName type="sic" xml:lang="ar" source="#bib128-3">دنيال بن موسى</persName>
+               <persName type="sic" xml:lang="syr" source="#bib128-4">ܕܢܝܐܝܠ ܒܪ ܡܘܫܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib128-4">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Daniel bar Mushe</persName>
+               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib128-2">
+                  <forename>Daniel</forename>
+                  <surname>Bar Moses</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Daniel</forename>
-                           <surname>bar Mushe</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="ar" source="#bib128-3">
+                  <forename>دنيال</forename>
+                  <surname>بن موسى</surname>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib128-4" type="sic">ܕܢܝܐܝܠ ܒܪ ܡܘܫܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib128-4" type="sic">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib128-3" type="sic">دنيال بن موسى</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib128-2" type="sic">Daniel Bar Moses</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib128-4">
+                  <forename>ܕܢܝܐܝܠ</forename>
+                  <surname>ܒܪ ܡܘܫܐ</surname>
                </persName>
-               <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib128-4" type="split">
-                           <forename>ܕܢܝܐܝܠ</forename>
-                           <surname>ܒܪ ܡܘܫܐ</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib128-4" type="split"/>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib128-3" type="split">
-                           <forename>دنيال</forename>
-                           <surname>بن موسى</surname>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="en" source="#bib128-2" type="split">
-                           <forename>Daniel</forename>
-                           <surname>Bar Moses</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Daniel</forename>
+                  <surname>bar Mushe</surname>
                </persName>
                <bibl xml:id="bib128-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
