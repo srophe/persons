@@ -3,33 +3,74 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">...</title>
+            <title xml:lang="en">Shahdost | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-            <funder>...</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
             <principal>David A. Michelson</principal>
             <respStmt>
-               <name>...</name>
+               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+               <resp>English name entry, matching with viaf.org records</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>editing, Syriac name entry, disambiguation research</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac name entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+               <resp>Arabic name entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+               <resp>normalization, matching with viaf.org records</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+               <resp>date entry</resp>
             </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
          </editionStmt>
          <publicationStmt>
-            <authority>Syriaca.org: The Syriac Reference Portal
-                                </authority>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/person-732/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>...</date>
+            <date>2013-05-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Normalization of capitalization in encoded names.</p>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>
+                                            
+                                            The name considered authoritative by Syriaca.org for cataloging purposes
+                                            
+                                        </catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="syr">Unvocalized Syriac of any variety or period</language>
@@ -43,7 +84,11 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change>...</change>
+         <change who="http://syriaca.org/editors.xml#ngibson"
+                 n="1.0"
+                 when="2013-05-15-04:00">
+                                CREATED: person
+                            </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -57,6 +102,7 @@
                <persName type="sic" xml:lang="syr" source="#bib732-5">ܫܗܕܘܣܬ ܚܣܝܐ ܕܛܝܪܗܢ</persName>
                <persName type="sic" xml:lang="syr-Syrn" source="#bib732-5">ܫܵܗܕܘܿܣܬ ܚܲܣܝܵܐ ܕܛܝܼܪܗܵܢ</persName>
                <persName type="sic" xml:lang="syr" source="#bib732-6">ܫܗܕܘܣܬ ܚܣܝܐ ܕܛܝܪܗܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib732-7">#REF!</persName>
                <persName type="split"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib732-1"
