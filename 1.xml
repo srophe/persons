@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -25,21 +58,27 @@
                <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Wafā the Aramean</persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib1-2">
                   <forename>Wafā</forename>
+                  <addName type="untagged-title">the Aramaean</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib1-3">
                   <forename>وفا</forename>
+                  <addName type="untagged-title">الآرامي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib1-4">
                   <forename>ܘܦܐ</forename>
+                  <addName type="untagged-title">ܐܪܡܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib1-4">
                   <forename>ܘܰܦܰܐ</forename>
+                  <addName type="untagged-title">ܐܳܪܳܡܳܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr" resp="http://syriaca.org">
                   <forename>ܘܦܐ</forename>
+                  <addName type="terms-of-address">ܐܪܡܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
                   <forename>Wafā</forename>
+                  <addName type="untagged-title">the Aramean</addName>
                </persName>
                <bibl xml:id="bib1-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

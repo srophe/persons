@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -28,21 +61,27 @@
                <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Teadore of Merv</persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib863-2">
                   <forename>Theodore</forename>
+                  <addName type="untagged-title">bishop of Merv</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib863-3">
                   <forename>ثاودور</forename>
+                  <addName type="untagged-title">الذي تسقّف على مرو</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib863-4">
                   <forename>ܬܐܘܕܘܪ</forename>
+                  <addName type="untagged-title">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib863-4">
                   <forename>ܬܶܐܘܕܘܪ</forename>
+                  <addName type="untagged-title">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib863-5">
                   <forename>ܬܐܕܘܪܐ</forename>
+                  <addName type="untagged-title">ܡܝܛܪܢ ܕܡܪܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrn" source="#bib863-5">
                   <forename>ܬܹܐܕܘܿܪܹܐ</forename>
+                  <addName type="untagged-title">ܡܝܼܛܪܵܢ ܕܡܵܪܘܼ</addName>
                </persName>
                <persName type="split">
                   <forename>ܬܐܕܘܪܐ</forename>
@@ -52,9 +91,11 @@
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib863-6">
                   <forename>ܬܶܐܕܽܘܪܳܐ</forename>
+                  <addName type="untagged-title">ܡܺܝܛܪܳܢ ܕܡܰܪܽܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
                   <forename>Teadore</forename>
+                  <addName type="untagged-title">of Merv</addName>
                </persName>
                <bibl xml:id="bib863-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

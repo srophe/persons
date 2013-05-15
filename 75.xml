@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -30,18 +63,23 @@
                          source="#bib75-1"
                          resp="http://syriaca.org">
                   <forename>Peter</forename>
+                  <addName type="untagged-title">of Kallinikos</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib75-2">
                   <forename>Peter</forename>
+                  <addName type="untagged-title">III of al-Raqqa</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib75-3">
                   <forename>بطرس</forename>
+                  <addName type="untagged-title">الثالث  القلونيقي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib75-4">
                   <forename>ܦܛܪܘܣ</forename>
+                  <addName type="untagged-title">ܓ ܩܠܘܢܝܩܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib75-4">
                   <forename>ܦܶܛܪܘܣ</forename>
+                  <addName type="untagged-title">ܓ ܩܰܠܘܢܝܩܳܝܳܐ</addName>
                </persName>
                <bibl xml:id="bib75-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

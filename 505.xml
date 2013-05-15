@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -30,22 +63,27 @@
                          source="#bib505-1"
                          resp="http://syriaca.org">
                   <forename>Ignatius Giwargis</forename>
+                  <addName type="untagged-title">II</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib505-2">
                   <forename>George</forename>
                   <surname>son of ʿAbd al-Karīm</surname>
+                  <addName type="untagged-title">Patriarch, II, of Mosul</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib505-3">
                   <forename>جرجس</forename>
                   <surname>ابن عبدالكريم</surname>
+                  <addName type="untagged-title">البطريرك, الثاني الموصلي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib505-4">
                   <forename>ܓܘܪܓܝܣ</forename>
                   <surname>ܒܪ ܥܒܕ ܐܠܟܪܝܡ</surname>
+                  <addName type="untagged-title">ܦܛܪܝܪܟܐ, ܬܪܝܢܐ ܡܘܨܠܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib505-4">
                   <forename>ܓܶܘܰܪܓܝܣ</forename>
                   <surname>ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ</surname>
+                  <addName type="untagged-title">ܦܰܛܪܝܰܪܟܳܐ, ܬܪܰܝܳܢܐ ܡܘܨܠܳܝܐ</addName>
                </persName>
                <bibl xml:id="bib505-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -34,15 +67,19 @@
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib72-2">
                   <forename>Paul</forename>
+                  <addName type="untagged-title">II, Patriarch of Antioch</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib72-3">
                   <forename>بولس</forename>
+                  <addName type="untagged-title">الثاني , بطريرك انطاكية</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib72-4">
                   <forename>ܦܘܠܘܣ</forename>
+                  <addName type="untagged-title">ܬܪܝܢܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib72-4">
                   <forename>ܦܰܘܠܘܣ</forename>
+                  <addName type="untagged-title">ܬܪܰܝܳܢܐ ܦܰܛܪܝܰܪܟܳܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</addName>
                </persName>
                <bibl xml:id="bib72-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

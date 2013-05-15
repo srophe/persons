@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -25,21 +58,26 @@
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib232-2">
                   <forename>Yeshu‛</forename>
                   <surname>Thomas</surname>
+                  <addName type="untagged-title">The Priest, of Ḥiṣn Kifa</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib232-3">
                   <forename>يشوع</forename>
                   <surname>آل توما</surname>
+                  <addName type="untagged-title">القس , الحصكفي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib232-4">
                   <forename>ܝܫܘܥ</forename>
                   <surname>ܕܒܝܬ ܬܐܘܡܐ</surname>
+                  <addName type="untagged-title">ܩܫܝܫܐ ܚܣܢ ܟܐܦܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib232-4">
                   <forename>ܝܶܫܘܥ</forename>
                   <surname>ܕܒܶܝܬ ܬܐܘܡܐ</surname>
+                  <addName type="untagged-title">ܩܰܫܝܫܳܐ ܚܰܣܢ ܟܺܐܦܳܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
                   <forename>Yeshuʿ</forename>
+                  <addName type="untagged-title">of Ḥeṣno d-Kifo</addName>
                </persName>
                <bibl xml:id="bib232-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

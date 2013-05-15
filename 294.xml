@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -24,18 +57,23 @@
                <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Shukrallāh of Aleppo</persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib294-2">
                   <forename>Shukr Allah</forename>
+                  <addName type="untagged-title">Maphryono, of Aleppo</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib294-3">
                   <forename>شكر اللّٰه</forename>
+                  <addName type="untagged-title">المفريان , الحلبي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib294-4">
                   <forename>ܫܟܪܐܠܠܗ</forename>
+                  <addName type="untagged-title">ܡܦܪܝܢܐ ܚܠܒܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib294-4">
                   <forename>ܫܰܟܪܐܠܠܗ</forename>
+                  <addName type="untagged-title">ܡܰܦܪܝܢܐ ܚܳܠܒܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
                   <forename>Shukrallāh</forename>
+                  <addName type="untagged-title">of Aleppo</addName>
                </persName>
                <bibl xml:id="bib294-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and

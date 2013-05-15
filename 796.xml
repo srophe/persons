@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -30,18 +63,23 @@
                          source="#bib796-1"
                          resp="http://syriaca.org">
                   <forename>Toma</forename>
+                  <addName type="untagged-title">of Marga</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib796-2">
                   <forename>Thomas</forename>
+                  <addName type="untagged-title">of Maraga</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib796-3">
                   <forename>توما</forename>
+                  <addName type="untagged-title">المرجي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib796-4">
                   <forename>ܬܐܘܡܐ</forename>
+                  <addName type="untagged-title">ܕܡܪܓܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib796-4">
                   <forename>ܬܳܐܘܡܐ</forename>
+                  <addName type="untagged-title">ܕܡܰܪܰܓܰܐ</addName>
                </persName>
                <bibl xml:id="bib796-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -34,24 +67,31 @@
                          source="#bib511-1"
                          resp="http://syriaca.org">
                   <forename>Gregory</forename>
+                  <addName type="untagged-title">of Nazianzus</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib511-2">
                   <forename>Gregory</forename>
+                  <addName type="untagged-title">Nazianzen</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib511-3">
                   <forename>غريغوريوس</forename>
+                  <addName type="untagged-title">النزينزي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib511-4">
                   <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                  <addName type="untagged-title">ܕܢܐܙܝܢܙܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib511-4">
                   <forename>ܓܪܺܝܓܘܽܪܝܘܣ</forename>
+                  <addName type="untagged-title">ܕܢܰܐܙܰܝܢܰܙܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib511-5">
                   <forename>ܓܪܝܓܘܪܝܘܣ</forename>
+                  <addName type="untagged-title">ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrn" source="#bib511-5">
                   <forename>ܓܪܝܼܓܘܿܪܝܼܘܿܣ</forename>
+                  <addName type="untagged-title">ܪܲܒܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܐܵܢܙܝܵܢܙܘܼ</addName>
                </persName>
                <persName type="split">
                   <forename>ܓܪܝܓܘܪܝܘܣ</forename>
@@ -61,6 +101,7 @@
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib511-6">
                   <forename>ܓܪܺܝܓܘܽܪܝܺܘܳܣ</forename>
+                  <addName type="untagged-title">ܪܰܒܳܐ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܢܰܐܙܝܰܢܙܽܘ</addName>
                </persName>
                <bibl xml:id="bib511-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

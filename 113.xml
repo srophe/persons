@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -33,24 +66,31 @@
                          source="#bib113-1"
                          resp="http://syriaca.org">
                   <forename>Yaʿqub</forename>
+                  <addName type="untagged-title">of Edessa</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib113-2">
                   <forename>Jacob</forename>
+                  <addName type="untagged-title">Mar, of Edessa</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib113-3">
                   <forename>يعقوب</forename>
+                  <addName type="untagged-title">مار الرهاوي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib113-4">
                   <forename>ܝܥܩܘܒ</forename>
+                  <addName type="untagged-title">ܡܪܝ ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib113-4">
                   <forename>ܝܰܥܩܘܒ</forename>
+                  <addName type="untagged-title">ܡܳܪܝ ܕܐܘܪܗܳܝ</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib113-5">
                   <forename>ܝܥܩܘܒ</forename>
+                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrn" source="#bib113-5">
                   <forename>ܝܲܥܩܘܿܒ</forename>
+                  <addName type="untagged-title">ܐܘܼܪܗܵܝܵܐ</addName>
                </persName>
                <persName type="split">
                   <forename>ܝܥܩܘܒ</forename>

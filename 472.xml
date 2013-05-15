@@ -3,15 +3,48 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title xml:lang="en">...</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>...</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name>...</name>
+               <resp>creator</resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>...</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="lat">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change>...</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -33,30 +66,36 @@
                          source="#bib472-1"
                          resp="http://syriaca.org">
                   <forename>Eliya</forename>
+                  <addName type="untagged-title">of Nisibis</addName>
                </persName>
                <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib472-2">
                   <forename>Elijah</forename>
+                  <addName type="untagged-title">Bar Shinaya, metropolitan of Nisibin</addName>
                </persName>
                <persName type="split" xml:lang="ar" source="#bib472-3">
                   <forename>ايليا</forename>
+                  <addName type="untagged-title">المطران ,النصيبيني المعروف بابن السنّي</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib472-4">
                   <forename>ܐܠܝܐ</forename>
+                  <addName type="untagged-title">ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib472-4">
                   <forename>ܐܶܠܝܐ</forename>
+                  <addName type="untagged-title">ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib472-5">
                   <forename>ܐܠܝܐ</forename>
                   <surname>ܒܪ ܫܢܝܐ</surname>
+                  <addName type="untagged-title">ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</addName>
                </persName>
                <persName type="split" xml:lang="syr-Syrn" source="#bib472-5">
                   <forename>ܐܹܠܝܼܵܐ</forename>
                   <surname>ܒܲܪ ܫܸܢܵܝܵܐ</surname>
+                  <addName type="untagged-title">ܡܝܼܛܪܵܦܘܿܠܹܝܛܵܐ ܕܨܘܿܒܵܐ</addName>
                </persName>
                <persName type="split">
                   <forename>ܐܠܝܐ</forename>
-                  <surname>ܒܪ ܫܢܝܐ</surname>
                </persName>
                <persName type="split" xml:lang="syr" source="#bib472-6">
                   <surname>ܒܪ ܫܢܝܐ</surname>
