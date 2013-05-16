@@ -97,12 +97,22 @@
             <person xml:id="person-4">
                <persName type="sic"
                          xml:id="name4-2-0"
+                         corresp="#name4-3-0 #name4-4a-0 #name4-4b-0 #name4-2-1"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib4-2">The Psalms and Praises of Solomon</persName>
-               <persName type="sic" xml:id="name4-3-0" xml:lang="ar" source="#bib4-3">مزامير سليمان وتسابيحه</persName>
-               <persName type="sic" xml:id="name4-4a-0" xml:lang="syr" source="#bib4-4">ܡܙܡܘܪܐ ܕܫܠܝܡܘܢ ܘܬܫܒܚ̈ܬܗ</persName>
+               <persName type="sic"
+                         xml:id="name4-3-0"
+                         corresp="#name4-2-0 #name4-4a-0 #name4-4b-0 #name4-3-1"
+                         xml:lang="ar"
+                         source="#bib4-3">مزامير سليمان وتسابيحه</persName>
+               <persName type="sic"
+                         xml:id="name4-4a-0"
+                         corresp="#name4-2-0 #name4-3-0 #name4-4b-0 #name4-4a-1"
+                         xml:lang="syr"
+                         source="#bib4-4">ܡܙܡܘܪܐ ܕܫܠܝܡܘܢ ܘܬܫܒܚ̈ܬܗ</persName>
                <persName type="sic"
                          xml:id="name4-4b-0"
+                         corresp="#name4-2-0 #name4-3-0 #name4-4a-0 #name4-4b-1"
                          xml:lang="syr-Syrj"
                          source="#bib4-4">ܡܰܙܡܘܪܐ ܕܰܫܠܶܝܡܘܢ ܘܬܶܫܒܚ̈ܬܗ</persName>
                <persName type="sic"
@@ -123,19 +133,25 @@
                </persName>
                <persName type="split"
                          xml:id="name4-2-1"
+                         corresp="#name4-3-1 #name4-4a-1 #name4-4b-1 #name4-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib4-2">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="split" xml:id="name4-3-1" xml:lang="ar" source="#bib4-3">
+               <persName type="split"
+                         xml:id="name4-3-1"
+                         corresp="#name4-2-1 #name4-4a-1 #name4-4b-1 #name4-3-0"
+                         xml:lang="ar"
+                         source="#bib4-3">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
                <persName type="split"
                          xml:id="name4-4a-1"
+                         corresp="#name4-2-1 #name4-3-1 #name4-4b-1 #name4-4a-0"
                          xml:lang="syr"
                          source="#bib4-4">
                   <forename>#REF!</forename>
@@ -144,6 +160,7 @@
                </persName>
                <persName type="split"
                          xml:id="name4-4b-1"
+                         corresp="#name4-2-1 #name4-3-1 #name4-4a-1 #name4-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib4-4">
                   <forename>#REF!</forename>

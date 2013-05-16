@@ -97,12 +97,22 @@
             <person xml:id="person-7">
                <persName type="sic"
                          xml:id="name7-2-0"
+                         corresp="#name7-3-0 #name7-4a-0 #name7-4b-0 #name7-2-1"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib7-2">Isaiah Bar Ḥadbo</persName>
-               <persName type="sic" xml:id="name7-3-0" xml:lang="ar" source="#bib7-3">اشعيا بن حدبو</persName>
-               <persName type="sic" xml:id="name7-4a-0" xml:lang="syr" source="#bib7-4">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
+               <persName type="sic"
+                         xml:id="name7-3-0"
+                         corresp="#name7-2-0 #name7-4a-0 #name7-4b-0 #name7-3-1"
+                         xml:lang="ar"
+                         source="#bib7-3">اشعيا بن حدبو</persName>
+               <persName type="sic"
+                         xml:id="name7-4a-0"
+                         corresp="#name7-2-0 #name7-3-0 #name7-4b-0 #name7-4a-1"
+                         xml:lang="syr"
+                         source="#bib7-4">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
                <persName type="sic"
                          xml:id="name7-4b-0"
+                         corresp="#name7-2-0 #name7-3-0 #name7-4a-0 #name7-4b-1"
                          xml:lang="syr-Syrj"
                          source="#bib7-4">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
@@ -115,17 +125,23 @@
                          source="#bib7-7">#REF!</persName>
                <persName type="split"
                          xml:id="name7-2-1"
+                         corresp="#name7-3-1 #name7-4a-1 #name7-4b-1 #name7-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib7-2">
                   <forename>Isaiah</forename>
                   <surname>Bar Ḥadbo</surname>
                </persName>
-               <persName type="split" xml:id="name7-3-1" xml:lang="ar" source="#bib7-3">
+               <persName type="split"
+                         xml:id="name7-3-1"
+                         corresp="#name7-2-1 #name7-4a-1 #name7-4b-1 #name7-3-0"
+                         xml:lang="ar"
+                         source="#bib7-3">
                   <forename>اشعيا</forename>
                   <surname>بن حدبو</surname>
                </persName>
                <persName type="split"
                          xml:id="name7-4a-1"
+                         corresp="#name7-2-1 #name7-3-1 #name7-4b-1 #name7-4a-0"
                          xml:lang="syr"
                          source="#bib7-4">
                   <forename>ܐܫܥܝܐ</forename>
@@ -133,6 +149,7 @@
                </persName>
                <persName type="split"
                          xml:id="name7-4b-1"
+                         corresp="#name7-2-1 #name7-3-1 #name7-4a-1 #name7-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib7-4">
                   <forename>ܐܶܫܰܥܝܐ</forename>
