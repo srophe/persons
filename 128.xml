@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,25 +95,53 @@
       <body>
          <listPerson>
             <person xml:id="person-128">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib128-2">Daniel Bar Moses</persName>
-               <persName type="sic" xml:lang="ar" source="#bib128-3">دنيال بن موسى</persName>
-               <persName type="sic" xml:lang="syr" source="#bib128-4">ܕܢܝܐܝܠ ܒܪ ܡܘܫܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib128-4">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Daniel bar Mushe</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib128-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib128-2">
+               <persName type="sic"
+                         xml:id="name128-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib128-2">Daniel Bar Moses</persName>
+               <persName type="sic"
+                         xml:id="name128-3-0"
+                         xml:lang="ar"
+                         source="#bib128-3">دنيال بن موسى</persName>
+               <persName type="sic"
+                         xml:id="name128-4a-0"
+                         xml:lang="syr"
+                         source="#bib128-4">ܕܢܝܐܝܠ ܒܪ ܡܘܫܐ</persName>
+               <persName type="sic"
+                         xml:id="name128-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib128-4">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Daniel bar Mushe</persName>
+               <persName type="sic"
+                         xml:id="name128-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib128-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name128-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib128-2">
                   <forename>Daniel</forename>
                   <surname>Bar Moses</surname>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib128-3">
+               <persName type="split"
+                         xml:id="name128-3-1"
+                         xml:lang="ar"
+                         source="#bib128-3">
                   <forename>دنيال</forename>
                   <surname>بن موسى</surname>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib128-4">
+               <persName type="split"
+                         xml:id="name128-4a-1"
+                         xml:lang="syr"
+                         source="#bib128-4">
                   <forename>ܕܢܝܐܝܠ</forename>
                   <surname>ܒܪ ܡܘܫܐ</surname>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Daniel</forename>
                   <surname>bar Mushe</surname>
                </persName>

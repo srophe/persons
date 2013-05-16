@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-206">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib206-2">John Bar Andrews</persName>
-               <persName type="sic" xml:lang="ar" source="#bib206-3">يوحنا ابن اندراوس</persName>
-               <persName type="sic" xml:lang="syr" source="#bib206-4">ܝܘܚܢܢ ܒܪ ܐܢܕܪܐܘܣ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib206-4">ܝܘܚܰܢܢ ܒܰܪ ܐܰܢܕܪܰܐܘܣ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon bar Andrawos</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib206-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib206-2">
+               <persName type="sic"
+                         xml:id="name206-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib206-2">John Bar Andrews</persName>
+               <persName type="sic"
+                         xml:id="name206-3-0"
+                         xml:lang="ar"
+                         source="#bib206-3">يوحنا ابن اندراوس</persName>
+               <persName type="sic"
+                         xml:id="name206-4a-0"
+                         xml:lang="syr"
+                         source="#bib206-4">ܝܘܚܢܢ ܒܪ ܐܢܕܪܐܘܣ</persName>
+               <persName type="sic"
+                         xml:id="name206-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib206-4">ܝܘܚܰܢܢ ܒܰܪ ܐܰܢܕܪܰܐܘܣ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Yuḥanon bar Andrawos</persName>
+               <persName type="sic"
+                         xml:id="name206-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib206-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name206-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib206-2">
                   <forename>John</forename>
                   <surname>Bar Andrews</surname>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib206-3">
+               <persName type="split"
+                         xml:id="name206-3-1"
+                         xml:lang="ar"
+                         source="#bib206-3">
                   <forename>يوحنا</forename>
                   <surname>ابن اندراوس</surname>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib206-4">
+               <persName type="split"
+                         xml:id="name206-4a-1"
+                         xml:lang="syr"
+                         source="#bib206-4">
                   <forename>ܝܘܚܢܢ</forename>
                   <surname>ܒܪ ܐܢܕܪܐܘܣ</surname>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib206-4">
+               <persName type="split"
+                         xml:id="name206-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib206-4">
                   <forename>ܝܘܚܰܢܢ</forename>
                   <surname>ܒܰܪ ܐܰܢܕܪܰܐܘܣ</surname>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Yuḥanon</forename>
                   <surname>bar Andrawos</surname>
                </persName>

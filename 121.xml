@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-121">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib121-2">Deacon Saba</persName>
-               <persName type="sic" xml:lang="ar" source="#bib121-3">الشماس سابا</persName>
-               <persName type="sic" xml:lang="syr" source="#bib121-4">ܡܫܡܫܢܐ ܣܒܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib121-4">ܡܫܰܡܫܳܢܐ ܣܳܒܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Sobho of Reshʿayna</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib121-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib121-2">
+               <persName type="sic"
+                         xml:id="name121-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib121-2">Deacon Saba</persName>
+               <persName type="sic"
+                         xml:id="name121-3-0"
+                         xml:lang="ar"
+                         source="#bib121-3">الشماس سابا</persName>
+               <persName type="sic"
+                         xml:id="name121-4a-0"
+                         xml:lang="syr"
+                         source="#bib121-4">ܡܫܡܫܢܐ ܣܒܐ</persName>
+               <persName type="sic"
+                         xml:id="name121-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib121-4">ܡܫܰܡܫܳܢܐ ܣܳܒܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Sobho of Reshʿayna</persName>
+               <persName type="sic"
+                         xml:id="name121-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib121-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name121-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib121-2">
                   <forename>Saba</forename>
                   <addName type="untagged-title">Deacon</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib121-3">
+               <persName type="split"
+                         xml:id="name121-3-1"
+                         xml:lang="ar"
+                         source="#bib121-3">
                   <forename>سابا</forename>
                   <addName type="untagged-title">الشماس</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib121-4">
+               <persName type="split"
+                         xml:id="name121-4a-1"
+                         xml:lang="syr"
+                         source="#bib121-4">
                   <forename>ܣܒܐ</forename>
                   <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib121-4">
+               <persName type="split"
+                         xml:id="name121-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib121-4">
                   <forename>ܣܳܒܐ</forename>
                   <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Sobho</forename>
                   <addName type="untagged-title">of Reshʿayna</addName>
                </persName>

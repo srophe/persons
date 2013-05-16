@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-114">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib114-2">Bishop Euthalius</persName>
-               <persName type="sic" xml:lang="ar" source="#bib114-3">الاسقف اوثاليوس</persName>
-               <persName type="sic" xml:lang="syr" source="#bib114-4">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib114-4">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Euthalius</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib114-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib114-2">
+               <persName type="sic"
+                         xml:id="name114-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib114-2">Bishop Euthalius</persName>
+               <persName type="sic"
+                         xml:id="name114-3-0"
+                         xml:lang="ar"
+                         source="#bib114-3">الاسقف اوثاليوس</persName>
+               <persName type="sic"
+                         xml:id="name114-4a-0"
+                         xml:lang="syr"
+                         source="#bib114-4">ܐܘܬܐܠܝܘܣ ܐܦܝܣܩܘܦܐ</persName>
+               <persName type="sic"
+                         xml:id="name114-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib114-4">ܐܘܬܐܰܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Euthalius</persName>
+               <persName type="sic"
+                         xml:id="name114-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib114-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name114-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib114-2">
                   <forename>Euthalius</forename>
                   <addName type="untagged-title">Bishop</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib114-3">
+               <persName type="split"
+                         xml:id="name114-3-1"
+                         xml:lang="ar"
+                         source="#bib114-3">
                   <forename>اوثاليوس</forename>
                   <addName type="untagged-title">الاسقف</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib114-4">
+               <persName type="split"
+                         xml:id="name114-4a-1"
+                         xml:lang="syr"
+                         source="#bib114-4">
                   <forename>ܐܘܬܐܠܝܘܣ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib114-4">
+               <persName type="split"
+                         xml:id="name114-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib114-4">
                   <forename>ܐܘܬܐܰܠܝܘܣ</forename>
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Euthalius</forename>
                </persName>
                <bibl xml:id="bib114-2">

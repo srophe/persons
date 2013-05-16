@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,34 +95,62 @@
       <body>
          <listPerson>
             <person xml:id="person-18">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib18-2">The Monk Dada of Amid</persName>
-               <persName type="sic" xml:lang="ar" source="#bib18-3">دادا الراهب الآمدي</persName>
-               <persName type="sic" xml:lang="syr" source="#bib18-4">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib18-4">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܕܕܐ ܐܡܝܕܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Dādā of Amid</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib18-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib18-2">
+               <persName type="sic"
+                         xml:id="name18-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib18-2">The Monk Dada of Amid</persName>
+               <persName type="sic" xml:id="name18-3-0" xml:lang="ar" source="#bib18-3">دادا الراهب الآمدي</persName>
+               <persName type="sic"
+                         xml:id="name18-4a-0"
+                         xml:lang="syr"
+                         source="#bib18-4">ܕܕܐ ܕܝܪܝܐ ܐܡܝܕܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name18-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib18-4">ܕܳܕܳܐ ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܕܕܐ ܐܡܝܕܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Dādā of Amid</persName>
+               <persName type="sic"
+                         xml:id="name18-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib18-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name18-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib18-2">
                   <forename>Dada</forename>
                   <addName type="untagged-title">The Monk, of Amid</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib18-3">
+               <persName type="split"
+                         xml:id="name18-3-1"
+                         xml:lang="ar"
+                         source="#bib18-3">
                   <forename>دادا</forename>
                   <addName type="untagged-title">الراهب الآمدي</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib18-4">
+               <persName type="split"
+                         xml:id="name18-4a-1"
+                         xml:lang="syr"
+                         source="#bib18-4">
                   <forename>ܕܕܐ</forename>
                   <addName type="untagged-title">ܕܝܪܝܐ ܐܡܝܕܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib18-4">
+               <persName type="split"
+                         xml:id="name18-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib18-4">
                   <forename>ܕܳܕܳܐ</forename>
                   <addName type="untagged-title">ܕܰܝܪܳܝܐ ܐܳܡܝܕܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+               <persName type="split" xml:lang="syr" syriaca-tags="syriaca-authorized">
                   <forename>ܕܕܐ</forename>
                   <addName type="terms-of-address">ܐܡܝܕܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Dādā</forename>
                   <addName type="untagged-title">of Amid</addName>
                </persName>

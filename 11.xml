@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,26 +95,45 @@
       <body>
          <listPerson>
             <person xml:id="person-11">
-               <persName type="sic" xml:lang="syr" source="#bib11-4">ܒܣܝܠܝܘܣ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib11-4">ܒܰܣܝܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܚܡܶܨ</persName>
-               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܒܣܝܠܝܘܣ ܕܚܡܨ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Basil of Emesa</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib11-7">#REF!</persName>
-               <persName type="split" xml:lang="syr" source="#bib11-4">
+               <persName type="sic"
+                         xml:id="name11-4a-0"
+                         xml:lang="syr"
+                         source="#bib11-4">ܒܣܝܠܝܘܣ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</persName>
+               <persName type="sic"
+                         xml:id="name11-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib11-4">ܒܰܣܝܠܝܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܰܚܡܶܨ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܒܣܝܠܝܘܣ ܕܚܡܨ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Basil of Emesa</persName>
+               <persName type="sic"
+                         xml:id="name11-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib11-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name11-4a-1"
+                         xml:lang="syr"
+                         source="#bib11-4">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib11-4">
+               <persName type="split"
+                         xml:id="name11-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib11-4">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+               <persName type="split" xml:lang="syr" syriaca-tags="syriaca-authorized">
                   <forename>ܒܣܝܠܝܘܣ</forename>
                   <addName type="terms-of-address">ܕܚܡܨ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Basil</forename>
                   <addName type="untagged-title">of Emesa</addName>
                </persName>

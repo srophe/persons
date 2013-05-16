@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,57 @@
       <body>
          <listPerson>
             <person xml:id="person-79">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib79-2">Rufina, the Silver Merchant</persName>
-               <persName type="sic" xml:lang="ar" source="#bib79-3">روفينا التاجر بالفضة</persName>
-               <persName type="sic" xml:lang="syr" source="#bib79-4">ܪܘܦܝܢܐ ܬܓܪܐ ܕܣܐܡܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib79-4">ܪܘܦܺܝܢܶܐ ܬܰܓܳܪܳܐ ܕܣܺܐܡܳܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Rufinus</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib79-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib79-2">
+               <persName type="sic"
+                         xml:id="name79-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib79-2">Rufina, the Silver Merchant</persName>
+               <persName type="sic" xml:id="name79-3-0" xml:lang="ar" source="#bib79-3">روفينا التاجر بالفضة</persName>
+               <persName type="sic"
+                         xml:id="name79-4a-0"
+                         xml:lang="syr"
+                         source="#bib79-4">ܪܘܦܝܢܐ ܬܓܪܐ ܕܣܐܡܐ</persName>
+               <persName type="sic"
+                         xml:id="name79-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib79-4">ܪܘܦܺܝܢܶܐ ܬܰܓܳܪܳܐ ܕܣܺܐܡܳܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Rufinus</persName>
+               <persName type="sic"
+                         xml:id="name79-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib79-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name79-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib79-2">
                   <forename>Rufina</forename>
                   <addName type="untagged-title">the Silver Merchant</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib79-3">
+               <persName type="split"
+                         xml:id="name79-3-1"
+                         xml:lang="ar"
+                         source="#bib79-3">
                   <forename>روفينا</forename>
                   <addName type="untagged-title">التاجر بالفضة</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib79-4">
+               <persName type="split"
+                         xml:id="name79-4a-1"
+                         xml:lang="syr"
+                         source="#bib79-4">
                   <forename>ܪܘܦܝܢܐ</forename>
                   <addName type="untagged-title">ܬܓܪܐ ܕܣܐܡܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib79-4">
+               <persName type="split"
+                         xml:id="name79-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib79-4">
                   <forename>ܪܘܦܺܝܢܶܐ</forename>
                   <addName type="untagged-title">ܬܰܓܳܪܳܐ ܕܣܺܐܡܳܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Rufinus</forename>
                </persName>
                <bibl xml:id="bib79-2">

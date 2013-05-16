@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,28 +95,56 @@
       <body>
          <listPerson>
             <person xml:id="person-76">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib76-2">Julian II</persName>
-               <persName type="sic" xml:lang="ar" source="#bib76-3">يوليان الثاني</persName>
-               <persName type="sic" xml:lang="syr" source="#bib76-4">ܝܘܠܝܢܐ ܬܪܝܢܐ </persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib76-4">ܝܘܠܝܰܢܶܐ ܬܪܰܝܳܢܐ </persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yulyanos I</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib76-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib76-2">
+               <persName type="sic"
+                         xml:id="name76-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib76-2">Julian II</persName>
+               <persName type="sic" xml:id="name76-3-0" xml:lang="ar" source="#bib76-3">يوليان الثاني</persName>
+               <persName type="sic"
+                         xml:id="name76-4a-0"
+                         xml:lang="syr"
+                         source="#bib76-4">ܝܘܠܝܢܐ ܬܪܝܢܐ </persName>
+               <persName type="sic"
+                         xml:id="name76-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib76-4">ܝܘܠܝܰܢܶܐ ܬܪܰܝܳܢܐ </persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Yulyanos I</persName>
+               <persName type="sic"
+                         xml:id="name76-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib76-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name76-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib76-2">
                   <forename>Julian II</forename>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib76-3">
+               <persName type="split"
+                         xml:id="name76-3-1"
+                         xml:lang="ar"
+                         source="#bib76-3">
                   <forename>يوليان</forename>
                   <addName type="untagged-title">الثاني</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib76-4">
+               <persName type="split"
+                         xml:id="name76-4a-1"
+                         xml:lang="syr"
+                         source="#bib76-4">
                   <forename>ܝܘܠܝܢܐ</forename>
                   <addName type="untagged-title">ܬܪܝܢܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib76-4">
+               <persName type="split"
+                         xml:id="name76-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib76-4">
                   <forename>ܝܘܠܝܰܢܶܐ</forename>
                   <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Yulyanos</forename>
                   <addName type="untagged-title">I</addName>
                </persName>

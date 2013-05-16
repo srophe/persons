@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,57 @@
       <body>
          <listPerson>
             <person xml:id="person-91">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib91-2">The Priest ‛Emaues</persName>
-               <persName type="sic" xml:lang="ar" source="#bib91-3">القس عماوس</persName>
-               <persName type="sic" xml:lang="syr" source="#bib91-4">ܩܫܝܫܐ ܥܡܐܘܣ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib91-4">ܩܰܫܝܫܳܐ ܥܶܡܰܐܘܳܣ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">ʿEmaʾus</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib91-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib91-2">
+               <persName type="sic"
+                         xml:id="name91-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib91-2">The Priest ‛Emaues</persName>
+               <persName type="sic" xml:id="name91-3-0" xml:lang="ar" source="#bib91-3">القس عماوس</persName>
+               <persName type="sic"
+                         xml:id="name91-4a-0"
+                         xml:lang="syr"
+                         source="#bib91-4">ܩܫܝܫܐ ܥܡܐܘܣ</persName>
+               <persName type="sic"
+                         xml:id="name91-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib91-4">ܩܰܫܝܫܳܐ ܥܶܡܰܐܘܳܣ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">ʿEmaʾus</persName>
+               <persName type="sic"
+                         xml:id="name91-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib91-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name91-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib91-2">
                   <forename>‛Emaues</forename>
                   <addName type="untagged-title">The Priest</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib91-3">
+               <persName type="split"
+                         xml:id="name91-3-1"
+                         xml:lang="ar"
+                         source="#bib91-3">
                   <forename>عماوس</forename>
                   <addName type="untagged-title">القس</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib91-4">
+               <persName type="split"
+                         xml:id="name91-4a-1"
+                         xml:lang="syr"
+                         source="#bib91-4">
                   <forename>ܥܡܐܘܣ</forename>
                   <addName type="untagged-title">ܩܫܝܫܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib91-4">
+               <persName type="split"
+                         xml:id="name91-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib91-4">
                   <forename>ܥܶܡܰܐܘܳܣ</forename>
                   <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>ʿEmaʾus</forename>
                </persName>
                <bibl xml:id="bib91-2">

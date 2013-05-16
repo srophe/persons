@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-201">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib201-2">Athanasius VI</persName>
-               <persName type="sic" xml:lang="ar" source="#bib201-3">اثانسيوس السادس</persName>
-               <persName type="sic" xml:lang="syr" source="#bib201-4">ܐܬܐܢܐܣܝܘܣ ܫܬܝܬܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib201-4">ܐܰܬܐܢܰܐܣܝܘܣ ܫܬܝܬܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Athanasios (VII) Abulfaraj bar Kamoro</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib201-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib201-2">
+               <persName type="sic"
+                         xml:id="name201-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib201-2">Athanasius VI</persName>
+               <persName type="sic"
+                         xml:id="name201-3-0"
+                         xml:lang="ar"
+                         source="#bib201-3">اثانسيوس السادس</persName>
+               <persName type="sic"
+                         xml:id="name201-4a-0"
+                         xml:lang="syr"
+                         source="#bib201-4">ܐܬܐܢܐܣܝܘܣ ܫܬܝܬܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name201-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib201-4">ܐܰܬܐܢܰܐܣܝܘܣ ܫܬܝܬܳܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Athanasios (VII) Abulfaraj bar Kamoro</persName>
+               <persName type="sic"
+                         xml:id="name201-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib201-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name201-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib201-2">
                   <forename>Athanasius</forename>
                   <addName type="untagged-title">VI</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib201-3">
+               <persName type="split"
+                         xml:id="name201-3-1"
+                         xml:lang="ar"
+                         source="#bib201-3">
                   <forename>اثانسيوس</forename>
                   <addName type="untagged-title">السادس</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib201-4">
+               <persName type="split"
+                         xml:id="name201-4a-1"
+                         xml:lang="syr"
+                         source="#bib201-4">
                   <forename>ܐܬܐܢܐܣܝܘܣ</forename>
                   <addName type="untagged-title">ܫܬܝܬܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib201-4">
+               <persName type="split"
+                         xml:id="name201-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib201-4">
                   <forename>ܐܰܬܐܢܰܐܣܝܘܣ</forename>
                   <addName type="untagged-title">ܫܬܝܬܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Athanasios Abulfaraj</forename>
                   <surname>bar Kamoro</surname>
                   <addName type="untagged-title">(VII)</addName>

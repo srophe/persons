@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,57 @@
       <body>
          <listPerson>
             <person xml:id="person-89">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib89-2">Severus, bishop of Samosata</persName>
-               <persName type="sic" xml:lang="ar" source="#bib89-3">ساويريوس اسقف سيميساط</persName>
-               <persName type="sic" xml:lang="syr" source="#bib89-4">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib89-4">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Severus of Samosata</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib89-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib89-2">
+               <persName type="sic"
+                         xml:id="name89-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib89-2">Severus, bishop of Samosata</persName>
+               <persName type="sic" xml:id="name89-3-0" xml:lang="ar" source="#bib89-3">ساويريوس اسقف سيميساط</persName>
+               <persName type="sic"
+                         xml:id="name89-4a-0"
+                         xml:lang="syr"
+                         source="#bib89-4">ܣܘܝܪܝܘܘܣ ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</persName>
+               <persName type="sic"
+                         xml:id="name89-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib89-4">ܣܶܘܝܪܝܘܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Severus of Samosata</persName>
+               <persName type="sic"
+                         xml:id="name89-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib89-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name89-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib89-2">
                   <forename>Severus</forename>
                   <addName type="untagged-title">Bishop of Samosata</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib89-3">
+               <persName type="split"
+                         xml:id="name89-3-1"
+                         xml:lang="ar"
+                         source="#bib89-3">
                   <forename>ساويريوس</forename>
                   <addName type="untagged-title">اسقف سيميساط</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib89-4">
+               <persName type="split"
+                         xml:id="name89-4a-1"
+                         xml:lang="syr"
+                         source="#bib89-4">
                   <forename>ܣܘܝܪܝܘܘܣ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib89-4">
+               <persName type="split"
+                         xml:id="name89-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib89-4">
                   <forename>ܣܶܘܝܪܝܘܘܣ</forename>
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Severus</forename>
                   <addName type="untagged-title">of Samosata</addName>
                </persName>

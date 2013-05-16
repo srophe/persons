@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,57 @@
       <body>
          <listPerson>
             <person xml:id="person-95">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib95-2">The Priest Andrew of Jerusalem</persName>
-               <persName type="sic" xml:lang="ar" source="#bib95-3">القس اندراوس الاورشليمي</persName>
-               <persName type="sic" xml:lang="syr" source="#bib95-4">ܩܫܝܫܐ ܐܢܕܪܐܘܣ ܕܐܘܪܫܠܡ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib95-4">ܩܰܫܝܫܳܐ ܐܰܢܕܪܰܐܘܣ ܕܐܘܪܫܠܶܡ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Andraus of Jerusalem</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib95-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib95-2">
+               <persName type="sic"
+                         xml:id="name95-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib95-2">The Priest Andrew of Jerusalem</persName>
+               <persName type="sic" xml:id="name95-3-0" xml:lang="ar" source="#bib95-3">القس اندراوس الاورشليمي</persName>
+               <persName type="sic"
+                         xml:id="name95-4a-0"
+                         xml:lang="syr"
+                         source="#bib95-4">ܩܫܝܫܐ ܐܢܕܪܐܘܣ ܕܐܘܪܫܠܡ</persName>
+               <persName type="sic"
+                         xml:id="name95-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib95-4">ܩܰܫܝܫܳܐ ܐܰܢܕܪܰܐܘܣ ܕܐܘܪܫܠܶܡ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Andraus of Jerusalem</persName>
+               <persName type="sic"
+                         xml:id="name95-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib95-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name95-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib95-2">
                   <forename>Andrew</forename>
                   <addName type="untagged-title">Priest of Jerusalem</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib95-3">
+               <persName type="split"
+                         xml:id="name95-3-1"
+                         xml:lang="ar"
+                         source="#bib95-3">
                   <forename>اندراوس</forename>
                   <addName type="untagged-title">القس الاورشليمي</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib95-4">
+               <persName type="split"
+                         xml:id="name95-4a-1"
+                         xml:lang="syr"
+                         source="#bib95-4">
                   <forename>ܐܢܕܪܐܘܣ</forename>
                   <addName type="untagged-title">ܩܫܝܫܐ ܕܐܘܪܫܠܡ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib95-4">
+               <persName type="split"
+                         xml:id="name95-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib95-4">
                   <forename>ܐܰܢܕܪܰܐܘܣ</forename>
                   <addName type="untagged-title">ܩܰܫܝܫܳܐ ܕܐܘܪܫܠܶܡ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Andraus</forename>
                   <addName type="untagged-title">of Jerusalem</addName>
                </persName>

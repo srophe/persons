@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,31 +95,62 @@
       <body>
          <listPerson>
             <person xml:id="person-298">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib298-2">Bishop John al-Bustani of Man‛im</persName>
-               <persName type="sic" xml:lang="ar" source="#bib298-3">الاسقف يوحنا البستاني المانعمي</persName>
-               <persName type="sic" xml:lang="syr" source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yūḥannā al-Bustānī of Beth Manʿem</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib298-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib298-2">
+               <persName type="sic"
+                         xml:id="name298-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib298-2">Bishop John al-Bustani of Man‛im</persName>
+               <persName type="sic"
+                         xml:id="name298-3-0"
+                         xml:lang="ar"
+                         source="#bib298-3">الاسقف يوحنا البستاني المانعمي</persName>
+               <persName type="sic"
+                         xml:id="name298-4a-0"
+                         xml:lang="syr"
+                         source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܢܢ ܓܢܢܐ ܡܢܥܡܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name298-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib298-4">ܐܦܝܣܩܘܦܐ ܝܘܚܰܢܢ ܓܰܢܢܳܐ ܡܰܢܥܡܳܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Yūḥannā al-Bustānī of Beth Manʿem</persName>
+               <persName type="sic"
+                         xml:id="name298-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib298-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name298-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib298-2">
                   <forename>John</forename>
                   <surname>al-Bustani</surname>
                   <addName type="untagged-title">Bishop, of Man‛im</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib298-3">
+               <persName type="split"
+                         xml:id="name298-3-1"
+                         xml:lang="ar"
+                         source="#bib298-3">
                   <forename>يوحنا</forename>
                   <surname>البستاني</surname>
                   <addName type="untagged-title">الاسقف, المانعمي</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib298-4">
+               <persName type="split"
+                         xml:id="name298-4a-1"
+                         xml:lang="syr"
+                         source="#bib298-4">
                   <forename>ܝܘܚܢܢ ܓܢܢܐ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܢܥܡܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib298-4">
+               <persName type="split"
+                         xml:id="name298-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib298-4">
                   <forename>ܝܘܚܰܢܢ ܓܰܢܢܳܐ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܡܰܢܥܡܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Yūḥannā</forename>
                   <addName type="untagged-title">al-Bustānī of Beth Manʿem</addName>
                </persName>

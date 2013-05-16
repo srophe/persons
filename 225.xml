@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-225">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib225-2">John of Tiflis</persName>
-               <persName type="sic" xml:lang="ar" source="#bib225-3">يوحنا التفليسي</persName>
-               <persName type="sic" xml:lang="syr" source="#bib225-4">ܝܘܚܢܢ ܬܦܠܝܣܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib225-4">ܝܘܚܰܢܢ ܬܶܦܠܝܣܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Yuḥanon of Tiflis</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib225-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib225-2">
+               <persName type="sic"
+                         xml:id="name225-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib225-2">John of Tiflis</persName>
+               <persName type="sic"
+                         xml:id="name225-3-0"
+                         xml:lang="ar"
+                         source="#bib225-3">يوحنا التفليسي</persName>
+               <persName type="sic"
+                         xml:id="name225-4a-0"
+                         xml:lang="syr"
+                         source="#bib225-4">ܝܘܚܢܢ ܬܦܠܝܣܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name225-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib225-4">ܝܘܚܰܢܢ ܬܶܦܠܝܣܳܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Yuḥanon of Tiflis</persName>
+               <persName type="sic"
+                         xml:id="name225-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib225-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name225-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib225-2">
                   <forename>John</forename>
                   <addName type="untagged-title">of Tiflis</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib225-3">
+               <persName type="split"
+                         xml:id="name225-3-1"
+                         xml:lang="ar"
+                         source="#bib225-3">
                   <forename>يوحنا</forename>
                   <addName type="untagged-title">التفليسي</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib225-4">
+               <persName type="split"
+                         xml:id="name225-4a-1"
+                         xml:lang="syr"
+                         source="#bib225-4">
                   <forename>ܝܘܚܢܢ</forename>
                   <addName type="untagged-title">ܬܦܠܝܣܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib225-4">
+               <persName type="split"
+                         xml:id="name225-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib225-4">
                   <forename>ܝܘܚܰܢܢ</forename>
                   <addName type="untagged-title">ܬܶܦܠܝܣܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Yuḥanon</forename>
                   <addName type="untagged-title">of Tiflis</addName>
                </persName>

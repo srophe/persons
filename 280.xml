@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-280">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib280-2">Jacob I, Patriarch of Antioch</persName>
-               <persName type="sic" xml:lang="ar" source="#bib280-3">يعقوب الاول بطريرك انطاكية</persName>
-               <persName type="sic" xml:lang="syr" source="#bib280-4">ܦܛܪܝܪܟܐ ܝܥܩܘܒ ܩܕܡܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib280-4">ܦܰܛܪܝܰܪܟܐ ܝܰܥܩܘܒ ܩܰܕܡܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ignatius Yaʿqub I</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib280-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib280-2">
+               <persName type="sic"
+                         xml:id="name280-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib280-2">Jacob I, Patriarch of Antioch</persName>
+               <persName type="sic"
+                         xml:id="name280-3-0"
+                         xml:lang="ar"
+                         source="#bib280-3">يعقوب الاول بطريرك انطاكية</persName>
+               <persName type="sic"
+                         xml:id="name280-4a-0"
+                         xml:lang="syr"
+                         source="#bib280-4">ܦܛܪܝܪܟܐ ܝܥܩܘܒ ܩܕܡܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name280-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib280-4">ܦܰܛܪܝܰܪܟܐ ܝܰܥܩܘܒ ܩܰܕܡܳܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Ignatius Yaʿqub I</persName>
+               <persName type="sic"
+                         xml:id="name280-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib280-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name280-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib280-2">
                   <forename>Jacob</forename>
                   <addName type="untagged-title">I, Patriarch of Antioch</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib280-3">
+               <persName type="split"
+                         xml:id="name280-3-1"
+                         xml:lang="ar"
+                         source="#bib280-3">
                   <forename>يعقوب</forename>
                   <addName type="untagged-title">الاول ,  بطريرك انطاكية</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib280-4">
+               <persName type="split"
+                         xml:id="name280-4a-1"
+                         xml:lang="syr"
+                         source="#bib280-4">
                   <forename>ܝܥܩܘܒ</forename>
                   <addName type="untagged-title">ܦܛܪܝܪܟܐ ܩܕܡܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib280-4">
+               <persName type="split"
+                         xml:id="name280-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib280-4">
                   <forename>ܝܰܥܩܘܒ</forename>
                   <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܩܰܕܡܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Ignatius Yaʿqub</forename>
                   <addName type="untagged-title">I</addName>
                </persName>

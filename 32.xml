@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,57 @@
       <body>
          <listPerson>
             <person xml:id="person-32">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib32-2">Peter the presbyter of Edessa</persName>
-               <persName type="sic" xml:lang="ar" source="#bib32-3">بطرس قسيس الرها</persName>
-               <persName type="sic" xml:lang="syr" source="#bib32-4">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib32-4">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Peter of Edessa</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib32-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib32-2">
+               <persName type="sic"
+                         xml:id="name32-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib32-2">Peter the presbyter of Edessa</persName>
+               <persName type="sic" xml:id="name32-3-0" xml:lang="ar" source="#bib32-3">بطرس قسيس الرها</persName>
+               <persName type="sic"
+                         xml:id="name32-4a-0"
+                         xml:lang="syr"
+                         source="#bib32-4">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
+               <persName type="sic"
+                         xml:id="name32-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib32-4">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Peter of Edessa</persName>
+               <persName type="sic"
+                         xml:id="name32-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib32-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name32-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib32-2">
                   <forename>Peter</forename>
                   <addName type="untagged-title">the presbyter of Edessa</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib32-3">
+               <persName type="split"
+                         xml:id="name32-3-1"
+                         xml:lang="ar"
+                         source="#bib32-3">
                   <forename>بطرس</forename>
                   <addName type="untagged-title">قسيس الرها</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib32-4">
+               <persName type="split"
+                         xml:id="name32-4a-1"
+                         xml:lang="syr"
+                         source="#bib32-4">
                   <forename>ܦܛܪܘܣ</forename>
                   <addName type="untagged-title">ܩܫܝܫܐ ܕܐܘܪܗܝ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib32-4">
+               <persName type="split"
+                         xml:id="name32-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib32-4">
                   <forename>ܦܶܛܪܘܣ</forename>
                   <addName type="untagged-title">ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Peter</forename>
                   <addName type="untagged-title">of Edessa</addName>
                </persName>

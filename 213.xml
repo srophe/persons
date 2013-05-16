@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-213">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib213-2">Abu Ghalib, bishop of Jīhān</persName>
-               <persName type="sic" xml:lang="ar" source="#bib213-3">ابو غالب اسقف جيحان</persName>
-               <persName type="sic" xml:lang="syr" source="#bib213-4">ܐܒܘ ܓܐܠܒ ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib213-4">ܐܰܒܘ ܓܰܐܠܒ ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū Ghālib of Giḥun</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib213-7">Athanasius Abu Ghalib</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib213-2">
+               <persName type="sic"
+                         xml:id="name213-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib213-2">Abu Ghalib, bishop of Jīhān</persName>
+               <persName type="sic"
+                         xml:id="name213-3-0"
+                         xml:lang="ar"
+                         source="#bib213-3">ابو غالب اسقف جيحان</persName>
+               <persName type="sic"
+                         xml:id="name213-4a-0"
+                         xml:lang="syr"
+                         source="#bib213-4">ܐܒܘ ܓܐܠܒ ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</persName>
+               <persName type="sic"
+                         xml:id="name213-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib213-4">ܐܰܒܘ ܓܰܐܠܒ ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Abū Ghālib of Giḥun</persName>
+               <persName type="sic"
+                         xml:id="name213-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib213-7">Athanasius Abu Ghalib</persName>
+               <persName type="split"
+                         xml:id="name213-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib213-2">
                   <forename>Abu Ghalib</forename>
                   <addName type="untagged-title">Bishop of Jīhān</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib213-3">
+               <persName type="split"
+                         xml:id="name213-3-1"
+                         xml:lang="ar"
+                         source="#bib213-3">
                   <forename>ابو غالب</forename>
                   <addName type="untagged-title">اسقف جيحان</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib213-4">
+               <persName type="split"
+                         xml:id="name213-4a-1"
+                         xml:lang="syr"
+                         source="#bib213-4">
                   <forename>ܐܒܘ ܓܐܠܒ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib213-4">
+               <persName type="split"
+                         xml:id="name213-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib213-4">
                   <forename>ܐܰܒܘ ܓܰܐܠܒ</forename>
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Abū Ghālib</forename>
                   <addName type="untagged-title">of Giḥun</addName>
                </persName>

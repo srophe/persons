@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,34 +95,56 @@
       <body>
          <listPerson>
             <person xml:id="person-7">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib7-2">Isaiah Bar Ḥadbo</persName>
-               <persName type="sic" xml:lang="ar" source="#bib7-3">اشعيا بن حدبو</persName>
-               <persName type="sic" xml:lang="syr" source="#bib7-4">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib7-4">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
-               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Eshaʿya bar Ḥadbo</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib7-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib7-2">
+               <persName type="sic"
+                         xml:id="name7-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib7-2">Isaiah Bar Ḥadbo</persName>
+               <persName type="sic" xml:id="name7-3-0" xml:lang="ar" source="#bib7-3">اشعيا بن حدبو</persName>
+               <persName type="sic" xml:id="name7-4a-0" xml:lang="syr" source="#bib7-4">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
+               <persName type="sic"
+                         xml:id="name7-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib7-4">ܐܶܫܰܥܝܐ ܒܰܪ ܚܕܒܘ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܐܫܥܝܐ ܒܪ ܚܕܒܘ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Eshaʿya bar Ḥadbo</persName>
+               <persName type="sic"
+                         xml:id="name7-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib7-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name7-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib7-2">
                   <forename>Isaiah</forename>
                   <surname>Bar Ḥadbo</surname>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib7-3">
+               <persName type="split" xml:id="name7-3-1" xml:lang="ar" source="#bib7-3">
                   <forename>اشعيا</forename>
                   <surname>بن حدبو</surname>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib7-4">
+               <persName type="split"
+                         xml:id="name7-4a-1"
+                         xml:lang="syr"
+                         source="#bib7-4">
                   <forename>ܐܫܥܝܐ</forename>
                   <surname>ܒܪ ܚܕܒܘ</surname>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib7-4">
+               <persName type="split"
+                         xml:id="name7-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib7-4">
                   <forename>ܐܶܫܰܥܝܐ</forename>
                   <surname>ܒܰܪ ܚܕܒܘ</surname>
                </persName>
-               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+               <persName type="split" xml:lang="syr" syriaca-tags="syriaca-authorized">
                   <forename>ܐܫܥܝܐ</forename>
                   <surname>ܒܪ ܚܕܒܘ</surname>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Eshaʿya</forename>
                   <surname>bar Ḥadbo</surname>
                </persName>

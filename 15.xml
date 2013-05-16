@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,22 +95,46 @@
       <body>
          <listPerson>
             <person xml:id="person-15">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib15-2">Asuna</persName>
-               <persName type="sic" xml:lang="ar" source="#bib15-3">آسونا</persName>
-               <persName type="sic" xml:lang="syr" source="#bib15-4">ܐܣܘܢܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib15-4">ܐܰܣܘܢܳܐ</persName>
-               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܐܣܘܢܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib15-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib15-2">
+               <persName type="sic"
+                         xml:id="name15-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib15-2">Asuna</persName>
+               <persName type="sic" xml:id="name15-3-0" xml:lang="ar" source="#bib15-3">آسونا</persName>
+               <persName type="sic"
+                         xml:id="name15-4a-0"
+                         xml:lang="syr"
+                         source="#bib15-4">ܐܣܘܢܐ</persName>
+               <persName type="sic"
+                         xml:id="name15-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib15-4">ܐܰܣܘܢܳܐ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܐܣܘܢܐ</persName>
+               <persName type="sic"
+                         xml:id="name15-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib15-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name15-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib15-2">
                   <forename>Asuna</forename>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib15-3">
+               <persName type="split"
+                         xml:id="name15-3-1"
+                         xml:lang="ar"
+                         source="#bib15-3">
                   <forename>آسونا</forename>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib15-4">
+               <persName type="split"
+                         xml:id="name15-4a-1"
+                         xml:lang="syr"
+                         source="#bib15-4">
                   <forename>ܐܣܘܢܐ</forename>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib15-4">
+               <persName type="split"
+                         xml:id="name15-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib15-4">
                   <forename>ܐܰܣܘܢܳܐ</forename>
                </persName>
                <bibl xml:id="bib15-2">

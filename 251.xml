@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,33 +95,64 @@
       <body>
          <listPerson>
             <person xml:id="person-251">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib251-2">Malphono Ṣaliba Bar Khayrun</persName>
-               <persName type="sic" xml:lang="ar" source="#bib251-3">الربان صليبا ابن خيرون</persName>
-               <persName type="sic" xml:lang="syr" source="#bib251-4">ܪܒܢ ܨܠܝܒܐ ܒܪ ܟܝܪܘܢ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib251-4">ܪܰܒܢ ܨܰܠܝܒܐ ܒܰܪ ܟܰܝܪܘܢ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ṣlibo bar Khayrun</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib251-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib251-2">
+               <persName type="sic"
+                         xml:id="name251-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib251-2">Malphono Ṣaliba Bar Khayrun</persName>
+               <persName type="sic"
+                         xml:id="name251-3-0"
+                         xml:lang="ar"
+                         source="#bib251-3">الربان صليبا ابن خيرون</persName>
+               <persName type="sic"
+                         xml:id="name251-4a-0"
+                         xml:lang="syr"
+                         source="#bib251-4">ܪܒܢ ܨܠܝܒܐ ܒܪ ܟܝܪܘܢ</persName>
+               <persName type="sic"
+                         xml:id="name251-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib251-4">ܪܰܒܢ ܨܰܠܝܒܐ ܒܰܪ ܟܰܝܪܘܢ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Ṣlibo bar Khayrun</persName>
+               <persName type="sic"
+                         xml:id="name251-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib251-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name251-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib251-2">
                   <forename>Ṣaliba</forename>
                   <surname>Bar Khayrun</surname>
                   <addName type="untagged-title">Malphono</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib251-3">
+               <persName type="split"
+                         xml:id="name251-3-1"
+                         xml:lang="ar"
+                         source="#bib251-3">
                   <forename>صليبا</forename>
                   <surname>ابن خيرون</surname>
                   <addName type="untagged-title">الربان</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib251-4">
+               <persName type="split"
+                         xml:id="name251-4a-1"
+                         xml:lang="syr"
+                         source="#bib251-4">
                   <forename>ܨܠܝܒܐ</forename>
                   <surname>ܒܪ ܟܝܪܘܢ</surname>
                   <addName type="untagged-title">ܪܒܢ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib251-4">
+               <persName type="split"
+                         xml:id="name251-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib251-4">
                   <forename>ܨܰܠܝܒܐ</forename>
                   <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
                   <addName type="untagged-title">ܪܰܒܢ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Ṣlibo</forename>
                   <surname>bar Khayrun</surname>
                </persName>

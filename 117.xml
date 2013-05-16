@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-117">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib117-2">David, bishop of Mar‛ash</persName>
-               <persName type="sic" xml:lang="ar" source="#bib117-3">داود اسقف مرعش</persName>
-               <persName type="sic" xml:lang="syr" source="#bib117-4">ܕܘܝܕ ܐܦܝܣܩܘܦܐ ܕܓܪܡܐܢܝܩܝ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib117-4">ܕܰܘܝܕ ܐܶܦܝܣܩܘܦܳܐ ܕܓܰܪܡܰܐܢܝܩܝ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Dawid of Germanicea</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib117-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib117-2">
+               <persName type="sic"
+                         xml:id="name117-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib117-2">David, bishop of Mar‛ash</persName>
+               <persName type="sic"
+                         xml:id="name117-3-0"
+                         xml:lang="ar"
+                         source="#bib117-3">داود اسقف مرعش</persName>
+               <persName type="sic"
+                         xml:id="name117-4a-0"
+                         xml:lang="syr"
+                         source="#bib117-4">ܕܘܝܕ ܐܦܝܣܩܘܦܐ ܕܓܪܡܐܢܝܩܝ</persName>
+               <persName type="sic"
+                         xml:id="name117-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib117-4">ܕܰܘܝܕ ܐܶܦܝܣܩܘܦܳܐ ܕܓܰܪܡܰܐܢܝܩܝ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Dawid of Germanicea</persName>
+               <persName type="sic"
+                         xml:id="name117-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib117-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name117-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib117-2">
                   <forename>David</forename>
                   <addName type="untagged-title">Bishop of Mar‛ash</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib117-3">
+               <persName type="split"
+                         xml:id="name117-3-1"
+                         xml:lang="ar"
+                         source="#bib117-3">
                   <forename>داود</forename>
                   <addName type="untagged-title">اسقف مرعش</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib117-4">
+               <persName type="split"
+                         xml:id="name117-4a-1"
+                         xml:lang="syr"
+                         source="#bib117-4">
                   <forename>ܕܘܝܕ</forename>
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܓܪܡܐܢܝܩܝ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib117-4">
+               <persName type="split"
+                         xml:id="name117-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib117-4">
                   <forename>ܕܰܘܝܕ</forename>
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܓܰܪܡܰܐܢܝܩܝ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Dawid</forename>
                   <addName type="untagged-title">of Germanicea</addName>
                </persName>

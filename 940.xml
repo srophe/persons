@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,29 +95,60 @@
       <body>
          <listPerson>
             <person xml:id="person-940">
-               <persName type="sic" xml:lang="syr-Latn-x-barsoum" source="#bib940-2">Deacon Abu Sa‘d of Edessa</persName>
-               <persName type="sic" xml:lang="ar" source="#bib940-3">الشماس ابو سعد الرهاوي</persName>
-               <persName type="sic" xml:lang="syr" source="#bib940-4">ܡܫܡܫܢܐ ܐܒܘ ܣܥܕ ܐܘܪܗܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib940-4">ܡܫܰܡܫܳܢܐ ܐܰܒܳܘ ܣܰܥܕ ܐܘܽܪܗܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Abū Saʿd of Edessa</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib940-7">#REF!</persName>
-               <persName type="split" xml:lang="syr-Latn-x-barsoum" source="#bib940-2">
+               <persName type="sic"
+                         xml:id="name940-2-0"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib940-2">Deacon Abu Sa‘d of Edessa</persName>
+               <persName type="sic"
+                         xml:id="name940-3-0"
+                         xml:lang="ar"
+                         source="#bib940-3">الشماس ابو سعد الرهاوي</persName>
+               <persName type="sic"
+                         xml:id="name940-4a-0"
+                         xml:lang="syr"
+                         source="#bib940-4">ܡܫܡܫܢܐ ܐܒܘ ܣܥܕ ܐܘܪܗܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name940-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib940-4">ܡܫܰܡܫܳܢܐ ܐܰܒܳܘ ܣܰܥܕ ܐܘܽܪܗܳܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Abū Saʿd of Edessa</persName>
+               <persName type="sic"
+                         xml:id="name940-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib940-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name940-2-1"
+                         xml:lang="syr-Latn-x-barsoum"
+                         source="#bib940-2">
                   <forename>Abu Sa‘d</forename>
                   <addName type="untagged-title">Deacon, of Edessa</addName>
                </persName>
-               <persName type="split" xml:lang="ar" source="#bib940-3">
+               <persName type="split"
+                         xml:id="name940-3-1"
+                         xml:lang="ar"
+                         source="#bib940-3">
                   <forename>ابو سعد</forename>
                   <addName type="untagged-title">الشماس, الرهاوي</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib940-4">
+               <persName type="split"
+                         xml:id="name940-4a-1"
+                         xml:lang="syr"
+                         source="#bib940-4">
                   <forename>ܐܒܘ ܣܥܕ</forename>
                   <addName type="untagged-title">ܡܫܡܫܢܐ، ܐܘܪܗܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib940-4">
+               <persName type="split"
+                         xml:id="name940-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib940-4">
                   <forename>ܐܰܒܳܘ ܣܰܥܕ</forename>
                   <addName type="untagged-title">ܡܫܰܡܫܳܢܐ، ܐܘܽܪܗܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Abū Saʿd</forename>
                   <addName type="untagged-title">of Edessa</addName>
                </persName>

@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-15-04:00</date>
+            <date>2013-05-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-15-04:00">
+                 when="2013-05-16-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,26 +95,45 @@
       <body>
          <listPerson>
             <person xml:id="person-12">
-               <persName type="sic" xml:lang="syr" source="#bib12-4">ܦܝܠܘܢ ܐܦܝܣܩܘܦܐ ܕܩܐܪܒܐܣܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib12-4">ܦܺܝܠܘܢ ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܐܪܒܐܣܝܐ</persName>
-               <persName type="sic" xml:lang="syr" resp="http://syriaca.org">ܦܝܠܘܢ ܕܩܐܪܒܐܣܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Philo of Carpasia</persName>
-               <persName type="sic" xml:lang="syr-Latn-x-cbsc" source="#bib12-7">#REF!</persName>
-               <persName type="split" xml:lang="syr" source="#bib12-4">
+               <persName type="sic"
+                         xml:id="name12-4a-0"
+                         xml:lang="syr"
+                         source="#bib12-4">ܦܝܠܘܢ ܐܦܝܣܩܘܦܐ ܕܩܐܪܒܐܣܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name12-4b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib12-4">ܦܺܝܠܘܢ ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܐܪܒܐܣܝܐ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="syriaca-authorized">ܦܝܠܘܢ ܕܩܐܪܒܐܣܝܐ</persName>
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">Philo of Carpasia</persName>
+               <persName type="sic"
+                         xml:id="name12-7-0"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib12-7">#REF!</persName>
+               <persName type="split"
+                         xml:id="name12-4a-1"
+                         xml:lang="syr"
+                         source="#bib12-4">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib12-4">
+               <persName type="split"
+                         xml:id="name12-4b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib12-4">
                   <forename>#REF!</forename>
                   <surname>#REF!</surname>
                   <addName type="untagged-title">#REF!</addName>
                </persName>
-               <persName type="split" xml:lang="syr" resp="http://syriaca.org">
+               <persName type="split" xml:lang="syr" syriaca-tags="syriaca-authorized">
                   <forename>ܦܝܠܘܢ</forename>
                   <addName type="terms-of-address">ܕܩܐܪܒܐܣܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="syriaca-authorized">
                   <forename>Philo</forename>
                   <addName type="untagged-title">of Carpasia</addName>
                </persName>
