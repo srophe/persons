@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-20-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +97,7 @@
             <person xml:id="person-6">
                <persName type="sic"
                          xml:id="name6-2-0"
-                         corresp="test"
+                         corresp="#name6-3-0 #name6-4a-0 #name6-4b-0 #name6-2-1"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib6-2">Theophilus of Edessa</persName>
                <persName type="sic"
@@ -125,7 +125,7 @@
                          source="#bib6-7">#REF!</persName>
                <persName type="split"
                          xml:id="name6-2-1"
-                         corresp="test"
+                         corresp="#name6-3-1 #name6-4a-1 #name6-4b-1 #name6-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib6-2">
                   <forename>Theophilus</forename>
@@ -190,6 +190,12 @@
                   <citedRange unit="pp">216</citedRange>
                </bibl>
             </person>
+            <relation type="disambiguation"
+                      name="different-from"
+                      active="person-6 http://syriaca.org/person/787"
+                      mutual="person-6 http://syriaca.org/person/787">
+               <desc>Not the same as the 8th century Theophilus of Edessa in GEDSH (http://syriaca.org/person/787).</desc>
+            </relation>
          </listPerson>
       </body>
    </text>

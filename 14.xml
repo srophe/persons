@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-20-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +97,7 @@
             <person xml:id="person-14">
                <persName type="sic"
                          xml:id="name14-2-0"
-                         corresp="test"
+                         corresp="#name14-3-0 #name14-4a-0 #name14-4b-0 #name14-2-1"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib14-2">Simon of Samosata</persName>
                <persName type="sic"
@@ -125,7 +125,7 @@
                          source="#bib14-7">#REF!</persName>
                <persName type="split"
                          xml:id="name14-2-1"
-                         corresp="test"
+                         corresp="#name14-3-1 #name14-4a-1 #name14-4b-1 #name14-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib14-2">
                   <forename>Simon</forename>
@@ -188,7 +188,14 @@
                   <citedRange unit="entry">10 to 13</citedRange>
                   <citedRange unit="pp">226</citedRange>
                </bibl>
+               <note type="record-description">A pupil of St. Ephrem according to Barsoum.</note>
             </person>
+            <relation type="disambiguation"
+                      name="different-from"
+                      active="person-14 http://syriaca.org/person/116"
+                      mutual="person-14 http://syriaca.org/person/116">
+               <desc>Not the same as the 7th cent. (?) Simeon of Simosata who wrote biography of Theodotus of Amida.</desc>
+            </relation>
          </listPerson>
       </body>
    </text>

@@ -49,7 +49,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +86,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-20-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -102,7 +102,7 @@
                          syriaca-tags="syriaca-authorized">Isḥaq of Antioch</persName>
                <persName type="sic"
                          xml:id="name33-2-0"
-                         corresp="test"
+                         corresp="#name33-3-0 #name33-4a-0 #name33-4b-0 #name33-2-1"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib33-2">Isaac of Edessa, known as Isaac of Antioch</persName>
                <persName type="sic"
@@ -187,6 +187,12 @@
                   <citedRange unit="pp">238</citedRange>
                </bibl>
             </person>
+            <relation type="disambiguation"
+                      name="different-from"
+                      active="person-33 http://syriaca.org/person/34 http://syriaca.org/person/17"
+                      mutual="person-33 http://syriaca.org/person/34 http://syriaca.org/person/17">
+               <desc>The identity of this Syriac author has be the source of considerable confusion. Please consult E.G. Matthews, “A Bibliographical Clavis to the Corpus of Works attributed to Isaac of Antioch.”  Hugoye:  Journal of Syriac Studies 5 (2002) 3-14. {http://www.bethmardutho.org/index.php/hugoye/hugoye-author-index/136.html}</desc>
+            </relation>
          </listPerson>
       </body>
    </text>
