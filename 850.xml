@@ -102,7 +102,7 @@
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="syriaca-authorized">Arniyasṭatheos</persName>
-               <persName type="sic">Eranistes</persName>
+               <persName type="sic" xml:lang="en">Eranistes</persName>
                <persName type="sic"
                          xml:id="name850-7-0"
                          xml:lang="syr-Latn-x-cbsc"
@@ -113,7 +113,7 @@
                <persName type="split" xml:lang="syr-Syrn" source="#bib850-5">
                   <forename>ܐܵܪܢܝܼܵܐܣܛܵܬܹܐܘܿܣ</forename>
                </persName>
-               <persName type="split">
+               <persName type="split" xml:lang="syr" source="#bib850-6">
                   <forename>ܐܪܢܝܐܣܛܬܐܘܣ</forename>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib850-6">
@@ -124,9 +124,21 @@
                          syriaca-tags="syriaca-authorized">
                   <forename>Arniyasṭatheos</forename>
                </persName>
-               <persName type="split">
+               <persName type="split" xml:lang="en">
                   <forename>Eranistes</forename>
                </persName>
+               <bibl xml:id="bib850-5">
+                  <title>Abdisho (YdQ)</title>
+                  <abbr>Abdisho (YdQ)</abbr>
+                  <ptr target="http://syriaca.org/bibl/6"/>
+                  <citedRange unit="pp">68</citedRange>
+               </bibl>
+               <bibl xml:id="bib850-6">
+                  <title>Abdisho (BO)</title>
+                  <abbr>Abdisho (BO)</abbr>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+                  <citedRange unit="pp">41</citedRange>
+               </bibl>
             </person>
          </listPerson>
       </body>

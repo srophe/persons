@@ -122,7 +122,7 @@
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="syriaca-authorized">Basil</persName>
-               <persName type="sic">Basil the Cilician</persName>
+               <persName type="sic" xml:lang="en">Basil the Cilician</persName>
                <persName type="sic"
                          xml:id="name845-7-0"
                          xml:lang="syr-Latn-x-cbsc"
@@ -165,7 +165,7 @@
                <persName type="split" xml:lang="syr-Syrn" source="#bib845-5">
                   <forename>ܒܵܣܹܠܝܼܣ</forename>
                </persName>
-               <persName type="split">
+               <persName type="split" xml:lang="syr" source="#bib845-6">
                   <forename>ܒܣܝܠܝܘܣ</forename>
                </persName>
                <persName type="split" xml:lang="syr-Syrj" source="#bib845-6">
@@ -176,7 +176,7 @@
                          syriaca-tags="syriaca-authorized">
                   <forename>Basil</forename>
                </persName>
-               <persName type="split">
+               <persName type="split" xml:lang="en">
                   <forename>Basil</forename>
                   <addName type="untagged-title">the Cilician</addName>
                </persName>
@@ -199,6 +199,18 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">208</citedRange>
+               </bibl>
+               <bibl xml:id="bib845-5">
+                  <title>Abdisho (YdQ)</title>
+                  <abbr>Abdisho (YdQ)</abbr>
+                  <ptr target="http://syriaca.org/bibl/6"/>
+                  <citedRange unit="pp">67</citedRange>
+               </bibl>
+               <bibl xml:id="bib845-6">
+                  <title>Abdisho (BO)</title>
+                  <abbr>Abdisho (BO)</abbr>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+                  <citedRange unit="pp">38</citedRange>
                </bibl>
             </person>
          </listPerson>
