@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -49,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -86,7 +88,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-21-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -152,6 +154,11 @@
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="entry">152</citedRange>
                   <citedRange unit="pp">335</citedRange>
+               </bibl>
+               <bibl xml:id="bib153-7" ref="http://www.csc.org.il/db/db.aspx?db=SB">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5"/>
                </bibl>
                <note type="record-description">In the Syriac text of Barsoum, the description of Basilius has been appended to the end of the previous entry (Benjamin of Edessa) without a heading, and the entry (as it is) does not include Basilius' name.</note>
             </person>
