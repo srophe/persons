@@ -94,9 +94,21 @@
       <body>
          <listPerson>
             <person xml:id="person-930">
-               <persName type="sic" xml:lang="syr" source="#bib930-5">ܡܘܫܐ ܟܪܟܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrn" source="#bib930-5">ܡܘܼܫܹܐ ܟܲܪܟܵܝܵܐ</persName>
-               <persName type="sic" xml:lang="syr" source="#bib930-6">ܡܘܫܐ ܟܪܟܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name930-5a-0"
+                         corresp="#name930-5b-0 #name930-6a-0 #name930-5a-1"
+                         xml:lang="syr"
+                         source="#bib930-5">ܡܘܫܐ ܟܪܟܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name930-5b-0"
+                         corresp="#name930-5a-0 #name930-6b-0 #name930-5b-1"
+                         xml:lang="syr-Syrn"
+                         source="#bib930-5">ܡܘܼܫܹܐ ܟܲܪܟܵܝܵܐ</persName>
+               <persName type="sic"
+                         xml:id="name930-6a-0"
+                         corresp="#name930-6b-0 #name930-5a-0 #name930-6a-1"
+                         xml:lang="syr"
+                         source="#bib930-6">ܡܘܫܐ ܟܪܟܝܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-authorized">Mushe Karkaya</persName>
@@ -104,15 +116,27 @@
                          xml:id="name930-7-0"
                          xml:lang="syr-Latn-x-cbsc"
                          source="#bib930-7">#REF!</persName>
-               <persName type="split" xml:lang="syr" source="#bib930-5">
+               <persName type="split"
+                         xml:id="name930-5a-1"
+                         corresp="#name930-5b-1 #name930-6a-1 #name930-5a-0"
+                         xml:lang="syr"
+                         source="#bib930-5">
                   <forename>ܡܘܫܐ</forename>
                   <addName type="untagged-title">ܟܪܟܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrn" source="#bib930-5">
+               <persName type="split"
+                         xml:id="name930-5b-1"
+                         corresp="#name930-5a-1 #name930-6b-1 #name930-5b-0"
+                         xml:lang="syr-Syrn"
+                         source="#bib930-5">
                   <forename>ܡܘܼܫܹܐ</forename>
                   <addName type="untagged-title">ܟܲܪܟܵܝܵܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib930-6">
+               <persName type="split"
+                         xml:id="name930-6a-1"
+                         corresp="#name930-6b-1 #name930-5a-1 #name930-6a-0"
+                         xml:lang="syr"
+                         source="#bib930-6">
                   <forename>ܡܘܫܐ</forename>
                   <addName type="untagged-title">ܟܪܟܝܐ</addName>
                </persName>

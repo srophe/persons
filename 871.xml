@@ -94,9 +94,21 @@
       <body>
          <listPerson>
             <person xml:id="person-871">
-               <persName type="sic" xml:lang="syr" source="#bib871-5">ܡܝܟܐ ܡܠܦܢܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrn" source="#bib871-5">ܡܝܼܟܵܐ ܡܲܠܦܵܢܵܐ</persName>
-               <persName type="sic" xml:lang="syr" source="#bib871-6">ܡܝܟܐ ܡܠܦܢܐ</persName>
+               <persName type="sic"
+                         xml:id="name871-5a-0"
+                         corresp="#name871-5b-0 #name871-6a-0 #name871-5a-1"
+                         xml:lang="syr"
+                         source="#bib871-5">ܡܝܟܐ ܡܠܦܢܐ</persName>
+               <persName type="sic"
+                         xml:id="name871-5b-0"
+                         corresp="#name871-5a-0 #name871-6b-0 #name871-5b-1"
+                         xml:lang="syr-Syrn"
+                         source="#bib871-5">ܡܝܼܟܵܐ ܡܲܠܦܵܢܵܐ</persName>
+               <persName type="sic"
+                         xml:id="name871-6a-0"
+                         corresp="#name871-6b-0 #name871-5a-0 #name871-6a-1"
+                         xml:lang="syr"
+                         source="#bib871-6">ܡܝܟܐ ܡܠܦܢܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-authorized">Mika</persName>
@@ -104,15 +116,27 @@
                          xml:id="name871-7-0"
                          xml:lang="syr-Latn-x-cbsc"
                          source="#bib871-7">#REF!</persName>
-               <persName type="split" xml:lang="syr" source="#bib871-5">
+               <persName type="split"
+                         xml:id="name871-5a-1"
+                         corresp="#name871-5b-1 #name871-6a-1 #name871-5a-0"
+                         xml:lang="syr"
+                         source="#bib871-5">
                   <forename>ܡܝܟܐ</forename>
                   <addName type="untagged-title">ܡܠܦܢܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrn" source="#bib871-5">
+               <persName type="split"
+                         xml:id="name871-5b-1"
+                         corresp="#name871-5a-1 #name871-6b-1 #name871-5b-0"
+                         xml:lang="syr-Syrn"
+                         source="#bib871-5">
                   <forename>ܡܝܼܟܵܐ</forename>
                   <addName type="untagged-title">ܡܲܠܦܵܢܵܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib871-6">
+               <persName type="split"
+                         xml:id="name871-6a-1"
+                         corresp="#name871-6b-1 #name871-5a-1 #name871-6a-0"
+                         xml:lang="syr"
+                         source="#bib871-6">
                   <forename>ܡܝܟܐ</forename>
                   <addName type="untagged-title">ܡܠܦܢܐ</addName>
                </persName>
