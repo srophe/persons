@@ -143,7 +143,7 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib365-1"
                          syriaca-tags="#syriaca-authorized">
-                  <forename>Ḥasan</forename>
+                  <forename sort="1">Ḥasan</forename>
                   <surname>Bar Bahlul</surname>
                </persName>
                <persName type="split"
@@ -151,7 +151,7 @@
                          corresp="#name365-3-1 #name365-4a-1 #name365-4b-1 #name365-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib365-2">
-                  <forename>al-Ḥasan</forename>
+                  <forename sort="1">al-Ḥasan</forename>
                   <surname>Bar Bahlul</surname>
                   <addName type="untagged-title">al-Awāni al-Ṭirhāni</addName>
                </persName>
@@ -160,7 +160,7 @@
                          corresp="#name365-2-1 #name365-4a-1 #name365-4b-1 #name365-3-0"
                          xml:lang="ar"
                          source="#bib365-3">
-                  <forename>الحسن</forename>
+                  <forename sort="1">الحسن</forename>
                   <surname>بن بهلول</surname>
                   <addName type="untagged-title">الاواني الطيرهاني</addName>
                </persName>
@@ -169,7 +169,7 @@
                          corresp="#name365-2-1 #name365-3-1 #name365-4b-1 #name365-4a-0"
                          xml:lang="syr"
                          source="#bib365-4">
-                  <forename>ܚܣܢ</forename>
+                  <forename sort="1">ܚܣܢ</forename>
                   <surname>ܒܪ ܒܗܠܘܠ</surname>
                   <addName type="untagged-title">ܐܠܐܘܐܢܝܐ</addName>
                </persName>
@@ -178,7 +178,7 @@
                          corresp="#name365-2-1 #name365-3-1 #name365-4a-1 #name365-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib365-4">
-                  <forename>ܚܰܣܢ</forename>
+                  <forename sort="1">ܚܰܣܢ</forename>
                   <surname>ܒܰܪ ܒܰܗܠܘܠ</surname>
                   <addName type="untagged-title">ܐܠܐܘܐܢܳܝܐ</addName>
                </persName>
@@ -187,21 +187,21 @@
                          corresp="#name365-5b-1 #name365-6a-1 #name365-5a-0"
                          xml:lang="syr"
                          source="#bib365-5">
-                  <surname>ܒܪ ܒܗܠܘܠ</surname>
+                  <surname sort="0">ܒܪ ܒܗܠܘܠ</surname>
                </persName>
                <persName type="split"
                          xml:id="name365-5b-1"
                          corresp="#name365-5a-1 #name365-6b-1 #name365-5b-0"
                          xml:lang="syr-Syrn"
                          source="#bib365-5">
-                  <surname>ܒܲܪ ܒܲܗܠܘܼܠ</surname>
+                  <surname sort="0">ܒܲܪ ܒܲܗܠܘܼܠ</surname>
                </persName>
                <persName type="split"
                          xml:id="name365-6a-1"
                          corresp="#name365-6b-1 #name365-5a-1 #name365-6a-0"
                          xml:lang="syr"
                          source="#bib365-6">
-                  <surname>ܒܪ ܒܗܠܘܠ</surname>
+                  <surname sort="0">ܒܪ ܒܗܠܘܠ</surname>
                </persName>
                <idno type="URI">http://viaf.org/viaf/162798051</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n87-933250</idno>
@@ -213,15 +213,13 @@
                <idno type="URI">http://viaf.org/viaf/7775614</idno>
                <floruit source="#bib365-1">mid-10th cent.</floruit>
                <bibl xml:id="bib365-1">
-                  <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">73</citedRange>
                </bibl>
                <bibl xml:id="bib365-2">
-                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
                   <ptr target="http://syriaca.org/bibl/4"/>
                </bibl>
@@ -233,8 +231,7 @@
                   <citedRange unit="pp">33</citedRange>
                </bibl>
                <bibl xml:id="bib365-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
