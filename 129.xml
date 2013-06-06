@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-129">
                <persName type="sic"
-                         xml:id="name129-2-0"
-                         corresp="#name129-3-0 #name129-4a-0 #name129-4b-0 #name129-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib129-2">John Bar Samuel</persName>
-               <persName type="sic"
-                         xml:id="name129-3-0"
-                         corresp="#name129-2-0 #name129-4a-0 #name129-4b-0 #name129-3-1"
-                         xml:lang="ar"
-                         source="#bib129-3">يوحنا بن صموئيل</persName>
-               <persName type="sic"
-                         xml:id="name129-4a-0"
-                         corresp="#name129-2-0 #name129-3-0 #name129-4b-0 #name129-4a-1"
-                         xml:lang="syr"
-                         source="#bib129-4">ܝܘܚܢܢ ܒܪ ܫܡܘܐܝܠ</persName>
-               <persName type="sic"
-                         xml:id="name129-4b-0"
-                         corresp="#name129-2-0 #name129-3-0 #name129-4a-0 #name129-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib129-4">ܝܘܚܰܢܢ ܒܰܪ ܫܡܘܐܝܠ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yuḥanon bar Shmuel</persName>
-               <persName type="sic"
-                         xml:id="name129-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib129-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name129-2-1"
-                         corresp="#name129-3-1 #name129-4a-1 #name129-4b-1 #name129-2-0"
+                         xml:id="name129-2"
+                         corresp="#name129-3 #name129-4a #name129-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib129-2">
-                  <forename>John</forename>
+                  <forename>John</forename> 
                   <surname>Bar Samuel</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name129-3-1"
-                         corresp="#name129-2-1 #name129-4a-1 #name129-4b-1 #name129-3-0"
+               <persName type="sic"
+                         xml:id="name129-3"
+                         corresp="#name129-2 #name129-4a #name129-4b"
                          xml:lang="ar"
                          source="#bib129-3">
-                  <forename>يوحنا</forename>
+                  <forename>يوحنا</forename> 
                   <surname>بن صموئيل</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name129-4a-1"
-                         corresp="#name129-2-1 #name129-3-1 #name129-4b-1 #name129-4a-0"
+               <persName type="sic"
+                         xml:id="name129-4a"
+                         corresp="#name129-2 #name129-3 #name129-4b"
                          xml:lang="syr"
                          source="#bib129-4">
-                  <forename>ܝܘܚܢܢ</forename>
+                  <forename>ܝܘܚܢܢ</forename> 
                   <surname>ܒܪ ܫܡܘܐܝܠ</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name129-4b-1"
-                         corresp="#name129-2-1 #name129-3-1 #name129-4a-1 #name129-4b-0"
+               <persName type="sic"
+                         xml:id="name129-4b"
+                         corresp="#name129-2 #name129-3 #name129-4a"
                          xml:lang="syr-Syrj"
                          source="#bib129-4">
-                  <forename>ܝܘܚܰܢܢ</forename>
+                  <forename>ܝܘܚܰܢܢ</forename> 
                   <surname>ܒܰܪ ܫܡܘܐܝܠ</surname>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yuḥanon</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yuḥanon</forename> 
                   <surname>bar Shmuel</surname>
                </persName>
+               <persName type="sic"
+                         xml:id="name129-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib129-7">#REF!</persName>
                <bibl xml:id="bib129-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

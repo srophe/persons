@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,44 @@
          <listPerson>
             <person xml:id="person-186">
                <persName type="sic"
-                         xml:id="name186-2-0"
-                         corresp="#name186-3-0 #name186-4a-0 #name186-4b-0 #name186-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib186-2">Athanasius IV</persName>
-               <persName type="sic"
-                         xml:id="name186-3-0"
-                         corresp="#name186-2-0 #name186-4a-0 #name186-4b-0 #name186-3-1"
-                         xml:lang="ar"
-                         source="#bib186-3">اثناسيوس الرابع</persName>
-               <persName type="sic"
-                         xml:id="name186-4a-0"
-                         corresp="#name186-2-0 #name186-3-0 #name186-4b-0 #name186-4a-1"
-                         xml:lang="syr"
-                         source="#bib186-4">ܐܬܢܐܣܝܘܣ ܪܒܝܥܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name186-4b-0"
-                         corresp="#name186-2-0 #name186-3-0 #name186-4a-0 #name186-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib186-4">ܐܰܬܰܢܐܣܝܘܣ ܪܒܝܥܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Athanasios (V) Loʿozar Ṣalḥoyo</persName>
-               <persName type="sic"
-                         xml:id="name186-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib186-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name186-2-1"
-                         corresp="#name186-3-1 #name186-4a-1 #name186-4b-1 #name186-2-0"
+                         xml:id="name186-2"
+                         corresp="#name186-3 #name186-4a #name186-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib186-2">
-                  <forename>Athanasius</forename>
+                  <forename>Athanasius</forename> 
                   <addName type="untagged-title">IV</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name186-3-1"
-                         corresp="#name186-2-1 #name186-4a-1 #name186-4b-1 #name186-3-0"
+               <persName type="sic"
+                         xml:id="name186-3"
+                         corresp="#name186-2 #name186-4a #name186-4b"
                          xml:lang="ar"
                          source="#bib186-3">
-                  <forename>اثناسيوس</forename>
+                  <forename>اثناسيوس</forename> 
                   <addName type="untagged-title">الرابع</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name186-4a-1"
-                         corresp="#name186-2-1 #name186-3-1 #name186-4b-1 #name186-4a-0"
+               <persName type="sic"
+                         xml:id="name186-4a"
+                         corresp="#name186-2 #name186-3 #name186-4b"
                          xml:lang="syr"
                          source="#bib186-4">
-                  <forename>ܐܬܢܐܣܝܘܣ</forename>
+                  <forename>ܐܬܢܐܣܝܘܣ</forename> 
                   <addName type="untagged-title">ܪܒܝܥܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name186-4b-1"
-                         corresp="#name186-2-1 #name186-3-1 #name186-4a-1 #name186-4b-0"
+               <persName type="sic"
+                         xml:id="name186-4b"
+                         corresp="#name186-2 #name186-3 #name186-4a"
                          xml:lang="syr-Syrj"
                          source="#bib186-4">
-                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename>
+                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename> 
                   <addName type="untagged-title">ܪܒܝܥܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Athanasios Loʿozar</forename>
-                  <addName type="untagged-title">(V) Ṣalḥoyo</addName>
-               </persName>
+                         syriaca-tags="#syriaca-headword">Athanasios (V) Loʿozar Ṣalḥoyo</persName>
+               <persName type="sic"
+                         xml:id="name186-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib186-7">#REF!</persName>
                <death when="1002" source="#bib186-2">1002</death>
                <bibl xml:id="bib186-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

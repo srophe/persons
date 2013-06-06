@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-32">
                <persName type="sic"
-                         xml:id="name32-2-0"
-                         corresp="#name32-3-0 #name32-4a-0 #name32-4b-0 #name32-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib32-2">Peter the presbyter of Edessa</persName>
-               <persName type="sic"
-                         xml:id="name32-3-0"
-                         corresp="#name32-2-0 #name32-4a-0 #name32-4b-0 #name32-3-1"
-                         xml:lang="ar"
-                         source="#bib32-3">بطرس قسيس الرها</persName>
-               <persName type="sic"
-                         xml:id="name32-4a-0"
-                         corresp="#name32-2-0 #name32-3-0 #name32-4b-0 #name32-4a-1"
-                         xml:lang="syr"
-                         source="#bib32-4">ܦܛܪܘܣ ܩܫܝܫܐ ܕܐܘܪܗܝ</persName>
-               <persName type="sic"
-                         xml:id="name32-4b-0"
-                         corresp="#name32-2-0 #name32-3-0 #name32-4a-0 #name32-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib32-4">ܦܶܛܪܘܣ ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Peter of Edessa</persName>
-               <persName type="sic"
-                         xml:id="name32-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib32-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name32-2-1"
-                         corresp="#name32-3-1 #name32-4a-1 #name32-4b-1 #name32-2-0"
+                         xml:id="name32-2"
+                         corresp="#name32-3 #name32-4a #name32-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib32-2">
-                  <forename>Peter</forename>
+                  <forename>Peter</forename> 
                   <addName type="untagged-title">the presbyter of Edessa</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name32-3-1"
-                         corresp="#name32-2-1 #name32-4a-1 #name32-4b-1 #name32-3-0"
+               <persName type="sic"
+                         xml:id="name32-3"
+                         corresp="#name32-2 #name32-4a #name32-4b"
                          xml:lang="ar"
                          source="#bib32-3">
-                  <forename>بطرس</forename>
+                  <forename>بطرس</forename> 
                   <addName type="untagged-title">قسيس الرها</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name32-4a-1"
-                         corresp="#name32-2-1 #name32-3-1 #name32-4b-1 #name32-4a-0"
+               <persName type="sic"
+                         xml:id="name32-4a"
+                         corresp="#name32-2 #name32-3 #name32-4b"
                          xml:lang="syr"
                          source="#bib32-4">
-                  <forename>ܦܛܪܘܣ</forename>
+                  <forename>ܦܛܪܘܣ</forename> 
                   <addName type="untagged-title">ܩܫܝܫܐ ܕܐܘܪܗܝ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name32-4b-1"
-                         corresp="#name32-2-1 #name32-3-1 #name32-4a-1 #name32-4b-0"
+               <persName type="sic"
+                         xml:id="name32-4b"
+                         corresp="#name32-2 #name32-3 #name32-4a"
                          xml:lang="syr-Syrj"
                          source="#bib32-4">
-                  <forename>ܦܶܛܪܘܣ</forename>
+                  <forename>ܦܶܛܪܘܣ</forename> 
                   <addName type="untagged-title">ܩܰܫܝܫܐ ܕܐܽܘܪܗܳܝ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Peter</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Peter</forename> 
                   <addName type="untagged-title">of Edessa</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name32-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib32-7">#REF!</persName>
                <bibl xml:id="bib32-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

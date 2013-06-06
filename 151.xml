@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-151">
                <persName type="sic"
-                         xml:id="name151-2-0"
-                         corresp="#name151-3-0 #name151-4a-0 #name151-4b-0 #name151-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib151-2">Thomas the Stylite</persName>
-               <persName type="sic"
-                         xml:id="name151-3-0"
-                         corresp="#name151-2-0 #name151-4a-0 #name151-4b-0 #name151-3-1"
-                         xml:lang="ar"
-                         source="#bib151-3">توما العمودي</persName>
-               <persName type="sic"
-                         xml:id="name151-4a-0"
-                         corresp="#name151-2-0 #name151-3-0 #name151-4b-0 #name151-4a-1"
-                         xml:lang="syr"
-                         source="#bib151-4">ܬܐܘܡܐ ܐܣܛܘܢܪܐ</persName>
-               <persName type="sic"
-                         xml:id="name151-4b-0"
-                         corresp="#name151-2-0 #name151-3-0 #name151-4a-0 #name151-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib151-4">ܬܳܐܘܡܰܐ ܐܣܛܘܢܳܪܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Tumo the Stylite</persName>
-               <persName type="sic"
-                         xml:id="name151-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib151-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name151-2-1"
-                         corresp="#name151-3-1 #name151-4a-1 #name151-4b-1 #name151-2-0"
+                         xml:id="name151-2"
+                         corresp="#name151-3 #name151-4a #name151-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib151-2">
-                  <forename>Thomas</forename>
+                  <forename>Thomas</forename> 
                   <addName type="untagged-title">the Stylite</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name151-3-1"
-                         corresp="#name151-2-1 #name151-4a-1 #name151-4b-1 #name151-3-0"
+               <persName type="sic"
+                         xml:id="name151-3"
+                         corresp="#name151-2 #name151-4a #name151-4b"
                          xml:lang="ar"
                          source="#bib151-3">
-                  <forename>توما</forename>
+                  <forename>توما</forename> 
                   <addName type="untagged-title">العمودي</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name151-4a-1"
-                         corresp="#name151-2-1 #name151-3-1 #name151-4b-1 #name151-4a-0"
+               <persName type="sic"
+                         xml:id="name151-4a"
+                         corresp="#name151-2 #name151-3 #name151-4b"
                          xml:lang="syr"
                          source="#bib151-4">
-                  <forename>ܬܐܘܡܐ</forename>
+                  <forename>ܬܐܘܡܐ</forename> 
                   <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name151-4b-1"
-                         corresp="#name151-2-1 #name151-3-1 #name151-4a-1 #name151-4b-0"
+               <persName type="sic"
+                         xml:id="name151-4b"
+                         corresp="#name151-2 #name151-3 #name151-4a"
                          xml:lang="syr-Syrj"
                          source="#bib151-4">
-                  <forename>ܬܳܐܘܡܰܐ</forename>
+                  <forename>ܬܳܐܘܡܰܐ</forename> 
                   <addName type="untagged-title">ܐܣܛܘܢܳܪܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Tumo</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Tumo</forename> 
                   <addName type="untagged-title">the Stylite</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name151-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib151-7">#REF!</persName>
                <listEvent>
                   <event when="0837" source="#bib151-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

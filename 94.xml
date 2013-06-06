@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,46 @@
          <listPerson>
             <person xml:id="person-94">
                <persName type="sic"
-                         xml:id="name94-2-0"
-                         corresp="#name94-3-0 #name94-4a-0 #name94-4b-0 #name94-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib94-2">John, metropolitan of Buṣra</persName>
-               <persName type="sic"
-                         xml:id="name94-3-0"
-                         corresp="#name94-2-0 #name94-4a-0 #name94-4b-0 #name94-3-1"
-                         xml:lang="ar"
-                         source="#bib94-3">يوحنا مطران بصرى</persName>
-               <persName type="sic"
-                         xml:id="name94-4a-0"
-                         corresp="#name94-2-0 #name94-3-0 #name94-4b-0 #name94-4a-1"
-                         xml:lang="syr"
-                         source="#bib94-4">ܝܘܚܢܢ ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</persName>
-               <persName type="sic"
-                         xml:id="name94-4b-0"
-                         corresp="#name94-2-0 #name94-3-0 #name94-4a-0 #name94-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib94-4">ܝܘܚܰܢܢ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yuḥanon of Buṣra</persName>
-               <persName type="sic"
-                         xml:id="name94-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib94-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name94-2-1"
-                         corresp="#name94-3-1 #name94-4a-1 #name94-4b-1 #name94-2-0"
+                         xml:id="name94-2"
+                         corresp="#name94-3 #name94-4a #name94-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib94-2">
-                  <forename>John</forename>
-                  <addName type="untagged-title">Metropolitan of Buṣra</addName>
+                  <forename>John</forename>, <addName type="untagged-title">metropolitan of Buṣra</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name94-3-1"
-                         corresp="#name94-2-1 #name94-4a-1 #name94-4b-1 #name94-3-0"
+               <persName type="sic"
+                         xml:id="name94-3"
+                         corresp="#name94-2 #name94-4a #name94-4b"
                          xml:lang="ar"
                          source="#bib94-3">
-                  <forename>يوحنا</forename>
+                  <forename>يوحنا</forename> 
                   <addName type="untagged-title">مطران بصرى</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name94-4a-1"
-                         corresp="#name94-2-1 #name94-3-1 #name94-4b-1 #name94-4a-0"
+               <persName type="sic"
+                         xml:id="name94-4a"
+                         corresp="#name94-2 #name94-3 #name94-4b"
                          xml:lang="syr"
                          source="#bib94-4">
-                  <forename>ܝܘܚܢܢ</forename>
+                  <forename>ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܒܘܨܪ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name94-4b-1"
-                         corresp="#name94-2-1 #name94-3-1 #name94-4a-1 #name94-4b-0"
+               <persName type="sic"
+                         xml:id="name94-4b"
+                         corresp="#name94-2 #name94-3 #name94-4a"
                          xml:lang="syr-Syrj"
                          source="#bib94-4">
-                  <forename>ܝܘܚܰܢܢ</forename>
+                  <forename>ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܒܘܨܰܪ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yuḥanon</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yuḥanon</forename> 
                   <addName type="untagged-title">of Buṣra</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name94-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib94-7">#REF!</persName>
                <death when="0650" source="#bib94-2">650</death>
                <bibl xml:id="bib94-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">1. Does http://viaf.org/viaf/22544388 (Theodorus Alexandrinae) refer to this Theodosius or to the 5th cent. grammarian? 2. Do http://viaf.org/viaf/32386803 and http://viaf.org/viaf/217803904 and http://viaf.org/viaf/217971054 refer to this person? 3. Is this the same person to whom the Panegyric on John the Baptist is attributed (http://viaf.org/viaf/225359960)?</change>
@@ -96,74 +96,48 @@
          <listPerson>
             <person xml:id="person-784">
                <persName type="sic"
-                         xml:id="name784-1-0"
+                         xml:id="name784-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib784-1"
-                         syriaca-tags="#syriaca-authorized">Theodosius of Alexandria</persName>
-               <persName type="sic"
-                         xml:id="name784-2-0"
-                         corresp="#name784-3-0 #name784-4a-0 #name784-4b-0 #name784-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib784-2">Theodosius, Patriarch of Alexandria</persName>
-               <persName type="sic"
-                         xml:id="name784-3-0"
-                         corresp="#name784-2-0 #name784-4a-0 #name784-4b-0 #name784-3-1"
-                         xml:lang="ar"
-                         source="#bib784-3">ثاودوسيوس بطريرك الاسكندرية</persName>
-               <persName type="sic"
-                         xml:id="name784-4a-0"
-                         corresp="#name784-2-0 #name784-3-0 #name784-4b-0 #name784-4a-1"
-                         xml:lang="syr"
-                         source="#bib784-4">ܬܐܘܕܘܣܝܘܣ ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name784-4b-0"
-                         corresp="#name784-2-0 #name784-3-0 #name784-4a-0 #name784-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib784-4">ܬܶܐܘܳܕܳܘܣܝܳܘܣ ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name784-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib784-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name784-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib784-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="0">Theodosius</forename>
-                  <addName type="untagged-title" sort="1">of Alexandria</addName>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Theodosius</forename> 
+                  <addName type="untagged-title">of Alexandria</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name784-2-1"
-                         corresp="#name784-3-1 #name784-4a-1 #name784-4b-1 #name784-2-0"
+               <persName type="sic"
+                         xml:id="name784-2"
+                         corresp="#name784-3 #name784-4a #name784-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib784-2">
-                  <forename sort="0">Theodosius</forename>
-                  <addName type="untagged-title" sort="1">Patriarch of Alexandria</addName>
+                  <forename>Theodosius</forename>, <addName type="untagged-title">Patriarch of Alexandria</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name784-3-1"
-                         corresp="#name784-2-1 #name784-4a-1 #name784-4b-1 #name784-3-0"
+               <persName type="sic"
+                         xml:id="name784-3"
+                         corresp="#name784-2 #name784-4a #name784-4b"
                          xml:lang="ar"
                          source="#bib784-3">
-                  <forename sort="0">ثاودوسيوس</forename>
-                  <addName type="untagged-title" sort="1">بطريرك الاسكندرية</addName>
+                  <forename>ثاودوسيوس</forename> 
+                  <addName type="untagged-title">بطريرك الاسكندرية</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name784-4a-1"
-                         corresp="#name784-2-1 #name784-3-1 #name784-4b-1 #name784-4a-0"
+               <persName type="sic"
+                         xml:id="name784-4a"
+                         corresp="#name784-2 #name784-3 #name784-4b"
                          xml:lang="syr"
                          source="#bib784-4">
-                  <forename sort="0">ܬܐܘܕܘܣܝܘܣ</forename>
-                  <addName type="untagged-title" sort="1">ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</addName>
+                  <forename>ܬܐܘܕܘܣܝܘܣ</forename> 
+                  <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name784-4b-1"
-                         corresp="#name784-2-1 #name784-3-1 #name784-4a-1 #name784-4b-0"
+               <persName type="sic"
+                         xml:id="name784-4b"
+                         corresp="#name784-2 #name784-3 #name784-4a"
                          xml:lang="syr-Syrj"
                          source="#bib784-4">
-                  <forename sort="0">ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename>
-                  <addName type="untagged-title" sort="1">ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
+                  <forename>ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename> 
+                  <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name784-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib784-7">#REF!</persName>
                <idno type="URI">http://viaf.org/viaf/19784428</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nb2006-16481</idno>
                <idno type="URI">http://worldcat.org/identities/np-theodosius$alexandrinus archiepiscopus$566</idno>

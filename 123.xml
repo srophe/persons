@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,67 +95,44 @@
          <listPerson>
             <person xml:id="person-123">
                <persName type="sic"
-                         xml:id="name123-2-0"
-                         corresp="#name123-3-0 #name123-4a-0 #name123-4b-0 #name123-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib123-2">Sabar Yeshu‛</persName>
-               <persName type="sic"
-                         xml:id="name123-3-0"
-                         corresp="#name123-2-0 #name123-4a-0 #name123-4b-0 #name123-3-1"
-                         xml:lang="ar"
-                         source="#bib123-3">سبر يشوع</persName>
-               <persName type="sic"
-                         xml:id="name123-4a-0"
-                         corresp="#name123-2-0 #name123-3-0 #name123-4b-0 #name123-4a-1"
-                         xml:lang="syr"
-                         source="#bib123-4">ܣܒܪ ܝܫܘܥ</persName>
-               <persName type="sic"
-                         xml:id="name123-4b-0"
-                         corresp="#name123-2-0 #name123-3-0 #name123-4a-0 #name123-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib123-4">ܣܒܰܪ ܝܶܫܘܥ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Sabrishuʿ bar Ramishuʿ of Beth Rabban</persName>
-               <persName type="sic"
-                         xml:id="name123-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib123-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name123-2-1"
-                         corresp="#name123-3-1 #name123-4a-1 #name123-4b-1 #name123-2-0"
+                         xml:id="name123-2"
+                         corresp="#name123-3 #name123-4a #name123-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib123-2">
                   <forename>Sabar Yeshu‛</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name123-3-1"
-                         corresp="#name123-2-1 #name123-4a-1 #name123-4b-1 #name123-3-0"
+               <persName type="sic"
+                         xml:id="name123-3"
+                         corresp="#name123-2 #name123-4a #name123-4b"
                          xml:lang="ar"
                          source="#bib123-3">
                   <forename>سبر يشوع</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name123-4a-1"
-                         corresp="#name123-2-1 #name123-3-1 #name123-4b-1 #name123-4a-0"
+               <persName type="sic"
+                         xml:id="name123-4a"
+                         corresp="#name123-2 #name123-3 #name123-4b"
                          xml:lang="syr"
                          source="#bib123-4">
                   <forename>ܣܒܪ ܝܫܘܥ</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name123-4b-1"
-                         corresp="#name123-2-1 #name123-3-1 #name123-4a-1 #name123-4b-0"
+               <persName type="sic"
+                         xml:id="name123-4b"
+                         corresp="#name123-2 #name123-3 #name123-4a"
                          xml:lang="syr-Syrj"
                          source="#bib123-4">
                   <forename>ܣܒܰܪ ܝܶܫܘܥ</forename>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Sabrishuʿ</forename>
-                  <surname>bar Ramishuʿ</surname>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Sabrishuʿ</forename> 
+                  <surname>bar Ramishuʿ</surname> 
                   <addName type="untagged-title">of Beth Rabban</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name123-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib123-7">#REF!</persName>
                <bibl xml:id="bib123-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

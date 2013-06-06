@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-105">
                <persName type="sic"
-                         xml:id="name105-2-0"
-                         corresp="#name105-3-0 #name105-4a-0 #name105-4b-0 #name105-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib105-2">Rabban Gabriel</persName>
-               <persName type="sic"
-                         xml:id="name105-3-0"
-                         corresp="#name105-2-0 #name105-4a-0 #name105-4b-0 #name105-3-1"
-                         xml:lang="ar"
-                         source="#bib105-3">الربان جبرائيل</persName>
-               <persName type="sic"
-                         xml:id="name105-4a-0"
-                         corresp="#name105-2-0 #name105-3-0 #name105-4b-0 #name105-4a-1"
-                         xml:lang="syr"
-                         source="#bib105-4"> ܓܒܪܐܝܠ ܕܒܝܬ ܪܒܢ</persName>
-               <persName type="sic"
-                         xml:id="name105-4b-0"
-                         corresp="#name105-2-0 #name105-3-0 #name105-4a-0 #name105-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib105-4">ܓܰܒܪܐܝܠ ܕܒܶܝܬ ܪܰܒܰܢ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Gabriel of Beth Rabban</persName>
-               <persName type="sic"
-                         xml:id="name105-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib105-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name105-2-1"
-                         corresp="#name105-3-1 #name105-4a-1 #name105-4b-1 #name105-2-0"
+                         xml:id="name105-2"
+                         corresp="#name105-3 #name105-4a #name105-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib105-2">
+                  <addName type="untagged-title">Rabban</addName> 
                   <forename>Gabriel</forename>
-                  <addName type="untagged-title">Rabban</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name105-3-1"
-                         corresp="#name105-2-1 #name105-4a-1 #name105-4b-1 #name105-3-0"
+               <persName type="sic"
+                         xml:id="name105-3"
+                         corresp="#name105-2 #name105-4a #name105-4b"
                          xml:lang="ar"
                          source="#bib105-3">
+                  <addName type="untagged-title">الربان</addName> 
                   <forename>جبرائيل</forename>
-                  <addName type="untagged-title">الربان</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name105-4a-1"
-                         corresp="#name105-2-1 #name105-3-1 #name105-4b-1 #name105-4a-0"
+               <persName type="sic"
+                         xml:id="name105-4a"
+                         corresp="#name105-2 #name105-3 #name105-4b"
                          xml:lang="syr"
-                         source="#bib105-4">
-                  <forename>ܓܒܪܐܝܠ</forename>
+                         source="#bib105-4"> 
+                  <forename>ܓܒܪܐܝܠ</forename> 
                   <addName type="untagged-title">ܕܒܝܬ ܪܒܢ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name105-4b-1"
-                         corresp="#name105-2-1 #name105-3-1 #name105-4a-1 #name105-4b-0"
+               <persName type="sic"
+                         xml:id="name105-4b"
+                         corresp="#name105-2 #name105-3 #name105-4a"
                          xml:lang="syr-Syrj"
                          source="#bib105-4">
-                  <forename>ܓܰܒܪܐܝܠ</forename>
+                  <forename>ܓܰܒܪܐܝܠ</forename> 
                   <addName type="untagged-title">ܕܒܶܝܬ ܪܰܒܰܢ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Gabriel</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Gabriel</forename> 
                   <addName type="untagged-title">of Beth Rabban</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name105-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib105-7">#REF!</persName>
                <bibl xml:id="bib105-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

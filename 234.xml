@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-234">
                <persName type="sic"
-                         xml:id="name234-2-0"
-                         corresp="#name234-3-0 #name234-4a-0 #name234-4b-0 #name234-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib234-2">Basilius of Basibrina</persName>
-               <persName type="sic"
-                         xml:id="name234-3-0"
-                         corresp="#name234-2-0 #name234-4a-0 #name234-4b-0 #name234-3-1"
-                         xml:lang="ar"
-                         source="#bib234-3">باسيليوس السبيريني</persName>
-               <persName type="sic"
-                         xml:id="name234-4a-0"
-                         corresp="#name234-2-0 #name234-3-0 #name234-4b-0 #name234-4a-1"
-                         xml:lang="syr"
-                         source="#bib234-4">ܒܣܝܠܝܘܣ ܣܒܝܪܝܢܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name234-4b-0"
-                         corresp="#name234-2-0 #name234-3-0 #name234-4a-0 #name234-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib234-4">ܒܰܣܝܠܝܘܣ ܣܒܝܺܪܝܢܳܝܳܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Baselios of Beth Sbirino</persName>
-               <persName type="sic"
-                         xml:id="name234-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib234-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name234-2-1"
-                         corresp="#name234-3-1 #name234-4a-1 #name234-4b-1 #name234-2-0"
+                         xml:id="name234-2"
+                         corresp="#name234-3 #name234-4a #name234-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib234-2">
-                  <forename>Basilius</forename>
+                  <forename>Basilius</forename> 
                   <addName type="untagged-title">of Basibrina</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name234-3-1"
-                         corresp="#name234-2-1 #name234-4a-1 #name234-4b-1 #name234-3-0"
+               <persName type="sic"
+                         xml:id="name234-3"
+                         corresp="#name234-2 #name234-4a #name234-4b"
                          xml:lang="ar"
                          source="#bib234-3">
-                  <forename>باسيليوس</forename>
+                  <forename>باسيليوس</forename> 
                   <addName type="untagged-title">السبيريني</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name234-4a-1"
-                         corresp="#name234-2-1 #name234-3-1 #name234-4b-1 #name234-4a-0"
+               <persName type="sic"
+                         xml:id="name234-4a"
+                         corresp="#name234-2 #name234-3 #name234-4b"
                          xml:lang="syr"
                          source="#bib234-4">
-                  <forename>ܒܣܝܠܝܘܣ</forename>
+                  <forename>ܒܣܝܠܝܘܣ</forename> 
                   <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name234-4b-1"
-                         corresp="#name234-2-1 #name234-3-1 #name234-4a-1 #name234-4b-0"
+               <persName type="sic"
+                         xml:id="name234-4b"
+                         corresp="#name234-2 #name234-3 #name234-4a"
                          xml:lang="syr-Syrj"
                          source="#bib234-4">
-                  <forename>ܒܰܣܝܠܝܘܣ</forename>
+                  <forename>ܒܰܣܝܠܝܘܣ</forename> 
                   <addName type="untagged-title">ܣܒܝܺܪܝܢܳܝܳܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Baselios</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Baselios</forename> 
                   <addName type="untagged-title">of Beth Sbirino</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name234-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib234-7">#REF!</persName>
                <listEvent>
                   <event when="1254" source="#bib234-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

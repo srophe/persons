@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,46 @@
          <listPerson>
             <person xml:id="person-29">
                <persName type="sic"
-                         xml:id="name29-2-0"
-                         corresp="#name29-3-0 #name29-4a-0 #name29-4b-0 #name29-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib29-2">The Monk Samuel</persName>
-               <persName type="sic"
-                         xml:id="name29-3-0"
-                         corresp="#name29-2-0 #name29-4a-0 #name29-4b-0 #name29-3-1"
-                         xml:lang="ar"
-                         source="#bib29-3">الراهب صموئيل</persName>
-               <persName type="sic"
-                         xml:id="name29-4a-0"
-                         corresp="#name29-2-0 #name29-3-0 #name29-4b-0 #name29-4a-1"
-                         xml:lang="syr"
-                         source="#bib29-4">ܕܝܪܝܐ ܫܡܘܐܝܠ</persName>
-               <persName type="sic"
-                         xml:id="name29-4b-0"
-                         corresp="#name29-2-0 #name29-3-0 #name29-4a-0 #name29-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib29-4">ܕܰܝܪܳܝܳܐ ܫܡܘܽܐܝܠ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Shmuel</persName>
-               <persName type="sic"
-                         xml:id="name29-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib29-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name29-2-1"
-                         corresp="#name29-3-1 #name29-4a-1 #name29-4b-1 #name29-2-0"
+                         xml:id="name29-2"
+                         corresp="#name29-3 #name29-4a #name29-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib29-2">
+                  <addName type="untagged-title">The Monk</addName> 
                   <forename>Samuel</forename>
-                  <addName type="untagged-title">The Monk</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name29-3-1"
-                         corresp="#name29-2-1 #name29-4a-1 #name29-4b-1 #name29-3-0"
+               <persName type="sic"
+                         xml:id="name29-3"
+                         corresp="#name29-2 #name29-4a #name29-4b"
                          xml:lang="ar"
                          source="#bib29-3">
+                  <addName type="untagged-title">الراهب</addName> 
                   <forename>صموئيل</forename>
-                  <addName type="untagged-title">الراهب</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name29-4a-1"
-                         corresp="#name29-2-1 #name29-3-1 #name29-4b-1 #name29-4a-0"
+               <persName type="sic"
+                         xml:id="name29-4a"
+                         corresp="#name29-2 #name29-3 #name29-4b"
                          xml:lang="syr"
                          source="#bib29-4">
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName> 
                   <forename>ܫܡܘܐܝܠ</forename>
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name29-4b-1"
-                         corresp="#name29-2-1 #name29-3-1 #name29-4a-1 #name29-4b-0"
+               <persName type="sic"
+                         xml:id="name29-4b"
+                         corresp="#name29-2 #name29-3 #name29-4a"
                          xml:lang="syr-Syrj"
                          source="#bib29-4">
+                  <addName type="untagged-title">ܕܰܝܪܳܝܳܐ</addName> 
                   <forename>ܫܡܘܽܐܝܠ</forename>
-                  <addName type="untagged-title">ܕܰܝܪܳܝܳܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Shmuel</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name29-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib29-7">#REF!</persName>
                <listEvent>
                   <event when="0458" source="#bib29-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

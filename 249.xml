@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,67 +95,44 @@
          <listPerson>
             <person xml:id="person-249">
                <persName type="sic"
-                         xml:id="name249-2-0"
-                         corresp="#name249-3-0 #name249-4a-0 #name249-4b-0 #name249-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib249-2">Bar Wuhayb</persName>
-               <persName type="sic"
-                         xml:id="name249-3-0"
-                         corresp="#name249-2-0 #name249-4a-0 #name249-4b-0 #name249-3-1"
-                         xml:lang="ar"
-                         source="#bib249-3">ابن ُوهيب</persName>
-               <persName type="sic"
-                         xml:id="name249-4a-0"
-                         corresp="#name249-2-0 #name249-3-0 #name249-4b-0 #name249-4a-1"
-                         xml:lang="syr"
-                         source="#bib249-4"> ܒܪ ܘܗܝܒ</persName>
-               <persName type="sic"
-                         xml:id="name249-4b-0"
-                         corresp="#name249-2-0 #name249-3-0 #name249-4a-0 #name249-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib249-4"> ܒܰܪ ܘܰܗܝܒ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Ignatius V bar Wahib</persName>
-               <persName type="sic"
-                         xml:id="name249-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib249-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name249-2-1"
-                         corresp="#name249-3-1 #name249-4a-1 #name249-4b-1 #name249-2-0"
+                         xml:id="name249-2"
+                         corresp="#name249-3 #name249-4a #name249-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib249-2">
                   <forename>Bar Wuhayb</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name249-3-1"
-                         corresp="#name249-2-1 #name249-4a-1 #name249-4b-1 #name249-3-0"
+               <persName type="sic"
+                         xml:id="name249-3"
+                         corresp="#name249-2 #name249-4a #name249-4b"
                          xml:lang="ar"
                          source="#bib249-3">
                   <forename>ابن ُوهيب</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name249-4a-1"
-                         corresp="#name249-2-1 #name249-3-1 #name249-4b-1 #name249-4a-0"
+               <persName type="sic"
+                         xml:id="name249-4a"
+                         corresp="#name249-2 #name249-3 #name249-4b"
                          xml:lang="syr"
-                         source="#bib249-4">
+                         source="#bib249-4"> 
                   <forename>ܒܪ ܘܗܝܒ</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name249-4b-1"
-                         corresp="#name249-2-1 #name249-3-1 #name249-4a-1 #name249-4b-0"
+               <persName type="sic"
+                         xml:id="name249-4b"
+                         corresp="#name249-2 #name249-3 #name249-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib249-4">
+                         source="#bib249-4"> 
                   <forename>ܒܰܪ ܘܰܗܝܒ</forename>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Ignatius</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Ignatius</forename> 
+                  <addName type="untagged-title">V</addName> 
                   <surname>bar Wahib</surname>
-                  <addName type="untagged-title">V</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name249-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib249-7">#REF!</persName>
                <death when="1333" source="#bib249-2">1333</death>
                <bibl xml:id="bib249-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,46 @@
          <listPerson>
             <person xml:id="person-221">
                <persName type="sic"
-                         xml:id="name221-2-0"
-                         corresp="#name221-3-0 #name221-4a-0 #name221-4b-0 #name221-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib221-2">Abraham, bishop of Tālbsam</persName>
-               <persName type="sic"
-                         xml:id="name221-3-0"
-                         corresp="#name221-2-0 #name221-4a-0 #name221-4b-0 #name221-3-1"
-                         xml:lang="ar"
-                         source="#bib221-3">ابرهيم اسقف تلبسم</persName>
-               <persName type="sic"
-                         xml:id="name221-4a-0"
-                         corresp="#name221-2-0 #name221-3-0 #name221-4b-0 #name221-4a-1"
-                         xml:lang="syr"
-                         source="#bib221-4">ܐܒܪܗܡ ܐܦܝܣܩܘܦܐ ܕܬܠܒܣ̈ܡܐ</persName>
-               <persName type="sic"
-                         xml:id="name221-4b-0"
-                         corresp="#name221-2-0 #name221-3-0 #name221-4a-0 #name221-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib221-4">ܐܰܒܪܳܗܡ ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܒܶܣ̈ܡܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Abrohom of Tālbsam</persName>
-               <persName type="sic"
-                         xml:id="name221-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib221-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name221-2-1"
-                         corresp="#name221-3-1 #name221-4a-1 #name221-4b-1 #name221-2-0"
+                         xml:id="name221-2"
+                         corresp="#name221-3 #name221-4a #name221-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib221-2">
-                  <forename>Abraham</forename>
-                  <addName type="untagged-title">Bishop of Tālbsam</addName>
+                  <forename>Abraham</forename>, <addName type="untagged-title">bishop of Tālbsam</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name221-3-1"
-                         corresp="#name221-2-1 #name221-4a-1 #name221-4b-1 #name221-3-0"
+               <persName type="sic"
+                         xml:id="name221-3"
+                         corresp="#name221-2 #name221-4a #name221-4b"
                          xml:lang="ar"
                          source="#bib221-3">
-                  <forename>ابرهيم</forename>
+                  <forename>ابرهيم</forename> 
                   <addName type="untagged-title">اسقف تلبسم</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name221-4a-1"
-                         corresp="#name221-2-1 #name221-3-1 #name221-4b-1 #name221-4a-0"
+               <persName type="sic"
+                         xml:id="name221-4a"
+                         corresp="#name221-2 #name221-3 #name221-4b"
                          xml:lang="syr"
                          source="#bib221-4">
-                  <forename>ܐܒܪܗܡ</forename>
+                  <forename>ܐܒܪܗܡ</forename> 
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܬܠܒܣ̈ܡܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name221-4b-1"
-                         corresp="#name221-2-1 #name221-3-1 #name221-4a-1 #name221-4b-0"
+               <persName type="sic"
+                         xml:id="name221-4b"
+                         corresp="#name221-2 #name221-3 #name221-4a"
                          xml:lang="syr-Syrj"
                          source="#bib221-4">
-                  <forename>ܐܰܒܪܳܗܡ</forename>
+                  <forename>ܐܰܒܪܳܗܡ</forename> 
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܒܶܣ̈ܡܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Abrohom</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Abrohom</forename> 
                   <addName type="untagged-title">of Tālbsam</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name221-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib221-7">#REF!</persName>
                <death notBefore="1208" source="#bib221-2">c. 1207</death>
                <bibl xml:id="bib221-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

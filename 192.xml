@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,35 @@
          <listPerson>
             <person xml:id="person-192">
                <persName type="sic"
-                         xml:id="name192-2-0"
-                         corresp="#name192-3-0 #name192-4a-0 #name192-4b-0 #name192-2-1"
+                         xml:id="name192-2"
+                         corresp="#name192-3 #name192-4a #name192-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib192-2">The Monk Joseph of Melitene</persName>
+                         source="#bib192-2">The Monk <forename>Joseph</forename> of Melitene</persName>
                <persName type="sic"
-                         xml:id="name192-3-0"
-                         corresp="#name192-2-0 #name192-4a-0 #name192-4b-0 #name192-3-1"
+                         xml:id="name192-3"
+                         corresp="#name192-2 #name192-4a #name192-4b"
                          xml:lang="ar"
-                         source="#bib192-3">الراهب يوسف الملطي</persName>
+                         source="#bib192-3">الراهب <forename>يوسف</forename> الملطي</persName>
                <persName type="sic"
-                         xml:id="name192-4a-0"
-                         corresp="#name192-2-0 #name192-3-0 #name192-4b-0 #name192-4a-1"
+                         xml:id="name192-4a"
+                         corresp="#name192-2 #name192-3 #name192-4b"
                          xml:lang="syr"
-                         source="#bib192-4">ܕܝܪܝܐ ܝܘܣܦ ܡܝܠܝܛܝܢܝܐ</persName>
+                         source="#bib192-4">ܕܝܪܝܐ <forename>ܝܘܣܦ</forename> ܡܝܠܝܛܝܢܝܐ</persName>
                <persName type="sic"
-                         xml:id="name192-4b-0"
-                         corresp="#name192-2-0 #name192-3-0 #name192-4a-0 #name192-4b-1"
+                         xml:id="name192-4b"
+                         corresp="#name192-2 #name192-3 #name192-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib192-4">ܕܰܝܪܳܝܐ ܝܰܘܣܦ ܡܝܠܝܛܝܢܳܝܐ</persName>
+                         source="#bib192-4">ܕܰܝܪܳܝܐ <forename>ܝܰܘܣܦ</forename> ܡܝܠܝܛܝܢܳܝܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yawsep of Melitene</persName>
-               <persName type="sic"
-                         xml:id="name192-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib192-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name192-2-1"
-                         corresp="#name192-3-1 #name192-4a-1 #name192-4b-1 #name192-2-0"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib192-2">
-                  <forename>Joseph</forename>
-                  <addName type="untagged-title">The Monk, of Melitene</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name192-3-1"
-                         corresp="#name192-2-1 #name192-4a-1 #name192-4b-1 #name192-3-0"
-                         xml:lang="ar"
-                         source="#bib192-3">
-                  <forename>يوسف</forename>
-                  <addName type="untagged-title">الراهب , الملطي</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name192-4a-1"
-                         corresp="#name192-2-1 #name192-3-1 #name192-4b-1 #name192-4a-0"
-                         xml:lang="syr"
-                         source="#bib192-4">
-                  <forename>ܝܘܣܦ</forename>
-                  <addName type="untagged-title">ܕܝܪܝܐ ܡܝܠܝܛܝܢܝܐ</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name192-4b-1"
-                         corresp="#name192-2-1 #name192-3-1 #name192-4a-1 #name192-4b-0"
-                         xml:lang="syr-Syrj"
-                         source="#bib192-4">
-                  <forename>ܝܰܘܣܦ</forename>
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ ܡܝܠܝܛܝܢܳܝܐ</addName>
-               </persName>
-               <persName type="split"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yawsep</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yawsep</forename> 
                   <addName type="untagged-title">of Melitene</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name192-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib192-7">#REF!</persName>
                <death when="1058" source="#bib192-2">1058</death>
                <bibl xml:id="bib192-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

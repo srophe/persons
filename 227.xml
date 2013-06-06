@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,61 +95,41 @@
          <listPerson>
             <person xml:id="person-227">
                <persName type="sic"
-                         xml:id="name227-2-0"
-                         corresp="#name227-3-0 #name227-4a-0 #name227-4b-0 #name227-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib227-2">Gabriel of Edessa</persName>
-               <persName type="sic"
-                         xml:id="name227-3-0"
-                         corresp="#name227-2-0 #name227-4a-0 #name227-4b-0 #name227-3-1"
-                         xml:lang="ar"
-                         source="#bib227-3">جبرائيل الرهاوي</persName>
-               <persName type="sic"
-                         xml:id="name227-4a-0"
-                         corresp="#name227-2-0 #name227-3-0 #name227-4b-0 #name227-4a-1"
-                         xml:lang="syr"
-                         source="#bib227-4">ܓܒܪܐܝܠ ܐܘܪܗܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name227-4b-0"
-                         corresp="#name227-2-0 #name227-3-0 #name227-4a-0 #name227-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib227-4">ܓܰܒܪܐܝܠ ܐܘܪܗܳܝܳܐ</persName>
-               <persName type="sic"
-                         xml:id="name227-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib227-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name227-2-1"
-                         corresp="#name227-3-1 #name227-4a-1 #name227-4b-1 #name227-2-0"
+                         xml:id="name227-2"
+                         corresp="#name227-3 #name227-4a #name227-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib227-2">
-                  <forename>Gabriel</forename>
+                  <forename>Gabriel</forename> 
                   <addName type="untagged-title">of Edessa</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name227-3-1"
-                         corresp="#name227-2-1 #name227-4a-1 #name227-4b-1 #name227-3-0"
+               <persName type="sic"
+                         xml:id="name227-3"
+                         corresp="#name227-2 #name227-4a #name227-4b"
                          xml:lang="ar"
                          source="#bib227-3">
-                  <forename>جبرائيل</forename>
+                  <forename>جبرائيل</forename> 
                   <addName type="untagged-title">الرهاوي</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name227-4a-1"
-                         corresp="#name227-2-1 #name227-3-1 #name227-4b-1 #name227-4a-0"
+               <persName type="sic"
+                         xml:id="name227-4a"
+                         corresp="#name227-2 #name227-3 #name227-4b"
                          xml:lang="syr"
                          source="#bib227-4">
-                  <forename>ܓܒܪܐܝܠ</forename>
+                  <forename>ܓܒܪܐܝܠ</forename> 
                   <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name227-4b-1"
-                         corresp="#name227-2-1 #name227-3-1 #name227-4a-1 #name227-4b-0"
+               <persName type="sic"
+                         xml:id="name227-4b"
+                         corresp="#name227-2 #name227-3 #name227-4a"
                          xml:lang="syr-Syrj"
                          source="#bib227-4">
-                  <forename>ܓܰܒܪܐܝܠ</forename>
+                  <forename>ܓܰܒܪܐܝܠ</forename> 
                   <addName type="untagged-title">ܐܘܪܗܳܝܳܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name227-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib227-7">#REF!</persName>
                <death when="1227" source="#bib227-2">1227</death>
                <bibl xml:id="bib227-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

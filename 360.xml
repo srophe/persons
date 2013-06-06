@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Does http://viaf.org/viaf/233270411 use dates from Babai the Great but refer to Babai of Nisibis?</change>
@@ -96,61 +96,41 @@
          <listPerson>
             <person xml:id="person-360">
                <persName type="sic"
-                         xml:id="name360-1-0"
+                         xml:id="name360-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib360-1"
-                         syriaca-tags="#syriaca-authorized">Babai of Nisibis</persName>
-               <persName type="sic"
-                         xml:id="name360-5a-0"
-                         corresp="#name360-5b-0 #name360-6a-0 #name360-5a-1"
-                         xml:lang="syr"
-                         source="#bib360-5">ܒܒܝ ܒܪ ܢܨ̈ܝܒܢܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name360-5b-0"
-                         corresp="#name360-5a-0 #name360-6b-0 #name360-5b-1"
-                         xml:lang="syr-Syrn"
-                         source="#bib360-5">ܒܵܒܲܝ ܒܲܪ ܢܨ̈ܝܼܒܢܵܝܹܐ</persName>
-               <persName type="sic"
-                         xml:id="name360-6a-0"
-                         corresp="#name360-6b-0 #name360-5a-0 #name360-6a-1"
-                         xml:lang="syr"
-                         source="#bib360-6">ܒܒܝ ܒܪ ܢܨ̈ܝܒܢܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name360-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib360-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name360-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib360-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="0">Babai</forename>
-                  <addName type="untagged-title" sort="1">of Nisibis</addName>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Babai</forename> 
+                  <addName type="untagged-title">of Nisibis</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name360-5a-1"
-                         corresp="#name360-5b-1 #name360-6a-1 #name360-5a-0"
+               <persName type="sic"
+                         xml:id="name360-5a"
+                         corresp="#name360-5b #name360-6a"
                          xml:lang="syr"
                          source="#bib360-5">
-                  <forename sort="0">ܒܒܝ</forename>
-                  <addName type="untagged-title" sort="1">ܒܪ ܢܨ̈ܝܒܢܝܐ</addName>
+                  <forename>ܒܒܝ</forename> 
+                  <addName type="untagged-title">ܒܪ ܢܨ̈ܝܒܢܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name360-5b-1"
-                         corresp="#name360-5a-1 #name360-6b-1 #name360-5b-0"
+               <persName type="sic"
+                         xml:id="name360-5b"
+                         corresp="#name360-5a #name360-6b"
                          xml:lang="syr-Syrn"
                          source="#bib360-5">
-                  <forename sort="0">ܒܵܒܲܝ</forename>
-                  <addName type="untagged-title" sort="1">ܒܲܪ ܢܨ̈ܝܼܒܢܵܝܹܐ</addName>
+                  <forename>ܒܵܒܲܝ</forename> 
+                  <addName type="untagged-title">ܒܲܪ ܢܨ̈ܝܼܒܢܵܝܹܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name360-6a-1"
-                         corresp="#name360-6b-1 #name360-5a-1 #name360-6a-0"
+               <persName type="sic"
+                         xml:id="name360-6a"
+                         corresp="#name360-6b #name360-5a"
                          xml:lang="syr"
                          source="#bib360-6">
-                  <forename sort="0">ܒܒܝ</forename>
-                  <addName type="untagged-title" sort="1">ܒܪ ܢܨ̈ܝܒܢܝܐ</addName>
+                  <forename>ܒܒܝ</forename> 
+                  <addName type="untagged-title">ܒܪ ܢܨ̈ܝܒܢܝܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name360-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib360-7">#REF!</persName>
                <floruit source="#bib360-1">6th/7th cent.</floruit>
                <bibl xml:id="bib360-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

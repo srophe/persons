@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-200">
                <persName type="sic"
-                         xml:id="name200-2-0"
-                         corresp="#name200-3-0 #name200-4a-0 #name200-4b-0 #name200-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib200-2">Dionysius Bar Mawdyana</persName>
-               <persName type="sic"
-                         xml:id="name200-3-0"
-                         corresp="#name200-2-0 #name200-4a-0 #name200-4b-0 #name200-3-1"
-                         xml:lang="ar"
-                         source="#bib200-3">ديونيسيوس ابن موديانا</persName>
-               <persName type="sic"
-                         xml:id="name200-4a-0"
-                         corresp="#name200-2-0 #name200-3-0 #name200-4b-0 #name200-4a-1"
-                         xml:lang="syr"
-                         source="#bib200-4">ܕܝܘܢܢܘܣܝܘܣ ܒܪ ܡܘܕܝܢܐ</persName>
-               <persName type="sic"
-                         xml:id="name200-4b-0"
-                         corresp="#name200-2-0 #name200-3-0 #name200-4a-0 #name200-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib200-4">ܕܝܽܘܢܳܢܘܣܝܘܣ ܒܰܪ ܡܰܘܕܝܢܳܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Dionysios bar Mawdyono</persName>
-               <persName type="sic"
-                         xml:id="name200-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib200-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name200-2-1"
-                         corresp="#name200-3-1 #name200-4a-1 #name200-4b-1 #name200-2-0"
+                         xml:id="name200-2"
+                         corresp="#name200-3 #name200-4a #name200-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib200-2">
-                  <forename>Dionysius</forename>
+                  <forename>Dionysius</forename> 
                   <surname>Bar Mawdyana</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name200-3-1"
-                         corresp="#name200-2-1 #name200-4a-1 #name200-4b-1 #name200-3-0"
+               <persName type="sic"
+                         xml:id="name200-3"
+                         corresp="#name200-2 #name200-4a #name200-4b"
                          xml:lang="ar"
                          source="#bib200-3">
-                  <forename>ديونيسيوس</forename>
+                  <forename>ديونيسيوس</forename> 
                   <surname>ابن موديانا</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name200-4a-1"
-                         corresp="#name200-2-1 #name200-3-1 #name200-4b-1 #name200-4a-0"
+               <persName type="sic"
+                         xml:id="name200-4a"
+                         corresp="#name200-2 #name200-3 #name200-4b"
                          xml:lang="syr"
                          source="#bib200-4">
-                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename>
+                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename> 
                   <surname>ܒܪ ܡܘܕܝܢܐ</surname>
                </persName>
-               <persName type="split"
-                         xml:id="name200-4b-1"
-                         corresp="#name200-2-1 #name200-3-1 #name200-4a-1 #name200-4b-0"
+               <persName type="sic"
+                         xml:id="name200-4b"
+                         corresp="#name200-2 #name200-3 #name200-4a"
                          xml:lang="syr-Syrj"
                          source="#bib200-4">
-                  <forename>ܕܝܽܘܢܳܢܘܣܝܘܣ</forename>
+                  <forename>ܕܝܽܘܢܳܢܘܣܝܘܣ</forename> 
                   <surname>ܒܰܪ ܡܰܘܕܝܢܳܐ</surname>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Dionysios</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Dionysios</forename> 
                   <surname>bar Mawdyono</surname>
                </persName>
+               <persName type="sic"
+                         xml:id="name200-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib200-7">#REF!</persName>
                <death when="1120" source="#bib200-2">1120</death>
                <bibl xml:id="bib200-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

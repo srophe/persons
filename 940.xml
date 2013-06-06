@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,35 @@
          <listPerson>
             <person xml:id="person-940">
                <persName type="sic"
-                         xml:id="name940-2-0"
-                         corresp="#name940-3-0 #name940-4a-0 #name940-4b-0 #name940-2-1"
+                         xml:id="name940-2"
+                         corresp="#name940-3 #name940-4a #name940-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib940-2">Deacon Abu Sa‘d of Edessa</persName>
+                         source="#bib940-2">Deacon <forename>Abu Sa‘d</forename> of Edessa</persName>
                <persName type="sic"
-                         xml:id="name940-3-0"
-                         corresp="#name940-2-0 #name940-4a-0 #name940-4b-0 #name940-3-1"
+                         xml:id="name940-3"
+                         corresp="#name940-2 #name940-4a #name940-4b"
                          xml:lang="ar"
-                         source="#bib940-3">الشماس ابو سعد الرهاوي</persName>
+                         source="#bib940-3">الشماس <forename>ابو سعد</forename> الرهاوي</persName>
                <persName type="sic"
-                         xml:id="name940-4a-0"
-                         corresp="#name940-2-0 #name940-3-0 #name940-4b-0 #name940-4a-1"
+                         xml:id="name940-4a"
+                         corresp="#name940-2 #name940-3 #name940-4b"
                          xml:lang="syr"
-                         source="#bib940-4">ܡܫܡܫܢܐ ܐܒܘ ܣܥܕ ܐܘܪܗܝܐ</persName>
+                         source="#bib940-4">ܡܫܡܫܢܐ <forename>ܐܒܘ ܣܥܕ</forename> ܐܘܪܗܝܐ</persName>
                <persName type="sic"
-                         xml:id="name940-4b-0"
-                         corresp="#name940-2-0 #name940-3-0 #name940-4a-0 #name940-4b-1"
+                         xml:id="name940-4b"
+                         corresp="#name940-2 #name940-3 #name940-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib940-4">ܡܫܰܡܫܳܢܐ ܐܰܒܳܘ ܣܰܥܕ ܐܘܽܪܗܳܝܐ</persName>
+                         source="#bib940-4">ܡܫܰܡܫܳܢܐ <forename>ܐܰܒܳܘ ܣܰܥܕ</forename> ܐܘܽܪܗܳܝܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Abū Saʿd of Edessa</persName>
-               <persName type="sic"
-                         xml:id="name940-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib940-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name940-2-1"
-                         corresp="#name940-3-1 #name940-4a-1 #name940-4b-1 #name940-2-0"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib940-2">
-                  <forename>Abu Sa‘d</forename>
-                  <addName type="untagged-title">Deacon, of Edessa</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name940-3-1"
-                         corresp="#name940-2-1 #name940-4a-1 #name940-4b-1 #name940-3-0"
-                         xml:lang="ar"
-                         source="#bib940-3">
-                  <forename>ابو سعد</forename>
-                  <addName type="untagged-title">الشماس, الرهاوي</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name940-4a-1"
-                         corresp="#name940-2-1 #name940-3-1 #name940-4b-1 #name940-4a-0"
-                         xml:lang="syr"
-                         source="#bib940-4">
-                  <forename>ܐܒܘ ܣܥܕ</forename>
-                  <addName type="untagged-title">ܡܫܡܫܢܐ، ܐܘܪܗܝܐ</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name940-4b-1"
-                         corresp="#name940-2-1 #name940-3-1 #name940-4a-1 #name940-4b-0"
-                         xml:lang="syr-Syrj"
-                         source="#bib940-4">
-                  <forename>ܐܰܒܳܘ ܣܰܥܕ</forename>
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ، ܐܘܽܪܗܳܝܐ</addName>
-               </persName>
-               <persName type="split"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Abū Saʿd</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Abū Saʿd</forename> 
                   <addName type="untagged-title">of Edessa</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name940-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib940-7">#REF!</persName>
                <bibl xml:id="bib940-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

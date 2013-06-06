@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Should the following records be matched with this one? http://viaf.org/viaf/89685503 and http://viaf.org/viaf/191099348</change>
@@ -96,74 +96,49 @@
          <listPerson>
             <person xml:id="person-792">
                <persName type="sic"
-                         xml:id="name792-1-0"
+                         xml:id="name792-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib792-1"
-                         syriaca-tags="#syriaca-authorized">Timotheos II of Alexandria</persName>
-               <persName type="sic"
-                         xml:id="name792-2-0"
-                         corresp="#name792-3-0 #name792-4a-0 #name792-4b-0 #name792-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib792-2">Timothy of Alexandria</persName>
-               <persName type="sic"
-                         xml:id="name792-3-0"
-                         corresp="#name792-2-0 #name792-4a-0 #name792-4b-0 #name792-3-1"
-                         xml:lang="ar"
-                         source="#bib792-3">طيمثاوس الاسكندري</persName>
-               <persName type="sic"
-                         xml:id="name792-4a-0"
-                         corresp="#name792-2-0 #name792-3-0 #name792-4b-0 #name792-4a-1"
-                         xml:lang="syr"
-                         source="#bib792-4">ܛܝܡܬܐܘܣ ܕܐܠܟܣܢܕܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name792-4b-0"
-                         corresp="#name792-2-0 #name792-3-0 #name792-4a-0 #name792-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib792-4">ܛܺܝܡܰܬܐܘܳܣ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name792-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib792-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name792-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib792-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="0">Timotheos</forename>
-                  <addName type="untagged-title" sort="1">II of Alexandria</addName>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Timotheos</forename> 
+                  <addName type="untagged-title">II of Alexandria</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name792-2-1"
-                         corresp="#name792-3-1 #name792-4a-1 #name792-4b-1 #name792-2-0"
+               <persName type="sic"
+                         xml:id="name792-2"
+                         corresp="#name792-3 #name792-4a #name792-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib792-2">
-                  <forename sort="0">Timothy</forename>
-                  <addName type="untagged-title" sort="1">of Alexandria</addName>
+                  <forename>Timothy</forename> 
+                  <addName type="untagged-title">of Alexandria</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name792-3-1"
-                         corresp="#name792-2-1 #name792-4a-1 #name792-4b-1 #name792-3-0"
+               <persName type="sic"
+                         xml:id="name792-3"
+                         corresp="#name792-2 #name792-4a #name792-4b"
                          xml:lang="ar"
                          source="#bib792-3">
-                  <forename sort="0">طيمثاوس</forename>
-                  <addName type="untagged-title" sort="1">الاسكندري</addName>
+                  <forename>طيمثاوس</forename> 
+                  <addName type="untagged-title">الاسكندري</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name792-4a-1"
-                         corresp="#name792-2-1 #name792-3-1 #name792-4b-1 #name792-4a-0"
+               <persName type="sic"
+                         xml:id="name792-4a"
+                         corresp="#name792-2 #name792-3 #name792-4b"
                          xml:lang="syr"
                          source="#bib792-4">
-                  <forename sort="0">ܛܝܡܬܐܘܣ</forename>
-                  <addName type="untagged-title" sort="1">ܕܐܠܟܣܢܕܪܝܐ</addName>
+                  <forename>ܛܝܡܬܐܘܣ</forename> 
+                  <addName type="untagged-title">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name792-4b-1"
-                         corresp="#name792-2-1 #name792-3-1 #name792-4a-1 #name792-4b-0"
+               <persName type="sic"
+                         xml:id="name792-4b"
+                         corresp="#name792-2 #name792-3 #name792-4a"
                          xml:lang="syr-Syrj"
                          source="#bib792-4">
-                  <forename sort="0">ܛܺܝܡܰܬܐܘܳܣ</forename>
-                  <addName type="untagged-title" sort="1">ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
+                  <forename>ܛܺܝܡܰܬܐܘܳܣ</forename> 
+                  <addName type="untagged-title">ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name792-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib792-7">#REF!</persName>
                <idno type="URI">http://worldcat.org/identities/np-timothee aelure$04 0477</idno>
                <idno type="URI">http://viaf.org/viaf/56274366</idno>
                <idno type="URI">http://viaf.org/viaf/89514875</idno>

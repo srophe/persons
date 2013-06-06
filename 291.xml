@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,65 +95,45 @@
          <listPerson>
             <person xml:id="person-291">
                <persName type="sic"
-                         xml:id="name291-1-0"
+                         xml:id="name291-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib291-1"
-                         syriaca-tags="#syriaca-authorized">Shemʿun II, Basileios</persName>
+                         syriaca-tags="#syriaca-headword">Shemʿun II, Basileios</persName>
                <persName type="sic"
-                         xml:id="name291-2-0"
-                         corresp="#name291-3-0 #name291-4a-0 #name291-4b-0 #name291-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib291-2">Maphryono Simon</persName>
-               <persName type="sic"
-                         xml:id="name291-3-0"
-                         corresp="#name291-2-0 #name291-4a-0 #name291-4b-0 #name291-3-1"
-                         xml:lang="ar"
-                         source="#bib291-3">المفريان شمعون</persName>
-               <persName type="sic"
-                         xml:id="name291-4a-0"
-                         corresp="#name291-2-0 #name291-3-0 #name291-4b-0 #name291-4a-1"
-                         xml:lang="syr"
-                         source="#bib291-4">ܡܦܪܝܢܐ ܫܡܥܘܢ</persName>
-               <persName type="sic"
-                         xml:id="name291-4b-0"
-                         corresp="#name291-2-0 #name291-3-0 #name291-4a-0 #name291-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib291-4">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</persName>
-               <persName type="sic"
-                         xml:id="name291-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib291-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name291-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib291-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="1">Basileios Shemʿun II</forename>
-               </persName>
-               <persName type="split"
-                         xml:id="name291-2-1"
-                         corresp="#name291-3-1 #name291-4a-1 #name291-4b-1 #name291-2-0"
+                         xml:id="name291-2"
+                         corresp="#name291-3 #name291-4a #name291-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib291-2">
-                  <forename sort="1">Simon</forename>
-                  <addName type="untagged-title" sort="1">Maphryono</addName>
+                  <addName type="untagged-title">Maphryono</addName> 
+                  <forename>Simon</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name291-3-1"
-                         corresp="#name291-2-1 #name291-4a-1 #name291-4b-1 #name291-3-0"
+               <persName type="sic"
+                         xml:id="name291-3"
+                         corresp="#name291-2 #name291-4a #name291-4b"
                          xml:lang="ar"
                          source="#bib291-3">
-                  <forename sort="1">شمعون</forename>
-                  <addName type="untagged-title" sort="1">المفريان</addName>
+                  <addName type="untagged-title">المفريان</addName> 
+                  <forename>شمعون</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name291-4a-1"
-                         corresp="#name291-2-1 #name291-3-1 #name291-4b-1 #name291-4a-0"
+               <persName type="sic"
+                         xml:id="name291-4a"
+                         corresp="#name291-2 #name291-3 #name291-4b"
                          xml:lang="syr"
                          source="#bib291-4">
-                  <forename sort="1">ܫܡܥܘܢ</forename>
-                  <addName type="untagged-title" sort="1">ܡܦܪܝܢܐ</addName>
+                  <addName type="untagged-title">ܡܦܪܝܢܐ</addName> 
+                  <forename>ܫܡܥܘܢ</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name291-4b"
+                         corresp="#name291-2 #name291-3 #name291-4a"
+                         xml:lang="syr-Syrj"
+                         source="#bib291-4">
+                  <Barsoum_Sy_V_Full xmlns="">ܡܰܦܪܝܳܢܐ ܫܶܡܥܘܢ</Barsoum_Sy_V_Full>
+               </persName>
+               <persName type="sic"
+                         xml:id="name291-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib291-7">#REF!</persName>
                <death when="1740" source="#bib291-2">1740</death>
                <bibl xml:id="bib291-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,68 +95,43 @@
          <listPerson>
             <person xml:id="person-621">
                <persName type="sic"
-                         xml:id="name621-1-0"
+                         xml:id="name621-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib621-1"
-                         syriaca-tags="#syriaca-authorized">Maron</persName>
-               <persName type="sic"
-                         xml:id="name621-2-0"
-                         corresp="#name621-3-0 #name621-4a-0 #name621-4b-0 #name621-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib621-2">Mar Marun</persName>
-               <persName type="sic"
-                         xml:id="name621-3-0"
-                         corresp="#name621-2-0 #name621-4a-0 #name621-4b-0 #name621-3-1"
-                         xml:lang="ar"
-                         source="#bib621-3">مار مارون</persName>
-               <persName type="sic"
-                         xml:id="name621-4a-0"
-                         corresp="#name621-2-0 #name621-3-0 #name621-4b-0 #name621-4a-1"
-                         xml:lang="syr"
-                         source="#bib621-4">ܡܪܝ ܡܪܘܢ</persName>
-               <persName type="sic"
-                         xml:id="name621-4b-0"
-                         corresp="#name621-2-0 #name621-3-0 #name621-4a-0 #name621-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib621-4">ܡܳܪܝ ܡܰܪܘܢ</persName>
-               <persName type="split"
-                         xml:id="name621-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib621-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="0">Maron</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Maron</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name621-2-1"
-                         corresp="#name621-3-1 #name621-4a-1 #name621-4b-1 #name621-2-0"
+               <persName type="sic"
+                         xml:id="name621-2"
+                         corresp="#name621-3 #name621-4a #name621-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib621-2">
-                  <forename sort="0">Marun</forename>
-                  <addName type="untagged-title" sort="1">Mar</addName>
+                  <addName type="untagged-title">Mar</addName> 
+                  <forename>Marun</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name621-3-1"
-                         corresp="#name621-2-1 #name621-4a-1 #name621-4b-1 #name621-3-0"
+               <persName type="sic"
+                         xml:id="name621-3"
+                         corresp="#name621-2 #name621-4a #name621-4b"
                          xml:lang="ar"
                          source="#bib621-3">
-                  <forename sort="0">مارون</forename>
-                  <addName type="untagged-title" sort="1">مار</addName>
+                  <addName type="untagged-title">مار</addName> 
+                  <forename>مارون</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name621-4a-1"
-                         corresp="#name621-2-1 #name621-3-1 #name621-4b-1 #name621-4a-0"
+               <persName type="sic"
+                         xml:id="name621-4a"
+                         corresp="#name621-2 #name621-3 #name621-4b"
                          xml:lang="syr"
                          source="#bib621-4">
-                  <forename sort="0">ܡܪܘܢ</forename>
-                  <addName type="untagged-title" sort="1">ܡܪܝ</addName>
+                  <addName type="untagged-title">ܡܪܝ</addName> 
+                  <forename>ܡܪܘܢ</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name621-4b-1"
-                         corresp="#name621-2-1 #name621-3-1 #name621-4a-1 #name621-4b-0"
+               <persName type="sic"
+                         xml:id="name621-4b"
+                         corresp="#name621-2 #name621-3 #name621-4a"
                          xml:lang="syr-Syrj"
                          source="#bib621-4">
-                  <forename sort="0">ܡܰܪܘܢ</forename>
-                  <addName type="untagged-title" sort="1">ܡܳܪܝ</addName>
+                  <addName type="untagged-title">ܡܳܪܝ</addName> 
+                  <forename>ܡܰܪܘܢ</forename>
                </persName>
                <floruit source="#bib621-1">4th C</floruit>
                <bibl xml:id="bib621-1">

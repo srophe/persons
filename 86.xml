@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,61 +95,41 @@
          <listPerson>
             <person xml:id="person-86">
                <persName type="sic"
-                         xml:id="name86-2-0"
-                         corresp="#name86-3-0 #name86-4a-0 #name86-4b-0 #name86-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib86-2">Anba Paul</persName>
-               <persName type="sic"
-                         xml:id="name86-3-0"
-                         corresp="#name86-2-0 #name86-4a-0 #name86-4b-0 #name86-3-1"
-                         xml:lang="ar"
-                         source="#bib86-3">الانبا بولس</persName>
-               <persName type="sic"
-                         xml:id="name86-4a-0"
-                         corresp="#name86-2-0 #name86-3-0 #name86-4b-0 #name86-4a-1"
-                         xml:lang="syr"
-                         source="#bib86-4">ܐܒܐ ܦܘܠܘܣ</persName>
-               <persName type="sic"
-                         xml:id="name86-4b-0"
-                         corresp="#name86-2-0 #name86-3-0 #name86-4a-0 #name86-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib86-4">ܐܰܒܐ ܦܰܘܠܘܣ</persName>
-               <persName type="sic"
-                         xml:id="name86-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib86-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name86-2-1"
-                         corresp="#name86-3-1 #name86-4a-1 #name86-4b-1 #name86-2-0"
+                         xml:id="name86-2"
+                         corresp="#name86-3 #name86-4a #name86-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib86-2">
+                  <addName type="untagged-title">Anba</addName> 
                   <forename>Paul</forename>
-                  <addName type="untagged-title">Anba</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name86-3-1"
-                         corresp="#name86-2-1 #name86-4a-1 #name86-4b-1 #name86-3-0"
+               <persName type="sic"
+                         xml:id="name86-3"
+                         corresp="#name86-2 #name86-4a #name86-4b"
                          xml:lang="ar"
                          source="#bib86-3">
+                  <addName type="untagged-title">الانبا</addName> 
                   <forename>بولس</forename>
-                  <addName type="untagged-title">الانبا</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name86-4a-1"
-                         corresp="#name86-2-1 #name86-3-1 #name86-4b-1 #name86-4a-0"
+               <persName type="sic"
+                         xml:id="name86-4a"
+                         corresp="#name86-2 #name86-3 #name86-4b"
                          xml:lang="syr"
                          source="#bib86-4">
+                  <addName type="untagged-title">ܐܒܐ</addName> 
                   <forename>ܦܘܠܘܣ</forename>
-                  <addName type="untagged-title">ܐܒܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name86-4b-1"
-                         corresp="#name86-2-1 #name86-3-1 #name86-4a-1 #name86-4b-0"
+               <persName type="sic"
+                         xml:id="name86-4b"
+                         corresp="#name86-2 #name86-3 #name86-4a"
                          xml:lang="syr-Syrj"
                          source="#bib86-4">
+                  <addName type="untagged-title">ܐܰܒܐ</addName> 
                   <forename>ܦܰܘܠܘܣ</forename>
-                  <addName type="untagged-title">ܐܰܒܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name86-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib86-7">#REF!</persName>
                <listEvent>
                   <event when="0624" source="#bib86-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

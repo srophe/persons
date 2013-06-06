@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,60 +95,40 @@
          <listPerson>
             <person xml:id="person-628">
                <persName type="sic"
-                         xml:id="name628-1-0"
+                         xml:id="name628-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib628-1"
-                         syriaca-tags="#syriaca-authorized">Maximus</persName>
-               <persName type="sic"
-                         xml:id="name628-3-0"
-                         corresp="#name628-2-0 #name628-4a-0 #name628-4b-0 #name628-3-1"
-                         xml:lang="ar"
-                         source="#bib628-3">مكسيمس الراهب</persName>
-               <persName type="sic"
-                         xml:id="name628-4a-0"
-                         corresp="#name628-2-0 #name628-3-0 #name628-4b-0 #name628-4a-1"
-                         xml:lang="syr"
-                         source="#bib628-4">ܡܟܣܝܡܘܣ ܕܝܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name628-4b-0"
-                         corresp="#name628-2-0 #name628-3-0 #name628-4a-0 #name628-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib628-4">ܡܰܟܣܝܡܘܣ ܕܰܝܪܳܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name628-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib628-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name628-1-1"
-                         xml:lang="syr-Latn-x-gedsh"
-                         source="#bib628-1"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename sort="0">Maximus</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Maximus</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name628-3-1"
-                         corresp="#name628-2-1 #name628-4a-1 #name628-4b-1 #name628-3-0"
+               <persName type="sic"
+                         xml:id="name628-3"
+                         corresp="#name628-2 #name628-4a #name628-4b"
                          xml:lang="ar"
                          source="#bib628-3">
-                  <forename sort="0">مكسيمس</forename>
-                  <addName type="untagged-title" sort="1">الراهب</addName>
+                  <forename>مكسيمس</forename> 
+                  <addName type="untagged-title">الراهب</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name628-4a-1"
-                         corresp="#name628-2-1 #name628-3-1 #name628-4b-1 #name628-4a-0"
+               <persName type="sic"
+                         xml:id="name628-4a"
+                         corresp="#name628-2 #name628-3 #name628-4b"
                          xml:lang="syr"
                          source="#bib628-4">
-                  <forename sort="0">ܡܟܣܝܡܘܣ</forename>
-                  <addName type="untagged-title" sort="1">ܕܝܪܝܐ</addName>
+                  <forename>ܡܟܣܝܡܘܣ</forename> 
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name628-4b-1"
-                         corresp="#name628-2-1 #name628-3-1 #name628-4a-1 #name628-4b-0"
+               <persName type="sic"
+                         xml:id="name628-4b"
+                         corresp="#name628-2 #name628-3 #name628-4a"
                          xml:lang="syr-Syrj"
                          source="#bib628-4">
-                  <forename sort="0">ܡܰܟܣܝܡܘܣ</forename>
-                  <addName type="untagged-title" sort="1">ܕܰܝܪܳܝܐ</addName>
+                  <forename>ܡܰܟܣܝܡܘܣ</forename> 
+                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name628-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib628-7">#REF!</persName>
                <death when="0662" source="#bib628-1">662</death>
                <bibl xml:id="bib628-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

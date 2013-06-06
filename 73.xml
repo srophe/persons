@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,35 @@
          <listPerson>
             <person xml:id="person-73">
                <persName type="sic"
-                         xml:id="name73-2-0"
-                         corresp="#name73-3-0 #name73-4a-0 #name73-4b-0 #name73-2-1"
+                         xml:id="name73-2"
+                         corresp="#name73-3 #name73-4a #name73-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib73-2">The Priest Cyrus of Baṭnan</persName>
+                         source="#bib73-2">The Priest <forename>Cyrus</forename> of Baṭnan</persName>
                <persName type="sic"
-                         xml:id="name73-3-0"
-                         corresp="#name73-2-0 #name73-4a-0 #name73-4b-0 #name73-3-1"
+                         xml:id="name73-3"
+                         corresp="#name73-2 #name73-4a #name73-4b"
                          xml:lang="ar"
-                         source="#bib73-3">القس قورا البطناني</persName>
+                         source="#bib73-3">القس <forename>قورا</forename> البطناني</persName>
                <persName type="sic"
-                         xml:id="name73-4a-0"
-                         corresp="#name73-2-0 #name73-3-0 #name73-4b-0 #name73-4a-1"
+                         xml:id="name73-4a"
+                         corresp="#name73-2 #name73-3 #name73-4b"
                          xml:lang="syr"
-                         source="#bib73-4">ܩܫܝܫܐ ܩܘܪܐ ܕܒܛܢܢ</persName>
+                         source="#bib73-4">ܩܫܝܫܐ <forename>ܩܘܪܐ</forename> ܕܒܛܢܢ</persName>
                <persName type="sic"
-                         xml:id="name73-4b-0"
-                         corresp="#name73-2-0 #name73-3-0 #name73-4a-0 #name73-4b-1"
+                         xml:id="name73-4b"
+                         corresp="#name73-2 #name73-3 #name73-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib73-4">ܩܰܫܝܫܳܐ ܩܘܪܐ ܕܒܰܛܢܳܢ</persName>
+                         source="#bib73-4">ܩܰܫܝܫܳܐ <forename>ܩܘܪܐ</forename> ܕܒܰܛܢܳܢ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Quro of Baṭnan</persName>
-               <persName type="sic"
-                         xml:id="name73-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib73-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name73-2-1"
-                         corresp="#name73-3-1 #name73-4a-1 #name73-4b-1 #name73-2-0"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib73-2">
-                  <forename>Cyrus</forename>
-                  <addName type="untagged-title">The Priest, of Baṭnan</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name73-3-1"
-                         corresp="#name73-2-1 #name73-4a-1 #name73-4b-1 #name73-3-0"
-                         xml:lang="ar"
-                         source="#bib73-3">
-                  <forename>قورا</forename>
-                  <addName type="untagged-title">القس , البطناني</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name73-4a-1"
-                         corresp="#name73-2-1 #name73-3-1 #name73-4b-1 #name73-4a-0"
-                         xml:lang="syr"
-                         source="#bib73-4">
-                  <forename>ܩܘܪܐ</forename>
-                  <addName type="untagged-title">ܩܫܝܫܐ ܕܒܛܢܢ</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name73-4b-1"
-                         corresp="#name73-2-1 #name73-3-1 #name73-4a-1 #name73-4b-0"
-                         xml:lang="syr-Syrj"
-                         source="#bib73-4">
-                  <forename>ܩܘܪܐ</forename>
-                  <addName type="untagged-title">ܩܰܫܝܫܳܐ ܕܒܰܛܢܳܢ</addName>
-               </persName>
-               <persName type="split"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Quro</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Quro</forename> 
                   <addName type="untagged-title">of Baṭnan</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name73-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib73-7">#REF!</persName>
                <listEvent>
                   <event when="0582" source="#bib73-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

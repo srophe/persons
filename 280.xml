@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,39 @@
          <listPerson>
             <person xml:id="person-280">
                <persName type="sic"
-                         xml:id="name280-2-0"
-                         corresp="#name280-3-0 #name280-4a-0 #name280-4b-0 #name280-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib280-2">Jacob I, Patriarch of Antioch</persName>
-               <persName type="sic"
-                         xml:id="name280-3-0"
-                         corresp="#name280-2-0 #name280-4a-0 #name280-4b-0 #name280-3-1"
-                         xml:lang="ar"
-                         source="#bib280-3">يعقوب الاول بطريرك انطاكية</persName>
-               <persName type="sic"
-                         xml:id="name280-4a-0"
-                         corresp="#name280-2-0 #name280-3-0 #name280-4b-0 #name280-4a-1"
-                         xml:lang="syr"
-                         source="#bib280-4">ܦܛܪܝܪܟܐ ܝܥܩܘܒ ܩܕܡܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name280-4b-0"
-                         corresp="#name280-2-0 #name280-3-0 #name280-4a-0 #name280-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib280-4">ܦܰܛܪܝܰܪܟܐ ܝܰܥܩܘܒ ܩܰܕܡܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Ignatius Yaʿqub I</persName>
-               <persName type="sic"
-                         xml:id="name280-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib280-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name280-2-1"
-                         corresp="#name280-3-1 #name280-4a-1 #name280-4b-1 #name280-2-0"
+                         xml:id="name280-2"
+                         corresp="#name280-3 #name280-4a #name280-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib280-2">
-                  <forename>Jacob</forename>
+                  <forename>Jacob</forename> 
                   <addName type="untagged-title">I, Patriarch of Antioch</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name280-3-1"
-                         corresp="#name280-2-1 #name280-4a-1 #name280-4b-1 #name280-3-0"
+               <persName type="sic"
+                         xml:id="name280-3"
+                         corresp="#name280-2 #name280-4a #name280-4b"
                          xml:lang="ar"
                          source="#bib280-3">
-                  <forename>يعقوب</forename>
-                  <addName type="untagged-title">الاول ,  بطريرك انطاكية</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name280-4a-1"
-                         corresp="#name280-2-1 #name280-3-1 #name280-4b-1 #name280-4a-0"
+                  <forename>يعقوب</forename> الاول بطريرك انطاكية</persName>
+               <persName type="sic"
+                         xml:id="name280-4a"
+                         corresp="#name280-2 #name280-3 #name280-4b"
                          xml:lang="syr"
-                         source="#bib280-4">
-                  <forename>ܝܥܩܘܒ</forename>
-                  <addName type="untagged-title">ܦܛܪܝܪܟܐ ܩܕܡܝܐ</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name280-4b-1"
-                         corresp="#name280-2-1 #name280-3-1 #name280-4a-1 #name280-4b-0"
+                         source="#bib280-4">ܦܛܪܝܪܟܐ <forename>ܝܥܩܘܒ</forename> ܩܕܡܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name280-4b"
+                         corresp="#name280-2 #name280-3 #name280-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib280-4">
-                  <forename>ܝܰܥܩܘܒ</forename>
-                  <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܩܰܕܡܳܝܐ</addName>
-               </persName>
-               <persName type="split"
+                         source="#bib280-4">ܦܰܛܪܝܰܪܟܐ <forename>ܝܰܥܩܘܒ</forename> ܩܰܕܡܳܝܐ</persName>
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Ignatius Yaʿqub</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Ignatius Yaʿqub</forename> 
                   <addName type="untagged-title">I</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name280-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib280-7">#REF!</persName>
                <death when="1517" source="#bib280-2">1517</death>
                <bibl xml:id="bib280-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

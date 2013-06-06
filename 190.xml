@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-190">
                <persName type="sic"
-                         xml:id="name190-2-0"
-                         corresp="#name190-3-0 #name190-4a-0 #name190-4b-0 #name190-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib190-2">The Monk Lazarus</persName>
-               <persName type="sic"
-                         xml:id="name190-3-0"
-                         corresp="#name190-2-0 #name190-4a-0 #name190-4b-0 #name190-3-1"
-                         xml:lang="ar"
-                         source="#bib190-3">الراهب لعازر</persName>
-               <persName type="sic"
-                         xml:id="name190-4a-0"
-                         corresp="#name190-2-0 #name190-3-0 #name190-4b-0 #name190-4a-1"
-                         xml:lang="syr"
-                         source="#bib190-4">ܕܝܪܝܐ ܠܥܙܪ</persName>
-               <persName type="sic"
-                         xml:id="name190-4b-0"
-                         corresp="#name190-2-0 #name190-3-0 #name190-4a-0 #name190-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib190-4">ܕܰܝܪܳܝܐ ܠܳܥܙܪ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Loʿozar of Dayr Sarjīsiyya</persName>
-               <persName type="sic"
-                         xml:id="name190-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib190-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name190-2-1"
-                         corresp="#name190-3-1 #name190-4a-1 #name190-4b-1 #name190-2-0"
+                         xml:id="name190-2"
+                         corresp="#name190-3 #name190-4a #name190-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib190-2">
+                  <addName type="untagged-title">The Monk</addName> 
                   <forename>Lazarus</forename>
-                  <addName type="untagged-title">The Monk</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name190-3-1"
-                         corresp="#name190-2-1 #name190-4a-1 #name190-4b-1 #name190-3-0"
+               <persName type="sic"
+                         xml:id="name190-3"
+                         corresp="#name190-2 #name190-4a #name190-4b"
                          xml:lang="ar"
                          source="#bib190-3">
+                  <addName type="untagged-title">الراهب</addName> 
                   <forename>لعازر</forename>
-                  <addName type="untagged-title">الراهب</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name190-4a-1"
-                         corresp="#name190-2-1 #name190-3-1 #name190-4b-1 #name190-4a-0"
+               <persName type="sic"
+                         xml:id="name190-4a"
+                         corresp="#name190-2 #name190-3 #name190-4b"
                          xml:lang="syr"
                          source="#bib190-4">
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName> 
                   <forename>ܠܥܙܪ</forename>
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name190-4b-1"
-                         corresp="#name190-2-1 #name190-3-1 #name190-4a-1 #name190-4b-0"
+               <persName type="sic"
+                         xml:id="name190-4b"
+                         corresp="#name190-2 #name190-3 #name190-4a"
                          xml:lang="syr-Syrj"
                          source="#bib190-4">
+                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName> 
                   <forename>ܠܳܥܙܪ</forename>
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Loʿozar</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Loʿozar</forename> 
                   <addName type="untagged-title">of Dayr Sarjīsiyya</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name190-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib190-7">#REF!</persName>
                <death when="1024" source="#bib190-2">1024</death>
                <bibl xml:id="bib190-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

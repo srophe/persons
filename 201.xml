@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,71 +95,45 @@
          <listPerson>
             <person xml:id="person-201">
                <persName type="sic"
-                         xml:id="name201-2-0"
-                         corresp="#name201-3-0 #name201-4a-0 #name201-4b-0 #name201-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib201-2">Athanasius VI</persName>
-               <persName type="sic"
-                         xml:id="name201-3-0"
-                         corresp="#name201-2-0 #name201-4a-0 #name201-4b-0 #name201-3-1"
-                         xml:lang="ar"
-                         source="#bib201-3">اثانسيوس السادس</persName>
-               <persName type="sic"
-                         xml:id="name201-4a-0"
-                         corresp="#name201-2-0 #name201-3-0 #name201-4b-0 #name201-4a-1"
-                         xml:lang="syr"
-                         source="#bib201-4">ܐܬܐܢܐܣܝܘܣ ܫܬܝܬܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name201-4b-0"
-                         corresp="#name201-2-0 #name201-3-0 #name201-4a-0 #name201-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib201-4">ܐܰܬܐܢܰܐܣܝܘܣ ܫܬܝܬܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Athanasios (VII) Abulfaraj bar Kamoro</persName>
-               <persName type="sic"
-                         xml:id="name201-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib201-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name201-2-1"
-                         corresp="#name201-3-1 #name201-4a-1 #name201-4b-1 #name201-2-0"
+                         xml:id="name201-2"
+                         corresp="#name201-3 #name201-4a #name201-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib201-2">
-                  <forename>Athanasius</forename>
+                  <forename>Athanasius</forename> 
                   <addName type="untagged-title">VI</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name201-3-1"
-                         corresp="#name201-2-1 #name201-4a-1 #name201-4b-1 #name201-3-0"
+               <persName type="sic"
+                         xml:id="name201-3"
+                         corresp="#name201-2 #name201-4a #name201-4b"
                          xml:lang="ar"
                          source="#bib201-3">
-                  <forename>اثانسيوس</forename>
+                  <forename>اثانسيوس</forename> 
                   <addName type="untagged-title">السادس</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name201-4a-1"
-                         corresp="#name201-2-1 #name201-3-1 #name201-4b-1 #name201-4a-0"
+               <persName type="sic"
+                         xml:id="name201-4a"
+                         corresp="#name201-2 #name201-3 #name201-4b"
                          xml:lang="syr"
                          source="#bib201-4">
-                  <forename>ܐܬܐܢܐܣܝܘܣ</forename>
+                  <forename>ܐܬܐܢܐܣܝܘܣ</forename> 
                   <addName type="untagged-title">ܫܬܝܬܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name201-4b-1"
-                         corresp="#name201-2-1 #name201-3-1 #name201-4a-1 #name201-4b-0"
+               <persName type="sic"
+                         xml:id="name201-4b"
+                         corresp="#name201-2 #name201-3 #name201-4a"
                          xml:lang="syr-Syrj"
                          source="#bib201-4">
-                  <forename>ܐܰܬܐܢܰܐܣܝܘܣ</forename>
+                  <forename>ܐܰܬܐܢܰܐܣܝܘܣ</forename> 
                   <addName type="untagged-title">ܫܬܝܬܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Athanasios Abulfaraj</forename>
-                  <surname>bar Kamoro</surname>
-                  <addName type="untagged-title">(VII)</addName>
+                         syriaca-tags="#syriaca-headword">Athanasios (<addName type="untagged-title">VII</addName>) Abulfaraj <surname>bar Kamoro</surname>
                </persName>
+               <persName type="sic"
+                         xml:id="name201-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib201-7">#REF!</persName>
                <death when="1129" source="#bib201-2">1129</death>
                <bibl xml:id="bib201-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

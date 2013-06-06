@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-225">
                <persName type="sic"
-                         xml:id="name225-2-0"
-                         corresp="#name225-3-0 #name225-4a-0 #name225-4b-0 #name225-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib225-2">John of Tiflis</persName>
-               <persName type="sic"
-                         xml:id="name225-3-0"
-                         corresp="#name225-2-0 #name225-4a-0 #name225-4b-0 #name225-3-1"
-                         xml:lang="ar"
-                         source="#bib225-3">يوحنا التفليسي</persName>
-               <persName type="sic"
-                         xml:id="name225-4a-0"
-                         corresp="#name225-2-0 #name225-3-0 #name225-4b-0 #name225-4a-1"
-                         xml:lang="syr"
-                         source="#bib225-4">ܝܘܚܢܢ ܬܦܠܝܣܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name225-4b-0"
-                         corresp="#name225-2-0 #name225-3-0 #name225-4a-0 #name225-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib225-4">ܝܘܚܰܢܢ ܬܶܦܠܝܣܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yuḥanon of Tiflis</persName>
-               <persName type="sic"
-                         xml:id="name225-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib225-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name225-2-1"
-                         corresp="#name225-3-1 #name225-4a-1 #name225-4b-1 #name225-2-0"
+                         xml:id="name225-2"
+                         corresp="#name225-3 #name225-4a #name225-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib225-2">
-                  <forename>John</forename>
+                  <forename>John</forename> 
                   <addName type="untagged-title">of Tiflis</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name225-3-1"
-                         corresp="#name225-2-1 #name225-4a-1 #name225-4b-1 #name225-3-0"
+               <persName type="sic"
+                         xml:id="name225-3"
+                         corresp="#name225-2 #name225-4a #name225-4b"
                          xml:lang="ar"
                          source="#bib225-3">
-                  <forename>يوحنا</forename>
+                  <forename>يوحنا</forename> 
                   <addName type="untagged-title">التفليسي</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name225-4a-1"
-                         corresp="#name225-2-1 #name225-3-1 #name225-4b-1 #name225-4a-0"
+               <persName type="sic"
+                         xml:id="name225-4a"
+                         corresp="#name225-2 #name225-3 #name225-4b"
                          xml:lang="syr"
                          source="#bib225-4">
-                  <forename>ܝܘܚܢܢ</forename>
+                  <forename>ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title">ܬܦܠܝܣܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name225-4b-1"
-                         corresp="#name225-2-1 #name225-3-1 #name225-4a-1 #name225-4b-0"
+               <persName type="sic"
+                         xml:id="name225-4b"
+                         corresp="#name225-2 #name225-3 #name225-4a"
                          xml:lang="syr-Syrj"
                          source="#bib225-4">
-                  <forename>ܝܘܚܰܢܢ</forename>
+                  <forename>ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title">ܬܶܦܠܝܣܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yuḥanon</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yuḥanon</forename> 
                   <addName type="untagged-title">of Tiflis</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name225-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib225-7">#REF!</persName>
                <death when="1221" source="#bib225-2">1221</death>
                <bibl xml:id="bib225-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

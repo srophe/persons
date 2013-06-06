@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,61 +95,45 @@
          <listPerson>
             <person xml:id="person-171">
                <persName type="sic"
-                         xml:id="name171-2-0"
-                         corresp="#name171-3-0 #name171-4a-0 #name171-4b-0 #name171-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib171-2">Garshun the Stranger</persName>
-               <persName type="sic"
-                         xml:id="name171-3-0"
-                         corresp="#name171-2-0 #name171-4a-0 #name171-4b-0 #name171-3-1"
-                         xml:lang="ar"
-                         source="#bib171-3">كرشون الغريب</persName>
-               <persName type="sic"
-                         xml:id="name171-4a-0"
-                         corresp="#name171-2-0 #name171-3-0 #name171-4b-0 #name171-4a-1"
-                         xml:lang="syr"
-                         source="#bib171-4">ܓܪܫܘܢ ܐܟܣܢܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name171-4b-0"
-                         corresp="#name171-2-0 #name171-3-0 #name171-4a-0 #name171-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib171-4">ܓܰܪܫܘܢ ܐܰܟܣܢܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Garshun</persName>
-               <persName type="sic"
-                         xml:id="name171-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib171-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name171-2-1"
-                         corresp="#name171-3-1 #name171-4a-1 #name171-4b-1 #name171-2-0"
+                         xml:id="name171-2"
+                         corresp="#name171-3 #name171-4a #name171-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib171-2">
-                  <forename>Garshun</forename>
+                  <forename>Garshun</forename> 
                   <addName type="untagged-title">the Stranger</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name171-4a-1"
-                         corresp="#name171-2-1 #name171-3-1 #name171-4b-1 #name171-4a-0"
+               <persName type="sic"
+                         xml:id="name171-3"
+                         corresp="#name171-2 #name171-4a #name171-4b"
+                         xml:lang="ar"
+                         source="#bib171-3">
+                  <Barsoum_Ar_Full xmlns="">كرشون الغريب</Barsoum_Ar_Full>
+               </persName>
+               <persName type="sic"
+                         xml:id="name171-4a"
+                         corresp="#name171-2 #name171-3 #name171-4b"
                          xml:lang="syr"
                          source="#bib171-4">
-                  <forename>ܓܪܫܘܢ</forename>
+                  <forename>ܓܪܫܘܢ</forename> 
                   <addName type="untagged-title">ܐܟܣܢܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name171-4b-1"
-                         corresp="#name171-2-1 #name171-3-1 #name171-4a-1 #name171-4b-0"
+               <persName type="sic"
+                         xml:id="name171-4b"
+                         corresp="#name171-2 #name171-3 #name171-4a"
                          xml:lang="syr-Syrj"
                          source="#bib171-4">
-                  <forename>ܓܰܪܫܘܢ</forename>
+                  <forename>ܓܰܪܫܘܢ</forename> 
                   <addName type="untagged-title">ܐܰܟܣܢܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Garshun</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name171-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib171-7">#REF!</persName>
                <listEvent>
                   <event notBefore="0950"
                          notAfter="0999"

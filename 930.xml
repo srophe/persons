@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,57 +95,39 @@
          <listPerson>
             <person xml:id="person-930">
                <persName type="sic"
-                         xml:id="name930-5a-0"
-                         corresp="#name930-5b-0 #name930-6a-0 #name930-5a-1"
-                         xml:lang="syr"
-                         source="#bib930-5">ܡܘܫܐ ܟܪܟܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name930-5b-0"
-                         corresp="#name930-5a-0 #name930-6b-0 #name930-5b-1"
-                         xml:lang="syr-Syrn"
-                         source="#bib930-5">ܡܘܼܫܹܐ ܟܲܪܟܵܝܵܐ</persName>
-               <persName type="sic"
-                         xml:id="name930-6a-0"
-                         corresp="#name930-6b-0 #name930-5a-0 #name930-6a-1"
-                         xml:lang="syr"
-                         source="#bib930-6">ܡܘܫܐ ܟܪܟܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Mushe Karkaya</persName>
-               <persName type="sic"
-                         xml:id="name930-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib930-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name930-5a-1"
-                         corresp="#name930-5b-1 #name930-6a-1 #name930-5a-0"
+                         xml:id="name930-5a"
+                         corresp="#name930-5b #name930-6a"
                          xml:lang="syr"
                          source="#bib930-5">
-                  <forename>ܡܘܫܐ</forename>
+                  <forename>ܡܘܫܐ</forename> 
                   <addName type="untagged-title">ܟܪܟܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name930-5b-1"
-                         corresp="#name930-5a-1 #name930-6b-1 #name930-5b-0"
+               <persName type="sic"
+                         xml:id="name930-5b"
+                         corresp="#name930-5a #name930-6b"
                          xml:lang="syr-Syrn"
                          source="#bib930-5">
-                  <forename>ܡܘܼܫܹܐ</forename>
+                  <forename>ܡܘܼܫܹܐ</forename> 
                   <addName type="untagged-title">ܟܲܪܟܵܝܵܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name930-6a-1"
-                         corresp="#name930-6b-1 #name930-5a-1 #name930-6a-0"
+               <persName type="sic"
+                         xml:id="name930-6a"
+                         corresp="#name930-6b #name930-5a"
                          xml:lang="syr"
                          source="#bib930-6">
-                  <forename>ܡܘܫܐ</forename>
+                  <forename>ܡܘܫܐ</forename> 
                   <addName type="untagged-title">ܟܪܟܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Mushe</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Mushe</forename> 
                   <addName type="untagged-title">Karkaya</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name930-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib930-7">#REF!</persName>
                <bibl xml:id="bib930-5">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>

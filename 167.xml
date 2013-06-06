@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,45 @@
          <listPerson>
             <person xml:id="person-167">
                <persName type="sic"
-                         xml:id="name167-2-0"
-                         corresp="#name167-3-0 #name167-4a-0 #name167-4b-0 #name167-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib167-2">John IV</persName>
-               <persName type="sic"
-                         xml:id="name167-3-0"
-                         corresp="#name167-2-0 #name167-4a-0 #name167-4b-0 #name167-3-1"
-                         xml:lang="ar"
-                         source="#bib167-3">يوحنا الرابع</persName>
-               <persName type="sic"
-                         xml:id="name167-4a-0"
-                         corresp="#name167-2-0 #name167-3-0 #name167-4b-0 #name167-4a-1"
-                         xml:lang="syr"
-                         source="#bib167-4">ܝܘܚܢܢ ܪܒܝܥܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name167-4b-0"
-                         corresp="#name167-2-0 #name167-3-0 #name167-4a-0 #name167-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib167-4">ܝܘܚܰܢܢ ܪܒܝܥܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yuḥanon III (IV)</persName>
-               <persName type="sic"
-                         xml:id="name167-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib167-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name167-2-1"
-                         corresp="#name167-3-1 #name167-4a-1 #name167-4b-1 #name167-2-0"
+                         xml:id="name167-2"
+                         corresp="#name167-3 #name167-4a #name167-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib167-2">
-                  <forename>John</forename>
+                  <forename>John</forename> 
                   <addName type="untagged-title">IV</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name167-3-1"
-                         corresp="#name167-2-1 #name167-4a-1 #name167-4b-1 #name167-3-0"
+               <persName type="sic"
+                         xml:id="name167-3"
+                         corresp="#name167-2 #name167-4a #name167-4b"
                          xml:lang="ar"
                          source="#bib167-3">
-                  <forename>يوحنا</forename>
+                  <forename>يوحنا</forename> 
                   <addName type="untagged-title">الرابع</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name167-4a-1"
-                         corresp="#name167-2-1 #name167-3-1 #name167-4b-1 #name167-4a-0"
+               <persName type="sic"
+                         xml:id="name167-4a"
+                         corresp="#name167-2 #name167-3 #name167-4b"
                          xml:lang="syr"
                          source="#bib167-4">
-                  <forename>ܝܘܚܢܢ</forename>
+                  <forename>ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title">ܪܒܝܥܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name167-4b-1"
-                         corresp="#name167-2-1 #name167-3-1 #name167-4a-1 #name167-4b-0"
+               <persName type="sic"
+                         xml:id="name167-4b"
+                         corresp="#name167-2 #name167-3 #name167-4a"
                          xml:lang="syr-Syrj"
                          source="#bib167-4">
-                  <forename>ܝܘܚܰܢܢ</forename>
+                  <forename>ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title">ܪܒܝܥܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yuḥanon</forename>
-                  <addName type="untagged-title">III (IV)</addName>
-               </persName>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yuḥanon</forename> III (IV)</persName>
+               <persName type="sic"
+                         xml:id="name167-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib167-7">#REF!</persName>
                <death when="0873" source="#bib167-2">873</death>
                <bibl xml:id="bib167-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

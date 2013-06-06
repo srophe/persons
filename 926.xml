@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,57 +95,39 @@
          <listPerson>
             <person xml:id="person-926">
                <persName type="sic"
-                         xml:id="name926-5a-0"
-                         corresp="#name926-5b-0 #name926-6a-0 #name926-5a-1"
-                         xml:lang="syr"
-                         source="#bib926-5">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name926-5b-0"
-                         corresp="#name926-5a-0 #name926-6b-0 #name926-5b-1"
-                         xml:lang="syr-Syrn"
-                         source="#bib926-5">ܐܲܒܙܘܿܕ ܐܸܣܟܘܿܠܵܝܵܐ</persName>
-               <persName type="sic"
-                         xml:id="name926-6a-0"
-                         corresp="#name926-6b-0 #name926-5a-0 #name926-6a-1"
-                         xml:lang="syr"
-                         source="#bib926-6">ܐܒܙܘܕ ܐܣܟܘܠܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Abzod Eskolaya</persName>
-               <persName type="sic"
-                         xml:id="name926-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib926-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name926-5a-1"
-                         corresp="#name926-5b-1 #name926-6a-1 #name926-5a-0"
+                         xml:id="name926-5a"
+                         corresp="#name926-5b #name926-6a"
                          xml:lang="syr"
                          source="#bib926-5">
-                  <forename>ܐܒܙܘܕ</forename>
+                  <forename>ܐܒܙܘܕ</forename> 
                   <addName type="untagged-title">ܐܣܟܘܠܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name926-5b-1"
-                         corresp="#name926-5a-1 #name926-6b-1 #name926-5b-0"
+               <persName type="sic"
+                         xml:id="name926-5b"
+                         corresp="#name926-5a #name926-6b"
                          xml:lang="syr-Syrn"
                          source="#bib926-5">
-                  <forename>ܐܲܒܙܘܿܕ</forename>
+                  <forename>ܐܲܒܙܘܿܕ</forename> 
                   <addName type="untagged-title">ܐܸܣܟܘܿܠܵܝܵܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name926-6a-1"
-                         corresp="#name926-6b-1 #name926-5a-1 #name926-6a-0"
+               <persName type="sic"
+                         xml:id="name926-6a"
+                         corresp="#name926-6b #name926-5a"
                          xml:lang="syr"
                          source="#bib926-6">
-                  <forename>ܐܒܙܘܕ</forename>
+                  <forename>ܐܒܙܘܕ</forename> 
                   <addName type="untagged-title">ܐܣܟܘܠܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Abzod</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Abzod</forename> 
                   <addName type="untagged-title">Eskolaya</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name926-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib926-7">#REF!</persName>
                <bibl xml:id="bib926-5">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>

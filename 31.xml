@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,46 @@
          <listPerson>
             <person xml:id="person-31">
                <persName type="sic"
-                         xml:id="name31-2-0"
-                         corresp="#name31-3-0 #name31-4a-0 #name31-4b-0 #name31-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib31-2">The Priest Cosmas</persName>
-               <persName type="sic"
-                         xml:id="name31-3-0"
-                         corresp="#name31-2-0 #name31-4a-0 #name31-4b-0 #name31-3-1"
-                         xml:lang="ar"
-                         source="#bib31-3">القس قزما</persName>
-               <persName type="sic"
-                         xml:id="name31-4a-0"
-                         corresp="#name31-2-0 #name31-3-0 #name31-4b-0 #name31-4a-1"
-                         xml:lang="syr"
-                         source="#bib31-4">ܩܫܝܫܐ ܩܘܙܡܐ</persName>
-               <persName type="sic"
-                         xml:id="name31-4b-0"
-                         corresp="#name31-2-0 #name31-3-0 #name31-4a-0 #name31-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib31-4">ܩܰܫܝܫܳܐ ܩܘܙܡܳܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Cosmas</persName>
-               <persName type="sic"
-                         xml:id="name31-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib31-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name31-2-1"
-                         corresp="#name31-3-1 #name31-4a-1 #name31-4b-1 #name31-2-0"
+                         xml:id="name31-2"
+                         corresp="#name31-3 #name31-4a #name31-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib31-2">
+                  <addName type="untagged-title">The Priest</addName> 
                   <forename>Cosmas</forename>
-                  <addName type="untagged-title">The Priest</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name31-3-1"
-                         corresp="#name31-2-1 #name31-4a-1 #name31-4b-1 #name31-3-0"
+               <persName type="sic"
+                         xml:id="name31-3"
+                         corresp="#name31-2 #name31-4a #name31-4b"
                          xml:lang="ar"
                          source="#bib31-3">
+                  <addName type="untagged-title">القس</addName> 
                   <forename>قزما</forename>
-                  <addName type="untagged-title">القس</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name31-4a-1"
-                         corresp="#name31-2-1 #name31-3-1 #name31-4b-1 #name31-4a-0"
+               <persName type="sic"
+                         xml:id="name31-4a"
+                         corresp="#name31-2 #name31-3 #name31-4b"
                          xml:lang="syr"
                          source="#bib31-4">
+                  <addName type="untagged-title">ܩܫܝܫܐ</addName> 
                   <forename>ܩܘܙܡܐ</forename>
-                  <addName type="untagged-title">ܩܫܝܫܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name31-4b-1"
-                         corresp="#name31-2-1 #name31-3-1 #name31-4a-1 #name31-4b-0"
+               <persName type="sic"
+                         xml:id="name31-4b"
+                         corresp="#name31-2 #name31-3 #name31-4a"
                          xml:lang="syr-Syrj"
                          source="#bib31-4">
+                  <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName> 
                   <forename>ܩܘܙܡܳܐ</forename>
-                  <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Cosmas</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name31-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib31-7">#REF!</persName>
                <listEvent>
                   <event when="0472" source="#bib31-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

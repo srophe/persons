@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,45 @@
          <listPerson>
             <person xml:id="person-176">
                <persName type="sic"
-                         xml:id="name176-2-0"
-                         corresp="#name176-3-0 #name176-4a-0 #name176-4b-0 #name176-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib176-2">The Monk Rufil</persName>
-               <persName type="sic"
-                         xml:id="name176-3-0"
-                         corresp="#name176-2-0 #name176-4a-0 #name176-4b-0 #name176-3-1"
-                         xml:lang="ar"
-                         source="#bib176-3">الراهب روفيل</persName>
-               <persName type="sic"
-                         xml:id="name176-4a-0"
-                         corresp="#name176-2-0 #name176-3-0 #name176-4b-0 #name176-4a-1"
-                         xml:lang="syr"
-                         source="#bib176-4">ܪܘܦܝܠ ܕܝܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name176-4b-0"
-                         corresp="#name176-2-0 #name176-3-0 #name176-4a-0 #name176-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib176-4">ܪܘܦܝܠ ܕܰܝܪܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Rupil Dayroyo</persName>
-               <persName type="sic"
-                         xml:id="name176-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib176-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name176-2-1"
-                         corresp="#name176-3-1 #name176-4a-1 #name176-4b-1 #name176-2-0"
+                         xml:id="name176-2"
+                         corresp="#name176-3 #name176-4a #name176-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib176-2">
+                  <addName type="untagged-title">The Monk</addName> 
                   <forename>Rufil</forename>
-                  <addName type="untagged-title">The Monk</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name176-3-1"
-                         corresp="#name176-2-1 #name176-4a-1 #name176-4b-1 #name176-3-0"
+               <persName type="sic"
+                         xml:id="name176-3"
+                         corresp="#name176-2 #name176-4a #name176-4b"
                          xml:lang="ar"
                          source="#bib176-3">
+                  <addName type="untagged-title">الراهب</addName> 
                   <forename>روفيل</forename>
-                  <addName type="untagged-title">الراهب</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name176-4a-1"
-                         corresp="#name176-2-1 #name176-3-1 #name176-4b-1 #name176-4a-0"
+               <persName type="sic"
+                         xml:id="name176-4a"
+                         corresp="#name176-2 #name176-3 #name176-4b"
                          xml:lang="syr"
                          source="#bib176-4">
-                  <forename>ܪܘܦܝܠ</forename>
+                  <forename>ܪܘܦܝܠ</forename> 
                   <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name176-4b-1"
-                         corresp="#name176-2-1 #name176-3-1 #name176-4a-1 #name176-4b-0"
+               <persName type="sic"
+                         xml:id="name176-4b"
+                         corresp="#name176-2 #name176-3 #name176-4a"
                          xml:lang="syr-Syrj"
                          source="#bib176-4">
-                  <forename>ܪܘܦܝܠ</forename>
-                  <addName type="untagged-title">ܕܰܝܪܝܐ</addName>
-               </persName>
-               <persName type="split"
+                  <forename>ܪܘܦܝܠ</forename> ܕܰܝܪܳܝܐ</persName>
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Rupil</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Rupil</forename> 
                   <addName type="untagged-title">Dayroyo</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name176-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib176-7">#REF!</persName>
                <death when="0925" source="#bib176-2">925</death>
                <bibl xml:id="bib176-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

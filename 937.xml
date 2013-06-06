@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,62 +95,44 @@
          <listPerson>
             <person xml:id="person-937">
                <persName type="sic"
-                         xml:id="name937-2-0"
-                         corresp="#name937-3-0 #name937-4a-0 #name937-4b-0 #name937-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib937-2">The Monk Benjamin</persName>
-               <persName type="sic"
-                         xml:id="name937-3-0"
-                         corresp="#name937-2-0 #name937-4a-0 #name937-4b-0 #name937-3-1"
-                         xml:lang="ar"
-                         source="#bib937-3">الراهب بنيامين</persName>
-               <persName type="sic"
-                         xml:id="name937-4a-0"
-                         corresp="#name937-2-0 #name937-3-0 #name937-4b-0 #name937-4a-1"
-                         xml:lang="syr"
-                         source="#bib937-4">ܒܢܝܡܝܢ ܕܝܪܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name937-4b-0"
-                         corresp="#name937-2-0 #name937-3-0 #name937-4a-0 #name937-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib937-4">ܒܶܢܝܳܡܝܢ ܕܰܝܪܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Benyomin Dayroyo</persName>
-               <persName type="sic"
-                         xml:id="name937-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib937-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name937-2-1"
-                         corresp="#name937-3-1 #name937-4a-1 #name937-4b-1 #name937-2-0"
+                         xml:id="name937-2"
+                         corresp="#name937-3 #name937-4a #name937-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib937-2">
+                  <addName type="untagged-title">The Monk</addName> 
                   <forename>Benjamin</forename>
-                  <addName type="untagged-title">The Monk</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name937-4a-1"
-                         corresp="#name937-2-1 #name937-3-1 #name937-4b-1 #name937-4a-0"
+               <persName type="sic"
+                         xml:id="name937-3"
+                         corresp="#name937-2 #name937-4a #name937-4b"
+                         xml:lang="ar"
+                         source="#bib937-3">
+                  <Barsoum_Ar_Full xmlns="">الراهب بنيامين</Barsoum_Ar_Full>
+               </persName>
+               <persName type="sic"
+                         xml:id="name937-4a"
+                         corresp="#name937-2 #name937-3 #name937-4b"
                          xml:lang="syr"
                          source="#bib937-4">
-                  <forename>ܒܢܝܡܝܢ</forename>
+                  <forename>ܒܢܝܡܝܢ</forename> 
                   <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name937-4b-1"
-                         corresp="#name937-2-1 #name937-3-1 #name937-4a-1 #name937-4b-0"
+               <persName type="sic"
+                         xml:id="name937-4b"
+                         corresp="#name937-2 #name937-3 #name937-4a"
                          xml:lang="syr-Syrj"
                          source="#bib937-4">
-                  <forename>ܒܶܢܝܳܡܝܢ</forename>
-                  <addName type="untagged-title">ܕܰܝܪܝܐ</addName>
-               </persName>
-               <persName type="split"
+                  <forename>ܒܶܢܝܳܡܝܢ</forename> ܕܰܝܪܳܝܐ</persName>
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Benyomin</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Benyomin</forename> 
                   <addName type="untagged-title">Dayroyo</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name937-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib937-7">#REF!</persName>
                <bibl xml:id="bib937-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

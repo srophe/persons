@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,46 @@
          <listPerson>
             <person xml:id="person-102">
                <persName type="sic"
-                         xml:id="name102-2-0"
-                         corresp="#name102-3-0 #name102-4a-0 #name102-4b-0 #name102-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib102-2">Matthew, metropolitan of Aleppo</persName>
-               <persName type="sic"
-                         xml:id="name102-3-0"
-                         corresp="#name102-2-0 #name102-4a-0 #name102-4b-0 #name102-3-1"
-                         xml:lang="ar"
-                         source="#bib102-3">متي مطران حلب</persName>
-               <persName type="sic"
-                         xml:id="name102-4a-0"
-                         corresp="#name102-2-0 #name102-3-0 #name102-4b-0 #name102-4a-1"
-                         xml:lang="syr"
-                         source="#bib102-4">ܡܬܝ ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</persName>
-               <persName type="sic"
-                         xml:id="name102-4b-0"
-                         corresp="#name102-2-0 #name102-3-0 #name102-4a-0 #name102-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib102-4">ܡܰܬܰܝ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Matay of Aleppo</persName>
-               <persName type="sic"
-                         xml:id="name102-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib102-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name102-2-1"
-                         corresp="#name102-3-1 #name102-4a-1 #name102-4b-1 #name102-2-0"
+                         xml:id="name102-2"
+                         corresp="#name102-3 #name102-4a #name102-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib102-2">
-                  <forename>Matthew</forename>
-                  <addName type="untagged-title">Metropolitan of Aleppo</addName>
+                  <forename>Matthew</forename>, <addName type="untagged-title">metropolitan of Aleppo</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name102-3-1"
-                         corresp="#name102-2-1 #name102-4a-1 #name102-4b-1 #name102-3-0"
+               <persName type="sic"
+                         xml:id="name102-3"
+                         corresp="#name102-2 #name102-4a #name102-4b"
                          xml:lang="ar"
                          source="#bib102-3">
-                  <forename>متي</forename>
+                  <forename>متي</forename> 
                   <addName type="untagged-title">مطران حلب</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name102-4a-1"
-                         corresp="#name102-2-1 #name102-3-1 #name102-4b-1 #name102-4a-0"
+               <persName type="sic"
+                         xml:id="name102-4a"
+                         corresp="#name102-2 #name102-3 #name102-4b"
                          xml:lang="syr"
                          source="#bib102-4">
-                  <forename>ܡܬܝ</forename>
+                  <forename>ܡܬܝ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܠܒ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name102-4b-1"
-                         corresp="#name102-2-1 #name102-3-1 #name102-4a-1 #name102-4b-0"
+               <persName type="sic"
+                         xml:id="name102-4b"
+                         corresp="#name102-2 #name102-3 #name102-4a"
                          xml:lang="syr-Syrj"
                          source="#bib102-4">
-                  <forename>ܡܰܬܰܝ</forename>
+                  <forename>ܡܰܬܰܝ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܚܳܠܳܒ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Matay</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Matay</forename> 
                   <addName type="untagged-title">of Aleppo</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name102-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib102-7">#REF!</persName>
                <listEvent>
                   <event when="0669" source="#bib102-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

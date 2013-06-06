@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,72 +95,45 @@
          <listPerson>
             <person xml:id="person-300">
                <persName type="sic"
-                         xml:id="name300-2-0"
-                         corresp="#name300-3-0 #name300-4a-0 #name300-4b-0 #name300-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib300-2">George, bishop of Azekh</persName>
-               <persName type="sic"
-                         xml:id="name300-3-0"
-                         corresp="#name300-2-0 #name300-4a-0 #name300-4b-0 #name300-3-1"
-                         xml:lang="ar"
-                         source="#bib300-3">الاسقف كوركيس الآزخي</persName>
-               <persName type="sic"
-                         xml:id="name300-4a-0"
-                         corresp="#name300-2-0 #name300-3-0 #name300-4b-0 #name300-4a-1"
-                         xml:lang="syr"
-                         source="#bib300-4">ܐܦܝܣܩܘܦܐ ܓܝܘܪܓܝ ܒܝܬ ܙܒܕܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name300-4b-0"
-                         corresp="#name300-2-0 #name300-3-0 #name300-4a-0 #name300-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib300-4">ܐܶܦܝܣܩܘܦܳܐ ܓܺܝܘܰܪܓܝ ܒܶܝܬ ܙܰܒܕܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Giwargis of Azekh</persName>
-               <persName type="sic"
-                         xml:id="name300-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib300-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name300-2-1"
-                         corresp="#name300-3-1 #name300-4a-1 #name300-4b-1 #name300-2-0"
+                         xml:id="name300-2"
+                         corresp="#name300-3 #name300-4a #name300-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib300-2">
-                  <forename>George</forename>
-                  <addName type="untagged-title">Bishop of Azekh</addName>
+                  <forename>George</forename>, <addName type="untagged-title">bishop of Azekh</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name300-3-1"
-                         corresp="#name300-2-1 #name300-4a-1 #name300-4b-1 #name300-3-0"
+               <persName type="sic"
+                         xml:id="name300-3"
+                         corresp="#name300-2 #name300-4a #name300-4b"
                          xml:lang="ar"
-                         source="#bib300-3">
-                  <forename>كوركيس</forename>
-                  <addName type="untagged-title">الاسقف, الآزخي</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name300-4a-1"
-                         corresp="#name300-2-1 #name300-3-1 #name300-4b-1 #name300-4a-0"
+                         source="#bib300-3">الاسقف <forename>كوركيس</forename> الآزخي</persName>
+               <persName type="sic"
+                         xml:id="name300-4a"
+                         corresp="#name300-2 #name300-3 #name300-4b"
                          xml:lang="syr"
                          source="#bib300-4">
-                  <forename>ܓܝܘܪܓܝ</forename>
+                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName> 
+                  <forename>ܓܝܘܪܓܝ</forename> 
                   <surname>ܒܝܬ ܙܒܕܝܐ</surname>
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name300-4b-1"
-                         corresp="#name300-2-1 #name300-3-1 #name300-4a-1 #name300-4b-0"
+               <persName type="sic"
+                         xml:id="name300-4b"
+                         corresp="#name300-2 #name300-3 #name300-4a"
                          xml:lang="syr-Syrj"
                          source="#bib300-4">
-                  <forename>ܓܺܝܘܰܪܓܝ</forename>
+                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName> 
+                  <forename>ܓܺܝܘܰܪܓܝ</forename> 
                   <surname>ܒܶܝܬ ܙܰܒܕܳܝܐ</surname>
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Giwargis</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Giwargis</forename> 
                   <addName type="untagged-title">of Azekh</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name300-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib300-7">#REF!</persName>
                <death when="1847" source="#bib300-2">1847</death>
                <bibl xml:id="bib300-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

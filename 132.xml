@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,43 @@
          <listPerson>
             <person xml:id="person-132">
                <persName type="sic"
-                         xml:id="name132-2-0"
-                         corresp="#name132-3-0 #name132-4a-0 #name132-4b-0 #name132-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib132-2">John I</persName>
-               <persName type="sic"
-                         xml:id="name132-3-0"
-                         corresp="#name132-2-0 #name132-4a-0 #name132-4b-0 #name132-3-1"
-                         xml:lang="ar"
-                         source="#bib132-3">اياونيس الاول</persName>
-               <persName type="sic"
-                         xml:id="name132-4a-0"
-                         corresp="#name132-2-0 #name132-3-0 #name132-4b-0 #name132-4a-1"
-                         xml:lang="syr"
-                         source="#bib132-4">ܐܝܘܐܢܝܣ ܩܕܡܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name132-4b-0"
-                         corresp="#name132-2-0 #name132-3-0 #name132-4a-0 #name132-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib132-4">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Iwannis (Yuḥanon III)</persName>
-               <persName type="sic"
-                         xml:id="name132-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib132-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name132-2-1"
-                         corresp="#name132-3-1 #name132-4a-1 #name132-4b-1 #name132-2-0"
+                         xml:id="name132-2"
+                         corresp="#name132-3 #name132-4a #name132-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib132-2">
                   <forename>John I</forename>
                </persName>
-               <persName type="split"
-                         xml:id="name132-3-1"
-                         corresp="#name132-2-1 #name132-4a-1 #name132-4b-1 #name132-3-0"
+               <persName type="sic"
+                         xml:id="name132-3"
+                         corresp="#name132-2 #name132-4a #name132-4b"
                          xml:lang="ar"
                          source="#bib132-3">
-                  <forename>اياونيس</forename>
+                  <forename>اياونيس</forename> 
                   <addName type="untagged-title">الاول</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name132-4a-1"
-                         corresp="#name132-2-1 #name132-3-1 #name132-4b-1 #name132-4a-0"
+               <persName type="sic"
+                         xml:id="name132-4a"
+                         corresp="#name132-2 #name132-3 #name132-4b"
                          xml:lang="syr"
                          source="#bib132-4">
-                  <forename>ܐܝܘܐܢܝܣ</forename>
+                  <forename>ܐܝܘܐܢܝܣ</forename> 
                   <addName type="untagged-title">ܩܕܡܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name132-4b-1"
-                         corresp="#name132-2-1 #name132-3-1 #name132-4a-1 #name132-4b-0"
+               <persName type="sic"
+                         xml:id="name132-4b"
+                         corresp="#name132-2 #name132-3 #name132-4a"
                          xml:lang="syr-Syrj"
                          source="#bib132-4">
-                  <forename>ܐܝܘܰܐܢܝܣ</forename>
+                  <forename>ܐܝܘܰܐܢܝܣ</forename> 
                   <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Iwannis (Yuḥanon)</forename>
-                  <addName type="untagged-title">III</addName>
-               </persName>
+                         syriaca-tags="#syriaca-headword">Iwannis (Yuḥanon <addName type="untagged-title">III</addName>)</persName>
+               <persName type="sic"
+                         xml:id="name132-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib132-7">#REF!</persName>
                <death when="0754" source="#bib132-2">754</death>
                <bibl xml:id="bib132-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

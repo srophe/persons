@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,46 @@
          <listPerson>
             <person xml:id="person-162">
                <persName type="sic"
-                         xml:id="name162-2-0"
-                         corresp="#name162-3-0 #name162-4a-0 #name162-4b-0 #name162-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib162-2">Jacob, bishop of ‛Ānah</persName>
-               <persName type="sic"
-                         xml:id="name162-3-0"
-                         corresp="#name162-2-0 #name162-4a-0 #name162-4b-0 #name162-3-1"
-                         xml:lang="ar"
-                         source="#bib162-3">يعقوب اسقف عانة</persName>
-               <persName type="sic"
-                         xml:id="name162-4a-0"
-                         corresp="#name162-2-0 #name162-3-0 #name162-4b-0 #name162-4a-1"
-                         xml:lang="syr"
-                         source="#bib162-4">ܝܥܩܘܒ ܐܦܝܣܩܘܦܐ ܕܥܐܢܐ</persName>
-               <persName type="sic"
-                         xml:id="name162-4b-0"
-                         corresp="#name162-2-0 #name162-3-0 #name162-4a-0 #name162-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib162-4">ܝܰܥܩܘܒ ܐܶܦܝܣܩܘܦܐ ܕܥܰܐܢܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yaʿqub of ʿĀnah</persName>
-               <persName type="sic"
-                         xml:id="name162-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib162-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name162-2-1"
-                         corresp="#name162-3-1 #name162-4a-1 #name162-4b-1 #name162-2-0"
+                         xml:id="name162-2"
+                         corresp="#name162-3 #name162-4a #name162-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib162-2">
-                  <forename>Jacob</forename>
-                  <addName type="untagged-title">Bishop of ‛Ānah</addName>
+                  <forename>Jacob</forename>, <addName type="untagged-title">bishop of ‛Ānah</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name162-3-1"
-                         corresp="#name162-2-1 #name162-4a-1 #name162-4b-1 #name162-3-0"
+               <persName type="sic"
+                         xml:id="name162-3"
+                         corresp="#name162-2 #name162-4a #name162-4b"
                          xml:lang="ar"
                          source="#bib162-3">
-                  <forename>يعقوب</forename>
+                  <forename>يعقوب</forename> 
                   <addName type="untagged-title">اسقف عانة</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name162-4a-1"
-                         corresp="#name162-2-1 #name162-3-1 #name162-4b-1 #name162-4a-0"
+               <persName type="sic"
+                         xml:id="name162-4a"
+                         corresp="#name162-2 #name162-3 #name162-4b"
                          xml:lang="syr"
                          source="#bib162-4">
-                  <forename>ܝܥܩܘܒ</forename>
+                  <forename>ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܥܐܢܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name162-4b-1"
-                         corresp="#name162-2-1 #name162-3-1 #name162-4a-1 #name162-4b-0"
+               <persName type="sic"
+                         xml:id="name162-4b"
+                         corresp="#name162-2 #name162-3 #name162-4a"
                          xml:lang="syr-Syrj"
                          source="#bib162-4">
-                  <forename>ܝܰܥܩܘܒ</forename>
+                  <forename>ܝܰܥܩܘܒ</forename> 
                   <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ ܕܥܰܐܢܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yaʿqub</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yaʿqub</forename> 
                   <addName type="untagged-title">of ʿĀnah</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name162-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib162-7">#REF!</persName>
                <listEvent>
                   <event when="0860" source="#bib162-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

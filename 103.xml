@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,46 @@
          <listPerson>
             <person xml:id="person-103">
                <persName type="sic"
-                         xml:id="name103-2-0"
-                         corresp="#name103-3-0 #name103-4a-0 #name103-4b-0 #name103-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib103-2">Bishop Severus</persName>
-               <persName type="sic"
-                         xml:id="name103-3-0"
-                         corresp="#name103-2-0 #name103-4a-0 #name103-4b-0 #name103-3-1"
-                         xml:lang="ar"
-                         source="#bib103-3">الاسقف سويريوس</persName>
-               <persName type="sic"
-                         xml:id="name103-4a-0"
-                         corresp="#name103-2-0 #name103-3-0 #name103-4b-0 #name103-4a-1"
-                         xml:lang="syr"
-                         source="#bib103-4">ܐܦܝܣܩܘܦܐ ܣܘܝܪܝܘܣ</persName>
-               <persName type="sic"
-                         xml:id="name103-4b-0"
-                         corresp="#name103-2-0 #name103-3-0 #name103-4a-0 #name103-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib103-4">ܐܶܦܝܣܩܘܦܐ ܣܶܘܝܪܝܘܣ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Severos</persName>
-               <persName type="sic"
-                         xml:id="name103-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib103-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name103-2-1"
-                         corresp="#name103-3-1 #name103-4a-1 #name103-4b-1 #name103-2-0"
+                         xml:id="name103-2"
+                         corresp="#name103-3 #name103-4a #name103-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib103-2">
+                  <addName type="untagged-title">Bishop</addName> 
                   <forename>Severus</forename>
-                  <addName type="untagged-title">Bishop</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name103-3-1"
-                         corresp="#name103-2-1 #name103-4a-1 #name103-4b-1 #name103-3-0"
+               <persName type="sic"
+                         xml:id="name103-3"
+                         corresp="#name103-2 #name103-4a #name103-4b"
                          xml:lang="ar"
                          source="#bib103-3">
+                  <addName type="untagged-title">الاسقف</addName> 
                   <forename>سويريوس</forename>
-                  <addName type="untagged-title">الاسقف</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name103-4a-1"
-                         corresp="#name103-2-1 #name103-3-1 #name103-4b-1 #name103-4a-0"
+               <persName type="sic"
+                         xml:id="name103-4a"
+                         corresp="#name103-2 #name103-3 #name103-4b"
                          xml:lang="syr"
                          source="#bib103-4">
+                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName> 
                   <forename>ܣܘܝܪܝܘܣ</forename>
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name103-4b-1"
-                         corresp="#name103-2-1 #name103-3-1 #name103-4a-1 #name103-4b-0"
+               <persName type="sic"
+                         xml:id="name103-4b"
+                         corresp="#name103-2 #name103-3 #name103-4a"
                          xml:lang="syr-Syrj"
                          source="#bib103-4">
+                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ</addName> 
                   <forename>ܣܶܘܝܪܝܘܣ</forename>
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Severos</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name103-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib103-7">#REF!</persName>
                <bibl xml:id="bib103-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,75 +95,51 @@
          <listPerson>
             <person xml:id="person-1">
                <persName type="sic"
-                         xml:id="name1-2-0"
-                         corresp="#name1-3-0 #name1-4a-0 #name1-4b-0 #name1-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib1-2">Wafā the Aramaean</persName>
-               <persName type="sic"
-                         xml:id="name1-3-0"
-                         corresp="#name1-2-0 #name1-4a-0 #name1-4b-0 #name1-3-1"
-                         xml:lang="ar"
-                         source="#bib1-3">وفا الآرامي</persName>
-               <persName type="sic"
-                         xml:id="name1-4a-0"
-                         corresp="#name1-2-0 #name1-3-0 #name1-4b-0 #name1-4a-1"
-                         xml:lang="syr"
-                         source="#bib1-4">ܘܦܐ ܐܪܡܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name1-4b-0"
-                         corresp="#name1-2-0 #name1-3-0 #name1-4a-0 #name1-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib1-4">ܘܰܦܰܐ ܐܳܪܳܡܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܘܦܐ ܐܪܡܝܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Wafā the Aramean</persName>
-               <persName type="sic"
-                         xml:id="name1-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib1-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name1-2-1"
-                         corresp="#name1-3-1 #name1-4a-1 #name1-4b-1 #name1-2-0"
+                         xml:id="name1-2"
+                         corresp="#name1-3 #name1-4a #name1-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib1-2">
-                  <forename>Wafā</forename>
+                  <forename>Wafā</forename> 
                   <addName type="untagged-title">the Aramaean</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name1-3-1"
-                         corresp="#name1-2-1 #name1-4a-1 #name1-4b-1 #name1-3-0"
+               <persName type="sic"
+                         xml:id="name1-3"
+                         corresp="#name1-2 #name1-4a #name1-4b"
                          xml:lang="ar"
                          source="#bib1-3">
-                  <forename>وفا</forename>
+                  <forename>وفا</forename> 
                   <addName type="untagged-title">الآرامي</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name1-4a-1"
-                         corresp="#name1-2-1 #name1-3-1 #name1-4b-1 #name1-4a-0"
+               <persName type="sic"
+                         xml:id="name1-4a"
+                         corresp="#name1-2 #name1-3 #name1-4b"
                          xml:lang="syr"
                          source="#bib1-4">
-                  <forename>ܘܦܐ</forename>
+                  <forename>ܘܦܐ</forename> 
                   <addName type="untagged-title">ܐܪܡܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name1-4b-1"
-                         corresp="#name1-2-1 #name1-3-1 #name1-4a-1 #name1-4b-0"
+               <persName type="sic"
+                         xml:id="name1-4b"
+                         corresp="#name1-2 #name1-3 #name1-4a"
                          xml:lang="syr-Syrj"
                          source="#bib1-4">
-                  <forename>ܘܰܦܰܐ</forename>
+                  <forename>ܘܰܦܰܐ</forename> 
                   <addName type="untagged-title">ܐܳܪܳܡܳܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr" syriaca-tags="#syriaca-authorized">
-                  <forename>ܘܦܐ</forename>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܘܦܐ</forename> 
                   <addName type="terms-of-address">ܐܪܡܝܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Wafā</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Wafā</forename> 
                   <addName type="untagged-title">the Aramean</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name1-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib1-7">#REF!</persName>
                <idno type="URI">http://www.syriacstudies.com/AFSS/Syriac_Scholars_and_Writers/Entries/2008/3/19_1-_Wafa_the_Aramaean.html</idno>
                <bibl xml:id="bib1-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

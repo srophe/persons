@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,46 @@
          <listPerson>
             <person xml:id="person-146">
                <persName type="sic"
-                         xml:id="name146-2-0"
-                         corresp="#name146-3-0 #name146-4a-0 #name146-4b-0 #name146-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib146-2">Malphono Athanus</persName>
-               <persName type="sic"
-                         xml:id="name146-3-0"
-                         corresp="#name146-2-0 #name146-4a-0 #name146-4b-0 #name146-3-1"
-                         xml:lang="ar"
-                         source="#bib146-3">آتنوس الملفان</persName>
-               <persName type="sic"
-                         xml:id="name146-4a-0"
-                         corresp="#name146-2-0 #name146-3-0 #name146-4b-0 #name146-4a-1"
-                         xml:lang="syr"
-                         source="#bib146-4">ܐܬܢܘܣ ܡܠܦܢܐ</persName>
-               <persName type="sic"
-                         xml:id="name146-4b-0"
-                         corresp="#name146-2-0 #name146-3-0 #name146-4a-0 #name146-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib146-4">ܐܰܬܰܢܘܳܣ ܡܰܠܦܳܢܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Atanos</persName>
-               <persName type="sic"
-                         xml:id="name146-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib146-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name146-2-1"
-                         corresp="#name146-3-1 #name146-4a-1 #name146-4b-1 #name146-2-0"
+                         xml:id="name146-2"
+                         corresp="#name146-3 #name146-4a #name146-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib146-2">
+                  <addName type="untagged-title">Malphono</addName> 
                   <forename>Athanus</forename>
-                  <addName type="untagged-title">Malphono</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name146-3-1"
-                         corresp="#name146-2-1 #name146-4a-1 #name146-4b-1 #name146-3-0"
+               <persName type="sic"
+                         xml:id="name146-3"
+                         corresp="#name146-2 #name146-4a #name146-4b"
                          xml:lang="ar"
                          source="#bib146-3">
-                  <forename>آتنوس</forename>
+                  <forename>آتنوس</forename> 
                   <addName type="untagged-title">الملفان</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name146-4a-1"
-                         corresp="#name146-2-1 #name146-3-1 #name146-4b-1 #name146-4a-0"
+               <persName type="sic"
+                         xml:id="name146-4a"
+                         corresp="#name146-2 #name146-3 #name146-4b"
                          xml:lang="syr"
                          source="#bib146-4">
-                  <forename>ܐܬܢܘܣ</forename>
+                  <forename>ܐܬܢܘܣ</forename> 
                   <addName type="untagged-title">ܡܠܦܢܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name146-4b-1"
-                         corresp="#name146-2-1 #name146-3-1 #name146-4a-1 #name146-4b-0"
+               <persName type="sic"
+                         xml:id="name146-4b"
+                         corresp="#name146-2 #name146-3 #name146-4a"
                          xml:lang="syr-Syrj"
                          source="#bib146-4">
-                  <forename>ܐܰܬܰܢܘܳܣ</forename>
+                  <forename>ܐܰܬܰܢܘܳܣ</forename> 
                   <addName type="untagged-title">ܡܰܠܦܳܢܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Atanos</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name146-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib146-7">#REF!</persName>
                <listEvent>
                   <event when="0818" source="#bib146-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,44 @@
          <listPerson>
             <person xml:id="person-218">
                <persName type="sic"
-                         xml:id="name218-2-0"
-                         corresp="#name218-3-0 #name218-4a-0 #name218-4b-0 #name218-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib218-2">Deacon Abu al-Yusr</persName>
-               <persName type="sic"
-                         xml:id="name218-3-0"
-                         corresp="#name218-2-0 #name218-4a-0 #name218-4b-0 #name218-3-1"
-                         xml:lang="ar"
-                         source="#bib218-3">الشماس ابو اليسر</persName>
-               <persName type="sic"
-                         xml:id="name218-4a-0"
-                         corresp="#name218-2-0 #name218-3-0 #name218-4b-0 #name218-4a-1"
-                         xml:lang="syr"
-                         source="#bib218-4">ܡܫܡܫܢܐ ܐܒܘ ܐܠܝܣܪ</persName>
-               <persName type="sic"
-                         xml:id="name218-4b-0"
-                         corresp="#name218-2-0 #name218-3-0 #name218-4a-0 #name218-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib218-4">ܡܫܰܡܫܳܢܐ ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Abū al-Yusr</persName>
-               <persName type="sic"
-                         xml:id="name218-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib218-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name218-2-1"
-                         corresp="#name218-3-1 #name218-4a-1 #name218-4b-1 #name218-2-0"
+                         xml:id="name218-2"
+                         corresp="#name218-3 #name218-4a #name218-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib218-2">
+                  <addName type="untagged-title">Deacon</addName> 
                   <forename>Abu al-Yusr</forename>
-                  <addName type="untagged-title">Deacon</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name218-3-1"
-                         corresp="#name218-2-1 #name218-4a-1 #name218-4b-1 #name218-3-0"
+               <persName type="sic"
+                         xml:id="name218-3"
+                         corresp="#name218-2 #name218-4a #name218-4b"
                          xml:lang="ar"
                          source="#bib218-3">
-                  <forename>ابو ابيسر</forename>
-                  <addName type="untagged-title">الشماس</addName>
-               </persName>
-               <persName type="split"
-                         xml:id="name218-4a-1"
-                         corresp="#name218-2-1 #name218-3-1 #name218-4b-1 #name218-4a-0"
+                  <addName type="untagged-title">الشماس</addName> ابو اليسر</persName>
+               <persName type="sic"
+                         xml:id="name218-4a"
+                         corresp="#name218-2 #name218-3 #name218-4b"
                          xml:lang="syr"
                          source="#bib218-4">
+                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName> 
                   <forename>ܐܒܘ ܐܠܝܣܪ</forename>
-                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name218-4b-1"
-                         corresp="#name218-2-1 #name218-3-1 #name218-4a-1 #name218-4b-0"
+               <persName type="sic"
+                         xml:id="name218-4b"
+                         corresp="#name218-2 #name218-3 #name218-4a"
                          xml:lang="syr-Syrj"
                          source="#bib218-4">
+                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName> 
                   <forename>ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</forename>
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Abū al-Yusr</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name218-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib218-7">#REF!</persName>
                <bibl xml:id="bib218-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

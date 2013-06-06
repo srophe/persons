@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,62 +95,45 @@
          <listPerson>
             <person xml:id="person-179">
                <persName type="sic"
-                         xml:id="name179-2-0"
-                         corresp="#name179-3-0 #name179-4a-0 #name179-4b-0 #name179-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib179-2">Jacob, metropolitan of Miyapharqin</persName>
-               <persName type="sic"
-                         xml:id="name179-3-0"
-                         corresp="#name179-2-0 #name179-4a-0 #name179-4b-0 #name179-3-1"
-                         xml:lang="ar"
-                         source="#bib179-3">يعقوب مطران ميافارقين</persName>
-               <persName type="sic"
-                         xml:id="name179-4a-0"
-                         corresp="#name179-2-0 #name179-3-0 #name179-4b-0 #name179-4a-1"
-                         xml:lang="syr"
-                         source="#bib179-4">ܝܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</persName>
-               <persName type="sic"
-                         xml:id="name179-4b-0"
-                         corresp="#name179-2-0 #name179-3-0 #name179-4a-0 #name179-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib179-4">ܝܰܥܩܘܒ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yaʿqub of Maypherqaṭ</persName>
-               <persName type="sic"
-                         xml:id="name179-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib179-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name179-2-1"
-                         corresp="#name179-3-1 #name179-4a-1 #name179-4b-1 #name179-2-0"
+                         xml:id="name179-2"
+                         corresp="#name179-3 #name179-4a #name179-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib179-2">
-                  <forename>Jacob</forename>
-                  <addName type="untagged-title">Metropolitan of Miyapharqin</addName>
+                  <forename>Jacob</forename>, <addName type="untagged-title">metropolitan of Miyapharqin</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name179-4a-1"
-                         corresp="#name179-2-1 #name179-3-1 #name179-4b-1 #name179-4a-0"
+               <persName type="sic"
+                         xml:id="name179-3"
+                         corresp="#name179-2 #name179-4a #name179-4b"
+                         xml:lang="ar"
+                         source="#bib179-3">
+                  <Barsoum_Ar_Full xmlns="">يعقوب مطران ميافارقين</Barsoum_Ar_Full>
+               </persName>
+               <persName type="sic"
+                         xml:id="name179-4a"
+                         corresp="#name179-2 #name179-3 #name179-4b"
                          xml:lang="syr"
                          source="#bib179-4">
-                  <forename>ܝܥܩܘܒ</forename>
+                  <forename>ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܦܪܩܛ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name179-4b-1"
-                         corresp="#name179-2-1 #name179-3-1 #name179-4a-1 #name179-4b-0"
+               <persName type="sic"
+                         xml:id="name179-4b"
+                         corresp="#name179-2 #name179-3 #name179-4a"
                          xml:lang="syr-Syrj"
                          source="#bib179-4">
-                  <forename>ܝܰܥܩܘܒ</forename>
+                  <forename>ܝܰܥܩܘܒ</forename> 
                   <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܺܝܦܰܪܩܛ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yaʿqub</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yaʿqub</forename> 
                   <addName type="untagged-title">of Maypherqaṭ</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name179-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib179-7">#REF!</persName>
                <listEvent>
                   <event when="0967" source="#bib179-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

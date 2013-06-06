@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,69 +95,45 @@
          <listPerson>
             <person xml:id="person-166">
                <persName type="sic"
-                         xml:id="name166-2-0"
-                         corresp="#name166-3-0 #name166-4a-0 #name166-4b-0 #name166-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib166-2">Isaac, the Compiler of the Anaphora</persName>
-               <persName type="sic"
-                         xml:id="name166-3-0"
-                         corresp="#name166-2-0 #name166-4a-0 #name166-4b-0 #name166-3-1"
-                         xml:lang="ar"
-                         source="#bib166-3">اسحق صاحب النافورا</persName>
-               <persName type="sic"
-                         xml:id="name166-4a-0"
-                         corresp="#name166-2-0 #name166-3-0 #name166-4b-0 #name166-4a-1"
-                         xml:lang="syr"
-                         source="#bib166-4">ܐܝܣܚܩ ܡܪܐ ܐܢܢܐܦܘܪܐ</persName>
-               <persName type="sic"
-                         xml:id="name166-4b-0"
-                         corresp="#name166-2-0 #name166-3-0 #name166-4a-0 #name166-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib166-4">ܐܝܣܚܳܩ ܡܳܪܶܐ ܐܰܢܢܐܦܘܪܰܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Isḥoq</persName>
-               <persName type="sic"
-                         xml:id="name166-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib166-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name166-2-1"
-                         corresp="#name166-3-1 #name166-4a-1 #name166-4b-1 #name166-2-0"
+                         xml:id="name166-2"
+                         corresp="#name166-3 #name166-4a #name166-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib166-2">
-                  <forename>Isaac</forename>
-                  <addName type="untagged-title">the Compiler of the Anaphora</addName>
+                  <forename>Isaac</forename>, <addName type="untagged-title">the Compiler of the Anaphora</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name166-3-1"
-                         corresp="#name166-2-1 #name166-4a-1 #name166-4b-1 #name166-3-0"
+               <persName type="sic"
+                         xml:id="name166-3"
+                         corresp="#name166-2 #name166-4a #name166-4b"
                          xml:lang="ar"
                          source="#bib166-3">
-                  <forename>اسحق</forename>
+                  <forename>اسحق</forename> 
                   <addName type="untagged-title">صاحب النافورا</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name166-4a-1"
-                         corresp="#name166-2-1 #name166-3-1 #name166-4b-1 #name166-4a-0"
+               <persName type="sic"
+                         xml:id="name166-4a"
+                         corresp="#name166-2 #name166-3 #name166-4b"
                          xml:lang="syr"
                          source="#bib166-4">
-                  <forename>ܐܝܣܚܩ</forename>
+                  <forename>ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title">ܡܪܐ ܐܢܢܐܦܘܪܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name166-4b-1"
-                         corresp="#name166-2-1 #name166-3-1 #name166-4a-1 #name166-4b-0"
+               <persName type="sic"
+                         xml:id="name166-4b"
+                         corresp="#name166-2 #name166-3 #name166-4a"
                          xml:lang="syr-Syrj"
                          source="#bib166-4">
-                  <forename>ܐܝܣܚܳܩ</forename>
+                  <forename>ܐܝܣܚܳܩ</forename> 
                   <addName type="untagged-title">ܡܳܪܶܐ ܐܰܢܢܐܦܘܪܰܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
+                         syriaca-tags="#syriaca-headword">
                   <forename>Isḥoq</forename>
                </persName>
+               <persName type="sic"
+                         xml:id="name166-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib166-7">#REF!</persName>
                <bibl xml:id="bib166-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

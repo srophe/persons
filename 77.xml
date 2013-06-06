@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-77">
                <persName type="sic"
-                         xml:id="name77-2-0"
-                         corresp="#name77-3-0 #name77-4a-0 #name77-4b-0 #name77-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib77-2">Abraham of Amid</persName>
-               <persName type="sic"
-                         xml:id="name77-3-0"
-                         corresp="#name77-2-0 #name77-4a-0 #name77-4b-0 #name77-3-1"
-                         xml:lang="ar"
-                         source="#bib77-3">ابراهيم الآمدي</persName>
-               <persName type="sic"
-                         xml:id="name77-4a-0"
-                         corresp="#name77-2-0 #name77-3-0 #name77-4b-0 #name77-4a-1"
-                         xml:lang="syr"
-                         source="#bib77-4">ܐܒܪܗܡ ܐܡܝܕܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name77-4b-0"
-                         corresp="#name77-2-0 #name77-3-0 #name77-4a-0 #name77-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib77-4">ܐܰܒܪܳܗܡ ܐܳܡܝܕܝܳܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Abrohom of Amid</persName>
-               <persName type="sic"
-                         xml:id="name77-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib77-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name77-2-1"
-                         corresp="#name77-3-1 #name77-4a-1 #name77-4b-1 #name77-2-0"
+                         xml:id="name77-2"
+                         corresp="#name77-3 #name77-4a #name77-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib77-2">
-                  <forename>Abraham</forename>
+                  <forename>Abraham</forename> 
                   <addName type="untagged-title">of Amid</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name77-3-1"
-                         corresp="#name77-2-1 #name77-4a-1 #name77-4b-1 #name77-3-0"
+               <persName type="sic"
+                         xml:id="name77-3"
+                         corresp="#name77-2 #name77-4a #name77-4b"
                          xml:lang="ar"
                          source="#bib77-3">
-                  <forename>ابراهيم</forename>
+                  <forename>ابراهيم</forename> 
                   <addName type="untagged-title">الآمدي</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name77-4a-1"
-                         corresp="#name77-2-1 #name77-3-1 #name77-4b-1 #name77-4a-0"
+               <persName type="sic"
+                         xml:id="name77-4a"
+                         corresp="#name77-2 #name77-3 #name77-4b"
                          xml:lang="syr"
                          source="#bib77-4">
-                  <forename>ܐܒܪܗܡ</forename>
+                  <forename>ܐܒܪܗܡ</forename> 
                   <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name77-4b-1"
-                         corresp="#name77-2-1 #name77-3-1 #name77-4a-1 #name77-4b-0"
+               <persName type="sic"
+                         xml:id="name77-4b"
+                         corresp="#name77-2 #name77-3 #name77-4a"
                          xml:lang="syr-Syrj"
                          source="#bib77-4">
-                  <forename>ܐܰܒܪܳܗܡ</forename>
+                  <forename>ܐܰܒܪܳܗܡ</forename> 
                   <addName type="untagged-title">ܐܳܡܝܕܝܳܐ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Abrohom</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Abrohom</forename> 
                   <addName type="untagged-title">of Amid</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name77-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib77-7">#REF!</persName>
                <death when="0598" source="#bib77-2">598</death>
                <bibl xml:id="bib77-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

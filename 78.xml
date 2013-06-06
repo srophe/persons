@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-23-04:00</date>
+            <date>2013-06-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-23-04:00">
+                 when="2013-06-06-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,70 +95,47 @@
          <listPerson>
             <person xml:id="person-78">
                <persName type="sic"
-                         xml:id="name78-2-0"
-                         corresp="#name78-3-0 #name78-4a-0 #name78-4b-0 #name78-2-1"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib78-2">John the Chanter</persName>
-               <persName type="sic"
-                         xml:id="name78-3-0"
-                         corresp="#name78-2-0 #name78-4a-0 #name78-4b-0 #name78-3-1"
-                         xml:lang="ar"
-                         source="#bib78-3">يوحنا بسالطس</persName>
-               <persName type="sic"
-                         xml:id="name78-4a-0"
-                         corresp="#name78-2-0 #name78-3-0 #name78-4b-0 #name78-4a-1"
-                         xml:lang="syr"
-                         source="#bib78-4">ܝܘܚܢܢ ܦܣܐܠܛܘܣ</persName>
-               <persName type="sic"
-                         xml:id="name78-4b-0"
-                         corresp="#name78-2-0 #name78-3-0 #name78-4a-0 #name78-4b-1"
-                         xml:lang="syr-Syrj"
-                         source="#bib78-4">ܝܘܚܰܢܢ ܦܣܰܐܠܛܘܣ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">Yuḥanon Psaltes</persName>
-               <persName type="sic"
-                         xml:id="name78-7-0"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib78-7">#REF!</persName>
-               <persName type="split"
-                         xml:id="name78-2-1"
-                         corresp="#name78-3-1 #name78-4a-1 #name78-4b-1 #name78-2-0"
+                         xml:id="name78-2"
+                         corresp="#name78-3 #name78-4a #name78-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib78-2">
-                  <forename>John</forename>
+                  <forename>John</forename> 
                   <addName type="untagged-title">the Chanter</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name78-3-1"
-                         corresp="#name78-2-1 #name78-4a-1 #name78-4b-1 #name78-3-0"
+               <persName type="sic"
+                         xml:id="name78-3"
+                         corresp="#name78-2 #name78-4a #name78-4b"
                          xml:lang="ar"
                          source="#bib78-3">
-                  <forename>يوحنا</forename>
+                  <forename>يوحنا</forename> 
                   <addName type="untagged-title">بسالطس</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name78-4a-1"
-                         corresp="#name78-2-1 #name78-3-1 #name78-4b-1 #name78-4a-0"
+               <persName type="sic"
+                         xml:id="name78-4a"
+                         corresp="#name78-2 #name78-3 #name78-4b"
                          xml:lang="syr"
                          source="#bib78-4">
-                  <forename>ܝܘܚܢܢ</forename>
+                  <forename>ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title">ܦܣܐܠܛܘܣ</addName>
                </persName>
-               <persName type="split"
-                         xml:id="name78-4b-1"
-                         corresp="#name78-2-1 #name78-3-1 #name78-4a-1 #name78-4b-0"
+               <persName type="sic"
+                         xml:id="name78-4b"
+                         corresp="#name78-2 #name78-3 #name78-4a"
                          xml:lang="syr-Syrj"
                          source="#bib78-4">
-                  <forename>ܝܘܚܰܢܢ</forename>
+                  <forename>ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title">ܦܣܰܐܠܛܘܣ</addName>
                </persName>
-               <persName type="split"
+               <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-authorized">
-                  <forename>Yuḥanon</forename>
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Yuḥanon</forename> 
                   <addName type="untagged-title">Psaltes</addName>
                </persName>
+               <persName type="sic"
+                         xml:id="name78-7"
+                         xml:lang="syr-Latn-x-cbsc"
+                         source="#bib78-7">#REF!</persName>
                <death when="0600" source="#bib78-2">600</death>
                <bibl xml:id="bib78-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
