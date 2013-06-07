@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,12 +98,20 @@
                          xml:id="name266-4a"
                          corresp="#name266-2 #name266-3 #name266-4b"
                          xml:lang="syr"
-                         source="#bib266-4">ܚܣܢ ܒܪ ܙܘܪܥܐ ܡܘܨܠܝܐ</persName>
+                         source="#bib266-4">
+                  <forename>ܚܣܢ</forename> 
+                  <surname>ܒܪ ܙܘܪܥܐ</surname> 
+                  <addName type="untagged-title">ܡܘܨܠܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name266-4b"
                          corresp="#name266-2 #name266-3 #name266-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib266-4">ܚܰܣܢ ܒܰܪ ܙܘܪܥܐ ܡܰܘܨܠܳܝܐ</persName>
+                         source="#bib266-4">
+                  <forename>ܚܰܣܢ</forename> 
+                  <surname>ܒܰܪ ܙܘܪܥܐ</surname> 
+                  <addName type="untagged-title">ܡܰܘܨܠܳܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
@@ -111,20 +119,11 @@
                   <surname>bar Zurʿo</surname> 
                   <addName type="untagged-title">of Mosul</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name266-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib266-7">#REF!</persName>
                <bibl xml:id="bib266-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">479</citedRange>
-               </bibl>
-               <bibl xml:id="bib266-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

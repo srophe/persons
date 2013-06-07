@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -94,6 +94,9 @@
       <body>
          <listPerson>
             <person xml:id="person-911">
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <Authorized_Sy_NV_Full xmlns="">ܝܙܝܕܕ</Authorized_Sy_NV_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name911-5a"
                          corresp="#name911-5b #name911-6a"
@@ -131,10 +134,6 @@
                          syriaca-tags="#syriaca-headword">
                   <forename>Yazidad</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name911-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib911-7">#REF!</persName>
                <bibl xml:id="bib911-5">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
@@ -146,11 +145,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">226</citedRange>
-               </bibl>
-               <bibl xml:id="bib911-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

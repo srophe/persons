@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Ignatius III, metropolitan of Melitene | The Syriac Prosopography</title>
+            <title xml:lang="en">Ignatius of Melitene | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -126,10 +126,16 @@
                   <forename>ܐܝܓܢܰܐܛܝܘܣ</forename> 
                   <addName type="untagged-title">ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
                </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܐܝܓܢܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title">ܕܡܝܠܝܛܝܢܝ</addName>
+               </persName>
                <persName type="sic"
-                         xml:id="name198-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib198-7">#REF!</persName>
+                         xml:lang="syr-Latn-x-gedsh"
+                         syriaca-tags="#syriaca-headword">
+                  <forename>Ignatius</forename> 
+                  <addName type="untagged-title">of Melitene</addName>
+               </persName>
                <death when="1094" source="#bib198-2">1094</death>
                <bibl xml:id="bib198-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -152,11 +158,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">195</citedRange>
                   <citedRange unit="pp">399</citedRange>
-               </bibl>
-               <bibl xml:id="bib198-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

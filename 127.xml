@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -107,7 +107,8 @@
                          corresp="#name127-3 #name127-4a #name127-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib127-2">
-                  <Barsoum_En_Full xmlns="">John the Stylite of Atharb</Barsoum_En_Full>
+                  <forename>John</forename> 
+                  <addName type="untagged-title">the Stylite of Atharb</addName>
                </persName>
                <persName type="sic"
                          xml:id="name127-3"
@@ -130,6 +131,10 @@
                          source="#bib127-4">
                   <forename>ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title">ܐܰܬܰܐܪܒܳܝܳܐ ܐܶܣܛܘܢܳܪܐ</addName>
+               </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title">ܐܬܐܪܒܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name127-5a"
@@ -155,10 +160,6 @@
                   <forename>ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title">ܐܣܛܘܢܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name127-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib127-7">#REF!</persName>
                <idno type="URI">http://worldcat.org/identities/lccn-n83-171513</idno>
                <idno type="URI">http://viaf.org/viaf/6313778</idno>
                <death when="0738" source="#bib127-2">738</death>
@@ -200,11 +201,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">256</citedRange>
-               </bibl>
-               <bibl xml:id="bib127-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,37 @@
                          xml:id="name731-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib731-1"
-                         syriaca-tags="#syriaca-headword">Sextus</persName>
+                         syriaca-tags="#syriaca-headword">
+                  <GEDSH_Full xmlns="">Sextus</GEDSH_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name731-2"
                          corresp="#name731-3 #name731-4a #name731-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib731-2">Maxims of Xystus</persName>
+                         source="#bib731-2">
+                  <Barsoum_En_Full xmlns="">Maxims of Xystus</Barsoum_En_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name731-3"
                          corresp="#name731-2 #name731-4a #name731-4b"
                          xml:lang="ar"
-                         source="#bib731-3">سكستوس</persName>
+                         source="#bib731-3">
+                  <forename>سكستوس</forename>
+               </persName>
                <persName type="sic"
                          xml:id="name731-4a"
                          corresp="#name731-2 #name731-3 #name731-4b"
                          xml:lang="syr"
-                         source="#bib731-4">ܣܝܩܝܣܬܘܣ</persName>
+                         source="#bib731-4">
+                  <forename>ܣܝܩܝܣܬܘܣ</forename>
+               </persName>
                <persName type="sic"
                          xml:id="name731-4b"
                          corresp="#name731-2 #name731-3 #name731-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib731-4">ܣܺܝܩܺܝܣܬܳܘܣ</persName>
-               <persName type="sic"
-                         xml:id="name731-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib731-7">#REF!</persName>
+                         source="#bib731-4">
+                  <forename>ܣܺܝܩܺܝܣܬܳܘܣ</forename>
+               </persName>
                <bibl xml:id="bib731-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -145,11 +151,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib731-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
                <note type="record-description">Person to whom the Sentences of Sextus is attributed, otherwise unknown. (See GEDSH, 369.)</note>
             </person>

@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Author of the Gospel of the Twelve Apostles | The Syriac Prosopography</title>
+            <title xml:lang="en">Gospel of the Apostles | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,30 @@
                          xml:id="name507-2"
                          corresp="#name507-3 #name507-4a #name507-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib507-2">Gospel of the Apostles</persName>
+                         source="#bib507-2">
+                  <Barsoum_En_Full xmlns="">Gospel of the Apostles</Barsoum_En_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name507-3"
                          corresp="#name507-2 #name507-4a #name507-4b"
                          xml:lang="ar"
-                         source="#bib507-3">انجيل الرسل الاثني عشر</persName>
+                         source="#bib507-3">
+                  <Barsoum_Ar_Full xmlns="">انجيل الرسل الاثني عشر</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name507-4a"
                          corresp="#name507-2 #name507-3 #name507-4b"
                          xml:lang="syr"
-                         source="#bib507-4">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</persName>
+                         source="#bib507-4">
+                  <Barsoum_Sy_NV_Full xmlns="">ܐܘܢܓܠܝܘܢ ܕܬܪܥܣܪ ܫܠܝ̈ܚܐ</Barsoum_Sy_NV_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name507-4b"
                          corresp="#name507-2 #name507-3 #name507-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib507-4">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Gospel of the Twelve Apostles</addName>
+                         source="#bib507-4">
+                  <Barsoum_Sy_V_Full xmlns="">ܐܶܘܰܢܓܶܠܝܽܘܢ ܕܰܬܪܶܥܣܰܪ ܫܠܺܝ̈ܚܐ</Barsoum_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name507-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib507-7">#REF!</persName>
                <bibl xml:id="bib507-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -145,11 +144,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib507-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

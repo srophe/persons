@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,42 @@
                          xml:id="name45-2"
                          corresp="#name45-3 #name45-4a #name45-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib45-2">The Ascetic Barlaha</persName>
+                         source="#bib45-2">
+                  <addName type="untagged-title">The Ascetic</addName> 
+                  <forename>Barlaha</forename>
+               </persName>
                <persName type="sic"
                          xml:id="name45-3"
                          corresp="#name45-2 #name45-4a #name45-4b"
                          xml:lang="ar"
-                         source="#bib45-3">برلاها الناسك</persName>
+                         source="#bib45-3">
+                  <forename>برلاها</forename> 
+                  <addName type="untagged-title">الناسك</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name45-4a"
                          corresp="#name45-2 #name45-3 #name45-4b"
                          xml:lang="syr"
-                         source="#bib45-4">ܒܪܠܗܐ ܢܙܝܪܐ</persName>
+                         source="#bib45-4">
+                  <forename>ܒܪܠܗܐ</forename> 
+                  <addName type="untagged-title">ܢܙܝܪܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name45-4b"
                          corresp="#name45-2 #name45-3 #name45-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib45-4">ܒܰܪܠܗܐ ܢܙܝܪܳܐ</persName>
+                         source="#bib45-4">
+                  <forename>ܒܰܪܠܗܐ</forename> 
+                  <addName type="untagged-title">ܢܙܝܪܳܐ</addName>
+               </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܒܪܠܗܐ</forename>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Barloho</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name45-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib45-7">#REF!</persName>
                <bibl xml:id="bib45-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
@@ -144,11 +155,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">41</citedRange>
                   <citedRange unit="pp">259</citedRange>
-               </bibl>
-               <bibl xml:id="bib45-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

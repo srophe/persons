@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -107,7 +107,8 @@
                          corresp="#name104-2 #name104-4a #name104-4b"
                          xml:lang="ar"
                          source="#bib104-3">
-                  <Barsoum_Ar_Full xmlns="">الربان سبروي</Barsoum_Ar_Full>
+                  <addName type="untagged-title">الربان</addName> 
+                  <forename>سبروي</forename>
                </persName>
                <persName type="sic"
                          xml:id="name104-4a"
@@ -125,15 +126,14 @@
                   <forename>ܣܰܒܪܘܰܝ</forename> 
                   <addName type="untagged-title">ܪܰܒܢ</addName>
                </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܣܒܪܘܝ</forename>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Sabrway</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name104-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib104-7">#REF!</persName>
                <bibl xml:id="bib104-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
@@ -155,11 +155,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">99</citedRange>
                   <citedRange unit="pp">314</citedRange>
-               </bibl>
-               <bibl xml:id="bib104-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -106,9 +106,7 @@
                          xml:id="name51-2"
                          corresp="#name51-3 #name51-4a #name51-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib51-2">
-                  <Barsoum_En_Full xmlns="">St. Severus of Antioch</Barsoum_En_Full>
-               </persName>
+                         source="#bib51-2">St. <forename>Severus</forename> of Antioch</persName>
                <persName type="sic"
                          xml:id="name51-3"
                          corresp="#name51-2 #name51-4a #name51-4b"
@@ -124,10 +122,9 @@
                          corresp="#name51-2 #name51-3 #name51-4a"
                          xml:lang="syr-Syrj"
                          source="#bib51-4">ܡܳܪܝ <forename>ܣܶܘܝܪܝܘܣ</forename> ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
-               <persName type="sic"
-                         xml:id="name51-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib51-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <Authorized_Sy_NV_Full xmlns="">ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</Authorized_Sy_NV_Full>
+               </persName>
                <idno type="URI">http://viaf.org/viaf/31142837</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n89-630595</idno>
                <idno type="URI">http://worldcat.org/identities/np-severus$patriarch of antioch$465 536</idno>
@@ -160,11 +157,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">47</citedRange>
                   <citedRange unit="pp">265</citedRange>
-               </bibl>
-               <bibl xml:id="bib51-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
             <relation type="disambiguation"

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,38 @@
                          xml:id="name46-2"
                          corresp="#name46-3 #name46-4a #name46-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib46-2">Simon, abbot of the Monastery of Beth Liqin</persName>
+                         source="#bib46-2">
+                  <forename>Simon</forename>, <addName type="untagged-title">abbot of the Monastery of Beth Liqin</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name46-3"
                          corresp="#name46-2 #name46-4a #name46-4b"
                          xml:lang="ar"
-                         source="#bib46-3">شمعون رئيس دير ليقين</persName>
+                         source="#bib46-3">
+                  <forename>شمعون</forename> 
+                  <addName type="untagged-title">رئيس دير ليقين</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name46-4a"
                          corresp="#name46-2 #name46-3 #name46-4b"
                          xml:lang="syr"
-                         source="#bib46-4">ܫܡܥܘܢ ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</persName>
+                         source="#bib46-4">
+                  <forename>ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title">ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name46-4b"
                          corresp="#name46-2 #name46-3 #name46-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib46-4">ܫܶܡܥܘܢ ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</persName>
+                         source="#bib46-4">
+                  <forename>ܫܶܡܥܘܢ</forename> 
+                  <addName type="untagged-title">ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Shemʿon</forename>, <addName type="untagged-title">abbot of Dayro d-Liqin</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name46-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib46-7">#REF!</persName>
                <bibl xml:id="bib46-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
@@ -144,11 +151,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">42</citedRange>
                   <citedRange unit="pp">259</citedRange>
-               </bibl>
-               <bibl xml:id="bib46-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

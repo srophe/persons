@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -122,10 +122,10 @@
                          corresp="#name279-2 #name279-3 #name279-4a"
                          xml:lang="syr-Syrj"
                          source="#bib279-4">ܦܰܛܪܝܰܪܟܐ <forename>ܡܰܣܥܘܕ</forename> ܙܰܐܙܳܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name279-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib279-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܡܣܥܘܕ</forename> 
+                  <addName type="untagged-title">ܙܐܙܝܐ</addName>
+               </persName>
                <idno type="URI">http://viaf.org/viaf/193224502</idno>
                <death when="1512" source="#bib279-2">1512</death>
                <bibl xml:id="bib279-1">
@@ -154,11 +154,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">271</citedRange>
                   <citedRange unit="pp">486</citedRange>
-               </bibl>
-               <bibl xml:id="bib279-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

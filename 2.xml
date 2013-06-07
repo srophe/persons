@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -107,21 +107,28 @@
                          xml:id="name2-3"
                          corresp="#name2-2 #name2-4a #name2-4b"
                          xml:lang="ar"
-                         source="#bib2-3">بولس ابن عرقا الرهاوي</persName>
+                         source="#bib2-3">
+                  <forename>بولس</forename> 
+                  <surname>ابن عرقا</surname> 
+                  <addName type="untagged-title">الرهاوي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name2-4a"
                          corresp="#name2-2 #name2-3 #name2-4b"
                          xml:lang="syr"
-                         source="#bib2-4">ܦܘܠܘܣ ܒܪ ܥܪܩܐ ܐܘܪܗܝܐ</persName>
+                         source="#bib2-4">
+                  <forename>ܦܘܠܘܣ</forename> 
+                  <surname>ܒܪ ܥܪܩܐ</surname> 
+                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name2-4b"
                          corresp="#name2-2 #name2-3 #name2-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib2-4">ܦܰܘܠܘܣ ܒܰܪ ܥܰܪܩܐ ܐܘܪܗܳܝܐ</persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܦܘܠܘܣ</forename> 
-                  <surname>ܒܪ ܥܪܩܐ</surname> 
-                  <addName type="terms-of-address">ܐܘܪܗܝܐ</addName>
+                         source="#bib2-4">
+                  <forename>ܦܰܘܠܘܣ</forename> 
+                  <surname>ܒܰܪ ܥܰܪܩܐ</surname> 
+                  <addName type="untagged-title">ܐܘܪܗܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
@@ -130,10 +137,6 @@
                   <surname>Bar ʿArqa</surname> 
                   <addName type="untagged-title">of Edessa</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name2-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib2-7">#REF!</persName>
                <bibl xml:id="bib2-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
@@ -155,11 +158,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">2</citedRange>
                   <citedRange unit="pp">213</citedRange>
-               </bibl>
-               <bibl xml:id="bib2-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Yaʿqub of Quṣur | The Syriac Prosopography</title>
+            <title xml:lang="en">Yaʿqub of Quṣūr | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,32 +98,27 @@
                          xml:id="name284-4a"
                          corresp="#name284-2 #name284-3 #name284-4b"
                          xml:lang="syr"
-                         source="#bib284-4">ܪܒܢ ܝܥܩܘܒ ܩܨܘܪܝܐ</persName>
+                         source="#bib284-4">ܪܒܢ <forename>ܝܥܩܘܒ</forename> ܩܨܘܪܝܐ</persName>
                <persName type="sic"
                          xml:id="name284-4b"
                          corresp="#name284-2 #name284-3 #name284-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib284-4">ܪܰܒܢ ܝܰܥܩܘܒ ܩܨܘܪܳܝܐ</persName>
+                         source="#bib284-4">ܪܰܒܢ <forename>ܝܰܥܩܘܒ</forename> ܩܨܘܪܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title">ܩܨܘܪܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Yaʿqub</forename> 
-                  <addName type="untagged-title">of Quṣur</addName>
+                  <addName type="untagged-title">of Quṣūr</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name284-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib284-7">#REF!</persName>
                <bibl xml:id="bib284-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">490</citedRange>
-               </bibl>
-               <bibl xml:id="bib284-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

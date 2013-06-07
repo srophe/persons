@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,22 +98,23 @@
                          xml:id="name153-2"
                          corresp="#name153-3 #name153-4a #name153-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib153-2">Basilius, bishop of Samosata</persName>
+                         source="#bib153-2">
+                  <forename>Basilius</forename>, <addName type="untagged-title">bishop of Samosata</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name153-3"
                          corresp="#name153-2 #name153-4a #name153-4b"
                          xml:lang="ar"
-                         source="#bib153-3">باسيليوس اسقف سميساط</persName>
+                         source="#bib153-3">
+                  <forename>باسيليوس</forename> 
+                  <addName type="untagged-title">اسقف سميساط</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Baselios</forename> 
                   <addName type="untagged-title">of Samosata</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name153-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib153-7">#REF!</persName>
                <death when="0843" source="#bib153-2">843</death>
                <bibl xml:id="bib153-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -129,11 +130,6 @@
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="entry">152</citedRange>
                   <citedRange unit="pp">335</citedRange>
-               </bibl>
-               <bibl xml:id="bib153-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
                <note type="record-description">In the Syriac text of Barsoum, the description of Basilius has been appended to the end of the previous entry (Benjamin of Edessa) without a heading, and the entry (as it is) does not include Basilius' name.</note>
             </person>

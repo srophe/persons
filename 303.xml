@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -125,10 +125,9 @@
                   <addName type="untagged-title">ܟܘܪܳܝܐ</addName> 
                   <forename>ܡܰܬܝ ܟܘܢܰܐܛ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name303-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib303-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܡܬܝ ܟܘܢܐܛ</forename>
+               </persName>
                <birth when="1860" source="#bib303-1">1860</birth>
                <death when="1927" source="#bib303-1">1927</death>
                <death when="1927" source="#bib303-2">1927</death>
@@ -150,11 +149,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">290</citedRange>
                   <citedRange unit="pp">499</citedRange>
-               </bibl>
-               <bibl xml:id="bib303-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

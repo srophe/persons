@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,37 @@
                          xml:id="name776-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib776-1"
-                         syriaca-tags="#syriaca-headword">Testament of our Lord Jesus Christ</persName>
+                         syriaca-tags="#syriaca-headword">
+                  <GEDSH_Full xmlns="">Testament of our Lord Jesus Christ</GEDSH_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name776-2"
                          corresp="#name776-3 #name776-4a #name776-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib776-2">The Covenant of Our Lord</persName>
+                         source="#bib776-2">
+                  <Barsoum_En_Full xmlns="">The Covenant of Our Lord</Barsoum_En_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name776-3"
                          corresp="#name776-2 #name776-4a #name776-4b"
                          xml:lang="ar"
-                         source="#bib776-3">عهد ربنا</persName>
+                         source="#bib776-3">
+                  <Barsoum_Ar_Full xmlns="">عهد ربنا</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name776-4a"
                          corresp="#name776-2 #name776-3 #name776-4b"
                          xml:lang="syr"
-                         source="#bib776-4">ܕܝܬܝܩܝ ܕܡܪܢ</persName>
+                         source="#bib776-4">
+                  <Barsoum_Sy_NV_Full xmlns="">ܕܝܬܝܩܝ ܕܡܪܢ</Barsoum_Sy_NV_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name776-4b"
                          corresp="#name776-2 #name776-3 #name776-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib776-4">ܕܺܝܰܬܺܝܩܺܝ ܕܡܳܪܢ</persName>
-               <persName type="sic"
-                         xml:id="name776-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib776-7">#REF!</persName>
+                         source="#bib776-4">
+                  <Barsoum_Sy_V_Full xmlns="">ܕܺܝܰܬܺܝܩܺܝ ܕܡܳܪܢ</Barsoum_Sy_V_Full>
+               </persName>
                <bibl xml:id="bib776-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -145,11 +151,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib776-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

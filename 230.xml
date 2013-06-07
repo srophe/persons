@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,35 @@
                          xml:id="name230-2"
                          corresp="#name230-3 #name230-4a #name230-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib230-2">The Edessene Chronicler</persName>
+                         source="#bib230-2">
+                  <addName type="untagged-title">The Edessene Chronicler</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name230-3"
                          corresp="#name230-2 #name230-4a #name230-4b"
                          xml:lang="ar"
-                         source="#bib230-3">المؤرخ الرهاوي</persName>
+                         source="#bib230-3">
+                  <addName type="untagged-title">المؤرخ الرهاوي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name230-4a"
                          corresp="#name230-2 #name230-3 #name230-4b"
                          xml:lang="syr"
-                         source="#bib230-4">ܡܟܬܒܢܐ ܐܘܪܗܝܐ </persName>
+                         source="#bib230-4">
+                  <addName type="untagged-title">ܡܟܬܒܢܐ ܐܘܪܗܝܐ </addName>
+               </persName>
                <persName type="sic"
                          xml:id="name230-4b"
                          corresp="#name230-2 #name230-3 #name230-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib230-4">ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܳܐ </persName>
+                         source="#bib230-4">
+                  <addName type="untagged-title">ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܳܐ </addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title">Author of the Chronicle of 1234</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name230-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib230-7">#REF!</persName>
                <listEvent>
                   <event when="1234" source="#bib230-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>
@@ -155,11 +159,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">227</citedRange>
                   <citedRange unit="pp">434</citedRange>
-               </bibl>
-               <bibl xml:id="bib230-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

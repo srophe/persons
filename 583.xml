@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Author of Kalila and Dimna | The Syriac Prosopography</title>
+            <title xml:lang="en">Kalila wa Dimna | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -105,7 +105,9 @@
                          xml:id="name583-3"
                          corresp="#name583-2 #name583-4a #name583-4b"
                          xml:lang="ar"
-                         source="#bib583-3">كتاب كليلة ودمنة</persName>
+                         source="#bib583-3">
+                  <Barsoum_Ar_Full xmlns="">كتاب كليلة ودمنة</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name583-4a"
                          corresp="#name583-2 #name583-3 #name583-4b"
@@ -148,15 +150,6 @@
                          source="#bib583-6">
                   <Abdisho_BO_Sy_V_Full xmlns="">ܩܰܠܺܝܠܰܓ ܘܕܰܡܢܰܓ</Abdisho_BO_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of Kalila and Dimna</addName>
-               </persName>
-               <persName type="sic"
-                         xml:id="name583-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib583-7">#REF!</persName>
                <bibl xml:id="bib583-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -193,11 +186,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">220</citedRange>
-               </bibl>
-               <bibl xml:id="bib583-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

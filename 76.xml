@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,7 +99,8 @@
                          corresp="#name76-3 #name76-4a #name76-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib76-2">
-                  <forename>Julian II</forename>
+                  <forename>Julian </forename>
+                  <addName type="untagged-title">II</addName>
                </persName>
                <persName type="sic"
                          xml:id="name76-3"
@@ -115,7 +116,7 @@
                          xml:lang="syr"
                          source="#bib76-4">
                   <forename>ܝܘܠܝܢܐ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ</addName> 
+                  <addName type="untagged-title">ܬܪܝܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name76-4b"
@@ -125,16 +126,16 @@
                   <forename>ܝܘܠܝܰܢܶܐ</forename> 
                   <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName> 
                </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܝܘܠܝܢܐ</forename> 
+                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Yulyanos</forename> 
                   <addName type="untagged-title">I</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name76-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib76-7">#REF!</persName>
                <death when="0595" source="#bib76-2">595</death>
                <bibl xml:id="bib76-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -157,11 +158,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">71</citedRange>
                   <citedRange unit="pp">296</citedRange>
-               </bibl>
-               <bibl xml:id="bib76-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

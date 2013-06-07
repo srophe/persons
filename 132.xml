@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,7 +99,8 @@
                          corresp="#name132-3 #name132-4a #name132-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib132-2">
-                  <forename>John I</forename>
+                  <forename>John </forename>
+                  <addName type="untagged-title">I</addName>
                </persName>
                <persName type="sic"
                          xml:id="name132-3"
@@ -125,13 +126,12 @@
                   <forename>ܐܝܘܰܐܢܝܣ</forename> 
                   <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
                </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܐܝܘܐܢܝܣ</forename>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">Iwannis (Yuḥanon <addName type="untagged-title">III</addName>)</persName>
-               <persName type="sic"
-                         xml:id="name132-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib132-7">#REF!</persName>
                <death when="0754" source="#bib132-2">754</death>
                <bibl xml:id="bib132-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -154,11 +154,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">132</citedRange>
                   <citedRange unit="pp">345</citedRange>
-               </bibl>
-               <bibl xml:id="bib132-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

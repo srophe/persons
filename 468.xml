@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,8 +99,10 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib468-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Eliya</forename> 
-                  <addName type="untagged-title">I of Ṭirhan</addName>
+                  <forename>Eliya</forename> I of Ṭirhan</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܐܠܝܐ</forename> 
+                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name468-5a"
@@ -117,10 +119,6 @@
                          corresp="#name468-6b #name468-5a"
                          xml:lang="syr"
                          source="#bib468-6">ܡܪܝ <forename>ܐܠܝܐ</forename> ܩܕܡܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name468-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib468-7">#REF!</persName>
                <death when="1049" source="#bib468-1">1049</death>
                <bibl xml:id="bib468-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -139,11 +137,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">262</citedRange>
-               </bibl>
-               <bibl xml:id="bib468-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

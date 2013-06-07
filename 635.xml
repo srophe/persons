@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +98,9 @@
                          xml:id="name635-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib635-1"
-                         syriaca-tags="#syriaca-headword">Methodius, Apocalypse of Pseudo-</persName>
+                         syriaca-tags="#syriaca-headword">
+                  <GEDSH_Full xmlns="">Methodius, Apocalypse of Pseudo-</GEDSH_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name635-5a"
                          corresp="#name635-5b #name635-6a"
@@ -127,10 +129,6 @@
                          source="#bib635-6">
                   <Abdisho_BO_Sy_V_Full xmlns="">ܝܘܽܒܳܠܳܐ ܕܬܘ̈ܠܕܳܬܳܐ ܕܡܺܝܬܝܺܕܳܘܣ ܐܶܦܺܝܣܩܽܘܦܳܐ</Abdisho_BO_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name635-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib635-7">#REF!</persName>
                <bibl xml:id="bib635-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -148,11 +146,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">27</citedRange>
-               </bibl>
-               <bibl xml:id="bib635-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

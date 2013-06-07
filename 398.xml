@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Author of the Book of Steps | The Syriac Prosopography</title>
+            <title xml:lang="en"> | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,26 +98,23 @@
                          xml:id="name398-3"
                          corresp="#name398-2 #name398-4a #name398-4b"
                          xml:lang="ar"
-                         source="#bib398-3">كتب الدرج</persName>
+                         source="#bib398-3">
+                  <Barsoum_Ar_Full xmlns="">كتب الدرج</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name398-4a"
                          corresp="#name398-2 #name398-3 #name398-4b"
                          xml:lang="syr"
-                         source="#bib398-4">ܟܬܒܐ ܕܕܪ̈ܓܐ</persName>
+                         source="#bib398-4">
+                  <addName type="untagged-title">ܟܬܒܐ ܕܕܪ̈ܓܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name398-4b"
                          corresp="#name398-2 #name398-3 #name398-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib398-4">ܟܬܳܒܐ ܕܕܰܪ̈ܓܐ</persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Book of Steps</addName>
+                         source="#bib398-4">
+                  <addName type="untagged-title">ܟܬܳܒܐ ܕܕܰܪ̈ܓܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name398-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib398-7">#REF!</persName>
                <bibl xml:id="bib398-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -135,11 +132,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib398-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

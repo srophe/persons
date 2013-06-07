@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,31 +98,35 @@
                          xml:id="name19-2"
                          corresp="#name19-3 #name19-4a #name19-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib19-2">The Writer of the Biography of Eusebius of Samosata</persName>
+                         source="#bib19-2">
+                  <addName type="untagged-title">The Writer of the Biography of Eusebius of Samosata</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name19-3"
                          corresp="#name19-2 #name19-4a #name19-4b"
                          xml:lang="ar"
-                         source="#bib19-3">كاتب سيرة اوسابيوس السميساطي</persName>
+                         source="#bib19-3">
+                  <addName type="untagged-title">كاتب سيرة اوسابيوس السميساطي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name19-4a"
                          corresp="#name19-2 #name19-3 #name19-4b"
                          xml:lang="syr"
-                         source="#bib19-4">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</persName>
+                         source="#bib19-4">
+                  <addName type="untagged-title">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name19-4b"
                          corresp="#name19-2 #name19-3 #name19-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib19-4">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</persName>
+                         source="#bib19-4">
+                  <addName type="untagged-title">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title">Author of the biography of Eusebius of Samosata</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name19-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib19-7">#REF!</persName>
                <bibl xml:id="bib19-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
@@ -143,11 +147,6 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">18</citedRange>
-               </bibl>
-               <bibl xml:id="bib19-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

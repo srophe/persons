@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,32 +98,43 @@
                          xml:id="name48-2"
                          corresp="#name48-3 #name48-4a #name48-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib48-2">Mara, metropolitan of Amid</persName>
+                         source="#bib48-2">
+                  <forename>Mara</forename>, <addName type="untagged-title">metropolitan of Amid</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name48-3"
                          corresp="#name48-2 #name48-4a #name48-4b"
                          xml:lang="ar"
-                         source="#bib48-3">مارا مطران آمد</persName>
+                         source="#bib48-3">
+                  <forename>مارا</forename> 
+                  <addName type="untagged-title">مطران آمد</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name48-4a"
                          corresp="#name48-2 #name48-3 #name48-4b"
                          xml:lang="syr"
-                         source="#bib48-4">ܡܪܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</persName>
+                         source="#bib48-4">
+                  <forename>ܡܪܐ</forename> 
+                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name48-4b"
                          corresp="#name48-2 #name48-3 #name48-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib48-4">ܡܰܪܰܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܳܡܝܕ</persName>
+                         source="#bib48-4">
+                  <forename>ܡܰܪܰܐ</forename> 
+                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܳܡܝܕ</addName>
+               </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܡܪܐ</forename> 
+                  <addName type="untagged-title">ܕܐܡܝܕ</addName>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename>Mara</forename> 
                   <addName type="untagged-title">of Amid</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name48-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib48-7">#REF!</persName>
                <death when="0529" source="#bib48-2">529</death>
                <bibl xml:id="bib48-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -146,11 +157,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">44</citedRange>
                   <citedRange unit="pp">260</citedRange>
-               </bibl>
-               <bibl xml:id="bib48-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

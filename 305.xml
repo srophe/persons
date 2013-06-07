@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -106,7 +106,9 @@
                          corresp="#name305-3 #name305-4a #name305-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib305-2">
-                  <Barsoum_En_Full xmlns="">The Priest Ya‛qub Saka</Barsoum_En_Full>
+                  <addName type="untagged-title">The Priest</addName> 
+                  <forename>Ya‛qub </forename>
+                  <surname>Saka</surname>
                </persName>
                <persName type="sic"
                          xml:id="name305-3"
@@ -135,10 +137,10 @@
                   <forename>ܝܰܥܩܘܒ</forename> 
                   <surname>ܣܰܐܟܰܐ</surname>
                </persName>
-               <persName type="sic"
-                         xml:id="name305-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib305-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܝܥܩܘܒ</forename> 
+                  <surname>ܣܐܟܐ</surname>
+               </persName>
                <birth notBefore="1864" notAfter="1865" source="#bib305-1">1864/5</birth>
                <death when="1931" source="#bib305-1">1931</death>
                <death when="1931" source="#bib305-2">1931</death>
@@ -169,11 +171,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">292</citedRange>
                   <citedRange unit="pp">500</citedRange>
-               </bibl>
-               <bibl xml:id="bib305-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

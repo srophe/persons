@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -122,10 +122,11 @@
                          corresp="#name811-2 #name811-3 #name811-4a"
                          xml:lang="syr-Syrj"
                          source="#bib811-4">ܡܳܪܝ <forename>ܝܰܥܩܽܘܒ</forename> ܐܶܦܺܝܣܩܽܘܦܐ ܕܰܢܨܺܝܒܺܝܢ</persName>
-               <persName type="sic"
-                         xml:id="name811-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib811-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title">ܕܢܨܝܒܝܢ</addName>
+               </persName>
+               <idno type="URI">http://viaf.org/viaf/241281846</idno>
                <death notBefore="0337" notAfter="0338" source="#bib811-1">337/8</death>
                <bibl xml:id="bib811-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -149,11 +150,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib811-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -114,9 +114,7 @@
                          xml:id="name239-3"
                          corresp="#name239-2 #name239-4a #name239-4b"
                          xml:lang="ar"
-                         source="#bib239-3">
-                  <Barsoum_Ar_Full xmlns="">مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</Barsoum_Ar_Full>
-               </persName>
+                         source="#bib239-3">مار <forename>غريغوريوس</forename> ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
                <persName type="sic"
                          xml:id="name239-4a"
                          corresp="#name239-2 #name239-3 #name239-4b"
@@ -129,10 +127,10 @@
                          xml:lang="syr-Syrj"
                          source="#bib239-4">ܡܳܪܝ <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename> ܡܰܦܪܝܳܢܐ <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
                </persName>
-               <persName type="sic"
-                         xml:id="name239-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib239-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename> 
+                  <surname>ܒܪ ܥܒܪܝܐ</surname>
+               </persName>
                <idno type="URI">http://viaf.org/viaf/81959220</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n50-24350</idno>
                <idno type="URI">http://worldcat.org/identities/np-gregorius, abu al faraj$called bar hebraeus$1226 1286</idno>
@@ -166,11 +164,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">235</citedRange>
                   <citedRange unit="pp">443</citedRange>
-               </bibl>
-               <bibl xml:id="bib239-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

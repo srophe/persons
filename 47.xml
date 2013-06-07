@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -106,26 +106,37 @@
                          xml:id="name47-2"
                          corresp="#name47-3 #name47-4a #name47-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib47-2">Paul, bishop of al-Raqqa</persName>
+                         source="#bib47-2">
+                  <forename>Paul</forename>, <addName type="untagged-title">bishop of al-Raqqa</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name47-3"
                          corresp="#name47-2 #name47-4a #name47-4b"
                          xml:lang="ar"
-                         source="#bib47-3">بولس اسقف الرقة</persName>
+                         source="#bib47-3">
+                  <forename>بولس</forename> 
+                  <addName type="untagged-title">اسقف الرقة</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name47-4a"
                          corresp="#name47-2 #name47-3 #name47-4b"
                          xml:lang="syr"
-                         source="#bib47-4">ܦܘܠܘܣ ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</persName>
+                         source="#bib47-4">
+                  <forename>ܦܘܠܘܣ</forename> 
+                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name47-4b"
                          corresp="#name47-2 #name47-3 #name47-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib47-4">ܦܰܘܠܘܣ ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</persName>
-               <persName type="sic"
-                         xml:id="name47-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib47-7">#REF!</persName>
+                         source="#bib47-4">
+                  <forename>ܦܰܘܠܘܣ</forename> 
+                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</addName>
+               </persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܦܘܠܘܣ</forename> 
+                  <addName type="untagged-title">ܕܩܠܘܢܝܩܝ</addName>
+               </persName>
                <floruit source="#bib47-1">first half of 6 C</floruit>
                <listEvent>
                   <event when="0528" source="#bib47-2" type="untagged">
@@ -159,11 +170,6 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">43</citedRange>
                   <citedRange unit="pp">259</citedRange>
-               </bibl>
-               <bibl xml:id="bib47-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

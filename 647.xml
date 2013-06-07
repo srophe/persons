@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -125,10 +125,10 @@
                          corresp="#name647-2 #name647-3 #name647-4a"
                          xml:lang="syr-Syrj"
                          source="#bib647-4">ܐܰܒܐ <forename>ܡܘܫܶܐ</forename> ܢܨܝܒܝܺܢܳܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name647-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib647-7">#REF!</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <forename>ܡܘܫܐ</forename> 
+                  <addName type="untagged-title">ܢܨܝܒܝܢܝܐ</addName>
+               </persName>
                <floruit source="#bib647-1">first half of 10th cent.</floruit>
                <bibl xml:id="bib647-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -152,11 +152,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib647-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

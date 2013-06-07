@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Author of the Acts of Thomas | The Syriac Prosopography</title>
+            <title xml:lang="en">Acts of Thomas | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,26 +98,28 @@
                          xml:id="name788-3"
                          corresp="#name788-2 #name788-4a #name788-4b"
                          xml:lang="ar"
-                         source="#bib788-3">اعمال توما الرسول</persName>
+                         source="#bib788-3">
+                  <Barsoum_Ar_Full xmlns="">اعمال توما الرسول</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name788-4a"
                          corresp="#name788-2 #name788-3 #name788-4b"
                          xml:lang="syr"
-                         source="#bib788-4">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</persName>
+                         source="#bib788-4">
+                  <Barsoum_Sy_NV_Full xmlns="">ܥܒ̈ܕܐ ܕܬܐܘܡܐ ܫܠܝܚܐ</Barsoum_Sy_NV_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name788-4b"
                          corresp="#name788-2 #name788-3 #name788-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib788-4">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</persName>
+                         source="#bib788-4">
+                  <Barsoum_Sy_V_Full xmlns="">ܥܒ̈ܕܶܐ ܕܬܳܐܘܡܰܐ ܫܠܺܝܚܐ</Barsoum_Sy_V_Full>
+               </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Acts of Thomas</addName>
+                  <addName type="untagged-title">Acts of Thomas</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name788-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib788-7">#REF!</persName>
                <bibl xml:id="bib788-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -135,11 +137,6 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
-               </bibl>
-               <bibl xml:id="bib788-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

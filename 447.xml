@@ -5,7 +5,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Compiler of the Diatessaron | The Syriac Prosopography</title>
+            <title xml:lang="en"> | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,17 +98,23 @@
                          xml:id="name447-3"
                          corresp="#name447-2 #name447-4a #name447-4b"
                          xml:lang="ar"
-                         source="#bib447-3">الدياطسرون</persName>
+                         source="#bib447-3">
+                  <Barsoum_Ar_Full xmlns="">الدياطسرون</Barsoum_Ar_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name447-4a"
                          corresp="#name447-2 #name447-3 #name447-4b"
                          xml:lang="syr"
-                         source="#bib447-4">ܕܝܐܛܣܪܘܢ</persName>
+                         source="#bib447-4">
+                  <Barsoum_Sy_NV_Full xmlns="">ܕܝܐܛܣܪܘܢ</Barsoum_Sy_NV_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name447-4b"
                          corresp="#name447-2 #name447-3 #name447-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib447-4">ܕܺܝܺܐܛܶܣܪܘܢ</persName>
+                         source="#bib447-4">
+                  <Barsoum_Sy_V_Full xmlns="">ܕܺܝܺܐܛܶܣܪܘܢ</Barsoum_Sy_V_Full>
+               </persName>
                <persName type="sic"
                          xml:id="name447-5a"
                          corresp="#name447-5b #name447-6a"
@@ -137,15 +143,6 @@
                          source="#bib447-6">
                   <Abdisho_BO_Sy_V_Full xmlns="">ܕܺܝܰܛܶܣܰܪܳܘܢ</Abdisho_BO_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Compiler of the Diatessaron</addName>
-               </persName>
-               <persName type="sic"
-                         xml:id="name447-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib447-7">#REF!</persName>
                <bibl xml:id="bib447-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
@@ -175,11 +172,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">12</citedRange>
-               </bibl>
-               <bibl xml:id="bib447-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

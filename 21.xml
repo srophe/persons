@@ -51,7 +51,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-06-04:00</date>
+            <date>2013-06-07-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -85,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-06-04:00">
+                 when="2013-06-07-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -106,15 +106,21 @@
                          xml:id="name21-4a"
                          corresp="#name21-2 #name21-3 #name21-4b"
                          xml:lang="syr"
-                         source="#bib21-4">ܓܪܝܓܘܪܝܘܣ ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</persName>
+                         source="#bib21-4">
+                  <forename>ܓܪܝܓܘܪܝܘܣ</forename> 
+                  <addName type="untagged-title">ܝܚܝܕܝܐ ܕܩܘܦܪܘܣ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name21-4b"
                          corresp="#name21-2 #name21-3 #name21-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib21-4">ܓܪܺܝܓܘܪܝܘܣ ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</persName>
+                         source="#bib21-4">
+                  <forename>ܓܪܺܝܓܘܪܝܘܣ</forename> 
+                  <addName type="untagged-title">ܝܚܝܕܳܝܳܐ ܕܩܘܦܪܳܘܣ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename>ܓܪܝܓܘܪܝܘܣ</forename> 
-                  <roleName type="office">ܕܝܪܝܐ</roleName>
+                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name21-5a"
@@ -140,10 +146,6 @@
                   <forename>ܓܪܝܓܘܪܝܘܣ</forename> 
                   <addName type="untagged-title">ܕܝܪܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name21-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib21-7">#REF!</persName>
                <floruit source="#bib21-1">6th/7th cent.</floruit>
                <bibl xml:id="bib21-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -168,11 +170,6 @@
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">191</citedRange>
-               </bibl>
-               <bibl xml:id="bib21-7">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>
