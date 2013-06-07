@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name78-3 #name78-4a #name78-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib78-2">
-                  <forename>John</forename> 
-                  <addName type="untagged-title">the Chanter</addName>
+                  <forename sort="1">John</forename> 
+                  <addName type="untagged-title" sort="2">the Chanter</addName>
                </persName>
                <persName type="sic"
                          xml:id="name78-3"
                          corresp="#name78-2 #name78-4a #name78-4b"
                          xml:lang="ar"
                          source="#bib78-3">
-                  <forename>يوحنا</forename> 
-                  <addName type="untagged-title">بسالطس</addName>
+                  <forename sort="1">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">بسالطس</addName>
                </persName>
                <persName type="sic"
                          xml:id="name78-4a"
                          corresp="#name78-2 #name78-3 #name78-4b"
                          xml:lang="syr"
                          source="#bib78-4">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܦܣܐܠܛܘܣ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܣܐܠܛܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name78-4b"
                          corresp="#name78-2 #name78-3 #name78-4a"
                          xml:lang="syr-Syrj"
                          source="#bib78-4">
-                  <forename>ܝܘܚܰܢܢ</forename> 
-                  <addName type="untagged-title">ܦܣܰܐܠܛܘܣ</addName>
+                  <forename sort="1">ܝܘܚܰܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܣܰܐܠܛܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon</forename> 
-                  <addName type="untagged-title">Psaltes</addName>
+                  <forename sort="1">Yuḥanon</forename> 
+                  <addName type="untagged-title" sort="2">Psaltes</addName>
                </persName>
                <death when="0600" source="#bib78-2">600</death>
                <bibl xml:id="bib78-2">

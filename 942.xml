@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,23 +100,23 @@
                          corresp="#name942-3 #name942-4a #name942-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib942-2">
-                  <forename>Athanasius Denḥa</forename>, <addName type="untagged-title">metropolitan of Edessa</addName>
+                  <forename sort="1">Athanasius Denḥa</forename>, <addName type="untagged-title" sort="2">metropolitan of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name942-3"
                          corresp="#name942-2 #name942-4a #name942-4b"
                          xml:lang="ar"
                          source="#bib942-3">
-                  <forename>اثناسيوس دنحا</forename> 
-                  <addName type="untagged-title">مطران الرها</addName>
+                  <forename sort="1">اثناسيوس دنحا</forename> 
+                  <addName type="untagged-title" sort="2">مطران الرها</addName>
                </persName>
                <persName type="sic"
                          xml:id="name942-4a"
                          corresp="#name942-2 #name942-3 #name942-4b"
                          xml:lang="syr"
                          source="#bib942-4">
-                  <forename>ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name942-4b"
@@ -123,14 +124,14 @@
                          xml:lang="syr-Syrj"
                          source="#bib942-4">ܐܬܢܐܣܝܘܣ ܕܢܚܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename> 
-                  <addName type="untagged-title">ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܐܬܢܐܣܝܘܣ ܕܢܚܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Athanasius Denḥa</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Athanasius Denḥa</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <death when="1191" source="#bib942-2">1191</death>
                <bibl xml:id="bib942-2">

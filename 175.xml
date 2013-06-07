@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name175-3 #name175-4a #name175-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib175-2">
-                  <forename>Dionysius</forename> 
-                  <addName type="untagged-title">II</addName>
+                  <forename sort="1">Dionysius</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>
                </persName>
                <persName type="sic"
                          xml:id="name175-3"
                          corresp="#name175-2 #name175-4a #name175-4b"
                          xml:lang="ar"
                          source="#bib175-3">
-                  <forename>ديونيسيوس</forename> 
-                  <addName type="untagged-title">الثاني</addName>
+                  <forename sort="1">ديونيسيوس</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name175-4a"
                          corresp="#name175-2 #name175-3 #name175-4b"
                          xml:lang="syr"
                          source="#bib175-4">
-                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ</addName>
+                  <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܝܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name175-4b"
                          corresp="#name175-2 #name175-3 #name175-4a"
                          xml:lang="syr-Syrj"
                          source="#bib175-4">
-                  <forename>ܕܝܺܘܢܢܘܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
+                  <forename sort="1">ܕܝܺܘܢܢܘܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܰܝܳܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Dionysios</forename> 
-                  <addName type="untagged-title">II</addName>
+                  <forename sort="1">Dionysios</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>
                </persName>
                <death when="0909" source="#bib175-2">909</death>
                <bibl xml:id="bib175-2">

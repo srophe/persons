@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name207-2"
                          corresp="#name207-3 #name207-4a #name207-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib207-2">The Priest <forename>Ṣaliba</forename> of Qarikara</persName>
+                         source="#bib207-2">
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">Ṣaliba</forename> 
+                  <addName type="untagged-title" sort="2">of Qarikara</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name207-3"
                          corresp="#name207-2 #name207-4a #name207-4b"
                          xml:lang="ar"
-                         source="#bib207-3">القس <forename>صليبا</forename> القريكري</persName>
+                         source="#bib207-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">صليبا</forename> 
+                  <addName type="untagged-title" sort="2">القريكري</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name207-4a"
                          corresp="#name207-2 #name207-3 #name207-4b"
                          xml:lang="syr"
-                         source="#bib207-4">ܩܫܝܫܐ <forename>ܨܠܝܒܐ</forename> ܩܪܝܟܪܝܐ</persName>
+                         source="#bib207-4">ܩܫܝܫܐ <forename sort="1">ܨܠܝܒܐ</forename> ܩܪܝܟܪܝܐ</persName>
                <persName type="sic"
                          xml:id="name207-4b"
                          corresp="#name207-2 #name207-3 #name207-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib207-4">ܩܰܫܝܫܳܐ <forename>ܨܰܠܝܒܐ</forename> ܩܪܝܟܪܝܐ</persName>
+                         source="#bib207-4">ܩܰܫܝܫܳܐ <forename sort="1">ܨܰܠܝܒܐ</forename> ܩܪܝܟܪܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܨܠܝܒܐ</forename> 
-                  <addName type="untagged-title">ܩܪܝܟܪܝܐ</addName>
+                  <forename sort="1">ܨܠܝܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܪܝܟܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ṣlibo</forename> 
-                  <addName type="untagged-title">of Qarikara</addName>
+                  <forename sort="1">Ṣlibo</forename> 
+                  <addName type="untagged-title" sort="2">of Qarikara</addName>
                </persName>
                <death when="1164" source="#bib207-2">1164</death>
                <bibl xml:id="bib207-2">

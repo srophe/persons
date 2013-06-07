@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,43 +100,43 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib47-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Pawlos</forename> 
-                  <addName type="untagged-title">of Kallinikos</addName>
+                  <forename sort="1">Pawlos</forename> 
+                  <addName type="untagged-title" sort="2">of Kallinikos</addName>
                </persName>
                <persName type="sic"
                          xml:id="name47-2"
                          corresp="#name47-3 #name47-4a #name47-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib47-2">
-                  <forename>Paul</forename>, <addName type="untagged-title">bishop of al-Raqqa</addName>
+                  <forename sort="1">Paul</forename>, <addName type="untagged-title" sort="2">bishop of al-Raqqa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name47-3"
                          corresp="#name47-2 #name47-4a #name47-4b"
                          xml:lang="ar"
                          source="#bib47-3">
-                  <forename>بولس</forename> 
-                  <addName type="untagged-title">اسقف الرقة</addName>
+                  <forename sort="1">بولس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف الرقة</addName>
                </persName>
                <persName type="sic"
                          xml:id="name47-4a"
                          corresp="#name47-2 #name47-3 #name47-4b"
                          xml:lang="syr"
                          source="#bib47-4">
-                  <forename>ܦܘܠܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</addName>
+                  <forename sort="1">ܦܘܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name47-4b"
                          corresp="#name47-2 #name47-3 #name47-4a"
                          xml:lang="syr-Syrj"
                          source="#bib47-4">
-                  <forename>ܦܰܘܠܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</addName>
+                  <forename sort="1">ܦܰܘܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܦܘܠܘܣ</forename> 
-                  <addName type="untagged-title">ܕܩܠܘܢܝܩܝ</addName>
+                  <forename sort="1">ܦܘܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܩܠܘܢܝܩܝ</addName>
                </persName>
                <floruit source="#bib47-1">first half of 6 C</floruit>
                <listEvent>

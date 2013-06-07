@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,45 +100,45 @@
                          corresp="#name283-3 #name283-4a #name283-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib283-2">
-                  <forename>‛Abd al-Ghani</forename> 
-                  <surname>al-Manṣuri</surname>
+                  <forename sort="1">‛Abd al-Ghani</forename> 
+                  <surname sort="2">al-Manṣuri</surname>
                </persName>
                <persName type="sic"
                          xml:id="name283-3"
                          corresp="#name283-2 #name283-4a #name283-4b"
                          xml:lang="ar"
                          source="#bib283-3">
-                  <forename>عبد الغني</forename> 
-                  <surname>المنصوري</surname> 
-                  <addName type="untagged-title">مفريان المشرق</addName>
+                  <forename sort="1">عبد الغني</forename> 
+                  <surname sort="2">المنصوري</surname> 
+                  <addName type="untagged-title" sort="2">مفريان المشرق</addName>
                </persName>
                <persName type="sic"
                          xml:id="name283-4a"
                          corresp="#name283-2 #name283-3 #name283-4b"
                          xml:lang="syr"
                          source="#bib283-4">
-                  <forename>ܥܒܕܐܠܓܢܝ</forename> 
-                  <surname>ܡܢܨܘܪܝܐ</surname> 
-                  <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                  <forename sort="1">ܥܒܕܐܠܓܢܝ</forename> 
+                  <surname sort="2">ܡܢܨܘܪܝܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name283-4b"
                          corresp="#name283-2 #name283-3 #name283-4a"
                          xml:lang="syr-Syrj"
                          source="#bib283-4">
-                  <forename>ܥܰܒܕܐܠܓܰܢܝ</forename> 
-                  <surname>ܡܰܢܨܘܪܳܝܐ</surname> 
-                  <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                  <forename sort="1">ܥܰܒܕܐܠܓܰܢܝ</forename> 
+                  <surname sort="2">ܡܰܢܨܘܪܳܝܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܥܒܕܐܠܓܢܝ</forename> 
-                  <addName type="untagged-title">ܡܢܨܘܪܝܐ</addName>
+                  <forename sort="1">ܥܒܕܐܠܓܢܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢܨܘܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAbd al-Ghanī</forename> 
-                  <addName type="untagged-title">al-Manṣūrī</addName>
+                  <forename sort="1">ʿAbd al-Ghanī</forename> 
+                  <addName type="untagged-title" sort="2">al-Manṣūrī</addName>
                </persName>
                <death when="1575" source="#bib283-2">1575</death>
                <bibl xml:id="bib283-2">

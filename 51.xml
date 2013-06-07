@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,29 +100,37 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib51-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Severus</forename> 
-                  <addName type="untagged-title">of Antioch</addName>
+                  <forename sort="1">Severus</forename> 
+                  <addName type="untagged-title" sort="2">of Antioch</addName>
                </persName>
                <persName type="sic"
                          xml:id="name51-2"
                          corresp="#name51-3 #name51-4a #name51-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib51-2">St. <forename>Severus</forename> of Antioch</persName>
+                         source="#bib51-2">
+                  <addName type="untagged-title" sort="2">St.</addName> 
+                  <forename sort="1">Severus</forename> 
+                  <addName type="untagged-title" sort="2">of Antioch</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name51-3"
                          corresp="#name51-2 #name51-4a #name51-4b"
                          xml:lang="ar"
-                         source="#bib51-3">القديس <forename>سويريوس</forename> الانطاكي</persName>
+                         source="#bib51-3">
+                  <addName type="untagged-title" sort="2">القديس </addName>
+                  <forename sort="1">سويريوس</forename> 
+                  <addName type="untagged-title" sort="2">الانطاكي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name51-4a"
                          corresp="#name51-2 #name51-3 #name51-4b"
                          xml:lang="syr"
-                         source="#bib51-4">ܡܪܝ <forename>ܣܘܝܪܝܘܣ</forename> ܕܐܢܛܝܘܟܝܐ</persName>
+                         source="#bib51-4">ܡܪܝ <forename sort="1">ܣܘܝܪܝܘܣ</forename> ܕܐܢܛܝܘܟܝܐ</persName>
                <persName type="sic"
                          xml:id="name51-4b"
                          corresp="#name51-2 #name51-3 #name51-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib51-4">ܡܳܪܝ <forename>ܣܶܘܝܪܝܘܣ</forename> ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+                         source="#bib51-4">ܡܳܪܝ <forename sort="1">ܣܶܘܝܪܝܘܣ</forename> ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <Authorized_Sy_NV_Full xmlns="">ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</Authorized_Sy_NV_Full>
                </persName>

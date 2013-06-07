@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,39 +100,43 @@
                          corresp="#name61-3 #name61-4a #name61-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib61-2">
-                  <forename>John </forename>
-                  <addName type="untagged-title">II, abbot of the Monastery of Qenneshrin</addName>
+                  <forename sort="1">John </forename>
+                  <addName type="untagged-title" sort="2">II</addName>, <addName type="untagged-title" sort="2">abbot of the Monastery of Qenneshrin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name61-3"
                          corresp="#name61-2 #name61-4a #name61-4b"
                          xml:lang="ar"
                          source="#bib61-3">
-                  <forename>يوحنا</forename> الثاني رئيس دير قنسرين</persName>
+                  <forename sort="1">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName> رئيس دير قنسرين</persName>
                <persName type="sic"
                          xml:id="name61-4a"
                          corresp="#name61-2 #name61-3 #name61-4b"
                          xml:lang="syr"
                          source="#bib61-4">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܝܢܐ ܪܝܫ ܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name61-4b"
                          corresp="#name61-2 #name61-3 #name61-4a"
                          xml:lang="syr-Syrj"
                          source="#bib61-4">
-                  <forename>ܝܘܚܰܢܢ</forename> 
-                  <addName type="untagged-title">ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
+                  <forename sort="1">ܝܘܚܰܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܰܝܢܐ ܪܺܝܫ ܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ ܕܩܢܫܪܝܢ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܝܢܐ ܕܩܢܫܪܝܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon</forename> II of Qenneshre</persName>
+                  <forename sort="1">Yuḥanon</forename> 
+                  <addName type="untagged-title" sort="2">II</addName> 
+                  <addName type="untagged-title" sort="2">of Qenneshre</addName>
+               </persName>
                <listEvent>
                   <event when="0544" source="#bib61-2" type="untagged">
                      <desc>An event for which no description has been logged.</desc>

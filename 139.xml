@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,38 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib139-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Giwargis</forename> 
-                  <addName type="untagged-title">of Bʿeltan</addName>
+                  <forename sort="1">Giwargis</forename> 
+                  <addName type="untagged-title" sort="2">of Bʿeltan</addName>
                </persName>
                <persName type="sic"
                          xml:id="name139-2"
                          corresp="#name139-3 #name139-4a #name139-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib139-2">Mar <forename>George </forename>I, Patriarch of Antioch</persName>
+                         source="#bib139-2">
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="1">George </forename>
+                  <addName type="untagged-title" sort="2">I</addName>, Patr<addName type="untagged-title" sort="2">i</addName>arch of Ant<addName type="untagged-title" sort="2">i</addName>och</persName>
                <persName type="sic"
                          xml:id="name139-3"
                          corresp="#name139-2 #name139-4a #name139-4b"
                          xml:lang="ar"
-                         source="#bib139-3">مار <forename>جاورجي</forename> الاول بطريرك انطاكية</persName>
+                         source="#bib139-3">
+                  <addName type="untagged-title" sort="2">مار </addName>
+                  <forename sort="1">جاورجي</forename> 
+                  <addName type="untagged-title" sort="2">الاول </addName>بطريرك انطاكية</persName>
                <persName type="sic"
                          xml:id="name139-4a"
                          corresp="#name139-2 #name139-3 #name139-4b"
                          xml:lang="syr"
-                         source="#bib139-4">ܡܪܝ <forename>ܓܘܪܓܝ</forename> ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
+                         source="#bib139-4">ܡܪܝ <forename sort="1">ܓܘܪܓܝ</forename> ܩܕܡܝܐ ܦܛܪܝܪܟܐ ܕܐܢܛܝܘܟܝܐ</persName>
                <persName type="sic"
                          xml:id="name139-4b"
                          corresp="#name139-2 #name139-3 #name139-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib139-4">ܡܳܪܝ <forename>ܓܶܘܰܪܓܝ</forename> ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
+                         source="#bib139-4">ܡܳܪܝ <forename sort="1">ܓܶܘܰܪܓܝ</forename> ܩܰܕܡܳܝܳܐ ܦܰܛܪܝܰܪܟܐ ܕܐܰܢܛܝܘܟܺܝܰܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܘܪܓܝ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="1">ܓܘܪܓܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <idno type="URI">http://en.wikipedia.org/wiki/Patriarch_George_of_Antioch</idno>
                <death when="0790" source="#bib139-2">790</death>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,21 +100,21 @@
                          corresp="#name153-3 #name153-4a #name153-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib153-2">
-                  <forename>Basilius</forename>, <addName type="untagged-title">bishop of Samosata</addName>
+                  <forename sort="1">Basilius</forename>, <addName type="untagged-title" sort="2">bishop of Samosata</addName>
                </persName>
                <persName type="sic"
                          xml:id="name153-3"
                          corresp="#name153-2 #name153-4a #name153-4b"
                          xml:lang="ar"
                          source="#bib153-3">
-                  <forename>باسيليوس</forename> 
-                  <addName type="untagged-title">اسقف سميساط</addName>
+                  <forename sort="1">باسيليوس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف سميساط</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Baselios</forename> 
-                  <addName type="untagged-title">of Samosata</addName>
+                  <forename sort="1">Baselios</forename> 
+                  <addName type="untagged-title" sort="2">of Samosata</addName>
                </persName>
                <death when="0843" source="#bib153-2">843</death>
                <bibl xml:id="bib153-2">

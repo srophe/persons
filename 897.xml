@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,30 +100,30 @@
                          corresp="#name897-5b #name897-6a"
                          xml:lang="syr"
                          source="#bib897-5">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܕܢܝܢܘܐ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name897-5b"
                          corresp="#name897-5a #name897-6b"
                          xml:lang="syr-Syrn"
                          source="#bib897-5">
-                  <forename>ܝܘܿܚܲܢܵܢ</forename> 
-                  <addName type="untagged-title">ܕܢܝܼܢܘܹܐ</addName>
+                  <forename sort="1">ܝܘܿܚܲܢܵܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܝܼܢܘܹܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name897-6a"
                          corresp="#name897-6b #name897-5a"
                          xml:lang="syr"
                          source="#bib897-6">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܕܢܝܢܘܐ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yoḥannan</forename> 
-                  <addName type="untagged-title">of Nineveh</addName>
+                  <forename sort="1">Yoḥannan</forename> 
+                  <addName type="untagged-title" sort="2">of Nineveh</addName>
                </persName>
                <bibl xml:id="bib897-5">
                   <title>Abdisho (YdQ)</title>

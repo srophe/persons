@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          corresp="#name141-3 #name141-4a #name141-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib141-2">
-                  <forename>Elijah</forename> 
-                  <addName type="untagged-title">of Ḥarran</addName>
+                  <forename sort="1">Elijah</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥarran</addName>
                </persName>
                <persName type="sic"
                          xml:id="name141-3"
                          corresp="#name141-2 #name141-4a #name141-4b"
                          xml:lang="ar"
                          source="#bib141-3">
-                  <forename>ايليا</forename> 
-                  <addName type="untagged-title">الحراني</addName>
+                  <forename sort="1">ايليا</forename> 
+                  <addName type="untagged-title" sort="2">الحراني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name141-4a"
                          corresp="#name141-2 #name141-3 #name141-4b"
                          xml:lang="syr"
                          source="#bib141-4">
-                  <forename>ܐܠܝܐ</forename> 
-                  <addName type="untagged-title">ܚܪܢܝܐ ܐܦܝܣܩܘܦܐ ܕܣܠܡܝܗ</addName>
+                  <forename sort="1">ܐܠܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܪܢܝܐ ܐܦܝܣܩܘܦܐ ܕܣܠܡܝܗ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name141-4b"
                          corresp="#name141-2 #name141-3 #name141-4a"
                          xml:lang="syr-Syrj"
                          source="#bib141-4">
-                  <forename>ܐܠܝܐ</forename> 
-                  <addName type="untagged-title">ܚܳܪܳܢܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܣܰܠܡܝܗ</addName>
+                  <forename sort="1">ܐܠܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܳܪܳܢܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܣܰܠܡܝܗ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܠܝܐ</forename> 
-                  <addName type="untagged-title">ܚܪܢܝܐ</addName>
+                  <forename sort="1">ܐܠܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܪܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Eliya</forename> 
-                  <addName type="untagged-title">of Ḥarran</addName>
+                  <forename sort="1">Eliya</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥarran</addName>
                </persName>
                <bibl xml:id="bib141-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

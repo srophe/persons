@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,39 +100,39 @@
                          corresp="#name24-3 #name24-4a #name24-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib24-2">
-                  <forename>Ma‛na</forename>, <addName type="untagged-title">the Catholicos</addName>
+                  <forename sort="1">Ma‛na</forename>, <addName type="untagged-title" sort="2">the Catholicos</addName>
                </persName>
                <persName type="sic"
                          xml:id="name24-3"
                          corresp="#name24-2 #name24-4a #name24-4b"
                          xml:lang="ar"
                          source="#bib24-3">
-                  <forename>معنا</forename> 
-                  <addName type="untagged-title">الجاثليق</addName>
+                  <forename sort="1">معنا</forename> 
+                  <addName type="untagged-title" sort="2">الجاثليق</addName>
                </persName>
                <persName type="sic"
                          xml:id="name24-4a"
                          corresp="#name24-2 #name24-3 #name24-4b"
                          xml:lang="syr"
                          source="#bib24-4">
-                  <forename>ܡܥܢܐ</forename> 
-                  <addName type="untagged-title">ܩܬܘܠܝܩܐ ܕܣܠܝܩ</addName>
+                  <forename sort="1">ܡܥܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܬܘܠܝܩܐ ܕܣܠܝܩ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name24-4b"
                          corresp="#name24-2 #name24-3 #name24-4a"
                          xml:lang="syr-Syrj"
                          source="#bib24-4">
-                  <forename>ܡܰܥܢܳܐ</forename> 
-                  <addName type="untagged-title">ܩܰܬܘܠܝܩܳܐ ܕܣܠܝܩ</addName>
+                  <forename sort="1">ܡܰܥܢܳܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܰܬܘܠܝܩܳܐ ܕܣܠܝܩ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܥܢܐ</forename>
+                  <forename sort="1">ܡܥܢܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Maʿnā</forename>
+                  <forename sort="1">Maʿnā</forename>
                </persName>
                <death when="0420" source="#bib24-2">420</death>
                <bibl xml:id="bib24-2">

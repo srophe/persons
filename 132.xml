@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,39 +100,39 @@
                          corresp="#name132-3 #name132-4a #name132-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib132-2">
-                  <forename>John </forename>
-                  <addName type="untagged-title">I</addName>
+                  <forename sort="2">John </forename>
+                  <addName type="untagged-title" sort="2">I</addName>
                </persName>
                <persName type="sic"
                          xml:id="name132-3"
                          corresp="#name132-2 #name132-4a #name132-4b"
                          xml:lang="ar"
                          source="#bib132-3">
-                  <forename>اياونيس</forename> 
-                  <addName type="untagged-title">الاول</addName>
+                  <forename sort="2">اياونيس</forename> 
+                  <addName type="untagged-title" sort="2">الاول</addName>
                </persName>
                <persName type="sic"
                          xml:id="name132-4a"
                          corresp="#name132-2 #name132-3 #name132-4b"
                          xml:lang="syr"
                          source="#bib132-4">
-                  <forename>ܐܝܘܐܢܝܣ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="2">ܐܝܘܐܢܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name132-4b"
                          corresp="#name132-2 #name132-3 #name132-4a"
                          xml:lang="syr-Syrj"
                          source="#bib132-4">
-                  <forename>ܐܝܘܰܐܢܝܣ</forename> 
-                  <addName type="untagged-title">ܩܰܕܡܳܝܐ</addName>
+                  <forename sort="2">ܐܝܘܰܐܢܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܰܕܡܳܝܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܘܐܢܝܣ</forename>
+                  <forename sort="2">ܐܝܘܐܢܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Iwannis (Yuḥanon <addName type="untagged-title">III</addName>)</persName>
+                         syriaca-tags="#syriaca-headword">Iwannis (Yuḥanon <addName type="untagged-title" sort="2">III</addName>)</persName>
                <death when="0754" source="#bib132-2">754</death>
                <bibl xml:id="bib132-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

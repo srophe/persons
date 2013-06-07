@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name252-2"
                          corresp="#name252-3 #name252-4a #name252-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib252-2">Deacon <forename>‛Abd Allah</forename> of Barṭelli</persName>
+                         source="#bib252-2">
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="1">‛Abd Allah</forename> 
+                  <addName type="untagged-title" sort="2">of Barṭelli</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name252-3"
                          corresp="#name252-2 #name252-4a #name252-4b"
                          xml:lang="ar"
-                         source="#bib252-3">الشماس <forename>عبد اللّٰه</forename> البرطلي</persName>
+                         source="#bib252-3">
+                  <addName type="untagged-title" sort="2">الشماس </addName>
+                  <forename sort="1">عبد اللّٰه</forename>
+                  <addName type="untagged-title" sort="2"> البرطلي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name252-4a"
                          corresp="#name252-2 #name252-3 #name252-4b"
                          xml:lang="syr"
-                         source="#bib252-4">ܡܫܡܫܢܐ <forename>ܥܒܕ ܠܠܗ</forename> ܒܪܛܠܝܐ</persName>
+                         source="#bib252-4">ܡܫܡܫܢܐ <forename sort="1">ܥܒܕ ܠܠܗ</forename> ܒܪܛܠܝܐ</persName>
                <persName type="sic"
                          xml:id="name252-4b"
                          corresp="#name252-2 #name252-3 #name252-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib252-4">ܡܫܰܡܫܳܢܐ <forename>ܥܰܒܕ ܠܠܗ</forename> ܒܰܪܛܠܝܐ</persName>
+                         source="#bib252-4">ܡܫܰܡܫܳܢܐ <forename sort="1">ܥܰܒܕ ܠܠܗ</forename> ܒܰܪܛܠܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܥܒܕ ܠܠܗ</forename> 
-                  <addName type="untagged-title">ܒܪܛܠܝܐ</addName>
+                  <forename sort="1">ܥܒܕ ܠܠܗ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܪܛܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAbdullāh</forename> 
-                  <addName type="untagged-title">of Barṭelle</addName>
+                  <forename sort="1">ʿAbdullāh</forename> 
+                  <addName type="untagged-title" sort="2">of Barṭelle</addName>
                </persName>
                <listEvent>
                   <event when="1345" source="#bib252-2" type="untagged">

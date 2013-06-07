@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          corresp="#name146-3 #name146-4a #name146-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib146-2">
-                  <addName type="untagged-title">Malphono</addName> 
-                  <forename>Athanus</forename>
+                  <addName type="untagged-title" sort="2">Malphono</addName> 
+                  <forename sort="1">Athanus</forename>
                </persName>
                <persName type="sic"
                          xml:id="name146-3"
                          corresp="#name146-2 #name146-4a #name146-4b"
                          xml:lang="ar"
                          source="#bib146-3">
-                  <forename>آتنوس</forename> 
-                  <addName type="untagged-title">الملفان</addName>
+                  <forename sort="1">آتنوس</forename> 
+                  <addName type="untagged-title" sort="2">الملفان</addName>
                </persName>
                <persName type="sic"
                          xml:id="name146-4a"
                          corresp="#name146-2 #name146-3 #name146-4b"
                          xml:lang="syr"
                          source="#bib146-4">
-                  <forename>ܐܬܢܘܣ</forename> 
-                  <addName type="untagged-title">ܡܠܦܢܐ</addName>
+                  <forename sort="1">ܐܬܢܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܠܦܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name146-4b"
                          corresp="#name146-2 #name146-3 #name146-4a"
                          xml:lang="syr-Syrj"
                          source="#bib146-4">
-                  <forename>ܐܰܬܰܢܘܳܣ</forename> 
-                  <addName type="untagged-title">ܡܰܠܦܳܢܐ</addName>
+                  <forename sort="1">ܐܰܬܰܢܘܳܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܰܠܦܳܢܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܬܢܘܣ</forename>
+                  <forename sort="1">ܐܬܢܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Atanos</forename>
+                  <forename sort="1">Atanos</forename>
                </persName>
                <listEvent>
                   <event when="0818" source="#bib146-2" type="untagged">

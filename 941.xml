@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,46 +100,46 @@
                          corresp="#name941-3 #name941-4a #name941-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib941-2">
-                  <addName type="untagged-title">Deacon</addName> 
-                  <forename>Sahdo</forename> 
-                  <surname>of the Shumanna family</surname>
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="1">Sahdo</forename> 
+                  <surname sort="2">of the Shumanna family</surname>
                </persName>
                <persName type="sic"
                          xml:id="name941-3"
                          corresp="#name941-2 #name941-4a #name941-4b"
                          xml:lang="ar"
                          source="#bib941-3">
-                  <addName type="untagged-title">الشماس</addName> 
-                  <forename>سهدو</forename> 
-                  <surname>آل شومنا</surname>
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="1">سهدو</forename> 
+                  <surname sort="2">آل شومنا</surname>
                </persName>
                <persName type="sic"
                          xml:id="name941-4a"
                          corresp="#name941-2 #name941-3 #name941-4b"
                          xml:lang="syr"
                          source="#bib941-4">
-                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName> 
-                  <forename>ܣܗܕܐ</forename> 
-                  <surname>ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
+                  <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
+                  <forename sort="1">ܣܗܕܐ</forename> 
+                  <surname sort="2">ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name941-4b"
                          corresp="#name941-2 #name941-3 #name941-4a"
                          xml:lang="syr-Syrj"
                          source="#bib941-4">
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName> 
-                  <forename>ܣܳܗܕܐ</forename> 
-                  <surname>ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</surname>
+                  <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
+                  <forename sort="1">ܣܳܗܕܐ</forename> 
+                  <surname sort="2">ܕܒܶܝܬ ܫܘܽܡܢ̈ܐ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܣܗܕܐ</forename> 
-                  <surname>ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
+                  <forename sort="1">ܣܗܕܐ</forename> 
+                  <surname sort="2">ܕܒܝܬ ܫܘܡܢ̈ܐ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Sohdo</forename> 
-                  <surname>d-Beth Shumone</surname>
+                  <forename sort="1">Sohdo</forename> 
+                  <surname sort="2">d-Beth Shumone</surname>
                </persName>
                <bibl xml:id="bib941-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

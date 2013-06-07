@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,33 +100,33 @@
                          corresp="#name137-3 #name137-4a #name137-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib137-2">
-                  <addName type="untagged-title">The Historian Monk of Zuqnin</addName>
+                  <addName type="untagged-title" sort="2">The Historian Monk of Zuqnin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name137-3"
                          corresp="#name137-2 #name137-4a #name137-4b"
                          xml:lang="ar"
                          source="#bib137-3">
-                  <addName type="untagged-title">الراهب الزوقنيني المؤرخ</addName>
+                  <addName type="untagged-title" sort="2">الراهب الزوقنيني المؤرخ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name137-4a"
                          corresp="#name137-2 #name137-3 #name137-4b"
                          xml:lang="syr"
                          source="#bib137-4">
-                  <addName type="untagged-title">ܕܝܪܝܐ ܕܙܘܩ̈ܢܝܢ ܡܟܬܒܢܐ</addName>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ ܕܙܘܩ̈ܢܝܢ ܡܟܬܒܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name137-4b"
                          corresp="#name137-2 #name137-3 #name137-4a"
                          xml:lang="syr-Syrj"
                          source="#bib137-4">
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ ܕܙܘܩ̈ܢܝܺܢ ܡܰܟܬܒܳܢܐ</addName>
+                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ ܕܙܘܩ̈ܢܝܺܢ ܡܰܟܬܒܳܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Chronicle of Zuqnin</addName>
+                  <addName type="untagged-title" sort="2">Author of the Chronicle of Zuqnin</addName>
                </persName>
                <listEvent>
                   <event when="0775" source="#bib137-2" type="untagged">

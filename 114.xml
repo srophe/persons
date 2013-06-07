@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          corresp="#name114-3 #name114-4a #name114-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib114-2">
-                  <addName type="untagged-title">Bishop</addName> 
-                  <forename>Euthalius</forename>
+                  <addName type="untagged-title" sort="2">Bishop</addName> 
+                  <forename sort="1">Euthalius</forename>
                </persName>
                <persName type="sic"
                          xml:id="name114-3"
                          corresp="#name114-2 #name114-4a #name114-4b"
                          xml:lang="ar"
                          source="#bib114-3">
-                  <addName type="untagged-title">الاسقف</addName> 
-                  <forename>اوثاليوس</forename>
+                  <addName type="untagged-title" sort="2">الاسقف</addName> 
+                  <forename sort="1">اوثاليوس</forename>
                </persName>
                <persName type="sic"
                          xml:id="name114-4a"
                          corresp="#name114-2 #name114-3 #name114-4b"
                          xml:lang="syr"
                          source="#bib114-4">
-                  <forename>ܐܘܬܐܠܝܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ</addName>
+                  <forename sort="1">ܐܘܬܐܠܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name114-4b"
                          corresp="#name114-2 #name114-3 #name114-4a"
                          xml:lang="syr-Syrj"
                          source="#bib114-4">
-                  <forename>ܐܘܬܐܰܠܝܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ</addName>
+                  <forename sort="1">ܐܘܬܐܰܠܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܘܬܐܠܝܘܣ</forename>
+                  <forename sort="1">ܐܘܬܐܠܝܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Euthalius</forename>
+                  <forename sort="1">Euthalius</forename>
                </persName>
                <bibl xml:id="bib114-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

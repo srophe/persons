@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,33 +100,43 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib711-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Sahdona</forename> (<addName type="untagged-title">Martyrius</addName>)</persName>
+                  <forename sort="1">Sahdona</forename> 
+                  <addName type="untagged-title" sort="2">(Martyrius)</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name711-2"
                          corresp="#name711-3 #name711-4a #name711-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib711-2">
-                  <forename>Sahduna</forename> (Martyrius), bishop of Mahuza</persName>
+                  <forename sort="1">Sahduna</forename> 
+                  <addName type="untagged-title" sort="2">(Martyrius)</addName>, <addName type="untagged-title" sort="2">bishop of Mahuza</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name711-3"
                          corresp="#name711-2 #name711-4a #name711-4b"
                          xml:lang="ar"
                          source="#bib711-3">
-                  <forename>سهدونا</forename> (مرطيريوس) اسقف ماحوزا</persName>
+                  <forename sort="1">سهدونا</forename> 
+                  <addName type="untagged-title" sort="2">(مرطيريوس) اسقف ماحوزا</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name711-4a"
                          corresp="#name711-2 #name711-3 #name711-4b"
                          xml:lang="syr"
                          source="#bib711-4">
-                  <forename>ܣܗܕܘܢܐ</forename> (ܡܐܪܬܝܪܣ) ܐܦܝܣܩܘܦܐ ܕܡܚܘ̈ܙܐ</persName>
+                  <forename sort="1">ܣܗܕܘܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">(ܡܐܪܬܝܪܣ) ܐܦܝܣܩܘܦܐ ܕܡܚܘ̈ܙܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name711-4b"
                          corresp="#name711-2 #name711-3 #name711-4a"
                          xml:lang="syr-Syrj"
                          source="#bib711-4">
-                  <forename>ܣܳܗܕܘܢܐ</forename> (ܡܐܰܪܬܝܺܪܣ) ܐܶܦܝܺܣܩܘܽܦܳܐ ܕܡܰܚܘ̈ܙܐ</persName>
+                  <forename sort="1">ܣܳܗܕܘܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">(ܡܐܰܪܬܝܺܪܣ) ܐܶܦܝܺܣܩܘܽܦܳܐ ܕܡܰܚܘ̈ܙܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܣܗܕܘܢܐ</forename>
+                  <forename sort="1">ܣܗܕܘܢܐ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/39442444</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n2006-22934</idno>

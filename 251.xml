@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,46 +100,46 @@
                          corresp="#name251-3 #name251-4a #name251-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib251-2">
-                  <addName type="untagged-title">Malphono</addName> 
-                  <forename>Ṣaliba</forename> 
-                  <surname>Bar Khayrun</surname>
+                  <addName type="untagged-title" sort="2">Malphono</addName> 
+                  <forename sort="1">Ṣaliba</forename> 
+                  <surname sort="2">Bar Khayrun</surname>
                </persName>
                <persName type="sic"
                          xml:id="name251-3"
                          corresp="#name251-2 #name251-4a #name251-4b"
                          xml:lang="ar"
                          source="#bib251-3">
-                  <addName type="untagged-title">الربان</addName> 
-                  <forename>صليبا</forename> 
-                  <surname>ابن خيرون</surname>
+                  <addName type="untagged-title" sort="2">الربان</addName> 
+                  <forename sort="1">صليبا</forename> 
+                  <surname sort="2">ابن خيرون</surname>
                </persName>
                <persName type="sic"
                          xml:id="name251-4a"
                          corresp="#name251-2 #name251-3 #name251-4b"
                          xml:lang="syr"
                          source="#bib251-4">
-                  <addName type="untagged-title">ܪܒܢ</addName> 
-                  <forename>ܨܠܝܒܐ</forename> 
-                  <surname>ܒܪ ܟܝܪܘܢ</surname>
+                  <addName type="untagged-title" sort="2">ܪܒܢ</addName> 
+                  <forename sort="1">ܨܠܝܒܐ</forename> 
+                  <surname sort="2">ܒܪ ܟܝܪܘܢ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name251-4b"
                          corresp="#name251-2 #name251-3 #name251-4a"
                          xml:lang="syr-Syrj"
                          source="#bib251-4">
-                  <addName type="untagged-title">ܪܰܒܢ</addName> 
-                  <forename>ܨܰܠܝܒܐ</forename> 
-                  <surname>ܒܰܪ ܟܰܝܪܘܢ</surname>
+                  <addName type="untagged-title" sort="2">ܪܰܒܢ</addName> 
+                  <forename sort="1">ܨܰܠܝܒܐ</forename> 
+                  <surname sort="2">ܒܰܪ ܟܰܝܪܘܢ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܨܠܝܒܐ</forename> 
-                  <surname>ܒܪ ܟܝܪܘܢ</surname>
+                  <forename sort="1">ܨܠܝܒܐ</forename> 
+                  <surname sort="2">ܒܪ ܟܝܪܘܢ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ṣlibo</forename> 
-                  <surname>bar Khayrun</surname>
+                  <forename sort="1">Ṣlibo</forename> 
+                  <surname sort="2">bar Khayrun</surname>
                </persName>
                <death when="1340" source="#bib251-2">1340</death>
                <bibl xml:id="bib251-2">

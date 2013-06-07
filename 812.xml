@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,33 +100,33 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib812-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yawsep</forename> 
-                  <addName type="untagged-title">I of Seleucia-Ctesiphon</addName>
+                  <forename sort="1">Yawsep</forename> 
+                  <addName type="untagged-title" sort="2">I of Seleucia-Ctesiphon</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܣܦ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="1">ܝܘܣܦ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name812-5a"
                          corresp="#name812-5b #name812-6a"
                          xml:lang="syr"
                          source="#bib812-5">
-                  <forename>ܝܘܣܦ</forename>
+                  <forename sort="1">ܝܘܣܦ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name812-5b"
                          corresp="#name812-5a #name812-6b"
                          xml:lang="syr-Syrn"
                          source="#bib812-5">
-                  <forename>ܝܵܘܣܸܦ</forename>
+                  <forename sort="1">ܝܵܘܣܸܦ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name812-6a"
                          corresp="#name812-6b #name812-5a"
                          xml:lang="syr"
                          source="#bib812-6">
-                  <forename>ܝܘܣܦ</forename>
+                  <forename sort="1">ܝܘܣܦ</forename>
                </persName>
                <death when="0570" source="#bib812-1">570</death>
                <bibl xml:id="bib812-1">

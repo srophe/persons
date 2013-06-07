@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,55 +100,55 @@
                          corresp="#name840-2 #name840-4a #name840-4b"
                          xml:lang="ar"
                          source="#bib840-3">
-                  <addName type="untagged-title">افريقيانس</addName>
+                  <addName type="untagged-title" sort="2">افريقيانس</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-4a"
                          corresp="#name840-2 #name840-3 #name840-4b"
                          xml:lang="syr"
                          source="#bib840-4">
-                  <addName type="untagged-title">ܐܦܪܝܩܝܐܢܘܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܦܪܝܩܝܐܢܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-4b"
                          corresp="#name840-2 #name840-3 #name840-4a"
                          xml:lang="syr-Syrj"
                          source="#bib840-4">
-                  <addName type="untagged-title">ܐܰܦܪܝܩܝܰܐܢܘܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܰܦܪܝܩܝܰܐܢܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-5a"
                          corresp="#name840-5b #name840-6a"
                          xml:lang="syr"
                          source="#bib840-5">
-                  <addName type="untagged-title">ܐܦܪܩܝܢܘܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܦܪܩܝܢܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-5b"
                          corresp="#name840-5a #name840-6b"
                          xml:lang="syr-Syrn"
                          source="#bib840-5">
-                  <addName type="untagged-title">ܐܲܦܪܸܩܝܵܢܘܿܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܲܦܪܸܩܝܵܢܘܿܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-6a"
                          corresp="#name840-6b #name840-5a"
                          xml:lang="syr"
                          source="#bib840-6">
-                  <addName type="untagged-title">ܐܦܪܝܩܝܢܘܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܦܪܝܩܝܢܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name840-6b"
                          corresp="#name840-6a #name840-5b"
                          xml:lang="syr-Syrj"
                          source="#bib840-6">
-                  <addName type="untagged-title">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</addName>
+                  <addName type="untagged-title" sort="2">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Julius</forename> 
-                  <addName type="untagged-title">Africanus</addName>
+                  <forename sort="1">Julius</forename> 
+                  <addName type="untagged-title" sort="2">Africanus</addName>
                </persName>
                <bibl xml:id="bib840-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

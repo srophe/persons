@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,35 @@
                          xml:id="name272-2"
                          corresp="#name272-3 #name272-4a #name272-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib272-2">Metropolitan <forename>George</forename> of Basibrina</persName>
+                         source="#bib272-2">Metropolitan <forename sort="1">George</forename> of Basibrina</persName>
                <persName type="sic"
                          xml:id="name272-3"
                          corresp="#name272-2 #name272-4a #name272-4b"
                          xml:lang="ar"
-                         source="#bib272-3">المطران <forename>كوركيس</forename> السبيريني</persName>
+                         source="#bib272-3">
+                  <addName type="untagged-title" sort="2">المطران </addName>
+                  <forename sort="1">كوركيس</forename> 
+                  <addName type="untagged-title" sort="2">السبيريني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name272-4a"
                          corresp="#name272-2 #name272-3 #name272-4b"
                          xml:lang="syr"
-                         source="#bib272-4">ܡܛܪܘܦܘܠܝܛܐ <forename>ܓܘܪܓܝܘܣ</forename> ܣܒܝܪܝܢܝܐ</persName>
+                         source="#bib272-4">ܡܛܪܘܦܘܠܝܛܐ <forename sort="1">ܓܘܪܓܝܘܣ</forename> ܣܒܝܪܝܢܝܐ</persName>
                <persName type="sic"
                          xml:id="name272-4b"
                          corresp="#name272-2 #name272-3 #name272-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib272-4">ܡܶܛܪܘܦܘܠܝܛܳܐ <forename>ܓܶܘܰܪܓܝܘܣ</forename> ܣܒܝܪܝܢܳܝܐ</persName>
+                         source="#bib272-4">ܡܶܛܪܘܦܘܠܝܛܳܐ <forename sort="1">ܓܶܘܰܪܓܝܘܣ</forename> ܣܒܝܪܝܢܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܘܪܓܝܘܣ</forename> 
-                  <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
+                  <forename sort="1">ܓܘܪܓܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Giwargis</forename> 
-                  <addName type="untagged-title">of Beth Sbirino</addName>
+                  <forename sort="1">Giwargis</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Sbirino</addName>
                </persName>
                <death when="1495" source="#bib272-2">1495</death>
                <bibl xml:id="bib272-2">

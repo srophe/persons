@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name151-3 #name151-4a #name151-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib151-2">
-                  <forename>Thomas</forename> 
-                  <addName type="untagged-title">the Stylite</addName>
+                  <forename sort="1">Thomas</forename> 
+                  <addName type="untagged-title" sort="2">the Stylite</addName>
                </persName>
                <persName type="sic"
                          xml:id="name151-3"
                          corresp="#name151-2 #name151-4a #name151-4b"
                          xml:lang="ar"
                          source="#bib151-3">
-                  <forename>توما</forename> 
-                  <addName type="untagged-title">العمودي</addName>
+                  <forename sort="1">توما</forename> 
+                  <addName type="untagged-title" sort="2">العمودي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name151-4a"
                          corresp="#name151-2 #name151-3 #name151-4b"
                          xml:lang="syr"
                          source="#bib151-4">
-                  <forename>ܬܐܘܡܐ</forename> 
-                  <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
+                  <forename sort="1">ܬܐܘܡܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܣܛܘܢܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name151-4b"
                          corresp="#name151-2 #name151-3 #name151-4a"
                          xml:lang="syr-Syrj"
                          source="#bib151-4">
-                  <forename>ܬܳܐܘܡܰܐ</forename> 
-                  <addName type="untagged-title">ܐܣܛܘܢܳܪܐ</addName>
+                  <forename sort="1">ܬܳܐܘܡܰܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܣܛܘܢܳܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Tumo</forename> 
-                  <addName type="untagged-title">the Stylite</addName>
+                  <forename sort="1">Tumo</forename> 
+                  <addName type="untagged-title" sort="2">the Stylite</addName>
                </persName>
                <listEvent>
                   <event when="0837" source="#bib151-2" type="untagged">

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name83-3 #name83-4a #name83-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib83-2">
-                  <addName type="untagged-title">Deacon</addName> 
-                  <forename>Thomas</forename>
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="1">Thomas</forename>
                </persName>
                <persName type="sic"
                          xml:id="name83-3"
                          corresp="#name83-2 #name83-4a #name83-4b"
                          xml:lang="ar"
                          source="#bib83-3">
-                  <addName type="untagged-title">الشماس</addName> 
-                  <forename>توما</forename>
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="1">توما</forename>
                </persName>
                <persName type="sic"
                          xml:id="name83-4a"
                          corresp="#name83-2 #name83-3 #name83-4b"
                          xml:lang="syr"
                          source="#bib83-4">
-                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName> 
-                  <forename>ܬܐܘܡܐ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
+                  <forename sort="1">ܬܐܘܡܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name83-4b"
                          corresp="#name83-2 #name83-3 #name83-4a"
                          xml:lang="syr-Syrj"
                          source="#bib83-4">
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName> 
-                  <forename>ܬܳܐܘܡܰܐ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
+                  <forename sort="1">ܬܳܐܘܡܰܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Tumo</forename> 
-                  <addName type="untagged-title">the Deacon</addName>
+                  <forename sort="1">Tumo</forename> 
+                  <addName type="untagged-title" sort="2">the Deacon</addName>
                </persName>
                <idno type="URI">http://worldcat.org/identities/np-thomas$the deacon</idno>
                <listEvent>

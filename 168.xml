@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,37 +100,39 @@
                          corresp="#name168-3 #name168-4a #name168-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib168-2">
-                  <forename>Ignatius</forename> 
-                  <addName type="untagged-title">II</addName>
+                  <forename sort="1">Ignatius</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>
                </persName>
                <persName type="sic"
                          xml:id="name168-3"
                          corresp="#name168-2 #name168-4a #name168-4b"
                          xml:lang="ar"
                          source="#bib168-3">
-                  <forename>اغناطيوس</forename> 
-                  <addName type="untagged-title">الثاني</addName>
+                  <forename sort="1">اغناطيوس</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name168-4a"
                          corresp="#name168-2 #name168-3 #name168-4b"
                          xml:lang="syr"
                          source="#bib168-4">
-                  <forename>ܐܝܓܢܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ</addName>
+                  <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܝܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name168-4b"
                          corresp="#name168-2 #name168-3 #name168-4a"
                          xml:lang="syr-Syrj"
                          source="#bib168-4">
-                  <forename>ܐܝܓܢܰܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName>
+                  <forename sort="1">ܐܝܓܢܰܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܰܝܳܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ignaṭius</forename> II (I)</persName>
+                  <forename sort="1">Ignaṭius</forename> 
+                  <addName type="untagged-title" sort="2">II (I)</addName>
+               </persName>
                <death when="0883" source="#bib168-2">883</death>
                <bibl xml:id="bib168-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

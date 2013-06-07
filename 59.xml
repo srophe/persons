@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib59-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Daniel</forename> 
-                  <addName type="untagged-title">of Ṣalaḥ</addName>
+                  <forename sort="1">Daniel</forename> 
+                  <addName type="untagged-title" sort="2">of Ṣalaḥ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name59-2"
                          corresp="#name59-3 #name59-4a #name59-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib59-2">
-                  <forename>Daniel</forename> 
-                  <addName type="untagged-title">of Salah</addName>
+                  <forename sort="1">Daniel</forename> 
+                  <addName type="untagged-title" sort="2">of Salah</addName>
                </persName>
                <persName type="sic"
                          xml:id="name59-3"
                          corresp="#name59-2 #name59-4a #name59-4b"
                          xml:lang="ar"
                          source="#bib59-3">
-                  <forename>دانيال</forename> 
-                  <addName type="untagged-title">الصلحي</addName>
+                  <forename sort="1">دانيال</forename> 
+                  <addName type="untagged-title" sort="2">الصلحي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name59-4a"
                          corresp="#name59-2 #name59-3 #name59-4b"
                          xml:lang="syr"
                          source="#bib59-4">
-                  <forename>ܕܢܝܐܝܠ</forename> 
-                  <addName type="untagged-title">ܨܠܚܝܐ</addName>
+                  <forename sort="1">ܕܢܝܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܨܠܚܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name59-4b"
                          corresp="#name59-2 #name59-3 #name59-4a"
                          xml:lang="syr-Syrj"
                          source="#bib59-4">
-                  <forename>ܕܳܢܝܺܐܝܠ</forename> 
-                  <addName type="untagged-title">ܨܰܠܚܳܝܐ</addName>
+                  <forename sort="1">ܕܳܢܝܺܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܨܰܠܚܳܝܐ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/2432364</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr2006-26213</idno>

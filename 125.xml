@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name125-2"
                          corresp="#name125-3 #name125-4a #name125-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib125-2">Mar <forename>Simon</forename> d-beth Zayte</persName>
+                         source="#bib125-2">
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="1">Simon</forename> 
+                  <addName type="untagged-title" sort="2">d-beth Zayte</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name125-3"
                          corresp="#name125-2 #name125-4a #name125-4b"
                          xml:lang="ar"
-                         source="#bib125-3">مار <forename>شمعون</forename> الزيتوني</persName>
+                         source="#bib125-3">
+                  <addName type="untagged-title" sort="2">مار </addName>
+                  <forename sort="1">شمعون</forename>
+                  <addName type="untagged-title" sort="2"> الزيتوني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name125-4a"
                          corresp="#name125-2 #name125-3 #name125-4b"
                          xml:lang="syr"
-                         source="#bib125-4">ܡܪܝ <forename>ܫܡܥܘܢ</forename> ܕܙܝ̈ܬܐ</persName>
+                         source="#bib125-4">ܡܪܝ <forename sort="1">ܫܡܥܘܢ</forename> ܕܙܝ̈ܬܐ</persName>
                <persName type="sic"
                          xml:id="name125-4b"
                          corresp="#name125-2 #name125-3 #name125-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib125-4">ܡܳܪܝ <forename>ܫܶܡܥܘܢ</forename> ܕܙܰܝ̈ܬܐ</persName>
+                         source="#bib125-4">ܡܳܪܝ <forename sort="1">ܫܶܡܥܘܢ</forename> ܕܙܰܝ̈ܬܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܕܙܝ̈ܬܐ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܙܝ̈ܬܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿun</forename> 
-                  <addName type="untagged-title">d-Zayte</addName>
+                  <forename sort="1">Shemʿun</forename> 
+                  <addName type="untagged-title" sort="2">d-Zayte</addName>
                </persName>
                <persName type="sic"
                          xml:id="name125-7"

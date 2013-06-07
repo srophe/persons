@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,46 +100,46 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib281-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Grigorios Yawseph</forename>
+                  <forename sort="1">Grigorios Yawseph</forename>
                </persName>
                <persName type="sic"
                          xml:id="name281-2"
                          corresp="#name281-3 #name281-4a #name281-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib281-2">
-                  <forename>Joseph</forename> 
-                  <surname>al-Gurji</surname>, <addName type="untagged-title">metropolitan of Jerusalem</addName>
+                  <forename sort="1">Joseph</forename> 
+                  <surname sort="2">al-Gurji</surname>, <addName type="untagged-title" sort="2">metropolitan of Jerusalem</addName>
                </persName>
                <persName type="sic"
                          xml:id="name281-3"
                          corresp="#name281-2 #name281-4a #name281-4b"
                          xml:lang="ar"
                          source="#bib281-3">
-                  <forename>يوسف</forename> 
-                  <surname>الكرجي</surname> 
-                  <addName type="untagged-title">مطران اورشليم</addName>
+                  <forename sort="1">يوسف</forename> 
+                  <surname sort="2">الكرجي</surname> 
+                  <addName type="untagged-title" sort="2">مطران اورشليم</addName>
                </persName>
                <persName type="sic"
                          xml:id="name281-4a"
                          corresp="#name281-2 #name281-3 #name281-4b"
                          xml:lang="syr"
                          source="#bib281-4">
-                  <forename>ܝܘܣܦ</forename> 
-                  <surname>ܐܝܒܪܝܐ</surname> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</addName>
+                  <forename sort="1">ܝܘܣܦ</forename> 
+                  <surname sort="2">ܐܝܒܪܝܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܫܠܡ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name281-4b"
                          corresp="#name281-2 #name281-3 #name281-4a"
                          xml:lang="syr-Syrj"
                          source="#bib281-4">
-                  <forename>ܝܰܘܣܦ</forename> 
-                  <surname>ܐܝܒܰܪܝܐ</surname> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</addName>
+                  <forename sort="1">ܝܰܘܣܦ</forename> 
+                  <surname sort="2">ܐܝܒܰܪܝܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܽܘܪܶܫܠܡ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܣܦ</forename> 
-                  <addName type="untagged-title">ܐܝܒܪܝܐ</addName>
+                  <forename sort="1">ܝܘܣܦ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܝܒܪܝܐ</addName>
                </persName>
                <death when="1537" source="#bib281-1">1537</death>
                <death when="1537" source="#bib281-2">1537</death>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,39 +100,39 @@
                          corresp="#name222-3 #name222-4a #name222-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib222-2">
-                  <forename>Gregorius Jacob</forename>, <addName type="untagged-title">Maphryono of the East</addName>
+                  <forename sort="1">Gregorius Jacob</forename>, <addName type="untagged-title" sort="2">Maphryono of the East</addName>
                </persName>
                <persName type="sic"
                          xml:id="name222-3"
                          corresp="#name222-2 #name222-4a #name222-4b"
                          xml:lang="ar"
                          source="#bib222-3">
-                  <forename>غريغوريوس يعقوب</forename> 
-                  <addName type="untagged-title">مفريان المشرق</addName>
+                  <forename sort="1">غريغوريوس يعقوب</forename> 
+                  <addName type="untagged-title" sort="2">مفريان المشرق</addName>
                </persName>
                <persName type="sic"
                          xml:id="name222-4a"
                          corresp="#name222-2 #name222-3 #name222-4b"
                          xml:lang="syr"
                          source="#bib222-4">
-                  <forename>ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                  <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name222-4b"
                          corresp="#name222-2 #name222-3 #name222-4a"
                          xml:lang="syr-Syrj"
                          source="#bib222-4">
-                  <forename>ܓܪܺܝܓܘܪܝܘܣ ܝܰܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                  <forename sort="1">ܓܪܺܝܓܘܪܝܘܣ ܝܰܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ</forename>
+                  <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܥܩܘܒ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Grigorios Yaʿqub</forename>
+                  <forename sort="1">Grigorios Yaʿqub</forename>
                </persName>
                <death when="1214" source="#bib222-2">1214</death>
                <bibl xml:id="bib222-2">

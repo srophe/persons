@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name241-3 #name241-4a #name241-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib241-2">
-                  <forename>Abu Naṣr</forename> 
-                  <addName type="untagged-title">of Barṭelli</addName>
+                  <forename sort="1">Abu Naṣr</forename> 
+                  <addName type="untagged-title" sort="2">of Barṭelli</addName>
                </persName>
                <persName type="sic"
                          xml:id="name241-3"
                          corresp="#name241-2 #name241-4a #name241-4b"
                          xml:lang="ar"
                          source="#bib241-3">
-                  <forename>ابو نصر</forename> 
-                  <addName type="untagged-title">البرطلي</addName>
+                  <forename sort="1">ابو نصر</forename> 
+                  <addName type="untagged-title" sort="2">البرطلي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name241-4a"
                          corresp="#name241-2 #name241-3 #name241-4b"
                          xml:lang="syr"
                          source="#bib241-4">
-                  <forename>ܐܒܘ ܢܨܪ</forename> 
-                  <addName type="untagged-title">ܒܪܛܠܝܐ</addName>
+                  <forename sort="1">ܐܒܘ ܢܨܪ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܪܛܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name241-4b"
                          corresp="#name241-2 #name241-3 #name241-4a"
                          xml:lang="syr-Syrj"
                          source="#bib241-4">
-                  <forename>ܐܰܒܘ ܢܰܨܪ</forename> 
-                  <addName type="untagged-title">ܒܰܪܛܰܠܝܐ</addName>
+                  <forename sort="1">ܐܰܒܘ ܢܰܨܪ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܰܪܛܰܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abū Naṣr</forename> 
-                  <addName type="untagged-title">of Barṭelle</addName>
+                  <forename sort="1">Abū Naṣr</forename> 
+                  <addName type="untagged-title" sort="2">of Barṭelle</addName>
                </persName>
                <listEvent>
                   <event when="1290" source="#bib241-2" type="untagged">

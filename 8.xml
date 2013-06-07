@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,61 +100,61 @@
                          corresp="#name8-3 #name8-4a #name8-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib8-2">
-                  <forename>Miles</forename>, <addName type="untagged-title">bishop of Sus</addName>
+                  <forename sort="1">Miles</forename>, <addName type="untagged-title" sort="2">bishop of Sus</addName>
                </persName>
                <persName type="sic"
                          xml:id="name8-3"
                          corresp="#name8-2 #name8-4a #name8-4b"
                          xml:lang="ar"
                          source="#bib8-3">
-                  <forename>ميلس</forename> 
-                  <addName type="untagged-title">اسقف السوس</addName>
+                  <forename sort="1">ميلس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف السوس</addName>
                </persName>
                <persName type="sic"
                          xml:id="name8-4a"
                          corresp="#name8-2 #name8-3 #name8-4b"
                          xml:lang="syr"
                          source="#bib8-4">
-                  <forename>ܡܝܠܝܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܘܫ</addName>
+                  <forename sort="1">ܡܝܠܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܫܘܫ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name8-4b"
                          corresp="#name8-2 #name8-3 #name8-4a"
                          xml:lang="syr-Syrj"
                          source="#bib8-4">
-                  <forename>ܡܺܝܠܝܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</addName>
+                  <forename sort="1">ܡܺܝܠܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܫܘܫ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܝܠܣ</forename>
+                  <forename sort="1">ܡܝܠܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name8-5a"
                          corresp="#name8-5b #name8-6a"
                          xml:lang="syr"
                          source="#bib8-5">
-                  <forename>ܡܝܠܣ</forename>
+                  <forename sort="1">ܡܝܠܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name8-5b"
                          corresp="#name8-5a #name8-6b"
                          xml:lang="syr-Syrn"
                          source="#bib8-5">
-                  <forename>ܡܝܼܠܸܣ</forename>
+                  <forename sort="1">ܡܝܼܠܸܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name8-6a"
                          corresp="#name8-6b #name8-5a"
                          xml:lang="syr"
                          source="#bib8-6">
-                  <forename>ܡܝܠܣ</forename>
+                  <forename sort="1">ܡܝܠܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Miles</forename> 
-                  <addName type="untagged-title">of Susa</addName>
+                  <forename sort="1">Miles</forename> 
+                  <addName type="untagged-title" sort="2">of Susa</addName>
                </persName>
                <death when="0341" source="#bib8-2">341</death>
                <bibl xml:id="bib8-2">

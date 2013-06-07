@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,25 +100,25 @@
                          corresp="#name266-2 #name266-3 #name266-4b"
                          xml:lang="syr"
                          source="#bib266-4">
-                  <forename>ܚܣܢ</forename> 
-                  <surname>ܒܪ ܙܘܪܥܐ</surname> 
-                  <addName type="untagged-title">ܡܘܨܠܝܐ</addName>
+                  <forename sort="1">ܚܣܢ</forename> 
+                  <surname sort="2">ܒܪ ܙܘܪܥܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܘܨܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name266-4b"
                          corresp="#name266-2 #name266-3 #name266-4a"
                          xml:lang="syr-Syrj"
                          source="#bib266-4">
-                  <forename>ܚܰܣܢ</forename> 
-                  <surname>ܒܰܪ ܙܘܪܥܐ</surname> 
-                  <addName type="untagged-title">ܡܰܘܨܠܳܝܐ</addName>
+                  <forename sort="1">ܚܰܣܢ</forename> 
+                  <surname sort="2">ܒܰܪ ܙܘܪܥܐ</surname> 
+                  <addName type="untagged-title" sort="2">ܡܰܘܨܠܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ḥasan</forename> 
-                  <surname>bar Zurʿo</surname> 
-                  <addName type="untagged-title">of Mosul</addName>
+                  <forename sort="1">Ḥasan</forename> 
+                  <surname sort="2">bar Zurʿo</surname> 
+                  <addName type="untagged-title" sort="2">of Mosul</addName>
                </persName>
                <bibl xml:id="bib266-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>

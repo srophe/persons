@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,36 @@
                          corresp="#name276-3 #name276-4a #name276-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib276-2">
-                  <forename>Sergius</forename>, <addName type="untagged-title">Metropolitan of Ḥaḥ</addName>
+                  <forename sort="1">Sergius</forename>, <addName type="untagged-title" sort="2">Metropolitan of Ḥaḥ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name276-3"
                          corresp="#name276-2 #name276-4a #name276-4b"
                          xml:lang="ar"
-                         source="#bib276-3">المطران <forename>سرجيس</forename> الحاحي</persName>
+                         source="#bib276-3">
+                  <addName type="untagged-title" sort="2">المطران </addName>
+                  <forename sort="1">سرجيس</forename>
+                  <addName type="untagged-title" sort="2"> الحاحي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name276-4a"
                          corresp="#name276-2 #name276-3 #name276-4b"
                          xml:lang="syr"
-                         source="#bib276-4">ܡܛܪܘܦܘܠܝܛܐ <forename>ܣܪܓܝܣ</forename> ܚܐܚܝܐ</persName>
+                         source="#bib276-4">ܡܛܪܘܦܘܠܝܛܐ <forename sort="1">ܣܪܓܝܣ</forename> ܚܐܚܝܐ</persName>
                <persName type="sic"
                          xml:id="name276-4b"
                          corresp="#name276-2 #name276-3 #name276-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib276-4">ܡܶܛܪܘܦܘܠܝܛܐ <forename>ܣܰܪܓܝܣ</forename> ܚܰܐܚܳܝܐ</persName>
+                         source="#bib276-4">ܡܶܛܪܘܦܘܠܝܛܐ <forename sort="1">ܣܰܪܓܝܣ</forename> ܚܰܐܚܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܣܪܓܝܣ</forename> 
-                  <addName type="untagged-title">ܚܐܚܝܐ</addName>
+                  <forename sort="1">ܣܪܓܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܐܚܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Sargis</forename> 
-                  <addName type="untagged-title">of Ḥaḥ</addName>
+                  <forename sort="1">Sargis</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥaḥ</addName>
                </persName>
                <death when="1508" source="#bib276-2">1508</death>
                <bibl xml:id="bib276-2">

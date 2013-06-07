@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib495-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Gabriel</forename> 
-                  <addName type="untagged-title">Qaṭraya</addName>
+                  <forename sort="1">Gabriel</forename> 
+                  <addName type="untagged-title" sort="2">Qaṭraya</addName>
                </persName>
                <persName type="sic"
                          xml:id="name495-5a"
                          corresp="#name495-5b #name495-6a"
                          xml:lang="syr"
                          source="#bib495-5">
-                  <forename>ܓܒܪܝܠ</forename> 
-                  <addName type="untagged-title">ܩܛܪܝܐ</addName>
+                  <forename sort="1">ܓܒܪܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܛܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name495-5b"
                          corresp="#name495-5a #name495-6b"
                          xml:lang="syr-Syrn"
                          source="#bib495-5">
-                  <forename>ܓܲܒܪܝܹܠ</forename> 
-                  <addName type="untagged-title">ܩܸܛܪܵܝܵܐ</addName>
+                  <forename sort="1">ܓܲܒܪܝܹܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܸܛܪܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name495-6a"
                          corresp="#name495-6b #name495-5a"
                          xml:lang="syr"
                          source="#bib495-6">
-                  <forename>ܓܒܪܐܝܠ</forename> 
-                  <addName type="untagged-title">ܩܛܪܝܐ</addName>
+                  <forename sort="1">ܓܒܪܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܛܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name495-6b"
                          corresp="#name495-6a #name495-5b"
                          xml:lang="syr-Syrj"
                          source="#bib495-6">
-                  <forename>ܓܰܒܪܺܐܝܶܠ</forename> 
-                  <addName type="untagged-title">ܩܰܛܪܳܝܳܐ</addName>
+                  <forename sort="1">ܓܰܒܪܺܐܝܶܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܰܛܪܳܝܳܐ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/205629193</idno>
                <floruit source="#bib495-1">6th/7th cent.</floruit>

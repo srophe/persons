@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,69 +100,71 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib790-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Timotheos</forename> 
-                  <addName type="untagged-title">I</addName>
+                  <forename sort="1">Timotheos</forename> 
+                  <addName type="untagged-title" sort="2">I</addName>
                </persName>
                <persName type="sic"
                          xml:id="name790-2"
                          corresp="#name790-3 #name790-4a #name790-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib790-2">Catholicos <forename>Timothy</forename> I</persName>
+                         source="#bib790-2">Cathol<addName type="untagged-title" sort="2">i</addName>cos <forename sort="1">Timothy</forename> 
+                  <addName type="untagged-title" sort="2">I</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name790-3"
                          corresp="#name790-2 #name790-4a #name790-4b"
                          xml:lang="ar"
                          source="#bib790-3">
-                  <forename>طيمثاوس</forename> 
-                  <addName type="untagged-title">الاول جاثليق النساطرة</addName>
+                  <forename sort="1">طيمثاوس</forename> 
+                  <addName type="untagged-title" sort="2">الاول جاثليق النساطرة</addName>
                </persName>
                <persName type="sic"
                          xml:id="name790-4a"
                          corresp="#name790-2 #name790-3 #name790-4b"
                          xml:lang="syr"
                          source="#bib790-4">
-                  <forename>ܛܝܡܬܐܘܣ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</addName>
+                  <forename sort="1">ܛܝܡܬܐܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ ܩܬܘܠܝܩܐ ܕܢܣܛܘܪ̈ܝܢܘ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name790-4b"
                          corresp="#name790-2 #name790-3 #name790-4a"
                          xml:lang="syr-Syrj"
                          source="#bib790-4">
-                  <forename>ܛܺܝܡܰܬܐܘܳܣ</forename> 
-                  <addName type="untagged-title">ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</addName>
+                  <forename sort="1">ܛܺܝܡܰܬܐܘܳܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܰܕܡܳܝܐ ܩܰܬܽܘܠܺܝܩܐ ܕܢܰܣܛܘܽܪ̈ܝܰܢܘ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܛܝܡܬܐܘܣ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="1">ܛܝܡܬܐܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name790-5a"
                          corresp="#name790-5b #name790-6a"
                          xml:lang="syr"
                          source="#bib790-5">
-                  <forename>ܛܝܡܬܐܘܣ</forename>
+                  <forename sort="1">ܛܝܡܬܐܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name790-5b"
                          corresp="#name790-5a #name790-6b"
                          xml:lang="syr-Syrn"
                          source="#bib790-5">
-                  <forename>ܛܝܼܡܵܬܹܐܘܿܣ</forename>
+                  <forename sort="1">ܛܝܼܡܵܬܹܐܘܿܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name790-6a"
                          corresp="#name790-6b #name790-5a"
                          xml:lang="syr"
                          source="#bib790-6">
-                  <forename>ܛܝܡܘܬܐܘܣ</forename>
+                  <forename sort="1">ܛܝܡܘܬܐܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name790-6b"
                          corresp="#name790-6a #name790-5b"
                          xml:lang="syr-Syrj"
                          source="#bib790-6">
-                  <forename>ܛܝܺܡܽܘܬܶܐܘܳܣ</forename>
+                  <forename sort="1">ܛܝܺܡܽܘܬܶܐܘܳܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name790-7"

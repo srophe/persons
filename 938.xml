@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name938-3 #name938-4a #name938-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib938-2">
-                  <addName type="untagged-title">Rabban</addName> 
-                  <forename>Ram Yeshu‛</forename>
+                  <addName type="untagged-title" sort="2">Rabban</addName> 
+                  <forename sort="1">Ram Yeshu‛</forename>
                </persName>
                <persName type="sic"
                          xml:id="name938-3"
                          corresp="#name938-2 #name938-4a #name938-4b"
                          xml:lang="ar"
                          source="#bib938-3">
-                  <addName type="untagged-title">الربان</addName> 
-                  <forename>راميشوع</forename>
+                  <addName type="untagged-title" sort="2">الربان</addName> 
+                  <forename sort="1">راميشوع</forename>
                </persName>
                <persName type="sic"
                          xml:id="name938-4a"
                          corresp="#name938-2 #name938-3 #name938-4b"
                          xml:lang="syr"
                          source="#bib938-4">
-                  <forename>ܪܡܝܫܘܥ</forename> 
-                  <addName type="untagged-title">ܕܒܝܬ ܪܒܢ</addName>
+                  <forename sort="1">ܪܡܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܝܬ ܪܒܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name938-4b"
                          corresp="#name938-2 #name938-3 #name938-4a"
                          xml:lang="syr-Syrj"
                          source="#bib938-4">
-                  <forename>ܪܰܡܝܺܫܘܥ</forename> 
-                  <addName type="untagged-title">ܕܒܶܝܬ ܪܰܒܰܢ</addName>
+                  <forename sort="1">ܪܰܡܝܺܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܶܝܬ ܪܰܒܰܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ramishuʿ</forename> 
-                  <addName type="untagged-title">of Beth Rabban</addName>
+                  <forename sort="1">Ramishuʿ</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Rabban</addName>
                </persName>
                <bibl xml:id="bib938-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

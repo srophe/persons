@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          corresp="#name7-3 #name7-4a #name7-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib7-2">
-                  <forename>Isaiah</forename> 
-                  <surname>Bar Ḥadbo</surname>
+                  <forename sort="1">Isaiah</forename> 
+                  <surname sort="2">Bar Ḥadbo</surname>
                </persName>
                <persName type="sic"
                          xml:id="name7-3"
                          corresp="#name7-2 #name7-4a #name7-4b"
                          xml:lang="ar"
                          source="#bib7-3">
-                  <forename>اشعيا</forename> 
-                  <surname>بن حدبو</surname>
+                  <forename sort="1">اشعيا</forename> 
+                  <surname sort="2">بن حدبو</surname>
                </persName>
                <persName type="sic"
                          xml:id="name7-4a"
                          corresp="#name7-2 #name7-3 #name7-4b"
                          xml:lang="syr"
                          source="#bib7-4">
-                  <forename>ܐܫܥܝܐ</forename> 
-                  <surname>ܒܪ ܚܕܒܘ</surname>
+                  <forename sort="1">ܐܫܥܝܐ</forename> 
+                  <surname sort="2">ܒܪ ܚܕܒܘ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name7-4b"
                          corresp="#name7-2 #name7-3 #name7-4a"
                          xml:lang="syr-Syrj"
                          source="#bib7-4">
-                  <forename>ܐܶܫܰܥܝܐ</forename> 
-                  <surname>ܒܰܪ ܚܕܒܘ</surname>
+                  <forename sort="1">ܐܶܫܰܥܝܐ</forename> 
+                  <surname sort="2">ܒܰܪ ܚܕܒܘ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܫܥܝܐ</forename> 
-                  <surname>ܒܪ ܚܕܒܘ</surname>
+                  <forename sort="1">ܐܫܥܝܐ</forename> 
+                  <surname sort="2">ܒܪ ܚܕܒܘ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Eshaʿya</forename> 
-                  <surname>bar Ḥadbo</surname>
+                  <forename sort="1">Eshaʿya</forename> 
+                  <surname sort="2">bar Ḥadbo</surname>
                </persName>
                <listEvent>
                   <event when="0327" source="#bib7-2" type="untagged">

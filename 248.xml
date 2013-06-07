@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name248-3 #name248-4a #name248-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib248-2">
-                  <forename>Cyril</forename>, <addName type="untagged-title">bishop of Ḥaḥ</addName>
+                  <forename sort="1">Cyril</forename>, <addName type="untagged-title" sort="2">bishop of Ḥaḥ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name248-3"
                          corresp="#name248-2 #name248-4a #name248-4b"
                          xml:lang="ar"
                          source="#bib248-3">
-                  <forename>قورلس</forename> 
-                  <addName type="untagged-title">اسقف حاح</addName>
+                  <forename sort="1">قورلس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف حاح</addName>
                </persName>
                <persName type="sic"
                          xml:id="name248-4a"
                          corresp="#name248-2 #name248-3 #name248-4b"
                          xml:lang="syr"
                          source="#bib248-4">
-                  <forename>ܩܘܪܝܠܠܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܚܐܚ</addName>
+                  <forename sort="1">ܩܘܪܝܠܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܚܐܚ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name248-4b"
                          corresp="#name248-2 #name248-3 #name248-4a"
                          xml:lang="syr-Syrj"
                          source="#bib248-4">
-                  <forename>ܩܘܪܝܺܠܠܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܐܚ</addName>
+                  <forename sort="1">ܩܘܪܝܺܠܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܐܚ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܩܘܪܝܠܠܘܣ</forename> 
-                  <addName type="untagged-title">ܕܚܐܚ</addName>
+                  <forename sort="1">ܩܘܪܝܠܠܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܚܐܚ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Qurillos</forename> 
-                  <addName type="untagged-title">of Ḥaḥ</addName>
+                  <forename sort="1">Qurillos</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥaḥ</addName>
                </persName>
                <listEvent>
                   <event when="1333" source="#bib248-2" type="untagged">

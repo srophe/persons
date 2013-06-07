@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,44 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib543-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Ibn al-Ṭayyib</surname>
+                  <surname sort="2">Ibn al-Ṭayyib</surname>
                </persName>
                <persName type="sic"
                          xml:id="name543-2"
                          corresp="#name543-3 #name543-4a #name543-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib543-2">Abu al-Faraj <forename>ʿAbd Allah</forename> Ibn al-Ṭayyib</persName>
+                         source="#bib543-2">
+                  <surname sort="2">Abu al-Faraj</surname> 
+                  <forename sort="1">ʿAbd Allah</forename> 
+                  <surname sort="2">Ibn al-Ṭayyib</surname>
+               </persName>
                <persName type="sic"
                          xml:id="name543-3"
                          corresp="#name543-2 #name543-4a #name543-4b"
                          xml:lang="ar"
-                         source="#bib543-3">ابو الفرج <forename>عبدالله</forename> ابن الطيب</persName>
+                         source="#bib543-3">
+                  <surname sort="2">ابو الفرج</surname> 
+                  <forename sort="1">عبدالله</forename> 
+                  <surname sort="2">ابن الطيب</surname>
+               </persName>
                <persName type="sic"
                          xml:id="name543-4a"
                          corresp="#name543-2 #name543-3 #name543-4b"
                          xml:lang="syr"
                          source="#bib543-4">
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName> ܐܒܘ ܐܠܦܪܓ <forename>ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> ܐܒܘ ܐܠܦܪܓ <forename sort="1">ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
                <persName type="sic"
                          xml:id="name543-4b"
                          corresp="#name543-2 #name543-3 #name543-4a"
                          xml:lang="syr-Syrj"
                          source="#bib543-4">
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName> 
-                  <surname>ܐܰܒܘ ܐܠܦܰܪܓ</surname> ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܒܘ ܐܠܦܪܓ <forename>ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
+                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
+                  <surname sort="2">ܐܰܒܘ ܐܠܦܰܪܓ</surname> ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
+               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+                  <surname sort="2">ܐܒܘ ܐܠܦܪܓ</surname> 
+                  <forename sort="1">ܥܒܕ ܐܠܗ</forename> 
+                  <surname sort="2">ܒܪ ܛܝܒ</surname>
+               </persName>
                <idno type="URI">http://viaf.org/viaf/89379494</idno>
                <bibl xml:id="bib543-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

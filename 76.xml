@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          corresp="#name76-3 #name76-4a #name76-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib76-2">
-                  <forename>Julian </forename>
-                  <addName type="untagged-title">II</addName>
+                  <forename sort="1">Julian </forename>
+                  <addName type="untagged-title" sort="2">II</addName>
                </persName>
                <persName type="sic"
                          xml:id="name76-3"
                          corresp="#name76-2 #name76-4a #name76-4b"
                          xml:lang="ar"
                          source="#bib76-3">
-                  <forename>يوليان</forename> 
-                  <addName type="untagged-title">الثاني</addName>
+                  <forename sort="1">يوليان</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name76-4a"
                          corresp="#name76-2 #name76-3 #name76-4b"
                          xml:lang="syr"
                          source="#bib76-4">
-                  <forename>ܝܘܠܝܢܐ</forename> 
-                  <addName type="untagged-title">ܬܪܝܢܐ</addName>
+                  <forename sort="1">ܝܘܠܝܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܝܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name76-4b"
                          corresp="#name76-2 #name76-3 #name76-4a"
                          xml:lang="syr-Syrj"
                          source="#bib76-4">
-                  <forename>ܝܘܠܝܰܢܶܐ</forename> 
-                  <addName type="untagged-title">ܬܪܰܝܳܢܐ</addName> 
+                  <forename sort="1">ܝܘܠܝܰܢܶܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܪܰܝܳܢܐ</addName> 
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܠܝܢܐ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="1">ܝܘܠܝܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yulyanos</forename> 
-                  <addName type="untagged-title">I</addName>
+                  <forename sort="1">Yulyanos</forename> 
+                  <addName type="untagged-title" sort="2">I</addName>
                </persName>
                <death when="0595" source="#bib76-2">595</death>
                <bibl xml:id="bib76-2">

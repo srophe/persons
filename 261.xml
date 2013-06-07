@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name261-2"
                          corresp="#name261-3 #name261-4a #name261-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib261-2">The Priest <forename>Simon</forename> of Amid</persName>
+                         source="#bib261-2">
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">Simon</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name261-3"
                          corresp="#name261-2 #name261-4a #name261-4b"
                          xml:lang="ar"
-                         source="#bib261-3">القس <forename>شمعون</forename> الآمدي</persName>
+                         source="#bib261-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="untagged-title" sort="2">الآمدي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name261-4a"
                          corresp="#name261-2 #name261-3 #name261-4b"
                          xml:lang="syr"
-                         source="#bib261-4">ܩܫܝܫܐ <forename>ܫܡܥܘܢ</forename> ܐܡܝܕܝܐ</persName>
+                         source="#bib261-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܐܡܝܕܝܐ</persName>
                <persName type="sic"
                          xml:id="name261-4b"
                          corresp="#name261-2 #name261-3 #name261-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib261-4">ܩܰܫܝܫܳܐ <forename>ܫܶܡܥܘܢ</forename> ܐܳܡܝܕܳܝܐ</persName>
+                         source="#bib261-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܐܳܡܝܕܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿun</forename> 
-                  <addName type="untagged-title">of Amid</addName>
+                  <forename sort="1">Shemʿun</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>
                <listEvent>
                   <event when="1450" source="#bib261-2" type="untagged">

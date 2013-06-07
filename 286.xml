@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,22 +100,22 @@
                          corresp="#name286-3 #name286-4a #name286-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib286-2">
-                  <forename>John</forename> 
-                  <addName type="untagged-title">Wanki, metropolitan of Cappadocia and Edessa</addName>
+                  <forename sort="1">John</forename> 
+                  <addName type="untagged-title" sort="2">Wanki</addName>, <addName type="untagged-title" sort="2">metropolitan of Cappadocia and Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name286-3"
                          corresp="#name286-2 #name286-4a #name286-4b"
                          xml:lang="ar"
                          source="#bib286-3">
-                  <forename>وانيس</forename> الونكي مطران قبادوقية و الرها</persName>
+                  <forename sort="1">وانيس</forename> الونكي مطران قبادوقية و الرها</persName>
                <persName type="sic"
                          xml:id="name286-4a"
                          corresp="#name286-2 #name286-3 #name286-4b"
                          xml:lang="syr"
                          source="#bib286-4">
-                  <forename>ܐܝܘܐܢܝܣ</forename> 
-                  <addName type="untagged-title">ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܐܝܘܐܢܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܘܐܢܟܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܦܕܘܩܝܐ ܘܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name286-4b"
@@ -124,14 +125,14 @@
                   <Barsoum_Sy_V_Full xmlns="">ܐܺܝܘܰܐܢܝܣ ܘܰܐܢܟܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܩܰܦܰܕܘܩܳܝܐ ܘܕܐܽܘܪܗܳܝ</Barsoum_Sy_V_Full>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܘܐܢܝܣ</forename> 
-                  <addName type="untagged-title">ܘܐܢܟܝܐ</addName>
+                  <forename sort="1">ܐܝܘܐܢܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܘܐܢܟܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon</forename> 
-                  <addName type="untagged-title">of Wank</addName>
+                  <forename sort="1">Yuḥanon</forename> 
+                  <addName type="untagged-title" sort="2">of Wank</addName>
                </persName>
                <listEvent>
                   <event when="1624" source="#bib286-2" type="untagged">

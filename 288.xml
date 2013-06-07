@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,35 @@
                          xml:id="name288-2"
                          corresp="#name288-3 #name288-4a #name288-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib288-2">Bishop <forename>Hidayat Allah</forename> of Khudayda</persName>
+                         source="#bib288-2">Bishop <forename sort="1">Hidayat Allah</forename> of Khudayda</persName>
                <persName type="sic"
                          xml:id="name288-3"
                          corresp="#name288-2 #name288-4a #name288-4b"
                          xml:lang="ar"
-                         source="#bib288-3">الاسقف <forename>هداية اللّٰه</forename> الخُديدي</persName>
+                         source="#bib288-3">
+                  <addName type="untagged-title" sort="2">الاسقف </addName>
+                  <forename sort="1">هداية اللّٰه</forename> 
+                  <addName type="untagged-title" sort="2">الخُديدي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name288-4a"
                          corresp="#name288-2 #name288-3 #name288-4b"
                          xml:lang="syr"
-                         source="#bib288-4">ܐܦܝܣܩܘܦܐ <forename>ܗܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܘܕܝܕܝܐ</persName>
+                         source="#bib288-4">ܐܦܝܣܩܘܦܐ <forename sort="1">ܗܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܘܕܝܕܝܐ</persName>
                <persName type="sic"
                          xml:id="name288-4b"
                          corresp="#name288-2 #name288-3 #name288-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib288-4">ܐܶܦܝܣܩܘܦܳܐ <forename>ܗܰܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܽܘܕܰܝܕܳܝܐ</persName>
+                         source="#bib288-4">ܐܶܦܝܣܩܘܦܳܐ <forename sort="1">ܗܰܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܽܘܕܰܝܕܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܗܕܐܝܗ̈ ܐܠܠܗ</forename> 
-                  <addName type="untagged-title">ܟܘܕܝܕܝܐ</addName>
+                  <forename sort="1">ܗܕܐܝܗ̈ ܐܠܠܗ</forename> 
+                  <addName type="untagged-title" sort="2">ܟܘܕܝܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Hidāyatullāh</forename> 
-                  <addName type="untagged-title">of Beth Khudayda</addName>
+                  <forename sort="1">Hidāyatullāh</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Khudayda</addName>
                </persName>
                <listEvent>
                   <event when="1693" source="#bib288-2" type="untagged">

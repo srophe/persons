@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,49 +99,56 @@
                          xml:id="name905-2"
                          corresp="#name905-3 #name905-4a #name905-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib905-2">Periodeutes <forename>Bodh</forename>, the Chaldean</persName>
+                         source="#bib905-2">
+                  <addName type="untagged-title" sort="2">Periodeutes</addName> 
+                  <forename sort="1">Bodh</forename>, <addName type="untagged-title" sort="2">the Chaldean</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name905-3"
                          corresp="#name905-2 #name905-4a #name905-4b"
                          xml:lang="ar"
-                         source="#bib905-3">البريودوط <forename>بود</forename> الكلداني</persName>
+                         source="#bib905-3">
+                  <addName type="untagged-title" sort="2">البريودوط</addName> 
+                  <forename sort="1">بود</forename> 
+                  <addName type="untagged-title" sort="2">الكلداني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name905-5a"
                          corresp="#name905-5b #name905-6a"
                          xml:lang="syr"
                          source="#bib905-5">
-                  <forename>ܒܘܕ</forename> 
-                  <addName type="untagged-title">ܦܪܝܕܘܛܐ</addName>
+                  <forename sort="1">ܒܘܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܪܝܕܘܛܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name905-5b"
                          corresp="#name905-5a #name905-6b"
                          xml:lang="syr-Syrn"
                          source="#bib905-5">
-                  <forename>ܒܘܼܕ</forename> 
-                  <addName type="untagged-title">ܦܸܪܝܵܕܘܿܛܵܐ</addName>
+                  <forename sort="1">ܒܘܼܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܸܪܝܵܕܘܿܛܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name905-6a"
                          corresp="#name905-6b #name905-5a"
                          xml:lang="syr"
                          source="#bib905-6">
-                  <forename>ܒܘܕ</forename> 
-                  <addName type="untagged-title">ܦܪܝܕܘܛܐ</addName>
+                  <forename sort="1">ܒܘܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܪܝܕܘܛܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name905-6b"
                          corresp="#name905-6a #name905-5b"
                          xml:lang="syr-Syrj"
                          source="#bib905-6">
-                  <forename>ܒܽܘܕ</forename> 
-                  <addName type="untagged-title">ܦܶܪܝܳܕܶܘܛܳܐ</addName>
+                  <forename sort="1">ܒܽܘܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܶܪܝܳܕܶܘܛܳܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Bud</forename> 
-                  <addName type="untagged-title">the Periodeutes</addName>
+                  <forename sort="1">Bud</forename> 
+                  <addName type="untagged-title" sort="2">the Periodeutes</addName>
                </persName>
                <bibl xml:id="bib905-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

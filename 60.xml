@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,33 +100,33 @@
                          corresp="#name60-3 #name60-4a #name60-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib60-2">
-                  <addName type="untagged-title">The Writer of the History of the Ḥimyarite Martyrs</addName>
+                  <addName type="untagged-title" sort="2">The Writer of the History of the Ḥimyarite Martyrs</addName>
                </persName>
                <persName type="sic"
                          xml:id="name60-3"
                          corresp="#name60-2 #name60-4a #name60-4b"
                          xml:lang="ar"
                          source="#bib60-3">
-                  <addName type="untagged-title">مؤرخ شهادة الحميريين</addName>
+                  <addName type="untagged-title" sort="2">مؤرخ شهادة الحميريين</addName>
                </persName>
                <persName type="sic"
                          xml:id="name60-4a"
                          corresp="#name60-2 #name60-3 #name60-4b"
                          xml:lang="syr"
                          source="#bib60-4">
-                  <addName type="untagged-title">ܡܟܬܒܢܐ ܕܣܗܕܘܬ ܚܡܝܪ̈ܝܐ</addName>
+                  <addName type="untagged-title" sort="2">ܡܟܬܒܢܐ ܕܣܗܕܘܬ ܚܡܝܪ̈ܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name60-4b"
                          corresp="#name60-2 #name60-3 #name60-4a"
                          xml:lang="syr-Syrj"
                          source="#bib60-4">
-                  <addName type="untagged-title">ܡܰܟܬܒܳܢܳܐ ܕܣܳܗܕܘܬ ܚܡܝܪ̈ܳܝܐ</addName>
+                  <addName type="untagged-title" sort="2">ܡܰܟܬܒܳܢܳܐ ܕܣܳܗܕܘܬ ܚܡܝܪ̈ܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Book of the Ḥimyarites</addName>
+                  <addName type="untagged-title" sort="2">Author of the Book of the Ḥimyarites</addName>
                </persName>
                <bibl xml:id="bib60-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib587-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Khamis</forename> 
-                  <surname>bar Qardaḥe</surname>
+                  <forename sort="1">Khamis</forename> 
+                  <surname sort="2">bar Qardaḥe</surname>
                </persName>
                <persName type="sic"
                          xml:id="name587-2"
                          corresp="#name587-3 #name587-4a #name587-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib587-2">
-                  <forename>Khamis</forename> 
-                  <surname>Cardahi</surname>
+                  <forename sort="1">Khamis</forename> 
+                  <surname sort="2">Cardahi</surname>
                </persName>
                <persName type="sic"
                          xml:id="name587-3"
                          corresp="#name587-2 #name587-4a #name587-4b"
                          xml:lang="ar"
                          source="#bib587-3">
-                  <forename>خميس</forename> 
-                  <surname>ابن قرداحي</surname>
+                  <forename sort="1">خميس</forename> 
+                  <surname sort="2">ابن قرداحي</surname>
                </persName>
                <persName type="sic"
                          xml:id="name587-4a"
                          corresp="#name587-2 #name587-3 #name587-4b"
                          xml:lang="syr"
                          source="#bib587-4">
-                  <forename>ܟܡܝܣ</forename> 
-                  <surname>ܒܪ ܩܪܕܚܐ</surname>
+                  <forename sort="1">ܟܡܝܣ</forename> 
+                  <surname sort="2">ܒܪ ܩܪܕܚܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name587-4b"
                          corresp="#name587-2 #name587-3 #name587-4a"
                          xml:lang="syr-Syrj"
                          source="#bib587-4">
-                  <forename>ܟܰܡܝܣ</forename> 
-                  <surname>ܒܰܪ ܩܰܪܕܚܐ</surname>
+                  <forename sort="1">ܟܰܡܝܣ</forename> 
+                  <surname sort="2">ܒܰܪ ܩܰܪܕܚܐ</surname>
                </persName>
                <floruit source="#bib587-1">13th cent.?</floruit>
                <bibl xml:id="bib587-1">

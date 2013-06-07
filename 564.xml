@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,44 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib564-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Isidore</forename> 
-                  <addName type="untagged-title">of Pelusium</addName>
+                  <forename sort="1">Isidore</forename> 
+                  <addName type="untagged-title" sort="2">of Pelusium</addName>
                </persName>
                <persName type="sic"
                          xml:id="name564-3"
                          corresp="#name564-2 #name564-4a #name564-4b"
                          xml:lang="ar"
                          source="#bib564-3">
-                  <forename>ايسيدورس</forename> القس البيلوزي (الفرمي)</persName>
+                  <forename sort="1">ايسيدورس</forename> 
+                  <addName type="untagged-title" sort="2">القس البيلوزي (الفرمي)</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name564-5a"
                          corresp="#name564-5b #name564-6a"
                          xml:lang="syr"
                          source="#bib564-5">
-                  <forename>ܐܝܣܝܕܘܪܐ</forename>
+                  <forename sort="1">ܐܝܣܝܕܘܪܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name564-5b"
                          corresp="#name564-5a #name564-6b"
                          xml:lang="syr-Syrn"
                          source="#bib564-5">
-                  <forename>ܐܝܼܣܝܼܕܘܿܪܹܐ</forename>
+                  <forename sort="1">ܐܝܼܣܝܼܕܘܿܪܹܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name564-6a"
                          corresp="#name564-6b #name564-5a"
                          xml:lang="syr"
                          source="#bib564-6">
-                  <forename>ܐܝܣܝܕܘܪܐ</forename>
+                  <forename sort="1">ܐܝܣܝܕܘܪܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name564-6b"
                          corresp="#name564-6a #name564-5b"
                          xml:lang="syr-Syrj"
                          source="#bib564-6">
-                  <forename>ܐܺܝܣܺܝܕܳܘܪܳܐ</forename>
+                  <forename sort="1">ܐܺܝܣܺܝܕܳܘܪܳܐ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/158160202</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr92-22373</idno>

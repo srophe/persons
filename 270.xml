@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name270-2"
                          corresp="#name270-3 #name270-4a #name270-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib270-2">Rabban <forename>Yeshu‛</forename> of Basibrina</persName>
+                         source="#bib270-2">
+                  <addName type="untagged-title" sort="2">Rabban</addName> 
+                  <forename sort="1">Yeshu‛</forename> 
+                  <addName type="untagged-title" sort="2">of Basibrina</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name270-3"
                          corresp="#name270-2 #name270-4a #name270-4b"
                          xml:lang="ar"
-                         source="#bib270-3">الربان <forename>يشوع</forename> السبيريني</persName>
+                         source="#bib270-3">
+                  <addName type="untagged-title" sort="2">الربان </addName>
+                  <forename sort="1">يشوع</forename> 
+                  <addName type="untagged-title" sort="2">السبيريني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name270-4a"
                          corresp="#name270-2 #name270-3 #name270-4b"
                          xml:lang="syr"
-                         source="#bib270-4">ܪܒܢ <forename>ܝܫܘܥ</forename> ܣܒܝܪܝܢܝܐ</persName>
+                         source="#bib270-4">ܪܒܢ <forename sort="1">ܝܫܘܥ</forename> ܣܒܝܪܝܢܝܐ</persName>
                <persName type="sic"
                          xml:id="name270-4b"
                          corresp="#name270-2 #name270-3 #name270-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib270-4">ܪܰܒܢ <forename>ܝܶܫܘܥ</forename> ܣܒܝܺܪܝܢܳܝܐ</persName>
+                         source="#bib270-4">ܪܰܒܢ <forename sort="1">ܝܶܫܘܥ</forename> ܣܒܝܺܪܝܢܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܫܘܥ</forename> 
-                  <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
+                  <forename sort="1">ܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yeshuʿ</forename> 
-                  <addName type="untagged-title">of Beth Sbirino</addName>
+                  <forename sort="1">Yeshuʿ</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Sbirino</addName>
                </persName>
                <death when="1492" source="#bib270-2">1492</death>
                <bibl xml:id="bib270-2">

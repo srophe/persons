@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name100-3 #name100-4a #name100-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib100-2">
-                  <addName type="untagged-title">The Monk</addName> 
-                  <forename>Ithalaha</forename>
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">Ithalaha</forename>
                </persName>
                <persName type="sic"
                          xml:id="name100-3"
                          corresp="#name100-2 #name100-4a #name100-4b"
                          xml:lang="ar"
                          source="#bib100-3">
-                  <addName type="untagged-title">الراهب</addName> 
-                  <forename>ايثالاها</forename>
+                  <addName type="untagged-title" sort="2">الراهب</addName> 
+                  <forename sort="1">ايثالاها</forename>
                </persName>
                <persName type="sic"
                          xml:id="name100-4a"
                          corresp="#name100-2 #name100-3 #name100-4b"
                          xml:lang="syr"
                          source="#bib100-4">
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName> 
-                  <forename>ܐܝܬܐܠܗܐ</forename>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
+                  <forename sort="1">ܐܝܬܐܠܗܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name100-4b"
                          corresp="#name100-2 #name100-3 #name100-4a"
                          xml:lang="syr-Syrj"
                          source="#bib100-4">
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName> 
-                  <forename>ܐܝܬܐܠܳܗܐ</forename>
+                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
+                  <forename sort="1">ܐܝܬܐܠܳܗܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Aitalaha</forename> 
-                  <addName type="untagged-title">the Monk</addName>
+                  <forename sort="1">Aitalaha</forename> 
+                  <addName type="untagged-title" sort="2">the Monk</addName>
                </persName>
                <bibl xml:id="bib100-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

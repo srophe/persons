@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,21 +100,21 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib429-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Cureton</surname>, <forename>William</forename>
+                  <surname sort="1">Cureton</surname>, <forename sort="2">William</forename>
                </persName>
                <persName type="sic"
                          xml:id="name429-3"
                          corresp="#name429-2 #name429-4a #name429-4b"
                          xml:lang="ar"
                          source="#bib429-3">
-                  <surname>كورتون</surname>
+                  <surname sort="1">كورتون</surname>
                </persName>
                <persName type="sic"
                          xml:id="name429-4a"
                          corresp="#name429-2 #name429-3 #name429-4b"
                          xml:lang="syr"
                          source="#bib429-4">
-                  <surname>ܟܘܪܬܘܢ</surname>
+                  <surname sort="1">ܟܘܪܬܘܢ</surname>
                </persName>
                <idno type="URI">http://viaf.org/viaf/76440932</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr94-21171</idno>

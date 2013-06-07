@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib64-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Mushe</forename> 
-                  <addName type="untagged-title">of Aggel</addName>
+                  <forename sort="1">Mushe</forename> 
+                  <addName type="untagged-title" sort="2">of Aggel</addName>
                </persName>
                <persName type="sic"
                          xml:id="name64-2"
                          corresp="#name64-3 #name64-4a #name64-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib64-2">
-                  <forename>Moses</forename> 
-                  <addName type="untagged-title">of Agel</addName>
+                  <forename sort="1">Moses</forename> 
+                  <addName type="untagged-title" sort="2">of Agel</addName>
                </persName>
                <persName type="sic"
                          xml:id="name64-3"
                          corresp="#name64-2 #name64-4a #name64-4b"
                          xml:lang="ar"
                          source="#bib64-3">
-                  <forename>موسى</forename> 
-                  <addName type="untagged-title">الاجلي</addName>
+                  <forename sort="1">موسى</forename> 
+                  <addName type="untagged-title" sort="2">الاجلي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name64-4a"
                          corresp="#name64-2 #name64-3 #name64-4b"
                          xml:lang="syr"
                          source="#bib64-4">
-                  <forename>ܡܘܫܐ</forename> 
-                  <addName type="untagged-title">ܐܓܠܝܐ</addName>
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܓܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name64-4b"
                          corresp="#name64-2 #name64-3 #name64-4a"
                          xml:lang="syr-Syrj"
                          source="#bib64-4">
-                  <forename>ܡܘܫܐ</forename> 
-                  <addName type="untagged-title">ܐܓܠܳܝܐ</addName>
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܓܠܳܝܐ</addName>
                </persName>
                <listEvent>
                   <event when="0550" source="#bib64-2" type="untagged">

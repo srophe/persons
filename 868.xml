@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,22 +100,22 @@
                          corresp="#name868-5b #name868-6a"
                          xml:lang="syr"
                          source="#bib868-5">
-                  <forename>ܛܘܪܝܣ</forename> 
-                  <addName type="untagged-title">ܝܚܝܕܝܐ</addName>
+                  <forename sort="1">ܛܘܪܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܝܚܝܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name868-5b"
                          corresp="#name868-5a #name868-6b"
                          xml:lang="syr-Syrn"
                          source="#bib868-5">
-                  <forename>ܛܘܿܪܝܼܣ</forename> 
-                  <addName type="untagged-title">ܝܑܼܚܝܼܕܵܝܵܐ</addName>
+                  <forename sort="1">ܛܘܿܪܝܼܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܝܑܼܚܝܼܕܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ṭoris</forename> 
-                  <addName type="untagged-title">the Monk</addName>
+                  <forename sort="1">Ṭoris</forename> 
+                  <addName type="untagged-title" sort="2">the Monk</addName>
                </persName>
                <bibl xml:id="bib868-5">
                   <title>Abdisho (YdQ)</title>

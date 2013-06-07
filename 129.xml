@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name129-3 #name129-4a #name129-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib129-2">
-                  <forename>John</forename> 
-                  <surname>Bar Samuel</surname>
+                  <forename sort="1">John</forename> 
+                  <surname sort="2">Bar Samuel</surname>
                </persName>
                <persName type="sic"
                          xml:id="name129-3"
                          corresp="#name129-2 #name129-4a #name129-4b"
                          xml:lang="ar"
                          source="#bib129-3">
-                  <forename>يوحنا</forename> 
-                  <surname>بن صموئيل</surname>
+                  <forename sort="1">يوحنا</forename> 
+                  <surname sort="2">بن صموئيل</surname>
                </persName>
                <persName type="sic"
                          xml:id="name129-4a"
                          corresp="#name129-2 #name129-3 #name129-4b"
                          xml:lang="syr"
                          source="#bib129-4">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <surname>ܒܪ ܫܡܘܐܝܠ</surname>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <surname sort="2">ܒܪ ܫܡܘܐܝܠ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name129-4b"
                          corresp="#name129-2 #name129-3 #name129-4a"
                          xml:lang="syr-Syrj"
                          source="#bib129-4">
-                  <forename>ܝܘܚܰܢܢ</forename> 
-                  <surname>ܒܰܪ ܫܡܘܐܝܠ</surname>
+                  <forename sort="1">ܝܘܚܰܢܢ</forename> 
+                  <surname sort="2">ܒܰܪ ܫܡܘܐܝܠ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon</forename> 
-                  <surname>bar Shmuel</surname>
+                  <forename sort="1">Yuḥanon</forename> 
+                  <surname sort="2">bar Shmuel</surname>
                </persName>
                <bibl xml:id="bib129-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib212-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Dionysios</forename> 
-                  <surname>bar Ṣalibi</surname>
+                  <forename sort="1">Dionysios</forename> 
+                  <surname sort="2">bar Ṣalibi</surname>
                </persName>
                <persName type="sic"
                          xml:id="name212-2"
                          corresp="#name212-3 #name212-4a #name212-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib212-2">
-                  <forename>Dionysius Jacob</forename> 
-                  <surname>Bar Ṣalibi</surname>
+                  <forename sort="1">Dionysius Jacob</forename> 
+                  <surname sort="2">Bar Ṣalibi</surname>
                </persName>
                <persName type="sic"
                          xml:id="name212-3"
                          corresp="#name212-2 #name212-4a #name212-4b"
                          xml:lang="ar"
                          source="#bib212-3">
-                  <forename>ديونيسيوس يعقوب</forename> 
-                  <surname>ابن الصليبي</surname> 
-                  <addName type="untagged-title">مطران آمد</addName>
+                  <forename sort="1">ديونيسيوس يعقوب</forename> 
+                  <surname sort="2">ابن الصليبي</surname> 
+                  <addName type="untagged-title" sort="2">مطران آمد</addName>
                </persName>
                <persName type="sic"
                          xml:id="name212-4a"
                          corresp="#name212-2 #name212-3 #name212-4b"
                          xml:lang="syr"
                          source="#bib212-4">
-                  <forename>ܕܝܘܢܢܘܣܝܘܣ</forename> 
-                  <surname>ܒܪ ܨܠܝܒܝ</surname>
+                  <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ</forename> 
+                  <surname sort="2">ܒܪ ܨܠܝܒܝ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name212-4b"
                          corresp="#name212-2 #name212-3 #name212-4a"
                          xml:lang="syr-Syrj"
                          source="#bib212-4">
-                  <forename>ܕܝܺܘܢܢܘܣܝܘܣ</forename> 
-                  <surname>ܒܰܪ ܨܰܠܝܒܝ</surname>
+                  <forename sort="1">ܕܝܺܘܢܢܘܣܝܘܣ</forename> 
+                  <surname sort="2">ܒܰܪ ܨܰܠܝܒܝ</surname>
                </persName>
                <idno type="URI">http://viaf.org/viaf/66823251</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n80-13608</idno>

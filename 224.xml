@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,29 +99,37 @@
                          xml:id="name224-2"
                          corresp="#name224-3 #name224-4a #name224-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib224-2">Patriarch <forename>John</forename> XII</persName>
+                         source="#bib224-2">
+                  <addName type="untagged-title" sort="2">Patriarch</addName> 
+                  <forename sort="2">John</forename> 
+                  <addName type="untagged-title" sort="2">XII</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name224-3"
                          corresp="#name224-2 #name224-4a #name224-4b"
                          xml:lang="ar"
-                         source="#bib224-3">البطريرك <forename>يوحنا</forename> الثاني عشر</persName>
+                         source="#bib224-3">
+                  <addName type="untagged-title" sort="2">البطريرك </addName>
+                  <forename sort="2">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">الثاني عشر</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name224-4a"
                          corresp="#name224-2 #name224-3 #name224-4b"
                          xml:lang="syr"
-                         source="#bib224-4">ܦܛܪܝܪܟܐ <forename>ܝܘܚܢܢ</forename> ܕܬܪܥܣܪ</persName>
+                         source="#bib224-4">ܦܛܪܝܪܟܐ <forename sort="2">ܝܘܚܢܢ</forename> ܕܬܪܥܣܪ</persName>
                <persName type="sic"
                          xml:id="name224-4b"
                          corresp="#name224-2 #name224-3 #name224-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib224-4">ܦܰܛܪܝܰܪܟܐ <forename>ܝܘܚܰܢܢ</forename> ܕܰܬܪܶܥܣܪ</persName>
+                         source="#bib224-4">ܦܰܛܪܝܰܪܟܐ <forename sort="2">ܝܘܚܰܢܢ</forename> ܕܰܬܪܶܥܣܪ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܕܬܪܥܣܪ</addName>
+                  <forename sort="2">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܪܥܣܪ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Yuḥanon XII (XI, XIII, or XIV) Yeshuʿ Kotubo</persName>
+                         syriaca-tags="#syriaca-headword">Yuḥanon <addName type="untagged-title" sort="2">XII (XI</addName>, <addName type="untagged-title" sort="2">XIII</addName>, or XIV) Yeshuʿ Kotubo</persName>
                <death when="1220" source="#bib224-2">1220</death>
                <bibl xml:id="bib224-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

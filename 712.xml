@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,7 +100,7 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib712-1"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">al-Ṣahyūnī</addName>, <forename>Jibrāʾīl</forename>
+                  <addName type="untagged-title" sort="2">al-Ṣahyūnī</addName>, <forename sort="2">Jibrāʾīl</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/89429922</idno>
                <bibl xml:id="bib712-1">

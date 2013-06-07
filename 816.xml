@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,32 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib816-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yawsep</forename> 
-                  <addName type="untagged-title">Ḥazzaya</addName>
+                  <forename sort="1">Yawsep</forename> 
+                  <addName type="untagged-title" sort="2">Ḥazzaya</addName>
                </persName>
                <persName type="sic"
                          xml:id="name816-5a"
                          corresp="#name816-5b #name816-6a"
                          xml:lang="syr"
                          source="#bib816-5">
-                  <forename>ܝܘܣܦ</forename> 
-                  <addName type="untagged-title">ܚܙܝܐ</addName>
+                  <forename sort="1">ܝܘܣܦ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܙܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name816-5b"
                          corresp="#name816-5a #name816-6b"
                          xml:lang="syr-Syrn"
                          source="#bib816-5">
-                  <forename>ܝܵܘܣܸܦ</forename> 
-                  <addName type="untagged-title">ܚܲܙܵܝܵܐ</addName>
+                  <forename sort="1">ܝܵܘܣܸܦ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܲܙܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name816-6a"
                          corresp="#name816-6b #name816-5a"
                          xml:lang="syr"
                          source="#bib816-6">
-                  <forename>ܝܘܣܦ</forename> 
-                  <addName type="untagged-title">ܚܙܝܐ</addName>
+                  <forename sort="1">ܝܘܣܦ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܙܝܐ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/34520115</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n86-832671</idno>

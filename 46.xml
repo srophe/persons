@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,36 +100,36 @@
                          corresp="#name46-3 #name46-4a #name46-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib46-2">
-                  <forename>Simon</forename>, <addName type="untagged-title">abbot of the Monastery of Beth Liqin</addName>
+                  <forename sort="1">Simon</forename>, <addName type="untagged-title" sort="2">abbot of the Monastery of Beth Liqin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name46-3"
                          corresp="#name46-2 #name46-4a #name46-4b"
                          xml:lang="ar"
                          source="#bib46-3">
-                  <forename>شمعون</forename> 
-                  <addName type="untagged-title">رئيس دير ليقين</addName>
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="untagged-title" sort="2">رئيس دير ليقين</addName>
                </persName>
                <persName type="sic"
                          xml:id="name46-4a"
                          corresp="#name46-2 #name46-3 #name46-4b"
                          xml:lang="syr"
                          source="#bib46-4">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܪܝܫ ܕܝܪܐ ܕܠܝܩܝܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name46-4b"
                          corresp="#name46-2 #name46-3 #name46-4a"
                          xml:lang="syr-Syrj"
                          source="#bib46-4">
-                  <forename>ܫܶܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</addName>
+                  <forename sort="1">ܫܶܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܪܝܫ ܕܰܝܪܳܐ ܕܠܝܺܩܝܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿon</forename>, <addName type="untagged-title">abbot of Dayro d-Liqin</addName>
+                  <forename sort="1">Shemʿon</forename>, <addName type="untagged-title" sort="2">abbot of Dayro d-Liqin</addName>
                </persName>
                <bibl xml:id="bib46-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

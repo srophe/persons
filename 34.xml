@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,44 +100,44 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib34-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Isḥaq</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Isḥaq</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name34-2"
                          corresp="#name34-3 #name34-4a #name34-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib34-2">
-                  <forename>Isaac</forename> 
-                  <addName type="untagged-title">the Second of Edessa</addName>
+                  <forename sort="1">Isaac</forename> 
+                  <addName type="untagged-title" sort="2">the Second of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name34-3"
                          corresp="#name34-2 #name34-4a #name34-4b"
                          xml:lang="ar"
                          source="#bib34-3">
-                  <forename>اسحاق</forename> 
-                  <addName type="untagged-title">الرهاوي الثاني</addName>
+                  <forename sort="1">اسحاق</forename> 
+                  <addName type="untagged-title" sort="2">الرهاوي الثاني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name34-4a"
                          corresp="#name34-2 #name34-3 #name34-4b"
                          xml:lang="syr"
                          source="#bib34-4">
-                  <forename>ܐܝܣܚܩ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܝܐ ܬܪܝܢܐ</addName>
+                  <forename sort="1">ܐܝܣܚܩ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ ܬܪܝܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name34-4b"
                          corresp="#name34-2 #name34-3 #name34-4a"
                          xml:lang="syr-Syrj"
                          source="#bib34-4">
-                  <forename>ܐܝܣܚܳܩ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</addName>
+                  <forename sort="1">ܐܝܣܚܳܩ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܣܚܩ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+                  <forename sort="1">ܐܝܣܚܩ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
                </persName>
                <listEvent>
                   <event when="0522" source="#bib34-2" type="untagged">

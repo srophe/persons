@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name238-3 #name238-4a #name238-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib238-2">
-                  <forename>Dioscorus Theodorus</forename>, <addName type="untagged-title">metropolitan of Ḥiṣn Ziyad</addName>
+                  <forename sort="1">Dioscorus Theodorus</forename>, <addName type="untagged-title" sort="2">metropolitan of Ḥiṣn Ziyad</addName>
                </persName>
                <persName type="sic"
                          xml:id="name238-3"
                          corresp="#name238-2 #name238-4a #name238-4b"
                          xml:lang="ar"
                          source="#bib238-3">
-                  <forename>ديوسقورس ثاودورس</forename> 
-                  <addName type="untagged-title">مطران حصن زياد</addName>
+                  <forename sort="1">ديوسقورس ثاودورس</forename> 
+                  <addName type="untagged-title" sort="2">مطران حصن زياد</addName>
                </persName>
                <persName type="sic"
                          xml:id="name238-4a"
                          corresp="#name238-2 #name238-3 #name238-4b"
                          xml:lang="syr"
                          source="#bib238-4">
-                  <forename>ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</addName>
+                  <forename sort="1">ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܣܢ ܙܝܐܕ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name238-4b"
                          corresp="#name238-2 #name238-3 #name238-4a"
                          xml:lang="syr-Syrj"
                          source="#bib238-4">
-                  <forename>ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</addName>
+                  <forename sort="1">ܕܺܝܘܣܩܘܪܘܣ ܬܶܐܘܕܳܘܪܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܚܰܣܢ ܙܝܐܕ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename> 
-                  <addName type="untagged-title">ܕܚܣܢ ܙܝܐܕ</addName>
+                  <forename sort="1">ܕܝܘܣܩܘܪܘܣ ܬܐܘܕܘܪܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܚܣܢ ܙܝܐܕ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Diosqoros Theodoros</forename> 
-                  <addName type="untagged-title">of Ḥiṣn Ziyād</addName>
+                  <forename sort="1">Diosqoros Theodoros</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥiṣn Ziyād</addName>
                </persName>
                <listEvent>
                   <event when="1275" source="#bib238-2" type="untagged">

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -97,7 +98,7 @@
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Authors/translators of the Syriac Apocryphal Psalms</addName>
+                  <addName type="untagged-title" sort="2">Authors/translators of the Syriac Apocryphal Psalms</addName>
                </persName>
                <bibl xml:id="bib689-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

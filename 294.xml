@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name294-2"
                          corresp="#name294-3 #name294-4a #name294-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib294-2">Maphryono <forename>Shukr Allah</forename> of Aleppo</persName>
+                         source="#bib294-2">
+                  <addName type="untagged-title" sort="2">Maphryono</addName> 
+                  <forename sort="1">Shukr Allah</forename> 
+                  <addName type="untagged-title" sort="2">of Aleppo</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name294-3"
                          corresp="#name294-2 #name294-4a #name294-4b"
                          xml:lang="ar"
-                         source="#bib294-3">المفريان <forename>شكر اللّٰه</forename> الحلبي</persName>
+                         source="#bib294-3">
+                  <addName type="untagged-title" sort="2">المفريان </addName>
+                  <forename sort="1">شكر اللّٰه</forename> 
+                  <addName type="untagged-title" sort="2">الحلبي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name294-4a"
                          corresp="#name294-2 #name294-3 #name294-4b"
                          xml:lang="syr"
-                         source="#bib294-4">ܡܦܪܝܢܐ <forename>ܫܟܪܐܠܠܗ</forename> ܚܠܒܝܐ</persName>
+                         source="#bib294-4">ܡܦܪܝܢܐ <forename sort="1">ܫܟܪܐܠܠܗ</forename> ܚܠܒܝܐ</persName>
                <persName type="sic"
                          xml:id="name294-4b"
                          corresp="#name294-2 #name294-3 #name294-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib294-4">ܡܰܦܪܝܢܐ <forename>ܫܰܟܪܐܠܠܗ</forename> ܚܳܠܒܝܐ</persName>
+                         source="#bib294-4">ܡܰܦܪܝܢܐ <forename sort="1">ܫܰܟܪܐܠܠܗ</forename> ܚܳܠܒܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܫܟܪܐܠܠܗ</forename> 
-                  <addName type="untagged-title">ܚܠܒܝܐ</addName>
+                  <forename sort="1">ܫܟܪܐܠܠܗ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܠܒܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shukrallāh</forename> 
-                  <addName type="untagged-title">of Aleppo</addName>
+                  <forename sort="1">Shukrallāh</forename> 
+                  <addName type="untagged-title" sort="2">of Aleppo</addName>
                </persName>
                <death when="1764" source="#bib294-2">1764</death>
                <bibl xml:id="bib294-2">

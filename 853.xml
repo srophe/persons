@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,65 +100,65 @@
                          corresp="#name853-3 #name853-4a #name853-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib853-2">
-                  <addName type="untagged-title">Deacon</addName> 
-                  <forename>Zenobius</forename>
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="1">Zenobius</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-3"
                          corresp="#name853-2 #name853-4a #name853-4b"
                          xml:lang="ar"
                          source="#bib853-3">
-                  <addName type="untagged-title">الشماس</addName> 
-                  <forename>زينوبيوس</forename>
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="1">زينوبيوس</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-4a"
                          corresp="#name853-2 #name853-3 #name853-4b"
                          xml:lang="syr"
                          source="#bib853-4">
-                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName> 
-                  <forename>ܙܝܢܘܒ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
+                  <forename sort="1">ܙܝܢܘܒ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-4b"
                          corresp="#name853-2 #name853-3 #name853-4a"
                          xml:lang="syr-Syrj"
                          source="#bib853-4">
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName> 
-                  <forename>ܙܰܝܢܽܘܒ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
+                  <forename sort="1">ܙܰܝܢܽܘܒ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-5a"
                          corresp="#name853-5b #name853-6a"
                          xml:lang="syr"
                          source="#bib853-5">
-                  <forename>ܙܢܘܒܝܣ</forename>
+                  <forename sort="1">ܙܢܘܒܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-5b"
                          corresp="#name853-5a #name853-6b"
                          xml:lang="syr-Syrn"
                          source="#bib853-5">
-                  <forename>ܙܹܢܘܿܒܝܼܣ</forename>
+                  <forename sort="1">ܙܹܢܘܿܒܝܼܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-6a"
                          corresp="#name853-6b #name853-5a"
                          xml:lang="syr"
                          source="#bib853-6">
-                  <forename>ܙܢܘܒܝܣ</forename>
+                  <forename sort="1">ܙܢܘܒܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-6b"
                          corresp="#name853-6a #name853-5b"
                          xml:lang="syr-Syrj"
                          source="#bib853-6">
-                  <forename>ܙܢܽܘܒܺܝܳܣ</forename>
+                  <forename sort="1">ܙܢܽܘܒܺܝܳܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Zenobius</forename>
+                  <forename sort="1">Zenobius</forename>
                </persName>
                <persName type="sic"
                          xml:id="name853-7"

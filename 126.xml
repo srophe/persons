@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name126-3 #name126-4a #name126-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib126-2">
-                  <forename>Constantine</forename>, <addName type="untagged-title">bishop of Edessa</addName>
+                  <forename sort="1">Constantine</forename>, <addName type="untagged-title" sort="2">bishop of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name126-3"
                          corresp="#name126-2 #name126-4a #name126-4b"
                          xml:lang="ar"
                          source="#bib126-3">
-                  <forename>قسطنطين</forename> 
-                  <addName type="untagged-title">مطران الرها</addName>
+                  <forename sort="1">قسطنطين</forename> 
+                  <addName type="untagged-title" sort="2">مطران الرها</addName>
                </persName>
                <persName type="sic"
                          xml:id="name126-4a"
                          corresp="#name126-2 #name126-3 #name126-4b"
                          xml:lang="syr"
                          source="#bib126-4">
-                  <forename>ܩܘܣܛܢܛܝܢ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܩܘܣܛܢܛܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name126-4b"
                          corresp="#name126-2 #name126-3 #name126-4a"
                          xml:lang="syr-Syrj"
                          source="#bib126-4">
-                  <forename>ܩܘܣܛܰܢܛܝܢ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܳܝ</addName>
+                  <forename sort="1">ܩܘܣܛܰܢܛܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܳܝ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܩܘܣܛܢܛܝܢ</forename> 
-                  <addName type="untagged-title">ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܩܘܣܛܢܛܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Constantine</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Constantine</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <death when="0735" source="#bib126-2">735</death>
                <bibl xml:id="bib126-2">

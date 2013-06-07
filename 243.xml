@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,36 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib243-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Diosqoros</forename> 
-                  <addName type="untagged-title">of Gozarto</addName>
+                  <forename sort="1">Diosqoros</forename> 
+                  <addName type="untagged-title" sort="2">of Gozarto</addName>
                </persName>
                <persName type="sic"
                          xml:id="name243-2"
                          corresp="#name243-3 #name243-4a #name243-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib243-2">Metropolitan <forename>Gabriel</forename> of Barṭelli</persName>
+                         source="#bib243-2">Metropolitan <forename sort="1">Gabriel</forename> of Barṭelli</persName>
                <persName type="sic"
                          xml:id="name243-3"
                          corresp="#name243-2 #name243-4a #name243-4b"
                          xml:lang="ar"
-                         source="#bib243-3">المطران <forename>جبرائيل</forename> البرطلي</persName>
+                         source="#bib243-3">
+                  <addName type="untagged-title" sort="2">المطران </addName>
+                  <forename sort="1">جبرائيل</forename> 
+                  <addName type="untagged-title" sort="2">البرطلي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name243-4a"
                          corresp="#name243-2 #name243-3 #name243-4b"
                          xml:lang="syr"
-                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܓܒܪܐܝܠ</forename> ܒܪܛܠܝܐ</persName>
+                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܓܒܪܐܝܠ</forename> ܒܪܛܠܝܐ</persName>
                <persName type="sic"
                          xml:id="name243-4b"
                          corresp="#name243-2 #name243-3 #name243-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܓܰܒܪܳܐܝܠ</forename> ܒܰܪܛܶܠܝܐ</persName>
+                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܓܰܒܪܳܐܝܠ</forename> ܒܰܪܛܶܠܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܕܝܘܣܩܘܪܘܣ</forename> 
-                  <addName type="untagged-title">ܕܓܙܪܬܐ</addName>
+                  <forename sort="1">ܕܝܘܣܩܘܪܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܓܙܪܬܐ</addName>
                </persName>
                <death when="1300" source="#bib243-2">1300</death>
                <bibl xml:id="bib243-1">

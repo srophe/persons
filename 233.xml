@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name233-3 #name233-4a #name233-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib233-2">
-                  <forename>Gregorius John</forename>, <addName type="untagged-title">bishop of St. Matthew’s Monastery</addName>
+                  <forename sort="1">Gregorius John</forename>, <addName type="untagged-title" sort="2">bishop of St. Matthew’s Monastery</addName>
                </persName>
                <persName type="sic"
                          xml:id="name233-3"
                          corresp="#name233-2 #name233-4a #name233-4b"
                          xml:lang="ar"
                          source="#bib233-3"> 
-                  <forename>غريغوريوس يوحنا</forename> 
-                  <addName type="untagged-title">مطران دير مار متى و اذربيجان</addName>
+                  <forename sort="1">غريغوريوس يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">مطران دير مار متى و اذربيجان</addName>
                </persName>
                <persName type="sic"
                          xml:id="name233-4a"
                          corresp="#name233-2 #name233-3 #name233-4b"
                          xml:lang="syr"
                          source="#bib233-4">
-                  <forename>ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</addName>
+                  <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name233-4b"
                          corresp="#name233-2 #name233-3 #name233-4a"
                          xml:lang="syr-Syrj"
                          source="#bib233-4">
-                  <forename>ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ</forename> 
-                  <addName type="untagged-title">ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</addName>
+                  <forename sort="1">ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܕܡܪܝ ܡܬܝ</addName>
+                  <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܪܝ ܡܬܝ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Gregorios Yuḥanon</forename> 
-                  <addName type="untagged-title">of Mor Matay</addName>
+                  <forename sort="1">Gregorios Yuḥanon</forename> 
+                  <addName type="untagged-title" sort="2">of Mor Matay</addName>
                </persName>
                <bibl xml:id="bib233-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

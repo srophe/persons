@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,35 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib532-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ḥenanishoʿ</forename> 
-                  <addName type="untagged-title">II</addName>
+                  <forename sort="1">Ḥenanishoʿ</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܚܢܢܝܫܘܥ</forename>
+                  <forename sort="1">ܚܢܢܝܫܘܥ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name532-5a"
                          corresp="#name532-5b #name532-6a"
                          xml:lang="syr"
                          source="#bib532-5">
-                  <forename>ܚܢܢܝܫܘܥ</forename> 
-                  <addName type="untagged-title">ܩܬܘܠܝܩܐ</addName>
+                  <forename sort="1">ܚܢܢܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܬܘܠܝܩܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name532-5b"
                          corresp="#name532-5a #name532-6b"
                          xml:lang="syr-Syrn"
                          source="#bib532-5">
-                  <forename>ܚܢܵܢܝܼܫܘܿܥ</forename> 
-                  <addName type="untagged-title">ܩܵܬܘܿܠܝܼܩܵܐ</addName>
+                  <forename sort="1">ܚܢܵܢܝܼܫܘܿܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܵܬܘܿܠܝܼܩܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name532-6a"
                          corresp="#name532-6b #name532-5a"
                          xml:lang="syr"
                          source="#bib532-6">
-                  <forename>ܚܢܢܝܫܘܥ</forename> 
-                  <addName type="untagged-title">ܩܬܘܠܝܩܐ</addName>
+                  <forename sort="1">ܚܢܢܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܬܘܠܝܩܐ</addName>
                </persName>
                <death when="0080" notBefore="0779" notAfter="0780" source="#bib532-1">779/80</death>
                <bibl xml:id="bib532-1">

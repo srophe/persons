@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,12 +99,20 @@
                          xml:id="name293-2"
                          corresp="#name293-3 #name293-4a #name293-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib293-2">The Monk <forename>‛Abd al-Nur</forename> of Amid</persName>
+                         source="#bib293-2">
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">‛Abd al-Nur</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name293-3"
                          corresp="#name293-2 #name293-4a #name293-4b"
                          xml:lang="ar"
-                         source="#bib293-3">الراهب <forename>عبد النور</forename> الآمدي</persName>
+                         source="#bib293-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">عبد النور</forename> 
+                  <addName type="untagged-title" sort="2">الآمدي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name293-4a"
                          corresp="#name293-2 #name293-3 #name293-4b"
@@ -113,16 +122,16 @@
                          xml:id="name293-4b"
                          corresp="#name293-2 #name293-3 #name293-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib293-4">ܕܰܝܪܳܝܐ <forename>ܥܒܶܕ ܐܠܢܘܪ</forename> ܐܡܝܺܕܳܝܐ</persName>
+                         source="#bib293-4">ܕܰܝܪܳܝܐ <forename sort="1">ܥܒܶܕ ܐܠܢܘܪ</forename> ܐܡܝܺܕܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܥܒܕ ܐܠܢܘܪ</forename> 
-                  <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
+                  <forename sort="1">ܥܒܕ ܐܠܢܘܪ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAbd al-Nūr</forename> 
-                  <addName type="untagged-title">Amīdī</addName>
+                  <forename sort="1">ʿAbd al-Nūr</forename> 
+                  <addName type="untagged-title" sort="2">Amīdī</addName>
                </persName>
                <death when="1755" source="#bib293-2">1755</death>
                <bibl xml:id="bib293-2">

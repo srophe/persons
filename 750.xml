@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,32 +99,34 @@
                          xml:id="name750-2"
                          corresp="#name750-3 #name750-4a #name750-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib750-2">people of the Cave (the Sleeper Youths of Ephesus)</persName>
+                         source="#bib750-2">
+                  <addName type="untagged-title" sort="2">people of the Cave (the Sleeper Youths of Ephesus)</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name750-3"
                          corresp="#name750-2 #name750-4a #name750-4b"
                          xml:lang="ar"
                          source="#bib750-3">
-                  <addName type="untagged-title">اهل الكهف</addName>
+                  <addName type="untagged-title" sort="2">اهل الكهف</addName>
                </persName>
                <persName type="sic"
                          xml:id="name750-4a"
                          corresp="#name750-2 #name750-3 #name750-4b"
                          xml:lang="syr"
                          source="#bib750-4">
-                  <addName type="untagged-title">ܒܢܝ̈ ܫܩܝܦܐ</addName>
+                  <addName type="untagged-title" sort="2">ܒܢܝ̈ ܫܩܝܦܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name750-4b"
                          corresp="#name750-2 #name750-3 #name750-4a"
                          xml:lang="syr-Syrj"
                          source="#bib750-4">
-                  <addName type="untagged-title">ܒܢܝ̈ ܫܩܺܝܦܐ</addName>
+                  <addName type="untagged-title" sort="2">ܒܢܝ̈ ܫܩܺܝܦܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Legend of the Sleepers of Ephesus</addName>
+                  <addName type="untagged-title" sort="2">Author of the Legend of the Sleepers of Ephesus</addName>
                </persName>
                <bibl xml:id="bib750-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

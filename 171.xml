@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          corresp="#name171-3 #name171-4a #name171-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib171-2">
-                  <forename>Garshun</forename> 
-                  <addName type="untagged-title">the Stranger</addName>
+                  <forename sort="1">Garshun</forename> 
+                  <addName type="untagged-title" sort="2">the Stranger</addName>
                </persName>
                <persName type="sic"
                          xml:id="name171-3"
                          corresp="#name171-2 #name171-4a #name171-4b"
                          xml:lang="ar"
                          source="#bib171-3">
-                  <forename>كرشون</forename> 
-                  <addName type="untagged-title">الغريب</addName>
+                  <forename sort="1">كرشون</forename> 
+                  <addName type="untagged-title" sort="2">الغريب</addName>
                </persName>
                <persName type="sic"
                          xml:id="name171-4a"
                          corresp="#name171-2 #name171-3 #name171-4b"
                          xml:lang="syr"
                          source="#bib171-4">
-                  <forename>ܓܪܫܘܢ</forename> 
-                  <addName type="untagged-title">ܐܟܣܢܝܐ</addName>
+                  <forename sort="1">ܓܪܫܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܟܣܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name171-4b"
                          corresp="#name171-2 #name171-3 #name171-4a"
                          xml:lang="syr-Syrj"
                          source="#bib171-4">
-                  <forename>ܓܰܪܫܘܢ</forename> 
-                  <addName type="untagged-title">ܐܰܟܣܢܳܝܐ</addName>
+                  <forename sort="1">ܓܰܪܫܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܰܟܣܢܳܝܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܪܫܘܢ</forename>
+                  <forename sort="1">ܓܪܫܘܢ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Garshun</forename>
+                  <forename sort="1">Garshun</forename>
                </persName>
                <listEvent>
                   <event notBefore="0950"

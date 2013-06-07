@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,35 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib308-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Aba</forename>
+                  <forename sort="1">Aba</forename>
                </persName>
                <persName type="sic"
                          xml:id="name308-2"
                          corresp="#name308-3 #name308-4a #name308-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib308-2">
-                  <forename>Aba</forename>
+                  <forename sort="1">Aba</forename>
                </persName>
                <persName type="sic"
                          xml:id="name308-3"
                          corresp="#name308-2 #name308-4a #name308-4b"
                          xml:lang="ar"
                          source="#bib308-3">
-                  <forename>آبا</forename>
+                  <forename sort="1">آبا</forename>
                </persName>
                <persName type="sic"
                          xml:id="name308-4a"
                          corresp="#name308-2 #name308-3 #name308-4b"
                          xml:lang="syr"
                          source="#bib308-4">
-                  <forename>ܐܒܐ</forename>
+                  <forename sort="1">ܐܒܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name308-4b"
                          corresp="#name308-2 #name308-3 #name308-4a"
                          xml:lang="syr-Syrj"
                          source="#bib308-4">
-                  <forename>ܐܰܒܐ</forename>
+                  <forename sort="1">ܐܰܒܐ</forename>
                </persName>
                <floruit source="#bib308-1">ca. 400</floruit>
                <bibl xml:id="bib308-1">

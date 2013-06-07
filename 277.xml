@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib277-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Nuḥ</forename> 
-                  <addName type="untagged-title">the Lebanese</addName>
+                  <forename sort="1">Nuḥ</forename> 
+                  <addName type="untagged-title" sort="2">the Lebanese</addName>
                </persName>
                <persName type="sic"
                          xml:id="name277-2"
                          corresp="#name277-3 #name277-4a #name277-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib277-2">Patriarch <forename>Nuḥ</forename> the Lebanese</persName>
+                         source="#bib277-2">
+                  <addName type="untagged-title" sort="2">Patriarch</addName> 
+                  <forename sort="1">Nuḥ</forename> 
+                  <addName type="untagged-title" sort="2">the Lebanese</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name277-3"
                          corresp="#name277-2 #name277-4a #name277-4b"
                          xml:lang="ar"
-                         source="#bib277-3">البطريرك <forename>نوح</forename> اللبناني</persName>
+                         source="#bib277-3">
+                  <addName type="untagged-title" sort="2">البطريرك</addName> 
+                  <forename sort="1">نوح</forename>
+                  <addName type="untagged-title" sort="2"> اللبناني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name277-4a"
                          corresp="#name277-2 #name277-3 #name277-4b"
                          xml:lang="syr"
-                         source="#bib277-4">ܦܛܪܝܪܟܐ <forename>ܢܘܚ</forename> ܠܒܢܢܝܐ</persName>
+                         source="#bib277-4">ܦܛܪܝܪܟܐ <forename sort="1">ܢܘܚ</forename> ܠܒܢܢܝܐ</persName>
                <persName type="sic"
                          xml:id="name277-4b"
                          corresp="#name277-2 #name277-3 #name277-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib277-4">ܦܰܛܪܝܰܪܟܐ <forename>ܢܘܚ</forename> ܠܶܒܢܳܢܳܝܐ</persName>
+                         source="#bib277-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܢܘܚ</forename> ܠܶܒܢܳܢܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܢܘܚ</forename> 
-                  <addName type="untagged-title">ܠܒܢܢܝܐ</addName>
+                  <forename sort="1">ܢܘܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܠܒܢܢܝܐ</addName>
                </persName>
                <idno type="URI">http://en.wikipedia.org/wiki/Ignatius_Nuh_of_Lebanon</idno>
                <death when="1509" source="#bib277-2">1509</death>

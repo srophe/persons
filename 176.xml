@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,36 +100,36 @@
                          corresp="#name176-3 #name176-4a #name176-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib176-2">
-                  <addName type="untagged-title">The Monk</addName> 
-                  <forename>Rufil</forename>
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">Rufil</forename>
                </persName>
                <persName type="sic"
                          xml:id="name176-3"
                          corresp="#name176-2 #name176-4a #name176-4b"
                          xml:lang="ar"
                          source="#bib176-3">
-                  <addName type="untagged-title">الراهب</addName> 
-                  <forename>روفيل</forename>
+                  <addName type="untagged-title" sort="2">الراهب</addName> 
+                  <forename sort="1">روفيل</forename>
                </persName>
                <persName type="sic"
                          xml:id="name176-4a"
                          corresp="#name176-2 #name176-3 #name176-4b"
                          xml:lang="syr"
                          source="#bib176-4">
-                  <forename>ܪܘܦܝܠ</forename> 
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName>
+                  <forename sort="1">ܪܘܦܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name176-4b"
                          corresp="#name176-2 #name176-3 #name176-4a"
                          xml:lang="syr-Syrj"
                          source="#bib176-4">
-                  <forename>ܪܘܦܝܠ</forename> ܕܰܝܪܳܝܐ</persName>
+                  <forename sort="1">ܪܘܦܝܠ</forename> ܕܰܝܪܳܝܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Rupil</forename> 
-                  <addName type="untagged-title">Dayroyo</addName>
+                  <forename sort="1">Rupil</forename> 
+                  <addName type="untagged-title" sort="2">Dayroyo</addName>
                </persName>
                <death when="0925" source="#bib176-2">925</death>
                <bibl xml:id="bib176-2">

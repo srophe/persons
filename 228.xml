@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,34 +100,37 @@
                          corresp="#name228-3 #name228-4a #name228-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib228-2">
-                  <forename>Theodore</forename> 
-                  <addName type="untagged-title">of Antioch, the Philosopher</addName>
+                  <forename sort="1">Theodore</forename> 
+                  <addName type="untagged-title" sort="2">of Antioch</addName>, <addName type="untagged-title" sort="2">the Philosopher</addName>
                </persName>
                <persName type="sic"
                          xml:id="name228-3"
                          corresp="#name228-2 #name228-4a #name228-4b"
                          xml:lang="ar"
                          source="#bib228-3">
-                  <forename>ثاوذوري</forename> الانطاكي الفيلسوف</persName>
+                  <forename sort="1">ثاوذوري</forename> 
+                  <addName type="untagged-title" sort="2">الانطاكي </addName>
+                  <addName type="untagged-title" sort="2">الفيلسوف</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name228-4a"
                          corresp="#name228-2 #name228-3 #name228-4b"
                          xml:lang="syr"
-                         source="#bib228-4">ܦܝܠܣܘܦܐ <forename>ܬܐܘܕܘܪܝ</forename> ܐܢܛܝܘܟܝܐ</persName>
+                         source="#bib228-4">ܦܝܠܣܘܦܐ <forename sort="1">ܬܐܘܕܘܪܝ</forename> ܐܢܛܝܘܟܝܐ</persName>
                <persName type="sic"
                          xml:id="name228-4b"
                          corresp="#name228-2 #name228-3 #name228-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib228-4">ܦܝܠܳܣܘܦܐ <forename>ܬܶܐܘܕܘܪܝ</forename> ܐܰܢܛܝܘܟܳܝܐ</persName>
+                         source="#bib228-4">ܦܝܠܳܣܘܦܐ <forename sort="1">ܬܶܐܘܕܘܪܝ</forename> ܐܰܢܛܝܘܟܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܬܐܘܕܘܪܝ</forename> 
-                  <addName type="untagged-title">ܐܢܛܝܘܟܝܐ</addName>
+                  <forename sort="1">ܬܐܘܕܘܪܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܢܛܝܘܟܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Theodoros</forename> 
-                  <addName type="untagged-title">of Antioch</addName>
+                  <forename sort="1">Theodoros</forename> 
+                  <addName type="untagged-title" sort="2">of Antioch</addName>
                </persName>
                <persName type="sic"
                          xml:id="name228-7"

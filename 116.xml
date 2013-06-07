@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,31 @@
                          xml:id="name116-2"
                          corresp="#name116-3 #name116-4a #name116-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib116-2">Presbyter <forename>Simon</forename> of Samosata</persName>
+                         source="#bib116-2">Presbyter <forename sort="1">Simon</forename> of Samosata</persName>
                <persName type="sic"
                          xml:id="name116-3"
                          corresp="#name116-2 #name116-4a #name116-4b"
                          xml:lang="ar"
-                         source="#bib116-3">القس <forename>شمعون</forename> السميساطي</persName>
+                         source="#bib116-3">القس <forename sort="1">شمعون</forename> السميساطي</persName>
                <persName type="sic"
                          xml:id="name116-4a"
                          corresp="#name116-2 #name116-3 #name116-4b"
                          xml:lang="syr"
-                         source="#bib116-4">ܩܫܝܫܐ <forename>ܫܡܥܘܢ</forename> ܫܡܝܫܛܝܐ</persName>
+                         source="#bib116-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܫܡܝܫܛܝܐ</persName>
                <persName type="sic"
                          xml:id="name116-4b"
                          corresp="#name116-2 #name116-3 #name116-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib116-4">ܩܰܫܝܫܳܐ <forename>ܫܶܡܥܘܢ</forename> ܫܰܡܝܫܛܳܝܳܐ</persName>
+                         source="#bib116-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܫܰܡܝܫܛܳܝܳܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܫܡܝܫܛܝܐ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܫܡܝܫܛܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿun</forename> 
-                  <addName type="untagged-title">of Samosata</addName>
+                  <forename sort="1">Shemʿun</forename> 
+                  <addName type="untagged-title" sort="2">of Samosata</addName>
                </persName>
                <bibl xml:id="bib116-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

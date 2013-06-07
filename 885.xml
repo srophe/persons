@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,30 +100,30 @@
                          corresp="#name885-5b #name885-6a"
                          xml:lang="syr"
                          source="#bib885-5">
-                  <forename>ܒܒܝ</forename> 
-                  <addName type="untagged-title">ܕܡܥܪ̈ܐ</addName>
+                  <forename sort="1">ܒܒܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܥܪ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name885-5b"
                          corresp="#name885-5a #name885-6b"
                          xml:lang="syr-Syrn"
                          source="#bib885-5">
-                  <forename>ܒܵܒܲܝ</forename> 
-                  <addName type="untagged-title">ܕܲܡܥܲܪܹ̈ܐ</addName>
+                  <forename sort="1">ܒܵܒܲܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܲܡܥܲܪܹ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name885-6a"
                          corresp="#name885-6b #name885-5a"
                          xml:lang="syr"
                          source="#bib885-6">
-                  <forename>ܒܒܝ</forename> 
-                  <addName type="untagged-title">ܕܡܥܪ̈ܐ</addName>
+                  <forename sort="1">ܒܒܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܥܪ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Babai</forename> 
-                  <addName type="untagged-title">of Mʿarre</addName> 
+                  <forename sort="1">Babai</forename> 
+                  <addName type="untagged-title" sort="2">of Mʿarre</addName> 
                </persName>
                <bibl xml:id="bib885-5">
                   <title>Abdisho (YdQ)</title>

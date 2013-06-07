@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name221-3 #name221-4a #name221-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib221-2">
-                  <forename>Abraham</forename>, <addName type="untagged-title">bishop of Tālbsam</addName>
+                  <forename sort="1">Abraham</forename>, <addName type="untagged-title" sort="2">bishop of Tālbsam</addName>
                </persName>
                <persName type="sic"
                          xml:id="name221-3"
                          corresp="#name221-2 #name221-4a #name221-4b"
                          xml:lang="ar"
                          source="#bib221-3">
-                  <forename>ابرهيم</forename> 
-                  <addName type="untagged-title">اسقف تلبسم</addName>
+                  <forename sort="1">ابرهيم</forename> 
+                  <addName type="untagged-title" sort="2">اسقف تلبسم</addName>
                </persName>
                <persName type="sic"
                          xml:id="name221-4a"
                          corresp="#name221-2 #name221-3 #name221-4b"
                          xml:lang="syr"
                          source="#bib221-4">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܬܠܒܣ̈ܡܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܬܠܒܣ̈ܡܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name221-4b"
                          corresp="#name221-2 #name221-3 #name221-4a"
                          xml:lang="syr-Syrj"
                          source="#bib221-4">
-                  <forename>ܐܰܒܪܳܗܡ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܒܶܣ̈ܡܐ</addName>
+                  <forename sort="1">ܐܰܒܪܳܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܒܶܣ̈ܡܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܕܬܠܒܣ̈ܡܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܠܒܣ̈ܡܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abrohom</forename> 
-                  <addName type="untagged-title">of Tel Besme</addName>
+                  <forename sort="1">Abrohom</forename> 
+                  <addName type="untagged-title" sort="2">of Tel Besme</addName>
                </persName>
                <death notBefore="1208" source="#bib221-2">c. 1207</death>
                <bibl xml:id="bib221-2">

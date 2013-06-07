@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,32 +99,39 @@
                          xml:id="name118-2"
                          corresp="#name118-3 #name118-4a #name118-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib118-2">The Historian <forename>Moses</forename> of Anḥil</persName>
+                         source="#bib118-2">
+                  <addName type="untagged-title" sort="2">The Historian</addName> 
+                  <forename sort="1">Moses</forename> 
+                  <addName type="untagged-title" sort="2">of Anḥil</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name118-3"
                          corresp="#name118-2 #name118-4a #name118-4b"
                          xml:lang="ar"
                          source="#bib118-3">
-                  <forename>موسى</forename> النحلي المؤرخ</persName>
+                  <forename sort="1">موسى</forename> 
+                  <addName type="untagged-title" sort="2">النحلي </addName>
+                  <addName type="untagged-title" sort="2">المؤرخ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name118-4a"
                          corresp="#name118-2 #name118-3 #name118-4b"
                          xml:lang="syr"
-                         source="#bib118-4">ܡܟܬܒܢܐ <forename>ܡܘܫܐ</forename> ܕܒܝܬ ܢܚ̈ܠܐ</persName>
+                         source="#bib118-4">ܡܟܬܒܢܐ <forename sort="1">ܡܘܫܐ</forename> ܕܒܝܬ ܢܚ̈ܠܐ</persName>
                <persName type="sic"
                          xml:id="name118-4b"
                          corresp="#name118-2 #name118-3 #name118-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib118-4">ܡܰܟܬܒܳܢܳܐ <forename>ܡܘܫܶܐ</forename> ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
+                         source="#bib118-4">ܡܰܟܬܒܳܢܳܐ <forename sort="1">ܡܘܫܶܐ</forename> ܕܒܶܝܬ ܢܰܚ̈ܠܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܘܫܐ</forename> 
-                  <addName type="untagged-title">ܕܒܝܬ ܢܚ̈ܠܐ</addName>
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܝܬ ܢܚ̈ܠܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Mushe</forename> 
-                  <addName type="untagged-title">of Anḥil</addName>
+                  <forename sort="1">Mushe</forename> 
+                  <addName type="untagged-title" sort="2">of Anḥil</addName>
                </persName>
                <bibl xml:id="bib118-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

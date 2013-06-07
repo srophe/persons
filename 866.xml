@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name866-5b #name866-6a"
                          xml:lang="syr"
                          source="#bib866-5">
-                  <forename>ܓܒܪܝܠ</forename> 
-                  <addName type="untagged-title">ܐܪܝܐ</addName>
+                  <forename sort="1">ܓܒܪܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name866-5b"
                          corresp="#name866-5a #name866-6b"
                          xml:lang="syr-Syrn"
                          source="#bib866-5">
-                  <forename>ܓܲܒܪܝܹܠ</forename> 
-                  <addName type="untagged-title">ܐܲܪܝܵܐ</addName>
+                  <forename sort="1">ܓܲܒܪܝܹܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܲܪܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name866-6a"
                          corresp="#name866-6b #name866-5a"
                          xml:lang="syr"
                          source="#bib866-6">
-                  <forename>ܓܒܪܝܐܠ</forename> 
-                  <addName type="untagged-title">ܐܪܝܐ</addName>
+                  <forename sort="1">ܓܒܪܝܐܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name866-6b"
                          corresp="#name866-6a #name866-5b"
                          xml:lang="syr-Syrj"
                          source="#bib866-6">
-                  <forename>ܓܰܒܪܺܝܶܐܠ</forename> 
-                  <addName type="untagged-title">ܐܰܪܝܳܐ</addName>
+                  <forename sort="1">ܓܰܒܪܺܝܶܐܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܰܪܝܳܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Gabriel</forename> 
-                  <addName type="untagged-title">Arya</addName>
+                  <forename sort="1">Gabriel</forename> 
+                  <addName type="untagged-title" sort="2">Arya</addName>
                </persName>
                <bibl xml:id="bib866-5">
                   <title>Abdisho (YdQ)</title>

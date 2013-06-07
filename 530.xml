@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,31 +100,31 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib530-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ḥenana</forename>
+                  <forename sort="1">Ḥenana</forename>
                </persName>
                <persName type="sic"
                          xml:id="name530-5a"
                          corresp="#name530-5b #name530-6a"
                          xml:lang="syr"
                          source="#bib530-5">
-                  <forename>ܚܢܢܐ</forename> 
-                  <addName type="untagged-title">ܚܕܝܒܝܐ</addName>
+                  <forename sort="1">ܚܢܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܝܒܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name530-5b"
                          corresp="#name530-5a #name530-6b"
                          xml:lang="syr-Syrn"
                          source="#bib530-5">
-                  <forename>ܚܢܵܢܵܐ</forename> 
-                  <addName type="untagged-title">ܚܕܲܝܵܒܵܝܵܐ</addName>
+                  <forename sort="1">ܚܢܵܢܵܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܲܝܵܒܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name530-6a"
                          corresp="#name530-6b #name530-5a"
                          xml:lang="syr"
                          source="#bib530-6">
-                  <forename>ܚܢܢܐ</forename> 
-                  <addName type="untagged-title">ܚܕܝܒܝܐ</addName>
+                  <forename sort="1">ܚܢܢܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܝܒܝܐ</addName>
                </persName>
                <death when="0610" source="#bib530-1">ca. 610</death>
                <bibl xml:id="bib530-1">

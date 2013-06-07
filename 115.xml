@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,30 +99,33 @@
                          xml:id="name115-2"
                          corresp="#name115-3 #name115-4a #name115-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib115-2">Presbyter <forename>Simon</forename>, abbot of the Monastery of the Arabs</persName>
+                         source="#bib115-2">
+                  <addName type="untagged-title" sort="2">Presbyter</addName> 
+                  <forename sort="1">Simon</forename>, <addName type="untagged-title" sort="2">abbot of the Monastery of the Arabs</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name115-3"
                          corresp="#name115-2 #name115-4a #name115-4b"
                          xml:lang="ar"
-                         source="#bib115-3">القس <forename>شمعون</forename> رئيس دير العرب</persName>
+                         source="#bib115-3">القس <forename sort="1">شمعون</forename> رئيس دير العرب</persName>
                <persName type="sic"
                          xml:id="name115-4a"
                          corresp="#name115-2 #name115-3 #name115-4b"
                          xml:lang="syr"
-                         source="#bib115-4">ܩܫܝܫܐ <forename>ܫܡܥܘܢ</forename> ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</persName>
+                         source="#bib115-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</persName>
                <persName type="sic"
                          xml:id="name115-4b"
                          corresp="#name115-2 #name115-3 #name115-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib115-4">ܩܰܫܝܫܳܐ <forename>ܫܶܡܥܘܢ</forename> ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</persName>
+                         source="#bib115-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܪܺܝܫܕܰܝܪܐ ܕܕܰܝܪܐ ܕܥܰܪܰܒܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܪܝܫܕܝܪܐ ܕܕܝܪܐ ܕܥܪ̈ܒܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿun</forename>, <addName type="untagged-title">abbot of Dayro d-ʿAraboye</addName>
+                  <forename sort="1">Shemʿun</forename>, <addName type="untagged-title" sort="2">abbot of Dayro d-ʿAraboye</addName>
                </persName>
                <bibl xml:id="bib115-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,43 +100,43 @@
                          corresp="#name183-3 #name183-4a #name183-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib183-2">
-                  <forename>Al-Ḥasan</forename> 
-                  <surname>Ibn al-Khammar</surname>
+                  <forename sort="1">Al-Ḥasan</forename> 
+                  <surname sort="2">Ibn al-Khammar</surname>
                </persName>
                <persName type="sic"
                          xml:id="name183-3"
                          corresp="#name183-2 #name183-4a #name183-4b"
                          xml:lang="ar"
                          source="#bib183-3">
-                  <forename>الحسن</forename> 
-                  <surname>ابن الخمار</surname>
+                  <forename sort="1">الحسن</forename> 
+                  <surname sort="2">ابن الخمار</surname>
                </persName>
                <persName type="sic"
                          xml:id="name183-4a"
                          corresp="#name183-2 #name183-3 #name183-4b"
                          xml:lang="syr"
                          source="#bib183-4">
-                  <forename>ܚܣܢ</forename> 
-                  <surname>ܒܪ ܟܘܡܐܪ</surname>
+                  <forename sort="1">ܚܣܢ</forename> 
+                  <surname sort="2">ܒܪ ܟܘܡܐܪ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name183-4b"
                          corresp="#name183-2 #name183-3 #name183-4a"
                          xml:lang="syr-Syrj"
                          source="#bib183-4">
-                  <forename>ܚܰܣܢ</forename> 
-                  <surname>ܒܰܪ ܟܘܡܰܐܪ</surname>
+                  <forename sort="1">ܚܰܣܢ</forename> 
+                  <surname sort="2">ܒܰܪ ܟܘܡܰܐܪ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܠܚܣܢ</forename> 
-                  <surname>ܒܪ ܣܘܐܪ</surname> 
-                  <addName type="untagged-title">ܒܪ ܐܠܟܡܐܪ</addName>
+                  <forename sort="1">ܐܠܚܣܢ</forename> 
+                  <surname sort="2">ܒܪ ܣܘܐܪ</surname> 
+                  <addName type="untagged-title" sort="2">ܒܪ ܐܠܟܡܐܪ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>al-Ḥasan</forename> 
-                  <surname>b. Suwār</surname> b. al-Khammār</persName>
+                  <forename sort="1">al-Ḥasan</forename> 
+                  <surname sort="2">b. Suwār</surname> b. al-Khammār</persName>
                <idno type="URI">http://viaf.org/viaf/3706014</idno>
                <idno type="URI">http://viaf.org/viaf/223435395</idno>
                <idno type="URI">http://viaf.org/viaf/10700028</idno>

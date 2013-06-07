@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,21 +99,29 @@
                          xml:id="name5-4a"
                          corresp="#name5-2 #name5-3 #name5-4b"
                          xml:lang="syr"
-                         source="#bib5-4">ܒܪܬ ܩܝܡܐ <forename>ܬܘܡܐܝܣ</forename> ܢܨܝܒܝܢܝܐ</persName>
+                         source="#bib5-4">
+                  <addName type="untagged-title" sort="2">ܒܪܬ ܩܝܡܐ</addName> 
+                  <forename sort="1">ܬܘܡܐܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name5-4b"
                          corresp="#name5-2 #name5-3 #name5-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib5-4">ܒܰܪܬ ܩܝܳܡܐ <forename>ܬܘܡܰܐܝܣ</forename> ܢܨܝܒܝܢܝܳܐ</persName>
+                         source="#bib5-4">
+                  <addName type="untagged-title" sort="2">ܒܰܪܬ ܩܝܳܡܐ</addName> 
+                  <forename sort="1">ܬܘܡܰܐܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܳܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܬܘܡܐܝܣ</forename> 
-                  <addName type="untagged-title">ܢܨܝܒܝܢܝܐ</addName>
+                  <forename sort="1">ܬܘܡܐܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Tuma'is</forename> 
-                  <addName type="untagged-title">of Nisibis</addName>
+                  <forename sort="1">Tuma'is</forename> 
+                  <addName type="untagged-title" sort="2">of Nisibis</addName>
                </persName>
                <bibl xml:id="bib5-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>

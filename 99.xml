@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib99-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Severos</forename> 
-                  <addName type="untagged-title">Sebokht</addName>
+                  <forename sort="1">Severos</forename> 
+                  <addName type="untagged-title" sort="2">Sebokht</addName>
                </persName>
                <persName type="sic"
                          xml:id="name99-2"
                          corresp="#name99-3 #name99-4a #name99-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib99-2">
-                  <forename>Severus</forename> 
-                  <addName type="untagged-title">Sabukht</addName>
+                  <forename sort="1">Severus</forename> 
+                  <addName type="untagged-title" sort="2">Sabukht</addName>
                </persName>
                <persName type="sic"
                          xml:id="name99-3"
                          corresp="#name99-2 #name99-4a #name99-4b"
                          xml:lang="ar"
                          source="#bib99-3">
-                  <forename>ساويرا</forename> 
-                  <addName type="untagged-title">سابوخت</addName>
+                  <forename sort="1">ساويرا</forename> 
+                  <addName type="untagged-title" sort="2">سابوخت</addName>
                </persName>
                <persName type="sic"
                          xml:id="name99-4a"
                          corresp="#name99-2 #name99-3 #name99-4b"
                          xml:lang="syr"
                          source="#bib99-4">
-                  <forename>ܣܐܘܝܪܐ</forename> 
-                  <addName type="untagged-title">ܣܐܒܘܟܬ</addName>
+                  <forename sort="1">ܣܐܘܝܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܐܒܘܟܬ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name99-4b"
                          corresp="#name99-2 #name99-3 #name99-4a"
                          xml:lang="syr-Syrj"
                          source="#bib99-4">
-                  <forename>ܣܶܐܘܝܪܶܐ</forename> 
-                  <addName type="untagged-title">ܣܰܐܒܘܟܬ</addName>
+                  <forename sort="1">ܣܶܐܘܝܪܶܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܰܐܒܘܟܬ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/47099010</idno>
                <death when="0667" source="#bib99-2">667</death>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name85-3 #name85-4a #name85-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib85-2">
-                  <forename>Quryaqos</forename>, <addName type="untagged-title">metropolitan of Amid</addName>
+                  <forename sort="1">Quryaqos</forename>, <addName type="untagged-title" sort="2">metropolitan of Amid</addName>
                </persName>
                <persName type="sic"
                          xml:id="name85-3"
                          corresp="#name85-2 #name85-4a #name85-4b"
                          xml:lang="ar"
                          source="#bib85-3">
-                  <forename>قرياقس</forename> 
-                  <addName type="untagged-title">مطران آمد</addName>
+                  <forename sort="1">قرياقس</forename> 
+                  <addName type="untagged-title" sort="2">مطران آمد</addName>
                </persName>
                <persName type="sic"
                          xml:id="name85-4a"
                          corresp="#name85-2 #name85-3 #name85-4b"
                          xml:lang="syr"
                          source="#bib85-4">
-                  <forename>ܩܘܪܝܐܩܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
+                  <forename sort="1">ܩܘܪܝܐܩܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name85-4b"
                          corresp="#name85-2 #name85-3 #name85-4a"
                          xml:lang="syr-Syrj"
                          source="#bib85-4">
-                  <forename>ܩܘܪܝܰܐܩܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</addName>
+                  <forename sort="1">ܩܘܪܝܰܐܩܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܩܘܪܝܐܩܘܣ</forename> 
-                  <addName type="untagged-title">ܕܐܡܝܕ</addName>
+                  <forename sort="1">ܩܘܪܝܐܩܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܡܝܕ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Quryaqos</forename> 
-                  <addName type="untagged-title">of Amid</addName>
+                  <forename sort="1">Quryaqos</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>
                <death when="0623" source="#bib85-2">623</death>
                <bibl xml:id="bib85-2">

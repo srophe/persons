@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name234-3 #name234-4a #name234-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib234-2">
-                  <forename>Basilius</forename> 
-                  <addName type="untagged-title">of Basibrina</addName>
+                  <forename sort="1">Basilius</forename> 
+                  <addName type="untagged-title" sort="2">of Basibrina</addName>
                </persName>
                <persName type="sic"
                          xml:id="name234-3"
                          corresp="#name234-2 #name234-4a #name234-4b"
                          xml:lang="ar"
                          source="#bib234-3">
-                  <forename>باسيليوس</forename> 
-                  <addName type="untagged-title">السبيريني</addName>
+                  <forename sort="1">باسيليوس</forename> 
+                  <addName type="untagged-title" sort="2">السبيريني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name234-4a"
                          corresp="#name234-2 #name234-3 #name234-4b"
                          xml:lang="syr"
                          source="#bib234-4">
-                  <forename>ܒܣܝܠܝܘܣ</forename> 
-                  <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
+                  <forename sort="1">ܒܣܝܠܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name234-4b"
                          corresp="#name234-2 #name234-3 #name234-4a"
                          xml:lang="syr-Syrj"
                          source="#bib234-4">
-                  <forename>ܒܰܣܝܠܝܘܣ</forename> 
-                  <addName type="untagged-title">ܣܒܝܺܪܝܢܳܝܳܐ</addName>
+                  <forename sort="1">ܒܰܣܝܠܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܒܝܺܪܝܢܳܝܳܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Baselios</forename> 
-                  <addName type="untagged-title">of Beth Sbirino</addName>
+                  <forename sort="1">Baselios</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Sbirino</addName>
                </persName>
                <listEvent>
                   <event when="1254" source="#bib234-2" type="untagged">

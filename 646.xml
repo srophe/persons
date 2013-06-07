@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,47 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib646-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Mushe</forename> 
-                  <addName type="untagged-title">of Mardin</addName>
+                  <forename sort="1">Mushe</forename> 
+                  <addName type="untagged-title" sort="2">of Mardin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name646-2"
                          corresp="#name646-3 #name646-4a #name646-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib646-2">
-                  <forename>Moses</forename> 
-                  <addName type="untagged-title">al-Ṣawri</addName>
+                  <forename sort="1">Moses</forename> 
+                  <addName type="untagged-title" sort="2">al-Ṣawri</addName>
                </persName>
                <persName type="sic"
                          xml:id="name646-3"
                          corresp="#name646-2 #name646-4a #name646-4b"
                          xml:lang="ar"
-                         source="#bib646-3">المطران <forename>موسى</forename> الصَّوري</persName>
+                         source="#bib646-3">
+                  <addName type="untagged-title" sort="2">المطران</addName> 
+                  <forename sort="1">موسى</forename> 
+                  <addName type="untagged-title" sort="2">الصَّوري</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name646-4a"
                          corresp="#name646-2 #name646-3 #name646-4b"
                          xml:lang="syr"
-                         source="#bib646-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܡܘܫܐ</forename> ܨܘܪܝܐ</persName>
+                         source="#bib646-4">
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ</addName> 
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܨܘܪܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name646-4b"
                          corresp="#name646-2 #name646-3 #name646-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib646-4">ܡܺܝܛܪܘܦܘܠܝܛܐ <forename>ܡܘܫܶܐ</forename> ܨܰܘܪܳܝܳܐ</persName>
+                         source="#bib646-4">
+                  <addName type="untagged-title" sort="2">ܡܺܝܛܪܘܦܘܠܝܛܐ</addName> 
+                  <forename sort="1">ܡܘܫܶܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܨܰܘܪܳܝܳܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܘܫܐ</forename> 
-                  <addName type="untagged-title">ܕܡܪܕܝܢ</addName>
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܪܕܝܢ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/63546299</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-no00-9075</idno>

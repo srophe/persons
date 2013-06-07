@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,63 +100,63 @@
                          corresp="#name841-2 #name841-4a #name841-4b"
                          xml:lang="ar"
                          source="#bib841-3">
-                  <forename>داماسوس</forename>
+                  <forename sort="1">داماسوس</forename>
                </persName>
                <persName type="sic"
                          xml:id="name841-4a"
                          corresp="#name841-2 #name841-3 #name841-4b"
                          xml:lang="syr"
                          source="#bib841-4">
-                  <forename>ܕܐܡܐܣܘܣ</forename>
+                  <forename sort="1">ܕܐܡܐܣܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name841-4b"
                          corresp="#name841-2 #name841-3 #name841-4a"
                          xml:lang="syr-Syrj"
                          source="#bib841-4">
-                  <forename>ܕܰܐܡܰܐܣܘܣ</forename>
+                  <forename sort="1">ܕܰܐܡܰܐܣܘܣ</forename>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܕܡܣܘܣ</forename> 
-                  <addName type="untagged-title">ܕܪܗܘܡܐ</addName>
+                  <forename sort="1">ܕܡܣܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܪܗܘܡܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name841-5a"
                          corresp="#name841-5b #name841-6a"
                          xml:lang="syr"
                          source="#bib841-5">
-                  <forename>ܕܡܣܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
+                  <forename sort="1">ܕܡܣܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name841-5b"
                          corresp="#name841-5a #name841-6b"
                          xml:lang="syr-Syrn"
                          source="#bib841-5">
-                  <forename>ܕܵܡܵܣܘܿܣ</forename> 
-                  <addName type="untagged-title">ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܗܘܿܡܹܐ</addName>
+                  <forename sort="1">ܕܵܡܵܣܘܿܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܗܘܿܡܹܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name841-6a"
                          corresp="#name841-6b #name841-5a"
                          xml:lang="syr"
                          source="#bib841-6">
-                  <forename>ܕܡܣܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
+                  <forename sort="1">ܕܡܣܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name841-6b"
                          corresp="#name841-6a #name841-5b"
                          xml:lang="syr-Syrj"
                          source="#bib841-6">
-                  <forename>ܕܰܡܰܣܳܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܪܗܽܘܡܺܐ</addName>
+                  <forename sort="1">ܕܰܡܰܣܳܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܪܗܽܘܡܺܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Damasus</forename> 
-                  <addName type="untagged-title">of Rome</addName>
+                  <forename sort="1">Damasus</forename> 
+                  <addName type="untagged-title" sort="2">of Rome</addName>
                </persName>
                <bibl xml:id="bib841-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

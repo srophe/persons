@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name143-3 #name143-4a #name143-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib143-2">
-                  <forename>Simon</forename> 
-                  <surname>Bar ‛Amraya</surname>
+                  <forename sort="1">Simon</forename> 
+                  <surname sort="2">Bar ‛Amraya</surname>
                </persName>
                <persName type="sic"
                          xml:id="name143-3"
                          corresp="#name143-2 #name143-4a #name143-4b"
                          xml:lang="ar"
                          source="#bib143-3">
-                  <forename>شمعون</forename> 
-                  <surname>ابن عمرايا</surname>
+                  <forename sort="1">شمعون</forename> 
+                  <surname sort="2">ابن عمرايا</surname>
                </persName>
                <persName type="sic"
                          xml:id="name143-4a"
                          corresp="#name143-2 #name143-3 #name143-4b"
                          xml:lang="syr"
                          source="#bib143-4">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <surname>ܒܪ ܥܡܪ̈ܝܐ</surname>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <surname sort="2">ܒܪ ܥܡܪ̈ܝܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name143-4b"
                          corresp="#name143-2 #name143-3 #name143-4a"
                          xml:lang="syr-Syrj"
                          source="#bib143-4">
-                  <forename>ܫܶܡܥܘܢ</forename> 
-                  <surname>ܒܰܪ ܥܡܪ̈ܝܐ</surname>
+                  <forename sort="1">ܫܶܡܥܘܢ</forename> 
+                  <surname sort="2">ܒܰܪ ܥܡܪ̈ܝܐ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿon</forename> 
-                  <addName type="untagged-title">of Tagrit</addName>
+                  <forename sort="1">Shemʿon</forename> 
+                  <addName type="untagged-title" sort="2">of Tagrit</addName>
                </persName>
                <death when="0815" source="#bib143-2">815</death>
                <bibl xml:id="bib143-2">

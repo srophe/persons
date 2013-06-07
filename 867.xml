@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,30 +100,30 @@
                          corresp="#name867-5b #name867-6a"
                          xml:lang="syr"
                          source="#bib867-5">
-                  <forename>ܐܦܪܝܡ</forename> 
-                  <addName type="untagged-title">ܕܥܝܠܡ</addName>
+                  <forename sort="1">ܐܦܪܝܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܥܝܠܡ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name867-5b"
                          corresp="#name867-5a #name867-6b"
                          xml:lang="syr-Syrn"
                          source="#bib867-5">
-                  <forename>ܐܲܦܪܹܝܡ</forename> 
-                  <addName type="untagged-title">ܕܥܝܼܠܵܡ</addName>
+                  <forename sort="1">ܐܲܦܪܹܝܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܥܝܼܠܵܡ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name867-6a"
                          corresp="#name867-6b #name867-5a"
                          xml:lang="syr"
                          source="#bib867-6">
-                  <forename>ܐܦܪܝܡ</forename> 
-                  <addName type="untagged-title">ܕܥܝܠܡ</addName>
+                  <forename sort="1">ܐܦܪܝܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܥܝܠܡ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Aphrem</forename> 
-                  <addName type="untagged-title">of ʿIlam</addName>
+                  <forename sort="1">Aphrem</forename> 
+                  <addName type="untagged-title" sort="2">of ʿIlam</addName>
                </persName>
                <bibl xml:id="bib867-5">
                   <title>Abdisho (YdQ)</title>

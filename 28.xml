@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,36 +99,38 @@
                          xml:id="name28-2"
                          corresp="#name28-3 #name28-4a #name28-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib28-2">Deacon<forename> Jacob</forename>
+                         source="#bib28-2">
+                  <addName type="untagged-title" sort="2">Deacon</addName>
+                  <forename sort="1"> Jacob</forename>
                </persName>
                <persName type="sic"
                          xml:id="name28-3"
                          corresp="#name28-2 #name28-4a #name28-4b"
                          xml:lang="ar"
                          source="#bib28-3">
-                  <addName type="untagged-title">الشماس</addName> 
-                  <forename>يعقوب</forename>
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="1">يعقوب</forename>
                </persName>
                <persName type="sic"
                          xml:id="name28-4a"
                          corresp="#name28-2 #name28-3 #name28-4b"
                          xml:lang="syr"
                          source="#bib28-4">
-                  <forename>ܡܫܡܫܢܐ ܝܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+                  <forename sort="1">ܡܫܡܫܢܐ ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name28-4b"
                          corresp="#name28-2 #name28-3 #name28-4a"
                          xml:lang="syr-Syrj"
                          source="#bib28-4">
-                  <forename>ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܳܝܳܐ</addName>
+                  <forename sort="1">ܡܫܰܡܫܳܢܐ ܝܰܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܳܝܳܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yaʿqub</forename>
+                  <forename sort="1">Yaʿqub</forename>
                </persName>
                <listEvent>
                   <event when="0451" source="#bib28-2" type="untagged">

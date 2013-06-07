@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -95,38 +96,38 @@
          <listPerson>
             <person xml:id="person-875">
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܕܡܚܘܙ̈ܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܚܘܙ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name875-5a"
                          corresp="#name875-5b #name875-6a"
                          xml:lang="syr"
                          source="#bib875-5">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܡܢ ܡܚܘܙ̈ܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢ ܡܚܘܙ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name875-5b"
                          corresp="#name875-5a #name875-6b"
                          xml:lang="syr-Syrn"
                          source="#bib875-5">
-                  <forename>ܐܲܒܪܵܗܵܡ</forename> 
-                  <addName type="untagged-title">ܡܢ ܡܵܚܘܿܙܹ̈ܐ</addName>
+                  <forename sort="1">ܐܲܒܪܵܗܵܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢ ܡܵܚܘܿܙܹ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name875-6a"
                          corresp="#name875-6b #name875-5a"
                          xml:lang="syr"
                          source="#bib875-6">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܡܢ ܡܚܘܙ̈ܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢ ܡܚܘܙ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abraham</forename> 
-                  <addName type="untagged-title">of Maḥoze</addName>
+                  <forename sort="1">Abraham</forename> 
+                  <addName type="untagged-title" sort="2">of Maḥoze</addName>
                </persName>
                <bibl xml:id="bib875-5">
                   <title>Abdisho (YdQ)</title>

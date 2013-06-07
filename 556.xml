@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,59 +100,71 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib556-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ishoʿdnaḥ</forename>
+                  <forename sort="1">Ishoʿdnaḥ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name556-2"
                          corresp="#name556-3 #name556-4a #name556-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib556-2">
-                  <forename>Yeshoʿdnaḥ</forename> 
-                  <addName type="untagged-title">of Baṣra</addName> 
+                  <forename sort="1">Yeshoʿdnaḥ</forename> 
+                  <addName type="untagged-title" sort="2">of Baṣra</addName> 
                </persName>
                <persName type="sic"
                          xml:id="name556-3"
                          corresp="#name556-2 #name556-4a #name556-4b"
                          xml:lang="ar"
                          source="#bib556-3">
-                  <forename>يشوعدناح</forename> 
-                  <addName type="untagged-title">البصري</addName>
+                  <forename sort="1">يشوعدناح</forename> 
+                  <addName type="untagged-title" sort="2">البصري</addName>
                </persName>
                <persName type="sic"
                          xml:id="name556-4a"
                          corresp="#name556-2 #name556-3 #name556-4b"
                          xml:lang="syr"
                          source="#bib556-4">
-                  <forename>ܝܫܘܥ ܕܢܚ</forename> 
-                  <addName type="untagged-title">ܕܒܘܨܪܐ</addName>
+                  <forename sort="1">ܝܫܘܥ ܕܢܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܘܨܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name556-4b"
                          corresp="#name556-2 #name556-3 #name556-4a"
                          xml:lang="syr-Syrj"
                          source="#bib556-4">
-                  <forename>ܝܶܫܘܥ ܕܢܰܚ</forename> 
-                  <addName type="untagged-title">ܕܒܘܨܪܳܐ</addName>
+                  <forename sort="1">ܝܶܫܘܥ ܕܢܰܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܘܨܪܳܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܫܘܥܕܢܚ</forename> 
-                  <addName type="untagged-title">ܕܒܨܪܐ</addName>
+                  <forename sort="1">ܝܫܘܥܕܢܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܨܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name556-5a"
                          corresp="#name556-5b #name556-6a"
                          xml:lang="syr"
-                         source="#bib556-5">ܡܪܝ <forename>ܝܫܘܥܕܢܚ</forename> ܕܒܨܪܐ</persName>
+                         source="#bib556-5">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܝܫܘܥܕܢܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܨܪܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name556-5b"
                          corresp="#name556-5a #name556-6b"
                          xml:lang="syr-Syrn"
-                         source="#bib556-5">ܡܵܪܝ <forename>ܝܑܼܫܘܿܥܕܢܲܚ</forename> ܕܒܲܨܪܵܐ</persName>
+                         source="#bib556-5">
+                  <addName type="untagged-title" sort="2">ܡܵܪܝ</addName> 
+                  <forename sort="1">ܝܑܼܫܘܿܥܕܢܲܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܲܨܪܵܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name556-6a"
                          corresp="#name556-6b #name556-5a"
                          xml:lang="syr"
-                         source="#bib556-6">ܡܪܝ <forename>ܝܫܘܥܕܢܚ</forename> ܕܒܨܪܐ</persName>
+                         source="#bib556-6">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܝܫܘܥܕܢܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܨܪܐ</addName>
+               </persName>
                <floruit source="#bib556-1">9th cent.</floruit>
                <bibl xml:id="bib556-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

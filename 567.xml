@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,36 +100,52 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib567-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Iwannis Yuḥanon</forename>
+                  <forename sort="1">Iwannis Yuḥanon</forename>
                </persName>
                <persName type="sic"
                          xml:id="name567-2"
                          corresp="#name567-3 #name567-4a #name567-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib567-2">Metropolitan <forename>John</forename> 
-                  <surname>Shahin</surname> of Amid</persName>
+                         source="#bib567-2">
+                  <addName type="untagged-title" sort="2">Metropolitan</addName> 
+                  <forename sort="1">John</forename> 
+                  <surname sort="2">Shahin</surname> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name567-3"
                          corresp="#name567-2 #name567-4a #name567-4b"
                          xml:lang="ar"
-                         source="#bib567-3">المطران <forename>يوحنا</forename> 
-                  <surname>شاهين</surname> الآمدي</persName>
+                         source="#bib567-3">
+                  <addName type="untagged-title" sort="2">المطران</addName> 
+                  <forename sort="1">يوحنا</forename> 
+                  <surname sort="2">شاهين</surname> 
+                  <addName type="untagged-title" sort="2">الآمدي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name567-4a"
                          corresp="#name567-2 #name567-3 #name567-4b"
                          xml:lang="syr"
-                         source="#bib567-4">ܡܛܪܘܦܘܠܝܛܐ <forename>ܝܘܚܢܢ</forename> 
-                  <surname>ܫܐܗܝܢ</surname> ܐܡܝܕܝܐ</persName>
+                         source="#bib567-4">
+                  <addName type="untagged-title" sort="2">ܡܛܪܘܦܘܠܝܛܐ</addName> 
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <surname sort="2">ܫܐܗܝܢ</surname> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name567-4b"
                          corresp="#name567-2 #name567-3 #name567-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib567-4">ܡܶܛܪܘܦܘܠܝܛܳܐ <forename>ܝܘܚܰܢܢ</forename> 
-                  <surname>ܫܰܐܗܝܢ</surname> ܐܡܝܕܳܝܳܐ</persName>
+                         source="#bib567-4">
+                  <addName type="untagged-title" sort="2">ܡܶܛܪܘܦܘܠܝܛܳܐ</addName> 
+                  <forename sort="1">ܝܘܚܰܢܢ</forename> 
+                  <surname sort="2">ܫܰܐܗܝܢ</surname> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܳܝܳܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <surname>ܫܐܗܝܢ</surname> 
-                  <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <surname sort="2">ܫܐܗܝܢ</surname> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
                <bibl xml:id="bib567-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

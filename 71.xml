@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name71-3 #name71-4a #name71-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib71-2">
-                  <forename>Sergius</forename> 
-                  <surname>Bar Karya</surname>
+                  <forename sort="1">Sergius</forename> 
+                  <surname sort="2">Bar Karya</surname>
                </persName>
                <persName type="sic"
                          xml:id="name71-3"
                          corresp="#name71-2 #name71-4a #name71-4b"
                          xml:lang="ar"
                          source="#bib71-3">
-                  <forename>سرجيس</forename> 
-                  <surname>ابن كريا</surname>
+                  <forename sort="1">سرجيس</forename> 
+                  <surname sort="2">ابن كريا</surname>
                </persName>
                <persName type="sic"
                          xml:id="name71-4a"
                          corresp="#name71-2 #name71-3 #name71-4b"
                          xml:lang="syr"
                          source="#bib71-4">
-                  <forename>ܣܪܓܝܣ</forename> 
-                  <surname>ܒܪ ܟܪܝܐ</surname>
+                  <forename sort="1">ܣܪܓܝܣ</forename> 
+                  <surname sort="2">ܒܪ ܟܪܝܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name71-4b"
                          corresp="#name71-2 #name71-3 #name71-4a"
                          xml:lang="syr-Syrj"
                          source="#bib71-4">
-                  <forename>ܣܰܪܓܝܣ</forename> 
-                  <addName type="untagged-title">ܒܰܪ ܟܰܪܝܐ</addName>
+                  <forename sort="1">ܣܰܪܓܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܰܪ ܟܰܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Sargis</forename> 
-                  <surname>bar Karyo</surname>
+                  <forename sort="1">Sargis</forename> 
+                  <surname sort="2">bar Karyo</surname>
                </persName>
                <listEvent>
                   <event when="0580" source="#bib71-2" type="untagged">

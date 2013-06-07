@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name274-2"
                          corresp="#name274-3 #name274-4a #name274-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib274-2">The Priest <forename>Addai</forename> of Basibrina</persName>
+                         source="#bib274-2">
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">Addai</forename> 
+                  <addName type="untagged-title" sort="2">of Basibrina</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name274-3"
                          corresp="#name274-2 #name274-4a #name274-4b"
                          xml:lang="ar"
-                         source="#bib274-3">القس <forename>ادى</forename> السبيريني</persName>
+                         source="#bib274-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">ادى</forename> 
+                  <addName type="untagged-title" sort="2">السبيريني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name274-4a"
                          corresp="#name274-2 #name274-3 #name274-4b"
                          xml:lang="syr"
-                         source="#bib274-4">ܩܫܝܫܐ <forename>ܐܕܝ</forename> ܣܒܝܪܝܢܝܐ</persName>
+                         source="#bib274-4">ܩܫܝܫܐ <forename sort="1">ܐܕܝ</forename> ܣܒܝܪܝܢܝܐ</persName>
                <persName type="sic"
                          xml:id="name274-4b"
                          corresp="#name274-2 #name274-3 #name274-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib274-4">ܩܰܫܝܫܐ <forename>ܐܰܕܰܝ</forename> ܣܒܝܪܝܢܳܝܐ</persName>
+                         source="#bib274-4">ܩܰܫܝܫܐ <forename sort="1">ܐܰܕܰܝ</forename> ܣܒܝܪܝܢܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܕܝ</forename> 
-                  <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName>
+                  <forename sort="1">ܐܕܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Addai</forename> 
-                  <addName type="untagged-title">of Beth Sbirino</addName>
+                  <forename sort="1">Addai</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Sbirino</addName>
                </persName>
                <death when="1502" source="#bib274-2">1502</death>
                <bibl xml:id="bib274-2">

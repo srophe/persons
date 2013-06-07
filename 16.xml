@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          corresp="#name16-3 #name16-4a #name16-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib16-2">
-                  <addName type="untagged-title">The Priest</addName> 
-                  <forename>‛Absmayya</forename>
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">‛Absmayya</forename>
                </persName>
                <persName type="sic"
                          xml:id="name16-3"
                          corresp="#name16-2 #name16-4a #name16-4b"
                          xml:lang="ar"
                          source="#bib16-3">
-                  <addName type="untagged-title">القس</addName> 
-                  <forename>عبسميا</forename>
+                  <addName type="untagged-title" sort="2">القس</addName> 
+                  <forename sort="1">عبسميا</forename>
                </persName>
                <persName type="sic"
                          xml:id="name16-4a"
                          corresp="#name16-2 #name16-3 #name16-4b"
                          xml:lang="syr"
                          source="#bib16-4">
-                  <addName type="untagged-title">ܩܫܝܫܐ</addName> 
-                  <forename>ܥܒܫܡܝܐ</forename>
+                  <addName type="untagged-title" sort="2">ܩܫܝܫܐ</addName> 
+                  <forename sort="1">ܥܒܫܡܝܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name16-4b"
                          corresp="#name16-2 #name16-3 #name16-4a"
                          xml:lang="syr-Syrj"
                          source="#bib16-4">
-                  <addName type="untagged-title">ܩܰܫܝܫܳܐ</addName> 
-                  <forename>ܥܒܫܡܝܳܐ</forename>
+                  <addName type="untagged-title" sort="2">ܩܰܫܝܫܳܐ</addName> 
+                  <forename sort="1">ܥܒܫܡܝܳܐ</forename>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܥܒܫܡܝܐ</forename>
+                  <forename sort="1">ܥܒܫܡܝܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAbshmayyā</forename>
+                  <forename sort="1">ʿAbshmayyā</forename>
                </persName>
                <bibl xml:id="bib16-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

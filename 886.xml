@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,19 +100,19 @@
                          corresp="#name886-5b #name886-6a"
                          xml:lang="syr"
                          source="#bib886-5">
-                  <forename>ܥܩܒܫܡܐ</forename>
+                  <forename sort="1">ܥܩܒܫܡܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name886-5b"
                          corresp="#name886-5a #name886-6b"
                          xml:lang="syr-Syrn"
                          source="#bib886-5">
-                  <forename>ܥܩܸܒܫܡܵܐ</forename>
+                  <forename sort="1">ܥܩܸܒܫܡܵܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿEqebshma</forename>
+                  <forename sort="1">ʿEqebshma</forename>
                </persName>
                <bibl xml:id="bib886-5">
                   <title>Abdisho (YdQ)</title>

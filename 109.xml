@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,37 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib109-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Athanasios</forename> II <addName type="untagged-title">of Balad</addName>
+                  <forename sort="1">Athanasios</forename> II <addName type="untagged-title" sort="2">of Balad</addName>
                </persName>
                <persName type="sic"
                          xml:id="name109-2"
                          corresp="#name109-3 #name109-4a #name109-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib109-2">
-                  <forename>Athanasius </forename>II of Balad</persName>
+                  <forename sort="1">Athanasius </forename>
+                  <addName type="untagged-title" sort="2">II</addName> 
+                  <addName type="untagged-title" sort="2">of Balad</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name109-3"
                          corresp="#name109-2 #name109-4a #name109-4b"
                          xml:lang="ar"
                          source="#bib109-3">
-                  <forename>اثناسيوس</forename> 
-                  <addName type="untagged-title">البلدي</addName>
+                  <forename sort="1">اثناسيوس</forename> 
+                  <addName type="untagged-title" sort="2">البلدي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name109-4a"
                          corresp="#name109-2 #name109-3 #name109-4b"
                          xml:lang="syr"
                          source="#bib109-4">
-                  <forename>ܐܬܢܐܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܬܪܝܢ ܒܠܕܝܐ</addName>
+                  <forename sort="1">ܐܬܢܐܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܪܝܢ ܒܠܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name109-4b"
                          corresp="#name109-2 #name109-3 #name109-4a"
                          xml:lang="syr-Syrj"
                          source="#bib109-4">
-                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܰܬܪܶܝܢ ܒܳܠܳܕܳܝܐ</addName>
+                  <forename sort="1">ܐܰܬܰܢܐܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܰܬܪܶܝܢ ܒܳܠܳܕܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name109-7"

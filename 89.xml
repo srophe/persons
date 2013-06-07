@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name89-3 #name89-4a #name89-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib89-2">
-                  <forename>Severus</forename>, <addName type="untagged-title">bishop of Samosata</addName>
+                  <forename sort="1">Severus</forename>, <addName type="untagged-title" sort="2">bishop of Samosata</addName>
                </persName>
                <persName type="sic"
                          xml:id="name89-3"
                          corresp="#name89-2 #name89-4a #name89-4b"
                          xml:lang="ar"
                          source="#bib89-3">
-                  <forename>ساويريوس</forename> 
-                  <addName type="untagged-title">اسقف سيميساط</addName>
+                  <forename sort="1">ساويريوس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف سيميساط</addName>
                </persName>
                <persName type="sic"
                          xml:id="name89-4a"
                          corresp="#name89-2 #name89-3 #name89-4b"
                          xml:lang="syr"
                          source="#bib89-4">
-                  <forename>ܣܘܝܪܝܘܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
+                  <forename sort="1">ܣܘܝܪܝܘܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܫܡܝܫܛ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name89-4b"
                          corresp="#name89-2 #name89-3 #name89-4a"
                          xml:lang="syr-Syrj"
                          source="#bib89-4">
-                  <forename>ܣܶܘܝܪܝܘܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
+                  <forename sort="1">ܣܶܘܝܪܝܘܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܫܰܡܝܫܛ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܣܘܝܪܝܘܘܣ</forename> 
-                  <addName type="untagged-title">ܕܫܡܝܫܛ</addName>
+                  <forename sort="1">ܣܘܝܪܝܘܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܫܡܝܫܛ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Severus</forename> 
-                  <addName type="untagged-title">of Samosata</addName>
+                  <forename sort="1">Severus</forename> 
+                  <addName type="untagged-title" sort="2">of Samosata</addName>
                </persName>
                <death notBefore="0630" notAfter="0643" source="#bib89-2">630-643</death>
                <bibl xml:id="bib89-2">

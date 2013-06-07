@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name219-2"
                          corresp="#name219-3 #name219-4a #name219-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib219-2">Bishop <forename>John David</forename> of Amid</persName>
+                         source="#bib219-2">
+                  <addName type="untagged-title" sort="2">Bishop</addName> 
+                  <forename sort="1">John David</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name219-3"
                          corresp="#name219-2 #name219-4a #name219-4b"
                          xml:lang="ar"
-                         source="#bib219-3">الاسقف <forename>يوحنا داود</forename> الآمدي</persName>
+                         source="#bib219-3">
+                  <addName type="untagged-title" sort="2">الاسقف </addName>
+                  <forename sort="1">يوحنا داود</forename> 
+                  <addName type="untagged-title" sort="2">الآمدي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name219-4a"
                          corresp="#name219-2 #name219-3 #name219-4b"
                          xml:lang="syr"
-                         source="#bib219-4">ܐܦܝܣܩܘܦܐ <forename>ܝܘܚܢܢ ܕܘܝܕ</forename> ܐܡܝܕܝܐ</persName>
+                         source="#bib219-4">ܐܦܝܣܩܘܦܐ <forename sort="1">ܝܘܚܢܢ ܕܘܝܕ</forename> ܐܡܝܕܝܐ</persName>
                <persName type="sic"
                          xml:id="name219-4b"
                          corresp="#name219-2 #name219-3 #name219-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib219-4">ܐܶܦܝܣܩܘܦܐ <forename>ܝܘܚܰܢܢ ܕܰܘܝܕ</forename> ܐܳܡܝܕܳܝܐ</persName>
+                         source="#bib219-4">ܐܶܦܝܣܩܘܦܐ <forename sort="1">ܝܘܚܰܢܢ ܕܰܘܝܕ</forename> ܐܳܡܝܕܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܚܢܢ ܕܘܝܕ</forename> 
-                  <addName type="untagged-title">ܐܡܝܕܝܐ</addName>
+                  <forename sort="1">ܝܘܚܢܢ ܕܘܝܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon Dawid</forename> 
-                  <addName type="untagged-title">of Amid</addName>
+                  <forename sort="1">Yuḥanon Dawid</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>
                <death when="1203" source="#bib219-2">1203</death>
                <bibl xml:id="bib219-2">

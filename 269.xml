@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name269-3 #name269-4a #name269-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib269-2">
-                  <addName type="untagged-title">The Monk</addName> 
-                  <forename>Malke Sāqo</forename>
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">Malke Sāqo</forename>
                </persName>
                <persName type="sic"
                          xml:id="name269-3"
                          corresp="#name269-2 #name269-4a #name269-4b"
                          xml:lang="ar"
                          source="#bib269-3">
-                  <addName type="untagged-title">الراهب</addName> 
-                  <forename>ملكي ساقو</forename>
+                  <addName type="untagged-title" sort="2">الراهب</addName> 
+                  <forename sort="1">ملكي ساقو</forename>
                </persName>
                <persName type="sic"
                          xml:id="name269-4a"
                          corresp="#name269-2 #name269-3 #name269-4b"
                          xml:lang="syr"
                          source="#bib269-4">
-                  <addName type="untagged-title">ܕܝܪܝܐ</addName> 
-                  <forename>ܡܠܟܐ ܣܩܐ</forename>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
+                  <forename sort="1">ܡܠܟܐ ܣܩܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name269-4b"
                          corresp="#name269-2 #name269-3 #name269-4a"
                          xml:lang="syr-Syrj"
                          source="#bib269-4">
-                  <addName type="untagged-title">ܕܰܝܪܳܝܐ</addName> 
-                  <forename>ܡܰܠܟܶܐ ܣܰܩܳܐ</forename>
+                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
+                  <forename sort="1">ܡܰܠܟܶܐ ܣܰܩܳܐ</forename>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܠܟܐ ܣܩܐ</forename>
+                  <forename sort="1">ܡܠܟܐ ܣܩܐ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Malke</forename> 
-                  <addName type="untagged-title">Saqo</addName>
+                  <forename sort="1">Malke</forename> 
+                  <addName type="untagged-title" sort="2">Saqo</addName>
                </persName>
                <death when="1490" source="#bib269-2">1490</death>
                <bibl xml:id="bib269-2">

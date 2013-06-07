@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,29 +100,29 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib554-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ishoʿbokht</forename> 
-                  <addName type="untagged-title">of Rev Ardashir</addName>
+                  <forename sort="1">Ishoʿbokht</forename> 
+                  <addName type="untagged-title" sort="2">of Rev Ardashir</addName>
                </persName>
                <persName type="sic"
                          xml:id="name554-5a"
                          corresp="#name554-5b #name554-6a"
                          xml:lang="syr"
                          source="#bib554-5">
-                  <forename>ܝܫܘܥܒܘܟܬ</forename>
+                  <forename sort="1">ܝܫܘܥܒܘܟܬ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name554-5b"
                          corresp="#name554-5a #name554-6b"
                          xml:lang="syr-Syrn"
                          source="#bib554-5">
-                  <forename>ܝܑܼܫܘܿܥܒܘܿܟܬ</forename>
+                  <forename sort="1">ܝܑܼܫܘܿܥܒܘܿܟܬ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name554-6a"
                          corresp="#name554-6b #name554-5a"
                          xml:lang="syr"
                          source="#bib554-6">
-                  <forename>ܝܫܘܥܒܘܟܬ</forename>
+                  <forename sort="1">ܝܫܘܥܒܘܟܬ</forename>
                </persName>
                <floruit source="#bib554-1">late 8th cent.?</floruit>
                <bibl xml:id="bib554-1">

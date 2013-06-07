@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,36 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib263-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Behnam</forename> 
-                  <addName type="untagged-title">Ḥadloyo</addName>
+                  <forename sort="1">Behnam</forename> 
+                  <addName type="untagged-title" sort="2">Ḥadloyo</addName>
                </persName>
                <persName type="sic"
                          xml:id="name263-2"
                          corresp="#name263-3 #name263-4a #name263-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib263-2">Patriarch <forename>Bahnam</forename> of Ḥidl</persName>
+                         source="#bib263-2">Patriarch <forename sort="1">Bahnam</forename> of Ḥidl</persName>
                <persName type="sic"
                          xml:id="name263-3"
                          corresp="#name263-2 #name263-4a #name263-4b"
                          xml:lang="ar"
-                         source="#bib263-3">البطريرك <forename>بهنام</forename> الحدلي</persName>
+                         source="#bib263-3">
+                  <addName type="untagged-title" sort="2">البطريرك </addName>
+                  <forename sort="1">بهنام</forename> 
+                  <addName type="untagged-title" sort="2">الحدلي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name263-4a"
                          corresp="#name263-2 #name263-3 #name263-4b"
                          xml:lang="syr"
-                         source="#bib263-4">ܦܛܪܝܪܟܐ <forename>ܒܗܢܡ</forename> ܚܕܠܝܐ</persName>
+                         source="#bib263-4">ܦܛܪܝܪܟܐ <forename sort="1">ܒܗܢܡ</forename> ܚܕܠܝܐ</persName>
                <persName type="sic"
                          xml:id="name263-4b"
                          corresp="#name263-2 #name263-3 #name263-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib263-4">ܦܰܛܪܝܰܪܟܐ <forename>ܒܶܗܢܰܡ</forename> ܚܶܕܠܳܝܐ</persName>
+                         source="#bib263-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܒܶܗܢܰܡ</forename> ܚܶܕܠܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܒܗܢܡ</forename> 
-                  <addName type="untagged-title">ܚܕܠܝܐ</addName>
+                  <forename sort="1">ܒܗܢܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܠܝܐ</addName>
                </persName>
                <death when="1454" source="#bib263-1">1454</death>
                <death when="1454" source="#bib263-2">1454</death>

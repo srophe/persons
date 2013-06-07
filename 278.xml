@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name278-2"
                          corresp="#name278-3 #name278-4a #name278-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib278-2">The Monk <forename>‛Aziz</forename> of Midyat</persName>
+                         source="#bib278-2">
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">‛Aziz</forename> 
+                  <addName type="untagged-title" sort="2">of Midyat</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name278-3"
                          corresp="#name278-2 #name278-4a #name278-4b"
                          xml:lang="ar"
-                         source="#bib278-3">الراهب <forename>عزيز</forename> المذياتي</persName>
+                         source="#bib278-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">عزيز</forename>
+                  <addName type="untagged-title" sort="2"> المذياتي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name278-4a"
                          corresp="#name278-2 #name278-3 #name278-4b"
                          xml:lang="syr"
-                         source="#bib278-4">ܕܝܪܝܐ <forename>ܥܙܝܙ</forename> ܡܕܝܝܐ</persName>
+                         source="#bib278-4">ܕܝܪܝܐ <forename sort="1">ܥܙܝܙ</forename> ܡܕܝܝܐ</persName>
                <persName type="sic"
                          xml:id="name278-4b"
                          corresp="#name278-2 #name278-3 #name278-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib278-4">ܕܰܝܪܳܝܐ <forename>ܥܰܙܝܙ</forename> ܡܶܕܝܳܝܐ</persName>
+                         source="#bib278-4">ܕܰܝܪܳܝܐ <forename sort="1">ܥܰܙܝܙ</forename> ܡܶܕܝܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܥܙܝܙ</forename> 
-                  <addName type="untagged-title">ܡܕܝܝܐ</addName>
+                  <forename sort="1">ܥܙܝܙ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܕܝܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAziz</forename> 
-                  <addName type="untagged-title">of Midyat</addName>
+                  <forename sort="1">ʿAziz</forename> 
+                  <addName type="untagged-title" sort="2">of Midyat</addName>
                </persName>
                <listEvent>
                   <event when="1510" source="#bib278-2" type="untagged">

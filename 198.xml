@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          corresp="#name198-3 #name198-4a #name198-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib198-2">
-                  <forename>Ignatius</forename> 
-                  <addName type="untagged-title">III, metropolitan of Melitene</addName>
+                  <forename sort="1">Ignatius</forename> 
+                  <addName type="untagged-title" sort="2">III</addName>, <addName type="untagged-title" sort="2">metropolitan of Melitene</addName>
                </persName>
                <persName type="sic"
                          xml:id="name198-3"
                          corresp="#name198-2 #name198-4a #name198-4b"
                          xml:lang="ar"
                          source="#bib198-3">
-                  <forename>اغناطيوس</forename> 
-                  <addName type="untagged-title">الثالث مطران ملطية</addName>
+                  <forename sort="1">اغناطيوس</forename> 
+                  <addName type="untagged-title" sort="2">الثالث مطران ملطية</addName>
                </persName>
                <persName type="sic"
                          xml:id="name198-4a"
                          corresp="#name198-2 #name198-3 #name198-4b"
                          xml:lang="syr"
                          source="#bib198-4">
-                  <forename>ܐܝܓܢܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܠܝܬܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
+                  <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܠܝܬܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name198-4b"
                          corresp="#name198-2 #name198-3 #name198-4a"
                          xml:lang="syr-Syrj"
                          source="#bib198-4">
-                  <forename>ܐܝܓܢܰܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
+                  <forename sort="1">ܐܝܓܢܰܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܓܢܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܡܝܠܝܛܝܢܝ</addName>
+                  <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܝܠܝܛܝܢܝ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ignatius</forename> 
-                  <addName type="untagged-title">of Melitene</addName>
+                  <forename sort="1">Ignatius</forename> 
+                  <addName type="untagged-title" sort="2">of Melitene</addName>
                </persName>
                <death when="1094" source="#bib198-2">1094</death>
                <bibl xml:id="bib198-2">

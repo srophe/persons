@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,37 +100,44 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib239-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Bar ʿEbroyo</surname>, <forename>Grigorios</forename>
+                  <surname sort="1">Bar ʿEbroyo</surname>, <forename sort="2">Grigorios</forename>
                </persName>
                <persName type="sic"
                          xml:id="name239-2"
                          corresp="#name239-3 #name239-4a #name239-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib239-2">
-                  <addName type="untagged-title">Mar</addName> 
-                  <forename>Gregorius</forename> 
-                  <surname>Bar Hebraeus</surname>
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="2">Gregorius</forename> 
+                  <surname sort="1">Bar Hebraeus</surname>
                </persName>
                <persName type="sic"
                          xml:id="name239-3"
                          corresp="#name239-2 #name239-4a #name239-4b"
                          xml:lang="ar"
-                         source="#bib239-3">مار <forename>غريغوريوس</forename> ابو الفرج الملطي مفريان المشهور بابن العبري</persName>
+                         source="#bib239-3">
+                  <addName type="untagged-title" sort="2">مار</addName> 
+                  <forename sort="2">غريغوريوس</forename> 
+                  <addName type="untagged-title" sort="2">ابو الفرج</addName> 
+                  <addName type="untagged-title" sort="2">الملطي</addName> 
+                  <addName type="untagged-title" sort="2">مفريان</addName> 
+                  <addName type="untagged-title" sort="2">المشهور بابن العبري</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name239-4a"
                          corresp="#name239-2 #name239-3 #name239-4b"
                          xml:lang="syr"
-                         source="#bib239-4">ܡܪܝ <forename>ܓܪܝܓܘܪܝܘܣ</forename> ܡܦܪܝܢܐ <surname>ܒܪ ܥܒܪܝܐ</surname>
+                         source="#bib239-4">ܡܪܝ <forename sort="2">ܓܪܝܓܘܪܝܘܣ</forename> ܡܦܪܝܢܐ <surname sort="1">ܒܪ ܥܒܪܝܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name239-4b"
                          corresp="#name239-2 #name239-3 #name239-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib239-4">ܡܳܪܝ <forename>ܓܪܺܝܓܳܘܪܝܘܣ</forename> ܡܰܦܪܝܳܢܐ <surname>ܒܰܪ ܥܶܒܪܳܝܐ</surname>
+                         source="#bib239-4">ܡܳܪܝ <forename sort="2">ܓܪܺܝܓܳܘܪܝܘܣ</forename> ܡܰܦܪܝܳܢܐ <surname sort="1">ܒܰܪ ܥܶܒܪܳܝܐ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܪܝܓܘܪܝܘܣ</forename> 
-                  <surname>ܒܪ ܥܒܪܝܐ</surname>
+                  <forename sort="2">ܓܪܝܓܘܪܝܘܣ</forename> 
+                  <surname sort="1">ܒܪ ܥܒܪܝܐ</surname>
                </persName>
                <idno type="URI">http://viaf.org/viaf/81959220</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n50-24350</idno>

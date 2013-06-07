@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name267-2"
                          corresp="#name267-3 #name267-4a #name267-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib267-2">The Monk <forename>Gharīb</forename> of Man‛im</persName>
+                         source="#bib267-2">
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">Gharīb</forename> 
+                  <addName type="untagged-title" sort="2">of Man‛im</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name267-3"
                          corresp="#name267-2 #name267-4a #name267-4b"
                          xml:lang="ar"
-                         source="#bib267-3">الراهب <forename>غريب</forename> المانعمي</persName>
+                         source="#bib267-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">غريب</forename> 
+                  <addName type="untagged-title" sort="2">المانعمي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name267-4a"
                          corresp="#name267-2 #name267-3 #name267-4b"
                          xml:lang="syr"
-                         source="#bib267-4">ܕܝܪܝܐ <forename>ܓܪܝܒ</forename> ܡܢܥܡܝܐ</persName>
+                         source="#bib267-4">ܕܝܪܝܐ <forename sort="1">ܓܪܝܒ</forename> ܡܢܥܡܝܐ</persName>
                <persName type="sic"
                          xml:id="name267-4b"
                          corresp="#name267-2 #name267-3 #name267-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib267-4">ܕܰܝܪܳܝܐ <forename>ܓܰܪܝܒ</forename> ܡܰܢܥܡܳܝܐ</persName>
+                         source="#bib267-4">ܕܰܝܪܳܝܐ <forename sort="1">ܓܰܪܝܒ</forename> ܡܰܢܥܡܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܪܝܒ</forename> 
-                  <addName type="untagged-title">ܡܢܥܡܝܐ</addName>
+                  <forename sort="1">ܓܪܝܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢܥܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Gharīb</forename> 
-                  <addName type="untagged-title">of Beth Manʿem</addName>
+                  <forename sort="1">Gharīb</forename> 
+                  <addName type="untagged-title" sort="2">of Beth Manʿem</addName>
                </persName>
                <listEvent>
                   <event when="1476" source="#bib267-2" type="untagged">

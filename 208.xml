@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,41 @@
                          corresp="#name208-3 #name208-4a #name208-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib208-2">
-                  <forename>Ignatius</forename> 
-                  <addName type="untagged-title">II, Maphryono of the East</addName>
+                  <forename sort="1">Ignatius</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>, <addName type="untagged-title" sort="2">Maphryono of the East</addName>
                </persName>
                <persName type="sic"
                          xml:id="name208-3"
                          corresp="#name208-2 #name208-4a #name208-4b"
                          xml:lang="ar"
                          source="#bib208-3">
-                  <forename>اغناطيوس</forename> الثاني مفريان المشرق</persName>
+                  <forename sort="1">اغناطيوس</forename> 
+                  <addName type="untagged-title" sort="2">الثاني </addName>
+                  <addName type="untagged-title" sort="2">مفريان المشرق</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name208-4a"
                          corresp="#name208-2 #name208-3 #name208-4b"
                          xml:lang="syr"
                          source="#bib208-4">
-                  <forename>ܐܝܓܢܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                  <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܪܝܢ ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name208-4b"
                          corresp="#name208-2 #name208-3 #name208-4a"
                          xml:lang="syr-Syrj"
                          source="#bib208-4">
-                  <forename>ܐܝܓܢܰܐܛܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</addName>
+                  <forename sort="1">ܐܝܓܢܰܐܛܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܰܬܪܝܢ ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܳܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܓܢܐܛܝܘܣ ܠܥܙܪ</forename>
+                  <forename sort="1">ܐܝܓܢܐܛܝܘܣ ܠܥܙܪ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ignatius Loʿozar</forename>
+                  <forename sort="1">Ignatius Loʿozar</forename>
                </persName>
                <death when="1164" source="#bib208-2">1164</death>
                <bibl xml:id="bib208-2">

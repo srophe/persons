@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name1-3 #name1-4a #name1-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib1-2">
-                  <forename>Wafā</forename> 
-                  <addName type="untagged-title">the Aramaean</addName>
+                  <forename sort="1">Wafā</forename> 
+                  <addName type="untagged-title" sort="2">the Aramaean</addName>
                </persName>
                <persName type="sic"
                          xml:id="name1-3"
                          corresp="#name1-2 #name1-4a #name1-4b"
                          xml:lang="ar"
                          source="#bib1-3">
-                  <forename>وفا</forename> 
-                  <addName type="untagged-title">الآرامي</addName>
+                  <forename sort="1">وفا</forename> 
+                  <addName type="untagged-title" sort="2">الآرامي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name1-4a"
                          corresp="#name1-2 #name1-3 #name1-4b"
                          xml:lang="syr"
                          source="#bib1-4">
-                  <forename>ܘܦܐ</forename> 
-                  <addName type="untagged-title">ܐܪܡܝܐ</addName>
+                  <forename sort="1">ܘܦܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܪܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name1-4b"
                          corresp="#name1-2 #name1-3 #name1-4a"
                          xml:lang="syr-Syrj"
                          source="#bib1-4">
-                  <forename>ܘܰܦܰܐ</forename> 
-                  <addName type="untagged-title">ܐܳܪܳܡܳܝܐ</addName>
+                  <forename sort="1">ܘܰܦܰܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܳܪܳܡܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Wafā</forename> 
-                  <addName type="untagged-title">the Aramean</addName>
+                  <forename sort="1">Wafā</forename> 
+                  <addName type="untagged-title" sort="2">the Aramean</addName>
                </persName>
                <idno type="URI">http://www.syriacstudies.com/AFSS/Syriac_Scholars_and_Writers/Entries/2008/3/19_1-_Wafa_the_Aramaean.html</idno>
                <bibl xml:id="bib1-2">

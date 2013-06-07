@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,21 +99,29 @@
                          xml:id="name284-4a"
                          corresp="#name284-2 #name284-3 #name284-4b"
                          xml:lang="syr"
-                         source="#bib284-4">ܪܒܢ <forename>ܝܥܩܘܒ</forename> ܩܨܘܪܝܐ</persName>
+                         source="#bib284-4">
+                  <addName type="untagged-title" sort="2">ܪܒܢ</addName> 
+                  <forename sort="1">ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܨܘܪܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name284-4b"
                          corresp="#name284-2 #name284-3 #name284-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib284-4">ܪܰܒܢ <forename>ܝܰܥܩܘܒ</forename> ܩܨܘܪܳܝܐ</persName>
+                         source="#bib284-4">
+                  <addName type="untagged-title" sort="2">ܪܰܒܢ</addName> 
+                  <forename sort="1">ܝܰܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܨܘܪܳܝܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܩܨܘܪܝܐ</addName>
+                  <forename sort="1">ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܨܘܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yaʿqub</forename> 
-                  <addName type="untagged-title">of Quṣūr</addName>
+                  <forename sort="1">Yaʿqub</forename> 
+                  <addName type="untagged-title" sort="2">of Quṣūr</addName>
                </persName>
                <bibl xml:id="bib284-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,35 +99,43 @@
                          xml:id="name232-2"
                          corresp="#name232-3 #name232-4a #name232-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib232-2">The Priest <forename>Yeshu‛</forename> 
-                  <surname>Thomas</surname> of Ḥiṣn Kifa</persName>
+                         source="#bib232-2">
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">Yeshu‛</forename> 
+                  <surname sort="2">Thomas</surname> 
+                  <addName type="untagged-title" sort="2">of Ḥiṣn Kifa</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name232-3"
                          corresp="#name232-2 #name232-4a #name232-4b"
                          xml:lang="ar"
-                         source="#bib232-3">القس <forename>يشوع</forename> 
-                  <surname>آل توما</surname> الحصكفي</persName>
+                         source="#bib232-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">يشوع</forename> 
+                  <surname sort="2">آل توما</surname> 
+                  <addName type="untagged-title" sort="2">الحصكفي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name232-4a"
                          corresp="#name232-2 #name232-3 #name232-4b"
                          xml:lang="syr"
-                         source="#bib232-4">ܩܫܝܫܐ <forename>ܝܫܘܥ</forename> 
-                  <surname>ܕܒܝܬ ܬܐܘܡܐ</surname> ܚܣܢ ܟܐܦܝܐ</persName>
+                         source="#bib232-4">ܩܫܝܫܐ <forename sort="1">ܝܫܘܥ</forename> 
+                  <surname sort="2">ܕܒܝܬ ܬܐܘܡܐ</surname> ܚܣܢ ܟܐܦܝܐ</persName>
                <persName type="sic"
                          xml:id="name232-4b"
                          corresp="#name232-2 #name232-3 #name232-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib232-4">ܩܰܫܝܫܳܐ <forename>ܝܶܫܘܥ</forename> 
-                  <surname>ܕܒܶܝܬ ܬܐܘܡܐ</surname> ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
+                         source="#bib232-4">ܩܰܫܝܫܳܐ <forename sort="1">ܝܶܫܘܥ</forename> 
+                  <surname sort="2">ܕܒܶܝܬ ܬܐܘܡܐ</surname> ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܫܘܥ</forename> 
-                  <addName type="untagged-title">ܚܣܢ ܟܐܦܝܐ</addName>
+                  <forename sort="1">ܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܣܢ ܟܐܦܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yeshuʿ</forename> 
-                  <addName type="untagged-title">of Ḥeṣno d-Kifo</addName>
+                  <forename sort="1">Yeshuʿ</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥeṣno d-Kifo</addName>
                </persName>
                <death notAfter="1252" source="#bib232-2">shortly before 1252</death>
                <listEvent>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,35 @@
                          corresp="#name123-3 #name123-4a #name123-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib123-2">
-                  <forename>Sabar Yeshu‛</forename>
+                  <forename sort="1">Sabar Yeshu‛</forename>
                </persName>
                <persName type="sic"
                          xml:id="name123-3"
                          corresp="#name123-2 #name123-4a #name123-4b"
                          xml:lang="ar"
                          source="#bib123-3">
-                  <forename>سبر يشوع</forename>
+                  <forename sort="1">سبر يشوع</forename>
                </persName>
                <persName type="sic"
                          xml:id="name123-4a"
                          corresp="#name123-2 #name123-3 #name123-4b"
                          xml:lang="syr"
                          source="#bib123-4">
-                  <forename>ܣܒܪ ܝܫܘܥ</forename>
+                  <forename sort="1">ܣܒܪ ܝܫܘܥ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name123-4b"
                          corresp="#name123-2 #name123-3 #name123-4a"
                          xml:lang="syr-Syrj"
                          source="#bib123-4">
-                  <forename>ܣܒܰܪ ܝܶܫܘܥ</forename>
+                  <forename sort="1">ܣܒܰܪ ܝܶܫܘܥ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Sabrishuʿ</forename> 
-                  <surname>bar Ramishuʿ</surname> 
-                  <addName type="untagged-title">of Beth Rabban</addName>
+                  <forename sort="1">Sabrishuʿ</forename> 
+                  <surname sort="2">bar Ramishuʿ</surname> 
+                  <addName type="untagged-title" sort="2">of Beth Rabban</addName>
                </persName>
                <bibl xml:id="bib123-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

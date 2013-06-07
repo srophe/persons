@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,34 @@
                          corresp="#name54-3 #name54-4a #name54-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib54-2">
-                  <addName type="untagged-title">The Translators of the Canons and Laws of Kings</addName>
+                  <addName type="untagged-title" sort="2">The Translators of the Canons and Laws of Kings</addName>
                </persName>
                <persName type="sic"
                          xml:id="name54-3"
                          corresp="#name54-2 #name54-4a #name54-4b"
                          xml:lang="ar"
                          source="#bib54-3">
-                  <addName type="untagged-title">نقلة مراسيم الملوك و نواسيمهم</addName>
+                  <addName type="untagged-title" sort="2">نقلة مراسيم الملوك و نواسيمهم</addName>
                </persName>
                <persName type="sic"
                          xml:id="name54-4a"
                          corresp="#name54-2 #name54-3 #name54-4b"
                          xml:lang="syr"
                          source="#bib54-4">
-                  <addName type="untagged-title">ܡܬܪ̈ܓܡܢܐ ܕܩܢܘ̈ܢܐ ܡܠܟܝ̈ܐ</addName>
+                  <addName type="untagged-title" sort="2">ܡܬܪ̈ܓܡܢܐ ܕܩܢܘ̈ܢܐ ܡܠܟܝ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name54-4b"
                          corresp="#name54-2 #name54-3 #name54-4a"
                          xml:lang="syr-Syrj"
                          source="#bib54-4">
-                  <addName type="untagged-title">ܡܬܰܪ̈ܓܡܳܢܐ ܕܩܳܢܘ̈ܢܐ ܡܰܠܟܳܝ̈ܐ</addName>
+                  <addName type="untagged-title" sort="2">ܡܬܰܪ̈ܓܡܳܢܐ ܕܩܳܢܘ̈ܢܐ ܡܰܠܟܳܝ̈ܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Translator(s) of the Canons and Laws of Kings</persName>
+                         syriaca-tags="#syriaca-headword">
+                  <addName type="untagged-title" sort="2">Translator(s) of the Canons and Laws of Kings</addName>
+               </persName>
                <bibl xml:id="bib54-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>

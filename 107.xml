@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,12 +99,20 @@
                          xml:id="name107-2"
                          corresp="#name107-3 #name107-4a #name107-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib107-2">Rabban <forename>Aaron</forename> the Persian</persName>
+                         source="#bib107-2">
+                  <addName type="untagged-title" sort="2">Rabban</addName> 
+                  <forename sort="1">Aaron</forename> 
+                  <addName type="untagged-title" sort="2">the Persian</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name107-3"
                          corresp="#name107-2 #name107-4a #name107-4b"
                          xml:lang="ar"
-                         source="#bib107-3">الربان <forename>هارون</forename> الفارسي</persName>
+                         source="#bib107-3">
+                  <addName type="untagged-title" sort="2">الربان </addName>
+                  <forename sort="1">هارون</forename> 
+                  <addName type="untagged-title" sort="2">الفارسي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name107-4a"
                          corresp="#name107-2 #name107-3 #name107-4b"
@@ -115,14 +124,14 @@
                          xml:lang="syr-Syrj"
                          source="#bib107-4">ܪܰܒܰܢ ܐܗܪܘܢ ܦܳܪܣܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܗܪܘܢ</forename> 
-                  <addName type="untagged-title">ܦܪܣܝܐ</addName>
+                  <forename sort="1">ܐܗܪܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܪܣܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ahrun</forename> 
-                  <addName type="untagged-title">the Persian</addName>
+                  <forename sort="1">Ahrun</forename> 
+                  <addName type="untagged-title" sort="2">the Persian</addName>
                </persName>
                <bibl xml:id="bib107-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

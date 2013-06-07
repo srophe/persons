@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,24 +100,24 @@
                          corresp="#name128-3 #name128-4a #name128-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib128-2">
-                  <forename>Daniel</forename> 
-                  <surname>Bar Moses</surname>
+                  <forename sort="1">Daniel</forename> 
+                  <surname sort="2">Bar Moses</surname>
                </persName>
                <persName type="sic"
                          xml:id="name128-3"
                          corresp="#name128-2 #name128-4a #name128-4b"
                          xml:lang="ar"
                          source="#bib128-3">
-                  <forename>دنيال</forename> 
-                  <surname>بن موسى</surname>
+                  <forename sort="1">دنيال</forename> 
+                  <surname sort="2">بن موسى</surname>
                </persName>
                <persName type="sic"
                          xml:id="name128-4a"
                          corresp="#name128-2 #name128-3 #name128-4b"
                          xml:lang="syr"
                          source="#bib128-4">
-                  <forename>ܕܢܝܐܝܠ</forename> 
-                  <surname>ܒܪ ܡܘܫܐ</surname>
+                  <forename sort="1">ܕܢܝܐܝܠ</forename> 
+                  <surname sort="2">ܒܪ ܡܘܫܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name128-4b"
@@ -128,8 +129,8 @@
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Daniel</forename> 
-                  <surname>bar Mushe</surname>
+                  <forename sort="1">Daniel</forename> 
+                  <surname sort="2">bar Mushe</surname>
                </persName>
                <bibl xml:id="bib128-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

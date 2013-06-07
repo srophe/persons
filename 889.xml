@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,30 +100,30 @@
                          corresp="#name889-5b #name889-6a"
                          xml:lang="syr"
                          source="#bib889-5">
-                  <forename>ܥܒܕܡܫܝܚ</forename> 
-                  <addName type="untagged-title">ܚܝܪܬܝܐ</addName>
+                  <forename sort="1">ܥܒܕܡܫܝܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܝܪܬܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name889-5b"
                          corresp="#name889-5a #name889-6b"
                          xml:lang="syr-Syrn"
                          source="#bib889-5">
-                  <forename>ܥܒܸܕܡܫܝܼܚ</forename> 
-                  <addName type="untagged-title">ܚܝܼܪܬܵܝܵܐ</addName>
+                  <forename sort="1">ܥܒܸܕܡܫܝܼܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܝܼܪܬܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name889-6a"
                          corresp="#name889-6b #name889-5a"
                          xml:lang="syr"
                          source="#bib889-6">
-                  <forename>ܥܒܕܡܫܝܚ</forename> 
-                  <addName type="untagged-title">ܚܝܪܬܝܐ</addName>
+                  <forename sort="1">ܥܒܕܡܫܝܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܝܪܬܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>ʿAbdulmasīḥ</forename> 
-                  <addName type="untagged-title">of Ḥirta</addName>
+                  <forename sort="1">ʿAbdulmasīḥ</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥirta</addName>
                </persName>
                <bibl xml:id="bib889-5">
                   <title>Abdisho (YdQ)</title>

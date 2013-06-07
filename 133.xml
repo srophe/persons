@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name133-3 #name133-4a #name133-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib133-2">
-                  <forename>Elijah</forename>, <addName type="untagged-title">bishop of Sinjar</addName>
+                  <forename sort="1">Elijah</forename>, <addName type="untagged-title" sort="2">bishop of Sinjar</addName>
                </persName>
                <persName type="sic"
                          xml:id="name133-3"
                          corresp="#name133-2 #name133-4a #name133-4b"
                          xml:lang="ar"
                          source="#bib133-3">
-                  <forename>ايليا</forename> 
-                  <addName type="untagged-title">اسقف سنجار</addName>
+                  <forename sort="1">ايليا</forename> 
+                  <addName type="untagged-title" sort="2">اسقف سنجار</addName>
                </persName>
                <persName type="sic"
                          xml:id="name133-4a"
                          corresp="#name133-2 #name133-3 #name133-4b"
                          xml:lang="syr"
                          source="#bib133-4">
-                  <forename>ܐܠܝܐ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</addName>
+                  <forename sort="1">ܐܠܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܫܝܓܪ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name133-4b"
                          corresp="#name133-2 #name133-3 #name133-4a"
                          xml:lang="syr-Syrj"
                          source="#bib133-4">
-                  <forename>ܐܠܝܳܐ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</addName>
+                  <forename sort="1">ܐܠܝܳܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܫܝܓܳܪ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܠܝܐ</forename> 
-                  <addName type="untagged-title">ܕܫܝܓܪ</addName>
+                  <forename sort="1">ܐܠܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܫܝܓܪ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Eliya</forename> 
-                  <addName type="untagged-title">of Sinjar</addName>
+                  <forename sort="1">Eliya</forename> 
+                  <addName type="untagged-title" sort="2">of Sinjar</addName>
                </persName>
                <listEvent>
                   <event when="0758" source="#bib133-2" type="untagged">

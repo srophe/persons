@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,40 +100,40 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib744-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shemʿun</forename> 
-                  <addName type="untagged-title">the Stylite</addName>
+                  <forename sort="1">Shemʿun</forename> 
+                  <addName type="untagged-title" sort="2">the Stylite</addName>
                </persName>
                <persName type="sic"
                          xml:id="name744-2"
                          corresp="#name744-3 #name744-4a #name744-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib744-2">
-                  <forename>Simon</forename> 
-                  <addName type="untagged-title">the Stylite</addName>
+                  <forename sort="1">Simon</forename> 
+                  <addName type="untagged-title" sort="2">the Stylite</addName>
                </persName>
                <persName type="sic"
                          xml:id="name744-3"
                          corresp="#name744-2 #name744-4a #name744-4b"
                          xml:lang="ar"
                          source="#bib744-3">
-                  <forename>سمعان</forename> 
-                  <addName type="untagged-title">العمودي</addName>
+                  <forename sort="1">سمعان</forename> 
+                  <addName type="untagged-title" sort="2">العمودي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name744-4a"
                          corresp="#name744-2 #name744-3 #name744-4b"
                          xml:lang="syr"
                          source="#bib744-4">
-                  <forename>ܫܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܕܐܣܛܘܢܗ</addName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܣܛܘܢܗ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name744-4b"
                          corresp="#name744-2 #name744-3 #name744-4a"
                          xml:lang="syr-Syrj"
                          source="#bib744-4">
-                  <forename>ܫܶܡܥܘܢ</forename> 
-                  <addName type="untagged-title">ܕܐܶܣܛܽܘܢܶܗ</addName>
+                  <forename sort="1">ܫܶܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܶܣܛܽܘܢܶܗ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name744-7"

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,30 +99,40 @@
                          xml:id="name247-2"
                          corresp="#name247-3 #name247-4a #name247-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib247-2">Patriarch <forename>Michael</forename> II</persName>
+                         source="#bib247-2">
+                  <addName type="untagged-title" sort="2">Patriarch</addName> 
+                  <forename sort="1">Michael</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name247-3"
                          corresp="#name247-2 #name247-4a #name247-4b"
                          xml:lang="ar"
-                         source="#bib247-3">البطريرك <forename>ميخائيل</forename> الثاني</persName>
+                         source="#bib247-3">
+                  <addName type="untagged-title" sort="2">البطريرك </addName>
+                  <forename sort="1">ميخائيل</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name247-4a"
                          corresp="#name247-2 #name247-3 #name247-4b"
                          xml:lang="syr"
-                         source="#bib247-4">ܦܛܪܝܪܟܐ <forename>ܡܝܟܐܝܠ</forename> ܬܪܝܢܐ</persName>
+                         source="#bib247-4">ܦܛܪܝܪܟܐ <forename sort="1">ܡܝܟܐܝܠ</forename> ܬܪܝܢܐ</persName>
                <persName type="sic"
                          xml:id="name247-4b"
                          corresp="#name247-2 #name247-3 #name247-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib247-4">ܦܰܛܪܝܰܪܟܐ <forename>ܡܝܟܳܐܝܠ</forename> ܬܪܰܝܳܢܐ</persName>
+                         source="#bib247-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܡܝܟܳܐܝܠ</forename> ܬܪܰܝܳܢܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܝܟܐܝܠ</forename> 
-                  <addName type="untagged-title">ܩܕܡܝܐ</addName>
+                  <forename sort="1">ܡܝܟܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Michael</forename> I (III)</persName>
+                  <forename sort="1">Michael</forename> 
+                  <addName type="untagged-title" sort="2">I (III)</addName>
+               </persName>
                <idno type="URI">http://en.wikipedia.org/wiki/Patriarch_Michael_II_of_Antioch</idno>
                <death when="1312" source="#bib247-2">1312</death>
                <bibl xml:id="bib247-2">

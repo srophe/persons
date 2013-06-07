@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,29 +99,40 @@
                          xml:id="name505-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib505-1"
-                         syriaca-tags="#syriaca-headword">Giwargis <addName type="untagged-title">II</addName>, Ignatius</persName>
+                         syriaca-tags="#syriaca-headword">Giwargis <addName type="untagged-title" sort="2">II</addName>, Ignatius</persName>
                <persName type="sic"
                          xml:id="name505-2"
                          corresp="#name505-3 #name505-4a #name505-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib505-2">Patriarch <forename>George</forename> II, <surname>son of ʿAbd al-Karīm</surname> of Mosul</persName>
+                         source="#bib505-2">
+                  <addName type="untagged-title" sort="2">Patriarch</addName> 
+                  <forename sort="2">George</forename> 
+                  <addName type="untagged-title" sort="2">II</addName>, <surname sort="1">son of ʿAbd al-Karīm</surname> 
+                  <addName type="untagged-title" sort="2">of Mosul</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name505-3"
                          corresp="#name505-2 #name505-4a #name505-4b"
                          xml:lang="ar"
-                         source="#bib505-3">البطريرك <forename>جرجس</forename> الثاني <surname>ابن عبدالكريم</surname> الموصلي</persName>
+                         source="#bib505-3">
+                  <addName type="untagged-title" sort="2">البطريرك</addName> 
+                  <forename sort="2">جرجس</forename> الثاني <surname sort="1">ابن عبدالكريم</surname> الموصلي</persName>
                <persName type="sic"
                          xml:id="name505-4a"
                          corresp="#name505-2 #name505-3 #name505-4b"
                          xml:lang="syr"
-                         source="#bib505-4">ܦܛܪܝܪܟܐ <forename>ܓܘܪܓܝܣ</forename> ܬܪܝܢܐ <surname>ܒܪ ܥܒܕ ܐܠܟܪܝܡ</surname> ܡܘܨܠܝܐ</persName>
+                         source="#bib505-4">
+                  <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
+                  <forename sort="2">ܓܘܪܓܝܣ</forename> ܬܪܝܢܐ <surname sort="1">ܒܪ ܥܒܕ ܐܠܟܪܝܡ</surname> ܡܘܨܠܝܐ</persName>
                <persName type="sic"
                          xml:id="name505-4b"
                          corresp="#name505-2 #name505-3 #name505-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib505-4">ܦܰܛܪܝܰܪܟܳܐ <forename>ܓܶܘܰܪܓܝܣ</forename> ܬܪܰܝܳܢܐ <surname>ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ</surname> ܡܘܨܠܳܝܐ</persName>
+                         source="#bib505-4">
+                  <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܳܐ</addName> 
+                  <forename sort="2">ܓܶܘܰܪܓܝܣ</forename> ܬܪܰܝܳܢܐ <surname sort="1">ܒܰܪ ܥܰܒܕ ܐܠܟܪܝܡ</surname> ܡܘܨܠܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܘܪܓܝܣ ܬܪܝܢܐ</forename>
+                  <forename sort="2">ܓܘܪܓܝܣ ܬܪܝܢܐ</forename>
                </persName>
                <birth when="1648" source="#bib505-1">1648</birth>
                <death when="1708" source="#bib505-1">1708</death>

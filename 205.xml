@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name205-3 #name205-4a #name205-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib205-2">
-                  <forename>Timothy</forename>, <addName type="untagged-title">metropolitan of Karkar</addName>
+                  <forename sort="1">Timothy</forename>, <addName type="untagged-title" sort="2">metropolitan of Karkar</addName>
                </persName>
                <persName type="sic"
                          xml:id="name205-3"
                          corresp="#name205-2 #name205-4a #name205-4b"
                          xml:lang="ar"
                          source="#bib205-3">
-                  <forename>طيمثاوس</forename> 
-                  <addName type="untagged-title">مطران كركر</addName>
+                  <forename sort="1">طيمثاوس</forename> 
+                  <addName type="untagged-title" sort="2">مطران كركر</addName>
                </persName>
                <persName type="sic"
                          xml:id="name205-4a"
                          corresp="#name205-2 #name205-3 #name205-4b"
                          xml:lang="syr"
                          source="#bib205-4">
-                  <forename>ܛܝܡܬܐܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</addName>
+                  <forename sort="1">ܛܝܡܬܐܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܪܓܪ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name205-4b"
                          corresp="#name205-2 #name205-3 #name205-4a"
                          xml:lang="syr-Syrj"
                          source="#bib205-4">
-                  <forename>ܛܺܝܡܰܬܶܐܘܣ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</addName>
+                  <forename sort="1">ܛܺܝܡܰܬܶܐܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܓܰܪܓܰܪ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܛܝܡܬܐܘܣ</forename> 
-                  <addName type="untagged-title">ܕܓܪܓܪ</addName>
+                  <forename sort="1">ܛܝܡܬܐܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܓܪܓܪ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Timotheos</forename> 
-                  <addName type="untagged-title">of Gargar</addName>
+                  <forename sort="1">Timotheos</forename> 
+                  <addName type="untagged-title" sort="2">of Gargar</addName>
                </persName>
                <death when="1143" source="#bib205-2">1143</death>
                <bibl xml:id="bib205-2">

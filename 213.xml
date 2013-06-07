@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name213-3 #name213-4a #name213-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib213-2">
-                  <forename>Abu Ghalib</forename>, <addName type="untagged-title">bishop of Jīhān</addName>
+                  <forename sort="1">Abu Ghalib</forename>, <addName type="untagged-title" sort="2">bishop of Jīhān</addName>
                </persName>
                <persName type="sic"
                          xml:id="name213-3"
                          corresp="#name213-2 #name213-4a #name213-4b"
                          xml:lang="ar"
                          source="#bib213-3">
-                  <forename>ابو غالب</forename> 
-                  <addName type="untagged-title">اسقف جيحان</addName>
+                  <forename sort="1">ابو غالب</forename> 
+                  <addName type="untagged-title" sort="2">اسقف جيحان</addName>
                </persName>
                <persName type="sic"
                          xml:id="name213-4a"
                          corresp="#name213-2 #name213-3 #name213-4b"
                          xml:lang="syr"
                          source="#bib213-4">
-                  <forename>ܐܒܘ ܓܐܠܒ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</addName>
+                  <forename sort="1">ܐܒܘ ܓܐܠܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name213-4b"
                          corresp="#name213-2 #name213-3 #name213-4a"
                          xml:lang="syr-Syrj"
                          source="#bib213-4">
-                  <forename>ܐܰܒܘ ܓܰܐܠܒ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</addName>
+                  <forename sort="1">ܐܰܒܘ ܓܰܐܠܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܘ ܓܐܠܒ</forename> 
-                  <addName type="untagged-title">ܕܓܝܚܢ</addName>
+                  <forename sort="1">ܐܒܘ ܓܐܠܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܓܝܚܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abū Ghālib</forename> 
-                  <addName type="untagged-title">of Giḥun</addName>
+                  <forename sort="1">Abū Ghālib</forename> 
+                  <addName type="untagged-title" sort="2">of Giḥun</addName>
                </persName>
                <persName type="sic"
                          xml:id="name213-7"

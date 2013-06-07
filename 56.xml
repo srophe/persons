@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name56-3 #name56-4a #name56-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib56-2">
-                  <addName type="untagged-title">Count</addName> 
-                  <forename>Oecumenius</forename>
+                  <addName type="untagged-title" sort="2">Count</addName> 
+                  <forename sort="2">Oecumenius</forename>
                </persName>
                <persName type="sic"
                          xml:id="name56-3"
                          corresp="#name56-2 #name56-4a #name56-4b"
                          xml:lang="ar"
                          source="#bib56-3">
-                  <addName type="untagged-title">الكونت</addName> 
-                  <forename>ايقومونيوس</forename>
+                  <addName type="untagged-title" sort="2">الكونت</addName> 
+                  <forename sort="2">ايقومونيوس</forename>
                </persName>
                <persName type="sic"
                          xml:id="name56-4a"
                          corresp="#name56-2 #name56-3 #name56-4b"
                          xml:lang="syr"
                          source="#bib56-4">
-                  <addName type="untagged-title">ܩܘܢܬ</addName> 
-                  <forename>ܐܝܩܘܡܘܢܝܘܣ</forename>
+                  <addName type="untagged-title" sort="2">ܩܘܢܬ</addName> 
+                  <forename sort="2">ܐܝܩܘܡܘܢܝܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name56-4b"
                          corresp="#name56-2 #name56-3 #name56-4a"
                          xml:lang="syr-Syrj"
                          source="#bib56-4">
-                  <surname>ܩܘܢܬ</surname> 
-                  <forename>ܐܝܺܩܘܡܘܢܝܘܣ</forename>
+                  <surname sort="1">ܩܘܢܬ</surname> 
+                  <forename sort="2">ܐܝܺܩܘܡܘܢܝܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Count</addName> 
-                  <forename>Oikoumenios</forename>
+                  <addName type="untagged-title" sort="2">Count</addName> 
+                  <forename sort="2">Oikoumenios</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/165531650</idno>
                <idno type="URI">http://viaf.org/viaf/120155941</idno>

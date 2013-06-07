@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name264-3 #name264-4a #name264-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib264-2">
-                  <forename>Barṣoum Ma‛dani</forename>, <addName type="untagged-title">Maphryono of the East</addName>
+                  <forename sort="1">Barṣoum Ma‛dani</forename>, <addName type="untagged-title" sort="2">Maphryono of the East</addName>
                </persName>
                <persName type="sic"
                          xml:id="name264-3"
                          corresp="#name264-2 #name264-4a #name264-4b"
                          xml:lang="ar"
                          source="#bib264-3">
-                  <forename>برصوم المعدني</forename> 
-                  <addName type="untagged-title">مفريان المشرق</addName> 
+                  <forename sort="1">برصوم المعدني</forename> 
+                  <addName type="untagged-title" sort="2">مفريان المشرق</addName> 
                </persName>
                <persName type="sic"
                          xml:id="name264-4a"
                          corresp="#name264-2 #name264-3 #name264-4b"
                          xml:lang="syr"
                          source="#bib264-4">
-                  <forename>ܒܪܨܘܡ ܡܥܕܢܝܐ</forename> 
-                  <addName type="untagged-title">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
+                  <forename sort="1">ܒܪܨܘܡ ܡܥܕܢܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name264-4b"
                          corresp="#name264-2 #name264-3 #name264-4a"
                          xml:lang="syr-Syrj"
                          source="#bib264-4">
-                  <forename>ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ</forename> 
-                  <addName type="untagged-title">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
+                  <forename sort="1">ܒܰܪܨܘܡ ܡܰܥܕܰܢܳܝܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܒܪܨܘܡ</forename> 
-                  <addName type="untagged-title">ܡܥܕܢܝܐ</addName>
+                  <forename sort="1">ܒܪܨܘܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܥܕܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Barṣawmo</forename> 
-                  <addName type="untagged-title">Maʿdanoyo</addName>
+                  <forename sort="1">Barṣawmo</forename> 
+                  <addName type="untagged-title" sort="2">Maʿdanoyo</addName>
                </persName>
                <listEvent>
                   <event when="1455" source="#bib264-2" type="untagged">

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,64 +100,64 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib537-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Hippolytus</forename> 
-                  <addName type="untagged-title">of Rome</addName>
+                  <forename sort="1">Hippolytus</forename> 
+                  <addName type="untagged-title" sort="2">of Rome</addName>
                </persName>
                <persName type="sic"
                          xml:id="name537-3"
                          corresp="#name537-2 #name537-4a #name537-4b"
                          xml:lang="ar"
                          source="#bib537-3">
-                  <forename>هيبوليطس</forename> 
-                  <addName type="untagged-title">الروماني</addName>
+                  <forename sort="1">هيبوليطس</forename> 
+                  <addName type="untagged-title" sort="2">الروماني</addName>
                </persName>
                <persName type="sic"
                          xml:id="name537-4a"
                          corresp="#name537-2 #name537-3 #name537-4b"
                          xml:lang="syr"
                          source="#bib537-4">
-                  <forename>ܐܝܦܘܠܝܛܘܣ</forename> 
-                  <addName type="untagged-title">ܕܪܘܡܝ</addName>
+                  <forename sort="1">ܐܝܦܘܠܝܛܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܪܘܡܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name537-4b"
                          corresp="#name537-2 #name537-3 #name537-4a"
                          xml:lang="syr-Syrj"
                          source="#bib537-4">
-                  <forename>ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename> 
-                  <addName type="untagged-title">ܕܪܽܘܡܺܝ</addName>
+                  <forename sort="1">ܐܺܝܦܽܘܠܺܝܛܳܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܪܽܘܡܺܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name537-5a"
                          corresp="#name537-5b #name537-6a"
                          xml:lang="syr"
                          source="#bib537-5">
-                  <addName type="untagged-title">ܡܪܝ</addName> 
-                  <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܐܝܦܘܠܝܛܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name537-5b"
                          corresp="#name537-5a #name537-6b"
                          xml:lang="syr-Syrn"
                          source="#bib537-5">
-                  <addName type="untagged-title">ܡܵܪܝ</addName> 
-                  <forename>ܐܝܼܦܘܿܠܝܼܛܘܿܣ</forename>
+                  <addName type="untagged-title" sort="2">ܡܵܪܝ</addName> 
+                  <forename sort="1">ܐܝܼܦܘܿܠܝܼܛܘܿܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name537-6a"
                          corresp="#name537-6b #name537-5a"
                          xml:lang="syr"
                          source="#bib537-6">
-                  <addName type="untagged-title">ܡܪܝ</addName> 
-                  <forename>ܐܝܦܘܠܝܛܘܣ</forename>
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܐܝܦܘܠܝܛܘܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name537-6b"
                          corresp="#name537-6a #name537-5b"
                          xml:lang="syr-Syrj"
                          source="#bib537-6">
-                  <addName type="untagged-title">ܡܳܪܝ</addName> 
-                  <forename>ܐܝܺܦܘܽܠܺܝܛܳܘܣ</forename>
+                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
+                  <forename sort="1">ܐܝܺܦܘܽܠܺܝܛܳܘܣ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/88873163</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n50-66851</idno>

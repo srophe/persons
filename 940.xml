@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,47 @@
                          xml:id="name940-2"
                          corresp="#name940-3 #name940-4a #name940-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib940-2">Deacon <forename>Abu Sa‘d</forename> of Edessa</persName>
+                         source="#bib940-2">
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="1">Abu Sa‘d</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name940-3"
                          corresp="#name940-2 #name940-4a #name940-4b"
                          xml:lang="ar"
-                         source="#bib940-3">الشماس <forename>ابو سعد</forename> الرهاوي</persName>
+                         source="#bib940-3">
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="1">ابو سعد</forename> 
+                  <addName type="untagged-title" sort="2">الرهاوي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name940-4a"
                          corresp="#name940-2 #name940-3 #name940-4b"
                          xml:lang="syr"
-                         source="#bib940-4">ܡܫܡܫܢܐ <forename>ܐܒܘ ܣܥܕ</forename> ܐܘܪܗܝܐ</persName>
+                         source="#bib940-4">
+                  <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
+                  <forename sort="1">ܐܒܘ ܣܥܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name940-4b"
                          corresp="#name940-2 #name940-3 #name940-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib940-4">ܡܫܰܡܫܳܢܐ <forename>ܐܰܒܳܘ ܣܰܥܕ</forename> ܐܘܽܪܗܳܝܐ</persName>
+                         source="#bib940-4">
+                  <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
+                  <forename sort="1">ܐܰܒܳܘ ܣܰܥܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܽܪܗܳܝܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܘ ܣܥܕ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+                  <forename sort="1">ܐܒܘ ܣܥܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abū Saʿd</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Abū Saʿd</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <bibl xml:id="bib940-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,36 +100,38 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib65-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Zacharias</forename>, <addName type="untagged-title">Pseudo-</addName>
+                  <forename sort="1">Zacharias</forename>, <addName type="untagged-title" sort="2">Pseudo-</addName>
                </persName>
                <persName type="sic"
                          xml:id="name65-2"
                          corresp="#name65-3 #name65-4a #name65-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib65-2">
-                  <addName type="untagged-title">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</addName>
+                  <addName type="untagged-title" sort="2">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</addName>
                </persName>
                <persName type="sic"
                          xml:id="name65-3"
                          corresp="#name65-2 #name65-4a #name65-4b"
                          xml:lang="ar"
-                         source="#bib65-3">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</persName>
+                         source="#bib65-3">
+                  <addName type="untagged-title" sort="2">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name65-4a"
                          corresp="#name65-2 #name65-3 #name65-4b"
                          xml:lang="syr"
                          source="#bib65-4">
-                  <addName type="untagged-title">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name65-4b"
                          corresp="#name65-2 #name65-3 #name65-4a"
                          xml:lang="syr-Syrj"
                          source="#bib65-4">
-                  <addName type="untagged-title">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</addName>
+                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
+                  <addName type="untagged-title" sort="2">ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/296978639</idno>
                <floruit source="#bib65-1">6 C</floruit>

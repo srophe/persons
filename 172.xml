@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name172-3 #name172-4a #name172-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib172-2">
-                  <forename>Job</forename> 
-                  <addName type="untagged-title">of Man‛im</addName>
+                  <forename sort="1">Job</forename> 
+                  <addName type="untagged-title" sort="2">of Man‛im</addName>
                </persName>
                <persName type="sic"
                          xml:id="name172-3"
                          corresp="#name172-2 #name172-4a #name172-4b"
                          xml:lang="ar"
                          source="#bib172-3">
-                  <forename>ايوب</forename> 
-                  <addName type="untagged-title">المانعمي</addName>
+                  <forename sort="1">ايوب</forename> 
+                  <addName type="untagged-title" sort="2">المانعمي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name172-4a"
                          corresp="#name172-2 #name172-3 #name172-4b"
                          xml:lang="syr"
                          source="#bib172-4">
-                  <forename>ܐܝܘܒ</forename> 
-                  <addName type="untagged-title">ܡܢܥܡܝܐ</addName>
+                  <forename sort="1">ܐܝܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܢܥܡܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name172-4b"
                          corresp="#name172-2 #name172-3 #name172-4a"
                          xml:lang="syr-Syrj"
                          source="#bib172-4">
-                  <forename>ܐܝܘܒ</forename> 
-                  <addName type="untagged-title">ܡܰܢܥܡܳܝܐ</addName>
+                  <forename sort="1">ܐܝܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܰܢܥܡܳܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Iyob</forename> 
-                  <addName type="untagged-title">of Manʿem</addName>
+                  <forename sort="1">Iyob</forename> 
+                  <addName type="untagged-title" sort="2">of Manʿem</addName>
                </persName>
                <bibl xml:id="bib172-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib304-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Fāʾiq</surname>, <forename>Naʿʿūm</forename>
+                  <surname sort="1">Fāʾiq</surname>, <forename sort="2">Naʿʿūm</forename>
                </persName>
                <persName type="sic"
                          xml:id="name304-2"
                          corresp="#name304-3 #name304-4a #name304-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib304-2">
-                  <addName type="untagged-title">Deacon</addName> 
-                  <forename>Na‛‛um Fa'iq</forename>
+                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <forename sort="2">Na‛‛um Fa'iq</forename>
                </persName>
                <persName type="sic"
                          xml:id="name304-3"
                          corresp="#name304-2 #name304-4a #name304-4b"
                          xml:lang="ar"
                          source="#bib304-3">
-                  <addName type="untagged-title">الشماس</addName> 
-                  <forename>نعوم فائق</forename>
+                  <addName type="untagged-title" sort="2">الشماس</addName> 
+                  <forename sort="2">نعوم فائق</forename>
                </persName>
                <persName type="sic"
                          xml:id="name304-4a"
                          corresp="#name304-2 #name304-3 #name304-4b"
                          xml:lang="syr"
                          source="#bib304-4">
-                  <addName type="untagged-title">ܡܫܡܫܢܐ</addName> 
-                  <forename>ܢܥܘܡ ܦܐܝܩ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
+                  <forename sort="2">ܢܥܘܡ ܦܐܝܩ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name304-4b"
                          corresp="#name304-2 #name304-3 #name304-4a"
                          xml:lang="syr-Syrj"
                          source="#bib304-4">
-                  <addName type="untagged-title">ܡܫܰܡܫܳܢܐ</addName> 
-                  <forename>ܢܰܥܘܡ ܦܰܐܝܩ</forename>
+                  <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
+                  <forename sort="2">ܢܰܥܘܡ ܦܰܐܝܩ</forename>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܢܥܘܡ ܦܐܝܩ</forename>
+                  <forename sort="2">ܢܥܘܡ ܦܐܝܩ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/16481545</idno>
                <birth when="1868" source="#bib304-1">ca. 1868</birth>

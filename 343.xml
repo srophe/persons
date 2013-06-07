@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,45 +100,45 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib343-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Armalah</surname>, <forename>Isḥāq</forename>
+                  <surname sort="1">Armalah</surname>, <forename sort="2">Isḥāq</forename>
                </persName>
                <persName type="sic"
                          xml:id="name343-2"
                          corresp="#name343-3 #name343-4a #name343-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib343-2">
-                  <forename>Isḥāq</forename> 
-                  <surname>Armala</surname>
+                  <forename sort="2">Isḥāq</forename> 
+                  <surname sort="1">Armala</surname>
                </persName>
                <persName type="sic"
                          xml:id="name343-3"
                          corresp="#name343-2 #name343-4a #name343-4b"
                          xml:lang="ar"
                          source="#bib343-3">
-                  <forename>اسحق</forename> 
-                  <surname>ارملة</surname>
+                  <forename sort="2">اسحق</forename> 
+                  <surname sort="1">ارملة</surname>
                </persName>
                <persName type="sic"
                          xml:id="name343-4a"
                          corresp="#name343-2 #name343-3 #name343-4b"
                          xml:lang="syr"
                          source="#bib343-4">
-                  <addName type="untagged-title">ܟܘܪܝ</addName> 
-                  <forename>ܐܝܣܚܩ</forename> 
-                  <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
+                  <addName type="untagged-title" sort="2">ܟܘܪܝ</addName> 
+                  <forename sort="2">ܐܝܣܚܩ</forename> 
+                  <surname sort="1">ܕܒܝܬ ܐܪܡܠܬܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name343-4b"
                          corresp="#name343-2 #name343-3 #name343-4a"
                          xml:lang="syr-Syrj"
                          source="#bib343-4">
-                  <addName type="untagged-title">ܟܳܘܪܝ</addName> 
-                  <forename>ܐܝܣܚܳܩ</forename> 
-                  <surname>ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
+                  <addName type="untagged-title" sort="2">ܟܳܘܪܝ</addName> 
+                  <forename sort="2">ܐܝܣܚܳܩ</forename> 
+                  <surname sort="1">ܕܒܶܝܬ ܐܰܪܡܰܠܬܐ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܝܣܚܩ</forename> 
-                  <surname>ܕܒܝܬ ܐܪܡܠܬܐ</surname>
+                  <forename sort="2">ܐܝܣܚܩ</forename> 
+                  <surname sort="1">ܕܒܝܬ ܐܪܡܠܬܐ</surname>
                </persName>
                <idno type="URI">http://worldcat.org/identities/np-armala, ishaq$1879 1954</idno>
                <idno type="URI">http://viaf.org/viaf/205465851</idno>

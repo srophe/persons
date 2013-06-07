@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name237-3 #name237-4a #name237-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib237-2">
-                  <forename>Dionysius Ṣalība</forename>, <addName type="untagged-title">bishop of Claudia</addName>
+                  <forename sort="1">Dionysius Ṣalība</forename>, <addName type="untagged-title" sort="2">bishop of Claudia</addName>
                </persName>
                <persName type="sic"
                          xml:id="name237-3"
                          corresp="#name237-2 #name237-4a #name237-4b"
                          xml:lang="ar"
                          source="#bib237-3">
-                  <forename>ديونيسيوس صليبا</forename> 
-                  <addName type="untagged-title">اسقف قلوذية</addName>
+                  <forename sort="1">ديونيسيوس صليبا</forename> 
+                  <addName type="untagged-title" sort="2">اسقف قلوذية</addName>
                </persName>
                <persName type="sic"
                          xml:id="name237-4a"
                          corresp="#name237-2 #name237-3 #name237-4b"
                          xml:lang="syr"
                          source="#bib237-4">
-                  <forename>ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</addName>
+                  <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܩܠܘܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name237-4b"
                          corresp="#name237-2 #name237-3 #name237-4a"
                          xml:lang="syr-Syrj"
                          source="#bib237-4">
-                  <forename>ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</addName>
+                  <forename sort="1">ܕܝܺܘܢܢܘܣܝܘܣ ܨܰܠܝܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܘܕܺܝܰܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename> 
-                  <addName type="untagged-title">ܕܩܠܘܕܝܐ</addName>
+                  <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ ܨܠܝܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܩܠܘܕܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Dionysios Ṣlibo</forename> 
-                  <addName type="untagged-title">of Claudia</addName>
+                  <forename sort="1">Dionysios Ṣlibo</forename> 
+                  <addName type="untagged-title" sort="2">of Claudia</addName>
                </persName>
                <death when="1273" source="#bib237-2">1273</death>
                <bibl xml:id="bib237-2">

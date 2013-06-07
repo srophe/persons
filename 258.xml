@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,37 +100,37 @@
                          corresp="#name258-3 #name258-4a #name258-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib258-2">
-                  <forename>Philoxenus</forename> 
-                  <addName type="untagged-title">the Scribe</addName>
+                  <forename sort="1">Philoxenus</forename> 
+                  <addName type="untagged-title" sort="2">the Scribe</addName>
                </persName>
                <persName type="sic"
                          xml:id="name258-3"
                          corresp="#name258-2 #name258-4a #name258-4b"
                          xml:lang="ar"
                          source="#bib258-3">
-                  <forename>فيلكسينس</forename> 
-                  <addName type="untagged-title">الكاتب</addName>
+                  <forename sort="1">فيلكسينس</forename> 
+                  <addName type="untagged-title" sort="2">الكاتب</addName>
                </persName>
                <persName type="sic"
                          xml:id="name258-4a"
                          corresp="#name258-2 #name258-3 #name258-4b"
                          xml:lang="syr"
                          source="#bib258-4">
-                  <forename>ܦܝܠܘܟܣܝܢܘܣ</forename> 
-                  <addName type="untagged-title">ܟܬܘܒܐ</addName>
+                  <forename sort="1">ܦܝܠܘܟܣܝܢܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܟܬܘܒܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name258-4b"
                          corresp="#name258-2 #name258-3 #name258-4a"
                          xml:lang="syr-Syrj"
                          source="#bib258-4">
-                  <forename>ܦܝܠܘܟܣܝܢܘܣ</forename> 
-                  <addName type="untagged-title">ܟܳܬܘܒܐ</addName>
+                  <forename sort="1">ܦܝܠܘܟܣܝܢܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܟܳܬܘܒܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Philoxenos</forename> the Scrib</persName>
+                  <forename sort="1">Philoxenos</forename> the Scrib</persName>
                <death when="1421" source="#bib258-2">1421</death>
                <bibl xml:id="bib258-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

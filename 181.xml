@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name181-3 #name181-4a #name181-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib181-2">
-                  <forename>Athanasius</forename>, <addName type="untagged-title">bishop of Qallisura</addName>
+                  <forename sort="1">Athanasius</forename>, <addName type="untagged-title" sort="2">bishop of Qallisura</addName>
                </persName>
                <persName type="sic"
                          xml:id="name181-3"
                          corresp="#name181-2 #name181-4a #name181-4b"
                          xml:lang="ar"
                          source="#bib181-3">
-                  <forename>اثناسيوس</forename> 
-                  <addName type="untagged-title">اسقف قليسورا</addName>
+                  <forename sort="1">اثناسيوس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف قليسورا</addName>
                </persName>
                <persName type="sic"
                          xml:id="name181-4a"
                          corresp="#name181-2 #name181-3 #name181-4b"
                          xml:lang="syr"
                          source="#bib181-4">
-                  <forename>ܐܬܢܐܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</addName>
+                  <forename sort="1">ܐܬܢܐܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܩܠܝܣܘܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name181-4b"
                          corresp="#name181-2 #name181-3 #name181-4a"
                          xml:lang="syr-Syrj"
                          source="#bib181-4">
-                  <forename>ܐܰܬܰܢܐܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</addName>
+                  <forename sort="1">ܐܰܬܰܢܐܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܰܩܠܝܣܘܪܰܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܬܢܐܣܝܘܣ</forename> 
-                  <addName type="untagged-title">ܕܩܠܝܣܘܪܐ</addName>
+                  <forename sort="1">ܐܬܢܐܣܝܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܩܠܝܣܘܪܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Athanasios</forename> 
-                  <addName type="untagged-title">of Qlisuro</addName>
+                  <forename sort="1">Athanasios</forename> 
+                  <addName type="untagged-title" sort="2">of Qlisuro</addName>
                </persName>
                <death when="0982" source="#bib181-2">982</death>
                <bibl xml:id="bib181-2">

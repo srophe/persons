@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,33 +100,33 @@
                          corresp="#name19-3 #name19-4a #name19-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib19-2">
-                  <addName type="untagged-title">The Writer of the Biography of Eusebius of Samosata</addName>
+                  <addName type="untagged-title" sort="2">The Writer of the Biography of Eusebius of Samosata</addName>
                </persName>
                <persName type="sic"
                          xml:id="name19-3"
                          corresp="#name19-2 #name19-4a #name19-4b"
                          xml:lang="ar"
                          source="#bib19-3">
-                  <addName type="untagged-title">كاتب سيرة اوسابيوس السميساطي</addName>
+                  <addName type="untagged-title" sort="2">كاتب سيرة اوسابيوس السميساطي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name19-4a"
                          corresp="#name19-2 #name19-3 #name19-4b"
                          xml:lang="syr"
                          source="#bib19-4">
-                  <addName type="untagged-title">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</addName>
+                  <addName type="untagged-title" sort="2">ܟܬܒ ܚܝ̈ܐ ܕܐܘܣܐܒܝܘܣ ܕܫܡܝܫܛ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name19-4b"
                          corresp="#name19-2 #name19-3 #name19-4a"
                          xml:lang="syr-Syrj"
                          source="#bib19-4">
-                  <addName type="untagged-title">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</addName>
+                  <addName type="untagged-title" sort="2">ܟܬܒ ܚܰܝ̈ܐ ܕܐܘܣܰܐܒܝܘܣ ܕܫܰܡܝܫܰܛ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the biography of Eusebius of Samosata</addName>
+                  <addName type="untagged-title" sort="2">Author of the biography of Eusebius of Samosata</addName>
                </persName>
                <bibl xml:id="bib19-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

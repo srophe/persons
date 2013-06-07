@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name235-2"
                          corresp="#name235-3 #name235-4a #name235-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib235-2">Maphryono <forename>Ṣaliba</forename> the Edessene</persName>
+                         source="#bib235-2">
+                  <addName type="untagged-title" sort="2">Maphryono</addName> 
+                  <forename sort="1">Ṣaliba</forename> 
+                  <addName type="untagged-title" sort="2">the Edessene</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name235-3"
                          corresp="#name235-2 #name235-4a #name235-4b"
                          xml:lang="ar"
-                         source="#bib235-3">المفريان <forename>صليبا</forename> الرهاوي</persName>
+                         source="#bib235-3">
+                  <addName type="untagged-title" sort="2">المفريان </addName>
+                  <forename sort="1">صليبا</forename> 
+                  <addName type="untagged-title" sort="2">الرهاوي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name235-4a"
                          corresp="#name235-2 #name235-3 #name235-4b"
                          xml:lang="syr"
-                         source="#bib235-4">ܡܦܪܝܢܐ <forename>ܨܠܝܒܐ</forename> ܐܘܪܗܝܐ</persName>
+                         source="#bib235-4">ܡܦܪܝܢܐ <forename sort="1">ܨܠܝܒܐ</forename> ܐܘܪܗܝܐ</persName>
                <persName type="sic"
                          xml:id="name235-4b"
                          corresp="#name235-2 #name235-3 #name235-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib235-4">ܡܰܦܪܝܳܢܐ <forename>ܨܰܠܝܒܐ</forename> ܐܘܪܗܳܝܳܐ</persName>
+                         source="#bib235-4">ܡܰܦܪܝܳܢܐ <forename sort="1">ܨܰܠܝܒܐ</forename> ܐܘܪܗܳܝܳܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܨܠܝܒܐ</forename> 
-                  <addName type="untagged-title">ܐܘܪܗܝܐ</addName>
+                  <forename sort="1">ܨܠܝܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Ṣlibo</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Ṣlibo</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <death when="1258" source="#bib235-2">1258</death>
                <bibl xml:id="bib235-2">

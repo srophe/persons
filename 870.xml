@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -95,36 +96,36 @@
          <listPerson>
             <person xml:id="person-870">
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܣܘܪܝܢ</forename>
+                  <forename sort="1">ܣܘܪܝܢ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name870-5a"
                          corresp="#name870-5b #name870-6a"
                          xml:lang="syr"
                          source="#bib870-5">
-                  <forename>ܣܘܪܝܢ</forename> 
-                  <addName type="untagged-title">ܡܦܫܩܢܐ</addName>
+                  <forename sort="1">ܣܘܪܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܦܫܩܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name870-5b"
                          corresp="#name870-5a #name870-6b"
                          xml:lang="syr-Syrn"
                          source="#bib870-5">
-                  <forename>ܣܘܼܪܝܼܢ</forename> 
-                  <addName type="untagged-title">ܡܦܲܫܩܵܢܵܐ</addName>
+                  <forename sort="1">ܣܘܼܪܝܼܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܦܲܫܩܵܢܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name870-6a"
                          corresp="#name870-6b #name870-5a"
                          xml:lang="syr"
                          source="#bib870-6">
-                  <forename>ܣܘܪܝܢ</forename> 
-                  <addName type="untagged-title">ܡܦܫܩܢܐ</addName>
+                  <forename sort="1">ܣܘܪܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܦܫܩܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Surin</forename>
+                  <forename sort="1">Surin</forename>
                </persName>
                <persName type="sic"
                          xml:id="name870-7"

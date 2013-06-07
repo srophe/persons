@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -100,48 +101,48 @@
                          corresp="#name856-3 #name856-4a #name856-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib856-2">
-                  <forename>Macarius</forename> 
-                  <addName type="untagged-title">the Great and Egyptian</addName>
+                  <forename sort="1">Macarius</forename> 
+                  <addName type="untagged-title" sort="2">the Great and Egyptian</addName>
                </persName>
                <persName type="sic"
                          xml:id="name856-3"
                          corresp="#name856-2 #name856-4a #name856-4b"
                          xml:lang="ar"
                          source="#bib856-3">
-                  <forename>مقاريوس</forename> 
-                  <addName type="untagged-title">المصري</addName>
+                  <forename sort="1">مقاريوس</forename> 
+                  <addName type="untagged-title" sort="2">المصري</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܩܪܝܣ</forename>
+                  <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name856-5a"
                          corresp="#name856-5b #name856-6a"
                          xml:lang="syr"
                          source="#bib856-5">
-                  <forename>ܡܩܪܝܣ</forename> 
-                  <addName type="untagged-title">ܐܚܪܢܐ</addName>
+                  <forename sort="1">ܡܩܪܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name856-5b"
                          corresp="#name856-5a #name856-6b"
                          xml:lang="syr-Syrn"
                          source="#bib856-5">
-                  <forename>ܡܲܩܵܪܝܼܣ</forename> 
-                  <addName type="untagged-title">ܐܚܪܹܢܵܐ</addName>
+                  <forename sort="1">ܡܲܩܵܪܝܼܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܚܪܹܢܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name856-6a"
                          corresp="#name856-6b #name856-5a"
                          xml:lang="syr"
                          source="#bib856-6">
-                  <forename>ܡܩܪܝܣ</forename> 
-                  <addName type="untagged-title">ܐܚܪܢܐ</addName>
+                  <forename sort="1">ܡܩܪܝܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Macarius</forename>
+                  <forename sort="1">Macarius</forename>
                </persName>
                <persName type="sic"
                          xml:id="name856-7"

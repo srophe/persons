@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,41 +100,41 @@
                          corresp="#name48-3 #name48-4a #name48-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib48-2">
-                  <forename>Mara</forename>, <addName type="untagged-title">metropolitan of Amid</addName>
+                  <forename sort="1">Mara</forename>, <addName type="untagged-title" sort="2">metropolitan of Amid</addName>
                </persName>
                <persName type="sic"
                          xml:id="name48-3"
                          corresp="#name48-2 #name48-4a #name48-4b"
                          xml:lang="ar"
                          source="#bib48-3">
-                  <forename>مارا</forename> 
-                  <addName type="untagged-title">مطران آمد</addName>
+                  <forename sort="1">مارا</forename> 
+                  <addName type="untagged-title" sort="2">مطران آمد</addName>
                </persName>
                <persName type="sic"
                          xml:id="name48-4a"
                          corresp="#name48-2 #name48-3 #name48-4b"
                          xml:lang="syr"
                          source="#bib48-4">
-                  <forename>ܡܪܐ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
+                  <forename sort="1">ܡܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name48-4b"
                          corresp="#name48-2 #name48-3 #name48-4a"
                          xml:lang="syr-Syrj"
                          source="#bib48-4">
-                  <forename>ܡܰܪܰܐ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܳܡܝܕ</addName>
+                  <forename sort="1">ܡܰܪܰܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܳܡܝܕ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܪܐ</forename> 
-                  <addName type="untagged-title">ܕܐܡܝܕ</addName>
+                  <forename sort="1">ܡܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܡܝܕ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Mara</forename> 
-                  <addName type="untagged-title">of Amid</addName>
+                  <forename sort="1">Mara</forename> 
+                  <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>
                <death when="0529" source="#bib48-2">529</death>
                <bibl xml:id="bib48-2">

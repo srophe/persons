@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,43 +100,43 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib152-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Benjamin</forename> 
-                  <addName type="untagged-title">of Edessa</addName>
+                  <forename sort="1">Benjamin</forename> 
+                  <addName type="untagged-title" sort="2">of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name152-2"
                          corresp="#name152-3 #name152-4a #name152-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib152-2">
-                  <forename>Benjamin</forename>, <addName type="untagged-title">metropolitan of Edessa</addName>
+                  <forename sort="1">Benjamin</forename>, <addName type="untagged-title" sort="2">metropolitan of Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name152-3"
                          corresp="#name152-2 #name152-4a #name152-4b"
                          xml:lang="ar"
                          source="#bib152-3">
-                  <forename>بنيامين</forename> 
-                  <addName type="untagged-title">مطران الرها</addName>
+                  <forename sort="1">بنيامين</forename> 
+                  <addName type="untagged-title" sort="2">مطران الرها</addName>
                </persName>
                <persName type="sic"
                          xml:id="name152-4a"
                          corresp="#name152-2 #name152-3 #name152-4b"
                          xml:lang="syr"
                          source="#bib152-4">
-                  <forename>ܒܢܝܡܝܢ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܒܢܝܡܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name152-4b"
                          corresp="#name152-2 #name152-3 #name152-4a"
                          xml:lang="syr-Syrj"
                          source="#bib152-4">
-                  <forename>ܒܶܢܝܳܡܝܢ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
+                  <forename sort="1">ܒܶܢܝܳܡܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܒܢܝܡܝܢ</forename> 
-                  <addName type="untagged-title">ܕܐܘܪܗܝ</addName>
+                  <forename sort="1">ܒܢܝܡܝܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܐܘܪܗܝ</addName>
                </persName>
                <death when="0843" source="#bib152-2">843</death>
                <bibl xml:id="bib152-1">

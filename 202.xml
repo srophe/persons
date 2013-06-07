@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,38 +100,38 @@
                          corresp="#name202-3 #name202-4a #name202-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib202-2">
-                  <forename>Basilius</forename> 
-                  <surname>Abu Ghalib Ibn al-Ṣabuni</surname>
+                  <forename sort="1">Basilius</forename> 
+                  <surname sort="2">Abu Ghalib Ibn al-Ṣabuni</surname>
                </persName>
                <persName type="sic"
                          xml:id="name202-3"
                          corresp="#name202-2 #name202-4a #name202-4b"
                          xml:lang="ar"
                          source="#bib202-3">
-                  <forename>باسيليوس</forename> 
-                  <surname>ابو غالب ابن الصابوني</surname>
+                  <forename sort="1">باسيليوس</forename> 
+                  <surname sort="2">ابو غالب ابن الصابوني</surname>
                </persName>
                <persName type="sic"
                          xml:id="name202-4a"
                          corresp="#name202-2 #name202-3 #name202-4b"
                          xml:lang="syr"
                          source="#bib202-4">
-                  <forename>ܒܣܝܠܝܘܣ</forename> 
-                  <surname>ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
+                  <forename sort="1">ܒܣܝܠܝܘܣ</forename> 
+                  <surname sort="2">ܐܒܘ ܓܐܠܒ ܒܪ ܨܐܒܘܢܝ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name202-4b"
                          corresp="#name202-2 #name202-3 #name202-4a"
                          xml:lang="syr-Syrj"
                          source="#bib202-4">
-                  <forename>ܒܰܣܝܠܝܘܣ</forename> 
-                  <surname>ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
+                  <forename sort="1">ܒܰܣܝܠܝܘܣ</forename> 
+                  <surname sort="2">ܐܰܒܘ ܓܰܐܠܒ ܒܪ ܨܰܐܒܘܢܝ</surname>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Baselios Abū Ghālib</forename> 
-                  <surname>bar Sabouni</surname>
+                  <forename sort="1">Baselios Abū Ghālib</forename> 
+                  <surname sort="2">bar Sabouni</surname>
                </persName>
                <death when="1129" source="#bib202-2">1129</death>
                <bibl xml:id="bib202-2">

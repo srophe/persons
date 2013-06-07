@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,45 +100,45 @@
                          corresp="#name601-2 #name601-4a #name601-4b"
                          xml:lang="ar"
                          source="#bib601-3">
-                  <forename>مقاريوس</forename> 
-                  <addName type="untagged-title">الاسكندري</addName>
+                  <forename sort="1">مقاريوس</forename> 
+                  <addName type="untagged-title" sort="2">الاسكندري</addName>
                </persName>
                <persName type="sic"
                          xml:id="name601-5a"
                          corresp="#name601-5b #name601-6a"
                          xml:lang="syr"
                          source="#bib601-5">
-                  <addName type="untagged-title">ܐܒܐ</addName> 
-                  <forename>ܡܩܪܝܣ</forename>
+                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
+                  <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name601-5b"
                          corresp="#name601-5a #name601-6b"
                          xml:lang="syr-Syrn"
                          source="#bib601-5">
-                  <addName type="untagged-title">ܐܲܒܵܐ</addName> 
-                  <forename>ܡܵܩܵܪܝܼܣ</forename>
+                  <addName type="untagged-title" sort="2">ܐܲܒܵܐ</addName> 
+                  <forename sort="1">ܡܵܩܵܪܝܼܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name601-6a"
                          corresp="#name601-6b #name601-5a"
                          xml:lang="syr"
                          source="#bib601-6">
-                  <addName type="untagged-title">ܐܒܐ</addName> 
-                  <forename>ܡܩܪܝܣ</forename>
+                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
+                  <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name601-6b"
                          corresp="#name601-6a #name601-5b"
                          xml:lang="syr-Syrj"
                          source="#bib601-6">
-                  <addName type="untagged-title">ܐܰܒܳܐ</addName> 
-                  <forename>ܡܰܩܰܪܝܳܣ</forename>
+                  <addName type="untagged-title" sort="2">ܐܰܒܳܐ</addName> 
+                  <forename sort="1">ܡܰܩܰܪܝܳܣ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Macarian homilies</addName>
+                  <addName type="untagged-title" sort="2">Author of the Macarian homilies</addName>
                </persName>
                <bibl xml:id="bib601-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

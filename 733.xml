@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,7 +100,7 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib733-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Shaliṭa</forename>, <addName type="untagged-title">Mar</addName>
+                  <forename sort="1">Shaliṭa</forename>, <addName type="untagged-title" sort="2">Mar</addName>
                </persName>
                <persName type="sic"
                          xml:id="name733-7"

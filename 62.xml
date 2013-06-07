@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,36 +100,36 @@
                          corresp="#name62-3 #name62-4a #name62-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib62-2">
-                  <addName type="untagged-title">The Anonymous Writer of the Monastery of Qenneshrin</addName>
+                  <addName type="untagged-title" sort="2">The Anonymous Writer of the Monastery of Qenneshrin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name62-3"
                          corresp="#name62-2 #name62-4a #name62-4b"
                          xml:lang="ar"
                          source="#bib62-3">
-                  <addName type="untagged-title">الكاتب المغمور الاسم في دير قنسرين</addName>
+                  <addName type="untagged-title" sort="2">الكاتب المغمور الاسم في دير قنسرين</addName>
                </persName>
                <persName type="sic"
                          xml:id="name62-4a"
                          corresp="#name62-2 #name62-3 #name62-4b"
                          xml:lang="syr"
                          source="#bib62-4">
-                  <addName type="untagged-title">ܟܬܘܒܐ ܕܓܢܝܙ ܫܡܗ ܒܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
+                  <addName type="untagged-title" sort="2">ܟܬܘܒܐ ܕܓܢܝܙ ܫܡܗ ܒܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name62-4b"
                          corresp="#name62-2 #name62-3 #name62-4a"
                          xml:lang="syr-Syrj"
                          source="#bib62-4">
-                  <addName type="untagged-title">ܟܳܬܘܒܳܐ ܕܰܓܢܝܙ ܫܡܗ ܒܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
+                  <addName type="untagged-title" sort="2">ܟܳܬܘܒܳܐ ܕܰܓܢܝܙ ܫܡܗ ܒܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">ܟܬܘܒܐ ܕܬܫܥܝܬܐ ܕܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</addName>
+                  <addName type="untagged-title" sort="2">ܟܬܘܒܐ ܕܬܫܥܝܬܐ ܕܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title">Author of the Life of John bar Aphtonia</addName>
+                  <addName type="untagged-title" sort="2">Author of the Life of John bar Aphtonia</addName>
                </persName>
                <bibl xml:id="bib62-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

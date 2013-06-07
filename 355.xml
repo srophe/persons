@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,44 +100,44 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib355-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Audo</surname>, <forename>Toma</forename>
+                  <surname sort="1">Audo</surname>, <forename sort="2">Toma</forename>
                </persName>
                <persName type="sic"
                          xml:id="name355-2"
                          corresp="#name355-3 #name355-4a #name355-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib355-2">
-                  <forename>Tuma</forename> 
-                  <surname>Odo</surname>
+                  <forename sort="2">Tuma</forename> 
+                  <surname sort="1">Odo</surname>
                </persName>
                <persName type="sic"
                          xml:id="name355-3"
                          corresp="#name355-2 #name355-4a #name355-4b"
                          xml:lang="ar"
-                         source="#bib355-3">المطران <forename>توما</forename> 
-                  <surname>اودو</surname>
+                         source="#bib355-3">المطران <forename sort="2">توما</forename> 
+                  <surname sort="1">اودو</surname>
                </persName>
                <persName type="sic"
                          xml:id="name355-4a"
                          corresp="#name355-2 #name355-3 #name355-4b"
                          xml:lang="syr"
                          source="#bib355-4">
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ</addName> 
-                  <forename>ܬܐܘܡܐ</forename> 
-                  <surname>ܐܘܕܐ</surname>
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܟܠܕܝܐ</addName> 
+                  <forename sort="2">ܬܐܘܡܐ</forename> 
+                  <surname sort="1">ܐܘܕܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name355-4b"
                          corresp="#name355-2 #name355-3 #name355-4a"
                          xml:lang="syr-Syrj"
                          source="#bib355-4">
-                  <addName type="untagged-title">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ</addName> 
-                  <forename>ܬܐܘܡܰܐ</forename> 
-                  <surname>ܐܘܕܳܐ</surname>
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܟܰܠܕܳܝܐ</addName> 
+                  <forename sort="2">ܬܐܘܡܰܐ</forename> 
+                  <surname sort="1">ܐܘܕܳܐ</surname>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܬܐܘܡܐ</forename> 
-                  <surname>ܐܘܕܐ</surname>
+                  <forename sort="2">ܬܐܘܡܐ</forename> 
+                  <surname sort="1">ܐܘܕܐ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name355-7"

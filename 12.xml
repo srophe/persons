@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,26 +100,26 @@
                          corresp="#name12-2 #name12-3 #name12-4b"
                          xml:lang="syr"
                          source="#bib12-4">
-                  <forename>ܦܝܠܘܢ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܩܐܪܒܐܣܝܐ</addName>
+                  <forename sort="1">ܦܝܠܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܩܐܪܒܐܣܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name12-4b"
                          corresp="#name12-2 #name12-3 #name12-4a"
                          xml:lang="syr-Syrj"
                          source="#bib12-4">
-                  <forename>ܦܺܝܠܘܢ</forename> 
-                  <addName type="untagged-title">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܐܪܒܐܣܝܐ</addName>
+                  <forename sort="1">ܦܺܝܠܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܐܪܒܐܣܝܐ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܦܝܠܘܢ</forename> 
-                  <addName type="untagged-title">ܕܩܐܪܒܐܣܝܐ</addName>
+                  <forename sort="1">ܦܝܠܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܩܐܪܒܐܣܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Philo</forename> 
-                  <addName type="untagged-title">of Carpasia</addName>
+                  <forename sort="1">Philo</forename> 
+                  <addName type="untagged-title" sort="2">of Carpasia</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/34428903</idno>
                <bibl xml:id="bib12-4">

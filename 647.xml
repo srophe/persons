@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,47 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib647-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Mushe</forename> 
-                  <addName type="untagged-title">of Nisibis</addName>
+                  <forename sort="1">Mushe</forename> 
+                  <addName type="untagged-title" sort="2">of Nisibis</addName>
                </persName>
                <persName type="sic"
                          xml:id="name647-2"
                          corresp="#name647-3 #name647-4a #name647-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib647-2">
-                  <forename>Moses</forename> 
-                  <addName type="untagged-title">of Nisibin</addName>
+                  <forename sort="1">Moses</forename> 
+                  <addName type="untagged-title" sort="2">of Nisibin</addName>
                </persName>
                <persName type="sic"
                          xml:id="name647-3"
                          corresp="#name647-2 #name647-4a #name647-4b"
                          xml:lang="ar"
-                         source="#bib647-3">الاب <forename>موسى</forename> النصيبيني</persName>
+                         source="#bib647-3">
+                  <addName type="untagged-title" sort="2">الاب</addName> 
+                  <forename sort="1">موسى</forename> 
+                  <addName type="untagged-title" sort="2">النصيبيني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name647-4a"
                          corresp="#name647-2 #name647-3 #name647-4b"
                          xml:lang="syr"
-                         source="#bib647-4">ܐܒܐ <forename>ܡܘܫܐ</forename> ܢܨܝܒܝܢܝܐ</persName>
+                         source="#bib647-4">
+                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name647-4b"
                          corresp="#name647-2 #name647-3 #name647-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib647-4">ܐܰܒܐ <forename>ܡܘܫܶܐ</forename> ܢܨܝܒܝܺܢܳܝܐ</persName>
+                         source="#bib647-4">
+                  <addName type="untagged-title" sort="2">ܐܰܒܐ</addName> 
+                  <forename sort="1">ܡܘܫܶܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܺܢܳܝܐ</addName>
+               </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܡܘܫܐ</forename> 
-                  <addName type="untagged-title">ܢܨܝܒܝܢܝܐ</addName>
+                  <forename sort="1">ܡܘܫܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ</addName>
                </persName>
                <floruit source="#bib647-1">first half of 10th cent.</floruit>
                <bibl xml:id="bib647-1">

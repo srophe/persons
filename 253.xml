@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name253-2"
                          corresp="#name253-3 #name253-4a #name253-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib253-2">Metropolitan <forename>Abu al-Wafa</forename> of Ḥiṣn Kifa</persName>
+                         source="#bib253-2">
+                  <addName type="untagged-title" sort="2">Metropolitan</addName> 
+                  <forename sort="1">Abu al-Wafa</forename> 
+                  <addName type="untagged-title" sort="2">of Ḥiṣn Kifa</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name253-3"
                          corresp="#name253-2 #name253-4a #name253-4b"
                          xml:lang="ar"
-                         source="#bib253-3">المطران <forename>ابو الوفآء</forename> الحصكفي</persName>
+                         source="#bib253-3">
+                  <addName type="untagged-title" sort="2">المطران </addName>
+                  <forename sort="1">ابو الوفآء</forename> 
+                  <addName type="untagged-title" sort="2">الحصكفي</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name253-4a"
                          corresp="#name253-2 #name253-3 #name253-4b"
                          xml:lang="syr"
-                         source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܐܒܘܐܠܘܦܐ</forename> ܚܣܢ ܟܐܦܝܐ</persName>
+                         source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܐܒܘܐܠܘܦܐ</forename> ܚܣܢ ܟܐܦܝܐ</persName>
                <persName type="sic"
                          xml:id="name253-4b"
                          corresp="#name253-2 #name253-3 #name253-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܐܰܒܘܐܠܘܦܐ</forename> ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
+                         source="#bib253-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܐܰܒܘܐܠܘܦܐ</forename> ܚܰܣܢ ܟܺܐܦܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܘܐܠܘܦܐ</forename> 
-                  <addName type="untagged-title">ܚܣܢ ܟܐܦܝܐ</addName>
+                  <forename sort="1">ܐܒܘܐܠܘܦܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܣܢ ܟܐܦܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abū al-Wafā</forename> 
-                  <addName type="untagged-title">of Hasankeyf</addName>
+                  <forename sort="1">Abū al-Wafā</forename> 
+                  <addName type="untagged-title" sort="2">of Hasankeyf</addName>
                </persName>
                <bibl xml:id="bib253-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

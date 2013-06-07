@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,73 +100,73 @@
                          corresp="#name863-3 #name863-4a #name863-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib863-2">
-                  <forename>Theodore</forename>, <addName type="untagged-title">bishop of Merv</addName>
+                  <forename sort="1">Theodore</forename>, <addName type="untagged-title" sort="2">bishop of Merv</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-3"
                          corresp="#name863-2 #name863-4a #name863-4b"
                          xml:lang="ar"
                          source="#bib863-3">
-                  <forename>ثاودور</forename> 
-                  <addName type="untagged-title">الذي تسقّف على مرو</addName>
+                  <forename sort="1">ثاودور</forename> 
+                  <addName type="untagged-title" sort="2">الذي تسقّف على مرو</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-4a"
                          corresp="#name863-2 #name863-3 #name863-4b"
                          xml:lang="syr"
                          source="#bib863-4">
-                  <forename>ܬܐܘܕܘܪ</forename> 
-                  <addName type="untagged-title">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
+                  <forename sort="1">ܬܐܘܕܘܪ</forename> 
+                  <addName type="untagged-title" sort="2">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-4b"
                          corresp="#name863-2 #name863-3 #name863-4a"
                          xml:lang="syr-Syrj"
                          source="#bib863-4">
-                  <forename>ܬܶܐܘܕܘܪ</forename> 
-                  <addName type="untagged-title">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
+                  <forename sort="1">ܬܶܐܘܕܘܪ</forename> 
+                  <addName type="untagged-title" sort="2">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܬܐܕܘܪܐ</forename> 
-                  <addName type="untagged-title">ܕܡܪܘ</addName>
+                  <forename sort="1">ܬܐܕܘܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܪܘ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-5a"
                          corresp="#name863-5b #name863-6a"
                          xml:lang="syr"
                          source="#bib863-5">
-                  <forename>ܬܐܕܘܪܐ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܢ ܕܡܪܘ</addName>
+                  <forename sort="1">ܬܐܕܘܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܢ ܕܡܪܘ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-5b"
                          corresp="#name863-5a #name863-6b"
                          xml:lang="syr-Syrn"
                          source="#bib863-5">
-                  <forename>ܬܹܐܕܘܿܪܹܐ</forename> 
-                  <addName type="untagged-title">ܡܝܼܛܪܵܢ ܕܡܵܪܘܼ</addName>
+                  <forename sort="1">ܬܹܐܕܘܿܪܹܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܼܛܪܵܢ ܕܡܵܪܘܼ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-6a"
                          corresp="#name863-6b #name863-5a"
                          xml:lang="syr"
                          source="#bib863-6">
-                  <forename>ܬܐܕܘܪܐ</forename> 
-                  <addName type="untagged-title">ܡܝܛܪܢ ܕܡܪܘ</addName>
+                  <forename sort="1">ܬܐܕܘܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܢ ܕܡܪܘ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-6b"
                          corresp="#name863-6a #name863-5b"
                          xml:lang="syr-Syrj"
                          source="#bib863-6">
-                  <forename>ܬܶܐܕܽܘܪܳܐ</forename> 
-                  <addName type="untagged-title">ܡܺܝܛܪܳܢ ܕܡܰܪܽܘ</addName>
+                  <forename sort="1">ܬܶܐܕܽܘܪܳܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܺܝܛܪܳܢ ܕܡܰܪܽܘ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Teadore</forename> 
-                  <addName type="untagged-title">of Merv</addName>
+                  <forename sort="1">Teadore</forename> 
+                  <addName type="untagged-title" sort="2">of Merv</addName>
                </persName>
                <persName type="sic"
                          xml:id="name863-7"

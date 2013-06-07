@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,31 +100,38 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib122-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Giwargi</forename>, <addName type="untagged-title">bp. of the Arab tribes</addName>
+                  <forename sort="1">Giwargi</forename>, <addName type="untagged-title" sort="2">bp. of the Arab tribes</addName>
                </persName>
                <persName type="sic"
                          xml:id="name122-2"
                          corresp="#name122-3 #name122-4a #name122-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib122-2">Mar <forename>George</forename>, bishop of the Arabs</persName>
+                         source="#bib122-2">
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="1">George</forename>, <addName type="untagged-title" sort="2">bishop of the Arabs</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name122-3"
                          corresp="#name122-2 #name122-4a #name122-4b"
                          xml:lang="ar"
-                         source="#bib122-3">مار <forename>جرجس</forename> اسقف العرب</persName>
+                         source="#bib122-3">
+                  <addName type="untagged-title" sort="2">مار </addName>
+                  <forename sort="1">جرجس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف العرب</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name122-4a"
                          corresp="#name122-2 #name122-3 #name122-4b"
                          xml:lang="syr"
-                         source="#bib122-4">ܡܪܝ <forename>ܓܘܪܓܝ</forename> ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</persName>
+                         source="#bib122-4">ܡܪܝ <forename sort="1">ܓܘܪܓܝ</forename> ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</persName>
                <persName type="sic"
                          xml:id="name122-4b"
                          corresp="#name122-2 #name122-3 #name122-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib122-4">ܡܳܪܝ <forename>ܓܶܘܰܪܓܝ</forename> ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</persName>
+                         source="#bib122-4">ܡܳܪܝ <forename sort="1">ܓܶܘܰܪܓܝ</forename> ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܓܘܪܓܝ</forename> 
-                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܥܪ̈ܒܝܐ</addName>
+                  <forename sort="1">ܓܘܪܓܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܥܪ̈ܒܝܐ</addName>
                </persName>
                <idno type="URI">http://worldcat.org/identities/np-georgios$al hira</idno>
                <idno type="URI">http://viaf.org/viaf/88628511</idno>

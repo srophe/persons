@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,31 +100,31 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib379-1"
                          syriaca-tags="#syriaca-headword">
-                  <surname>Bedjan</surname>, <forename>Paul</forename>
+                  <surname sort="1">Bedjan</surname>, <forename sort="2">Paul</forename>
                </persName>
                <persName type="sic"
                          xml:id="name379-3"
                          corresp="#name379-2 #name379-4a #name379-4b"
                          xml:lang="ar"
                          source="#bib379-3">
-                  <forename>بولس</forename> 
-                  <surname>بيجان</surname>
+                  <forename sort="2">بولس</forename> 
+                  <surname sort="1">بيجان</surname>
                </persName>
                <persName type="sic"
                          xml:id="name379-4a"
                          corresp="#name379-2 #name379-3 #name379-4b"
                          xml:lang="syr"
                          source="#bib379-4">
-                  <forename>ܦܘܠܘܣ</forename> 
-                  <surname>ܒܝܓܢ</surname>
+                  <forename sort="2">ܦܘܠܘܣ</forename> 
+                  <surname sort="1">ܒܝܓܢ</surname>
                </persName>
                <persName type="sic"
                          xml:id="name379-4b"
                          corresp="#name379-2 #name379-3 #name379-4a"
                          xml:lang="syr-Syrj"
                          source="#bib379-4">
-                  <forename>ܦܰܘܠܘܣ</forename> 
-                  <surname>ܒܰܝܓܰܢ</surname>
+                  <forename sort="2">ܦܰܘܠܘܣ</forename> 
+                  <surname sort="1">ܒܰܝܓܰܢ</surname>
                </persName>
                <idno type="URI">http://viaf.org/viaf/34592282</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr2006-12033</idno>

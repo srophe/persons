@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,39 +100,39 @@
                          corresp="#name23-3 #name23-4a #name23-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib23-2">
-                  <forename>Aḥai</forename>, <addName type="untagged-title">Catholicos of Ctesiphon</addName>
+                  <forename sort="1">Aḥai</forename>, <addName type="untagged-title" sort="2">Catholicos of Ctesiphon</addName>
                </persName>
                <persName type="sic"
                          xml:id="name23-3"
                          corresp="#name23-2 #name23-4a #name23-4b"
                          xml:lang="ar"
                          source="#bib23-3">
-                  <forename>آحى</forename> 
-                  <addName type="untagged-title">جاثليق المداىٔن</addName>
+                  <forename sort="1">آحى</forename> 
+                  <addName type="untagged-title" sort="2">جاثليق المداىٔن</addName>
                </persName>
                <persName type="sic"
                          xml:id="name23-4a"
                          corresp="#name23-2 #name23-3 #name23-4b"
                          xml:lang="syr"
                          source="#bib23-4">
-                  <forename>ܐܚܝ</forename> 
-                  <addName type="untagged-title">ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</addName>
+                  <forename sort="1">ܐܚܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name23-4b"
                          corresp="#name23-2 #name23-3 #name23-4a"
                          xml:lang="syr-Syrj"
                          source="#bib23-4">
-                  <forename>ܐܰܚܝ</forename> 
-                  <addName type="untagged-title">ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</addName>
+                  <forename sort="1">ܐܰܚܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</addName>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܚܝ</forename>
+                  <forename sort="1">ܐܚܝ</forename>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Aḥai</forename>
+                  <forename sort="1">Aḥai</forename>
                </persName>
                <death when="0415" source="#bib23-2">415</death>
                <bibl xml:id="bib23-2">

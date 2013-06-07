@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name254-2"
                          corresp="#name254-3 #name254-4a #name254-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib254-2">The Monk <forename>Abraham</forename> of Mardin</persName>
+                         source="#bib254-2">
+                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <forename sort="1">Abraham</forename> 
+                  <addName type="untagged-title" sort="2">of Mardin</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name254-3"
                          corresp="#name254-2 #name254-4a #name254-4b"
                          xml:lang="ar"
-                         source="#bib254-3">الراهب <forename>ابرهيم</forename> المارديني</persName>
+                         source="#bib254-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">ابرهيم</forename> 
+                  <addName type="untagged-title" sort="2">المارديني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name254-4a"
                          corresp="#name254-2 #name254-3 #name254-4b"
                          xml:lang="syr"
-                         source="#bib254-4">ܕܝܪܝܐ <forename>ܐܒܪܗܡ</forename> ܡܪܕܝܢܝܐ</persName>
+                         source="#bib254-4">ܕܝܪܝܐ <forename sort="1">ܐܒܪܗܡ</forename> ܡܪܕܝܢܝܐ</persName>
                <persName type="sic"
                          xml:id="name254-4b"
                          corresp="#name254-2 #name254-3 #name254-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib254-4">ܕܰܝܪܳܝܐ <forename>ܐܰܒܪܳܗܡ</forename> ܡܪܕܝܢܳܝܐ</persName>
+                         source="#bib254-4">ܕܰܝܪܳܝܐ <forename sort="1">ܐܰܒܪܳܗܡ</forename> ܡܪܕܝܢܳܝܐ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܐܒܪܗܡ</forename> 
-                  <addName type="untagged-title">ܡܪܕܝܢܝܐ</addName>
+                  <forename sort="1">ܐܒܪܗܡ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܪܕܝܢܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abrohom</forename> 
-                  <addName type="untagged-title">of Mardin</addName>
+                  <forename sort="1">Abrohom</forename> 
+                  <addName type="untagged-title" sort="2">of Mardin</addName>
                </persName>
                <listEvent>
                   <event when="1365" source="#bib254-2" type="untagged">

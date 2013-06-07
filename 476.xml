@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -105,17 +106,26 @@
                          xml:id="name476-3"
                          corresp="#name476-2 #name476-4a #name476-4b"
                          xml:lang="ar"
-                         source="#bib476-3">قصتان لمار <forename>افرام</forename> الملفان</persName>
+                         source="#bib476-3">قصتان ل<addName type="untagged-title">مار</addName> 
+                  <forename>افرام</forename> 
+                  <addName type="untagged-title">الملفان</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name476-4a"
                          corresp="#name476-2 #name476-3 #name476-4b"
                          xml:lang="syr"
-                         source="#bib476-4">ܬܪܬܝܢ ܬܫܥܝ̈ܬܐ ܕܡܪܝ <forename>ܐܦܪܝܡ</forename> ܡܠܦܢܐ</persName>
+                         source="#bib476-4">ܬܪܬܝܢ ܬܫܥܝ̈ܬܐ ܕ<addName type="untagged-title">ܡܪܝ</addName> 
+                  <forename>ܐܦܪܝܡ</forename> 
+                  <addName type="untagged-title">ܡܠܦܢܐ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name476-4b"
                          corresp="#name476-2 #name476-3 #name476-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib476-4">ܬܰܪܬܶܝܢ ܬܰܫܶܥܝ̈ܬܐ ܕܡܳܪܝ <forename>ܐܰܦܪܝܡ</forename> ܡܠܦܳܢܐ</persName>
+                         source="#bib476-4">ܬܰܪܬܶܝܢ ܬܰܫܶܥܝ̈ܬܐ ܕ<addName type="untagged-title">ܡܳܪܝ</addName> 
+                  <forename>ܐܰܦܪܝܡ</forename> 
+                  <addName type="untagged-title">ܡܠܦܳܢܐ</addName>
+               </persName>
                <bibl xml:id="bib476-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>

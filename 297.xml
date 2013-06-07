@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name297-2"
                          corresp="#name297-3 #name297-4a #name297-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib297-2">Metropolitan <forename>Jacob</forename> Mirijan</persName>
+                         source="#bib297-2">
+                  <addName type="untagged-title" sort="2">Metropolitan</addName> 
+                  <forename sort="1">Jacob</forename> 
+                  <addName type="untagged-title" sort="2">Mirijan</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name297-3"
                          corresp="#name297-2 #name297-4a #name297-4b"
                          xml:lang="ar"
-                         source="#bib297-3">المطران <forename>يعقوب</forename> ميريجان</persName>
+                         source="#bib297-3">
+                  <addName type="untagged-title" sort="2">المطران</addName> 
+                  <forename sort="1">يعقوب</forename> 
+                  <addName type="untagged-title" sort="2">ميريجان</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name297-4a"
                          corresp="#name297-2 #name297-3 #name297-4b"
                          xml:lang="syr"
-                         source="#bib297-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename>ܝܥܩܘܒ</forename> ܡܝܪܝܓܐܢ</persName>
+                         source="#bib297-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܝܥܩܘܒ</forename> ܡܝܪܝܓܐܢ</persName>
                <persName type="sic"
                          xml:id="name297-4b"
                          corresp="#name297-2 #name297-3 #name297-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib297-4">ܡܝܛܪܘܦܘܠܝܛܳܐ <forename>ܝܰܥܩܘܒ</forename> ܡܺܝܪܺܝܓܰܐܢ</persName>
+                         source="#bib297-4">ܡܝܛܪܘܦܘܠܝܛܳܐ <forename sort="1">ܝܰܥܩܘܒ</forename> ܡܺܝܪܺܝܓܰܐܢ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܡܝܪܝܓܐܢ</addName>
+                  <forename sort="1">ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܪܝܓܐܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yaʿqub</forename> 
-                  <surname>Mīrījān</surname>
+                  <forename sort="1">Yaʿqub</forename> 
+                  <surname sort="2">Mīrījān</surname>
                </persName>
                <death when="1804" source="#bib297-2">1804</death>
                <bibl xml:id="bib297-2">

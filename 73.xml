@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -98,31 +99,39 @@
                          xml:id="name73-2"
                          corresp="#name73-3 #name73-4a #name73-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib73-2">The Priest <forename>Cyrus</forename> of Baṭnan</persName>
+                         source="#bib73-2">
+                  <addName type="untagged-title" sort="2">The Priest</addName> 
+                  <forename sort="1">Cyrus</forename> 
+                  <addName type="untagged-title" sort="2">of Baṭnan</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name73-3"
                          corresp="#name73-2 #name73-4a #name73-4b"
                          xml:lang="ar"
-                         source="#bib73-3">القس <forename>قورا</forename> البطناني</persName>
+                         source="#bib73-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">قورا</forename> 
+                  <addName type="untagged-title" sort="2">البطناني</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name73-4a"
                          corresp="#name73-2 #name73-3 #name73-4b"
                          xml:lang="syr"
-                         source="#bib73-4">ܩܫܝܫܐ <forename>ܩܘܪܐ</forename> ܕܒܛܢܢ</persName>
+                         source="#bib73-4">ܩܫܝܫܐ <forename sort="1">ܩܘܪܐ</forename> ܕܒܛܢܢ</persName>
                <persName type="sic"
                          xml:id="name73-4b"
                          corresp="#name73-2 #name73-3 #name73-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib73-4">ܩܰܫܝܫܳܐ <forename>ܩܘܪܐ</forename> ܕܒܰܛܢܳܢ</persName>
+                         source="#bib73-4">ܩܰܫܝܫܳܐ <forename sort="1">ܩܘܪܐ</forename> ܕܒܰܛܢܳܢ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܩܘܪܐ</forename> 
-                  <addName type="untagged-title">ܕܒܛܢܢ</addName>
+                  <forename sort="1">ܩܘܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܒܛܢܢ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Quro</forename> 
-                  <addName type="untagged-title">of Baṭnan</addName>
+                  <forename sort="1">Quro</forename> 
+                  <addName type="untagged-title" sort="2">of Baṭnan</addName>
                </persName>
                <listEvent>
                   <event when="0582" source="#bib73-2" type="untagged">

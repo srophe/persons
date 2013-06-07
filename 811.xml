@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,32 +100,45 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib811-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yaʿqub</forename> 
-                  <addName type="untagged-title">of Nisibis</addName>
+                  <forename sort="1">Yaʿqub</forename> 
+                  <addName type="untagged-title" sort="2">of Nisibis</addName>
                </persName>
                <persName type="sic"
                          xml:id="name811-2"
                          corresp="#name811-3 #name811-4a #name811-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib811-2">St. <forename>Jacob</forename>, bishop of Nisibin</persName>
+                         source="#bib811-2">
+                  <addName type="untagged-title" sort="2">St.</addName> 
+                  <forename sort="1">Jacob</forename>, <addName type="untagged-title" sort="2">bishop of Nisibin</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name811-3"
                          corresp="#name811-2 #name811-4a #name811-4b"
                          xml:lang="ar"
-                         source="#bib811-3">مار <forename>يعقوب</forename> اسقف نصيبين</persName>
+                         source="#bib811-3">
+                  <addName type="untagged-title" sort="2">مار</addName> 
+                  <forename sort="1">يعقوب</forename> 
+                  <addName type="untagged-title" sort="2">اسقف نصيبين</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name811-4a"
                          corresp="#name811-2 #name811-3 #name811-4b"
                          xml:lang="syr"
-                         source="#bib811-4">ܡܪܝ <forename>ܝܥܩܘܒ</forename> ܐܦܝܣܩܘܦܐ ܕܢܨܝܒܝܢ</persName>
+                         source="#bib811-4">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܢܨܝܒܝܢ</addName>
+               </persName>
                <persName type="sic"
                          xml:id="name811-4b"
                          corresp="#name811-2 #name811-3 #name811-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib811-4">ܡܳܪܝ <forename>ܝܰܥܩܽܘܒ</forename> ܐܶܦܺܝܣܩܽܘܦܐ ܕܰܢܨܺܝܒܺܝܢ</persName>
+                         source="#bib811-4">
+                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
+                  <forename sort="1">ܝܰܥܩܽܘܒ</forename> ܐܶܦܺܝܣܩܽܘܦܐ ܕܰܢܨܺܝܒܺܝܢ</persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܥܩܘܒ</forename> 
-                  <addName type="untagged-title">ܕܢܨܝܒܝܢ</addName>
+                  <forename sort="1">ܝܥܩܘܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܨܝܒܝܢ</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/241281846</idno>
                <death notBefore="0337" notAfter="0338" source="#bib811-1">337/8</death>

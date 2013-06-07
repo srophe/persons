@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,35 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib50-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Yuḥanon</forename> 
-                  <addName type="untagged-title">of Tella</addName>
+                  <forename sort="1">Yuḥanon</forename> 
+                  <addName type="untagged-title" sort="2">of Tella</addName>
                </persName>
                <persName type="sic"
                          xml:id="name50-2"
                          corresp="#name50-3 #name50-4a #name50-4b"
                          xml:lang="syr-Latn-x-barsoum"
-                         source="#bib50-2">St. <forename>John</forename> 
-                  <addName type="untagged-title">of Tella</addName>
+                         source="#bib50-2">St. <forename sort="1">John</forename> 
+                  <addName type="untagged-title" sort="2">of Tella</addName>
                </persName>
                <persName type="sic"
                          xml:id="name50-3"
                          corresp="#name50-2 #name50-4a #name50-4b"
                          xml:lang="ar"
-                         source="#bib50-3"> مار <forename>يوحنا</forename> التلي</persName>
+                         source="#bib50-3"> مار <forename sort="1">يوحنا</forename> التلي</persName>
                <persName type="sic"
                          xml:id="name50-4a"
                          corresp="#name50-2 #name50-3 #name50-4b"
                          xml:lang="syr"
-                         source="#bib50-4">ܡܪܝ <forename>ܝܘܚܢܢ</forename> ܕܬܠܐ</persName>
+                         source="#bib50-4">ܡܪܝ <forename sort="1">ܝܘܚܢܢ</forename> ܕܬܠܐ</persName>
                <persName type="sic"
                          xml:id="name50-4b"
                          corresp="#name50-2 #name50-3 #name50-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib50-4">ܡܳܪܝ <forename>ܝܘܚܰܢܢ ܕܬܶܠܐ</forename>
+                         source="#bib50-4">ܡܳܪܝ <forename sort="1">ܝܘܚܰܢܢ ܕܬܶܠܐ</forename>
                </persName>
                <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename>ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title">ܕܬܠܐ</addName>
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܠܐ</addName>
                </persName>
                <idno type="URI">http://worldcat.org/identities/np-john bar cursus of tella$d 538</idno>
                <idno type="URI">http://viaf.org/viaf/34420966</idno>

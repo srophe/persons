@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,42 +100,42 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib375-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Baselios Gewargis</forename>
+                  <forename sort="1">Baselios Gewargis</forename>
                </persName>
                <persName type="sic"
                          xml:id="name375-2"
                          corresp="#name375-3 #name375-4a #name375-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib375-2">
-                  <forename>George</forename>, <surname>son of Abraham ʿAbd al-Nur</surname> 
-                  <addName type="untagged-title">of Aleppo</addName>
+                  <forename sort="1">George</forename>, <surname sort="2">son of Abraham ʿAbd al-Nur</surname> 
+                  <addName type="untagged-title" sort="2">of Aleppo</addName>
                </persName>
                <persName type="sic"
                          xml:id="name375-3"
                          corresp="#name375-2 #name375-4a #name375-4b"
                          xml:lang="ar"
                          source="#bib375-3">
-                  <forename>جرجس</forename> 
-                  <surname>بن ابراهيم عبدالنور</surname> 
-                  <addName type="untagged-title">الحلبي</addName>
+                  <forename sort="1">جرجس</forename> 
+                  <surname sort="2">بن ابراهيم عبدالنور</surname> 
+                  <addName type="untagged-title" sort="2">الحلبي</addName>
                </persName>
                <persName type="sic"
                          xml:id="name375-4a"
                          corresp="#name375-2 #name375-3 #name375-4b"
                          xml:lang="syr"
                          source="#bib375-4">
-                  <forename>ܓܘܪܓܝܣ</forename> 
-                  <surname>ܒܪ ܐܒܪܗܡ ܥܒܕܐܠܢܘܪ</surname> 
-                  <addName type="untagged-title">ܚܠܒܝܐ</addName>
+                  <forename sort="1">ܓܘܪܓܝܣ</forename> 
+                  <surname sort="2">ܒܪ ܐܒܪܗܡ ܥܒܕܐܠܢܘܪ</surname> 
+                  <addName type="untagged-title" sort="2">ܚܠܒܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name375-4b"
                          corresp="#name375-2 #name375-3 #name375-4a"
                          xml:lang="syr-Syrj"
                          source="#bib375-4">
-                  <forename>ܓܶܘܰܪܓܝܣ</forename> 
-                  <surname>ܒܰܪ ܐܰܒܪܗܡ ܥܰܒܕܐܠܢܽܘܪ</surname> 
-                  <addName type="untagged-title">ܚܳܠܒܳܝܐ</addName>
+                  <forename sort="1">ܓܶܘܰܪܓܝܣ</forename> 
+                  <surname sort="2">ܒܰܪ ܐܰܒܪܗܡ ܥܰܒܕܐܠܢܽܘܪ</surname> 
+                  <addName type="untagged-title" sort="2">ܚܳܠܒܳܝܐ</addName>
                </persName>
                <birth when="1707" source="#bib375-1">1707</birth>
                <death when="1748" source="#bib375-1">1748</death>

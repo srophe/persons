@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,30 +100,30 @@
                          corresp="#name904-5b #name904-6a"
                          xml:lang="syr"
                          source="#bib904-5">
-                  <forename>ܐܢܘܫ</forename> 
-                  <addName type="untagged-title">ܕܦܝܪܘܙܫܒܘܪ</addName>
+                  <forename sort="1">ܐܢܘܫ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܦܝܪܘܙܫܒܘܪ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name904-5b"
                          corresp="#name904-5a #name904-6b"
                          xml:lang="syr-Syrn"
                          source="#bib904-5">
-                  <forename>ܐܵܢܘܿܫ</forename> 
-                  <addName type="untagged-title">ܕܦܝܼܪܘܿܙܫܵܒܘܿܪ</addName>
+                  <forename sort="1">ܐܵܢܘܿܫ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܦܝܼܪܘܿܙܫܵܒܘܿܪ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name904-6a"
                          corresp="#name904-6b #name904-5a"
                          xml:lang="syr"
                          source="#bib904-6">
-                  <forename>ܐܢܘܫ</forename> 
-                  <addName type="untagged-title">ܕܦܝܪܘܙܫܒܘܪ</addName>
+                  <forename sort="1">ܐܢܘܫ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܦܝܪܘܙܫܒܘܪ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Anush</forename> 
-                  <addName type="untagged-title">of Pirozshabor</addName>
+                  <forename sort="1">Anush</forename> 
+                  <addName type="untagged-title" sort="2">of Pirozshabor</addName>
                </persName>
                <bibl xml:id="bib904-5">
                   <title>Abdisho (YdQ)</title>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,35 +100,35 @@
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib697-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Qiyore</forename> of <addName type="untagged-title">Edessa</addName>
+                  <forename sort="1">Qiyore</forename> of <addName type="untagged-title" sort="2">Edessa</addName>
                </persName>
                <persName type="sic"
                          xml:id="name697-5a"
                          corresp="#name697-5b #name697-6a"
                          xml:lang="syr"
                          source="#bib697-5">
-                  <forename>ܩܝܘܪ̈ܐ</forename>
+                  <forename sort="1">ܩܝܘܪ̈ܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name697-5b"
                          corresp="#name697-5a #name697-6b"
                          xml:lang="syr-Syrn"
                          source="#bib697-5">
-                  <forename>ܩܝܼܘܿܪܹ̈ܐ</forename>
+                  <forename sort="1">ܩܝܼܘܿܪܹ̈ܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name697-6a"
                          corresp="#name697-6b #name697-5a"
                          xml:lang="syr"
                          source="#bib697-6">
-                  <forename>ܩܝܘܪܐ</forename>
+                  <forename sort="1">ܩܝܘܪܐ</forename>
                </persName>
                <persName type="sic"
                          xml:id="name697-6b"
                          corresp="#name697-6a #name697-5b"
                          xml:lang="syr-Syrj"
                          source="#bib697-6">
-                  <forename>ܩܝܽܘܪܳܐ</forename>
+                  <forename sort="1">ܩܝܽܘܪܳܐ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/71784444</idno>
                <idno type="URI">http://viaf.org/viaf/89582929</idno>

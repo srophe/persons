@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -102,30 +103,30 @@
                          corresp="#name926-5b #name926-6a"
                          xml:lang="syr"
                          source="#bib926-5">
-                  <forename>ܐܒܙܘܕ</forename> 
-                  <addName type="untagged-title">ܐܣܟܘܠܝܐ</addName>
+                  <forename sort="1">ܐܒܙܘܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܣܟܘܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name926-5b"
                          corresp="#name926-5a #name926-6b"
                          xml:lang="syr-Syrn"
                          source="#bib926-5">
-                  <forename>ܐܲܒܙܘܿܕ</forename> 
-                  <addName type="untagged-title">ܐܸܣܟܘܿܠܵܝܵܐ</addName>
+                  <forename sort="1">ܐܲܒܙܘܿܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܸܣܟܘܿܠܵܝܵܐ</addName>
                </persName>
                <persName type="sic"
                          xml:id="name926-6a"
                          corresp="#name926-6b #name926-5a"
                          xml:lang="syr"
                          source="#bib926-6">
-                  <forename>ܐܒܙܘܕ</forename> 
-                  <addName type="untagged-title">ܐܣܟܘܠܝܐ</addName>
+                  <forename sort="1">ܐܒܙܘܕ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܣܟܘܠܝܐ</addName>
                </persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename>Abzod</forename> 
-                  <addName type="untagged-title">Eskolaya</addName>
+                  <forename sort="1">Abzod</forename> 
+                  <addName type="untagged-title" sort="2">Eskolaya</addName>
                </persName>
                <bibl xml:id="bib926-5">
                   <title>Abdisho (YdQ)</title>
