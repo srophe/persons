@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,45 +96,39 @@
       <body>
          <listPerson>
             <person xml:id="person-190">
-               <persName type="sic"
-                         xml:id="name190-2"
+               <persName xml:id="name190-2"
                          corresp="#name190-3 #name190-4a #name190-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib190-2">
                   <addName type="untagged-title" sort="2">The Monk</addName> 
                   <forename sort="1">Lazarus</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name190-3"
+               <persName xml:id="name190-3"
                          corresp="#name190-2 #name190-4a #name190-4b"
                          xml:lang="ar"
                          source="#bib190-3">
                   <addName type="untagged-title" sort="2">الراهب</addName> 
                   <forename sort="1">لعازر</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name190-4a"
-                         corresp="#name190-2 #name190-3 #name190-4b"
+               <persName xml:id="name190-4a"
+                         corresp="#name190-3 #name190-2 #name190-4b"
                          xml:lang="syr"
                          source="#bib190-4">
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
                   <forename sort="1">ܠܥܙܪ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name190-4b"
-                         corresp="#name190-2 #name190-3 #name190-4a"
+               <persName xml:id="name190-4b"
+                         corresp="#name190-3 #name190-2 #name190-4a"
                          xml:lang="syr-Syrj"
                          source="#bib190-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
                   <forename sort="1">ܠܳܥܙܪ</forename>
                </persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܠܥܙܪ</forename> 
                   <addName type="untagged-title" sort="2">ܕܕܝܪܐ ܣܪܓܝܣܝܗ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Loʿozar</forename> 
                   <addName type="untagged-title" sort="2">of Dayr Sarjīsiyya</addName>
                </persName>

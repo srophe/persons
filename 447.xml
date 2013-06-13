@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,51 +96,44 @@
       <body>
          <listPerson>
             <person xml:id="person-447">
-               <persName type="sic"
-                         xml:id="name447-3"
-                         corresp="#name447-2 #name447-4a #name447-4b"
+               <persName xml:id="name447-3"
+                         corresp=" #name447-4a #name447-4b"
                          xml:lang="ar"
                          source="#bib447-3">
                   <Barsoum_Ar_Full xmlns="">الدياطسرون</Barsoum_Ar_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-4a"
-                         corresp="#name447-2 #name447-3 #name447-4b"
+               <persName xml:id="name447-4a"
+                         corresp="#name447-3#name447-4b"
                          xml:lang="syr"
                          source="#bib447-4">
                   <Barsoum_Sy_NV_Full xmlns="">ܕܝܐܛܣܪܘܢ</Barsoum_Sy_NV_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-4b"
-                         corresp="#name447-2 #name447-3 #name447-4a"
+               <persName xml:id="name447-4b"
+                         corresp="#name447-3#name447-4a"
                          xml:lang="syr-Syrj"
                          source="#bib447-4">
                   <Barsoum_Sy_V_Full xmlns="">ܕܺܝܺܐܛܶܣܪܘܢ</Barsoum_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-5a"
-                         corresp="#name447-5b #name447-6a"
+               <persName xml:id="name447-5a"
+                         corresp="#name447-5b #name447-6a #name447-6b"
                          xml:lang="syr"
                          source="#bib447-5">
                   <Abdisho_YdQ_Sy_NV_Full xmlns="">ܕܝܛܣܪܘܢ</Abdisho_YdQ_Sy_NV_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-5b"
-                         corresp="#name447-5a #name447-6b"
+               <persName xml:id="name447-5b"
+                         corresp="#name447-5a #name447-6a #name447-6b"
                          xml:lang="syr-Syrn"
                          source="#bib447-5">
                   <Abdisho_YdQ_Sy_V_Full xmlns="">ܕܝܼܵܛܵܣܵܪܘܿܢ</Abdisho_YdQ_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-6a"
-                         corresp="#name447-6b #name447-5a"
+               <persName xml:id="name447-6a"
+                         corresp="#name447-6b #name447-5a #name447-5b"
                          xml:lang="syr"
                          source="#bib447-6">
                   <Abdisho_BO_Sy_NV_Full xmlns="">ܕܝܛܣܪܘܢ</Abdisho_BO_Sy_NV_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name447-6b"
-                         corresp="#name447-6a #name447-5b"
+               <persName xml:id="name447-6b"
+                         corresp="#name447-6a #name447-5a #name447-5b"
                          xml:lang="syr-Syrj"
                          source="#bib447-6">
                   <Abdisho_BO_Sy_V_Full xmlns="">ܕܺܝܰܛܶܣܰܪܳܘܢ</Abdisho_BO_Sy_V_Full>

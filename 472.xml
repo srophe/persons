@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,49 +96,43 @@
       <body>
          <listPerson>
             <person xml:id="person-472">
-               <persName type="sic"
-                         xml:id="name472-1"
+               <persName xml:id="name472-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib472-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Eliya</forename> 
                   <addName type="untagged-title" sort="2">of Nisibis</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-2"
+               <persName xml:id="name472-2"
                          corresp="#name472-3 #name472-4a #name472-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib472-2">
                   <forename sort="1">Elijah</forename> 
                   <addName type="untagged-title" sort="2">Bar Shinaya</addName>, <addName type="untagged-title" sort="2">metropolitan of Nisibin</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-3"
+               <persName xml:id="name472-3"
                          corresp="#name472-2 #name472-4a #name472-4b"
                          xml:lang="ar"
                          source="#bib472-3">المطران <forename sort="1">ايليا</forename> النصيبيني المعروف بابن السنّي</persName>
-               <persName type="sic"
-                         xml:id="name472-4a"
-                         corresp="#name472-2 #name472-3 #name472-4b"
+               <persName xml:id="name472-4a"
+                         corresp="#name472-3 #name472-2 #name472-4b"
                          xml:lang="syr"
                          source="#bib472-4">
                   <forename sort="1">ܐܠܝܐ</forename> 
                   <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ ܕܝܕܝܥ ܒܪܝܫܝܢܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-4b"
-                         corresp="#name472-2 #name472-3 #name472-4a"
+               <persName xml:id="name472-4b"
+                         corresp="#name472-3 #name472-2 #name472-4a"
                          xml:lang="syr-Syrj"
                          source="#bib472-4">
                   <forename sort="1">ܐܶܠܝܐ</forename> 
                   <addName type="untagged-title" sort="2">ܢܨܺܝܒܺܝܢܳܝܐ ܕܺܝܕܺܝܥ ܒܪܺܝܫܝܢܳܝܐ</addName>
                </persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܠܝܐ</forename> 
                   <addName type="untagged-title" sort="2">ܢܨܝܒܝܢܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-5a"
+               <persName xml:id="name472-5a"
                          corresp="#name472-5b #name472-6a"
                          xml:lang="syr"
                          source="#bib472-5">
@@ -145,18 +140,16 @@
                   <addName type="family" sort="2">ܒܪ ܫܢܝܐ</addName> 
                   <addName type="untagged-title" sort="2">ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-5b"
-                         corresp="#name472-5a #name472-6b"
+               <persName xml:id="name472-5b"
+                         corresp="#name472-5a #name472-6a"
                          xml:lang="syr-Syrn"
                          source="#bib472-5">
                   <forename sort="1">ܐܹܠܝܼܵܐ</forename> 
                   <addName type="family" sort="2">ܒܲܪ ܫܸܢܵܝܵܐ</addName> 
                   <addName type="untagged-title" sort="2">ܡܝܼܛܪܵܦܘܿܠܹܝܛܵܐ ܕܨܘܿܒܵܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name472-6a"
-                         corresp="#name472-6b #name472-5a"
+               <persName xml:id="name472-6a"
+                         corresp=" #name472-5a #name472-5b"
                          xml:lang="syr"
                          source="#bib472-6">
                   <forename sort="1">ܐܠܝܐ</forename> 

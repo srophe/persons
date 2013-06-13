@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Should this record be matched with http://viaf.org/hosted/syriac/32757/ or http://viaf.org/hosted/syriac/27999/ ?</change>
@@ -96,58 +97,48 @@
       <body>
          <listPerson>
             <person xml:id="person-856">
-               <persName type="sic"
-                         xml:id="name856-2"
-                         corresp="#name856-3 #name856-4a #name856-4b"
+               <persName xml:id="name856-2"
+                         corresp="#name856-3"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib856-2">
                   <forename sort="1">Macarius</forename> 
                   <addName type="untagged-title" sort="2">the Great and Egyptian</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name856-3"
-                         corresp="#name856-2 #name856-4a #name856-4b"
+               <persName xml:id="name856-3"
+                         corresp="#name856-2"
                          xml:lang="ar"
                          source="#bib856-3">
                   <forename sort="1">مقاريوس</forename> 
                   <addName type="untagged-title" sort="2">المصري</addName>
                </persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name856-5a"
+               <persName xml:id="name856-5a"
                          corresp="#name856-5b #name856-6a"
                          xml:lang="syr"
                          source="#bib856-5">
                   <forename sort="1">ܡܩܪܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name856-5b"
-                         corresp="#name856-5a #name856-6b"
+               <persName xml:id="name856-5b"
+                         corresp="#name856-5a #name856-6a"
                          xml:lang="syr-Syrn"
                          source="#bib856-5">
                   <forename sort="1">ܡܲܩܵܪܝܼܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܚܪܹܢܵܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name856-6a"
-                         corresp="#name856-6b #name856-5a"
+               <persName xml:id="name856-6a"
+                         corresp=" #name856-5a #name856-5b"
                          xml:lang="syr"
                          source="#bib856-6">
                   <forename sort="1">ܡܩܪܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Macarius</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name856-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib856-7">Abba Macarius</persName>
+               <persName xml:id="name856-7" xml:lang="syr-Latn-x-cbsc" source="#bib856-7">Abba Macarius</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|856</idno>
                <death when="0390" source="#bib856-2">390</death>
                <bibl xml:id="bib856-2">

@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,58 +96,49 @@
       <body>
          <listPerson>
             <person xml:id="person-840">
-               <persName type="sic"
-                         xml:id="name840-3"
-                         corresp="#name840-2 #name840-4a #name840-4b"
+               <persName xml:id="name840-3"
+                         corresp=" #name840-4a #name840-4b"
                          xml:lang="ar"
                          source="#bib840-3">
                   <addName type="untagged-title" sort="2">افريقيانس</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-4a"
-                         corresp="#name840-2 #name840-3 #name840-4b"
+               <persName xml:id="name840-4a"
+                         corresp="#name840-3#name840-4b"
                          xml:lang="syr"
                          source="#bib840-4">
                   <addName type="untagged-title" sort="2">ܐܦܪܝܩܝܐܢܘܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-4b"
-                         corresp="#name840-2 #name840-3 #name840-4a"
+               <persName xml:id="name840-4b"
+                         corresp="#name840-3#name840-4a"
                          xml:lang="syr-Syrj"
                          source="#bib840-4">
                   <addName type="untagged-title" sort="2">ܐܰܦܪܝܩܝܰܐܢܘܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-5a"
-                         corresp="#name840-5b #name840-6a"
+               <persName xml:id="name840-5a"
+                         corresp="#name840-5b #name840-6a #name840-6b"
                          xml:lang="syr"
                          source="#bib840-5">
                   <addName type="untagged-title" sort="2">ܐܦܪܩܝܢܘܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-5b"
-                         corresp="#name840-5a #name840-6b"
+               <persName xml:id="name840-5b"
+                         corresp="#name840-5a #name840-6a #name840-6b"
                          xml:lang="syr-Syrn"
                          source="#bib840-5">
                   <addName type="untagged-title" sort="2">ܐܲܦܪܸܩܝܵܢܘܿܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-6a"
-                         corresp="#name840-6b #name840-5a"
+               <persName xml:id="name840-6a"
+                         corresp="#name840-6b #name840-5a #name840-5b"
                          xml:lang="syr"
                          source="#bib840-6">
                   <addName type="untagged-title" sort="2">ܐܦܪܝܩܝܢܘܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name840-6b"
-                         corresp="#name840-6a #name840-5b"
+               <persName xml:id="name840-6b"
+                         corresp="#name840-6a #name840-5a #name840-5b"
                          xml:lang="syr-Syrj"
                          source="#bib840-6">
                   <addName type="untagged-title" sort="2">ܐܰܦܪܝܺܩܝܰܢܳܘܣ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Julius</forename> 
                   <addName type="untagged-title" sort="2">Africanus</addName>
                </persName>

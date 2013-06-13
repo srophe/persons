@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,37 +96,31 @@
       <body>
          <listPerson>
             <person xml:id="person-230">
-               <persName type="sic"
-                         xml:id="name230-2"
+               <persName xml:id="name230-2"
                          corresp="#name230-3 #name230-4a #name230-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib230-2">
                   <addName type="untagged-title" sort="2">The Edessene Chronicler</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name230-3"
+               <persName xml:id="name230-3"
                          corresp="#name230-2 #name230-4a #name230-4b"
                          xml:lang="ar"
                          source="#bib230-3">
                   <addName type="untagged-title" sort="2">المؤرخ الرهاوي</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name230-4a"
-                         corresp="#name230-2 #name230-3 #name230-4b"
+               <persName xml:id="name230-4a"
+                         corresp="#name230-3 #name230-2 #name230-4b"
                          xml:lang="syr"
                          source="#bib230-4">
                   <addName type="untagged-title" sort="2">ܡܟܬܒܢܐ ܐܘܪܗܝܐ </addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name230-4b"
-                         corresp="#name230-2 #name230-3 #name230-4a"
+               <persName xml:id="name230-4b"
+                         corresp="#name230-3 #name230-2 #name230-4a"
                          xml:lang="syr-Syrj"
                          source="#bib230-4">
                   <addName type="untagged-title" sort="2">ܡܰܟܬܒܳܢܐ ܐܘܪܗܳܝܳܐ </addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Chronicle of 1234</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|230</idno>

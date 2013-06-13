@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,48 +96,39 @@
       <body>
          <listPerson>
             <person xml:id="person-142">
-               <persName type="sic"
-                         xml:id="name142-2"
+               <persName xml:id="name142-2"
                          corresp="#name142-3 #name142-4a #name142-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib142-2">
                   <forename sort="1">Theodorus</forename> 
                   <addName type="family" sort="2">Bar Zarūdī</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name142-3"
+               <persName xml:id="name142-3"
                          corresp="#name142-2 #name142-4a #name142-4b"
                          xml:lang="ar"
                          source="#bib142-3">
                   <forename sort="1">ثاودورس</forename> 
                   <addName type="family" sort="2">ابن زرودي</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name142-4a"
-                         corresp="#name142-2 #name142-3 #name142-4b"
+               <persName xml:id="name142-4a"
+                         corresp="#name142-3 #name142-2 #name142-4b"
                          xml:lang="syr"
                          source="#bib142-4">
                   <forename sort="1">ܬܐܘܕܘܪܘܣ</forename> 
                   <addName type="family" sort="2">ܒܪ ܙܪܘܕܝ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name142-4b"
-                         corresp="#name142-2 #name142-3 #name142-4a"
+               <persName xml:id="name142-4b"
+                         corresp="#name142-3 #name142-2 #name142-4a"
                          xml:lang="syr-Syrj"
                          source="#bib142-4">
                   <forename sort="1">ܬܶܐܘܕܘܪܘܣ</forename> 
                   <addName type="family" sort="2">ܒܰܪ ܙܪܘܕܝ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodoros</forename> 
                   <addName type="family" sort="2">bar Zarudi</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name142-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib142-7">Theodore bar Zarudi</persName>
+               <persName xml:id="name142-7" xml:lang="syr-Latn-x-cbsc" source="#bib142-7">Theodore bar Zarudi</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|142</idno>
                <idno type="URI">http://books.google.com/books?id=oFHLFJd74sAC&amp;pg=PA1234&amp;lpg=PA1234&amp;dq=theodorus+bar+zarudi&amp;source=bl&amp;ots=4v61R6NGHA&amp;sig=kpR0j9H3HyPSRfQwFYuRI2VRlvI&amp;hl=en&amp;sa=X&amp;ei=nIUEULOKK_T16gHNhrHHBg&amp;ved=0CEsQ6AEwBg#v=onepage&amp;q=theodorus%20bar%20zarudi&amp;f=false</idno>
                <bibl xml:id="bib142-2">

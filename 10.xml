@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,73 +96,62 @@
       <body>
          <listPerson>
             <person xml:id="person-10">
-               <persName type="sic"
-                         xml:id="name10-1"
+               <persName xml:id="name10-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib10-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Aphrahaṭ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-2"
+               <persName xml:id="name10-2"
                          corresp="#name10-3 #name10-4a #name10-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib10-2">
                   <forename sort="1">Aphrahat</forename> 
                   <addName type="untagged-title" sort="2">the Persian</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-3"
+               <persName xml:id="name10-3"
                          corresp="#name10-2 #name10-4a #name10-4b"
                          xml:lang="ar"
                          source="#bib10-3">
                   <forename sort="1">افرهاط</forename> 
                   <addName type="untagged-title" sort="2">الفارسي</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-4a"
-                         corresp="#name10-2 #name10-3 #name10-4b"
+               <persName xml:id="name10-4a"
+                         corresp="#name10-3 #name10-2 #name10-4b"
                          xml:lang="syr"
                          source="#bib10-4">
                   <forename sort="1">ܐܦܪܗܛ</forename> 
                   <addName type="untagged-title" sort="2">ܦܪܣܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-4b"
-                         corresp="#name10-2 #name10-3 #name10-4a"
+               <persName xml:id="name10-4b"
+                         corresp="#name10-3 #name10-2 #name10-4a"
                          xml:lang="syr-Syrj"
                          source="#bib10-4">
                   <forename sort="1">ܐܰܦܪܗܰܛ</forename> 
                   <addName type="untagged-title" sort="2">ܦܳܪܣܳܝܐ</addName>
                </persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܦܪܗܛ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-5a"
+               <persName xml:id="name10-5a"
                          corresp="#name10-5b #name10-6a"
                          xml:lang="syr"
                          source="#bib10-5">
                   <forename sort="1">ܐܦܪܗܛ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-5b"
-                         corresp="#name10-5a #name10-6b"
+               <persName xml:id="name10-5b"
+                         corresp="#name10-5a #name10-6a"
                          xml:lang="syr-Syrn"
                          source="#bib10-5">
                   <forename sort="1">ܐܲܦܪܵܗܵܛ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-6a"
-                         corresp="#name10-6b #name10-5a"
+               <persName xml:id="name10-6a"
+                         corresp=" #name10-5a #name10-5b"
                          xml:lang="syr"
                          source="#bib10-6">
                   <forename sort="1">ܐܦܪܗܛ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name10-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib10-7">Aphrahat</persName>
+               <persName xml:id="name10-7" xml:lang="syr-Latn-x-cbsc" source="#bib10-7">Aphrahat</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|10</idno>
                <idno type="URI">http://viaf.org/viaf/37707408</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n50-41616</idno>

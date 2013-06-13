@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,41 +96,35 @@
       <body>
          <listPerson>
             <person xml:id="person-258">
-               <persName type="sic"
-                         xml:id="name258-2"
+               <persName xml:id="name258-2"
                          corresp="#name258-3 #name258-4a #name258-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib258-2">
                   <forename sort="1">Philoxenus</forename> 
                   <addName type="untagged-title" sort="2">the Scribe</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name258-3"
+               <persName xml:id="name258-3"
                          corresp="#name258-2 #name258-4a #name258-4b"
                          xml:lang="ar"
                          source="#bib258-3">
                   <forename sort="1">فيلكسينس</forename> 
                   <addName type="untagged-title" sort="2">الكاتب</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name258-4a"
-                         corresp="#name258-2 #name258-3 #name258-4b"
+               <persName xml:id="name258-4a"
+                         corresp="#name258-3 #name258-2 #name258-4b"
                          xml:lang="syr"
                          source="#bib258-4">
                   <forename sort="1">ܦܝܠܘܟܣܝܢܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܬܘܒܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name258-4b"
-                         corresp="#name258-2 #name258-3 #name258-4a"
+               <persName xml:id="name258-4b"
+                         corresp="#name258-3 #name258-2 #name258-4a"
                          xml:lang="syr-Syrj"
                          source="#bib258-4">
                   <forename sort="1">ܦܝܠܘܟܣܝܢܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܳܬܘܒܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Philoxenos</forename> the Scrib</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|258</idno>
                <death when="1421" source="#bib258-2">1421</death>

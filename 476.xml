@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,32 +96,28 @@
       <body>
          <listPerson>
             <person xml:id="person-476">
-               <persName type="sic"
-                         xml:id="name476-2"
+               <persName xml:id="name476-2"
                          corresp="#name476-3 #name476-4a #name476-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib476-2">Two accounts of the life of <addName type="untagged-title" sort="2">St.</addName> 
                   <forename sort="1">Ephraim</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name476-3"
+               <persName xml:id="name476-3"
                          corresp="#name476-2 #name476-4a #name476-4b"
                          xml:lang="ar"
                          source="#bib476-3">قصتان ل<addName type="untagged-title" sort="2">مار</addName> 
                   <forename sort="1">افرام</forename> 
                   <addName type="untagged-title" sort="2">الملفان</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name476-4a"
-                         corresp="#name476-2 #name476-3 #name476-4b"
+               <persName xml:id="name476-4a"
+                         corresp="#name476-3 #name476-2 #name476-4b"
                          xml:lang="syr"
                          source="#bib476-4">ܬܪܬܝܢ ܬܫܥܝ̈ܬܐ ܕ<addName type="untagged-title" sort="2">ܡܪܝ</addName> 
                   <forename sort="1">ܐܦܪܝܡ</forename> 
                   <addName type="untagged-title" sort="2">ܡܠܦܢܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name476-4b"
-                         corresp="#name476-2 #name476-3 #name476-4a"
+               <persName xml:id="name476-4b"
+                         corresp="#name476-3 #name476-2 #name476-4a"
                          xml:lang="syr-Syrj"
                          source="#bib476-4">ܬܰܪܬܶܝܢ ܬܰܫܶܥܝ̈ܬܐ ܕ<addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
                   <forename sort="1">ܐܰܦܪܝܡ</forename> 

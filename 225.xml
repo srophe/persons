@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,41 +96,35 @@
       <body>
          <listPerson>
             <person xml:id="person-225">
-               <persName type="sic"
-                         xml:id="name225-2"
+               <persName xml:id="name225-2"
                          corresp="#name225-3 #name225-4a #name225-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib225-2">
                   <forename sort="1">John</forename> 
                   <addName type="untagged-title" sort="2">of Tiflis</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name225-3"
+               <persName xml:id="name225-3"
                          corresp="#name225-2 #name225-4a #name225-4b"
                          xml:lang="ar"
                          source="#bib225-3">
                   <forename sort="1">يوحنا</forename> 
                   <addName type="untagged-title" sort="2">التفليسي</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name225-4a"
-                         corresp="#name225-2 #name225-3 #name225-4b"
+               <persName xml:id="name225-4a"
+                         corresp="#name225-3 #name225-2 #name225-4b"
                          xml:lang="syr"
                          source="#bib225-4">
                   <forename sort="1">ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܬܦܠܝܣܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name225-4b"
-                         corresp="#name225-2 #name225-3 #name225-4a"
+               <persName xml:id="name225-4b"
+                         corresp="#name225-3 #name225-2 #name225-4a"
                          xml:lang="syr-Syrj"
                          source="#bib225-4">
                   <forename sort="1">ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܬܶܦܠܝܣܳܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yuḥanon</forename> 
                   <addName type="untagged-title" sort="2">of Tbilisi</addName>
                </persName>

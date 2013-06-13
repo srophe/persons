@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,37 +96,31 @@
       <body>
          <listPerson>
             <person xml:id="person-4">
-               <persName type="sic"
-                         xml:id="name4-2"
+               <persName xml:id="name4-2"
                          corresp="#name4-3 #name4-4a #name4-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib4-2">
                   <Barsoum_En_Full xmlns="">The Psalms and Praises of Solomon</Barsoum_En_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name4-3"
+               <persName xml:id="name4-3"
                          corresp="#name4-2 #name4-4a #name4-4b"
                          xml:lang="ar"
                          source="#bib4-3">
                   <Barsoum_Ar_Full xmlns="">مزامير سليمان وتسابيحه</Barsoum_Ar_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name4-4a"
-                         corresp="#name4-2 #name4-3 #name4-4b"
+               <persName xml:id="name4-4a"
+                         corresp="#name4-3 #name4-2 #name4-4b"
                          xml:lang="syr"
                          source="#bib4-4">
                   <Barsoum_Sy_NV_Full xmlns="">ܡܙܡܘܪܐ ܕܫܠܝܡܘܢ ܘܬܫܒܚ̈ܬܗ</Barsoum_Sy_NV_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name4-4b"
-                         corresp="#name4-2 #name4-3 #name4-4a"
+               <persName xml:id="name4-4b"
+                         corresp="#name4-3 #name4-2 #name4-4a"
                          xml:lang="syr-Syrj"
                          source="#bib4-4">
                   <Barsoum_Sy_V_Full xmlns="">ܡܰܙܡܘܪܐ ܕܰܫܠܶܝܡܘܢ ܘܬܶܫܒܚ̈ܬܗ</Barsoum_Sy_V_Full>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Odes of Solomon</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|4</idno>

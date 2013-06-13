@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,45 +96,38 @@
       <body>
          <listPerson>
             <person xml:id="person-855">
-               <persName type="sic"
-                         xml:id="name855-2"
-                         corresp="#name855-3 #name855-4a #name855-4b"
+               <persName xml:id="name855-2"
+                         corresp="#name855-3"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib855-2">
                   <forename sort="1">Ammonius</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name855-3"
-                         corresp="#name855-2 #name855-4a #name855-4b"
+               <persName xml:id="name855-3"
+                         corresp="#name855-2"
                          xml:lang="ar"
                          source="#bib855-3">
                   <forename sort="1">امّونيوس</forename> 
                   <addName type="untagged-title" sort="2">كاتب الرسائل</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name855-5a"
+               <persName xml:id="name855-5a"
                          corresp="#name855-5b #name855-6a"
                          xml:lang="syr"
                          source="#bib855-5">
                   <forename sort="1">ܐܡܘܢܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name855-5b"
-                         corresp="#name855-5a #name855-6b"
+               <persName xml:id="name855-5b"
+                         corresp="#name855-5a #name855-6a"
                          xml:lang="syr-Syrn"
                          source="#bib855-5">
                   <forename sort="1">ܐܲܡܘܿܢܝܼܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name855-6a"
-                         corresp="#name855-6b #name855-5a"
+               <persName xml:id="name855-6a"
+                         corresp=" #name855-5a #name855-5b"
                          xml:lang="syr"
                          source="#bib855-6">
                   <forename sort="1">ܐܡܘܢܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ammonas</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|855</idno>

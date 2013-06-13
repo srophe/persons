@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,50 +96,42 @@
       <body>
          <listPerson>
             <person xml:id="person-324">
-               <persName type="sic"
-                         xml:id="name324-1"
+               <persName xml:id="name324-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib324-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Aḥob</forename> 
                   <addName type="untagged-title" sort="2">Qaṭraya</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name324-5a"
-                         corresp="#name324-5b #name324-6a"
+               <persName xml:id="name324-5a"
+                         corresp="#name324-5b #name324-6a #name324-6b"
                          xml:lang="syr"
                          source="#bib324-5">
                   <forename sort="1">ܐܚܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܩܛܪܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name324-5b"
-                         corresp="#name324-5a #name324-6b"
+               <persName xml:id="name324-5b"
+                         corresp="#name324-5a #name324-6a #name324-6b"
                          xml:lang="syr-Syrn"
                          source="#bib324-5">
                   <forename sort="1">ܐܲܚܘܼܒ</forename> 
                   <addName type="untagged-title" sort="2">ܩܸܛܪܵܝܵܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name324-6a"
-                         corresp="#name324-6b #name324-5a"
+               <persName xml:id="name324-6a"
+                         corresp="#name324-6b #name324-5a #name324-5b"
                          xml:lang="syr"
                          source="#bib324-6">
                   <forename sort="1">ܐܝܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܩܛܪܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name324-6b"
-                         corresp="#name324-6a #name324-5b"
+               <persName xml:id="name324-6b"
+                         corresp="#name324-6a #name324-5a #name324-5b"
                          xml:lang="syr-Syrj"
                          source="#bib324-6">
                   <forename sort="1">ܐܝܺܘܽܒ</forename> 
                   <addName type="untagged-title" sort="2">ܩܰܛܪܳܝܳܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name324-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib324-7">Ahob of Qatar</persName>
+               <persName xml:id="name324-7" xml:lang="syr-Latn-x-cbsc" source="#bib324-7">Ahob of Qatar</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|324</idno>
                <bibl xml:id="bib324-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

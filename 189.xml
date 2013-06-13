@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,41 +96,35 @@
       <body>
          <listPerson>
             <person xml:id="person-189">
-               <persName type="sic"
-                         xml:id="name189-2"
+               <persName xml:id="name189-2"
                          corresp="#name189-3 #name189-4a #name189-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib189-2">
                   <forename sort="1">Bar Qiqi</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name189-3"
+               <persName xml:id="name189-3"
                          corresp="#name189-2 #name189-4a #name189-4b"
                          xml:lang="ar"
                          source="#bib189-3">
                   <forename sort="1">ابن قيقي</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name189-4a"
-                         corresp="#name189-2 #name189-3 #name189-4b"
+               <persName xml:id="name189-4a"
+                         corresp="#name189-3 #name189-2 #name189-4b"
                          xml:lang="syr"
                          source="#bib189-4">
                   <forename sort="1">ܒܪ ܩܝܩܝ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name189-4b"
-                         corresp="#name189-2 #name189-3 #name189-4a"
+               <persName xml:id="name189-4b"
+                         corresp="#name189-3 #name189-2 #name189-4a"
                          xml:lang="syr-Syrj"
                          source="#bib189-4">
                   <forename sort="1">ܒܰܪ ܩܝܩܝ</forename>
                </persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
                   <addName type="family" sort="2">ܒܪ ܩܝܩܝ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ignatius</forename> 
                   <addName type="family" sort="2">bar Qiqi</addName>
                </persName>

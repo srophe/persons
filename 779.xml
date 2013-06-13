@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Does http://viaf.org/viaf/183991623 refer to the same person?</change>
@@ -96,50 +97,42 @@
       <body>
          <listPerson>
             <person xml:id="person-779">
-               <persName type="sic"
-                         xml:id="name779-1"
+               <persName xml:id="name779-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib779-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodora</forename> 
                   <addName type="untagged-title" sort="2">(Empress)</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name779-2"
+               <persName xml:id="name779-2"
                          corresp="#name779-3 #name779-4a #name779-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib779-2">
                   <addName type="untagged-title" sort="2">Empress</addName> 
                   <forename sort="1">Theodora</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name779-3"
+               <persName xml:id="name779-3"
                          corresp="#name779-2 #name779-4a #name779-4b"
                          xml:lang="ar"
                          source="#bib779-3">
                   <addName type="untagged-title" sort="2">القيصرة</addName> 
                   <forename sort="1">ثاودورة</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name779-4a"
-                         corresp="#name779-2 #name779-3 #name779-4b"
+               <persName xml:id="name779-4a"
+                         corresp="#name779-3 #name779-2 #name779-4b"
                          xml:lang="syr"
                          source="#bib779-4">
                   <addName type="untagged-title" sort="2">ܡܠܟܬܐ</addName> 
                   <forename sort="1">ܬܐܘܕܘܪܐ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name779-4b"
-                         corresp="#name779-2 #name779-3 #name779-4a"
+               <persName xml:id="name779-4b"
+                         corresp="#name779-3 #name779-2 #name779-4a"
                          xml:lang="syr-Syrj"
                          source="#bib779-4">
                   <addName type="untagged-title" sort="2">ܡܰܠܟܬܐ</addName> 
                   <forename sort="1">ܬܶܐܘܳܕܳܘܪܰܐ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name779-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib779-7">Theodora</persName>
+               <persName xml:id="name779-7" xml:lang="syr-Latn-x-cbsc" source="#bib779-7">Theodora</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|779</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n82-260537</idno>
                <idno type="URI">http://viaf.org/viaf/25968250</idno>

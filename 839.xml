@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,68 +96,56 @@
       <body>
          <listPerson>
             <person xml:id="person-839">
-               <persName type="sic"
-                         xml:id="name839-3"
-                         corresp="#name839-2 #name839-4a #name839-4b"
+               <persName xml:id="name839-3"
+                         corresp=" #name839-4a #name839-4b"
                          xml:lang="ar"
                          source="#bib839-3">
                   <forename sort="1">امونيوس</forename> 
                   <addName type="untagged-title" sort="2">الاسكندري</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-4a"
-                         corresp="#name839-2 #name839-3 #name839-4b"
+               <persName xml:id="name839-4a"
+                         corresp="#name839-3#name839-4b"
                          xml:lang="syr"
                          source="#bib839-4">
                   <forename sort="1">ܐܡܘܢܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-4b"
-                         corresp="#name839-2 #name839-3 #name839-4a"
+               <persName xml:id="name839-4b"
+                         corresp="#name839-3#name839-4a"
                          xml:lang="syr-Syrj"
                          source="#bib839-4">
                   <forename sort="1">ܐܰܡܘܢܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܰܠܟܣܢܕܪܳܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-5a"
-                         corresp="#name839-5b #name839-6a"
+               <persName xml:id="name839-5a"
+                         corresp="#name839-5b #name839-6a #name839-6b"
                          xml:lang="syr"
                          source="#bib839-5">
                   <forename sort="1">ܐܡܘܢܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-5b"
-                         corresp="#name839-5a #name839-6b"
+               <persName xml:id="name839-5b"
+                         corresp="#name839-5a #name839-6a #name839-6b"
                          xml:lang="syr-Syrn"
                          source="#bib839-5">
                   <forename sort="1">ܐܵܡܘܿܢܝܼܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-6a"
-                         corresp="#name839-6b #name839-5a"
+               <persName xml:id="name839-6a"
+                         corresp="#name839-6b #name839-5a #name839-5b"
                          xml:lang="syr"
                          source="#bib839-6">
                   <forename sort="1">ܐܡܘܢܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-6b"
-                         corresp="#name839-6a #name839-5b"
+               <persName xml:id="name839-6b"
+                         corresp="#name839-6a #name839-5a #name839-5b"
                          xml:lang="syr-Syrj"
                          source="#bib839-6">
                   <forename sort="1">ܐܰܡܽܘܢܝܳܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ammonius</forename> 
                   <addName type="untagged-title" sort="2">of Alexandria</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name839-7"
-                         xml:lang="syr-Latn-x-cbsc"
-                         source="#bib839-7">Ammonius of Alexandria</persName>
+               <persName xml:id="name839-7" xml:lang="syr-Latn-x-cbsc" source="#bib839-7">Ammonius of Alexandria</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|839</idno>
                <idno type="URI">http://viaf.org/viaf/85908624</idno>
                <bibl xml:id="bib839-3">

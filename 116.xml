@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,33 +96,27 @@
       <body>
          <listPerson>
             <person xml:id="person-116">
-               <persName type="sic"
-                         xml:id="name116-2"
+               <persName xml:id="name116-2"
                          corresp="#name116-3 #name116-4a #name116-4b"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib116-2">Presbyter <forename sort="1">Simon</forename> of Samosata</persName>
-               <persName type="sic"
-                         xml:id="name116-3"
+               <persName xml:id="name116-3"
                          corresp="#name116-2 #name116-4a #name116-4b"
                          xml:lang="ar"
                          source="#bib116-3">القس <forename sort="1">شمعون</forename> السميساطي</persName>
-               <persName type="sic"
-                         xml:id="name116-4a"
-                         corresp="#name116-2 #name116-3 #name116-4b"
+               <persName xml:id="name116-4a"
+                         corresp="#name116-3 #name116-2 #name116-4b"
                          xml:lang="syr"
                          source="#bib116-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܫܡܝܫܛܝܐ</persName>
-               <persName type="sic"
-                         xml:id="name116-4b"
-                         corresp="#name116-2 #name116-3 #name116-4a"
+               <persName xml:id="name116-4b"
+                         corresp="#name116-3 #name116-2 #name116-4a"
                          xml:lang="syr-Syrj"
                          source="#bib116-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܫܰܡܝܫܛܳܝܳܐ</persName>
-               <persName type="sic" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܡܥܘܢ</forename> 
                   <addName type="untagged-title" sort="2">ܫܡܝܫܛܝܐ</addName>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shemʿun</forename> 
                   <addName type="untagged-title" sort="2">of Samosata</addName>
                </persName>

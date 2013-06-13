@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,30 +96,26 @@
       <body>
          <listPerson>
             <person xml:id="person-775">
-               <persName type="sic"
-                         xml:id="name775-1"
+               <persName xml:id="name775-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib775-1"
                          syriaca-tags="#syriaca-headword">
                   <GEDSH_Full xmlns="">Testament of Adam</GEDSH_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name775-3"
-                         corresp="#name775-2 #name775-4a #name775-4b"
+               <persName xml:id="name775-3"
+                         corresp=" #name775-4a #name775-4b"
                          xml:lang="ar"
                          source="#bib775-3">
                   <Barsoum_Ar_Full xmlns="">عهد آدم</Barsoum_Ar_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name775-4a"
-                         corresp="#name775-2 #name775-3 #name775-4b"
+               <persName xml:id="name775-4a"
+                         corresp="#name775-3#name775-4b"
                          xml:lang="syr"
                          source="#bib775-4">
                   <Barsoum_Sy_NV_Full xmlns="">ܕܝܬܝܩܝ ܕܐܕܡ</Barsoum_Sy_NV_Full>
                </persName>
-               <persName type="sic"
-                         xml:id="name775-4b"
-                         corresp="#name775-2 #name775-3 #name775-4a"
+               <persName xml:id="name775-4b"
+                         corresp="#name775-3#name775-4a"
                          xml:lang="syr-Syrj"
                          source="#bib775-4">
                   <Barsoum_Sy_V_Full xmlns="">ܕܺܝܰܬܝܩܝ ܕܐܕܡ</Barsoum_Sy_V_Full>

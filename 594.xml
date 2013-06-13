@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Did this Jan Pieter Nicolaas Land write about Benedict Spinoza? If not, are the viaf.org records conflated on this point?</change>
@@ -96,30 +97,26 @@
       <body>
          <listPerson>
             <person xml:id="person-594">
-               <persName type="sic"
-                         xml:id="name594-1"
+               <persName xml:id="name594-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib594-1"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">Land</addName>, <forename sort="2">Jan Pieter Nicolaas</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name594-3"
-                         corresp="#name594-2 #name594-4a #name594-4b"
+               <persName xml:id="name594-3"
+                         corresp=" #name594-4a #name594-4b"
                          xml:lang="ar"
                          source="#bib594-3">
                   <addName type="family" sort="1">لاند</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name594-4a"
-                         corresp="#name594-2 #name594-3 #name594-4b"
+               <persName xml:id="name594-4a"
+                         corresp="#name594-3#name594-4b"
                          xml:lang="syr"
                          source="#bib594-4">
                   <addName type="family" sort="1">ܠܐܢܕ</addName>
                </persName>
-               <persName type="sic"
-                         xml:id="name594-4b"
-                         corresp="#name594-2 #name594-3 #name594-4a"
+               <persName xml:id="name594-4b"
+                         corresp="#name594-3#name594-4a"
                          xml:lang="syr-Syrj"
                          source="#bib594-4">
                   <addName type="family" sort="1">ܠܐܰܢܕ</addName>

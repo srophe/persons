@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,30 +96,25 @@
       <body>
          <listPerson>
             <person xml:id="person-901">
-               <persName type="sic"
-                         xml:id="name901-5a"
+               <persName xml:id="name901-5a"
                          corresp="#name901-5b #name901-6a"
                          xml:lang="syr"
                          source="#bib901-5">
                   <forename sort="1">ܡܫܝܚܐܙܟܐ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name901-5b"
-                         corresp="#name901-5a #name901-6b"
+               <persName xml:id="name901-5b"
+                         corresp="#name901-5a #name901-6a"
                          xml:lang="syr-Syrn"
                          source="#bib901-5">
                   <forename sort="1">ܡܫܝܼܚܵܐܙܟܵܐ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name901-6a"
-                         corresp="#name901-6b #name901-5a"
+               <persName xml:id="name901-6a"
+                         corresp=" #name901-5a #name901-5b"
                          xml:lang="syr"
                          source="#bib901-6">
                   <forename sort="1">ܡܫܝܚܐܙܟܐ</forename>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mshiḥazka</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|901</idno>

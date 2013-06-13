@@ -52,7 +52,7 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-10-04:00</date>
+            <date>2013-06-12-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -65,8 +65,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -77,6 +77,7 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -86,7 +87,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-10-04:00">
+                 when="2013-06-12-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,37 +96,31 @@
       <body>
          <listPerson>
             <person xml:id="person-852">
-               <persName type="sic"
-                         xml:id="name852-5a"
-                         corresp="#name852-5b #name852-6a"
+               <persName xml:id="name852-5a"
+                         corresp="#name852-5b #name852-6a #name852-6b"
                          xml:lang="syr"
                          source="#bib852-5">
                   <forename sort="1">ܐܘܬܪܝܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name852-5b"
-                         corresp="#name852-5a #name852-6b"
+               <persName xml:id="name852-5b"
+                         corresp="#name852-5a #name852-6a #name852-6b"
                          xml:lang="syr-Syrn"
                          source="#bib852-5">
                   <forename sort="1">ܐܹܘܬܹܪܝܼܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name852-6a"
-                         corresp="#name852-6b #name852-5a"
+               <persName xml:id="name852-6a"
+                         corresp="#name852-6b #name852-5a #name852-5b"
                          xml:lang="syr"
                          source="#bib852-6">
                   <forename sort="1">ܐܘܬܪܝܘܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:id="name852-6b"
-                         corresp="#name852-6a #name852-5b"
+               <persName xml:id="name852-6b"
+                         corresp="#name852-6a #name852-5a #name852-5b"
                          xml:lang="syr-Syrj"
                          source="#bib852-6">
                   <forename sort="1">ܐܶܘܬܶܪܝܳܘܣ</forename>
                </persName>
-               <persName type="sic"
-                         xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="#syriaca-headword">
+               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
                   <forename sort="1">Eutherius</forename> 
                   <addName type="untagged-title" sort="2">of Tyana</addName>
                </persName>
