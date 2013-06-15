@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-481">
                <persName xml:id="name481-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib481-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Eusebius</forename> 
@@ -105,11 +102,9 @@
                </persName>
                <persName xml:id="name481-2"
                          corresp="#name481-3 #name481-4a #name481-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib481-2">
-                  <forename sort="1">Eusebius</forename> 
-                  <addName type="untagged-title" sort="2">of Edessa</addName>, <addName type="untagged-title" sort="2">bishop of Ḥomṣ</addName>
-               </persName>
+                  <forename sort="1">Eusebius</forename> of Edessa, bishop of Ḥomṣ</persName>
                <persName xml:id="name481-3"
                          corresp="#name481-2 #name481-4a #name481-4b"
                          xml:lang="ar"
@@ -118,44 +113,44 @@
                   <addName type="untagged-title" sort="2">الرهاوي اسقف حمص</addName>
                </persName>
                <persName xml:id="name481-4a"
-                         corresp="#name481-3 #name481-2 #name481-4b"
+                         corresp="#name481-2 #name481-3 #name481-4b"
                          xml:lang="syr"
                          source="#bib481-4">
                   <forename sort="1">ܐܘܣܐܒܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ ܐܦܝܣܩܘܦܐ ܕܚܡܨ</addName>
                </persName>
                <persName xml:id="name481-4b"
-                         corresp="#name481-3 #name481-2 #name481-4a"
+                         corresp="#name481-2 #name481-3 #name481-4a"
                          xml:lang="syr-Syrj"
                          source="#bib481-4">
                   <forename sort="1">ܐܘܣܰܐܒܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܘܽܪܗܳܝܐ ܐܶܦܝܣܩܘܦܐ ܕܰܚܡܶܨ</addName>
                </persName>
-               <persName xml:id="name481-5a"
-                         corresp="#name481-5b #name481-6a #name481-6b"
+               <persName xml:id="name481-6a"
+                         corresp="#name481-6b #name481-7a #name481-7b"
                          xml:lang="syr"
-                         source="#bib481-5">
+                         source="#bib481-6">
                   <forename sort="1">ܐܘܣܒܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܚܡܨܝܐ</addName>
                </persName>
-               <persName xml:id="name481-5b"
-                         corresp="#name481-5a #name481-6a #name481-6b"
+               <persName xml:id="name481-6b"
+                         corresp="#name481-6a #name481-7a #name481-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib481-5">
+                         source="#bib481-6">
                   <forename sort="1">ܐܹܘܣܹܒܝܼܣ</forename> 
                   <addName type="untagged-title" sort="2">ܚܸܡܨܵܝܵܐ</addName>
                </persName>
-               <persName xml:id="name481-6a"
-                         corresp="#name481-6b #name481-5a #name481-5b"
+               <persName xml:id="name481-7a"
+                         corresp="#name481-6a #name481-6b #name481-7b"
                          xml:lang="syr"
-                         source="#bib481-6">
+                         source="#bib481-7">
                   <forename sort="1">ܐܘܣܒܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܚܡܨܝܐ</addName>
                </persName>
-               <persName xml:id="name481-6b"
-                         corresp="#name481-6a #name481-5a #name481-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib481-6">
+               <persName xml:id="name481-7b"
+                         corresp="#name481-6a #name481-6b #name481-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib481-7">
                   <forename sort="1">ܐܶܘܣܶܒܝܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܚܶܡܨܳܝܳܐ</addName>
                </persName>
@@ -186,13 +181,13 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib481-5">
+               <bibl xml:id="bib481-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib481-6">
+               <bibl xml:id="bib481-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

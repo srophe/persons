@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,29 +95,31 @@
             <person xml:id="person-288">
                <persName xml:id="name288-2"
                          corresp="#name288-3 #name288-4a #name288-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib288-2">Bishop <forename sort="1">Hidayat Allah</forename> of Khudayda</persName>
                <persName xml:id="name288-3"
                          corresp="#name288-2 #name288-4a #name288-4b"
                          xml:lang="ar"
-                         source="#bib288-3">
-                  <addName type="untagged-title" sort="2">الاسقف </addName>
-                  <forename sort="1">هداية اللّٰه</forename> 
-                  <addName type="untagged-title" sort="2">الخُديدي</addName>
-               </persName>
+                         source="#bib288-3">الاسقف <forename sort="1">هداية اللّٰه</forename> الخُديدي</persName>
                <persName xml:id="name288-4a"
-                         corresp="#name288-3 #name288-2 #name288-4b"
+                         corresp="#name288-2 #name288-3 #name288-4b"
                          xml:lang="syr"
                          source="#bib288-4">ܐܦܝܣܩܘܦܐ <forename sort="1">ܗܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܘܕܝܕܝܐ</persName>
                <persName xml:id="name288-4b"
-                         corresp="#name288-3 #name288-2 #name288-4a"
+                         corresp="#name288-2 #name288-3 #name288-4a"
                          xml:lang="syr-Syrj"
                          source="#bib288-4">ܐܶܦܝܣܩܘܦܳܐ <forename sort="1">ܗܰܕܐܝܗ̈ ܐܠܠܗ</forename> ܟܽܘܕܰܝܕܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name288-5a"
+                         xml:lang="syr"
+                         source="#bib288-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܗܕܐܝܗ̈ ܐܠܠܗ</forename> 
                   <addName type="untagged-title" sort="2">ܟܘܕܝܕܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name288-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib288-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Hidāyatullāh</forename> 
                   <addName type="untagged-title" sort="2">of Beth Khudayda</addName>
                </persName>

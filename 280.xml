@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,29 +95,33 @@
             <person xml:id="person-280">
                <persName xml:id="name280-2"
                          corresp="#name280-3 #name280-4a #name280-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib280-2">
-                  <forename sort="1">Jacob</forename> 
-                  <addName type="untagged-title" sort="2">I</addName>, Patr<addName type="untagged-title" sort="2">i</addName>arch of Ant<addName type="untagged-title" sort="2">i</addName>och</persName>
+                  <forename sort="1">Jacob</forename> I, Patriarch of Antioch</persName>
                <persName xml:id="name280-3"
                          corresp="#name280-2 #name280-4a #name280-4b"
                          xml:lang="ar"
                          source="#bib280-3">
-                  <forename sort="1">يعقوب</forename> 
-                  <addName type="untagged-title" sort="2">الاول </addName>بطريرك انطاكية</persName>
+                  <forename sort="1">يعقوب</forename> الاول بطريرك انطاكية</persName>
                <persName xml:id="name280-4a"
-                         corresp="#name280-3 #name280-2 #name280-4b"
+                         corresp="#name280-2 #name280-3 #name280-4b"
                          xml:lang="syr"
                          source="#bib280-4">ܦܛܪܝܪܟܐ <forename sort="1">ܝܥܩܘܒ</forename> ܩܕܡܝܐ</persName>
                <persName xml:id="name280-4b"
-                         corresp="#name280-3 #name280-2 #name280-4a"
+                         corresp="#name280-2 #name280-3 #name280-4a"
                          xml:lang="syr-Syrj"
                          source="#bib280-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܝܰܥܩܘܒ</forename> ܩܰܕܡܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name280-5a"
+                         xml:lang="syr"
+                         source="#bib280-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name280-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib280-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ignatius Yaʿqub</forename> 
                   <addName type="untagged-title" sort="2">I</addName>
                </persName>

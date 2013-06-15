@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-218">
                <persName xml:id="name218-2"
                          corresp="#name218-3 #name218-4a #name218-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib218-2">
                   <addName type="untagged-title" sort="2">Deacon</addName> 
                   <forename sort="1">Abu al-Yusr</forename>
@@ -109,23 +106,29 @@
                          source="#bib218-3">
                   <addName type="untagged-title" sort="2">الشماس</addName> ابو اليسر</persName>
                <persName xml:id="name218-4a"
-                         corresp="#name218-3 #name218-2 #name218-4b"
+                         corresp="#name218-2 #name218-3 #name218-4b"
                          xml:lang="syr"
                          source="#bib218-4">
                   <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
                   <forename sort="1">ܐܒܘ ܐܠܝܣܪ</forename>
                </persName>
                <persName xml:id="name218-4b"
-                         corresp="#name218-3 #name218-2 #name218-4a"
+                         corresp="#name218-2 #name218-3 #name218-4a"
                          xml:lang="syr-Syrj"
                          source="#bib218-4">
                   <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
                   <forename sort="1">ܐܰܒܽܘ ܐܰܠܝܰܣܰܪ</forename>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name218-5a"
+                         xml:lang="syr"
+                         source="#bib218-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܒܘ ܐܠܝܣܪ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name218-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib218-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Abū al-Yusr</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|218</idno>

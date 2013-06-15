@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">The Philologists of St. Matthew’s Monastery | The Syriac Prosopography</title>
+            <title xml:lang="en">Grammarians of Dayro d-Mor Matay | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-124">
                <persName xml:id="name124-2"
                          corresp="#name124-3 #name124-4a #name124-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib124-2">
                   <addName type="untagged-title" sort="2">The Philologists of St. Matthew’s Monastery</addName>
                </persName>
@@ -109,16 +106,22 @@
                   <addName type="untagged-title" sort="2">علماء اللغة في دير مار متى</addName>
                </persName>
                <persName xml:id="name124-4a"
-                         corresp="#name124-3 #name124-2 #name124-4b"
+                         corresp="#name124-2 #name124-3 #name124-4b"
                          xml:lang="syr"
                          source="#bib124-4">
                   <addName type="untagged-title" sort="2">ܡܠܦܢܐ ܕܠܫܢܐ ܒܕܝܪܐ ܕܡܪܝ ܡܬܝ</addName>
                </persName>
                <persName xml:id="name124-4b"
-                         corresp="#name124-3 #name124-2 #name124-4a"
+                         corresp="#name124-2 #name124-3 #name124-4a"
                          xml:lang="syr-Syrj"
                          source="#bib124-4">
                   <addName type="untagged-title" sort="2">ܡܰܠܦܳܢܳܐ ܕܠܶܫܢܳܐ ܒܕܰܝܪܐ ܕܡܳܪܝ ܡܰܬܰܝ</addName>
+               </persName>
+               <persName xml:id="name124-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib124-8"
+                         syriaca-tags="#syriaca-headword">
+                  <addName type="untagged-title" sort="2">Grammarians of Dayro d-Mor Matay</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|124</idno>
                <bibl xml:id="bib124-2">

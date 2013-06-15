@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Does http://viaf.org/viaf/70834963 include conflations with Athanasius of Alexandria?</change>
@@ -98,62 +95,62 @@
          <listPerson>
             <person xml:id="person-354">
                <persName xml:id="name354-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib354-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Athanasius</forename> 
                   <addName type="untagged-title" sort="2">of Alexandria</addName>
                </persName>
                <persName xml:id="name354-3"
-                         corresp=" #name354-4a #name354-4b"
+                         corresp="#name354-4a #name354-4b"
                          xml:lang="ar"
                          source="#bib354-3">
                   <forename sort="1">اثناسيوس</forename> 
                   <addName type="untagged-title" sort="2">الاسكندري</addName>
                </persName>
                <persName xml:id="name354-4a"
-                         corresp="#name354-3#name354-4b"
+                         corresp="#name354-3 #name354-4b"
                          xml:lang="syr"
                          source="#bib354-4">
                   <forename sort="1">ܐܬܢܐܣܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
                <persName xml:id="name354-4b"
-                         corresp="#name354-3#name354-4a"
+                         corresp="#name354-3 #name354-4a"
                          xml:lang="syr-Syrj"
                          source="#bib354-4">
                   <forename sort="1">ܐܰܬܰܢܰܐܣܺܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܰܐܠܟܣܰܢܕܪܝܰܐ</addName>
                </persName>
-               <persName xml:id="name354-5a"
-                         corresp="#name354-5b #name354-6a #name354-6b"
+               <persName xml:id="name354-6a"
+                         corresp="#name354-6b #name354-7a #name354-7b"
                          xml:lang="syr"
-                         source="#bib354-5">
+                         source="#bib354-6">
                   <forename sort="1">ܐܬܢܣܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName xml:id="name354-5b"
-                         corresp="#name354-5a #name354-6a #name354-6b"
+               <persName xml:id="name354-6b"
+                         corresp="#name354-6a #name354-7a #name354-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib354-5">
+                         source="#bib354-6">
                   <forename sort="1">ܐܵܬܵܢܵܣܝܼܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܵܠܸܟܣܲܢܕܪܝܼܵܐ</addName>
                </persName>
-               <persName xml:id="name354-6a"
-                         corresp="#name354-6b #name354-5a #name354-5b"
+               <persName xml:id="name354-7a"
+                         corresp="#name354-6a #name354-6b #name354-7b"
                          xml:lang="syr"
-                         source="#bib354-6">
+                         source="#bib354-7">
                   <forename sort="1">ܐܬܐܢܣܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName xml:id="name354-6b"
-                         corresp="#name354-6a #name354-5a #name354-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib354-6">
+               <persName xml:id="name354-7b"
+                         corresp="#name354-6a #name354-6b #name354-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib354-7">
                   <forename sort="1">ܐܰܬܰܐܢܰܣܝܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܰܐܠܟܶܣܰܢܕܪܺܝܰܐ</addName>
                </persName>
-               <persName xml:id="name354-7" xml:lang="syr-Latn-x-cbsc" source="#bib354-7">Athanasius of Alexandria</persName>
+               <persName xml:id="name354-10" xml:lang="en" source="#bib354-10">Athanasius of Alexandria</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|354</idno>
                <idno type="URI">http://viaf.org/viaf/105155222</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n79-145591</idno>
@@ -185,19 +182,19 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib354-5">
+               <bibl xml:id="bib354-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">64</citedRange>
                </bibl>
-               <bibl xml:id="bib354-6">
+               <bibl xml:id="bib354-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">19</citedRange>
                </bibl>
-               <bibl xml:id="bib354-7">
+               <bibl xml:id="bib354-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-863">
                <persName xml:id="name863-2"
                          corresp="#name863-3 #name863-4a #name863-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib863-2">
                   <forename sort="1">Theodore</forename>, <addName type="untagged-title" sort="2">bishop of Merv</addName>
                </persName>
@@ -110,56 +107,62 @@
                   <addName type="untagged-title" sort="2">الذي تسقّف على مرو</addName>
                </persName>
                <persName xml:id="name863-4a"
-                         corresp="#name863-3 #name863-2 #name863-4b"
+                         corresp="#name863-2 #name863-3 #name863-4b"
                          xml:lang="syr"
                          source="#bib863-4">
                   <forename sort="1">ܬܐܘܕܘܪ</forename> 
                   <addName type="untagged-title" sort="2">ܗܘ ܕܐܬܦܣܩܦ ܥܠ ܡܪܘ</addName>
                </persName>
                <persName xml:id="name863-4b"
-                         corresp="#name863-3 #name863-2 #name863-4a"
+                         corresp="#name863-2 #name863-3 #name863-4a"
                          xml:lang="syr-Syrj"
                          source="#bib863-4">
                   <forename sort="1">ܬܶܐܘܕܘܪ</forename> 
                   <addName type="untagged-title" sort="2">ܗܰܘ ܕܐܶܬܦܰܣܩܰܦ ܥܰܠ ܡܰܪܘ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name863-5a"
+                         xml:lang="syr"
+                         source="#bib863-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܬܐܕܘܪܐ</forename> 
                   <addName type="untagged-title" sort="2">ܕܡܪܘ</addName>
                </persName>
-               <persName xml:id="name863-5a"
-                         corresp="#name863-5b #name863-6a #name863-6b"
-                         xml:lang="syr"
-                         source="#bib863-5">
-                  <forename sort="1">ܬܐܕܘܪܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܝܛܪܢ ܕܡܪܘ</addName>
-               </persName>
-               <persName xml:id="name863-5b"
-                         corresp="#name863-5a #name863-6a #name863-6b"
-                         xml:lang="syr-Syrn"
-                         source="#bib863-5">
-                  <forename sort="1">ܬܹܐܕܘܿܪܹܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܝܼܛܪܵܢ ܕܡܵܪܘܼ</addName>
-               </persName>
                <persName xml:id="name863-6a"
-                         corresp="#name863-6b #name863-5a #name863-5b"
+                         corresp="#name863-6b #name863-7a #name863-7b"
                          xml:lang="syr"
                          source="#bib863-6">
                   <forename sort="1">ܬܐܕܘܪܐ</forename> 
                   <addName type="untagged-title" sort="2">ܡܝܛܪܢ ܕܡܪܘ</addName>
                </persName>
                <persName xml:id="name863-6b"
-                         corresp="#name863-6a #name863-5a #name863-5b"
-                         xml:lang="syr-Syrj"
+                         corresp="#name863-6a #name863-7a #name863-7b"
+                         xml:lang="syr-Syrn"
                          source="#bib863-6">
+                  <forename sort="1">ܬܹܐܕܘܿܪܹܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܼܛܪܵܢ ܕܡܵܪܘܼ</addName>
+               </persName>
+               <persName xml:id="name863-7a"
+                         corresp="#name863-6a #name863-6b #name863-7b"
+                         xml:lang="syr"
+                         source="#bib863-7">
+                  <forename sort="1">ܬܐܕܘܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܢ ܕܡܪܘ</addName>
+               </persName>
+               <persName xml:id="name863-7b"
+                         corresp="#name863-6a #name863-6b #name863-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib863-7">
                   <forename sort="1">ܬܶܐܕܽܘܪܳܐ</forename> 
                   <addName type="untagged-title" sort="2">ܡܺܝܛܪܳܢ ܕܡܰܪܽܘ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name863-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib863-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Teadore</forename> 
                   <addName type="untagged-title" sort="2">of Merv</addName>
                </persName>
-               <persName xml:id="name863-7" xml:lang="syr-Latn-x-cbsc" source="#bib863-7">Theodore of Merv</persName>
+               <persName xml:id="name863-10" xml:lang="en" source="#bib863-10">Theodore of Merv</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|863</idno>
                <bibl xml:id="bib863-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -178,19 +181,19 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib863-5">
+               <bibl xml:id="bib863-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">73</citedRange>
                </bibl>
-               <bibl xml:id="bib863-6">
+               <bibl xml:id="bib863-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">147</citedRange>
                </bibl>
-               <bibl xml:id="bib863-7">
+               <bibl xml:id="bib863-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

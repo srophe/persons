@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,13 +94,13 @@
          <listPerson>
             <person xml:id="person-169">
                <persName xml:id="name169-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib169-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodosios</forename> (patr.)</persName>
                <persName xml:id="name169-2"
                          corresp="#name169-3 #name169-4a #name169-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib169-2">
                   <addName type="untagged-title" sort="2">Patriarch</addName> 
                   <forename sort="1">Theodosius</forename>
@@ -116,20 +113,20 @@
                   <forename sort="1">ثاودوسيوس</forename>
                </persName>
                <persName xml:id="name169-4a"
-                         corresp="#name169-3 #name169-2 #name169-4b"
+                         corresp="#name169-2 #name169-3 #name169-4b"
                          xml:lang="syr"
                          source="#bib169-4">
                   <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
                   <forename sort="1">ܬܐܘܕܘܣܝܘܣ</forename>
                </persName>
                <persName xml:id="name169-4b"
-                         corresp="#name169-3 #name169-2 #name169-4a"
+                         corresp="#name169-2 #name169-3 #name169-4a"
                          xml:lang="syr-Syrj"
                          source="#bib169-4">
                   <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܐ</addName> 
                   <forename sort="1">ܬܶܐܘܕܘܣܝܘܣ</forename>
                </persName>
-               <persName xml:id="name169-7" xml:lang="syr-Latn-x-cbsc" source="#bib169-7">Theodosius of Antioch</persName>
+               <persName xml:id="name169-10" xml:lang="en" source="#bib169-10">Theodosius of Antioch</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|169</idno>
                <idno type="URI">http://worldcat.org/identities/np-theodosius$syriac orthodox patriarch of antioch$d 896</idno>
                <idno type="URI">http://viaf.org/viaf/89580519</idno>
@@ -163,7 +160,7 @@
                   <citedRange unit="entry">168</citedRange>
                   <citedRange unit="pp">376</citedRange>
                </bibl>
-               <bibl xml:id="bib169-7">
+               <bibl xml:id="bib169-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

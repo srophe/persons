@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-93">
                <persName xml:id="name93-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib93-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Marutha</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name93-2"
                          corresp="#name93-3 #name93-4a #name93-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib93-2">
                   <forename sort="1">Marutha</forename> 
                   <addName type="untagged-title" sort="2">of Takrit</addName>
@@ -118,19 +115,20 @@
                   <addName type="untagged-title" sort="2">التكريتي</addName>
                </persName>
                <persName xml:id="name93-4a"
-                         corresp="#name93-3 #name93-2 #name93-4b"
+                         corresp="#name93-2 #name93-3 #name93-4b"
                          xml:lang="syr"
                          source="#bib93-4">
                   <forename sort="1">ܡܪܘܬܐ</forename> 
                   <addName type="untagged-title" sort="2">ܕܬܓܪܝܬ</addName>
                </persName>
                <persName xml:id="name93-4b"
-                         corresp="#name93-3 #name93-2 #name93-4a"
+                         corresp="#name93-2 #name93-3 #name93-4a"
                          xml:lang="syr-Syrj"
                          source="#bib93-4">
                   <forename sort="1">ܡܰܪܘܬܶܐ</forename> 
                   <addName type="untagged-title" sort="2">ܕܬܰܓܪܝܬ</addName>
                </persName>
+               <persName xml:id="name93-10" xml:lang="en" source="#bib93-10">Marutha of Tagrit</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|93</idno>
                <idno type="URI">http://viaf.org/viaf/224478732</idno>
                <death when="0649" source="#bib93-2">649</death>
@@ -160,6 +158,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">88</citedRange>
                   <citedRange unit="pp">306</citedRange>
+               </bibl>
+               <bibl xml:id="bib93-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

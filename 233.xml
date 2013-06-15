@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-233">
                <persName xml:id="name233-2"
                          corresp="#name233-3 #name233-4a #name233-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib233-2">
                   <forename sort="1">Gregorius John</forename>, <addName type="untagged-title" sort="2">bishop of St. Matthew’s Monastery</addName>
                </persName>
@@ -110,24 +107,30 @@
                   <addName type="untagged-title" sort="2">مطران دير مار متى و اذربيجان</addName>
                </persName>
                <persName xml:id="name233-4a"
-                         corresp="#name233-3 #name233-2 #name233-4b"
+                         corresp="#name233-2 #name233-3 #name233-4b"
                          xml:lang="syr"
                          source="#bib233-4">
                   <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܪܝܪܐ ܕܡܪܝ ܡܬܝ ܘܕܐܕܘܪܒܝܓܐܢ</addName>
                </persName>
                <persName xml:id="name233-4b"
-                         corresp="#name233-3 #name233-2 #name233-4a"
+                         corresp="#name233-2 #name233-3 #name233-4a"
                          xml:lang="syr-Syrj"
                          source="#bib233-4">
                   <forename sort="1">ܓܪܺܝܓܘܪܝܘܣ ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܕܰܪܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ ܘܕܐܰܕܘܪܒܰܝܓܰܐܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name233-5a"
+                         xml:lang="syr"
+                         source="#bib233-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܓܪܝܓܘܪܝܘܣ ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܕܡܪܝ ܡܬܝ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name233-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib233-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Gregorios Yuḥanon</forename> 
                   <addName type="untagged-title" sort="2">of Mor Matay</addName>
                </persName>

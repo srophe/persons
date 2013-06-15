@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-142">
                <persName xml:id="name142-2"
                          corresp="#name142-3 #name142-4a #name142-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib142-2">
                   <forename sort="1">Theodorus</forename> 
                   <addName type="family" sort="2">Bar Zarūdī</addName>
@@ -111,24 +108,27 @@
                   <addName type="family" sort="2">ابن زرودي</addName>
                </persName>
                <persName xml:id="name142-4a"
-                         corresp="#name142-3 #name142-2 #name142-4b"
+                         corresp="#name142-2 #name142-3 #name142-4b"
                          xml:lang="syr"
                          source="#bib142-4">
                   <forename sort="1">ܬܐܘܕܘܪܘܣ</forename> 
                   <addName type="family" sort="2">ܒܪ ܙܪܘܕܝ</addName>
                </persName>
                <persName xml:id="name142-4b"
-                         corresp="#name142-3 #name142-2 #name142-4a"
+                         corresp="#name142-2 #name142-3 #name142-4a"
                          xml:lang="syr-Syrj"
                          source="#bib142-4">
                   <forename sort="1">ܬܶܐܘܕܘܪܘܣ</forename> 
                   <addName type="family" sort="2">ܒܰܪ ܙܪܘܕܝ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name142-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib142-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodoros</forename> 
                   <addName type="family" sort="2">bar Zarudi</addName>
                </persName>
-               <persName xml:id="name142-7" xml:lang="syr-Latn-x-cbsc" source="#bib142-7">Theodore bar Zarudi</persName>
+               <persName xml:id="name142-10" xml:lang="en" source="#bib142-10">Theodore bar Zarudi</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|142</idno>
                <idno type="URI">http://books.google.com/books?id=oFHLFJd74sAC&amp;pg=PA1234&amp;lpg=PA1234&amp;dq=theodorus+bar+zarudi&amp;source=bl&amp;ots=4v61R6NGHA&amp;sig=kpR0j9H3HyPSRfQwFYuRI2VRlvI&amp;hl=en&amp;sa=X&amp;ei=nIUEULOKK_T16gHNhrHHBg&amp;ved=0CEsQ6AEwBg#v=onepage&amp;q=theodorus%20bar%20zarudi&amp;f=false</idno>
                <bibl xml:id="bib142-2">
@@ -153,7 +153,7 @@
                   <citedRange unit="entry">141</citedRange>
                   <citedRange unit="pp">353</citedRange>
                </bibl>
-               <bibl xml:id="bib142-7">
+               <bibl xml:id="bib142-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

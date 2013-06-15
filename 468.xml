@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,39 +94,29 @@
          <listPerson>
             <person xml:id="person-468">
                <persName xml:id="name468-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib468-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Eliya</forename> 
-                  <addName type="untagged-title" sort="2">I</addName> of Ṭ<addName type="untagged-title" sort="2">i</addName>rhan</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename sort="1">ܐܠܝܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
-               </persName>
+                  <forename sort="1">Eliya</forename> I of Ṭirhan</persName>
                <persName xml:id="name468-5a"
-                         corresp="#name468-5b #name468-6a"
                          xml:lang="syr"
-                         source="#bib468-5">
-                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                         source="#bib468-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܠܝܐ</forename> 
                   <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
-               </persName>
-               <persName xml:id="name468-5b"
-                         corresp="#name468-5a #name468-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib468-5">
-                  <addName type="untagged-title" sort="2">ܡܵܪܝ</addName> 
-                  <forename sort="1">ܐܹܠܝܼܵܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܩܲܕܡܵܝܵܐ</addName>
                </persName>
                <persName xml:id="name468-6a"
-                         corresp=" #name468-5a #name468-5b"
+                         corresp="#name468-6b #name468-7a"
                          xml:lang="syr"
-                         source="#bib468-6">
-                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
-                  <forename sort="1">ܐܠܝܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܩܕܡܝܐ</addName>
-               </persName>
+                         source="#bib468-6">ܡܪܝ <forename sort="1">ܐܠܝܐ</forename> ܩܕܡܝܐ</persName>
+               <persName xml:id="name468-6b"
+                         corresp="#name468-6a #name468-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib468-6">ܡܵܪܝ <forename sort="1">ܐܹܠܝܼܵܐ</forename> ܩܲܕܡܵܝܵܐ</persName>
+               <persName xml:id="name468-7a"
+                         corresp="#name468-6a #name468-6b"
+                         xml:lang="syr"
+                         source="#bib468-7">ܡܪܝ <forename sort="1">ܐܠܝܐ</forename> ܩܕܡܝܐ</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|468</idno>
                <death when="1049" source="#bib468-1">1049</death>
                <bibl xml:id="bib468-1">
@@ -138,13 +125,13 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">188</citedRange>
                </bibl>
-               <bibl xml:id="bib468-5">
+               <bibl xml:id="bib468-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">81</citedRange>
                </bibl>
-               <bibl xml:id="bib468-6">
+               <bibl xml:id="bib468-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

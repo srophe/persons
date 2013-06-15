@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-64">
                <persName xml:id="name64-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib64-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mushe</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name64-2"
                          corresp="#name64-3 #name64-4a #name64-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib64-2">
                   <forename sort="1">Moses</forename> 
                   <addName type="untagged-title" sort="2">of Agel</addName>
@@ -118,19 +115,20 @@
                   <addName type="untagged-title" sort="2">الاجلي</addName>
                </persName>
                <persName xml:id="name64-4a"
-                         corresp="#name64-3 #name64-2 #name64-4b"
+                         corresp="#name64-2 #name64-3 #name64-4b"
                          xml:lang="syr"
                          source="#bib64-4">
                   <forename sort="1">ܡܘܫܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܓܠܝܐ</addName>
                </persName>
                <persName xml:id="name64-4b"
-                         corresp="#name64-3 #name64-2 #name64-4a"
+                         corresp="#name64-2 #name64-3 #name64-4a"
                          xml:lang="syr-Syrj"
                          source="#bib64-4">
                   <forename sort="1">ܡܘܫܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܓܠܳܝܐ</addName>
                </persName>
+               <persName xml:id="name64-10" xml:lang="en" source="#bib64-10">Moses of Inghilene</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|64</idno>
                <floruit when="0550" source="#bib64-2">550</floruit>
                <bibl xml:id="bib64-1">
@@ -159,6 +157,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">60</citedRange>
                   <citedRange unit="pp">284</citedRange>
+               </bibl>
+               <bibl xml:id="bib64-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

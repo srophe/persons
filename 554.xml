@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,30 +94,31 @@
          <listPerson>
             <person xml:id="person-554">
                <persName xml:id="name554-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib554-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ishoʿbokht</forename> 
                   <addName type="untagged-title" sort="2">of Rev Ardashir</addName>
                </persName>
-               <persName xml:id="name554-5a"
-                         corresp="#name554-5b #name554-6a"
-                         xml:lang="syr"
-                         source="#bib554-5">
-                  <forename sort="1">ܝܫܘܥܒܘܟܬ</forename>
-               </persName>
-               <persName xml:id="name554-5b"
-                         corresp="#name554-5a #name554-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib554-5">
-                  <forename sort="1">ܝܑܼܫܘܿܥܒܘܿܟܬ</forename>
-               </persName>
                <persName xml:id="name554-6a"
-                         corresp=" #name554-5a #name554-5b"
+                         corresp="#name554-6b #name554-7a"
                          xml:lang="syr"
                          source="#bib554-6">
                   <forename sort="1">ܝܫܘܥܒܘܟܬ</forename>
                </persName>
+               <persName xml:id="name554-6b"
+                         corresp="#name554-6a #name554-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib554-6">
+                  <forename sort="1">ܝܑܼܫܘܿܥܒܘܿܟܬ</forename>
+               </persName>
+               <persName xml:id="name554-7a"
+                         corresp="#name554-6a #name554-6b"
+                         xml:lang="syr"
+                         source="#bib554-7">
+                  <forename sort="1">ܝܫܘܥܒܘܟܬ</forename>
+               </persName>
+               <persName xml:id="name554-10" xml:lang="en" source="#bib554-10">Ishobocht</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|554</idno>
                <floruit source="#bib554-1">late 8th cent.?</floruit>
                <bibl xml:id="bib554-1">
@@ -129,17 +127,22 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">282</citedRange>
                </bibl>
-               <bibl xml:id="bib554-5">
+               <bibl xml:id="bib554-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">78</citedRange>
                </bibl>
-               <bibl xml:id="bib554-6">
+               <bibl xml:id="bib554-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">194</citedRange>
+               </bibl>
+               <bibl xml:id="bib554-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

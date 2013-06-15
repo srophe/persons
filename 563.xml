@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-563">
                <persName xml:id="name563-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib563-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ishoʿyahb</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name563-2"
                          corresp="#name563-3 #name563-4a #name563-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib563-2">
                   <forename sort="1">Yeshuʿyahb</forename> 
                   <addName type="family" sort="2">Bar Malkun</addName>
@@ -116,40 +113,41 @@
                          source="#bib563-3">
                   <forename sort="1">يشوعياب</forename> بن ملكون</persName>
                <persName xml:id="name563-4a"
-                         corresp="#name563-3 #name563-2 #name563-4b"
+                         corresp="#name563-2 #name563-3 #name563-4b"
                          xml:lang="syr"
                          source="#bib563-4">
                   <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
                   <addName type="family" sort="2">ܒܪ ܡܠܟܘܢ</addName>
                </persName>
                <persName xml:id="name563-4b"
-                         corresp="#name563-3 #name563-2 #name563-4a"
+                         corresp="#name563-2 #name563-3 #name563-4a"
                          xml:lang="syr-Syrj"
                          source="#bib563-4">
                   <forename sort="1">ܝܶܫܘܥܝܰܗܒ</forename> 
                   <addName type="family" sort="2">ܒܰܪ ܡܰܠܟܘܢ</addName>
                </persName>
-               <persName xml:id="name563-5a"
-                         corresp="#name563-5b #name563-6a"
-                         xml:lang="syr"
-                         source="#bib563-5">
-                  <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
-                  <addName type="family" sort="2">ܒܪ ܡܠܟܘܢ</addName>
-               </persName>
-               <persName xml:id="name563-5b"
-                         corresp="#name563-5a #name563-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib563-5">
-                  <forename sort="1">ܝܑܼܫܘܿܥܝܲܗܒ</forename> 
-                  <addName type="family" sort="2">ܒܲܪ ܡܲܠܟܘܿܢ</addName>
-               </persName>
                <persName xml:id="name563-6a"
-                         corresp=" #name563-5a #name563-5b"
+                         corresp="#name563-6b #name563-7a"
                          xml:lang="syr"
                          source="#bib563-6">
                   <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
                   <addName type="family" sort="2">ܒܪ ܡܠܟܘܢ</addName>
                </persName>
+               <persName xml:id="name563-6b"
+                         corresp="#name563-6a #name563-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib563-6">
+                  <forename sort="1">ܝܑܼܫܘܿܥܝܲܗܒ</forename> 
+                  <addName type="family" sort="2">ܒܲܪ ܡܲܠܟܘܿܢ</addName>
+               </persName>
+               <persName xml:id="name563-7a"
+                         corresp="#name563-6a #name563-6b"
+                         xml:lang="syr"
+                         source="#bib563-7">
+                  <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
+                  <addName type="family" sort="2">ܒܪ ܡܠܟܘܢ</addName>
+               </persName>
+               <persName xml:id="name563-10" xml:lang="en" source="#bib563-10">Ishoyahb bar Malkon</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|563</idno>
                <floruit source="#bib563-1">late 12th - early 13th cent.</floruit>
                <bibl xml:id="bib563-1">
@@ -177,17 +175,22 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">436</citedRange>
                </bibl>
-               <bibl xml:id="bib563-5">
+               <bibl xml:id="bib563-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">82</citedRange>
                </bibl>
-               <bibl xml:id="bib563-6">
+               <bibl xml:id="bib563-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">295</citedRange>
+               </bibl>
+               <bibl xml:id="bib563-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

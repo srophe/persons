@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-37">
                <persName xml:id="name37-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib37-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shemʿun</forename> 
@@ -105,31 +102,28 @@
                </persName>
                <persName xml:id="name37-2"
                          corresp="#name37-3 #name37-4a #name37-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib37-2">
-                  <addName type="untagged-title" sort="2">Deacon</addName> 
-                  <forename sort="1">Simon</forename> 
-                  <addName type="untagged-title" sort="2">the Potter</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib37-2">Deacon <forename sort="1">Simon</forename> the Potter</persName>
                <persName xml:id="name37-3"
                          corresp="#name37-2 #name37-4a #name37-4b"
                          xml:lang="ar"
-                         source="#bib37-3">
-                  <addName type="untagged-title" sort="2">الشماس</addName> 
-                  <forename sort="1">شمعون</forename> الفخاري</persName>
+                         source="#bib37-3">الشماس <forename sort="1">شمعون</forename> الفخاري</persName>
                <persName xml:id="name37-4a"
-                         corresp="#name37-3 #name37-2 #name37-4b"
+                         corresp="#name37-2 #name37-3 #name37-4b"
                          xml:lang="syr"
                          source="#bib37-4">ܡܫܡܫܢܐ <forename sort="1">ܫܡܥܘܢ</forename> ܩܘܩܝܐ</persName>
                <persName xml:id="name37-4b"
-                         corresp="#name37-3 #name37-2 #name37-4a"
+                         corresp="#name37-2 #name37-3 #name37-4a"
                          xml:lang="syr-Syrj"
                          source="#bib37-4">ܡܫܰܡܫܳܢܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܩܘܩܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name37-5a"
+                         xml:lang="syr"
+                         source="#bib37-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܡܥܘܢ</forename> 
                   <addName type="untagged-title" sort="2">ܩܘܩܝܐ</addName>
                </persName>
-               <persName xml:id="name37-7" xml:lang="syr-Latn-x-cbsc" source="#bib37-7">Simeon the Potter</persName>
+               <persName xml:id="name37-10" xml:lang="en" source="#bib37-10">Simeon the Potter</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|37</idno>
                <idno type="URI">http://roger-pearse.com/wiki/index.php?title=Simeon_the_Potter</idno>
                <death when="0514" source="#bib37-2">514</death>
@@ -160,7 +154,7 @@
                   <citedRange unit="entry">35</citedRange>
                   <citedRange unit="pp">243</citedRange>
                </bibl>
-               <bibl xml:id="bib37-7">
+               <bibl xml:id="bib37-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

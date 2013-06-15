@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Does http://viaf.org/viaf/183991623 refer to the same person?</change>
@@ -98,7 +95,7 @@
          <listPerson>
             <person xml:id="person-779">
                <persName xml:id="name779-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib779-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodora</forename> 
@@ -106,7 +103,7 @@
                </persName>
                <persName xml:id="name779-2"
                          corresp="#name779-3 #name779-4a #name779-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib779-2">
                   <addName type="untagged-title" sort="2">Empress</addName> 
                   <forename sort="1">Theodora</forename>
@@ -119,20 +116,20 @@
                   <forename sort="1">ثاودورة</forename>
                </persName>
                <persName xml:id="name779-4a"
-                         corresp="#name779-3 #name779-2 #name779-4b"
+                         corresp="#name779-2 #name779-3 #name779-4b"
                          xml:lang="syr"
                          source="#bib779-4">
                   <addName type="untagged-title" sort="2">ܡܠܟܬܐ</addName> 
                   <forename sort="1">ܬܐܘܕܘܪܐ</forename>
                </persName>
                <persName xml:id="name779-4b"
-                         corresp="#name779-3 #name779-2 #name779-4a"
+                         corresp="#name779-2 #name779-3 #name779-4a"
                          xml:lang="syr-Syrj"
                          source="#bib779-4">
                   <addName type="untagged-title" sort="2">ܡܰܠܟܬܐ</addName> 
                   <forename sort="1">ܬܶܐܘܳܕܳܘܪܰܐ</forename>
                </persName>
-               <persName xml:id="name779-7" xml:lang="syr-Latn-x-cbsc" source="#bib779-7">Theodora</persName>
+               <persName xml:id="name779-10" xml:lang="en" source="#bib779-10">Theodora</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|779</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n82-260537</idno>
                <idno type="URI">http://viaf.org/viaf/25968250</idno>
@@ -165,7 +162,7 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib779-7">
+               <bibl xml:id="bib779-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

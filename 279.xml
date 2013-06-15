@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-279">
                <persName xml:id="name279-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib279-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Masʿūd</forename> 
@@ -105,28 +102,28 @@
                </persName>
                <persName xml:id="name279-2"
                          corresp="#name279-3 #name279-4a #name279-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib279-2">Patriarch <forename sort="1">Mas‛ud</forename> of Zāz</persName>
                <persName xml:id="name279-3"
                          corresp="#name279-2 #name279-4a #name279-4b"
                          xml:lang="ar"
-                         source="#bib279-3">
-                  <addName type="untagged-title" sort="2">البطريرك </addName>
-                  <forename sort="1">مسعود</forename> 
-                  <addName type="untagged-title" sort="2">الزازي</addName>
-               </persName>
+                         source="#bib279-3">البطريرك <forename sort="1">مسعود</forename> الزازي</persName>
                <persName xml:id="name279-4a"
-                         corresp="#name279-3 #name279-2 #name279-4b"
+                         corresp="#name279-2 #name279-3 #name279-4b"
                          xml:lang="syr"
                          source="#bib279-4">ܦܛܪܝܪܟܐ <forename sort="1">ܡܣܥܘܕ</forename> ܙܐܙܝܐ</persName>
                <persName xml:id="name279-4b"
-                         corresp="#name279-3 #name279-2 #name279-4a"
+                         corresp="#name279-2 #name279-3 #name279-4a"
                          xml:lang="syr-Syrj"
                          source="#bib279-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܡܰܣܥܘܕ</forename> ܙܰܐܙܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name279-5a"
+                         xml:lang="syr"
+                         source="#bib279-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܣܥܘܕ</forename> 
                   <addName type="untagged-title" sort="2">ܙܐܙܝܐ</addName>
                </persName>
+               <persName xml:id="name279-10" xml:lang="en" source="#bib279-10">Masud of Tur Abdin</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|279</idno>
                <idno type="URI">http://viaf.org/viaf/193224502</idno>
                <death when="1512" source="#bib279-2">1512</death>
@@ -156,6 +153,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">271</citedRange>
                   <citedRange unit="pp">486</citedRange>
+               </bibl>
+               <bibl xml:id="bib279-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

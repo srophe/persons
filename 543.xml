@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,43 +94,35 @@
          <listPerson>
             <person xml:id="person-543">
                <persName xml:id="name543-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib543-1"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="2">Ibn al-Ṭayyib</addName>
                </persName>
                <persName xml:id="name543-2"
                          corresp="#name543-3 #name543-4a #name543-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib543-2">
-                  <addName type="family" sort="2">Abu al-Faraj</addName> 
-                  <forename sort="1">ʿAbd Allah</forename> 
-                  <addName type="family" sort="2">Ibn al-Ṭayyib</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib543-2">Abu al-Faraj <forename sort="1">ʿAbd Allah</forename> Ibn al-Ṭayyib</persName>
                <persName xml:id="name543-3"
                          corresp="#name543-2 #name543-4a #name543-4b"
                          xml:lang="ar"
-                         source="#bib543-3">
-                  <addName type="family" sort="2">ابو الفرج</addName> 
-                  <forename sort="1">عبدالله</forename> 
-                  <addName type="family" sort="2">ابن الطيب</addName>
-               </persName>
+                         source="#bib543-3">ابو الفرج <forename sort="1">عبدالله</forename> ابن الطيب</persName>
                <persName xml:id="name543-4a"
-                         corresp="#name543-3 #name543-2 #name543-4b"
+                         corresp="#name543-2 #name543-3 #name543-4b"
                          xml:lang="syr"
                          source="#bib543-4">
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> ܐܒܘ ܐܠܦܪܓ <forename sort="1">ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
                <persName xml:id="name543-4b"
-                         corresp="#name543-3 #name543-2 #name543-4a"
+                         corresp="#name543-2 #name543-3 #name543-4a"
                          xml:lang="syr-Syrj"
                          source="#bib543-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
                   <addName type="family" sort="2">ܐܰܒܘ ܐܠܦܰܪܓ</addName> ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="family" sort="2">ܐܒܘ ܐܠܦܪܓ</addName> 
-                  <forename sort="1">ܥܒܕ ܐܠܗ</forename> 
-                  <addName type="family" sort="2">ܒܪ ܛܝܒ</addName>
-               </persName>
+               <persName xml:id="name543-5a"
+                         xml:lang="syr"
+                         source="#bib543-5"
+                         syriaca-tags="#syriaca-headword">ܐܒܘ ܐܠܦܪܓ <forename sort="1">ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
+               <persName xml:id="name543-10" xml:lang="en" source="#bib543-10">Ibn at-Tayyib</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|543</idno>
                <idno type="URI">http://viaf.org/viaf/89379494</idno>
                <bibl xml:id="bib543-1">
@@ -158,6 +147,11 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib543-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

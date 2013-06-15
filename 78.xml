@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Yuḥanon Psaltes | The Syriac Prosopography</title>
+            <title xml:lang="en">Yuḥanon the psaltos | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-78">
                <persName xml:id="name78-2"
                          corresp="#name78-3 #name78-4a #name78-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib78-2">
                   <forename sort="1">John</forename> 
                   <addName type="untagged-title" sort="2">the Chanter</addName>
@@ -111,22 +108,25 @@
                   <addName type="untagged-title" sort="2">بسالطس</addName>
                </persName>
                <persName xml:id="name78-4a"
-                         corresp="#name78-3 #name78-2 #name78-4b"
+                         corresp="#name78-2 #name78-3 #name78-4b"
                          xml:lang="syr"
                          source="#bib78-4">
                   <forename sort="1">ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܦܣܐܠܛܘܣ</addName>
                </persName>
                <persName xml:id="name78-4b"
-                         corresp="#name78-3 #name78-2 #name78-4a"
+                         corresp="#name78-2 #name78-3 #name78-4a"
                          xml:lang="syr-Syrj"
                          source="#bib78-4">
                   <forename sort="1">ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܦܣܰܐܠܛܘܣ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name78-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib78-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yuḥanon</forename> 
-                  <addName type="untagged-title" sort="2">Psaltes</addName>
+                  <addName type="untagged-title" sort="2">the psaltos</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|78</idno>
                <death when="0600" source="#bib78-2">600</death>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-287">
                <persName xml:id="name287-2"
                          corresp="#name287-3 #name287-4a #name287-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib287-2">
                   <addName type="untagged-title" sort="2">Deacon</addName> 
                   <forename sort="1">Sargis</forename> 
@@ -113,7 +110,7 @@
                   <addName type="family" sort="2">ابن غرير</addName>
                </persName>
                <persName xml:id="name287-4a"
-                         corresp="#name287-3 #name287-2 #name287-4b"
+                         corresp="#name287-2 #name287-3 #name287-4b"
                          xml:lang="syr"
                          source="#bib287-4">
                   <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
@@ -121,18 +118,24 @@
                   <addName type="family" sort="2">ܕܒܝܬ ܓܪܝܪ</addName>
                </persName>
                <persName xml:id="name287-4b"
-                         corresp="#name287-3 #name287-2 #name287-4a"
+                         corresp="#name287-2 #name287-3 #name287-4a"
                          xml:lang="syr-Syrj"
                          source="#bib287-4">
                   <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
                   <forename sort="1">ܣܰܪܓܝܣ</forename> 
                   <addName type="family" sort="2">ܕܒܶܝܬ ܓܰܪܝܪ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name287-5a"
+                         xml:lang="syr"
+                         source="#bib287-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܣܪܓܝܣ</forename> 
                   <addName type="family" sort="2">ܕܒܝܬ ܓܪܝܪ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name287-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib287-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Sargis</forename> 
                   <addName type="family" sort="2">bar Ghurayr</addName>
                </persName>

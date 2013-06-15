@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-271">
                <persName xml:id="name271-2"
                          corresp="#name271-3 #name271-4a #name271-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib271-2">
                   <addName type="untagged-title" sort="2">Patriarch</addName> 
                   <forename sort="1">John</forename> 
@@ -113,7 +110,7 @@
                   <addName type="family" sort="2">ابن شيء اللّٰه</addName>
                </persName>
                <persName xml:id="name271-4a"
-                         corresp="#name271-3 #name271-2 #name271-4b"
+                         corresp="#name271-2 #name271-3 #name271-4b"
                          xml:lang="syr"
                          source="#bib271-4">
                   <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
@@ -121,17 +118,21 @@
                   <addName type="family" sort="2">ܒܪ ܫܝܠܠܗ</addName>
                </persName>
                <persName xml:id="name271-4b"
-                         corresp="#name271-3 #name271-2 #name271-4a"
+                         corresp="#name271-2 #name271-3 #name271-4a"
                          xml:lang="syr-Syrj"
                          source="#bib271-4">
                   <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܳܐ</addName> 
                   <forename sort="1">ܝܘܚܰܢܢ</forename> 
                   <addName type="family" sort="2">ܒܰܪ ܫܝܠܠܗ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name271-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib271-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yuḥanon</forename> 
                   <addName type="family" sort="2">bar Shayullāh</addName>
                </persName>
+               <persName xml:id="name271-10" xml:lang="en" source="#bib271-10">John bar Shayallah</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|271</idno>
                <death when="1493" source="#bib271-2">1493</death>
                <bibl xml:id="bib271-2">
@@ -155,6 +156,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">264</citedRange>
                   <citedRange unit="pp">481</citedRange>
+               </bibl>
+               <bibl xml:id="bib271-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
             <relation type="disambiguation"

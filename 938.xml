@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-938">
                <persName xml:id="name938-2"
                          corresp="#name938-3 #name938-4a #name938-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib938-2">
                   <addName type="untagged-title" sort="2">Rabban</addName> 
                   <forename sort="1">Ram Yeshu‛</forename>
@@ -111,23 +108,27 @@
                   <forename sort="1">راميشوع</forename>
                </persName>
                <persName xml:id="name938-4a"
-                         corresp="#name938-3 #name938-2 #name938-4b"
+                         corresp="#name938-2 #name938-3 #name938-4b"
                          xml:lang="syr"
                          source="#bib938-4">
                   <forename sort="1">ܪܡܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܕܒܝܬ ܪܒܢ</addName>
                </persName>
                <persName xml:id="name938-4b"
-                         corresp="#name938-3 #name938-2 #name938-4a"
+                         corresp="#name938-2 #name938-3 #name938-4a"
                          xml:lang="syr-Syrj"
                          source="#bib938-4">
                   <forename sort="1">ܪܰܡܝܺܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܕܒܶܝܬ ܪܰܒܰܢ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name938-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib938-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ramishuʿ</forename> 
                   <addName type="untagged-title" sort="2">of Beth Rabban</addName>
                </persName>
+               <persName xml:id="name938-10" xml:lang="en" source="#bib938-10">Ramisho the Interpreter</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|938</idno>
                <bibl xml:id="bib938-2">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -150,6 +151,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">100-101</citedRange>
                   <citedRange unit="pp">314</citedRange>
+               </bibl>
+               <bibl xml:id="bib938-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

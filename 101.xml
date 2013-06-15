@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-101">
                <persName xml:id="name101-2"
                          corresp="#name101-3 #name101-4a #name101-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib101-2">
                   <forename sort="1">Jonah</forename>, <addName type="untagged-title" sort="2">bishop of Tell Mawzalt</addName>
                </persName>
@@ -110,24 +107,30 @@
                   <addName type="untagged-title" sort="2">اسقف تلّ موزلت</addName>
                </persName>
                <persName xml:id="name101-4a"
-                         corresp="#name101-3 #name101-2 #name101-4b"
+                         corresp="#name101-2 #name101-3 #name101-4b"
                          xml:lang="syr"
                          source="#bib101-4">
                   <forename sort="1">ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܬܠܐ ܕܡܘܙܠܬ</addName>
                </persName>
                <persName xml:id="name101-4b"
-                         corresp="#name101-3 #name101-2 #name101-4a"
+                         corresp="#name101-2 #name101-3 #name101-4a"
                          xml:lang="syr-Syrj"
                          source="#bib101-4">
                   <forename sort="1">ܝܘܚܰܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܐ ܕܡܰܘܙܠܰܬ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename sort="1">ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title" sort="2">ܕܬܠܐ ܕܡܘܙܠܬ</addName>
+               <persName xml:id="name101-5a"
+                         xml:lang="syr"
+                         source="#bib101-5"
+                         syriaca-tags="#syriaca-headword">
+                  <forename sort="1">ܝܘܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܠܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name101-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib101-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yawnan</forename> 
                   <addName type="untagged-title" sort="2">of Tella</addName>
                </persName>

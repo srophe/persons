@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-750">
                <persName xml:id="name750-2"
                          corresp="#name750-3 #name750-4a #name750-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib750-2">
                   <addName type="untagged-title" sort="2">people of the Cave (the Sleeper Youths of Ephesus)</addName>
                </persName>
@@ -109,18 +106,21 @@
                   <addName type="untagged-title" sort="2">اهل الكهف</addName>
                </persName>
                <persName xml:id="name750-4a"
-                         corresp="#name750-3 #name750-2 #name750-4b"
+                         corresp="#name750-2 #name750-3 #name750-4b"
                          xml:lang="syr"
                          source="#bib750-4">
                   <addName type="untagged-title" sort="2">ܒܢܝ̈ ܫܩܝܦܐ</addName>
                </persName>
                <persName xml:id="name750-4b"
-                         corresp="#name750-3 #name750-2 #name750-4a"
+                         corresp="#name750-2 #name750-3 #name750-4a"
                          xml:lang="syr-Syrj"
                          source="#bib750-4">
                   <addName type="untagged-title" sort="2">ܒܢܝ̈ ܫܩܺܝܦܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name750-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib750-8"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Legend of the Sleepers of Ephesus</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|750</idno>

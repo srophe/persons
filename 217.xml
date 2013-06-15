@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,40 +94,34 @@
          <listPerson>
             <person xml:id="person-217">
                <persName xml:id="name217-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib217-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Michael I</forename> 
-                  <addName type="untagged-title" sort="2">Rabo</addName>
-               </persName>
+                  <forename sort="1">Michael </forename>I Rabo</persName>
                <persName xml:id="name217-2"
                          corresp="#name217-3 #name217-4a #name217-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib217-2">
-                  <addName type="untagged-title" sort="2">Mar</addName> 
-                  <forename sort="1">Michael</forename> 
-                  <addName type="untagged-title" sort="2">the Great</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib217-2">Mar <forename sort="1">Michael</forename> the Great</persName>
                <persName xml:id="name217-3"
                          corresp="#name217-2 #name217-4a #name217-4b"
                          xml:lang="ar"
-                         source="#bib217-3">
-                  <addName type="untagged-title" sort="2">مار </addName>
-                  <forename sort="1">ميخائيل</forename>
-                  <addName type="untagged-title" sort="2"> الكبير</addName>
-               </persName>
+                         source="#bib217-3">مار <forename sort="1">ميخائيل</forename> الكبير</persName>
                <persName xml:id="name217-4a"
-                         corresp="#name217-3 #name217-2 #name217-4b"
+                         corresp="#name217-2 #name217-3 #name217-4b"
                          xml:lang="syr"
                          source="#bib217-4">ܡܪܝ <forename sort="1">ܡܝܟܐܝܠ</forename> ܪܒܐ</persName>
                <persName xml:id="name217-4b"
-                         corresp="#name217-3 #name217-2 #name217-4a"
+                         corresp="#name217-2 #name217-3 #name217-4a"
                          xml:lang="syr-Syrj"
                          source="#bib217-4">ܡܳܪܝ <forename sort="1">ܡܝܟܳܐܝܠ</forename> ܪܰܒܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name217-5a"
+                         xml:lang="syr"
+                         source="#bib217-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܝܟܐܝܠ</forename> 
                   <addName type="untagged-title" sort="2">ܩܕܡܝܐ ܪܒܐ</addName>
                </persName>
+               <persName xml:id="name217-10" xml:lang="en" source="#bib217-10">Michael the Syrian</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|217</idno>
                <idno type="URI">http://viaf.org/viaf/12704144</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr97-7289</idno>
@@ -162,6 +153,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">214</citedRange>
                   <citedRange unit="pp">425</citedRange>
+               </bibl>
+               <bibl xml:id="bib217-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

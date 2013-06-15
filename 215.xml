@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Ahrun Dayroyo | The Syriac Prosopography</title>
+            <title xml:lang="en">Ahrun dayroyo | The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-215">
                <persName xml:id="name215-2"
                          corresp="#name215-3 #name215-4a #name215-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib215-2">
                   <addName type="untagged-title" sort="2">The Monk</addName> 
                   <forename sort="1">Aaron</forename>
@@ -111,22 +108,25 @@
                   <forename sort="1">هارون</forename>
                </persName>
                <persName xml:id="name215-4a"
-                         corresp="#name215-3 #name215-2 #name215-4b"
+                         corresp="#name215-2 #name215-3 #name215-4b"
                          xml:lang="syr"
                          source="#bib215-4">
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
                   <forename sort="1">ܐܗܪܘܢ</forename>
                </persName>
                <persName xml:id="name215-4b"
-                         corresp="#name215-3 #name215-2 #name215-4a"
+                         corresp="#name215-2 #name215-3 #name215-4a"
                          xml:lang="syr-Syrj"
                          source="#bib215-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
                   <forename sort="1">ܐܰܗܪܘܢ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name215-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib215-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ahrun</forename> 
-                  <addName type="untagged-title" sort="2">Dayroyo</addName>
+                  <addName type="untagged-title" sort="2">dayroyo</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|215</idno>
                <bibl xml:id="bib215-2">

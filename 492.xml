@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,28 +94,28 @@
          <listPerson>
             <person xml:id="person-492">
                <persName xml:id="name492-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib492-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Gabriel</forename> 
                   <addName type="family" sort="2">bar Bokhtishoʿ</addName>
                </persName>
-               <persName xml:id="name492-5a"
-                         corresp="#name492-5b #name492-6a"
-                         xml:lang="syr"
-                         source="#bib492-5">
-                  <forename sort="1">ܓܒܪܝܠ</forename>
-               </persName>
-               <persName xml:id="name492-5b"
-                         corresp="#name492-5a #name492-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib492-5">
-                  <forename sort="1">ܓܲܒܪܝܹܠ</forename>
-               </persName>
                <persName xml:id="name492-6a"
-                         corresp=" #name492-5a #name492-5b"
+                         corresp="#name492-6b #name492-7a"
                          xml:lang="syr"
                          source="#bib492-6">
+                  <forename sort="1">ܓܒܪܝܠ</forename>
+               </persName>
+               <persName xml:id="name492-6b"
+                         corresp="#name492-6a #name492-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib492-6">
+                  <forename sort="1">ܓܲܒܪܝܹܠ</forename>
+               </persName>
+               <persName xml:id="name492-7a"
+                         corresp="#name492-6a #name492-6b"
+                         xml:lang="syr"
+                         source="#bib492-7">
                   <forename sort="1">ܓܒܪܝܠ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|492</idno>
@@ -129,13 +126,13 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">215</citedRange>
                </bibl>
-               <bibl xml:id="bib492-5">
+               <bibl xml:id="bib492-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">81</citedRange>
                </bibl>
-               <bibl xml:id="bib492-6">
+               <bibl xml:id="bib492-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -96,46 +93,49 @@
       <body>
          <listPerson>
             <person xml:id="person-874">
-               <persName xml:id="name874-5a"
-                         corresp="#name874-5b #name874-6a #name874-6b"
-                         xml:lang="syr"
-                         source="#bib874-5">
-                  <forename sort="1">ܡܐܪܝ</forename> 
-                  <addName type="untagged-title" sort="2">ܦܪܣܝܐ</addName>
-               </persName>
-               <persName xml:id="name874-5b"
-                         corresp="#name874-5a #name874-6a #name874-6b"
-                         xml:lang="syr-Syrn"
-                         source="#bib874-5">
-                  <forename sort="1">ܡܵܐܪܝܼ</forename> 
-                  <addName type="untagged-title" sort="2">ܦܵܪܣܵܝܵܐ</addName>
-               </persName>
                <persName xml:id="name874-6a"
-                         corresp="#name874-6b #name874-5a #name874-5b"
+                         corresp="#name874-6b #name874-7a #name874-7b"
                          xml:lang="syr"
                          source="#bib874-6">
                   <forename sort="1">ܡܐܪܝ</forename> 
                   <addName type="untagged-title" sort="2">ܦܪܣܝܐ</addName>
                </persName>
                <persName xml:id="name874-6b"
-                         corresp="#name874-6a #name874-5a #name874-5b"
-                         xml:lang="syr-Syrj"
+                         corresp="#name874-6a #name874-7a #name874-7b"
+                         xml:lang="syr-Syrn"
                          source="#bib874-6">
+                  <forename sort="1">ܡܵܐܪܝܼ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܵܪܣܵܝܵܐ</addName>
+               </persName>
+               <persName xml:id="name874-7a"
+                         corresp="#name874-6a #name874-6b #name874-7b"
+                         xml:lang="syr"
+                         source="#bib874-7">
+                  <forename sort="1">ܡܐܪܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܦܪܣܝܐ</addName>
+               </persName>
+               <persName xml:id="name874-7b"
+                         corresp="#name874-6a #name874-6b #name874-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib874-7">
                   <forename sort="1">ܡܰܐܪܺܝ</forename> 
                   <addName type="untagged-title" sort="2">ܦܳܪܣܳܝܳܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name874-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib874-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mari</forename> 
                   <addName type="untagged-title" sort="2">the Persian</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|874</idno>
-               <bibl xml:id="bib874-5">
+               <bibl xml:id="bib874-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">75</citedRange>
                </bibl>
-               <bibl xml:id="bib874-6">
+               <bibl xml:id="bib874-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-256">
                <persName xml:id="name256-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib256-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Daniel</forename> 
@@ -105,29 +102,24 @@
                </persName>
                <persName xml:id="name256-2"
                          corresp="#name256-3 #name256-4a #name256-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib256-2">
-                  <addName type="untagged-title" sort="2">The Monk</addName> 
-                  <forename sort="1">Daniel</forename> 
-                  <addName type="untagged-title" sort="2">of Mardin</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib256-2">The Monk <forename sort="1">Daniel</forename> of Mardin</persName>
                <persName xml:id="name256-3"
                          corresp="#name256-2 #name256-4a #name256-4b"
                          xml:lang="ar"
-                         source="#bib256-3">
-                  <addName type="untagged-title" sort="2">الراهب </addName>
-                  <forename sort="1">دنيال</forename> 
-                  <addName type="untagged-title" sort="2">المارديني</addName>
-               </persName>
+                         source="#bib256-3">الراهب <forename sort="1">دنيال</forename> المارديني</persName>
                <persName xml:id="name256-4a"
-                         corresp="#name256-3 #name256-2 #name256-4b"
+                         corresp="#name256-2 #name256-3 #name256-4b"
                          xml:lang="syr"
                          source="#bib256-4">ܕܝܪܝܐ <forename sort="1">ܕܢܝܐܝܠ</forename> ܡܪܕܝܢܝܐ</persName>
                <persName xml:id="name256-4b"
-                         corresp="#name256-3 #name256-2 #name256-4a"
+                         corresp="#name256-2 #name256-3 #name256-4a"
                          xml:lang="syr-Syrj"
                          source="#bib256-4">ܕܰܝܪܳܝܐ <forename sort="1">ܕܳܢܝܐܝܠ</forename> ܡܰܪܕܝܢܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name256-5a"
+                         xml:lang="syr"
+                         source="#bib256-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܢܝܐܝܠ</forename> 
                   <addName type="untagged-title" sort="2">ܡܪܕܝܢܝܐ</addName>
                </persName>

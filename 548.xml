@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Which viaf.org records should be matched with this one, given that there is no scholarly consensus about whether Isaiah of Scetis and Isaiah of Gaza are the same person, and all the viaf.org records include information for both?</change>
@@ -98,7 +95,7 @@
          <listPerson>
             <person xml:id="person-548">
                <persName xml:id="name548-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib548-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Isaiah</forename> 
@@ -106,7 +103,7 @@
                </persName>
                <persName xml:id="name548-2"
                          corresp="#name548-3"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib548-2">
                   <forename sort="1">Isaiah</forename> 
                   <addName type="untagged-title" sort="2">of Scete</addName>
@@ -118,28 +115,28 @@
                   <forename sort="1">اشعيا</forename> 
                   <addName type="untagged-title" sort="2">ناسك الاسقيط</addName>
                </persName>
-               <persName xml:id="name548-5a"
-                         corresp="#name548-5b #name548-6a"
-                         xml:lang="syr"
-                         source="#bib548-5">
-                  <forename sort="1">ܐܒܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܐܫܥܝܐ</addName>
-               </persName>
-               <persName xml:id="name548-5b"
-                         corresp="#name548-5a #name548-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib548-5">
-                  <addName type="untagged-title" sort="2">ܐܲܒܵܐ</addName> 
-                  <forename sort="1">ܐܹܫܲܥܝܵܐ</forename>
-               </persName>
                <persName xml:id="name548-6a"
-                         corresp=" #name548-5a #name548-5b"
+                         corresp="#name548-6b #name548-7a"
                          xml:lang="syr"
                          source="#bib548-6">
                   <forename sort="1">ܐܒܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܫܥܝܐ</addName>
                </persName>
-               <persName xml:id="name548-7" xml:lang="syr-Latn-x-cbsc" source="#bib548-7">Abba Isaiah</persName>
+               <persName xml:id="name548-6b"
+                         corresp="#name548-6a #name548-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib548-6">
+                  <addName type="untagged-title" sort="2">ܐܲܒܵܐ</addName> 
+                  <forename sort="1">ܐܹܫܲܥܝܵܐ</forename>
+               </persName>
+               <persName xml:id="name548-7a"
+                         corresp="#name548-6a #name548-6b"
+                         xml:lang="syr"
+                         source="#bib548-7">
+                  <forename sort="1">ܐܒܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܫܥܝܐ</addName>
+               </persName>
+               <persName xml:id="name548-10" xml:lang="en" source="#bib548-10">Abba Isaiah</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|548</idno>
                <idno type="URI">http://viaf.org/viaf/9530999</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-no2003-39117</idno>
@@ -164,19 +161,19 @@
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">122</citedRange>
                </bibl>
-               <bibl xml:id="bib548-5">
+               <bibl xml:id="bib548-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib548-6">
+               <bibl xml:id="bib548-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">46</citedRange>
                </bibl>
-               <bibl xml:id="bib548-7">
+               <bibl xml:id="bib548-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

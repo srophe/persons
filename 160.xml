@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-160">
                <persName xml:id="name160-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib160-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Denḥa</forename>
                </persName>
                <persName xml:id="name160-2"
                          corresp="#name160-3 #name160-4a #name160-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib160-2">
                   <addName type="untagged-title" sort="2">The Priest-Philosopher</addName> 
                   <forename sort="1">Denḥa</forename>
@@ -112,20 +109,19 @@
                <persName xml:id="name160-3"
                          corresp="#name160-2 #name160-4a #name160-4b"
                          xml:lang="ar"
-                         source="#bib160-3">
-                  <addName type="untagged-title" sort="2">القس </addName>
-                  <forename sort="1">دنحا</forename> 
-                  <addName type="untagged-title" sort="2">الفيلسوف</addName>
-               </persName>
+                         source="#bib160-3">القس <forename sort="1">دنحا</forename> الفيلسوف</persName>
                <persName xml:id="name160-4a"
-                         corresp="#name160-3 #name160-2 #name160-4b"
+                         corresp="#name160-2 #name160-3 #name160-4b"
                          xml:lang="syr"
                          source="#bib160-4">ܩܫܝܫܐ <forename sort="1">ܕܢܚܐ</forename> ܦܝܠܣܘܦܐ</persName>
                <persName xml:id="name160-4b"
-                         corresp="#name160-3 #name160-2 #name160-4a"
+                         corresp="#name160-2 #name160-3 #name160-4a"
                          xml:lang="syr-Syrj"
                          source="#bib160-4">ܩܰܫܝܫܳܐ <forename sort="1">ܕܰܢܚܳܐ</forename> ܦܺܝܠܳܣܘܦܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name160-5a"
+                         xml:lang="syr"
+                         source="#bib160-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܢܚܐ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|160</idno>

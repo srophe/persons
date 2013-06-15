@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-14-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-14-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -111,20 +108,23 @@
                   <addName type="untagged-title" sort="2">الآرامي</addName>
                </persName>
                <persName xml:id="name1-4a"
-                         corresp="#name1-3 #name1-2 #name1-4b"
+                         corresp="#name1-2 #name1-3 #name1-4b"
                          xml:lang="syr"
                          source="#bib1-4">
                   <forename sort="1">ܘܦܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܪܡܝܐ</addName>
                </persName>
                <persName xml:id="name1-4b"
-                         corresp="#name1-3 #name1-2 #name1-4a"
+                         corresp="#name1-2 #name1-3 #name1-4a"
                          xml:lang="syr-Syrj"
                          source="#bib1-4">
                   <forename sort="1">ܘܰܦܰܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܳܪܳܡܳܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name1-8"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib1-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Wafā</forename> 
                   <addName type="untagged-title" sort="2">the Aramean</addName>
                </persName>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-221">
                <persName xml:id="name221-2"
                          corresp="#name221-3 #name221-4a #name221-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib221-2">
                   <forename sort="1">Abraham</forename>, <addName type="untagged-title" sort="2">bishop of Tālbsam</addName>
                </persName>
@@ -110,24 +107,30 @@
                   <addName type="untagged-title" sort="2">اسقف تلبسم</addName>
                </persName>
                <persName xml:id="name221-4a"
-                         corresp="#name221-3 #name221-2 #name221-4b"
+                         corresp="#name221-2 #name221-3 #name221-4b"
                          xml:lang="syr"
                          source="#bib221-4">
                   <forename sort="1">ܐܒܪܗܡ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܬܠܒܣ̈ܡܐ</addName>
                </persName>
                <persName xml:id="name221-4b"
-                         corresp="#name221-3 #name221-2 #name221-4a"
+                         corresp="#name221-2 #name221-3 #name221-4a"
                          xml:lang="syr-Syrj"
                          source="#bib221-4">
                   <forename sort="1">ܐܰܒܪܳܗܡ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܬܶܠܒܶܣ̈ܡܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name221-5a"
+                         xml:lang="syr"
+                         source="#bib221-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܒܪܗܡ</forename> 
                   <addName type="untagged-title" sort="2">ܕܬܠܒܣ̈ܡܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name221-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib221-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Abrohom</forename> 
                   <addName type="untagged-title" sort="2">of Tel Besme</addName>
                </persName>

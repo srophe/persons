@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-283">
                <persName xml:id="name283-2"
                          corresp="#name283-3 #name283-4a #name283-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib283-2">
                   <forename sort="1">‛Abd al-Ghani</forename> 
                   <addName type="family" sort="2">al-Manṣuri</addName>
@@ -112,7 +109,7 @@
                   <addName type="untagged-title" sort="2">مفريان المشرق</addName>
                </persName>
                <persName xml:id="name283-4a"
-                         corresp="#name283-3 #name283-2 #name283-4b"
+                         corresp="#name283-2 #name283-3 #name283-4b"
                          xml:lang="syr"
                          source="#bib283-4">
                   <forename sort="1">ܥܒܕܐܠܓܢܝ</forename> 
@@ -120,18 +117,24 @@
                   <addName type="untagged-title" sort="2">ܡܦܪܝܢܐ ܕܡܕܢܚܐ</addName>
                </persName>
                <persName xml:id="name283-4b"
-                         corresp="#name283-3 #name283-2 #name283-4a"
+                         corresp="#name283-2 #name283-3 #name283-4a"
                          xml:lang="syr-Syrj"
                          source="#bib283-4">
                   <forename sort="1">ܥܰܒܕܐܠܓܰܢܝ</forename> 
                   <addName type="family" sort="2">ܡܰܢܨܘܪܳܝܐ</addName> 
                   <addName type="untagged-title" sort="2">ܡܰܦܪܝܳܢܐ ܕܡܰܕܢܚܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name283-5a"
+                         xml:lang="syr"
+                         source="#bib283-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܥܒܕܐܠܓܢܝ</forename> 
                   <addName type="untagged-title" sort="2">ܡܢܨܘܪܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name283-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib283-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ʿAbd al-Ghanī</forename> 
                   <addName type="untagged-title" sort="2">al-Manṣūrī</addName>
                </persName>

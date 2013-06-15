@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-62">
                <persName xml:id="name62-2"
                          corresp="#name62-3 #name62-4a #name62-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib62-2">
                   <addName type="untagged-title" sort="2">The Anonymous Writer of the Monastery of Qenneshrin</addName>
                </persName>
@@ -109,21 +106,27 @@
                   <addName type="untagged-title" sort="2">الكاتب المغمور الاسم في دير قنسرين</addName>
                </persName>
                <persName xml:id="name62-4a"
-                         corresp="#name62-3 #name62-2 #name62-4b"
+                         corresp="#name62-2 #name62-3 #name62-4b"
                          xml:lang="syr"
                          source="#bib62-4">
                   <addName type="untagged-title" sort="2">ܟܬܘܒܐ ܕܓܢܝܙ ܫܡܗ ܒܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
                </persName>
                <persName xml:id="name62-4b"
-                         corresp="#name62-3 #name62-2 #name62-4a"
+                         corresp="#name62-2 #name62-3 #name62-4a"
                          xml:lang="syr-Syrj"
                          source="#bib62-4">
                   <addName type="untagged-title" sort="2">ܟܳܬܘܒܳܐ ܕܰܓܢܝܙ ܫܡܗ ܒܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title" sort="2">ܟܬܘܒܐ ܕܬܫܥܝܬܐ ܕܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</addName>
+               <persName xml:id="name62-5a"
+                         xml:lang="syr"
+                         source="#bib62-5"
+                         syriaca-tags="#syriaca-headword">
+                  <addName type="untagged-title" sort="2">ܡܟܬܒܢܐ ܕܬܫܥܝܬܐ ܕܝܘܚܢܢ ܒܪ ܐܦܬܘܢܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name62-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib62-8"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Life of John bar Aphtonia</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|62</idno>

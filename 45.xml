@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-45">
                <persName xml:id="name45-2"
                          corresp="#name45-3 #name45-4a #name45-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib45-2">
                   <addName type="untagged-title" sort="2">The Ascetic</addName> 
                   <forename sort="1">Barlaha</forename>
@@ -111,23 +108,29 @@
                   <addName type="untagged-title" sort="2">الناسك</addName>
                </persName>
                <persName xml:id="name45-4a"
-                         corresp="#name45-3 #name45-2 #name45-4b"
+                         corresp="#name45-2 #name45-3 #name45-4b"
                          xml:lang="syr"
                          source="#bib45-4">
                   <forename sort="1">ܒܪܠܗܐ</forename> 
                   <addName type="untagged-title" sort="2">ܢܙܝܪܐ</addName>
                </persName>
                <persName xml:id="name45-4b"
-                         corresp="#name45-3 #name45-2 #name45-4a"
+                         corresp="#name45-2 #name45-3 #name45-4a"
                          xml:lang="syr-Syrj"
                          source="#bib45-4">
                   <forename sort="1">ܒܰܪܠܗܐ</forename> 
                   <addName type="untagged-title" sort="2">ܢܙܝܪܳܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name45-5a"
+                         xml:lang="syr"
+                         source="#bib45-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܒܪܠܗܐ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name45-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib45-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Barloho</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|45</idno>

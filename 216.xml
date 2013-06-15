@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-216">
                <persName xml:id="name216-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib216-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodoros</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name216-2"
                          corresp="#name216-3 #name216-4a #name216-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib216-2">
                   <forename sort="1">Bar Wahbun</forename>
                </persName>
@@ -116,18 +113,18 @@
                   <forename sort="1">ابن وهبون</forename>
                </persName>
                <persName xml:id="name216-4a"
-                         corresp="#name216-3 #name216-2 #name216-4b"
+                         corresp="#name216-2 #name216-3 #name216-4b"
                          xml:lang="syr"
                          source="#bib216-4">
                   <forename sort="1">ܒܪ ܘܗܒܘܢ</forename>
                </persName>
                <persName xml:id="name216-4b"
-                         corresp="#name216-3 #name216-2 #name216-4a"
+                         corresp="#name216-2 #name216-3 #name216-4a"
                          xml:lang="syr-Syrj"
                          source="#bib216-4">
                   <forename sort="1">ܒܰܪ ܘܰܗܒܘܢ</forename>
                </persName>
-               <persName xml:id="name216-7" xml:lang="syr-Latn-x-cbsc" source="#bib216-7">Theodore bar Wahbun</persName>
+               <persName xml:id="name216-10" xml:lang="en" source="#bib216-10">Theodore bar Wahbun</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|216</idno>
                <idno type="URI">http://www.worldcat.org/oclc/504808574</idno>
                <death when="1193" source="#bib216-2">1193</death>
@@ -158,7 +155,7 @@
                   <citedRange unit="entry">213</citedRange>
                   <citedRange unit="pp">423</citedRange>
                </bibl>
-               <bibl xml:id="bib216-7">
+               <bibl xml:id="bib216-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

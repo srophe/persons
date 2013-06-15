@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,35 +94,37 @@
          <listPerson>
             <person xml:id="person-732">
                <persName xml:id="name732-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib732-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shahdost</forename>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <Authorized_Sy_NV_Full xmlns="">ܫܗܕܘܣܬ</Authorized_Sy_NV_Full>
-               </persName>
                <persName xml:id="name732-5a"
-                         corresp="#name732-5b #name732-6a"
                          xml:lang="syr"
-                         source="#bib732-5">
-                  <forename sort="1">ܫܗܕܘܣܬ</forename> 
-                  <addName type="untagged-title" sort="2">ܚܣܝܐ ܕܛܝܪܗܢ</addName>
-               </persName>
-               <persName xml:id="name732-5b"
-                         corresp="#name732-5a #name732-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib732-5">
-                  <forename sort="1">ܫܵܗܕܘܿܣܬ</forename> 
-                  <addName type="untagged-title" sort="2">ܚܲܣܝܵܐ ܕܛܝܼܪܗܵܢ</addName>
-               </persName>
+                         source="#bib732-5"
+                         syriaca-tags="#syriaca-headword">ܫܗܕܘܣܬ</persName>
                <persName xml:id="name732-6a"
-                         corresp=" #name732-5a #name732-5b"
+                         corresp="#name732-6b #name732-7a"
                          xml:lang="syr"
                          source="#bib732-6">
                   <forename sort="1">ܫܗܕܘܣܬ</forename> 
                   <addName type="untagged-title" sort="2">ܚܣܝܐ ܕܛܝܪܗܢ</addName>
                </persName>
+               <persName xml:id="name732-6b"
+                         corresp="#name732-6a #name732-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib732-6">
+                  <forename sort="1">ܫܵܗܕܘܿܣܬ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܲܣܝܵܐ ܕܛܝܼܪܗܵܢ</addName>
+               </persName>
+               <persName xml:id="name732-7a"
+                         corresp="#name732-6a #name732-6b"
+                         xml:lang="syr"
+                         source="#bib732-7">
+                  <forename sort="1">ܫܗܕܘܣܬ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܣܝܐ ܕܛܝܪܗܢ</addName>
+               </persName>
+               <persName xml:id="name732-10" xml:lang="en" source="#bib732-10">Shahdost of Tirhan</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|732</idno>
                <floruit source="#bib732-1">first half of the 8th cent.</floruit>
                <bibl xml:id="bib732-1">
@@ -134,17 +133,22 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">491</citedRange>
                </bibl>
-               <bibl xml:id="bib732-5">
+               <bibl xml:id="bib732-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">76</citedRange>
                </bibl>
-               <bibl xml:id="bib732-6">
+               <bibl xml:id="bib732-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">177</citedRange>
+               </bibl>
+               <bibl xml:id="bib732-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

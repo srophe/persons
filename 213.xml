@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-213">
                <persName xml:id="name213-2"
                          corresp="#name213-3 #name213-4a #name213-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib213-2">
                   <forename sort="1">Abu Ghalib</forename>, <addName type="untagged-title" sort="2">bishop of Jīhān</addName>
                </persName>
@@ -110,28 +107,34 @@
                   <addName type="untagged-title" sort="2">اسقف جيحان</addName>
                </persName>
                <persName xml:id="name213-4a"
-                         corresp="#name213-3 #name213-2 #name213-4b"
+                         corresp="#name213-2 #name213-3 #name213-4b"
                          xml:lang="syr"
                          source="#bib213-4">
                   <forename sort="1">ܐܒܘ ܓܐܠܒ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܓܝܚܢ</addName>
                </persName>
                <persName xml:id="name213-4b"
-                         corresp="#name213-3 #name213-2 #name213-4a"
+                         corresp="#name213-2 #name213-3 #name213-4a"
                          xml:lang="syr-Syrj"
                          source="#bib213-4">
                   <forename sort="1">ܐܰܒܘ ܓܰܐܠܒ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܓܝܚܳܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name213-5a"
+                         xml:lang="syr"
+                         source="#bib213-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܒܘ ܓܐܠܒ</forename> 
                   <addName type="untagged-title" sort="2">ܕܓܝܚܢ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name213-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib213-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Abū Ghālib</forename> 
                   <addName type="untagged-title" sort="2">of Giḥun</addName>
                </persName>
-               <persName xml:id="name213-7" xml:lang="syr-Latn-x-cbsc" source="#bib213-7">Athanasius Abu Ghalib</persName>
+               <persName xml:id="name213-10" xml:lang="en" source="#bib213-10">Athanasius Abu Ghalib</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|213</idno>
                <death when="1177" source="#bib213-2">1177</death>
                <bibl xml:id="bib213-2">
@@ -156,7 +159,7 @@
                   <citedRange unit="entry">210</citedRange>
                   <citedRange unit="pp">421</citedRange>
                </bibl>
-               <bibl xml:id="bib213-7">
+               <bibl xml:id="bib213-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

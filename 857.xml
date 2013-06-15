@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-857">
                <persName xml:id="name857-2"
                          corresp="#name857-3 #name857-4a"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib857-2">
                   <forename sort="1">Hieronymus</forename>
                </persName>
@@ -109,38 +106,42 @@
                   <forename sort="1">هيرونيمس</forename>
                </persName>
                <persName xml:id="name857-4a"
-                         corresp="#name857-3 #name857-2"
+                         corresp="#name857-2 #name857-3"
                          xml:lang="syr"
                          source="#bib857-4">
                   <forename sort="1">ܗܝܪܘܢܝܡܘܣ</forename>
                </persName>
-               <persName xml:id="name857-5a"
-                         corresp="#name857-5b #name857-6a #name857-6b"
+               <persName xml:id="name857-6a"
+                         corresp="#name857-6b #name857-7a #name857-7b"
                          xml:lang="syr"
-                         source="#bib857-5">
+                         source="#bib857-6">
                   <forename sort="1">ܐܝܪܢܘܡܝܣ</forename>
                </persName>
-               <persName xml:id="name857-5b"
-                         corresp="#name857-5a #name857-6a #name857-6b"
+               <persName xml:id="name857-6b"
+                         corresp="#name857-6a #name857-7a #name857-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib857-5">
+                         source="#bib857-6">
                   <forename sort="1">ܐܝܼܪܹܢܘܿܡܝܼܣ</forename>
                </persName>
-               <persName xml:id="name857-6a"
-                         corresp="#name857-6b #name857-5a #name857-5b"
+               <persName xml:id="name857-7a"
+                         corresp="#name857-6a #name857-6b #name857-7b"
                          xml:lang="syr"
-                         source="#bib857-6">
+                         source="#bib857-7">
                   <forename sort="1">ܐܝܪܘܢܝܡܘܣ</forename>
                </persName>
-               <persName xml:id="name857-6b"
-                         corresp="#name857-6a #name857-5a #name857-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib857-6">
+               <persName xml:id="name857-7b"
+                         corresp="#name857-6a #name857-6b #name857-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib857-7">
                   <forename sort="1">ܐܺܝܪܘܽܢܝܺܡܳܘܣ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name857-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib857-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Jerome</forename>
                </persName>
+               <persName xml:id="name857-10" xml:lang="en" source="#bib857-10">Jerome</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|857</idno>
                <idno type="URI">http://viaf.org/viaf/299558745</idno>
                <idno type="URI">http://viaf.org/viaf/96092759</idno>
@@ -162,17 +163,22 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib857-5">
+               <bibl xml:id="bib857-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib857-6">
+               <bibl xml:id="bib857-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">49</citedRange>
+               </bibl>
+               <bibl xml:id="bib857-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

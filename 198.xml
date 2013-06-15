@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,11 +95,9 @@
             <person xml:id="person-198">
                <persName xml:id="name198-2"
                          corresp="#name198-3 #name198-4a #name198-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib198-2">
-                  <forename sort="1">Ignatius</forename> 
-                  <addName type="untagged-title" sort="2">III</addName>, <addName type="untagged-title" sort="2">metropolitan of Melitene</addName>
-               </persName>
+                  <forename sort="1">Ignatius</forename> III, metropolitan of Melitene</persName>
                <persName xml:id="name198-3"
                          corresp="#name198-2 #name198-4a #name198-4b"
                          xml:lang="ar"
@@ -111,24 +106,30 @@
                   <addName type="untagged-title" sort="2">الثالث مطران ملطية</addName>
                </persName>
                <persName xml:id="name198-4a"
-                         corresp="#name198-3 #name198-2 #name198-4b"
+                         corresp="#name198-2 #name198-3 #name198-4b"
                          xml:lang="syr"
                          source="#bib198-4">
                   <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܬܠܝܬܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܠܝܛܝܢܝ</addName>
                </persName>
                <persName xml:id="name198-4b"
-                         corresp="#name198-3 #name198-2 #name198-4a"
+                         corresp="#name198-2 #name198-3 #name198-4a"
                          xml:lang="syr-Syrj"
                          source="#bib198-4">
                   <forename sort="1">ܐܝܓܢܰܐܛܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܬܠܝܬܳܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܡܝܺܠܝܛܝܢܝ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name198-5a"
+                         xml:lang="syr"
+                         source="#bib198-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܝܓܢܐܛܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܡܝܠܝܛܝܢܝ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name198-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib198-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ignatius</forename> 
                   <addName type="untagged-title" sort="2">of Melitene</addName>
                </persName>

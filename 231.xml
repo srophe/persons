@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-231">
                <persName xml:id="name231-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib231-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yaʿqub</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name231-2"
                          corresp="#name231-3 #name231-4a #name231-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib231-2">
                   <forename sort="1">Jacob</forename> 
                   <addName type="untagged-title" sort="2">of Barṭelli</addName>
@@ -114,28 +111,29 @@
                          corresp="#name231-2 #name231-4a #name231-4b"
                          xml:lang="ar"
                          source="#bib231-3">
-                  <forename sort="1">يعقوب</forename> 
-                  <addName type="untagged-title" sort="2">البرطلي </addName>
-                  <addName type="untagged-title" sort="2">مطران دير مار متى</addName>
-               </persName>
+                  <forename sort="1">يعقوب</forename> البرطلي مطران دير مار متى</persName>
                <persName xml:id="name231-4a"
-                         corresp="#name231-3 #name231-2 #name231-4b"
+                         corresp="#name231-2 #name231-3 #name231-4b"
                          xml:lang="syr"
                          source="#bib231-4">
                   <forename sort="1">ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܒܪ ܛܠܝܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܕܝܪܐ ܕܡܪܝ ܡܬܝ</addName>
                </persName>
                <persName xml:id="name231-4b"
-                         corresp="#name231-3 #name231-2 #name231-4a"
+                         corresp="#name231-2 #name231-3 #name231-4a"
                          xml:lang="syr-Syrj"
                          source="#bib231-4">
                   <forename sort="1">ܝܰܥܩܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܒܰܪ ܛܰܠܝܐ ܡܝܛܪܘܦܘܠܝܛܳܐ ܕܕܰܝܪܳܐ ܕܡܳܪܝ ܡܰܬܝ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name231-5a"
+                         xml:lang="syr"
+                         source="#bib231-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܥܩܘܒ</forename> 
                   <addName type="family" sort="2">ܒܪ ܫܟܟܐ</addName>
                </persName>
+               <persName xml:id="name231-10" xml:lang="en" source="#bib231-10">Jacob bar Shakko</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|231</idno>
                <idno type="URI">http://worldcat.org/identities/np-jacob bar sakko$d 1241</idno>
                <idno type="URI">http://viaf.org/viaf/81180132</idno>
@@ -167,6 +165,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">228</citedRange>
                   <citedRange unit="pp">435</citedRange>
+               </bibl>
+               <bibl xml:id="bib231-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
             <relation type="disambiguation"

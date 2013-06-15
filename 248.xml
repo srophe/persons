@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-248">
                <persName xml:id="name248-2"
                          corresp="#name248-3 #name248-4a #name248-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib248-2">
                   <forename sort="1">Cyril</forename>, <addName type="untagged-title" sort="2">bishop of Ḥaḥ</addName>
                </persName>
@@ -110,24 +107,30 @@
                   <addName type="untagged-title" sort="2">اسقف حاح</addName>
                </persName>
                <persName xml:id="name248-4a"
-                         corresp="#name248-3 #name248-2 #name248-4b"
+                         corresp="#name248-2 #name248-3 #name248-4b"
                          xml:lang="syr"
                          source="#bib248-4">
                   <forename sort="1">ܩܘܪܝܠܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܚܐܚ</addName>
                </persName>
                <persName xml:id="name248-4b"
-                         corresp="#name248-3 #name248-2 #name248-4a"
+                         corresp="#name248-2 #name248-3 #name248-4a"
                          xml:lang="syr-Syrj"
                          source="#bib248-4">
                   <forename sort="1">ܩܘܪܝܺܠܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܚܰܐܚ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name248-5a"
+                         xml:lang="syr"
+                         source="#bib248-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܩܘܪܝܠܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܚܐܚ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name248-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib248-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Qurillos</forename> 
                   <addName type="untagged-title" sort="2">of Ḥaḥ</addName>
                </persName>

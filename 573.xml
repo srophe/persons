@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,64 +94,53 @@
          <listPerson>
             <person xml:id="person-573">
                <persName xml:id="name573-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib573-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">John</forename> 
                   <addName type="untagged-title" sort="2">Chrysostom</addName>
                </persName>
                <persName xml:id="name573-3"
-                         corresp=" #name573-4a #name573-4b"
+                         corresp="#name573-4a #name573-4b"
                          xml:lang="ar"
-                         source="#bib573-3">
-                  <addName type="untagged-title" sort="2">مار</addName> 
-                  <forename sort="1">ايونيس</forename> 
-                  <addName type="untagged-title" sort="2">الذهبي فمه</addName>
-               </persName>
+                         source="#bib573-3">مار <forename sort="1">ايونيس</forename> الذهبي فمه</persName>
                <persName xml:id="name573-4a"
-                         corresp="#name573-3#name573-4b"
+                         corresp="#name573-3 #name573-4b"
                          xml:lang="syr"
-                         source="#bib573-4">
-                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
-                  <forename sort="1">ܐܝܘܐܢܝܣ</forename> 
-                  <addName type="untagged-title" sort="2">ܦܘܡܐ ܕܕܗܒܐ</addName>
-               </persName>
+                         source="#bib573-4">ܡܪܝ <forename sort="1">ܐܝܘܐܢܝܣ</forename> ܦܘܡܐ ܕܕܗܒܐ</persName>
                <persName xml:id="name573-4b"
-                         corresp="#name573-3#name573-4a"
+                         corresp="#name573-3 #name573-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib573-4">
-                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
-                  <forename sort="1">ܐܝܘܰܐܢܝܣ</forename> 
-                  <addName type="untagged-title" sort="2">ܦܘܡܐ ܕܕܰܗܒܐ</addName>
-               </persName>
-               <persName xml:id="name573-5a"
-                         corresp="#name573-5b #name573-6a #name573-6b"
+                         source="#bib573-4">ܡܳܪܝ <forename sort="1">ܐܝܘܰܐܢܝܣ</forename> ܦܘܡܐ ܕܕܰܗܒܐ</persName>
+               <persName xml:id="name573-6a"
+                         corresp="#name573-6b #name573-7a #name573-7b"
                          xml:lang="syr"
-                         source="#bib573-5">
+                         source="#bib573-6">
                   <forename sort="1">ܝܘܐܢܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܪܘܣܘܣܛܘܡܘܣ</addName>
                </persName>
-               <persName xml:id="name573-5b"
-                         corresp="#name573-5a #name573-6a #name573-6b"
+               <persName xml:id="name573-6b"
+                         corresp="#name573-6a #name573-7a #name573-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib573-5">
+                         source="#bib573-6">
                   <forename sort="1">ܝܘܼܐܵܢܝܼܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܪܘܿܣܘܿܣܛܘܿܡܘܿܣ</addName>
                </persName>
-               <persName xml:id="name573-6a"
-                         corresp="#name573-6b #name573-5a #name573-5b"
+               <persName xml:id="name573-7a"
+                         corresp="#name573-6a #name573-6b #name573-7b"
                          xml:lang="syr"
-                         source="#bib573-6">
+                         source="#bib573-7">
                   <forename sort="1">ܐܝܘܐܢܢܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܪܘܣܘܣܛܘܡܘܣ</addName>
                </persName>
-               <persName xml:id="name573-6b"
-                         corresp="#name573-6a #name573-5a #name573-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib573-6">
+               <persName xml:id="name573-7b"
+                         corresp="#name573-6a #name573-6b #name573-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib573-7">
                   <forename sort="1">ܐܝܺܘܰܐܢܢܺܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܟܪܘܽܣܽܘܣܛܳܘܡܳܘܣ</addName>
                </persName>
+               <persName xml:id="name573-10" xml:lang="en" source="#bib573-10">John Chrysostom</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|573</idno>
                <idno type="URI">http://viaf.org/viaf/82340113</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n80-1460</idno>
@@ -185,17 +171,22 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib573-5">
+               <bibl xml:id="bib573-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">65</citedRange>
                </bibl>
-               <bibl xml:id="bib573-6">
+               <bibl xml:id="bib573-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">24</citedRange>
+               </bibl>
+               <bibl xml:id="bib573-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-241">
                <persName xml:id="name241-2"
                          corresp="#name241-3 #name241-4a #name241-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib241-2">
                   <forename sort="1">Abu Naṣr</forename> 
                   <addName type="untagged-title" sort="2">of Barṭelli</addName>
@@ -111,20 +108,23 @@
                   <addName type="untagged-title" sort="2">البرطلي</addName>
                </persName>
                <persName xml:id="name241-4a"
-                         corresp="#name241-3 #name241-2 #name241-4b"
+                         corresp="#name241-2 #name241-3 #name241-4b"
                          xml:lang="syr"
                          source="#bib241-4">
                   <forename sort="1">ܐܒܘ ܢܨܪ</forename> 
                   <addName type="untagged-title" sort="2">ܒܪܛܠܝܐ</addName>
                </persName>
                <persName xml:id="name241-4b"
-                         corresp="#name241-3 #name241-2 #name241-4a"
+                         corresp="#name241-2 #name241-3 #name241-4a"
                          xml:lang="syr-Syrj"
                          source="#bib241-4">
                   <forename sort="1">ܐܰܒܘ ܢܰܨܪ</forename> 
                   <addName type="untagged-title" sort="2">ܒܰܪܛܰܠܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name241-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib241-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Abū Naṣr</forename> 
                   <addName type="untagged-title" sort="2">of Barṭelle</addName>
                </persName>

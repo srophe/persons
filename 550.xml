@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-550">
                <persName xml:id="name550-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib550-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Isḥaq</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name550-2"
                          corresp="#name550-3 #name550-4a #name550-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib550-2">
                   <forename sort="1">Isaac</forename> 
                   <addName type="untagged-title" sort="2">of Nineveh</addName>
@@ -118,40 +115,41 @@
                   <addName type="untagged-title" sort="2">النينوي</addName>
                </persName>
                <persName xml:id="name550-4a"
-                         corresp="#name550-3 #name550-2 #name550-4b"
+                         corresp="#name550-2 #name550-3 #name550-4b"
                          xml:lang="syr"
                          source="#bib550-4">
                   <forename sort="1">ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
                </persName>
                <persName xml:id="name550-4b"
-                         corresp="#name550-3 #name550-2 #name550-4a"
+                         corresp="#name550-2 #name550-3 #name550-4a"
                          xml:lang="syr-Syrj"
                          source="#bib550-4">
                   <forename sort="1">ܐܝܺܣܚܳܩ</forename> 
                   <addName type="untagged-title" sort="2">ܕܢܝܺܢܘܶܐ</addName>
                </persName>
-               <persName xml:id="name550-5a"
-                         corresp="#name550-5b #name550-6a"
-                         xml:lang="syr"
-                         source="#bib550-5">
-                  <forename sort="1">ܐܝܣܚܩ</forename> 
-                  <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
-               </persName>
-               <persName xml:id="name550-5b"
-                         corresp="#name550-5a #name550-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib550-5">
-                  <forename sort="1">ܐܝܼܣܚܵܩ</forename> 
-                  <addName type="untagged-title" sort="2">ܕܢܝܼܢܘܹܐ</addName>
-               </persName>
                <persName xml:id="name550-6a"
-                         corresp=" #name550-5a #name550-5b"
+                         corresp="#name550-6b #name550-7a"
                          xml:lang="syr"
                          source="#bib550-6">
                   <forename sort="1">ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
                </persName>
+               <persName xml:id="name550-6b"
+                         corresp="#name550-6a #name550-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib550-6">
+                  <forename sort="1">ܐܝܼܣܚܵܩ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܝܼܢܘܹܐ</addName>
+               </persName>
+               <persName xml:id="name550-7a"
+                         corresp="#name550-6a #name550-6b"
+                         xml:lang="syr"
+                         source="#bib550-7">
+                  <forename sort="1">ܐܝܣܚܩ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܢܝܢܘܐ</addName>
+               </persName>
+               <persName xml:id="name550-10" xml:lang="en" source="#bib550-10">Isaac of Nineveh</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|550</idno>
                <idno type="URI">http://viaf.org/viaf/401332</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n85-275908</idno>
@@ -189,17 +187,22 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib550-5">
+               <bibl xml:id="bib550-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">72</citedRange>
                </bibl>
-               <bibl xml:id="bib550-6">
+               <bibl xml:id="bib550-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">104</citedRange>
+               </bibl>
+               <bibl xml:id="bib550-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

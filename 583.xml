@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,52 +95,36 @@
             <person xml:id="person-583">
                <persName xml:id="name583-2"
                          corresp="#name583-3 #name583-4a #name583-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib583-2">
-                  <Barsoum_En_Full xmlns="">Kalila wa Dimna</Barsoum_En_Full>
-               </persName>
+                         xml:lang="en"
+                         source="#bib583-2">Kalila wa Dimna</persName>
                <persName xml:id="name583-3"
                          corresp="#name583-2 #name583-4a #name583-4b"
                          xml:lang="ar"
-                         source="#bib583-3">
-                  <Barsoum_Ar_Full xmlns="">كتاب كليلة ودمنة</Barsoum_Ar_Full>
-               </persName>
+                         source="#bib583-3">كتاب كليلة ودمنة</persName>
                <persName xml:id="name583-4a"
-                         corresp="#name583-3 #name583-2 #name583-4b"
+                         corresp="#name583-2 #name583-3 #name583-4b"
                          xml:lang="syr"
-                         source="#bib583-4">
-                  <Barsoum_Sy_NV_Full xmlns="">ܟܬܒܐ ܕܩܠܝܠܓ ܘܕܡܢܓ</Barsoum_Sy_NV_Full>
-               </persName>
+                         source="#bib583-4">ܟܬܒܐ ܕܩܠܝܠܓ ܘܕܡܢܓ</persName>
                <persName xml:id="name583-4b"
-                         corresp="#name583-3 #name583-2 #name583-4a"
+                         corresp="#name583-2 #name583-3 #name583-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib583-4">
-                  <Barsoum_Sy_V_Full xmlns="">ܟܬܳܒܐ ܕܩܰܠܝܠܰܓ ܘܕܶܡܢܰܓ</Barsoum_Sy_V_Full>
-               </persName>
-               <persName xml:id="name583-5a"
-                         corresp="#name583-5b #name583-6a #name583-6b"
-                         xml:lang="syr"
-                         source="#bib583-5">
-                  <Abdisho_YdQ_Sy_NV_Full xmlns="">ܩܠܝܠܓ ܘܕܡܢܓ</Abdisho_YdQ_Sy_NV_Full>
-               </persName>
-               <persName xml:id="name583-5b"
-                         corresp="#name583-5a #name583-6a #name583-6b"
-                         xml:lang="syr-Syrn"
-                         source="#bib583-5">
-                  <Abdisho_YdQ_Sy_V_Full xmlns="">ܩܠܝܼܠܸܓ ܘܕܲܡܢܸܓ</Abdisho_YdQ_Sy_V_Full>
-               </persName>
+                         source="#bib583-4">ܟܬܳܒܐ ܕܩܰܠܝܠܰܓ ܘܕܶܡܢܰܓ</persName>
                <persName xml:id="name583-6a"
-                         corresp="#name583-6b #name583-5a #name583-5b"
+                         corresp="#name583-6b #name583-7a #name583-7b"
                          xml:lang="syr"
-                         source="#bib583-6">
-                  <Abdisho_BO_Sy_NV_Full xmlns="">ܩܠܝܠܓ ܘܕܡܢܓ</Abdisho_BO_Sy_NV_Full>
-               </persName>
+                         source="#bib583-6">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
                <persName xml:id="name583-6b"
-                         corresp="#name583-6a #name583-5a #name583-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib583-6">
-                  <Abdisho_BO_Sy_V_Full xmlns="">ܩܰܠܺܝܠܰܓ ܘܕܰܡܢܰܓ</Abdisho_BO_Sy_V_Full>
-               </persName>
+                         corresp="#name583-6a #name583-7a #name583-7b"
+                         xml:lang="syr-Syrn"
+                         source="#bib583-6">ܩܠܝܼܠܸܓ ܘܕܲܡܢܸܓ</persName>
+               <persName xml:id="name583-7a"
+                         corresp="#name583-6a #name583-6b #name583-7b"
+                         xml:lang="syr"
+                         source="#bib583-7">ܩܠܝܠܓ ܘܕܡܢܓ</persName>
+               <persName xml:id="name583-7b"
+                         corresp="#name583-6a #name583-6b #name583-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib583-7">ܩܰܠܺܝܠܰܓ ܘܕܰܡܢܰܓ</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|583</idno>
                <bibl xml:id="bib583-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -170,13 +151,13 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">29</citedRange>
                </bibl>
-               <bibl xml:id="bib583-5">
+               <bibl xml:id="bib583-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">79</citedRange>
                </bibl>
-               <bibl xml:id="bib583-6">
+               <bibl xml:id="bib583-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -96,44 +93,47 @@
       <body>
          <listPerson>
             <person xml:id="person-850">
-               <persName xml:id="name850-5a"
-                         corresp="#name850-5b #name850-6a #name850-6b"
-                         xml:lang="syr"
-                         source="#bib850-5">
-                  <forename sort="1">ܐܪܢܝܐܣܛܬܐܘܣ</forename>
-               </persName>
-               <persName xml:id="name850-5b"
-                         corresp="#name850-5a #name850-6a #name850-6b"
-                         xml:lang="syr-Syrn"
-                         source="#bib850-5">
-                  <forename sort="1">ܐܵܪܢܝܼܵܐܣܛܵܬܹܐܘܿܣ</forename>
-               </persName>
                <persName xml:id="name850-6a"
-                         corresp="#name850-6b #name850-5a #name850-5b"
+                         corresp="#name850-6b #name850-7a #name850-7b"
                          xml:lang="syr"
                          source="#bib850-6">
                   <forename sort="1">ܐܪܢܝܐܣܛܬܐܘܣ</forename>
                </persName>
                <persName xml:id="name850-6b"
-                         corresp="#name850-6a #name850-5a #name850-5b"
-                         xml:lang="syr-Syrj"
+                         corresp="#name850-6a #name850-7a #name850-7b"
+                         xml:lang="syr-Syrn"
                          source="#bib850-6">
+                  <forename sort="1">ܐܵܪܢܝܼܵܐܣܛܵܬܹܐܘܿܣ</forename>
+               </persName>
+               <persName xml:id="name850-7a"
+                         corresp="#name850-6a #name850-6b #name850-7b"
+                         xml:lang="syr"
+                         source="#bib850-7">
+                  <forename sort="1">ܐܪܢܝܐܣܛܬܐܘܣ</forename>
+               </persName>
+               <persName xml:id="name850-7b"
+                         corresp="#name850-6a #name850-6b #name850-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib850-7">
                   <forename sort="1">ܐܶܪܰܢܝܰܐܣܛܶܬܶܐܘܳܣ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name850-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib850-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Arniyasṭatheos</forename>
                </persName>
-               <persName xml:lang="en">
+               <persName xml:id="name850-9" xml:lang="en" source="#bib850-9">
                   <forename sort="1">Eranistes</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|850</idno>
-               <bibl xml:id="bib850-5">
+               <bibl xml:id="bib850-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib850-6">
+               <bibl xml:id="bib850-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,35 +94,32 @@
          <listPerson>
             <person xml:id="person-307">
                <persName xml:id="name307-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib307-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Aba</forename> 
-                  <addName type="untagged-title" sort="2">II</addName> 
-                  <addName type="untagged-title" sort="2">of Kashkar</addName>
-               </persName>
-               <persName xml:id="name307-5a"
-                         corresp="#name307-5b #name307-6a"
-                         xml:lang="syr"
-                         source="#bib307-5">
-                  <forename sort="1">ܐܒܐ</forename> 
-                  <addName type="family" sort="2">ܒܪ ܒܪܝܟ ܨܒܝܢܗ</addName>
-               </persName>
-               <persName xml:id="name307-5b"
-                         corresp="#name307-5a #name307-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib307-5">
-                  <forename sort="1">ܐܲܒܵܐ</forename> 
-                  <addName type="family" sort="2">ܒܲܪ ܒܪܝܼܟ ܨܸܒܝܵܢܹܗ</addName>
-               </persName>
+                  <forename sort="1">Aba</forename> II of Kashkar</persName>
                <persName xml:id="name307-6a"
-                         corresp=" #name307-5a #name307-5b"
+                         corresp="#name307-6b #name307-7a"
                          xml:lang="syr"
                          source="#bib307-6">
                   <forename sort="1">ܐܒܐ</forename> 
                   <addName type="family" sort="2">ܒܪ ܒܪܝܟ ܨܒܝܢܗ</addName>
                </persName>
-               <persName xml:id="name307-7" xml:lang="syr-Latn-x-cbsc" source="#bib307-7">Aba of Kashkar</persName>
+               <persName xml:id="name307-6b"
+                         corresp="#name307-6a #name307-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib307-6">
+                  <forename sort="1">ܐܲܒܵܐ</forename> 
+                  <addName type="family" sort="2">ܒܲܪ ܒܪܝܼܟ ܨܸܒܝܵܢܹܗ</addName>
+               </persName>
+               <persName xml:id="name307-7a"
+                         corresp="#name307-6a #name307-6b"
+                         xml:lang="syr"
+                         source="#bib307-7">
+                  <forename sort="1">ܐܒܐ</forename> 
+                  <addName type="family" sort="2">ܒܪ ܒܪܝܟ ܨܒܝܢܗ</addName>
+               </persName>
+               <persName xml:id="name307-10" xml:lang="en" source="#bib307-10">Aba of Kashkar</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|307</idno>
                <bibl xml:id="bib307-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -133,19 +127,19 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">2</citedRange>
                </bibl>
-               <bibl xml:id="bib307-5">
+               <bibl xml:id="bib307-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">74</citedRange>
                </bibl>
-               <bibl xml:id="bib307-6">
+               <bibl xml:id="bib307-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">157</citedRange>
                </bibl>
-               <bibl xml:id="bib307-7">
+               <bibl xml:id="bib307-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,26 +94,26 @@
          <listPerson>
             <person xml:id="person-404">
                <persName xml:id="name404-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib404-1"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">Budge</addName>, <addName type="untagged-title" sort="2">Sir</addName> 
                   <forename sort="2">Ernest Alfred Wallis</forename>
                </persName>
                <persName xml:id="name404-3"
-                         corresp=" #name404-4a #name404-4b"
+                         corresp="#name404-4a #name404-4b"
                          xml:lang="ar"
                          source="#bib404-3">
                   <addName type="family" sort="1">بدج</addName>
                </persName>
                <persName xml:id="name404-4a"
-                         corresp="#name404-3#name404-4b"
+                         corresp="#name404-3 #name404-4b"
                          xml:lang="syr"
                          source="#bib404-4">
                   <addName type="family" sort="1">ܒܕܓ</addName>
                </persName>
                <persName xml:id="name404-4b"
-                         corresp="#name404-3#name404-4a"
+                         corresp="#name404-3 #name404-4a"
                          xml:lang="syr-Syrj"
                          source="#bib404-4">
                   <addName type="family" sort="1">ܒܕܰܓ</addName>

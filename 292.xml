@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,33 +95,31 @@
             <person xml:id="person-292">
                <persName xml:id="name292-2"
                          corresp="#name292-3 #name292-4a #name292-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib292-2">
-                  <addName type="untagged-title" sort="2">Chorepiscopus</addName> 
-                  <forename sort="1">‛Abd Yeshu‛</forename> 
-                  <addName type="untagged-title" sort="2">of Quṣur</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib292-2">Chorepiscopus <forename sort="1">‛Abd Yeshu‛</forename> of Quṣur</persName>
                <persName xml:id="name292-3"
                          corresp="#name292-2 #name292-4a #name292-4b"
                          xml:lang="ar"
-                         source="#bib292-3">
-                  <addName type="untagged-title" sort="2">الخوري </addName>
-                  <forename sort="1">عبد يشوع</forename> 
-                  <addName type="untagged-title" sort="2">القصوري</addName>
-               </persName>
+                         source="#bib292-3">الخوري <forename sort="1">عبد يشوع</forename> القصوري</persName>
                <persName xml:id="name292-4a"
-                         corresp="#name292-3 #name292-2 #name292-4b"
+                         corresp="#name292-2 #name292-3 #name292-4b"
                          xml:lang="syr"
                          source="#bib292-4">ܟܘܪܝ <forename sort="1">ܥܒܕ ܝܫܘܥ</forename> ܩܨܘܪܝܐ</persName>
                <persName xml:id="name292-4b"
-                         corresp="#name292-3 #name292-2 #name292-4a"
+                         corresp="#name292-2 #name292-3 #name292-4a"
                          xml:lang="syr-Syrj"
                          source="#bib292-4">ܟܘܪܝ <forename sort="1">ܥܒܶܕ ܝܶܫܘܥ</forename> ܩܨܘܪܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name292-5a"
+                         xml:lang="syr"
+                         source="#bib292-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܥܒܕ ܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܩܨܘܪܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name292-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib292-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ʿAbdishuʿ</forename> 
                   <addName type="untagged-title" sort="2">of Quṣur</addName>
                </persName>

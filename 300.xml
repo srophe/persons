@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,20 +95,16 @@
             <person xml:id="person-300">
                <persName xml:id="name300-2"
                          corresp="#name300-3 #name300-4a #name300-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib300-2">
                   <forename sort="1">George</forename>, <addName type="untagged-title" sort="2">bishop of Azekh</addName>
                </persName>
                <persName xml:id="name300-3"
                          corresp="#name300-2 #name300-4a #name300-4b"
                          xml:lang="ar"
-                         source="#bib300-3">
-                  <addName type="untagged-title" sort="2">الاسقف</addName> 
-                  <forename sort="1">كوركيس</forename> 
-                  <addName type="untagged-title" sort="2">الآزخي</addName>
-               </persName>
+                         source="#bib300-3">الاسقف <forename sort="1">كوركيس</forename> الآزخي</persName>
                <persName xml:id="name300-4a"
-                         corresp="#name300-3 #name300-2 #name300-4b"
+                         corresp="#name300-2 #name300-3 #name300-4b"
                          xml:lang="syr"
                          source="#bib300-4">
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ</addName> 
@@ -119,18 +112,24 @@
                   <addName type="family" sort="2">ܒܝܬ ܙܒܕܝܐ</addName>
                </persName>
                <persName xml:id="name300-4b"
-                         corresp="#name300-3 #name300-2 #name300-4a"
+                         corresp="#name300-2 #name300-3 #name300-4a"
                          xml:lang="syr-Syrj"
                          source="#bib300-4">
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ</addName> 
                   <forename sort="1">ܓܺܝܘܰܪܓܝ</forename> 
                   <addName type="family" sort="2">ܒܶܝܬ ܙܰܒܕܳܝܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name300-5a"
+                         xml:lang="syr"
+                         source="#bib300-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܓܝܘܪܓܝ</forename> 
                   <addName type="family" sort="2">ܒܝܬ ܙܒܕܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name300-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib300-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Giwargis</forename> 
                   <addName type="untagged-title" sort="2">of Azekh</addName>
                </persName>

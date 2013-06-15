@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-155">
                <persName xml:id="name155-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib155-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Dionysios</forename> 
@@ -105,29 +102,24 @@
                </persName>
                <persName xml:id="name155-2"
                          corresp="#name155-3 #name155-4a #name155-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib155-2">
-                  <addName type="untagged-title" sort="2">Mar</addName> 
-                  <forename sort="1">Dionysius</forename> 
-                  <addName type="untagged-title" sort="2">of Tell Maḥre</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib155-2">Mar <forename sort="1">Dionysius</forename> of Tell Maḥre</persName>
                <persName xml:id="name155-3"
                          corresp="#name155-2 #name155-4a #name155-4b"
                          xml:lang="ar"
-                         source="#bib155-3">
-                  <addName type="untagged-title" sort="2">مار</addName> 
-                  <forename sort="1">ديونيسيوس</forename> 
-                  <addName type="untagged-title" sort="2">التلمحري</addName>
-               </persName>
+                         source="#bib155-3">مار <forename sort="1">ديونيسيوس</forename> التلمحري</persName>
                <persName xml:id="name155-4a"
-                         corresp="#name155-3 #name155-2 #name155-4b"
+                         corresp="#name155-2 #name155-3 #name155-4b"
                          xml:lang="syr"
                          source="#bib155-4">ܡܪܝ <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ</forename> ܬܠܡܚܪܝܐ</persName>
                <persName xml:id="name155-4b"
-                         corresp="#name155-3 #name155-2 #name155-4a"
+                         corresp="#name155-2 #name155-3 #name155-4a"
                          xml:lang="syr-Syrj"
                          source="#bib155-4">ܡܳܪܝ <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ</forename> ܬܰܠܡܚܪܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name155-5a"
+                         xml:lang="syr"
+                         source="#bib155-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܝܘܢܢܘܣܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܬܠܡܚܪܝܐ</addName>
                </persName>

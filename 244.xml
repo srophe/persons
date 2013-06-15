@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,39 +95,38 @@
             <person xml:id="person-244">
                <persName xml:id="name244-2"
                          corresp="#name244-3 #name244-4a #name244-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib244-2">
-                  <addName type="untagged-title" sort="2">The Ascetic</addName> 
-                  <forename sort="1">Thomas</forename> 
-                  <addName type="untagged-title" sort="2">of Ḥaḥ</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib244-2">The Ascetic <forename sort="1">Thomas</forename> of Ḥaḥ</persName>
                <persName xml:id="name244-3"
                          corresp="#name244-2 #name244-4a #name244-4b"
                          xml:lang="ar"
                          source="#bib244-3">
-                  <forename sort="1">توما</forename> 
-                  <addName type="untagged-title" sort="2">الحاحي </addName>
-                  <addName type="untagged-title" sort="2">الناسك</addName>
-               </persName>
+                  <forename sort="1">توما</forename> الحاحي الناسك</persName>
                <persName xml:id="name244-4a"
-                         corresp="#name244-3 #name244-2 #name244-4b"
+                         corresp="#name244-2 #name244-3 #name244-4b"
                          xml:lang="syr"
                          source="#bib244-4">
                   <forename sort="1">ܬܐܘܡܐ</forename> 
                   <addName type="untagged-title" sort="2">ܚܐܚܝܐ ܥܢܘܝܐ</addName>
                </persName>
                <persName xml:id="name244-4b"
-                         corresp="#name244-3 #name244-2 #name244-4a"
+                         corresp="#name244-2 #name244-3 #name244-4a"
                          xml:lang="syr-Syrj"
                          source="#bib244-4">
                   <forename sort="1">ܬܐܘܡܐ</forename> 
                   <addName type="untagged-title" sort="2">ܚܰܐܚܳܝܐ ܥܢܘܳܝܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name244-5a"
+                         xml:lang="syr"
+                         source="#bib244-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܬܐܘܡܐ</forename> 
                   <addName type="untagged-title" sort="2">ܚܐܚܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name244-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib244-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Tumo</forename> 
                   <addName type="untagged-title" sort="2">of Ḥaḥ</addName>
                </persName>

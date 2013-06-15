@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,25 +95,31 @@
             <person xml:id="person-112">
                <persName xml:id="name112-2"
                          corresp="#name112-3 #name112-4a #name112-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib112-2">Presbyter <forename sort="1">Simon</forename> of the Monastery of Qenneshrin</persName>
                <persName xml:id="name112-3"
                          corresp="#name112-2 #name112-4a #name112-4b"
                          xml:lang="ar"
                          source="#bib112-3">القس <forename sort="1">شمعون</forename> من دير قنسرين</persName>
                <persName xml:id="name112-4a"
-                         corresp="#name112-3 #name112-2 #name112-4b"
+                         corresp="#name112-2 #name112-3 #name112-4b"
                          xml:lang="syr"
                          source="#bib112-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܕܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
                <persName xml:id="name112-4b"
-                         corresp="#name112-3 #name112-2 #name112-4a"
+                         corresp="#name112-2 #name112-3 #name112-4a"
                          xml:lang="syr-Syrj"
                          source="#bib112-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name112-5a"
+                         xml:lang="syr"
+                         source="#bib112-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܡܥܘܢ</forename> 
                   <addName type="untagged-title" sort="2">ܕܩܢܫܪܝܢ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name112-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib112-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shemʿun</forename> 
                   <addName type="untagged-title" sort="2">of Qenneshre</addName>
                </persName>

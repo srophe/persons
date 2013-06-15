@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-356">
                <persName xml:id="name356-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib356-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Awgen</forename>, <addName type="untagged-title" sort="2">Mar</addName>
                </persName>
                <persName xml:id="name356-2"
                          corresp="#name356-3 #name356-4a #name356-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib356-2">
                   <forename sort="1">Eugene</forename> 
                   <addName type="untagged-title" sort="2">the Copt</addName>
@@ -117,23 +114,27 @@
                   <addName type="untagged-title" sort="2">القبطي</addName>
                </persName>
                <persName xml:id="name356-4a"
-                         corresp="#name356-3 #name356-2 #name356-4b"
+                         corresp="#name356-2 #name356-3 #name356-4b"
                          xml:lang="syr"
                          source="#bib356-4">
                   <forename sort="1">ܐܘܓܝܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܝܓܘܦܛܝ</addName>
                </persName>
                <persName xml:id="name356-4b"
-                         corresp="#name356-3 #name356-2 #name356-4a"
+                         corresp="#name356-2 #name356-3 #name356-4a"
                          xml:lang="syr-Syrj"
                          source="#bib356-4">
                   <forename sort="1">ܐܰܘܓܺܝܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܺܝܓܘܽܦܛܳܝ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name356-5a"
+                         xml:lang="syr"
+                         source="#bib356-5"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
                   <forename sort="1">ܐܘܓܝܢ</forename>
                </persName>
+               <persName xml:id="name356-10" xml:lang="en" source="#bib356-10">Mar Awgen</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|356</idno>
                <bibl xml:id="bib356-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -159,6 +160,11 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">168</citedRange>
+               </bibl>
+               <bibl xml:id="bib356-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,28 +95,20 @@
             <person xml:id="person-419">
                <persName xml:id="name419-2"
                          corresp="#name419-3 #name419-4a #name419-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib419-2">
-                  <Barsoum_En_Full xmlns="">History of Edessa</Barsoum_En_Full>
-               </persName>
+                         xml:lang="en"
+                         source="#bib419-2">History of Edessa</persName>
                <persName xml:id="name419-3"
                          corresp="#name419-2 #name419-4a #name419-4b"
                          xml:lang="ar"
-                         source="#bib419-3">
-                  <Barsoum_Ar_Full xmlns="">تاريخ الرها</Barsoum_Ar_Full>
-               </persName>
+                         source="#bib419-3">تاريخ الرها</persName>
                <persName xml:id="name419-4a"
-                         corresp="#name419-3 #name419-2 #name419-4b"
+                         corresp="#name419-2 #name419-3 #name419-4b"
                          xml:lang="syr"
-                         source="#bib419-4">
-                  <Barsoum_Sy_NV_Full xmlns="">ܡܟܬܒܙܒܢ̈ܐ ܕܐܘܪܗܝ</Barsoum_Sy_NV_Full>
-               </persName>
+                         source="#bib419-4">ܡܟܬܒܙܒܢ̈ܐ ܕܐܘܪܗܝ</persName>
                <persName xml:id="name419-4b"
-                         corresp="#name419-3 #name419-2 #name419-4a"
+                         corresp="#name419-2 #name419-3 #name419-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib419-4">
-                  <Barsoum_Sy_V_Full xmlns="">ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܕܐܽܘܪܗܳܝ</Barsoum_Sy_V_Full>
-               </persName>
+                         source="#bib419-4">ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܕܐܽܘܪܗܳܝ</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|419</idno>
                <floruit source="#bib419-1">mid-6th cent.</floruit>
                <bibl xml:id="bib419-1">

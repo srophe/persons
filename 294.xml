@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,33 +95,31 @@
             <person xml:id="person-294">
                <persName xml:id="name294-2"
                          corresp="#name294-3 #name294-4a #name294-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib294-2">
-                  <addName type="untagged-title" sort="2">Maphryono</addName> 
-                  <forename sort="1">Shukr Allah</forename> 
-                  <addName type="untagged-title" sort="2">of Aleppo</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib294-2">Maphryono <forename sort="1">Shukr Allah</forename> of Aleppo</persName>
                <persName xml:id="name294-3"
                          corresp="#name294-2 #name294-4a #name294-4b"
                          xml:lang="ar"
-                         source="#bib294-3">
-                  <addName type="untagged-title" sort="2">المفريان </addName>
-                  <forename sort="1">شكر اللّٰه</forename> 
-                  <addName type="untagged-title" sort="2">الحلبي</addName>
-               </persName>
+                         source="#bib294-3">المفريان <forename sort="1">شكر اللّٰه</forename> الحلبي</persName>
                <persName xml:id="name294-4a"
-                         corresp="#name294-3 #name294-2 #name294-4b"
+                         corresp="#name294-2 #name294-3 #name294-4b"
                          xml:lang="syr"
                          source="#bib294-4">ܡܦܪܝܢܐ <forename sort="1">ܫܟܪܐܠܠܗ</forename> ܚܠܒܝܐ</persName>
                <persName xml:id="name294-4b"
-                         corresp="#name294-3 #name294-2 #name294-4a"
+                         corresp="#name294-2 #name294-3 #name294-4a"
                          xml:lang="syr-Syrj"
                          source="#bib294-4">ܡܰܦܪܝܢܐ <forename sort="1">ܫܰܟܪܐܠܠܗ</forename> ܚܳܠܒܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name294-5a"
+                         xml:lang="syr"
+                         source="#bib294-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܟܪܐܠܠܗ</forename> 
                   <addName type="untagged-title" sort="2">ܚܠܒܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name294-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib294-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shukrallāh</forename> 
                   <addName type="untagged-title" sort="2">of Aleppo</addName>
                </persName>

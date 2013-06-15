@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">Is this person the same as John of Lycopolis (some of the viaf.org records list both)? Alternatively, is John of Lycopolis the contemporary GEDSH mentions, known as Yoḥannan of Apamea/Yoḥannan the Egyptian?</change>
@@ -98,33 +95,34 @@
          <listPerson>
             <person xml:id="person-827">
                <persName xml:id="name827-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib827-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yoḥannan</forename> 
                   <addName type="untagged-title" sort="2">Iḥidaya</addName>
                </persName>
-               <persName xml:id="name827-5a"
-                         corresp="#name827-5b #name827-6a"
-                         xml:lang="syr"
-                         source="#bib827-5">
-                  <forename sort="1">ܝܘܚܢܢ</forename> 
-                  <addName type="untagged-title" sort="2">ܐܦܡܝܐ</addName>
-               </persName>
-               <persName xml:id="name827-5b"
-                         corresp="#name827-5a #name827-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib827-5">
-                  <forename sort="1">ܝܘܿܚܲܢܵܢ</forename> 
-                  <addName type="untagged-title" sort="2">ܐܵܦܵܡܵܝܵܐ</addName>
-               </persName>
                <persName xml:id="name827-6a"
-                         corresp=" #name827-5a #name827-5b"
+                         corresp="#name827-6b #name827-7a"
                          xml:lang="syr"
                          source="#bib827-6">
                   <forename sort="1">ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܡܝܐ</addName>
                </persName>
+               <persName xml:id="name827-6b"
+                         corresp="#name827-6a #name827-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib827-6">
+                  <forename sort="1">ܝܘܿܚܲܢܵܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܵܦܵܡܵܝܵܐ</addName>
+               </persName>
+               <persName xml:id="name827-7a"
+                         corresp="#name827-6a #name827-6b"
+                         xml:lang="syr"
+                         source="#bib827-7">
+                  <forename sort="1">ܝܘܚܢܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܡܝܐ</addName>
+               </persName>
+               <persName xml:id="name827-10" xml:lang="en" source="#bib827-10">John of Apamea</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|827</idno>
                <idno type="URI">http://viaf.org/viaf/101044787</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n84-179339</idno>
@@ -138,17 +136,22 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">602</citedRange>
                </bibl>
-               <bibl xml:id="bib827-5">
+               <bibl xml:id="bib827-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib827-6">
+               <bibl xml:id="bib827-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">50</citedRange>
+               </bibl>
+               <bibl xml:id="bib827-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

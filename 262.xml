@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-262">
                <persName xml:id="name262-2"
                          corresp="#name262-3 #name262-4a #name262-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib262-2">
                   <forename sort="1">Qawma</forename>, <addName type="untagged-title" sort="2">the Patriarch of Tur ‛Abdin</addName>
                </persName>
@@ -110,24 +107,30 @@
                   <addName type="untagged-title" sort="2">بطرك طور عبدين</addName>
                </persName>
                <persName xml:id="name262-4a"
-                         corresp="#name262-3 #name262-2 #name262-4b"
+                         corresp="#name262-2 #name262-3 #name262-4b"
                          xml:lang="syr"
                          source="#bib262-4">
                   <forename sort="1">ܩܘܡܐ</forename> 
                   <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ ܕܛܘܪܥܒܕܝܢ</addName>
                </persName>
                <persName xml:id="name262-4b"
-                         corresp="#name262-3 #name262-2 #name262-4a"
+                         corresp="#name262-2 #name262-3 #name262-4a"
                          xml:lang="syr-Syrj"
                          source="#bib262-4">
                   <forename sort="1">ܩܰܘܡܶܐ</forename> 
                   <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܳܐ ܕܛܘܪܥܰܒܕܝܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name262-5a"
+                         xml:lang="syr"
+                         source="#bib262-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܩܘܡܐ</forename> 
                   <addName type="untagged-title" sort="2">ܣܒܝܪܝܢܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name262-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib262-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ignatius Qumo</forename> 
                   <addName type="untagged-title" sort="2">of Beth Sbirina</addName>
                </persName>

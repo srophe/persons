@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-477">
                <persName xml:id="name477-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib477-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Epiphanius</forename> 
@@ -105,61 +102,49 @@
                </persName>
                <persName xml:id="name477-2"
                          corresp="#name477-3 #name477-4a #name477-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib477-2">
-                  <addName type="untagged-title" sort="2">St.</addName> 
-                  <forename sort="1">Epiphanius</forename>, <addName type="untagged-title" sort="2">metropolitan of Cyprus</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib477-2">St. <forename sort="1">Epiphanius</forename>, metropolitan of Cyprus</persName>
                <persName xml:id="name477-3"
                          corresp="#name477-2 #name477-4a #name477-4b"
                          xml:lang="ar"
-                         source="#bib477-3">
-                  <addName type="untagged-title" sort="2">مار</addName> 
-                  <forename sort="1">ابيفانيوس</forename> 
-                  <addName type="untagged-title" sort="2">مطران قبرص</addName>
-               </persName>
+                         source="#bib477-3">مار <forename sort="1">ابيفانيوس</forename> مطران قبرص</persName>
                <persName xml:id="name477-4a"
-                         corresp="#name477-3 #name477-2 #name477-4b"
+                         corresp="#name477-2 #name477-3 #name477-4b"
                          xml:lang="syr"
-                         source="#bib477-4">
-                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
-                  <forename sort="1">ܐܦܝܦܐܢܝܘܣ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</addName>
-               </persName>
+                         source="#bib477-4">ܡܪܝ <forename sort="1">ܐܦܝܦܐܢܝܘܣ</forename> ܡܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
                <persName xml:id="name477-4b"
-                         corresp="#name477-3 #name477-2 #name477-4a"
+                         corresp="#name477-2 #name477-3 #name477-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib477-4">
-                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
-                  <forename sort="1">ܐܰܦܝܦܰܐܢܝܘܣ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</addName>
-               </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+                         source="#bib477-4">ܡܳܪܝ <forename sort="1">ܐܰܦܝܦܰܐܢܝܘܣ</forename> ܡܶܛܪܘܦܘܠܝܛܐ ܕܩܘܦܪܘܣ</persName>
+               <persName xml:id="name477-5a"
+                         xml:lang="syr"
+                         source="#bib477-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܦܝܦܐܢܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܩܘܦܪܘܣ</addName>
                </persName>
-               <persName xml:id="name477-5a"
-                         corresp="#name477-5b #name477-6a #name477-6b"
+               <persName xml:id="name477-6a"
+                         corresp="#name477-6b #name477-7a #name477-7b"
                          xml:lang="syr"
-                         source="#bib477-5">
+                         source="#bib477-6">
                   <forename sort="1">ܐܦܝܦܢܘܣ</forename>
                </persName>
-               <persName xml:id="name477-5b"
-                         corresp="#name477-5a #name477-6a #name477-6b"
+               <persName xml:id="name477-6b"
+                         corresp="#name477-6a #name477-7a #name477-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib477-5">
+                         source="#bib477-6">
                   <forename sort="1">ܐܲܦܝܼܦܵܢܘܿܣ</forename>
                </persName>
-               <persName xml:id="name477-6a"
-                         corresp="#name477-6b #name477-5a #name477-5b"
+               <persName xml:id="name477-7a"
+                         corresp="#name477-6a #name477-6b #name477-7b"
                          xml:lang="syr"
-                         source="#bib477-6">
+                         source="#bib477-7">
                   <forename sort="1">ܐܦܝܦܢܝܘܣ</forename>
                </persName>
-               <persName xml:id="name477-6b"
-                         corresp="#name477-6a #name477-5a #name477-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib477-6">
+               <persName xml:id="name477-7b"
+                         corresp="#name477-6a #name477-6b #name477-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib477-7">
                   <forename sort="1">ܐܶܦܺܝܦܰܢܝܳܘܣ</forename>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|477</idno>
@@ -194,13 +179,13 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib477-5">
+               <bibl xml:id="bib477-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib477-6">
+               <bibl xml:id="bib477-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

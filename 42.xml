@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-42">
                <persName xml:id="name42-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib42-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yaʿqub</forename> 
@@ -105,32 +102,29 @@
                </persName>
                <persName xml:id="name42-2"
                          corresp="#name42-3 #name42-4a #name42-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib42-2">
-                  <addName type="untagged-title" sort="2">Mar</addName> 
-                  <forename sort="1">Jacob</forename> 
-                  <addName type="untagged-title" sort="2">of Sarug</addName>, <addName type="untagged-title" sort="2">the Malphono</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib42-2">Mar <forename sort="1">Jacob</forename> of Sarug, the Malphono</persName>
                <persName xml:id="name42-3"
                          corresp="#name42-2 #name42-4a #name42-4b"
                          xml:lang="ar"
-                         source="#bib42-3">مار <forename sort="1">يعقوب</forename> 
-                  <addName type="untagged-title" sort="2">السروجي </addName>
-                  <addName type="untagged-title" sort="2">الملفان</addName>
-               </persName>
+                         source="#bib42-3">مار <forename sort="1">يعقوب</forename> السروجي الملفان</persName>
                <persName xml:id="name42-4a"
-                         corresp="#name42-3 #name42-2 #name42-4b"
+                         corresp="#name42-2 #name42-3 #name42-4b"
                          xml:lang="syr"
                          source="#bib42-4">ܡܪܝ <forename sort="1">ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܕܣܪܘܓ</addName> ܡܠܦܢܐ</persName>
                <persName xml:id="name42-4b"
-                         corresp="#name42-3 #name42-2 #name42-4a"
+                         corresp="#name42-2 #name42-3 #name42-4a"
                          xml:lang="syr-Syrj"
                          source="#bib42-4">ܡܳܪܝ <forename sort="1">ܝܰܥܩܘܒ</forename> ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name42-5a"
+                         xml:lang="syr"
+                         source="#bib42-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܥܩܘܒ</forename> 
                   <addName type="untagged-title" sort="2">ܕܣܪܘܓ</addName>
                </persName>
+               <persName xml:id="name42-10" xml:lang="en" source="#bib42-10">Jacob of Sarug</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|42</idno>
                <idno type="URI">http://viaf.org/viaf/51661489</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n81-55296</idno>
@@ -166,6 +160,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">38</citedRange>
                   <citedRange unit="pp">246</citedRange>
+               </bibl>
+               <bibl xml:id="bib42-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

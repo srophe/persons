@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-65">
                <persName xml:id="name65-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib65-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Zacharias</forename>, <addName type="untagged-title" sort="2">Pseudo-</addName>
                </persName>
                <persName xml:id="name65-2"
                          corresp="#name65-3 #name65-4a #name65-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib65-2">
                   <addName type="untagged-title" sort="2">The Syrian Monk Thought to be the Writer of the History Ascribed to Zachariah</addName>
                </persName>
@@ -115,21 +112,26 @@
                   <addName type="untagged-title" sort="2">الراهب السرياني صاحب الكتاب المنحول (تاريخ زكريا)</addName>
                </persName>
                <persName xml:id="name65-4a"
-                         corresp="#name65-3 #name65-2 #name65-4b"
+                         corresp="#name65-2 #name65-3 #name65-4b"
                          xml:lang="syr"
                          source="#bib65-4">
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ ܣܘܪܝܝܐ ܡܪܐ ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
                </persName>
                <persName xml:id="name65-4b"
-                         corresp="#name65-3 #name65-2 #name65-4a"
+                         corresp="#name65-2 #name65-3 #name65-4a"
                          xml:lang="syr-Syrj"
                          source="#bib65-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܳܐ ܣܘܪܝܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܰܨܢܝܥ ܡܰܟܬܰܒܢܘܬ ܙܰܒ̈ܢܐ ܕܰܙܟܰܪܝܳܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title" sort="2">ܟܬܒܐ ܕܨܢܝܥ ܡܟܬܒܢܘܬ ܙܒ̈ܢܐ ܕܙܟܪܝܐ</addName>
+               <persName xml:id="name65-5a"
+                         xml:lang="syr"
+                         source="#bib65-5"
+                         syriaca-tags="#syriaca-headword">
+                  <addName type="untagged-title" sort="2">ܙܟܪܝܐ</addName>
                </persName>
+               <persName xml:id="name65-10" xml:lang="en" source="#bib65-10">Pseudo-Zacharias</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|65</idno>
+               <idno type="URI">http://viaf.org/viaf/170113931</idno>
                <idno type="URI">http://viaf.org/viaf/296978639</idno>
                <floruit source="#bib65-1">6 C</floruit>
                <bibl xml:id="bib65-1">
@@ -159,6 +161,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">61</citedRange>
                   <citedRange unit="pp">284</citedRange>
+               </bibl>
+               <bibl xml:id="bib65-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

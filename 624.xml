@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-624">
                <persName xml:id="name624-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib624-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mary</forename>
                </persName>
                <persName xml:id="name624-2"
                          corresp="#name624-3 #name624-4a #name624-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib624-2">
                   <addName type="untagged-title" sort="2">Virgin</addName> 
                   <forename sort="1">Mary</forename>
@@ -117,17 +114,18 @@
                   <forename sort="1">مريم</forename>
                </persName>
                <persName xml:id="name624-4a"
-                         corresp="#name624-3 #name624-2 #name624-4b"
+                         corresp="#name624-2 #name624-3 #name624-4b"
                          xml:lang="syr"
                          source="#bib624-4">
                   <forename sort="1">ܡܪܝܡ</forename>
                </persName>
                <persName xml:id="name624-4b"
-                         corresp="#name624-3 #name624-2 #name624-4a"
+                         corresp="#name624-2 #name624-3 #name624-4a"
                          xml:lang="syr-Syrj"
                          source="#bib624-4">
                   <forename sort="1">ܡܰܪܝܰܡ</forename>
                </persName>
+               <persName xml:id="name624-10" xml:lang="en" source="#bib624-10">Mary</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|624</idno>
                <bibl xml:id="bib624-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -151,6 +149,11 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib624-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

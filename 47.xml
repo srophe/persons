@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-47">
                <persName xml:id="name47-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib47-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Pawlos</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name47-2"
                          corresp="#name47-3 #name47-4a #name47-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib47-2">
                   <forename sort="1">Paul</forename>, <addName type="untagged-title" sort="2">bishop of al-Raqqa</addName>
                </persName>
@@ -117,23 +114,27 @@
                   <addName type="untagged-title" sort="2">اسقف الرقة</addName>
                </persName>
                <persName xml:id="name47-4a"
-                         corresp="#name47-3 #name47-2 #name47-4b"
+                         corresp="#name47-2 #name47-3 #name47-4b"
                          xml:lang="syr"
                          source="#bib47-4">
                   <forename sort="1">ܦܘܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܩܠܘܢܝܩܝ</addName>
                </persName>
                <persName xml:id="name47-4b"
-                         corresp="#name47-3 #name47-2 #name47-4a"
+                         corresp="#name47-2 #name47-3 #name47-4a"
                          xml:lang="syr-Syrj"
                          source="#bib47-4">
                   <forename sort="1">ܦܰܘܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܩܰܠܘܢܝܩܝ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name47-5a"
+                         xml:lang="syr"
+                         source="#bib47-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܦܘܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܩܠܘܢܝܩܝ</addName>
                </persName>
+               <persName xml:id="name47-10" xml:lang="en" source="#bib47-10">Paul of Callinicum</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|47</idno>
                <floruit source="#bib47-1">first half of 6 C</floruit>
                <floruit when="0528" source="#bib47-2">528</floruit>
@@ -164,6 +165,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">43</citedRange>
                   <citedRange unit="pp">259</citedRange>
+               </bibl>
+               <bibl xml:id="bib47-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

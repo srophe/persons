@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,33 +95,31 @@
             <person xml:id="person-261">
                <persName xml:id="name261-2"
                          corresp="#name261-3 #name261-4a #name261-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib261-2">
-                  <addName type="untagged-title" sort="2">The Priest</addName> 
-                  <forename sort="1">Simon</forename> 
-                  <addName type="untagged-title" sort="2">of Amid</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib261-2">The Priest <forename sort="1">Simon</forename> of Amid</persName>
                <persName xml:id="name261-3"
                          corresp="#name261-2 #name261-4a #name261-4b"
                          xml:lang="ar"
-                         source="#bib261-3">
-                  <addName type="untagged-title" sort="2">القس </addName>
-                  <forename sort="1">شمعون</forename> 
-                  <addName type="untagged-title" sort="2">الآمدي</addName>
-               </persName>
+                         source="#bib261-3">القس <forename sort="1">شمعون</forename> الآمدي</persName>
                <persName xml:id="name261-4a"
-                         corresp="#name261-3 #name261-2 #name261-4b"
+                         corresp="#name261-2 #name261-3 #name261-4b"
                          xml:lang="syr"
                          source="#bib261-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܐܡܝܕܝܐ</persName>
                <persName xml:id="name261-4b"
-                         corresp="#name261-3 #name261-2 #name261-4a"
+                         corresp="#name261-2 #name261-3 #name261-4a"
                          xml:lang="syr-Syrj"
                          source="#bib261-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܐܳܡܝܕܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name261-5a"
+                         xml:lang="syr"
+                         source="#bib261-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܡܥܘܢ</forename> 
                   <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name261-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib261-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shemʿun</forename> 
                   <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>

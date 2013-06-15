@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,33 +95,31 @@
             <person xml:id="person-224">
                <persName xml:id="name224-2"
                          corresp="#name224-3 #name224-4a #name224-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib224-2">
-                  <addName type="untagged-title" sort="2">Patriarch</addName> 
-                  <forename sort="2">John</forename> 
-                  <addName type="untagged-title" sort="2">XII</addName>
-               </persName>
+                         xml:lang="en"
+                         source="#bib224-2">Patriarch <forename sort="2">John</forename> XII</persName>
                <persName xml:id="name224-3"
                          corresp="#name224-2 #name224-4a #name224-4b"
                          xml:lang="ar"
-                         source="#bib224-3">
-                  <addName type="untagged-title" sort="2">البطريرك </addName>
-                  <forename sort="2">يوحنا</forename> 
-                  <addName type="untagged-title" sort="2">الثاني عشر</addName>
-               </persName>
+                         source="#bib224-3">البطريرك <forename sort="2">يوحنا</forename> الثاني عشر</persName>
                <persName xml:id="name224-4a"
-                         corresp="#name224-3 #name224-2 #name224-4b"
+                         corresp="#name224-2 #name224-3 #name224-4b"
                          xml:lang="syr"
                          source="#bib224-4">ܦܛܪܝܪܟܐ <forename sort="2">ܝܘܚܢܢ</forename> ܕܬܪܥܣܪ</persName>
                <persName xml:id="name224-4b"
-                         corresp="#name224-3 #name224-2 #name224-4a"
+                         corresp="#name224-2 #name224-3 #name224-4a"
                          xml:lang="syr-Syrj"
                          source="#bib224-4">ܦܰܛܪܝܰܪܟܐ <forename sort="2">ܝܘܚܰܢܢ</forename> ܕܰܬܪܶܥܣܪ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name224-5a"
+                         xml:lang="syr"
+                         source="#bib224-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="2">ܝܘܚܢܢ</forename> 
                   <addName type="untagged-title" sort="2">ܕܬܪܥܣܪ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">Yuḥanon <addName type="untagged-title" sort="2">XII (XI</addName>, <addName type="untagged-title" sort="2">XIII</addName>, or XIV) Yeshuʿ Kotubo</persName>
+               <persName xml:id="name224-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib224-8"
+                         syriaca-tags="#syriaca-headword">Yuḥanon XII (XI, XIII, or XIV) Yeshuʿ Kotubo</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|224</idno>
                <death when="1220" source="#bib224-2">1220</death>
                <bibl xml:id="bib224-2">

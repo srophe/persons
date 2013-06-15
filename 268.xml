@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-268">
                <persName xml:id="name268-2"
                          corresp="#name268-3 #name268-4a #name268-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib268-2">
                   <addName type="untagged-title" sort="2">Patriarch</addName> 
                   <forename sort="1">‛Aziz</forename> 
@@ -107,13 +104,9 @@
                <persName xml:id="name268-3"
                          corresp="#name268-2 #name268-4a #name268-4b"
                          xml:lang="ar"
-                         source="#bib268-3">
-                  <addName type="untagged-title" sort="2">البطريرك </addName>
-                  <forename sort="1">عزيز</forename> 
-                  <addName type="untagged-title" sort="2">ابن العجوز</addName>
-               </persName>
+                         source="#bib268-3">البطريرك <forename sort="1">عزيز</forename> ابن العجوز</persName>
                <persName xml:id="name268-4a"
-                         corresp="#name268-3 #name268-2 #name268-4b"
+                         corresp="#name268-2 #name268-3 #name268-4b"
                          xml:lang="syr"
                          source="#bib268-4">
                   <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
@@ -121,22 +114,28 @@
                   <addName type="family" sort="2">ܒܪ ܣܒܬܐ</addName>
                </persName>
                <persName xml:id="name268-4b"
-                         corresp="#name268-3 #name268-2 #name268-4a"
+                         corresp="#name268-2 #name268-3 #name268-4a"
                          xml:lang="syr-Syrj"
                          source="#bib268-4">
                   <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܐ</addName> 
                   <forename sort="1">ܥܰܙܝܙ</forename> 
                   <addName type="family" sort="2">ܒܰܪ ܣܳܒܬܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name268-5a"
+                         xml:lang="syr"
+                         source="#bib268-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܥܙܝܙ</forename> 
                   <addName type="family" sort="2">ܒܪ ܣܒܬܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name268-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib268-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Ignatius ʿAziz</forename> 
                   <addName type="family" sort="2">bar Sobto</addName>
                </persName>
-               <persName xml:id="name268-7" xml:lang="syr-Latn-x-cbsc" source="#bib268-7">Aziz b. Sobto</persName>
+               <persName xml:id="name268-10" xml:lang="en" source="#bib268-10">Aziz b. Sobto</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|268</idno>
                <death when="1481" source="#bib268-2">1481</death>
                <bibl xml:id="bib268-2">
@@ -161,7 +160,7 @@
                   <citedRange unit="entry">261</citedRange>
                   <citedRange unit="pp">479</citedRange>
                </bibl>
-               <bibl xml:id="bib268-7">
+               <bibl xml:id="bib268-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

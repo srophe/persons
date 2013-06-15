@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-474">
                <persName xml:id="name474-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib474-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">ʿEnanishoʿ</forename>
                </persName>
                <persName xml:id="name474-2"
                          corresp="#name474-3 #name474-4a #name474-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib474-2">
                   <forename sort="1">Hannan Yeshuʿ</forename> 
                   <addName type="untagged-title" sort="2">the Chaldean monk of Beth ʿAbi</addName>
@@ -117,38 +114,38 @@
                   <addName type="family" sort="2">الكلداني راهب دير بيث عابي</addName>
                </persName>
                <persName xml:id="name474-4a"
-                         corresp="#name474-3 #name474-2 #name474-4b"
+                         corresp="#name474-2 #name474-3 #name474-4b"
                          xml:lang="syr"
                          source="#bib474-4">
                   <forename sort="1">ܚܢܢܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܟܠܕܝܐ ܕܝܪܝܐ ܕܒܝܬ ܥܒ̈ܐ</addName>
                </persName>
                <persName xml:id="name474-4b"
-                         corresp="#name474-3 #name474-2 #name474-4a"
+                         corresp="#name474-2 #name474-3 #name474-4a"
                          xml:lang="syr-Syrj"
                          source="#bib474-4">
                   <forename sort="1">ܚܰܢܢܝܶܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܟܰܠܕܳܝܐ ܕܰܝܪܳܝܐ ܕܒܶܝܬ ܥܳܒ̈ܐ</addName>
                </persName>
-               <persName xml:id="name474-5a"
-                         corresp="#name474-5b #name474-6a"
-                         xml:lang="syr"
-                         source="#bib474-5">
-                  <forename sort="1">ܥܢܢܝܫܘܥ</forename>
-               </persName>
-               <persName xml:id="name474-5b"
-                         corresp="#name474-5a #name474-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib474-5">
-                  <forename sort="1">ܥܢܵܢܝܼܫܘܿܥ</forename>
-               </persName>
                <persName xml:id="name474-6a"
-                         corresp=" #name474-5a #name474-5b"
+                         corresp="#name474-6b #name474-7a"
                          xml:lang="syr"
                          source="#bib474-6">
                   <forename sort="1">ܥܢܢܝܫܘܥ</forename>
                </persName>
-               <persName xml:id="name474-7" xml:lang="syr-Latn-x-cbsc" source="#bib474-7">Ananisho</persName>
+               <persName xml:id="name474-6b"
+                         corresp="#name474-6a #name474-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib474-6">
+                  <forename sort="1">ܥܢܵܢܝܼܫܘܿܥ</forename>
+               </persName>
+               <persName xml:id="name474-7a"
+                         corresp="#name474-6a #name474-6b"
+                         xml:lang="syr"
+                         source="#bib474-7">
+                  <forename sort="1">ܥܢܢܝܫܘܥ</forename>
+               </persName>
+               <persName xml:id="name474-10" xml:lang="en" source="#bib474-10">Ananisho</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|474</idno>
                <idno type="URI">http://viaf.org/viaf/51053179</idno>
                <floruit source="#bib474-1">7th cent.</floruit>
@@ -175,19 +172,19 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib474-5">
+               <bibl xml:id="bib474-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">73</citedRange>
                </bibl>
-               <bibl xml:id="bib474-6">
+               <bibl xml:id="bib474-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">144</citedRange>
                </bibl>
-               <bibl xml:id="bib474-7">
+               <bibl xml:id="bib474-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,34 +94,32 @@
          <listPerson>
             <person xml:id="person-561">
                <persName xml:id="name561-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib561-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Ishoʿyahb</forename> 
-                  <addName type="untagged-title" sort="2">III</addName> 
-                  <addName type="untagged-title" sort="2">of Adiabene</addName>
-               </persName>
-               <persName xml:id="name561-5a"
-                         corresp="#name561-5b #name561-6a"
-                         xml:lang="syr"
-                         source="#bib561-5">
-                  <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
-                  <addName type="untagged-title" sort="2">ܚܕܝܒܝܐ</addName>
-               </persName>
-               <persName xml:id="name561-5b"
-                         corresp="#name561-5a #name561-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib561-5">
-                  <forename sort="1">ܝܑܼܫܘܿܥܝܲܗܒ</forename> 
-                  <addName type="untagged-title" sort="2">ܚܕܲܝܵܒܵܝܵܐ</addName>
-               </persName>
+                  <forename sort="1">Ishoʿyahb</forename> III of Adiabene</persName>
                <persName xml:id="name561-6a"
-                         corresp=" #name561-5a #name561-5b"
+                         corresp="#name561-6b #name561-7a"
                          xml:lang="syr"
                          source="#bib561-6">
                   <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
                   <addName type="untagged-title" sort="2">ܚܕܝܒܝܐ</addName>
                </persName>
+               <persName xml:id="name561-6b"
+                         corresp="#name561-6a #name561-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib561-6">
+                  <forename sort="1">ܝܑܼܫܘܿܥܝܲܗܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܲܝܵܒܵܝܵܐ</addName>
+               </persName>
+               <persName xml:id="name561-7a"
+                         corresp="#name561-6a #name561-6b"
+                         xml:lang="syr"
+                         source="#bib561-7">
+                  <forename sort="1">ܝܫܘܥܝܗܒ</forename> 
+                  <addName type="untagged-title" sort="2">ܚܕܝܒܝܐ</addName>
+               </persName>
+               <persName xml:id="name561-10" xml:lang="en" source="#bib561-10">Ishoyahb III of Adiabene</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|561</idno>
                <idno type="URI">http://viaf.org/viaf/121895248</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nb2006-22880</idno>
@@ -142,17 +137,22 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">289</citedRange>
                </bibl>
-               <bibl xml:id="bib561-5">
+               <bibl xml:id="bib561-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">73</citedRange>
                </bibl>
-               <bibl xml:id="bib561-6">
+               <bibl xml:id="bib561-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">113</citedRange>
+               </bibl>
+               <bibl xml:id="bib561-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

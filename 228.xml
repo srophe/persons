@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,36 +95,37 @@
             <person xml:id="person-228">
                <persName xml:id="name228-2"
                          corresp="#name228-3 #name228-4a #name228-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib228-2">
-                  <forename sort="1">Theodore</forename> 
-                  <addName type="untagged-title" sort="2">of Antioch</addName>, <addName type="untagged-title" sort="2">the Philosopher</addName>
-               </persName>
+                  <forename sort="1">Theodore</forename> of Antioch, the Philosopher</persName>
                <persName xml:id="name228-3"
                          corresp="#name228-2 #name228-4a #name228-4b"
                          xml:lang="ar"
                          source="#bib228-3">
-                  <forename sort="1">ثاوذوري</forename> 
-                  <addName type="untagged-title" sort="2">الانطاكي </addName>
-                  <addName type="untagged-title" sort="2">الفيلسوف</addName>
-               </persName>
+                  <forename sort="1">ثاوذوري</forename> الانطاكي الفيلسوف</persName>
                <persName xml:id="name228-4a"
-                         corresp="#name228-3 #name228-2 #name228-4b"
+                         corresp="#name228-2 #name228-3 #name228-4b"
                          xml:lang="syr"
                          source="#bib228-4">ܦܝܠܣܘܦܐ <forename sort="1">ܬܐܘܕܘܪܝ</forename> ܐܢܛܝܘܟܝܐ</persName>
                <persName xml:id="name228-4b"
-                         corresp="#name228-3 #name228-2 #name228-4a"
+                         corresp="#name228-2 #name228-3 #name228-4a"
                          xml:lang="syr-Syrj"
                          source="#bib228-4">ܦܝܠܳܣܘܦܐ <forename sort="1">ܬܶܐܘܕܘܪܝ</forename> ܐܰܢܛܝܘܟܳܝܐ</persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name228-5a"
+                         xml:lang="syr"
+                         source="#bib228-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܬܐܘܕܘܪܝ</forename> 
                   <addName type="untagged-title" sort="2">ܐܢܛܝܘܟܝܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name228-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib228-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodoros</forename> 
                   <addName type="untagged-title" sort="2">of Antioch</addName>
                </persName>
-               <persName xml:id="name228-7" xml:lang="syr-Latn-x-cbsc" source="#bib228-7">Theodore of Antioch</persName>
+               <persName xml:id="name228-10" xml:lang="en" source="#bib228-10">Theodore of Antioch</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|228</idno>
                <idno type="URI">http://viaf.org/viaf/25337719</idno>
                <death notBefore="1235" notAfter="1240" source="#bib228-2">1235-1240</death>
@@ -153,7 +151,7 @@
                   <citedRange unit="entry">225</citedRange>
                   <citedRange unit="pp">433</citedRange>
                </bibl>
-               <bibl xml:id="bib228-7">
+               <bibl xml:id="bib228-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

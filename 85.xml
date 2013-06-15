@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-85">
                <persName xml:id="name85-2"
                          corresp="#name85-3 #name85-4a #name85-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib85-2">
                   <forename sort="1">Quryaqos</forename>, <addName type="untagged-title" sort="2">metropolitan of Amid</addName>
                </persName>
@@ -110,27 +107,34 @@
                   <addName type="untagged-title" sort="2">مطران آمد</addName>
                </persName>
                <persName xml:id="name85-4a"
-                         corresp="#name85-3 #name85-2 #name85-4b"
+                         corresp="#name85-2 #name85-3 #name85-4b"
                          xml:lang="syr"
                          source="#bib85-4">
                   <forename sort="1">ܩܘܪܝܐܩܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܡܝܕ</addName>
                </persName>
                <persName xml:id="name85-4b"
-                         corresp="#name85-3 #name85-2 #name85-4a"
+                         corresp="#name85-2 #name85-3 #name85-4a"
                          xml:lang="syr-Syrj"
                          source="#bib85-4">
                   <forename sort="1">ܩܘܪܝܰܐܩܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܳܡܝܕ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name85-5a"
+                         xml:lang="syr"
+                         source="#bib85-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܩܘܪܝܐܩܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܡܝܕ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name85-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib85-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Quryaqos</forename> 
                   <addName type="untagged-title" sort="2">of Amid</addName>
                </persName>
+               <persName xml:id="name85-10" xml:lang="en" source="#bib85-10">Qyriaqos of Amid</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|85</idno>
                <death when="0623" source="#bib85-2">623</death>
                <bibl xml:id="bib85-2">
@@ -154,6 +158,11 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">80</citedRange>
                   <citedRange unit="pp">301</citedRange>
+               </bibl>
+               <bibl xml:id="bib85-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
             <relation type="disambiguation"

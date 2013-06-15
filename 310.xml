@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-310">
                <persName xml:id="name310-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib310-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">ʿAbdishoʿ</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name310-2"
                          corresp="#name310-3 #name310-4a #name310-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib310-2">
                   <forename sort="1">ʿAbd Yeshuʿ</forename> 
                   <addName type="untagged-title" sort="2">of Ṣoba</addName>
@@ -118,41 +115,41 @@
                   <addName type="untagged-title" sort="2">الصوباوي</addName>
                </persName>
                <persName xml:id="name310-4a"
-                         corresp="#name310-3 #name310-2 #name310-4b"
+                         corresp="#name310-2 #name310-3 #name310-4b"
                          xml:lang="syr"
                          source="#bib310-4">
                   <forename sort="1">ܥܒܕ ܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܨܘܒܝܐ</addName>
                </persName>
                <persName xml:id="name310-4b"
-                         corresp="#name310-3 #name310-2 #name310-4a"
+                         corresp="#name310-2 #name310-3 #name310-4a"
                          xml:lang="syr-Syrj"
                          source="#bib310-4">
                   <forename sort="1">ܥܒܕ ܝܶܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܨܰܘܒܝܐ</addName>
                </persName>
-               <persName xml:id="name310-5a"
-                         corresp="#name310-5b #name310-6a"
-                         xml:lang="syr"
-                         source="#bib310-5">
-                  <forename sort="1">ܥܒܕܝܫܘܥ</forename> 
-                  <addName type="untagged-title" sort="2">ܕܨܘܒܐ</addName>
-               </persName>
-               <persName xml:id="name310-5b"
-                         corresp="#name310-5a #name310-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib310-5">
-                  <forename sort="1">ܥܲܒܕܝܼܫܘܿܥ</forename> 
-                  <addName type="untagged-title" sort="2">ܕܨܘܿܒܵܐ</addName>
-               </persName>
                <persName xml:id="name310-6a"
-                         corresp=" #name310-5a #name310-5b"
+                         corresp="#name310-6b #name310-7a"
                          xml:lang="syr"
                          source="#bib310-6">
                   <forename sort="1">ܥܒܕܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܕܨܘܒܐ</addName>
                </persName>
-               <persName xml:id="name310-7" xml:lang="syr-Latn-x-cbsc" source="#bib310-7">Abdisho of Nisibis</persName>
+               <persName xml:id="name310-6b"
+                         corresp="#name310-6a #name310-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib310-6">
+                  <forename sort="1">ܥܲܒܕܝܼܫܘܿܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܨܘܿܒܵܐ</addName>
+               </persName>
+               <persName xml:id="name310-7a"
+                         corresp="#name310-6a #name310-6b"
+                         xml:lang="syr"
+                         source="#bib310-7">
+                  <forename sort="1">ܥܒܕܝܫܘܥ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܨܘܒܐ</addName>
+               </persName>
+               <persName xml:id="name310-10" xml:lang="en" source="#bib310-10">Abdisho of Nisibis</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|310</idno>
                <idno type="URI">http://viaf.org/viaf/5985460</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n84-228232</idno>
@@ -182,19 +179,19 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib310-5">
+               <bibl xml:id="bib310-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">83</citedRange>
                </bibl>
-               <bibl xml:id="bib310-6">
+               <bibl xml:id="bib310-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">325</citedRange>
                </bibl>
-               <bibl xml:id="bib310-7">
+               <bibl xml:id="bib310-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

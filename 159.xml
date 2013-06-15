@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-159">
                <persName xml:id="name159-2"
                          corresp="#name159-3 #name159-4a #name159-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib159-2">
                   <addName type="untagged-title" sort="2">The Monk</addName> 
                   <forename sort="1">Bar Ḥadhbshabba</forename>
@@ -111,20 +108,23 @@
                   <forename sort="1">بر حذبشابا</forename>
                </persName>
                <persName xml:id="name159-4a"
-                         corresp="#name159-3 #name159-2 #name159-4b"
+                         corresp="#name159-2 #name159-3 #name159-4b"
                          xml:lang="syr"
                          source="#bib159-4">
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
                   <forename sort="1">ܒܪ ܚܕ ܒܫܒܐ</forename>
                </persName>
                <persName xml:id="name159-4b"
-                         corresp="#name159-3 #name159-2 #name159-4a"
+                         corresp="#name159-2 #name159-3 #name159-4a"
                          xml:lang="syr-Syrj"
                          source="#bib159-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
                   <forename sort="1">ܒܰܪ ܚܰܕ ܒܫܰܒܐ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name159-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib159-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Barḥadbshabo</forename> 
                   <addName type="untagged-title" sort="2">of Mor Matay</addName>
                </persName>

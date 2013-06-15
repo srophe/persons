@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,13 +94,13 @@
          <listPerson>
             <person xml:id="person-752">
                <persName xml:id="name752-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib752-1"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">Smith</addName>, <forename sort="2">Margaret</forename>
                </persName>
                <persName xml:id="name752-3"
-                         corresp=" #name752-4a #name752-4b"
+                         corresp="#name752-4a #name752-4b"
                          xml:lang="ar"
                          source="#bib752-3">
                   <addName type="untagged-title" sort="2">السيدة</addName> 
@@ -111,7 +108,7 @@
                   <addName type="family" sort="1">جبسن</addName>
                </persName>
                <persName xml:id="name752-4a"
-                         corresp="#name752-3#name752-4b"
+                         corresp="#name752-3 #name752-4b"
                          xml:lang="syr"
                          source="#bib752-4">
                   <addName type="untagged-title" sort="2">ܡܪܬܝ</addName> 
@@ -119,14 +116,17 @@
                   <addName type="family" sort="1">ܓܒܣܢ</addName>
                </persName>
                <persName xml:id="name752-4b"
-                         corresp="#name752-3#name752-4a"
+                         corresp="#name752-3 #name752-4a"
                          xml:lang="syr-Syrj"
                          source="#bib752-4">
                   <addName type="untagged-title" sort="2">ܡܪܬܝ</addName> 
                   <forename sort="2">ܡܰܪܓܪܝܬ</forename> 
                   <addName type="family" sort="1">ܓܰܒܣܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name752-5a"
+                         xml:lang="syr"
+                         source="#bib752-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="2">ܡܪܓܪܝܬ</forename> 
                   <addName type="family" sort="1">ܓܒܣܢ</addName>
                </persName>

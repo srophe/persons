@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-83">
                <persName xml:id="name83-2"
                          corresp="#name83-3 #name83-4a #name83-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib83-2">
                   <addName type="untagged-title" sort="2">Deacon</addName> 
                   <forename sort="1">Thomas</forename>
@@ -111,20 +108,23 @@
                   <forename sort="1">توما</forename>
                </persName>
                <persName xml:id="name83-4a"
-                         corresp="#name83-3 #name83-2 #name83-4b"
+                         corresp="#name83-2 #name83-3 #name83-4b"
                          xml:lang="syr"
                          source="#bib83-4">
                   <addName type="untagged-title" sort="2">ܡܫܡܫܢܐ</addName> 
                   <forename sort="1">ܬܐܘܡܐ</forename>
                </persName>
                <persName xml:id="name83-4b"
-                         corresp="#name83-3 #name83-2 #name83-4a"
+                         corresp="#name83-2 #name83-3 #name83-4a"
                          xml:lang="syr-Syrj"
                          source="#bib83-4">
                   <addName type="untagged-title" sort="2">ܡܫܰܡܫܳܢܐ</addName> 
                   <forename sort="1">ܬܳܐܘܡܰܐ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name83-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib83-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Tumo</forename> 
                   <addName type="untagged-title" sort="2">the Deacon</addName>
                </persName>

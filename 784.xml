@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
          <change type="planned">1. Does http://viaf.org/viaf/22544388 (Theodorus Alexandrinae) refer to this Theodosius or to the 5th cent. grammarian? 2. Do http://viaf.org/viaf/32386803 and http://viaf.org/viaf/217803904 and http://viaf.org/viaf/217971054 refer to this person? 3. Is this the same person to whom the Panegyric on John the Baptist is attributed (http://viaf.org/viaf/225359960)?</change>
@@ -98,7 +95,7 @@
          <listPerson>
             <person xml:id="person-784">
                <persName xml:id="name784-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib784-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Theodosius</forename> 
@@ -106,7 +103,7 @@
                </persName>
                <persName xml:id="name784-2"
                          corresp="#name784-3 #name784-4a #name784-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib784-2">
                   <forename sort="1">Theodosius</forename>, <addName type="untagged-title" sort="2">Patriarch of Alexandria</addName>
                </persName>
@@ -118,24 +115,27 @@
                   <addName type="untagged-title" sort="2">بطريرك الاسكندرية</addName>
                </persName>
                <persName xml:id="name784-4a"
-                         corresp="#name784-3 #name784-2 #name784-4b"
+                         corresp="#name784-2 #name784-3 #name784-4b"
                          xml:lang="syr"
                          source="#bib784-4">
                   <forename sort="1">ܬܐܘܕܘܣܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
                <persName xml:id="name784-4b"
-                         corresp="#name784-3 #name784-2 #name784-4a"
+                         corresp="#name784-2 #name784-3 #name784-4a"
                          xml:lang="syr-Syrj"
                          source="#bib784-4">
                   <forename sort="1">ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name784-5a"
+                         xml:lang="syr"
+                         source="#bib784-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܬܐܘܕܘܣܝܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName xml:id="name784-7" xml:lang="syr-Latn-x-cbsc" source="#bib784-7">Theodosius of Alexandria</persName>
+               <persName xml:id="name784-10" xml:lang="en" source="#bib784-10">Theodosius of Alexandria</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|784</idno>
                <idno type="URI">http://viaf.org/viaf/19784428</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nb2006-16481</idno>
@@ -173,7 +173,7 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib784-7">
+               <bibl xml:id="bib784-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

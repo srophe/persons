@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-128">
                <persName xml:id="name128-2"
                          corresp="#name128-3 #name128-4a #name128-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib128-2">
                   <forename sort="1">Daniel</forename> 
                   <addName type="family" sort="2">Bar Moses</addName>
@@ -111,19 +108,20 @@
                   <addName type="family" sort="2">بن موسى</addName>
                </persName>
                <persName xml:id="name128-4a"
-                         corresp="#name128-3 #name128-2 #name128-4b"
+                         corresp="#name128-2 #name128-3 #name128-4b"
                          xml:lang="syr"
                          source="#bib128-4">
                   <forename sort="1">ܕܢܝܐܝܠ</forename> 
                   <addName type="family" sort="2">ܒܪ ܡܘܫܐ</addName>
                </persName>
                <persName xml:id="name128-4b"
-                         corresp="#name128-3 #name128-2 #name128-4a"
+                         corresp="#name128-2 #name128-3 #name128-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib128-4">
-                  <Barsoum_Sy_V_Full xmlns="">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</Barsoum_Sy_V_Full>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+                         source="#bib128-4">ܕܳܢܺܝܐܝܠ ܒܰܪ ܡܘܫܶܐ</persName>
+               <persName xml:id="name128-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib128-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Daniel</forename> 
                   <addName type="family" sort="2">bar Mushe</addName>
                </persName>

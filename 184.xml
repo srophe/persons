@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -98,7 +95,7 @@
             <person xml:id="person-184">
                <persName xml:id="name184-2"
                          corresp="#name184-3 #name184-4a #name184-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib184-2">
                   <addName type="untagged-title" sort="2">The Edessene Author of The Cause of all Causes</addName>
                </persName>
@@ -109,21 +106,27 @@
                   <addName type="untagged-title" sort="2">الاسقف الرهاوي صاحب كتاب علة كل العلل</addName>
                </persName>
                <persName xml:id="name184-4a"
-                         corresp="#name184-3 #name184-2 #name184-4b"
+                         corresp="#name184-2 #name184-3 #name184-4b"
                          xml:lang="syr"
                          source="#bib184-4">
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܐܘܪܗܝܐ ܡܪܐ ܟܬܒܐ ܕܥܠܬ ܟܠ ܥ̈ܠܠܢ</addName>
                </persName>
                <persName xml:id="name184-4b"
-                         corresp="#name184-3 #name184-2 #name184-4a"
+                         corresp="#name184-2 #name184-3 #name184-4a"
                          xml:lang="syr-Syrj"
                          source="#bib184-4">
                   <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܐ ܐܘܪܗܳܝܐ ܡܳܪܶܐ ܟܬܳܒܐ ܕܥܶܠܰܬ ܟܠ ܥ̈ܠܠܳܢ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name184-5a"
+                         xml:lang="syr"
+                         source="#bib184-5"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">ܡܪܐ ܟܬܒܐ ܕܥܠܬ ܟܠ ܥ̈ܠܠܢ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name184-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib184-8"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Cause of Causes</addName>
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|184</idno>

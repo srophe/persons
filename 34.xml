@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,7 +94,7 @@
          <listPerson>
             <person xml:id="person-34">
                <persName xml:id="name34-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib34-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Isḥaq</forename> 
@@ -105,7 +102,7 @@
                </persName>
                <persName xml:id="name34-2"
                          corresp="#name34-3 #name34-4a #name34-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib34-2">
                   <forename sort="1">Isaac</forename> 
                   <addName type="untagged-title" sort="2">the Second of Edessa</addName>
@@ -118,20 +115,23 @@
                   <addName type="untagged-title" sort="2">الرهاوي الثاني</addName>
                </persName>
                <persName xml:id="name34-4a"
-                         corresp="#name34-3 #name34-2 #name34-4b"
+                         corresp="#name34-2 #name34-3 #name34-4b"
                          xml:lang="syr"
                          source="#bib34-4">
                   <forename sort="1">ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ ܬܪܝܢܐ</addName>
                </persName>
                <persName xml:id="name34-4b"
-                         corresp="#name34-3 #name34-2 #name34-4a"
+                         corresp="#name34-2 #name34-3 #name34-4a"
                          xml:lang="syr-Syrj"
                          source="#bib34-4">
                   <forename sort="1">ܐܝܣܚܳܩ</forename> 
                   <addName type="untagged-title" sort="2">ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</addName>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name34-5a"
+                         xml:lang="syr"
+                         source="#bib34-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title" sort="2">ܐܘܪܗܝܐ</addName>
                </persName>

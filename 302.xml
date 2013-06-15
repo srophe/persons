@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,24 +96,22 @@
                <persName xml:id="name302-4a"
                          corresp="#name302-4b"
                          xml:lang="syr"
-                         source="#bib302-4">
-                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
-                  <forename sort="1">ܝܫܘܥ</forename> 
-                  <addName type="untagged-title" sort="2">ܓܪܝܒܐ</addName>
-               </persName>
+                         source="#bib302-4">ܕܝܪܝܐ <forename sort="1">ܝܫܘܥ</forename> ܓܪܝܒܐ</persName>
                <persName xml:id="name302-4b"
                          corresp="#name302-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib302-4">
-                  <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
-                  <forename sort="1">ܝܶܫܘܥ</forename> 
-                  <addName type="untagged-title" sort="2">ܓܰܪܝܒܳܐ</addName>
-               </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+                         source="#bib302-4">ܕܰܝܪܳܝܐ <forename sort="1">ܝܶܫܘܥ</forename> ܓܰܪܝܒܳܐ</persName>
+               <persName xml:id="name302-5a"
+                         xml:lang="syr"
+                         source="#bib302-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܫܘܥ</forename> 
                   <addName type="untagged-title" sort="2">ܓܪܝܒܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name302-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib302-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yeshuʿ</forename> 
                   <addName type="untagged-title" sort="2">Gharīb</addName>
                </persName>

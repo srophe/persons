@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,14 +94,14 @@
          <listPerson>
             <person xml:id="person-609">
                <persName xml:id="name609-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib609-1"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">Manna</addName>, <forename sort="2">Yaʿqob Awgen</forename>
                </persName>
                <persName xml:id="name609-2"
                          corresp="#name609-3 #name609-4a #name609-4b"
-                         xml:lang="syr-Latn-x-barsoum"
+                         xml:lang="en"
                          source="#bib609-2">
                   <forename sort="2">Jacob Awgen</forename> 
                   <addName type="family" sort="1">Manna</addName>
@@ -118,20 +115,20 @@
                   <addName type="family" sort="1">منا</addName>
                </persName>
                <persName xml:id="name609-4a"
-                         corresp="#name609-3 #name609-2 #name609-4b"
+                         corresp="#name609-2 #name609-3 #name609-4b"
                          xml:lang="syr"
                          source="#bib609-4">
                   <forename sort="2">ܝܥܩܘܒ ܐܘܓܝܢ</forename> 
                   <addName type="family" sort="1">ܡܢܐ</addName>
                </persName>
                <persName xml:id="name609-4b"
-                         corresp="#name609-3 #name609-2 #name609-4a"
+                         corresp="#name609-2 #name609-3 #name609-4a"
                          xml:lang="syr-Syrj"
                          source="#bib609-4">
                   <forename sort="2">ܝܰܥܩܘܒ ܐܰܘܓܝܢ</forename> 
                   <addName type="family" sort="1">ܡܰܢܐ</addName>
                </persName>
-               <persName xml:id="name609-7" xml:lang="syr-Latn-x-cbsc" source="#bib609-7">Awgen Manna</persName>
+               <persName xml:id="name609-10" xml:lang="en" source="#bib609-10">Awgen Manna</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|609</idno>
                <idno type="URI">http://viaf.org/viaf/40593603</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-nr90-24238</idno>
@@ -163,7 +160,7 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib609-7">
+               <bibl xml:id="bib609-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>

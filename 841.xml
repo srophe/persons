@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,56 +94,62 @@
          <listPerson>
             <person xml:id="person-841">
                <persName xml:id="name841-3"
-                         corresp=" #name841-4a #name841-4b"
+                         corresp="#name841-4a #name841-4b"
                          xml:lang="ar"
                          source="#bib841-3">
                   <forename sort="1">داماسوس</forename>
                </persName>
                <persName xml:id="name841-4a"
-                         corresp="#name841-3#name841-4b"
+                         corresp="#name841-3 #name841-4b"
                          xml:lang="syr"
                          source="#bib841-4">
                   <forename sort="1">ܕܐܡܐܣܘܣ</forename>
                </persName>
                <persName xml:id="name841-4b"
-                         corresp="#name841-3#name841-4a"
+                         corresp="#name841-3 #name841-4a"
                          xml:lang="syr-Syrj"
                          source="#bib841-4">
                   <forename sort="1">ܕܰܐܡܰܐܣܘܣ</forename>
                </persName>
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name841-5a"
+                         xml:lang="syr"
+                         source="#bib841-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܡܣܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܪܗܘܡܐ</addName>
                </persName>
-               <persName xml:id="name841-5a"
-                         corresp="#name841-5b #name841-6a #name841-6b"
+               <persName xml:id="name841-6a"
+                         corresp="#name841-6b #name841-7a #name841-7b"
                          xml:lang="syr"
-                         source="#bib841-5">
+                         source="#bib841-6">
                   <forename sort="1">ܕܡܣܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
                </persName>
-               <persName xml:id="name841-5b"
-                         corresp="#name841-5a #name841-6a #name841-6b"
+               <persName xml:id="name841-6b"
+                         corresp="#name841-6a #name841-7a #name841-7b"
                          xml:lang="syr-Syrn"
-                         source="#bib841-5">
+                         source="#bib841-6">
                   <forename sort="1">ܕܵܡܵܣܘܿܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܲܦܸܣܩܘܿܦܵܐ ܕܪܗܘܿܡܹܐ</addName>
                </persName>
-               <persName xml:id="name841-6a"
-                         corresp="#name841-6b #name841-5a #name841-5b"
+               <persName xml:id="name841-7a"
+                         corresp="#name841-6a #name841-6b #name841-7b"
                          xml:lang="syr"
-                         source="#bib841-6">
+                         source="#bib841-7">
                   <forename sort="1">ܕܡܣܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܪܗܘܡܐ</addName>
                </persName>
-               <persName xml:id="name841-6b"
-                         corresp="#name841-6a #name841-5a #name841-5b"
-                         xml:lang="syr-Syrj"
-                         source="#bib841-6">
+               <persName xml:id="name841-7b"
+                         corresp="#name841-6a #name841-6b #name841-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib841-7">
                   <forename sort="1">ܕܰܡܰܣܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܪܗܽܘܡܺܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name841-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib841-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Damasus</forename> 
                   <addName type="untagged-title" sort="2">of Rome</addName>
                </persName>
@@ -163,13 +166,13 @@
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
-               <bibl xml:id="bib841-5">
+               <bibl xml:id="bib841-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">64</citedRange>
                </bibl>
-               <bibl xml:id="bib841-6">
+               <bibl xml:id="bib841-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>

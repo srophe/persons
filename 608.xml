@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,29 +94,30 @@
          <listPerson>
             <person xml:id="person-608">
                <persName xml:id="name608-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib608-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mani</forename>
                </persName>
                <persName xml:id="name608-3"
-                         corresp=" #name608-4a #name608-4b"
+                         corresp="#name608-4a #name608-4b"
                          xml:lang="ar"
                          source="#bib608-3">
                   <forename sort="1">ماني</forename>
                </persName>
                <persName xml:id="name608-4a"
-                         corresp="#name608-3#name608-4b"
+                         corresp="#name608-3 #name608-4b"
                          xml:lang="syr"
                          source="#bib608-4">
                   <forename sort="1">ܡܐܢܝ</forename>
                </persName>
                <persName xml:id="name608-4b"
-                         corresp="#name608-3#name608-4a"
+                         corresp="#name608-3 #name608-4a"
                          xml:lang="syr-Syrj"
                          source="#bib608-4">
                   <forename sort="1">ܡܰܐܢܺܝ</forename>
                </persName>
+               <persName xml:id="name608-10" xml:lang="en" source="#bib608-10">Mani</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|608</idno>
                <bibl xml:id="bib608-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -138,6 +136,11 @@
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib608-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

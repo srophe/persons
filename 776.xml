@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,35 +94,25 @@
          <listPerson>
             <person xml:id="person-776">
                <persName xml:id="name776-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib776-1"
-                         syriaca-tags="#syriaca-headword">
-                  <GEDSH_Full xmlns="">Testament of our Lord Jesus Christ</GEDSH_Full>
-               </persName>
+                         syriaca-tags="#syriaca-headword">Testament of our Lord Jesus Christ</persName>
                <persName xml:id="name776-2"
                          corresp="#name776-3 #name776-4a #name776-4b"
-                         xml:lang="syr-Latn-x-barsoum"
-                         source="#bib776-2">
-                  <Barsoum_En_Full xmlns="">The Covenant of Our Lord</Barsoum_En_Full>
-               </persName>
+                         xml:lang="en"
+                         source="#bib776-2">The Covenant of Our Lord</persName>
                <persName xml:id="name776-3"
                          corresp="#name776-2 #name776-4a #name776-4b"
                          xml:lang="ar"
-                         source="#bib776-3">
-                  <Barsoum_Ar_Full xmlns="">عهد ربنا</Barsoum_Ar_Full>
-               </persName>
+                         source="#bib776-3">عهد ربنا</persName>
                <persName xml:id="name776-4a"
-                         corresp="#name776-3 #name776-2 #name776-4b"
+                         corresp="#name776-2 #name776-3 #name776-4b"
                          xml:lang="syr"
-                         source="#bib776-4">
-                  <Barsoum_Sy_NV_Full xmlns="">ܕܝܬܝܩܝ ܕܡܪܢ</Barsoum_Sy_NV_Full>
-               </persName>
+                         source="#bib776-4">ܕܝܬܝܩܝ ܕܡܪܢ</persName>
                <persName xml:id="name776-4b"
-                         corresp="#name776-3 #name776-2 #name776-4a"
+                         corresp="#name776-2 #name776-3 #name776-4a"
                          xml:lang="syr-Syrj"
-                         source="#bib776-4">
-                  <Barsoum_Sy_V_Full xmlns="">ܕܺܝܰܬܺܝܩܺܝ ܕܡܳܪܢ</Barsoum_Sy_V_Full>
-               </persName>
+                         source="#bib776-4">ܕܺܝܰܬܺܝܩܺܝ ܕܡܳܪܢ</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|776</idno>
                <bibl xml:id="bib776-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

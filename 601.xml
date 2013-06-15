@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -96,41 +93,45 @@
       <body>
          <listPerson>
             <person xml:id="person-601">
-               <persName xml:id="name601-3" corresp="" xml:lang="ar" source="#bib601-3">
+               <persName xml:id="name601-3" xml:lang="ar" source="#bib601-3">
                   <forename sort="1">مقاريوس</forename> 
                   <addName type="untagged-title" sort="2">الاسكندري</addName>
                </persName>
-               <persName xml:id="name601-5a"
-                         corresp="#name601-5b #name601-6a #name601-6b"
-                         xml:lang="syr"
-                         source="#bib601-5">
-                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
-                  <forename sort="1">ܡܩܪܝܣ</forename>
-               </persName>
-               <persName xml:id="name601-5b"
-                         corresp="#name601-5a #name601-6a #name601-6b"
-                         xml:lang="syr-Syrn"
-                         source="#bib601-5">
-                  <addName type="untagged-title" sort="2">ܐܲܒܵܐ</addName> 
-                  <forename sort="1">ܡܵܩܵܪܝܼܣ</forename>
-               </persName>
                <persName xml:id="name601-6a"
-                         corresp="#name601-6b #name601-5a #name601-5b"
+                         corresp="#name601-6b #name601-7a #name601-7b"
                          xml:lang="syr"
                          source="#bib601-6">
                   <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
                   <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
                <persName xml:id="name601-6b"
-                         corresp="#name601-6a #name601-5a #name601-5b"
-                         xml:lang="syr-Syrj"
+                         corresp="#name601-6a #name601-7a #name601-7b"
+                         xml:lang="syr-Syrn"
                          source="#bib601-6">
+                  <addName type="untagged-title" sort="2">ܐܲܒܵܐ</addName> 
+                  <forename sort="1">ܡܵܩܵܪܝܼܣ</forename>
+               </persName>
+               <persName xml:id="name601-7a"
+                         corresp="#name601-6a #name601-6b #name601-7b"
+                         xml:lang="syr"
+                         source="#bib601-7">
+                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
+                  <forename sort="1">ܡܩܪܝܣ</forename>
+               </persName>
+               <persName xml:id="name601-7b"
+                         corresp="#name601-6a #name601-6b #name601-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib601-7">
                   <addName type="untagged-title" sort="2">ܐܰܒܳܐ</addName> 
                   <forename sort="1">ܡܰܩܰܪܝܳܣ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name601-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib601-8"
+                         syriaca-tags="#syriaca-headword">
                   <addName type="untagged-title" sort="2">Author of the Macarian homilies</addName>
                </persName>
+               <persName xml:id="name601-10" xml:lang="en" source="#bib601-10">Pseudo-Macarius</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|601</idno>
                <bibl xml:id="bib601-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
@@ -145,17 +146,22 @@
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">122</citedRange>
                </bibl>
-               <bibl xml:id="bib601-5">
+               <bibl xml:id="bib601-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">68</citedRange>
                </bibl>
-               <bibl xml:id="bib601-6">
+               <bibl xml:id="bib601-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">44</citedRange>
+               </bibl>
+               <bibl xml:id="bib601-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
                <note type="record-description">Should viaf.org records mixing pseudo-Macarius, Macarius the Egyptian, and Simeon of Mesopotamia be matched with this author?</note>
             </person>

@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -96,45 +93,57 @@
       <body>
          <listPerson>
             <person xml:id="person-871">
-               <persName xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name871-5a"
+                         xml:lang="syr"
+                         source="#bib871-5"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܝܟܐ</forename>
                </persName>
-               <persName xml:id="name871-5a"
-                         corresp="#name871-5b #name871-6a"
-                         xml:lang="syr"
-                         source="#bib871-5">
-                  <forename sort="1">ܡܝܟܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܠܦܢܐ</addName>
-               </persName>
-               <persName xml:id="name871-5b"
-                         corresp="#name871-5a #name871-6a"
-                         xml:lang="syr-Syrn"
-                         source="#bib871-5">
-                  <forename sort="1">ܡܝܼܟܵܐ</forename> 
-                  <addName type="untagged-title" sort="2">ܡܲܠܦܵܢܵܐ</addName>
-               </persName>
                <persName xml:id="name871-6a"
-                         corresp=" #name871-5a #name871-5b"
+                         corresp="#name871-6b #name871-7a"
                          xml:lang="syr"
                          source="#bib871-6">
                   <forename sort="1">ܡܝܟܐ</forename> 
                   <addName type="untagged-title" sort="2">ܡܠܦܢܐ</addName>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name871-6b"
+                         corresp="#name871-6a #name871-7a"
+                         xml:lang="syr-Syrn"
+                         source="#bib871-6">
+                  <forename sort="1">ܡܝܼܟܵܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܲܠܦܵܢܵܐ</addName>
+               </persName>
+               <persName xml:id="name871-7a"
+                         corresp="#name871-6a #name871-6b"
+                         xml:lang="syr"
+                         source="#bib871-7">
+                  <forename sort="1">ܡܝܟܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܡܠܦܢܐ</addName>
+               </persName>
+               <persName xml:id="name871-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib871-8"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mika</forename>
                </persName>
+               <persName xml:id="name871-10" xml:lang="en" source="#bib871-10">Mikha Gramkaya</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|871</idno>
-               <bibl xml:id="bib871-5">
+               <bibl xml:id="bib871-6">
                   <title>Abdisho (YdQ)</title>
                   <abbr>Abdisho (YdQ)</abbr>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">75</citedRange>
                </bibl>
-               <bibl xml:id="bib871-6">
+               <bibl xml:id="bib871-7">
                   <title>Abdisho (BO)</title>
                   <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">169</citedRange>
+               </bibl>
+               <bibl xml:id="bib871-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

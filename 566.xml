@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,12 +94,13 @@
          <listPerson>
             <person xml:id="person-566">
                <persName xml:id="name566-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib566-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Israel</forename> 
                   <addName type="untagged-title" sort="2">of Alqosh</addName>
                </persName>
+               <persName xml:id="name566-10" xml:lang="en" source="#bib566-10">Israel of Alqosh</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|566</idno>
                <idno type="URI">http://viaf.org/viaf/19042194</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n2002-63152</idno>
@@ -117,6 +115,11 @@
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">294</citedRange>
+               </bibl>
+               <bibl xml:id="bib566-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

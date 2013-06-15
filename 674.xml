@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -97,12 +94,13 @@
          <listPerson>
             <person xml:id="person-674">
                <persName xml:id="name674-1"
-                         xml:lang="syr-Latn-x-gedsh"
+                         xml:lang="en-x-gedsh"
                          source="#bib674-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Pawlos</forename> 
                   <addName type="untagged-title" sort="2">the Persian</addName>
                </persName>
+               <persName xml:id="name674-10" xml:lang="en" source="#bib674-10">Paul the Persian</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|674</idno>
                <floruit source="#bib674-1">first half of 6th cent.</floruit>
                <bibl xml:id="bib674-1">
@@ -110,6 +108,11 @@
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">419</citedRange>
+               </bibl>
+               <bibl xml:id="bib674-10">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

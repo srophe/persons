@@ -52,17 +52,14 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-12-04:00</date>
+            <date>2013-06-15-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl>
-            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-            <p>The capitalization of names marked with the type "split" has been normalized.</p>
-         </editorialDecl>
+         <editorialDecl/>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -87,7 +84,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-12-04:00">
+                 when="2013-06-15-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -110,13 +107,12 @@
                   <addName type="untagged-title" sort="2">ܐܰܒܘ ܢܰܨܪ</addName> 
                   <forename sort="1">ܝܰܚܝܰܐ</forename>
                </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title" sort="2">Abū Naṣr</addName> 
-                  <forename sort="1">Yaḥyā</forename> 
-                  <addName type="family" sort="2">b. Jarīr</addName> 
-                  <addName type="untagged-title" sort="2">of Tagrit</addName>
-               </persName>
-               <persName xml:id="name196-7" xml:lang="syr-Latn-x-cbsc" source="#bib196-7">Yahya ibn Jarir al-Takriti</persName>
+               <persName xml:id="name196-8"
+                         xml:lang="en-x-gedsh"
+                         source="#bib196-8"
+                         syriaca-tags="#syriaca-headword">Abū Naṣr <forename sort="1">Yaḥyā</forename> 
+                  <addName type="family" sort="2">b. Jarīr</addName> of Tagrit</persName>
+               <persName xml:id="name196-10" xml:lang="en" source="#bib196-10">Yahya ibn Jarir al-Takriti</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|196</idno>
                <bibl xml:id="bib196-4">
                   <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -124,7 +120,7 @@
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">396</citedRange>
                </bibl>
-               <bibl xml:id="bib196-7">
+               <bibl xml:id="bib196-10">
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
