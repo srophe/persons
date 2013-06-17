@@ -52,14 +52,24 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-15-04:00</date>
+            <date>2013-06-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <editorialDecl/>
+         <p>Names lacking source attributes are composite forms included for the purpose of disambiguation.</p>
+         <editorialDecl>
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries have been interpreted as in the following example:
+                                    "4th cent." - notBefore="300" notAfter="399".
+                                    "Early 4th cent." - notBefore="300" notAfter="349". 
+                                    "Late 4th cent." - notBefore="350" notAfter="399". 
+                                    "Mid-4th cent." - notBefore="325" notAfter="374". 
+                                    Etc.</p>
+            </interpretation>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
@@ -84,7 +94,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-15-04:00">
+                 when="2013-06-17-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -117,6 +127,12 @@
                   <title>A Comprehensive Bibliography on Syriac Christianity</title>
                   <abbr>CBSC</abbr>
                   <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
+               </bibl>
+               <bibl xml:id="bib757-11">
+                  <title>Virtual International Authority File</title>
+                  <abbr>VIAF</abbr>
+                  <ptr target="http://viaf.org"/>
+                  <span>Information cited from VIAF may come from any library or agency participating with VIAF.</span>
                </bibl>
             </person>
          </listPerson>
