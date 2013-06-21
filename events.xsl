@@ -19,7 +19,7 @@
             </xsl:choose>
         </xsl:param>
         
-        <xsl:if test="string-length(normalize-space(.)) or exists(following-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))])">
+        <xsl:if test="string-length(normalize-space(.)) or exists(following-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))]) or exists(preceding-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))])">
             <xsl:element name="{$element-name}">
                 <!-- Adds machine-readable attributes to date. -->
                 <xsl:call-template name="date-attributes">
