@@ -23,53 +23,51 @@
             </editor>
             <respStmt>
                <resp>Editing, document design, proofreading, data entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </respStmt>
             <respStmt>
                <resp>Editing, proofreading, data entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
             </respStmt>
             <respStmt>
                <resp>English name entry, matching with viaf.org records by</resp>
-               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
             </respStmt>
             <respStmt>
                <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
-               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
             </respStmt>
             <respStmt>
                <resp>editing, Syriac name entry, disambiguation research by</resp>
-               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
             </respStmt>
             <respStmt>
                <resp>Syriac name entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
             </respStmt>
             <respStmt>
                <resp>Arabic name entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
             </respStmt>
             <respStmt>
                <resp>Arabic name entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
             </respStmt>
             <respStmt>
                <resp>Normalization, matching with viaf.org records by</resp>
-               <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
             </respStmt>
             <respStmt>
                <resp>Date entry by</resp>
-               <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
                <resp>Project managament, english text entry, and proofreading by</resp>
-               <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">
-                                                Christopher Johnson</name>
+               <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
                <resp>English text entry and proofreading by</resp>
-               <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">
-                                                the Syriac Research Group, University of Alabama</name>
+               <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -79,10 +77,8 @@
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
             <idno type="URI">http://syriaca.org/person/301/source</idno>
             <availability>
-               <licence target="http://creativecommons.org/licenses/by/3.0/">
-                                        Distributed under a Creative Commons
-                                        Attribution 3.0 Unported License
-                                    </licence>
+               <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
+                            under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
             <date>2013-06-21-04:00</date>
          </publicationStmt>
@@ -91,25 +87,26 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This record created following the Syriaca.org guidelines. Documentation available at: <ptr target="http://syriaca.org/documentation">
-                                http://syriaca.org/documentation</ptr>.</p>
-         <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
-                                http://syriaca.org/documentation/headwords</ptr>.</p>
+         <p>This record created following the Syriaca.org guidelines. Documentation available at: <ptr target="http://syriaca.org/documentation"/>.</p>
+         <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords"/>.</p>
          <editorialDecl>
             <interpretation>
-               <p>Approximate dates described in terms of centuries or partial centuries have been interpreted as in the following example:
-                                    "4th cent." - notBefore="300" notAfter="399".
-                                    "Early 4th cent." - notBefore="300" notAfter="349". 
-                                    "Late 4th cent." - notBefore="350" notAfter="399". 
-                                    "Mid-4th cent." - notBefore="325" notAfter="374". 
-                                    Etc.</p>
+               <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as in the following example: 
+                            "4th cent." - notBefore="300" notAfter="399". 
+                            "Early 4th cent." - notBefore="300" notAfter="349". 
+                            "Late 4th cent." - notBefore="350" notAfter="399".
+                            "Mid-4th cent." - notBefore="325" notAfter="374". 
+                            Etc.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
-                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. While headwords are usually created from primary source citations, those without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
-                                            http://syriaca.org/documentation/headwords</ptr>.</catDesc>
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
+                                While headwords are usually created from primary source citations, those without source attributes may not be attested in extant sources. 
+                                They are included only to aid the reader for the purpose of disambiguation. 
+                                These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords"/>.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -120,7 +117,8 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
@@ -130,9 +128,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-21-04:00">
-                                CREATED: person
-                            </change>
+                 when="2013-06-21-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -177,7 +173,7 @@
                </bibl>
                <bibl xml:id="bib301-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                    السريانية</title>
+                                                السريانية</title>
                   <abbr>Barsoum (Arabic)</abbr>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="entry">289</citedRange>
