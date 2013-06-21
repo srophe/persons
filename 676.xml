@@ -2,42 +2,74 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com">
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Payne Smith (Mrs. Margoliouth), Jessie | The Syriac Prosopography</title>
+            <title xml:lang="en">Payne Smith (Mrs. Margoliouth), Jessie</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The Andrew W. Mellon Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
-            <principal>David A. Michelson</principal>
-            <respStmt>
-               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
-               <resp>English name entry, matching with viaf.org records</resp>
-            </respStmt>
-            <respStmt>
+            <principal>
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </principal>
+            <editor role="creator">
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-               <resp>creator</resp>
+            </editor>
+            <respStmt>
+               <resp>Editing, document design, proofreading, data entry by</resp>
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </respStmt>
             <respStmt>
+               <resp>Editing, proofreading, data entry by</resp>
+               <name ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>English name entry, matching with viaf.org records by</resp>
+               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+            </respStmt>
+            <respStmt>
+               <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>editing, Syriac name entry, disambiguation research by</resp>
                <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-               <resp>editing, Syriac name entry, disambiguation research</resp>
             </respStmt>
             <respStmt>
+               <resp>Syriac name entry by</resp>
                <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
-               <resp>Syriac name entry</resp>
             </respStmt>
             <respStmt>
+               <resp>Arabic name entry by</resp>
+               <name ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+            </respStmt>
+            <respStmt>
+               <resp>Arabic name entry by</resp>
                <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
-               <resp>Arabic name entry</resp>
             </respStmt>
             <respStmt>
+               <resp>Normalization, matching with viaf.org records by</resp>
                <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
-               <resp>normalization, matching with viaf.org records</resp>
             </respStmt>
             <respStmt>
+               <resp>Date entry by</resp>
                <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
-               <resp>date entry</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Project managament, english text entry, and proofreading by</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">
+                                                Christopher Johnson</name>
+            </respStmt>
+            <respStmt>
+               <resp>English text entry and proofreading by</resp>
+               <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">
+                                                the Syriac Research Group, University of Alabama</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -52,14 +84,17 @@
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>Names lacking source attributes are composite forms included for the purpose of disambiguation.</p>
+         <p>This record created following the Syriaca.org guidelines. Documentation available at: <ptr target="http://syriaca.org/documentation">
+                                http://syriaca.org/documentation</ptr>.</p>
+         <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
+                                http://syriaca.org/documentation/headwords</ptr>.</p>
          <editorialDecl>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries have been interpreted as in the following example:
@@ -73,7 +108,8 @@
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-headword">
-                  <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. While headwords are usually created from primary source citations, those without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
+                                            http://syriaca.org/documentation/headwords</ptr>.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -84,17 +120,17 @@
             <language ident="syr-Syrj">Vocalized West Syriac</language>
             <language ident="syr-Syrn">Vocalized East Syriac</language>
             <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
             <language ident="ar">Arabic</language>
             <language ident="fr">French</language>
             <language ident="de">German</language>
-            <language ident="lat">Latin</language>
+            <language ident="la">Latin</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-17-04:00">
+                 when="2013-06-21-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -118,6 +154,8 @@
                <idno type="URI">http://viaf.org/viaf/195691394</idno>
                <birth when="1856" source="#bib676-1">1856</birth>
                <death when="1933" source="#bib676-1">1933</death>
+               <birth when="1856-02-23" source="#bib676-11"/>
+               <death when="1933-08-18" source="#bib676-11"/>
                <bibl xml:id="bib676-1">
                   <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
