@@ -31,7 +31,7 @@
                 <!-- Shows which name forms are authorized. -->
                 <!-- Need to test whether this properly overrides GEDSH with GS as headword. -->
                 <xsl:if
-                    test="contains(name(),'GS_en') or (contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))) or contains(name(),'Authorized_syr')">
+                    test="contains(name(),'GS_en') or (contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))) or contains(name(),'Authorized_syr') or (contains(name(), 'Barsoum_syr-NV') and contains(../Authorized_syr-Source, 'Barsoum')) or (contains(name(), 'Abdisho_YdQ_syr-NV') and contains(../Authorized_syr-Source, 'Abdisho'))">
                     <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                 </xsl:if>
                 <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source. 
