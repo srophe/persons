@@ -15,8 +15,23 @@
             <principal>
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </principal>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </editor>
+            <editor role="general-editor">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="creator">
+               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+            </editor>
+            <editor role="creator">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
             </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
@@ -80,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-21-04:00</date>
+            <date>2013-06-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -128,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-21-04:00"> CREATED: person </change>
+                 when="2013-06-24-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -186,33 +201,55 @@
                <birth when="0507" source="#bib74-11"/>
                <death when="0586" source="#bib74-11"/>
                <bibl xml:id="bib74-1">
-                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
-                  <abbr>GEDSH</abbr>
+                  <title level="m">
+                     <choice>
+                        <expan>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</expan>
+                        <abbr>GEDSH</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                </bibl>
                <bibl xml:id="bib74-2">
-                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
-                  <abbr>Barsoum (English)</abbr>
+                  <title>
+                     <choice>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <abbr>Barsoum (English)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="entry">69</citedRange>
                   <citedRange unit="pp">304</citedRange>
                </bibl>
                <bibl xml:id="bib74-3">
-                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
-                  <abbr>Barsoum (Arabic)</abbr>
+                  <title>
+                     <choice>
+                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</expan>
+                        <abbr>Barsoum (Arabic)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">264</citedRange>
                </bibl>
                <bibl xml:id="bib74-4">
-                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
-                  <abbr>Barsoum (Syriac)</abbr>
+                  <title>
+                     <choice>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <abbr>Barsoum (Syriac)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">291</citedRange>
                </bibl>
                <bibl xml:id="bib74-10">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
+                  <title level="a">John of Ephesus</title>
+                  <title level="m">
+                     <choice>
+                        <expan>A Comprehensive Bibliography on Syriac Christianity</expan>
+                        <abbr>CBSC</abbr>
+                     </choice>
+                  </title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+                  <ref target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=J&amp;sK=John of Ephesus&amp;sT=keywords">http://www.csc.org.il/db/browse.aspx?db=SB&sL=J&sK=John of Ephesus&sT=keywords</ref>
                </bibl>
                <bibl xml:id="bib74-11">
                   <title>Virtual International Authority File</title>

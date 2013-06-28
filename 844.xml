@@ -15,8 +15,23 @@
             <principal>
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </principal>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </editor>
+            <editor role="general-editor">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="creator">
+               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+            </editor>
+            <editor role="creator">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
             </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
@@ -80,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-21-04:00</date>
+            <date>2013-06-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -128,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-21-04:00"> CREATED: person </change>
+                 when="2013-06-24-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -167,18 +182,26 @@
                </persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|844</idno>
                <bibl xml:id="bib844-6">
-                  <title xml:lang="syr">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
-                  <abbr>Abdisho (YdQ)</abbr>
+                  <title>
+                     <choice>
+                        <expan>ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</expan>
+                        <abbr>Abdisho (YdQ)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/6"/>
                   <citedRange unit="pp">67</citedRange>
                </bibl>
                <bibl xml:id="bib844-7">
-                  <title level="m" xml:lang="la">De Scriptoribus Syris Nestorianis</title>
+                  <title level="m">
+                     <choice>
+                        <expan xml:lang="la">De Scriptoribus Syris Nestorianis</expan>
+                        <abbr>Abdisho (BO)</abbr>
+                     </choice>
+                  </title>
                   <series>
                      <title level="s" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                      <biblScope>vol. 3</biblScope>
                   </series>
-                  <abbr>Abdisho (BO)</abbr>
                   <ptr target="http://syriaca.org/bibl/7"/>
                   <citedRange unit="pp">37</citedRange>
                </bibl>

@@ -15,8 +15,23 @@
             <principal>
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </principal>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="general-editor">
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </editor>
+            <editor role="general-editor">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+            </editor>
+            <editor role="creator">
+               <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+            </editor>
+            <editor role="creator">
+               <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
             </editor>
             <editor role="creator">
                <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
@@ -80,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-21-04:00</date>
+            <date>2013-06-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -128,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-21-04:00"> CREATED: person </change>
+                 when="2013-06-24-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -163,26 +178,44 @@
                <persName xml:id="name608-10" xml:lang="en" source="#bib608-10">Mani</persName>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|608</idno>
                <bibl xml:id="bib608-1">
-                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
-                  <abbr>GEDSH</abbr>
+                  <title level="m">
+                     <choice>
+                        <expan>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</expan>
+                        <abbr>GEDSH</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">342</citedRange>
                </bibl>
                <bibl xml:id="bib608-3">
-                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
-                  <abbr>Barsoum (Arabic)</abbr>
+                  <title>
+                     <choice>
+                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</expan>
+                        <abbr>Barsoum (Arabic)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">229</citedRange>
                </bibl>
                <bibl xml:id="bib608-4">
-                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
-                  <abbr>Barsoum (Syriac)</abbr>
+                  <title>
+                     <choice>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <abbr>Barsoum (Syriac)</abbr>
+                     </choice>
+                  </title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                </bibl>
                <bibl xml:id="bib608-10">
-                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                  <abbr>CBSC</abbr>
-                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
+                  <title level="a">Mani</title>
+                  <title level="m">
+                     <choice>
+                        <expan>A Comprehensive Bibliography on Syriac Christianity</expan>
+                        <abbr>CBSC</abbr>
+                     </choice>
+                  </title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+                  <ref target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Mani&amp;sT=keywords">http://www.csc.org.il/db/browse.aspx?db=SB&sL=M&sK=Mani&sT=keywords</ref>
                </bibl>
             </person>
          </listPerson>
