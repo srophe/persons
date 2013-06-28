@@ -6,7 +6,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
-    <!-- Test to make sure this template match works -->
     <xsl:template name="index">
         <!-- Create an index file that links to all of the TEI files.
         Index does not work for rows lacking a Calculated_Name.-->

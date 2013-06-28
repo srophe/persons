@@ -7,7 +7,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
     
-    <xsl:template name="events" xmlns="http://www.tei-c.org/ns/1.0">
+    <xsl:template name="event-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
         <xsl:param name="column-name" select="name()"/>
         <xsl:param name="element-name">

@@ -6,31 +6,29 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
-    <xsl:template match="SRP_ID" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="display-name-english">
+    
+    <xd:doc>
+        <xd:desc>
+            <!-- Correct link to manual? -->
+            <xd:p>Creates a TEI header, according to the specifications of the Syriaca TEI Manual.</xd:p>
+        </xd:desc>
+        <xd:param name="record-id">The record ID of the person record</xd:param>
+        <xd:param name="record-title">The value to be used as the title of the record</xd:param>
+    </xd:doc>
+    <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="record-id"/>
+        <xsl:param name="record-title">
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(../GS_en-Full))">
-                    <xsl:value-of select="../GS_en-Full"/>
+                <xsl:when test="string-length(normalize-space(../Calculated_Name))">
+                    <xsl:value-of select="../Calculated_Name"/>
                 </xsl:when>
-                <xsl:when test="string-length(normalize-space(../GEDSH_en-Full))">
-                    <xsl:value-of select="../GEDSH_en-Full"/>
-                </xsl:when>
-                <xsl:when test="string-length(normalize-space(../Barsoum_en-Full))">
-                    <xsl:value-of select="../Barsoum_en-Full"/>
-                </xsl:when>
-                <xsl:when test="string-length(normalize-space(../CBSC_en-Full))">
-                    <xsl:value-of select="../CBSC_en-Full"/>
-                </xsl:when>
-                <xsl:when test="string-length(normalize-space(../Other_en-Full))">
-                    <xsl:value-of select="../Other_en-Full"/>
-                </xsl:when>
-                <xsl:otherwise>Person <xsl:value-of select="."/></xsl:otherwise>
+                <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
             </xsl:choose>
         </xsl:param>
         <teiHeader>
             <fileDesc>
                 <titleStmt>
-                    <title xml:lang="en"><xsl:value-of select="$display-name-english"/></title>
+                    <title xml:lang="en"><xsl:value-of select="$record-title"/></title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The Andrew W. Mellon Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
@@ -38,11 +36,30 @@
                     <principal>
                         <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
                     </principal>
-                    <editor role="creator">
+                    <!-- Need to adapt this to reflect the following:
+                    List Thomas and Nathan as "creator" on Abdisho records.
+                    List Jamey, Nathan and Dave as "creator" on non-Abdisho persons. 
+                    General-Eds: DM, Nathan, Thomas?-->
+                    <editor role="general-editor">
                        <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
                     </editor>
+                    <editor role="general-editor">
+                        <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                    </editor>
+                    <editor role="general-editor">
+                        <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                    </editor>
                     <editor role="creator">
-                           <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                        <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                    </editor>
+                    <editor role="creator">
+                        <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                    </editor>
+                    <editor role="creator">
+                        <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                    </editor>
+                    <editor role="creator">
+                        <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                     </editor>
                     <respStmt>
                        <resp>Editing, document design, proofreading, data entry by</resp>
@@ -99,7 +116,7 @@
                 </editionStmt>
                 <publicationStmt>
                     <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="."
+                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"
                         />/source</idno>
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed

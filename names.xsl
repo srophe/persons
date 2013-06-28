@@ -7,12 +7,74 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
       
-    
+    <xd:doc>
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="all-full-names"></xd:param>
+        <xd:param name="person-name-id"></xd:param>
+        <xd:param name="ids-base"></xd:param>
+        <xd:param name="bib-ids"></xd:param>
+        <xd:param name="name-ids">Creates a sequence of @xml:id attributes for persName elements, in the format "name10-1", where "10" is the 
+            record ID of the person record and "1" is the numerical part of the source ID. See Syriaca TEI Manual for more information.</xd:param>
+        <xd:param name="name-links">Creates a sequence of links to @xml:id attributes of persName elements, by adding a "#" to the beginning of each 
+            node that has content. IMPORTANT - This should create links only for names that actually exist, since these links are 
+        added in @corresp to corresponding name elements.</xd:param>
+        <xd:param name="sort">Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or 
+            GEDSH-style. Doesn't work for comma-separated name parts that should be sorted as first (a situation that should be rare). 
+            If no name part can be matched with beginning of full name, defaults to given, then family, then titles, if they exist.
+            If no GEDSH or GEDSH-style name exists, defaults to given.</xd:param>
+    </xd:doc>
     <xsl:template name="names" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="name-ids"/>
-        <xsl:param name="name-links"/>
+        <xsl:param name="all-full-names"/>
+        <xsl:param name="person-name-id"/>
+        <xsl:param name="ids-base"/>
         <xsl:param name="bib-ids"/>
-        <xsl:param name="sort"/>
+        <xsl:param name="name-ids">
+            <xsl:for-each select="$all-full-names/*">
+                <xsl:variable name="name" select="name()"/>
+                <xsl:element name="{name()}">
+                    <xsl:value-of
+                        select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/>
+                </xsl:element>
+            </xsl:for-each>
+        </xsl:param>
+        <xsl:param name="name-links">
+            <xsl:for-each select="$name-ids/*">
+                <xsl:variable name="name" select="name()"/>
+                <!-- If the corresponding full name has content ... -->
+                <xsl:if
+                    test="string-length(normalize-space($all-full-names/*[contains(name(), $name)]))">
+                    <!-- ... create a link to the name id by adding a hash tag to it. -->
+                    <xsl:element name="{name()}">#<xsl:value-of select="."/></xsl:element>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:param>
+        <xsl:param name="sort">
+            <xsl:choose>
+                <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) and string-length(normalize-space(concat(GEDSH_en-Given, GEDSH_en-Family, GEDSH_en-Titles)))">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Given)">given</xsl:when>
+                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Family)">family</xsl:when>
+                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Titles)">titles</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GEDSH_en-Given))">given</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GEDSH_en-Family))">family</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GEDSH_en-Titles))">titles</xsl:when>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="string-length(normalize-space(GS_en-Full)) and string-length(normalize-space(concat(GS_en-Given, GS_en-Family, GS_en-Titles)))">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Given)">given</xsl:when>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Family)">family</xsl:when>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Titles)">titles</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Given))">given</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Family))">family</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Titles))">titles</xsl:when>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>given</xsl:otherwise>
+            </xsl:choose>
+        </xsl:param>
         <!-- Selects any non-empty fields ending with "_Full" or "-Full" (i.e., full names) -->
         <xsl:for-each
             select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
