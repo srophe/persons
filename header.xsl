@@ -19,8 +19,8 @@
         <xsl:param name="record-id"/>
         <xsl:param name="record-title">
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(../Calculated_Name))">
-                    <xsl:value-of select="../Calculated_Name"/>
+                <xsl:when test="string-length(normalize-space(Calculated_Name))">
+                    <xsl:value-of select="Calculated_Name"/>
                 </xsl:when>
                 <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
             </xsl:choose>
