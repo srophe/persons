@@ -157,12 +157,13 @@
                     </choice>
                 </title>
                 <ptr target="http://syriaca.org/bibl/5"/>
-                <!-- Need to replace & and spaces in URL's. -->
+                <!-- The ampersands in the URL get changed into "&amp;", but perhaps this is OK since it will be changed back 
+                when outputting as text/html? -->
                 <ref>
                     <xsl:attribute name="target">
-                        <xsl:value-of select="CBSC_en-Link" disable-output-escaping="yes"/>
+                        <xsl:value-of select="CBSC_en-Link"/>
                     </xsl:attribute>
-                    <xsl:value-of select="CBSC_en-Link" disable-output-escaping="yes"/>
+                    <xsl:value-of select="CBSC_en-Link"/>
                 </ref>
             </bibl>
         </xsl:if>

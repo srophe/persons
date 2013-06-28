@@ -24,25 +24,4 @@
             "/>
         
     </xsl:function>
-    
-    <xd:doc>
-        <xd:desc>
-            <xd:p>Escapes special characters (such as spaces or ampersands in URL's using URL escape codes rather than XML entities.</xd:p>
-        </xd:desc>
-        <xd:param name="arg">The string containing special characters to be escaped</xd:param>
-        <xd:return>The string with special characters escaped using URL escape codes</xd:return>
-    </xd:doc>
-    <!-- See if functx library has a function for doing this. -->
-    <xsl:function name="syriaca:escape-for-url" as="xs:string" 
-        xmlns:syriaca="http://syriaca.org">
-        <xsl:param name="arg" as="xs:string?"/> 
-        
-        <xsl:sequence select=" 
-            replace(
-                replace($arg,
-                '\s','%20'),
-                '&amp;', '%27')
-            "/>
-        
-    </xsl:function>
 </xsl:stylesheet>
