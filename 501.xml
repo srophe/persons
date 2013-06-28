@@ -95,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-24-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-24-04:00"> CREATED: person </change>
+                 when="2013-06-27-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -186,6 +186,7 @@
                   <forename sort="1">George</forename> 
                   <addName type="untagged-title" sort="2">I</addName>
                </persName>
+               <idno type="URI">http://syriaca.org/person/501</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|501</idno>
                <death notBefore="0680" notAfter="0681" source="#bib501-1">680/1</death>
                <floruit notBefore="680" notAfter="681" source="#bib501-1"/>
@@ -217,7 +218,8 @@
                      </choice>
                   </title>
                   <series>
-                     <title level="s" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+                     <title level="s" xml:lang="la">Bibliotheca Orientalis
+                        Clementino-Vaticana</title>
                      <biblScope>vol. 3</biblScope>
                   </series>
                   <ptr target="http://syriaca.org/bibl/7"/>
@@ -226,7 +228,7 @@
             </person>
             <relation type="disambiguation"
                       name="different-from"
-                      mutual="#person-501 http://syriaca.org/person/139">
+                      mutual="#person-501http://syriaca.org/person/139">
                <desc>Not the same as Giwargis of Bʿeltan (http://syriaca.org/person/139).</desc>
             </relation>
          </listPerson>

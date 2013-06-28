@@ -95,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-24-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-24-04:00"> CREATED: person </change>
+                 when="2013-06-27-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -182,6 +182,7 @@
                   <addName type="untagged-title" sort="2">of Bʿeltan</addName>
                </persName>
                <persName xml:id="name139-10" xml:lang="en" source="#bib139-10">George of Beeltan</persName>
+               <idno type="URI">http://syriaca.org/person/139</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|139</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Patriarch_George_of_Antioch</idno>
                <death when="0790" source="#bib139-2">790</death>
@@ -202,7 +203,8 @@
                <bibl xml:id="bib139-2">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (English)</abbr>
                      </choice>
                   </title>
@@ -213,7 +215,8 @@
                <bibl xml:id="bib139-3">
                   <title>
                      <choice>
-                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</expan>
+                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                            السريانية</expan>
                         <abbr>Barsoum (Arabic)</abbr>
                      </choice>
                   </title>
@@ -223,7 +226,8 @@
                <bibl xml:id="bib139-4">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (Syriac)</abbr>
                      </choice>
                   </title>
@@ -245,12 +249,13 @@
                   <title>Virtual International Authority File</title>
                   <abbr>VIAF</abbr>
                   <ptr target="http://viaf.org"/>
-                  <span>Information cited from VIAF may come from any library or agency participating with VIAF.</span>
+                  <span>Information cited from VIAF may come from any library or agency participating
+                    with VIAF.</span>
                </bibl>
             </person>
             <relation type="disambiguation"
                       name="different-from"
-                      mutual="#person-139 http://syriaca.org/person/139">
+                      mutual="#person-139http://syriaca.org/person/139">
                <desc>Not the same as Gewargis I (http://syriaca.org/person/501).</desc>
             </relation>
          </listPerson>

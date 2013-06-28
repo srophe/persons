@@ -95,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-24-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-24-04:00"> CREATED: person </change>
+                 when="2013-06-27-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -187,13 +187,15 @@
                   <forename sort="1">Quryaqos</forename> 
                   <addName type="untagged-title" sort="2">of Segestan</addName>
                </persName>
+               <idno type="URI">http://syriaca.org/person/135</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|135</idno>
                <floruit when="0770" source="#bib135-2">770</floruit>
                <death when="0758" source="#bib135-11"/>
                <bibl xml:id="bib135-2">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (English)</abbr>
                      </choice>
                   </title>
@@ -204,7 +206,8 @@
                <bibl xml:id="bib135-3">
                   <title>
                      <choice>
-                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</expan>
+                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                            السريانية</expan>
                         <abbr>Barsoum (Arabic)</abbr>
                      </choice>
                   </title>
@@ -214,7 +217,8 @@
                <bibl xml:id="bib135-4">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (Syriac)</abbr>
                      </choice>
                   </title>
@@ -225,12 +229,13 @@
                   <title>Virtual International Authority File</title>
                   <abbr>VIAF</abbr>
                   <ptr target="http://viaf.org"/>
-                  <span>Information cited from VIAF may come from any library or agency participating with VIAF.</span>
+                  <span>Information cited from VIAF may come from any library or agency participating
+                    with VIAF.</span>
                </bibl>
             </person>
             <relation type="disambiguation"
                       name="different-from"
-                      mutual="#person-135 http://syriaca.org/person/145">
+                      mutual="#person-135http://syriaca.org/person/145">
                <desc>Not the same as Quryaqos (http://syriaca.org/person/145)</desc>
             </relation>
          </listPerson>

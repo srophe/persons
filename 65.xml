@@ -95,7 +95,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-06-24-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-06-24-04:00"> CREATED: person </change>
+                 when="2013-06-27-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -187,6 +187,7 @@
                   <forename sort="1">Zechariah</forename>, <addName type="untagged-title" sort="2">Pseudo-</addName>
                </persName>
                <persName xml:id="name65-10" xml:lang="en" source="#bib65-10">Pseudo-Zacharias</persName>
+               <idno type="URI">http://syriaca.org/person/65</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|65</idno>
                <idno type="URI">http://viaf.org/viaf/170113931</idno>
                <idno type="URI">http://viaf.org/viaf/296978639</idno>
@@ -204,7 +205,8 @@
                <bibl xml:id="bib65-2">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (English)</abbr>
                      </choice>
                   </title>
@@ -215,7 +217,8 @@
                <bibl xml:id="bib65-3">
                   <title>
                      <choice>
-                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</expan>
+                        <expan xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                            السريانية</expan>
                         <abbr>Barsoum (Arabic)</abbr>
                      </choice>
                   </title>
@@ -225,7 +228,8 @@
                <bibl xml:id="bib65-4">
                   <title>
                      <choice>
-                        <expan>The Scattered Pearls: A History of Syriac Literature and Sciences</expan>
+                        <expan>The Scattered Pearls: A History of Syriac Literature and
+                            Sciences</expan>
                         <abbr>Barsoum (Syriac)</abbr>
                      </choice>
                   </title>
@@ -244,6 +248,13 @@
                   <ref target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=P&amp;sK=Pseudo-Zacharias&amp;sT=keywords">http://www.csc.org.il/db/browse.aspx?db=SB&sL=P&sK=Pseudo-Zacharias&sT=keywords</ref>
                </bibl>
             </person>
+            <relation type="shared-attribution"
+                      name="shares-attribution-with"
+                      mutual="#person-65http://syriaca.org/person/$1">
+               <desc>
+                        There are works attributed to this author which are also attributed to an author described in another record.
+                    </desc>
+            </relation>
          </listPerson>
       </body>
    </text>
