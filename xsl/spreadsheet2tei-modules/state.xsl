@@ -36,6 +36,14 @@
     </xsl:variable>
     
  
+    <xd:doc>
+        <xd:desc>
+            <xd:p>This template tests whether the "Titles" part of a name matches any of the roles defined in the $roles variable. 
+            Matching elements (or comma-separated values) are sent to the state-element template to create the state element.</xd:p>
+        </xd:desc>
+        <xd:param name="all-titles">All non-empty titles, as determined by the master stylesheet.</xd:param>
+        <xd:param name="bib-ids">Bib-ids to use for adding @source attributes.</xd:param>
+    </xd:doc>
     <xsl:template name="state">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
