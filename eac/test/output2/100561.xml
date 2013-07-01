@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+   <control>
+      <recordId>100561</recordId>
+      <otherRecordId>http://viaf.org/viaf/121895248/ </otherRecordId>
+      <otherRecordId>http://worldcat.org/identities/lccn-nb2006-22880/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/172990804/ </otherRecordId>
+      <otherRecordId>http://worldcat.org/identities/viaf-172990804/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/245587697/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/242496834/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/160694988/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/100558168/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/75839946/ </otherRecordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Syriac Reference Portal</agencyName>
+      </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2013-04-05T18:23:45.479-04:00"/>
+            <agentType>machine</agentType>
+            <agent>Syriac Reference Portal</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source xlink:href="http://syriaca.org" xml:id="syriaca.org">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Syriac Reference Portal (syriaca.org)</title>
+                  <abbr>syriaca.org</abbr>
+                  <citedRange target="http://syriaca.org/person/100561"/>
+                  <ptr target="http://syriaca.org/about"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="GEDSH">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Gorgias Encyclopedic Dictionary of the Syriac
+                                                Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <citedRange unit="entry" from="289"/>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Abdisho-YDQ">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title/>
+                  <abbr>Abdisho (YDQ)</abbr>
+                  <citedRange unit="pp" from="73"/>
+                  <ptr target="http://syriaca.org/bibl/6"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Abdisho-BO">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title/>
+                  <abbr>Abdisho (BO III)</abbr>
+                  <citedRange unit="pp" from="113"/>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Comprehensive Bibliography of Syriac
+                                                Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+                  <citedRange target="http://www.csc.org.il/db/db.aspx?db=SB#REF!"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>http://syriaca.org/person/100561</entityId>
+         <entityId>http://viaf.org/viaf/121895248</entityId>
+         <entityId>http://worldcat.org/identities/lccn-nb2006-22880</entityId>
+         <entityId>http://viaf.org/viaf/172990804</entityId>
+         <entityId>http://worldcat.org/identities/viaf-172990804</entityId>
+         <entityId>http://viaf.org/viaf/245587697</entityId>
+         <entityId>http://viaf.org/viaf/242496834</entityId>
+         <entityId>http://viaf.org/viaf/160694988</entityId>
+         <entityId>http://viaf.org/viaf/100558168</entityId>
+         <entityId>http://viaf.org/viaf/75839946</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="#GEDSH" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#given">Ishoʿyahb</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">III of Adiabene</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntry localType="#GEDSH" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">Ishoʿyahb III of Adiabene</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntryParallel localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܝܫܘܥܝܗܒ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܚܕܝܒܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܝܑܼܫܘܿܥܝܲܗܒ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܚܕܲܝܵܒܵܝܵܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܝܫܘܥܝܗܒ ܚܕܝܒܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܝܑܼܫܘܿܥܝܲܗܒ ܚܕܲܝܵܒܵܝܵܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-BO">
+            <part localType="http://syriaca.org/vocab/eac/localType#given">ܝܫܘܥܝܗܒ</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܚܕܝܒܝܐ</part>
+         </nameEntry>
+         <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-BO">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܝܫܘܥܝܗܒ ܚܕܝܒܝܐ</part>
+         </nameEntry>
+         <nameEntry localType="#CBSC" transliteration="CBSC" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">#REF!</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+      </identity>
+   </cpfDescription>
+</eac-cpf>
