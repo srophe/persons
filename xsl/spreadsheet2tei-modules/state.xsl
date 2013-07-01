@@ -51,10 +51,10 @@
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column" select="."/>
             <xsl:choose>
-                <xsl:when test="exists($roles/*[matches($column, node())]) and matches(., ',\s')">
+                <xsl:when test="exists($roles/*[matches($column, node(), 'i')]) and matches(., ',\s')">
                     <xsl:for-each select="tokenize(., ',\s')">
                         <xsl:variable name="subcolumn" select="."/>
-                        <xsl:if test="exists($roles/*[matches($subcolumn, node())])">
+                        <xsl:if test="exists($roles/*[matches($subcolumn, node(), 'i')])">
                             <xsl:call-template name="state-element">
                                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                 <xsl:with-param name="column" select="."/>
@@ -63,7 +63,7 @@
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:when>
-                <xsl:when test="exists($roles/*[matches($column, node())])">
+                <xsl:when test="exists($roles/*[matches($column, node(), 'i')])">
                     <xsl:call-template name="state-element">
                         <xsl:with-param name="bib-ids" select="$bib-ids"/>
                         <xsl:with-param name="column" select="node()"/>
