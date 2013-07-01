@@ -41,30 +41,30 @@
     <!-- Modules -->
     
     <!-- Creates an HTML index for easily viewing result TEI files -->
-    <xsl:include href="person-spreadsheet2tei-modules/index.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/index.xsl"/>
     <!-- Assists creation of @xml:id attributes -->
-    <xsl:include href="person-spreadsheet2tei-modules/ids.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/ids.xsl"/>
     <!-- Creates a TEI Header -->
-    <xsl:include href="person-spreadsheet2tei-modules/header.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/header.xsl"/>
     <!-- Adds @xml:lang (language) attributes to elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/language.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/language.xsl"/>
     <!-- Adds @source attributes to elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/source.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/source.xsl"/>
     <!-- Creates personal name elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/names.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/names.xsl"/>
     <!-- Creates idno elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/idno.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/idno.xsl"/>
     <!-- Creates events or other date-related elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/events.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/events.xsl"/>
     <!-- Creates bibl elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/bibl.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/bibl.xsl"/>
     <!-- Creates relation elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/relation.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/relation.xsl"/>
     <!-- Creates state elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/state.xsl"/>
+    <xsl:include href="spreadsheet2tei-modules/state.xsl"/>
     
     <!-- Functions -->
-    <xsl:include href="person-spreadsheet2tei-modules/functions.xsl"/> 
+    <xsl:include href="spreadsheet2tei-modules/functions.xsl"/> 
         
         
 

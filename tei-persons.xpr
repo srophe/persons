@@ -2,14 +2,36 @@
 <project version="14.2">
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="14.2" xml:space="preserve">
+                <map>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </map>
+            </serialized>
+        </options>
     </meta>
     <projectTree name="tei-persons.xpr">
-        <file name="../../xsl/person-spreadsheet2tei.xsl"/>
-        <file name="persons-authorities-spreadsheet.xml"/>
-        <file name="../../../sample-tei-naming.html"/>
-        <file name="../../../sample-tei-naming.xml"/>
-        <file name="../../../sample-tei-naming.xsl"/>
-        <file name="TestTEIPerson.xml"/>
+        <folder masterFiles="true" name="Master Files">
+            <file name="xsl/spreadsheet2tei.xsl"/>
+        </folder>
+        <folder name="xml">
+            <file name="xml/spreadsheets/authorities.xml"/>
+        </folder>
+        <file name="xsl/spreadsheet2tei-modules/bibl.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/events.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/functions.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/header.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/idno.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/ids.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/index.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/language.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/names.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/relation.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/source.xsl"/>
+        <file name="xsl/spreadsheet2tei.xsl"/>
+        <file name="xsl/spreadsheet2tei-modules/state.xsl"/>
     </projectTree>
 </project>
