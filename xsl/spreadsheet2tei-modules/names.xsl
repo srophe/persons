@@ -171,7 +171,7 @@
                 <xsl:variable name="name-element-type">
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Family')">family</xsl:when>
-                        <xsl:when test="matches($next-column-name,'(_|-)Titles') and exists($roles/*[matches($next-column, node(), 'i')])"><xsl:value-of select="name($roles/*[matches($next-column, node(), 'i')][1])"/></xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Titles') and exists($roles/*[matches($next-column, node(), 'i')])"><xsl:value-of select="$roles/*[matches($next-column, node(), 'i')][1]/@type"/></xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Titles')">untagged-title</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Saint_Title')">saint-title</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Terms_of_Address')">terms-of-address</xsl:when>

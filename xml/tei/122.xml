@@ -154,7 +154,7 @@
                          xml:lang="en-x-gedsh"
                          source="#bib122-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Giwargi</forename>, <addName type="untagged-title" sort="2">bp. of the Arab tribes</addName>
+                  <forename sort="1">Giwargi</forename>, <roleName type="office" sort="2">bp. of the Arab tribes</roleName>
                </persName>
                <persName xml:id="name122-2"
                          corresp="#name122-3 #name122-4a #name122-4b"
@@ -177,7 +177,7 @@
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܥܪ̈ܒܝܐ</addName>
                </persName>
                <persName xml:id="name122-9" xml:lang="en" source="#bib122-9">
-                  <forename sort="1">George</forename>, <addName type="untagged-title" sort="2">bp. of the Arab tribes</addName>
+                  <forename sort="1">George</forename>, <roleName type="office" sort="2">bp. of the Arab tribes</roleName>
                </persName>
                <persName xml:id="name122-10" xml:lang="en" source="#bib122-10">George, bishop of the Arabs</persName>
                <idno type="URI">http://syriaca.org/person/122</idno>
@@ -188,8 +188,17 @@
                <death when="0725" source="#bib122-2">725</death>
                <birth when="0640" source="#bib122-11"/>
                <death when="0725" source="#bib122-11"/>
+               <state type="office"
+                      role="bishop"
+                      source="#bib122-1"
+                      xml:lang="en-x-gedsh">
+                  <desc>bp. of the Arab tribes</desc>
+               </state>
                <state type="office" role="bishop" source="#bib122-2" xml:lang="en">
                   <desc>bishop of the Arabs</desc>
+               </state>
+               <state type="office" role="bishop" source="#bib122-9" xml:lang="en">
+                  <desc>bp. of the Arab tribes</desc>
                </state>
                <bibl xml:id="bib122-1">
                   <title level="m">

@@ -138,7 +138,7 @@
         
         <!-- Creates a variable containing the path of the file that should be created for this record. -->
         <xsl:variable name="filename"
-            select="concat('persons-authorities-spreadsheet-output/',$record-id,'.xml')"/>
+            select="concat('../tei/',$record-id,'.xml')"/>
         
         <!-- Writes the file to the path specified in the $filename variable. -->
         <xsl:result-document href="{$filename}" format="xml">

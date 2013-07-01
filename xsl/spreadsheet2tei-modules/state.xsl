@@ -17,23 +17,25 @@
     <xd:doc>
         <xd:desc>
             <xd:p>This variable contains a list of roles the stylesheet can use to automatically create roleName elements 
-                and state elements. Each element name in the variable corresponds to the @type attribute that should be 
-            assigned to the roleName or state, while the content of each element is the text to be automatically matched 
-            (not case-sensitive). (Should element content also be used in some machine-readable way, such as @syriaca-tags?)
+                and state elements. The @type in the variable corresponds to the @type attribute that should be 
+            assigned to the roleName or state. The @role corresponds to the @role attribute that should be used on the state. 
+            The content of each element is a regex expression to be automatically matched  (not case-sensitive).
             </xd:p>
             <xd:p>Since the @roleName type will reflect the first match in the list below, the list should be prioritized.</xd:p>
             <xd:p>This variable can be replaced or pointed to an xml document containing this info.</xd:p>
             <xd:p>This list needs more development.</xd:p>
+            <xd:p>This is currently generating some false positives in titles referring to anonymous authors or groups. 
+                (See, e.g., 124.xml and 476.xml.)</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:variable name="roles">
-        <office>bishop</office>
-        <office>priest</office>
-        <saint>saint</saint>
-        <saint>martyr</saint>
+        <role type="office" role="bishop">bishop|bp\.</role>
+        <role type="office" role="priest">priest</role>
+        <role type="saint" role="saint">saint|st\.</role>
+        <role type="saint" role="martyr">martyr</role>
     </xsl:variable>
     
-    <!-- This doesn't work yet. -->
+ 
     <xsl:template name="state">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
@@ -69,8 +71,8 @@
         <xsl:param name="column"/>
         <xsl:param name="column-name"/>
         <state>
-            <xsl:attribute name="type" select="name($roles/*[matches($column, node(), 'i')][1])"/>
-            <xsl:attribute name="role" select="$roles/*[matches($column, node(), 'i')][1]"/>
+            <xsl:attribute name="type" select="$roles/*[matches($column, node(), 'i')][1]/@type"/>
+            <xsl:attribute name="role" select="$roles/*[matches($column, node(), 'i')][1]/@role"/>
             <!-- Should we include GEDSH reign as @when? -->
             <xsl:call-template name="source">
                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
