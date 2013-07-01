@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+   <control>
+      <recordId>100404</recordId>
+      <otherRecordId>http://viaf.org/viaf/73893806/ </otherRecordId>
+      <otherRecordId>http://worldcat.org/identities/lccn-n80-57205/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/249117997/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/233787960/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/200532024/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/194694053/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/88705603/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/212638345/ </otherRecordId>
+      <otherRecordId>http://viaf.org/viaf/205646518/ </otherRecordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Syriac Reference Portal</agencyName>
+      </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2013-04-05T18:23:45.479-04:00"/>
+            <agentType>machine</agentType>
+            <agent>Syriac Reference Portal</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source xlink:href="http://syriaca.org" xml:id="syriaca.org">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Syriac Reference Portal (syriaca.org)</title>
+                  <abbr>syriaca.org</abbr>
+                  <citedRange target="http://syriaca.org/person/100404"/>
+                  <ptr target="http://syriaca.org/about"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="GEDSH">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Gorgias Encyclopedic Dictionary of the Syriac
+                                                Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <citedRange unit="entry" from="117"/>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Barsoum-SY">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <citedRange unit="pp" from=""/>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Barsoum-AR">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ
+                                                العلوم والأداب السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <citedRange unit="pp" from="50"/>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Comprehensive Bibliography of Syriac
+                                                Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+                  <citedRange target="http://www.csc.org.il/db/db.aspx?db=SB#REF!"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>http://syriaca.org/person/100404</entityId>
+         <entityId>http://viaf.org/viaf/73893806</entityId>
+         <entityId>http://worldcat.org/identities/lccn-n80-57205</entityId>
+         <entityId>http://viaf.org/viaf/249117997</entityId>
+         <entityId>http://viaf.org/viaf/233787960</entityId>
+         <entityId>http://viaf.org/viaf/200532024</entityId>
+         <entityId>http://viaf.org/viaf/194694053</entityId>
+         <entityId>http://viaf.org/viaf/88705603</entityId>
+         <entityId>http://viaf.org/viaf/212638345</entityId>
+         <entityId>http://viaf.org/viaf/205646518</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="#GEDSH" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#given">Ernest Alfred Wallis</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#family">Budge</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">Sir</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntry localType="#GEDSH" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">Budge, Sir Ernest Alfred Wallis</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#family">ܒܕܓ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#family">ܒܕܰܓ</part>
+            </nameEntry>
+            <nameEntry xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="http://syriaca.org/vocab/eac/localType#family">بدج</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܒܕܓ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܒܕܰܓ</part>
+            </nameEntry>
+            <nameEntry xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">بدج</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntry localType="#CBSC" transliteration="CBSC" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">#REF!</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+      </identity>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+   <control>
+      <recordId>100203</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Syriac Reference Portal</agencyName>
+      </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime standardDateTime="2013-04-05T18:23:45.479-04:00"/>
+            <agentType>machine</agentType>
+            <agent>Syriac Reference Portal</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source xlink:href="http://syriaca.org" xml:id="syriaca.org">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Syriac Reference Portal (syriaca.org)</title>
+                  <abbr>syriaca.org</abbr>
+                  <citedRange target="http://syriaca.org/person/100203"/>
+                  <ptr target="http://syriaca.org/about"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Barsoum-SY">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                Literature and Sciences</title>
+                  <abbr>Barsoum (Syriac)</abbr>
+                  <citedRange unit="pp" from="404"/>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Barsoum-AR">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ
+                                                العلوم والأداب السريانية</title>
+                  <abbr>Barsoum (Arabic)</abbr>
+                  <citedRange unit="pp" from="375"/>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xml:id="Barsoum-EN">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac
+                                                Literature and Sciences</title>
+                  <abbr>Barsoum (English)</abbr>
+                  <citedRange unit="entry" from="200"/>
+                  <citedRange unit="pp" from="424"/>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Comprehensive Bibliography of Syriac
+                                                Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+                  <citedRange target="http://www.csc.org.il/db/db.aspx?db=SB#REF!"/>
+               </bibl>
+            </objectXMLWrap>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>http://syriaca.org/person/100203</entityId>
+         <entityType>person</entityType>
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܡܝܟܐܝܠ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܕܝܪܝܐ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܡܝܟܳܐܝܠ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܕܰܝܪܳܝܐ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</part>
+            </nameEntry>
+            <nameEntry transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">Michael</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">The Monk, of Mar‛ash</part>
+            </nameEntry>
+            <nameEntry xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ميخائيل</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">الراهب , المرعشي</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܕܝܪܝܐ ܡܝܟܐܝܠ ܓܪܡܐܢܝܩܝܐ ܡܪܥܫܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܕܰܝܪܳܝܐ ܡܝܟܳܐܝܠ ܓܰܪܡܰܐܢܝܩܳܝܐ ܡܪܥܫܝܐ</part>
+            </nameEntry>
+            <nameEntry transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">The Monk Michael of Mar‛ash</part>
+            </nameEntry>
+            <nameEntry xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">الراهب ميخائيل المرعشي</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntry localType="#syriaca.org" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#given">Michael</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">of Marʿash</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntry localType="#syriaca.org" transliteration="GEDSH" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">Michael of Marʿash</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntry localType="#CBSC" transliteration="CBSC" xml:lang="eng">
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">#REF!</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates localType="http://syriaca.org/vocab/eac/localType#death">
+            <date localType="#Barsoum-EN">1138</date>
+         </existDates>
+      </description>
+   </cpfDescription>
+</eac-cpf>

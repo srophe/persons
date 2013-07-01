@@ -1,0 +1,491 @@
+<?xml-stylesheet type="text/xsl" href="eac.xsl"?>
+<!--REQUIRED: This header must begin the xml document.-->
+
+<!--GENERAL NOTES ABOUT EAC: 
+	EAC is a type of XML. 
+	For a detailed explanation of EAC, with its elements and attributes, see http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html 
+	For a diagram with technical information about EAC elements, see http://eac.staatsbibliothek-berlin.de/Diagram/cpf.html 
+	If you want to learn the basics of XML, take a look at http://www.w3schools.com/xml/-->
+
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
+	xmlns="urn:isbn:1-931666-33-4" xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
+	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dbpprop="http://dbpedia.org/property/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:exf="http://www.exforms.org/exf/1-0">
+	<!--REQUIRED
+	The eac-cpf element is the container for everything else in the document.
+	By putting the xsi:schemaLocation attribute here, you define which rules should be used to validate this document. (For example, Oxygen can use this to automatically validate the file. This will be the same for all your EAC files.
+	Some of the above xmlns attributes are optional.-->
+
+	<control>
+	<!--REQUIRED
+	The control section contains information about this EAC record (metadata).-->
+		
+		<recordId>13</recordId>
+		<!--REQUIRED
+		This is our SRP/syriaca.org ID for the person/corporate body/family.
+		It should be unique across our entire system.
+		This should not be a web address, only the ID number itself.-->
+
+		<otherRecordId localType="VIAF-SYR">http://viaf.org/hosted/syriac/26172</otherRecordId>
+		<otherRecordId localType="VIAF">http://viaf.org/viaf/100177778</otherRecordId>
+		<otherRecordId localType="WorldCat"
+			>http://worldcat.org/identities/lccn-n50-82928</otherRecordId>
+		<otherRecordId localType="WorldCat"
+			>http://worldcat.org/identities/np-ephrem$syrus%20saint$303%20373</otherRecordId>
+		<otherRecordId localType="Fihrist"
+			>http://www.fihrist.org.uk/profile/person/0abe211d-13a4-4adc-8151-a4137c211c0e</otherRecordId>
+		<!--RECOMMENDED
+		Put URI's for the entity (person, family, etc.) from other systems here, like VIAF or WorldCat.
+		Put in as many of these as you want.
+		Use the localType attribute to identify which system these ID's are for. These should be standardized. (I.e., all WorldCat ID's in our EAC records should have the same localType.)
+		You can put more than otherRecordId for each system if they are duplicates referring to the same entity.-->
+
+		<maintenanceStatus>revised</maintenanceStatus>
+		<!--REQUIRED
+		Each time a record is created, edited, deleted, etc., this maintenanceStatus should be changed.
+		The possible values are "cancelled" or "deleted" or "deletedReplaced" or "deletedSplit" or "derived" or "new" or "revised"
+		When first created, the record should have a status of "new"
+		When edited after creation, it should have a status of "revised"
+		If the record is deleted or brought in from another system, see http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html#d1e4770 for an explanation of the status it should be assigned.	-->
+
+		<maintenanceAgency>
+		<!--REQUIRED
+		Along with the recordId, this element identifies this EAC record uniquely across the web.
+		This is information for Syriac Reference Portal, unless a record we're accessing from another system.
+		We should think about getting an agencyCode assigned from ISIL or coming up with our own code to use in otherAgencyCode.-->
+
+			<agencyName>The Syriac Reference Portal (syriaca.org)</agencyName>
+			<descriptiveNote>
+				<p>More detailed info about syriaca.org can go here.</p>
+			</descriptiveNote>
+		</maintenanceAgency>
+
+		<maintenanceHistory>
+		<!--REQUIRED
+		This section is a log of what has been done to the record.
+		It will usually be machine-generated.
+		At least one event is required, but many more can be used.-->
+
+			<maintenanceEvent>
+				<eventType>created</eventType>
+				<eventDateTime standardDateTime="2012-12-27T20:28:46.118Z"/>
+				<agentType>human</agentType>
+				<agent>Nathan P. Gibson</agent>
+			</maintenanceEvent>
+			<maintenanceEvent>
+				<eventType>revised</eventType>
+				<eventDateTime standardDateTime="2012-12-27T20:45:46.118Z"/>
+				<agentType>human</agentType>
+				<agent>Nathan P. Gibson</agent>
+			</maintenanceEvent>
+		</maintenanceHistory>
+
+		<sources>
+		<!--RECOMMENDED
+		This section is essentially a bibliography for the information in the record.
+		Each source used should be listed in a separate source element.-->
+
+			<source xlink:href="http://syriaca.org" xml:id="syriaca.org">
+			<!--RECOMMENDED
+			The source element is a container for each source used in creating the EAC record.
+			If the source can be accessed online, include the web address using the xlink:href attribute.
+			For our purposes, it is important to assign each source an xml:id. This ensures we can link specific elements like nameEntry to it (to show the provenance of a name form).
+			The xml:id must be unique in this document, but should be standardized - i.e., the same for the same source listed in other EAC files.-->
+
+				<sourceEntry>The Syriac Reference Portal (syriaca.org)</sourceEntry>
+				<!--OPTIONAL
+				The sourceEntry element is the way to list a source if you're going to simply type in the text as you would in a bibliography.
+				The other (preferable) option is to use objectBinWrap or objectXMLWrap to put in a machine-readable version that can be parsed into a human-readable form.
+				We're working on what the best way to enter sources is.
+				We'll want to have a full version and an abbreviated version of each source.-->
+
+			</source>
+			<source xml:id="GEDSH">
+				<sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac Heritage</sourceEntry>
+				<descriptiveNote>
+					<p>Entry 197</p>
+				</descriptiveNote>
+				<!--OPTIONAL
+				You can describe the source in detail using descriptiveNote.
+				If you used sourceEntry to enter a human-readable version of the source, you can put the page or entry number in descriptiveNote.-->
+
+			</source>
+			<source xml:id="Barsoum-SY">
+				<sourceEntry>Barsoum (Syriac)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 218</p>
+				</descriptiveNote>
+			</source>
+			<!--RECOMMENDED
+			Enter different language versions or editions of the same work as different sources so that we can point to which language version and which page/entry each name form comes from.-->
+			
+			<source xml:id="Barsoum-AR">
+				<sourceEntry>Barsoum (Arabic)</sourceEntry>
+				<descriptiveNote>
+					<p>Entry 9, page 196</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Barsoum-EN">
+				<sourceEntry>Barsoum (English)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 229</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Abdisho-YDQ">
+				<sourceEntry>Abdisho (YDQ)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 69</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Abdisho-BO">
+				<sourceEntry>Abdisho (BO III)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 61</p>
+				</descriptiveNote>
+			</source>
+		</sources>
+	</control>
+	<cpfDescription>
+	<!--REQUIRED
+	Whereas the control element describes the record, the cpfDescription is a container for everything describing the person.
+	Usually there is only one cpfDescription per person, but more than one is possible using the multipleIdentities element.
+	You might have two different cpfDescription elements, for instance, if the person has a pseudonym or other acquired identity, for which you want to have two separate sets of names and other information.
+	In our field, perhaps "Chrysostom" for John, Archbishop of Constantinople, or "The Interpreter" for Theodore of Mopsuestia would be good candidates for separate cpfDescription elements.
+	You might also use multiple identities in a single record if multiple people share a collaborative identity/pseudonym (perhaps "Ephrem Graecus" or the generic "Isaac"?).
+	For more explanation and examples of multiple identities, see http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html#d1e4966 and http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html#d1e224 -->
+		
+		<identity>
+		<!--REQUIRED
+		This is the container element for all the person's names.
+		I'm not sure but what we should put our IDs for persons here, using entityId, and have separate IDs for the record.-->
+			
+			<entityType>person</entityType>
+			<!--REQUIRED
+			Values available are: person, corporateBody, or family.-->
+			
+			<nameEntryParallel localType="#syriaca.org">
+			<!--OPTIONAL
+			Parallel name entries (contained in a nameEntryParallel element) are usually used to show the same name (name form) in different languages.
+			For our purposes, we will put name entries in parallel when they are coming from different language/script versions of the same source.-->
+				
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng"
+					localType="#syriaca.org">
+				<!--REQUIRED
+				The nameEntry element contains the parts of a particular name form.
+				
+				Use scriptCode to indicate what script the name is in.
+				Script codes must be in the ISO 15924 format.
+				You can look up scriptCodes at http://unicode.org/iso15924/iso15924-codes.html
+				The most common scripts we're using are "Latn" for Latin, "Syrc" for Syriac, "Syrj" for West Syriac, "Syre" for East Syriac, "Arab" for Arabic, and "Grek" for Greek.
+				
+				Use the transliteration attribute to specify which transliteration is being used for the name (if the name is a transliteration).
+				The transliteration value should be standardized (i.e., always the same value for a particular transliteration system.
+				
+				Use xml:lang to indicate the language. 
+				The xml:lang value must be in ISO-639-2 format.
+				Look up language codes at http://www.loc.gov/standards/iso639-2/php/code_list.php
+				The codes we frequently use are "syc" (Classical Syriac), "syr" (Syriac), "eng" (English), "ara" (Arabic), "fre" (French), "ger" (German)
+				
+				The localType attribute links to the xml:id of the source (using a hash tag at the beginning) to show which source the name comes from.
+				-->
+					
+					<part>Ephrem</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#syriaca.org">
+					<part>ܐܦܪܝܡ</part>
+					<preferredForm>syriaca.org</preferredForm>
+					<!--OPTIONAL
+					The preferredForm element shows which of the two name entries is preferred.
+					The value of the preferredForm element (e.g., syriaca.org) shows by which rules this name entry is preferred.-->
+					
+				</nameEntry>
+				<authorizedForm>syriaca.org</authorizedForm>
+				<!--OPTIONAL
+				For any single nameEntry element or nameEntryParallel element, authorizedForm shows which nameEntry (or nameEntryParallel set) is authorized.
+				The value of authorizedForm shows the rules according to which it is authorized.
+				Do we need to define this somewhere, e.g., in localType?-->
+				
+			</nameEntryParallel>
+			<nameEntry localType="#GEDSH" scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+				<part>Ephrem</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
+			<nameEntryParallel localType="Barsoum">
+			<!--By putting the names from Barsoum in parallel, we can show all the different language versions of names coming from Barsoum.-->
+				
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng"
+					localType="#Barsoum-EN">
+					<part>St. Ephraim the Syrian</part>
+				</nameEntry>
+				<nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+					<part>مار افرام الملفان السرياني</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+					<part>ܡܪܝ ܐܦܪܝܡ</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+					<part>ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+			<nameEntryParallel localType="#Abdisho-YDQ">
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+					<part>ܐܦܪܝܡ</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+					<part>ܐܲܦܪܹܝܡ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+			<nameEntry localType="#Abdisho-BO" scriptCode="Syrc" xml:lang="syc">
+				<part>ܐܦܪܝܡ</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
+		</identity>
+		<description>
+		<!--RECOMMENDED
+		The description element is a container for information about the author besides the author's names.
+		This is where all the biographical information will be.-->
+			<existDates>
+			<!--RECOMMENDED
+			The existDates element should be used for the author's birth and death dates, and/or floruit dates.
+			This element is very flexible, since you can include a single date or date range or multiple dates or date ranges.
+			For corporate bodies, this is the date of establishment/dissolution.-->
+				<dateRange localType="life">
+				<!--OPTIONAL
+				The dateRange element lets you specify a period of time like "306-373 C.E." or  "Jan. 25-Feb. 27."
+				Just use fromDate for the first date and toDate for the second date.-->
+					<fromDate notBefore="0300" notAfter="0315" standardDate="0306">306</fromDate>
+					<!--REQUIRED if using dateRange
+					EAC has some great ways of handling dates.
+					DATE ATTRIBUTES
+						You can use any of the following three attributes for a date element, or a combination of them.
+						The standardDate attribute is where you can point to a single, machine-readable date.
+						The notBefore attribute allows you to specify a terminus post quem.
+						The notAfter attribute is a terminus ante quem.
+					NUMBER FORMATS FOR DATE ATTRIBUTES
+						Dates that are attribute values (values for notBefore, notAfter, or standardDate) should be in ISO 8601 format.
+						You can see details for ISO 8601 format at http://www.w3.org/TR/NOTE-datetime 
+						In brief, the format is YYYY-MM-DD (four-digit year, 2-digit month and day), but month and day are not required.
+						For 3-digit years, like 373, make sure to include a 0 on the front!
+					BC DATES
+						For BC dates, note that the year 0000 is 1 BC (since there is no year 0 between 1 BC and AD 1.
+						Therefore, to put a BC date, add 1 to it and put a minus sign in front of it (25 BC becomes -0025).
+						See http://www.fact-index.com/i/is/iso_8601.html
+					HUMAN READABLE DATE VALUES
+						The human-readable date that will be displayed is the value between <fromDate> and </fromDate> (in this case, "306").
+						You can express that date however you would like - "306," "AD 306," "306 CE," etc.-->
+					<toDate standardDate="0373-06-09">June 9, 373</toDate>
+				</dateRange>
+				<!--If you don't have both birth and death dates, you can give the date(s) you have (birth/death, fl., etc.).
+				I think the type of date given should be specified with localType.
+				So an author with just a death date would be
+					<existDates>
+						<date standardDate="0373" localType="death">373</date>
+					<existDates>
+				An author with a floruit in the 2nd half of the 5th cent. could be given the following existDates:
+					<existDates>
+						<dateRange localType="floruit">
+							<fromDate standardDate="0450" localType="floruit">450</fromDate>
+							<toDate standardDate="499" localType="floruit">499</toDate>
+						</dateRange>
+					<existDates>
+				If, on the other hand, you'd like to give several dates that help establish the existDates of the person, you can use multiple date elements, or even mix date and dateRange elements inside a dateSet.
+				For example,
+					<existDates>
+						<dateSet>
+							<date standardDate="0451" localType="floruit">451</date>
+							<date notAfter="0473" localType="floruit">473 or earlier</date>
+							<dateRange localType="floruit">
+								<fromDate standardDate="0481" localType="floruit">481</fromDate>
+								<toDate standardDate="0497" localType="floruit">497</toDate>
+							</dateRange>
+						</dateSet>
+					<existDates>
+				-->
+				<descriptiveNote>Ephrem's birth date is uncertain, but was probably in the early years of the 4th cent., while his death is known with more precision.</descriptiveNote>
+			</existDates>
+			<functions>
+			<!--REQUIRED if you use more than one function element
+			This is a container for multiple function elements.
+			You can still use this even if you only have one function.-->
+				<function>
+				<!--OPTIONAL
+				The function element is a very flexible element that can be used for describing "a function, activity, role, or purpose performed or manifested by the entity being described."
+				We might use this for describing a person's ecclesiastical role, even if laity.
+				We can also use it for describing things a person does besides their occupation.
+				Note that occupation is a separate element.
+				Also note that if we want to link the function to another entity - e.g., this person was the scribe of a particular manuscript - we should use the functionRelation element under relations.-->
+					<term>Deacon</term>
+					<!--REQUIRED
+					Terms should be standardized using the localTypeDeclaration.-->
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
+					<!--OPTIONAL
+					You can put in the place this function was performed.
+					See "places" below for more explanation.-->
+					<dateRange>
+					<!--OPTIONAL
+					You can include dates the function was performed, as dateRange, date, or dateSet elements.-->
+						<fromDate notAfter="0338">first half of 4th cent</fromDate>
+						<toDate standardDate="0359">359</toDate>
+					</dateRange>
+					<citation xlink:href="http://syriaca.org/linktosource">A citation could go here for a source that describes Ephrem as a deacon, preferably with a link.</citation>
+					<!--RECOMMENDED
+					If possible, include a citation to the source of the information.
+					We need to double-check the proper way of using the citation element.-->
+					<descriptiveNote>According to the earliest sources, Ephrem served as a deacon, though later sources sometimes give him a more prominent role.</descriptiveNote>
+					<!--OPTIONAL
+					You can describe the person's function in human-readable prose using descriptiveNote.-->
+				</function>
+			</functions>
+			<occupations>
+			<!--REQUIRED if you use more than one occupation element
+			This is a container for multiple occupation elements.
+			You can still use this even if you only have one occupation.-->
+				<occupation>
+				<!--OPTIONAL
+				You can include the person's occupation here.
+				This has essentially the same elements as function, so see the comments about the function element.-->
+					<term>Teacher</term>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
+					<dateRange>
+						<fromDate notAfter="0338">first half of 4th cent</fromDate>
+						<toDate standardDate="0359">359</toDate>
+					</dateRange>
+					<citation xlink:href="http://syriaca.org/linktosource">A citation could go here for a source that describes Ephrem as a deacon, preferably with a link.</citation>
+					<descriptiveNote>Ephrem was a teacher, and biographical sources specifically recount him teaching madrashe to the bnat qiyama (a womens' choir?).</descriptiveNote>
+				</occupation>
+			</functions>
+			<places>
+				<place>
+					<placeRole>Place of birth</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Syrc" xml:lang="syc">ܢܨܝܒܝܢ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
+					<dateRange>
+						<fromDate standardDate="0306">306</fromDate>
+						<toDate standardDate="0359">359</toDate>
+					</dateRange>
+					<descriptiveNote>
+						<p>Born probably of Christian parents in the early years of the 4th cent. in
+							the region of Nisibis, he spent most of his life in Nisibis, serving a
+							series of bishops (beginning with Yaʿqub of Nisibis, d. 338).</p>
+					</descriptiveNote>
+				</place>
+				<place>
+					<placeRole>Place of death</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
+						scriptCode="Syrc" xml:lang="syc">ܐܘܪܗܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
+						scriptCode="Latn" xml:lang="eng">Edessa</placeEntry>
+					<dateRange>
+						<fromDate standardDate="0363">363</fromDate>
+						<toDate standardDate="0373-06-09">June 09, 373</toDate>
+					</dateRange>
+				</place>
+				<place>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298"
+						xml:lang="syc" scriptCode="Syrc">ܐܡܝܕܐ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298"
+						xml:lang="eng" scriptCode="Latn">Amida</placeEntry>
+					<dateRange>
+						<fromDate standardDate="0359">359</fromDate>
+						<toDate standardDate="0363">363</toDate>
+					</dateRange>
+					<descriptiveNote>
+						<p>Ephrem stayed in Amida temporarily after the Persians gained control of
+							Nisibis.</p>
+					</descriptiveNote>
+				</place>
+			</places>
+			<biogHist>
+				<abstract>Ephrem was a Christian teacher and prolific writer of the 4th century C.E.
+					in Syria and northern Mesopotamia. He is a key author in the Syriac traditions
+					and revered as a saint in a wide variety of Christian churches.</abstract>
+				<p>Longer Description Here</p>
+				<chronList>
+					<chronItem>
+						<date standardDate="0338">338</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
+						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
+
+
+					</chronItem>
+					<chronItem>
+						<date standardDate="0346">346</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
+						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
+
+
+					</chronItem>
+					<chronItem>
+						<date standardDate="0350">350</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
+						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
+
+
+					</chronItem>
+					<chronItem>
+						<date standardDate="0359">359</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
+						<event>Ephrem leaves Nisibis</event>
+
+
+					</chronItem>
+					<chronItem>
+						<date standardDate="0359">359</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad
+							Amida ܐܡܝܕܐ</placeEntry>
+						<event>Ephrem goes to Amida</event>
+
+
+					</chronItem>
+					<chronItem>
+						<date standardDate="0363">363</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa
+							ܐܘܪܗܝ</placeEntry>
+						<event>Ephrem settles in Edessa</event>
+
+					</chronItem>
+				</chronList>
+			</biogHist>
+		</description>
+		<relations>
+			<cpfRelation xlink:type="simple" cpfRelationType="associative"
+				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+				xlink:arcrole="isAssociatedWith">
+				<relationEntry>Yaʿqub of Nisibis</relationEntry>
+				<dateRange>
+					<fromDate standardDate="0308">308</fromDate>
+					<toDate standardDate="0338">338</toDate>
+				</dateRange>
+				<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623">Nisibis
+					ܢܨܝܒܝܢ</placeEntry>
+				<descriptiveNote>
+					<p>Yaʿqub was bishop during much of Ephrem's life in Nisibis. Ephrem referred to
+						him in his works.</p>
+				</descriptiveNote>
+			</cpfRelation>
+			<cpfRelation xlink:type="simple" cpfRelationType="associative"
+				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/CorporateBody"
+				xlink:arcrole="isAssociatedWith">
+				<relationEntry>School of Nisibis</relationEntry>
+			</cpfRelation>
+		</relations>
+	</cpfDescription>
+</eac-cpf>
