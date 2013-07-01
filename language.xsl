@@ -9,13 +9,14 @@
     <xsl:template name="language" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="column-name" select="name()"/>
         <!-- If any other language codes are used in the input spreadsheet, add them below. -->
-        <xsl:analyze-string select="name()" regex="_(syr|en|ar|de|fr|lat)-">
+        <xsl:analyze-string select="$column-name" regex="_(syr|en|ar|de|fr|lat)-">
             <xsl:matching-substring>
                 <xsl:attribute name="xml:lang">
                     <xsl:value-of select="replace(replace(., '_', ''), '-', '')"/>
                     <!-- Adds script code to vocalized names. -->
                     <xsl:if test="matches($column-name, '(-|_)V_')">
                         <xsl:choose>
+                            <!-- Source-specific specifications for whether vocalized Syriac is West or East go here. -->
                             <xsl:when test="contains($column-name, 'Barsoum_syr-')">-Syrj</xsl:when>
                             <xsl:when test="contains($column-name, 'Abdisho')">-Syrn</xsl:when>
                         </xsl:choose>

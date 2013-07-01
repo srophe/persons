@@ -32,7 +32,7 @@
                 <!-- Adds source attributes. -->
                 <xsl:call-template name="source">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                    <xsl:with-param name="column-name" select="substring-before(name(.), '-')"/>
+                    <xsl:with-param name="column-name" select="name(.)"/>
                 </xsl:call-template>
                 
                 <!-- Adds custom type and, if relevant, human-readable date as content of element

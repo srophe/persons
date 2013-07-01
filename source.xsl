@@ -10,8 +10,8 @@
         <xsl:param name="bib-ids"/>
         <xsl:param name="column-name" select="name(.)"/>
         <!-- Adds @source if the column is from a source external to syriaca.org. -->
-        <xsl:if test="not(matches(name(), 'GS_|Authorized_'))">
-            <xsl:attribute name="source" select="concat('#', $bib-ids/*[contains(name(), $column-name)])"/>
+        <xsl:if test="not(matches($column-name, 'GS_|Authorized_'))">
+            <xsl:attribute name="source" select="concat('#', $bib-ids/*[contains(name(), substring-before($column-name, '-'))][1])"/>
         </xsl:if>
    </xsl:template>
 </xsl:stylesheet>
