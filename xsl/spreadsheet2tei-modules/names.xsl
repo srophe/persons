@@ -28,11 +28,6 @@
         to bibl ids and vocalization markers. Each element name is the name of a column coming from that source/vocalization. 
         These numbers are used to create @xml:id attributes for various elements. Here they are used to create $name-ids.</xd:param>
         <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
-        <xd:param name="name-ids">Creates a sequence of @xml:id attributes for persName elements, in the format "name10-1", where "10" is the 
-            record ID of the person record and "1" is the numerical part of the source ID. See Syriaca TEI Manual for more information.</xd:param>
-        <xd:param name="name-links">Creates a sequence of links to @xml:id attributes of persName elements, by adding a "#" to the beginning of each 
-            node that has content. IMPORTANT - This should create links only for names that actually exist, since these links are 
-        added in @corresp to corresponding name elements.</xd:param>
         <xd:param name="sort">Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or 
             GEDSH-style. Doesn't work for comma-separated name parts that should be sorted as first (a situation that should be rare). 
             If no name part can be matched with beginning of full name, defaults to given, then family, then titles, if they exist.
@@ -43,26 +38,6 @@
         <xsl:param name="person-name-id"/>
         <xsl:param name="ids-base"/>
         <xsl:param name="bib-ids"/>
-        <xsl:param name="name-ids">
-            <xsl:for-each select="$all-full-names/*">
-                <xsl:variable name="name" select="name()"/>
-                <xsl:element name="{name()}">
-                    <xsl:value-of
-                        select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:param>
-        <xsl:param name="name-links">
-            <xsl:for-each select="$name-ids/*">
-                <xsl:variable name="name" select="name()"/>
-                <!-- If the corresponding full name has content ... -->
-                <xsl:if
-                    test="string-length(normalize-space($all-full-names/*[contains(name(), $name)]))">
-                    <!-- ... create a link to the name id by adding a hash tag to it. -->
-                    <xsl:element name="{name()}">#<xsl:value-of select="."/></xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:param>
         <xsl:param name="sort">
             <xsl:choose>
                 <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) and string-length(normalize-space(concat(GEDSH_en-Given, GEDSH_en-Family, GEDSH_en-Titles)))">
@@ -94,8 +69,9 @@
             <persName>
                 <!-- Adds xml:id attribute. -->
                 <xsl:call-template name="persName-id">
-                    <xsl:with-param name="name-ids" select="$name-ids"/>
-                    <xsl:with-param name="name-links" select="$name-links"/>
+                    <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                    <xsl:with-param name="person-name-id" select="$person-name-id"/>
+                    <xsl:with-param name="ids-base" select="$ids-base"/>
                 </xsl:call-template>
                 <!-- Adds language attributes. -->
                 <xsl:call-template name="language"/>
@@ -139,21 +115,54 @@
     
     <xd:doc>
         <xd:desc>
-            <xd:p>Creates a @xml:id attribute for persName elements, as well as @corresp attribute for parallel names.</xd:p>
+            <xd:p>Creates a @xml:id attribute for persName elements, as well as @corresp attribute for parallel names. Requires that 
+                names that should be parallel have column names starting with same word (before underscore) and that names that should 
+                not be parallel do not.</xd:p>
         </xd:desc>
-        <xd:param name="name-ids"></xd:param>
-        <xd:param name="name-links"></xd:param>
-        <xd:param name="current-column-name"></xd:param>
+        <xd:param name="all-full-names">This param contains a sequence of all the elements containing full names. It is 
+            used to help create the $name-ids and $name-links params.</xd:param>
+        <xd:param name="person-name-id">This param contains the first part of the persName @xml:id attribute content in the 
+            format "name10", where the 10 is the SRP ID of the person entity. It is used for creating the full persName @xml:id 
+            by calling the persName-id template, which is in the format "name10-1".</xd:param>
+        <xd:param name="ids-base">A sequence of numbers (which may include "a" or "b" in addition to the number) which correspond 
+            to bibl ids and vocalization markers. Each element name is the name of a column coming from that source/vocalization. 
+            These numbers are used to create @xml:id attributes for various elements. Here they are used to create $name-ids.</xd:param>
+        <xd:param name="name-ids">Creates a sequence of @xml:id attributes for persName elements, in the format "name10-1", where "10" is the 
+            record ID of the person record and "1" is the numerical part of the source ID. See Syriaca TEI Manual for more information.</xd:param>
+        <xd:param name="name-links">Creates a sequence of links to @xml:id attributes of persName elements, by adding a "#" to the beginning of each 
+            node that has content. IMPORTANT - This should create links only for names that actually exist, since these links are 
+            added in @corresp to corresponding name elements.</xd:param>
+        <xd:param name="current-column-name">The name of the current column being processed. By default, this is the name of the 
+        context node.</xd:param>
     </xd:doc>
     <xsl:template name="persName-id" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="name-ids"/>
-        <xsl:param name="name-links"/>
+        <xsl:param name="all-full-names"/>
+        <xsl:param name="person-name-id"/>
+        <xsl:param name="ids-base"/>
+        <xsl:param name="name-ids">
+            <xsl:for-each select="$all-full-names/*">
+                <xsl:variable name="name" select="name()"/>
+                <xsl:element name="{name()}">
+                    <xsl:value-of
+                        select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/>
+                </xsl:element>
+            </xsl:for-each>
+        </xsl:param>
+        <xsl:param name="name-links">
+            <xsl:for-each select="$name-ids/*">
+                <xsl:variable name="name" select="name()"/>
+                <!-- If the corresponding full name has content ... -->
+                <xsl:if
+                    test="string-length(normalize-space($all-full-names/*[contains(name(), $name)]))">
+                    <!-- ... create a link to the name id by adding a hash tag to it. -->
+                    <xsl:element name="{name()}">#<xsl:value-of select="."/></xsl:element>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:param>
         <xsl:param name="current-column-name" select="name()"/>
         
         <xsl:attribute name="xml:id" select="$name-ids/*[contains(name(), $current-column-name)]"/>
-        <!-- Gets all other name links whose column names start with the same word (e.g., "Barsoum", "Abdisho").
-        Requires that names that should be parallel have column names starting with same word (before underscore)
-        and that names that should not be parallel do not.-->
+        <!-- Gets all other name links whose column names start with the same word (e.g., "Barsoum", "Abdisho"). -->
         <!-- Is it OK that vocalized and non-vocalized names from different editions are parallel to each other or should I weed these out? -->
         <xsl:if test="exists($name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))])">
             <xsl:attribute name="corresp" select="$name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))]"/>
@@ -175,23 +184,14 @@
                 </xd:ul>
             </xd:p>
         </xd:desc>
-        <xd:param name="group">Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_en-Given"). Used to make sure this template loop doesn't proceed to a different set of fields.</xd:param>
-        <xd:param name="same-group">Boolean to test whether the next element is in the same group/fieldset.</xd:param>
-        <xd:param name="next-element-name">The name of the next element being processed, which is the element immediately following in the source XML.</xd:param>
-        <xd:param name="next-element">Content of the next element being processed, which is the element immediately following in the source XML.</xd:param>
+        <xd:param name="name">The full name column being processed by the template that calls this one. When this template is called 
+        recursively (i.e., loops through to match multiple name parts), this param is updated to include all the child elements that 
+        have been added along the way.</xd:param>
         <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
-        <xd:param name="sort">Contains the name of the TEI name part element that should be used first in alphabetical lists.</xd:param>
-    </xd:doc>
-    <xd:doc>
-        <xd:desc>
-            <xd:p></xd:p>
-        </xd:desc>
-        <xd:param name="name"></xd:param>
-        <xd:param name="count"></xd:param>
-        <xd:param name="all-name-parts"></xd:param>
-        <xd:param name="sort"></xd:param>
-        <xd:param name="next-column"></xd:param>
-        <xd:param name="next-column-name"></xd:param>
+        <xd:param name="all-name-parts">All the individual name part columns corresponding to the full name in $name.</xd:param>
+        <xd:param name="sort">Contains a one-word description showing which name part should be used first in alphabetical lists.</xd:param>
+        <xd:param name="next-column-name">The name of the next element being processed, which is the element immediately following in $all-name-parts sequence.</xd:param>
+        <xd:param name="next-column">Content of the next column being processed, which is the element immediately following in the $all-name-parts sequence.</xd:param>
     </xd:doc>
     <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
@@ -201,7 +201,9 @@
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="next-column-name" select="name($all-name-parts[$count])"/>
         <xsl:choose>
+            <!-- When there are name parts to process ... -->
             <xsl:when test="count($all-name-parts)">
+                <!-- Creates a $name-element-name variable that contains the name of the TEI element name to be used for that name part. -->
                 <xsl:variable name="name-element-name">
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Given')">forename</xsl:when>
@@ -212,7 +214,8 @@
                         <xsl:when test="matches($next-column-name,'(_|-)Numeric_Title')">genName</xsl:when>
                     </xsl:choose>
                 </xsl:variable>
-                <!-- Might be able to machine-generate title types based on content (e.g., "bishop," "III", etc.) -->
+                <!-- Creates a $name-element-type variable that contains the value of the TEI @type attribute to be used for that name part. -->
+                <!-- Might be able to machine-generate title types based on content (e.g., "III", etc.) -->
                 <xsl:variable name="name-element-type">
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Family')">family</xsl:when>
@@ -225,6 +228,8 @@
                     </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
+                    <!-- When the name part column contains comma-separated values, processes them each individually by calling 
+                    this template recursively. -->
                     <xsl:when test="contains($next-column, ', ') or contains($next-column, '، ')">
                         <xsl:call-template name="name-parts">
                             <xsl:with-param name="name">
@@ -243,8 +248,13 @@
                             <xsl:with-param name="sort" select="$sort"/>
                         </xsl:call-template>                    
                     </xsl:when>
+                    <!-- Otherwise, if the next column has a name (i.e., exists at all) ... -->
                     <xsl:when test="string-length($next-column-name)">
                         <xsl:choose>
+                            <!-- If the next name part column has content, try to match the name part against the full name 
+                                (non-case-sensitive) and turn that part of the full name into a child element by calling 
+                            the name-part-element template. Non-matching strings in the full name get reprocessed through 
+                            this template (with an incremented counter) to be matched against other name part columns.-->
                             <xsl:when test="string-length($name-element-name) and string-length(normalize-space($next-column))">
                                 <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
                                     <xsl:matching-substring>
@@ -264,6 +274,7 @@
                                     </xsl:non-matching-substring>
                                 </xsl:analyze-string>
                             </xsl:when>
+                            <!-- If the next column only has a name but no content, increment the counter and run the template again. -->
                             <xsl:otherwise>
                                 <xsl:call-template name="name-parts">
                                     <xsl:with-param name="name" select="$name"/>
@@ -274,11 +285,14 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
+                    <!-- If the next column does not have a name (i.e., does not exist), this template has run its course and 
+                        returns the name with any child elements added from previous loops. -->
                     <xsl:otherwise>
                         <xsl:value-of select="$name"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- If there are no name parts to process, simply returns the name as is. -->
             <xsl:otherwise>
                 <xsl:value-of select="$name"/>
             </xsl:otherwise>
@@ -287,7 +301,7 @@
     
     <xd:doc>
         <xd:desc>
-            <xd:p></xd:p>
+            <xd:p>This template does much the same as the name-part template. See notes there.</xd:p>
         </xd:desc>
         <xd:param name="name"></xd:param>
         <xd:param name="count"></xd:param>
