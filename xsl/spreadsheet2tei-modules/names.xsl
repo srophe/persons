@@ -303,13 +303,15 @@
         <xd:desc>
             <xd:p>This template does much the same as the name-part template. See notes there.</xd:p>
         </xd:desc>
-        <xd:param name="name"></xd:param>
-        <xd:param name="count"></xd:param>
-        <xd:param name="all-name-parts"></xd:param>
-        <xd:param name="name-element-name"></xd:param>
-        <xd:param name="name-element-type"></xd:param>
-        <xd:param name="next-column"></xd:param>
-        <xd:param name="sort"></xd:param>
+        <xd:param name="name">The full name column being processed by the template that calls this one. When this template is called 
+            recursively (i.e., loops through to match multiple name parts), this param is updated to include all the child elements that 
+            have been added along the way.</xd:param>
+        <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
+        <xd:param name="all-name-parts">All the individual name part columns corresponding to the full name in $name.</xd:param>
+        <xd:param name="name-element-name">The name of the TEI element that will be used for this name part element.</xd:param>
+        <xd:param name="name-element-type">The attribute content of the TEI @type attribute that will be used for this name part element.</xd:param>
+        <xd:param name="next-column">Content of the next column being processed, which is the element immediately following in the $all-name-parts sequence.</xd:param>
+        <xd:param name="sort">Contains a one-word description showing which name part should be used first in alphabetical lists.</xd:param>
     </xd:doc>
     <xsl:template name="name-part-comma-separated" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
@@ -320,8 +322,13 @@
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="sort"/>
         <xsl:choose>
+            <!-- If the counter is less than the number of name parts ... -->
             <xsl:when test="count($all-name-parts) >= $count">
                 <xsl:choose>
+                    <!-- If there is both an element name to use and the next column has content, tries to match the name part
+                        against the full name (non-case-sensitive) and turns that part of the full name into a child element 
+                        by calling the name-part-element template. Non-matching strings in the full name get reprocessed through 
+                        this template (with an incremented counter) to be matched against other name part columns.  -->
                     <xsl:when test="string-length($name-element-name) and string-length(normalize-space($next-column))">
                         <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
                             <xsl:matching-substring>
@@ -343,6 +350,8 @@
                             </xsl:non-matching-substring>
                         </xsl:analyze-string>
                     </xsl:when>
+                    <!-- If there is not both an element name to use and content in the next column, runs this template again 
+                    with an incremented counter (to process the next column). -->
                     <xsl:otherwise>
                         <xsl:call-template name="name-part-comma-separated">
                             <xsl:with-param name="name" select="$name"/>
@@ -355,6 +364,8 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- Once the counter has exceeded the number of name parts, returns the full name with any of the child elements 
+            that have been added. -->
             <xsl:otherwise>
                 <xsl:value-of select="$name"/>
             </xsl:otherwise>
@@ -363,11 +374,13 @@
     
     <xd:doc>
         <xd:desc>
-            <xd:p></xd:p>
+            <xd:p>This template creates an element for the name part being processed (context node), using the name from 
+            $name-element-name and the @type value from $name-element-type. It also creates a @sort attribute to show 
+            which part of the name should be evaluated first when alphabetizing lists.</xd:p>
         </xd:desc>
-        <xd:param name="name-element-name"></xd:param>
-        <xd:param name="name-element-type"></xd:param>
-        <xd:param name="sort"></xd:param>
+        <xd:param name="name-element-name">The name of the TEI element that will be used for this name part element.</xd:param>
+        <xd:param name="name-element-type">The attribute content of the TEI @type attribute that will be used for this name part element.</xd:param>
+        <xd:param name="sort">Contains a one-word description showing which name part should be used first in alphabetical lists.</xd:param>
     </xd:doc>
     <xsl:template name="name-part-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name-element-name"/>
