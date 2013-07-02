@@ -9,7 +9,7 @@
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> May 21, 2013</xd:p>
-            <xd:p><xd:b>Author:</xd:b>Nathan Gibson</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
             <xd:p>Transforms XML data imported from the Google Spreadsheet "Author Names from Barsoum..." into Syriaca.org TEI.</xd:p>
             <xd:p>For information on how to set up a spreadsheet to use this stylesheet, see the "Persons spreadsheet2tei stylesheet guide" doc.
             For reading or modifying this stylesheet, see the inline comments in this stylesheet.</xd:p>

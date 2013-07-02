@@ -6,6 +6,14 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    <xd:doc scope="stylesheet">
+        <xd:desc>
+            <xd:p><xd:b>Created on:</xd:b> Jul 2, 2013</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
+            <xd:p>This stylesheet contains template(s) for creating the header element, with its children, for 
+            person records in TEI format.</xd:p>
+        </xd:desc>
+    </xd:doc>
     
     <xd:doc>
         <xd:desc>

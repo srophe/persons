@@ -9,7 +9,7 @@
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Jun 27, 2013</xd:p>
-            <xd:p><xd:b>Author:</xd:b> nathan</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
             <xd:p>This stylesheet creates state elements for person records in TEI format.</xd:p>
         </xd:desc>
     </xd:doc>

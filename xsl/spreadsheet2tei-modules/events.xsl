@@ -6,11 +6,33 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    <xd:doc scope="stylesheet">
+        <xd:desc>
+            <xd:p><xd:b>Created on:</xd:b> Jul 2, 2013</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
+            <xd:p>This stylesheet contains templates for processing birth, death, floruit, event and other date-related elements 
+            for person records in TEI format.</xd:p>
+        </xd:desc>
+    </xd:doc>
     
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Creates a birth, death, floruit, event, etc. element using the current column/context node as human-readable content and 
+            using machine-readable dates from other columns whose names include the current column's name. (E.g., the GEDSH_DOB 
+            column contains human-readable content, whereas GEDSH_DOB_Standard, GEDSH_DOB_Not_Before, and GEDSH_DOB_Not_After are 
+            machine-readable columns. If this template is called on GEDSH_DOB, the content of the created element will be the content of
+            GEDSH_DOB, while GEDSH_DOB_Standard, GEDSH_DOB_Not_Before, and GEDSH_DOB_Not_After will be automatically detected and 
+            their contents added as machine-readable attributes.)</xd:p>
+        </xd:desc>
+        <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
+        <xd:param name="column-name">The name of the column being processed (must be specified when template is called).</xd:param>
+        <xd:param name="element-name">The name of the TEI element to be created, determined from the $column-name.</xd:param>
+    </xd:doc>
     <xsl:template name="event-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
         <xsl:param name="column-name" select="name()"/>
         <xsl:param name="element-name">
+            <!-- Names of date-related elements to be created go here. -->
             <xsl:choose>
                 <xsl:when test="contains($column-name, 'Floruit')">floruit</xsl:when>
                 <xsl:when test="contains($column-name, 'DOB')">birth</xsl:when>
@@ -19,6 +41,7 @@
             </xsl:choose>
         </xsl:param>
         
+        <!-- If the current column has content or a related column has content, adds the element with the name specified by $element-name. -->
         <xsl:if test="string-length(normalize-space(.)) or exists(following-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))]) or exists(preceding-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))])">
             <xsl:element name="{$element-name}">
                 <!-- Adds machine-readable attributes to date. -->
@@ -50,7 +73,8 @@
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
-            <xd:p>This template adds machine-readable date attributes to an element, based on text strings contained in the source XML element's name.
+            <xd:p>This template cycles through date columns, adding machine-readable date attributes to an element, based on 
+                text strings contained in the source XML element's name.
                 <xd:ul>
                     <xd:li>_Begin_Standard --> @from</xd:li>
                     <xd:li>_End_Standard --> @to</xd:li>
