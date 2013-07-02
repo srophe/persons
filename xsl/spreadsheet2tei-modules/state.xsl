@@ -10,7 +10,7 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Jun 27, 2013</xd:p>
             <xd:p><xd:b>Author:</xd:b> nathan</xd:p>
-            <xd:p></xd:p>
+            <xd:p>This stylesheet creates state elements for person records in TEI format.</xd:p>
         </xd:desc>
     </xd:doc>
     
@@ -42,7 +42,7 @@
             Matching elements (or comma-separated values) are sent to the state-element template to create the state element.</xd:p>
         </xd:desc>
         <xd:param name="all-titles">All non-empty titles, as determined by the master stylesheet.</xd:param>
-        <xd:param name="bib-ids">Bib-ids to use for adding @source attributes.</xd:param>
+        <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
     </xd:doc>
     <xsl:template name="state">
         <xsl:param name="all-titles"/>
@@ -74,6 +74,18 @@
         </xsl:for-each>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>
+            <xd:p>This template generates a state element with @type, @role, @source, and @xml:lang attributes.</xd:p>
+        </xd:desc>
+        <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
+        <xd:param name="column">The column (or partial column) containing the content used for desc inside the state element, and which matches
+            one of the elements in the $roles sequence variable.</xd:param>
+        <xd:param name="column-name">The name of the column contained in the $column param. In the case of multiple, comma-separated 
+        values being processed from individually from a single column, this is the name of the column containing the 
+        comma-separated values. The $column-name param is passed to the source and language templates so that those templates 
+        can use it to detect the language and source information contained in the column name.</xd:param>
+    </xd:doc>
     <xsl:template name="state-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
         <xsl:param name="column"/>

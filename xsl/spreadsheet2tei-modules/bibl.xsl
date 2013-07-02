@@ -6,6 +6,13 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    <xd:doc scope="stylesheet">
+        <xd:desc>
+            <xd:p><xd:b>Created on:</xd:b> Jul 1, 2013</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
+            <xd:p>This stylesheet creates all bibl elements for person records in TEI format.</xd:p>
+        </xd:desc>
+    </xd:doc>
     
     <xd:doc>
         <xd:desc>
@@ -17,12 +24,20 @@
         <xd:param name="bib-ids">A sequence containing @xml:id values for bibl elements. Since node names are the same as those in 
         the sourced columns, you can extract the correct value by getting the node that contains the abbreviation of the source.</xd:param>
     </xd:doc>
+    <xd:doc>
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="bib-ids"></xd:param>
+    </xd:doc>
     <xsl:template name="bibl" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
         <!-- Should languages be declared for English titles or only non-English? -->
         <!-- Citation for GEDSH -->
+        <!-- If there is GEDSH data ... -->
         <xsl:if
             test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full)))">
+            <!-- Add the @xml:id to a <bibl> element by getting it from the corresponding element in the $bib-ids sequence variable. -->  -->
             <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
                 <title level="m">
                     <choice>
@@ -157,6 +172,7 @@
                     </choice>
                 </title>
                 <ptr target="http://syriaca.org/bibl/5"/>
+                <!-- The precise link for the CBSC entry. -->
                 <!-- The ampersands in the URL get changed into "&amp;", but perhaps this is OK since it will be changed back 
                 when outputting as text/html? -->
                 <ref>
