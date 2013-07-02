@@ -37,7 +37,7 @@
         <!-- If there is GEDSH data ... -->
         <xsl:if
             test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full)))">
-            <!-- Add the @xml:id to a <bibl> element by getting it from the corresponding element in the $bib-ids sequence variable. -->  -->
+            <!-- Add the @xml:id to a <bibl> element by getting it from the corresponding element in the $bib-ids sequence variable. -->
             <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
                 <title level="m">
                     <choice>
