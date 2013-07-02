@@ -6,15 +6,28 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    <xd:doc scope="stylesheet">
+        <xd:desc>
+            <xd:p><xd:b>Created on:</xd:b> Jul 2, 2013</xd:p>
+            <xd:p><xd:b>Author:</xd:b> Nathan Gibson</xd:p>
+            <xd:p>This stylesheet contains various templates for generating names for person records in TEI format.</xd:p>
+        </xd:desc>
+    </xd:doc>
       
     <xd:doc>
         <xd:desc>
-            <xd:p></xd:p>
+            <xd:p>This template creates the persName element with all its attributes, then calls the name-parts template 
+            to fill in any child elements containing individual parts of the name.</xd:p>
         </xd:desc>
-        <xd:param name="all-full-names"></xd:param>
-        <xd:param name="person-name-id"></xd:param>
-        <xd:param name="ids-base"></xd:param>
-        <xd:param name="bib-ids"></xd:param>
+        <xd:param name="all-full-names">This param contains a sequence of all the elements containing full names. It is 
+        used to help create the $name-ids and $name-links params.</xd:param>
+        <xd:param name="person-name-id">This param contains the first part of the persName @xml:id attribute content in the 
+            format "name10", where the 10 is the SRP ID of the person entity. It is used for creating the full persName @xml:id 
+        by calling the persName-id template, which is in the format "name10-1".</xd:param>
+        <xd:param name="ids-base">A sequence of numbers (which may include "a" or "b" in addition to the number) which correspond 
+        to bibl ids and vocalization markers. Each element name is the name of a column coming from that source/vocalization. 
+        These numbers are used to create @xml:id attributes for various elements. Here they are used to create $name-ids.</xd:param>
+        <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
         <xd:param name="name-ids">Creates a sequence of @xml:id attributes for persName elements, in the format "name10-1", where "10" is the 
             record ID of the person record and "1" is the numerical part of the source ID. See Syriaca TEI Manual for more information.</xd:param>
         <xd:param name="name-links">Creates a sequence of links to @xml:id attributes of persName elements, by adding a "#" to the beginning of each 
@@ -80,7 +93,7 @@
             select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
             <persName>
                 <!-- Adds xml:id attribute. -->
-                <xsl:call-template name="perName-id">
+                <xsl:call-template name="persName-id">
                     <xsl:with-param name="name-ids" select="$name-ids"/>
                     <xsl:with-param name="name-links" select="$name-links"/>
                 </xsl:call-template>
@@ -90,14 +103,27 @@
                 <xsl:call-template name="source">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
                 </xsl:call-template>
-                <!-- Shows which name forms are authorized. -->
+                <!-- Shows which name forms are syriaca.org headwords. -->
                 <!-- Need to test whether this properly overrides GEDSH with GS as headword. -->
-                <xsl:if
-                    test="contains(name(),'GS_en') or (contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))) or contains(name(),'Authorized_syr') or (contains(name(), 'Barsoum_syr-NV') and contains(../Authorized_syr-Source, 'Barsoum')) or (contains(name(), 'Abdisho_YdQ_syr-NV') and contains(../Authorized_syr-Source, 'Abdisho'))">
-                    <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
-                </xsl:if>
-                <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source. 
-                                            E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
+                <xsl:choose>
+                    <xsl:when test="contains(name(),'GS_en')">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                    </xsl:when>
+                    <xsl:when test="contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                    </xsl:when>
+                    <xsl:when test="contains(name(),'Authorized_syr')">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                    </xsl:when>
+                    <xsl:when test="contains(name(), 'Barsoum_syr-NV') and contains(../Authorized_syr-Source, 'Barsoum')">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                    </xsl:when>
+                    <xsl:when test="contains(name(), 'Abdisho_YdQ_syr-NV') and contains(../Authorized_syr-Source, 'Abdisho')">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                    </xsl:when>
+                </xsl:choose>
+                <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source 
+                    and vocalization. E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
                 <xsl:variable name="group" select="replace(name(), '(_|-)Full', '')"/>
                 <!-- Adds name parts -->
                 <xsl:call-template name="name-parts">
@@ -111,7 +137,15 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Creates a @xml:id attribute for persName elements, as well as @corresp attribute for parallel names.</xd:p>
+        </xd:desc>
+        <xd:param name="name-ids"></xd:param>
+        <xd:param name="name-links"></xd:param>
+        <xd:param name="current-column-name"></xd:param>
+    </xd:doc>
+    <xsl:template name="persName-id" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name-ids"/>
         <xsl:param name="name-links"/>
         <xsl:param name="current-column-name" select="name()"/>
@@ -147,6 +181,17 @@
         <xd:param name="next-element">Content of the next element being processed, which is the element immediately following in the source XML.</xd:param>
         <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
         <xd:param name="sort">Contains the name of the TEI name part element that should be used first in alphabetical lists.</xd:param>
+    </xd:doc>
+    <xd:doc>
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="name"></xd:param>
+        <xd:param name="count"></xd:param>
+        <xd:param name="all-name-parts"></xd:param>
+        <xd:param name="sort"></xd:param>
+        <xd:param name="next-column"></xd:param>
+        <xd:param name="next-column-name"></xd:param>
     </xd:doc>
     <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
@@ -240,6 +285,18 @@
         </xsl:choose>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="name"></xd:param>
+        <xd:param name="count"></xd:param>
+        <xd:param name="all-name-parts"></xd:param>
+        <xd:param name="name-element-name"></xd:param>
+        <xd:param name="name-element-type"></xd:param>
+        <xd:param name="next-column"></xd:param>
+        <xd:param name="sort"></xd:param>
+    </xd:doc>
     <xsl:template name="name-part-comma-separated" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
         <xsl:param name="count"/>
@@ -290,6 +347,14 @@
         </xsl:choose>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="name-element-name"></xd:param>
+        <xd:param name="name-element-type"></xd:param>
+        <xd:param name="sort"></xd:param>
+    </xd:doc>
     <xsl:template name="name-part-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name-element-name"/>
         <xsl:param name="name-element-type"/>

@@ -28,9 +28,11 @@
         <!-- Should disambiguation be done as a relation or a note? -->
         <xsl:if test="string-length(normalize-space(Disambiguation)) or string-length(normalize-space(Disambiguation_URLs))">
             <relation type="disambiguation" name="different-from">
+                <!-- If there are disambiguation URL's, writes machine-readable attributes for the relationship. -->
                 <xsl:if test="string-length(normalize-space(Disambiguation_URLs))">
                     <xsl:attribute name="mutual" xml:space="preserve">#<xsl:value-of select="$person-id"/> <xsl:value-of select="Disambiguation_URLs"/></xsl:attribute>
                 </xsl:if>
+                <!-- If there is disambiguation text, writes human-readable description for the relationship. -->
                 <xsl:if test="string-length(normalize-space(Disambiguation))">
                     <desc>
                         <xsl:value-of select="Disambiguation"/>
@@ -65,6 +67,7 @@
         </xsl:if>
         
         <!-- Make sure to include relation for anonymous work. -->
+        
         <!-- Add code here for any additional columns that should produce relation elements. -->
     </xsl:template>
 </xsl:stylesheet>
