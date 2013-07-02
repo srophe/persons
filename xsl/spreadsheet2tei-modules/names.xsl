@@ -401,6 +401,7 @@
                                 <xsl:otherwise>2</xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
+                        <xsl:when test="($name-element-name = 'roleName') and ($sort = 'titles')">1</xsl:when>
                         <xsl:otherwise>2</xsl:otherwise>
                     </xsl:choose>
                 </xsl:attribute>
