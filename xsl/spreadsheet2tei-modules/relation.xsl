@@ -44,7 +44,7 @@
         <!-- How should this be done? -->
         <!-- Test this -->
         <xsl:if test="string-length(normalize-space(Shares_attribution_with))">
-            <relation type="shared-attribution" name="shares-attribution-with">
+            <relation name="shares-attribution-with">
                 <!-- With the following, I'm attempting to add "http://syriaca.org/person/" to the beginning of all numerical 
                 space-separated values in Shares_attribution_with. -->
                 <xsl:attribute name="mutual">#<xsl:value-of select="$person-id"/> <xsl:value-of select="replace(Shares_attribution_with, '^[0-9]+|\s[0-9]+', concat('http://syriaca.org/person/', '\$1'))"/></xsl:attribute>
@@ -57,7 +57,7 @@
         <!-- How should this be done? -->
         <!-- Test this -->
         <xsl:if test="string-length(normalize-space(Part_of_pseudonymous_author))">
-            <relation type="part-of-pseudonymous-author" name="is-part-of-pseudonymous-author">
+            <relation name="is-part-of-pseudonymous-author">
                 <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
                 <xsl:attribute name="passive" select="replace(Part_of_pseudonymous_author, '^[0-9]+|\s[0-9]+', concat('http://syriaca.org/person/', '\$1'))"/>
                 <desc>
@@ -65,8 +65,6 @@
                 </desc>
             </relation>
         </xsl:if>
-        
-        <!-- Make sure to include relation for anonymous work. -->
         
         <!-- Add code here for any additional columns that should produce relation elements. -->
     </xsl:template>
