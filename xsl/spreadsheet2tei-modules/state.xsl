@@ -45,7 +45,7 @@
         <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
     </xd:doc>
     <!-- Should roles created from saint titles really be traits instead of states? -->
-    <xsl:template name="state">
+    <xsl:template name="roles-from-titles">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
         <xsl:for-each select="$all-titles">

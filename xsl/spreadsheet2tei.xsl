@@ -190,7 +190,7 @@
                                     </xsl:if>
                                     
                                     <!-- Creates states -->
-                                    <xsl:call-template name="state">
+                                    <xsl:call-template name="roles-from-titles">
                                         <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
                                         <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                     </xsl:call-template>
