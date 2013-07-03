@@ -44,6 +44,7 @@
         <xd:param name="all-titles">All non-empty titles, as determined by the master stylesheet.</xd:param>
         <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
     </xd:doc>
+    <!-- Should roles created from saint titles really be traits instead of states? -->
     <xsl:template name="state">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>

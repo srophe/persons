@@ -19,7 +19,7 @@
             <xd:p>This template creates idno elements, by generating the VIAF URI corresponding to the entity described in 
             this record, as well as including any URL's logged in the spreadsheet.</xd:p>
         </xd:desc>
-        <xd:param name="record-id"></xd:param>
+        <xd:param name="record-id">The record ID of the person entity.</xd:param>
     </xd:doc>
     <xsl:template name="idno" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>

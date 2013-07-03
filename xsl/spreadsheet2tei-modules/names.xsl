@@ -174,13 +174,13 @@
             <xd:p>Cycles through the fields containing the individual parts of a name, creating and populating the appropriate TEI name fields.
                 Name fields using this template should end in one of the following:
                 <xd:ul>
-                    <xd:li>_Given</xd:li>
-                    <xd:li>_Family</xd:li>
-                    <xd:li>_Titles</xd:li>
-                    <xd:li>_Office</xd:li>
-                    <xd:li>_Saint_Title</xd:li>
-                    <xd:li>_Numeric_Title</xd:li>
-                    <xd:li>_Terms_of_Address</xd:li>
+                    <xd:li>Given</xd:li>
+                    <xd:li>Family</xd:li>
+                    <xd:li>Titles</xd:li>
+                    <xd:li>Office</xd:li>
+                    <xd:li>Saint_Title</xd:li>
+                    <xd:li>Numeric_Title</xd:li>
+                    <xd:li>Terms_of_Address</xd:li>
                 </xd:ul>
             </xd:p>
         </xd:desc>
