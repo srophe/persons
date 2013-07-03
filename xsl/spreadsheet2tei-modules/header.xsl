@@ -130,7 +130,6 @@
                         <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
                     </availability>
-                    <!-- Is this the publication date for the entire data set or this record? Is the date is was converted to XML good enough? -->
                     <date>
                         <xsl:value-of select="current-date()"/>
                     </date>

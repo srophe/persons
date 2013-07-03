@@ -121,7 +121,6 @@
             </bibl>
         </xsl:if>
 
-        <!-- Need Abdisho titles -->
         <xsl:if test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full))">
             <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_syr-NV')]}">
                 <title>
