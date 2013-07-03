@@ -23,7 +23,7 @@
     <xsl:template name="index">
         <!-- Create an index file that links to all of the TEI files.
         Index does not work for rows lacking a Calculated_Name.-->
-        <xsl:result-document href="../xml/tei/index.html" format="html">
+        <xsl:result-document href="../../xml/tei/index.html" format="html">
             <html>
                 <head>
                     <title>Index</title>
