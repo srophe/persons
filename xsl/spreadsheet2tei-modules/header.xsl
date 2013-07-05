@@ -41,34 +41,18 @@
                     <funder>The Andrew W. Mellon Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <funder>The International Balzan Prize Foundation</funder>
-                    <principal>
-                        <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                    </principal>
-                    <!-- Need to adapt this to reflect the following:
-                    List Thomas and Nathan as "creator" on Abdisho records.
-                    List Jamey, Nathan and Dave as "creator" on non-Abdisho persons. 
-                    General-Eds: DM, Nathan, Thomas?-->
-                    <editor role="general">
-                       <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                    </editor>
-                    <editor role="general">
-                        <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                    </editor>
-                    <editor role="general">
-                        <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                    </editor>
-                    <editor role="creator">
-                        <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                    </editor>
-                    <editor role="creator">
-                        <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
-                    </editor>
-                    <editor role="creator">
-                        <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                    </editor>
-                    <editor role="creator">
-                        <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                    </editor>
+                    <principal ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</principal>
+                    <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                    <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <xsl:if test="exists(*[(starts-with(name(), 'GEDSH') or starts-with(name(), 'Barsoum')) and contains(name(), 'Full') and string-length(normalize-space(node()))])">
+                        <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
+                        <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                    </xsl:if>
+                    <xsl:if test="exists(*[starts-with(name(), 'Abdisho') and contains(name(), 'Full') and string-length(normalize-space(node()))])">
+                        <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    </xsl:if>
+                    <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <respStmt>
                        <resp>Editing, document design, proofreading, data entry by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
@@ -157,9 +141,8 @@
                     <taxonomy>
                         <category xml:id="syriaca-headword">
                             <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
-                                While headwords are usually created from primary source citations, those without source attributes may not be attested in extant sources. 
-                                They are included only to aid the reader for the purpose of disambiguation. 
-                                These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</catDesc>
+                                These names have been created according to the Syriac.org guidelines for headwords: 
+                                <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>
