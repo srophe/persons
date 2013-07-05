@@ -234,11 +234,12 @@
                   <ref target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=P&amp;sK=Pseudo-Zacharias&amp;sT=keywords">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=P&amp;sK=Pseudo-Zacharias&amp;sT=keywords</ref>
                </bibl>
             </person>
-            <relation name="shares-attribution-with"
-                      mutual="#person-65 http://syriaca.org/person/58">
+            <relation name="claims-attribution-to"
+                      active="#person-65"
+                      passive="http://syriaca.org/person/58">
                <desc>
-                        There are works attributed to this author which are also attributed to an author described in another record.
-                    </desc>
+                   This author composed works which he claimed were composed by an author described in another record.
+                </desc>
             </relation>
          </listPerson>
       </body>

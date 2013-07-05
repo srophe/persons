@@ -41,21 +41,16 @@
             </relation>
         </xsl:if>
         
-        <!-- How should this be done? -->
-        <!-- Test this -->
         <xsl:if test="string-length(normalize-space(Shares_attribution_with))">
-            <relation name="shares-attribution-with">
-                <!-- With the following, I'm attempting to add "http://syriaca.org/person/" to the beginning of all numerical 
-                space-separated values in Shares_attribution_with. -->
-                <xsl:attribute name="mutual" xml:space="preserve">#<xsl:value-of select="$person-id"/> <xsl:value-of select="replace(Shares_attribution_with, '(^|\s)([0-9]+)', '$1http://syriaca.org/person/$2')"/></xsl:attribute>
-                    <desc>
-                        There are works attributed to this author which are also attributed to an author described in another record.
-                    </desc>
+            <relation name="claims-attribution-to">
+                <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
+                <xsl:attribute name="passive" xml:space="preserve" select="replace(Shares_attribution_with, '(^|\s)([0-9]+)', '$1http://syriaca.org/person/$2')"/>
+                <desc>
+                   This author composed works which he claimed were composed by an author described in another record.
+                </desc>
             </relation>
         </xsl:if>
         
-        <!-- How should this be done? -->
-        <!-- Test this -->
         <xsl:if test="string-length(normalize-space(Part_of_pseudonymous_author))">
             <relation name="is-part-of-pseudonymous-author">
                 <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
