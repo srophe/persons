@@ -31,7 +31,7 @@
         <xsl:param name="bib-ids"/>
         <xsl:param name="column-name" select="name(.)"/>
         <!-- Adds @source if the column is from a source external to syriaca.org. -->
-        <xsl:if test="not(matches($column-name, 'GS_|Authorized_'))">
+        <xsl:if test="not(matches($column-name, 'GS_|Authorized_|Other_en'))">
             <!-- Finds the bibl xml:id to use for this column by testing which of the $bib-ids elements matches the column name
             before the hyphen. -->
             <xsl:attribute name="source" select="concat('#', $bib-ids/*[contains(name(), substring-before($column-name, '-'))][1])"/>
