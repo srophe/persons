@@ -155,7 +155,10 @@
                             <listPerson>
                                 <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
                                     <person xml:id="{$person-id}">
-                                        
+                                        <xsl:if test="matches(GEDSH_en-Full, 'pseudo', 'i') or matches(GS_en-Full, 'pseudo', 'i')">
+                                            <xsl:attribute name="type" select="'pseudonymous-author'"/>
+                                        </xsl:if>
+                                                                                
                                         <!-- Creates persName elements. -->
                                         <xsl:call-template name="names">
                                             <xsl:with-param name="all-full-names" select="$all-full-names"/>
