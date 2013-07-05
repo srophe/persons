@@ -18,7 +18,7 @@
     <xd:doc>
         <xd:desc>
             <!-- Correct link to manual? -->
-            <xd:p>Creates a TEI header, according to the specifications of the Syriaca TEI Manual.</xd:p>
+            <xd:p>Creates a TEI header, according to the specifications of the TEI Header Manual for Syriaca.org.</xd:p>
         </xd:desc>
         <xd:param name="record-id">The record ID of the person record</xd:param>
         <xd:param name="record-title">The value to be used as the title of the record</xd:param>
@@ -41,7 +41,7 @@
                     <funder>The Andrew W. Mellon Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <funder>The International Balzan Prize Foundation</funder>
-                    <principal ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</principal>
+                    <principal>David A. Michelson</principal>
                     <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
@@ -108,8 +108,7 @@
                 </editionStmt>
                 <publicationStmt>
                     <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"
-                        />/source</idno>
+                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/>/source</idno>
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
@@ -123,9 +122,9 @@
                 </sourceDesc>
             </fileDesc>
             <encodingDesc>
-                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-                <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</p>
                 <editorialDecl>
+                    <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
                     <interpretation>
                         <p>Approximate dates described in terms of centuries or partial centuries
                             have been interpreted as in the following example: 
@@ -143,6 +142,9 @@
                             <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
                                 These names have been created according to the Syriac.org guidelines for headwords: 
                                 <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</catDesc>
+                        </category>
+                        <category xml:id="syriaca-anglicized">
+                            <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
                         </category>
                     </taxonomy>
                 </classDecl>

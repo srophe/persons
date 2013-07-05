@@ -12,7 +12,7 @@
             <funder>The Andrew W. Mellon Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
-            <principal ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</principal>
+            <principal>David A. Michelson</principal>
             <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
             <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
             <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
@@ -85,9 +85,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-         <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</p>
          <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
                             have been interpreted as in the following example: 
@@ -104,6 +104,9 @@
                   <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
                                 These names have been created according to the Syriac.org guidelines for headwords: 
                                 <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
