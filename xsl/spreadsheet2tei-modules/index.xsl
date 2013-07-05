@@ -30,10 +30,13 @@
                 </head>
                 <body>
                     <xsl:for-each select="row">
-                        <a href="{SRP_ID}.xml">
-                            <xsl:value-of select="Calculated_Name"/>
-                        </a>
-                        <br/>
+                        <!-- Does not generate XML file if there is text in Do_not_publish -->
+                        <xsl:if test="not(string-length(normalize-space(Do_not_publish)))">
+                            <a href="{SRP_ID}.xml">
+                                <xsl:value-of select="Calculated_Name"/>
+                            </a>
+                            <br/>
+                        </xsl:if>
                     </xsl:for-each>
                 </body>
             </html>

@@ -89,6 +89,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template name="main" match="row">
+        <!-- Does not generate XML file if there is text in Do_not_publish -->
         <xsl:if test="not(string-length(normalize-space(Do_not_publish)))">
             <!-- Variables -->
             <!-- Creates a variable to use as the id for the person record, which is in turn used for generating @xml:id attributes 
