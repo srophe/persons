@@ -89,135 +89,137 @@
         </xd:desc>
     </xd:doc>
     <xsl:template name="main" match="row">
-        <!-- Variables -->
-        <!-- Creates a variable to use as the id for the person record, which is in turn used for generating @xml:id attributes 
-        of elements contained in the record.-->
-        <xsl:variable name="record-id"><xsl:value-of select="SRP_ID"/></xsl:variable>
-        
-        <!-- Creates a variable to use as the xml:id for the person element -->
-        <xsl:variable name="person-id">person-<xsl:value-of select="$record-id"/></xsl:variable>
-        
-        <!-- Creates a variable containing the first part of any persName id. -->
-        <xsl:variable name="person-name-id">name<xsl:value-of select="$record-id"/></xsl:variable>
-        
-        <!-- Creates a sequence variable containing all full name elements for the row, so that variables can be created by processing this only once. -->
-        <xsl:variable name="all-full-names">
-            <xsl:copy-of select="*[matches(name(), '(_|-)Full')]"/>
-        </xsl:variable>
-        
-        <!-- Creates a sequence variable of one column per source (or two for vocalized/non-vocalized versions), using full name if available 
-        or another column if information other than a name is derived from the source. 
-        The is the basis for creating sequence variables that contain the same element names as these columns in the spreadsheet, 
-        but have different content, which can be retreived by comparing the name of the element to be processed with the name (or partial name) 
-        of an element in the sequence variable. -->
-        <!-- Use copy-of to add a representative column from a source not used in full names (only one per source). -->
-        <xsl:variable name="sourced-columns">
-            <xsl:copy-of select="$all-full-names"/>
-            <xsl:copy-of select="VIAF-Dates_Raw"/>
-        </xsl:variable>
-        
-        <!-- Creates a sequence variable containing the part of @xml:id attributes that should be different for columns from different sources. -->
-        <xsl:variable name="ids-base">
-            <xsl:call-template name="ids-base">
-                <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
-                <xsl:with-param name="count" select="1"/>
-                <xsl:with-param name="same-source-adjustment" select="0"/>
-            </xsl:call-template>
-        </xsl:variable>
-        
-        <!-- Creates a sequence variable containing the @xml:id attributes for bibl elements. 
-        This needs to be at beginning so that it can be used by the source module. -->
-        <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
-        <xsl:variable name="bib-ids">
-            <xsl:call-template name="bib-ids">
-                <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
-                <xsl:with-param name="record-id" select="$record-id"/>
-                <xsl:with-param name="ids-base" select="$ids-base"/>
-            </xsl:call-template>
-        </xsl:variable>         
-        
-        <!-- Creates a variable containing the path of the file that should be created for this record. -->
-        <xsl:variable name="filename"
-            select="concat('../tei/',$record-id,'.xml')"/>
-        
-        <!-- Writes the file to the path specified in the $filename variable. -->
-        <xsl:result-document href="{$filename}" format="xml">
-            <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
-                
-                <!-- Adds header -->
-                <xsl:call-template name="header">
-                    <xsl:with-param name="record-id" select="$record-id"/>
+        <xsl:if test="not(string-length(normalize-space(Do_not_publish)))">
+            <!-- Variables -->
+            <!-- Creates a variable to use as the id for the person record, which is in turn used for generating @xml:id attributes 
+            of elements contained in the record.-->
+            <xsl:variable name="record-id"><xsl:value-of select="SRP_ID"/></xsl:variable>
+            
+            <!-- Creates a variable to use as the xml:id for the person element -->
+            <xsl:variable name="person-id">person-<xsl:value-of select="$record-id"/></xsl:variable>
+            
+            <!-- Creates a variable containing the first part of any persName id. -->
+            <xsl:variable name="person-name-id">name<xsl:value-of select="$record-id"/></xsl:variable>
+            
+            <!-- Creates a sequence variable containing all full name elements for the row, so that variables can be created by processing this only once. -->
+            <xsl:variable name="all-full-names">
+                <xsl:copy-of select="*[matches(name(), '(_|-)Full')]"/>
+            </xsl:variable>
+            
+            <!-- Creates a sequence variable of one column per source (or two for vocalized/non-vocalized versions), using full name if available 
+            or another column if information other than a name is derived from the source. 
+            The is the basis for creating sequence variables that contain the same element names as these columns in the spreadsheet, 
+            but have different content, which can be retreived by comparing the name of the element to be processed with the name (or partial name) 
+            of an element in the sequence variable. -->
+            <!-- Use copy-of to add a representative column from a source not used in full names (only one per source). -->
+            <xsl:variable name="sourced-columns">
+                <xsl:copy-of select="$all-full-names"/>
+                <xsl:copy-of select="VIAF-Dates_Raw"/>
+            </xsl:variable>
+            
+            <!-- Creates a sequence variable containing the part of @xml:id attributes that should be different for columns from different sources. -->
+            <xsl:variable name="ids-base">
+                <xsl:call-template name="ids-base">
+                    <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
+                    <xsl:with-param name="count" select="1"/>
+                    <xsl:with-param name="same-source-adjustment" select="0"/>
                 </xsl:call-template>
-                
-                <text>
-                    <body>
-                        <listPerson>
-                            <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
-                                <person xml:id="{$person-id}">
-                                    
-                                    <!-- Creates persName elements. -->
-                                    <xsl:call-template name="names">
-                                        <xsl:with-param name="all-full-names" select="$all-full-names"/>
-                                        <xsl:with-param name="person-name-id" select="$person-name-id"/>
-                                        <xsl:with-param name="ids-base" select="$ids-base"/>
-                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                    </xsl:call-template>
-                                    
-                                    <!-- Adds VIAF URLs. -->
-                                    <xsl:call-template name="idno">
-                                        <xsl:with-param name="record-id" select="$record-id"/>
-                                    </xsl:call-template>
-                                  
-                                  <!-- Adds birth/death/floruit/event elements -->
-                                    <xsl:for-each 
-                                        select="*[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
-                                        <xsl:call-template name="event-element">
-                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>     
+            </xsl:variable>
+            
+            <!-- Creates a sequence variable containing the @xml:id attributes for bibl elements. 
+            This needs to be at beginning so that it can be used by the source module. -->
+            <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
+            <xsl:variable name="bib-ids">
+                <xsl:call-template name="bib-ids">
+                    <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
+                    <xsl:with-param name="record-id" select="$record-id"/>
+                    <xsl:with-param name="ids-base" select="$ids-base"/>
+                </xsl:call-template>
+            </xsl:variable>         
+            
+            <!-- Creates a variable containing the path of the file that should be created for this record. -->
+            <xsl:variable name="filename"
+                select="concat('../tei/',$record-id,'.xml')"/>
+            
+            <!-- Writes the file to the path specified in the $filename variable. -->
+            <xsl:result-document href="{$filename}" format="xml">
+                <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    
+                    <!-- Adds header -->
+                    <xsl:call-template name="header">
+                        <xsl:with-param name="record-id" select="$record-id"/>
+                    </xsl:call-template>
+                    
+                    <text>
+                        <body>
+                            <listPerson>
+                                <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
+                                    <person xml:id="{$person-id}">
+                                        
+                                        <!-- Creates persName elements. -->
+                                        <xsl:call-template name="names">
+                                            <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                                            <xsl:with-param name="person-name-id" select="$person-name-id"/>
+                                            <xsl:with-param name="ids-base" select="$ids-base"/>
+                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                         </xsl:call-template>
-                                    </xsl:for-each>
-                                    <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Reign"). 
-                                    If so, creates a listEvent parent element to contain them. 
-                                    Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
-                                    <xsl:if test="exists(*[contains(name(), 'Reign') and string-length(normalize-space(node()))])">
-                                        <listEvent>
-                                            <xsl:for-each 
-                                                select="*[ends-with(name(),'Reign')]">
-                                                    <xsl:call-template name="event-element">
-                                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                                    </xsl:call-template>
-                                            </xsl:for-each>
-                                        </listEvent>
-                                    </xsl:if>
-                                    
-                                    <!-- Creates states -->
-                                    <xsl:call-template name="roles-from-titles">
-                                        <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
-                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                    </xsl:call-template>
-                                    
-                                    <!-- Creates bibl elements -->
-                                    <xsl:call-template name="bibl">
-                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                    </xsl:call-template>                                        
-                                    
-                                    <!-- Adds Record Description field as a note. -->
-                                    <xsl:if test="string-length(normalize-space(Record_Description))">
-                                        <note type="record-description">
-                                            <xsl:value-of select="Record_Description"/>
-                                        </note>
-                                    </xsl:if>
-                                    
-                                </person>
-                            
-                            <!-- Create relations. -->
-                            <xsl:call-template name="relation">
-                                <xsl:with-param name="person-id" select="$person-id"/>
-                            </xsl:call-template>
-                            </listPerson>
-                    </body>
-                </text>
-            </TEI>
-        </xsl:result-document>
+                                        
+                                        <!-- Adds VIAF URLs. -->
+                                        <xsl:call-template name="idno">
+                                            <xsl:with-param name="record-id" select="$record-id"/>
+                                        </xsl:call-template>
+                                      
+                                      <!-- Adds birth/death/floruit/event elements -->
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
+                                            <xsl:call-template name="event-element">
+                                                <xsl:with-param name="bib-ids" select="$bib-ids"/>     
+                                            </xsl:call-template>
+                                        </xsl:for-each>
+                                        <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Reign"). 
+                                        If so, creates a listEvent parent element to contain them. 
+                                        Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
+                                        <xsl:if test="exists(*[contains(name(), 'Reign') and string-length(normalize-space(node()))])">
+                                            <listEvent>
+                                                <xsl:for-each 
+                                                    select="*[ends-with(name(),'Reign')]">
+                                                        <xsl:call-template name="event-element">
+                                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                                        </xsl:call-template>
+                                                </xsl:for-each>
+                                            </listEvent>
+                                        </xsl:if>
+                                        
+                                        <!-- Creates states -->
+                                        <xsl:call-template name="roles-from-titles">
+                                            <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
+                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                        </xsl:call-template>
+                                        
+                                        <!-- Creates bibl elements -->
+                                        <xsl:call-template name="bibl">
+                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                        </xsl:call-template>                                        
+                                        
+                                        <!-- Adds Record Description field as a note. -->
+                                        <xsl:if test="string-length(normalize-space(Record_Description))">
+                                            <note type="record-description">
+                                                <xsl:value-of select="Record_Description"/>
+                                            </note>
+                                        </xsl:if>
+                                        
+                                    </person>
+                                
+                                <!-- Create relations. -->
+                                <xsl:call-template name="relation">
+                                    <xsl:with-param name="person-id" select="$person-id"/>
+                                </xsl:call-template>
+                                </listPerson>
+                        </body>
+                    </text>
+                </TEI>
+            </xsl:result-document>
+        </xsl:if>
     </xsl:template>
     
     <xd:doc>
