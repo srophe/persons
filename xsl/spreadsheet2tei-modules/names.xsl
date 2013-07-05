@@ -40,6 +40,16 @@
         <xsl:param name="bib-ids"/>
         <xsl:param name="sort">
             <xsl:choose>
+               <xsl:when test="string-length(normalize-space(GS_en-Full)) and string-length(normalize-space(concat(GS_en-Given, GS_en-Family, GS_en-Titles)))">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Given)">given</xsl:when>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Family)">family</xsl:when>
+                        <xsl:when test="starts-with(GS_en-Full, GS_en-Titles)">titles</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Given))">given</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Family))">family</xsl:when>
+                        <xsl:when test="string-length(normalize-space(GS_en-Titles))">titles</xsl:when>
+                    </xsl:choose>
+                </xsl:when>
                 <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) and string-length(normalize-space(concat(GEDSH_en-Given, GEDSH_en-Family, GEDSH_en-Titles)))">
                     <xsl:choose>
                         <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Given)">given</xsl:when>
@@ -48,16 +58,6 @@
                         <xsl:when test="string-length(normalize-space(GEDSH_en-Given))">given</xsl:when>
                         <xsl:when test="string-length(normalize-space(GEDSH_en-Family))">family</xsl:when>
                         <xsl:when test="string-length(normalize-space(GEDSH_en-Titles))">titles</xsl:when>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:when test="string-length(normalize-space(GS_en-Full)) and string-length(normalize-space(concat(GS_en-Given, GS_en-Family, GS_en-Titles)))">
-                    <xsl:choose>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Given)">given</xsl:when>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Family)">family</xsl:when>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Titles)">titles</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Given))">given</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Family))">family</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Titles))">titles</xsl:when>
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>given</xsl:otherwise>
