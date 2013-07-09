@@ -70,7 +70,7 @@
                         <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                     </respStmt>
                     <respStmt>
-                        <resp>editing, Syriac name entry, disambiguation research by</resp>
+                        <resp>Editing, Syriac name entry, disambiguation research by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
                     </respStmt>
                     <respStmt>
@@ -94,7 +94,7 @@
                         <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
                     </respStmt>
                     <respStmt>
-                        <resp>Project managament, english text entry, and proofreading by</resp>
+                        <resp>Project managament, English text entry, and proofreading by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
                     </respStmt>
                     <respStmt>
@@ -141,7 +141,7 @@
                         <category xml:id="syriaca-headword">
                             <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. 
                                 These names have been created according to the Syriac.org guidelines for headwords: 
-                                <ref target="http://syriaca.org/documentation/headwords">http://syriaca.org/documentation/headwords</ref>.</catDesc>
+                                <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
                         </category>
                         <category xml:id="syriaca-anglicized">
                             <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
