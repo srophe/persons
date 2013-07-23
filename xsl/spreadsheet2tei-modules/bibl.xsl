@@ -124,7 +124,7 @@
         <xsl:if test="string-length(normalize-space(CBSC_en-Full)) > 0">
             <bibl xml:id="{$bib-ids/*[contains(name(), 'CBSC')]}">
                 <title level="a" xml:lang="en">
-                    "<xsl:value-of select="replace(CBSC_en-Full,'; ','&quot;; &quot;')"/>"
+                    "<xsl:value-of select="replace(CBSC_en-Full,'; ','&quot;, &quot;')"/>"
                 </title>
                 <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                 <ptr target="http://syriaca.org/bibl/5"/>
