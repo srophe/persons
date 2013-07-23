@@ -140,7 +140,7 @@
                          xml:lang="en"
                          source="#bib32-2">
                   <forename sort="1">Peter</forename> 
-                  <addName type="untagged-title" sort="2">the presbyter of Edessa</addName>
+                  <roleName type="office" sort="2">the presbyter of Edessa</roleName>
                </persName>
                <persName xml:id="name32-3"
                          corresp="#name32-2 #name32-4a #name32-4b"
@@ -179,6 +179,9 @@
                </persName>
                <idno type="URI">http://syriaca.org/person/32</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|32</idno>
+               <state type="office" role="priest" source="#bib32-2">
+                  <desc xml:lang="en">the presbyter of Edessa</desc>
+               </state>
                <bibl xml:id="bib32-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

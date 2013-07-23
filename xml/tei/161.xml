@@ -146,7 +146,7 @@
                          corresp="#name161-3 #name161-4a #name161-4b"
                          xml:lang="en"
                          source="#bib161-2">
-                  <forename sort="1">John</forename>, <addName type="untagged-title" sort="2">metropolitan of Dara</addName>
+                  <forename sort="1">John</forename>, <roleName type="office" sort="2">metropolitan of Dara</roleName>
                </persName>
                <persName xml:id="name161-3"
                          corresp="#name161-2 #name161-4a #name161-4b"
@@ -186,6 +186,9 @@
                <idno type="URI">http://viaf.org/viaf/242513861</idno>
                <floruit when="0860" source="#bib161-2">860</floruit>
                <birth when="0800" source="#bib161-11"/>
+               <state type="office" role="metropolitan" source="#bib161-2">
+                  <desc xml:lang="en">Metropolitan of Dara</desc>
+               </state>
                <bibl xml:id="bib161-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

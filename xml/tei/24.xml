@@ -139,7 +139,7 @@
                          corresp="#name24-3 #name24-4a #name24-4b"
                          xml:lang="en"
                          source="#bib24-2">
-                  <forename sort="1">Ma‛na</forename>, <addName type="untagged-title" sort="2">the Catholicos</addName>
+                  <forename sort="1">Ma‛na</forename>, <roleName type="office" sort="2">the Catholicos</roleName>
                </persName>
                <persName xml:id="name24-3"
                          corresp="#name24-2 #name24-4a #name24-4b"
@@ -174,6 +174,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|24</idno>
                <death when="0420" source="#bib24-2">420</death>
                <death when="0420" source="#bib24-11"/>
+               <state type="office" role="catholicos" source="#bib24-2">
+                  <desc xml:lang="en">the Catholicos</desc>
+               </state>
                <bibl xml:id="bib24-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

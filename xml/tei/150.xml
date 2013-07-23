@@ -146,7 +146,7 @@
                          corresp="#name150-3 #name150-4a #name150-4b"
                          xml:lang="en"
                          source="#bib150-2">
-                  <forename sort="1">Theodosius</forename>, <addName type="untagged-title" sort="2">metropolitan of Edessa</addName>
+                  <forename sort="1">Theodosius</forename>, <roleName type="office" sort="2">metropolitan of Edessa</roleName>
                </persName>
                <persName xml:id="name150-3"
                          corresp="#name150-2 #name150-4a #name150-4b"
@@ -181,6 +181,9 @@
                <idno type="URI">http://syriaca.org/person/150</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|150</idno>
                <floruit when="0832" source="#bib150-2">832</floruit>
+               <state type="office" role="metropolitan" source="#bib150-2">
+                  <desc xml:lang="en">Metropolitan of Edessa</desc>
+               </state>
                <bibl xml:id="bib150-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

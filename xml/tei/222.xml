@@ -139,7 +139,7 @@
                          corresp="#name222-3 #name222-4a #name222-4b"
                          xml:lang="en"
                          source="#bib222-2">
-                  <forename sort="1">Gregorius Jacob</forename>, <addName type="untagged-title" sort="2">Maphryono of the East</addName>
+                  <forename sort="1">Gregorius Jacob</forename>, <roleName type="office" sort="2">Maphryono of the East</roleName>
                </persName>
                <persName xml:id="name222-3"
                          corresp="#name222-2 #name222-4a #name222-4b"
@@ -174,6 +174,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|222</idno>
                <death when="1214" source="#bib222-2">1214</death>
                <death when="1214" source="#bib222-11"/>
+               <state type="office" role="maphrian" source="#bib222-2">
+                  <desc xml:lang="en">Maphryono of the East</desc>
+               </state>
                <bibl xml:id="bib222-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

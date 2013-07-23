@@ -139,7 +139,7 @@
                          corresp="#name942-3 #name942-4a #name942-4b"
                          xml:lang="en"
                          source="#bib942-2">
-                  <forename sort="1">Athanasius Denḥa</forename>, <addName type="untagged-title" sort="2">metropolitan of Edessa</addName>
+                  <forename sort="1">Athanasius Denḥa</forename>, <roleName type="office" sort="2">metropolitan of Edessa</roleName>
                </persName>
                <persName xml:id="name942-3"
                          corresp="#name942-2 #name942-4a #name942-4b"
@@ -172,6 +172,9 @@
                <idno type="URI">http://syriaca.org/person/942</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|942</idno>
                <death when="1191" source="#bib942-2">1191</death>
+               <state type="office" role="metropolitan" source="#bib942-2">
+                  <desc xml:lang="en">metropolitan of Edessa</desc>
+               </state>
                <bibl xml:id="bib942-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

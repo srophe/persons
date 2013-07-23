@@ -139,7 +139,7 @@
                          corresp="#name246-3 #name246-4a #name246-4b"
                          xml:lang="en"
                          source="#bib246-2">
-                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <roleName type="office" sort="2">The Monk</roleName> 
                   <forename sort="1">Yeshu‛</forename> 
                   <addName type="family" sort="2">Ibn Kilo</addName>
                </persName>
@@ -185,6 +185,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|246</idno>
                <floruit when="1309" source="#bib246-2">1309</floruit>
                <death when="1309" source="#bib246-11"/>
+               <state type="office" role="monk" source="#bib246-2">
+                  <desc xml:lang="en">the Monk</desc>
+               </state>
                <bibl xml:id="bib246-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

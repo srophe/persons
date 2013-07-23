@@ -146,7 +146,7 @@
                          corresp="#name236-3 #name236-4a #name236-4b"
                          xml:lang="en"
                          source="#bib236-2">
-                  <addName type="untagged-title" sort="2">Patriarch</addName> 
+                  <roleName type="office" sort="2">Patriarch</roleName> 
                   <forename sort="1">John</forename> 
                   <addName type="family" sort="2">Bar Ma‛dani</addName>
                </persName>
@@ -187,6 +187,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|236</idno>
                <death when="1263" source="#bib236-2">1263</death>
                <death when="1263" source="#bib236-11"/>
+               <state type="office" role="patriarch" source="#bib236-2">
+                  <desc xml:lang="en">Patriarch</desc>
+               </state>
                <bibl xml:id="bib236-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

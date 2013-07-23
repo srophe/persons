@@ -139,7 +139,7 @@
                          corresp="#name205-3 #name205-4a #name205-4b"
                          xml:lang="en"
                          source="#bib205-2">
-                  <forename sort="1">Timothy</forename>, <addName type="untagged-title" sort="2">metropolitan of Karkar</addName>
+                  <forename sort="1">Timothy</forename>, <roleName type="office" sort="2">metropolitan of Karkar</roleName>
                </persName>
                <persName xml:id="name205-3"
                          corresp="#name205-2 #name205-4a #name205-4b"
@@ -180,6 +180,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|205</idno>
                <death when="1143" source="#bib205-2">1143</death>
                <death when="1143" source="#bib205-11"/>
+               <state type="office" role="metropolitan" source="#bib205-2">
+                  <desc xml:lang="en">Metropolitan of Karkar</desc>
+               </state>
                <bibl xml:id="bib205-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

@@ -140,7 +140,7 @@
                          corresp="#name853-3 #name853-4a #name853-4b"
                          xml:lang="en"
                          source="#bib853-2">
-                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <roleName type="office" sort="2">Deacon</roleName> 
                   <forename sort="1">Zenobius</forename>
                </persName>
                <persName xml:id="name853-3"
@@ -197,6 +197,9 @@
                <persName xml:id="name853-10" xml:lang="en" source="#bib853-10">Zenobius of Gazir</persName>
                <idno type="URI">http://syriaca.org/person/853</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|853</idno>
+               <state type="office" role="deacon" source="#bib853-2">
+                  <desc xml:lang="en">Deacon</desc>
+               </state>
                <bibl xml:id="bib853-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

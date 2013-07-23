@@ -139,7 +139,7 @@
                          corresp="#name140-3 #name140-4a #name140-4b"
                          xml:lang="en"
                          source="#bib140-2">
-                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <roleName type="office" sort="2">The Monk</roleName> 
                   <forename sort="1">Theodosius</forename>
                </persName>
                <persName xml:id="name140-3"
@@ -178,6 +178,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|140</idno>
                <floruit when="0806" source="#bib140-2">806</floruit>
                <death when="0806" source="#bib140-11"/>
+               <state type="office" role="monk" source="#bib140-2">
+                  <desc xml:lang="en">the Monk</desc>
+               </state>
                <bibl xml:id="bib140-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

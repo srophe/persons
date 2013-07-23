@@ -139,7 +139,7 @@
                          corresp="#name269-3 #name269-4a #name269-4b"
                          xml:lang="en"
                          source="#bib269-2">
-                  <addName type="untagged-title" sort="2">The Monk</addName> 
+                  <roleName type="office" sort="2">The Monk</roleName> 
                   <forename sort="1">Malke Sāqo</forename>
                </persName>
                <persName xml:id="name269-3"
@@ -176,6 +176,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|269</idno>
                <death when="1490" source="#bib269-2">1490</death>
                <death when="1490" source="#bib269-11"/>
+               <state type="office" role="monk" source="#bib269-2">
+                  <desc xml:lang="en">the Monk</desc>
+               </state>
                <bibl xml:id="bib269-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

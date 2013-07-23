@@ -139,7 +139,7 @@
                          corresp="#name46-3 #name46-4a #name46-4b"
                          xml:lang="en"
                          source="#bib46-2">
-                  <forename sort="1">Simon</forename>, <addName type="untagged-title" sort="2">abbot of the Monastery of Beth Liqin</addName>
+                  <forename sort="1">Simon</forename>, <roleName type="office" sort="2">abbot of the Monastery of Beth Liqin</roleName>
                </persName>
                <persName xml:id="name46-3"
                          corresp="#name46-2 #name46-4a #name46-4b"
@@ -166,13 +166,22 @@
                <persName xml:id="name46-8"
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Shemʿon</forename>, <addName type="untagged-title" sort="2">abbot of Dayro d-Liqin</addName>
+                  <forename sort="1">Shemʿon</forename>, <roleName type="office" sort="2">abbot of Dayro d-Liqin</roleName>
                </persName>
                <persName xml:id="name46-9" xml:lang="en">
-                  <forename sort="1">Simon</forename>, <addName type="untagged-title" sort="2">abbot of Dayro d-Liqin</addName>
+                  <forename sort="1">Simon</forename>, <roleName type="office" sort="2">abbot of Dayro d-Liqin</roleName>
                </persName>
                <idno type="URI">http://syriaca.org/person/46</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|46</idno>
+               <state type="office" role="abbot" source="#bib46-2">
+                  <desc xml:lang="en">abbot of the Monastery of Beth Liqin</desc>
+               </state>
+               <state type="office" role="abbot">
+                  <desc xml:lang="en-x-gedsh">abbot of Dayro d-Liqin</desc>
+               </state>
+               <state type="office" role="abbot">
+                  <desc xml:lang="en">abbot of Dayro d-Liqin</desc>
+               </state>
                <bibl xml:id="bib46-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

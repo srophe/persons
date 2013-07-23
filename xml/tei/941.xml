@@ -139,7 +139,7 @@
                          corresp="#name941-3 #name941-4a #name941-4b"
                          xml:lang="en"
                          source="#bib941-2">
-                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <roleName type="office" sort="2">Deacon</roleName> 
                   <forename sort="1">Sahdo</forename> 
                   <addName type="family" sort="2">of the Shumanna family</addName>
                </persName>
@@ -179,6 +179,9 @@
                </persName>
                <idno type="URI">http://syriaca.org/person/941</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|941</idno>
+               <state type="office" role="deacon" source="#bib941-2">
+                  <desc xml:lang="en">Deacon</desc>
+               </state>
                <bibl xml:id="bib941-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

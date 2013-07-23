@@ -140,7 +140,7 @@
                          xml:lang="en"
                          source="#bib255-2">
                   <forename sort="1">Joseph</forename> 
-                  <addName type="family" sort="2">Bar Gharīb</addName>, <addName type="untagged-title" sort="2">metropolitan of Amid</addName>
+                  <addName type="family" sort="2">Bar Gharīb</addName>, <roleName type="office" sort="2">metropolitan of Amid</roleName>
                </persName>
                <persName xml:id="name255-3"
                          corresp="#name255-2 #name255-4a #name255-4b"
@@ -187,6 +187,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|255</idno>
                <death when="1375" source="#bib255-2">1375</death>
                <death when="1375" source="#bib255-11"/>
+               <state type="office" role="metropolitan" source="#bib255-2">
+                  <desc xml:lang="en">Metropolitan of Amid</desc>
+               </state>
                <bibl xml:id="bib255-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

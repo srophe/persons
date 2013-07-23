@@ -140,7 +140,7 @@
                          xml:lang="en"
                          source="#bib68-2">
                   <forename sort="1">Sergius</forename> 
-                  <addName type="untagged-title" sort="2">the Ascetic Monk</addName>
+                  <roleName type="office" sort="2">the Ascetic Monk</roleName>
                </persName>
                <persName xml:id="name68-3"
                          corresp="#name68-2 #name68-4a #name68-4b"
@@ -162,16 +162,25 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Sargis</forename> 
-                  <addName type="untagged-title" sort="2">the Monk</addName>
+                  <roleName type="office" sort="2">the Monk</roleName>
                </persName>
                <persName xml:id="name68-9" xml:lang="en">
                   <forename sort="1">Sergius</forename> 
-                  <addName type="untagged-title" sort="2">the Monk</addName>
+                  <roleName type="office" sort="2">the Monk</roleName>
                </persName>
                <idno type="URI">http://syriaca.org/person/68</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|68</idno>
                <floruit when="0577" source="#bib68-2">577</floruit>
                <death when="0577" source="#bib68-11"/>
+               <state type="office" role="monk" source="#bib68-2">
+                  <desc xml:lang="en">the Ascetic Monk</desc>
+               </state>
+               <state type="office" role="monk">
+                  <desc xml:lang="en-x-gedsh">the Monk</desc>
+               </state>
+               <state type="office" role="monk">
+                  <desc xml:lang="en">the Monk</desc>
+               </state>
                <bibl xml:id="bib68-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

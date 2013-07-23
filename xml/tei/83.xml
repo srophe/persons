@@ -139,7 +139,7 @@
                          corresp="#name83-3 #name83-4a #name83-4b"
                          xml:lang="en"
                          source="#bib83-2">
-                  <addName type="untagged-title" sort="2">Deacon</addName> 
+                  <roleName type="office" sort="2">Deacon</roleName> 
                   <forename sort="1">Thomas</forename>
                </persName>
                <persName xml:id="name83-3"
@@ -168,17 +168,26 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Tumo</forename> 
-                  <addName type="untagged-title" sort="2">the Deacon</addName>
+                  <roleName type="office" sort="2">the Deacon</roleName>
                </persName>
                <persName xml:id="name83-9" xml:lang="en">
                   <forename sort="1">Thomas</forename> 
-                  <addName type="untagged-title" sort="2">the Deacon</addName>
+                  <roleName type="office" sort="2">the Deacon</roleName>
                </persName>
                <idno type="URI">http://syriaca.org/person/83</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|83</idno>
                <idno type="URI">http://worldcat.org/identities/np-thomas$the deacon</idno>
                <floruit when="0617" source="#bib83-2">617</floruit>
                <death when="0617" source="#bib83-11"/>
+               <state type="office" role="deacon" source="#bib83-2">
+                  <desc xml:lang="en">Deacon</desc>
+               </state>
+               <state type="office" role="deacon">
+                  <desc xml:lang="en-x-gedsh">the Deacon</desc>
+               </state>
+               <state type="office" role="deacon">
+                  <desc xml:lang="en">the Deacon</desc>
+               </state>
                <bibl xml:id="bib83-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>

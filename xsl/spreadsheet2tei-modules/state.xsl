@@ -29,8 +29,15 @@
         </xd:desc>
     </xd:doc>
     <xsl:variable name="roles">
+        <role type="office" role="patriarch">patriarch|patr\.</role>
+        <role type="office" role="catholicos">catholicos|cath\.</role>
+        <role type="office" role="maphrian">maphrian|maphryono</role>
+        <role type="office" role="metropolitan">metropolitan</role>
         <role type="office" role="bishop">bishop|bp\.</role>
-        <role type="office" role="priest">priest</role>
+        <role type="office" role="abbot">abbot</role>
+        <role type="office" role="priest">priest|presbyter</role>
+        <role type="office" role="monk">monk</role>
+        <role type="office" role="deacon">deacon</role>
         <role type="saint" role="saint">saint|st\.</role>
         <role type="saint" role="martyr">martyr</role>
     </xsl:variable>
@@ -94,7 +101,17 @@
         <state>
             <xsl:attribute name="type" select="$roles/*[matches($column, node(), 'i')][1]/@type"/>
             <xsl:attribute name="role" select="$roles/*[matches($column, node(), 'i')][1]/@role"/>
-            <!-- Should we include GEDSH reign as @when? -->
+            
+            <!-- Include GEDSH reign dates as @from and @to if this is a GEDSH column -->
+            <xsl:if test="matches($column,'GEDSH') and string-length(normalize-space(GEDSH_en-Reign))">
+                <xsl:if test="string-length(normalize-space(GEDSH_en-Reign_Begin_Standard))">
+                    <xsl:attribute name="from"><xsl:value-of select="normalize-space(GEDSH_en-Reign_Begin_Standard)"/></xsl:attribute>
+                </xsl:if>
+                <xsl:if test="string-length(normalize-space(GEDSH_en-Reign_End_Standard))">
+                    <xsl:attribute name="from"><xsl:value-of select="normalize-space(GEDSH_en-Reign_End_Standard)"/></xsl:attribute>
+                </xsl:if>
+            </xsl:if>
+            
             <xsl:call-template name="source">
                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
                 <xsl:with-param name="column-name" select="$column-name"/>
