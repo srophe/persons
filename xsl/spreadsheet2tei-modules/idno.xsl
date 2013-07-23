@@ -30,7 +30,7 @@
         <idno type="URI">http://viaf.org/viaf/sourceID/SRP|<xsl:value-of select="$record-id"
             /></idno>
 
-        <xsl:for-each select="URL[string-length(normalize-space()) > 0]">
+        <xsl:for-each select="tokenize(URLs,'\s\s')">
             <idno type="URI">
                 <xsl:value-of select="."/>
             </idno>
