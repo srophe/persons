@@ -99,10 +99,12 @@
                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
                 <xsl:with-param name="column-name" select="$column-name"/>
             </xsl:call-template>
-            <xsl:call-template name="language">
-                <xsl:with-param name="column-name" select="$column-name"/>
-            </xsl:call-template>
-            <desc><xsl:value-of select="$column"/></desc>
+            <desc>
+                <xsl:call-template name="language">
+                    <xsl:with-param name="column-name" select="$column-name"/>
+                </xsl:call-template>
+                <xsl:value-of select="$column"/>
+            </desc>
         </state>
     </xsl:template>
 </xsl:stylesheet>
