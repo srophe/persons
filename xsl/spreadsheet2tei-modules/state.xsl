@@ -32,7 +32,7 @@
         <role type="office" role="patriarch">patriarch|patr\.</role>
         <role type="office" role="catholicos">catholicos|cath\.</role>
         <role type="office" role="maphrian">maphrian|maphryono</role>
-        <role type="office" role="metropolitan">metropolitan</role>
+        <role type="office" role="metropolitan">metropolitan|metr\.</role>
         <role type="office" role="bishop">bishop|bp\.</role>
         <role type="office" role="abbot">abbot</role>
         <role type="office" role="priest">priest|presbyter</role>
