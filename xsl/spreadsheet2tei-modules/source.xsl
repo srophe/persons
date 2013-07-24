@@ -58,18 +58,19 @@
         
         <!-- Adds @source if any column is from a source external to syriaca.org. -->
         <!-- Does this by creating a sequence of #bib references, and then checking if it's empty -->
-        <xsl:variable name="source-bibls">
-        <xsl:for-each select="$column-names">
-            <xsl:if test="not(matches(., 'GS_|Authorized_|Other_en'))">
-                <!-- Finds the bibl xml:id to use for this column by testing which of the $bib-ids elements matches the column name
+        <xsl:variable name="source-bibls" as="xs:string*">
+            <xsl:for-each select="$column-names">
+                <xsl:if test="not(matches(., 'GS_|Authorized_|Other_en'))">
+                    <!-- Finds the bibl xml:id to use for this column by testing which of the $bib-ids elements matches the column name
                     before the hyphen. -->
-                <xsl:variable name="this-column-name" select="."/>
-                <xsl:sequence select="(concat('#', $bib-ids/*[contains(name(), substring-before($this-column-name, '-'))][1]))"/>
-            </xsl:if>
-        </xsl:for-each>
+                    <xsl:variable name="this-column-name" select="."/>
+                    <xsl:sequence select="(concat('#', $bib-ids/*[contains(name(), substring-before($this-column-name, '-'))][1]))"/>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:variable>
-        <xsl:if test="string-length(string($source-bibls))">
-            <xsl:attribute name="source" select="$source-bibls"/>
+        <xsl:if test="not(empty($source-bibls))">
+            <!-- Need to remove duplicates before outputting -->
+            <xsl:attribute name="source" select="distinct-values($source-bibls)"/>
         </xsl:if>
     </xsl:template>
     

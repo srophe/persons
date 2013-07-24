@@ -26,6 +26,7 @@
             <xd:p>This list needs more development.</xd:p>
             <xd:p>This is currently generating some false positives in titles referring to anonymous authors or groups. 
                 (See, e.g., 124.xml and 476.xml.)</xd:p>
+            <xd:p>Don't forget to add new roles to the next variable too! (see rant ad loc.)</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:variable name="roles">
@@ -41,7 +42,20 @@
         <role type="saint" role="saint">saint|st\.</role>
         <role type="saint" role="martyr">martyr</role>
     </xsl:variable>
-    <xsl:variable name="all-roles" select="replace(string($roles),' ','|')"/>
+
+    <xd:doc>
+        <xd:desc>
+            <xd:p>This variable is used to test a string for ANY of the above roles.</xd:p>
+            <xd:p>I know it should be automatically generated from the preceding variable, but I have not been able to find a way to
+            do so in XSL.  I tried using string-join($roles,'\|'), replace(string($roles),' ','\'), and even making the content of this variable
+            the result of cycling through $roles with a for-each outputing xsl:value-of @select="." followed by | (both encapsulated by
+            xsl:text tags and free-standing), and none of these produced pipe delimited text values.  I also tried creating an auxiliary 
+            variable using the xsl:sequence constructor with @select="$roles/*/text()" and then calling string-join on that with the pipe
+            as the delimiter, and that also failed.  After four hours working on this one problem, it is more cost effective for me to leave
+            this to someone who has better XSL skeelz than I do.  -Thomas Carlson</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:variable name="all-roles">patriarch|patr\.|catholicos|cath\.|maphrian|maphryono|metropolitan|metr\.|bishop|bp\.|abbot|priest|presbyter|monk|deacon|saint|st\.|martyr</xsl:variable>
     
  
     <xd:doc>
@@ -51,13 +65,13 @@
         </xd:desc>
         <xd:param name="all-titles">All non-empty titles, as determined by the master stylesheet.</xd:param>
         <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
-        <xd:param name="this-entry">The row correspond to this entry.  Used to check whether reign dates exist.</xd:param>
+        <xd:param name="reign-dates">The row correspond to this entry.  Used to check whether reign dates exist.</xd:param>
     </xd:doc>
     <!-- Should roles created from saint titles really be traits instead of states? -->
     <xsl:template name="roles-from-titles">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
-        <xsl:param name="this-entry"/>
+        <xsl:param name="reign-dates"/>
         <xsl:for-each select="$all-titles">
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column" select="."/>
@@ -72,7 +86,7 @@
                                 <xsl:with-param name="role" select="$roles/*[matches($subcolumn, node(), 'i')][1]/@role"/>
                                 <xsl:with-param name="column" select="."/>
                                 <xsl:with-param name="column-name" select="$column-name"/>
-                                <xsl:with-param name="this-entry" select="$this-entry"/>
+                                <xsl:with-param name="reign-dates" select="$reign-dates"/>
                             </xsl:call-template>
                         </xsl:if>
                     </xsl:for-each>
@@ -84,20 +98,20 @@
                         <xsl:with-param name="role" select="$roles/*[matches($column, node(), 'i')][1]/@role"/>
                         <xsl:with-param name="column" select="node()"/>
                         <xsl:with-param name="column-name" select="$column-name"/>
-                        <xsl:with-param name="this-entry" select="$this-entry"/>
+                        <xsl:with-param name="reign-dates" select="$reign-dates"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>
         </xsl:for-each>
         
-        <!-- If there are regnal dates, but no title roles, then add a state with reign information -->
-        <xsl:if test="string-length(normalize-space($this-entry/row/GEDSH_en-Reign)) and not($all-titles/*[matches(node(), 'patr', 'i')])">
+        <!-- If there are regnal dates, but no title roles, then add a state with reign information but no @role -->
+        <xsl:if test="exists($reign-dates) and not(exists($all-titles[matches(node(), $all-roles, 'i')]))">
             <xsl:call-template name="state-element">
                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
                 <xsl:with-param name="type">office</xsl:with-param>
-                <xsl:with-param name="column" select="$this-entry/row/GEDSH_en-Reign"/>
-                <xsl:with-param name="column-name" select="name($this-entry/row/GEDSH_en-Reign)"/>
-                <xsl:with-param name="this-entry" select="$this-entry"/>
+                <xsl:with-param name="column" select="$reign-dates[ends-with(name(),'Reign')][1]"/>
+                <xsl:with-param name="column-name" select="name($reign-dates[ends-with(name(),'Reign')][1])"/>
+                <xsl:with-param name="reign-dates" select="$reign-dates"/>
             </xsl:call-template>
         </xsl:if>
         
@@ -116,7 +130,7 @@
         values being processed from individually from a single column, this is the name of the column containing the 
         comma-separated values. The $column-name param is passed to the source and language templates so that those templates 
         can use it to detect the language and source information contained in the column name.</xd:param>
-        <xd:param name="this-entry">The row of the spreadsheet corresponding to this entry.  This is used to check if reign dates exist.</xd:param>
+        <xd:param name="reign-dates">The columns of the spreadsheet which may contain regnal dates.</xd:param>
     </xd:doc>
     <xsl:template name="state-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
@@ -124,36 +138,26 @@
         <xsl:param name="role"></xsl:param>
         <xsl:param name="column"/>
         <xsl:param name="column-name"/>
-        <xsl:param name="this-entry"/>
+        <xsl:param name="reign-dates"/>
         <state>
             <xsl:attribute name="type" select="$type"/>
             <xsl:if test="string-length($role)">
                 <xsl:attribute name="role" select="$role"/>
             </xsl:if>
             
-            <!-- Include GEDSH reign dates as @from and @to if they exist; if so, also need to cite GEDSH -->
+            <!-- Include reign dates as @from and @to if they exist; if so, also need to cite souce -->
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space($this-entry/row/GEDSH_en-Reign))">
-                    <xsl:if test="string-length(normalize-space($this-entry/row/GEDSH_en-Reign_Begin_Standard))">
-                        <xsl:attribute name="from"><xsl:value-of select="normalize-space($this-entry/row/GEDSH_en-Reign_Begin_Standard)"/></xsl:attribute>
+                <xsl:when test="exists($reign-dates)">
+                    <xsl:if test="string-length(normalize-space($reign-dates[ends-with(name(), 'Begin_Standard')]))">
+                        <xsl:attribute name="from"><xsl:value-of select="normalize-space($reign-dates[ends-with(name(), 'Begin_Standard')])"/></xsl:attribute>
                     </xsl:if>
-                    <xsl:if test="string-length(normalize-space($this-entry/row/GEDSH_en-Reign_End_Standard))">
-                        <xsl:attribute name="to"><xsl:value-of select="normalize-space($this-entry/row/GEDSH_en-Reign_End_Standard)"/></xsl:attribute>
+                    <xsl:if test="string-length(normalize-space($reign-dates[ends-with(name(), 'End_Standard')]))">
+                        <xsl:attribute name="to"><xsl:value-of select="normalize-space($reign-dates[ends-with(name(), 'End_Standard')])"/></xsl:attribute>
                     </xsl:if>
-                    <xsl:choose>
-                        <xsl:when test="matches($column-name,'GEDSH')">
-                            <xsl:call-template name="multiple-sources">
-                                <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                <xsl:with-param name="column-names" select="($column-name)"/>
-                            </xsl:call-template>
-                        </xsl:when>
-                        <xsl:otherwise> <!-- Add citation to GEDSH when this column isn't already GEDSH -->
-                            <xsl:call-template name="multiple-sources">
-                                <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                <xsl:with-param name="column-names" select="(name($this-entry/row/GEDSH_en-Reign),$column-name)"/>
-                            </xsl:call-template>
-                        </xsl:otherwise>
-                    </xsl:choose>                    
+                    <xsl:call-template name="multiple-sources">
+                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                        <xsl:with-param name="column-names" select="(name($reign-dates[ends-with(name(),'Reign')][1]),$column-name)"/>
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:call-template name="multiple-sources">

@@ -198,7 +198,7 @@
                                         <xsl:call-template name="roles-from-titles">
                                             <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                            <xsl:with-param name="this-entry"><xsl:copy-of select="."/></xsl:with-param>
+                                            <xsl:with-param name="reign-dates" select="*[matches(name(),'Reign') and string-length(normalize-space(node()))]"/>
                                         </xsl:call-template>
                                         
                                         <!-- Creates bibl elements -->
