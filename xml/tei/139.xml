@@ -78,7 +78,7 @@
                <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
                             under a Creative Commons Attribution 3.0 Unported License </licence>
             </availability>
-            <date>2013-07-23-04:00</date>
+            <date>2013-07-24-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -128,7 +128,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-07-23-04:00"> CREATED: person </change>
+                 when="2013-07-24-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -172,11 +172,15 @@
                <idno type="URI">http://en.wikipedia.org/wiki/Patriarch_George_of_Antioch</idno>
                <death when="0790" source="#bib139-2">790</death>
                <death when="0790" source="#bib139-11"/>
-               <listEvent>
-                  <event from="0758" to="0789" source="#bib139-1" type="reign">Patr. 758–789</event>
-               </listEvent>
-               <state type="office" role="patriarch" source="#bib139-2">
+               <state type="office"
+                      role="patriarch"
+                      from="0758"
+                      to="0789"
+                      source="#bib139-1 #bib139-2">
                   <desc xml:lang="en">Patriarch of Antioch</desc>
+               </state>
+               <state type="office" from="0758" to="0789" source="#bib139-1">
+                  <desc xml:lang="en-x-gedsh">Patr. 758–789</desc>
                </state>
                <bibl xml:id="bib139-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

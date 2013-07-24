@@ -180,13 +180,13 @@
                                                 <xsl:with-param name="bib-ids" select="$bib-ids"/>     
                                             </xsl:call-template>
                                         </xsl:for-each>
-                                        <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Reign"). 
+                                        <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Event"). 
                                         If so, creates a listEvent parent element to contain them. 
                                         Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
-                                        <xsl:if test="exists(*[contains(name(), 'Reign') and string-length(normalize-space(node()))])">
+                                        <xsl:if test="exists(*[contains(name(), 'Event') and string-length(normalize-space(node()))])">
                                             <listEvent>
                                                 <xsl:for-each 
-                                                    select="*[ends-with(name(),'Reign')]">
+                                                    select="*[ends-with(name(),'Event')]">
                                                         <xsl:call-template name="event-element">
                                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                         </xsl:call-template>
@@ -198,6 +198,7 @@
                                         <xsl:call-template name="roles-from-titles">
                                             <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                            <xsl:with-param name="this-entry"><xsl:copy-of select="."/></xsl:with-param>
                                         </xsl:call-template>
                                         
                                         <!-- Creates bibl elements -->

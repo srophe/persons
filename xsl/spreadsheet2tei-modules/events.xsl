@@ -37,7 +37,7 @@
                 <xsl:when test="contains($column-name, 'Floruit')">floruit</xsl:when>
                 <xsl:when test="contains($column-name, 'DOB')">birth</xsl:when>
                 <xsl:when test="contains($column-name, 'DOD')">death</xsl:when>
-                <xsl:when test="contains($column-name, 'Reign')">event</xsl:when>
+                <xsl:when test="contains($column-name, 'Event')">event</xsl:when>
             </xsl:choose>
         </xsl:param>
         
@@ -61,9 +61,8 @@
                 <!-- Adds custom type and, if relevant, human-readable date as content of element
                 Any additional custom types should go here.-->
                 <xsl:choose>
-                    <xsl:when test="contains(name(), 'Reign')">
-                        <!-- Is "incumbency" or "term-of-office" better for this? -->
-                        <xsl:attribute name="type" select="'reign'"/>
+                    <xsl:when test="contains(name(), 'Event')">
+                        <xsl:attribute name="type" select="'event'"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="."/>
