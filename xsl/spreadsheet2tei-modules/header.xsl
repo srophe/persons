@@ -21,10 +21,14 @@
             <xd:p>Creates a TEI header, according to the specifications of the TEI Header Manual for Syriaca.org.</xd:p>
         </xd:desc>
         <xd:param name="record-id">The record ID of the person record</xd:param>
+        <xd:param name="bib-ids">A sequence of @xml:id attribute values for bibl elements, contained as the content of elements 
+            which have as names the column name of a column coming from that source. For example, $bib-ids may contain the following: 
+            &lt;GEDSH_en-Full&gt;bibl1-1&lt;/GEDSH_en-Full&gt;</xd:param>
         <xd:param name="record-title">The value to be used as the title of the record</xd:param>
     </xd:doc>
     <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
+        <xsl:param name="bib-ids"/>
         <xsl:param name="record-title">
             <xsl:choose>
                 <xsl:when test="string-length(normalize-space(Calculated_Name))">
@@ -36,7 +40,8 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
-                    <title xml:lang="en"><xsl:value-of select="$record-title"/></title>
+                    <title level="a" xml:lang="en"><xsl:value-of select="$record-title"/></title>
+                    <title level="m" xml:lang="en">The Syriac Prosopography</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The Andrew W. Mellon Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
@@ -110,8 +115,30 @@
                     <authority>Syriaca.org: The Syriac Reference Portal</authority>
                     <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/>/source</idno>
                     <availability>
-                        <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
-                            under a Creative Commons Attribution 3.0 Unported License </licence>
+                        <licence target="http://creativecommons.org/licenses/by/3.0/">
+                            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                            <xsl:if test="*[matches(name(),'Barsoum_syr|Barsoum_ar') and string-length(normalize-space(node()))]">
+                                <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                                        <xsl:if test="*[matches(name(),'Barsoum_syr') and string-length(normalize-space(node()))]">
+                                            <bibl>
+                                                <ptr>
+                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_syr')][1])"/>
+                                                </ptr>
+                                            </bibl>
+                                        </xsl:if>
+                                        <xsl:if test="*[matches(name(),'Barsoum_ar') and string-length(normalize-space(node()))]">
+                                            <bibl>
+                                                <ptr>
+                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_ar')][1])"/>
+                                                </ptr>
+                                            </bibl>
+                                        </xsl:if>
+                                    </listBibl>
+                                    <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/></note>
+                                </p>
+                            </xsl:if>
+                        </licence>
                     </availability>
                     <date>
                         <xsl:value-of select="current-date()"/>

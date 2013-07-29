@@ -7,7 +7,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Nilus the Solitary</title>
+            <title level="a" xml:lang="en">Nilus the Solitary</title>
+            <title level="m" xml:lang="en">The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The Andrew W. Mellon Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -76,10 +77,23 @@
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
             <idno type="URI">http://syriaca.org/person/657/source</idno>
             <availability>
-               <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
-                            under a Creative Commons Attribution 3.0 Unported License </licence>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                  <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                        <bibl>
+                           <ptr target="#bib657-4"/>
+                        </bibl>
+                        <bibl>
+                           <ptr target="#bib657-3"/>
+                        </bibl>
+                     </listBibl>
+                     <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
             </availability>
-            <date>2013-07-24-04:00</date>
+            <date>2013-07-29-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -129,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-07-24-04:00"> CREATED: person </change>
+                 when="2013-07-29-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,7 +162,7 @@
                          xml:lang="en"
                          source="#bib657-2">
                   <forename sort="1">Nilus</forename> 
-                  <addName type="untagged-title" sort="2">the Recluse</addName>
+                  <roleName type="office" sort="2">the Recluse</roleName>
                </persName>
                <persName xml:id="name657-3"
                          corresp="#name657-2 #name657-4a #name657-4b"
@@ -204,6 +218,9 @@
                <idno type="URI">http://viaf.org/viaf/166768852</idno>
                <floruit source="#bib657-1">4th/5th cent.</floruit>
                <death when="0430" source="#bib657-11"/>
+               <state type="office" role="ascetic" source="#bib657-2">
+                  <desc xml:lang="en">the Recluse</desc>
+               </state>
                <bibl xml:id="bib657-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

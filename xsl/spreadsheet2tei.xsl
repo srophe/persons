@@ -149,6 +149,7 @@
                     <!-- Adds header -->
                     <xsl:call-template name="header">
                         <xsl:with-param name="record-id" select="$record-id"/>
+                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
                     </xsl:call-template>
                     
                     <text>

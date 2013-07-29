@@ -30,15 +30,23 @@
         </xd:desc>
     </xd:doc>
     <xsl:variable name="roles">
+        <role type="office" role="empress">empress</role>
         <role type="office" role="patriarch">patriarch|patr\.</role>
         <role type="office" role="catholicos">catholicos|cath\.</role>
         <role type="office" role="maphrian">maphrian|maphryono</role>
         <role type="office" role="metropolitan">metropolitan|metr\.</role>
         <role type="office" role="bishop">bishop|bp\.</role>
+        <role type="office" role="periodeutes">periodeutes</role>
         <role type="office" role="abbot">abbot</role>
         <role type="office" role="priest">priest|presbyter</role>
         <role type="office" role="monk">monk</role>
+        <role type="office" role="archdeacon">archdeacon</role>
         <role type="office" role="deacon">deacon</role>
+        <role type="office" role="ascetic">stylite|ascetic|recluse|stranger</role>
+        <role type="office" role="chanter">chanter</role>
+        <role type="office" role="count">count</role>
+        <role type="office" role="historian">historian</role>
+        <role type="office" role="philosopher">philosopher</role>
         <role type="saint" role="saint">saint|st\.</role>
         <role type="saint" role="martyr">martyr</role>
     </xsl:variable>
@@ -55,7 +63,7 @@
             this to someone who has better XSL skeelz than I do.  -Thomas Carlson</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:variable name="all-roles">patriarch|patr\.|catholicos|cath\.|maphrian|maphryono|metropolitan|metr\.|bishop|bp\.|abbot|priest|presbyter|monk|deacon|saint|st\.|martyr</xsl:variable>
+    <xsl:variable name="all-roles">patriarch|patr\.|catholicos|cath\.|maphrian|maphryono|metropolitan|metr\.|bishop|bp\.|abbot|priest|presbyter|monk|deacon|saint|st\.|martyr|archdeacon|count|chanter|stylite|ascetic|recluse|stranger|historian|empress|philosopher|periodeutes</xsl:variable>
     
  
     <xd:doc>

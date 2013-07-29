@@ -7,7 +7,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Count Oikoumenios</title>
+            <title level="a" xml:lang="en">Count Oikoumenios</title>
+            <title level="m" xml:lang="en">The Syriac Prosopography</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The Andrew W. Mellon Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
@@ -75,10 +76,23 @@
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
             <idno type="URI">http://syriaca.org/person/56/source</idno>
             <availability>
-               <licence target="http://creativecommons.org/licenses/by/3.0/"> Distributed
-                            under a Creative Commons Attribution 3.0 Unported License </licence>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                  <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                        <bibl>
+                           <ptr target="#bib56-4"/>
+                        </bibl>
+                        <bibl>
+                           <ptr target="#bib56-3"/>
+                        </bibl>
+                     </listBibl>
+                     <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/>
+                     </note>
+                  </p>
+               </licence>
             </availability>
-            <date>2013-07-24-04:00</date>
+            <date>2013-07-29-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -128,7 +142,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-07-24-04:00"> CREATED: person </change>
+                 when="2013-07-29-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -139,7 +153,7 @@
                          corresp="#name56-3 #name56-4a #name56-4b"
                          xml:lang="en"
                          source="#bib56-2">
-                  <addName type="untagged-title" sort="2">Count</addName> 
+                  <roleName type="office" sort="2">Count</roleName> 
                   <forename sort="2">Oecumenius</forename>
                </persName>
                <persName xml:id="name56-3"
@@ -167,7 +181,7 @@
                <persName xml:id="name56-8"
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="untagged-title" sort="2">Count</addName> 
+                  <roleName type="office" sort="2">Count</roleName> 
                   <forename sort="2">Oikoumenios</forename>
                </persName>
                <idno type="URI">http://syriaca.org/person/56</idno>
@@ -179,6 +193,12 @@
                <idno type="URI">http://viaf.org/viaf/70750647</idno>
                <idno type="URI">http://viaf.org/viaf/98094820</idno>
                <idno type="URI">http://viaf.org/viaf/234258526</idno>
+               <state type="office" role="count" source="#bib56-2">
+                  <desc xml:lang="en">Count</desc>
+               </state>
+               <state type="office" role="count">
+                  <desc xml:lang="en-x-gedsh">Count</desc>
+               </state>
                <bibl xml:id="bib56-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
