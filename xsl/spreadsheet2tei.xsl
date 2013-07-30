@@ -175,16 +175,20 @@
                                         </xsl:call-template>
                                       
                                       <!-- Adds birth/death/floruit/event elements -->
-                                        <xsl:for-each 
+                                        <xsl:call-template name="personal-events">
+                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                            <xsl:with-param name="event-columns" select="*[contains(name(),'Floruit') or contains(name(),'DOB') or contains(name(),'DOD') or contains(name(),'Event')]"/>
+                                        </xsl:call-template>
+                                        <!-- <xsl:for-each 
                                             select="*[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
                                             <xsl:call-template name="event-element">
                                                 <xsl:with-param name="bib-ids" select="$bib-ids"/>     
                                             </xsl:call-template>
-                                        </xsl:for-each>
+                                        </xsl:for-each>  -->
                                         <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Event"). 
                                         If so, creates a listEvent parent element to contain them. 
                                         Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
-                                        <xsl:if test="exists(*[contains(name(), 'Event') and string-length(normalize-space(node()))])">
+                                        <!--  <xsl:if test="exists(*[contains(name(), 'Event') and string-length(normalize-space(node()))])">
                                             <listEvent>
                                                 <xsl:for-each 
                                                     select="*[ends-with(name(),'Event')]">
@@ -193,7 +197,7 @@
                                                         </xsl:call-template>
                                                 </xsl:for-each>
                                             </listEvent>
-                                        </xsl:if>
+                                        </xsl:if> -->
                                         
                                         <!-- Creates states -->
                                         <xsl:call-template name="roles-from-titles">

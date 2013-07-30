@@ -17,6 +17,70 @@
     
     <xd:doc>
         <xd:desc>
+            <xd:p>Cycles through types of events to create only a single <gi>birth</gi> or <gi>death</gi> event.</xd:p>
+        </xd:desc>
+        <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
+        <xd:param name="event-columns">The various columns which have dates for events.</xd:param>
+    </xd:doc>
+    <xsl:template name="personal-events">
+        <xsl:param name="bib-ids"/>
+        <xsl:param name="event-columns"/>
+        
+        <!-- Create a birth element if the data exists for one -->
+        <xsl:if test="$event-columns[contains(name(),'DOB') and string-length(normalize-space(node()))]">
+            <xsl:for-each select="$event-columns[contains(name(),'DOB') and string-length(normalize-space(node()))][1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
+            <xsl:call-template name="event-element">
+                <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                <xsl:with-param name="column-name" select="name(.)"/>
+            </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- Create a death element if the data exists for one -->
+        <xsl:if test="$event-columns[contains(name(),'DOD') and string-length(normalize-space(node()))]">
+            <xsl:for-each select="$event-columns[contains(name(),'DOD') and string-length(normalize-space(node()))][1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
+                <xsl:call-template name="event-element">
+                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-name" select="name(.)"/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- Create a floruit element if the data exists for one -->
+        <xsl:if test="$event-columns[contains(name(),'Floruit') and string-length(normalize-space(node()))]">
+            <xsl:for-each select="$event-columns[contains(name(),'Floruit') and string-length(normalize-space(node()))][1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
+                <xsl:call-template name="event-element">
+                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-name" select="name(.)"/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- <xsl:for-each 
+            select="$event-columns[ends-with(name(),'Floruit')]">
+            <xsl:call-template name="event-element">
+                <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                <xsl:with-param name="column-name" select="name(.)"/>
+            </xsl:call-template>
+        </xsl:for-each> -->
+        <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Event"). 
+                                        If so, creates a listEvent parent element to contain them. 
+                                        Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
+        <xsl:if test="exists(*[contains(name(), 'Event') and string-length(normalize-space(node()))])">
+            <listEvent>
+                <xsl:for-each 
+                    select="$event-columns[ends-with(name(),'Event')]">
+                    <xsl:call-template name="event-element">
+                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                        <xsl:with-param name="column-name" select="name(.)"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </listEvent>
+        </xsl:if>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>
             <xd:p>Creates a birth, death, floruit, event, etc. element using the current column/context node as human-readable content and 
             using machine-readable dates from other columns whose names include the current column's name. (E.g., the GEDSH_DOB 
             column contains human-readable content, whereas GEDSH_DOB_Standard, GEDSH_DOB_Not_Before, and GEDSH_DOB_Not_After are 
