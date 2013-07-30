@@ -111,9 +111,6 @@
                 <!-- Adds machine-readable attributes to date. -->
                 <xsl:call-template name="date-attributes">
                     <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
-                    <xsl:with-param name="next-element-name" select="name()"/>
-                    <xsl:with-param name="next-element" select="node()"/>
-                    <xsl:with-param name="count" select="0"/>
                 </xsl:call-template>
         
                 <!-- Adds source attributes. -->
@@ -136,7 +133,7 @@
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
-            <xd:p>This template cycles through date columns, adding machine-readable date attributes to an element, based on 
+            <xd:p>This template adds machine-readable date attributes to an element, based on 
                 text strings contained in the source XML element's name.
                 <xd:ul>
                     <xd:li>_Begin_Standard --> @from</xd:li>
@@ -146,23 +143,34 @@
                     <xd:li>_Not_After --> @notAfter</xd:li>
                 </xd:ul>
             </xd:p>
+            <xd:p>Modified to make it not recursive, just checking for the existence of such columns.  -- TAC 7/30/2013</xd:p>
         </xd:desc>
         <xd:param name="date-type">Uses the name of the human-readable field, except in fields that have "_Begin" and "_End",
-            which it replaces so that @from and @to attributes can be added to the same element. Fields should be named in such a way that machine-readable fields contain the name of the field that has human-readable date data. If the template is called and the <xd:ref name="next-element-name" type="parameter">next element name</xd:ref> does not contain this date-type, the template will be exited.</xd:param>
-        <xd:param name="next-element-name">The name of the next element to be processed. This is used in combination with the <xd:ref name="count" type="parameter">count param</xd:ref> to cycle through the set of fields used to create an element with dates.</xd:param>
-        <xd:param name="next-element">The content of the next element to be processed. This is used in combination with the <xd:ref name="count" type="parameter">count param</xd:ref> to cycle through the set of fields used to create an element with dates.</xd:param>
-        <xd:param name="count">A counter to facilitate cycling through fields recursively.</xd:param>
+            which it replaces so that @from and @to attributes can be added to the same element. Fields should be named in such a way that machine-readable fields contain the name of the field that has human-readable date data.</xd:param>
     </xd:doc>
     <xsl:template name="date-attributes" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="date-type"/>
-        <xsl:param name="next-element-name"/>
-        <xsl:param name="next-element"/>
-        <xsl:param name="count"/>
         <!-- Tests whether the beginning of the field name matches the name of the human-readable field. 
         For this to work, machine-readable date fields need to start with the field name of the corresponding human-readable field.
         For example, GEDSH_en-DOB and GEDSH_en-DOB_Standard -->
         <!-- What should be done if a _Begin field or an _End field have notBefore/notAfter attributes? -->
-        <xsl:if test="contains($next-element-name, $date-type)">
+        <xsl:if test="../*[contains(name(),$date-type) and ends-with(name(),'_Begin_Standard') and string-length(normalize-space(node()))]">
+            <xsl:attribute name="from" select="../*[contains(name(),$date-type) and ends-with(name(),'_Begin_Standard') and string-length(normalize-space(node()))][1]"/>
+        </xsl:if>
+        <xsl:if test="../*[contains(name(),$date-type) and ends-with(name(),'_End_Standard') and string-length(normalize-space(node()))]">
+            <xsl:attribute name="to" select="../*[contains(name(),$date-type) and ends-with(name(),'_End_Standard') and string-length(normalize-space(node()))][1]"/>
+        </xsl:if>
+        <xsl:if test="../*[contains(name(),$date-type) and ends-with(name(),'_Standard') and string-length(normalize-space(node()))]">
+            <xsl:attribute name="when" select="../*[contains(name(),$date-type) and ends-with(name(),'_Standard') and string-length(normalize-space(node()))][1]"/>
+        </xsl:if>
+        <xsl:if test="../*[contains(name(),$date-type) and ends-with(name(),'_Not_Before') and string-length(normalize-space(node()))]">
+            <xsl:attribute name="notBefore" select="../*[contains(name(),$date-type) and ends-with(name(),'_Not_Before') and string-length(normalize-space(node()))]"/>
+        </xsl:if>
+        <xsl:if test="../*[contains(name(),$date-type) and ends-with(name(),'_Not_After') and string-length(normalize-space(node()))]">
+            <xsl:attribute name="notAfter" select="../*[contains(name(),$date-type) and ends-with(name(),'_Not_After') and string-length(normalize-space(node()))]"/>
+        </xsl:if>
+        
+        <!-- <xsl:if test="contains($next-element-name, $date-type)">
             <xsl:if test="string-length(normalize-space($next-element))">
                 <xsl:choose>
                     <xsl:when test="contains($next-element-name, '_Begin_Standard')">
@@ -188,7 +196,7 @@
                 <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
                 <xsl:with-param name="count" select="$count + 1"/>
             </xsl:call-template>
-        </xsl:if>
+        </xsl:if> -->
     </xsl:template>
     
 </xsl:stylesheet>
