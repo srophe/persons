@@ -29,16 +29,10 @@
         <!-- Create a birth element if the data exists for one -->
         <xsl:if test="$event-columns[contains(name(),'DOB') and string-length(normalize-space(node()))]">
             <xsl:variable name="birth-columns" select="$event-columns[contains(name(),'DOB') and string-length(normalize-space(node()))]"/>
-            <xsl:variable name="birth-columns-names" as="xs:string*">
-                <xsl:for-each select="$birth-columns">
-                    <xsl:sequence select="(name(.))"/>
-                </xsl:for-each>
-            </xsl:variable>
             <xsl:for-each select="$birth-columns[1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
             <xsl:call-template name="event-element">
                 <xsl:with-param name="bib-ids" select="$bib-ids"/>
                 <xsl:with-param name="column-name" select="name(.)"/>
-                <xsl:with-param name="relevant-columns" select="$birth-columns-names"/>
             </xsl:call-template>
             </xsl:for-each>
         </xsl:if>
@@ -46,16 +40,10 @@
         <!-- Create a death element if the data exists for one -->
         <xsl:if test="$event-columns[contains(name(),'DOD') and string-length(normalize-space(node()))]">
             <xsl:variable name="death-columns" select="$event-columns[contains(name(),'DOD') and string-length(normalize-space(node()))]"/>
-            <xsl:variable name="death-columns-names" as="xs:string*">
-                <xsl:for-each select="$death-columns">
-                    <xsl:sequence select="(name(.))"/>
-                </xsl:for-each>
-            </xsl:variable>
             <xsl:for-each select="$death-columns[1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
                 <xsl:call-template name="event-element">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
                     <xsl:with-param name="column-name" select="name(.)"/>
-                    <xsl:with-param name="relevant-columns" select="$death-columns-names"/>
                 </xsl:call-template>
             </xsl:for-each>
         </xsl:if>
@@ -63,16 +51,10 @@
         <!-- Create a floruit element if the data exists for one -->
         <xsl:if test="$event-columns[contains(name(),'Floruit') and string-length(normalize-space(node()))]">
             <xsl:variable name="floruit-columns" select="$event-columns[contains(name(),'Floruit') and string-length(normalize-space(node()))]"/>
-            <xsl:variable name="floruit-columns-names" as="xs:string*">
-                <xsl:for-each select="$floruit-columns">
-                    <xsl:sequence select="(name(.))"/>
-                </xsl:for-each>
-            </xsl:variable>
             <xsl:for-each select="$floruit-columns[1]"> <!-- wrapping it in for-each is an awful hack to make the context work in the called template -->
                 <xsl:call-template name="event-element">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
                     <xsl:with-param name="column-name" select="name(.)"/>
-                    <xsl:with-param name="relevant-columns" select="$floruit-columns-names"/>
                 </xsl:call-template>
             </xsl:for-each>
         </xsl:if>
@@ -111,13 +93,11 @@
         </xd:desc>
         <xd:param name="bib-ids">The $bib-ids param is used for adding @source attributes. (See the source template.)</xd:param>
         <xd:param name="column-name">The name of the column being processed (must be specified when template is called).</xd:param>
-        <xd:param name="relevant-columns">The names of all columns containing information relevant to this event.</xd:param>
         <xd:param name="element-name">The name of the TEI element to be created, determined from the $column-name.</xd:param>
     </xd:doc>
     <xsl:template name="event-element" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
         <xsl:param name="column-name" select="name()"/>
-        <xsl:param name="relevant-columns" select="(name())"></xsl:param>
         <xsl:param name="element-name">
             <!-- Names of date-related elements to be created go here. -->
             <xsl:choose>
@@ -137,9 +117,9 @@
                 </xsl:call-template>
         
                 <!-- Adds source attributes. -->
-                <xsl:call-template name="multiple-sources">
+                <xsl:call-template name="source">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                    <xsl:with-param name="column-names" select="$relevant-columns"/>
+                    <xsl:with-param name="column-name" select="name(.)"/>
                 </xsl:call-template>
                 
                 <!-- Adds custom type and, if relevant, human-readable date as content of element
