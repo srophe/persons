@@ -80,7 +80,7 @@
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
         <xsl:param name="reign-dates"/>
-        <xsl:for-each select="$all-titles">
+        <xsl:for-each select="$all-titles[not(matches(name(),'Other_en|GS_en'))]">
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column" select="."/>
             <xsl:choose>
