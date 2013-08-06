@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-05-04:00</date>
+            <date>2013-08-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -142,7 +142,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-08-05-04:00"> CREATED: person </change>
+                 when="2013-08-06-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -150,42 +150,35 @@
          <listPerson>
             <person xml:id="person-59">
                <persName xml:id="name59-1"
+                         corresp="#name59-2 #name59-3 #name59-4"
                          xml:lang="en-x-gedsh"
-                         source="#bib59-1"
+                         source="#bib59-1 #bib59-2"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Daniel</forename> 
                   <addName type="untagged-title" sort="2">of Ṣalaḥ</addName>
                </persName>
                <persName xml:id="name59-2"
-                         corresp="#name59-3 #name59-4a #name59-4b"
-                         xml:lang="en"
-                         source="#bib59-2">
-                  <forename sort="1">Daniel</forename> 
-                  <addName type="untagged-title" sort="2">of Ṣalaḥ</addName>
-               </persName>
-               <persName xml:id="name59-3"
-                         corresp="#name59-2 #name59-4a #name59-4b"
+                         corresp="#name59-1 #name59-3 #name59-4"
                          xml:lang="ar"
                          source="#bib59-3">
                   <forename sort="1">دانيال</forename> 
                   <addName type="untagged-title" sort="2">الصلحي</addName>
                </persName>
-               <persName xml:id="name59-4a"
-                         corresp="#name59-2 #name59-3 #name59-4b"
+               <persName xml:id="name59-3"
+                         corresp="#name59-1 #name59-2 #name59-4"
                          xml:lang="syr"
-                         source="#bib59-4"
-                         syriaca-tags="#syriaca-headword">
+                         source="#bib59-4">
                   <forename sort="1">ܕܢܝܐܝܠ</forename> 
                   <addName type="untagged-title" sort="2">ܨܠܚܝܐ</addName>
                </persName>
-               <persName xml:id="name59-4b"
-                         corresp="#name59-2 #name59-3 #name59-4a"
+               <persName xml:id="name59-4"
+                         corresp="#name59-1 #name59-2 #name59-3"
                          xml:lang="syr-Syrj"
                          source="#bib59-4">
                   <forename sort="1">ܕܳܢܝܺܐܝܠ</forename> 
                   <addName type="untagged-title" sort="2">ܨܰܠܚܳܝܐ</addName>
                </persName>
-               <persName xml:id="name59-10" xml:lang="en" source="#bib59-10">Daniel of Salah</persName>
+               <persName xml:id="name59-5" xml:lang="en" source="#bib59-10">Daniel of Salah</persName>
                <idno type="URI">http://syriaca.org/person/59</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|59</idno>
                <idno type="URI">http://viaf.org/viaf/2432364</idno>

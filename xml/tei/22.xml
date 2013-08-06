@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-05-04:00</date>
+            <date>2013-08-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,52 +143,38 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-08-05-04:00"> CREATED: person </change>
+                 when="2013-08-06-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="person-22">
-               <persName xml:id="name22-4a"
-                         corresp="#name22-4b"
+               <persName xml:id="name22-1"
+                         corresp="#name22-2 #name22-3"
                          xml:lang="syr"
-                         source="#bib22-4">
+                         source="#bib22-4 #bib22-6 #bib22-7"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܟܣܘܣܛܘܣ</forename>
                </persName>
-               <persName xml:id="name22-4b"
-                         corresp="#name22-4a"
+               <persName xml:id="name22-2"
+                         corresp="#name22-1"
                          xml:lang="syr-Syrj"
                          source="#bib22-4">
                   <forename sort="1">ܟܣܽܘܣܛܘܣ</forename>
                </persName>
-               <persName xml:id="name22-5a" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <forename sort="1">ܟܣܘܣܛܘܣ</forename>
-               </persName>
-               <persName xml:id="name22-6a"
-                         corresp="#name22-6b #name22-7a"
-                         xml:lang="syr"
-                         source="#bib22-6">
-                  <forename sort="1">ܟܣܘܣܛܘܣ</forename>
-               </persName>
-               <persName xml:id="name22-6b"
-                         corresp="#name22-6a #name22-7a"
+               <persName xml:id="name22-3"
+                         corresp="#name22-1"
                          xml:lang="syr-Syrn"
                          source="#bib22-6">
                   <forename sort="1">ܟܣܘܿܣܛܘܿܣ</forename>
                </persName>
-               <persName xml:id="name22-7a"
-                         corresp="#name22-6a #name22-6b"
-                         xml:lang="syr"
-                         source="#bib22-7">
-                  <forename sort="1">ܟܣܘܣܛܘܣ</forename>
-               </persName>
-               <persName xml:id="name22-8"
+               <persName xml:id="name22-4"
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Xystus</forename>
                </persName>
-               <persName xml:id="name22-10" xml:lang="en" source="#bib22-10">Sixtus of Rome</persName>
+               <persName xml:id="name22-5" xml:lang="en" source="#bib22-10">Sixtus of Rome</persName>
                <idno type="URI">http://syriaca.org/person/22</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|22</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Sixtus of Rome&amp;sT=keywords</idno>

@@ -90,7 +90,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-05-04:00</date>
+            <date>2013-08-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -140,7 +140,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-08-05-04:00"> CREATED: person </change>
+                 when="2013-08-06-04:00"> CREATED: person </change>
          <change type="planned">Should this record be matched with http://viaf.org/hosted/syriac/32757/ or http://viaf.org/hosted/syriac/27999/ ?</change>
       </revisionDesc>
    </teiHeader>
@@ -148,50 +148,44 @@
       <body>
          <listPerson>
             <person xml:id="person-856">
-               <persName xml:id="name856-2"
-                         corresp="#name856-3"
+               <persName xml:id="name856-1"
+                         corresp="#name856-2"
                          xml:lang="en"
                          source="#bib856-2">
                   <forename sort="1">Macarius</forename> 
                   <addName type="untagged-title" sort="2">the Great and Egyptian</addName>
                </persName>
-               <persName xml:id="name856-3"
-                         corresp="#name856-2"
+               <persName xml:id="name856-2"
+                         corresp="#name856-1"
                          xml:lang="ar"
                          source="#bib856-3">
                   <forename sort="1">مقاريوس</forename> 
                   <addName type="untagged-title" sort="2">المصري</addName>
                </persName>
-               <persName xml:id="name856-5a" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name856-3" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܩܪܝܣ</forename>
                </persName>
-               <persName xml:id="name856-6a"
-                         corresp="#name856-6b #name856-7a"
+               <persName xml:id="name856-4"
+                         corresp="#name856-5"
                          xml:lang="syr"
-                         source="#bib856-6">
+                         source="#bib856-6 #bib856-7">
                   <forename sort="1">ܡܩܪܝܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
                </persName>
-               <persName xml:id="name856-6b"
-                         corresp="#name856-6a #name856-7a"
+               <persName xml:id="name856-5"
+                         corresp="#name856-4"
                          xml:lang="syr-Syrn"
                          source="#bib856-6">
                   <forename sort="1">ܡܲܩܵܪܝܼܣ</forename> 
                   <addName type="untagged-title" sort="2">ܐܚܪܹܢܵܐ</addName>
                </persName>
-               <persName xml:id="name856-7a"
-                         corresp="#name856-6a #name856-6b"
-                         xml:lang="syr"
-                         source="#bib856-7">
-                  <forename sort="1">ܡܩܪܝܣ</forename> 
-                  <addName type="untagged-title" sort="2">ܐܚܪܢܐ</addName>
-               </persName>
-               <persName xml:id="name856-8"
+               <persName xml:id="name856-6"
                          xml:lang="en-x-gedsh"
+                         source="#bib856-10"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Macarius</forename>
                </persName>
-               <persName xml:id="name856-10" xml:lang="en" source="#bib856-10">Abba Macarius; Macarius</persName>
+               <persName xml:id="name856-7" xml:lang="en" source="#bib856-10">Abba Macarius</persName>
                <idno type="URI">http://syriaca.org/person/856</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|856</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Abba Macarius&amp;sT=keywords</idno>

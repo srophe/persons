@@ -18,6 +18,7 @@
         <xd:desc>
             <xd:p>This template creates the persName element with all its attributes, then calls the name-parts template 
             to fill in any child elements containing individual parts of the name.</xd:p>
+            <xd:p>Modified to avoid duplicating identical names.</xd:p>
         </xd:desc>
         <xd:param name="all-full-names">This param contains a sequence of all the elements containing full names. It is 
         used to help create the $name-ids and $name-links params.</xd:param>
@@ -63,52 +64,84 @@
                 <xsl:otherwise>given</xsl:otherwise>
             </xsl:choose>
         </xsl:param>
+        
+        <!-- context pointer to the row, used to find other columns to do name-parts -->
+        <xsl:variable name="this-row" select="."/>
+        
         <!-- Selects any non-empty fields ending with "_Full" or "-Full" (i.e., full names) -->
-        <xsl:for-each
-            select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
+        <xsl:variable name="full_names" as="xs:string*">
+            <xsl:for-each select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
+                <xsl:choose>
+                    <xsl:when test="contains(name(),'CBSC')">
+                        <xsl:sequence select="tokenize(node(),';\s')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:sequence select="normalize-space(node())"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="unique_names" as="xs:string*"><xsl:sequence select="distinct-values($full_names)"/></xsl:variable>
+        
+        <xsl:for-each select="$unique_names">
+            <xsl:variable name="this_name" select="."/>
             <persName>
                 <!-- Adds xml:id attribute. -->
                 <xsl:call-template name="persName-id">
                     <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                    <xsl:with-param name="unique-names" select="$unique_names"/>
                     <xsl:with-param name="person-name-id" select="$person-name-id"/>
                     <xsl:with-param name="ids-base" select="$ids-base"/>
+                    <xsl:with-param name="current-name" select="."/>
                 </xsl:call-template>
                 <!-- Adds language attributes. -->
-                <xsl:call-template name="language"/>
+                <xsl:call-template name="language">
+                    <xsl:with-param name="column-name" select="name($all-full-names/*[compare(normalize-space(node()),$this_name)=0 or (contains(name(),'CBSC') and exists(index-of(tokenize(node(),';\s'),$this_name)))][1])"/>
+                </xsl:call-template>
                 <!-- Adds source attributes. -->
-                <xsl:call-template name="source">
+                <xsl:call-template name="multiple-sources">
                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-names" select="$all-full-names/*[compare(normalize-space(node()),$this_name)=0 or (contains(name(),'CBSC') and exists(index-of(tokenize(node(),';\s'),$this_name)))]/name()"/>
                 </xsl:call-template>
                 <!-- Shows which name forms are syriaca.org headwords. -->
                 <!-- Need to test whether this properly overrides GEDSH with GS as headword. -->
                 <xsl:choose>
-                    <xsl:when test="contains(name(),'GS_en')">
+                    <xsl:when test="$all-full-names/*[contains(name(),'GS_en') and compare(normalize-space(node()),$this_name)=0]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))">
+                    <xsl:when test="$all-full-names/*[contains(name(),'GEDSH') and compare(normalize-space(node()),$this_name)=0 and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="contains(name(),'Authorized_syr')">
+                    <xsl:when test="$all-full-names/*[contains(name(),'Authorized_syr') and compare(normalize-space(node()),$this_name)=0]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="contains(name(), 'Barsoum_syr-NV') and contains(../Authorized_syr-Source, 'Barsoum')">
+                    <xsl:when test="$all-full-names/*[contains(name(), 'Barsoum_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains(../Authorized_syr-Source, 'Barsoum')]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="contains(name(), 'Abdisho_YdQ_syr-NV') and contains(../Authorized_syr-Source, 'Abdisho')">
+                    <xsl:when test="$all-full-names/*[contains(name(), 'Abdisho_YdQ_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains(../Authorized_syr-Source, 'Abdisho')]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
                 </xsl:choose>
-                <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source 
+                
+                <!-- To make this work with multiple CBSC names, don't call name-parts template if name only a CBSC alternate - just output name -->
+                <xsl:choose>
+                    <xsl:when test="$all-full-names/*[compare(normalize-space(node()),$this_name)=0]">
+                        <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source 
                     and vocalization. E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
-                <xsl:variable name="group" select="replace(name(), '(_|-)Full', '')"/>
-                <!-- Adds name parts -->
-                <xsl:call-template name="name-parts">
-                    <xsl:with-param name="name" select="."/>
-                    <xsl:with-param name="count" select="1"/>
-                    <xsl:with-param name="all-name-parts"
-                        select="following-sibling::*[contains(name(), $group)]"/>
-                    <xsl:with-param name="sort" select="$sort"/>
-                </xsl:call-template>
+                        <xsl:variable name="group" select="replace(name($all-full-names/*[compare(normalize-space(node()),$this_name)=0][1]), '(_|-)Full', '')"/>
+                        <!-- Adds name parts -->
+                        <xsl:call-template name="name-parts">
+                            <xsl:with-param name="name" select="$all-full-names/*[compare(normalize-space(node()),$this_name)=0][1]"/>
+                            <xsl:with-param name="count" select="1"/>
+                            <xsl:with-param name="all-name-parts"
+                                select="$this-row/*[contains(name(), $group)]"/> <!-- following-sibling::*[contains(name(), $group)] only yields full-name fields, b/c no longer implicit context! -->
+                            <xsl:with-param name="sort" select="$sort"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </persName>
         </xsl:for-each>
     </xsl:template>
@@ -121,6 +154,7 @@
         </xd:desc>
         <xd:param name="all-full-names">This param contains a sequence of all the elements containing full names. It is 
             used to help create the $name-ids and $name-links params.</xd:param>
+        <xd:param name="unique-names">This param contains a sequence of strings representing unique names.</xd:param>
         <xd:param name="person-name-id">This param contains the first part of the persName @xml:id attribute content in the 
             format "name10", where the 10 is the SRP ID of the person entity. It is used for creating the full persName @xml:id 
             by calling the persName-id template, which is in the format "name10-1".</xd:param>
@@ -132,19 +166,19 @@
         <xd:param name="name-links">Creates a sequence of links to @xml:id attributes of persName elements, by adding a "#" to the beginning of each 
             node that has content. IMPORTANT - This should create links only for names that actually exist, since these links are 
             added in @corresp to corresponding name elements.</xd:param>
-        <xd:param name="current-column-name">The name of the current column being processed. By default, this is the name of the 
-        context node.</xd:param>
+        <xd:param name="current-name">The current string name being processed.</xd:param>
     </xd:doc>
     <xsl:template name="persName-id" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="all-full-names"/>
+        <xsl:param name="unique-names"/>
         <xsl:param name="person-name-id"/>
         <xsl:param name="ids-base"/>
         <xsl:param name="name-ids">
             <xsl:for-each select="$all-full-names/*">
                 <xsl:variable name="name" select="name()"/>
                 <xsl:element name="{name()}">
-                    <xsl:value-of
-                        select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/>
+                            <xsl:value-of
+                                select="concat($person-name-id, '-', index-of($unique-names,normalize-space(node())))"/>
                 </xsl:element>
             </xsl:for-each>
         </xsl:param>
@@ -159,13 +193,28 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:param>
-        <xsl:param name="current-column-name" select="name()"/>
+        <xsl:param name="current-name"/>
         
-        <xsl:attribute name="xml:id" select="$name-ids/*[contains(name(), $current-column-name)]"/>
+        <!-- The XML id is just the index of the current-name in the unique-names, appended to the prefix -->
+        <xsl:attribute name="xml:id" select="concat($person-name-id,'-',index-of($unique-names,$current-name))"/>
+        
         <!-- Gets all other name links whose column names start with the same word (e.g., "Barsoum", "Abdisho"). -->
+        <!-- NOTE!  By fiat, CBSC tokenized columns do not @corresp to anything! -->
         <!-- Is it OK that vocalized and non-vocalized names from different editions are parallel to each other or should I weed these out? -->
-        <xsl:if test="exists($name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))])">
-            <xsl:attribute name="corresp" select="$name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))]"/>
+        <xsl:variable name="corresps" as="xs:string*">
+            <xsl:for-each select="$all-full-names/*[compare(normalize-space(node()),$current-name)=0]">
+                <xsl:variable name="this-column-name" select="name()"/>
+                <xsl:for-each select="$name-links/*[matches(substring-before($this-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $this-column-name))]">
+                    <xsl:variable name="this-link-name" select="name()"/>
+                    <!-- Only include this link if the name which corresponds with it is not identical to the current-name (which would make it a source, not a corresp) -->
+                    <xsl:if test="not(exists($all-full-names/*[compare(name(),$this-link-name)=0 and compare(normalize-space(node()),$current-name)=0]))">
+                        <xsl:sequence select="node()"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:if test="not(empty($corresps))">
+            <xsl:attribute name="corresp" select="distinct-values($corresps)"/>
         </xsl:if>
     </xsl:template>
     

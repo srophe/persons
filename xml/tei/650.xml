@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-05-04:00</date>
+            <date>2013-08-06-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -143,7 +143,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-08-05-04:00"> CREATED: person </change>
+                 when="2013-08-06-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,54 +152,40 @@
             <person xml:id="person-650">
                <persName xml:id="name650-1"
                          xml:lang="en-x-gedsh"
-                         source="#bib650-1"
+                         source="#bib650-1 #bib650-10"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Narsai</forename>
                </persName>
-               <persName xml:id="name650-3"
-                         corresp="#name650-4a #name650-4b"
+               <persName xml:id="name650-2"
+                         corresp="#name650-3 #name650-4"
                          xml:lang="ar"
                          source="#bib650-3">
                   <forename sort="1">نرسي</forename>
                </persName>
-               <persName xml:id="name650-4a"
-                         corresp="#name650-3 #name650-4b"
+               <persName xml:id="name650-3"
+                         corresp="#name650-2 #name650-4 #name650-5 #name650-6"
                          xml:lang="syr"
-                         source="#bib650-4">
+                         source="#bib650-4 #bib650-6 #bib650-7">
                   <forename sort="1">ܢܪܣܝ</forename>
                </persName>
-               <persName xml:id="name650-4b"
-                         corresp="#name650-3 #name650-4a"
+               <persName xml:id="name650-4"
+                         corresp="#name650-2 #name650-3"
                          xml:lang="syr-Syrj"
                          source="#bib650-4">
                   <forename sort="1">ܢܰܪܣܰܝ</forename>
                </persName>
-               <persName xml:id="name650-6a"
-                         corresp="#name650-6b #name650-7a #name650-7b"
-                         xml:lang="syr"
-                         source="#bib650-6"
-                         syriaca-tags="#syriaca-headword">
-                  <forename sort="1">ܢܪܣܝ</forename>
-               </persName>
-               <persName xml:id="name650-6b"
-                         corresp="#name650-6a #name650-7a #name650-7b"
+               <persName xml:id="name650-5"
+                         corresp="#name650-3 #name650-6"
                          xml:lang="syr-Syrn"
                          source="#bib650-6">
                   <forename sort="1">ܢܲܪܣܲܝ</forename>
                </persName>
-               <persName xml:id="name650-7a"
-                         corresp="#name650-6a #name650-6b #name650-7b"
-                         xml:lang="syr"
-                         source="#bib650-7">
-                  <forename sort="1">ܢܪܣܝ</forename>
-               </persName>
-               <persName xml:id="name650-7b"
-                         corresp="#name650-6a #name650-6b #name650-7a"
+               <persName xml:id="name650-6"
+                         corresp="#name650-3 #name650-5"
                          xml:lang="syr-Syrn"
                          source="#bib650-7">
                   <forename sort="1">ܢܰܪܣܺܝ</forename>
                </persName>
-               <persName xml:id="name650-10" xml:lang="en" source="#bib650-10">Narsai</persName>
                <idno type="URI">http://syriaca.org/person/650</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|650</idno>
                <idno type="URI">http://viaf.org/viaf/88042323</idno>
