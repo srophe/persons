@@ -115,10 +115,10 @@
                     <xsl:when test="$all-full-names/*[contains(name(),'Authorized_syr') and compare(normalize-space(node()),$this_name)=0]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="$all-full-names/*[contains(name(), 'Barsoum_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains(../Authorized_syr-Source, 'Barsoum')]">
+                    <xsl:when test="$all-full-names/*[contains(name(), 'Barsoum_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains($this-row/Authorized_syr-Source, 'Barsoum')]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="$all-full-names/*[contains(name(), 'Abdisho_YdQ_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains(../Authorized_syr-Source, 'Abdisho')]">
+                    <xsl:when test="$all-full-names/*[contains(name(), 'Abdisho_YdQ_syr-NV') and compare(normalize-space(node()),$this_name)=0 and contains($this-row/Authorized_syr-Source, 'Abdisho')]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
                 </xsl:choose>
