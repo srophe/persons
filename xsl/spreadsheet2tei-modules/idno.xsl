@@ -35,5 +35,11 @@
                 <xsl:value-of select="."/>
             </idno>
         </xsl:for-each>
+        
+        <!-- Deal with CBSC links -->
+        <xsl:for-each select="tokenize(CBSC_en-Full,';\s')">
+            <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=<xsl:value-of select="substring(.,1,1)"/>&amp;sK=<xsl:value-of select="."/>&amp;sT=keywords</idno>
+        </xsl:for-each>
+        
     </xsl:template>
 </xsl:stylesheet>
