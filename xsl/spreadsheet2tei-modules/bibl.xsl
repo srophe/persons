@@ -123,20 +123,23 @@
         </xsl:if>
         <xsl:if test="string-length(normalize-space(CBSC_en-Full)) > 0">
             <bibl xml:id="{$bib-ids/*[contains(name(), 'CBSC')]}">
-                <title level="a" xml:lang="en">
-                    "<xsl:value-of select="replace(CBSC_en-Full,'; ','&quot;, &quot;')"/>"
-                </title>
                 <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                 <ptr target="http://syriaca.org/bibl/5"/>
                 <!-- The precise link for the CBSC entry. -->
+                <xsl:for-each select="tokenize(CBSC_en-Full,'; ')">
+                    <citedRange unit="entry">
+                        <xsl:attribute name="target">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=<xsl:value-of select="substring(.,1,1)"/>&amp;sK=<xsl:value-of select="."/>&amp;sT=keywords</xsl:attribute>
+                        <xsl:value-of select="."/>
+                    </citedRange>
+                </xsl:for-each>
                 <!-- The ampersands in the URL get changed into "&amp;", but perhaps this is OK since it will be changed back 
-                when outputting as text/html? -->
+                when outputting as text/html? 
                 <ref>
                     <xsl:attribute name="target">
                         <xsl:value-of select="CBSC_en-Link"/>
                     </xsl:attribute>
                     <xsl:value-of select="CBSC_en-Link"/>
-                </ref>
+                </ref>-->
             </bibl>
         </xsl:if>
         <!-- Should we put the link to the extended VIAF record as a pointer? -->
