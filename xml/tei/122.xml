@@ -158,11 +158,18 @@
                <persName xml:id="name122-2"
                          corresp="#name122-3 #name122-4 #name122-5"
                          xml:lang="en"
-                         source="#bib122-2">Mar <forename sort="1">George</forename>, bishop of the Arabs</persName>
+                         source="#bib122-2">
+                  <roleName type="office" sort="2">Mar</roleName> 
+                  <forename sort="1">George</forename>, <roleName type="office" sort="2">bishop of the Arabs</roleName>
+               </persName>
                <persName xml:id="name122-3"
                          corresp="#name122-2 #name122-4 #name122-5"
                          xml:lang="ar"
-                         source="#bib122-3">مار <forename sort="1">جرجس</forename> اسقف العرب</persName>
+                         source="#bib122-3">
+                  <addName type="untagged-title" sort="2">مار </addName>
+                  <forename sort="1">جرجس</forename> 
+                  <addName type="untagged-title" sort="2">اسقف العرب</addName>
+               </persName>
                <persName xml:id="name122-4"
                          corresp="#name122-2 #name122-3 #name122-5"
                          xml:lang="syr"

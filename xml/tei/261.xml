@@ -152,11 +152,20 @@
                <persName xml:id="name261-1"
                          corresp="#name261-2 #name261-3 #name261-4"
                          xml:lang="en"
-                         source="#bib261-2">The Priest <forename sort="1">Simon</forename> of Amid</persName>
+                         source="#bib261-2">
+                  <roleName type="office" sort="2">The Priest</roleName> 
+                  <forename sort="1">Simon</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name261-2"
                          corresp="#name261-1 #name261-3 #name261-4"
                          xml:lang="ar"
-                         source="#bib261-3">القس <forename sort="1">شمعون</forename> الآمدي</persName>
+                         source="#bib261-3">
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="untagged-title" sort="2">الآمدي</addName>
+               </persName>
                <persName xml:id="name261-3"
                          corresp="#name261-1 #name261-2 #name261-4"
                          xml:lang="syr"
@@ -173,11 +182,13 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shemʿun</forename> 
-                  <addName type="untagged-title" sort="2">of Amid</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name261-7" xml:lang="en">
                   <forename sort="1">Simon</forename> 
-                  <addName type="untagged-title" sort="2">of Amid</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/261</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|261</idno>

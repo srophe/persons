@@ -159,11 +159,20 @@
                <persName xml:id="name279-2"
                          corresp="#name279-3 #name279-4 #name279-5"
                          xml:lang="en"
-                         source="#bib279-2">Patriarch <forename sort="1">Mas‛ud</forename> of Zāz</persName>
+                         source="#bib279-2">
+                  <roleName type="office" sort="2">Patriarch</roleName> 
+                  <forename sort="1">Mas‛ud</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/538">Zāz</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name279-3"
                          corresp="#name279-2 #name279-4 #name279-5"
                          xml:lang="ar"
-                         source="#bib279-3">البطريرك <forename sort="1">مسعود</forename> الزازي</persName>
+                         source="#bib279-3">
+                  <addName type="untagged-title" sort="2">البطريرك </addName>
+                  <forename sort="1">مسعود</forename> 
+                  <addName type="untagged-title" sort="2">الزازي</addName>
+               </persName>
                <persName xml:id="name279-4"
                          corresp="#name279-2 #name279-3 #name279-5"
                          xml:lang="syr"

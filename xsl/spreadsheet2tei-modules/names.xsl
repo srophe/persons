@@ -125,7 +125,7 @@
                 
                 <!-- To make this work with multiple CBSC names, don't call name-parts template if name only a CBSC alternate - just output name -->
                 <xsl:choose>
-                    <xsl:when test="$all-full-names/*[compare(normalize-space(node()),$this_name)=0]">
+                    <xsl:when test="$all-full-names/*[compare(normalize-space(node()),$this_name)=0 and not(starts-with(name(),'CBSC'))]">
                         <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source 
                     and vocalization. E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
                         <xsl:variable name="group" select="replace(name($all-full-names/*[compare(normalize-space(node()),$this_name)=0][1]), '(_|-)Full', '')"/>
@@ -136,6 +136,7 @@
                             <xsl:with-param name="all-name-parts"
                                 select="$this-row/*[contains(name(), $group)]"/> <!-- following-sibling::*[contains(name(), $group)] only yields full-name fields, b/c no longer implicit context! -->
                             <xsl:with-param name="sort" select="$sort"/>
+                            <xsl:with-param name="this-row" select="$this-row"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
@@ -249,6 +250,7 @@
         <xsl:param name="sort"/>
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="next-column-name" select="name($all-name-parts[$count])"/>
+        <xsl:param name="this-row"/>
         <xsl:choose>
             <!-- When there are name parts to process ... -->
             <xsl:when test="count($all-name-parts)">
@@ -290,11 +292,13 @@
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
                                     <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                     <xsl:with-param name="sort" select="$sort"/>
+                                    <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
                             </xsl:with-param>
                             <xsl:with-param name="count" select="$count + 1"/>
                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                             <xsl:with-param name="sort" select="$sort"/>
+                            <xsl:with-param name="this-row" select="$this-row"/>
                         </xsl:call-template>                    
                     </xsl:when>
                     <!-- Otherwise, if the next column has a name (i.e., exists at all) ... -->
@@ -311,6 +315,7 @@
                                             <xsl:with-param name="name-element-name" select="$name-element-name"/>
                                             <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                             <xsl:with-param name="sort" select="$sort"/>
+                                            <xsl:with-param name="this-row" select="$this-row"/>
                                         </xsl:call-template>
                                     </xsl:matching-substring>
                                     <xsl:non-matching-substring>
@@ -319,6 +324,7 @@
                                             <xsl:with-param name="count" select="$count + 1"/>
                                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                             <xsl:with-param name="sort" select="$sort"/>
+                                            <xsl:with-param name="this-row" select="$this-row"/>
                                         </xsl:call-template>
                                     </xsl:non-matching-substring>
                                 </xsl:analyze-string>
@@ -330,6 +336,7 @@
                                     <xsl:with-param name="count" select="$count + 1"/>
                                     <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                     <xsl:with-param name="sort" select="$sort"/>
+                                    <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -337,13 +344,13 @@
                     <!-- If the next column does not have a name (i.e., does not exist), this template has run its course and 
                         returns the name with any child elements added from previous loops. -->
                     <xsl:otherwise>
-                        <xsl:value-of select="$name"/>
+                        <xsl:copy-of select="$name"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <!-- If there are no name parts to process, simply returns the name as is. -->
             <xsl:otherwise>
-                <xsl:value-of select="$name"/>
+                <xsl:copy-of select="$name"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -370,6 +377,7 @@
         <xsl:param name="name-element-type"/>
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="sort"/>
+        <xsl:param name="this-row"/>
         <xsl:choose>
             <!-- If the counter is less than the number of name parts ... -->
             <xsl:when test="count($all-name-parts) >= $count">
@@ -385,6 +393,7 @@
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
                                     <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                     <xsl:with-param name="sort" select="$sort"/>
+                                    <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
                             </xsl:matching-substring>
                             <xsl:non-matching-substring>
@@ -395,6 +404,7 @@
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
                                     <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                     <xsl:with-param name="sort" select="$sort"/>
+                                    <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
                             </xsl:non-matching-substring>
                         </xsl:analyze-string>
@@ -409,6 +419,7 @@
                             <xsl:with-param name="name-element-name" select="$name-element-name"/>
                             <xsl:with-param name="name-element-type" select="$name-element-type"/>
                             <xsl:with-param name="sort" select="$sort"/>
+                            <xsl:with-param name="this-row" select="$this-row"/>
                         </xsl:call-template>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -435,6 +446,7 @@
         <xsl:param name="name-element-name"/>
         <xsl:param name="name-element-type"/>
         <xsl:param name="sort"/>
+        <xsl:param name="this-row"/>
         <xsl:element name="{$name-element-name}">
             <xsl:if test="string-length($name-element-type)">
                 <xsl:attribute name="type" select="$name-element-type"/>
@@ -455,7 +467,24 @@
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:copy-of select="."/>
+            <xsl:choose>
+                <xsl:when test="$this-row/*[ends-with(name(),'Name_Place') and string-length(normalize-space(node()))]">
+                    <xsl:analyze-string select="." regex="{functx:escape-for-regex($this-row/*[contains(name(),'Name_Place') and string-length(normalize-space(node()))][1])}">
+                        <xsl:matching-substring>
+                            <placeName>
+                                <xsl:attribute name="ref" select="normalize-space($this-row/*[ends-with(name(),'Name_Place_URI') and string-length(normalize-space(node()))][1])"/>
+                            <xsl:copy-of select="."/>
+                            </placeName>
+                        </xsl:matching-substring>
+                        <xsl:non-matching-substring>
+                            <xsl:copy-of select="."/>
+                        </xsl:non-matching-substring>
+                    </xsl:analyze-string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:copy-of select="."/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>

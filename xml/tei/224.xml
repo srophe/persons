@@ -152,11 +152,19 @@
                <persName xml:id="name224-1"
                          corresp="#name224-2 #name224-3 #name224-4"
                          xml:lang="en"
-                         source="#bib224-2">Patriarch <forename sort="2">John</forename> XII</persName>
+                         source="#bib224-2">
+                  <roleName type="office" sort="2">Patriarch</roleName> 
+                  <forename sort="2">John</forename> 
+                  <roleName type="office" sort="2">XII</roleName>
+               </persName>
                <persName xml:id="name224-2"
                          corresp="#name224-1 #name224-3 #name224-4"
                          xml:lang="ar"
-                         source="#bib224-3">البطريرك <forename sort="2">يوحنا</forename> الثاني عشر</persName>
+                         source="#bib224-3">
+                  <addName type="untagged-title" sort="2">البطريرك </addName>
+                  <forename sort="2">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">الثاني عشر</addName>
+               </persName>
                <persName xml:id="name224-3"
                          corresp="#name224-1 #name224-2 #name224-4"
                          xml:lang="syr"
@@ -171,7 +179,7 @@
                </persName>
                <persName xml:id="name224-6"
                          xml:lang="en-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Yuḥanon XII (XI, XIII, or XIV) Yeshuʿ Kotubo</persName>
+                         syriaca-tags="#syriaca-headword">Yuḥanon <addName type="untagged-title" sort="2">XII (XI</addName>, <addName type="untagged-title" sort="2">XIII</addName>, or XIV) Yeshuʿ Kotubo</persName>
                <idno type="URI">http://syriaca.org/person/224</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|224</idno>
                <death when="1220" source="#bib224-2">1220</death>

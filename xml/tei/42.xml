@@ -159,11 +159,21 @@
                <persName xml:id="name42-2"
                          corresp="#name42-3 #name42-4 #name42-5"
                          xml:lang="en"
-                         source="#bib42-2">Mar <forename sort="1">Jacob</forename> of Sarug, the Malphono</persName>
+                         source="#bib42-2">
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="1">Jacob</forename> 
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/48">Sarug</placeName>
+                  </addName>, <addName type="untagged-title" sort="2">the Malphono</addName>
+               </persName>
                <persName xml:id="name42-3"
                          corresp="#name42-2 #name42-4 #name42-5"
                          xml:lang="ar"
-                         source="#bib42-3">مار <forename sort="1">يعقوب</forename> السروجي الملفان</persName>
+                         source="#bib42-3">
+                  <addName type="untagged-title" sort="2">مار</addName> 
+                  <forename sort="1">يعقوب</forename> 
+                  <addName type="untagged-title" sort="2">السروجي</addName> 
+                  <addName type="untagged-title" sort="2">الملفان</addName>
+               </persName>
                <persName xml:id="name42-4"
                          corresp="#name42-2 #name42-3 #name42-5"
                          xml:lang="syr"

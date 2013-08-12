@@ -153,13 +153,17 @@
                          corresp="#name111-2 #name111-3 #name111-4"
                          xml:lang="en"
                          source="#bib111-2">
-                  <forename sort="1">John I</forename>, <roleName type="office" sort="2">Maphryono of Takrit</roleName>
+                  <forename sort="1">John I</forename>, <roleName type="office" sort="2">Maphryono of <placeName ref="http://syriaca.org/place/193">Takrit</placeName>
+                  </roleName>
                </persName>
                <persName xml:id="name111-2"
                          corresp="#name111-1 #name111-3 #name111-4"
                          xml:lang="ar"
                          source="#bib111-3">
-                  <forename sort="1">يوحنا</forename> الاول مفريان تكريت</persName>
+                  <forename sort="1">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">الاول</addName> 
+                  <addName type="untagged-title" sort="2">مفريان تكريت</addName>
+               </persName>
                <persName xml:id="name111-3"
                          corresp="#name111-1 #name111-2 #name111-4"
                          xml:lang="syr"

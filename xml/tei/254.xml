@@ -152,11 +152,20 @@
                <persName xml:id="name254-1"
                          corresp="#name254-2 #name254-3 #name254-4"
                          xml:lang="en"
-                         source="#bib254-2">The Monk <forename sort="1">Abraham</forename> of Mardin</persName>
+                         source="#bib254-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">Abraham</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/130">Mardin</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name254-2"
                          corresp="#name254-1 #name254-3 #name254-4"
                          xml:lang="ar"
-                         source="#bib254-3">الراهب <forename sort="1">ابرهيم</forename> المارديني</persName>
+                         source="#bib254-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">ابرهيم</forename> 
+                  <addName type="untagged-title" sort="2">المارديني</addName>
+               </persName>
                <persName xml:id="name254-3"
                          corresp="#name254-1 #name254-2 #name254-4"
                          xml:lang="syr"
@@ -173,11 +182,13 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Abrohom</forename> 
-                  <addName type="untagged-title" sort="2">of Mardin</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/130">Mardin</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name254-7" xml:lang="en">
                   <forename sort="1">Abraham</forename> 
-                  <addName type="untagged-title" sort="2">of Mardin</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/130">Mardin</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/254</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|254</idno>

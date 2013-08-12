@@ -152,11 +152,20 @@
                <persName xml:id="name192-1"
                          corresp="#name192-2 #name192-3 #name192-4"
                          xml:lang="en"
-                         source="#bib192-2">The Monk <forename sort="1">Joseph</forename> of Melitene</persName>
+                         source="#bib192-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">Joseph</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/136">Melitene</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name192-2"
                          corresp="#name192-1 #name192-3 #name192-4"
                          xml:lang="ar"
-                         source="#bib192-3">الراهب <forename sort="1">يوسف</forename> الملطي</persName>
+                         source="#bib192-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">يوسف</forename> 
+                  <addName type="untagged-title" sort="2">الملطي</addName>
+               </persName>
                <persName xml:id="name192-3"
                          corresp="#name192-1 #name192-2 #name192-4"
                          xml:lang="syr"
@@ -173,11 +182,13 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yawsep</forename> 
-                  <addName type="untagged-title" sort="2">of Melitene</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/136">Melitene</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name192-7" xml:lang="en">
                   <forename sort="1">Joseph</forename> 
-                  <addName type="untagged-title" sort="2">of Melitene</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/136">Melitene</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/192</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|192</idno>

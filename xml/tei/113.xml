@@ -155,12 +155,18 @@
                          source="#bib113-1"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Yaʿqub</forename> 
-                  <addName type="untagged-title" sort="2">of Edessa</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name113-2"
                          corresp="#name113-3 #name113-4 #name113-5"
                          xml:lang="en"
-                         source="#bib113-2">Mar <forename sort="1">Jacob</forename> of Edessa</persName>
+                         source="#bib113-2">
+                  <addName type="untagged-title" sort="2">Mar</addName> 
+                  <forename sort="1">Jacob</forename> 
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+                  </addName>
+               </persName>
                <persName xml:id="name113-3"
                          corresp="#name113-2 #name113-4 #name113-5"
                          xml:lang="ar"
@@ -193,7 +199,8 @@
                </persName>
                <persName xml:id="name113-9" xml:lang="en" source="#bib113-10">
                   <forename sort="1">Jacob</forename> 
-                  <addName type="untagged-title" sort="2">of Edessa</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/113</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|113</idno>

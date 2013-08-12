@@ -159,11 +159,20 @@
                <persName xml:id="name273-2"
                          corresp="#name273-3 #name273-4 #name273-5"
                          xml:lang="en"
-                         source="#bib273-2">The Monk <forename sort="1">David</forename> of Ḥomṣ</persName>
+                         source="#bib273-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">David</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/215">Ḥomṣ</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name273-3"
                          corresp="#name273-2 #name273-4 #name273-5"
                          xml:lang="ar"
-                         source="#bib273-3">االراهب <forename sort="1">داود</forename> الحمصي</persName>
+                         source="#bib273-3">
+                  <addName type="untagged-title" sort="2">االراهب </addName>
+                  <forename sort="1">داود</forename> 
+                  <addName type="untagged-title" sort="2">الحمصي</addName>
+               </persName>
                <persName xml:id="name273-4"
                          corresp="#name273-2 #name273-3 #name273-5"
                          xml:lang="syr"

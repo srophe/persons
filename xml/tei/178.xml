@@ -152,11 +152,20 @@
                <persName xml:id="name178-1"
                          corresp="#name178-2 #name178-3 #name178-4"
                          xml:lang="en"
-                         source="#bib178-2">Deacon <forename sort="1">Simon</forename> of Nisibin</persName>
+                         source="#bib178-2">
+                  <roleName type="office" sort="2">Deacon</roleName> 
+                  <forename sort="1">Simon</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/142">Nisibin</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name178-2"
                          corresp="#name178-1 #name178-3 #name178-4"
                          xml:lang="ar"
-                         source="#bib178-3">الشماس <forename sort="1">شمعون</forename> النصيبيني</persName>
+                         source="#bib178-3">
+                  <addName type="untagged-title" sort="2">الشماس </addName>
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="untagged-title" sort="2">النصيبيني</addName>
+               </persName>
                <persName xml:id="name178-3"
                          corresp="#name178-1 #name178-2 #name178-4"
                          xml:lang="syr"

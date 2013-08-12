@@ -152,11 +152,20 @@
                <persName xml:id="name253-1"
                          corresp="#name253-2 #name253-3 #name253-4"
                          xml:lang="en"
-                         source="#bib253-2">Metropolitan <forename sort="1">Abu al-Wafa</forename> of Ḥiṣn Kifa</persName>
+                         source="#bib253-2">
+                  <roleName type="office" sort="2">Metropolitan</roleName> 
+                  <forename sort="1">Abu al-Wafa</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/92">Ḥiṣn Kifa</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name253-2"
                          corresp="#name253-1 #name253-3 #name253-4"
                          xml:lang="ar"
-                         source="#bib253-3">المطران <forename sort="1">ابو الوفآء</forename> الحصكفي</persName>
+                         source="#bib253-3">
+                  <addName type="untagged-title" sort="2">المطران </addName>
+                  <forename sort="1">ابو الوفآء</forename> 
+                  <addName type="untagged-title" sort="2">الحصكفي</addName>
+               </persName>
                <persName xml:id="name253-3"
                          corresp="#name253-1 #name253-2 #name253-4"
                          xml:lang="syr"

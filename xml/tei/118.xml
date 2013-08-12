@@ -152,12 +152,20 @@
                <persName xml:id="name118-1"
                          corresp="#name118-2 #name118-3 #name118-4"
                          xml:lang="en"
-                         source="#bib118-2">The Historian <forename sort="1">Moses</forename> of Anḥil</persName>
+                         source="#bib118-2">
+                  <roleName type="office" sort="2">The Historian</roleName> 
+                  <forename sort="1">Moses</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/24">Anḥil</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name118-2"
                          corresp="#name118-1 #name118-3 #name118-4"
                          xml:lang="ar"
                          source="#bib118-3">
-                  <forename sort="1">موسى</forename> النحلي المؤرخ</persName>
+                  <forename sort="1">موسى</forename> 
+                  <addName type="untagged-title" sort="2">النحلي </addName>
+                  <addName type="untagged-title" sort="2">المؤرخ</addName>
+               </persName>
                <persName xml:id="name118-3"
                          corresp="#name118-1 #name118-2 #name118-4"
                          xml:lang="syr"
@@ -174,11 +182,13 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Mushe</forename> 
-                  <addName type="untagged-title" sort="2">of Anḥil</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/24">Anḥil</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name118-7" xml:lang="en">
                   <forename sort="1">Moses</forename> 
-                  <addName type="untagged-title" sort="2">of Anḥil</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/24">Anḥil</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/118</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|118</idno>

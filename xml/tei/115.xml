@@ -152,7 +152,11 @@
                <persName xml:id="name115-1"
                          corresp="#name115-2 #name115-3 #name115-4"
                          xml:lang="en"
-                         source="#bib115-2">Presbyter <forename sort="1">Simon</forename>, abbot of the Monastery of the Arabs</persName>
+                         source="#bib115-2">
+                  <roleName type="office" sort="2">Presbyter</roleName> 
+                  <forename sort="1">Simon</forename>, <roleName type="office" sort="2">abbot of the <placeName ref="http://syriaca.org/place/369">Monastery of the Arabs</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name115-2"
                          corresp="#name115-1 #name115-3 #name115-4"
                          xml:lang="ar"

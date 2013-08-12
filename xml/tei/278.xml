@@ -152,11 +152,20 @@
                <persName xml:id="name278-1"
                          corresp="#name278-2 #name278-3 #name278-4"
                          xml:lang="en"
-                         source="#bib278-2">The Monk <forename sort="1">‛Aziz</forename> of Midyat</persName>
+                         source="#bib278-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">‛Aziz</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/137">Midyat</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name278-2"
                          corresp="#name278-1 #name278-3 #name278-4"
                          xml:lang="ar"
-                         source="#bib278-3">الراهب <forename sort="1">عزيز</forename> المذياتي</persName>
+                         source="#bib278-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">عزيز</forename> 
+                  <addName type="untagged-title" sort="2">المذياتي</addName>
+               </persName>
                <persName xml:id="name278-3"
                          corresp="#name278-1 #name278-2 #name278-4"
                          xml:lang="syr"
@@ -173,7 +182,8 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">ʿAziz</forename> 
-                  <addName type="untagged-title" sort="2">of Midyat</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/137">Midyat</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/278</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|278</idno>

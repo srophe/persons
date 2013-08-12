@@ -159,11 +159,20 @@
                <persName xml:id="name259-2"
                          corresp="#name259-3 #name259-4 #name259-5"
                          xml:lang="en"
-                         source="#bib259-2">The Priest <forename sort="1">Isaiah</forename> of Basibrina</persName>
+                         source="#bib259-2">
+                  <roleName type="office" sort="2">The Priest</roleName> 
+                  <forename sort="1">Isaiah</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/49">Basibrina</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name259-3"
                          corresp="#name259-2 #name259-4 #name259-5"
                          xml:lang="ar"
-                         source="#bib259-3"> القس <forename sort="1">اشعيا</forename> السبيريني</persName>
+                         source="#bib259-3"> 
+                  <addName type="untagged-title" sort="2">القس </addName>
+                  <forename sort="1">اشعيا</forename> 
+                  <addName type="untagged-title" sort="2">السبيريني</addName>
+               </persName>
                <persName xml:id="name259-4"
                          corresp="#name259-2 #name259-3 #name259-5"
                          xml:lang="syr"

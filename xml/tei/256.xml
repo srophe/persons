@@ -154,16 +154,26 @@
                          source="#bib256-1 #bib256-10"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Daniel</forename> 
-                  <addName type="untagged-title" sort="2">of Mardin</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/130">Mardin</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name256-2"
                          corresp="#name256-3 #name256-4 #name256-5"
                          xml:lang="en"
-                         source="#bib256-2">The Monk <forename sort="1">Daniel</forename> of Mardin</persName>
+                         source="#bib256-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">Daniel</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/130">Mardin</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name256-3"
                          corresp="#name256-2 #name256-4 #name256-5"
                          xml:lang="ar"
-                         source="#bib256-3">الراهب <forename sort="1">دنيال</forename> المارديني</persName>
+                         source="#bib256-3">
+                  <addName type="untagged-title" sort="2">الراهب </addName>
+                  <forename sort="1">دنيال</forename> 
+                  <addName type="untagged-title" sort="2">المارديني</addName>
+               </persName>
                <persName xml:id="name256-4"
                          corresp="#name256-2 #name256-3 #name256-5"
                          xml:lang="syr"

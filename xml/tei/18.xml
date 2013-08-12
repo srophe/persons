@@ -152,7 +152,12 @@
                <persName xml:id="name18-1"
                          corresp="#name18-2 #name18-3 #name18-4"
                          xml:lang="en"
-                         source="#bib18-2">The Monk <forename sort="1">Dada</forename> of Amid</persName>
+                         source="#bib18-2">
+                  <roleName type="office" sort="2">The Monk</roleName> 
+                  <forename sort="1">Dada</forename> 
+                  <roleName type="office" sort="2">of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                  </roleName>
+               </persName>
                <persName xml:id="name18-2"
                          corresp="#name18-1 #name18-3 #name18-4"
                          xml:lang="ar"
@@ -182,7 +187,8 @@
                          xml:lang="en-x-gedsh"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Dādā</forename> 
-                  <addName type="untagged-title" sort="2">of Amid</addName>
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/8">Amid</placeName>
+                  </addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/18</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|18</idno>
