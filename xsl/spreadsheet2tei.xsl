@@ -162,12 +162,24 @@
                                         </xsl:if>
                                                                                 
                                         <!-- Creates persName elements. -->
-                                        <xsl:call-template name="names">
-                                            <xsl:with-param name="all-full-names" select="$all-full-names"/>
-                                            <xsl:with-param name="person-name-id" select="$person-name-id"/>
-                                            <xsl:with-param name="ids-base" select="$ids-base"/>
-                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                        </xsl:call-template>
+                                        <xsl:choose>
+                                            <xsl:when test="string-length(normalize-space(Is_a_work_)) and string-length(normalize-space(Anonymous_))">
+                                                <xsl:call-template name="anonymous-author-names">
+                                                    <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                                                    <xsl:with-param name="person-name-id" select="$person-name-id"/>
+                                                    <xsl:with-param name="ids-base" select="$ids-base"/>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                                </xsl:call-template>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:call-template name="names">
+                                                    <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                                                    <xsl:with-param name="person-name-id" select="$person-name-id"/>
+                                                    <xsl:with-param name="ids-base" select="$ids-base"/>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                                </xsl:call-template>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                         
                                         <!-- Adds VIAF URLs. -->
                                         <xsl:call-template name="idno">
@@ -223,6 +235,7 @@
                                 <!-- Create relations. -->
                                 <xsl:call-template name="relation">
                                     <xsl:with-param name="person-id" select="$person-id"/>
+                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                 </xsl:call-template>
                                 </listPerson>
                         </body>

@@ -21,9 +21,11 @@
         </xd:desc>
         <xd:param name="person-id">The @xml:id value of the person described in this document, whose relationship to another 
         entity is being described.</xd:param>
+        <xd:param name="bib-ids">Used to cite from relationships with places.</xd:param>
     </xd:doc>
     <xsl:template name="relation" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="person-id"/>
+        <xsl:param name="bib-ids"/>
         
         <!-- Should disambiguation be done as a relation or a note? -->
         <xsl:if test="string-length(normalize-space(Disambiguation)) or string-length(normalize-space(Disambiguation_URLs))">
@@ -59,6 +61,38 @@
                     This author is one of the authors implied by the pseudonymous author described in another record.
                 </desc>
             </relation>
+        </xsl:if>
+        
+        <xsl:if test="string-length(normalize-space(Barsoum_en-Literary_Place_URI))">
+            <xsl:for-each select="tokenize(Barsoum_en-Literary_Place_URI,'\s')">
+                <xsl:if test="normalize-space(.)">
+                <relation name="has-literary-connection-to-place">
+                    <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
+                    <xsl:attribute name="passive" select="."/>
+                    <xsl:call-template name="source">
+                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                        <xsl:with-param name="column-name" select="'Barsoum_en-Literary_Place_URI'"/>
+                    </xsl:call-template>
+                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                </relation>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <xsl:if test="string-length(normalize-space(Barsoum_en-Other_Place_URI))">
+            <xsl:for-each select="tokenize(Barsoum_en-Other_Place_URI,'\s')">
+                <xsl:if test="normalize-space(.)">
+                    <relation name="has-relation-to-place">
+                        <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
+                        <xsl:attribute name="passive" select="."/>
+                        <xsl:call-template name="source">
+                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                            <xsl:with-param name="column-name" select="'Barsoum_en-Other_Place_URI'"/>
+                        </xsl:call-template>
+                        <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                    </relation>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:if>
         
         <!-- Add code here for any additional columns that should produce relation elements. -->
