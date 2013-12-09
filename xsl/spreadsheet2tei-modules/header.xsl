@@ -50,6 +50,8 @@
                     <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <xsl:choose>
+                        <xsl:when test="$record-id &lt; 949">
                     <xsl:if test="exists(*[(starts-with(name(), 'GEDSH') or starts-with(name(), 'Barsoum')) and contains(name(), 'Full') and string-length(normalize-space(node()))])">
                         <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
                         <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
@@ -107,6 +109,23 @@
                         <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
                     </respStmt>
                     <!-- Should anybody from VIAF or ISAW be added here? -->
+                        </xsl:when>
+                        <xsl:when test="$record-id &lt; 1058">
+                            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                            <respStmt>
+                                <resp>Document design by</resp>
+                                <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                            </respStmt>
+                            <respStmt>
+                                <resp>Conversion to XML by</resp>
+                                <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                            </respStmt>
+                            <respStmt>
+                                <resp>Editing, Syriac name entry, Arabic name entry, disambiguation research by</resp>
+                                <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                            </respStmt>
+                        </xsl:when>
+                    </xsl:choose>
                 </titleStmt>
                 <editionStmt>
                     <edition n="1.0"/>
@@ -154,12 +173,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
                     <interpretation>
                         <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
                     </interpretation>
                     <!-- Are there other editorial decisions we need to record here? -->
                 </editorialDecl>
@@ -191,7 +206,7 @@
                 </langUsage>
             </profileDesc>
             <revisionDesc>
-                <change who="http://syriaca.org/editors.xml#ngibson" n="1.0">
+                <change who="http://syriaca.org/editors.xml#tcarlson" n="1.0">
                     <xsl:attribute name="when" select="current-date()"/> CREATED: person </change>
                 <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
                     <change type="planned">

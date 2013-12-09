@@ -90,7 +90,7 @@
     </xd:doc>
     <xsl:template name="main" match="row">
         <!-- Does not generate XML file if there is text in Do_not_publish -->
-        <xsl:if test="not(string-length(normalize-space(Do_not_publish)))">
+        <xsl:if test="not(string-length(normalize-space(Do_not_publish))) and string-length(normalize-space(GEDSH_en-Full)) and (string-length(normalize-space(Barsoum_en-Full)) or string-length(normalize-space(Barsoum_ar-Full)) or string-length(normalize-space(Barsoum_syr-NV_Full)))">
             <!-- Variables -->
             <!-- Creates a variable to use as the id for the person record, which is in turn used for generating @xml:id attributes 
             of elements contained in the record.-->
@@ -140,7 +140,7 @@
             
             <!-- Creates a variable containing the path of the file that should be created for this record. -->
             <xsl:variable name="filename"
-                select="concat('../tei/',$record-id,'.xml')"/>
+                select="concat('../tei/viaf/',$record-id,'.xml')"/>
             
             <!-- Writes the file to the path specified in the $filename variable. -->
             <xsl:result-document href="{$filename}" format="xml">

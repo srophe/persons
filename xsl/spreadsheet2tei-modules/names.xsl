@@ -259,6 +259,7 @@
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Given')">forename</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Family')">addName</xsl:when>
+                        <!-- BUG!  When a "Titles" column contains a roleName comma-separated from a non-roleName, every title gets turned into a roleName -->
                         <xsl:when test="matches($next-column-name,'(_|-)Titles') and exists($roles/*[matches($next-column, node(), 'i')])">roleName</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Titles') or matches($next-column-name,'(_|-)Saint_Title') or matches($next-column-name,'(_|-)Terms_of_Address')">addName</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Office')">roleName</xsl:when>
