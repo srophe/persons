@@ -254,12 +254,13 @@
         <xsl:choose>
             <!-- When there are name parts to process ... -->
             <xsl:when test="count($all-name-parts)">
-                <!-- Creates a $name-element-name variable that contains the name of the TEI element name to be used for that name part. -->
+                <!-- Creates a $name-element-name variable that contains the name of the TEI element name to be used for that name part. 
+                    BUG!  When a "Titles" column contains a roleName comma-separated from a non-roleName, every title gets turned into a roleName
+                    BUT this variable is still useful to detect when a column name is such that it is a name part column -->
                 <xsl:variable name="name-element-name">
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Given')">forename</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Family')">addName</xsl:when>
-                        <!-- BUG!  When a "Titles" column contains a roleName comma-separated from a non-roleName, every title gets turned into a roleName -->
                         <xsl:when test="matches($next-column-name,'(_|-)Titles') and exists($roles/*[matches($next-column, node(), 'i')])">roleName</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Titles') or matches($next-column-name,'(_|-)Saint_Title') or matches($next-column-name,'(_|-)Terms_of_Address')">addName</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Office')">roleName</xsl:when>
@@ -267,7 +268,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <!-- Creates a $name-element-type variable that contains the value of the TEI @type attribute to be used for that name part. -->
-                <!-- Might be able to machine-generate title types based on content (e.g., "III", etc.) -->
+                <!-- Might be able to machine-generate title types based on content (e.g., "III", etc.) 
                 <xsl:variable name="name-element-type">
                     <xsl:choose>
                         <xsl:when test="matches($next-column-name,'(_|-)Family')">family</xsl:when>
@@ -278,7 +279,8 @@
                         <xsl:when test="matches($next-column-name,'(_|-)Office')">office</xsl:when>
                         <xsl:when test="matches($next-column-name,'(_|-)Numeric_Title')">numeric-title</xsl:when>
                     </xsl:choose>
-                </xsl:variable>
+                </xsl:variable> -->
+                
                 <xsl:choose>
                     <!-- When the name part column contains comma-separated values, processes them each individually by calling 
                     this template recursively. -->
@@ -290,8 +292,8 @@
                                     <xsl:with-param name="count" select="1"/>
                                     <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) -->
                                     <xsl:with-param name="all-name-parts" select="tokenize($next-column, ',\s|،\s')"/>
+                                    <xsl:with-param name="column-name" select="$next-column-name"/>
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                     <xsl:with-param name="sort" select="$sort"/>
                                     <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
@@ -313,8 +315,7 @@
                                 <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
                                     <xsl:matching-substring>
                                         <xsl:call-template name="name-part-element">
-                                            <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                                            <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                            <xsl:with-param name="column-name" select="$next-column-name"/>
                                             <xsl:with-param name="sort" select="$sort"/>
                                             <xsl:with-param name="this-row" select="$this-row"/>
                                         </xsl:call-template>
@@ -374,8 +375,8 @@
         <xsl:param name="name"/>
         <xsl:param name="count"/>
         <xsl:param name="all-name-parts"/>
+        <xsl:param name="column-name"/>
         <xsl:param name="name-element-name"/>
-        <xsl:param name="name-element-type"/>
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="sort"/>
         <xsl:param name="this-row"/>
@@ -391,8 +392,7 @@
                         <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
                             <xsl:matching-substring>
                                 <xsl:call-template name="name-part-element">
-                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                    <xsl:with-param name="column-name" select="$column-name"/>
                                     <xsl:with-param name="sort" select="$sort"/>
                                     <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
@@ -402,8 +402,8 @@
                                     <xsl:with-param name="name" select="."/>
                                     <xsl:with-param name="count" select="$count + 1"/>
                                     <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                                    <xsl:with-param name="column-name" select="$column-name"/>
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
                                     <xsl:with-param name="sort" select="$sort"/>
                                     <xsl:with-param name="this-row" select="$this-row"/>
                                 </xsl:call-template>
@@ -417,8 +417,8 @@
                             <xsl:with-param name="name" select="$name"/>
                             <xsl:with-param name="count" select="$count + 1"/>
                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                            <xsl:with-param name="column-name" select="$column-name"/>
                             <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                            <xsl:with-param name="name-element-type" select="$name-element-type"/>
                             <xsl:with-param name="sort" select="$sort"/>
                             <xsl:with-param name="this-row" select="$this-row"/>
                         </xsl:call-template>
@@ -435,19 +435,49 @@
     
     <xd:doc>
         <xd:desc>
-            <xd:p>This template creates an element for the name part being processed (context node), using the name from 
-            $name-element-name and the @type value from $name-element-type. It also creates a @sort attribute to show 
-            which part of the name should be evaluated first when alphabetizing lists.</xd:p>
+            <xd:p>This template creates an element for the name part being processed (context node), deducing the element 
+                name and the @type value from $column-name (plus a little extra logic). It also creates a @sort attribute to show
+                which part of the name should be evaluated first when alphabetizing lists.</xd:p>
+            <xd:p>This template formerly created an element for the name part being processed (context node), using the name 
+                from $name-element-name and the @type value from $name-element-type.  This created a bug when a comma-
+            separated column had components which required different element names.</xd:p>
         </xd:desc>
         <xd:param name="name-element-name">The name of the TEI element that will be used for this name part element.</xd:param>
         <xd:param name="name-element-type">The attribute content of the TEI @type attribute that will be used for this name part element.</xd:param>
         <xd:param name="sort">Contains a one-word description showing which name part should be used first in alphabetical lists.</xd:param>
     </xd:doc>
     <xsl:template name="name-part-element" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="name-element-name"/>
-        <xsl:param name="name-element-type"/>
+        <xsl:param name="column-name"/>
         <xsl:param name="sort"/>
         <xsl:param name="this-row"/>
+        
+        <!-- Creates a $name-element-name variable that contains the name of the TEI element name to be used for that name part. -->
+        <xsl:variable name="this-name" select="."/>
+        <xsl:variable name="name-element-name">
+            <xsl:choose>
+                <xsl:when test="matches($column-name,'(_|-)Given')">forename</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Family')">addName</xsl:when>
+                <!-- BUG!  When a "Titles" column contains a roleName comma-separated from a non-roleName, every title gets turned into a roleName -->
+                <xsl:when test="matches($column-name,'(_|-)Titles') and exists($roles/*[matches($this-name, node(), 'i')])">roleName</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Titles') or matches($column-name,'(_|-)Saint_Title') or matches($column-name,'(_|-)Terms_of_Address')">addName</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Office')">roleName</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Numeric_Title')">genName</xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <!-- Creates a $name-element-type variable that contains the value of the TEI @type attribute to be used for that name part. -->
+        <!-- Might be able to machine-generate title types based on content (e.g., "III", etc.) -->
+        <xsl:variable name="name-element-type">
+            <xsl:choose>
+                <xsl:when test="matches($column-name,'(_|-)Family')">family</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Titles') and exists($roles/*[matches($this-name, node(), 'i')])"><xsl:value-of select="$roles/*[matches($this-name, node(), 'i')][1]/@type"/></xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Titles')">untagged-title</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Saint_Title')">saint-title</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Terms_of_Address')">terms-of-address</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Office')">office</xsl:when>
+                <xsl:when test="matches($column-name,'(_|-)Numeric_Title')">numeric-title</xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
         <xsl:element name="{$name-element-name}">
             <xsl:if test="string-length($name-element-type)">
                 <xsl:attribute name="type" select="$name-element-type"/>
