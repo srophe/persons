@@ -27,7 +27,9 @@
 	  <mads:authority>
 	    <mads:name type="personal" authority="SRP" xml:lang="syr">
 		  <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']"/>
-		  <mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/>.00.00-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/>.00.00</mads:namePart>
+	    	<xsl:if test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth">	      	
+	    		<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/>.00.00-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/>.00.00</mads:namePart>
+	    	</xsl:if>	
 		  </mads:name>
 	    </mads:authority>
 	  </xsl:if>
@@ -36,10 +38,14 @@
   <xsl:template name="identifier">
     <mads:identifier>
 	  <xsl:text>http://syriaca.org/person/</xsl:text>
-      <xsl:value-of select="substring-after(tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/@xml:id, '-')"/>
-	  </mads:identifier>
-    </xsl:template>
+      <xsl:value-of select="substring-after(tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/@xml:id, '-')"/>  
+    </mads:identifier>    
+  </xsl:template>
   
+  <!-- 
+  	NOTE: question, should these be seperate note fields, can then specify lang attributes for each as appropriate
+  	also do we want to pull data from bibl file or leave as is?
+  -->
   <xsl:template name="note">
     <mads:note type="source">
       <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:bibl">
@@ -76,28 +82,28 @@
 	    </xsl:for-each>
 	  <mads:recordIdentifier source="SRP">
 		<xsl:text>http://syriaca.org/person/</xsl:text>
-		<xsl:value-of select="substring-after(tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/@xml:id, '-')"/>
-        </mads:recordIdentifier>
+		<xsl:value-of select="substring-after(tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/@xml:id, '-')"/>        
+	  </mads:recordIdentifier>
 	  <mads:languageOfCataloging>
         <mads:languageTerm authority="iso639-2b" type="code"><xsl:value-of select="tei:TEI/@xml:lang"/></mads:languageTerm>
-		</mads:languageOfCataloging>
+	  </mads:languageOfCataloging>
 	  <mads:descriptionStandard>aacr2</mads:descriptionStandard>
 	  </mads:recordInfo>
     </xsl:template>
 
   <xsl:template name="urls">
 	<xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:idno[@type='URI']">
-	  <mads:url note="URI"><xsl:value-of select="."/></mads:url>
-	  </xsl:for-each>
-    </xsl:template>
+	  <mads:url note="URI"><xsl:value-of select="."/></mads:url>	  
+	</xsl:for-each>
+  </xsl:template>
 
 	<xsl:template name="variants">
 	<xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[not(@xml:lang='syr' and @syriaca-tags='#syriaca-headword')]">
 	  <mads:variant type="other">
 	    <mads:name type="personal" xml:lang="{@xml:lang}">
 	      <xsl:apply-templates select="."/>
-		  </mads:name>
-		</mads:variant>
+	    </mads:name>
+	  </mads:variant>
 	  </xsl:for-each>
     </xsl:template>
 
@@ -108,7 +114,7 @@
 		  <mads:namePart type="given"><xsl:value-of select="."/></mads:namePart>
 		  </xsl:when>
 	    <xsl:when test="name()='family'">
-		  <!-- I've no idea what to do with a family name-->
+	    	<mads:namePart type="family"><xsl:value-of select="."/></mads:namePart>
 		  </xsl:when>
 	    <xsl:otherwise>
 		  <mads:namePart type="termsOfAddress"><xsl:value-of select="."/></mads:namePart>
