@@ -3,24 +3,30 @@
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   exclude-result-prefixes="tei"
-  version="1.0">
+  version="2.0">
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" indent="yes" name="xml"/>
+ 
   <xsl:strip-space elements="tei:span"/>
   
   <xsl:template match="/">
-    <mads:mads version="2.0"
-      xsi:schemaLocation="http://www.loc.gov/standards/mads/mads-2-0.xsd"
-	  xmlns:xlink="http://www.w3.org/1999/xlink">
-	  <xsl:call-template name="authority"/>
-	  <xsl:call-template name="variants"/>
-	  <xsl:call-template name="note"/>
-	  <xsl:call-template name="identifier"/>
-	  <mads:fieldOfActivity>Syriac literature</mads:fieldOfActivity>
-	  <xsl:call-template name="recordInfo"/>
-	  <xsl:call-template name="urls"/>
-	  </mads:mads>
-	</xsl:template>
+  	<xsl:for-each select="collection('../xml/tei/viaf?select=*.xml')">
+	  	<xsl:variable name="filename" select="substring-after(tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/@xml:id,'person-')"></xsl:variable>
+  		<xsl:result-document href="../xml/mads/{$filename}-mads.xml" format="xml">
+		    <mads:mads version="2.0"
+		      xsi:schemaLocation="http://www.loc.gov/standards/mads/mads-2-0.xsd"
+			  xmlns:xlink="http://www.w3.org/1999/xlink">
+			  <xsl:call-template name="authority"/>
+			  <xsl:call-template name="variants"/>
+			  <xsl:call-template name="note"/>
+			  <xsl:call-template name="identifier"/>
+			  <mads:fieldOfActivity>Syriac literature</mads:fieldOfActivity>
+			  <xsl:call-template name="recordInfo"/>
+			  <xsl:call-template name="urls"/>
+			  </mads:mads>
+	  	</xsl:result-document>
+  	</xsl:for-each>
+  </xsl:template>
 	
   <xsl:template name="authority">
     <xsl:if test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']">
