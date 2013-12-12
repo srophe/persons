@@ -114,18 +114,26 @@
     </xsl:template>
 
   <xsl:template match="tei:persName">
-    <xsl:for-each select="*">
-	  <xsl:choose>
-	    <xsl:when test="name()='forename'">
-		  <mads:namePart type="given"><xsl:value-of select="."/></mads:namePart>
-		  </xsl:when>
-	    <xsl:when test="name()='family'">
-	    	<mads:namePart type="family"><xsl:value-of select="."/></mads:namePart>
-		  </xsl:when>
-	    <xsl:otherwise>
-		  <mads:namePart type="termsOfAddress"><xsl:value-of select="."/></mads:namePart>
-		  </xsl:otherwise>
-	    </xsl:choose>
-	  </xsl:for-each>
+  	<xsl:choose>
+  		<xsl:when test="child::*">
+  			<xsl:for-each select="*">
+  				<xsl:choose>
+  					<xsl:when test="name()='forename'">
+  						<mads:namePart type="given"><xsl:value-of select="."/></mads:namePart>
+  					</xsl:when>
+  					<xsl:when test="name()='family'">
+  						<mads:namePart type="family"><xsl:value-of select="."/></mads:namePart>
+  					</xsl:when>
+  					<xsl:otherwise>
+  						<mads:namePart type="termsOfAddress"><xsl:value-of select="."/></mads:namePart>
+  					</xsl:otherwise>
+  				</xsl:choose>
+  			</xsl:for-each>
+  		</xsl:when>
+  		<xsl:otherwise>
+  			<mads:namePart><xsl:value-of select="."/></mads:namePart>
+  		</xsl:otherwise>
+  	</xsl:choose>
+  	
 	</xsl:template>
   </xsl:stylesheet>
