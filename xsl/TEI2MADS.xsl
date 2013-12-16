@@ -121,7 +121,7 @@
   					<xsl:when test="name()='forename'">
   						<mads:namePart type="given"><xsl:value-of select="."/></mads:namePart>
   					</xsl:when>
-  					<xsl:when test="name()='family'">
+  					<xsl:when test="name()='addName' and @type='family'">
   						<mads:namePart type="family"><xsl:value-of select="."/></mads:namePart>
   					</xsl:when>
   					<xsl:otherwise>
