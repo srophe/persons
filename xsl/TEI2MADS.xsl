@@ -33,8 +33,8 @@
 	  <mads:authority>
 	    <mads:name type="personal" authority="SRP" xml:lang="syr">
 		  <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']"/>
-	    	<xsl:if test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth">	      	
-	    		<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/>.00.00-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/>.00.00</mads:namePart>
+	    	<xsl:if test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when">	      	
+	    		<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when"/>.00.00-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when"/>.00.00</mads:namePart>
 	    	</xsl:if>	
 		  </mads:name>
 	    </mads:authority>
