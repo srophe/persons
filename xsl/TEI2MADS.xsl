@@ -48,13 +48,9 @@
     </mads:identifier>    
   </xsl:template>
   
-  <!-- 
-  	NOTE: question, should these be seperate note fields, can then specify lang attributes for each as appropriate
-  	also do we want to pull data from bibl file or leave as is?
-  -->
   <xsl:template name="note">
-    <mads:note type="source">
       <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:bibl">
+      	<mads:note type="source">
 	    <xsl:value-of select="tei:title"/>
 		<xsl:if test="tei:citedRange">
 		  <xsl:text> (</xsl:text>
@@ -74,8 +70,8 @@
 		<xsl:if test="not(position()=last())">
 		  <xsl:text>, </xsl:text>
 		  </xsl:if>
+      	</mads:note>
 	    </xsl:for-each>
-	  </mads:note>
     </xsl:template>
 
   <xsl:template name="recordInfo">
