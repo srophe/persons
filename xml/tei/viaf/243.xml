@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
          <change type="planned">Fuller documentation needed for Syriac headword.</change>
       </revisionDesc>
    </teiHeader>
@@ -156,7 +156,11 @@
                <persName xml:id="name243-2"
                          corresp="#name243-3 #name243-4 #name243-5"
                          xml:lang="en"
-                         source="#bib243-2">Metropolitan <forename sort="1">Gabriel</forename> of Barṭelli</persName>
+                         source="#bib243-2">
+                  <roleName type="office" sort="2">Metropolitan</roleName> 
+                  <forename sort="1">Gabriel</forename> 
+                  <addName type="untagged-title" sort="2">of Barṭelli</addName>
+               </persName>
                <persName xml:id="name243-3"
                          corresp="#name243-2 #name243-4 #name243-5"
                          xml:lang="ar"
@@ -168,11 +172,19 @@
                <persName xml:id="name243-4"
                          corresp="#name243-2 #name243-3 #name243-5"
                          xml:lang="syr"
-                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܓܒܪܐܝܠ</forename> ܒܪܛܠܝܐ</persName>
+                         source="#bib243-4">
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ</addName> 
+                  <forename sort="1">ܓܒܪܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܪܛܠܝܐ</addName>
+               </persName>
                <persName xml:id="name243-5"
                          corresp="#name243-2 #name243-3 #name243-4"
                          xml:lang="syr-Syrj"
-                         source="#bib243-4">ܡܝܛܪܘܦܘܠܝܛܐ <forename sort="1">ܓܰܒܪܳܐܝܠ</forename> ܒܰܪܛܶܠܝܐ</persName>
+                         source="#bib243-4">
+                  <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ</addName> 
+                  <forename sort="1">ܓܰܒܪܳܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܒܰܪܛܶܠܝܐ</addName>
+               </persName>
                <persName xml:id="name243-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܝܘܣܩܘܪܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܓܙܪܬܐ</addName>
@@ -182,7 +194,7 @@
                <death when="1300" source="#bib243-2">1300</death>
                <floruit notBefore="1200" notAfter="1400" source="#bib243-1">13th/14th cent.</floruit>
                <state type="office" role="metropolitan" source="#bib243-2">
-                  <desc xml:lang="en">Metropolitan of Barṭelli</desc>
+                  <desc xml:lang="en">Metropolitan</desc>
                </state>
                <bibl xml:id="bib243-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

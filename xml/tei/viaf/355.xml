@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -161,7 +161,9 @@
                <persName xml:id="name355-3"
                          corresp="#name355-2 #name355-4 #name355-5"
                          xml:lang="ar"
-                         source="#bib355-3">المطران <forename sort="2">توما</forename> 
+                         source="#bib355-3">
+                  <addName type="untagged-title" sort="2">المطران</addName> 
+                  <forename sort="2">توما</forename> 
                   <addName type="family" sort="1">اودو</addName>
                </persName>
                <persName xml:id="name355-4"
@@ -207,6 +209,7 @@
                <bibl xml:id="bib355-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">26</citedRange>
                </bibl>
                <bibl xml:id="bib355-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

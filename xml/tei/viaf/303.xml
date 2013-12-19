@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,30 +152,41 @@
                   <addName type="family" sort="1">Konat</addName>, <forename sort="2">Matta</forename>
                </persName>
                <persName xml:id="name303-2"
-                         corresp="#name303-3 #name303-4"
+                         corresp="#name303-3 #name303-4 #name303-5"
                          xml:lang="en"
                          source="#bib303-2">
                   <addName type="untagged-title" sort="2">Chorepiscopus</addName> 
-                  <forename sort="2">Matthew Konat</forename>
+                  <forename sort="2">Matthew</forename> 
+                  <addName type="family" sort="1">Konat</addName>
                </persName>
                <persName xml:id="name303-3"
-                         corresp="#name303-2 #name303-4"
+                         corresp="#name303-2 #name303-4 #name303-5"
+                         xml:lang="ar"
+                         source="#bib303-3">
+                  <addName type="untagged-title" sort="2">الخوري</addName> 
+                  <forename sort="2">متى</forename> 
+                  <addName type="family" sort="1">كوناط</addName>
+               </persName>
+               <persName xml:id="name303-4"
+                         corresp="#name303-2 #name303-3 #name303-5"
                          xml:lang="syr"
                          source="#bib303-4">
                   <addName type="untagged-title" sort="2">ܟܘܪܝܐ</addName> 
-                  <forename sort="2">ܡܬܝ ܟܘܢܐܛ</forename>
+                  <forename sort="2">ܡܬܝ</forename> 
+                  <addName type="family" sort="1">ܟܘܢܐܛ</addName>
                </persName>
-               <persName xml:id="name303-4"
-                         corresp="#name303-2 #name303-3"
+               <persName xml:id="name303-5"
+                         corresp="#name303-2 #name303-3 #name303-4"
                          xml:lang="syr-Syrj"
                          source="#bib303-4">
                   <addName type="untagged-title" sort="2">ܟܘܪܳܝܐ</addName> 
-                  <forename sort="2">ܡܰܬܝ ܟܘܢܰܐܛ</forename>
+                  <forename sort="2">ܡܰܬܝ</forename> 
+                  <addName type="family" sort="1">ܟܘܢܰܐܛ</addName>
                </persName>
-               <persName xml:id="name303-5" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name303-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="2">ܡܬܝ ܟܘܢܐܛ</forename>
                </persName>
-               <persName xml:id="name303-6" xml:lang="en">
+               <persName xml:id="name303-7" xml:lang="en">
                   <addName type="family" sort="1">Konat</addName>, <forename sort="2">Matthew</forename>
                </persName>
                <idno type="URI">http://syriaca.org/person/303</idno>
@@ -192,6 +203,11 @@
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="entry">290</citedRange>
                   <citedRange unit="pp">522</citedRange>
+               </bibl>
+               <bibl xml:id="bib303-3">
+                  <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">472 bis</citedRange>
                </bibl>
                <bibl xml:id="bib303-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>

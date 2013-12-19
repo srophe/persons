@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -163,15 +163,27 @@
                <persName xml:id="name106-3"
                          corresp="#name106-2 #name106-4 #name106-5"
                          xml:lang="ar"
-                         source="#bib106-3">البطريرك <forename sort="1">ساويرا</forename> الثاني</persName>
+                         source="#bib106-3">
+                  <addName type="untagged-title" sort="2">البطريرك</addName> 
+                  <forename sort="1">ساويرا</forename> 
+                  <addName type="untagged-title" sort="2">الثاني</addName>
+               </persName>
                <persName xml:id="name106-4"
                          corresp="#name106-2 #name106-3 #name106-5"
                          xml:lang="syr"
-                         source="#bib106-4">ܦܛܪܝܪܟܐ <forename sort="1">ܣܘܝܪܐ</forename> ܕܬܪܝܢ</persName>
+                         source="#bib106-4">
+                  <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
+                  <forename sort="1">ܣܘܝܪܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܬܪܝܢ</addName>
+               </persName>
                <persName xml:id="name106-5"
                          corresp="#name106-2 #name106-3 #name106-4"
                          xml:lang="syr-Syrj"
-                         source="#bib106-4">ܦܰܛܪܝܰܪܟܳܐ <forename sort="1">ܣܶܘܝܪܶܐ</forename> ܕܰܬܪܶܝܢ</persName>
+                         source="#bib106-4">
+                  <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܳܐ</addName> 
+                  <forename sort="1">ܣܶܘܝܪܶܐ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܰܬܪܶܝܢ</addName>
+               </persName>
                <persName xml:id="name106-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܣܘܝܪܐ</forename> 
                   <addName type="untagged-title" sort="2">ܕܬܪܝܢ</addName>

@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,22 +152,29 @@
                   <addName type="family" sort="1">Cardahi</addName>, <forename sort="2">Gabriel</forename>
                </persName>
                <persName xml:id="name406-2"
-                         corresp="#name406-3 #name406-4"
+                         corresp="#name406-3 #name406-4 #name406-5"
+                         xml:lang="en"
+                         source="#bib406-2">
+                  <forename sort="2">Gabriel</forename> 
+                  <addName type="family" sort="1">Cardahi</addName>
+               </persName>
+               <persName xml:id="name406-3"
+                         corresp="#name406-2 #name406-4 #name406-5"
                          xml:lang="ar"
                          source="#bib406-3">
                   <forename sort="2">جبرائيل</forename> 
                   <addName type="family" sort="1">قرادحي</addName>
                </persName>
-               <persName xml:id="name406-3"
-                         corresp="#name406-2 #name406-4"
+               <persName xml:id="name406-4"
+                         corresp="#name406-2 #name406-3 #name406-5"
                          xml:lang="syr"
                          source="#bib406-4"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="2">ܓܒܪܐܝܠ</forename> 
                   <addName type="family" sort="1">ܩܪܕܚܐ</addName>
                </persName>
-               <persName xml:id="name406-4"
-                         corresp="#name406-2 #name406-3"
+               <persName xml:id="name406-5"
+                         corresp="#name406-2 #name406-3 #name406-4"
                          xml:lang="syr-Syrj"
                          source="#bib406-4">
                   <forename sort="2">ܓܰܒܪܐܝܠ</forename> 
@@ -187,6 +194,11 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">119</citedRange>
                   <citedRange unit="pp">89</citedRange>
+               </bibl>
+               <bibl xml:id="bib406-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">26</citedRange>
                </bibl>
                <bibl xml:id="bib406-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

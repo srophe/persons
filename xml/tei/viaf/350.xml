@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,30 +152,37 @@
                   <addName type="family" sort="1">Assemani</addName>, <forename sort="2">Stephanus Evodius</forename>
                </persName>
                <persName xml:id="name350-2"
-                         corresp="#name350-3 #name350-4"
+                         corresp="#name350-3 #name350-4 #name350-5"
+                         xml:lang="en"
+                         source="#bib350-2">
+                  <forename sort="2">Stephen ‛Awwad</forename> 
+                  <addName type="family" sort="1">(Assemani)</addName>
+               </persName>
+               <persName xml:id="name350-3"
+                         corresp="#name350-2 #name350-4 #name350-5"
                          xml:lang="ar"
                          source="#bib350-3">
                   <addName type="untagged-title" sort="2">المطران</addName> 
                   <forename sort="2">اسطيفان عوَّاد</forename> 
                   <addName type="family" sort="1">السمعاني</addName>
                </persName>
-               <persName xml:id="name350-3"
-                         corresp="#name350-2 #name350-4"
+               <persName xml:id="name350-4"
+                         corresp="#name350-2 #name350-3 #name350-5"
                          xml:lang="syr"
                          source="#bib350-4">
                   <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ</addName> 
                   <forename sort="2">ܐܣܛܝܦܐܢ ܥܘܐܕ</forename> 
                   <addName type="family" sort="1">ܫܡܥܘܢܝܐ</addName>
                </persName>
-               <persName xml:id="name350-4"
-                         corresp="#name350-2 #name350-3"
+               <persName xml:id="name350-5"
+                         corresp="#name350-2 #name350-3 #name350-4"
                          xml:lang="syr-Syrj"
                          source="#bib350-4">
                   <addName type="untagged-title" sort="2">ܡܝܛܪܘܦܘܠܝܛܐ</addName> 
                   <forename sort="2">ܐܶܣܛܰܝܦܰܐܢ ܥܰܘܰܐܕ</forename> 
                   <addName type="family" sort="1">ܫܶܡܥܘܢܳܝܳܐ</addName>
                </persName>
-               <persName xml:id="name350-5" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name350-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="2">ܐܣܛܝܦܐܢ ܥܘܐܕ</forename> 
                   <addName type="family" sort="1">ܫܡܥܘܢܝܐ</addName>
                </persName>
@@ -195,6 +202,11 @@
                   <citedRange unit="entry">55</citedRange>
                   <citedRange unit="pp">44</citedRange>
                </bibl>
+               <bibl xml:id="bib350-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">234</citedRange>
+               </bibl>
                <bibl xml:id="bib350-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
@@ -203,6 +215,7 @@
                <bibl xml:id="bib350-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">506</citedRange>
                </bibl>
                <bibl xml:id="bib350-11">
                   <title xml:lang="en">Virtual International Authority File</title>

@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -172,11 +172,19 @@
                <persName xml:id="name44-4"
                          corresp="#name44-2 #name44-3 #name44-5"
                          xml:lang="syr"
-                         source="#bib44-4">ܡܪܝ <forename sort="1">ܦܝܠܠܘܟܣܝܢܘܣ</forename> ܕܡܒܘܓ</persName>
+                         source="#bib44-4">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܦܝܠܠܘܟܣܝܢܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܒܘܓ</addName>
+               </persName>
                <persName xml:id="name44-5"
                          corresp="#name44-2 #name44-3 #name44-4"
                          xml:lang="syr-Syrj"
-                         source="#bib44-4">ܡܳܪܝ <forename sort="1">ܦܺܝܠܠܘܟܣܺܝܢܘܣ</forename> ܕܡܰܒܘܓ</persName>
+                         source="#bib44-4">
+                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
+                  <forename sort="1">ܦܺܝܠܠܘܟܣܺܝܢܘܣ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܡܰܒܘܓ</addName>
+               </persName>
                <persName xml:id="name44-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܦܝܠܠܘܟܣܝܢܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܡܒܘܓ</addName>
@@ -199,7 +207,7 @@
                <idno type="URI">http://viaf.org/viaf/59485487</idno>
                <idno type="URI">http://viaf.org/viaf/88004180</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=P&amp;sK=Philoxenus of Mabbug&amp;sT=keywords</idno>
-               <birth notBefore="0440" notAfter="0460" source="#bib44-1">ca. 440s?</birth>
+               <birth notBefore="0430" notAfter="0460" source="#bib44-1">ca. 440s?</birth>
                <death when="0523" source="#bib44-1">523</death>
                <state type="office" from="0485" to="0519" source="#bib44-1">
                   <desc xml:lang="en-x-gedsh">485-519</desc>

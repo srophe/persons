@@ -89,7 +89,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,7 +148,16 @@
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">Guidi</addName>, <forename sort="2">Ignazio</forename>
                </persName>
-               <persName xml:id="name517-2" xml:lang="ar" source="#bib517-3">
+               <persName xml:id="name517-2"
+                         corresp="#name517-3"
+                         xml:lang="en"
+                         source="#bib517-2">
+                  <addName type="family" sort="1">Guidi</addName>
+               </persName>
+               <persName xml:id="name517-3"
+                         corresp="#name517-2"
+                         xml:lang="ar"
+                         source="#bib517-3">
                   <addName type="family" sort="1">غويدي</addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/517</idno>
@@ -164,6 +173,11 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">241</citedRange>
                   <citedRange unit="pp">184</citedRange>
+               </bibl>
+               <bibl xml:id="bib517-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">291</citedRange>
                </bibl>
                <bibl xml:id="bib517-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

@@ -36,7 +36,8 @@
                         <xsl:choose>
                             <!-- Source-specific specifications for whether vocalized Syriac is West or East go here. -->
                             <xsl:when test="contains($column-name, 'Barsoum_syr-')">-Syrj</xsl:when>
-                            <xsl:when test="contains($column-name, 'Abdisho')">-Syrn</xsl:when>
+                            <xsl:when test="contains($column-name, 'Abdisho_YdQ')">-Syrn</xsl:when>
+                            <xsl:when test="contains($column-name, 'Abdisho_BO')">-Syrj</xsl:when>
                         </xsl:choose>
                     </xsl:if>
                     <xsl:if test="matches($column-name, 'GEDSH_en-|GS_en-')">-x-gedsh</xsl:if>

@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,20 +152,26 @@
                   <addName type="family" sort="1">Brooks</addName>, <forename sort="2">Ernest Walter</forename>
                </persName>
                <persName xml:id="name403-2"
-                         corresp="#name403-3 #name403-4"
+                         corresp="#name403-3 #name403-4 #name403-5"
+                         xml:lang="en"
+                         source="#bib403-2">
+                  <addName type="family" sort="1">Brooks</addName>
+               </persName>
+               <persName xml:id="name403-3"
+                         corresp="#name403-2 #name403-4 #name403-5"
                          xml:lang="ar"
                          source="#bib403-3">
                   <addName type="family" sort="1">بروكس</addName>
                </persName>
-               <persName xml:id="name403-3"
-                         corresp="#name403-2 #name403-4"
+               <persName xml:id="name403-4"
+                         corresp="#name403-2 #name403-3 #name403-5"
                          xml:lang="syr"
                          source="#bib403-4"
                          syriaca-tags="#syriaca-headword">
                   <addName type="family" sort="1">ܒܪܘܟܣ</addName>
                </persName>
-               <persName xml:id="name403-4"
-                         corresp="#name403-2 #name403-3"
+               <persName xml:id="name403-5"
+                         corresp="#name403-2 #name403-3 #name403-4"
                          xml:lang="syr-Syrj"
                          source="#bib403-4">
                   <addName type="family" sort="1">ܒܪܳܘܟܣ</addName>
@@ -183,6 +189,11 @@
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">116</citedRange>
                   <citedRange unit="pp">88</citedRange>
+               </bibl>
+               <bibl xml:id="bib403-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">305</citedRange>
                </bibl>
                <bibl xml:id="bib403-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

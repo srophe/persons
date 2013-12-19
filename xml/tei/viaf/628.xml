@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,40 +152,55 @@
                   <forename sort="1">Maximus</forename>
                </persName>
                <persName xml:id="name628-2"
-                         corresp="#name628-3 #name628-4"
+                         corresp="#name628-3 #name628-4 #name628-5"
+                         xml:lang="en"
+                         source="#bib628-2">
+                  <roleName type="office" sort="2">monk</roleName> 
+                  <forename sort="1">Maximus</forename>
+               </persName>
+               <persName xml:id="name628-3"
+                         corresp="#name628-2 #name628-4 #name628-5"
                          xml:lang="ar"
                          source="#bib628-3">
                   <forename sort="1">مكسيمس</forename> 
                   <addName type="untagged-title" sort="2">الراهب</addName>
                </persName>
-               <persName xml:id="name628-3"
-                         corresp="#name628-2 #name628-4"
+               <persName xml:id="name628-4"
+                         corresp="#name628-2 #name628-3 #name628-5"
                          xml:lang="syr"
                          source="#bib628-4">
                   <forename sort="1">ܡܟܣܝܡܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName>
                </persName>
-               <persName xml:id="name628-4"
-                         corresp="#name628-2 #name628-3"
+               <persName xml:id="name628-5"
+                         corresp="#name628-2 #name628-3 #name628-4"
                          xml:lang="syr-Syrj"
                          source="#bib628-4">
                   <forename sort="1">ܡܰܟܣܝܡܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName>
                </persName>
-               <persName xml:id="name628-5" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name628-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܟܣܝܡܘܣ</forename>
                </persName>
-               <persName xml:id="name628-6" xml:lang="en" source="#bib628-10">Maximus the Confessor</persName>
+               <persName xml:id="name628-7" xml:lang="en" source="#bib628-10">Maximus the Confessor</persName>
                <idno type="URI">http://syriaca.org/person/628</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|628</idno>
                <idno type="URI">http://viaf.org/viaf/106970843</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Maximus the Confessor&amp;sT=keywords</idno>
                <death when="0662" source="#bib628-1">662</death>
+               <state type="office" role="monk" source="#bib628-2">
+                  <desc xml:lang="en">monk</desc>
+               </state>
                <bibl xml:id="bib628-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">365</citedRange>
                   <citedRange unit="pp">281</citedRange>
+               </bibl>
+               <bibl xml:id="bib628-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">128</citedRange>
                </bibl>
                <bibl xml:id="bib628-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

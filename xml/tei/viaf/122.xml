@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -169,11 +169,19 @@
                <persName xml:id="name122-4"
                          corresp="#name122-2 #name122-3 #name122-5"
                          xml:lang="syr"
-                         source="#bib122-4">ܡܪܝ <forename sort="1">ܓܘܪܓܝ</forename> ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</persName>
+                         source="#bib122-4">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܓܘܪܓܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</addName>
+               </persName>
                <persName xml:id="name122-5"
                          corresp="#name122-2 #name122-3 #name122-4"
                          xml:lang="syr-Syrj"
-                         source="#bib122-4">ܡܳܪܝ <forename sort="1">ܓܶܘܰܪܓܝ</forename> ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</persName>
+                         source="#bib122-4">
+                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
+                  <forename sort="1">ܓܶܘܰܪܓܝ</forename> 
+                  <addName type="untagged-title" sort="2">ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</addName>
+               </persName>
                <persName xml:id="name122-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܓܘܪܓܝ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܥܪ̈ܒܝܐ</addName>

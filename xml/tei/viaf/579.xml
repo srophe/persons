@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -153,22 +153,29 @@
                   <addName type="untagged-title" sort="2">of Halicarnassus</addName>
                </persName>
                <persName xml:id="name579-2"
-                         corresp="#name579-3 #name579-4"
+                         corresp="#name579-3 #name579-4 #name579-5"
+                         xml:lang="en"
+                         source="#bib579-2">
+                  <forename sort="1">Julian</forename> 
+                  <addName type="untagged-title" sort="2">the Phantasiast</addName>, <roleName type="office" sort="2">bishop of Halicarnassus</roleName>
+               </persName>
+               <persName xml:id="name579-3"
+                         corresp="#name579-2 #name579-4 #name579-5"
                          xml:lang="ar"
                          source="#bib579-3">
                   <forename sort="1">يوليان</forename> 
                   <addName type="untagged-title" sort="2">اسقف هاليكرناس</addName>
                </persName>
-               <persName xml:id="name579-3"
-                         corresp="#name579-2 #name579-4"
+               <persName xml:id="name579-4"
+                         corresp="#name579-2 #name579-3 #name579-5"
                          xml:lang="syr"
                          source="#bib579-4"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܘܠܝܢܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</addName>
                </persName>
-               <persName xml:id="name579-4"
-                         corresp="#name579-2 #name579-3"
+               <persName xml:id="name579-5"
+                         corresp="#name579-2 #name579-3 #name579-4"
                          xml:lang="syr-Syrj"
                          source="#bib579-4">
                   <forename sort="1">ܝܘܽܠܝܰܢܶܐ</forename> 
@@ -182,11 +189,19 @@
                <idno type="URI">http://viaf.org/viaf/215849401</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=J&amp;sK=Julian of Halicarnassus&amp;sT=keywords</idno>
                <floruit notBefore="0495" notAfter="0545" source="#bib579-1">ca. 520</floruit>
+               <state type="office" role="bishop" source="#bib579-2">
+                  <desc xml:lang="en">bishop of Halicarnassus</desc>
+               </state>
                <bibl xml:id="bib579-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">310</citedRange>
                   <citedRange unit="pp">236</citedRange>
+               </bibl>
+               <bibl xml:id="bib579-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">279</citedRange>
                </bibl>
                <bibl xml:id="bib579-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

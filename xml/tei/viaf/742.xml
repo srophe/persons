@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -139,7 +139,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -158,14 +158,15 @@
                          xml:lang="en"
                          source="#bib742-2">
                   <forename sort="1">Simon</forename> 
-                  <addName type="untagged-title" sort="2">Taybutha</addName>
+                  <addName type="untagged-title" sort="2">Taybutha</addName>, <roleName type="office" sort="2">the ascetic physician</roleName>
                </persName>
                <persName xml:id="name742-3"
                          corresp="#name742-2 #name742-4 #name742-5"
                          xml:lang="ar"
                          source="#bib742-3">
                   <forename sort="1">شمعون</forename> 
-                  <addName type="untagged-title" sort="2">طيبوثه الطبيب الناسك</addName>
+                  <addName type="untagged-title" sort="2">طيبوثه</addName> 
+                  <addName type="untagged-title" sort="2">الطبيب الناسك</addName>
                </persName>
                <persName xml:id="name742-4"
                          corresp="#name742-2 #name742-3 #name742-5"
@@ -205,6 +206,9 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|742</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Simeon of Taibutheh&amp;sT=keywords</idno>
                <floruit notBefore="0650" notAfter="0700" source="#bib742-1">late 7th cent.</floruit>
+               <state type="office" role="ascetic" source="#bib742-2">
+                  <desc xml:lang="en">the ascetic physician</desc>
+               </state>
                <bibl xml:id="bib742-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
@@ -214,6 +218,7 @@
                <bibl xml:id="bib742-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">140</citedRange>
                </bibl>
                <bibl xml:id="bib742-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>

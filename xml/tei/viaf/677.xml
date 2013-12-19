@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-09-05:00</date>
+            <date>2013-12-18-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-09-05:00"> CREATED: person </change>
+                 when="2013-12-18-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,23 +152,29 @@
                   <addName type="family" sort="1">Payne Smith</addName>, <forename sort="2">Robert</forename>
                </persName>
                <persName xml:id="name677-2"
-                         corresp="#name677-3 #name677-4"
+                         corresp="#name677-3 #name677-4 #name677-5"
+                         xml:lang="en"
+                         source="#bib677-2">
+                  <addName type="family" sort="1">Payne Smith</addName>
+               </persName>
+               <persName xml:id="name677-3"
+                         corresp="#name677-2 #name677-4 #name677-5"
                          xml:lang="ar"
                          source="#bib677-3">
                   <addName type="family" sort="1">بيان سمث</addName>
                </persName>
-               <persName xml:id="name677-3"
-                         corresp="#name677-2 #name677-4"
+               <persName xml:id="name677-4"
+                         corresp="#name677-2 #name677-3 #name677-5"
                          xml:lang="syr"
                          source="#bib677-4"
                          syriaca-tags="#syriaca-headword">
-                  <addName type="family" sort="1">ܒܝܐܢ ܣܡܝܬ</addName>
+                  <addName type="family" sort="1">ܒܐܝܢ ܣܡܝܬ</addName>
                </persName>
-               <persName xml:id="name677-4"
-                         corresp="#name677-2 #name677-3"
+               <persName xml:id="name677-5"
+                         corresp="#name677-2 #name677-3 #name677-4"
                          xml:lang="syr-Syrj"
                          source="#bib677-4">
-                  <addName type="family" sort="1">ܒܰܝܐܢ ܣܡܺܝܬ</addName>
+                  <addName type="family" sort="1">ܒܰܐܝܢ ܣܡܺܝܬ</addName>
                </persName>
                <idno type="URI">http://syriaca.org/person/677</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|677</idno>
@@ -189,6 +195,11 @@
                   <citedRange unit="entry">423</citedRange>
                   <citedRange unit="pp">326</citedRange>
                </bibl>
+               <bibl xml:id="bib677-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">210</citedRange>
+               </bibl>
                <bibl xml:id="bib677-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
@@ -197,6 +208,7 @@
                <bibl xml:id="bib677-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">201</citedRange>
                </bibl>
                <bibl xml:id="bib677-11">
                   <title xml:lang="en">Virtual International Authority File</title>
