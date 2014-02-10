@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI 
+  xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" 
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Chronicle of Edessa</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Open source text from Tertullian.org</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <calendarDesc>
+        <calendar xml:id="cal_Macedonian" target="http://en.wikipedia.org/wiki/Hellenic_calendar">
+          <p>Ancient Macedonian Calendar</p>
+        </calendar>
+      </calendarDesc>
+      <particDesc>
+        <listPerson type="historical">
+          <person xml:id="Abgar1">
+            <persName>Abgar</persName>
+          </person>
+          <person xml:id="Christ">
+            <persName>Jesus of Nazareth</persName>
+          </person>
+          <person xml:id="Augustus">
+            <persName notAfter="-0044-03-15">Gaius Octavius</persName>
+            <persName notBefore="-0044-03-15" notAfter="-0027-01-16">Caesar</persName>
+            <persName notBefore="-0027-01-16">Augustus</persName>
+          </person>
+          <person xml:id="Bardaisan">
+            <persName ref="MADS record #0003">Bardaisan</persName>
+          </person>
+          <person xml:id="Lucius">
+            <persName ref="http://en.wikipedia.org/wiki/Lucius_Verus">Lucius Verus</persName>
+          </person>
+          <person xml:id="Marcion">
+            <persName>Marcion</persName>
+          </person>
+          <person xml:id="Commodus">
+            <persName>Gaius Avidius Ceionius Commodus</persName>
+          </person>
+         </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <listEvent>
+          <event type="governance">
+            <p>1. <date when="-0132">In the year <date calendar="#cal_Macedonian">180</date></date>, kings began to rule in 
+              <placeName ref="http://syriaca.org/place/78">Edessa</placeName>.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="accession">
+            <p>2. <date when="-0046"><!-- Author must mean 44 BC. Not sure how to handle this. -->In the year <date calendar="#cal_Macedonian">266</date></date>
+              <persName><name type="person" ref="#Augustus"><roleName type="nobility">Augustus</roleName> <surname>Caesar</surname></name></persName>was made emperor.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="birth">
+            <p>3. <date when="-0003">In the year <date calendar="#cal_Macedonian">309</date></date>
+              <persName><name type="person" ref="#Christ"><addName>our Lord</addName></name></persName> was born.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="building">
+            <p>4. <date when="0088">In the year <date calendar="#cal_Macedonian">400</date></date>,
+              <persName><name type="person" ref="#Abgar1"><forename>Abgar</forename> the <roleName>king</roleName></name></persName> built a mausoleum for himself.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="apostasy">
+            <p>5. <date when="0137">In the year <date calendar="#cal_Macedonian">449</date></date> <persName><name type="person" ref="#Marcion">Marcion</name></persName> forsook the 
+              <orgName>Catholic Church</orgName>.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="birth">
+            <p>6. <date when="0154-07-11"><date calendar="#cal_Macedonian">The year 465, in the month Tammuz, on the eleventh day</date> (i.e., July 11th, 154 A.D.)</date>,
+              <persName><name type="person" ref="#Bardaisan">Bardesanes</name></persName> was born.</p>
+          </event>
+        </listEvent>
+      </div>
+      <div>
+        <listEvent>
+          <event type="conquest">
+            <p>7. <persName><name type="person" ref="#Lucius"><forename>Lucius</forename> 
+              <roleName type="nobility"><!-- problem, earlier Caesar was a family name, by now it's become a title -->Caesar</roleName></name></persName>,
+              with his <persName><!-- But, of course, this is not a name. I'm not sure why <listPerson> and <person> elements won't validate. --><name ref="#Commodus">brother</name></persName>, subjugated <orgName type="state"><!-- org or place? -->the Parthians</orgName> to 
+             <orgName type="state">the <region>Romans</region></orgName> <date when="0166">in the fifth year of his reign</date>.</p>
+            <listRelation>
+              <relation name="sibling" mutual="#Lucius #Commodus"></relation><!-- BUT, does this actually get us what we need? I don't actually know.-->
+            </listRelation>
+          </event>
+        </listEvent>
+      </div>
+    </body>
+  </text>
+</TEI>
