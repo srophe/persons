@@ -282,29 +282,12 @@
                 </xsl:variable> -->
                 
                 <xsl:choose>
-                    <!-- When the name part column contains comma-separated values, processes them each individually by calling 
-                    this template recursively. -->
-                    <xsl:when test="contains($next-column, ', ') or contains($next-column, '، ')">
-                        <xsl:call-template name="name-parts">
-                            <xsl:with-param name="name">
-                                <xsl:call-template name="name-part-comma-separated">
-                                    <xsl:with-param name="name" select="$name"/>
-                                    <xsl:with-param name="count" select="1"/>
-                                    <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) -->
-                                    <xsl:with-param name="all-name-parts" select="tokenize($next-column, ',\s|،\s')"/>
-                                    <xsl:with-param name="column-name" select="$next-column-name"/>
-                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                                    <xsl:with-param name="sort" select="$sort"/>
-                                    <xsl:with-param name="this-row" select="$this-row"/>
-                                </xsl:call-template>
-                            </xsl:with-param>
-                            <xsl:with-param name="count" select="$count + 1"/>
-                            <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
-                            <xsl:with-param name="sort" select="$sort"/>
-                            <xsl:with-param name="this-row" select="$this-row"/>
-                        </xsl:call-template>                    
-                    </xsl:when>
-                    <!-- Otherwise, if the next column has a name (i.e., exists at all) ... -->
+                    <xsl:when test="string-length($name-element-name)"></xsl:when>
+                    <xsl:otherwise></xsl:otherwise>
+                </xsl:choose>
+                
+                <xsl:choose>
+                    <!-- if the next column has a name (i.e., exists at all) ... -->
                     <xsl:when test="string-length($next-column-name)">
                         <xsl:choose>
                             <!-- If the next name part column has content, try to match the name part against the full name 
@@ -312,24 +295,50 @@
                             the name-part-element template. Non-matching strings in the full name get reprocessed through 
                             this template (with an incremented counter) to be matched against other name part columns.-->
                             <xsl:when test="string-length($name-element-name) and string-length(normalize-space($next-column))">
-                                <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
-                                    <xsl:matching-substring>
-                                        <xsl:call-template name="name-part-element">
-                                            <xsl:with-param name="column-name" select="$next-column-name"/>
-                                            <xsl:with-param name="sort" select="$sort"/>
-                                            <xsl:with-param name="this-row" select="$this-row"/>
-                                        </xsl:call-template>
-                                    </xsl:matching-substring>
-                                    <xsl:non-matching-substring>
+                                <xsl:choose>
+                                    <!-- When the name part column contains comma-separated values, processes them each individually by calling 
+                    this template recursively. -->
+                                    <xsl:when test="contains($next-column, ', ') or contains($next-column, '، ')">
                                         <xsl:call-template name="name-parts">
-                                            <xsl:with-param name="name" select="."/>
+                                            <xsl:with-param name="name">
+                                                <xsl:call-template name="name-part-comma-separated">
+                                                    <xsl:with-param name="name" select="$name"/>
+                                                    <xsl:with-param name="count" select="1"/>
+                                                    <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) -->
+                                                    <xsl:with-param name="all-name-parts" select="tokenize($next-column, ',\s|،\s')"/>
+                                                    <xsl:with-param name="column-name" select="$next-column-name"/>
+                                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                                                    <xsl:with-param name="sort" select="$sort"/>
+                                                    <xsl:with-param name="this-row" select="$this-row"/>
+                                                </xsl:call-template>
+                                            </xsl:with-param>
                                             <xsl:with-param name="count" select="$count + 1"/>
                                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                             <xsl:with-param name="sort" select="$sort"/>
                                             <xsl:with-param name="this-row" select="$this-row"/>
-                                        </xsl:call-template>
-                                    </xsl:non-matching-substring>
-                                </xsl:analyze-string>
+                                        </xsl:call-template>                    
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
+                                            <xsl:matching-substring>
+                                                <xsl:call-template name="name-part-element">
+                                                    <xsl:with-param name="column-name" select="$next-column-name"/>
+                                                    <xsl:with-param name="sort" select="$sort"/>
+                                                    <xsl:with-param name="this-row" select="$this-row"/>
+                                                </xsl:call-template>
+                                            </xsl:matching-substring>
+                                            <xsl:non-matching-substring>
+                                                <xsl:call-template name="name-parts">
+                                                    <xsl:with-param name="name" select="."/>
+                                                    <xsl:with-param name="count" select="$count + 1"/>
+                                                    <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                                                    <xsl:with-param name="sort" select="$sort"/>
+                                                    <xsl:with-param name="this-row" select="$this-row"/>
+                                                </xsl:call-template>
+                                            </xsl:non-matching-substring>
+                                        </xsl:analyze-string>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:when>
                             <!-- If the next column only has a name but no content, increment the counter and run the template again. -->
                             <xsl:otherwise>
