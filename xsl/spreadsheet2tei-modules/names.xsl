@@ -282,11 +282,6 @@
                 </xsl:variable> -->
                 
                 <xsl:choose>
-                    <xsl:when test="string-length($name-element-name)"></xsl:when>
-                    <xsl:otherwise></xsl:otherwise>
-                </xsl:choose>
-                
-                <xsl:choose>
                     <!-- if the next column has a name (i.e., exists at all) ... -->
                     <xsl:when test="string-length($next-column-name)">
                         <xsl:choose>
@@ -299,13 +294,36 @@
                                     <!-- When the name part column contains comma-separated values, processes them each individually by calling 
                     this template recursively. -->
                                     <xsl:when test="contains($next-column, ', ') or contains($next-column, '، ')">
+                                       <!-- new approach: create nodes for each of the comma-separated values and prefix those nodes to $all-name-parts and then call this template with the new $all-name-parts sequence -->
+                                        <xsl:variable name="more-name-parts" as="element()*">
+                                            <xsl:copy-of select="subsequence($all-name-parts,1,$count)"/>
+                                            <xsl:for-each select="tokenize($next-column, ',\s|،\s')">
+                                                <xsl:element name="{$next-column-name}"><xsl:value-of select="."/></xsl:element>
+                                            </xsl:for-each>
+                                            <xsl:copy-of select="subsequence($all-name-parts,$count+1)"/>
+                                        </xsl:variable>
+                                        
+                                        <!-- <xsl:copy-of select="$more-name-parts"/> -->
+                                        
                                         <xsl:call-template name="name-parts">
+                                            <xsl:with-param name="name" select="$name"/>
+                                            <xsl:with-param name="count" select="$count+1"/>
+                                            <xsl:with-param name="all-name-parts" select="$more-name-parts"/>
+                                            <xsl:with-param name="next-column" select="$more-name-parts[$count+1]"/>
+                                            <xsl:with-param name="next-column-name" select="$next-column-name"/>
+                                            <xsl:with-param name="sort" select="$sort"/>
+                                            <xsl:with-param name="this-row" select="$this-row"/>
+                                        </xsl:call-template>
+                                        
+                                        <!--  <xsl:call-template name="name-parts">
                                             <xsl:with-param name="name">
                                                 <xsl:call-template name="name-part-comma-separated">
                                                     <xsl:with-param name="name" select="$name"/>
-                                                    <xsl:with-param name="count" select="1"/>
-                                                    <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) -->
-                                                    <xsl:with-param name="all-name-parts" select="tokenize($next-column, ',\s|،\s')"/>
+                                                    <xsl:with-param name="token-count" select="1"/>
+                                                -->    <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) --> <!-- 
+                                                    <xsl:with-param name="all-name-tokens" select="tokenize($next-column, ',\s|،\s')"/>
+                                                    <xsl:with-param name="count" select="$count"></xsl:with-param>
+                                                    <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                                     <xsl:with-param name="column-name" select="$next-column-name"/>
                                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
                                                     <xsl:with-param name="sort" select="$sort"/>
@@ -316,7 +334,7 @@
                                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                             <xsl:with-param name="sort" select="$sort"/>
                                             <xsl:with-param name="this-row" select="$this-row"/>
-                                        </xsl:call-template>                    
+                                            </xsl:call-template>                     -->
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
@@ -382,6 +400,8 @@
     </xd:doc>
     <xsl:template name="name-part-comma-separated" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
+        <xsl:param name="token-count"/>
+        <xsl:param name="all-name-tokens"/>
         <xsl:param name="count"/>
         <xsl:param name="all-name-parts"/>
         <xsl:param name="column-name"/>
@@ -389,9 +409,10 @@
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
         <xsl:param name="sort"/>
         <xsl:param name="this-row"/>
+        <error>CODE RED!  This template should never be called.</error>
         <xsl:choose>
-            <!-- If the counter is less than the number of name parts ... -->
-            <xsl:when test="count($all-name-parts) >= $count">
+            <!-- If the token counter is less than the number of name tokens ... -->
+            <xsl:when test="count($all-name-tokens) >= $token-count">
                 <xsl:choose>
                     <!-- If there is both an element name to use and the next column has content, tries to match the name part
                         against the full name (non-case-sensitive) and turns that part of the full name into a child element 
@@ -409,7 +430,9 @@
                             <xsl:non-matching-substring>
                                 <xsl:call-template name="name-part-comma-separated">
                                     <xsl:with-param name="name" select="."/>
-                                    <xsl:with-param name="count" select="$count + 1"/>
+                                    <xsl:with-param name="token-count" select="$token-count + 1"/>
+                                    <xsl:with-param name="all-name-tokens" select="$all-name-tokens"/>
+                                    <xsl:with-param name="count" select="$count"/>
                                     <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                                     <xsl:with-param name="column-name" select="$column-name"/>
                                     <xsl:with-param name="name-element-name" select="$name-element-name"/>
@@ -424,7 +447,9 @@
                     <xsl:otherwise>
                         <xsl:call-template name="name-part-comma-separated">
                             <xsl:with-param name="name" select="$name"/>
-                            <xsl:with-param name="count" select="$count + 1"/>
+                            <xsl:with-param name="token-count" select="$token-count + 1"/>
+                            <xsl:with-param name="all-name-tokens"/>
+                            <xsl:with-param name="count" select="$count"/>
                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
                             <xsl:with-param name="column-name" select="$column-name"/>
                             <xsl:with-param name="name-element-name" select="$name-element-name"/>
@@ -434,7 +459,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- Once the counter has exceeded the number of name parts, returns the full name with any of the child elements 
+            <!-- Once the token counter has exceeded the number of name tokens, returns the full name with any of the child elements 
             that have been added. -->
             <xsl:otherwise>
                 <xsl:value-of select="$name"/>
