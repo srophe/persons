@@ -103,9 +103,9 @@
 		  <xsl:value-of select="tei:span"/>
 		  <xsl:text>)</xsl:text>
 		  </xsl:if>
-		<xsl:if test="not(position()=last())">
-		  <xsl:text>, </xsl:text>
-		  </xsl:if>
+      		<!-- <xsl:if test="not(position()=last())">
+		  <xsl:text>, </xsl:text> 
+		  </xsl:if> -->  <!-- instructed to delete comma and space -->
       	</mads:note>
 	    </xsl:for-each>
     </xsl:template>
