@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI 
-  xmlns:xi="http://www.w3.org/2001/XInclude" 
-  xmlns:svg="http://www.w3.org/2000/svg"
-  xmlns:math="http://www.w3.org/1998/Math/MathML" 
-  xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -23,97 +20,157 @@
           <p>Ancient Macedonian Calendar</p>
         </calendar>
       </calendarDesc>
-      <particDesc>
-        <listPerson type="historical">
-          <person xml:id="Abgar1">
-            <persName>Abgar</persName>
-          </person>
-          <person xml:id="Christ">
-            <persName>Jesus of Nazareth</persName>
-          </person>
-          <person xml:id="Augustus">
-            <persName notAfter="-0044-03-15">Gaius Octavius</persName>
-            <persName notBefore="-0044-03-15" notAfter="-0027-01-16">Caesar</persName>
-            <persName notBefore="-0027-01-16">Augustus</persName>
-          </person>
-          <person xml:id="Bardaisan">
-            <persName ref="MADS record #0003">Bardaisan</persName>
-          </person>
-          <person xml:id="Lucius">
-            <persName ref="http://en.wikipedia.org/wiki/Lucius_Verus">Lucius Verus</persName>
-          </person>
-          <person xml:id="Marcion">
-            <persName>Marcion</persName>
-          </person>
-          <person xml:id="Commodus">
-            <persName>Gaius Avidius Ceionius Commodus</persName>
-          </person>
-         </listPerson>
-      </particDesc>
     </profileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy xml:id="event">
+          <category xml:id="event1">
+            <catDesc>governance</catDesc>
+          </category>
+          <category xml:id="event2">
+            <catDesc>birth</catDesc>
+          </category>
+          <category xml:id="event3">
+            <catDesc>accession</catDesc>
+          </category>
+          <category xml:id="event4">
+            <catDesc>building</catDesc>
+          </category>
+          <category xml:id="event5">
+            <catDesc>conquest</catDesc>
+          </category>
+          <category xml:id="event6">
+            <catDesc>apostasy</catDesc>
+          </category>
+        </taxonomy>
+        <taxonomy xml:id="poss">
+          <category xml:id="poss1">
+            <catDesc/>
+          </category>
+          <category xml:id="poss2">
+            <catDesc/>
+          </category>
+          <category xml:id="poss3">
+            <catDesc/>
+          </category>
+          <category xml:id="poss4">
+            <catDesc/>
+          </category>
+          <category xml:id="poss5">
+            <catDesc/>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <div>
-        <listEvent>
-          <event type="governance">
-            <p>1. <date when="-0132">In the year <date calendar="#cal_Macedonian">180</date></date>, kings began to rule in 
-              <placeName ref="http://syriaca.org/place/78">Edessa</placeName>.</p>
-          </event>
-        </listEvent>
+      <listPerson type="historical">
+        <person xml:id="Abgar1">
+          <persName>Abgar</persName>
+        </person>
+        <person xml:id="Christ">
+          <persName>Jesus <addName type="toponymic">of Nazareth</addName></persName>
+        </person>
+        <person xml:id="Augustus">
+          <persName notAfter="-0044-03-15">Gaius Octavius</persName>
+          <persName notBefore="-0044-03-15" notAfter="-0027-01-16">Caesar</persName>
+          <persName notBefore="-0027-01-16">Augustus</persName>
+        </person>
+        <person xml:id="Bardaisan">
+          <persName ref="MADS record #0003"
+            ><!-- I trust we need something different here -->Bardaisan</persName>
+        </person>
+        <person xml:id="Lucius">
+          <persName ref="http://en.wikipedia.org/wiki/Lucius_Verus">Lucius Verus</persName>
+          <persName><name type="praenomen">Lucius</name>
+            <name type="nomen">Ceionius</name>
+            <name type="cognomen">Commodus</name></persName>
+          <persName><name type="praenomen">Lucius</name>
+            <name type="nomen">Aelius</name>
+            <name type="cognomen">Aurelius</name></persName>
+          <persName><name type="praenomen">Lucius</name>
+            <name type="nomen">Aurelius</name>
+            <name type="cognomen">Verus</name></persName>
+        </person>
+        <person xml:id="Marcion">
+          <persName>Marcion</persName>
+        </person>
+        <person xml:id="Commodus">
+          <persName><name type="praenomen">Gaius</name> Avidius <name type="nomen">Ceionius</name>
+            <name type="cognomen">Commodus</name></persName>
+        </person>
+      </listPerson>
+      <listRelation>
+        <relation name="sibling" mutual="#Lucius #Commodus"/>
+      </listRelation>
+      <listPlace>
+        <place xml:id="Edessa">
+          <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+        </place>
+      </listPlace>
+      <listEvent>
+        <event type="governance" ref="#y01.01">
+          <desc>King's began to rule in Edessa.</desc>
+        </event>
+        <event type="accession" ref="#y02.01">
+          <desc>Augustus became emperor.</desc>
+        </event>
+        <event type="birth" ref="#y03.01">
+          <desc>The birth of Jesus Christ</desc>
+        </event>
+        <event type="building" ref="#y04.01">
+          <desc>King Abgar builds a mausoleum.</desc>
+        </event>
+        <event type="apostasy" ref="#y05.01">
+          <desc>Marcion forsook the Catholic Church.</desc>
+        </event>
+        <event type="birth" ref="#y06.01">
+          <desc>The birth of Bardaisan</desc>
+        </event>
+        <event type="conquest" ref="#y07.01">
+          <desc/>
+        </event>
+      </listEvent>
+      <div n="1" type="year">
+        <p>1. <seg xml:id="y01.01" type="phrase"><date when="-0132">In the year <date
+                calendar="#cal_Macedonian">180</date></date>, kings began to rule in <placeName
+              ref="#Edessa">Edessa</placeName></seg>.</p>
       </div>
-      <div>
-        <listEvent>
-          <event type="accession">
-            <p>2. <date when="-0046"><!-- Author must mean 44 BC. Not sure how to handle this. -->In the year <date calendar="#cal_Macedonian">266</date></date>
-              <persName><name type="person" ref="#Augustus"><roleName type="nobility">Augustus</roleName> <surname>Caesar</surname></name></persName>was made emperor.</p>
-          </event>
-        </listEvent>
+      <div n="2" type="year">
+        <p>2. <seg xml:id="y02.01"><date when="-0046"
+              ><!-- Author must mean 44 BC. Not sure how to handle this. -->In the year <date
+                calendar="#cal_Macedonian">266</date></date>
+            <persName ref="#Augustus"><roleName type="nobility">Augustus</roleName>
+              <name type="cognomen">Caesar</name></persName>was made emperor.</seg></p>
       </div>
-      <div>
-        <listEvent>
-          <event type="birth">
-            <p>3. <date when="-0003">In the year <date calendar="#cal_Macedonian">309</date></date>
-              <persName><name type="person" ref="#Christ"><addName>our Lord</addName></name></persName> was born.</p>
-          </event>
-        </listEvent>
+      <div n="3" type="year">
+        <p>3. <seg xml:id="y03.01"><date when="-0003">In the year <date calendar="#cal_Macedonian"
+                >309</date></date>
+            <persName ref="#Christ"><addName>our Lord</addName></persName> was born.</seg></p>
       </div>
-      <div>
-        <listEvent>
-          <event type="building">
-            <p>4. <date when="0088">In the year <date calendar="#cal_Macedonian">400</date></date>,
-              <persName><name type="person" ref="#Abgar1"><forename>Abgar</forename> the <roleName>king</roleName></name></persName> built a mausoleum for himself.</p>
-          </event>
-        </listEvent>
+      <div n="4" type="year">
+        <p>4. <seg xml:id="y04.01"><date when="0088">In the year <date calendar="#cal_Macedonian"
+                >400</date></date>, <persName ref="#Abgar1">Abgar the
+              <roleName>king</roleName></persName> built a mausoleum for himself.</seg></p>
       </div>
-      <div>
-        <listEvent>
-          <event type="apostasy">
-            <p>5. <date when="0137">In the year <date calendar="#cal_Macedonian">449</date></date> <persName><name type="person" ref="#Marcion">Marcion</name></persName> forsook the 
-              <orgName>Catholic Church</orgName>.</p>
-          </event>
-        </listEvent>
+      <div n="5" type="year">
+        <p>5. <seg xml:id="y05.01"><date when="0137">In the year <date calendar="#cal_Macedonian"
+                >449</date></date>
+            <persName ref="#Marcion">Marcion</persName> forsook the <orgName>Catholic
+              Church</orgName>.</seg></p>
       </div>
-      <div>
-        <listEvent>
-          <event type="birth">
-            <p>6. <date when="0154-07-11"><date calendar="#cal_Macedonian">The year 465, in the month Tammuz, on the eleventh day</date> (i.e., July 11th, 154 A.D.)</date>,
-              <persName><name type="person" ref="#Bardaisan">Bardesanes</name></persName> was born.</p>
-          </event>
-        </listEvent>
+      <div n="6" type="year">
+        <p>6. <seg xml:id="y06.01"><date when="0154-07-11"><date calendar="#cal_Macedonian">The year
+                465, in the month Tammuz, on the eleventh day</date> (i.e., July 11th, 154
+              A.D.)</date>, <persName ref="#Bardaisan">Bardesanes</persName> was born.</seg></p>
       </div>
-      <div>
-        <listEvent>
-          <event type="conquest">
-            <p>7. <persName><name type="person" ref="#Lucius"><forename>Lucius</forename> 
-              <roleName type="nobility"><!-- problem, earlier Caesar was a family name, by now it's become a title -->Caesar</roleName></name></persName>,
-              with his <persName><!-- But, of course, this is not a name. I'm not sure why <listPerson> and <person> elements won't validate. --><name ref="#Commodus">brother</name></persName>, subjugated <orgName type="state"><!-- org or place? -->the Parthians</orgName> to 
-             <orgName type="state">the <region>Romans</region></orgName> <date when="0166">in the fifth year of his reign</date>.</p>
-            <listRelation>
-              <relation name="sibling" mutual="#Lucius #Commodus"></relation><!-- BUT, does this actually get us what we need? I don't actually know.-->
-            </listRelation>
-          </event>
-        </listEvent>
+      <div n="7" type="year">
+        <p>7. <seg xml:id="y07.01"><persName ref="#Lucius">Lucius <roleName type="nobility"
+                >Caesar</roleName></persName>, with <ref target="#Commodus">his brother</ref>,
+            subjugated <orgName type="state"><!-- org or place? -->the Parthians</orgName> to
+              <orgName type="state">the <region>Romans</region></orgName>
+            <date when="0166">in the fifth year of his reign</date>.</seg></p>
       </div>
     </body>
   </text>
