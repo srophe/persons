@@ -115,8 +115,7 @@
                 <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                 <ptr target="http://syriaca.org/bibl/7"/>
                 <xsl:if test="string-length(normalize-space(Abdisho_BO_syr-Page_Num)) > 0">
-                    <citedRange unit="pp">
-                        III:<xsl:value-of select="Abdisho_BO_syr-Page_Num"/>  <!-- These pages are from volume 3 of this four-volume work -->
+                    <citedRange unit="pp">III:<xsl:value-of select="Abdisho_BO_syr-Page_Num"/>  <!-- These pages are from volume 3 of this four-volume work -->
                     </citedRange>
                 </xsl:if>
             </bibl>

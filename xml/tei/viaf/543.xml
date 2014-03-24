@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-18-05:00</date>
+            <date>2014-02-13-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-18-05:00"> CREATED: person </change>
+                 when="2014-02-13-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -171,15 +171,22 @@
                          corresp="#name543-2 #name543-3 #name543-5"
                          xml:lang="syr"
                          source="#bib543-4">
-                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> ܐܒܘ ܐܠܦܪܓ <forename sort="1">ܥܒܕ ܐܠܗ</forename> ܒܪ ܛܝܒ</persName>
+                  <addName type="untagged-title" sort="2">ܕܝܪܝܐ</addName> 
+                  <forename sort="1">ܐܒܘ ܐܠܦܪܓ</forename> 
+                  <forename sort="1">ܥܒܕ ܐܠܗ</forename> 
+                  <addName type="family" sort="2">ܒܪ ܛܝܒ</addName>
+               </persName>
                <persName xml:id="name543-5"
                          corresp="#name543-2 #name543-3 #name543-4"
                          xml:lang="syr-Syrj"
                          source="#bib543-4">
                   <addName type="untagged-title" sort="2">ܕܰܝܪܳܝܐ</addName> 
-                  <addName type="family" sort="2">ܐܰܒܘ ܐܠܦܰܪܓ</addName> ܥܰܒܕ ܐܠܗ ܒܰܪ ܛܰܝܒ</persName>
+                  <forename sort="1">ܐܰܒܘ ܐܠܦܰܪܓ</forename> 
+                  <forename sort="1">ܥܰܒܕ ܐܠܗ</forename> 
+                  <addName type="family" sort="2">ܒܰܪ ܛܰܝܒ</addName>
+               </persName>
                <persName xml:id="name543-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
-                  <addName type="family" sort="2">ܐܒܘ ܐܠܦܪܓ</addName> 
+                  <forename sort="1">ܐܒܘ ܐܠܦܪܓ</forename> 
                   <forename sort="1">ܥܒܕ ܐܠܗ</forename> 
                   <addName type="family" sort="2">ܒܪ ܛܝܒ</addName>
                </persName>
@@ -209,6 +216,7 @@
                <bibl xml:id="bib543-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">57-58</citedRange>
                </bibl>
                <bibl xml:id="bib543-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>

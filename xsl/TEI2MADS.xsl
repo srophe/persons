@@ -29,27 +29,52 @@
   </xsl:template>
 	
   <xsl:template name="authority">
-    <xsl:if test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']">
-	  <mads:authority>
-	    <mads:name type="personal" authority="SRP" xml:lang="syr">
-		  <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']"/>
-	    	<xsl:choose>
-	    		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when and tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when">
-	    			<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when"/>-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when"/></mads:namePart>
-	    		</xsl:when>
-	    		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death">
-	    			<mads:namePart type="date">d. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/></mads:namePart>
-	    		</xsl:when>
-	    		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth">
-	    			<mads:namePart type="date">b. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/></mads:namePart>
-	    		</xsl:when>
-	    		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit">
-	    			<mads:namePart type="date">fl. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit"/></mads:namePart>
-	    		</xsl:when>
-	    	</xsl:choose>
-		  </mads:name>
-	    </mads:authority>
-	  </xsl:if>
+  	<xsl:choose>
+  		<!-- if there is a Syriac headword, then it is the authority -->
+  		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']">
+  			<mads:authority>
+  				<mads:name type="personal" authority="SRP" xml:lang="syr">
+  					<xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']"/>
+  					<xsl:choose>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when and tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when">
+  							<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when"/>-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death">
+  							<mads:namePart type="date">d. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth">
+  							<mads:namePart type="date">b. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit">
+  							<mads:namePart type="date">fl. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit"/></mads:namePart>
+  						</xsl:when>
+  					</xsl:choose>
+  				</mads:name>
+  			</mads:authority>  			
+  		</xsl:when>
+  		<!-- otherwise there is no Syriac headword, so the only headword is English, and that is the authority -->
+  		<xsl:otherwise>
+  			<mads:authority>
+  				<mads:name type="personal" authority="SRP" xml:lang="en-x-gedsh">
+  					<xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@syriaca-tags='#syriaca-headword']"/>
+  					<xsl:choose>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when and tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when">
+  							<mads:namePart type="date"><xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth/@when"/>-<xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death/@when"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death">
+  							<mads:namePart type="date">d. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:death"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth">
+  							<mads:namePart type="date">b. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:birth"/></mads:namePart>
+  						</xsl:when>
+  						<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit">
+  							<mads:namePart type="date">fl. <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:floruit"/></mads:namePart>
+  						</xsl:when>
+  					</xsl:choose>
+  				</mads:name>
+  			</mads:authority>
+  		</xsl:otherwise>
+  	</xsl:choose>
     </xsl:template>
 
   <xsl:template name="identifier">
@@ -78,9 +103,9 @@
 		  <xsl:value-of select="tei:span"/>
 		  <xsl:text>)</xsl:text>
 		  </xsl:if>
-		<xsl:if test="not(position()=last())">
-		  <xsl:text>, </xsl:text>
-		  </xsl:if>
+      		<!-- <xsl:if test="not(position()=last())">
+		  <xsl:text>, </xsl:text> 
+		  </xsl:if> -->  <!-- instructed to delete comma and space -->
       	</mads:note>
 	    </xsl:for-each>
     </xsl:template>
@@ -110,14 +135,29 @@
 	</xsl:for-each>
   </xsl:template>
 
-	<xsl:template name="variants">
-	<xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[not(@xml:lang='syr' and @syriaca-tags='#syriaca-headword')]">
-	  <mads:variant type="other">
-	    <mads:name type="personal" xml:lang="{@xml:lang}">
-	      <xsl:apply-templates select="."/>
-	    </mads:name>
-	  </mads:variant>
-	  </xsl:for-each>
+<xsl:template name="variants">
+	<!-- If there is a Syriac headword, then it is the authority and everything else is a variant -->
+	<xsl:choose>
+		<xsl:when test="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[@xml:lang='syr' and @syriaca-tags='#syriaca-headword']">
+			<xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[not(@xml:lang='syr' and @syriaca-tags='#syriaca-headword')]">
+				<mads:variant type="other">
+					<mads:name type="personal" xml:lang="{@xml:lang}">
+						<xsl:apply-templates select="."/>
+					</mads:name>
+				</mads:variant>
+			</xsl:for-each>
+		</xsl:when>
+		<!-- otherwise there is no Syriac headword, the only headword is English, that is the authority, and everything else is a variant -->
+		<xsl:otherwise>
+			<xsl:for-each select="tei:TEI/tei:text/tei:body/tei:listPerson/tei:person/tei:persName[not(@syriaca-tags='#syriaca-headword')]">
+				<mads:variant type="other">
+					<mads:name type="personal" xml:lang="{@xml:lang}">
+						<xsl:apply-templates select="."/>
+					</mads:name>
+				</mads:variant>
+			</xsl:for-each>
+		</xsl:otherwise>
+	</xsl:choose>	
     </xsl:template>
 
   <xsl:template match="tei:persName">

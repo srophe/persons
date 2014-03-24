@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-12-18-05:00</date>
+            <date>2014-02-13-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -138,7 +138,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-12-18-05:00"> CREATED: person </change>
+                 when="2014-02-13-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -164,7 +164,11 @@
                <persName xml:id="name50-3"
                          corresp="#name50-2 #name50-4 #name50-5"
                          xml:lang="ar"
-                         source="#bib50-3"> مار <forename sort="1">يوحنا</forename> التلي</persName>
+                         source="#bib50-3"> 
+                  <addName type="untagged-title" sort="2">مار</addName> 
+                  <forename sort="1">يوحنا</forename> 
+                  <addName type="untagged-title" sort="2">التلي</addName>
+               </persName>
                <persName xml:id="name50-4"
                          corresp="#name50-2 #name50-3 #name50-5"
                          xml:lang="syr"

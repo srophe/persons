@@ -189,7 +189,7 @@
                                       <!-- Adds birth/death/floruit/event elements -->
                                         <xsl:call-template name="personal-events">
                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                            <xsl:with-param name="event-columns" select="*[contains(name(),'Floruit') or contains(name(),'DOB') or contains(name(),'DOD') or contains(name(),'Event')]"/>
+                                            <xsl:with-param name="event-columns" select="*[(contains(name(),'Floruit') or contains(name(),'DOB') or contains(name(),'DOD') or contains(name(),'Event')) and not(contains(name(),'VIAF'))]"/>
                                         </xsl:call-template>
                                         <!-- <xsl:for-each 
                                             select="*[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
