@@ -101,7 +101,7 @@
                         <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
                     </respStmt>
                     <respStmt>
-                        <resp>Project managament, English text entry, and proofreading by</resp>
+                        <resp>Project management, English text entry, and proofreading by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
                     </respStmt>
                     <respStmt>
@@ -132,7 +132,7 @@
                 </editionStmt>
                 <publicationStmt>
                     <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/>/source</idno>
+                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/>/tei</idno>
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/">
                             <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
