@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Saint number 93</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <principal>Jeanne-Nicole Saint-Laurent</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <respStmt>
+               <role>Spreadsheet cleanup and database matching by</role>
+               <name>Adam Kane</name>
+            </respStmt>
+            <respStmt>
+               <role>Spreadsheet design by</role>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/COMING SOON TO A THEATER NEAR YOU/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2014-03-27-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-zanetti">Zanetti's transcription of Syriac into French</language>
+            <language ident="fr-x-fiey">Fiey's transcription of Syriac into French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-27-04:00">CREATED: saint</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint93">
+               <persName xml:id="name93-1"
+                         xml:lang="en"
+                         syriaca-tags="#syriaca-headword"
+                         resp="http://syriaca.org/">Behnam</persName>
+               <persName xml:id="name93-2" xml:lang="en" resp="http://syriaca.org/">Behnam and his sister sarah</persName>
+               <persName xml:id="name93-3"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bib93-2">ܒܗܢܡ</persName>
+               <persName xml:id="name93-4" xml:lang="fr-x-zanetti" source="#bib93-2">Bēhnām</persName>
+               <persName xml:id="name93-5" xml:lang="fr" source="#bib93-2">Behnam</persName>
+               <persName xml:id="name93-6" xml:lang="fr-x-fiey" source="#bib93-1">BEHNĀM et sa soeur SARĀH</persName>
+               <idno type="URI">http://syriaca.org/person/COMING SOON TO A PERSON NEAR YOU!</idno>
+               <note type="dates" source="#bib93-1">(300-399, Fiey) (337-379, "sub shapur", BHO)</note>
+               <note type="disambiguation">goes with Sara</note>
+               <note type="vita-type">Individual Saint</note>
+               <note type="schizophrenia">This Fiey record includes multiple saints.</note>
+               <note type="martyrdom">This saint is a martyr.</note>
+               <note type="bibliography" source="#bib93-1">
+                                            Fiey cites AMS, II, 397-441 ; BHO, 177. Hoffmann, Auszuge, 17- 19. Suhadii', I, 291- 306. DHGE, VI, col. 477 (A. van Lantschoot) , avec references, et toute Ia litterature sur le couvent rassemblee dans Assyrie chretienne, II, 565- 613. H. Younansardaroud, "Die Legende von Mar Behnam", in M. Tamcke, ed. , Syriaca (Wittenberg, 2002), 185- 96.</note>
+               <bibl xml:id="bib93-1">
+                  <author>J.-M. Fiey</author>
+                  <title>Saints Syriaques</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-FIEY-URI"/>
+                  <citedRange unit="entry">86</citedRange>
+               </bibl>
+               <bibl xml:id="bib93-2">
+                  <author>Ugo Zanetti</author>
+                  <title>WHAT TITLE DO WE GIVE ZANETTI'S DATABASE?</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
+                  <citedRange unit="entry">FIGURE SOME WAY TO GET ALL OF THE ZANETTI TEXT NUMBERS FROM THEIR SPLIT CELLS.</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+         <note type="relation">This saint is related to places "Persia" and ""</note>
+      </body>
+   </text>
+</TEI>

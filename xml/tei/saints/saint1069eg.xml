@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Saint number 1069</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <principal>Jeanne-Nicole Saint-Laurent</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <respStmt>
+               <role>Spreadsheet cleanup and database matching by</role>
+               <name>Adam Kane</name>
+            </respStmt>
+            <respStmt>
+               <role>Spreadsheet design by</role>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/COMING SOON TO A THEATER NEAR YOU/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2014-03-27-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-zanetti">Zanetti's transcription of Syriac into French</language>
+            <language ident="fr-x-fiey">Fiey's transcription of Syriac into French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-27-04:00">CREATED: saint</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint1069">
+               <persName xml:id="name1069-1"
+                         xml:lang="en"
+                         syriaca-tags="#syriaca-headword"
+                         resp="http://syriaca.org/">Shmouni</persName>
+               <persName xml:id="name1069-2"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bib1069-1">ܫܡܘܢܝ</persName>
+               <persName xml:id="name1069-3" xml:lang="fr-x-zanetti" source="#bib1069-1">Šmūnīy</persName>
+               <persName xml:id="name1069-4" xml:lang="fr" source="#bib1069-1">Shmouni</persName>
+               <idno type="URI">http://syriaca.org/person/COMING SOON TO A PERSON NEAR YOU!</idno>
+               <note type="vita-type">Multiple Named Saints</note>
+               <bibl xml:id="bib1069-1">
+                  <author>Ugo Zanetti</author>
+                  <title>WHAT TITLE DO WE GIVE ZANETTI'S DATABASE?</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
+                  <citedRange unit="entry">FIGURE SOME WAY TO GET ALL OF THE ZANETTI TEXT NUMBERS FROM THEIR SPLIT CELLS.</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Saint number 27</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <principal>Jeanne-Nicole Saint-Laurent</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <respStmt>
+               <role>Spreadsheet cleanup and database matching by</role>
+               <name>Adam Kane</name>
+            </respStmt>
+            <respStmt>
+               <role>Spreadsheet design by</role>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/COMING SOON TO A THEATER NEAR YOU/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2014-03-27-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-zanetti">Zanetti's transcription of Syriac into French</language>
+            <language ident="fr-x-fiey">Fiey's transcription of Syriac into French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-27-04:00">CREATED: saint</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint27">
+               <persName xml:id="name27-1"
+                         xml:lang="en"
+                         syriaca-tags="#syriaca-headword"
+                         resp="http://syriaca.org/">Abraham of Kashkar</persName>
+               <persName xml:id="name27-2" xml:lang="en" resp="http://syriaca.org/">Abraham of Kashgar</persName>
+               <persName xml:id="name27-3" xml:lang="en" resp="http://syriaca.org/">Abraham of Kashkar, Abraham the Great</persName>
+               <persName xml:id="name27-4"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bib27-2">ܐܒܪܗܡ ܟܫܟܪܝܐ</persName>
+               <persName xml:id="name27-5" xml:lang="syr" source="#bib27-2">ܐܒܪܗܡ</persName>
+               <persName xml:id="name27-6" xml:lang="fr-x-zanetti" source="#bib27-2">ʾAḇrāhām Kaškarāyā</persName>
+               <persName xml:id="name27-7" xml:lang="fr-x-zanetti" source="#bib27-2">ʾAḇrāhām</persName>
+               <persName xml:id="name27-8" xml:lang="fr" source="#bib27-2">Abraham de Kashkar</persName>
+               <persName xml:id="name27-9" xml:lang="fr-x-fiey" source="#bib27-1">ABRAHAM DE KAŜKAR</persName>
+               <idno type="URI">http://syriaca.org/person/320</idno>
+               <sex source="#bib27-1">M</sex>
+               <note type="dates" source="#bib27-1">492-586</note>
+               <note type="disambiguation">goes with sergius</note>
+               <note type="vita-type">Individual Saint</note>
+               <note type="vita-type">Multiple Named Saints</note>
+               <note type="abstract">Reformer of Mesopotamian Monasticism, missionary, ascetic, miracle-worker, Father of the Monks of the Orient</note>
+               <note type="martyrdom">This saint is a martyr.</note>
+               <note type="bibliography" source="#bib27-1">
+                                            Fiey cites La commemoraison d' Abraham etait le 2 mai chez les Syriaques orientaux. Les sources primitives de Ia Vie d'Abraham (Abba Jean et R.abban Rustam) sont perdues, mais ont ete utilisees par Je Liber castitatis ; par Thomas de Marga, Liber superiorum, I.4 ; par MarT ibn Sulayman, 47 arabe ; par Ia Chronique de Seert, II, 41-43 ; par sa Vita editee par Sachau (BHO, 14) ; et par J'Histoire de Rabban bar 'Idta (ROC 11 [1906], 406-408). Ses regles ont ete editees en syriaque et traduites en anglais par V66bus, Documents, 150- 62. Resume dans DHGE, I, col. 174- 75. BSO, I, 26- 28 (J. Rabbi).</note>
+               <bibl xml:id="bib27-1">
+                  <author>J.-M. Fiey</author>
+                  <title>Saints Syriaques</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-FIEY-URI"/>
+                  <citedRange unit="entry">23</citedRange>
+               </bibl>
+               <bibl xml:id="bib27-2">
+                  <author>Ugo Zanetti</author>
+                  <title>WHAT TITLE DO WE GIVE ZANETTI'S DATABASE?</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
+                  <citedRange unit="entry">FIGURE SOME WAY TO GET ALL OF THE ZANETTI TEXT NUMBERS FROM THEIR SPLIT CELLS.</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+         <note type="relation">This saint is related to persons John of Beth Rabban, Samun (metropolitan of Nisibis), and .</note>
+         <note type="relation">This saint is related to places "School of Nisibis, Scete, Sinai, Mount Izla near Nisibis" and "founded the Great Monastery"</note>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Saint number 28</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <principal>Jeanne-Nicole Saint-Laurent</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <respStmt>
+               <role>Spreadsheet cleanup and database matching by</role>
+               <name>Adam Kane</name>
+            </respStmt>
+            <respStmt>
+               <role>Spreadsheet design by</role>
+               <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/COMING SOON TO A THEATER NEAR YOU/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2014-03-27-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="fr">French</language>
+            <language ident="fr-x-zanetti">Zanetti's transcription of Syriac into French</language>
+            <language ident="fr-x-fiey">Fiey's transcription of Syriac into French</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2014-03-27-04:00">CREATED: saint</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint28">
+               <persName xml:id="name28-1"
+                         xml:lang="en"
+                         syriaca-tags="#syriaca-headword"
+                         resp="http://syriaca.org/">Abraham of Naphtar</persName>
+               <persName xml:id="name28-2"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bib28-2">ܐܒܪܗܡ ܢܦܬܪܝܐ</persName>
+               <persName xml:id="name28-3" xml:lang="fr-x-zanetti" source="#bib28-2">ʾAḇrāhām Neptarāyā</persName>
+               <persName xml:id="name28-4" xml:lang="fr" source="#bib28-2">Abraham de Naphtar</persName>
+               <persName xml:id="name28-5" xml:lang="fr-x-fiey" source="#bib28-1">ABRAHAM DE NEṮPAR</persName>
+               <idno type="URI">http://syriaca.org/person/321</idno>
+               <sex source="#bib28-1">M</sex>
+               <note type="dates" source="#bib28-1">500-599</note>
+               <note type="vita-type">Individual Saint</note>
+               <note type="abstract">Monk, missionary</note>
+               <note type="martyrdom">This saint is a martyr.</note>
+               <note type="misc" source="#bib28-1">Wrote about cenobitic life, commentary on Gospels, refutations of heresies</note>
+               <note type="bibliography" source="#bib28-1">
+                                            Fiey cites Sa Vie, aujourd'hui perdue, fut ecrite, au VIIe siecle, par Je moine SawrTso' Rustam (Liber superiorum, II.17). S'en inspirerent: vers 800, Je Liber castitatis (n° 43), au XIe siecle Ia Chronique de Seert (II, 80-83), au XIIe siecle MarT ibn Sulayman (52 arabe) qui le confond avec Abraham de Ka8k.ar, et enfin, au xve siecle, une notice, suivie de quelques uns de ses apophtegmes, publiee par le patriarche I. Rahmani dans sa Studia syriaca, I, 37-39, BHO, 15, traduit en franc;ais par R.M. Tonneau dans OS 2 (1957), 337-50. Surtout sur les ceuvres : A. Penna, "Abramo di Nathpar", dans Ia Scritti in onore di G. Fur/ani (Rome, 1957 ; RSO 32), 415- 31 ; aussi C. Chahine, dans Augustinianum 40 (2000), 439- 60. DHGE, I, col. 177- 78, s.v. 44.Abraham de Natfar (F. Nau). BSO, I, 32-33 (J. Rabbi). Sur son couvent: Fiey, Assyrie chretienne, I, 158-62.</note>
+               <bibl xml:id="bib28-1">
+                  <author>J.-M. Fiey</author>
+                  <title>Saints Syriaques</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-FIEY-URI"/>
+                  <citedRange unit="entry">24</citedRange>
+               </bibl>
+               <bibl xml:id="bib28-2">
+                  <author>Ugo Zanetti</author>
+                  <title>WHAT TITLE DO WE GIVE ZANETTI'S DATABASE?</title>
+                  <ptr ref="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
+                  <citedRange unit="entry">FIGURE SOME WAY TO GET ALL OF THE ZANETTI TEXT NUMBERS FROM THEIR SPLIT CELLS.</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+         <note type="relation">This saint is related to persons Job (his disciple) and .</note>
+         <note type="relation">This saint is related to places "Adiabene, (Naphtar, Adam), pilgrim to Monastery of Pacomius, Palestine, caves" and "shrine with his relics in cave near Naptar"</note>
+      </body>
+   </text>
+</TEI>
