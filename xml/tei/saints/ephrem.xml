@@ -284,7 +284,12 @@
                   <citedRange unit="entry">95, 789, 788, 96, 1158, 1892, 1255, 1593, 244</citedRange>
                </bibl>
             </person>
-            <relation name="commemorated-with" mutual="#person-13 http://syriaca.org/person/BASIL_OF_CAESAREA"/>
+            <relation 
+               name="commemorated-with" 
+               mutual="#person-13 http://syriaca.org/person/BASIL_OF_CAESAREA"/ 
+               source="#bib13-FAKE">
+               <desc xml:lang="en">This author is commemorated with another person.</desc>
+            </relation>
             <relation name="is-venerated-at" 
                active="#person-13" 
                passive="http://syriaca.org/person/BURBANK_CALIFORNIA"/ 
