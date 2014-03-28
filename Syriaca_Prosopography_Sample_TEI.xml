@@ -5,113 +5,15 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Factoids from The Chronicle of Edessa</title>
+        <title>Title</title>
       </titleStmt>
       <publicationStmt>
         <p>Publication Information</p>
       </publicationStmt>
       <sourceDesc>
-        <p>Born digital based on The Chronicle of Edessa. The Journal of Sacred Literature, New Series [=Series 4], vol. 5 (1864) pp. 28-45 from Tertullian.org</p>
+        <p>Information about the source</p>
       </sourceDesc>
     </fileDesc>
-    <profileDesc>
-      <calendarDesc>
-        <calendar xml:id="cal_Macedonian" target="http://en.wikipedia.org/wiki/Hellenic_calendar">
-          <p>Ancient Macedonian Calendar</p>
-        </calendar>
-      </calendarDesc>
-      <settingDesc>
-        <listPlace><!-- I designed this as a clearing house for every place mentioned in the text but this is likely not how I want to use <settingDesc>. Dave thinks it should indicate place of composition of the source. But, is the setting description describing the setting of this file (a born digital prosopography) or the setting of the primary document upon which this file is based? -->
-          <place xml:id="Edessa">
-            <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
-          </place>
-        </listPlace>
-      </settingDesc>
-      <particDesc>
-        <listPerson type="Historical">
-          <listPerson type="named">
-            <!-- Dave and I decided not to use <listPerson> in the header in this way. However, that means that people don't have xml:ids, but only refs that point out to the persons database. I think this causes a problem since we need xml:ids in the <relation> element. -->
-            <person xml:id="AbgarVI">
-              <persName>Abgar VI</persName>
-            </person>
-            <person xml:id="Christ">
-              <persName>Jesus of Nazareth</persName>
-            </person>
-            <person xml:id="Augustus">
-              <persName>Caesar Augustus</persName>
-            </person>
-            <person xml:id="Bardaisan">
-              <persName ref="MADS record #0003">Bardaisan</persName>
-            </person>
-            <person xml:id="Lucius">
-              <persName ref="http://en.wikipedia.org/wiki/Lucius_Verus">Lucius Verus</persName>
-            </person>
-            <person xml:id="Marcion">
-              <persName>Marcion</persName>
-            </person>
-            <person xml:id="Commodus">
-              <persName><name type="praenomen">Gaius</name> Avidius <name type="nomen"
-                  >Ceionius</name>
-                <name type="cognomen">Commodus</name></persName>
-            </person>
-            <person xml:id="Severus">
-              <persName ref="http://en.wikipedia.org/wiki/Septimius_Severus"><name type="nomen"
-                  >Septimius</name><name type="cognomen">Severus</name></persName>
-            </person>
-            <person xml:id="AbgarVIII">
-              <persName>Abgar <genName>VIII</genName></persName>
-            </person>
-            <person xml:id="Maʿnu">
-              <persName>Maʿnu</persName>
-            </person>
-            <person xml:id="Yahab">
-              <persName>Mar Yahab Bar Shemesh</persName>
-              <!-- This needs fixing but I suspect there is a Syriaca.org protocal here. -->
-            </person>
-            <person xml:id="Kajuma">
-              <persName>Kajuma Bar Magartat</persName>
-              <!-- This needs fixing but I suspect there is a Syriaca.org protocal here. -->
-            </person>
-            <person xml:id="BarDin">
-              <persName>Bar Din</persName>
-            </person>
-            <person xml:id="Bulid">
-              <persName>Bulid</persName>
-            </person>
-          </listPerson>
-          <listPerson type="unnamedIndiv">
-            <person/>
-          </listPerson>
-          <listPerson type="unnamedGrp">
-            <personGrp xml:id="Anonymi1">
-              <persName>Anonymi 1</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi2"> </personGrp>
-            <personGrp xml:id="Anonymi3">
-              <persName>Anonymi 3</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi4">
-              <persName>Anonymi 4</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi5">
-              <persName>Anonymi 5</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi6">
-              <persName>Anonymi 6</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi7">
-              <persName>Anonymi 7</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi8">
-              <persName>Anonymi 8</persName>
-            </personGrp>
-            <personGrp xml:id="Anonymi9">
-              <persName>Anonymi 9</persName>
-            </personGrp>
-          </listPerson>
-        </listPerson>
-      </particDesc>
-    </profileDesc>
   </teiHeader>
   <text>
     <body>
