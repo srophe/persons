@@ -54,135 +54,131 @@
               <desc>
                 <placeName ref="http://syriaca.org/place/191">The Daisan
                   river</placeName> floods <placeName ref="http://syriaca.org/place/78"
-                    >Edessa</placeName> in <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice> during the reign of <persName ref="www.syriaca.org/person/AbgarVIII">Abgar VIII</persName>.</desc>
+                    >Edessa</placeName> in <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice> during the reign of <persName ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName>.</desc>
             </event>
           </listEvent>
         </div>
       <div type="relationFactoids">
         <listRelation>
-          <relation xml:id="relation633-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
-          <relation xml:id="relation633-2" name="schema:sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
-          <relation xml:id="relation633-3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
-          <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
-          <relation xml:id="relation5" name="possession" active="www.syriaca.org/person/AbgarVIII"
-            passive="Winter royal residence"/>
-          <relation xml:id="relation6" name="possession" active="www.syriaca.org/person/AbgarVIII"
-            passive="Summer Royal residence"/>
-          <relation xml:id="relation7" name="possession" active="www.syriaca.org/person/Anonymi3" passive="Cottages"/>
+          <relation xml:id="relation633-1" name="foaf:childOf" active="http://syriaca.org/person/AbgarVIII" passive="http://syriaca.org/person/Maʿnu" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
+          <relation xml:id="relation633-2" name="schema:sibling" mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
+          <relation xml:id="relation633-3" name="possession" active="http://syriaca.org/person/AbgarVIII"
+            passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib78-1-LINENUMBER?"><label>architecture</label><label>governance</label><desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all winter.</desc></relation>
+          <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3" passive="Cottages"/>
           <!-- This should be a more precisely chosen term in a controlled vocab. -->
-          <relation xml:id="relation8" name="possession" active="www.syriaca.org/person/Anonymi9" passive="Cottages"/>
+          <relation xml:id="relation8" name="possession" active="http://syriaca.org/person/Anonymi9" passive="Cottages"/>
           <!-- This should be a more precisely chosen term in a controlled vocab. -->
         </listRelation>
       </div>
         <div type="personFactoids">
           <listPerson>
             <person xml:id="personFactoid1">
-              <persName ref="www.syriaca.org/person/AbgarVI" source="Chron._Ed._4"><name
+              <persName ref="http://syriaca.org/person/AbgarVI" source="Chron._Ed._4"><name
                   type="given">Abgar</name>
                 <roleName type="nobility">the king</roleName></persName>
             </person>
             <person xml:id="personFactoid2">
-              <persName ref="www.syriaca.org/person/AbgarVI"/>
+              <persName ref="http://syriaca.org/person/AbgarVI"/>
               <occupation source="Chron._Ed._4">King of <placeName ref="http://syriaca.org/place/78"
                   >Edessa</placeName></occupation>
             </person>
             <person xml:id="personFactoid3">
-              <persName ref="www.syriaca.org/person/Christ" source="Chron._Ed._3"><addName>our
+              <persName ref="http://syriaca.org/person/Christ" source="Chron._Ed._3"><addName>our
                   Lord</addName></persName>
             </person>
             <person xml:id="personFactoid4">
-              <persName ref="www.syriaca.org/person/Christ"/>
+              <persName ref="http://syriaca.org/person/Christ"/>
               <birth source="Chron._Ed._3">
                 <date when="-0004"><date calendar="#cal_Macedonian"
                 >309</date></date><!-- Discuss dates with Thomas -->
               </birth>
             </person>
             <person xml:id="personFactoid5">
-              <persName ref="www.syriaca.org/person/Augustus" source="Chron._Ed._2">
+              <persName ref="http://syriaca.org/person/Augustus" source="Chron._Ed._2">
                 <roleName type="nobility">Augustus</roleName>
                 <name type="cognomen">Caesar</name>
               </persName>
             </person>
             <person xml:id="personFactoid6">
-              <persName ref="www.syriaca.org/person/Augustus"/>
+              <persName ref="http://syriaca.org/person/Augustus"/>
               <occupation source="Chron._Ed._2">Emperor of Rome</occupation>
             </person>
             <person xml:id="personFactoid7">
-              <persName ref="www.syriaca.org/person/Bardaisan" source="Chron._Ed._6"
+              <persName ref="http://syriaca.org/person/Bardaisan" source="Chron._Ed._6"
                 >Bardesanes</persName>
             </person>
             <person xml:id="personFactoid8">
-              <persName ref="www.syriaca.org/person/Bardaisan"/>
+              <persName ref="http://syriaca.org/person/Bardaisan"/>
               <birth source="Chron._Ed._6">
                 <date when="0153-07-11"><date calendar="#cal_Macedonian">465, in the month Tammuz,
                     on the eleventh day</date></date><!-- Discuss dates with Thomas -->
               </birth>
             </person>
             <person xml:id="personFactoid9">
-              <persName ref="www.syriaca.org/person/LuciusVerus" source="Chron._Ed._7"><name
+              <persName ref="http://syriaca.org/person/LuciusVerus" source="Chron._Ed._7"><name
                   type="praenomen">Lucius</name>
                 <roleName type="nobility">Caesar</roleName></persName>
             </person>
             <person xml:id="personFactoid10">
-              <persName ref="www.syriaca.org/person/LuciusVerus"/>
+              <persName ref="http://syriaca.org/person/LuciusVerus"/>
               <occupation source="Chron._Ed._7">Emperor</occupation>
             </person>
             <person xml:id="personFactoid11">
-              <persName ref="www.syriaca.org/person/Marcion" source="Chron._Ed._5"
+              <persName ref="http://syriaca.org/person/Marcion" source="Chron._Ed._5"
                 >Marcion</persName>
             </person>
             <person xml:id="personFactoid12">
-              <persName ref="www.syriaca.org/person/Severus" source="Chron._Ed._8"
+              <persName ref="http://syriaca.org/person/Severus" source="Chron._Ed._8"
                 >Severus</persName>
             </person>
             <person xml:id="personFactoid13">
-              <persName ref="www.syriaca.org/person/AbgarVIII" source="Chron._Ed._8">Abgar <roleName
+              <persName ref="http://syriaca.org/person/AbgarVIII" source="Chron._Ed._8">Abgar <roleName
                   type="nobility">the king</roleName></persName>
             </person>
             <person xml:id="personFactoid14">
-              <persName ref="www.syriaca.org/person/AbgarVIII"/>
+              <persName ref="http://syriaca.org/person/AbgarVIII"/>
               <occupation source="Chron._Ed._8">King of <placeName ref="http://syriaca.org/place/78"
                   >Edessa</placeName></occupation>
             </person>
             <person xml:id="personFactoid15">
-              <persName ref="www.syriaca.org/person/Maʿnu" source="Chron._Ed._8">Maanu</persName>
+              <persName ref="http://syriaca.org/person/Maʿnu" source="Chron._Ed._8">Maanu</persName>
             </person>
             <person xml:id="personFactoid16">
-              <persName ref="www.syriaca.org/person/Maʿnu"/>
+              <persName ref="http://syriaca.org/person/Maʿnu"/>
               <occupation source="Chron._Ed._8">King of <placeName ref="http://syriaca.org/place/78"
                   >Edessa</placeName></occupation>
             </person>
             <person xml:id="personFactoid17">
-              <persName ref="www.syriaca.org/person/Yahab" source="Chron._Ed._8">Mar Yahab Bar
+              <persName ref="http://syriaca.org/person/Yahab" source="Chron._Ed._8">Mar Yahab Bar
                 Shemesh</persName>
               <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
             </person>
             <person xml:id="personFactoid18">
-              <persName ref="www.syriaca.org/person/Yahab"/>
+              <persName ref="http://syriaca.org/person/Yahab"/>
               <occupation source="Chron._Ed._8">Scribe</occupation>
             </person>
             <person xml:id="personFactoid19">
-              <persName ref="www.syriaca.org/person/Kajuma" source="Chron._Ed._8">Kajuma Bar
+              <persName ref="http://syriaca.org/person/Kajuma" source="Chron._Ed._8">Kajuma Bar
                 Magartat</persName>
               <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
             </person>
             <person xml:id="personFactoid20">
-              <persName ref="www.syriaca.org/person/Kajuma"/>
+              <persName ref="http://syriaca.org/person/Kajuma"/>
               <occupation source="Chron._Ed._8">Scribe</occupation>
             </person>
             <person xml:id="personFactoid21">
-              <persName ref="www.syriaca.org/person/BarDin" source="Chron._Ed._8">Bar Din</persName>
+              <persName ref="http://syriaca.org/person/BarDin" source="Chron._Ed._8">Bar Din</persName>
               <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
             </person>
             <person xml:id="personFactoid22">
-              <persName ref="www.syriaca.org/person/BarDin"/>
+              <persName ref="http://syriaca.org/person/BarDin"/>
               <occupation source="Chron._Ed._8">State archivist</occupation>
             </person>
             <person xml:id="personFactoid23">
-              <persName ref="www.syriaca.org/person/Bulid" source="Chron._Ed._8">Bulid</persName>
+              <persName ref="http://syriaca.org/person/Bulid" source="Chron._Ed._8">Bulid</persName>
             </person>
             <person xml:id="personFactoid24">
-              <persName ref="www.syriaca.org/person/Bulid"/>
+              <persName ref="http://syriaca.org/person/Bulid"/>
               <occupation source="Chron._Ed._8">State archivist</occupation>
             </person>
           </listPerson>
@@ -190,52 +186,52 @@
         <div type="personGrpFactoids">
           <listPerson>
             <personGrp xml:id="personGrpFactoid1">
-              <persName ref="www.syriaca.org/person/Anonymi1"/>
+              <persName ref="http://syriaca.org/person/Anonymi1"/>
               <occupation source="Chron._Ed._8">Workers in the <orgName>government of <placeName
                     ref="http://syriaca.org/place/78">Edessa</placeName></orgName></occupation>
             </personGrp>
             <personGrp xml:id="personGrpFactoid2">
-              <persName ref="www.syriaca.org/person/Anonymi2"/>
+              <persName ref="http://syriaca.org/person/Anonymi2"/>
               <trait source="Chron._Ed._8">
                 <desc>The wise men of <placeName ref="http://syriaca.org/place/78"
                     >Edessa</placeName></desc>
               </trait>
             </personGrp>
             <personGrp xml:id="personGrpFactoid3">
-              <persName ref="www.syriaca.org/person/Anonymi3"/>
+              <persName ref="http://syriaca.org/person/Anonymi3"/>
               <occupation source="Chron._Ed._8">The craftsmen of <placeName
                   ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
             </personGrp>
             <personGrp xml:id="personGrpFactoid4">
-              <persName ref="www.syriaca.org/person/Anonymi4"/>
+              <persName ref="http://syriaca.org/person/Anonymi4"/>
               <occupation source="Chron._Ed._8">The Surveyors of <placeName
                   ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
             </personGrp>
             <personGrp xml:id="personGrpFactoid5">
-              <persName ref="www.syriaca.org/person/Anonymi5"/>
+              <persName ref="http://syriaca.org/person/Anonymi5"/>
               <occupation source="Chron._Ed._8">The expert craftsmen of <placeName
                   ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
               <!-- Look at this again. Are these the same as Anonymi 3. -->
             </personGrp>
             <personGrp xml:id="personGrpFactoid6">
-              <persName ref="www.syriaca.org/person/Anonymi6"/>
+              <persName ref="http://syriaca.org/person/Anonymi6"/>
               <occupation source="Chron._Ed._8">The magistrates<!-- Eng. trans here is odd --> of
                   <placeName ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
             </personGrp>
             <personGrp xml:id="personGrpFactoid7">
-              <persName ref="www.syriaca.org/person/Anonymi7"/>
+              <persName ref="http://syriaca.org/person/Anonymi7"/>
               <socecStatus source="Chron._Ed._8">Nobles of <placeName
                   ref="http://syriaca.org/place/78">Edessa</placeName></socecStatus>
             </personGrp>
             <personGrp xml:id="personGrpFactoid8">
-              <persName ref="www.syriaca.org/person/Anonymi8"/>
+              <persName ref="http://syriaca.org/person/Anonymi8"/>
               <trait source="Chron._Ed._8">
                 <desc>The two thousand men killed by the flooding of <placeName
                     ref="http://syriaca.org/place/78">Edessa</placeName></desc>
               </trait>
             </personGrp>
             <personGrp xml:id="personGrpFactoid9">
-              <persName ref="www.syriaca.org/person/Anonymi9"/>
+              <persName ref="http://syriaca.org/person/Anonymi9"/>
               <trait source="Chron._Ed._8">
                 <desc>Those who live in the porch <!-- Look at Syriac --> of <placeName
                     ref="http://syriaca.org/place/78">Edessa</placeName></desc>
