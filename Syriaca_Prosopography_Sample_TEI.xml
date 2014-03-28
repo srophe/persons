@@ -29,10 +29,11 @@
           <listEvent>
             <event xml:id="eventFactoid666-1">
               <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 666 -->
+              <label>Governance</label>
+              <!-- Multiple labels encouraged and allowed. -->
               <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
-                >Edessa</placeName>. <date when="-0132"><date calendar="#cal_Macedonian"
-                  >180</date></date>
-                <!-- Talk to Thomas about dates regarding all these events! -->
+                >Edessa</placeName> in <choice><reg><date when="-0132" calendar="Gregorian">132 B.C.E.</date></reg><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 180</date></orig></choice>.
+                <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
               </desc>
             </event>
             <event xml:id="eventFactoid666-2" type="accession">
