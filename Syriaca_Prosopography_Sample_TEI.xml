@@ -29,7 +29,7 @@
           <listEvent>
             <event xml:id="eventFactoid666-1">
               <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 666 -->
-              <label>Governance</label>
+              <label>governance</label>
               <!-- Multiple labels encouraged and allowed. -->
               <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
                 >Edessa</placeName> in <choice><reg><date when="-0132" calendar="Gregorian">132 B.C.E.</date></reg><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 180</date></orig></choice>.
@@ -43,37 +43,18 @@
               <!-- Why is note not validating here? --></desc>
             </event>
             <event xml:id="eventFactoid666-3">
-              <label>building</label>
+              <label>architecture</label><label>governance</label>
               <desc>
                 <persName ref="http://.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
-                  target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
+                  target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
               </desc>
             </event>
-            <event xml:id="eventFactoid4" type="apostasy">
+            <event xml:id="eventFactoid666-4">
+              <label>natural disaster</label>
               <desc>
-                <persName ref="www.syriaca.org/person/Marcion">Marcion</persName> forsook the
-                <orgName>Catholic Church</orgName>. <date when="0137"><date
-                  calendar="#cal_Macedonian">449</date></date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid5" type="conquest">
-              <desc>
-                <persName ref="www.syriaca.org/person/LuciusVerus">Lucius Verus</persName> and
-                <persName ref="www.syriaca.org/person/Commodus">Commodus</persName> subjugate
-                <orgName type="state"><!-- org or place? -->the Parthians</orgName> to <orgName
-                  type="state">the Romans</orgName>
-                <date when="0166">In the fifth year of <persName
-                  ref="www.syriaca.org/person/LuciusVerus"> Lucius'</persName> reign</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid6" type="flood">
-              <desc>
-                <geogName type="river" ref="http://syriaca.org/place/191">The Daisan
-                  river</geogName> floods <placeName ref="http://syriaca.org/place/78"
-                    >Edessa</placeName>
-                <date when="0201-11">513, in the month Tishrin the latter, during the reign of
-                  <persName ref="www.syriaca.org/person/AbgarVIII"/></date>
-              </desc>
+                <placeName ref="http://syriaca.org/place/191">The Daisan
+                  river</placeName> floods <placeName ref="http://syriaca.org/place/78"
+                    >Edessa</placeName> in <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice> during the reign of <persName ref="www.syriaca.org/person/AbgarVIII">Abgar VIII</persName>.</desc>
             </event>
             <event xml:id="eventFactoid7" type="decree">
               <desc>
