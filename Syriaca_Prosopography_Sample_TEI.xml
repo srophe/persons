@@ -36,20 +36,20 @@
                 <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
               </desc>
             </event>
-            <event xml:id="eventFactoid633-2">
+            <event xml:id="eventFactoid633-2" source="#bib78-1-LINENUMBER?">
               <label>accession</label>
               <desc>
                 <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
               <!-- Why is note not validating here? --></desc>
             </event>
-            <event xml:id="eventFactoid633-3">
+            <event xml:id="eventFactoid633-3" source="#bib78-1-LINENUMBER?">
               <label>architecture</label><label>governance</label>
               <desc>
                 <persName ref="http://.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
                   target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
               </desc>
             </event>
-            <event xml:id="eventFactoid633-4">
+            <event xml:id="eventFactoid633-4" source="#bib78-1-LINENUMBER?">
               <label>natural disaster</label>
               <desc>
                 <placeName ref="http://syriaca.org/place/191">The Daisan
@@ -60,8 +60,8 @@
         </div>
       <div type="relationFactoids">
         <listRelation>
-          <relation xml:id="relation633-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"><desc></desc></relation>
-          <relation xml:id="relation633-2" name="schema:sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"><desc></desc></relation>
+          <relation xml:id="relation633-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
+          <relation xml:id="relation633-2" name="schema:sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
           <relation xml:id="relation633-3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
           <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
           <relation xml:id="relation5" name="possession" active="www.syriaca.org/person/AbgarVIII"
