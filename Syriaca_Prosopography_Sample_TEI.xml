@@ -36,12 +36,10 @@
                 <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
               </desc>
             </event>
-            <event xml:id="eventFactoid666-2" type="accession">
+            <event xml:id="eventFactoid666-2">
+              <label>accession</label>
               <desc>
-                <persName ref="www.syriaca.org/person/Augustus">Augustus</persName> became emperor.
-                <date when="-0046"
-                  ><!-- Author must mean 44 BC. Not sure how to handle this. --><date
-                    calendar="#cal_Macedonian">266</date></date>
+                <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><reg><date when="-0046" calendar="Gregorian">46 B.C.E.</date></reg><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
               </desc>
             </event>
             <event xml:id="eventFactoid3" type="building">
