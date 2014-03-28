@@ -64,18 +64,19 @@
           <relation xml:id="relation633-2" name="schema:sibling" mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
           <relation xml:id="relation633-3" name="possession" active="http://syriaca.org/person/AbgarVIII"
             passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib78-1-LINENUMBER?"><label>architecture</label><label>governance</label><desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all winter.</desc></relation>
-          <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3 http://syriaca.org/person/Anonymi9" passive="residences"><desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa and others after the flood of <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice>.</desc></relation>
+          <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3 http://syriaca.org/person/Anonymi9" passive="residences" source="#bib78-1-LINENUMBER?"><desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa and others after the flood of <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice>.</desc></relation>
           <!-- These anonymi would be created as persons with links to this source -->
         </listRelation>
       </div>
         <div type="personFactoids">
           <listPerson>
-            <person xml:id="personFactoid1">
-              <persName ref="http://syriaca.org/person/AbgarVI" source="Chron._Ed._4"><name
+            <person xml:id="personFactoid633-1" source="#bib78-1-LINENUMBER?">
+              <persName ref="http://syriaca.org/person/AbgarVI"><name
                   type="given">Abgar</name>
                 <roleName type="nobility">the king</roleName></persName>
+<!-- This is how to document a name from a source. -->
             </person>
-            <person xml:id="personFactoid2">
+            <person xml:id="personFactoid633-2" source="#bib78-1-LINENUMBER?">
               <persName ref="http://syriaca.org/person/AbgarVI"/>
               <occupation source="Chron._Ed._4">King of <placeName ref="http://syriaca.org/place/78"
                   >Edessa</placeName></occupation>
