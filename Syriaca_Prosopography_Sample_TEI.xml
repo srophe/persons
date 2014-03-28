@@ -8,7 +8,6 @@
         <title>Title</title>
       </titleStmt>
       <publicationStmt>
-        <p>Publication Information</p>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
         <idno type="URI">http://syriaca.org/prosopographyfile/666/tei</idno>
         <!-- How does this fit in our data model? Does it correspond to the text or the factoids from a text? -->
@@ -58,6 +57,23 @@
             </event>
           </listEvent>
         </div>
+      <div type="relationFactoids">
+        <listRelation>
+          <!-- Several problems here: 1)I'm afraid that the "possession" relation is tag abuse. The guidelines say that <relation> is for relationships b/t persons and places. Can we do this? 2)How do we give objects xml:ids? I guess they don't all need ids, maybe just the significant ones. Is it OK to have @passive attributes that don't have xml:ids?-->
+          <relation xml:id="relation1" name="child" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"/>
+          <relation xml:id="relation2" name="sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"/>
+          <relation xml:id="relation3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
+          <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
+          <relation xml:id="relation5" name="possession" active="www.syriaca.org/person/AbgarVIII"
+            passive="Winter royal residence"/>
+          <relation xml:id="relation6" name="possession" active="www.syriaca.org/person/AbgarVIII"
+            passive="Summer Royal residence"/>
+          <relation xml:id="relation7" name="possession" active="www.syriaca.org/person/Anonymi3" passive="Cottages"/>
+          <!-- This should be a more precisely chosen term in a controlled vocab. -->
+          <relation xml:id="relation8" name="possession" active="www.syriaca.org/person/Anonymi9" passive="Cottages"/>
+          <!-- This should be a more precisely chosen term in a controlled vocab. -->
+        </listRelation>
+      </div>
         <div type="personFactoids">
           <listPerson>
             <person xml:id="personFactoid1">
@@ -226,23 +242,6 @@
               </trait>
             </personGrp>
           </listPerson>
-        </div>
-        <div type="relationFactoids">
-          <listRelation>
-            <!-- Several problems here: 1)I'm afraid that the "possession" relation is tag abuse. The guidelines say that <relation> is for relationships b/t persons and places. Can we do this? 2)How do we give objects xml:ids? I guess they don't all need ids, maybe just the significant ones. Is it OK to have @passive attributes that don't have xml:ids?-->
-            <relation xml:id="relation1" name="child" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"/>
-            <relation xml:id="relation2" name="sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"/>
-            <relation xml:id="relation3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
-            <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
-            <relation xml:id="relation5" name="possession" active="www.syriaca.org/person/AbgarVIII"
-              passive="Winter royal residence"/>
-            <relation xml:id="relation6" name="possession" active="www.syriaca.org/person/AbgarVIII"
-              passive="Summer Royal residence"/>
-            <relation xml:id="relation7" name="possession" active="www.syriaca.org/person/Anonymi3" passive="Cottages"/>
-            <!-- This should be a more precisely chosen term in a controlled vocab. -->
-            <relation xml:id="relation8" name="possession" active="www.syriaca.org/person/Anonymi9" passive="Cottages"/>
-            <!-- This should be a more precisely chosen term in a controlled vocab. -->
-          </listRelation>
         </div>      
     </body>
   </text>
