@@ -26,8 +26,8 @@
     <body>
         <div type="eventFactoids">
           <listEvent>
-            <event xml:id="eventFactoid633-1" source="#bib78-1-LINENUMBER?">
-              <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 633 -->
+            <event xml:id="eventFactoid633-1" source="#bib633-1-LINENUMBER?">
+              <!-- We are going to call this sample prosopography document, file 633, so the xml id indicates that this is eventFactoid number one for document 633 -->
               <!-- We need to figure out how to cite based on line numbers or page numbers etc.-->
               <label>governance</label>
               <!-- Multiple labels encouraged and allowed. -->
@@ -36,19 +36,19 @@
                 <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
               </desc>
             </event>
-            <event xml:id="eventFactoid633-2" source="#bib78-1-LINENUMBER?">
+            <event xml:id="eventFactoid633-2" source="#bib633-1-LINENUMBER?">
               <label>accession</label>
               <desc>
                 <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>.</desc>
             </event>
-            <event xml:id="eventFactoid633-3" source="#bib78-1-LINENUMBER?">
+            <event xml:id="eventFactoid633-3" source="#bib633-1-LINENUMBER?">
               <label>architecture</label><label>governance</label>
               <desc>
                 <persName ref="http://.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
                   target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
               </desc>
             </event>
-            <event xml:id="eventFactoid633-4" source="#bib78-1-LINENUMBER?">
+            <event xml:id="eventFactoid633-4" source="#bib633-1-LINENUMBER?">
               <label>natural disaster</label>
               <desc>
                 <placeName ref="http://syriaca.org/place/191">The Daisan
@@ -59,37 +59,37 @@
         </div>
       <div type="relationFactoids">
         <listRelation>
-          <relation xml:id="relation633-1" name="foaf:childOf" active="http://syriaca.org/person/AbgarVIII" passive="http://syriaca.org/person/Maʿnu" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
-          <relation xml:id="relation633-2" name="schema:sibling" mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
+          <relation xml:id="relation633-1" name="foaf:childOf" active="http://syriaca.org/person/AbgarVIII" passive="http://syriaca.org/person/Maʿnu" source="#bib633-1-LINENUMBER?"><desc></desc></relation>
+          <relation xml:id="relation633-2" name="schema:sibling" mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus" source="#bib633-1-LINENUMBER?"><desc></desc></relation>
           <relation xml:id="relation633-3" name="possession" active="http://syriaca.org/person/AbgarVIII"
-            passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib78-1-LINENUMBER?"><label>architecture</label><label>governance</label>
+            passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib633-1-LINENUMBER?"><label>architecture</label><label>governance</label>
             <!-- hmm labels not allowed inside relation? -->
             <desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all winter.</desc></relation>
-          <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3 http://syriaca.org/person/Anonymi9" passive="residences" source="#bib78-1-LINENUMBER?"><desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa and others after the flood of <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice>.</desc></relation>
+          <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3 http://syriaca.org/person/Anonymi9" passive="residences" source="#bib633-1-LINENUMBER?"><desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa and others after the flood of <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice>.</desc></relation>
           <!-- These anonymi would be created as persons with links to this source -->
         </listRelation>
       </div>
         <div type="personFactoids">
           <listPerson>
-            <person xml:id="personFactoid633-1" source="#bib78-1-LINENUMBER?">
+            <person xml:id="personFactoid633-1" source="#bib633-1-LINENUMBER?">
               <persName ref="http://syriaca.org/person/AbgarVI"><name
                   type="given">Abgar</name>
                 <roleName type="nobility">the king</roleName></persName>
 <!-- This is how to document a name from a source. -->
-              <!-- But actually one could more likely combine this with another factoid (only in the case of names) since we will want to comb for names everywhere perhaps, see the example in personFactoir633-4 below -->
+              <!-- But actually one could more likely combine this with another factoid (only in the case of names) since we will want to comb for names everywhere perhaps, see the example in personFactoid633-4 below -->
               <note type="desc"><!-- Do we need a short description of the factoid or will these be listed as bullet points? --></note>
             </person>
-            <person xml:id="personFactoid633-2" source="#bib78-1-LINENUMBER?">
+            <person xml:id="personFactoid633-2" source="#bib633-1-LINENUMBER?">
               <state type="office"><desc><persName ref="http://syriaca.org/person/AbgarVI">Abgar VI</persName> was King of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.</desc></state></person>
               <!-- This is how to document a role that has a date, but it seems to be more specific but perhaps redundant of what we could do with an event, needs further investigation-->
             <!-- In the case of a state element it should be written as a complete sentence so there is no need for a note of type=desc to serve as a summary. -->
-            <person xml:id="personFactoid633-3" source="#bib78-1-LINENUMBER?">
+            <person xml:id="personFactoid633-3" source="#bib633-1-LINENUMBER?">
               <persName ref="http://syriaca.org/person/Bardaisan">Bardaisan</persName>
               <!-- Do we supply the name Bardaisan as a text node (would be good for RDF and export, or do we look it up in the xQuery transformation? -->
               <birth><choice><reg><date when="0153" calendar="Gregorian">153 C.E.</date></reg><orig><date when-custom="0465-07-11" datingMethod="Seleucid">A. Gr. 465 in the month Tammuz, on the eleventh day</date></orig></choice></birth>
               <note type="desc">Bardaisan was born in 153 CE in the month Tammuz, on the eleventh day<!-- Do we need a short description of the factoid or will these be listed as bullet points, or even in the case of birth just generated from the elements following a formula or script? --></note>
             </person>
-            <person xml:id="personFactoid633-4" source="#bib78-1-LINENUMBER?">
+            <person xml:id="personFactoid633-4" source="#bib633-1-LINENUMBER?">
               <state type="office"><desc><persName ref="http://syriaca.org/person/Yahab"><roleName>Mar</roleName> <forename>Yahab</forename> <addName>Bar Shemesh</addName></persName> was a <ref target="http://syriaca.org/keyword/Scribe">Scribe</ref>.</desc></state>
             </person>
             <!--note that this combines two factoid examples from personFactoid633-1 and 2 above being both a name factoid and a state. We can debate if this is allowed (and if it would be okay to add in birth etc. here as well, but I think as long as it is the same person and same source citation it would be fine.-->
@@ -97,13 +97,13 @@
         </div>
         <div type="personGrpFactoids">
           <listPerson>
-            <personGrp xml:id="personGrpFactoid633-1" source="#bib78-1-LINENUMBER?">
+            <personGrp xml:id="personGrpFactoid633-1" source="#bib633-1-LINENUMBER?">
               <!-- Major problem, source not allowed in personGrp, but we may just break that rule? -->
               <persName ref="http://syriaca.org/person/Anonymi1">
               <!-- Actually since these are plural we would want orgNames here perhaps, but it does not seem to be allowed. We need to review our options -->Workers in the <orgName>government of <placeName ref="http://syriaca.org/place/78">Edessa</placeName></orgName>
               </persName><!-- Note as a Desc is not allowed here. Do we need a short description of the factoid or will these be listed as bullet points? --></personGrp>
             <!--This person group declares that a person group exists, it does not necessarily relay attributes about it beyond information in a text node and establish a URI!-->
-            <personGrp xml:id="personGrpFactoid633-2" source="#bib78-1-LINENUMBER?">
+            <personGrp xml:id="personGrpFactoid633-2" source="#bib633-1-LINENUMBER?">
               <!-- Major problem, source not allowed in personGrp, but we may just break that rule? -->
               <persName ref="http://syriaca.org/person/Anonymi2">
                 <!-- Actually since these are plural we would want orgNames here perhaps, but it does not seem to be allowed. We need to review our options -->The craftsmen of <placeName ref="http://syriaca.org/place/78">Edessa</placeName></persName>
@@ -113,7 +113,7 @@
       <div type="errataNotes"><note type="errata"><ref target="#eventFactoid633-2"/>The author has apparently mistaken the date of Augustus ascension.</note></div>
       <!--TEI appears to only validate note in a separate div (not in the same div with the listEvent, we should investigate this further-->
 <div type="bibl">
-  <bibl xml:id="bib78-1">
+  <bibl xml:id="bib633-1">
         <title xml:lang="la">Chronica minora</title>
         <editor>Ignatius Guidi</editor>
         <ptr target="http://syriaca.org/bibl/633"/>
