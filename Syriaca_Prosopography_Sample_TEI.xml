@@ -9,7 +9,7 @@
       </titleStmt>
       <publicationStmt>
         <authority>Syriaca.org: The Syriac Reference Portal</authority>
-        <idno type="URI">http://syriaca.org/prosopographyfile/666/tei</idno>
+        <idno type="URI">http://syriaca.org/prosopographyfile/633/tei</idno>
         <!-- How does this fit in our data model? Does it correspond to the text or the factoids from a text? -->
         <availability>
           <licence target="http://creativecommons.org/licenses/by/3.0/">
@@ -26,8 +26,9 @@
     <body>
         <div type="eventFactoids">
           <listEvent>
-            <event xml:id="eventFactoid666-1">
-              <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 666 -->
+            <event xml:id="eventFactoid633-1" source="#bib78-1-LINENUMBER?">
+              <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 633 -->
+              <!-- We need to figure out how to cite based on line numbers or page numbers etc.-->
               <label>governance</label>
               <!-- Multiple labels encouraged and allowed. -->
               <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
@@ -35,20 +36,20 @@
                 <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
               </desc>
             </event>
-            <event xml:id="eventFactoid666-2">
+            <event xml:id="eventFactoid633-2">
               <label>accession</label>
               <desc>
                 <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
               <!-- Why is note not validating here? --></desc>
             </event>
-            <event xml:id="eventFactoid666-3">
+            <event xml:id="eventFactoid633-3">
               <label>architecture</label><label>governance</label>
               <desc>
                 <persName ref="http://.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
                   target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
               </desc>
             </event>
-            <event xml:id="eventFactoid666-4">
+            <event xml:id="eventFactoid633-4">
               <label>natural disaster</label>
               <desc>
                 <placeName ref="http://syriaca.org/place/191">The Daisan
@@ -59,9 +60,9 @@
         </div>
       <div type="relationFactoids">
         <listRelation>
-          <relation xml:id="relation666-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"><desc></desc></relation>
-          <relation xml:id="relation2" name="sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"/>
-          <relation xml:id="relation3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
+          <relation xml:id="relation633-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"><desc></desc></relation>
+          <relation xml:id="relation633-2" name="schema:sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"><desc></desc></relation>
+          <relation xml:id="relation633-3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
           <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
           <relation xml:id="relation5" name="possession" active="www.syriaca.org/person/AbgarVIII"
             passive="Winter royal residence"/>
@@ -241,7 +242,15 @@
               </trait>
             </personGrp>
           </listPerson>
-        </div>      
+        </div>
+<div>
+  <bibl xml:id="bib78-1">
+        <title xml:lang="la">Chronica minora</title>
+        <editor>Ignatius Guidi</editor>
+        <ptr target="http://syriaca.org/bibl/633"/>
+        <citedRange unit="pp"/>
+      </bibl>
+</div>     
     </body>
   </text>
 </TEI>
