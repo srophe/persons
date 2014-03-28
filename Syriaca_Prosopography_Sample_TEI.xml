@@ -17,7 +17,132 @@
   </teiHeader>
   <text>
     <body>
-      <div>
+        <div type="eventFactoids">
+          <listEvent>
+            <!-- Throughout this div I have references to objects possessed. How should I handle this? Should I give all possessions xml:ids or should I remove all of the refs to them in the event factoids? Or should only some major possessions have xml:ids? -->
+            <event xml:id="eventFactoid1" type="governance">
+              <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
+                >Edessa</placeName>. <date when="-0132"><date calendar="#cal_Macedonian"
+                  >180</date></date>
+                <!-- Talk to Thomas about dates regarding all these events! -->
+              </desc>
+            </event>
+            <event xml:id="eventFactoid2" type="accession">
+              <desc>
+                <persName ref="www.syriaca.org/person/Augustus">Augustus</persName> became emperor.
+                <date when="-0046"
+                  ><!-- Author must mean 44 BC. Not sure how to handle this. --><date
+                    calendar="#cal_Macedonian">266</date></date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid3" type="building">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
+                  target="#poss1">mausoleum</ref>. <date when="0088"><date
+                    calendar="#cal_Macedonian">400</date></date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid4" type="apostasy">
+              <desc>
+                <persName ref="www.syriaca.org/person/Marcion">Marcion</persName> forsook the
+                <orgName>Catholic Church</orgName>. <date when="0137"><date
+                  calendar="#cal_Macedonian">449</date></date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid5" type="conquest">
+              <desc>
+                <persName ref="www.syriaca.org/person/LuciusVerus">Lucius Verus</persName> and
+                <persName ref="www.syriaca.org/person/Commodus">Commodus</persName> subjugate
+                <orgName type="state"><!-- org or place? -->the Parthians</orgName> to <orgName
+                  type="state">the Romans</orgName>
+                <date when="0166">In the fifth year of <persName
+                  ref="www.syriaca.org/person/LuciusVerus"> Lucius'</persName> reign</date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid6" type="flood">
+              <desc>
+                <geogName type="river" ref="http://syriaca.org/place/191">The Daisan
+                  river</geogName> floods <placeName ref="http://syriaca.org/place/78"
+                    >Edessa</placeName>
+                <date when="0201-11">513, in the month Tishrin the latter, during the reign of
+                  <persName ref="www.syriaca.org/person/AbgarVIII"/></date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid7" type="decree">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> orders the
+                destruction of the gates of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName> during the <ref target="#eventFactoid6">flood</ref>
+                <date when="0201-11">513, in the month Tishrin the latter</date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid8" type="decree">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees that the
+                <ref target="www.syriaca.org/person/Anonymi3">craftsmen</ref> of <placeName
+                  ref="http://syriaca.org/place/78">Edessa</placeName> move their <ref
+                    target="poss5">cottages</ref> further from the river <geogName type="river"
+                      ref="http://syriaca.org/place/191">Daisan</geogName>. <date when="0201-11">513, in
+                        the month Tishrin the latter</date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid9" type="decree">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees that <ref
+                  target="www.syriaca.org/person/Anonymi9">those living along the porch</ref> in
+                <placeName ref="http://syriaca.org/place/78">Edessa</placeName> vacate their <ref
+                  target="poss6">cottages</ref> along the river <geogName
+                    ref="http://syriaca.org/place/191" type="river">Daisan</geogName>during the
+                summer, except for five <ref target="www.syriaca.org/person/Anonymi6"
+                  >magistrates</ref>. <date when="0201-11">513, in the month Tishrin the
+                    latter</date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid10" type="decree">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees the
+                building of a new <ref target="#poss3">winter royal residence</ref> at
+                <placeName>Tabara</placeName> and a new <ref target="poss4">summer royal
+                  residence</ref> inside <placeName ref="http://syriaca.org/place/78"
+                    >Edessa</placeName><date when="0201-11">513, in the month Tishrin the
+                      latter</date>
+              </desc>
+            </event>
+            <event xml:id="eventFactoid11" type="building">
+              <!-- The decree to build is dated in the text, but not the actual building. Perhaps I should just leave it out? -->
+              <desc> The building of a new <ref target="#poss3">winter royal residence</ref> at
+                <placeName>Tabara</placeName> and a new <ref target="poss4">summer royal
+                  residence</ref> inside <placeName ref="http://syriaca.org/place/78"
+                    >Edessa</placeName></desc>
+            </event>
+            <event xml:id="eventFactoid12" type="building">
+              <desc>The <ref target="www.syriaca.org/person/Anonymi7">nobles of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName></ref> build new
+                residence</desc>
+            </event>
+            <event xml:id="eventFactoid13" type="decree">
+              <desc>
+                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees the
+                remission of taxes <date from="0202" to="0207">for five years</date>
+                <!-- How could I flag taxation here? -->
+              </desc>
+            </event>
+            <event xml:id="eventFactoid14" type="demography">
+              <desc>Repopulation of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+                after the <ref target="#eventFactoid6">flood</ref></desc>
+            </event>
+            <event xml:id="eventFactoid15" type="building">
+              <desc>Rebuilding of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+                after the <ref target="#eventFactoid6">flood</ref></desc>
+            </event>
+            <event xml:id="event16" type="writing">
+              <desc>Recording the <ref target="#eventFactoid6">flood</ref> of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName> and <persName
+                  ref="www.syriaca.org/person/AbgarVIII">Abgar's</persName>
+                <!-- Is there some way to ref target multiple URIs? -->decrees</desc>
+            </event>
+          </listEvent>
+        </div>
         <div type="personFactoids">
           <listPerson>
             <person xml:id="personFactoid1">
@@ -203,134 +328,7 @@
             <relation xml:id="relation8" name="possession" active="www.syriaca.org/person/Anonymi9" passive="Cottages"/>
             <!-- This should be a more precisely chosen term in a controlled vocab. -->
           </listRelation>
-        </div>
-        <div type="eventFactoids">
-          <listEvent>
-            <!-- Throughout this div I have references to objects possessed. How should I handle this? Should I give all possessions xml:ids or should I remove all of the refs to them in the event factoids? Or should only some major possessions have xml:ids? -->
-            <event xml:id="eventFactoid1" type="governance">
-              <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName>. <date when="-0132"><date calendar="#cal_Macedonian"
-                    >180</date></date>
-                <!-- Talk to Thomas about dates regarding all these events! -->
-              </desc>
-            </event>
-            <event xml:id="eventFactoid2" type="accession">
-              <desc>
-                <persName ref="www.syriaca.org/person/Augustus">Augustus</persName> became emperor.
-                  <date when="-0046"
-                    ><!-- Author must mean 44 BC. Not sure how to handle this. --><date
-                    calendar="#cal_Macedonian">266</date></date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid3" type="building">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
-                  target="#poss1">mausoleum</ref>. <date when="0088"><date
-                    calendar="#cal_Macedonian">400</date></date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid4" type="apostasy">
-              <desc>
-                <persName ref="www.syriaca.org/person/Marcion">Marcion</persName> forsook the
-                  <orgName>Catholic Church</orgName>. <date when="0137"><date
-                    calendar="#cal_Macedonian">449</date></date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid5" type="conquest">
-              <desc>
-                <persName ref="www.syriaca.org/person/LuciusVerus">Lucius Verus</persName> and
-                  <persName ref="www.syriaca.org/person/Commodus">Commodus</persName> subjugate
-                  <orgName type="state"><!-- org or place? -->the Parthians</orgName> to <orgName
-                  type="state">the Romans</orgName>
-                <date when="0166">In the fifth year of <persName
-                    ref="www.syriaca.org/person/LuciusVerus"> Lucius'</persName> reign</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid6" type="flood">
-              <desc>
-                <geogName type="river" ref="http://syriaca.org/place/191">The Daisan
-                  river</geogName> floods <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName>
-                <date when="0201-11">513, in the month Tishrin the latter, during the reign of
-                    <persName ref="www.syriaca.org/person/AbgarVIII"/></date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid7" type="decree">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> orders the
-                destruction of the gates of <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName> during the <ref target="#eventFactoid6">flood</ref>
-                <date when="0201-11">513, in the month Tishrin the latter</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid8" type="decree">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees that the
-                  <ref target="www.syriaca.org/person/Anonymi3">craftsmen</ref> of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName> move their <ref
-                  target="poss5">cottages</ref> further from the river <geogName type="river"
-                  ref="http://syriaca.org/place/191">Daisan</geogName>. <date when="0201-11">513, in
-                  the month Tishrin the latter</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid9" type="decree">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees that <ref
-                  target="www.syriaca.org/person/Anonymi9">those living along the porch</ref> in
-                  <placeName ref="http://syriaca.org/place/78">Edessa</placeName> vacate their <ref
-                  target="poss6">cottages</ref> along the river <geogName
-                  ref="http://syriaca.org/place/191" type="river">Daisan</geogName>during the
-                summer, except for five <ref target="www.syriaca.org/person/Anonymi6"
-                  >magistrates</ref>. <date when="0201-11">513, in the month Tishrin the
-                  latter</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid10" type="decree">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees the
-                building of a new <ref target="#poss3">winter royal residence</ref> at
-                  <placeName>Tabara</placeName> and a new <ref target="poss4">summer royal
-                  residence</ref> inside <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName><date when="0201-11">513, in the month Tishrin the
-                  latter</date>
-              </desc>
-            </event>
-            <event xml:id="eventFactoid11" type="building">
-              <!-- The decree to build is dated in the text, but not the actual building. Perhaps I should just leave it out? -->
-              <desc> The building of a new <ref target="#poss3">winter royal residence</ref> at
-                  <placeName>Tabara</placeName> and a new <ref target="poss4">summer royal
-                  residence</ref> inside <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName></desc>
-            </event>
-            <event xml:id="eventFactoid12" type="building">
-              <desc>The <ref target="www.syriaca.org/person/Anonymi7">nobles of <placeName
-                    ref="http://syriaca.org/place/78">Edessa</placeName></ref> build new
-                residence</desc>
-            </event>
-            <event xml:id="eventFactoid13" type="decree">
-              <desc>
-                <persName ref="www.syriaca.org/person/AbgarVIII">Abgar</persName> decrees the
-                remission of taxes <date from="0202" to="0207">for five years</date>
-                <!-- How could I flag taxation here? -->
-              </desc>
-            </event>
-            <event xml:id="eventFactoid14" type="demography">
-              <desc>Repopulation of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
-                after the <ref target="#eventFactoid6">flood</ref></desc>
-            </event>
-            <event xml:id="eventFactoid15" type="building">
-              <desc>Rebuilding of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
-                after the <ref target="#eventFactoid6">flood</ref></desc>
-            </event>
-            <event xml:id="event16" type="writing">
-              <desc>Recording the <ref target="#eventFactoid6">flood</ref> of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName> and <persName
-                  ref="www.syriaca.org/person/AbgarVIII">Abgar's</persName>
-                <!-- Is there some way to ref target multiple URIs? -->decrees</desc>
-            </event>
-          </listEvent>
-        </div>
-      </div>
+        </div>      
     </body>
   </text>
 </TEI>
