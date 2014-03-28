@@ -19,15 +19,15 @@
     <body>
         <div type="eventFactoids">
           <listEvent>
-            <!-- Throughout this div I have references to objects possessed. How should I handle this? Should I give all possessions xml:ids or should I remove all of the refs to them in the event factoids? Or should only some major possessions have xml:ids? -->
-            <event xml:id="eventFactoid1" type="governance">
+            <event xml:id="eventFactoid666-1">
+              <!-- We are going to call this sample prosopography document, file 666, so the xml id indicates that this is eventFactoid number one for document 666 -->
               <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
                 >Edessa</placeName>. <date when="-0132"><date calendar="#cal_Macedonian"
                   >180</date></date>
                 <!-- Talk to Thomas about dates regarding all these events! -->
               </desc>
             </event>
-            <event xml:id="eventFactoid2" type="accession">
+            <event xml:id="eventFactoid666-2" type="accession">
               <desc>
                 <persName ref="www.syriaca.org/person/Augustus">Augustus</persName> became emperor.
                 <date when="-0046"
