@@ -39,14 +39,14 @@
             <event xml:id="eventFactoid666-2">
               <label>accession</label>
               <desc>
-                <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><reg><date when="-0046" calendar="Gregorian">46 B.C.E.</date></reg><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
-              </desc>
+                <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
+              <!-- Why is note not validating here? --></desc>
             </event>
-            <event xml:id="eventFactoid3" type="building">
+            <event xml:id="eventFactoid666-3">
+              <label>building</label>
               <desc>
-                <persName ref="www.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
-                  target="#poss1">mausoleum</ref>. <date when="0088"><date
-                    calendar="#cal_Macedonian">400</date></date>
+                <persName ref="http://.syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
+                  target="http://.syriaca.org/keyword/architecture">mausoleum</ref> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
               </desc>
             </event>
             <event xml:id="eventFactoid4" type="apostasy">
