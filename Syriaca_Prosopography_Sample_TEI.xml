@@ -39,8 +39,7 @@
             <event xml:id="eventFactoid633-2" source="#bib78-1-LINENUMBER?">
               <label>accession</label>
               <desc>
-                <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>. <note type="errata">The author has apparently mistaken the date of Augustus ascension.</note>
-              <!-- Why is note not validating here? --></desc>
+                <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor in <choice><corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr><sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic><orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig></choice>.</desc>
             </event>
             <event xml:id="eventFactoid633-3" source="#bib78-1-LINENUMBER?">
               <label>architecture</label><label>governance</label>
@@ -63,7 +62,9 @@
           <relation xml:id="relation633-1" name="foaf:childOf" active="http://syriaca.org/person/AbgarVIII" passive="http://syriaca.org/person/Maʿnu" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
           <relation xml:id="relation633-2" name="schema:sibling" mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus" source="#bib78-1-LINENUMBER?"><desc></desc></relation>
           <relation xml:id="relation633-3" name="possession" active="http://syriaca.org/person/AbgarVIII"
-            passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib78-1-LINENUMBER?"><label>architecture</label><label>governance</label><desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all winter.</desc></relation>
+            passive="http://syriaca.org/place/Winter-royal-residence@Tabara" source="#bib78-1-LINENUMBER?"><label>architecture</label><label>governance</label>
+            <!-- hmm labels not allowed inside relation? -->
+            <desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all winter.</desc></relation>
           <relation xml:id="relation633-4" name="possession" active="http://syriaca.org/person/Anonymi3 http://syriaca.org/person/Anonymi9" passive="residences" source="#bib78-1-LINENUMBER?"><desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa and others after the flood of <choice><reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg><orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in the month Tishrin the latter</date></orig></choice>.</desc></relation>
           <!-- These anonymi would be created as persons with links to this source -->
         </listRelation>
@@ -75,174 +76,49 @@
                   type="given">Abgar</name>
                 <roleName type="nobility">the king</roleName></persName>
 <!-- This is how to document a name from a source. -->
+              <!-- But actually one could more likely combine this with another factoid (only in the case of names) since we will want to comb for names everywhere perhaps, see the example in personFactoir633-4 below -->
+              <note type="desc"><!-- Do we need a short description of the factoid or will these be listed as bullet points? --></note>
             </person>
             <person xml:id="personFactoid633-2" source="#bib78-1-LINENUMBER?">
-              <state type="office" source="#bib78-1-LINENUMBER?"><desc><persName ref="http://syriaca.org/person/AbgarVI">Abgar VI</persName> was King of <placeName ref="http://syriaca.org/place/78"
-                >Edessa</placeName> circa <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.
-            </desc></state>
-            <person xml:id="personFactoid3">
-              <persName ref="http://syriaca.org/person/Christ" source="Chron._Ed._3"><addName>our
-                  Lord</addName></persName>
+              <state type="office"><desc><persName ref="http://syriaca.org/person/AbgarVI">Abgar VI</persName> was King of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice><reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg><orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig></choice>.</desc></state></person>
+              <!-- This is how to document a role that has a date, but it seems to be more specific but perhaps redundant of what we could do with an event, needs further investigation-->
+            <!-- In the case of a state element it should be written as a complete sentence so there is no need for a note of type=desc to serve as a summary. -->
+            <person xml:id="personFactoid633-3" source="#bib78-1-LINENUMBER?">
+              <persName ref="http://syriaca.org/person/Bardaisan">Bardaisan</persName>
+              <!-- Do we supply the name Bardaisan as a text node (would be good for RDF and export, or do we look it up in the xQuery transformation? -->
+              <birth><choice><reg><date when="0153" calendar="Gregorian">153 C.E.</date></reg><orig><date when-custom="0465-07-11" datingMethod="Seleucid">A. Gr. 465 in the month Tammuz, on the eleventh day</date></orig></choice></birth>
+              <note type="desc">Bardaisan was born in 153 CE in the month Tammuz, on the eleventh day<!-- Do we need a short description of the factoid or will these be listed as bullet points, or even in the case of birth just generated from the elements following a formula or script? --></note>
             </person>
-            <person xml:id="personFactoid4">
-              <persName ref="http://syriaca.org/person/Christ"/>
-              <birth source="Chron._Ed._3">
-                <date when="-0004"><date calendar="#cal_Macedonian"
-                >309</date></date><!-- Discuss dates with Thomas -->
-              </birth>
+            <person xml:id="personFactoid633-4" source="#bib78-1-LINENUMBER?">
+              <state type="office"><desc><persName ref="http://syriaca.org/person/Yahab"><roleName>Mar</roleName> <forename>Yahab</forename> <addName>Bar Shemesh</addName></persName> was a <ref target="http://syriaca.org/keyword/Scribe">Scribe</ref>.</desc></state>
             </person>
-            <person xml:id="personFactoid5">
-              <persName ref="http://syriaca.org/person/Augustus" source="Chron._Ed._2">
-                <roleName type="nobility">Augustus</roleName>
-                <name type="cognomen">Caesar</name>
-              </persName>
-            </person>
-            <person xml:id="personFactoid6">
-              <persName ref="http://syriaca.org/person/Augustus"/>
-              <occupation source="Chron._Ed._2">Emperor of Rome</occupation>
-            </person>
-            <person xml:id="personFactoid7">
-              <persName ref="http://syriaca.org/person/Bardaisan" source="Chron._Ed._6"
-                >Bardesanes</persName>
-            </person>
-            <person xml:id="personFactoid8">
-              <persName ref="http://syriaca.org/person/Bardaisan"/>
-              <birth source="Chron._Ed._6">
-                <date when="0153-07-11"><date calendar="#cal_Macedonian">465, in the month Tammuz,
-                    on the eleventh day</date></date><!-- Discuss dates with Thomas -->
-              </birth>
-            </person>
-            <person xml:id="personFactoid9">
-              <persName ref="http://syriaca.org/person/LuciusVerus" source="Chron._Ed._7"><name
-                  type="praenomen">Lucius</name>
-                <roleName type="nobility">Caesar</roleName></persName>
-            </person>
-            <person xml:id="personFactoid10">
-              <persName ref="http://syriaca.org/person/LuciusVerus"/>
-              <occupation source="Chron._Ed._7">Emperor</occupation>
-            </person>
-            <person xml:id="personFactoid11">
-              <persName ref="http://syriaca.org/person/Marcion" source="Chron._Ed._5"
-                >Marcion</persName>
-            </person>
-            <person xml:id="personFactoid12">
-              <persName ref="http://syriaca.org/person/Severus" source="Chron._Ed._8"
-                >Severus</persName>
-            </person>
-            <person xml:id="personFactoid13">
-              <persName ref="http://syriaca.org/person/AbgarVIII" source="Chron._Ed._8">Abgar <roleName
-                  type="nobility">the king</roleName></persName>
-            </person>
-            <person xml:id="personFactoid14">
-              <persName ref="http://syriaca.org/person/AbgarVIII"/>
-              <occupation source="Chron._Ed._8">King of <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName></occupation>
-            </person>
-            <person xml:id="personFactoid15">
-              <persName ref="http://syriaca.org/person/Maʿnu" source="Chron._Ed._8">Maanu</persName>
-            </person>
-            <person xml:id="personFactoid16">
-              <persName ref="http://syriaca.org/person/Maʿnu"/>
-              <occupation source="Chron._Ed._8">King of <placeName ref="http://syriaca.org/place/78"
-                  >Edessa</placeName></occupation>
-            </person>
-            <person xml:id="personFactoid17">
-              <persName ref="http://syriaca.org/person/Yahab" source="Chron._Ed._8">Mar Yahab Bar
-                Shemesh</persName>
-              <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
-            </person>
-            <person xml:id="personFactoid18">
-              <persName ref="http://syriaca.org/person/Yahab"/>
-              <occupation source="Chron._Ed._8">Scribe</occupation>
-            </person>
-            <person xml:id="personFactoid19">
-              <persName ref="http://syriaca.org/person/Kajuma" source="Chron._Ed._8">Kajuma Bar
-                Magartat</persName>
-              <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
-            </person>
-            <person xml:id="personFactoid20">
-              <persName ref="http://syriaca.org/person/Kajuma"/>
-              <occupation source="Chron._Ed._8">Scribe</occupation>
-            </person>
-            <person xml:id="personFactoid21">
-              <persName ref="http://syriaca.org/person/BarDin" source="Chron._Ed._8">Bar Din</persName>
-              <!-- This needs name types but I suspect there is a Syriaca.org protocal here. -->
-            </person>
-            <person xml:id="personFactoid22">
-              <persName ref="http://syriaca.org/person/BarDin"/>
-              <occupation source="Chron._Ed._8">State archivist</occupation>
-            </person>
-            <person xml:id="personFactoid23">
-              <persName ref="http://syriaca.org/person/Bulid" source="Chron._Ed._8">Bulid</persName>
-            </person>
-            <person xml:id="personFactoid24">
-              <persName ref="http://syriaca.org/person/Bulid"/>
-              <occupation source="Chron._Ed._8">State archivist</occupation>
-            </person>
+            <!--note that this combines two factoid examples from personFactoid633-1 and 2 above being both a name factoid and a state. We can debate if this is allowed (and if it would be okay to add in birth etc. here as well, but I think as long as it is the same person and same source citation it would be fine.-->
           </listPerson>
         </div>
         <div type="personGrpFactoids">
           <listPerson>
-            <personGrp xml:id="personGrpFactoid1">
-              <persName ref="http://syriaca.org/person/Anonymi1"/>
-              <occupation source="Chron._Ed._8">Workers in the <orgName>government of <placeName
-                    ref="http://syriaca.org/place/78">Edessa</placeName></orgName></occupation>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid2">
-              <persName ref="http://syriaca.org/person/Anonymi2"/>
-              <trait source="Chron._Ed._8">
-                <desc>The wise men of <placeName ref="http://syriaca.org/place/78"
-                    >Edessa</placeName></desc>
-              </trait>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid3">
-              <persName ref="http://syriaca.org/person/Anonymi3"/>
-              <occupation source="Chron._Ed._8">The craftsmen of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid4">
-              <persName ref="http://syriaca.org/person/Anonymi4"/>
-              <occupation source="Chron._Ed._8">The Surveyors of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid5">
-              <persName ref="http://syriaca.org/person/Anonymi5"/>
-              <occupation source="Chron._Ed._8">The expert craftsmen of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
-              <!-- Look at this again. Are these the same as Anonymi 3. -->
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid6">
-              <persName ref="http://syriaca.org/person/Anonymi6"/>
-              <occupation source="Chron._Ed._8">The magistrates<!-- Eng. trans here is odd --> of
-                  <placeName ref="http://syriaca.org/place/78">Edessa</placeName></occupation>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid7">
-              <persName ref="http://syriaca.org/person/Anonymi7"/>
-              <socecStatus source="Chron._Ed._8">Nobles of <placeName
-                  ref="http://syriaca.org/place/78">Edessa</placeName></socecStatus>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid8">
-              <persName ref="http://syriaca.org/person/Anonymi8"/>
-              <trait source="Chron._Ed._8">
-                <desc>The two thousand men killed by the flooding of <placeName
-                    ref="http://syriaca.org/place/78">Edessa</placeName></desc>
-              </trait>
-            </personGrp>
-            <personGrp xml:id="personGrpFactoid9">
-              <persName ref="http://syriaca.org/person/Anonymi9"/>
-              <trait source="Chron._Ed._8">
-                <desc>Those who live in the porch <!-- Look at Syriac --> of <placeName
-                    ref="http://syriaca.org/place/78">Edessa</placeName></desc>
-              </trait>
+            <personGrp xml:id="personGrpFactoid633-1" source="#bib78-1-LINENUMBER?">
+              <!-- Major problem, source not allowed in personGrp, but we may just break that rule? -->
+              <persName ref="http://syriaca.org/person/Anonymi1">
+              <!-- Actually since these are plural we would want orgNames here perhaps, but it does not seem to be allowed. We need to review our options -->Workers in the <orgName>government of <placeName ref="http://syriaca.org/place/78">Edessa</placeName></orgName>
+              </persName><!-- Note as a Desc is not allowed here. Do we need a short description of the factoid or will these be listed as bullet points? --></personGrp>
+            <!--This person group declares that a person group exists, it does not necessarily relay attributes about it beyond information in a text node and establish a URI!-->
+            <personGrp xml:id="personGrpFactoid633-2" source="#bib78-1-LINENUMBER?">
+              <!-- Major problem, source not allowed in personGrp, but we may just break that rule? -->
+              <persName ref="http://syriaca.org/person/Anonymi2">
+                <!-- Actually since these are plural we would want orgNames here perhaps, but it does not seem to be allowed. We need to review our options -->The craftsmen of <placeName ref="http://syriaca.org/place/78">Edessa</placeName></persName>
             </personGrp>
           </listPerson>
         </div>
-<div>
+      <div type="errataNotes"><note type="errata"><ref target="#eventFactoid633-2"/>The author has apparently mistaken the date of Augustus ascension.</note></div>
+      <!--TEI appears to only validate note in a separate div (not in the same div with the listEvent, we should investigate this further-->
+<div type="bibl">
   <bibl xml:id="bib78-1">
         <title xml:lang="la">Chronica minora</title>
         <editor>Ignatius Guidi</editor>
         <ptr target="http://syriaca.org/bibl/633"/>
         <citedRange unit="pp"/>
+    <!--we need to work out a more robust way to cite individual pages or lines!-->
       </bibl>
 </div>     
     </body>
