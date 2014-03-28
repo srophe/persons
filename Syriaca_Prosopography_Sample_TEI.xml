@@ -59,8 +59,7 @@
         </div>
       <div type="relationFactoids">
         <listRelation>
-          <!-- Several problems here: 1)I'm afraid that the "possession" relation is tag abuse. The guidelines say that <relation> is for relationships b/t persons and places. Can we do this? 2)How do we give objects xml:ids? I guess they don't all need ids, maybe just the significant ones. Is it OK to have @passive attributes that don't have xml:ids?-->
-          <relation xml:id="relation1" name="child" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"/>
+          <relation xml:id="relation666-1" name="foaf:childOf" active="www.syriaca.org/person/AbgarVIII" passive="www.syriaca.org/person/Maʿnu"><desc></desc></relation>
           <relation xml:id="relation2" name="sibling" mutual="www.syriaca.org/person/LuciusVerus www.syriaca.org/person/Commodus"/>
           <relation xml:id="relation3" name="possession" active="www.syriaca.org/person/AbgarVI" passive="Mausoleum"/>
           <relation xml:id="relation4" name="possession" active="www.syriaca.org/person/AbgarVIII" passive="Palace"/>
