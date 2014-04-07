@@ -313,15 +313,21 @@
                                     </xsl:if>
                                     
                                     <!-- Random notes -->
-                                    <xsl:if test="Type_of_Vita != ''">
-                                        <note type="vita-type"><xsl:value-of select="Type_of_Vita"/></note>
+                                    <xsl:if test="Type_of_Vita != '' or Type_2 != '' or Type_3 != ''">
+                                        <state type="commemoration-mode">
+                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
+                                            <xsl:if test="Type_of_Vita != ''">
+                                                <label><xsl:value-of select="Type_of_Vita"/></label>
+                                            </xsl:if>
+                                            <xsl:if test="Type_2 != ''">
+                                                <label><xsl:value-of select="Type_2"/></label>
+                                            </xsl:if>
+                                            <xsl:if test="Type_3 != ''">
+                                                <label><xsl:value-of select="Type_3"/></label>
+                                            </xsl:if>
+                                        </state>
                                     </xsl:if>
-                                    <xsl:if test="Type_2 != ''">
-                                        <note type="vita-type"><xsl:value-of select="Type_2"/></note>
-                                    </xsl:if>
-                                    <xsl:if test="Type_3 != ''">
-                                        <note type="vita-type"><xsl:value-of select="Type_3"/></note>
-                                    </xsl:if>
+                                    
                                     <xsl:if test="Problem_Entry = 'Yes'">
                                         <note type="problem">This is a problem entry</note>
                                     </xsl:if>
@@ -356,7 +362,7 @@
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
                                             <author>J.-M. Fiey</author>
                                             <title>Saints Syriaques</title>
-                                            <ptr ref="http://syriaca.org/bibl/NEED-FIEY-URI"/>
+                                            <ptr target="http://syriaca.org/bibl/NEED-FIEY-URI"/>
                                             <xsl:choose>
                                                 <xsl:when test="Fiey_ID[1] != ''">
                                                     <citedRange unit="entry"><xsl:value-of select="Fiey_ID[1]"/></citedRange>
@@ -372,7 +378,7 @@
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
                                             <author>Ugo Zanetti</author>
                                             <title>WHAT TITLE DO WE GIVE ZANETTI'S DATABASE?</title>
-                                            <ptr ref="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
+                                            <ptr target="http://syriaca.org/bibl/NEED-ZANETTI-URI"/>
                                             <xsl:choose>
                                                 <xsl:when test="Z1_ = ''">
                                                     <note type="ERROR">THERE ARE NO ZANETTI TEXT NUMBERS FOR THIS ZANETTI DATA!</note>
