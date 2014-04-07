@@ -72,11 +72,11 @@
                                 <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                                 <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
                                 <respStmt>
-                                    <role>Spreadsheet cleanup and database matching by</role>
+                                    <resp>Spreadsheet cleanup and database matching by</resp>
                                     <name>Adam Kane</name>
                                 </respStmt>
                                 <respStmt>
-                                    <role>Spreadsheet design by</role>
+                                    <resp>Spreadsheet design by</resp>
                                     <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                                 </respStmt>
                             </titleStmt>
