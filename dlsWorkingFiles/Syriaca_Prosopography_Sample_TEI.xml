@@ -26,7 +26,7 @@
     <body>
       <div type="eventFactoids">
         <listEvent>
-          <event xml:id="eventFactoid633-1" source="#bib633-1-LINENUMBER?" ana="governance"><!-- TEI Guidelines only use @ana with #. I don't think this is necessary but maybe we want to do this. -->
+          <event xml:id="eventFactoid633-1" ana="governance"><!-- TEI Guidelines only use @ana with #. I don't think this is necessary but maybe we want to do this. -->
             <!-- We are going to call this sample prosopography document, file 633, so the xml id indicates that this is eventFactoid number one for document 633 -->
             <!-- We need to figure out how to cite based on line numbers or page numbers etc.-->
             <label>governance</label> <!-- delete this if @ana is acceptable -->
@@ -38,6 +38,8 @@
               </choice>.
               <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
             </desc>
+            <bib><ptr target="#bib663-1"/><biblScope>LineNumberHere</biblScope></bibl>
+              <bib><ptr target="#bib663-2"/><biblScope>DifferentVersionLineNumberHere</biblScope></bibl> 
           </event>
           <event xml:id="eventFactoid633-2" source="#bib633-1-LINENUMBER?">
             <label>accession</label>
