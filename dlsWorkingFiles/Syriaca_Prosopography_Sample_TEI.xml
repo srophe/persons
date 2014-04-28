@@ -26,10 +26,10 @@
     <body>
       <div type="eventFactoids">
         <listEvent>
-          <event xml:id="eventFactoid633-1" source="#bib633-1-LINENUMBER?">
+          <event xml:id="eventFactoid633-1" source="#bib633-1-LINENUMBER?" ana="governance"><!-- TEI Guidelines only use @ana with #. I don't think this is necessary but maybe we want to do this. -->
             <!-- We are going to call this sample prosopography document, file 633, so the xml id indicates that this is eventFactoid number one for document 633 -->
             <!-- We need to figure out how to cite based on line numbers or page numbers etc.-->
-            <label>governance</label>
+            <label>governance</label> <!-- delete this if @ana is acceptable -->
             <!-- Multiple labels encouraged and allowed. -->
             <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
                 >Edessa</placeName> in <choice>
@@ -45,8 +45,8 @@
               <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor
               in <choice>
                 <corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr>
-                <sic><date when="-0046" calendar="Gregorian">46 B.C.E.</date></sic>
-                <orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 266</date></orig>
+                <sic><date when="-0045" calendar="Gregorian">45 B.C.E.</date></sic>
+                <orig><date when-custom="266" datingMethod="Seleucid">A. Gr. 266</date></orig>
               </choice>.</desc>
           </event>
           <event xml:id="eventFactoid633-3" source="#bib633-1-LINENUMBER?">
@@ -134,13 +134,13 @@
             source="#bib633-1-LINENUMBER?">
             <desc/>
           </relation>
-          <relation xml:id="relation633-3" name="possession"
+          <relation xml:id="relation633-3" name="possession" ana="architecture governance"
             active="http://syriaca.org/person/AbgarVIII"
             passive="http://syriaca.org/place/Winter-royal-residence@Tabara"
             source="#bib633-1-LINENUMBER?">
             <label>architecture</label>
             <label>governance</label>
-            <!-- hmm labels not allowed inside relation? -->
+            <!-- hmm labels not allowed inside relation? Delete these if @ana above works. Also, redo all the <label> elements and replace with @ana.-->
             <desc>Abgar VIII built for his royal house----a winter house at Tabara ----and dwelt all
               winter.</desc>
           </relation>
