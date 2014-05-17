@@ -146,6 +146,47 @@
                 </xsl:choose>
             </persName>
         </xsl:for-each>
+        
+        <!-- Handle name deprecations -->
+        <xsl:if test="starts-with(Necessary_Corrections,'Deprecation: ')">
+            <xsl:variable name="deprecation-reason" select="substring-before(substring-after(.,'Deprecation: '),'|')"/>
+            <xsl:variable name="deprecated-names" select="tokenize(substring-after(Necessary_Corrections,'|'),'\|')"/>
+            <!-- now compute the xml:id attributes for deprecated names -->
+            <xsl:variable name="deprecated-name-ids" as="xs:string*">
+                <xsl:for-each select="$deprecated-names">
+                    <xsl:sequence select="concat($person-name-id,'-',index-of($unique_names,.))"/>
+                </xsl:for-each>
+            </xsl:variable>
+            <note type="deprecation">
+                <xsl:attribute name="xml:id" select="concat($deprecated-name-ids[1],'-deprecation')"/>
+                <xsl:value-of select="$deprecation-reason"/>: <xsl:value-of select="$deprecated-names"/> which have ids <xsl:value-of select="$deprecated-name-ids"/>
+            </note>
+            <xsl:for-each select="$deprecated-name-ids">
+                <link>
+                    <xsl:attribute name="target" select="concat('#',.,' ',concat('#',$deprecated-name-ids[1],'-deprecation'))"/>
+                </link>
+            </xsl:for-each>
+        </xsl:if>
+        <!-- Do the same thing for the one Barsoum_ar-Notes deprecation! -->
+        <xsl:if test="starts-with(Barsoum_ar-Notes,'Deprecation: ')">
+            <xsl:variable name="deprecation-reason" select="substring-before(substring-after(.,'Deprecation: '),'|')"/>
+            <xsl:variable name="deprecated-names" select="tokenize(substring-after(Barsoum_ar-Notes,'|'),'\|')"/>
+            <!-- now compute the xml:id attributes for deprecated names -->
+            <xsl:variable name="deprecated-name-ids" as="xs:string*">
+                <xsl:for-each select="$deprecated-names">
+                    <xsl:sequence select="concat($person-name-id,'-',index-of($unique_names,.))"/>
+                </xsl:for-each>
+            </xsl:variable>
+            <note type="deprecation">
+                <xsl:attribute name="xml:id" select="concat($deprecated-name-ids[1],'-deprecation')"/>
+                <xsl:value-of select="$deprecation-reason"/>: <xsl:value-of select="$deprecated-names"/> which have ids <xsl:value-of select="$deprecated-name-ids"/>
+            </note>
+            <xsl:for-each select="$deprecated-name-ids">
+                <link>
+                    <xsl:attribute name="target" select="concat('#',.,' ',concat('#',$deprecated-name-ids[1],'-deprecation'))"/>
+                </link>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
     <xd:doc>
