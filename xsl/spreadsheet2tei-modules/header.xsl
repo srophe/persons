@@ -189,6 +189,14 @@
                             <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
                         </category>
                     </taxonomy>
+                    <taxonomy>
+                        <category xml:id="syriaca-author">
+                            <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+                        </category>
+                        <category xml:id="syriaca-saint">
+                            <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
+                        </category>
+                    </taxonomy>
                 </classDecl>
             </encodingDesc>
             <profileDesc>
