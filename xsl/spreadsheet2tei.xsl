@@ -189,6 +189,8 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                         
+                                        
+                                        
                                         <!-- Adds VIAF URLs. -->
                                         <xsl:call-template name="idno">
                                             <xsl:with-param name="record-id" select="$record-id"/>
