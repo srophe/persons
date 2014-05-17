@@ -164,9 +164,9 @@
                                             <xsl:when test="string-length(normalize-space(Not_an_Author)) = 0">
                                                 <xsl:attribute name="ana" select="'#syriaca-author'"/>
                                             </xsl:when>
-                                            <!-- <xsl:when test="Not_an_Author = 'Saint'">
+                                            <xsl:when test="Not_an_Author = 'Saint'">
                                                 <xsl:attribute name="ana" select="'#syriaca-saint'"/>
-                                            </xsl:when> -->
+                                            </xsl:when>
                                         </xsl:choose>
                                         
                                         <!-- Creates persName elements. -->
