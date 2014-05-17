@@ -69,6 +69,7 @@
         <xsl:variable name="this-row" select="."/>
         
         <!-- Selects any non-empty fields ending with "_Full" or "-Full" (i.e., full names) -->
+        <!-- This code copied to spreadsheet2tei.xsl lines 197-209 and 232-244 -->
         <xsl:variable name="full_names" as="xs:string*">
             <xsl:for-each select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
                 <xsl:choose>
