@@ -160,7 +160,15 @@
                                         <xsl:if test="matches(GEDSH_en-Full, 'pseudo', 'i') or matches(GS_en-Full, 'pseudo', 'i')">
                                             <xsl:attribute name="type" select="'pseudonymous-author'"/>
                                         </xsl:if>
-                                                                                
+                                        <xsl:choose>
+                                            <xsl:when test="string-length(normalize-space(Not_an_Author)) = 0">
+                                                <xsl:attribute name="ana" select="'#syriaca-author'"/>
+                                            </xsl:when>
+                                            <!-- <xsl:when test="Not_an_Author = 'Saint'">
+                                                <xsl:attribute name="ana" select="'#syriaca-saint'"/>
+                                            </xsl:when> -->
+                                        </xsl:choose>
+                                        
                                         <!-- Creates persName elements. -->
                                         <xsl:choose>
                                             <xsl:when test="string-length(normalize-space(Is_a_work_)) and string-length(normalize-space(Anonymous_))">
