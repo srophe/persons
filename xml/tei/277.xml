@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/277/source</idno>
+            <idno type="URI">http://syriaca.org/person/277/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -162,7 +166,7 @@
                          source="#bib277-2">
                   <roleName type="office" sort="2">Patriarch</roleName> 
                   <forename sort="1">Nuḥ</forename> 
-                  <roleName type="office" sort="2">the Lebanese</roleName>
+                  <addName type="untagged-title" sort="2">the Lebanese</addName>
                </persName>
                <persName xml:id="name277-3"
                          corresp="#name277-2 #name277-4 #name277-5"
@@ -175,11 +179,19 @@
                <persName xml:id="name277-4"
                          corresp="#name277-2 #name277-3 #name277-5"
                          xml:lang="syr"
-                         source="#bib277-4">ܦܛܪܝܪܟܐ <forename sort="1">ܢܘܚ</forename> ܠܒܢܢܝܐ</persName>
+                         source="#bib277-4">
+                  <addName type="untagged-title" sort="2">ܦܛܪܝܪܟܐ</addName> 
+                  <forename sort="1">ܢܘܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܠܒܢܢܝܐ</addName>
+               </persName>
                <persName xml:id="name277-5"
                          corresp="#name277-2 #name277-3 #name277-4"
                          xml:lang="syr-Syrj"
-                         source="#bib277-4">ܦܰܛܪܝܰܪܟܐ <forename sort="1">ܢܘܚ</forename> ܠܶܒܢܳܢܳܝܐ</persName>
+                         source="#bib277-4">
+                  <addName type="untagged-title" sort="2">ܦܰܛܪܝܰܪܟܐ</addName> 
+                  <forename sort="1">ܢܘܚ</forename> 
+                  <addName type="untagged-title" sort="2">ܠܶܒܢܳܢܳܝܐ</addName>
+               </persName>
                <persName xml:id="name277-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܢܘܚ</forename> 
                   <addName type="untagged-title" sort="2">ܠܒܢܢܝܐ</addName>
@@ -187,8 +199,13 @@
                <idno type="URI">http://syriaca.org/person/277</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|277</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Ignatius_Nuh_of_Lebanon</idno>
-               <death when="1509" source="#bib277-2">1509</death>
-               <state type="office" role="patriarch" source="#bib277-2">
+               <birth when="1451" source="#bib277-1">1451</birth>
+               <death when="1509" source="#bib277-1">1509</death>
+               <state type="office"
+                      role="patriarch"
+                      from="1493"
+                      to="1509"
+                      source="#bib277-1 #bib277-2">
                   <desc xml:lang="en">Patriarch</desc>
                </state>
                <bibl xml:id="bib277-1">
@@ -211,13 +228,6 @@
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">485</citedRange>
-               </bibl>
-               <bibl xml:id="bib277-11">
-                  <title xml:lang="en">Virtual International Authority File</title>
-                  <abbr>VIAF</abbr>
-                  <ptr target="http://viaf.org"/>
-                  <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
-                    with VIAF.</span>
                </bibl>
             </person>
             <relation name="has-literary-connection-to-place"

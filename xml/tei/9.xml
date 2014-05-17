@@ -62,7 +62,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -75,7 +75,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/9/source</idno>
+            <idno type="URI">http://syriaca.org/person/9/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -105,12 +105,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -122,6 +118,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -141,9 +145,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -168,13 +172,17 @@
                          corresp="#name9-2 #name9-4 #name9-5"
                          xml:lang="ar"
                          source="#bib9-3">
-                  <forename sort="1">شمعون</forename> برصبَّاعي</persName>
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="family" sort="2">برصبَّاعي</addName>
+               </persName>
                <persName xml:id="name9-4"
                          corresp="#name9-2 #name9-3 #name9-5 #name9-6"
                          xml:lang="syr"
                          source="#bib9-4 #bib9-6 #bib9-7"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">ܫܡܥܘܢ</forename> ܒܪ ܨܒܥ̈ܐ</persName>
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="family" sort="2">ܒܪ ܨܒܥ̈ܐ</addName>
+               </persName>
                <persName xml:id="name9-5"
                          corresp="#name9-2 #name9-3 #name9-4"
                          xml:lang="syr-Syrj"
@@ -198,7 +206,7 @@
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|9</idno>
                <idno type="URI">http://viaf.org/viaf/98479047/#Simeon_Bar_Sabb%C4%81%27e_Bishop_of_Seleucia_and_Ctesiphon</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Simeon bar Sabbae&amp;sT=keywords</idno>
-               <death when="0343" source="#bib9-2">343</death>
+               <death notBefore="0341" notAfter="0344" source="#bib9-1">341 or 344</death>
                <bibl xml:id="bib9-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
@@ -228,8 +236,7 @@
                <bibl xml:id="bib9-7">
                   <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                   <ptr target="http://syriaca.org/bibl/7"/>
-                  <citedRange unit="pp">
-                        III:51</citedRange>
+                  <citedRange unit="pp">III:51</citedRange>
                </bibl>
                <bibl xml:id="bib9-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>

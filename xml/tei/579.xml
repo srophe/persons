@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/579/source</idno>
+            <idno type="URI">http://syriaca.org/person/579/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -157,22 +161,29 @@
                   <addName type="untagged-title" sort="2">of Halicarnassus</addName>
                </persName>
                <persName xml:id="name579-2"
-                         corresp="#name579-3 #name579-4"
+                         corresp="#name579-3 #name579-4 #name579-5"
+                         xml:lang="en"
+                         source="#bib579-2">
+                  <forename sort="1">Julian</forename> 
+                  <addName type="untagged-title" sort="2">the Phantasiast</addName>, <roleName type="office" sort="2">bishop of Halicarnassus</roleName>
+               </persName>
+               <persName xml:id="name579-3"
+                         corresp="#name579-2 #name579-4 #name579-5"
                          xml:lang="ar"
                          source="#bib579-3">
                   <forename sort="1">يوليان</forename> 
                   <addName type="untagged-title" sort="2">اسقف هاليكرناس</addName>
                </persName>
-               <persName xml:id="name579-3"
-                         corresp="#name579-2 #name579-4"
+               <persName xml:id="name579-4"
+                         corresp="#name579-2 #name579-3 #name579-5"
                          xml:lang="syr"
                          source="#bib579-4"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܝܘܠܝܢܐ</forename> 
                   <addName type="untagged-title" sort="2">ܐܦܝܣܩܘܦܐ ܕܗܐܠܝܩܪܢܣܝܘܣ</addName>
                </persName>
-               <persName xml:id="name579-4"
-                         corresp="#name579-2 #name579-3"
+               <persName xml:id="name579-5"
+                         corresp="#name579-2 #name579-3 #name579-4"
                          xml:lang="syr-Syrj"
                          source="#bib579-4">
                   <forename sort="1">ܝܘܽܠܝܰܢܶܐ</forename> 
@@ -185,12 +196,20 @@
                <idno type="URI">http://viaf.org/viaf/75844927</idno>
                <idno type="URI">http://viaf.org/viaf/215849401</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=J&amp;sK=Julian of Halicarnassus&amp;sT=keywords</idno>
-               <floruit source="#bib579-1">ca. 520</floruit>
+               <floruit notBefore="0495" notAfter="0545" source="#bib579-1">ca. 520</floruit>
+               <state type="office" role="bishop" source="#bib579-2">
+                  <desc xml:lang="en">bishop of Halicarnassus</desc>
+               </state>
                <bibl xml:id="bib579-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">310</citedRange>
                   <citedRange unit="pp">236</citedRange>
+               </bibl>
+               <bibl xml:id="bib579-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">279</citedRange>
                </bibl>
                <bibl xml:id="bib579-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
@@ -200,6 +219,7 @@
                <bibl xml:id="bib579-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">259</citedRange>
                </bibl>
                <bibl xml:id="bib579-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>

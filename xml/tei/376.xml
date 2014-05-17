@@ -62,7 +62,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -75,7 +75,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/376/source</idno>
+            <idno type="URI">http://syriaca.org/person/376/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -105,12 +105,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -122,6 +118,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -141,9 +145,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -151,21 +155,22 @@
          <listPerson>
             <person xml:id="person-376">
                <persName xml:id="name376-1"
+                         corresp="#name376-2 #name376-3 #name376-4"
                          xml:lang="en-x-gedsh"
-                         source="#bib376-1 #bib376-10"
+                         source="#bib376-1 #bib376-2 #bib376-10"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Basil</forename> 
                   <addName type="untagged-title" sort="2">of Caesarea</addName>
                </persName>
                <persName xml:id="name376-2"
-                         corresp="#name376-3 #name376-4"
+                         corresp="#name376-1 #name376-3 #name376-4"
                          xml:lang="ar"
                          source="#bib376-3">
                   <forename sort="1">باسيليوس</forename> 
                   <addName type="untagged-title" sort="2">القيسري</addName>
                </persName>
                <persName xml:id="name376-3"
-                         corresp="#name376-2 #name376-4"
+                         corresp="#name376-1 #name376-2 #name376-4"
                          xml:lang="syr"
                          source="#bib376-4"
                          syriaca-tags="#syriaca-headword">
@@ -173,7 +178,7 @@
                   <addName type="untagged-title" sort="2">ܕܩܣܪܝܐ</addName>
                </persName>
                <persName xml:id="name376-4"
-                         corresp="#name376-2 #name376-3"
+                         corresp="#name376-1 #name376-2 #name376-3"
                          xml:lang="syr-Syrj"
                          source="#bib376-4">
                   <forename sort="1">ܒܰܣܝܠܠܝܘܣ</forename> 
@@ -202,7 +207,7 @@
                </persName>
                <persName xml:id="name376-8"
                          corresp="#name376-5 #name376-6 #name376-7"
-                         xml:lang="syr-Syrn"
+                         xml:lang="syr-Syrj"
                          source="#bib376-7">
                   <forename sort="1">ܒܰܣܺܝܠܺܝܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܪܰܒܳܐ</addName>
@@ -222,13 +227,21 @@
                <idno type="URI">http://viaf.org/viaf/204528147</idno>
                <idno type="URI">http://viaf.org/viaf/211655706</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Basil of Caesarea&amp;sT=keywords</idno>
-               <birth when="0330" source="#bib376-1">ca. 330</birth>
+               <birth notBefore="0315" notAfter="0345" source="#bib376-1">ca. 330</birth>
                <death when="0379" source="#bib376-1">379</death>
+               <state type="office" from="0370" source="#bib376-1">
+                  <desc xml:lang="en-x-gedsh">370</desc>
+               </state>
                <bibl xml:id="bib376-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">87</citedRange>
                   <citedRange unit="pp">64</citedRange>
+               </bibl>
+               <bibl xml:id="bib376-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">167</citedRange>
                </bibl>
                <bibl xml:id="bib376-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
@@ -238,6 +251,7 @@
                <bibl xml:id="bib376-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">166</citedRange>
                </bibl>
                <bibl xml:id="bib376-6">
                   <title level="m" xml:lang="syr-Syrn">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
@@ -247,21 +261,13 @@
                <bibl xml:id="bib376-7">
                   <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                   <ptr target="http://syriaca.org/bibl/7"/>
-                  <citedRange unit="pp">
-                        III:20</citedRange>
+                  <citedRange unit="pp">III:20</citedRange>
                </bibl>
                <bibl xml:id="bib376-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                   <ptr target="http://syriaca.org/bibl/5"/>
                   <citedRange unit="entry"
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Basil of Caesarea&amp;sT=keywords">Basil of Caesarea</citedRange>
-               </bibl>
-               <bibl xml:id="bib376-11">
-                  <title xml:lang="en">Virtual International Authority File</title>
-                  <abbr>VIAF</abbr>
-                  <ptr target="http://viaf.org"/>
-                  <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
-                    with VIAF.</span>
                </bibl>
             </person>
          </listPerson>

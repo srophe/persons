@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/430/source</idno>
+            <idno type="URI">http://syriaca.org/person/430/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -150,21 +154,22 @@
          <listPerson>
             <person xml:id="person-430">
                <persName xml:id="name430-1"
+                         corresp="#name430-2 #name430-3 #name430-4"
                          xml:lang="en-x-gedsh"
-                         source="#bib430-1 #bib430-10"
+                         source="#bib430-1 #bib430-2 #bib430-10"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Cyril</forename> 
                   <addName type="untagged-title" sort="2">of Alexandria</addName>
                </persName>
                <persName xml:id="name430-2"
-                         corresp="#name430-3 #name430-4"
+                         corresp="#name430-1 #name430-3 #name430-4"
                          xml:lang="ar"
                          source="#bib430-3">
                   <forename sort="1">قورلس</forename> 
                   <addName type="untagged-title" sort="2">الاسكندري</addName>
                </persName>
                <persName xml:id="name430-3"
-                         corresp="#name430-2 #name430-4"
+                         corresp="#name430-1 #name430-2 #name430-4"
                          xml:lang="syr"
                          source="#bib430-4"
                          syriaca-tags="#syriaca-headword">
@@ -172,7 +177,7 @@
                   <addName type="untagged-title" sort="2">ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
                <persName xml:id="name430-4"
-                         corresp="#name430-2 #name430-3"
+                         corresp="#name430-1 #name430-2 #name430-3"
                          xml:lang="syr-Syrj"
                          source="#bib430-4">
                   <forename sort="1">ܩܘܪܝܠܠܘܣ</forename> 
@@ -186,13 +191,17 @@
                <idno type="URI">http://viaf.org/viaf/192092729</idno>
                <idno type="URI">http://viaf.org/viaf/190218431</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=C&amp;sK=Cyril of Alexandria&amp;sT=keywords</idno>
-               <birth when="0375" source="#bib430-11">0375</birth>
                <death when="0444" source="#bib430-1">444</death>
                <bibl xml:id="bib430-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">143</citedRange>
                   <citedRange unit="pp">109</citedRange>
+               </bibl>
+               <bibl xml:id="bib430-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">65</citedRange>
                </bibl>
                <bibl xml:id="bib430-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
@@ -202,19 +211,13 @@
                <bibl xml:id="bib430-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">80</citedRange>
                </bibl>
                <bibl xml:id="bib430-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                   <ptr target="http://syriaca.org/bibl/5"/>
                   <citedRange unit="entry"
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=C&amp;sK=Cyril of Alexandria&amp;sT=keywords">Cyril of Alexandria</citedRange>
-               </bibl>
-               <bibl xml:id="bib430-11">
-                  <title xml:lang="en">Virtual International Authority File</title>
-                  <abbr>VIAF</abbr>
-                  <ptr target="http://viaf.org"/>
-                  <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
-                    with VIAF.</span>
                </bibl>
             </person>
          </listPerson>

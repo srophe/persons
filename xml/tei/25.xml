@@ -62,7 +62,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -75,7 +75,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/25/source</idno>
+            <idno type="URI">http://syriaca.org/person/25/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -105,12 +105,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -122,6 +118,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -141,9 +145,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -161,8 +165,9 @@
                          corresp="#name25-3 #name25-4 #name25-5"
                          xml:lang="en"
                          source="#bib25-2">
-                  <forename sort="1">Marutha of <placeName ref="http://syriaca.org/place/134">Miyapharqin</placeName>
-                  </forename>
+                  <forename sort="1">Marutha</forename> 
+                  <addName type="untagged-title" sort="2">of <placeName ref="http://syriaca.org/place/134">Miyapharqin</placeName>
+                  </addName>
                </persName>
                <persName xml:id="name25-3"
                          corresp="#name25-2 #name25-4 #name25-5"
@@ -212,6 +217,7 @@
                <idno type="URI">http://viaf.org/viaf/102326317</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Marutha of Maipherqat&amp;sT=keywords</idno>
                <death when="0421" source="#bib25-2">421</death>
+               <floruit notBefore="0300" notAfter="0500" source="#bib25-1">4th/5th cent.</floruit>
                <bibl xml:id="bib25-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
@@ -241,21 +247,13 @@
                <bibl xml:id="bib25-7">
                   <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                   <ptr target="http://syriaca.org/bibl/7"/>
-                  <citedRange unit="pp">
-                        III:73</citedRange>
+                  <citedRange unit="pp">III:73</citedRange>
                </bibl>
                <bibl xml:id="bib25-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                   <ptr target="http://syriaca.org/bibl/5"/>
                   <citedRange unit="entry"
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Marutha of Maipherqat&amp;sT=keywords">Marutha of Maipherqat</citedRange>
-               </bibl>
-               <bibl xml:id="bib25-11">
-                  <title xml:lang="en">Virtual International Authority File</title>
-                  <abbr>VIAF</abbr>
-                  <ptr target="http://viaf.org"/>
-                  <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
-                    with VIAF.</span>
                </bibl>
             </person>
             <relation name="has-relation-to-place"
@@ -284,7 +282,7 @@
             </relation>
             <relation name="has-relation-to-place"
                       active="#person-25"
-                      passive="http://syriaca.org/place150"
+                      passive="http://syriaca.org/place/150"
                       source="#bib25-2">
                <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
             </relation>

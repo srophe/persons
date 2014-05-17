@@ -62,7 +62,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -75,7 +75,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/144/source</idno>
+            <idno type="URI">http://syriaca.org/person/144/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -93,7 +93,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -105,12 +105,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -122,6 +118,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -141,9 +145,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -170,7 +174,7 @@
                          corresp="#name144-2 #name144-4 #name144-5"
                          xml:lang="ar"
                          source="#bib144-3">
-                  <addName type="untagged-title" sort="2">الانبا </addName>
+                  <addName type="untagged-title" sort="2">الانبا</addName> 
                   <forename sort="1">داود</forename> 
                   <addName type="family" sort="2">بن بولس</addName> 
                   <addName type="untagged-title" sort="2">آل ربان</addName>
@@ -178,13 +182,21 @@
                <persName xml:id="name144-4"
                          corresp="#name144-2 #name144-3 #name144-5"
                          xml:lang="syr"
-                         source="#bib144-4">ܐܒܐ <forename sort="1">ܕܘܝܕ</forename> 
-                  <addName type="family" sort="2">ܒܪ ܦܘܠܘܣ</addName> ܕܒܝܬ ܪܒܢ</persName>
+                         source="#bib144-4">
+                  <addName type="untagged-title" sort="2">ܐܒܐ</addName> 
+                  <forename sort="1">ܕܘܝܕ</forename> 
+                  <addName type="family" sort="2">ܒܪ ܦܘܠܘܣ</addName> 
+                  <addName type="untagged-title" sort="2">ܕܒܝܬ ܪܒܢ</addName>
+               </persName>
                <persName xml:id="name144-5"
                          corresp="#name144-2 #name144-3 #name144-4"
                          xml:lang="syr-Syrj"
-                         source="#bib144-4">ܐܰܒܐ <forename sort="1">ܕܰܘܝܕ</forename> 
-                  <addName type="family" sort="2">ܒܰܪ ܦܰܘܠܘܣ</addName> ܕܒܶܝܬ ܪܰܒܢ</persName>
+                         source="#bib144-4">
+                  <addName type="untagged-title" sort="2">ܐܰܒܐ</addName> 
+                  <forename sort="1">ܕܰܘܝܕ</forename> 
+                  <addName type="family" sort="2">ܒܰܪ ܦܰܘܠܘܣ</addName> 
+                  <addName type="untagged-title" sort="2">ܕܒܶܝܬ ܪܰܒܢ</addName>
+               </persName>
                <persName xml:id="name144-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܕܘܝܕ</forename> 
                   <addName type="family" sort="2">ܒܪ ܦܘܠܘܣ</addName>
@@ -207,7 +219,7 @@
                </persName>
                <persName xml:id="name144-9"
                          corresp="#name144-7 #name144-8"
-                         xml:lang="syr-Syrn"
+                         xml:lang="syr-Syrj"
                          source="#bib144-7">
                   <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
                   <forename sort="1">ܕܰܘܝܺܕ</forename> 
@@ -224,6 +236,7 @@
                <idno type="URI">http://books.google.com/books?id=RSAYAAAAYAAJ&amp;pg=PR111&amp;lpg=PR111&amp;dq=Gottheil,+Richard+J.H.,+%27%27Dawidh+bar+Paulos,+a+Syriac+Grammarian%27%27&amp;source=bl&amp;ots=8eKWzLYVl4&amp;sig=2Dykp_UJ9fRnpFrcR2klVM23hOI&amp;hl=en&amp;sa=X&amp;ei=yosEUIfCE8Tb6wH-2rHyBg&amp;ved=0CEoQ6AEwBQ#v=onepage&amp;q=Gottheil%2C%20Richard%20J.H.%2C%20%27%27Dawidh%20bar%20Paulos%2C%20a%20Syriac%20Grammarian%27%27&amp;f=false</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=D&amp;sK=David bar Paulos&amp;sT=keywords</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=D&amp;sK=David de-Bet Rabban&amp;sT=keywords</idno>
+               <floruit notBefore="0700" notAfter="0900" source="#bib144-1">8th/9th cent.</floruit>
                <bibl xml:id="bib144-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
@@ -253,8 +266,7 @@
                <bibl xml:id="bib144-7">
                   <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
                   <ptr target="http://syriaca.org/bibl/7"/>
-                  <citedRange unit="pp">
-                        III:254</citedRange>
+                  <citedRange unit="pp">III:254</citedRange>
                </bibl>
                <bibl xml:id="bib144-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>

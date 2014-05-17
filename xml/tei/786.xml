@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/786/source</idno>
+            <idno type="URI">http://syriaca.org/person/786/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -157,27 +161,33 @@
                   <addName type="untagged-title" sort="2">of Ancyra</addName>
                </persName>
                <persName xml:id="name786-2"
-                         corresp="#name786-3 #name786-4"
+                         corresp="#name786-3 #name786-4 #name786-5"
+                         xml:lang="en"
+                         source="#bib786-2">
+                  <forename sort="1">Theodotus</forename>, <roleName type="office" sort="2">metropolitan of Ancyra</roleName>
+               </persName>
+               <persName xml:id="name786-3"
+                         corresp="#name786-2 #name786-4 #name786-5"
                          xml:lang="ar"
                          source="#bib786-3">
                   <forename sort="1">ثاودوطس</forename> 
                   <addName type="untagged-title" sort="2">مطران انقرة</addName>
                </persName>
-               <persName xml:id="name786-3"
-                         corresp="#name786-2 #name786-4"
+               <persName xml:id="name786-4"
+                         corresp="#name786-2 #name786-3 #name786-5"
                          xml:lang="syr"
                          source="#bib786-4">
                   <forename sort="1">ܬܐܘܕܘܛܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܡܛܪܘܦܘܠܝܛܐ ܕܐܢܩܘܪܐ</addName>
                </persName>
-               <persName xml:id="name786-4"
-                         corresp="#name786-2 #name786-3"
+               <persName xml:id="name786-5"
+                         corresp="#name786-2 #name786-3 #name786-4"
                          xml:lang="syr-Syrj"
                          source="#bib786-4">
                   <forename sort="1">ܬܶܐܘܳܕܳܘܛܳܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܡܺܛܪܘܦܘܠܝܛܐ ܕܐܰܢܩܘܪܰܐ</addName>
                </persName>
-               <persName xml:id="name786-5" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name786-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܬܐܘܕܘܛܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܢܩܘܪܐ</addName>
                </persName>
@@ -186,12 +196,20 @@
                <idno type="URI">http://viaf.org/viaf/79410663</idno>
                <idno type="URI">http://viaf.org/viaf/268427019</idno>
                <idno type="URI">http://viaf.org/viaf/296765079</idno>
-               <floruit source="#bib786-1">first half of 5th cent.</floruit>
+               <floruit notBefore="0400" notAfter="0450" source="#bib786-1">first half of 5th cent.</floruit>
+               <state type="office" role="metropolitan" source="#bib786-2">
+                  <desc xml:lang="en">metropolitan of Ancyra</desc>
+               </state>
                <bibl xml:id="bib786-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">552</citedRange>
                   <citedRange unit="pp">409</citedRange>
+               </bibl>
+               <bibl xml:id="bib786-2">
+                  <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">212</citedRange>
                </bibl>
                <bibl xml:id="bib786-3">
                   <title level="m" xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
@@ -201,6 +219,7 @@
                <bibl xml:id="bib786-4">
                   <title level="m" xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">203</citedRange>
                </bibl>
             </person>
          </listPerson>

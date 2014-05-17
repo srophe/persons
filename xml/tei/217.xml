@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/217/source</idno>
+            <idno type="URI">http://syriaca.org/person/217/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -169,18 +173,26 @@
                          corresp="#name217-2 #name217-4 #name217-5"
                          xml:lang="ar"
                          source="#bib217-3">
-                  <addName type="untagged-title" sort="2">مار </addName>
+                  <addName type="untagged-title" sort="2">مار</addName> 
                   <forename sort="1">ميخائيل</forename> 
                   <addName type="untagged-title" sort="2">الكبير</addName>
                </persName>
                <persName xml:id="name217-4"
                          corresp="#name217-2 #name217-3 #name217-5"
                          xml:lang="syr"
-                         source="#bib217-4">ܡܪܝ <forename sort="1">ܡܝܟܐܝܠ</forename> ܪܒܐ</persName>
+                         source="#bib217-4">
+                  <addName type="untagged-title" sort="2">ܡܪܝ</addName> 
+                  <forename sort="1">ܡܝܟܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܪܒܐ</addName>
+               </persName>
                <persName xml:id="name217-5"
                          corresp="#name217-2 #name217-3 #name217-4"
                          xml:lang="syr-Syrj"
-                         source="#bib217-4">ܡܳܪܝ <forename sort="1">ܡܝܟܳܐܝܠ</forename> ܪܰܒܐ</persName>
+                         source="#bib217-4">
+                  <addName type="untagged-title" sort="2">ܡܳܪܝ</addName> 
+                  <forename sort="1">ܡܝܟܳܐܝܠ</forename> 
+                  <addName type="untagged-title" sort="2">ܪܰܒܐ</addName>
+               </persName>
                <persName xml:id="name217-6" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܡܝܟܐܝܠ</forename> 
                   <addName type="untagged-title" sort="2">ܩܕܡܝܐ ܪܒܐ</addName>
@@ -192,8 +204,11 @@
                <idno type="URI">http://worldcat.org/identities/lccn-nr97-7289</idno>
                <idno type="URI">http://worldcat.org/identities/np-michael$i syrus$1126 1199</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Michael the Syrian&amp;sT=keywords</idno>
-               <birth when="1126" source="#bib217-11">1126</birth>
-               <death when="1199" source="#bib217-2">1199</death>
+               <birth when="1126" source="#bib217-1">1126</birth>
+               <death when="1199" source="#bib217-1">1199</death>
+               <state type="office" from="1166" to="1199" source="#bib217-1">
+                  <desc xml:lang="en-x-gedsh">1166-1199</desc>
+               </state>
                <bibl xml:id="bib217-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
@@ -220,13 +235,6 @@
                   <ptr target="http://syriaca.org/bibl/5"/>
                   <citedRange unit="entry"
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=M&amp;sK=Michael the Syrian&amp;sT=keywords">Michael the Syrian</citedRange>
-               </bibl>
-               <bibl xml:id="bib217-11">
-                  <title xml:lang="en">Virtual International Authority File</title>
-                  <abbr>VIAF</abbr>
-                  <ptr target="http://viaf.org"/>
-                  <span xml:lang="en">Information cited from VIAF may come from any library or agency participating
-                    with VIAF.</span>
                </bibl>
             </person>
             <relation name="has-literary-connection-to-place"

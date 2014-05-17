@@ -61,7 +61,7 @@
                <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
             </respStmt>
             <respStmt>
-               <resp>Project managament, English text entry, and proofreading by</resp>
+               <resp>Project management, English text entry, and proofreading by</resp>
                <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
             </respStmt>
             <respStmt>
@@ -74,7 +74,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/112/source</idno>
+            <idno type="URI">http://syriaca.org/person/112/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -92,7 +92,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2013-08-12-04:00</date>
+            <date>2014-05-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -104,12 +104,8 @@
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
             <interpretation>
                <p>Approximate dates described in terms of centuries or partial centuries
-                            have been interpreted as in the following example: 
-                            "4th cent." - notBefore="300" notAfter="399". 
-                            "Early 4th cent." - notBefore="300" notAfter="349". 
-                            "Late 4th cent." - notBefore="350" notAfter="399".
-                            "Mid-4th cent." - notBefore="325" notAfter="374". 
-                            Etc.</p>
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
             </interpretation>
          </editorialDecl>
          <classDecl>
@@ -121,6 +117,14 @@
                </category>
                <category xml:id="syriaca-anglicized">
                   <catDesc>An anglicized version of a name, included to facilitate searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica Syriaca.</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -140,9 +144,9 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#ngibson"
+         <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2013-08-12-04:00"> CREATED: person </change>
+                 when="2014-05-17-04:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,19 +156,36 @@
                <persName xml:id="name112-1"
                          corresp="#name112-2 #name112-3 #name112-4"
                          xml:lang="en"
-                         source="#bib112-2">Presbyter <forename sort="1">Simon</forename> of the Monastery of Qenneshrin</persName>
+                         source="#bib112-2">
+                  <roleName type="office" sort="2">Presbyter</roleName> 
+                  <forename sort="1">Simon</forename> 
+                  <addName type="untagged-title" sort="2">of the <placeName ref="http://syriaca.org/place/230">Monastery of Qenneshrin</placeName>
+                  </addName>
+               </persName>
                <persName xml:id="name112-2"
                          corresp="#name112-1 #name112-3 #name112-4"
                          xml:lang="ar"
-                         source="#bib112-3">القس <forename sort="1">شمعون</forename> من دير قنسرين</persName>
+                         source="#bib112-3">
+                  <addName type="untagged-title" sort="2">القس</addName> 
+                  <forename sort="1">شمعون</forename> 
+                  <addName type="untagged-title" sort="2">من دير قنسرين</addName>
+               </persName>
                <persName xml:id="name112-3"
                          corresp="#name112-1 #name112-2 #name112-4"
                          xml:lang="syr"
-                         source="#bib112-4">ܩܫܝܫܐ <forename sort="1">ܫܡܥܘܢ</forename> ܕܕܝܪܐ ܕܩܢܫܪܝܢ</persName>
+                         source="#bib112-4">
+                  <addName type="untagged-title" sort="2">ܩܫܝܫܐ</addName> 
+                  <forename sort="1">ܫܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܕܝܪܐ ܕܩܢܫܪܝܢ</addName>
+               </persName>
                <persName xml:id="name112-4"
                          corresp="#name112-1 #name112-2 #name112-3"
                          xml:lang="syr-Syrj"
-                         source="#bib112-4">ܩܰܫܝܫܳܐ <forename sort="1">ܫܶܡܥܘܢ</forename> ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</persName>
+                         source="#bib112-4">
+                  <addName type="untagged-title" sort="2">ܩܰܫܝܫܳܐ</addName> 
+                  <forename sort="1">ܫܶܡܥܘܢ</forename> 
+                  <addName type="untagged-title" sort="2">ܕܕܰܝܪܳܐ ܕܩܶܢܫܪܝܢ</addName>
+               </persName>
                <persName xml:id="name112-5" xml:lang="syr" syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܡܥܘܢ</forename> 
                   <addName type="untagged-title" sort="2">ܕܩܢܫܪܝܢ</addName>
@@ -182,7 +203,7 @@
                <idno type="URI">http://syriaca.org/person/112</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|112</idno>
                <state type="office" role="priest" source="#bib112-2">
-                  <desc xml:lang="en">Presbyter of the Monastery of Qenneshrin</desc>
+                  <desc xml:lang="en">Presbyter</desc>
                </state>
                <bibl xml:id="bib112-2">
                   <title level="m" xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
