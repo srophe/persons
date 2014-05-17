@@ -108,9 +108,9 @@
                         <resp>English text entry and proofreading by</resp>
                         <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
                     </respStmt>
-                    <!-- Should anybody from VIAF or ISAW be added here? -->
+                    <!-- Should anybody from VIAF or ISAW be added here and below? -->
                         </xsl:when>
-                        <xsl:when test="$record-id &lt; 1058">
+                        <xsl:when test="$record-id &lt; 1082">
                             <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
                             <respStmt>
                                 <resp>Document design by</resp>
@@ -121,9 +121,10 @@
                                 <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                             </respStmt>
                             <respStmt>
-                                <resp>Editing, Syriac name entry, Arabic name entry, disambiguation research by</resp>
+                                <resp>Data entry and editing by</resp>
                                 <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
                             </respStmt>
+                            <!-- Should anybody from VIAF or ISAW be added here and above? -->
                         </xsl:when>
                     </xsl:choose>
                 </titleStmt>
