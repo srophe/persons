@@ -50,83 +50,73 @@
                     <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                    <xsl:choose>
-                        <xsl:when test="$record-id &lt; 949">
-                    <xsl:if test="exists(*[(starts-with(name(), 'GEDSH') or starts-with(name(), 'Barsoum')) and contains(name(), 'Full') and string-length(normalize-space(node()))])">
+                    <xsl:if test=" $record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
                         <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
-                        <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                     </xsl:if>
-                    <xsl:if test="exists(*[starts-with(name(), 'Abdisho') and contains(name(), 'Full') and string-length(normalize-space(node()))])">
-                        <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                    </xsl:if>
+                    <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
                     <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <respStmt>
-                       <resp>Editing, document design, proofreading, data entry by</resp>
+                        <resp>Editing, document design, proofreading, data entry by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Editing, proofreading, data entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>English name entry, matching with viaf.org records by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
                     </respStmt>
                     <respStmt>
                         <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                     </respStmt>
+                    <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
+                        <respStmt>
+                            <resp>GEDSH and Barsoum English name entry, matching with viaf.org records by</resp>
+                            <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                        </respStmt>
+                    </xsl:if>
                     <respStmt>
-                        <resp>Editing, Syriac name entry, disambiguation research by</resp>
+                        <resp>Editing, <xsl:if test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) != 0 or ($record-id &gt; 305 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">Syriac name entry, </xsl:if>
+                            <xsl:if test="Barsoum_Ar_Entered = 'TAC'">Arabic name entry, </xsl:if>disambiguation research, conversion to XML by</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
                     </respStmt>
-                    <respStmt>
-                        <resp>Syriac name entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Arabic name entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Arabic name entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Normalization, matching with viaf.org records by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Date entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Project management, English text entry, and proofreading by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>English text entry and proofreading by</resp>
-                        <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
-                    </respStmt>
-                    <!-- Should anybody from VIAF or ISAW be added here and below? -->
-                        </xsl:when>
-                        <xsl:when test="$record-id &lt; 1082">
-                            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                            <respStmt>
-                                <resp>Document design by</resp>
-                                <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                            </respStmt>
-                            <respStmt>
-                                <resp>Conversion to XML by</resp>
-                                <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                            </respStmt>
-                            <respStmt>
-                                <resp>Data entry and editing by</resp>
-                                <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                            </respStmt>
-                            <!-- Should anybody from VIAF or ISAW be added here and above? -->
-                        </xsl:when>
-                    </xsl:choose>
+                    <xsl:if test="$record-id &lt; 306 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0">
+                        <respStmt>
+                            <resp>Syriac name entry by</resp>
+                            <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                        </respStmt>
+                    </xsl:if>
+                    <xsl:if test="string-length(normalize-space(Barsoum_ar-Full)) != 0">
+                        <xsl:choose>
+                            <xsl:when test="Barsoum_Ar_Entered = 'JK'">
+                                <respStmt>
+                                    <resp>Arabic name entry by</resp>
+                                    <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                                </respStmt>
+                            </xsl:when>
+                            <xsl:when test="string-length(normalize-space(Barsoum_Ar_Entered)) = 0">
+                                <respStmt>
+                                    <resp>Arabic name entry by</resp>
+                                    <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+                                </respStmt>            
+                            </xsl:when>
+                            <!-- TAC case covered above -->
+                        </xsl:choose>
+                    </xsl:if>
+                    <xsl:if test="string-length(normalize-space(GEDSH_en-Full)) != 0">
+                        <respStmt>
+                            <resp>Normalization of GEDSH dates and entry matching with viaf.org records by</resp>
+                            <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                        </respStmt>    
+                    </xsl:if>
+                    <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0)">
+                        <respStmt>
+                            <resp>Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by</resp>
+                            <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>GEDSH and Barsoum English text entry and proofreading by</resp>
+                            <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
+                        </respStmt>    
+                    </xsl:if>
+                    
+                    <!-- Should anybody from VIAF or ISAW be added here? -->
+                        
                 </titleStmt>
                 <editionStmt>
                     <edition n="1.0"/>
