@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-05-20-04:00</date>
+            <date>2014-06-16-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-05-20-04:00"> CREATED: person </change>
+                 when="2014-06-16-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -182,8 +182,7 @@
                <persName xml:id="name13-6"
                          corresp="#name13-7"
                          xml:lang="syr"
-                         source="#bib13-6 #bib13-7"
-                         syriaca-tags="#syriaca-headword">
+                         source="#bib13-6 #bib13-7">
                   <forename sort="1">ܐܦܪܝܡ</forename>
                </persName>
                <persName xml:id="name13-7"
@@ -249,51 +248,15 @@
             </person>
             <relation name="has-literary-connection-to-place"
                       active="#person-13"
-                      passive="http://syriaca.org/place/502"
+                      passive="http://syriaca.org/place/502 http://syriaca.org/place/216 http://syriaca.org/place/1450 http://syriaca.org/place/1451"
                       source="#bib13-2">
-               <desc xml:lang="en">This author has a literary connection to a place.</desc>
-            </relation>
-            <relation name="has-literary-connection-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/216"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has a literary connection to a place.</desc>
-            </relation>
-            <relation name="has-literary-connection-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/1450"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has a literary connection to a place.</desc>
-            </relation>
-            <relation name="has-literary-connection-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/1451"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has a literary connection to a place.</desc>
+               <desc xml:lang="en">This author has a literary connection to places.</desc>
             </relation>
             <relation name="has-relation-to-place"
                       active="#person-13"
-                      passive="http://syriaca.org/place/142"
+                      passive="http://syriaca.org/place/142 http://syriaca.org/place/78 http://syriaca.org/place/319 http://syriaca.org/place/8"
                       source="#bib13-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
-            </relation>
-            <relation name="has-relation-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/78"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
-            </relation>
-            <relation name="has-relation-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/319"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
-            </relation>
-            <relation name="has-relation-to-place"
-                      active="#person-13"
-                      passive="http://syriaca.org/place/8"
-                      source="#bib13-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+               <desc xml:lang="en">This author has an unspecified connection to places.</desc>
             </relation>
          </listPerson>
       </body>

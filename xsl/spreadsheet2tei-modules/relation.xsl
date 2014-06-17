@@ -64,35 +64,41 @@
         </xsl:if>
         
         <xsl:if test="string-length(normalize-space(Barsoum_en-Literary_Place_URI))">
-            <xsl:for-each select="tokenize(Barsoum_en-Literary_Place_URI,'\s')">
-                <xsl:if test="normalize-space(.)">
-                <relation name="has-literary-connection-to-place">
+            <relation name="has-literary-connection-to-place">
                     <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
-                    <xsl:attribute name="passive" select="."/>
+                <xsl:attribute name="passive" select="Barsoum_en-Literary_Place_URI"/>
                     <xsl:call-template name="source">
                         <xsl:with-param name="bib-ids" select="$bib-ids"/>
                         <xsl:with-param name="column-name" select="'Barsoum_en-Literary_Place_URI'"/>
                     </xsl:call-template>
-                    <desc xml:lang="en">This author has a literary connection to a place.</desc>
-                </relation>
-                </xsl:if>
-            </xsl:for-each>
+                <xsl:choose>
+                    <xsl:when test="contains(Barsoum_en-Literary_Place_URI,' ')">
+                        <desc xml:lang="en">This author has a literary connection to places.</desc>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <desc xml:lang="en">This author has a literary connection to a place.</desc>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </relation>
         </xsl:if>
         
         <xsl:if test="string-length(normalize-space(Barsoum_en-Other_Place_URI))">
-            <xsl:for-each select="tokenize(Barsoum_en-Other_Place_URI,'\s')">
-                <xsl:if test="normalize-space(.)">
                     <relation name="has-relation-to-place">
                         <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
-                        <xsl:attribute name="passive" select="."/>
+                        <xsl:attribute name="passive" select="Barsoum_en-Other_Place_URI"/>
                         <xsl:call-template name="source">
                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
                             <xsl:with-param name="column-name" select="'Barsoum_en-Other_Place_URI'"/>
                         </xsl:call-template>
-                        <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                        <xsl:choose>
+                            <xsl:when test="contains(Barsoum_en-Other_Place_URI,' ')">
+                                <desc xml:lang="en">This author has an unspecified connection to places.</desc>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </relation>
-                </xsl:if>
-            </xsl:for-each>
         </xsl:if>
         
         <!-- Add code here for any additional columns that should produce relation elements. -->

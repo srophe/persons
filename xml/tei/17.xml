@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-05-20-04:00</date>
+            <date>2014-06-16-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-05-20-04:00"> CREATED: person </change>
+                 when="2014-06-16-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -168,8 +168,7 @@
                <persName xml:id="name17-4"
                          corresp="#name17-2 #name17-3 #name17-5"
                          xml:lang="syr"
-                         source="#bib17-4"
-                         syriaca-tags="#syriaca-headword">
+                         source="#bib17-4">
                   <forename sort="1">ܐܝܣܚܩ</forename> 
                   <addName type="untagged-title" sort="2">ܐܡܝܕܝܐ</addName>
                </persName>
@@ -212,15 +211,9 @@
             </relation>
             <relation name="has-relation-to-place"
                       active="#person-17"
-                      passive="http://syriaca.org/place/641"
+                      passive="http://syriaca.org/place/641 http://syriaca.org/place/586"
                       source="#bib17-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
-            </relation>
-            <relation name="has-relation-to-place"
-                      active="#person-17"
-                      passive="http://syriaca.org/place/586"
-                      source="#bib17-2">
-               <desc xml:lang="en">This author has an unspecified connection to a place.</desc>
+               <desc xml:lang="en">This author has an unspecified connection to places.</desc>
             </relation>
          </listPerson>
       </body>
