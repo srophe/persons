@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="gazetteer.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Syriaca.org: The Syriac Reference Portal</authority>
+        <idno type="URI">http://syriaca.org/prosopographyfile/633/tei</idno>
+        <!-- How does this fit in our data model? Does it correspond to the text or the factoids from a text? -->
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/3.0/">
+            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category xml:id="accession">
+            <catDesc>Data addressing the start of a political or ecclesiastical office.</catDesc>
+          </category>
+          <category xml:id="apostasy">
+            <catDesc>Data addressing a person leaving a religious community.</catDesc>
+          </category>
+          <category xml:id="architecture">
+            <catDesc>Data addressing structures and the act of building.</catDesc>
+          </category>
+          <category xml:id="sacredSites">
+            <catDesc>Data addressing churches, temples, mosques, synagogues, shrines, pilgrimage
+              sites, etc.</catDesc>
+          </category>
+          <category xml:id="governance">
+            <catDesc>Data addressing the act of governing or changes in forms of
+              government.</catDesc>
+          </category>
+          <category xml:id="naturalDisaster">
+            <catDesc>Data addressing a natural disaster.</catDesc>
+          </category>
+          <category xml:id="decree">
+            <catDesc>Data addressing a decree or command of an emperor, king, or governor</catDesc>
+          </category>
+          <category xml:id="violence">
+            <catDesc>Data addressing acts of violence between persons or states</catDesc>
+          </category>
+          <category xml:id="war">
+            <catDesc>Data addressing the waging of war</catDesc>
+          </category>
+          <category xml:id="writing">
+            <catDesc>Data addressing writing, scribal activity, and archiving</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="eventFactoids">
+        <listEvent>
+          <event xml:id="eventFactoid633-1" ana="#governance">
+            <!-- We are going to call this sample prosopography document, file 633, so the xml id indicates that this is eventFactoid number one for document 633 -->
+            <!-- Multiple analysis refs encouraged and allowed. -->
+            <desc> King's began to rule in <placeName ref="http://syriaca.org/place/78"
+                >Edessa</placeName> in <choice>
+                <reg><date when="-0132" calendar="Gregorian">132 B.C.E.</date></reg>
+                <orig><date when-custom="180" datingMethod="Seleucid">A. Gr. 180</date></orig>
+              </choice>.
+              <!-- See this for our policies on Dates http://syriaca.org/documentation/dates.html and in https://docs.google.com/document/d/175Yx1uf_HaXRA6O36p83vf-ECFWLGFNbUXoDF7ffVDs/edit#-->
+            </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl> <!-- ALL BIBLs SHOULD HAVE type="source" ADDED TO THEM! -->
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 1</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-2" ana="#accession">
+            <desc>
+              <persName ref="http://syriaca.org/person/Augustus">Augustus</persName> became emperor
+              in <choice>
+                <corr><date when="-0044" calendar="Gregorian">44 B.C.E.</date></corr>
+                <sic><date when="-0045" calendar="Gregorian">45 B.C.E.</date></sic>
+                <orig><date when-custom="266" datingMethod="Seleucid">A. Gr. 266</date></orig>
+              </choice>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 2</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-3" ana="#architecture #governance">
+            <desc>
+              <persName ref="http://syriaca.org/person/AbgarVI">Abgar</persName> builds a <ref
+                target="http://syriaca.org/keyword/architecture">mausoleum</ref> in <choice>
+                <reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg>
+                <orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig>
+              </choice>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 4</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-4" ana="#apostasy">
+            <desc>
+              <persName ref="http://syriaca.org/person/Marcion">Marcion</persName> forsook the
+                <orgName>catholic church</orgName> in <choice>
+                <reg><date when="0138" calendar="Gregorian">138 C.E.</date></reg>
+                <orig><date when-custom="0449" datingMethod="Seleucid">A. Gr. 449</date></orig>
+              </choice>
+            </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 5</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-5" ana="#war #violence">
+            <desc>
+              <persName ref="http://syriaca.org/person/LuciusVerus">Lucius Verus</persName> and
+                <persName ref="http://syriaca.org/person/Commodus">his brother Commodus</persName>
+              conquered <orgName type="state">the Parthians</orgName> in <date when="0166">the fifth
+                year of <persName ref="http://syriaca.org/person/LuciusVerus"
+                >Lucius'</persName>reign</date>. </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 7</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-6" ana="#naturalDisaster">
+            <desc>
+              <placeName ref="http://syriaca.org/place/191">The Daisan river</placeName> flooded
+                <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in
+                    the month Tishrin the latter</date></orig>
+              </choice> during the reign of <persName ref="http://syriaca.org/person/AbgarVIII"
+                >Abgar VIII</persName>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-7" ana="#decree">
+            <desc>In <choice>
+                <reg><date when="0201" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513" calendar="Seleucid">A. Gr. 513</date></orig>
+              </choice>, <persName ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName>
+              commanded that <persName ref="http://syriaca.org/person/Anonymi6"> those who live in
+                the portico in <placeName ref="http://syriaca.org/place/78"
+                >Edessa.</placeName></persName> leave their houses in the winter.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-8" ana="#architecture #decree">
+            <desc><persName ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName>
+              commanded to be built <placeName
+                ref="http://syriaca.org/place/Winter-royal-residence@Tabara">a royal winter house at
+                Tabara</placeName> and he dwelt there during the winters.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2-3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-9" ana="#architecture">
+            <desc>A palace was build for <persName ref="http://syriaca.org/person/AbgarVIII">Abgar
+                VIII</persName> in <placeName ref="http://syriaca.org/place/78"
+              >Edessa.</placeName>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-10" ana="#architecture">
+            <desc><persName ref="http://syriaca.org/person/Anonymi8"> The nobles of <persName
+                  ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName></persName> built
+              homes near the king.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-11" ana="#decree">
+            <desc><persName ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName> remitted
+              the taxes of Edessa and the surrounding towns after the flood of <choice>
+                <reg><date when="0201" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513" calendar="Seleucid">A. Gr. 513</date></orig>
+              </choice>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-12" ana="#writing">
+            <desc>
+              <persName ref="http://syriaca.org/person/Yahab"><roleName>Mar</roleName>
+                <forename>Yahab</forename>
+                <addName>Bar Shemesh</addName></persName> and <persName
+                ref="http://syriaca.org/person/Kaiuma"><forename>Kaiuma</forename>
+                <addName>Bar Magartat</addName></persName> recorded the flooding of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0201" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513" calendar="Seleucid">A. Gr. 513</date></orig>
+              </choice>. </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-13" ana="#writing">
+            <desc>
+              <persName ref="http://syriaca.org/person/BarDin">Bar Din</persName> and <persName
+                ref="http://syriaca.org/person/Bulid">Bulid</persName> archived the record of the
+              flooding of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0201" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513" calendar="Seleucid">A. Gr. 513</date></orig>
+              </choice>. </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-14" ana="#architecture">
+            <desc>
+              <persName ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName> builds a
+                <ref target="http://syriaca.org/keyword/architecture">palace</ref> in <choice>
+                <reg><date when="0205" calendar="Gregorian">205 C.E.</date></reg>
+                <orig><date when-custom="517" datingMethod="Seleucid">A. Gr. 517</date></orig>
+              </choice> in <!-- the text reads "in his city/town". I think this is Edessa? -->. </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 9</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-15" ana="#naturalDisaster">
+            <desc>The walls of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> are
+              destroyed in <choice>
+                <reg><date when="0302" calendar="Gregorian">302 C.E.</date></reg>
+                <orig><date when-custom="0614" datingMethod="Seleucid">A. Gr. 614</date></orig>
+              </choice>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3-4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 11</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-16" ana="#architecture #sacredSites">
+            <desc><persName ref="http://syriaca.org/person/Conon">Conon</persName> laid the
+              foundations of the <ref target="http://syriaca.org/keyword/architecture">Church</ref>
+              of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0312" calendar="Gregorian">312 C.E.</date></reg>
+                <orig><date when-custom="624" datingMethod="Seleucid">A. Gr. 624</date></orig>
+              </choice>. </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 12</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-17" ana="#sacredSites #architecture">
+            <desc><name ref="http://syriaca.org/person/Shaʿad">Shaʿad</name> finished building the
+                <ref target="http://syriaca.org/keyword/architecture">Church</ref> of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName>.</desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 12</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-18" ana="#architecture">
+            <desc>The cemetary of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>
+              was built in <choice>
+                <reg><date when="0324" calendar="Gregorian">324 C.E.</date></reg>
+                <!-- Here is a good example of why we need clear standards. We don't know if 635 is 323 or 324. So, we could encode this date as not before 323 and not after 324. However, the text reads that this event took place the year before Nicaea so clearly we should chose 324. But that process will not always be so clear. If we will not always go with not before and not after, we ought to be clear about how and why we make that call.. -->
+                <orig><date when-custom="635" datingMethod="Seleucid">A. Gr. 635</date></orig>
+              </choice></desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 13</biblScope></bibl>
+          </event>
+          <event xml:id="eventFactoid633-19" ana="#accession">
+            <desc><persName ref="http://syriaca.org/person/Aitallaha">Aitallaha</persName> became
+              bishop of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0325" calendar="Gregorian">325 C.E.</date></reg>
+                <!-- Fix these dates! -->
+                <orig><date when-custom="636" datingMethod="Seleucid">A. Gr. 636</date></orig>
+              </choice>.
+              <!-- This raises a number of problems. The English translation has ammended the text without comment. In mss. section 13 refers to the year 635 A. Gr. while section 14 refers to 636 A. Gr. But, they refer to the same events. Moreover, section 15 of the Chronicle that in the next year, 325 C. E., the council of Nicaea took place. While there is no comment in the English footnotes, Hallier discusses the issues at some length. And I thought collecting factoids would make things easier! How will we discuss these kinds of problems?-->
+            </desc>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 14</biblScope></bibl>
+          </event>
+        </listEvent>
+      </div>
+      <div type="relationFactoids">
+        <bibl type="source"  xml:id="relationFactoid633-1">
+          <listRelation>
+            <relation name="foaf:childOf"
+            active="http://syriaca.org/person/AbgarVIII"
+            passive="http://syriaca.org/person/Maʿnu">
+            </relation>
+          </listRelation>
+          <biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope>
+          <biblScope type="part"><ptr target="#bib663-2"/>Section 8</biblScope>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-2">
+          <listRelation>
+            <relation name="schema:sibling" 
+              mutual="http://syriaca.org/person/LuciusVerus http://syriaca.org/person/Commodus">
+            </relation>
+          </listRelation>
+          <biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope>
+          <biblScope type="part"><ptr target="#bib663-2"/>Section 7</biblScope>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-3">  
+          <listRelation>
+            <relation name="role:OWN"
+              active="http://syriaca.org/person/Anonymi6" 
+              passive="homes">
+            <!-- How should we handle this? If following the model Dave developed in the next factoid, we would have "http://syriac.org/place/Homes@Edessa." I think we should establish a controlled vocabulary for possessions and put them into the taxonomy. Then we could refer out to them with refs.-->
+            <desc>The homes of those who live in the portico in Edessa.</desc>
+            <!-- So, how does it work to put the bibl inside the desc if there is something else inside the desc? -->
+            </relation>
+          </listRelation>
+          <biblScope type="pp"><ptr target="#bib663-1"/>pp ???</biblScope>
+          <biblScope type="part"><ptr target="#bib663-2"/>Section ???</biblScope>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-4">
+          <listRelation>
+            <relation  name="role:OWN" ana="#architecture #governance"
+              active="http://syriaca.org/person/AbgarVIII"
+              passive="http://syriaca.org/place/Winter-royal-residence@Tabara">
+              <desc>Abgar VIII built his royal house----a winter house at Tabara.</desc>
+            </relation>
+          </listRelation>
+        </bibl>
+        <bibl type="source"  xml:id="relationFactoid633-5">  
+          <listRelation>
+            <relation name="role:OWN"
+              active="http://syriaca.org/person/AbgarVIII"
+              passive="http://syriaca.org/place/Palace-of-AbgarVIII@Edessa">
+              <desc>A palace was built for Abgar VIII in Edessa after the flood of 
+                <choice>
+                  <reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg>
+                  <orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in
+                    the month Tishrin the latter</date></orig>
+                </choice>.
+              </desc>
+            </relation>
+          </listRelation>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-6">
+          <listRelation>
+            <relation name="role:OWN"
+              active="http://syriaca.org/person/Anonymi8"
+              passive="homes">
+              <!-- OR, "http://syriaca.org/place/Noble-residences@Edessa"? -->
+              <desc>The nobles of Edessa built homes near to King Abgar VIII after the flood of 
+                <choice>
+                <reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in
+                    the month Tishrin the latter</date></orig>
+              </choice>.
+              </desc>
+            </relation>
+          </listRelation>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-7">  
+          <listRelation>
+            <relation name="role:OWN"
+              active="http://syriaca.org/person/Anonymi4" passive="homes"
+              source="#bib633-1-LINENUMBER?">
+              <!-- OR, "http://syriaca.org/place/homes@Edessa"? -->
+              <desc>Abgar VIII moves and rebuilds cottages for the craftsmen of Edessa after the flood of 
+                <choice>
+                  <reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg>
+                  <orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in
+                    the month Tishrin the latter</date></orig>
+                </choice>.
+              </desc>
+           </relation>
+          </listRelation>
+        </bibl>
+        <bibl type="source" xml:id="relationFactoid633-8">  
+          <listRelation>
+            <relation name="role:OWN"
+              active="http://syriac.org/person/AbgarVIII" passive="palace"
+              source="#bib633-1-LINENUMBER?">
+              <desc>Abgar VIII builds a palace in 
+                <choice>
+                  <reg><date when="0205" calendar="Gregorian">205 C.E.</date></reg>
+                  <orig><date when-custom="517" datingMethod="Seleucid">A. Gr. 517</date></orig>
+                </choice> in <!-- the text reads "in his city/town". Is this Edessa? -->.
+              </desc>
+            </relation>
+          </listRelation>
+        </bibl>
+      </div>
+      <div type="personFactoids">
+        <!-- MUST GET SORTED ON NAMING CONVENTIONS WITH SYRIACA.ORG. NAME TYPE="GIVEN" vs. FORENAME, ETC. -->
+        <listPerson>
+          <person xml:id="personFactoid633-1">
+            <persName ref="http://syriaca.org/person/Augustus">
+              <roleName type="nobility">Augustus</roleName>
+              <name type="cognomen">Caesar</name>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 2</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-2">
+            <persName ref="http://syriaca.org/person/Christ"><addName>our Lord</addName></persName>
+            <birth><choice>
+                <reg><date when="-0003" calendar="Gregorian">3 B.C.E.</date></reg>
+                <orig><date when-custom="0309" datingMethod="Seleucid">A. Gr. 309</date></orig>
+              </choice></birth>
+            <note type="desc">Jesus was born in 3
+              B.C.E.<!-- Do we need a short description of the factoid or will these be listed as bullet points, or even in the case of birth just generated from the elements following a formula or script? --></note>
+            <!--note that this combines two factoid examples, a name factoid and a birth. We can debate if this is allowed (and if it would be okay to add in state etc. here as well, but I think as long as it is the same person and same source citation it would be fine.-->
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 2</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-3">
+            <persName ref="http://syriaca.org/person/AbgarVI"><name type="given">Abgar</name>
+              <roleName type="nobility">the king</roleName></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 4</biblScope></bibl>
+            <!-- One could more likely combine this with another factoid (only in the case of names) since we will want to comb for names everywhere perhaps, see the example in personFactoid633-4 below -->
+            <note type="desc"
+              ><!-- Do we need a short description of the factoid or will these be listed as bullet points? I think listed as bullet points.--></note>
+          </person>
+          <person xml:id="personFactoid633-4">
+            <state type="office">
+              <!-- Should personFactoid633-4 and personFactoid 633-4 be combined into one? -->
+              <desc><persName ref="http://syriaca.org/person/AbgarVI">Abgar VI</persName> was King
+                of <placeName ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                  <reg><date when="0088" calendar="Gregorian">88 C.E.</date></reg>
+                  <orig><date when-custom="0400" datingMethod="Seleucid">A. Gr. 400</date></orig>
+                </choice>.</desc>
+              <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+              <bibl type="source"><biblScope type="part"><ptr
+                      target="#bib663-2"/>Section 4</biblScope></bibl>
+            </state>
+          </person>
+          <!-- This is how to document a role that has a date, but it seems to be more specific but perhaps redundant of what we could do with an event, needs further investigation-->
+          <!-- In the case of a state element it should be written as a complete sentence so there is no need for a note of type=desc to serve as a summary. -->
+          <person xml:id="personFactoid633-5">
+            <persName ref="http://syriaca.org/person/Marcion"><name type="given">Marcion</name>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 5</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-6">
+            <persName ref="http://syriaca.org/person/Bardaisan">Bardaisan</persName>
+            <!-- Do we supply the name Bardaisan as a text node (would be good for RDF and export, or do we look it up in the xQuery transformation? -->
+            <birth><choice>
+                <reg><date when="0153" calendar="Gregorian">153 C.E.</date></reg>
+                <orig><date when-custom="0465-07-11" datingMethod="Seleucid">A. Gr. 465 in the month
+                    Tammuz, on the eleventh day</date></orig>
+              </choice></birth>
+            <note type="desc">Bardaisan was born in 153 C.E. in the month Tammuz, on the eleventh
+              day<!-- Do we need a short description of the factoid or will these be listed as bullet points, or even in the case of birth just generated from the elements following a formula or script? --></note>
+            <!--note that this combines two factoid examples from personFactoid633-1 and 2 above being both a name factoid and a state. We can debate if this is allowed (and if it would be okay to add in birth etc. here as well, but I think as long as it is the same person and same source citation it would be fine.-->
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><ptr target="#bib663-2"/><biblScope>Section 6</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-7">
+            <persName ref="http://syriaca.org/person/LuciusVerus"><name type="given"
+                >Lucius</name><roleName type="nobility">Caesar</roleName></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 7</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-8">
+            <persName ref="http://syriaca.org/person/Severus">Severus</persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-9">
+            <persName ref="http://syriaca.org/person/AbgarVIII"><name type="given">Abgar</name><name
+                type="nobility">the king</name></persName>
+            <!-- Do I want to record every use of "Abgar the King"? -->
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-10">
+            <persName ref="http://syriaca.org/person/Maʿnu">Maʿnu</persName>
+            <!-- I take it we want to record Cowper's "Maano" transliteration somewhere? How should we do that? Where can I find our standards for transliteration of Syriac? -->
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-11">
+            <persName ref="http://syriaca.org/person/AbgarVIII"><name type="given">Abgar</name><name
+                type="nobility">the great king</name></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-12">
+            <persName ref="http://syriaca.org/person/Yahab"><roleName>Mar</roleName>
+              <forename>Yahab</forename>
+              <addName>Bar Shemesh</addName></persName>
+            <state type="office">
+              <desc><persName ref="http://syriaca.org/person/Yahab"><roleName>Mar</roleName>
+                  <forename>Yahab</forename>
+                  <addName>Bar Shemesh</addName></persName> was a <ref
+                  target="http://syriaca.org/keyword/Scribe">Scribe</ref> of <placeName
+                  ref="http://syriaca.org/place/78">Edessa</placeName>.
+                <!-- Should all of the name elements be repeated in the state element? -->
+              </desc>
+            </state>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-13">
+            <persName ref="http://syriaca.org/person/Kaiuma"><forename>Kaiuma</forename><!-- I'm not entirely clear on the use of names here. Why not name type="given"? -->
+              <addName>Bar Magartat</addName></persName>
+            <state type="office">
+              <desc><persName ref="http://syriaca.org/person/Kaiuma"><forename>Kaiuma</forename><!-- I'm not entirely clear on the use of names here. Why not name type="given"? -->
+                  <addName>Bar Magartat</addName></persName> was a <ref
+                  target="http://syriaca.org/keyword/Scribe">Scribe</ref> of <placeName
+                  ref="http://syriaca.org/place/78">Edessa</placeName>.
+                <!-- Should all of the name elements be repeated in the state element? -->
+              </desc>
+            </state>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-14">
+            <persName ref="http://syriaca.org/person/BarDin">Bar Din</persName>
+            <state type="office">
+              <desc><persName ref="http://syriaca.org/person/BarDin">Bar Din</persName> was a
+                prefect over the archives of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName>.</desc>
+            </state>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-15">
+            <persName ref="http://syriaca.org/person/Bulid">Bulid</persName>
+            <state type="office">
+              <desc><persName ref="http://syriaca.org/person/Bulid">Bulid</persName> was a prefect
+                over the archives of <placeName ref="http://syriaca.org/place/78"
+                >Edessa</placeName>.</desc>
+            </state>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-16">
+            <persName ref="http://syriaca.org/person/Mani">Mani</persName>
+            <birth><choice>
+                <reg><date when="0239" calendar="Gregorian">239 C.E.</date></reg>
+                <orig><date when-custom="0551" calendar="Seleucid">A. Gr. 551</date></orig>
+              </choice></birth>
+            <note type="desc">Mani was born in 239 C.E.</note>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 10</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-17">
+            <persName ref="http://syriaca.org/person/Diocletian"><name type="given"
+                >Diocletian</name>
+              <name type="nobility">the king</name></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3-4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 11</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-18">
+            <persName ref="http://syriaca.org/person/Conon"><name type="given">Conon</name>
+              <name type="office">the bishop of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName></name></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 12</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-19">
+            <persName ref="http://syriaca.org/person/Shaʿad"><name type="given"
+                >Shaʿad<!-- Do we have a transliteration guide I should know about? --></name>
+              <name type="office">the bishop of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName></name></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 12</biblScope></bibl>
+          </person>
+          <person xml:id="personFactoid633-20">
+            <persName ref="http://syriaca.org/person/Aitallaha"><name type="given">Aitallaha</name>
+              <name type="office">the bishop of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName></name></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 4</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 13</biblScope></bibl>
+          </person>
+        </listPerson>
+      </div>
+      <div type="personGrpFactoids">
+        <listPerson>
+          <personGrp xml:id="personGrpFactoid633-1">
+            <persName ref="http://syriaca.org/person/Anonymi1">
+              <!-- Actually since these are plural we would want orgNames here perhaps, but it does not seem to be allowed. We need to review our options. BUT, is this an org with a name or is it a loosely defined group of people? Do they have a "distinct identity": http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSE -->
+              Workers in the <orgName>government of <placeName ref="http://syriaca.org/place/78"
+                  >Edessa</placeName></orgName>
+            </persName>
+            <!-- Note as a Desc is not allowed here. Do we need a short description of the factoid or will these be listed as bullet points? Bullet points sounds good to me. -->
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <!--This person group declares that a person group exists, it does not necessarily relay attributes about it beyond information in a text node and establish a URI!-->
+          <personGrp xml:id="personGrpFactoid633-2">
+            <persName ref="http://syriaca.org/person/Anonymi2"> The wise men of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName></persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 1</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-3">
+            <persName ref="http://syriaca.org/person/Anonymi3"> The two thousand men killed in the
+              flood <!-- How best to create a ref to the flood? -->of <placeName
+                ref="http://syriaca.org/place/78">Edessa</placeName> in <choice>
+                <reg><date when="0201-11" calendar="Gregorian">201 C.E.</date></reg>
+                <orig><date when-custom="513-2" datingMethod="Seleucid-SyriacMonths">A. Gr. 513, in
+                    the month Tishrin the latter</date></orig>
+              </choice>.</persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-4">
+            <persName ref="http://syriaca.org/person/Anonymi4"> The craftsmen of <placeName
+                ref="http://syriaca.org/place/78">Edessa.</placeName>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-5">
+            <persName ref="http://syriaca.org/person/Anonymi5"> The measurers and men of skill of
+                <placeName ref="http://syriaca.org/place/78">Edessa.</placeName>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-6">
+            <persName ref="http://syriaca.org/person/Anonymi6"> Those who live in the portico in
+                <placeName ref="http://syriaca.org/place/78">Edessa.</placeName>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-7">
+            <persName ref="http://syriaca.org/person/Anonymi7"> The Gazireans who kept the city of
+                <placeName ref="http://syriaca.org/place/78">Edessa.</placeName>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 2</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+          <personGrp xml:id="personGrpFactoid633-8">
+            <persName ref="http://syriaca.org/person/Anonymi8"> The nobles of <persName
+                ref="http://syriaca.org/person/AbgarVIII">Abgar VIII</persName> of <placeName
+                ref="http://syriaca.org/place/78">Edessa.</placeName>
+            </persName>
+            <bibl type="source"><biblScope type="pp"><ptr target="#bib663-1"/>pp 3</biblScope></bibl>
+            <bibl type="source"><biblScope type="part"><ptr
+                    target="#bib663-2"/>Section 8</biblScope></bibl>
+          </personGrp>
+        </listPerson>
+      </div>
+      <div type="errataNotes">
+        <note type="errata"><ref target="#eventFactoid633-2"/>The author has apparently mistaken the
+          date of Augustus ascension.</note>
+      </div>
+      <!--TEI appears to only validate note in a separate div (not in the same div with the listEvent, we should investigate this further-->
+    </body>
+    <back>
+      <div type="bibl">
+        <bibl xml:id="bib633-1">
+          <title xml:lang="la">Chronica minora</title>
+          <editor>Ignatius Guidi</editor>
+          <ptr target="http://syriaca.org/bibl/633"/>
+          <!-- Should this be bib or bibl? The div type is bibl but the xml:ids all say bib. -->
+          <!-- <citedRange unit="pp"/> Do we need this here now that we are citing pages/sections in each factoid? -->
+        </bibl>
+        <bibl xml:id="bibl633-2">
+          <title xml:lang="en" level="a">The Chronicle of Edessa</title>
+          <title level="j">The Journal of Sacred Literature, New Series [=Series 4]</title>
+          <editor role="translator">B. Cowper</editor>
+          <date when="1865">1865</date>
+          <biblScope unit="vol">5</biblScope>
+          <biblScope unit="pp">28-45</biblScope>
+          <!-- Don't know why this won't validate. Numerous examples here: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COBICOL -->
+        </bibl>
+      </div>
+    </back>
+  </text>
+</TEI>
