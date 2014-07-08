@@ -63,6 +63,30 @@
             </relation>
         </xsl:if>
         
+        <xsl:if test="string-length(normalize-space(Barsoum_en-Birthplace_URI))">
+            <relation name="born-at">
+                <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
+                <xsl:attribute name="passive" select="Barsoum_en-Birthplace_URI"/>
+                <xsl:call-template name="source">
+                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-name" select="'Barsoum_en-Birthplace_URI'"/>
+                </xsl:call-template>
+                <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
+        </xsl:if>
+        
+        <xsl:if test="string-length(normalize-space(Barsoum_en-Death_Place_URI))">
+            <relation name="died-at">
+                <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
+                <xsl:attribute name="passive" select="Barsoum_en-Death_Place_URI"/>
+                <xsl:call-template name="source">
+                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-name" select="'Barsoum_en-Death_Place_URI'"/>
+                </xsl:call-template>
+                <desc xml:lang="en">This author died at a known location.</desc>
+            </relation>
+        </xsl:if>
+        
         <xsl:if test="string-length(normalize-space(Barsoum_en-Literary_Place_URI))">
             <relation name="has-literary-connection-to-place">
                     <xsl:attribute name="active">#<xsl:value-of select="$person-id"/></xsl:attribute>
