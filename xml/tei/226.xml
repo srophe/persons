@@ -77,7 +77,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -131,7 +131,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -195,6 +195,12 @@
                   <citedRange unit="pp">433</citedRange>
                </bibl>
             </person>
+            <relation name="died-at"
+                      active="#person-226"
+                      passive="http://syriaca.org/place/1487"
+                      source="#bib226-2">
+               <desc xml:lang="en">This author died at a known location.</desc>
+            </relation>
             <relation name="has-relation-to-place"
                       active="#person-226"
                       passive="http://syriaca.org/place/8 http://syriaca.org/place/78 http://syriaca.org/place/11"

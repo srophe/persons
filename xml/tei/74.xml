@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -218,6 +218,12 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=J&amp;sK=John of Ephesus&amp;sT=keywords">John of Ephesus</citedRange>
                </bibl>
             </person>
+            <relation name="born-at"
+                      active="#person-74"
+                      passive="http://syriaca.org/place/102"
+                      source="#bib74-2">
+               <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
             <relation name="has-literary-connection-to-place"
                       active="#person-74"
                       passive="http://syriaca.org/place/630 http://syriaca.org/place/358 http://syriaca.org/place/1451 http://syriaca.org/place/8 http://syriaca.org/place/1527 http://syriaca.org/place/200 http://syriaca.org/place/66 http://syriaca.org/place/67 http://syriaca.org/place/1528 http://syriaca.org/place/233 http://syriaca.org/place/10 http://syriaca.org/place/586 http://syriaca.org/place/1529"

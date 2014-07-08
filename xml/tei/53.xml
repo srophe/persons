@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -217,6 +217,12 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Simeon of Beth Arsham&amp;sT=keywords">Simeon of Beth Arsham</citedRange>
                </bibl>
             </person>
+            <relation name="died-at"
+                      active="#person-53"
+                      passive="http://syriaca.org/place/586"
+                      source="#bib53-2">
+               <desc xml:lang="en">This author died at a known location.</desc>
+            </relation>
             <relation name="has-literary-connection-to-place"
                       active="#person-53"
                       passive="http://syriaca.org/place/1457 http://syriaca.org/place/464"

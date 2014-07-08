@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -261,6 +261,18 @@
                       name="different-from"
                       mutual="#person-113 http://syriaca.org/person/28">
                <desc>Not the same as Deacon Yaʿqub of Edessa (http://syriaca.org/person/28).</desc>
+            </relation>
+            <relation name="born-at"
+                      active="#person-113"
+                      passive="http://syriaca.org/place/434"
+                      source="#bib113-2">
+               <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
+            <relation name="died-at"
+                      active="#person-113"
+                      passive="http://syriaca.org/place/233"
+                      source="#bib113-2">
+               <desc xml:lang="en">This author died at a known location.</desc>
             </relation>
             <relation name="has-literary-connection-to-place"
                       active="#person-113"

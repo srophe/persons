@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -232,6 +232,12 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=J&amp;sK=Jacob of Sarug&amp;sT=keywords">Jacob of Sarug</citedRange>
                </bibl>
             </person>
+            <relation name="born-at"
+                      active="#person-42"
+                      passive="http://syriaca.org/place/450"
+                      source="#bib42-2">
+               <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
             <relation name="has-literary-connection-to-place"
                       active="#person-42"
                       passive="http://syriaca.org/place/18 http://syriaca.org/place/285 http://syriaca.org/place/368 http://syriaca.org/place/343 http://syriaca.org/place/464 http://syriaca.org/place/320 http://syriaca.org/place/1457 http://syriaca.org/place/398 http://syriaca.org/place/8 http://syriaca.org/place/78 http://syriaca.org/place/67"

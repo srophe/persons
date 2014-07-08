@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
          <change type="planned">Fuller documentation needed for Syriac headword.</change>
       </revisionDesc>
    </teiHeader>
@@ -212,6 +212,12 @@
                </bibl>
                <note type="record-description">GEDSH refers to this person as Athanasios (VII) Abulfaraj bar Kamoro (pg. 22, 60, 283).</note>
             </person>
+            <relation name="born-at"
+                      active="#person-201"
+                      passive="http://syriaca.org/place/8"
+                      source="#bib201-2">
+               <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
             <relation name="has-relation-to-place"
                       active="#person-201"
                       passive="http://syriaca.org/place/224 http://syriaca.org/place/10"

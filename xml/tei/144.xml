@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-06-16-05:00</date>
+            <date>2014-07-07-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-06-16-05:00"> CREATED: person </change>
+                 when="2014-07-07-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -265,6 +265,12 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=D&amp;sK=David de-Bet Rabban&amp;sT=keywords">David de-Bet Rabban</citedRange>
                </bibl>
             </person>
+            <relation name="born-at"
+                      active="#person-144"
+                      passive="http://syriaca.org/place/307"
+                      source="#bib144-2">
+               <desc xml:lang="en">This author was born at a known location.</desc>
+            </relation>
             <relation name="has-literary-connection-to-place"
                       active="#person-144"
                       passive="http://syriaca.org/place/1505 http://syriaca.org/place/216 http://syriaca.org/place/193 http://syriaca.org/place/369 http://syriaca.org/place/227"
