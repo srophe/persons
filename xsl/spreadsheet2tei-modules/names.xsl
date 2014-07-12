@@ -159,7 +159,7 @@
             </xsl:variable>
             <note type="deprecation">
                 <xsl:attribute name="xml:id" select="concat($deprecated-name-ids[1],'-deprecation')"/>
-                <xsl:value-of select="$deprecation-reason"/>: <xsl:value-of select="$deprecated-names"/> which have ids <xsl:value-of select="$deprecated-name-ids"/>
+                <xsl:value-of select="$deprecation-reason"/>: <xsl:value-of select="$deprecated-names"/>
             </note>
             <xsl:for-each select="$deprecated-name-ids">
                 <link>
