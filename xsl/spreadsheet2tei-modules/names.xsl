@@ -110,7 +110,7 @@
                     <xsl:when test="$all-full-names/*[contains(name(),'GS_en') and compare(normalize-space(node()),$this_name)=0]">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
-                    <xsl:when test="$all-full-names/*[contains(name(),'GEDSH') and compare(normalize-space(node()),$this_name)=0 and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))]">
+                    <xsl:when test="$all-full-names/*[contains(name(),'GEDSH') and compare(normalize-space(node()),$this_name)=0] and not(string-length(normalize-space($all-full-names/GS_en-Full)))">
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
                     <xsl:when test="$all-full-names/*[contains(name(),'Authorized_syr') and compare(normalize-space(node()),$this_name)=0 and contains($this-row/Authorized_syr-Source, 'Other')]">
