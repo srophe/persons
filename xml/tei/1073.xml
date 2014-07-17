@@ -44,7 +44,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2014-07-07-05:00</date>
+            <date>2014-07-17-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -98,7 +98,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-07-07-05:00"> CREATED: person </change>
+                 when="2014-07-17-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -118,6 +118,11 @@
                <idno type="URI">http://syriaca.org/person/1073</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|1073</idno>
             </person>
+            <relation type="disambiguation"
+                      name="different-from"
+                      mutual="#person-1073 http://syriaca.org/person/1082">
+               <desc>Not the Maronite Patriarch Sarkīs al-Rizzī but his nephew.</desc>
+            </relation>
          </listPerson>
       </body>
    </text>

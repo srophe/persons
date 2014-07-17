@@ -81,7 +81,7 @@
                   </p>
                </licence>
             </availability>
-            <date>2014-07-07-05:00</date>
+            <date>2014-07-17-05:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -135,7 +135,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#tcarlson"
                  n="1.0"
-                 when="2014-07-07-05:00"> CREATED: person </change>
+                 when="2014-07-17-05:00"> CREATED: person </change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -149,28 +149,23 @@
                   <forename sort="1">Qurillona</forename>
                </persName>
                <persName xml:id="name20-2"
-                         corresp="#name20-3 #name20-4 #name20-5"
+                         corresp="#name20-3 #name20-4"
                          xml:lang="en"
                          source="#bib20-2 #bib20-10">
                   <forename sort="1">Cyrillona</forename>
                </persName>
                <persName xml:id="name20-3"
-                         corresp="#name20-2 #name20-4 #name20-5"
+                         corresp="#name20-2 #name20-4"
                          xml:lang="ar"
                          source="#bib20-3">
                   <forename sort="1">قورّلونا</forename>
                </persName>
                <persName xml:id="name20-4"
-                         corresp="#name20-2 #name20-3 #name20-5"
+                         corresp="#name20-2 #name20-3"
                          xml:lang="syr"
-                         source="#bib20-4">
-                  <forename sort="1">ܩܘܪܝܠܘܢܐ</forename> 
-               </persName>
-               <persName xml:id="name20-5"
-                         corresp="#name20-2 #name20-3 #name20-4"
-                         xml:lang="syr-Syrj"
-                         source="#bib20-4">
-                  <forename sort="1">ܩܘܪܺܝܠܘܢܶܐ</forename> 
+                         source="#bib20-4"
+                         syriaca-tags="#syriaca-headword">
+                  <forename sort="1">ܩܘܪܠܘܢܐ</forename>
                </persName>
                <idno type="URI">http://syriaca.org/person/20</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|20</idno>
