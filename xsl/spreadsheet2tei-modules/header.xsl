@@ -47,38 +47,38 @@
                     <funder>The National Endowment for the Humanities</funder>
                     <funder>The International Balzan Prize Foundation</funder>
                     <principal>David A. Michelson</principal>
-                    <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
-                    <editor role="general" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
-                    <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
                     <xsl:if test=" $record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
-                        <editor role="creator" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</editor>
+                        <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jwalters">James E. Walters</editor>
                     </xsl:if>
-                    <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
-                    <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                    <editor role="creator" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <respStmt>
                         <resp>Editing, document design, proofreading, data entry by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
                     </respStmt>
                     <respStmt>
                         <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
                     </respStmt>
                     <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
                         <respStmt>
                             <resp>GEDSH and Barsoum English name entry, matching with viaf.org records by</resp>
-                            <name type="person" ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#jwalters">James E. Walters</name>
                         </respStmt>
                     </xsl:if>
                     <respStmt>
                         <resp>Editing, <xsl:if test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) != 0 or ($record-id &gt; 305 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">Syriac name entry, </xsl:if>
                             <xsl:if test="Barsoum_Ar_Entered = 'TAC'">Arabic name entry, </xsl:if>disambiguation research, conversion to XML by</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
                     </respStmt>
                     <xsl:if test="$record-id &lt; 306 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0">
                         <respStmt>
                             <resp>Syriac name entry by</resp>
-                            <name type="person" ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</name>
                         </respStmt>
                     </xsl:if>
                     <xsl:if test="string-length(normalize-space(Barsoum_ar-Full)) != 0">
@@ -86,13 +86,13 @@
                             <xsl:when test="Barsoum_Ar_Entered = 'JK'">
                                 <respStmt>
                                     <resp>Arabic name entry by</resp>
-                                    <name type="person" ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#jkaado">Jad Kaado</name>
                                 </respStmt>
                             </xsl:when>
                             <xsl:when test="string-length(normalize-space(Barsoum_Ar_Entered)) = 0">
                                 <respStmt>
                                     <resp>Arabic name entry by</resp>
-                                    <name type="person" ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
+                                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#pkirlles">Philemon Kirlles</name>
                                 </respStmt>            
                             </xsl:when>
                             <!-- TAC case covered above -->
@@ -101,17 +101,17 @@
                     <xsl:if test="string-length(normalize-space(GEDSH_en-Full)) != 0">
                         <respStmt>
                             <resp>Normalization of GEDSH dates and entry matching with viaf.org records by</resp>
-                            <name type="person" ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#avawter">Alex Vawter</name>
                         </respStmt>    
                     </xsl:if>
                     <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0)">
                         <respStmt>
                             <resp>Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by</resp>
-                            <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">Christopher Johnson</name>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher Johnson</name>
                         </respStmt>
                         <respStmt>
                             <resp>GEDSH and Barsoum English text entry and proofreading by</resp>
-                            <name type="org" ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
+                            <name type="org" ref="http://syriaca.org/documentation/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
                         </respStmt>    
                     </xsl:if>
                     
@@ -205,7 +205,7 @@
                 </langUsage>
             </profileDesc>
             <revisionDesc>
-                <change who="http://syriaca.org/editors.xml#tcarlson" n="1.0">
+                <change who="http://syriaca.org/documentation/editors.xml#tcarlson" n="1.0">
                     <xsl:attribute name="when" select="current-date()"/> CREATED: person </change>
                 <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
                     <change type="planned">
