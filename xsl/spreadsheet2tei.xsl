@@ -189,6 +189,11 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                         
+                                        <!-- Add empty <desc> for abstract -->
+                                        <note type="abstract">
+                                            <xsl:attribute name="xml:id">abstract-en-<xsl:value-of select="$record-id"/></xsl:attribute>
+                                        </note>
+                                        
                                         <!-- Adds VIAF URLs. -->
                                         <xsl:call-template name="idno">
                                             <xsl:with-param name="record-id" select="$record-id"/>
