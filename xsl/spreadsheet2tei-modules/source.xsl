@@ -68,10 +68,15 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:variable>
-        <xsl:if test="not(empty($source-bibls))">
-            <!-- Need to remove duplicates before outputting -->
-            <xsl:attribute name="source" select="distinct-values($source-bibls)"/>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="not(empty($source-bibls))">
+                <!-- Need to remove duplicates before outputting -->
+                <xsl:attribute name="source" select="distinct-values($source-bibls)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:attribute name="resp">http://syriaca.org</xsl:attribute>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
 </xsl:stylesheet>
