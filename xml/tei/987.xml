@@ -114,12 +114,16 @@
       <body>
          <listPerson>
             <person xml:id="person-987" ana="#syriaca-author">
-               <persName xml:id="name987-1" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name987-1"
+                         xml:lang="syr"
+                         resp="http://syriaca.org"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܫܠܝܡܘܢ</forename> 
                   <addName type="family" sort="2">ܒܪ ܓܪܦ</addName>
                </persName>
                <persName xml:id="name987-2"
                          xml:lang="en-x-gedsh"
+                         resp="http://syriaca.org"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Shlemon</forename> 
                   <addName type="family" sort="2">bar Garaph</addName>

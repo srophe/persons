@@ -114,7 +114,10 @@
       <body>
          <listPerson>
             <person xml:id="person-876" ana="#syriaca-author">
-               <persName xml:id="name876-1" xml:lang="syr" syriaca-tags="#syriaca-headword">
+               <persName xml:id="name876-1"
+                         xml:lang="syr"
+                         resp="http://syriaca.org"
+                         syriaca-tags="#syriaca-headword">
                   <forename sort="1">ܦܘܠܘܣ</forename> 
                   <addName type="untagged-title" sort="2">ܕܐܢܒܪ</addName>
                </persName>
@@ -134,11 +137,12 @@
                </persName>
                <persName xml:id="name876-4"
                          xml:lang="en-x-gedsh"
+                         resp="http://syriaca.org"
                          syriaca-tags="#syriaca-headword">
                   <forename sort="1">Pawlos</forename> 
                   <addName type="untagged-title" sort="2">of al-Anbār</addName>
                </persName>
-               <persName xml:id="name876-5" xml:lang="en">
+               <persName xml:id="name876-5" xml:lang="en" resp="http://syriaca.org">
                   <forename sort="1">Paul</forename> 
                   <addName type="untagged-title" sort="2">of al-Anbār</addName>
                </persName>
