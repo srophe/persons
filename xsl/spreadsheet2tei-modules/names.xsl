@@ -123,9 +123,11 @@
                         <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                     </xsl:when>
                 </xsl:choose>
-                <!-- marks an "Other en-" name as #syriaca-anglicized -->
+                <!-- marks an "Other en-" name as #syriaca-anglicized unless it exists in some other column as well -->
                 <xsl:if test="$all-full-names/*[contains(name(),'Other_en') and compare(normalize-space(node()),$this_name)=0]">
-                    <xsl:attribute name="syriaca-tags" select="'#syriaca-anglicized'"/>
+                    <xsl:if test="not($all-full-names/*[not(contains(name(),'Other_en')) and compare(normalize-space(node()),$this_name)=0])">
+                        <xsl:attribute name="syriaca-tags" select="'#syriaca-anglicized'"/>
+                    </xsl:if>
                 </xsl:if>
                 
                 <!-- To make this work with multiple CBSC names, don't call name-parts template if name only a CBSC alternate - just output name -->
