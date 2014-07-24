@@ -59,6 +59,18 @@
             </xsl:for-each>
         </xsl:if>
         
+        <!-- Create a floruit element if our only date information for this record is Barsoum_en-Century -->
+        <xsl:if test="$event-columns[compare(name(),'Barsoum_en-Century') = 0 and string-length(normalize-space(node()))]">
+            <xsl:if test="not($event-columns[not(contains(name(),'Century')) and string-length(normalize-space(node()))])">
+                <xsl:for-each select="$event-columns[compare(name(),'Barsoum_en-Century') = 0 and string-length(normalize-space(node()))]">
+                <xsl:call-template name="event-element">
+                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                    <xsl:with-param name="column-name" select="name(.)"/>
+                </xsl:call-template>
+                </xsl:for-each>
+            </xsl:if>
+        </xsl:if>
+        
         <!-- <xsl:for-each 
             select="$event-columns[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
             <xsl:call-template name="event-element">
@@ -101,7 +113,7 @@
         <xsl:param name="element-name">
             <!-- Names of date-related elements to be created go here. -->
             <xsl:choose>
-                <xsl:when test="contains($column-name, 'Floruit')">floruit</xsl:when>
+                <xsl:when test="contains($column-name, 'Floruit') or contains($column-name, 'Century')">floruit</xsl:when>
                 <xsl:when test="contains($column-name, 'DOB')">birth</xsl:when>
                 <xsl:when test="contains($column-name, 'DOD')">death</xsl:when>
                 <xsl:when test="contains($column-name, 'Event')">event</xsl:when>
@@ -112,9 +124,18 @@
         <xsl:if test="string-length(normalize-space(.)) or exists(following-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))]) or exists(preceding-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))])">
             <xsl:element name="{$element-name}">
                 <!-- Adds machine-readable attributes to date. -->
-                <xsl:call-template name="date-attributes">
-                    <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
-                </xsl:call-template>
+                <xsl:choose>
+                    <xsl:when test="contains($column-name,'Century')">
+                        <xsl:variable name="century" select="number(.)"/>
+                        <xsl:attribute name="notBefore"><xsl:if test="$century &lt; 11">0</xsl:if><xsl:value-of select="$century - 1"/>00</xsl:attribute>
+                        <xsl:attribute name="notAfter"><xsl:if test="$century &lt; 10">0</xsl:if><xsl:value-of select="$century"/>00</xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:call-template name="date-attributes">
+                            <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
+                        </xsl:call-template>
+                    </xsl:otherwise>
+                </xsl:choose>
         
                 <!-- Adds source attributes. -->
                 <xsl:call-template name="source">
@@ -122,14 +143,22 @@
                     <xsl:with-param name="column-name" select="name(.)"/>
                 </xsl:call-template>
                 
-                <!-- Adds custom type and, if relevant, human-readable date as content of element
-                Any additional custom types should go here.-->
+                <!-- Adds custom type: Any additional custom types should go here.-->
                 <xsl:choose>
                     <xsl:when test="contains(name(), 'Event')">
                         <xsl:attribute name="type" select="'event'"/>
                     </xsl:when>
                 </xsl:choose>
-                <xsl:value-of select="."/>
+                
+                <!-- Adds human readable content to element, usually just the date -->
+                <xsl:choose>
+                    <xsl:when test="contains($column-name,'Century')"><xsl:value-of select="."/><xsl:choose>
+                        <xsl:when test="number(.) = 2">nd</xsl:when>
+                        <xsl:when test="number(.) = 3">rd</xsl:when>
+                        <xsl:otherwise>th</xsl:otherwise>
+                    </xsl:choose> century</xsl:when>
+                    <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+                </xsl:choose>
             </xsl:element>
         </xsl:if>
     </xsl:template>
