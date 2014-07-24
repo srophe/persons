@@ -147,7 +147,11 @@
                <persName xml:id="name1021-2"
                          corresp="#name1021-3 #name1021-4 #name1021-5"
                          xml:lang="en"
-                         source="#bib1021-2">Patriarch <forename sort="1">John</forename> VIII <addName type="family" sort="2">Bar ‛Abdun</addName>
+                         source="#bib1021-2">
+                  <roleName type="office" sort="2">Patriarch</roleName> 
+                  <forename sort="1">John</forename> 
+                  <addName type="untagged-title" sort="2">VIII</addName> 
+                  <addName type="family" sort="2">Bar ‛Abdun</addName>
                </persName>
                <persName xml:id="name1021-3"
                          corresp="#name1021-2 #name1021-4 #name1021-5"
@@ -187,7 +191,7 @@
                <idno type="URI">http://syriaca.org/person/1021</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|1021</idno>
                <state type="office" role="patriarch" source="#bib1021-2">
-                  <desc xml:lang="en">Patriarch John VIII Bar ‛Abdun</desc>
+                  <desc xml:lang="en">Patriarch</desc>
                </state>
                <bibl xml:id="bib1021-1">
                   <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

@@ -160,7 +160,9 @@
                          xml:lang="en-x-gedsh"
                          source="#bib169-1"
                          syriaca-tags="#syriaca-headword">
-                  <forename sort="1">Theodosios</forename> (patr.)</persName>
+                  <forename sort="1">Theodosios</forename> 
+                  <roleName type="office" sort="2">(patr.)</roleName>
+               </persName>
                <persName xml:id="name169-2"
                          corresp="#name169-3 #name169-4 #name169-5"
                          xml:lang="en"
@@ -194,7 +196,9 @@
                          xml:lang="en"
                          resp="http://syriaca.org"
                          syriaca-tags="#syriaca-anglicized">
-                  <forename sort="1">Theodosius</forename> (patr.)</persName>
+                  <forename sort="1">Theodosius</forename> 
+                  <roleName type="office" sort="2">(patr.)</roleName>
+               </persName>
                <persName xml:id="name169-7" xml:lang="en" source="#bib169-10">Theodosius of Antioch</persName>
                <note type="abstract" xml:id="abstract-en-169"/>
                <idno type="URI">http://syriaca.org/person/169</idno>
@@ -205,6 +209,13 @@
                <idno type="URI">http://viaf.org/viaf/162473229</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=T&amp;sK=Theodosius of Antioch&amp;sT=keywords</idno>
                <death when="0896" source="#bib169-1">896</death>
+               <state type="office"
+                      role="patriarch"
+                      from="0887"
+                      to="0896"
+                      source="#bib169-1">
+                  <desc xml:lang="en-x-gedsh">(patr.)</desc>
+               </state>
                <state type="office"
                       role="patriarch"
                       from="0887"
