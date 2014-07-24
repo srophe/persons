@@ -24,19 +24,29 @@
         <xd:param name="bib-ids">A sequence of @xml:id attribute values for bibl elements, contained as the content of elements 
             which have as names the column name of a column coming from that source. For example, $bib-ids may contain the following: 
             &lt;GEDSH_en-Full&gt;bibl1-1&lt;/GEDSH_en-Full&gt;</xd:param>
-        <xd:param name="record-title">The value to be used as the title of the record</xd:param>
     </xd:doc>
     <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="bib-ids"/>
-        <xsl:param name="record-title">
+        
+        <xsl:variable name="english-headword">
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(Calculated_Name))">
-                    <xsl:value-of select="Calculated_Name"/>
-                </xsl:when>
+                <xsl:when test="string-length(normalize-space(GS_en-Full)) != 0"><xsl:value-of select="GS_en-Full"/></xsl:when>
+                <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) != 0"><xsl:value-of select="GEDSH_en-Full"/></xsl:when>
                 <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
             </xsl:choose>
-        </xsl:param>
+        </xsl:variable>
+        <xsl:variable name="syriac-headword">
+            <xsl:choose>
+                <xsl:when test="compare(Authorized_syr-Source,'Other') = 0"><xsl:value-of select="Authorized_syr-NV_Full"/></xsl:when>
+                <xsl:when test="compare(Authorized_syr-Source,'Abdisho') = 0"><xsl:value-of select="Abdisho_YdQ_syr-NV_Full"/></xsl:when>
+                <xsl:when test="compare(Authorized_syr-Source,'Barsoum') = 0"><xsl:value-of select="Barsoum_syr-NV_Full"/></xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="record-title">
+            <xsl:value-of select="$english-headword"/>
+            <xsl:if test="string-length($syriac-headword)"> — <foreign xml:lang="syr"><xsl:value-of select="$syriac-headword"/></foreign></xsl:if>
+        </xsl:variable>
         <teiHeader>
             <fileDesc>
                 <titleStmt>
