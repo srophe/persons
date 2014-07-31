@@ -50,7 +50,7 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
-                    <title level="a" xml:lang="en"><xsl:value-of select="$record-title"/></title>
+                    <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
                     <title level="m" xml:lang="en">The Syriac Prosopography</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The Andrew W. Mellon Foundation</funder>
@@ -60,7 +60,7 @@
                     <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                     <editor role="general" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
                     <editor role="general" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                    <xsl:if test=" $record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
+                    <xsl:if test=" number($record-id) &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
                         <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jwalters">James E. Walters</editor>
                     </xsl:if>
                     <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
@@ -74,18 +74,18 @@
                         <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
                         <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
                     </respStmt>
-                    <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
+                    <xsl:if test="number($record-id) &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0 or string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">
                         <respStmt>
                             <resp>GEDSH and Barsoum English name entry, matching with viaf.org records by</resp>
                             <name type="person" ref="http://syriaca.org/documentation/editors.xml#jwalters">James E. Walters</name>
                         </respStmt>
                     </xsl:if>
                     <respStmt>
-                        <resp>Editing, <xsl:if test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) != 0 or ($record-id &gt; 305 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">Syriac name entry, </xsl:if>
+                        <resp>Editing, <xsl:if test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) != 0 or (number($record-id) &gt; 305 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0)">Syriac name entry, </xsl:if>
                             <xsl:if test="Barsoum_Ar_Entered = 'TAC'">Arabic name entry, </xsl:if>disambiguation research, conversion to XML by</resp>
                         <name type="person" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
                     </respStmt>
-                    <xsl:if test="$record-id &lt; 306 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0">
+                    <xsl:if test="number($record-id) &lt; 306 and string-length(normalize-space(Barsoum_syr-NV_Full)) != 0">
                         <respStmt>
                             <resp>Syriac name entry by</resp>
                             <name type="person" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</name>
@@ -114,7 +114,7 @@
                             <name type="person" ref="http://syriaca.org/documentation/editors.xml#avawter">Alex Vawter</name>
                         </respStmt>    
                     </xsl:if>
-                    <xsl:if test="$record-id &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0)">
+                    <xsl:if test="number($record-id) &lt; 839 and (string-length(normalize-space(GEDSH_en-Full)) != 0 or string-length(normalize-space(Barsoum_en-Full)) != 0)">
                         <respStmt>
                             <resp>Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by</resp>
                             <name type="person" ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher Johnson</name>
