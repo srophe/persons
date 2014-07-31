@@ -184,8 +184,15 @@
             </person>
             <relation type="disambiguation"
                       name="different-from"
-                      mutual="#person-1016 http://syriaca.org/person/326 http://syriaca.org/person/100 http://syriaca.org/person/1057">
-               <desc>Not the same as Aitalaha (http://syriaca.org/person/326), Aitalaha the monk (http://syriaca.org/person/100), or Aitalaha of Nineveh (http://syriaca.org/person/1057).</desc>
+                      mutual="#person-1016 http://syriaca.org/person/326">
+               <desc>Not the same as Aitalaha (http://syriaca.org/person/326).</desc>
+            </relation>
+            <!-- Two "possibly identical" relation elements because the veracity of one is indepedent of the veracity of the other -->
+            <relation name="possibly-identical" mutual="#person-1016 http://syriaca.org/person/1057" resp="http://syriaca.org">
+               <desc xml:lang="en">This author is possibly identical with the author represented in another record</desc>
+            </relation>
+            <relation name="possibly-identical" mutual="#person-1016 http://syriaca.org/person/100" resp="http://syriaca.org">
+               <desc xml:lang="en">This author is possibly identical with the author represented in another record</desc>
             </relation>
          </listPerson>
       </body>

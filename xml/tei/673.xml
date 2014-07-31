@@ -191,6 +191,13 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=P&amp;sK=Paul of Nisibis&amp;sT=keywords">Paul of Nisibis</citedRange>
                </bibl>
             </person>
+            <!-- Two separate relation elements, because the veracity of one is independant of the veracity of the other. -->
+            <relation name="possibly-identical" mutual="#person-673 http://syriaca.org/person/674" source="#bib673-1">
+               <desc xml:lang="en">This author is possibly identical with the author represented in another record</desc>
+            </relation>
+            <relation name="possibly-identical" mutual="#person-673 http://syriaca.org/person/675" source="#bib673-1">
+               <desc xml:lang="en">This author is possibly identical with the author represented in another record</desc>
+            </relation>
          </listPerson>
       </body>
    </text>

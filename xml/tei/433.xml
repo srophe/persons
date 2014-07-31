@@ -163,6 +163,11 @@
                   <citedRange unit="entry">146</citedRange>
                   <citedRange unit="pp">110</citedRange>
                </bibl>
+               <bibl xml:id="bib433-7">
+                  <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+                  <citedRange unit="pp">III:214</citedRange>
+               </bibl>
                <bibl xml:id="bib433-10">
                   <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                   <ptr target="http://syriaca.org/bibl/5"/>
@@ -170,6 +175,9 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=D&amp;sK=Dadisho&amp;sT=keywords">Dadisho</citedRange>
                </bibl>
             </person>
+            <relation name="possibly-identical" mutual="#person-433 http://syriaca.org/person/898" source="#bib433-7">
+               <desc xml:lang="en">This person is possibly identical with the author represented in another record</desc>
+            </relation>
          </listPerson>
       </body>
    </text>

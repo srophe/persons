@@ -148,6 +148,12 @@
                <idno type="URI">http://syriaca.org/person/1086</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|1086</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Aba of Kashkar&amp;sT=keywords</idno>
+               <bibl xml:id="bib1086-1">
+                  <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">2</citedRange>
+                  <citedRange unit="pp">1</citedRange>
+               </bibl>
                <bibl xml:id="bib1086-6">
                   <title level="m" xml:lang="syr-Syrn">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
                   <ptr target="http://syriaca.org/bibl/6"/>
@@ -165,6 +171,9 @@
                               target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Aba of Kashkar&amp;sT=keywords">Aba of Kashkar</citedRange>
                </bibl>
             </person>
+            <relation name="possibly-identical" mutual="#person-1086 http://syriaca.org/person/307" source="#bib1086-1">
+               <desc xml:lang="en">This author is possibly identical with the author represented in another record</desc>
+            </relation>
          </listPerson>
       </body>
    </text>
