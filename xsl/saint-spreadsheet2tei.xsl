@@ -37,7 +37,7 @@
             <xsl:variable name="filename" select="concat('../tei/saints/saint',SRP_Saint_ID,'eg.xml')"/>
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
-                    <xsl:text>href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:text>
+                    <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
                 </xsl:processing-instruction>
                 <xsl:value-of select="$n"/>
                 
