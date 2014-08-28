@@ -66,7 +66,7 @@
                <name type="org"
                      ref="http://syriaca.org/documentation/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
             </respStmt>
-            <!-- Add the following resp statement for all records updated. -->
+            <!-- Add the following resp statement for all records updated. Winona, also add one for you! -->
             <respStmt>
                <resp>Proofreading of GEDSH abstracts and addition of confessions and alternate names from GEDSH by</resp>
                <name type="person"
@@ -178,11 +178,11 @@
                <!-- Add any <Alternate_Name> elements here with @xml:lang="en" and source="#bib...-1" (GEDSH). 
                   There may be multiple. If the name exactly matches an existing one (as it did in this case), just add the source. -->
                <persName xml:id="name338-5" xml:lang="en" source="#bib338-10 #bib338-1">Acacius</persName>
-               <!-- Put the content of <Abstract> into this element with the @source="#bib...-1" (GEDSH) 
+               <!-- Put the content of <Abstract> into a quote element inside note @type="abstract" with the @source="#bib...-1" (GEDSH) 
                UNLESS there is a comment in the <Not_Useful> element. (Ask Dave what to do with those.)
                Sometimes there is TEI inside the <Abstract> element - I hope all of it is allowed inside <note>!
                I don't think we need an @xml:lang here.-->
-               <note type="abstract" xml:id="abstract-en-338" source="#bib338-1">Bp. of Seleucia-Ctesiphon and Cath. (484-495/6).</note>
+               <note type="abstract" xml:id="abstract-en-338"><quote source="#bib338-1">Bp. of Seleucia-Ctesiphon and Cath. (484-495/6).</quote></note>
                <idno type="URI">http://syriaca.org/person/338</idno>
                <idno type="URI">http://viaf.org/viaf/sourceID/SRP|338</idno>
                <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Aqaq&amp;sT=keywords</idno>
