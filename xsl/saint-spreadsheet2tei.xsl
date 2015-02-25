@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:syriaca="http://syriaca.org"
-    xmlns="http://www.tei-c.org/ns/1.0">
-    
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:syriaca="http://syriaca.org"
+    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+        
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml" />
-    
     <xsl:variable name="n">
-        <xsl:text>
-</xsl:text>
+        <xsl:text></xsl:text>
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
@@ -32,9 +33,40 @@
         </xsl:choose>
     </xsl:function>
     
-    <xsl:template match="/">
-        <xsl:for-each select="//row[not(starts-with(SRP_ID,'F'))]">
-            <xsl:variable name="filename" select="concat('../tei/saints/saint',SRP_Saint_ID,'eg.xml')"/>
+    <xsl:function name="syriaca:custom-dates" as="xs:date">
+        <xsl:param name="date" as="xs:string"/>
+        <xsl:variable name="trim-date" select="normalize-space($date)"/>
+        <xsl:choose>
+            <xsl:when test="starts-with($trim-date,'0000') and string-length($trim-date) eq 4"><xsl:text>0001-01-01</xsl:text></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 4"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 7"><xsl:value-of select="concat($trim-date,'-01')"/></xsl:when>
+            <xsl:otherwise><xsl:value-of select="$trim-date"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:template match="/root">
+        <!-- [not(starts-with(SRP_ID,'F'))] -->
+        <xsl:for-each select="row">
+            <xsl:variable name="record-id">
+                <xsl:choose>
+                    <xsl:when test="URI != ''"><xsl:value-of select="URI"/></xsl:when>
+                    <xsl:when test="SRP_Saint_ID != ''"><xsl:value-of select="SRP_Saint_ID"/></xsl:when>
+                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="SRP_ID"/></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="concat('unresolved-',generate-id())"/></xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <!-- Creates a variable containing the path of the file that should be created for this record. -->
+            <xsl:variable name="filename">
+                <xsl:choose>
+                    <xsl:when test="URI != ''"><xsl:value-of select="concat('../new-saints/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:when test="SRP_Saint_ID !=''"><xsl:value-of select="concat('../overlap/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../srp-id/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="concat('../unresolved/tei/',$record-id,'.xml')"/></xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
                     <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
@@ -42,7 +74,7 @@
                 <xsl:value-of select="$n"/>
                 
                 <!-- determine which sources will need to be cited; to be used in header formation as well -->
-                <xsl:variable name="bib-prefix">bib<xsl:value-of select="SRP_Saint_ID"/>-</xsl:variable>
+                <xsl:variable name="bib-prefix">bibl<xsl:value-of select="$record-id"/>-</xsl:variable>
                 <xsl:variable name="sources" as="xs:string*">
                     <xsl:if test="Fiey_ID[. != ''] or Raw_Fiey_Name != '' or Fiey_Name != '' or v_see_also_French != '' or Dates != '' or Locations != '' or Veneration_Date != '' or Bibliography != '' or Fiey_Related != ''">
                         <xsl:sequence select="('Fiey')"/>
@@ -53,90 +85,45 @@
                 </xsl:variable>
                 <!-- therefore the xml:id of the <bibl> element representing a source is $bib-prefix followed by the index of the source name in the $sources sequence -->
                 <!-- and the citation format is #<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/> for Fiey, etc. -->
-                
-                <TEI
-                    xml:lang="en"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"
-                    xmlns:svg="http://www.w3.org/2000/svg"
-                    xmlns:math="http://www.w3.org/1998/Math/MathML"
-                    xmlns="http://www.tei-c.org/ns/1.0">
-                    <teiHeader>
-                        <fileDesc>
-                            <titleStmt>
-                                <title level="a" xml:lang="en">Saint number <xsl:value-of select="SRP_Saint_ID"/></title>
-                                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-                                <principal>Jeanne-Nicole Saint-Laurent</principal>
-                                <editor role="general" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
-                                <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
-                                <editor role="creator" ref="http://syriaca.org/editors.xml#jsaint-laurent">Jeanne-Nicole Saint-Laurent</editor>
-                                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
-                                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
-                                <respStmt>
-                                    <resp>Spreadsheet cleanup and database matching by</resp>
-                                    <name>Adam Kane</name>
-                                </respStmt>
-                                <respStmt>
-                                    <resp>Spreadsheet design by</resp>
-                                    <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                                </respStmt>
-                            </titleStmt>
-                            <editionStmt>
-                                <edition n="1.0"/>
-                            </editionStmt>
-                            <publicationStmt>
-                                <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                                <idno type="URI">http://syriaca.org/person/COMING SOON TO A THEATER NEAR YOU/tei</idno>
-                                <availability>
-                                    <licence target="http://creativecommons.org/licenses/by/3.0/">
-                                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
-                                    </licence>
-                                </availability>
-                                <date><xsl:value-of select="current-date()"></xsl:value-of></date>
-                            </publicationStmt>
-                            <sourceDesc>
-                                <p>Born digital.</p>
-                            </sourceDesc>
-                        </fileDesc>
-                        <encodingDesc>
-                            <editorialDecl>
-                                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-                            </editorialDecl>
-                            <classDecl>
-                                <taxonomy>
-                                    <category xml:id="syriaca-headword">
-                                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
-                                    </category>
-                                </taxonomy>
-                            </classDecl>
-                        </encodingDesc>
-                        <profileDesc>
-                            <langUsage>
-                                <language ident="syr">Unvocalized Syriac of any variety or period</language>
-                                <language ident="syr-Syrj">Vocalized West Syriac</language>
-                                <language ident="syr-Syrn">Vocalized East Syriac</language>
-                                <language ident="en">English</language>
-                                <language ident="fr">French</language>
-                                <language ident="fr-x-zanetti">Zanetti's transcription of Syriac into French</language>
-                                <language ident="fr-x-fiey">Fiey's transcription of Syriac into French</language>
-                            </langUsage>
-                        </profileDesc>
-                        <revisionDesc>
-                            <change who="http://syriaca.org/editors.xml#tcarlson"><xsl:attribute name="when"><xsl:value-of select="current-date()"></xsl:value-of></xsl:attribute>CREATED: saint</change>
-                        </revisionDesc>
-                    </teiHeader>
+                <xsl:variable name="all-full-names">
+                    <xsl:copy-of select="GEDSH_Romanized_Name | Syriac_Headword | Syr_Name | Syr_Name_2| Syr_Name_3
+                        | Syr_Name_4
+                        | Zanetti_Transcr.
+                        | Zan_Tran_2
+                        | Nam_Eng
+                        | Eng_2
+                        | Eng_3
+                        | Fr_Name_1
+                        | Fr_Name_2
+                        | Fr_Name_3
+                        | Fr_Name_4
+                        | Fr_Name_5
+                        | Fiey_Name "></xsl:copy-of>
+                </xsl:variable>
+                <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                    <!-- Adds header -->
+                    <xsl:call-template name="header">
+                        <xsl:with-param name="record-id" select="$record-id"/>
+                    </xsl:call-template>
                     <text>
                         <body>
                             <listPerson>
                                 <person>
-                                    <xsl:attribute name="xml:id" select="concat('saint',SRP_Saint_ID)"/>
-                                    
+                                    <xsl:attribute name="xml:id" select="concat('saint-', $record-id)"/>
+                                    <xsl:attribute name="ana" select="'#syriaca-saint'"/>
                                     <!-- DEAL WITH SAINT NAMES -->
+                                   <!-- <xsl:call-template name="names">
+                                        <xsl:with-param name="names" select="$all-full-names"></xsl:with-param>
+                                    </xsl:call-template>-->
                                     <!-- First deal with English names -->
                                     <!-- create one <persName> per name form, with @source citing multiple sources as necessary -->
                                     <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
                                     <xsl:variable name="english-names-with-duplicates" as="xs:string*">
                                         <xsl:if test="Nam_Eng != ''">
-                                            <xsl:sequence select="tokenize(Nam_Eng,'/')"/>
+                                            <xsl:choose>
+                                                <xsl:when test="contains(Nam_Eng,'/')"><xsl:sequence select="tokenize(Nam_Eng,'/')"/></xsl:when>
+                                                <xsl:otherwise><xsl:sequence select="Nam_Eng"/></xsl:otherwise>
+                                            </xsl:choose>
                                         </xsl:if>
                                         <xsl:if test="Eng_2 != ''">
                                             <xsl:sequence select="(Eng_2)"/>
@@ -152,7 +139,7 @@
                                     
                                     <!-- for each name, we create a <placeName> element -->
                                     <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
-                                    <xsl:variable name="name-prefix">name<xsl:value-of select="SRP_Saint_ID"/>-</xsl:variable>
+                                    <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
                                     <xsl:for-each select="$english-names">
                                         <persName>
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($english-names,.)"/></xsl:attribute>
@@ -161,7 +148,7 @@
                                             <xsl:if test="index-of($english-names,.) = 1">
                                                 <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
                                             </xsl:if>
-                                            <xsl:attribute name="resp">http://syriaca.org/</xsl:attribute>
+                                            <!--<xsl:attribute name="resp">http://syriaca.org/</xsl:attribute>-->
                                             
                                             <!-- finally output the value of the <persName> element, the name form itself -->
                                             <xsl:value-of select="."/>
@@ -174,7 +161,10 @@
                                     <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
                                     <xsl:variable name="syriac-names-with-duplicates" as="xs:string*">
                                         <xsl:if test="Syr_Name != ''">
-                                            <xsl:sequence select="tokenize(Syr_Name,'/')"/>
+                                            <xsl:choose>
+                                                <xsl:when test="contains(Syr_Name,'/')"><xsl:sequence select="tokenize(Syr_Name,'/')"/></xsl:when>
+                                                <xsl:otherwise><xsl:sequence select="Syr_Name"/></xsl:otherwise>
+                                            </xsl:choose>
                                         </xsl:if>
                                         <xsl:if test="Syr_Name_2 != ''">
                                             <xsl:sequence select="(Syr_Name_2)"/>
@@ -190,7 +180,7 @@
                                     
                                     <!-- for each name, we create a <placeName> element -->
                                     <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
-                                    <xsl:variable name="name-prefix">name<xsl:value-of select="SRP_Saint_ID"/>-</xsl:variable>
+                                    <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
                                     <xsl:for-each select="$syriac-names">
                                         <persName>
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($syriac-names,.) + $num-english-names"/></xsl:attribute>
@@ -212,7 +202,10 @@
                                     <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
                                     <xsl:variable name="french-names-with-duplicates" as="xs:string*">
                                         <xsl:if test="Zanetti_Transcr. != ''">
-                                            <xsl:sequence select="tokenize(Zanetti_Transcr.,'/')"/>
+                                            <xsl:choose>
+                                                <xsl:when test="contains(Zanetti_Transcr.,'/')"><xsl:sequence select="tokenize(Zanetti_Transcr.,'/')"/></xsl:when>
+                                                <xsl:otherwise><xsl:sequence select="Zanetti_Transcr."/></xsl:otherwise>
+                                            </xsl:choose>
                                         </xsl:if>
                                         <xsl:if test="Zan_Tran_2 != ''">
                                             <xsl:sequence select="(Zan_Tran_2)"/>
@@ -272,24 +265,80 @@
                                     </xsl:for-each>
                                     
                                     <!-- ID numbers -->
-                                    <xsl:choose>
-                                        <xsl:when test="SRP_ID != ''">
-                                            <idno type="URI">http://syriaca.org/person/<xsl:value-of select="SRP_ID"/></idno>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <idno type="URI">http://syriaca.org/person/COMING SOON TO A PERSON NEAR YOU!</idno>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
+                                    <!-- Syriaca.org id -->
+                                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/></idno>
+                                    <!-- Additional ID's -->
+                                    <xsl:for-each select="Fiey_ID[matches(.,'\d*')]">
+                                        <idno type="FIEY"><xsl:value-of select="."/></idno>
+                                    </xsl:for-each>
+                                    <xsl:for-each select="Z1_[matches(.,'\d*')] | *[starts-with(name(),'Heading')][matches(.,'\d*')]">
+                                        <idno type="BHSYRE"><xsl:value-of select="."/></idno>
+                                    </xsl:for-each>
                                     
                                     <!-- SEX -->
                                     <xsl:if test="Sex != '' and Sex != 'N/A'"> <!-- does this need a source? -->
                                         <sex>
+                                            <xsl:attribute name="value" select="Sex"/>
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
-                                            <xsl:value-of select="Sex"/>
+                                            <xsl:choose>
+                                                <xsl:when test="Sex = 'M'">male</xsl:when>
+                                                <xsl:when test="Sex = 'F'">female</xsl:when>
+                                                <xsl:when test="Sex = 'E'">eunuch</xsl:when>
+                                                <xsl:otherwise><xsl:value-of select="Sex"/></xsl:otherwise>
+                                            </xsl:choose>
                                         </sex>
                                     </xsl:if>
                                     
                                     <!-- BIRTH, DEATH, and FLORUIT dates -->
+                                    <xsl:for-each select="Birth[. != '']">
+                                        <birth when="normalize-space(.)" 
+                                            source="#bibl{$record-id}-2" 
+                                            syriaca-computed-start="{syriaca:custom-dates(.)}"><xsl:value-of select="normalize-space(.)"/></birth>
+                                    </xsl:for-each>
+                                    <!-- Death -->
+                                    <xsl:for-each select="Death[. != '']">
+                                        <death when="normalize-space(.)" 
+                                            source="#bibl{$record-id}-2" 
+                                            syriaca-computed-start="{syriaca:custom-dates(.)}"><xsl:value-of select="normalize-space(.)"/></death>
+                                    </xsl:for-each>
+                                    <xsl:if test="*[starts-with(name(),'Floruit')][. != '']">
+                                        <floruit source="#bibl{$record-id}-2">
+                                            <xsl:if test="Floruit_when[. != '']">
+                                                <xsl:attribute name="when"><xsl:value-of select="."/></xsl:attribute>
+                                                <xsl:attribute name="syriaca-computed-start"><xsl:value-of select="."/></xsl:attribute>
+                                            </xsl:if>
+                                            <xsl:if test="Floruit_from[. != '']">
+                                                <xsl:attribute name="from"><xsl:value-of select="."/></xsl:attribute>
+                                                <xsl:attribute name="syriaca-computed-start"><xsl:value-of select="."/></xsl:attribute>
+                                            </xsl:if>
+                                            <xsl:if test="Floruit_to[. != '']">
+                                                <xsl:attribute name="to"><xsl:value-of select="."/></xsl:attribute>
+                                                <xsl:attribute name="syriaca-computed-end"><xsl:value-of select="."/></xsl:attribute>
+                                            </xsl:if>
+                                            <xsl:if test="Floruit_notBefore[. != '']">
+                                                <xsl:attribute name="notBefore"><xsl:value-of select="."/></xsl:attribute>
+                                                <xsl:attribute name="syriaca-computed-start"><xsl:value-of select="."/></xsl:attribute>
+                                            </xsl:if>
+                                            <xsl:if test="Floruit_notAfter[. != '']">
+                                                <xsl:attribute name="notAfter"><xsl:value-of select="."/></xsl:attribute>
+                                                <xsl:attribute name="syriaca-computed-end"><xsl:value-of select="."/></xsl:attribute>
+                                            </xsl:if>
+                                        </floruit>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="Martyr_[matches(.,'Yes')]">
+                                        <state type="martyr" source="#bibl{$record-id}-2">Martyr</state>
+                                    </xsl:if>
+                                    
+                                    <xsl:if test="Bibliography[. !='']">
+                                        <note>Fiey provides the following bibliographic citations: 
+                                            <quote source="#bibl{$record-id}-2">
+                                                <xsl:value-of select="Bibliography"/>
+                                            </quote>
+                                        </note>
+                                    </xsl:if>
+                                    
+                                    <!--NOTE:  Left overs from previouse code? -->
                                     <xsl:choose>
                                         <xsl:when test="Dates != ''">
                                             <note type="dates">
@@ -298,6 +347,7 @@
                                             </note>
                                         </xsl:when>
                                     </xsl:choose>
+                                    
                                     
                                     <!-- VENERATION date -->
                                     <xsl:if test="Veneration_Date != ''">
@@ -357,6 +407,30 @@
                                     </xsl:if>
                                     
                                     <!-- ADD BIBLIOGRAPHY -->
+                                    <!-- 
+                                    
+                                <xsl:for-each select="Z1_[matches(.,'\d*')] | *[starts-with(name(),'Heading')][matches(.,'\d*')]">
+                                    -->
+                                    <bibl xml:id="bib1092-1">
+                                        <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                                        <ptr target="http://syriaca.org/bibl/649"/>
+                                        <xsl:if test="Z1_[matches(.,'\d*')] | *[starts-with(name(),'Heading')][matches(.,'\d*')]">
+                                            <citedRange unit="entry">
+                                                <xsl:for-each select="Z1_[matches(.,'\d*')] | *[starts-with(name(),'Heading')][matches(.,'\d*')]">
+                                                    <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                                                </xsl:for-each>
+                                            </citedRange>
+                                        </xsl:if>
+                                    </bibl>
+                                    <bibl xml:id="bib1092-2">
+                                        <title level="m" xml:lang="fr">Saints Syriaques</title>
+                                        <title level="a" xml:lang="fr">AARON DE SAROUG<!-- AM --></title>
+                                        <ptr target="http://syriaca.org/bibl/650"/>
+                                        <xsl:if test="Fiey_ID[.!='']">
+                                            <citedRange unit="entry"><xsl:value-of select="Fiey_ID[1]"/></citedRange>                                            
+                                        </xsl:if>
+                                    </bibl>
+                                    <!--
                                     <xsl:if test="exists(index-of($sources,'Fiey'))">
                                         <bibl>
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
@@ -389,6 +463,7 @@
                                             </xsl:choose>
                                         </bibl>
                                     </xsl:if>
+                                    -->
                                 </person>
                             </listPerson>
                             <!-- Finally, deal with relations to other entities -->
@@ -403,5 +478,168 @@
                 </TEI>
             </xsl:result-document>
         </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="record-id"/>
+        <xsl:param name="bib-ids"/>
+        
+        <xsl:variable name="english-headword">
+            <xsl:choose>
+                <xsl:when test="string-length(normalize-space(GEDSH_Romanized_Name)) != 0"><xsl:value-of select="GEDSH_Romanized_Name"/></xsl:when>
+                <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="syriac-headword">
+            <xsl:choose>
+                <xsl:when test="string-length(normalize-space(Syriac_Headword)) != 0"><xsl:value-of select="Syriac_Headword"/></xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="record-title">
+            <xsl:value-of select="$english-headword"/>
+            <xsl:if test="string-length($syriac-headword)"> — <foreign xml:lang="syr"><xsl:value-of select="$syriac-headword"/></foreign></xsl:if>
+        </xsl:variable>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
+                    <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+                    <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                    <funder>The International Balzan Prize Foundation</funder>
+                    <funder>The National Endowment for the Humanities</funder>
+                    <principal>David A. Michelson</principal>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <respStmt>
+                        <resp>Editing, proofreading, data entry and revision by</resp>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Data architecture and encoding by</resp>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+                        <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Editing and Syriac data proofreading by</resp>
+                        <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Entries adapted from the work of</resp>
+                        <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Entries adapted from on the work of</resp>
+                        <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Entries adapted from on the work of</resp>
+                        <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+                    </respStmt>
+                </titleStmt>
+                <editionStmt>
+                    <edition n="1.0"/>
+                </editionStmt>
+                <publicationStmt>
+                    <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                    <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/>/tei</idno>
+                    <availability>
+                        <licence target="http://creativecommons.org/licenses/by/3.0/">
+                            <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                            <xsl:if test="*[matches(name(),'Barsoum_syr|Barsoum_ar') and string-length(normalize-space(node()))]">
+                                <p>This entry incorporates copyrighted material from the following work(s):
+                                    <listBibl>
+                                        <xsl:if test="*[matches(name(),'Barsoum_syr') and string-length(normalize-space(node()))]">
+                                            <bibl>
+                                                <ptr>
+                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_syr')][1])"/>
+                                                </ptr>
+                                            </bibl>
+                                        </xsl:if>
+                                        <xsl:if test="*[matches(name(),'Barsoum_ar') and string-length(normalize-space(node()))]">
+                                            <bibl>
+                                                <ptr>
+                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_ar')][1])"/>
+                                                </ptr>
+                                            </bibl>
+                                        </xsl:if>
+                                    </listBibl>
+                                    <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/></note>
+                                </p>
+                            </xsl:if>
+                        </licence>
+                    </availability>
+                    <date>
+                        <xsl:value-of select="current-date()"/>
+                    </date>
+                </publicationStmt>
+                <sourceDesc>
+                    <p>Born digital.</p>
+                </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                <editorialDecl>
+                    <p>This record created following the Syriaca.org guidelines. 
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+                    <interpretation>
+                        <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in 
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
+                    </interpretation>
+                    <!-- Are there other editorial decisions we need to record here? -->
+                </editorialDecl>
+                <classDecl>
+                    <taxonomy>
+                        <category xml:id="syriaca-headword">
+                            <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref
+                                    target="http://syriaca.org/documentation/headwords.html"
+                                    >http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+                        </category>
+                        <category xml:id="syriaca-anglicized">
+                            <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+                        </category>
+                    </taxonomy>
+                    <taxonomy>
+                        <category xml:id="syriaca-author">
+                            <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+                        </category>
+                        <category xml:id="syriaca-saint">
+                            <catDesc>A person who is relevant to the Bibliotheca Hagiographica
+                                Syriaca.</catDesc>
+                        </category>
+                    </taxonomy>
+                </classDecl>
+            </encodingDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                    <language ident="syr-Syrj">Vocalized West Syriac</language>
+                    <language ident="syr-Syrn">Vocalized East Syriac</language>
+                    <language ident="en">English</language>
+                    <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                    <language ident="ar">Arabic</language>
+                    <language ident="fr">French</language>
+                    <language ident="de">German</language>
+                    <language ident="la">Latin</language>
+                </langUsage>
+            </profileDesc>
+            <revisionDesc>
+                <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0">
+                    <xsl:attribute name="when" select="current-date()"/> CREATED: person </change>
+                <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
+                    <change type="planned">
+                        <xsl:value-of select="For_Post-Publication_Review"/>
+                    </change>
+                </xsl:if>
+            </revisionDesc>
+        </teiHeader>
     </xsl:template>
 </xsl:stylesheet>
