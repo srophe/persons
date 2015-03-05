@@ -468,9 +468,15 @@
                                         </bibl>
                                     </xsl:if>
                                     <xsl:if test="Fiey_ID[.!='']">
-                                        <bibl xml:id="bib1092-2">
+                                        <xsl:variable name="num">
+                                            <xsl:choose>
+                                                <xsl:when test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">2</xsl:when>
+                                                <xsl:otherwise>1</xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:variable>
+                                        <bibl xml:id="bib1092-{$num}">
                                             <title level="m" xml:lang="fr">Saints Syriaques</title>
-                                            <title level="a" xml:lang="fr">AARON DE SAROUG<!-- AM --></title>
+                                            <title level="a" xml:lang="fr"><xsl:value-of select="Fiey_Name"/></title>
                                             <ptr target="http://syriaca.org/bibl/650"/>    
                                             <citedRange unit="entry"><xsl:value-of select="Fiey_ID[1]"/></citedRange>                                            
                                         </bibl>
@@ -511,13 +517,14 @@
                                     -->
                                 </person>
                             </listPerson>
-                            <!-- Finally, deal with relations to other entities -->
+                            <!-- Finally, deal with relations to other entities 
                             <xsl:if test="Friends_with != '' or Fiey_Related != ''">
                                 <note type="relation">This saint is related to persons <xsl:value-of select="Friends_with"/> and <xsl:value-of select="Fiey_Related"/>.</note>
                             </xsl:if>
                             <xsl:if test="Locations != '' or Cult_center != ''">
                                 <note type="relation">This saint is related to places "<xsl:value-of select="Locations"/>" and "<xsl:value-of select="Cult_center"/>"</note>
                             </xsl:if>
+                            -->
                         </body>
                     </text>
                 </TEI>
