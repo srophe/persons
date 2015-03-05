@@ -82,7 +82,8 @@
                     <xsl:if test="Fiey_ID[. != ''] or Raw_Fiey_Name != '' or Fiey_Name != '' or v_see_also_French != '' or Dates != '' or Locations != '' or Veneration_Date != '' or Bibliography != '' or Fiey_Related != ''">
                         <xsl:sequence select="('Fiey')"/>
                     </xsl:if>
-                    <xsl:if test="Syr_Name != '' or Syr_Name_2 != '' or Syr_Name_3 != '' or Syr_Name_4 != '' or Zanetti_Transcr. != '' or Zan_Tran_2 != '' or Fr_Name_1 != '' or Fr_Name_2 != '' or Fr_Name_3 != '' or Fr_Name_4 != '' or Fr_Name_5 != '' or Zanetti_Numbers != '' or Z1_ != ''">
+                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                    <!--<xsl:if test="Syr_Name != '' or Syr_Name_2 != '' or Syr_Name_3 != '' or Syr_Name_4 != '' or Zanetti_Transcr. != '' or Zan_Tran_2 != '' or Fr_Name_1 != '' or Fr_Name_2 != '' or Fr_Name_3 != '' or Fr_Name_4 != '' or Fr_Name_5 != '' or Zanetti_Numbers != '' or Z1_ != ''">-->
                         <xsl:sequence select="('Zanetti')"/>
                     </xsl:if>
                 </xsl:variable>
@@ -123,7 +124,9 @@
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/>1</xsl:attribute>
                                             <xsl:attribute name="xml:lang">syr</xsl:attribute>
                                             <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
-                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
+                                            <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>                                                
+                                            </xsl:if>
                                             <xsl:value-of select="Syriac_Headword"/>
                                         </persName>
                                     </xsl:if>
@@ -589,11 +592,11 @@
                         <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
                     </respStmt>
                     <respStmt>
-                        <resp>Entries adapted from on the work of</resp>
+                        <resp>Entries adapted from the work of</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
                     </respStmt>
                     <respStmt>
-                        <resp>Entries adapted from on the work of</resp>
+                        <resp>Entries adapted from the work of</resp>
                         <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
                     </respStmt>
                 </titleStmt>
