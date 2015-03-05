@@ -396,7 +396,10 @@
                                             </note>
                                         </xsl:when>
                                     </xsl:choose>
-                                    
+                                    <!-- abstract-->
+                                    <xsl:if test="Short_Description_or_Abstract != ''">
+                                        <note type="abstract"><xsl:value-of select="Short_Description_or_Abstract"/></note>
+                                    </xsl:if>
                                     
                                     <!-- VENERATION date -->
                                     <xsl:if test="Veneration_Date != ''">
@@ -426,20 +429,21 @@
                                             </xsl:if>
                                         </state>
                                     </xsl:if>
-                                    -->
                                     <xsl:if test="Problem_Entry = 'Yes'">
                                         <note type="problem">This is a problem entry</note>
                                     </xsl:if>
                                     <xsl:if test="v_see_also_French != ''">
                                         <note type="see-also">See also <xsl:value-of select="v_see_also_French"/></note>
                                     </xsl:if>
+                                    
                                     <xsl:if test="Multiple_Saint != ''">
                                         <note type="schizophrenia">This Fiey record includes multiple saints.</note>
                                     </xsl:if>
+                                    
                                     <xsl:if test="Beruf_Keyword != ''">
                                         <note type="abstract"><xsl:value-of select="Beruf_Keyword"/></note>
                                     </xsl:if>
-
+                                    -->
                                     <xsl:if test="Edit_notes != ''">
                                         <note type="misc">
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
