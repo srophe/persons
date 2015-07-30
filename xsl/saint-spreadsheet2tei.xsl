@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:syriaca="http://syriaca.org"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
     xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
         
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml" />
@@ -42,6 +40,9 @@
             <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
             <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
             <xsl:when test="string-length($trim-date) eq 7"><xsl:value-of select="concat($trim-date,'-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 3"><xsl:value-of select="concat('0',$trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 2"><xsl:value-of select="concat('00',$trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 1"><xsl:value-of select="concat('000',$trim-date,'-01-01')"/></xsl:when>
             <xsl:otherwise><xsl:value-of select="$trim-date"/></xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -61,15 +62,15 @@
             <xsl:variable name="filename">
                 <xsl:choose>
                     <xsl:when test="GEDSH_Romanized_Name[.=''] or Syriac_Headword[.='']">
-                        <xsl:value-of select="concat('../incomplete/tei/',$record-id,'.xml')"/>
+                        <xsl:value-of select="concat('../new-saints-data/incomplete/tei/',$record-id,'.xml')"/>
                     </xsl:when>
-                    <xsl:when test="URI != ''"><xsl:value-of select="concat('../new-saints/tei/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../overlap/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:when test="SRP_Saint_ID !=''"><xsl:value-of select="concat('../srp-saint-no-uri/tei/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:otherwise><xsl:value-of select="concat('../unresolved/tei/',$record-id,'.xml')"/></xsl:otherwise>
+                    <xsl:when test="URI != ''"><xsl:value-of select="concat('../new-saints-data/new-saints/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../new-saints-data/overlap/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:when test="SRP_Saint_ID !=''"><xsl:value-of select="concat('../new-saints-data/srp-saint-no-uri/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="concat('../new-saints-data/unresolved/tei/',$record-id,'.xml')"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            
+            <xsl:if test="URI != ''">
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
                     <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
@@ -416,37 +417,7 @@
                                     <xsl:if test="Disambiguation_Notes != ''">
                                         <note type="disambiguation"><xsl:value-of select="Disambiguation_Notes"/></note>
                                     </xsl:if>
-                                    
-                                    <!-- Random notes 
-                                    <xsl:if test="Type_of_Vita != '' or Type_2 != '' or Type_3 != ''">
-                                        <state type="commemoration-mode">
-                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
-                                            <xsl:if test="Type_of_Vita != ''">
-                                                <label><xsl:value-of select="Type_of_Vita"/></label>
-                                            </xsl:if>
-                                            <xsl:if test="Type_2 != ''">
-                                                <label><xsl:value-of select="Type_2"/></label>
-                                            </xsl:if>
-                                            <xsl:if test="Type_3 != ''">
-                                                <label><xsl:value-of select="Type_3"/></label>
-                                            </xsl:if>
-                                        </state>
-                                    </xsl:if>
-                                    <xsl:if test="Problem_Entry = 'Yes'">
-                                        <note type="problem">This is a problem entry</note>
-                                    </xsl:if>
-                                    <xsl:if test="v_see_also_French != ''">
-                                        <note type="see-also">See also <xsl:value-of select="v_see_also_French"/></note>
-                                    </xsl:if>
-                                    
-                                    <xsl:if test="Multiple_Saint != ''">
-                                        <note type="schizophrenia">This Fiey record includes multiple saints.</note>
-                                    </xsl:if>
-                                    
-                                    <xsl:if test="Beruf_Keyword != ''">
-                                        <note type="abstract"><xsl:value-of select="Beruf_Keyword"/></note>
-                                    </xsl:if>
-                                    -->
+                                 
                                     <xsl:if test="Edit_notes != ''">
                                         <note type="misc">
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
@@ -464,7 +435,7 @@
                                     <!-- ADD BIBLIOGRAPHY -->
                                     
                                     <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
-                                        <bibl xml:id="bib1092-1">
+                                        <bibl xml:id="bib{$record-id}-1">
                                             <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                                             <ptr target="http://syriaca.org/bibl/649"/>
                                             <citedRange unit="entry">
@@ -481,13 +452,29 @@
                                                 <xsl:otherwise>1</xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:variable>
-                                        <bibl xml:id="bib1092-{$num}">
+                                        <bibl xml:id="bib{$record-id}-{$num}">
                                             <title level="m" xml:lang="fr">Saints Syriaques</title>
                                             <title level="a" xml:lang="fr"><xsl:value-of select="Fiey_Name"/></title>
                                             <ptr target="http://syriaca.org/bibl/650"/>    
                                             <citedRange unit="entry"><xsl:value-of select="Fiey_ID[1]"/></citedRange>                                            
                                         </bibl>
                                     </xsl:if>
+                                    <xsl:variable name="fieyid" select="Fiey_ID[1]"/>
+                                    <xsl:for-each select="doc('fiey-bibl.xml')//descendant::tei:listBibl[tei:head/text() = $fieyid]">
+                                        <xsl:for-each select="tei:bibl">
+                                            <xsl:choose>
+                                                <xsl:when test="tei:note and not(tei:note/following-sibling::*)">
+                                                    <xsl:copy-of select="child::*"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:variable name="num" select="position() + 2"/>
+                                                    <bibl xml:id="bib{$record-id}-{$num}">
+                                                        <xsl:copy-of select="child::*"/>
+                                                    </bibl>                                                    
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:for-each>  
+                                    </xsl:for-each>
                                     <!--
                                     <xsl:if test="exists(index-of($sources,'Fiey'))">
                                         <bibl>
@@ -536,6 +523,7 @@
                     </text>
                 </TEI>
             </xsl:result-document>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     
