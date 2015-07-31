@@ -284,7 +284,10 @@
                                     <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/></idno>
                                     <!-- Additional ID's -->
                                     <xsl:for-each select="Fiey_ID[.!=''][matches(.,'\d*')]">
-                                        <idno type="FIEY"><xsl:value-of select="."/></idno>
+                                        <xsl:choose>
+                                            <xsl:when test="preceding-sibling::Fiey_ID and . = preceding-sibling::Fiey_ID"/>
+                                            <xsl:otherwise><idno type="FIEY"><xsl:value-of select="."/></idno></xsl:otherwise>
+                                        </xsl:choose>
                                     </xsl:for-each>
                                     <xsl:for-each select="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
                                         <idno type="BHSYRE"><xsl:value-of select="."/></idno>
@@ -376,7 +379,7 @@
                                             <xsl:if test="index-of($sources,'Fiey')">
                                                 <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
                                             </xsl:if>
-                                            <xsl:text>Martyr</xsl:text>
+                                            <p><xsl:text>Martyr</xsl:text></p>
                                         </state>
                                     </xsl:if>
                                     
@@ -465,6 +468,9 @@
                                             <xsl:choose>
                                                 <xsl:when test="tei:note and not(tei:note/following-sibling::*)">
                                                     <xsl:copy-of select="child::*"/>
+                                                </xsl:when>
+                                                <xsl:when test="not(child::*) and text()">
+                                                    <note><xsl:value-of select="."/></note>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                     <xsl:variable name="num" select="position() + 2"/>
