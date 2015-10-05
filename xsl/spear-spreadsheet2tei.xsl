@@ -49,28 +49,26 @@
     
     <xsl:template match="/root">
         <!-- [not(starts-with(SRP_ID,'F'))] -->
+        <!-- Create IDs for new persons. DEAL WITH MATCHED PERSONS ELSEWHERE (URI COLUMN)! -->
         <xsl:for-each select="row">
             <xsl:variable name="record-id">
                 <xsl:choose>
-                    <xsl:when test="URI != ''"><xsl:value-of select="URI"/></xsl:when>
-                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="SRP_ID"/></xsl:when>
-                    <xsl:when test="SRP_Saint_ID != ''"><xsl:value-of select="SRP_Saint_ID"/></xsl:when>
+                    <xsl:when test="New_URI != ''"><xsl:value-of select="New_URI"/></xsl:when>
                     <xsl:otherwise><xsl:value-of select="concat('unresolved-',generate-id())"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
             <!-- Creates a variable containing the path of the file that should be created for this record. -->
             <xsl:variable name="filename">
                 <xsl:choose>
-                    <xsl:when test="GEDSH_Romanized_Name[.=''] or Syriac_Headword[.='']">
-                        <xsl:value-of select="concat('../new-saints-data/incomplete/tei/',$record-id,'.xml')"/>
+                    <xsl:when test="Canonical_Name[.=''] or Syriac_Canonical[.='']">
+                        <xsl:value-of select="concat('../../working-files/chronicle-data/tei/incomplete/',$record-id,'.xml')"/>
                     </xsl:when>
-                    <xsl:when test="URI != ''"><xsl:value-of select="concat('../new-saints-data/new-saints/tei/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../new-saints-data/overlap/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:when test="SRP_Saint_ID !=''"><xsl:value-of select="concat('../new-saints-data/srp-saint-no-uri/tei/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:otherwise><xsl:value-of select="concat('../new-saints-data/unresolved/tei/',$record-id,'.xml')"/></xsl:otherwise>
+                    <xsl:when test="New_URI != ''"><xsl:value-of select="concat('../../working-files/chronicle-data/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:otherwise><xsl:value-of select="concat('../../working-files/chronicle-data/tei/unresolved/',$record-id,'.xml')"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <xsl:if test="URI != ''">
+            <!-- Changed test from not empty New_URI to not empty $filename so that it will generate files for "unresolved" records. -->
+            <xsl:if test="$filename != ''">
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
                     <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
@@ -78,32 +76,34 @@
                 <xsl:value-of select="$n"/>
                 
                 <!-- determine which sources will need to be cited; to be used in header formation as well -->
-                <xsl:variable name="bib-prefix">bibl<xsl:value-of select="$record-id"/>-</xsl:variable>
+                <xsl:variable name="bib-prefix">bib<xsl:value-of select="$record-id"/>-</xsl:variable>
+                <!-- WHAT DOES THIS DO WITH RECORD 2246 WHICH HAS NEITHER SOURCE LISTED? -->
                 <xsl:variable name="sources" as="xs:string*">
-                    <xsl:if test="Fiey_ID[. != ''] or Raw_Fiey_Name != '' or Fiey_Name != '' or v_see_also_French != '' or Dates != '' or Locations != '' or Veneration_Date != '' or Bibliography != '' or Fiey_Related != ''">
-                        <xsl:sequence select="('Fiey')"/>
+                    <xsl:if test="Source_1 != ''">
+                        <xsl:sequence select="('Source_1')"/>
                     </xsl:if>
-                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
-                    <!--<xsl:if test="Syr_Name != '' or Syr_Name_2 != '' or Syr_Name_3 != '' or Syr_Name_4 != '' or Zanetti_Transcr. != '' or Zan_Tran_2 != '' or Fr_Name_1 != '' or Fr_Name_2 != '' or Fr_Name_3 != '' or Fr_Name_4 != '' or Fr_Name_5 != '' or Zanetti_Numbers != '' or Z1_ != ''">-->
-                        <xsl:sequence select="('Zanetti')"/>
+                    <xsl:if test="Source_2 != ''">
+                        <xsl:sequence select="('Source_2')"/>
                     </xsl:if>
                 </xsl:variable>
                 <!-- therefore the xml:id of the <bibl> element representing a source is $bib-prefix followed by the index of the source name in the $sources sequence -->
                 <!-- and the citation format is #<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/> for Fiey, etc. -->
-                <xsl:variable name="all-full-names">
-                    <xsl:copy-of select="GEDSH_Romanized_Name | Syriac_Headword | Syr_Name | Syr_Name_2| Syr_Name_3
-                        | Syr_Name_4
-                        | Zanetti_Transcr.
-                        | Zan_Tran_2
-                        | Nam_Eng
-                        | Eng_2
-                        | Eng_3
-                        | Fr_Name_1
-                        | Fr_Name_2
-                        | Fr_Name_3
-                        | Fr_Name_4
-                        | Fr_Name_5
-                        | Fiey_Name "></xsl:copy-of>
+                <xsl:variable name="all-full-name-fields" as="xs:string*">
+                    <xsl:if test="Syriac_Canonical != ''">
+                        <xsl:sequence select="('Syriac_Canonical')"/>
+                    </xsl:if>
+                    <xsl:if test="Canonical_Name != ''">
+                        <xsl:sequence select="('Canonical_Name')"/>
+                    </xsl:if>
+                    <xsl:if test="Name_Variant_1_SYR != ''">
+                        <xsl:sequence select="('Name_Variant_1_SYR')"/>
+                    </xsl:if>
+                    <xsl:if test="Name_Variant_1 != ''">
+                        <xsl:sequence select="('Name_Variant_1')"/>
+                    </xsl:if>
+                    <xsl:if test="Name_Variant_2 != ''">
+                        <xsl:sequence select="('Name_Variant_2')"/>
+                    </xsl:if>
                 </xsl:variable>
                 <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
                     <!-- Adds header -->
@@ -114,167 +114,66 @@
                         <body>
                             <listPerson>
                                 <person>
-                                    <xsl:attribute name="xml:id" select="concat('saint-', $record-id)"/>
-                                    <xsl:attribute name="ana" select="'#syriaca-saint'"/>
+                                    <!-- WHAT PREFIX SHOULD WE USE - PERSON OR SPEAR? -->
+                                    <xsl:attribute name="xml:id" select="concat('person-', $record-id)"/>
+                                    <xsl:attribute name="ana" select="'#syriaca-spear'"/>
                                     <!-- DEAL WITH SAINT NAMES -->
                                     <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                     <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
-                                    <!-- DEAL WITH THE SYRIAC HEADWORDS  -->
-                                    <xsl:if test="Syriac_Headword != ''">
+                                    <!-- DEAL WITH THE SYRIACA HEADWORDS  -->
+                                    <!-- Below is simplified. If dealing with multiple sources, see how saints-spreadsheet2tei.xsl handles this. -->
+                                    <!-- FOR SOME REASON, THIS IS PRODUCING A SPACE BEFORE THE SYRIAC. (SEE ABGAR.) -->
+                                    <xsl:for-each select="Syriac_Canonical[.!='']">
                                         <persName>
-                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/>1</xsl:attribute>
+                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($all-full-name-fields,'Syriac_Canonical')"/></xsl:attribute>
                                             <xsl:attribute name="xml:lang">syr</xsl:attribute>
                                             <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
-                                            <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
-                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>                                                
+                                            <xsl:if test="(../Source_1 != '') or (../Source_2 != '')">
+                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Source_1')"/></xsl:attribute>                                                
                                             </xsl:if>
-                                            <xsl:value-of select="Syriac_Headword"/>
+                                            <xsl:value-of select="."/>
                                         </persName>
-                                    </xsl:if>
-                                    <xsl:if test="GEDSH_Romanized_Name != ''">
+                                    </xsl:for-each>
+                                    <!-- SHOULD THIS BE SOURCED? -->
+                                    <xsl:for-each select="Canonical_Name[.!='']">
                                         <persName>
-                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/>2</xsl:attribute>
+                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($all-full-name-fields,'Canonical_Name')"/></xsl:attribute>
                                             <xsl:attribute name="xml:lang">en-x-gedsh</xsl:attribute>
                                             <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
-                                            <xsl:value-of select="GEDSH_Romanized_Name"/>
+                                            <xsl:value-of select="."/>
                                         </persName>
-                                    </xsl:if>
-                                    
-                                    <!-- NOW DEAL WITH THE SYRIAC NAMES -->
-                                    <!-- create one <persName> per name form, with @source citing multiple sources as necessary -->
-                                    <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
-                                    <xsl:variable name="syriac-names-with-duplicates" as="xs:string*">
-                                        <xsl:if test="Syr_Name != ''">
-                                            <xsl:choose>
-                                                <xsl:when test="contains(Syr_Name,'/')"><xsl:sequence select="tokenize(Syr_Name,'/')"/></xsl:when>
-                                                <xsl:otherwise><xsl:sequence select="Syr_Name"/></xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:if>
-                                        <xsl:if test="Syr_Name_2 != ''">
-                                            <xsl:sequence select="(Syr_Name_2)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Syr_Name_3 != ''">
-                                            <xsl:sequence select="(Syr_Name_3)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Syr_Name_4 != ''">
-                                            <xsl:sequence select="(Syr_Name_4)"/>
-                                        </xsl:if>
-                                    </xsl:variable>
-                                    <xsl:variable name="syriac-names" as="xs:string*"><xsl:sequence select="distinct-values($syriac-names-with-duplicates)"/></xsl:variable>
-                                    <xsl:variable name="num-syriac-names" select="count($syriac-names)"/>
-                                    <xsl:for-each select="$syriac-names[. != $this-row/Syriac_Headword]">
+                                    </xsl:for-each>
+                                    <!-- SHOULD THE NAME VARIANTS BE SOURCED? -->
+                                    <!-- For multiple and potentially overlapping name forms from multiple sources, see how the saints-spreadsheet2tei.xsl handes this. -->
+                                    <!-- NOW DEAL WITH THE ALTERNATE SYRIAC NAMES -->
+                                    <xsl:for-each select="Name_Variant_1_SYR[.!='']">
                                         <persName>
-                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($syriac-names,.) + 1"/></xsl:attribute>
+                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($all-full-name-fields,'Name_Variant_1_SYR')"/></xsl:attribute>
                                             <xsl:attribute name="xml:lang">syr</xsl:attribute>
-                                            <!-- HOW DECIDE WHICH FORM IS THE SYRIAC HEADWORD? -->
-                                            <xsl:if test="index-of($syriac-names,.) = 1">
-                                                <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
+                                            <xsl:if test="(../Source_1 != '') or (../Source_2 != '')">
+                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Source_1')"/></xsl:attribute>                                                
                                             </xsl:if>
-                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
-                                            
-                                            <!-- finally output the value of the <persName> element, the name form itself -->
                                             <xsl:value-of select="."/>
                                         </persName>
                                     </xsl:for-each>
-                                    <!-- First deal with English names -->
-                                    <!-- create one <persName> per name form, with @source citing multiple sources as necessary -->
-                                    <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
-                                    <xsl:variable name="english-names-with-duplicates" as="xs:string*">
-                                        <xsl:if test="Nam_Eng != ''">
-                                            <xsl:choose>
-                                                <xsl:when test="contains(Nam_Eng,'/')"><xsl:sequence select="tokenize(Nam_Eng,'/')"/></xsl:when>
-                                                <xsl:otherwise><xsl:sequence select="Nam_Eng"/></xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:if>
-                                        <xsl:if test="Eng_2 != ''">
-                                            <xsl:sequence select="(Eng_2)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Eng_3 != ''">
-                                            <xsl:sequence select="(Eng_3)"/>
-                                        </xsl:if>
-                                        <xsl:if test="English_Saint_Name != ''">
-                                            <xsl:sequence select="(English_Saint_Name)"/>
-                                        </xsl:if>
-                                    </xsl:variable>
-                                    <xsl:variable name="english-names" as="xs:string*"><xsl:sequence select="distinct-values($english-names-with-duplicates)"/></xsl:variable>
-
-                                    <xsl:for-each select="$english-names[. != $this-row/GEDSH_Romanized_Name]">
+                                    <!-- English names -->
+                                    <xsl:for-each select="Name_Variant_1[.!='']">
                                         <persName>
-                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($english-names,.) + $num-syriac-names + 1"/></xsl:attribute>
+                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($all-full-name-fields,'Name_Variant_1')"/></xsl:attribute>
                                             <xsl:attribute name="xml:lang">en</xsl:attribute>
-                                            <!--<xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>-->
-                                            <!--<xsl:attribute name="resp">http://syriaca.org/</xsl:attribute>-->
-                                            
-                                            <!-- finally output the value of the <persName> element, the name form itself -->
+                                            <xsl:if test="(../Source_1 != '') or (../Source_2 != '')">
+                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Source_1')"/></xsl:attribute>                                                
+                                            </xsl:if>
                                             <xsl:value-of select="."/>
                                         </persName>
                                     </xsl:for-each>
-                                    <xsl:variable name="num-english-names" select="count($english-names)"/>
-                                    <xsl:variable name="num-non-french-names" select="$num-syriac-names + $num-english-names"/>
-                                    
-                                    <!-- NOW DEAL WITH FRENCH NAMES -->
-                                    <!-- create one <persName> per name form, with @source citing multiple sources as necessary -->
-                                    <!-- to do that, first we need to create a sequence of all name forms, then remove duplicates -->
-                                    <xsl:variable name="french-names-with-duplicates" as="xs:string*">
-                                        <xsl:if test="Zanetti_Transcr. != ''">
-                                            <xsl:choose>
-                                                <xsl:when test="contains(Zanetti_Transcr.,'/')"><xsl:sequence select="tokenize(Zanetti_Transcr.,'/')"/></xsl:when>
-                                                <xsl:otherwise><xsl:sequence select="Zanetti_Transcr."/></xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:if>
-                                        <xsl:if test="Zan_Tran_2 != ''">
-                                            <xsl:sequence select="(Zan_Tran_2)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fr_Name_1 != ''">
-                                            <xsl:sequence select="(Fr_Name_1)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fr_Name_2 != ''">
-                                            <xsl:sequence select="(Fr_Name_2)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fr_Name_3 != ''">
-                                            <xsl:sequence select="(Fr_Name_3)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fr_Name_4 != ''">
-                                            <xsl:sequence select="(Fr_Name_4)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fr_Name_5 != ''">
-                                            <xsl:sequence select="(Fr_Name_5)"/>
-                                        </xsl:if>
-                                        <xsl:if test="Fiey_Name != ''">
-                                            <xsl:sequence select="(Fiey_Name)"/>
-                                        </xsl:if>
-                                    </xsl:variable>
-                                    <xsl:variable name="french-names" as="xs:string*"><xsl:sequence select="distinct-values($french-names-with-duplicates)"/></xsl:variable>
-                                    
-                                    <!-- for each name, we create a <placeName> element -->
-                                    <xsl:for-each select="$french-names">
+                                    <xsl:for-each select="Name_Variant_2[.!='']">
                                         <persName>
-                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($french-names,.) + $num-non-french-names + 1"/></xsl:attribute>
-                                            <xsl:attribute name="xml:lang">
-                                                <xsl:choose>
-                                                    <xsl:when test="compare($this-row/Zanetti_Transcr.,.) = 0 or compare($this-row/Zan_Tran_2,.) = 0">fr-x-zanetti</xsl:when>
-                                                    <xsl:when test="compare($this-row/Fiey_Name,.) = 0">fr-x-fiey</xsl:when>
-                                                    <xsl:otherwise>fr</xsl:otherwise>
-                                                </xsl:choose>
-                                            </xsl:attribute>
-                                            <!-- Need a source attribute: if not Fiey, then certainly Zanetti; if Fiey, then possibly also Zanetti -->
-                                            <xsl:choose>
-                                                <xsl:when test="compare($this-row/Fiey_Name,.) = 0">
-                                                    <xsl:choose>
-                                                        <xsl:when test="compare($this-row/Zanetti_Transcr.,.) = 0 or compare($this-row/Zan_Tran_2,.) = 0 or compare($this-row/Fr_Name_1,.) = 0 or compare($this-row/Fr_Name_2,.) = 0 or compare($this-row/Fr_Name_3,.) = 0 or compare($this-row/Fr_Name_4,.) = 0 or compare($this-row/Fr_Name_5,.) = 0">
-                                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/> #<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                            <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
-                                                        </xsl:otherwise>
-                                                    </xsl:choose>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-                                                                                        
-                                            <!-- finally output the value of the <persName> element, the name form itself -->
+                                            <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/><xsl:value-of select="index-of($all-full-name-fields,'Name_Variant_2')"/></xsl:attribute>
+                                            <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                            <xsl:if test="(../Source_1 != '') or (../Source_2 != '')">
+                                                <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Source_1')"/></xsl:attribute>                                                
+                                            </xsl:if>
                                             <xsl:value-of select="."/>
                                         </persName>
                                     </xsl:for-each>
@@ -283,7 +182,7 @@
                                     <!-- Syriaca.org id -->
                                     <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$record-id"/></idno>
                                     <!-- Additional ID's -->
-                                    <xsl:for-each select="Fiey_ID[.!=''][matches(.,'\d*')]">
+                                    <!--<xsl:for-each select="Fiey_ID[.!=''][matches(.,'\d*')]">
                                         <xsl:choose>
                                             <xsl:when test="preceding-sibling::Fiey_ID and . = preceding-sibling::Fiey_ID"/>
                                             <xsl:otherwise><idno type="FIEY"><xsl:value-of select="."/></idno></xsl:otherwise>
@@ -291,10 +190,10 @@
                                     </xsl:for-each>
                                     <xsl:for-each select="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
                                         <idno type="BHSYRE"><xsl:value-of select="."/></idno>
-                                    </xsl:for-each>
+                                    </xsl:for-each>-->
                                     
                                     <!-- SEX -->
-                                    <xsl:if test="Sex != '' and Sex != 'N/A'"> <!-- does this need a source? -->
+                                    <!--<xsl:if test="Sex != '' and Sex != 'N/A'"> <!-\- does this need a source? -\->
                                         <sex>
                                             <xsl:attribute name="value" select="Sex"/>
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
@@ -307,7 +206,7 @@
                                         </sex>
                                     </xsl:if>
                                     
-                                    <!-- BIRTH, DEATH, and FLORUIT dates -->
+                                    <!-\- BIRTH, DEATH, and FLORUIT dates -\->
                                     <xsl:for-each select="Birth[. != '']">
                                         <birth when="{normalize-space(.)}"  
                                             syriaca-computed-start="{syriaca:custom-dates(.)}">
@@ -316,7 +215,7 @@
                                             </xsl:if>
                                             <xsl:value-of select="normalize-space(.)"/></birth>
                                     </xsl:for-each>
-                                    <!-- Death -->
+                                    <!-\- Death -\->
                                     <xsl:for-each select="Death[. != '']">
                                         <death when="{normalize-space(.)}"  
                                             syriaca-computed-start="{syriaca:custom-dates(.)}">
@@ -394,7 +293,7 @@
                                         </note>
                                     </xsl:if>
                                     
-                                    <!--NOTE:  Left overs from previouse code? -->
+                                    <!-\-NOTE:  Left overs from previouse code? -\->
                                     <xsl:choose>
                                         <xsl:when test="Dates != ''">
                                             <note type="dates">
@@ -403,12 +302,12 @@
                                             </note>
                                         </xsl:when>
                                     </xsl:choose>
-                                    <!-- abstract-->
+                                    <!-\- abstract-\->
                                     <xsl:if test="Short_Description_or_Abstract != ''">
                                         <note type="abstract"><xsl:value-of select="Short_Description_or_Abstract"/></note>
                                     </xsl:if>
                                     
-                                    <!-- VENERATION date -->
+                                    <!-\- VENERATION date -\->
                                     <xsl:if test="Veneration_Date != ''">
                                         <event type="veneration">
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
@@ -416,7 +315,7 @@
                                         </event>
                                     </xsl:if>
                                     
-                                    <!-- How do disambiguation? -->
+                                    <!-\- How do disambiguation? -\->
                                     <xsl:if test="Disambiguation_Notes != ''">
                                         <note type="disambiguation"><xsl:value-of select="Disambiguation_Notes"/></note>
                                     </xsl:if>
@@ -426,7 +325,7 @@
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
                                             <xsl:value-of select="Edit_notes"/>
                                         </note>
-                                    </xsl:if>
+                                    </xsl:if>-->
                                     <!--
                                     <xsl:if test="Bibliography != ''">
                                         <note type="bibliography">
@@ -437,51 +336,28 @@
                                     -->
                                     <!-- ADD BIBLIOGRAPHY -->
                                     
-                                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                    <xsl:if test="(Source_1 != '') or (Source_2 != '')">
                                         <bibl xml:id="bib{$record-id}-1">
-                                            <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
-                                            <ptr target="http://syriaca.org/bibl/649"/>
-                                            <citedRange unit="entry">
-                                                <xsl:for-each select="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
-                                                    <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-                                                </xsl:for-each>    
-                                            </citedRange>
+                                            <title level="m" xml:lang="la">Chronica Minora</title>
+                                            <ptr target="http://syriaca.org/bibl/633"/>
+                                            <xsl:if test="page != ''">
+                                                <citedRange unit="pp">
+                                                    <xsl:for-each select="page">
+                                                        <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                                                    </xsl:for-each>    
+                                                </citedRange>
+                                            </xsl:if>
+                                            <!-- SHOULD WE CALL THIS UNIT "SECTION" OR SOMETHING ELSE? -->
+                                            <xsl:if test="Section != ''">
+                                                <citedRange unit="section">
+                                                    <xsl:for-each select="Section">
+                                                        <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                                                    </xsl:for-each>    
+                                                </citedRange>
+                                            </xsl:if>
                                         </bibl>
                                     </xsl:if>
-                                    <xsl:if test="Fiey_ID[.!='']">
-                                        <xsl:variable name="num">
-                                            <xsl:choose>
-                                                <xsl:when test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">2</xsl:when>
-                                                <xsl:otherwise>1</xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:variable>
-                                        <bibl xml:id="bib{$record-id}-{$num}">
-                                            <title level="m" xml:lang="fr">Saints Syriaques</title>
-                                            <title level="a" xml:lang="fr"><xsl:value-of select="Fiey_Name"/></title>
-                                            <ptr target="http://syriaca.org/bibl/650"/>    
-                                            <citedRange unit="entry"><xsl:value-of select="Fiey_ID[1]"/></citedRange>                                            
-                                        </bibl>
-                                    </xsl:if>
-                                    <xsl:variable name="fieyid" select="Fiey_ID[1]"/>
-                                    <xsl:for-each select="doc('fiey-bibl.xml')//descendant::tei:listBibl[tei:head/text() = $fieyid]">
-                                        <xsl:for-each select="tei:bibl">
-                                            <xsl:choose>
-                                                <xsl:when test="tei:note and not(tei:note/following-sibling::*)">
-                                                    <xsl:copy-of select="child::*"/>
-                                                </xsl:when>
-                                                <xsl:when test="not(child::*) and text()">
-                                                    <note><xsl:value-of select="."/></note>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:variable name="num" select="position() + 2"/>
-                                                    <bibl xml:id="bib{$record-id}-{$num}">
-                                                        <xsl:copy-of select="child::*"/>
-                                                    </bibl>                                                    
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:for-each>  
-                                    </xsl:for-each>
-                                    <!--
+                                    <!--Already commented out 10/5/15
                                     <xsl:if test="exists(index-of($sources,'Fiey'))">
                                         <bibl>
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Fiey')"/></xsl:attribute>
@@ -539,13 +415,13 @@
         
         <xsl:variable name="english-headword">
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(GEDSH_Romanized_Name)) != 0"><xsl:value-of select="GEDSH_Romanized_Name"/></xsl:when>
+                <xsl:when test="string-length(normalize-space(Canonical_Name)) != 0"><xsl:value-of select="Canonical_Name"/></xsl:when>
                 <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="syriac-headword">
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(Syriac_Headword)) != 0"><xsl:value-of select="Syriac_Headword"/></xsl:when>
+                <xsl:when test="string-length(normalize-space(Syriac_Canonical)) != 0"><xsl:value-of select="Syriac_Canonical"/></xsl:when>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="record-title">
@@ -555,44 +431,20 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
+                    <!-- CHECK WHETHER THIS IS CORRECT! -->
                     <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
-                    <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+                    <title level="m">SPEAR: Syriac Persons Events and Relations</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
-                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
                     </respStmt>
-                    <respStmt>
-                        <resp>Data architecture and encoding by</resp>
-                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
-                        <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Editing and Syriac data proofreading by</resp>
-                        <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
-                    </respStmt>
+                    <!-- MORE RESP STATEMENTS? -->
                 </titleStmt>
                 <editionStmt>
                     <edition n="1.0"/>
@@ -603,27 +455,7 @@
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/">
                             <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
-                            <xsl:if test="*[matches(name(),'Barsoum_syr|Barsoum_ar') and string-length(normalize-space(node()))]">
-                                <p>This entry incorporates copyrighted material from the following work(s):
-                                    <listBibl>
-                                        <xsl:if test="*[matches(name(),'Barsoum_syr') and string-length(normalize-space(node()))]">
-                                            <bibl>
-                                                <ptr>
-                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_syr')][1])"/>
-                                                </ptr>
-                                            </bibl>
-                                        </xsl:if>
-                                        <xsl:if test="*[matches(name(),'Barsoum_ar') and string-length(normalize-space(node()))]">
-                                            <bibl>
-                                                <ptr>
-                                                    <xsl:attribute name="target" select="concat('#', $bib-ids/*[contains(name(), 'Barsoum_ar')][1])"/>
-                                                </ptr>
-                                            </bibl>
-                                        </xsl:if>
-                                    </listBibl>
-                                    <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/></note>
-                                </p>
-                            </xsl:if>
+                            <!-- Removed copyright notice about Barsoum - unnecessary here. -->
                         </licence>
                     </availability>
                     <date>
@@ -667,6 +499,10 @@
                             <catDesc>A person who is relevant to the Bibliotheca Hagiographica
                                 Syriaca.</catDesc>
                         </category>
+                        <!-- WHAT ABOUT THE FOLLOWING CATEGORY FOR SPEAR? -->
+                        <category xml:id="syriaca-spear">
+                            <catDesc>A person who is relevant to the Syriac Persons Events and Relations.</catDesc>
+                        </category>
                     </taxonomy>
                 </classDecl>
             </encodingDesc>
@@ -685,13 +521,13 @@
                 </langUsage>
             </profileDesc>
             <revisionDesc>
-                <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0">
+                <change who="http://syriaca.org/documentation/editors.xml#ngibson" n="1.0">
                     <xsl:attribute name="when" select="current-date()"/>CREATED: person</change>
-                <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
+                <!--<xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
                     <change type="planned">
                         <xsl:value-of select="For_Post-Publication_Review"/>
                     </change>
-                </xsl:if>
+                </xsl:if>-->
             </revisionDesc>
         </teiHeader>
     </xsl:template>
