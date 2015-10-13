@@ -34,55 +34,39 @@
     </xsl:variable>
     
     <!-- CUSTOM FUNCTIONS -->
-    <!-- tests whether a column is of a given type, as defined in the $column-mapping.
+    <!-- tests whether a column is of a given node type (e.g., "persName" or "state"), as defined in the $column-mapping.
     good for for-each statements that run through all the columns of the spreadsheet, but only act on those that are of the right type-->
-    <xsl:function name="syriaca:if-column-type" as="xs:boolean">
+    <xsl:function name="syriaca:if-column-node-type" as="xs:boolean">
         <!-- the name of the column to test -->
         <xsl:param name="column-name" as="xs:string"/>
         <!-- the type of column we're looking for -->
         <xsl:param name="column-type" as="xs:string"/>
         <!-- collects all columns of specified type as a sequence from the $column-mapping variable -->
+        <!-- variable has to have @as='xs:string*' -->
         <xsl:variable name="columns-of-type" as="xs:string*">
-            <xsl:for-each select="$column-mapping/descendant::*">
-                <xsl:if test="matches(name(),$column-type)">
-                    <xsl:sequence select="."/>
-                </xsl:if>
+            <xsl:for-each select="$column-mapping/*[matches(name(),$column-type)]">
+                <xsl:sequence select="attribute::column"/>
             </xsl:for-each>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="contains($columns-of-type, $column-name)">1</xsl:when>
+            <xsl:when test="index-of($columns-of-type, $column-name)">1</xsl:when>
             <xsl:otherwise>0</xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     
+    <!-- gets the @xml:lang attribute value of a column -->
+    <xsl:function name="syriaca:get-column-lang">
+        <!--the name of the spreadsheet column-->
+        <xsl:param name="column-name" as="xs:string"/>
+        <xsl:value-of select="$column-mapping/*[@column=$column-name]/attribute::xml:lang"/>
+    </xsl:function>
     
-    
-    <!-- ??? Need to replace the deprecated variables $column-types and $column-langs with custom functions -->
-    <!--<xsl:variable name="column-types">
-        <persName>
-            <xsl:for-each select="$column-mapping/persName">
-                <xsl:value-of select="@column"/>
-            </xsl:for-each>
-        </persName>
-        <state>
-            <xsl:for-each select="$column-mapping/state">
-                <xsl:value-of select="@column"/>
-            </xsl:for-each>
-        </state>
-    </xsl:variable>
-    
-    <xsl:variable name="column-langs">
-        <en-x-gedsh>
-            <xsl:for-each select="$column-mapping/*[@xml:lang='en-x-gedsh']">
-                <xsl:value-of select="@column"/>
-            </xsl:for-each>
-        </en-x-gedsh>
-        <syr>
-            <xsl:for-each select="$column-mapping/*[@xml:lang='syr']">
-                <xsl:value-of select="@column"/>
-            </xsl:for-each>
-        </syr>                    
-    </xsl:variable>-->
+    <!-- gets the @type attribute value of a column -->
+    <xsl:function name="syriaca:get-column-type">
+        <!--the name of the spreadsheet column-->
+        <xsl:param name="column-name" as="xs:string"/>
+        <xsl:value-of select="$column-mapping/*[@column=$column-name]/attribute::type"/>
+    </xsl:function>
     
     
     <!-- this is the main template that processes each row of the spreadsheet -->
@@ -119,25 +103,18 @@
                     <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
                 </xsl:processing-instruction>
                     <xsl:value-of select="$n"/>
-                
-                    <!-- ??? Need to replace the following with a call to a custom function-->
-                    <!--<xsl:for-each select="/root/row/child::*">
-                        <xsl:variable name="column-name" select="name(.)"/>
-                        <xsl:if test="contains($column-types/persName,$column-name)">
+                    
+                    <!-- uses the custom function to select all spreadsheet columns of the persName type (as defined in $column-mapping) and create a 
+                    persName element for each -->
+                    <xsl:for-each select="./child::*[syriaca:if-column-node-type(name(.),'persName')]">
+                    
                             <xsl:element name="persName">
-                                <!-\- language attribute -\->
-                                <xsl:choose>
-                                    <xsl:when test="contains($column-langs/en-x-gedsh,$column-name)">
-                                        <xsl:attribute name="xml:lang" select="'en-x-gedsh'"/>
-                                    </xsl:when>
-                                    <xsl:when test="contains($column-langs/syr,$column-name)">
-                                        <xsl:attribute name="xml:lang" select="'syr'"/>
-                                    </xsl:when>
-                                </xsl:choose>
+                                <!-- applies the language attribute from $column-mapping -->
+                                <xsl:attribute name="xml:lang" select="syriaca:get-column-lang(name())"/>
+                                
                                 <xsl:value-of select="."/>
                             </xsl:element>
-                        </xsl:if>
-                    </xsl:for-each>-->
+                    </xsl:for-each>
                 
                 
                 </xsl:result-document>
