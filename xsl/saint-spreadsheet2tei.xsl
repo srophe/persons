@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+Fiche<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
@@ -439,7 +439,7 @@
                                     
                                     <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
                                         <bibl xml:id="bib{$record-id}-1">
-                                            <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                                            <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                                             <ptr target="http://syriaca.org/bibl/649"/>
                                             <citedRange unit="entry">
                                                 <xsl:for-each select="Fiche">
@@ -630,6 +630,68 @@
                         <xsl:value-of select="current-date()"/>
                     </date>
                 </publicationStmt>
+                <seriesStmt>
+                    <title level="s">Gateway to the Syriac Saints</title>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        >Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            >Jeanne-Nicole Mellon Saint-Laurent</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+                    </respStmt>
+                    <biblScope unit="vol">2</biblScope>
+                    <idno type="URI">http://syriaca.org/q</idno>
+                </seriesStmt>
+                <seriesStmt>
+                    <title level="s">The Syriac Biographical Dictionary</title>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#tcarlson"
+                        >Thomas A. Carlson</editor><editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        >Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+                    </respStmt><respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ef="http://syriaca.org/documentation/editors.xml#tcarlson"
+                            >Thomas A. Carlson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            >Jeanne-Nicole Mellon Saint-Laurent</name>
+                    </respStmt>
+                    <biblScope unit="vol">2</biblScope>
+                    <idno type="URI">http://syriaca.org/persons</idno>
+                </seriesStmt>
                 <sourceDesc>
                     <p>Born digital.</p>
                 </sourceDesc>
