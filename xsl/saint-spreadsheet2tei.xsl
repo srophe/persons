@@ -289,7 +289,7 @@
                                             <xsl:otherwise><idno type="FIEY"><xsl:value-of select="."/></idno></xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:for-each>
-                                    <xsl:for-each select="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                    <xsl:for-each select="Fiche">
                                         <idno type="BHSYRE"><xsl:value-of select="."/></idno>
                                     </xsl:for-each>
                                     
@@ -442,7 +442,7 @@
                                             <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
                                             <ptr target="http://syriaca.org/bibl/649"/>
                                             <citedRange unit="entry">
-                                                <xsl:for-each select="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                                <xsl:for-each select="Fiche">
                                                     <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
                                                 </xsl:for-each>    
                                             </citedRange>
