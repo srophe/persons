@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-Fiche<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
@@ -289,9 +289,10 @@ Fiche<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxn
                                             <xsl:otherwise><idno type="FIEY"><xsl:value-of select="."/></idno></xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:for-each>
-                                    <xsl:for-each select="Fiche">
-                                        <idno type="BHSYRE"><xsl:value-of select="."/></idno>
-                                    </xsl:for-each>
+                                    <!-- Do we still need this?
+                                        <xsl:for-each select="Fiche">
+                                        <idno type="BHS"><xsl:value-of select="."/></idno>
+                                    </xsl:for-each> -->
                                     
                                     <!-- SEX -->
                                     <xsl:if test="Sex != '' and Sex != 'N/A'"> <!-- does this need a source? -->
