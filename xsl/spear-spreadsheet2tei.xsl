@@ -32,6 +32,9 @@
     <xsl:variable name="column-mapping">
         <persName xml:lang="en-x-gedsh" column="Canonical_Name"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Syriac_Canonical"/>
+        <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
+        <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
+        <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
         <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
     </xsl:variable>
     
@@ -51,91 +54,6 @@
         </bibl>
     </xsl:variable>
     
-    
-    <!-- CUSTOM FUNCTIONS -->
-    <!-- creates bibl elements from $all-sources, adding @xml:id and citedRange -->
-<!--    <xsl:function name="syriaca:createBibls">
-        <xsl:param name="record-id"/>
-        <xsl:param name="current-row"/>
-        <xsl:for-each select="$all-sources/*">
-            <xsl:variable name="this-bibl" select="."/>
-            <!-\- This column is causing it to break! -\->
-            <xsl:variable name="position" select="index-of($all-sources/ptr/@target,$this-bibl/ptr/@target)"/>
-            <xsl:element name="bibl">
-                <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
-                <!-\-<xsl:copy-of select="./*"/>
-               <xsl:for-each select="$column-mapping/citedRange[matches(@bibl,$this-bibl/ptr/@target)]">
-                   <xsl:element name="citedRange">
-                       <xsl:attribute name="unit" select="@unit"/>
-                       <!-\- now need to grab column data -\->
-                       <xsl:value-of select="$current-row/*[matches(name(),@column)]"/>
-                   </xsl:element>
-               </xsl:for-each>-\->
-            </xsl:element>
-        </xsl:for-each>
-    </xsl:function>-->
-    
-    
-    
-    <!-- tests whether a column is of a given node type (e.g., "persName" or "state"), as defined in the $column-mapping.
-    good for for-each statements that run through all the columns of the spreadsheet, but only act on those that are of the right type-->
-    <!--<xsl:function name="syriaca:if-column-node-type" as="xs:boolean">
-        <!-\- the name of the column to test -\->
-        <xsl:param name="column-name" as="xs:string"/>
-        <!-\- the type of column we're looking for -\->
-        <xsl:param name="column-type" as="xs:string"/>
-        <!-\- collects all columns of specified type as a sequence from the $column-mapping variable -\->
-        <!-\- variable has to have @as='xs:string*' -\->
-        <xsl:variable name="columns-of-type" as="xs:string*">
-            <xsl:for-each select="$column-mapping/*[matches(name(),$column-type)]">
-                <xsl:sequence select="attribute::column"/>
-            </xsl:for-each>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="index-of($columns-of-type, $column-name)">1</xsl:when>
-            <xsl:otherwise>0</xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <!-\- gets the @xml:lang attribute value of a column -\->
-    <xsl:function name="syriaca:get-column-lang">
-        <!-\-the name of the spreadsheet column-\->
-        <xsl:param name="column-name" as="xs:string"/>
-        <xsl:value-of select="$column-mapping/*[@column=$column-name]/attribute::xml:lang"/>
-    </xsl:function>
-    
-    <!-\- gets the @type attribute value of a column -\->
-    <xsl:function name="syriaca:get-column-type">
-        <!-\-the name of the spreadsheet column-\->
-        <xsl:param name="column-name" as="xs:string"/>
-        <xsl:value-of select="$column-mapping/*[@column=$column-name]/attribute::type"/>
-    </xsl:function>-->
-    
-    <!-- assigns the @xml:id of the bibl elements dynamically for each row, based on the number of sources for which there is data in that row -->
-    <!--<xsl:function name="syriaca:assign-bibl-ids">
-        <xsl:param name="row"/>
-        <xsl:param name="record-id"/>
-        <!-\- ??? Does this need an @as='xs:string*' -\->
-        <!-\-<xsl:variable name="non-empty-columns">
-            <xsl:for-each select="$row/*[.!='']">
-                <xsl:sequence select="name()"/>
-            </xsl:for-each>
-        </xsl:variable>-\->
-        <xsl:variable name="non-empty-columns" select="$row/*[.!='']/name()"/>
-        
-        <xsl:variable name="non-empty-column-sources" as="xs:string*">
-            <xsl:for-each select="$non-empty-columns/*">
-                <xsl:sequence select="$column-mapping/*[matches(name(.),@column)]/attribute::source"/>
-            </xsl:for-each>
-        </xsl:variable>
-        
-        <xsl:variable name="unique-non-empty-column-sources" select="distinct-values($non-empty-column-sources)"/>
-            
-        <xsl:for-each select="$unique-non-empty-column-sources">
-            <bibl ptr="{.}">#bib<xsl:value-of select="$record-id"/>-<xsl:value-of select="index-of($unique-non-empty-column-sources,.)"/></bibl>
-        </xsl:for-each>
-        
-    </xsl:function>-->
     
     
     <!-- this is the main template that processes each row of the spreadsheet -->
@@ -208,37 +126,13 @@
                                 
                                 <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/persName" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
-                   
-                    
-                                 <!-- uses the custom function to select all spreadsheet columns of the persName type (as defined in $column-mapping) and create a 
-                                 persName element for each -->
-                                 <!--<xsl:for-each select="./child::*[syriaca:if-column-node-type(name(.),'persName')]">
-                                 
-                                         <xsl:element name="persName">
-                                             <!-\- applies the language attribute from $column-mapping -\->
-                                             <xsl:attribute name="xml:lang" select="syriaca:get-column-lang(name())"/>
-                                             
-                                             <xsl:value-of select="."/>
-                                         </xsl:element>
-                                 </xsl:for-each>-->
-                                
+                                                   
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                              
                                 <!-- inserts bibl elements -->
                                 <xsl:copy-of select="$record-bibls" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
-                                 
-                                 
-                                 
-                                 <!--<bibl xml:id="bib{$record-id}-1">
-                                     <title xml:lang="la" level="m">Chronica Minora</title>
-                                     <ptr target="http://syriaca.org/bibl/633"/>                                            
-                                 </bibl>
-                                 <bibl xml:id="bib{$record-id}-2">
-                                     <title level="a" xml:lang="en">Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
-                                     <ptr target="http://syriaca.org/bibl/657"/>                                            
-                                 </bibl>-->
-                    
+                                                    
                             </person>
                         </listPerson>
                     </body>
@@ -415,6 +309,7 @@
     </xsl:template>
     
     <!-- converts spreadsheet columns using $column-mapping variable above -->
+    <!-- ??? This template does not yet try to reconcile identical elements coming from different sources -->
     <xsl:template name="column-mapping" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="columns-to-convert"/>
         <xsl:param name="record-bibls"/>
@@ -423,13 +318,14 @@
             <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
             <xsl:for-each select="$column-mapping/*">
                 <xsl:variable name="column-source" select="@source"/>
-                <xsl:if test="matches(@column,$column-name)">
+                <xsl:if test="@column=$column-name">
                     <xsl:element name="{name()}">
                         <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                         <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
-                        <xsl:if test="@source!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[matches(ptr/@target,$column-source)]/@xml:id)"/></xsl:if>
+                        <xsl:if test="@source!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[ptr/@target=$column-source]/@xml:id)"/></xsl:if>
                     <xsl:choose>
-                        <xsl:when test="matches(name(),'state')">
+                        <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
+                        <xsl:when test="name()='state'">
                             <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
                         </xsl:when>
                         <xsl:otherwise><xsl:value-of select="$column-contents"/></xsl:otherwise>
@@ -454,7 +350,7 @@
                     <xsl:attribute name="unit" select="citedRange/@unit"/>
                     <xsl:variable name="citedRange-column" select="citedRange/@column"/>
                     <xsl:for-each select="$this-row">
-                        <xsl:if test="matches(name(),$citedRange-column)">
+                        <xsl:if test="name()=$citedRange-column">
                             <xsl:value-of select="."/>
                         </xsl:if>
                     </xsl:for-each>
