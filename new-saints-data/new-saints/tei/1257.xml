@@ -2,10 +2,6 @@
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -67,8 +63,66 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-13-04:00</date>
+            <date>2015-10-14-04:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ef="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -123,7 +177,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-10-13-04:00">CREATED: person</change>
+                 when="2015-10-14-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -150,14 +204,30 @@
                <persName xml:id="name1257-10" xml:lang="fr-x-fiey" source="#bibl1257-1">GŪRĪA et ŠMŌNA</persName>
                <idno type="URI">http://syriaca.org/person/1257</idno>
                <idno type="FIEY">181</idno>
+               <idno type="BHS">1559</idno>
+               <idno type="BHS">6</idno>
+               <idno type="BHS">726</idno>
                <sex value="M" source="#bibl1257-1">male</sex>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1257-1">Actes syriaques : I.E. Rahmani, Acta sanctorum confessorum Guriae et Shemonae (Rome, 1899) ; Burkitt, Euphemia, 3* -25*, 90- 110 ; BHO, 363. Homelie metrique de Jacques de Saroug: AMS, I, 131- 43; BHO, 366. Documents armeniens : BHO, 364-65. Suhada ', I, 100- 101. DHGE 129- 30 (1980) , 1193- 94 (J.-M. Sauget). Autres references dans OCA 236 (1988), 195 n. 1. P. Devos, "La liste martyrologique des textes du Guria et Shamona", AB 90 (1972), 15-26. P. Chiesa, "11 dossier agiografico Iatino dei Santi Gurias, Samonas e Abibos", Aerum 65 (1991), 221-58. BS, VII, 539- 43 (J .-M. Sauget) . Un couvent sous le patronage de Guria existait pres de Seert : cf. Fiey, Nisibe, 224- 25.</quote>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1257-1">Actes syriaques : I.E. Rahmani, Acta sanctorum confessorum Guriae et Shemonae
+(Rome, 1899) ; Burkitt, Euphemia, 3* -25*, 90- 110 ; BHO, 363.
+Homelie metrique de Jacques de Saroug: AMS, I, 131- 43; BHO, 366.
+Documents armeniens : BHO, 364-65.
+Suhada ', I, 100- 101.
+DHGE 129- 30 (1980) , 1193- 94 (J.-M. Sauget).
+Autres references dans OCA 236 (1988), 195 n. 1.
+P. Devos, "La liste martyrologique des textes du Guria et Shamona", AB 90 (1972),
+15-26.
+P. Chiesa, "11 dossier agiografico Iatino dei Santi Gurias, Samonas e Abibos", Aerum
+65 (1991), 221-58.
+BS, VII, 539- 43 (J .-M. Sauget) .
+Un couvent sous le patronage de Guria existait pres de Seert : cf. Fiey, Nisibe,
+224- 25.</quote>
                </note>
                <note type="abstract">Shmona and Guria were two martyrs who were killed in Edessa during the Diocletian persecution. There was great devotion to these saints in Edessa.</note>
                <bibl xml:id="bib1257-1">
-                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry"/>
+                  <citedRange unit="entry">1559, 6, 726</citedRange>
                </bibl>
                <bibl xml:id="bib1257-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>

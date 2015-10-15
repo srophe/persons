@@ -2,10 +2,6 @@
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -67,8 +63,66 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-13-04:00</date>
+            <date>2015-10-14-04:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ef="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -123,7 +177,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-10-13-04:00">CREATED: person</change>
+                 when="2015-10-14-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,12 +202,37 @@
                <persName xml:id="name2008-11" xml:lang="fr" source="#bibl2008-1">Pierre, apôtre</persName>
                <persName xml:id="name2008-12" xml:lang="fr" source="#bibl2008-1">Pierre, apôtre (Apocalypse)</persName>
                <idno type="URI">http://syriaca.org/person/2008</idno>
+               <idno type="BHS">934</idno>
+               <idno type="BHS">1023</idno>
+               <idno type="BHS">1098</idno>
+               <idno type="BHS">1533</idno>
+               <idno type="BHS">1580</idno>
+               <idno type="BHS">1607</idno>
+               <idno type="BHS">1614</idno>
+               <idno type="BHS">1753</idno>
+               <idno type="BHS">1598</idno>
+               <idno type="BHS">1</idno>
+               <idno type="BHS">75</idno>
+               <idno type="BHS">740</idno>
+               <idno type="BHS">741</idno>
+               <idno type="BHS">742</idno>
+               <idno type="BHS">835</idno>
+               <idno type="BHS">835</idno>
+               <idno type="BHS">835</idno>
+               <idno type="BHS">938</idno>
+               <idno type="BHS">944</idno>
+               <idno type="BHS">957</idno>
+               <idno type="BHS">1956</idno>
+               <idno type="BHS">1722</idno>
+               <idno type="BHS">1971</idno>
+               <idno type="BHS">850</idno>
+               <idno type="BHS">719</idno>
                <note type="disambiguation">apostle</note>
                <note type="misc" source="#bibl2008-">Problem Entry</note>
                <bibl xml:id="bib2008-1">
-                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry"/>
+                  <citedRange unit="entry">934, 1023, 1098, 1533, 1580, 1607, 1614, 1753, 1598, 1, 75, 740, 741, 742, 835, 835, 835, 938, 944, 957, 1956, 1722, 1971, 850, 719</citedRange>
                </bibl>
             </person>
          </listPerson>

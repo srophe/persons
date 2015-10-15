@@ -2,10 +2,6 @@
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -67,8 +63,66 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-13-04:00</date>
+            <date>2015-10-14-04:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ef="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -123,7 +177,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-10-13-04:00">CREATED: person</change>
+                 when="2015-10-14-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -146,11 +200,35 @@
                <persName xml:id="name2123-9" xml:lang="fr" source="#bibl2123-1">Thomas (palais en Inde)</persName>
                <persName xml:id="name2123-10" xml:lang="fr" source="#bibl2123-1">Thomas apôtre</persName>
                <idno type="URI">http://syriaca.org/person/2123</idno>
+               <idno type="BHS">1083</idno>
+               <idno type="BHS">1122</idno>
+               <idno type="BHS">1601</idno>
+               <idno type="BHS">1605</idno>
+               <idno type="BHS">1624</idno>
+               <idno type="BHS">759</idno>
+               <idno type="BHS">76</idno>
+               <idno type="BHS">758</idno>
+               <idno type="BHS">837</idno>
+               <idno type="BHS">838</idno>
+               <idno type="BHS">839</idno>
+               <idno type="BHS">1086</idno>
+               <idno type="BHS">1100</idno>
+               <idno type="BHS">1109</idno>
+               <idno type="BHS">1497</idno>
+               <idno type="BHS">1747</idno>
+               <idno type="BHS">1881</idno>
+               <idno type="BHS">1418</idno>
+               <idno type="BHS">1867</idno>
+               <idno type="BHS">751</idno>
+               <idno type="BHS">858</idno>
+               <idno type="BHS">859</idno>
+               <idno type="BHS">500</idno>
+               <idno type="BHS">1664</idno>
                <note type="disambiguation">apostle</note>
                <bibl xml:id="bib2123-1">
-                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry"/>
+                  <citedRange unit="entry">1083, 1122, 1601, 1605, 1624, 759, 76, 758, 837, 838, 839, 1086, 1100, 1109, 1497, 1747, 1881, 1418, 1867, 751, 858, 859, 500, 1664</citedRange>
                </bibl>
             </person>
          </listPerson>

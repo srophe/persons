@@ -2,10 +2,6 @@
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -67,8 +63,66 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-13-04:00</date>
+            <date>2015-10-14-04:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ef="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -123,7 +177,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-10-13-04:00">CREATED: person</change>
+                 when="2015-10-14-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -143,6 +197,8 @@
                <persName xml:id="name1420-6" xml:lang="fr-x-fiey" source="#bibl1420-1">QARDĀĠ</persName>
                <idno type="URI">http://syriaca.org/person/1420</idno>
                <idno type="FIEY">356</idno>
+               <idno type="BHS">66</idno>
+               <idno type="BHS">67</idno>
                <sex value="M" source="#bibl1420-1">male</sex>
                <death when="0359"
                       syriaca-computed-start="0359-01-01"
@@ -150,16 +206,26 @@
                <state type="martyr" source="#bibl1420-1">
                   <p>Martyr</p>
                </state>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1420-1">H. Feige, Die Geschichte des Mar 'Abdh IshO und sein Jungers Mar Qardiigh (Ktel, 1889), d'apres un manuscrit de 1881. J .B. Abbeloos, Acta, dans AB 9 (1890) , 5-106. AMS, II, 442- 507 ; BHO, 555- 56. Suhadii', I, 311- 45. P. Peeters, "Passionnaire", 298-302. Fiey, "Hakkari turc", 459-62 ; idem, Assyrie chretienne, I, 205-206, etc. G. Weissner, "Christlicher Heiligenkult im Umkreis eines sassanidischen Grosskonigs", dans W. Eilers, ed., Festgabe deutscher Iranisten zur 2500 Jahrfeier Irans (Stuttgart, 1971), 141- 55. BSO, I, 9- 10 (J. Rabbi).</quote>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1420-1">H. Feige, Die Geschichte des Mar 'Abdh IshO und sein Jungers Mar Qardiigh (Ktel,
+1889), d'apres un manuscrit de 1881.
+J .B. Abbeloos, Acta, dans AB 9 (1890) , 5-106.
+AMS, II, 442- 507 ; BHO, 555- 56.
+Suhadii', I, 311- 45.
+P. Peeters, "Passionnaire", 298-302.
+Fiey, "Hakkari turc", 459-62 ; idem, Assyrie chretienne, I, 205-206, etc.
+G. Weissner, "Christlicher Heiligenkult im Umkreis eines sassanidischen Grosskonigs",
+dans W. Eilers, ed., Festgabe deutscher Iranisten zur 2500 Jahrfeier Irans (Stuttgart,
+1971), 141- 55.
+BSO, I, 9- 10 (J. Rabbi).</quote>
                </note>
                <note type="abstract">Qardag was a military saint and a martyr. He was a convert from a high-born Zoroastrian family. His cult was localized north of Arbela.</note>
                <event type="veneration" source="#bibl1420-1">
                   <desc>The saint is venerated on Syr., nis. 1..</desc>
                </event>
                <bibl xml:id="bib1420-1">
-                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry"/>
+                  <citedRange unit="entry">66, 67</citedRange>
                </bibl>
                <bibl xml:id="bib1420-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>

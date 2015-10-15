@@ -2,10 +2,6 @@
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -67,8 +63,66 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-13-04:00</date>
+            <date>2015-10-14-04:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ef="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -123,7 +177,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
                  n="1.0"
-                 when="2015-10-13-04:00">CREATED: person</change>
+                 when="2015-10-14-04:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -145,6 +199,7 @@
                <idno type="URI">http://syriaca.org/person/1098</idno>
                <idno type="FIEY">7</idno>
                <idno type="FIEY">8</idno>
+               <idno type="BHS">120</idno>
                <sex value="M" source="#bibl1098-1">male</sex>
                <death when="0420"
                       syriaca-computed-start="0420-01-01"
@@ -152,7 +207,12 @@
                <state type="martyr" source="#bibl1098-1">
                   <p>Martyr</p>
                </state>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1098-1">AMS, II, 250- 53 (fragment) et introduction, IX n° 3 ; BHO, 6;  Suhadii', II, 297-300. Theodoret, Hist. eccl. xxxix.1- 11, ed. L. Parmentier (Leipzig, 1911), 342-44 ; Hoffmann, Ausziige, 34-35. DHGE, I, col. 61- 62, s.v. 1. Abdas. BS, I, 40- 42 (G. Lucchesi).</quote>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bibl1098-1">AMS, II, 250- 53 (fragment) et introduction, IX n° 3 ; BHO, 6; 
+Suhadii', II, 297-300.
+Theodoret, Hist. eccl. xxxix.1- 11, ed. L. Parmentier (Leipzig, 1911), 342-44 ; Hoffmann,
+Ausziige, 34-35.
+DHGE, I, col. 61- 62, s.v. 1. Abdas.
+BS, I, 40- 42 (G. Lucchesi).</quote>
                </note>
                <note type="abstract">Afrēm was a Persian Martyr and scribe martyred under shah Yazdegerd with companions 'Abda, Jacob, Papa the deacon, Daduq and Durtan the learned.</note>
                <event type="veneration" source="#bibl1098-1">
@@ -160,9 +220,9 @@
                </event>
                <note type="disambiguation">persian martyr, goes with Abda, Hachou, Isaac</note>
                <bibl xml:id="bib1098-1">
-                  <title level="m" xml:lang="la">Biblioteca Hagiographica Syriaca electronica</title>
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                   <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry"/>
+                  <citedRange unit="entry">120</citedRange>
                </bibl>
                <bibl xml:id="bib1098-2">
                   <title level="m" xml:lang="fr">Saints Syriaques</title>

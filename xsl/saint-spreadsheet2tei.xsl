@@ -2,8 +2,9 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
-    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs functx syriaca" version="2.0" 
+    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
+    xmlns:functx="http://www.functx.com">
         
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml" />
     <xsl:variable name="n">
@@ -83,7 +84,7 @@
                     <xsl:if test="Fiey_ID[. != ''] or Raw_Fiey_Name != '' or Fiey_Name != '' or v_see_also_French != '' or Dates != '' or Locations != '' or Veneration_Date != '' or Bibliography != '' or Fiey_Related != ''">
                         <xsl:sequence select="('Fiey')"/>
                     </xsl:if>
-                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Fiche')][.!=''][matches(.,'\d*')]">
                     <!--<xsl:if test="Syr_Name != '' or Syr_Name_2 != '' or Syr_Name_3 != '' or Syr_Name_4 != '' or Zanetti_Transcr. != '' or Zan_Tran_2 != '' or Fr_Name_1 != '' or Fr_Name_2 != '' or Fr_Name_3 != '' or Fr_Name_4 != '' or Fr_Name_5 != '' or Zanetti_Numbers != '' or Z1_ != ''">-->
                         <xsl:sequence select="('Zanetti')"/>
                     </xsl:if>
@@ -125,7 +126,7 @@
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$name-prefix"/>1</xsl:attribute>
                                             <xsl:attribute name="xml:lang">syr</xsl:attribute>
                                             <xsl:attribute name="syriaca-tags">#syriaca-headword</xsl:attribute>
-                                            <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                            <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Fiche')][.!=''][matches(.,'\d*')]">
                                                 <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Zanetti')"/></xsl:attribute>                                                
                                             </xsl:if>
                                             <xsl:value-of select="Syriac_Headword"/>
@@ -289,10 +290,10 @@
                                             <xsl:otherwise><idno type="FIEY"><xsl:value-of select="."/></idno></xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:for-each>
-                                    <!-- Do we still need this?
-                                        <xsl:for-each select="Fiche">
+                                    <!-- Do we still need this? -->
+                                     <xsl:for-each select="Fiche[normalize-space(.) != '']">
                                         <idno type="BHS"><xsl:value-of select="."/></idno>
-                                    </xsl:for-each> -->
+                                    </xsl:for-each>
                                     
                                     <!-- SEX -->
                                     <xsl:if test="Sex != '' and Sex != 'N/A'"> <!-- does this need a source? -->
@@ -438,12 +439,12 @@
                                     -->
                                     <!-- ADD BIBLIOGRAPHY -->
                                     
-                                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">
+                                    <xsl:if test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Fiche')][.!=''][matches(.,'\d*')]">
                                         <bibl xml:id="bib{$record-id}-1">
                                             <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                                             <ptr target="http://syriaca.org/bibl/649"/>
                                             <citedRange unit="entry">
-                                                <xsl:for-each select="Fiche">
+                                                <xsl:for-each select="Fiche[normalize-space(.) != '']">
                                                     <xsl:value-of select="."/><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
                                                 </xsl:for-each>    
                                             </citedRange>
@@ -452,7 +453,7 @@
                                     <xsl:if test="Fiey_ID[.!='']">
                                         <xsl:variable name="num">
                                             <xsl:choose>
-                                                <xsl:when test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Heading')][.!=''][matches(.,'\d*')]">2</xsl:when>
+                                                <xsl:when test="Z1_[.!=''][matches(.,'\d*')] | *[starts-with(name(self::*),'Fiche')][.!=''][matches(.,'\d*')]">2</xsl:when>
                                                 <xsl:otherwise>1</xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:variable>
