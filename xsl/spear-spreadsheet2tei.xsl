@@ -32,10 +32,52 @@
         <persName xml:lang="en-x-gedsh" column="Canonical_Name"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Syriac_Canonical"/>
         <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
+<!--        <citedRange unit="pp" column="page" bibl="http://syriaca.org/bibl/633"/>-->
+        <!--<citedRange unit="section" column="Section" bibl="http://syriaca.org/bibl/657"/>-->
+    </xsl:variable>
+    
+    <!-- BIBL ELEMENTS TO USE AS SOURCES -->
+    <!-- !!! Modify/add bibl elements here. You MUST put in a @column attribute on citedRange to specify which spreadsheet column the page num.,etc. comes from. -->
+    <!-- @xml:id and <citedRange> will be added automatically based on $column-mapping -->
+    <xsl:variable name="all-sources">
+        <bibl>
+            <title xml:lang="la" level="m">Chronica Minora</title>
+            <ptr target="http://syriaca.org/bibl/633"/>
+            <citedRange unit="pp" column="page"/>
+        </bibl>
+        <bibl>
+            <title level="a" xml:lang="en">Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
+            <ptr target="http://syriaca.org/bibl/657"/>
+            <citedRange unit="section" column="Section"/>
+        </bibl>
     </xsl:variable>
     
     
     <!-- CUSTOM FUNCTIONS -->
+    <!-- creates bibl elements from $all-sources, adding @xml:id and citedRange -->
+<!--    <xsl:function name="syriaca:createBibls">
+        <xsl:param name="record-id"/>
+        <xsl:param name="current-row"/>
+        <xsl:for-each select="$all-sources/*">
+            <xsl:variable name="this-bibl" select="."/>
+            <!-\- This column is causing it to break! -\->
+            <xsl:variable name="position" select="index-of($all-sources/ptr/@target,$this-bibl/ptr/@target)"/>
+            <xsl:element name="bibl">
+                <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
+                <!-\-<xsl:copy-of select="./*"/>
+               <xsl:for-each select="$column-mapping/citedRange[matches(@bibl,$this-bibl/ptr/@target)]">
+                   <xsl:element name="citedRange">
+                       <xsl:attribute name="unit" select="@unit"/>
+                       <!-\- now need to grab column data -\->
+                       <xsl:value-of select="$current-row/*[matches(name(),@column)]"/>
+                   </xsl:element>
+               </xsl:for-each>-\->
+            </xsl:element>
+        </xsl:for-each>
+    </xsl:function>-->
+    
+    
+    
     <!-- tests whether a column is of a given node type (e.g., "persName" or "state"), as defined in the $column-mapping.
     good for for-each statements that run through all the columns of the spreadsheet, but only act on those that are of the right type-->
     <!--<xsl:function name="syriaca:if-column-node-type" as="xs:boolean">
@@ -139,10 +181,19 @@
                     <xsl:with-param name="record-id" select="$record-id"/>
                 </xsl:call-template>
                 
+                <!-- uses the $all-sources variable to create bibls with citedRange for this particular row -->
+                <xsl:variable name="record-bibls">
+                    <xsl:call-template name="bibls">
+                        <xsl:with-param name="record-id" select="$record-id"/>
+                        <xsl:with-param name="this-row" select="*[.!='']"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                
                 <!-- uses the $column-mapping variable to convert spreadsheet columns into correct format -->
                 <xsl:variable name="converted-columns">
                     <xsl:call-template name="column-mapping">
                         <xsl:with-param name="columns-to-convert" select="*[.!='']"/>
+<!--                        <xsl:with-param name="record-id" select="$record-id"/>-->
                     </xsl:call-template>
                 </xsl:variable>
                 
@@ -175,19 +226,19 @@
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                              
-                                 <!-- !!! Modify the bibl elements to reflect the sources used as data for your spreadsheet columns. 
-                                     Only basic info is needed here as it points to the full bibl record.
-                                     Add more bibl elements as needed. -->
-                                 <!-- citedRange will be added automatically based on info from $column-mapping -->
-                                 <!-- @xml:id will be added automatically -->
-                                 <bibl xml:id="bib{$record-id}-1">
+                                <!-- inserts bibl elements -->
+                                <xsl:copy-of select="$record-bibls" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                 
+                                 
+                                 
+                                 <!--<bibl xml:id="bib{$record-id}-1">
                                      <title xml:lang="la" level="m">Chronica Minora</title>
                                      <ptr target="http://syriaca.org/bibl/633"/>                                            
                                  </bibl>
                                  <bibl xml:id="bib{$record-id}-2">
                                      <title level="a" xml:lang="en">Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                                      <ptr target="http://syriaca.org/bibl/657"/>                                            
-                                 </bibl>
+                                 </bibl>-->
                     
                             </person>
                         </listPerson>
@@ -367,6 +418,7 @@
     <!-- converts spreadsheet columns using $column-mapping variable above -->
     <xsl:template name="column-mapping" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="columns-to-convert"/>
+<!--        <xsl:param name="record-id"/>-->
         <xsl:for-each select="$columns-to-convert">
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
@@ -384,7 +436,32 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-<!--            <xsl:element name="{$column-mapping/*[@column='{$column-name}']/name()}">test</xsl:element>-->
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- creates bibl elements -->
+    <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="record-id"/>
+        <xsl:param name="this-row"/>
+        <xsl:for-each select="$all-sources/*">
+            <xsl:variable name="position" select="index-of($all-sources//ptr/@target,ptr/@target)"/>
+            <xsl:element name="bibl">
+                <!-- ??? There are namespace issues on these child elements - I can't figure out why. -->
+                <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
+                <xsl:copy-of select="./*[name()!='citedRange']"/>
+                <!--<xsl:call-template name="column-mapping">
+                    <xsl:with-param name="columns-to-convert" select="$this-row/*[matches(name(),citedRange/@column)]"/>
+                </xsl:call-template>-->
+                <xsl:element name="citedRange">
+                    <xsl:attribute name="unit" select="citedRange/@unit"/>
+                    <xsl:variable name="citedRange-column" select="citedRange/@column"/>
+                    <xsl:for-each select="$this-row">
+                        <xsl:if test="matches(name(),$citedRange-column)">
+                            <xsl:value-of select="."/>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:element>
         </xsl:for-each>
     </xsl:template>
     
