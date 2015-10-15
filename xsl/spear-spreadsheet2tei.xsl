@@ -23,17 +23,16 @@
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
-            2. change the bibl elements for source1, source2, etc. to reflect the sources of your spreadsheet,
+            2. change the $all-sources variable to reflect the sources of your spreadsheet,
             3. change the TEI header information, and
-            4. add to the custom functions any languages/scripts or types that we haven't used before. 
+            4. add to the column-mapping and bibls templates any attributes that we haven't used before. 
             NB: * Each column in the spreadsheet must contain data from only one source.
+                * Spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
                 * The column-mapping template (see below) defines content of the <state> element as nested inside <desc> (needed for valid TEI) -->
     <xsl:variable name="column-mapping">
         <persName xml:lang="en-x-gedsh" column="Canonical_Name"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Syriac_Canonical"/>
         <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
-<!--        <citedRange unit="pp" column="page" bibl="http://syriaca.org/bibl/633"/>-->
-        <!--<citedRange unit="section" column="Section" bibl="http://syriaca.org/bibl/657"/>-->
     </xsl:variable>
     
     <!-- BIBL ELEMENTS TO USE AS SOURCES -->
@@ -181,7 +180,7 @@
                     <xsl:with-param name="record-id" select="$record-id"/>
                 </xsl:call-template>
                 
-                <!-- uses the $all-sources variable to create bibls with citedRange for this particular row -->
+                <!-- creates bibls using the $all-sources variable the citedRange for this particular row -->
                 <xsl:variable name="record-bibls">
                     <xsl:call-template name="bibls">
                         <xsl:with-param name="record-id" select="$record-id"/>
@@ -193,7 +192,7 @@
                 <xsl:variable name="converted-columns">
                     <xsl:call-template name="column-mapping">
                         <xsl:with-param name="columns-to-convert" select="*[.!='']"/>
-<!--                        <xsl:with-param name="record-id" select="$record-id"/>-->
+                        <xsl:with-param name="record-bibls" select="$record-bibls"/>
                     </xsl:call-template>
                 </xsl:variable>
                 
@@ -418,15 +417,17 @@
     <!-- converts spreadsheet columns using $column-mapping variable above -->
     <xsl:template name="column-mapping" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="columns-to-convert"/>
-<!--        <xsl:param name="record-id"/>-->
+        <xsl:param name="record-bibls"/>
         <xsl:for-each select="$columns-to-convert">
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
             <xsl:for-each select="$column-mapping/*">
+                <xsl:variable name="column-source" select="@source"/>
                 <xsl:if test="matches(@column,$column-name)">
                     <xsl:element name="{name()}">
                         <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                         <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
+                        <xsl:if test="@source!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[matches(ptr/@target,$column-source)]/@xml:id)"/></xsl:if>
                     <xsl:choose>
                         <xsl:when test="matches(name(),'state')">
                             <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
@@ -449,9 +450,6 @@
                 <!-- ??? There are namespace issues on these child elements - I can't figure out why. -->
                 <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
                 <xsl:copy-of select="./*[name()!='citedRange']"/>
-                <!--<xsl:call-template name="column-mapping">
-                    <xsl:with-param name="columns-to-convert" select="$this-row/*[matches(name(),citedRange/@column)]"/>
-                </xsl:call-template>-->
                 <xsl:element name="citedRange">
                     <xsl:attribute name="unit" select="citedRange/@unit"/>
                     <xsl:variable name="citedRange-column" select="citedRange/@column"/>
