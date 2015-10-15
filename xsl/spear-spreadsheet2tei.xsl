@@ -28,6 +28,7 @@
             4. add to the column-mapping and bibls templates any attributes that we haven't used before. 
             NB: * Each column in the spreadsheet must contain data from only one source.
                 * Spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
+                * Columns for <sex> element will go into the @value. If they contain the abbreviations "M" or "F", then "male" and "female" will be inserted into the element content.
                 * The column-mapping template (see below) defines content of the <state> element as nested inside <desc> (needed for valid TEI) -->
     <xsl:variable name="column-mapping">
         <persName xml:lang="en-x-gedsh" column="Canonical_Name"/>
@@ -35,6 +36,7 @@
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
+        <sex xml:lang="en" source="http://syriaca.org/bibl/657" column="Sex"/>
         <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
     </xsl:variable>
     
@@ -120,15 +122,19 @@
                             <person>
                                 <xsl:attribute name="xml:id" select="concat('person-', $record-id)"/>
                                 <xsl:attribute name="ana" select="'#spear-person'"/>
-                                <!-- DEAL WITH SAINT NAMES -->
+                                <!-- DEAL WITH PERSON NAMES -->
                                 <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                 <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
                                 
+                                <!-- ??? Need persName xml:ids? -->
                                 <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/persName" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                                    
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
+                                <!-- inserts sex columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/sex" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                              
                                 <!-- inserts bibl elements -->
                                 <xsl:copy-of select="$record-bibls" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
@@ -327,6 +333,13 @@
                         <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
                         <xsl:when test="name()='state'">
                             <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
+                        </xsl:when>
+                        <xsl:when test="name()='sex'">
+                            <xsl:attribute name="value" select="$column-contents"/>
+                            <xsl:choose>
+                                <xsl:when test="$column-contents='M'">male</xsl:when>
+                                <xsl:when test="$column-contents='F'">female</xsl:when>
+                            </xsl:choose>
                         </xsl:when>
                         <xsl:otherwise><xsl:value-of select="$column-contents"/></xsl:otherwise>
                     </xsl:choose>
