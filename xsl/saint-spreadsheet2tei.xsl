@@ -559,6 +559,8 @@
                 <titleStmt>
                     <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
                     <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+                    <title level="s">Gateway to the Syriac Saints</title>
+                    <title level="s">The Syriac Biographical Dictionary</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
