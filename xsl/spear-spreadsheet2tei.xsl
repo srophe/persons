@@ -24,15 +24,23 @@
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
             2. change the $all-sources variable to reflect the sources of your spreadsheet,
-            3. change the TEI header information, and
-            4. add to the column-mapping and bibls templates any attributes that we haven't used before. 
+            3. change the TEI header information, 
+            4. change the $directory (optional), and
+            4. add to the column-mapping and bibls TEMPLATES any attributes that we haven't used before. 
             NB: * Each column in the spreadsheet must contain data from only one source.
+                * The spreadsheet must contain a column named "New_URI". This column should not be "mapped" below; it is hard-coded into the stylesheet.
                 * Spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
+                * Each record should have at least one column marked with syriaca-tags="#syriaca-headword", otherwise it will be placed into the "incomplete" folder.
+                * It's fine to map multiple spreadsheets below, as long as they don't contain columns with the same names but different attributes (e.g., @source or @xml:lang). 
                 * Columns for <sex> element will go into the @value. If they contain the abbreviations "M" or "F", then "male" and "female" will be inserted into the element content.
                 * The column-mapping template (see below) defines content of the <state> element as nested inside <desc> (needed for valid TEI) -->
     <xsl:variable name="column-mapping">
-        <persName xml:lang="en-x-gedsh" column="Canonical_Name"/>
-        <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Syriac_Canonical"/>
+        <!-- column mapping from spear-severus.xml -->
+        <persName xml:lang="en" source="http://syriaca.org/bibl/foo1" syriaca-tags="#syriaca-headword" column="Name_in_Index"/>
+        <note xml:lang="en" type="abstract" source="http://syriaca.org/bibl/foo1" column="Additional_Info"/>
+        <!-- column mapping from spear-chronicle.xml -->
+        <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
+        <persName xml:lang="syr" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
@@ -44,6 +52,37 @@
     <!-- !!! Modify/add bibl elements here. You MUST put in a @column attribute on citedRange to specify which spreadsheet column the page num.,etc. comes from. -->
     <!-- @xml:id and <citedRange> will be added automatically based on $column-mapping -->
     <xsl:variable name="all-sources">
+        <!-- bibl source mapping for spear-severus.xml -->
+        <!-- ??? Placeholder ptr/@target URIs being used here -->
+        <bibl>
+            <!-- ??? Is this the right title @level? -->
+            <title xml:lang="en" level="a">A Collection of Letters of Severus of Antioch from Numerous Syriac Manuscripts</title>
+            <ptr target="http://syriaca.org/bibl/foo2"/>
+            <biblScope unit="fascicle">1</biblScope>
+            <citedRange unit="pp" column="PO_12"/>
+        </bibl>
+        <bibl>
+            <!-- ??? Is this the right title @level? -->
+            <title xml:lang="en" level="a">A Collection of Letters of Severus of Antioch from Numerous Syriac Manuscripts</title>
+            <ptr target="http://syriaca.org/bibl/foo3"/>
+            <biblScope unit="fascicle">2</biblScope>
+            <citedRange unit="pp" column="PO_14"/>
+        </bibl>
+        <bibl>
+            <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+            <title type="sub">Translation, I.1 - II.3</title>
+            <!-- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -->
+            <ptr target="http://syriaca.org/bibl/665-1"/>
+            <citedRange unit="pp" column="SL_Vol._II.I"/>
+        </bibl>
+        <bibl>
+            <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
+            <title type="sub">Translation, III.1 - XI.1</title>
+            <!-- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -->
+            <ptr target="http://syriaca.org/bibl/665-2"/>
+            <citedRange unit="pp" column="SL_Vol._II.II"/>
+        </bibl>
+        <!-- bibl source mapping for spear-chronicle.xml -->
         <bibl>
             <title xml:lang="la" level="m">Chronica Minora</title>
             <ptr target="http://syriaca.org/bibl/633"/>
@@ -56,7 +95,9 @@
         </bibl>
     </xsl:variable>
     
-    
+    <!-- !!! Change this to where you want the files to be placed relative to this stylesheet. 
+        This should end with a trailing slash (/).-->
+    <xsl:variable name="directory">../../working-files/persons/tei/</xsl:variable>
     
     <!-- this is the main template that processes each row of the spreadsheet -->
     <xsl:template match="/root">
@@ -71,18 +112,34 @@
                     <xsl:otherwise><xsl:value-of select="concat('unresolved-',generate-id())"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <!-- ??? Need to change this to allow user to define these values as part of a variable above. -->
-            <!-- creates a variable containing the path of the file that should be created for this record. -->
+            
+            <!-- creates bibls using the $all-sources variable the citedRange for this particular row -->
+            <xsl:variable name="record-bibls">
+                <xsl:call-template name="bibls">
+                    <xsl:with-param name="record-id" select="$record-id"/>
+                    <xsl:with-param name="this-row" select="*[.!='']"/>
+                </xsl:call-template>
+            </xsl:variable>
+            
+            <!-- uses the $column-mapping variable to convert spreadsheet columns into correct format -->
+            <xsl:variable name="converted-columns">
+                <xsl:call-template name="column-mapping">
+                    <xsl:with-param name="columns-to-convert" select="*[.!='']"/>
+                    <xsl:with-param name="record-bibls" select="$record-bibls"/>
+                </xsl:call-template>
+            </xsl:variable>            
+            
+            <!-- creates a variable containing the path of the file that should be created for this record, in the location defined by $directory -->
             <xsl:variable name="filename">
                 <xsl:choose>
                     <!-- tests whether there is sufficient data to create a complete record and puts it in an 'incomplete' folder if not -->
-                    <xsl:when test="Canonical_Name[.=''] or Syriac_Canonical[.='']">
-                        <xsl:value-of select="concat('../../working-files/chronicle-data/tei/incomplete/',$record-id,'.xml')"/>
+                    <xsl:when test="empty($converted-columns/*[@syriaca-tags='#syriaca-headword'])">
+                        <xsl:value-of select="concat($directory,'/incomplete/',$record-id,'.xml')"/>
                     </xsl:when>
                     <!-- if record is complete and has a URI, puts it in this folder -->
-                    <xsl:when test="New_URI != ''"><xsl:value-of select="concat('../../working-files/chronicle-data/tei/',$record-id,'.xml')"/></xsl:when>
+                    <xsl:when test="New_URI != ''"><xsl:value-of select="concat($directory,$record-id,'.xml')"/></xsl:when>
                     <!-- if record doesn't have a URI, puts it in 'unresolved' folder -->
-                    <xsl:otherwise><xsl:value-of select="concat('../../working-files/chronicle-data/tei/unresolved/',$record-id,'.xml')"/></xsl:otherwise>
+                    <xsl:otherwise><xsl:value-of select="concat($directory,'unresolved/',$record-id,'.xml')"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
             <!-- creates the XML file, as long as the filename has been sucessfully created. -->
@@ -99,23 +156,6 @@
                 <xsl:call-template name="header">
                     <xsl:with-param name="record-id" select="$record-id"/>
                 </xsl:call-template>
-                
-                <!-- creates bibls using the $all-sources variable the citedRange for this particular row -->
-                <xsl:variable name="record-bibls">
-                    <xsl:call-template name="bibls">
-                        <xsl:with-param name="record-id" select="$record-id"/>
-                        <xsl:with-param name="this-row" select="*[.!='']"/>
-                    </xsl:call-template>
-                </xsl:variable>
-                
-                <!-- uses the $column-mapping variable to convert spreadsheet columns into correct format -->
-                <xsl:variable name="converted-columns">
-                    <xsl:call-template name="column-mapping">
-                        <xsl:with-param name="columns-to-convert" select="*[.!='']"/>
-                        <xsl:with-param name="record-bibls" select="$record-bibls"/>
-                    </xsl:call-template>
-                </xsl:variable>
-                
                 <text>
                     <body>
                         <listPerson>
@@ -129,6 +169,9 @@
                                 <!-- ??? Need persName xml:ids? -->
                                 <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/persName" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
+                                <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/note" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                                    
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
@@ -137,7 +180,7 @@
                                 <xsl:copy-of select="$converted-columns/sex" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                              
                                 <!-- inserts bibl elements -->
-                                <xsl:copy-of select="$record-bibls" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                <xsl:copy-of select="$record-bibls/bibl[citedRange!='']" xpath-default-namespace="http://www.tei-c.org/ns/1.0" copy-namespaces="no"/>
                                                     
                             </person>
                         </listPerson>
@@ -151,9 +194,10 @@
 </xsl:for-each>
         
     </xsl:template>
+    
+    <!-- ??? Update the following! -->
     <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
-        <xsl:param name="bib-ids"/>
         
         <xsl:variable name="english-headword">
             <xsl:choose>
@@ -221,7 +265,8 @@
                     <availability>
                         <licence target="http://creativecommons.org/licenses/by/3.0/">
                             <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
-                            <xsl:if test="*[matches(name(),'Barsoum_syr|Barsoum_ar') and string-length(normalize-space(node()))]">
+                            <!-- !!! If copyright material is included, the following can be adapted. -->
+                            <!--<xsl:if test="*[matches(name(),'Barsoum_syr|Barsoum_ar') and string-length(normalize-space(node()))]">
                                 <p>This entry incorporates copyrighted material from the following work(s):
                                     <listBibl>
                                         <xsl:if test="*[matches(name(),'Barsoum_syr') and string-length(normalize-space(node()))]">
@@ -241,7 +286,7 @@
                                     </listBibl>
                                     <note>used under a Creative Commons Attribution license <ref target="http://creativecommons.org/licenses/by/3.0/"/></note>
                                 </p>
-                            </xsl:if>
+                            </xsl:if>-->
                         </licence>
                     </availability>
                     <date>
@@ -329,6 +374,7 @@
                         <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                         <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
                         <xsl:if test="@source!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[ptr/@target=$column-source]/@xml:id)"/></xsl:if>
+                        <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                     <xsl:choose>
                         <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
                         <xsl:when test="name()='state'">
@@ -350,6 +396,9 @@
     </xsl:template>
     
     <!-- creates bibl elements -->
+    <!-- ??? For now, this outputs the bibls without testing whether they are actually cited. 
+        I've called the template in a way that excludes bibls without citedRange content, 
+        but bibl ids may skip numbers (e.g., 1, 2, 4). -->
     <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="this-row"/>
@@ -359,15 +408,22 @@
                 <!-- ??? There are namespace issues on these child elements - I can't figure out why. -->
                 <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
                 <xsl:copy-of select="./*[name()!='citedRange']"/>
-                <xsl:element name="citedRange">
-                    <xsl:attribute name="unit" select="citedRange/@unit"/>
-                    <xsl:variable name="citedRange-column" select="citedRange/@column"/>
-                    <xsl:for-each select="$this-row">
-                        <xsl:if test="name()=$citedRange-column">
-                            <xsl:value-of select="."/>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:element>
+                <xsl:for-each select="citedRange">
+                    <xsl:element name="citedRange">
+                        <xsl:attribute name="unit" select="@unit"/>
+                        <xsl:choose>
+                            <xsl:when test="@column">
+                                <xsl:variable name="citedRange-column" select="@column"/>
+                                <xsl:for-each select="$this-row">
+                                    <xsl:if test="name()=$citedRange-column">
+                                        <xsl:value-of select="."/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+                        </xsl:choose>    
+                    </xsl:element>
+                </xsl:for-each>
             </xsl:element>
         </xsl:for-each>
     </xsl:template>
