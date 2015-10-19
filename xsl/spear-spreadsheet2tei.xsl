@@ -155,13 +155,14 @@
                 <!-- Adds header -->
                 <xsl:call-template name="header">
                     <xsl:with-param name="record-id" select="$record-id"/>
+                    <xsl:with-param name="converted-columns" select="$converted-columns"/>
                 </xsl:call-template>
                 <text>
                     <body>
                         <listPerson>
                             <person>
                                 <xsl:attribute name="xml:id" select="concat('person-', $record-id)"/>
-                                <xsl:attribute name="ana" select="'#spear-person'"/>
+                                <xsl:attribute name="ana" select="'#syriaca-person'"/>
                                 <!-- DEAL WITH PERSON NAMES -->
                                 <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                 <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
@@ -198,18 +199,21 @@
     <!-- ??? Update the following! -->
     <xsl:template name="header" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
-        
+        <xsl:param name="converted-columns"/>
         <xsl:variable name="english-headword">
+            <!-- checks whether there is an English Syriaca headword. If not, just uses the record-id as the page title. -->
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(GEDSH_Romanized_Name)) != 0"><xsl:value-of select="GEDSH_Romanized_Name"/></xsl:when>
+                <xsl:when test="$converted-columns/*[@syriaca-tags='#syriaca-headword' and starts-with(@xml:lang, 'en')]"><xsl:value-of select="$converted-columns/*[@syriaca-tags='#syriaca-headword' and starts-with(@xml:lang, 'en')]"/></xsl:when>
                 <xsl:otherwise>Person <xsl:value-of select="$record-id"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="syriac-headword">
+            <!-- grabs the Syriaca Syriac headword, if there is one. -->
             <xsl:choose>
-                <xsl:when test="string-length(normalize-space(Syriac_Headword)) != 0"><xsl:value-of select="Syriac_Headword"/></xsl:when>
+                <xsl:when test="$converted-columns/*[@syriaca-tags='#syriaca-headword' and starts-with(@xml:lang,'syr')]"><xsl:value-of select="$converted-columns/*[@syriaca-tags='#syriaca-headword' and starts-with(@xml:lang,'syr')]"/></xsl:when>
             </xsl:choose>
         </xsl:variable>
+        <!-- combines the English and Syriac headwords to make the record title -->
         <xsl:variable name="record-title">
             <xsl:value-of select="$english-headword"/>
             <xsl:if test="string-length($syriac-headword)"> — <foreign xml:lang="syr"><xsl:value-of select="$syriac-headword"/></foreign></xsl:if>
