@@ -37,7 +37,7 @@
     <xsl:variable name="column-mapping">
         <!-- column mapping from spear-severus.xml -->
         <persName xml:lang="en" source="http://syriaca.org/bibl/foo1" syriaca-tags="#syriaca-headword" column="Name_in_Index"/>
-        <note xml:lang="en" type="abstract" source="http://syriaca.org/bibl/foo1" column="Additional_Info"/>
+        <note xml:lang="en" type="abstract" column="Additional_Info"/>
         <!-- column mapping from spear-chronicle.xml -->
         <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
@@ -47,6 +47,9 @@
         <sex xml:lang="en" source="http://syriaca.org/bibl/657" column="Sex"/>
         <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
     </xsl:variable>
+    
+    <!-- ??? The following is an example of how the bibl info could be grabbed automatically -->
+<!--    <xsl:variable name="bibl-url" select="'http://syriaca.org/bibl/633/tei'"/>-->
     
     <!-- BIBL ELEMENTS TO USE AS SOURCES -->
     <!-- !!! Modify/add bibl elements here. You MUST put in a @column attribute on citedRange to specify which spreadsheet column the page num.,etc. comes from. -->
@@ -84,6 +87,8 @@
         </bibl>
         <!-- bibl source mapping for spear-chronicle.xml -->
         <bibl>
+            <!-- ??? The following is an example of how the bibl info could be grabbed automatically -->
+<!--            <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>-->
             <title xml:lang="la" level="m">Chronica Minora</title>
             <ptr target="http://syriaca.org/bibl/633"/>
             <citedRange unit="pp" column="page"/>
@@ -173,6 +178,9 @@
                                 
                                 <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/note" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
+                                <!-- gives the person URI as an idno -->
+                                <xsl:if test="New_URI != ''"><idno type="URI"><xsl:value-of select="concat('http://syriaca.org/person/',New_URI)"></xsl:value-of></idno></xsl:if>
                                                    
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
@@ -222,42 +230,26 @@
             <fileDesc>
                 <titleStmt>
                     <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
-                    <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+                    <!-- ??? What should be the @level='m' title, if any? -->
+                    <title level="s">The Syriac Biographical Dictionary</title>
+                    <title level="s">SPEAR: Syriac Persons, Events, and Relationships</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
-                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</name>
                     </respStmt>
                     <respStmt>
                         <resp>Data architecture and encoding by</resp>
                         <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
                     </respStmt>
                     <respStmt>
-                        <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
-                        <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Editing and Syriac data proofreading by</resp>
-                        <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
-                    </respStmt>
-                    <respStmt>
-                        <resp>Entries adapted from the work of</resp>
-                        <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+                        <resp>Syriac data conversion and reconciling by</resp>
+                        <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                     </respStmt>
                 </titleStmt>
                 <editionStmt>
@@ -334,6 +326,7 @@
                             <catDesc>A person who is relevant to the Bibliotheca Hagiographica
                                 Syriaca.</catDesc>
                         </category>
+                        <!-- ??? syriaca-person? -->
                     </taxonomy>
                 </classDecl>
             </encodingDesc>
@@ -352,13 +345,9 @@
                 </langUsage>
             </profileDesc>
             <revisionDesc>
-                <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0">
+                <change who="http://syriaca.org/documentation/editors.xml#ngibson" n="1.0">
                     <xsl:attribute name="when" select="current-date()"/>CREATED: person</change>
-                <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
-                    <change type="planned">
-                        <xsl:value-of select="For_Post-Publication_Review"/>
-                    </change>
-                </xsl:if>
+                <!-- ??? Are there any change @type='planned' ? -->
             </revisionDesc>
         </teiHeader>
     </xsl:template>
