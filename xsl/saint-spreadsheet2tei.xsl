@@ -79,7 +79,7 @@
                 <xsl:value-of select="$n"/>
                 
                 <!-- determine which sources will need to be cited; to be used in header formation as well -->
-                <xsl:variable name="bib-prefix">bibl<xsl:value-of select="$record-id"/>-</xsl:variable>
+                <xsl:variable name="bib-prefix">bib<xsl:value-of select="$record-id"/>-</xsl:variable>
                 <xsl:variable name="sources" as="xs:string*">
                     <xsl:if test="Fiey_ID[. != ''] or Raw_Fiey_Name != '' or Fiey_Name != '' or v_see_also_French != '' or Dates != '' or Locations != '' or Veneration_Date != '' or Bibliography != '' or Fiey_Related != ''">
                         <xsl:sequence select="('Fiey')"/>
