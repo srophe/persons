@@ -108,22 +108,16 @@
          <listPerson>
             <person xml:id="person-2288" ana="#syriaca-person">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Lucius Verus</persName>
-               <persName xml:lang="syr" source="#bib2288-5" syriaca-tags="#syriaca-headword">ܠܘܩܝܣ</persName>
-               <persName xml:lang="en" source="#bib2288-6">Lucius Caesar</persName>
+               <persName xml:lang="syr" source="#" syriaca-tags="#syriaca-headword">ܠܘܩܝܣ</persName>
+               <persName xml:lang="en" source="#">Lucius Caesar</persName>
                <idno type="URI">http://syriaca.org/person/2288</idno>
-               <state xml:lang="en" type="role" source="#bib2288-6">
+               <state xml:lang="en" type="role" source="#">
                   <desc>Emperor of Rome</desc>
                </state>
-               <sex xml:lang="en" source="#bib2288-6" value="M">male</sex>
-               <bibl xml:id="bib2288-5">
-                  <title xml:lang="la" level="m">Chronica Minora</title>
+               <sex xml:lang="en" source="#" value="M">male</sex>
+               <bibl>
+                  <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">3</citedRange>
-               </bibl>
-               <bibl xml:id="bib2288-6">
-                  <title level="a" xml:lang="en">Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
-                  <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">7</citedRange>
                </bibl>
             </person>
          </listPerson>

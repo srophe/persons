@@ -20,6 +20,10 @@
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
+    <!-- ??? Switch over the below to use @sourceUriColumn -->
+    <!-- ??? Try doing citedRange as a column mapping with @sourceUriColumn -->
+    <!-- ??? Add date processing -->
+    
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
@@ -35,12 +39,43 @@
                 * Columns for <sex> element will go into the @value. If they contain the abbreviations "M" or "F", then "male" and "female" will be inserted into the element content.
                 * The column-mapping template (see below) defines content of the <state> element as nested inside <desc> (needed for valid TEI) -->
     <xsl:variable name="column-mapping">
+        <!-- auto column mapping using default column names -->
+        <xsl:for-each select="/root/row[1]/*">
+            <xsl:variable name="element-name" as="xs:string">
+                <xsl:choose>
+                    <xsl:when test="matches(name(),'^persName\.')">persName</xsl:when>
+                    <xsl:when test="matches(name(),'^sex\.')">sex</xsl:when>
+                    <xsl:when test="matches(name(),'^state\.')">state</xsl:when>
+                    <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
+                    <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
+                    <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                    <xsl:otherwise>none</xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <xsl:if test="$element-name!='none'">
+                <xsl:element name="{$element-name}">
+                    <!-- add @xml:lang -->
+                    <xsl:choose>
+                        <xsl:when test="matches(name(),'\.en-x-gedsh$')"><xsl:attribute name="xml:lang" select="'en-x-gedsh'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.en$')"><xsl:attribute name="xml:lang" select="'en'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.syr$')"><xsl:attribute name="xml:lang" select="'syr'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.syr-Syrj$')"><xsl:attribute name="xml:lang" select="'syr-Syrj'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.syr-Syrn$')"><xsl:attribute name="xml:lang" select="'syr-Syrn'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.ar$')"><xsl:attribute name="xml:lang" select="'ar'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.fr$')"><xsl:attribute name="xml:lang" select="'fr'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.de$')"><xsl:attribute name="xml:lang" select="'de'"/></xsl:when>
+                        <xsl:when test="matches(name(),'\.la$')"><xsl:attribute name="xml:lang" select="'la'"/></xsl:when>
+                    </xsl:choose>
+                    <xsl:attribute name="column" select="name()"/>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
         <!-- column mapping from spear-severus.xml -->
         <persName xml:lang="en" source="http://syriaca.org/bibl/foo1" syriaca-tags="#syriaca-headword" column="Name_in_Index"/>
         <note xml:lang="en" type="abstract" column="Additional_Info"/>
         <!-- column mapping from spear-chronicle.xml -->
         <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
-        <persName xml:lang="syr" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
+        <persName xml:lang="syr" sourceUriColumn="Source_1" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
         <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
         <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
@@ -189,7 +224,7 @@
                                 <xsl:copy-of select="$converted-columns/sex" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                              
                                 <!-- inserts bibl elements -->
-                                <xsl:copy-of select="$record-bibls/bibl[citedRange!='']" xpath-default-namespace="http://www.tei-c.org/ns/1.0" copy-namespaces="no"/>
+                                <xsl:copy-of select="$record-bibls/bibl" xpath-default-namespace="http://www.tei-c.org/ns/1.0" copy-namespaces="no"/>
                                                     
                             </person>
                         </listPerson>
@@ -395,10 +430,26 @@
     <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="this-row"/>
-        <xsl:for-each select="$all-sources/*">
+        <xsl:for-each select="$column-mapping//@sourceUriColumn">
+            <xsl:variable name="source-uri-column" select="."/>
+            <xsl:for-each select="$this-row">
+                <xsl:if test="name()=$source-uri-column">
+                    <xsl:variable name="bibl-url" select="concat('http://syriaca.org/bibl/',.,'/tei')"></xsl:variable>
+                    <bibl>
+                        <!-- ??? Need to add @xml-id -->
+                        <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                        <ptr target="{concat('http://syriaca.org/bibl/',.)}"/>
+                        <!-- ??? How to do citedRange? -->
+                    </bibl>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+        
+        
+        <!--<xsl:for-each select="$all-sources/*">
             <xsl:variable name="position" select="index-of($all-sources//ptr/@target,ptr/@target)"/>
             <xsl:element name="bibl">
-                <!-- ??? There are namespace issues on these child elements - I can't figure out why. -->
+                <!-\- ??? There are namespace issues on these child elements - I can't figure out why. -\->
                 <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',$position)"/>
                 <xsl:copy-of select="./*[name()!='citedRange']"/>
                 <xsl:for-each select="citedRange">
@@ -418,7 +469,7 @@
                     </xsl:element>
                 </xsl:for-each>
             </xsl:element>
-        </xsl:for-each>
+        </xsl:for-each>-->
     </xsl:template>
     
 </xsl:stylesheet>

@@ -108,22 +108,16 @@
          <listPerson>
             <person xml:id="person-2312" ana="#syriaca-person">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Vālāgesh</persName>
-               <persName xml:lang="syr" source="#bib2312-5" syriaca-tags="#syriaca-headword">ܘܠܓܫ</persName>
-               <persName xml:lang="en" source="#bib2312-6">Vologesh</persName>
+               <persName xml:lang="syr" source="#" syriaca-tags="#syriaca-headword">ܘܠܓܫ</persName>
+               <persName xml:lang="en" source="#">Vologesh</persName>
                <idno type="URI">http://syriaca.org/person/2312</idno>
-               <state xml:lang="en" type="role" source="#bib2312-6">
+               <state xml:lang="en" type="role" source="#">
                   <desc>Bishop of Nisibis</desc>
                </state>
-               <sex xml:lang="en" source="#bib2312-6" value="M">male</sex>
-               <bibl xml:id="bib2312-5">
-                  <title xml:lang="la" level="m">Chronica Minora</title>
+               <sex xml:lang="en" source="#" value="M">male</sex>
+               <bibl>
+                  <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">4</citedRange>
-               </bibl>
-               <bibl xml:id="bib2312-6">
-                  <title level="a" xml:lang="en">Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
-                  <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">24</citedRange>
                </bibl>
             </person>
          </listPerson>
