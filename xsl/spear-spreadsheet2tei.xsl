@@ -21,8 +21,8 @@
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
     <!-- ??? Switch over the below to use @sourceUriColumn -->
-    <!-- ??? Try doing citedRange as a column mapping with @sourceUriColumn -->
     <!-- ??? Add date processing -->
+    <!-- ??? Add additional references -->
     
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
@@ -76,11 +76,13 @@
         <!-- column mapping from spear-chronicle.xml -->
         <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
         <persName xml:lang="syr" sourceUriColumn="Source_1" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
-        <persName xml:lang="syr" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
-        <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
-        <persName xml:lang="en" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
-        <sex xml:lang="en" source="http://syriaca.org/bibl/657" column="Sex"/>
-        <state xml:lang="en" type="role" source="http://syriaca.org/bibl/657" column="Office"/>
+        <persName xml:lang="syr" sourceUriColumn="Source_1" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
+        <persName xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
+        <persName xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
+        <sex xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Sex"/>
+        <state xml:lang="en" type="role" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Office"/>
+        <citedRange unit="pp" sourceUriColumn="Source_1" column="page"/>
+        <citedRange unit="section" sourceUriColumn="Source_2" column="Section"/>
     </xsl:variable>
     
     <!-- ??? The following is an example of how the bibl info could be grabbed automatically -->
@@ -89,18 +91,18 @@
     <!-- BIBL ELEMENTS TO USE AS SOURCES -->
     <!-- !!! Modify/add bibl elements here. You MUST put in a @column attribute on citedRange to specify which spreadsheet column the page num.,etc. comes from. -->
     <!-- @xml:id and <citedRange> will be added automatically based on $column-mapping -->
-    <xsl:variable name="all-sources">
-        <!-- bibl source mapping for spear-severus.xml -->
-        <!-- ??? Placeholder ptr/@target URIs being used here -->
+    <!--<xsl:variable name="all-sources">
+        <!-\- bibl source mapping for spear-severus.xml -\->
+        <!-\- ??? Placeholder ptr/@target URIs being used here -\->
         <bibl>
-            <!-- ??? Is this the right title @level? -->
+            <!-\- ??? Is this the right title @level? -\->
             <title xml:lang="en" level="a">A Collection of Letters of Severus of Antioch from Numerous Syriac Manuscripts</title>
             <ptr target="http://syriaca.org/bibl/foo2"/>
             <biblScope unit="fascicle">1</biblScope>
             <citedRange unit="pp" column="PO_12"/>
         </bibl>
         <bibl>
-            <!-- ??? Is this the right title @level? -->
+            <!-\- ??? Is this the right title @level? -\->
             <title xml:lang="en" level="a">A Collection of Letters of Severus of Antioch from Numerous Syriac Manuscripts</title>
             <ptr target="http://syriaca.org/bibl/foo3"/>
             <biblScope unit="fascicle">2</biblScope>
@@ -109,21 +111,21 @@
         <bibl>
             <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
             <title type="sub">Translation, I.1 - II.3</title>
-            <!-- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -->
+            <!-\- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -\->
             <ptr target="http://syriaca.org/bibl/665-1"/>
             <citedRange unit="pp" column="SL_Vol._II.I"/>
         </bibl>
         <bibl>
             <title xml:lang="en">The Sixth Book of the Select Letters of Severus, Patriarch of Antioch in the Syriac Version of Athanasius of Nisibis</title>
             <title type="sub">Translation, III.1 - XI.1</title>
-            <!-- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -->
+            <!-\- ??? Conflict between bibl/665 here and in bibl URIs spreadsheet -\->
             <ptr target="http://syriaca.org/bibl/665-2"/>
             <citedRange unit="pp" column="SL_Vol._II.II"/>
         </bibl>
-        <!-- bibl source mapping for spear-chronicle.xml -->
+        <!-\- bibl source mapping for spear-chronicle.xml -\->
         <bibl>
-            <!-- ??? The following is an example of how the bibl info could be grabbed automatically -->
-<!--            <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>-->
+            <!-\- ??? The following is an example of how the bibl info could be grabbed automatically -\->
+<!-\-            <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>-\->
             <title xml:lang="la" level="m">Chronica Minora</title>
             <ptr target="http://syriaca.org/bibl/633"/>
             <citedRange unit="pp" column="page"/>
@@ -133,7 +135,7 @@
             <ptr target="http://syriaca.org/bibl/657"/>
             <citedRange unit="section" column="Section"/>
         </bibl>
-    </xsl:variable>
+    </xsl:variable>-->
     
     <!-- !!! Change this to where you want the files to be placed relative to this stylesheet. 
         This should end with a trailing slash (/).-->
@@ -396,12 +398,13 @@
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
             <xsl:for-each select="$column-mapping/*">
-                <xsl:variable name="column-source" select="@source"/>
+                <xsl:variable name="source-uri-column" select="@sourceUriColumn"/>
+                <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$source-uri-column])"/>
                 <xsl:if test="@column=$column-name">
                     <xsl:element name="{name()}">
                         <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                         <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
-                        <xsl:if test="@source!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[ptr/@target=$column-source]/@xml:id)"/></xsl:if>
+                        <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
                         <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                     <xsl:choose>
                         <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
@@ -424,22 +427,28 @@
     </xsl:template>
     
     <!-- creates bibl elements -->
-    <!-- ??? For now, this outputs the bibls without testing whether they are actually cited. 
-        I've called the template in a way that excludes bibls without citedRange content, 
-        but bibl ids may skip numbers (e.g., 1, 2, 4). -->
     <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="this-row"/>
-        <xsl:for-each select="$column-mapping//@sourceUriColumn">
+        <xsl:variable name="sources" select="distinct-values($column-mapping//@sourceUriColumn)"/>
+        <xsl:for-each select="$sources">
             <xsl:variable name="source-uri-column" select="."/>
             <xsl:for-each select="$this-row">
+                <xsl:variable name="this-column" select="name()"/>
+                <!-- gets the citedRange from $column-mapping that names this column as its @sourceUriColumn -->
+                <xsl:variable name="this-cited-range" select="$column-mapping/citedRange[@sourceUriColumn=$this-column]"/>
                 <xsl:if test="name()=$source-uri-column">
                     <xsl:variable name="bibl-url" select="concat('http://syriaca.org/bibl/',.,'/tei')"></xsl:variable>
                     <bibl>
-                        <!-- ??? Need to add @xml-id -->
+                        <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',index-of($sources,$source-uri-column))"/>
+                        <!-- ??? What info do we want to include here - just the title or more? The title of the TEI doc or the title of the described bibl? -->
                         <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                         <ptr target="{concat('http://syriaca.org/bibl/',.)}"/>
-                        <!-- ??? How to do citedRange? -->
+                        <!-- adds citedRange to bibl -->
+                        <xsl:element name="citedRange">
+                            <xsl:attribute name="unit" select="$this-cited-range/@unit"/>
+                            <xsl:value-of select="$this-row[name()=$this-cited-range/@column]"/>
+                        </xsl:element>
                     </bibl>
                 </xsl:if>
             </xsl:for-each>
