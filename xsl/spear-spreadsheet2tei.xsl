@@ -27,9 +27,8 @@
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
-            2. change the $all-sources variable to reflect the sources of your spreadsheet,
-            3. change the TEI header information, 
-            4. change the $directory (optional), and
+            2. change the TEI header information, 
+            3. change the $directory (optional), and
             4. add to the column-mapping and bibls TEMPLATES any attributes that we haven't used before. 
             NB: * Each column in the spreadsheet must contain data from only one source.
                 * The spreadsheet must contain a column named "New_URI". This column should not be "mapped" below; it is hard-coded into the stylesheet.
@@ -43,12 +42,13 @@
         <xsl:for-each select="/root/row[1]/*">
             <xsl:variable name="element-name" as="xs:string">
                 <xsl:choose>
-                    <xsl:when test="matches(name(),'^persName\.')">persName</xsl:when>
-                    <xsl:when test="matches(name(),'^sex\.')">sex</xsl:when>
-                    <xsl:when test="matches(name(),'^state\.')">state</xsl:when>
-                    <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
-                    <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
-                    <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                    <xsl:when test="matches(name(),'^persName[\._]')">persName</xsl:when>
+                    <xsl:when test="matches(name(),'^sex[\._]')">sex</xsl:when>
+                    <xsl:when test="matches(name(),'^state[\._]')">state</xsl:when>
+                    <xsl:when test="matches(name(),'^birth[\._]')">birth</xsl:when>
+                    <xsl:when test="matches(name(),'^death[\._]')">death</xsl:when>
+                    <xsl:when test="matches(name(),'^floruit[\._]')">floruit</xsl:when>
+                    <xsl:when test="matches(name(),'^citedRange[\._]')">floruit</xsl:when>
                     <xsl:otherwise>none</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -66,6 +66,36 @@
                         <xsl:when test="matches(name(),'\.de$')"><xsl:attribute name="xml:lang" select="'de'"/></xsl:when>
                         <xsl:when test="matches(name(),'\.la$')"><xsl:attribute name="xml:lang" select="'la'"/></xsl:when>
                     </xsl:choose>
+                    <!-- add office -->
+                    <xsl:choose>
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_office')"><xsl:attribute name="type" select="'office'"/></xsl:when>
+                    </xsl:choose>
+                    <xsl:attribute name="column" select="name()"/>
+                    <!-- add unit -->
+                    <xsl:choose>
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_pp')"><xsl:attribute name="unit" select="'pp'"/></xsl:when>
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_section')"><xsl:attribute name="unit" select="'section'"/></xsl:when>
+                    </xsl:choose>
+                    <xsl:attribute name="column" select="name()"/>
+                    <!-- add syriaca-headword -->
+                    <xsl:choose>
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_syriaca-headword')"><xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/></xsl:when>
+                    </xsl:choose>
+                    <!-- add sourceUriColumn -->
+                    <xsl:choose>
+                        <xsl:when test="matches(name(),'\.Source_[0-9]*[\.$]')">
+                            <xsl:variable name="tokenized-column-name" select="tokenize(name(),'\.')"/>
+                            <xsl:variable name="source-name">
+                                <xsl:for-each select="$tokenized-column-name">
+                                    <xsl:if test="matches(.,'^Source_[0-9]*')"><xsl:value-of select="."/></xsl:if>
+                                </xsl:for-each>
+                            </xsl:variable>
+                            <xsl:variable name="column-prefix" select="substring-before(name(),'Source_1')"/>
+                            <xsl:variable name="column-suffix" select="substring-after(name(),'Source_1')"/>
+                            <!-- removes column prefix and suffix, leaving only the "Source 1" and so on -->
+                            <xsl:attribute name="sourceUriColumn" select="$source-name"/>
+                        </xsl:when>
+                    </xsl:choose>
                     <xsl:attribute name="column" select="name()"/>
                 </xsl:element>
             </xsl:if>
@@ -75,12 +105,12 @@
         <note xml:lang="en" type="abstract" column="Additional_Info"/>
         <!-- column mapping from spear-chronicle.xml -->
         <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
-        <persName xml:lang="syr" sourceUriColumn="Source_1" source="http://syriaca.org/bibl/633" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
-        <persName xml:lang="syr" sourceUriColumn="Source_1" source="http://syriaca.org/bibl/633" column="Name_Variant_1_SYR"/>
-        <persName xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Name_Variant_1"/>
-        <persName xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Name_Variant_2"/>
-        <sex xml:lang="en" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Sex"/>
-        <state xml:lang="en" type="role" sourceUriColumn="Source_2" source="http://syriaca.org/bibl/657" column="Office"/>
+        <persName xml:lang="syr" sourceUriColumn="Source_1" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
+        <persName xml:lang="syr" sourceUriColumn="Source_1" column="Name_Variant_1_SYR"/>
+        <persName xml:lang="en" sourceUriColumn="Source_2" column="Name_Variant_1"/>
+        <persName xml:lang="en" sourceUriColumn="Source_2" column="Name_Variant_2"/>
+        <sex xml:lang="en" sourceUriColumn="Source_2" column="Sex"/>
+        <state xml:lang="en" type="role" sourceUriColumn="Source_2" column="Office"/>
         <citedRange unit="pp" sourceUriColumn="Source_1" column="page"/>
         <citedRange unit="section" sourceUriColumn="Source_2" column="Section"/>
     </xsl:variable>
@@ -139,7 +169,7 @@
     
     <!-- !!! Change this to where you want the files to be placed relative to this stylesheet. 
         This should end with a trailing slash (/).-->
-    <xsl:variable name="directory">../../working-files/persons/tei/</xsl:variable>
+    <xsl:variable name="directory">../../working-files-2/persons/tei/</xsl:variable>
     
     <!-- this is the main template that processes each row of the spreadsheet -->
     <xsl:template match="/root">
@@ -204,7 +234,6 @@
                         <listPerson>
                             <person>
                                 <xsl:attribute name="xml:id" select="concat('person-', $record-id)"/>
-                                <xsl:attribute name="ana" select="'#syriaca-person'"/>
                                 <!-- DEAL WITH PERSON NAMES -->
                                 <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                 <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
@@ -267,14 +296,19 @@
             <fileDesc>
                 <titleStmt>
                     <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
-                    <!-- ??? What should be the @level='m' title, if any? -->
+                    <!-- ??? Make sure to add the series title and series statements for persons who are also saints or authors. Also, change SBD vol. number (biblScope) in series statement if author or saint. -->
                     <title level="s">The Syriac Biographical Dictionary</title>
-                    <title level="s">SPEAR: Syriac Persons, Events, and Relationships</title>
+                    <!-- ??? Add title for saints or authors -->
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-                    <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <editor role="associate"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
@@ -326,6 +360,43 @@
                         <xsl:value-of select="current-date()"/>
                     </date>
                 </publicationStmt>
+                <seriesStmt>
+                    <title level="s">The Syriac Biographical Dictionary</title>
+                    <editor role="general"
+                        ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                    <editor role="associate"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                    <editor role="associate"
+                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ef="http://syriaca.org/documentation/editors.xml#tcarlson"
+                            >Thomas A. Carlson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Edited by</resp>
+                        <name type="person"
+                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                    </respStmt>
+                    <biblScope unit="vol">3</biblScope>
+                    <idno type="URI">http://syriaca.org/persons</idno>
+                </seriesStmt>
                 <sourceDesc>
                     <p>Born digital.</p>
                 </sourceDesc>
