@@ -47,7 +47,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-21+02:00</date>
+            <date>2015-10-22+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -139,7 +139,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-21+02:00">CREATED: person</change>
+                 when="2015-10-22+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,10 +148,10 @@
             <person xml:id="person-2268">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Justin I</persName>
                <persName xml:lang="syr" source="#bib2268-1">ܝܘܣܛܝܢܐ</persName>
-               <persName xml:lang="syr" source="#bib2268-1">ܝܘܣܛܝܢܐ</persName>
-               <persName xml:lang="en" source="#bib2268-2">Iustinā</persName>
                <persName xml:lang="en" source="#bib2268-2">Iustinā</persName>
                <idno type="URI">http://syriaca.org/person/2268</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Justin_I</idno>
+               <idno type="PLRE">Iustinus 4</idno>
                <state xml:lang="en" type="office" source="#bib2268-2">
                   <desc>Emperor of Rome</desc>
                </state>
@@ -165,6 +165,11 @@
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
                   <citedRange unit="section">86</citedRange>
+               </bibl>
+               <bibl xml:id="bib2268-3">
+                  <ptr target="http://syriaca.org/bibl/foo1"/>
+                  <citedRange unit="vol">II</citedRange>
+                  <citedRange unit="pp">648-51</citedRange>
                </bibl>
             </person>
          </listPerson>

@@ -47,7 +47,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-21+02:00</date>
+            <date>2015-10-22+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -139,7 +139,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-21+02:00">CREATED: person</change>
+                 when="2015-10-22+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,10 +148,10 @@
             <person xml:id="person-2310">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Valentinian I</persName>
                <persName xml:lang="syr" source="#bib2310-1">ܘܠܢܛܝܢܣ</persName>
-               <persName xml:lang="syr" source="#bib2310-1">ܘܠܢܛܝܢܣ</persName>
-               <persName xml:lang="en" source="#bib2310-2">Valentinian the Great</persName>
                <persName xml:lang="en" source="#bib2310-2">Valentinian the Great</persName>
                <idno type="URI">http://syriaca.org/person/2310</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Valentinian_I</idno>
+               <idno type="PLRE">Flavius Valentinianus 7</idno>
                <floruit xml:lang="en"
                         when="0364"
                         syriaca-computed-start="0364-01-01"
@@ -169,6 +169,11 @@
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
                   <citedRange unit="section">27</citedRange>
+               </bibl>
+               <bibl xml:id="bib2310-3">
+                  <ptr target="http://syriaca.org/bibl/foo1"/>
+                  <citedRange unit="vol">I</citedRange>
+                  <citedRange unit="pp">933-34</citedRange>
                </bibl>
             </person>
          </listPerson>

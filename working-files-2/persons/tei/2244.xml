@@ -47,7 +47,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-21+02:00</date>
+            <date>2015-10-22+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -139,7 +139,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-21+02:00">CREATED: person</change>
+                 when="2015-10-22+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,8 +148,9 @@
             <person xml:id="person-2244">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Chosroes</persName>
                <persName xml:lang="syr" source="#bib2244-1">ܟܣܪܘܢ</persName>
-               <persName xml:lang="syr" source="#bib2244-1">ܟܣܪܘܢ</persName>
                <idno type="URI">http://syriaca.org/person/2244</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Khosrau_II</idno>
+               <idno type="PLRE">Chosroes I</idno>
                <floruit xml:lang="en"
                         when="0540"
                         syriaca-computed-start="0540-01-01"
@@ -167,6 +168,11 @@
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
                   <citedRange unit="section">105</citedRange>
+               </bibl>
+               <bibl xml:id="bib2244-3">
+                  <ptr target="http://syriaca.org/bibl/foo1"/>
+                  <citedRange unit="vol">II</citedRange>
+                  <citedRange unit="pp">293</citedRange>
                </bibl>
             </person>
          </listPerson>

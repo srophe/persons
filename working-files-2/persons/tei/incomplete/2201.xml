@@ -8,13 +8,17 @@
          <titleStmt>
             <title level="a" xml:lang="en">Person 2201</title>
             <title level="s">The Syriac Biographical Dictionary</title>
-            <title level="s">SPEAR: Syriac Persons, Events, and Relationships</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-            <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
             <principal>David A. Michelson</principal>
             <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
             <editor role="creator"
                     ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
             <respStmt>
@@ -43,8 +47,44 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-20+02:00</date>
+            <date>2015-10-22+02:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">3</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -99,20 +139,24 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-20+02:00">CREATED: person</change>
+                 when="2015-10-22+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2201" ana="#syriaca-person">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="3syriaca-headword">Abgar VIII</persName>
-               <persName xml:lang="syr">ܐܒܓܪ</persName>
-               <persName xml:lang="syr">ܐܒܓܪ</persName>
-               <persName xml:lang="en">Abgar the king</persName>
-               <persName xml:lang="en">Abgar the king</persName>
+            <person xml:id="person-2201">
                <idno type="URI">http://syriaca.org/person/2201</idno>
-               <sex xml:lang="en" value="M">male</sex>
+               <bibl xml:id="bib2201-1">
+                  <title xml:lang="la">Chronica Minora</title>
+                  <ptr target="http://syriaca.org/bibl/633"/>
+                  <citedRange unit="pp">1</citedRange>
+               </bibl>
+               <bibl xml:id="bib2201-2">
+                  <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
+                  <ptr target="http://syriaca.org/bibl/657"/>
+                  <citedRange unit="section">8</citedRange>
+               </bibl>
             </person>
          </listPerson>
       </body>

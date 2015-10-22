@@ -65,7 +65,6 @@
                         <xsl:when test="matches(name(),'\.de$')"><xsl:attribute name="xml:lang" select="'de'"/></xsl:when>
                         <xsl:when test="matches(name(),'\.la$')"><xsl:attribute name="xml:lang" select="'la'"/></xsl:when>
                     </xsl:choose>
-                    <!-- add office -->
                     <xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_office')"><xsl:attribute name="type" select="'office'"/></xsl:when>
                     </xsl:choose>
@@ -110,7 +109,6 @@
                             <xsl:attribute name="sourceUriColumn" select="$source-name"/>
                         </xsl:when>
                     </xsl:choose>
-                    <xsl:attribute name="column" select="name()"/>
                 </xsl:element>
             </xsl:if>
         </xsl:for-each>
@@ -229,7 +227,6 @@
             <!-- uses the $column-mapping variable to convert spreadsheet columns into correct format -->
             <xsl:variable name="converted-columns">
                 <xsl:call-template name="column-mapping">
-                    <xsl:with-param name="columns-to-convert" select="*[.!='']"/>
                     <xsl:with-param name="record-bibls" select="$record-bibls"/>
                 </xsl:call-template>
             </xsl:variable>            
@@ -509,48 +506,6 @@
         <xsl:param name="record-bibls"/>
         <xsl:for-each select="$columns-to-convert">
             <xsl:variable name="column-name" select="name()"/>
-            <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
-            <xsl:for-each select="$column-mapping/*">
-                <xsl:variable name="this-column" select="."/>
-                <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$this-column/@sourceUriColumn])"/>
-                <xsl:variable name="when" select="$columns-to-convert[name()=$this-column/@whenColumn]"/>
-                <xsl:variable name="not-before" select="$columns-to-convert[name()=$this-column/@notBeforeColumn]"/>
-                <xsl:variable name="not-after" select="$columns-to-convert[name()=$this-column/@notAfterColumn]"/>
-                <xsl:if test="@column=$column-name">
-                    <xsl:element name="{name()}">
-                        <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
-                        <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
-                        <xsl:if test="$when!=''">
-                            <xsl:attribute name="when" select="$when"/>
-                            <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($when)"/>
-                        </xsl:if>
-                        <xsl:if test="$not-before!=''">
-                            <xsl:attribute name="notBefore" select="$not-before"/>
-                            <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($not-before)"/>
-                        </xsl:if>
-                        <xsl:if test="$not-after!=''">
-                            <xsl:attribute name="notAfter" select="$not-after"/>
-                            <xsl:attribute name="syriaca-computed-end" select="syriaca:custom-dates($not-after)"/>
-                        </xsl:if>
-                        <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
-                        <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
-                    <xsl:choose>
-                        <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
-                        <xsl:when test="name()='state'">
-                            <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
-                        </xsl:when>
-                        <xsl:when test="name()='sex'">
-                            <xsl:attribute name="value" select="$column-contents"/>
-                            <xsl:choose>
-                                <xsl:when test="$column-contents='M'">male</xsl:when>
-                                <xsl:when test="$column-contents='F'">female</xsl:when>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise><xsl:value-of select="$column-contents"/></xsl:otherwise>
-                    </xsl:choose>
-                    </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
     

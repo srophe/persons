@@ -47,7 +47,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-21+02:00</date>
+            <date>2015-10-22+02:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -139,7 +139,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-21+02:00">CREATED: person</change>
+                 when="2015-10-22+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -148,10 +148,10 @@
             <person xml:id="person-2261">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Diocletian</persName>
                <persName xml:lang="syr" source="#bib2261-1">ܕܝܩܠܝܛܝܢܘܣ</persName>
-               <persName xml:lang="syr" source="#bib2261-1">ܕܝܩܠܝܛܝܢܘܣ</persName>
-               <persName xml:lang="en" source="#bib2261-2">Diocletian the king</persName>
                <persName xml:lang="en" source="#bib2261-2">Diocletian the king</persName>
                <idno type="URI">http://syriaca.org/person/2261</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Diocletian</idno>
+               <idno type="PLRE">C. Aur. Val. Diocletianus 2</idno>
                <floruit xml:lang="en"
                         when="0303-05"
                         syriaca-computed-start="0303-05-01"
@@ -169,6 +169,11 @@
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
                   <citedRange unit="section">11</citedRange>
+               </bibl>
+               <bibl xml:id="bib2261-3">
+                  <ptr target="http://syriaca.org/bibl/foo1"/>
+                  <citedRange unit="vol">I</citedRange>
+                  <citedRange unit="pp">253-54</citedRange>
                </bibl>
             </person>
          </listPerson>
