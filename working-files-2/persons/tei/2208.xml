@@ -8,13 +8,17 @@
          <titleStmt>
             <title level="a" xml:lang="en">Anonymi 9</title>
             <title level="s">The Syriac Biographical Dictionary</title>
-            <title level="s">SPEAR: Syriac Persons, Events, and Relationships</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-            <funder>The International Balzan Prize Foundation</funder>
             <funder>The National Endowment for the Humanities</funder>
             <principal>David A. Michelson</principal>
             <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
             <editor role="creator"
                     ref="http://syriaca.org/documentation/editors.xml#dschwartz">Daniel L. Schwartz</editor>
             <respStmt>
@@ -43,8 +47,44 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-20+02:00</date>
+            <date>2015-10-21+02:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">3</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
@@ -99,26 +139,30 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-20+02:00">CREATED: person</change>
+                 when="2015-10-21+02:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2208" ana="#syriaca-person">
+            <person xml:id="person-2208">
                <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Anonymi 9</persName>
                <persName xml:lang="en" source="#bib2208-2">The people of Edessa who fled the persecution of the Arians in 377</persName>
                <persName xml:lang="en" source="#bib2208-2">The people of Edessa who fled the persecution of the Arians in 377</persName>
                <idno type="URI">http://syriaca.org/person/2208</idno>
+               <floruit xml:lang="en"
+                        when="0377-09"
+                        syriaca-computed-start="0377-09-01"
+                        source="#bib2208-2">September 377</floruit>
                <bibl xml:id="bib2208-1">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp"/>
+                  <citedRange unit="pp">5</citedRange>
                </bibl>
                <bibl xml:id="bib2208-2">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section"/>
+                  <citedRange unit="section">31</citedRange>
                </bibl>
             </person>
          </listPerson>

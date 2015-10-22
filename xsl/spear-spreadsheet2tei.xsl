@@ -20,9 +20,8 @@
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
-    <!-- ??? Switch over the below to use @sourceUriColumn -->
-    <!-- ??? Add date processing -->
     <!-- ??? Add additional references -->
+    <!-- ??? The stylesheet is producing double persNames for some columns -->
     
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
@@ -45,10 +44,10 @@
                     <xsl:when test="matches(name(),'^persName[\._]')">persName</xsl:when>
                     <xsl:when test="matches(name(),'^sex[\._]')">sex</xsl:when>
                     <xsl:when test="matches(name(),'^state[\._]')">state</xsl:when>
-                    <xsl:when test="matches(name(),'^birth[\._]')">birth</xsl:when>
-                    <xsl:when test="matches(name(),'^death[\._]')">death</xsl:when>
-                    <xsl:when test="matches(name(),'^floruit[\._]')">floruit</xsl:when>
-                    <xsl:when test="matches(name(),'^citedRange[\._]')">floruit</xsl:when>
+                    <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
+                    <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
+                    <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                    <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
                     <xsl:otherwise>none</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -75,7 +74,23 @@
                     <xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_pp')"><xsl:attribute name="unit" select="'pp'"/></xsl:when>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_section')"><xsl:attribute name="unit" select="'section'"/></xsl:when>
+                        <!-- ??? The following does not yet support @target on citedRange -->
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_entry')"><xsl:attribute name="unit" select="'entry'"/></xsl:when>
                     </xsl:choose>
+                    <!-- add @when, @notBefore, @notAfter attributes to date columns -->
+                    <xsl:if test="matches(name(),'^birth\.|^death\.|^floruit\.')">
+                        <xsl:variable name="date-type">
+                            <xsl:choose>
+                                <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
+                                <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
+                                <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_when'))]"><xsl:attribute name="whenColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_when'))])"/></xsl:if>
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notBefore'))]"><xsl:attribute name="notBeforeColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notBefore'))])"/></xsl:if>
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notAfter'))]"><xsl:attribute name="notAfterColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notAfter'))])"/></xsl:if>
+                    </xsl:if>
+                    
                     <xsl:attribute name="column" select="name()"/>
                     <!-- add syriaca-headword -->
                     <xsl:choose>
@@ -83,16 +98,15 @@
                     </xsl:choose>
                     <!-- add sourceUriColumn -->
                     <xsl:choose>
-                        <xsl:when test="matches(name(),'\.Source_[0-9]*[\.$]')">
+                        <xsl:when test="matches(name(),'\.Source_[0-9]*')">
                             <xsl:variable name="tokenized-column-name" select="tokenize(name(),'\.')"/>
                             <xsl:variable name="source-name">
                                 <xsl:for-each select="$tokenized-column-name">
                                     <xsl:if test="matches(.,'^Source_[0-9]*')"><xsl:value-of select="."/></xsl:if>
                                 </xsl:for-each>
                             </xsl:variable>
-                            <xsl:variable name="column-prefix" select="substring-before(name(),'Source_1')"/>
-                            <xsl:variable name="column-suffix" select="substring-after(name(),'Source_1')"/>
-                            <!-- removes column prefix and suffix, leaving only the "Source 1" and so on -->
+                            <!--<xsl:variable name="column-prefix" select="substring-before(name(),'Source_1')"/>
+                            <xsl:variable name="column-suffix" select="substring-after(name(),'Source_1')"/>-->
                             <xsl:attribute name="sourceUriColumn" select="$source-name"/>
                         </xsl:when>
                     </xsl:choose>
@@ -104,7 +118,7 @@
         <persName xml:lang="en" source="http://syriaca.org/bibl/foo1" syriaca-tags="#syriaca-headword" column="Name_in_Index"/>
         <note xml:lang="en" type="abstract" column="Additional_Info"/>
         <!-- column mapping from spear-chronicle.xml -->
-        <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
+        <!--<persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" column="Canonical_Name"/>
         <persName xml:lang="syr" sourceUriColumn="Source_1" syriaca-tags="#syriaca-headword" column="Syriac_Canonical"/>
         <persName xml:lang="syr" sourceUriColumn="Source_1" column="Name_Variant_1_SYR"/>
         <persName xml:lang="en" sourceUriColumn="Source_2" column="Name_Variant_1"/>
@@ -112,7 +126,7 @@
         <sex xml:lang="en" sourceUriColumn="Source_2" column="Sex"/>
         <state xml:lang="en" type="role" sourceUriColumn="Source_2" column="Office"/>
         <citedRange unit="pp" sourceUriColumn="Source_1" column="page"/>
-        <citedRange unit="section" sourceUriColumn="Source_2" column="Section"/>
+        <citedRange unit="section" sourceUriColumn="Source_2" column="Section"/>-->
     </xsl:variable>
     
     <!-- ??? The following is an example of how the bibl info could be grabbed automatically -->
@@ -170,6 +184,25 @@
     <!-- !!! Change this to where you want the files to be placed relative to this stylesheet. 
         This should end with a trailing slash (/).-->
     <xsl:variable name="directory">../../working-files-2/persons/tei/</xsl:variable>
+    
+    <!-- CUSTOM FUNCTIONS -->
+    <!-- date processing by Winona Salesky -->
+    <xsl:function name="syriaca:custom-dates" as="xs:date">
+        <xsl:param name="date" as="xs:string"/>
+        <xsl:variable name="trim-date" select="normalize-space($date)"/>
+        <xsl:choose>
+            <xsl:when test="starts-with($trim-date,'0000') and string-length($trim-date) eq 4"><xsl:text>0001-01-01</xsl:text></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 4"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 5"><xsl:value-of select="concat($trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 7"><xsl:value-of select="concat($trim-date,'-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 3"><xsl:value-of select="concat('0',$trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 2"><xsl:value-of select="concat('00',$trim-date,'-01-01')"/></xsl:when>
+            <xsl:when test="string-length($trim-date) eq 1"><xsl:value-of select="concat('000',$trim-date,'-01-01')"/></xsl:when>
+            <xsl:otherwise><xsl:value-of select="$trim-date"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
     
     <!-- this is the main template that processes each row of the spreadsheet -->
     <xsl:template match="/root">
@@ -248,6 +281,15 @@
                                 <!-- gives the person URI as an idno -->
                                 <xsl:if test="New_URI != ''"><idno type="URI"><xsl:value-of select="concat('http://syriaca.org/person/',New_URI)"></xsl:value-of></idno></xsl:if>
                                                    
+                                <!-- gets the birth columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/birth" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
+                                <!-- gets the death columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/death" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
+                                <!-- gets the floruit columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/floruit" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                
                                 <!-- gets the state columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/state" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                 
@@ -380,7 +422,7 @@
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ef="http://syriaca.org/documentation/editors.xml#tcarlson"
+                            ref="http://syriaca.org/documentation/editors.xml#tcarlson"
                             >Thomas A. Carlson</name>
                     </respStmt>
                     <respStmt>
@@ -469,12 +511,27 @@
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
             <xsl:for-each select="$column-mapping/*">
-                <xsl:variable name="source-uri-column" select="@sourceUriColumn"/>
-                <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$source-uri-column])"/>
+                <xsl:variable name="this-column" select="."/>
+                <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$this-column/@sourceUriColumn])"/>
+                <xsl:variable name="when" select="$columns-to-convert[name()=$this-column/@whenColumn]"/>
+                <xsl:variable name="not-before" select="$columns-to-convert[name()=$this-column/@notBeforeColumn]"/>
+                <xsl:variable name="not-after" select="$columns-to-convert[name()=$this-column/@notAfterColumn]"/>
                 <xsl:if test="@column=$column-name">
                     <xsl:element name="{name()}">
                         <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                         <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
+                        <xsl:if test="$when!=''">
+                            <xsl:attribute name="when" select="$when"/>
+                            <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($when)"/>
+                        </xsl:if>
+                        <xsl:if test="$not-before!=''">
+                            <xsl:attribute name="notBefore" select="$not-before"/>
+                            <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($not-before)"/>
+                        </xsl:if>
+                        <xsl:if test="$not-after!=''">
+                            <xsl:attribute name="notAfter" select="$not-after"/>
+                            <xsl:attribute name="syriaca-computed-end" select="syriaca:custom-dates($not-after)"/>
+                        </xsl:if>
                         <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
                         <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                     <xsl:choose>
