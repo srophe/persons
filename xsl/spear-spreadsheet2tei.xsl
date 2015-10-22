@@ -20,9 +20,6 @@
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
-    <!-- ??? Add additional references -->
-    <!-- ??? The stylesheet is producing double persNames for some columns -->
-    
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
@@ -48,6 +45,7 @@
                     <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
                     <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
                     <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
+                    <xsl:when test="matches(name(),'^idno[\._]')">idno</xsl:when>
                     <xsl:otherwise>none</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -65,17 +63,20 @@
                         <xsl:when test="matches(name(),'\.de$')"><xsl:attribute name="xml:lang" select="'de'"/></xsl:when>
                         <xsl:when test="matches(name(),'\.la$')"><xsl:attribute name="xml:lang" select="'la'"/></xsl:when>
                     </xsl:choose>
+                    <!-- add @type -->
                     <xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_office')"><xsl:attribute name="type" select="'office'"/></xsl:when>
+                        <xsl:when test="starts-with(name(),'idno_')"><xsl:attribute name="type" select="substring-after(name(),'idno_')"/></xsl:when>
                     </xsl:choose>
                     <xsl:attribute name="column" select="name()"/>
                     <!-- add unit -->
-                    <xsl:choose>
+                    <xsl:if test="starts-with(name(),'citedRange_')"><xsl:attribute name="unit" select="replace(replace(name(),'citedRange_',''),'\..*$','')"/></xsl:if>
+                    <!--<xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_pp')"><xsl:attribute name="unit" select="'pp'"/></xsl:when>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_section')"><xsl:attribute name="unit" select="'section'"/></xsl:when>
-                        <!-- ??? The following does not yet support @target on citedRange -->
+                        <!-\- ??? The following does not yet support @target on citedRange -\->
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_entry')"><xsl:attribute name="unit" select="'entry'"/></xsl:when>
-                    </xsl:choose>
+                    </xsl:choose>-->
                     <!-- add @when, @notBefore, @notAfter attributes to date columns -->
                     <xsl:if test="matches(name(),'^birth\.|^death\.|^floruit\.')">
                         <xsl:variable name="date-type">
@@ -109,6 +110,7 @@
                             <xsl:attribute name="sourceUriColumn" select="$source-name"/>
                         </xsl:when>
                     </xsl:choose>
+                    <xsl:attribute name="column" select="position()"/>
                 </xsl:element>
             </xsl:if>
         </xsl:for-each>
@@ -220,13 +222,14 @@
             <xsl:variable name="record-bibls">
                 <xsl:call-template name="bibls">
                     <xsl:with-param name="record-id" select="$record-id"/>
-                    <xsl:with-param name="this-row" select="*[.!='']"/>
+                    <xsl:with-param name="this-row" select="*"/>
                 </xsl:call-template>
             </xsl:variable>
             
             <!-- uses the $column-mapping variable to convert spreadsheet columns into correct format -->
             <xsl:variable name="converted-columns">
                 <xsl:call-template name="column-mapping">
+                    <xsl:with-param name="columns-to-convert" select="*"/>
                     <xsl:with-param name="record-bibls" select="$record-bibls"/>
                 </xsl:call-template>
             </xsl:variable>            
@@ -277,6 +280,8 @@
                                 
                                 <!-- gives the person URI as an idno -->
                                 <xsl:if test="New_URI != ''"><idno type="URI"><xsl:value-of select="concat('http://syriaca.org/person/',New_URI)"></xsl:value-of></idno></xsl:if>
+                                <!-- gets any additional idno columns that have been converted from the spreadsheet in the $converted-columns variable -->
+                                <xsl:copy-of select="$converted-columns/idno" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                                    
                                 <!-- gets the birth columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/birth" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
@@ -506,10 +511,58 @@
         <xsl:param name="record-bibls"/>
         <xsl:for-each select="$columns-to-convert">
             <xsl:variable name="column-name" select="name()"/>
+            <xsl:variable name="column-position" select="position()"/>
+            <xsl:if test=".!=''">
+                <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
+                <xsl:for-each select="$column-mapping/*">
+                    <xsl:variable name="this-column" select="."/>
+                    <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$this-column/@sourceUriColumn])"/>
+                    <xsl:variable name="when" select="$columns-to-convert[name()=$this-column/@whenColumn]"/>
+                    <xsl:variable name="not-before" select="$columns-to-convert[name()=$this-column/@notBeforeColumn]"/>
+                    <xsl:variable name="not-after" select="$columns-to-convert[name()=$this-column/@notAfterColumn]"/>
+                    <!-- the column mapping can use either the name of the spreadsheet column (defined manually; unique column names required), 
+                        or the position of the column in the spreadsheet (the default for auto column mapping) -->
+                    <xsl:if test="string(@column)=string($column-name) or string(@column)=string($column-position)">
+                        <xsl:element name="{name()}">
+                            <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
+                            <xsl:if test="@type!=''"><xsl:attribute name="type" select="@type"/></xsl:if>
+                            <xsl:if test="$when!=''">
+                                <xsl:attribute name="when" select="$when"/>
+                                <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($when)"/>
+                            </xsl:if>
+                            <xsl:if test="$not-before!=''">
+                                <xsl:attribute name="notBefore" select="$not-before"/>
+                                <xsl:attribute name="syriaca-computed-start" select="syriaca:custom-dates($not-before)"/>
+                            </xsl:if>
+                            <xsl:if test="$not-after!=''">
+                                <xsl:attribute name="notAfter" select="$not-after"/>
+                                <xsl:attribute name="syriaca-computed-end" select="syriaca:custom-dates($not-after)"/>
+                            </xsl:if>
+                            <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
+                            <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
+                        <xsl:choose>
+                            <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
+                            <xsl:when test="name()='state'">
+                                <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
+                            </xsl:when>
+                            <xsl:when test="name()='sex'">
+                                <xsl:attribute name="value" select="$column-contents"/>
+                                <xsl:choose>
+                                    <xsl:when test="$column-contents='M'">male</xsl:when>
+                                    <xsl:when test="$column-contents='F'">female</xsl:when>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise><xsl:value-of select="$column-contents"/></xsl:otherwise>
+                        </xsl:choose>
+                        </xsl:element>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     
     <!-- creates bibl elements -->
+    <!-- ??? This is currently creating all the bibl elements, even if they don't have a cited range value -->
     <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="this-row"/>
@@ -517,22 +570,33 @@
         <xsl:for-each select="$sources">
             <xsl:variable name="source-uri-column" select="."/>
             <xsl:for-each select="$this-row">
-                <xsl:variable name="this-column" select="name()"/>
-                <!-- gets the citedRange from $column-mapping that names this column as its @sourceUriColumn -->
-                <xsl:variable name="this-cited-range" select="$column-mapping/citedRange[@sourceUriColumn=$this-column]"/>
-                <xsl:if test="name()=$source-uri-column">
-                    <xsl:variable name="bibl-url" select="concat('http://syriaca.org/bibl/',.,'/tei')"></xsl:variable>
-                    <bibl>
-                        <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',index-of($sources,$source-uri-column))"/>
-                        <!-- ??? What info do we want to include here - just the title or more? The title of the TEI doc or the title of the described bibl? -->
-                        <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
-                        <ptr target="{concat('http://syriaca.org/bibl/',.)}"/>
-                        <!-- adds citedRange to bibl -->
-                        <xsl:element name="citedRange">
-                            <xsl:attribute name="unit" select="$this-cited-range/@unit"/>
-                            <xsl:value-of select="$this-row[name()=$this-cited-range/@column]"/>
-                        </xsl:element>
-                    </bibl>
+                <xsl:variable name="this-column-position" select="position()"/>
+                <xsl:if test=".!=''">
+                    <xsl:variable name="this-column" select="name()"/>
+                    <!-- does this column match the source column (boolean) -->
+                    <xsl:variable name="is-matching-source-column" select="name()=$source-uri-column"/>
+                    <!-- gets the citedRange from $column-mapping that names this column as its @sourceUriColumn -->
+                    <xsl:variable name="cited-ranges" select="$column-mapping/citedRange[@sourceUriColumn=$this-column]"/>
+                    <!-- is there cited range data for this source column (boolean) -->
+                    <xsl:variable name="has-cited-ranges" select="$this-row[name()=$cited-ranges/@column or position()=$cited-ranges/@column]!=''"/>
+                    <!-- produces bibl only if this is the matching source column and has data in corresponding cited range columns -->
+                    <xsl:if test="$is-matching-source-column and $has-cited-ranges">
+                        <xsl:variable name="bibl-url" select="concat('http://syriaca.org/bibl/',.,'/tei')"></xsl:variable>
+                        <bibl>
+                            <xsl:attribute name="xml:id" select="concat('bib',$record-id,'-',index-of($sources,$source-uri-column))"/>
+                            <!-- ??? What info do we want to include here - just the title or more? The title of the TEI doc or the title of the described bibl? -->
+                            <xsl:copy-of select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                            <ptr target="{concat('http://syriaca.org/bibl/',.)}"/>
+                            <!-- adds citedRange(s) to bibl -->
+                            <xsl:for-each select="$cited-ranges">
+                                <xsl:variable name="this-cited-range" select="."/>
+                                <xsl:element name="citedRange">
+                                    <xsl:attribute name="unit" select="$this-cited-range/@unit"/>
+                                    <xsl:value-of select="$this-row[name()=$this-cited-range/@column or position()=$this-cited-range/@column]"/>
+                                </xsl:element>
+                            </xsl:for-each>
+                        </bibl>
+                    </xsl:if>
                 </xsl:if>
             </xsl:for-each>
         </xsl:for-each>
