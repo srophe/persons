@@ -678,7 +678,7 @@
                     </respStmt><respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ef="http://syriaca.org/documentation/editors.xml#tcarlson"
+                            ref="http://syriaca.org/documentation/editors.xml#tcarlson"
                             >Thomas A. Carlson</name>
                     </respStmt>
                     <respStmt>
