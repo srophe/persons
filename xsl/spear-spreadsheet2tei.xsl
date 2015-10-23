@@ -20,6 +20,9 @@
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
+    <!-- ??? Still need to deal with person types -->
+    <!-- ??? Check whether possibly-identical relationships are working now. -->
+    
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
@@ -46,6 +49,7 @@
                     <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
                     <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
                     <xsl:when test="matches(name(),'^idno[\._]')">idno</xsl:when>
+                    <xsl:when test="matches(name(),'^relation[\._]')">relation</xsl:when>
                     <xsl:otherwise>none</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -86,9 +90,21 @@
                                 <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
                             </xsl:choose>
                         </xsl:variable>
-                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_when'))]"><xsl:attribute name="whenColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_when'))])"/></xsl:if>
-                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notBefore'))]"><xsl:attribute name="notBeforeColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notBefore'))])"/></xsl:if>
-                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notAfter'))]"><xsl:attribute name="notAfterColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notAfter'))])"/></xsl:if>
+                        <xsl:variable name="date-source">
+                            <xsl:analyze-string select="name()" regex="Source_[0-9]+">
+                                <xsl:matching-substring><xsl:value-of select="."/></xsl:matching-substring>
+                            </xsl:analyze-string>
+                        </xsl:variable>
+                        <!-- ??? The following regex will run into problems if there are more than 10 sources! (E.g., 'Source_1' will also match 'Source_11') -->
+                        <!-- ??? This could be made more efficient with variables -->
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))]"><xsl:attribute name="whenColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))])"/></xsl:if>
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))]"><xsl:attribute name="notBeforeColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))])"/></xsl:if>
+                        <xsl:if test="/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))]"><xsl:attribute name="notAfterColumn" select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))])"/></xsl:if>
+                    </xsl:if>
+                    
+                    <!-- add relation name -->
+                    <xsl:if test="matches(name(),'^relation_[a-zA-Z\-]+')">
+                        <xsl:attribute name="relation" select="replace(replace(name(),'relation_',''),'\..*$','')"/>
                     </xsl:if>
                     
                     <xsl:attribute name="column" select="name()"/>
@@ -97,6 +113,7 @@
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_syriaca-headword')"><xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/></xsl:when>
                     </xsl:choose>
                     <!-- add sourceUriColumn -->
+                    <!-- ??? This could be consolidated with the $date-source variable above. -->
                     <xsl:choose>
                         <xsl:when test="matches(name(),'\.Source_[0-9]*')">
                             <xsl:variable name="tokenized-column-name" select="tokenize(name(),'\.')"/>
@@ -538,11 +555,13 @@
                                 <xsl:attribute name="notAfter" select="$not-after"/>
                                 <xsl:attribute name="syriaca-computed-end" select="syriaca:custom-dates($not-after)"/>
                             </xsl:if>
+                            <xsl:if test="@name!=''"><xsl:attribute name="name" select="@name"/></xsl:if>
                             <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
                             <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                         <xsl:choose>
                             <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
-                            <xsl:when test="name()='state'">
+                            <xsl:when test="name()='state' or name()='relation'">
+                                <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                                 <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
                             </xsl:when>
                             <xsl:when test="name()='sex'">
