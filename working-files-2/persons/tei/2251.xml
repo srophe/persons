@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Abgar VIII</title>
+            <title level="a" xml:lang="en">Qurā I</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -41,7 +41,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2201/tei</idno>
+            <idno type="URI">http://syriaca.org/person/2251/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -145,30 +145,40 @@
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2201">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Abgar VIII</persName>
-               <persName xml:lang="syr" source="#bib2201-3">ܐܒܓܪ</persName>
-               <persName xml:lang="en" source="#bib2201-4">Abgar the king</persName>
-               <idno type="URI">http://syriaca.org/person/2201</idno>
-               <idno type="temporary">/AbgarVIII</idno>
-               <idno type="URI">https://en.wikipedia.org/wiki/Abgar_VIII</idno>
-               <floruit xml:lang="en"
-                        when="0201-11"
-                        syriaca-computed-start="0201-11-01"
-                        source="#bib2201-4">November 201</floruit>
-               <state xml:lang="en" type="office" source="#bib2201-4">
-                  <desc>King of Edessa</desc>
+            <person xml:id="person-2251">
+               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Qurā I</persName>
+               <persName xml:lang="syr" source="#bib2251-1">ܩܘܪܐ</persName>
+               <persName xml:lang="en" source="#bib2251-2">Mar Cyrus</persName>
+               <idno type="URI">http://syriaca.org/person/2251</idno>
+               <idno type="temporary">/CyrusI</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Cyrus_I_of_Edessa</idno>
+               <death xml:lang="en"
+                      when="0396-07"
+                      syriaca-computed-start="0396-07-01"
+                      source="#bib2251-4">July 396</death>
+               <state xml:lang="en" type="office" source="#bib2251-2">
+                  <desc>Bishop of Edessa</desc>
                </state>
-               <sex xml:lang="en" source="#bib2201-4" value="M">male</sex>
-               <bibl xml:id="bib2201-3">
+               <sex xml:lang="en" source="#bib2251-2" value="M">male</sex>
+               <bibl xml:id="bib2251-1">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">1</citedRange>
+                  <citedRange unit="pp">5</citedRange>
                </bibl>
-               <bibl xml:id="bib2201-4">
+               <bibl xml:id="bib2251-2">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">8</citedRange>
+                  <citedRange unit="section">38</citedRange>
+               </bibl>
+               <bibl xml:id="bib2251-3">
+                  <title xml:lang="la">Chronica Minora</title>
+                  <ptr target="http://syriaca.org/bibl/633"/>
+                  <citedRange unit="pp">6</citedRange>
+               </bibl>
+               <bibl xml:id="bib2251-4">
+                  <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
+                  <ptr target="http://syriaca.org/bibl/657"/>
+                  <citedRange unit="section">41</citedRange>
                </bibl>
             </person>
          </listPerson>

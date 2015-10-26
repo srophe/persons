@@ -20,9 +20,6 @@
     </xsl:variable>
     <xsl:variable name="s"><xsl:text> </xsl:text></xsl:variable>
     
-    <!-- ??? Still need to deal with person types -->
-    <!-- ??? Check whether possibly-identical relationships are working now. -->
-    
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
             1. change the contents of the $column-mapping variable below,
@@ -31,6 +28,8 @@
             4. add to the column-mapping and bibls TEMPLATES any attributes that we haven't used before. 
             NB: * Each column in the spreadsheet must contain data from only one source.
                 * The spreadsheet must contain a column named "New_URI". This column should not be "mapped" below; it is hard-coded into the stylesheet.
+                * A person_ana column is also hard-coded into the stylesheet, but is not required. The values in this column determine what (if anything) goes into the person/@ana attribute,
+                and which series statements are used.
                 * Spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
                 * Each record should have at least one column marked with syriaca-tags="#syriaca-headword", otherwise it will be placed into the "incomplete" folder.
                 * It's fine to map multiple spreadsheets below, as long as they don't contain columns with the same names but different attributes (e.g., @source or @xml:lang). 
@@ -104,7 +103,7 @@
                     
                     <!-- add relation name -->
                     <xsl:if test="matches(name(),'^relation_[a-zA-Z\-]+')">
-                        <xsl:attribute name="relation" select="replace(replace(name(),'relation_',''),'\..*$','')"/>
+                        <xsl:attribute name="name" select="replace(replace(name(),'relation_',''),'\..*$','')"/>
                     </xsl:if>
                     
                     <xsl:attribute name="column" select="name()"/>
@@ -235,6 +234,8 @@
                 </xsl:choose>
             </xsl:variable>
             
+            <xsl:variable name="record-uri" select="concat('http://syriaca.org/person/',New_URI)"/>
+            
             <!-- creates bibls using the $all-sources variable the citedRange for this particular row -->
             <xsl:variable name="record-bibls">
                 <xsl:call-template name="bibls">
@@ -248,6 +249,7 @@
                 <xsl:call-template name="column-mapping">
                     <xsl:with-param name="columns-to-convert" select="*"/>
                     <xsl:with-param name="record-bibls" select="$record-bibls"/>
+                    <xsl:with-param name="record-uri" select="$record-uri"/>
                 </xsl:call-template>
             </xsl:variable>            
             
@@ -284,6 +286,7 @@
                         <listPerson>
                             <person>
                                 <xsl:attribute name="xml:id" select="concat('person-', $record-id)"/>
+                                <xsl:if test="person_ana!=''"><xsl:attribute name="ana" select="person_ana"/></xsl:if>
                                 <!-- DEAL WITH PERSON NAMES -->
                                 <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                 <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
@@ -296,7 +299,7 @@
                                 <xsl:copy-of select="$converted-columns/note" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                 
                                 <!-- gives the person URI as an idno -->
-                                <xsl:if test="New_URI != ''"><idno type="URI"><xsl:value-of select="concat('http://syriaca.org/person/',New_URI)"></xsl:value-of></idno></xsl:if>
+                                <xsl:if test="New_URI != ''"><idno type="URI"><xsl:value-of select="$record-uri"></xsl:value-of></idno></xsl:if>
                                 <!-- gets any additional idno columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/idno" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                                    
@@ -317,8 +320,12 @@
                              
                                 <!-- inserts bibl elements -->
                                 <xsl:copy-of select="$record-bibls/bibl" xpath-default-namespace="http://www.tei-c.org/ns/1.0" copy-namespaces="no"/>
-                                                    
+                                                                                   
                             </person>
+                            
+                            <!-- inserts relation elements -->
+                            <xsl:copy-of select="$converted-columns/relation" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                            
                         </listPerson>
                     </body>
                 </text>
@@ -353,11 +360,14 @@
             <xsl:value-of select="$english-headword"/>
             <xsl:if test="string-length($syriac-headword)"> — <foreign xml:lang="syr"><xsl:value-of select="$syriac-headword"/></foreign></xsl:if>
         </xsl:variable>
+        <xsl:variable name="is-saint" select="contains(person_ana,'#syriaca-saint')"/>
+        <xsl:variable name="is-author" select="contains(person_ana,'#syriaca-author')"></xsl:variable>
         <teiHeader>
             <fileDesc>
                 <titleStmt>
                     <title level="a" xml:lang="en"><xsl:copy-of select="$record-title"/></title>
-                    <!-- ??? Make sure to add the series title and series statements for persons who are also saints or authors. Also, change SBD vol. number (biblScope) in series statement if author or saint. -->
+                    <xsl:if test="$is-saint"><title level="s">Gateway to the Syriac Saints</title></xsl:if>
+                    <xsl:if test="$is-author"><title level="s">A Guide to Syriac Authors</title></xsl:if>
                     <title level="s">The Syriac Biographical Dictionary</title>
                     <!-- ??? Add title for saints or authors -->
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -421,6 +431,100 @@
                         <xsl:value-of select="current-date()"/>
                     </date>
                 </publicationStmt>
+                <xsl:if test="$is-saint">
+                    <seriesStmt>
+                        <title level="s">Gateway to the Syriac Saints</title>
+                        <editor role="general"
+                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            >Jeanne-Nicole Mellon Saint-Laurent</editor>
+                        <editor role="general"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</editor>
+                        <respStmt>
+                            <resp>Edited by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                                >Jeanne-Nicole Mellon Saint-Laurent</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Edited by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                                Michelson</name>
+                        </respStmt>
+                        <biblScope unit="vol">2</biblScope>
+                        <idno type="URI">http://syriaca.org/q</idno>
+                    </seriesStmt>
+                </xsl:if>
+                <xsl:if test="$is-author">
+                    <seriesStmt>
+                        <title level="s">A Guide to Syriac Authors</title>
+                        <editor role="general"
+                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                        <editor role="general"
+                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</editor>
+                        <editor role="general"
+                            ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                        <respStmt>
+                            <resp>Edited by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                                >Jeanne-Nicole Mellon Saint-Laurent</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Edited by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                                Michelson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Editing, document design, proofreading, data entry by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P. Gibson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>GEDSH and Barsoum English name entry, matching with viaf.org records by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#jwalters">James E. Walters</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Editing, disambiguation research, conversion to XML by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Syriac name entry by</resp>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#raydin">Robert Aydin</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Arabic name entry by</resp>
+                            <name type="person" ref="http://syriaca.org/documentation/editors.xml#jkaado">Jad Kaado</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Normalization of GEDSH dates and entry matching with viaf.org records by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#avawter">Alex Vawter</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by</resp>
+                            <name type="person"
+                                ref="http://syriaca.org/documentation/editors.xml#cjohnson">Christopher Johnson</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>GEDSH and Barsoum English text entry and proofreading by</resp>
+                            <name type="org"
+                                ref="http://syriaca.org/documentation/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
+                        </respStmt>
+                        <!-- ??? No vol. # needed, right? -->
+                        <!-- ??? What is the correct URI? -->
+                        <idno type="URI">http://syriaca.org/authors</idno>
+                    </seriesStmt>
+                </xsl:if>
                 <seriesStmt>
                     <title level="s">The Syriac Biographical Dictionary</title>
                     <editor role="general"
@@ -455,7 +559,12 @@
                         <name type="person"
                             ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
-                    <biblScope unit="vol">3</biblScope>
+                    <xsl:choose>
+                        <xsl:when test="$is-saint and $is-author"><biblScope unit="vol">1, 2</biblScope></xsl:when>
+                        <xsl:when test="$is-author"><biblScope unit="vol">1</biblScope></xsl:when>
+                        <xsl:when test="$is-saint"><biblScope unit="vol">2</biblScope></xsl:when>
+                        <xsl:otherwise><biblScope unit="vol">3</biblScope></xsl:otherwise>
+                    </xsl:choose>
                     <idno type="URI">http://syriaca.org/persons</idno>
                 </seriesStmt>
                 <sourceDesc>
@@ -526,6 +635,7 @@
     <xsl:template name="column-mapping" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="columns-to-convert"/>
         <xsl:param name="record-bibls"/>
+        <xsl:param name="record-uri"/>
         <xsl:for-each select="$columns-to-convert">
             <xsl:variable name="column-name" select="name()"/>
             <xsl:variable name="column-position" select="position()"/>
@@ -533,7 +643,10 @@
                 <xsl:variable name="column-contents"><xsl:value-of select="."/></xsl:variable>
                 <xsl:for-each select="$column-mapping/*">
                     <xsl:variable name="this-column" select="."/>
-                    <xsl:variable name="column-source" select="concat('http://syriaca.org/bibl/',$columns-to-convert[name()=$this-column/@sourceUriColumn])"/>
+                    <xsl:variable name="this-column-source" select="$columns-to-convert[name()=$this-column/@sourceUriColumn]"/>
+                    <xsl:variable name="column-uri" select="concat('http://syriaca.org/bibl/',$this-column-source)"/>
+                    <xsl:variable name="cited-range" select="$column-mapping/citedRange[@sourceUriColumn=name($this-column-source)]/@column"/>
+                    <xsl:variable name="cited-range-contents" select="$columns-to-convert[position()=$cited-range or name()=$cited-range]"/>
                     <xsl:variable name="when" select="$columns-to-convert[name()=$this-column/@whenColumn]"/>
                     <xsl:variable name="not-before" select="$columns-to-convert[name()=$this-column/@notBeforeColumn]"/>
                     <xsl:variable name="not-after" select="$columns-to-convert[name()=$this-column/@notAfterColumn]"/>
@@ -556,13 +669,34 @@
                                 <xsl:attribute name="syriaca-computed-end" select="syriaca:custom-dates($not-after)"/>
                             </xsl:if>
                             <xsl:if test="@name!=''"><xsl:attribute name="name" select="@name"/></xsl:if>
-                            <xsl:if test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-source]/@xml:id)"/></xsl:if>
+                            <!-- adds the source column by matching the @sourceUriColumn (and corresponding citedRange, where present) to the available bibl ptr elements.  -->
+                            <xsl:choose>
+                                <xsl:when test="@sourceUriColumn!='' and $cited-range-contents!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-uri and tei:citedRange=$cited-range-contents][1]/@xml:id)"/></xsl:when>
+                                <xsl:when test="@sourceUriColumn!=''"><xsl:attribute name="source" select="concat('#',$record-bibls/*[tei:ptr/@target=$column-uri][1]/@xml:id)"/></xsl:when>
+                            </xsl:choose>
                             <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                         <xsl:choose>
                             <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
-                            <xsl:when test="name()='state' or name()='relation'">
+                            <xsl:when test="name()='state'">
                                 <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                                 <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
+                            </xsl:when>
+                            <xsl:when test="name()='relation'">
+                                <!-- allows multiple comma-separated relation uris -->
+                                <xsl:variable name="tokenized-relation-uris">
+                                    <xsl:for-each select="tokenize($column-contents,',')">
+                                        <!-- makes a partial URI into a full URI -->
+                                        <xsl:if test="not(contains(.,'http'))">http://syriaca.org/person/</xsl:if>
+                                        <xsl:value-of select="concat(.,' ')"/>
+                                    </xsl:for-each>
+                                </xsl:variable>
+                                <xsl:choose>
+                                    <!-- !!! Define more relation types here if you want -->
+                                    <xsl:when test="@name='possibly-identical'">
+                                        <xsl:attribute name="mutual" select="concat($record-uri,' ',normalize-space($tokenized-relation-uris))"/>
+                                        <desc xml:lang="en">This person is possibly identical with the person represented in another record</desc>
+                                    </xsl:when>
+                                </xsl:choose>
                             </xsl:when>
                             <xsl:when test="name()='sex'">
                                 <xsl:attribute name="value" select="$column-contents"/>
