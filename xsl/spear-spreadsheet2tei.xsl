@@ -630,6 +630,7 @@
     
     <!-- converts spreadsheet columns using $column-mapping variable above -->
     <!-- ??? This template does not yet try to reconcile identical elements coming from different sources -->
+    <!-- ??? This is producing extra spaces on some Syriac names, e.g., person/2246 -->
     <xsl:template name="column-mapping" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="columns-to-convert"/>
         <xsl:param name="record-bibls"/>

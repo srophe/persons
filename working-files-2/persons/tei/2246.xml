@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Commodus</title>
+            <title level="a" xml:lang="en">Commodos</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +47,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-26+01:00</date>
+            <date>2015-10-27+01:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -139,14 +139,14 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-10-26+01:00">CREATED: person</change>
+                 when="2015-10-27+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
             <person xml:id="person-2246">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Commodus</persName>
+               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Commodos</persName>
                <idno type="URI">http://syriaca.org/person/2246</idno>
                <idno type="temporary">/Commodus</idno>
                <idno type="URI">https://en.wikipedia.org/?title=Commodus</idno>
@@ -155,8 +155,18 @@
                         syriaca-computed-start="0165-01-01"
                         notAfter="0166"
                         syriaca-computed-end="0166-01-01"
-                        source="#">165/6</floruit>
-               <sex xml:lang="en" source="#" value="M">male</sex>
+                        source="#bib2246-4">165/6</floruit>
+               <sex xml:lang="en" source="#bib2246-4" value="M">male</sex>
+               <bibl xml:id="bib2246-3">
+                  <title xml:lang="la">Chronica Minora</title>
+                  <ptr target="http://syriaca.org/bibl/633"/>
+                  <citedRange unit="pp">3</citedRange>
+               </bibl>
+               <bibl xml:id="bib2246-4">
+                  <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
+                  <ptr target="http://syriaca.org/bibl/657"/>
+                  <citedRange unit="section">7</citedRange>
+               </bibl>
             </person>
          </listPerson>
       </body>
