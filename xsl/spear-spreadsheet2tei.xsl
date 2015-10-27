@@ -369,7 +369,6 @@
                     <xsl:if test="$is-saint"><title level="s">Gateway to the Syriac Saints</title></xsl:if>
                     <xsl:if test="$is-author"><title level="s">A Guide to Syriac Authors</title></xsl:if>
                     <title level="s">The Syriac Biographical Dictionary</title>
-                    <!-- ??? Add title for saints or authors -->
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
@@ -604,7 +603,6 @@
                             <catDesc>A person who is relevant to the Bibliotheca Hagiographica
                                 Syriaca.</catDesc>
                         </category>
-                        <!-- ??? syriaca-person? -->
                     </taxonomy>
                 </classDecl>
             </encodingDesc>
@@ -676,7 +674,6 @@
                             </xsl:choose>
                             <xsl:if test="@syriaca-tags!=''"><xsl:attribute name="syriaca-tags" select="@syriaca-tags"/></xsl:if>
                         <xsl:choose>
-                            <!-- ??? Syriac names have extra spaces in them. Can't seem to get normalize-space() to do the trick.-->
                             <xsl:when test="name()='state'">
                                 <xsl:if test="@xml:lang!=''"><xsl:attribute name="xml:lang" select="@xml:lang"/></xsl:if>
                                 <xsl:element name="desc"><xsl:value-of select="$column-contents"/></xsl:element>
@@ -715,7 +712,7 @@
     </xsl:template>
     
     <!-- creates bibl elements -->
-    <!-- ??? This is currently creating all the bibl elements, even if they don't have a cited range value -->
+    <!-- ??? bibl-ids are not consecutive when not all sources are used -->
     <xsl:template name="bibls" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="record-id"/>
         <xsl:param name="this-row"/>
