@@ -291,7 +291,6 @@
                                 <xsl:variable name="this-row" select="."/>    <!-- Used to permit reference to the current row within nested for-each statements -->
                                 <xsl:variable name="name-prefix">name<xsl:value-of select="$record-id"/>-</xsl:variable>
                                 
-                                <!-- ??? Need persName xml:ids? -->
                                 <!-- gets the persName columns that have been converted from the spreadsheet in the $converted-columns variable -->
                                 <xsl:copy-of select="$converted-columns/persName" xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                 
@@ -519,7 +518,6 @@
                             <name type="org"
                                 ref="http://syriaca.org/documentation/editors.xml#uasyriacresearchgroup">the Syriac Research Group, University of Alabama</name>
                         </respStmt>
-                        <!-- ??? No vol. # needed, right? -->
                         <!-- ??? What is the correct URI? -->
                         <idno type="URI">http://syriaca.org/authors</idno>
                     </seriesStmt>
