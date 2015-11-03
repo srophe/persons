@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Yuḥanān bar Penkoyē — <foreign xml:lang="syr">ܝܘܚܢܢ ܒܪ ܦܢܟ̈ܝܐ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The International Balzan Prize Foundation</funder>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>David A. Michelson</principal>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="creator"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Data architecture and encoding by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing and Syriac data proofreading by</resp>
+               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+            </respStmt>
+            <respStmt>
+               <resp>Entries adapted from the work of</resp>
+               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/person/821/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-11-02-05:00</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
+         <seriesStmt>
+            <title level="s">The Syriac Biographical Dictionary</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                        Michelson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                        Gibson</editor>
+            <editor role="associate"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                            Gibson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <biblScope unit="vol">2</biblScope>
+            <idno type="URI">http://syriaca.org/persons</idno>
+         </seriesStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the Syriaca.org guidelines.
+                        Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
+            <interpretation>
+               <p>Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in
+                            <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
+            </interpretation>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-headword">
+                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                                disambiguation. These names have been created according to the
+                                Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
+               </category>
+               <category xml:id="syriaca-anglicized">
+                  <catDesc>An anglicized version of a name, included to facilitate
+                                searching.</catDesc>
+               </category>
+            </taxonomy>
+            <taxonomy>
+               <category xml:id="syriaca-author">
+                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+               </category>
+               <category xml:id="syriaca-saint">
+                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica
+                                Syriaca.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+            <language ident="ar">Arabic</language>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
+                 n="1.0"
+                 when="2015-11-02-05:00">CREATED: person</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="saint-821" ana="#syriaca-saint">
+               <persName xml:id="name821-1"
+                         xml:lang="syr"
+                         syriaca-tags="#syriaca-headword"
+                         source="#bib821-2">ܝܘܚܢܢ ܒܪ ܦܢܟ̈ܝܐ</persName>
+               <persName xml:id="name821-2"
+                         xml:lang="en-x-gedsh"
+                         syriaca-tags="#syriaca-headword">Yuḥanān bar Penkoyē</persName>
+               <persName xml:id="name821-3" xml:lang="en">John bar Penkaya</persName>
+               <persName xml:id="name821-4" xml:lang="en">John Bar Penkaye (Phencaie)</persName>
+               <persName xml:id="name821-5" xml:lang="fr-x-zanetti" source="#bib821-2">Yōḥanān bar Penkāyē</persName>
+               <persName xml:id="name821-6" xml:lang="fr-x-zanetti" source="#bib821-2">
+</persName>
+               <persName xml:id="name821-7" xml:lang="fr" source="#bib821-2">Jean bar Penkayé</persName>
+               <persName xml:id="name821-8" xml:lang="fr-x-fiey" source="#bib821-1">JEAN BAR PENKĀYÉ</persName>
+               <idno type="URI">http://syriaca.org/person/821</idno>
+               <idno type="FIEY">251</idno>
+               <idno type="BHS">898</idno>
+               <idno type="BHS">1007</idno>
+               <idno type="BHS">1791</idno>
+               <sex value="M" source="#bib821-1">male</sex>
+               <birth when="0660" syriaca-computed-start="0660-01-01" source="#bib821-1">0660</birth>
+               <death when="0733" syriaca-computed-start="0733-01-01" source="#bib821-1">0733</death>
+               <note>Fiey provides the following bibliographic citations: <quote source="#bib821-1">Rahmani, Studia syriaca, I, 35-36; BHO, 501- 502.
+R. Beulay, dans PdO 8 {1977- 78) , 90- 95.
+BSO, I, 1113 (J. Habbi).</quote>
+               </note>
+               <note type="abstract">John Bar Penkaye was a monk of the convent of John of Kamul, southwest of Mount Gudi. He spent time with superior Sawrisho, whom he had healed from leprosy. His text Ris Mele treats the Muslim conquest.</note>
+               <event type="veneration" source="#bib821-1">
+                  <desc>The saint is venerated on (None from BHO).</desc>
+               </event>
+               <bibl xml:id="bib821-1">
+                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
+                  <ptr target="http://syriaca.org/bibl/649"/>
+                  <citedRange unit="entry">898, 1007, 1791</citedRange>
+               </bibl>
+               <bibl xml:id="bib821-2">
+                  <title level="m" xml:lang="fr">Saints Syriaques</title>
+                  <title level="a" xml:lang="fr">JEAN BAR PENKĀYÉ</title>
+                  <ptr target="http://syriaca.org/bibl/650"/>
+                  <citedRange unit="entry">251</citedRange>
+               </bibl>
+               <bibl xml:id="bib821-3">
+                  <author>Rahmani</author>
+                  <title>Studia syriaca</title>
+                  <citedRange>I, 35-36</citedRange>
+               </bibl>
+               <bibl xml:id="bib821-4">
+                  <title>BHO</title>
+                  <citedRange>501-502</citedRange>
+               </bibl>
+               <bibl xml:id="bib821-5">
+                  <author>R. Beulay</author>
+                  <title>Parole d'Orient</title>
+                  <citedRange>8 (1977-78) , 90-95.</citedRange>
+               </bibl>
+               <bibl xml:id="bib821-6">
+                  <author>J. Habbi</author>
+                  <title>BSO</title>
+                  <citedRange>I, 1113</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>

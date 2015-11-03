@@ -62,16 +62,16 @@
             <!-- Creates a variable containing the path of the file that should be created for this record. -->
             <xsl:variable name="filename">
                 <xsl:choose>
+                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../new-saints-data/overlap/',$record-id,'.xml')"/></xsl:when>
                     <xsl:when test="GEDSH_Romanized_Name[.=''] or Syriac_Headword[.='']">
                         <xsl:value-of select="concat('../new-saints-data/incomplete/tei/',$record-id,'.xml')"/>
                     </xsl:when>
                     <xsl:when test="URI != ''"><xsl:value-of select="concat('../new-saints-data/new-saints/tei/',$record-id,'.xml')"/></xsl:when>
-                    <xsl:when test="SRP_ID != ''"><xsl:value-of select="concat('../new-saints-data/overlap/',$record-id,'.xml')"/></xsl:when>
                     <xsl:when test="SRP_Saint_ID !=''"><xsl:value-of select="concat('../new-saints-data/srp-saint-no-uri/tei/',$record-id,'.xml')"/></xsl:when>
                     <xsl:otherwise><xsl:value-of select="concat('../new-saints-data/unresolved/tei/',$record-id,'.xml')"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <xsl:if test="URI != ''">
+            <!--<xsl:if test="URI != ''">-->
             <xsl:result-document href="{$filename}" format="xml">
                 <xsl:processing-instruction name="xml-model">
                     <xsl:text>href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"</xsl:text>
@@ -531,7 +531,7 @@
                     </text>
                 </TEI>
             </xsl:result-document>
-            </xsl:if>
+           <!-- </xsl:if>-->
         </xsl:for-each>
     </xsl:template>
     
