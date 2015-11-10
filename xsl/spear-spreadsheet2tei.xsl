@@ -22,15 +22,16 @@
     
     <!-- COLUMN MAPPING FROM INPUT SPREADSHEET -->
     <!-- !!! When modifying this stylesheet for a new spreadsheet, you should (in most cases) only need to  
-            1. change the contents of the $column-mapping variable below,
+            1. name your columns according to the conventions here (https://docs.google.com/spreadsheets/d/1_uilPEx2XFU8dlsTx2O8B1itZZL3CrCxMBaiS1eKofU/edit?usp=sharing) 
+                or change the contents of the $column-mapping variable below manually to use the column names from your spreadsheet with appropriate attributes,
             2. change the TEI header information, 
             3. change the $directory (optional), and
             4. add to the column-mapping and bibls TEMPLATES any attributes that we haven't used before. 
-            NB: * Each column in the spreadsheet must contain data from only one source.
+            NB: * Each cell in the spreadsheet must contain data from only one source.
                 * The spreadsheet must contain a column named "New_URI". This column should not be "mapped" below; it is hard-coded into the stylesheet.
                 * A person_ana column is also hard-coded into the stylesheet, but is not required. The values in this column determine what (if anything) goes into the person/@ana attribute,
                 and which series statements are used.
-                * Spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
+                * For manual column mapping, spreadsheet columns containing citedRange data should be mapped using the $all-sources variable below.
                 * Each record should have at least one column marked with syriaca-tags="#syriaca-headword", otherwise it will be placed into the "incomplete" folder.
                 * It's fine to map multiple spreadsheets below, as long as they don't contain columns with the same names but different attributes (e.g., @source or @xml:lang). 
                 * Columns for <sex> element will go into the @value. If they contain the abbreviations "M" or "F", then "male" and "female" will be inserted into the element content.
@@ -49,6 +50,8 @@
                     <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
                     <xsl:when test="matches(name(),'^idno[\._]')">idno</xsl:when>
                     <xsl:when test="matches(name(),'^relation[\._]')">relation</xsl:when>
+                    <xsl:when test="matches(name(),'^note[\._]')">note</xsl:when>
+                    <xsl:when test="matches(name(),'^trait[\._]')">trait</xsl:when>
                     <xsl:otherwise>none</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -69,10 +72,12 @@
                     <!-- add @type -->
                     <xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_office')"><xsl:attribute name="type" select="'office'"/></xsl:when>
+                        <xsl:when test="matches(name(),'^[a-zA-Z]*_abstract')"><xsl:attribute name="type" select="'abstract'"/></xsl:when>
                         <xsl:when test="starts-with(name(),'idno_')"><xsl:attribute name="type" select="substring-after(name(),'idno_')"/></xsl:when>
                     </xsl:choose>
                     <xsl:attribute name="column" select="name()"/>
                     <!-- add unit -->
+                    <!-- ??? does not yet support @target -->
                     <xsl:if test="starts-with(name(),'citedRange_')"><xsl:attribute name="unit" select="replace(replace(name(),'citedRange_',''),'\..*$','')"/></xsl:if>
                     <!--<xsl:choose>
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_pp')"><xsl:attribute name="unit" select="'pp'"/></xsl:when>
@@ -81,6 +86,7 @@
                         <xsl:when test="matches(name(),'^[a-zA-Z]*_entry')"><xsl:attribute name="unit" select="'entry'"/></xsl:when>
                     </xsl:choose>-->
                     <!-- add @when, @notBefore, @notAfter attributes to date columns -->
+                    <!-- ??? dates for state not supported yet. -->
                     <xsl:if test="matches(name(),'^birth\.|^death\.|^floruit\.')">
                         <xsl:variable name="date-type">
                             <xsl:choose>
