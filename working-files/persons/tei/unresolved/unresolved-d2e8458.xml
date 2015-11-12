@@ -6,7 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">The Roman army commanded by Demosthenes in July 531</title>
+            <title level="a" xml:lang="en">Eulogios — <foreign xml:lang="syr">ܐܘܠܓܝܣ</foreign>
+            </title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +48,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2226/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e8458/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -157,25 +158,42 @@
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2226">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">The Roman army commanded by Demosthenes in July 531</persName>
-               <persName xml:lang="en" source="#bib2226-4">The Roman army commanded by Demosthenes in July 531</persName>
-               <note xml:lang="en" type="abstract">An anonymous person or group of persons mentioned in the &lt;title ref=”http://syriaca.org/work/119”&gt;The Chronicle of Edessa&lt;title&gt; (circa mid 6th century).</note>
-               <idno type="URI">http://syriaca.org/person/2226</idno>
-               <idno type="temporary">/Anonymi25</idno>
-               <floruit xml:lang="en"
-                        when="0531-07"
-                        syriaca-computed-start="0531-07-01"
-                        source="#bib2226-4">July 531</floruit>
-               <bibl xml:id="bib2226-3">
+            <person xml:id="person-unresolved-d2e8458">
+               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Eulogios</persName>
+               <persName xml:lang="en-x-gedsh">Ewlogis</persName>
+               <persName xml:lang="syr"
+                         source="#bibunresolved-d2e8458-1"
+                         syriaca-tags="#syriaca-headword">ܐܘܠܓܝܣ</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e8458-2">Mar Eulogios</persName>
+               <idno type="temporary">/Eulogios</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Eulogius_of_Edessa</idno>
+               <death xml:lang="en"
+                      when="0387-04-23"
+                      syriaca-computed-start="0387-04-23"
+                      source="#bibunresolved-d2e8458-4">4/23/0387</death>
+               <state xml:lang="en" type="office" source="#bibunresolved-d2e8458-2">
+                  <desc>Bishop of Edessa</desc>
+               </state>
+               <sex xml:lang="en" source="#bibunresolved-d2e8458-2" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e8458-1">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">12</citedRange>
+                  <citedRange unit="pp">5</citedRange>
                </bibl>
-               <bibl xml:id="bib2226-4">
+               <bibl xml:id="bibunresolved-d2e8458-2">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">100</citedRange>
+                  <citedRange unit="section">34</citedRange>
+               </bibl>
+               <bibl xml:id="bibunresolved-d2e8458-3">
+                  <title xml:lang="la">Chronica Minora</title>
+                  <ptr target="http://syriaca.org/bibl/633"/>
+                  <citedRange unit="pp">5</citedRange>
+               </bibl>
+               <bibl xml:id="bibunresolved-d2e8458-4">
+                  <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
+                  <ptr target="http://syriaca.org/bibl/657"/>
+                  <citedRange unit="section">37</citedRange>
                </bibl>
             </person>
          </listPerson>

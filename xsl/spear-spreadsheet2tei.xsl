@@ -47,187 +47,220 @@
         <!-- AUTOMATIC COLUMN MAPPING -->
         <!-- column mapping using the column nameing conventions. Format for column name is "elementName attributeValueOrType.sourceColumnName.languageCode" 
              See https://docs.google.com/spreadsheets/d/1_uilPEx2XFU8dlsTx2O8B1itZZL3CrCxMBaiS1eKofU/edit?usp=sharing -->
+        <!-- uses the first row to define columns -->
         <xsl:for-each select="/root/row[1]/*">
-            <!-- uses the first row to define columns -->
-            <xsl:variable name="element-name" as="xs:string">
-                <!-- chooses the name for the TEI element, based on the part of the column name before any (_) or (.). -->
-                <!-- !!! If you want to add another type of TEI element, you should add it here and also in the main ("/root") template under 
-                    TEI/text/body/listPerson/person (see format there). If the default behavior of placing the column contents directly inside this element 
-                    is not adequate, you should also modify the column-mapping template below. -->
-                <xsl:choose>
-                    <xsl:when test="matches(name(),'^persName[\._]')">persName</xsl:when>
-                    <xsl:when test="matches(name(),'^sex[\._]')">sex</xsl:when>
-                    <xsl:when test="matches(name(),'^state[\._]')">state</xsl:when>
-                    <!-- the different regex for date columns (birth, death, floruit )is so that elements are created only the main date columns 
-                        and not for their subsidiaries (birth when, birth notBefore, etc.), which are processed as attributes of the main date elements (see below). -->
-                    <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
-                    <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
-                    <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
-                    <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
-                    <xsl:when test="matches(name(),'^idno[\._]')">idno</xsl:when>
-                    <xsl:when test="matches(name(),'^relation[\._]')">relation</xsl:when>
-                    <xsl:when test="matches(name(),'^note[\._]')">note</xsl:when>
-                    <xsl:when test="matches(name(),'^trait[\._]')">trait</xsl:when>
-                    <!-- a non-empty string is required in this variable type, thus "none" -->
-                    <xsl:otherwise>none</xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
-            <xsl:if test="$element-name!='none'">
-                <xsl:element name="{$element-name}">
-                    <!-- adds @xml:lang using the codes at the end of the column name (after the final dot). -->
-                    <!-- !!! Add any additional languages you need here. -->
+            <!-- uses the column name to find out which element name and attributes it should use -->
+            <xsl:variable name="column-info" select="syriaca:column-name(name())"/>
+<!--            <xsl:variable name="test-element-name" select="$column-info/*[1]"/>-->
+            <!--<xsl:if
+                test="$column-info/elementName=('persName' or 'sex' or 'state' or 'birth' or 'death' or 'floruit' or 'citedRange' or 'idno' or 'relation' or 'note' or 'trait') and $column-info/attributeValueOrType!=('when' or 'notBefore' or 'notAfter')">
+-->
+                <xsl:variable name="element-name" as="xs:string">
+                    <!-- chooses the name for the TEI element, based on the part of the column name before any (_) or (.). -->
+                    <!-- !!! If you want to add another type of TEI element, you should add it here and also in the main ("/root") template under 
+                        TEI/text/body/listPerson/person (see format there). If the default behavior of placing the column contents directly inside this element 
+                        is not adequate, you should also modify the column-mapping template below. -->
                     <xsl:choose>
-                        <xsl:when test="matches(name(),'\.en-x-gedsh$')">
-                            <xsl:attribute name="xml:lang" select="'en-x-gedsh'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.en$')">
-                            <xsl:attribute name="xml:lang" select="'en'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.syr$')">
-                            <xsl:attribute name="xml:lang" select="'syr'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.syr-Syrj$')">
-                            <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.syr-Syrn$')">
-                            <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.ar$')">
-                            <xsl:attribute name="xml:lang" select="'ar'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.fr$')">
-                            <xsl:attribute name="xml:lang" select="'fr'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.de$')">
-                            <xsl:attribute name="xml:lang" select="'de'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'\.la$')">
-                            <xsl:attribute name="xml:lang" select="'la'"/>
-                        </xsl:when>
+                        <xsl:when test="matches(name(),'^persName[\._]')">persName</xsl:when>
+                        <xsl:when test="matches(name(),'^sex[\._]')">sex</xsl:when>
+                        <xsl:when test="matches(name(),'^state[\._]')">state</xsl:when>
+                        <!-- the different regex for date columns (birth, death, floruit )is so that elements are created only the main date columns 
+                            and not for their subsidiaries (birth when, birth notBefore, etc.), which are processed as attributes of the main date elements (see below). -->
+                        <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
+                        <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
+                        <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                        <xsl:when test="matches(name(),'^citedRange[\._]')">citedRange</xsl:when>
+                        <xsl:when test="matches(name(),'^idno[\._]')">idno</xsl:when>
+                        <xsl:when test="matches(name(),'^relation[\._]')">relation</xsl:when>
+                        <xsl:when test="matches(name(),'^note[\._]')">note</xsl:when>
+                        <xsl:when test="matches(name(),'^trait[\._]')">trait</xsl:when>
+                        <!-- a non-empty string is required in this variable type, thus "none" -->
+                        <xsl:otherwise>none</xsl:otherwise>
                     </xsl:choose>
-                    <!-- adds @type based on the text immediately following the element name -->
-                    <!-- !!! Add any additional types you need here. -->
-                    <xsl:choose>
-                        <xsl:when test="matches(name(),'^[a-zA-Z]*_office')">
-                            <xsl:attribute name="type" select="'office'"/>
-                        </xsl:when>
-                        <xsl:when test="matches(name(),'^[a-zA-Z]*_abstract')">
-                            <xsl:attribute name="type" select="'abstract'"/>
-                        </xsl:when>
-                        <xsl:when test="starts-with(name(),'idno_')">
-                            <xsl:attribute name="type" select="substring-after(name(),'idno_')"/>
-                        </xsl:when>
-                    </xsl:choose>
-                    <xsl:attribute name="column" select="name()"/>
-                    <!-- adds @unit, based on the part of the column name immediately after the element name. -->
-                    <!-- ??? does not yet support @target -->
-                    <xsl:if test="starts-with(name(),'citedRange_')">
-                        <xsl:attribute name="unit"
-                            select="replace(replace(name(),'citedRange_',''),'\..*$','')"/>
-                    </xsl:if>
-                    <!-- adds @when, @notBefore, @notAfter attributes to date columns -->
-                    <!-- ??? dates for state not supported yet. -->
-                    <!-- !!! You can add more date-type elements here. -->
-                    <xsl:if test="matches(name(),'^birth\.|^death\.|^floruit\.')">
-                        <xsl:variable name="date-type">
-                            <!-- captures the type of element -->
-                            <xsl:choose>
-                                <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
-                                <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
-                                <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <xsl:variable name="date-source">
-                            <!-- captures the name of the source column this column is using, to use when constructing the machine-readable date attribute columns below -->
-                            <xsl:analyze-string select="name()" regex="Source_[0-9]+">
-                                <xsl:matching-substring>
-                                    <xsl:value-of select="."/>
-                                </xsl:matching-substring>
-                            </xsl:analyze-string>
-                        </xsl:variable>
-                        <!-- gets the names of the columns used for @when, @notBefore, and @notAfter machine-readable dates and puts them into attributes. 
-                            Note that the column-mapping creates only one element per category of date (e.g., "birth", "death", "floruit"), not one for each of the 
-                            associated machine-readable columns (e.g., "birth notBefore"). -->
-                        <!-- ??? The following regex will run into problems if there are more than 10 sources! (E.g., 'Source_1' will also match 'Source_11') -->
-                        <!-- ??? This could be made more efficient with variables -->
-                        <xsl:if
-                            test="/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))]">
-                            <xsl:attribute name="whenColumn"
-                                select="name(/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))])"
-                            />
+                </xsl:variable>
+                <xsl:if test="$element-name!='none'">
+                    <xsl:element name="{$element-name}">
+                        <!-- adds @xml:lang using the codes at the end of the column name (after the final dot). -->
+                        <!-- !!! Add any additional languages you need here. -->
+                        <xsl:choose>
+                            <xsl:when test="matches(name(),'\.en-x-gedsh$')">
+                                <xsl:attribute name="xml:lang" select="'en-x-gedsh'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.en$')">
+                                <xsl:attribute name="xml:lang" select="'en'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.syr$')">
+                                <xsl:attribute name="xml:lang" select="'syr'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.syr-Syrj$')">
+                                <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.syr-Syrn$')">
+                                <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.ar$')">
+                                <xsl:attribute name="xml:lang" select="'ar'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.fr$')">
+                                <xsl:attribute name="xml:lang" select="'fr'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.de$')">
+                                <xsl:attribute name="xml:lang" select="'de'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'\.la$')">
+                                <xsl:attribute name="xml:lang" select="'la'"/>
+                            </xsl:when>
+                        </xsl:choose>
+                        <!-- adds @type based on the text immediately following the element name -->
+                        <!-- !!! Add any additional types you need here. -->
+                        <xsl:choose>
+                            <xsl:when test="matches(name(),'^[a-zA-Z]*_office')">
+                                <xsl:attribute name="type" select="'office'"/>
+                            </xsl:when>
+                            <xsl:when test="matches(name(),'^[a-zA-Z]*_abstract')">
+                                <xsl:attribute name="type" select="'abstract'"/>
+                            </xsl:when>
+                            <xsl:when test="starts-with(name(),'idno_')">
+                                <xsl:attribute name="type" select="substring-after(name(),'idno_')"/>
+                            </xsl:when>
+                        </xsl:choose>
+                        <xsl:attribute name="column" select="name()"/>
+                        <!-- adds @unit, based on the part of the column name immediately after the element name. -->
+                        <!-- ??? does not yet support @target -->
+                        <xsl:if test="starts-with(name(),'citedRange_')">
+                            <xsl:attribute name="unit"
+                                select="replace(replace(name(),'citedRange_',''),'\..*$','')"/>
                         </xsl:if>
-                        <xsl:if
-                            test="/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))]">
-                            <xsl:attribute name="notBeforeColumn"
-                                select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))])"
-                            />
-                        </xsl:if>
-                        <xsl:if
-                            test="/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))]">
-                            <xsl:attribute name="notAfterColumn"
-                                select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))])"
-                            />
-                        </xsl:if>
-                    </xsl:if>
-
-                    <!-- adds relation name, using as a value the text in the column name immediately after the element name ("relation_"). -->
-                    <xsl:if test="matches(name(),'^relation_[a-zA-Z\-]+')">
-                        <xsl:attribute name="name"
-                            select="replace(replace(name(),'relation_',''),'\..*$','')"/>
-                    </xsl:if>
-
-                    <xsl:attribute name="column" select="name()"/>
-                    <!-- adds syriaca-headword -->
-                    <xsl:choose>
-                        <xsl:when test="matches(name(),'^[a-zA-Z]*_syriaca-headword')">
-                            <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
-                        </xsl:when>
-                    </xsl:choose>
-                    <!-- adds sourceUriColumn -->
-                    <!-- ??? This could be consolidated with the $date-source variable above. -->
-                    <xsl:choose>
-                        <!-- checks whether the column name contains the name of a source column, in the format ".Source_1" -->
-                        <xsl:when test="matches(name(),'\.Source_[0-9]*')">
-                            <!-- splits the column name into parts at the dots -->
-                            <xsl:variable name="tokenized-column-name"
-                                select="tokenize(name(),'\.')"/>
-                            <xsl:variable name="source-name">
-                                <!-- grabs the part of the column name that contains the source column name -->
-                                <xsl:for-each select="$tokenized-column-name">
-                                    <xsl:if test="matches(.,'^Source_[0-9]*')">
-                                        <xsl:value-of select="."/>
-                                    </xsl:if>
-                                </xsl:for-each>
+                        <!-- adds @when, @notBefore, @notAfter attributes to date columns -->
+                        <!-- ??? dates for state not supported yet. -->
+                        <!-- !!! You can add more date-type elements here. -->
+                        <xsl:if test="matches(name(),'^birth\.|^death\.|^floruit\.')">
+                            <xsl:variable name="date-type">
+                                <!-- captures the type of element -->
+                                <xsl:choose>
+                                    <xsl:when test="matches(name(),'^birth\.')">birth</xsl:when>
+                                    <xsl:when test="matches(name(),'^death\.')">death</xsl:when>
+                                    <xsl:when test="matches(name(),'^floruit\.')">floruit</xsl:when>
+                                </xsl:choose>
                             </xsl:variable>
-                            <!-- adds the name of the source column as @sourceUriColumn -->
-                            <xsl:attribute name="sourceUriColumn" select="$source-name"/>
-                        </xsl:when>
-                    </xsl:choose>
-                    <!-- adds an @column containing the numbered position of the column in the spreadsheet. This is used in the column-mapping template to 
-                        determine which column to grab data from for this element. -->
-                    <xsl:attribute name="column" select="position()"/>
-                </xsl:element>
-            </xsl:if>
+                            <xsl:variable name="date-source">
+                                <!-- captures the name of the source column this column is using, to use when constructing the machine-readable date attribute columns below -->
+                                <xsl:analyze-string select="name()" regex="Source_[0-9]+">
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="."/>
+                                    </xsl:matching-substring>
+                                </xsl:analyze-string>
+                            </xsl:variable>
+                            <!-- gets the names of the columns used for @when, @notBefore, and @notAfter machine-readable dates and puts them into attributes. 
+                                Note that the column-mapping creates only one element per category of date (e.g., "birth", "death", "floruit"), not one for each of the 
+                                associated machine-readable columns (e.g., "birth notBefore"). -->
+                            <!-- ??? The following regex will run into problems if there are more than 10 sources! (E.g., 'Source_1' will also match 'Source_11') -->
+                            <!-- ??? This could be made more efficient with variables -->
+                            <xsl:if
+                                test="/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))]">
+                                <xsl:attribute name="whenColumn"
+                                    select="name(/root/row[1]/*[matches(name(),concat($date-type,'_when','\.',$date-source))])"
+                                />
+                            </xsl:if>
+                            <xsl:if
+                                test="/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))]">
+                                <xsl:attribute name="notBeforeColumn"
+                                    select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notBefore','\.',$date-source))])"
+                                />
+                            </xsl:if>
+                            <xsl:if
+                                test="/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))]">
+                                <xsl:attribute name="notAfterColumn"
+                                    select="name(/root/row[1]/*[matches(name(),concat($date-type,'_notAfter','\.',$date-source))])"
+                                />
+                            </xsl:if>
+                        </xsl:if>
+    
+                        <!-- adds relation name, using as a value the text in the column name immediately after the element name ("relation_"). -->
+                        <xsl:if test="matches(name(),'^relation_[a-zA-Z\-]+')">
+                            <xsl:attribute name="name"
+                                select="replace(replace(name(),'relation_',''),'\..*$','')"/>
+                        </xsl:if>
+    
+                        <xsl:attribute name="column" select="name()"/>
+                        <!-- adds syriaca-headword -->
+                        <xsl:choose>
+                            <xsl:when test="matches(name(),'^[a-zA-Z]*_syriaca-headword')">
+                                <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
+                            </xsl:when>
+                        </xsl:choose>
+                        <!-- adds sourceUriColumn -->
+                        <!-- ??? This could be consolidated with the $date-source variable above. -->
+                        <xsl:choose>
+                            <!-- checks whether the column name contains the name of a source column, in the format ".Source_1" -->
+                            <xsl:when test="matches(name(),'\.Source_[0-9]*')">
+                                <!-- splits the column name into parts at the dots -->
+                                <xsl:variable name="tokenized-column-name"
+                                    select="tokenize(name(),'\.')"/>
+                                <xsl:variable name="source-name">
+                                    <!-- grabs the part of the column name that contains the source column name -->
+                                    <xsl:for-each select="$tokenized-column-name">
+                                        <xsl:if test="matches(.,'^Source_[0-9]*')">
+                                            <xsl:value-of select="."/>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:variable>
+                                <!-- adds the name of the source column as @sourceUriColumn -->
+                                <xsl:attribute name="sourceUriColumn" select="$source-name"/>
+                            </xsl:when>
+                        </xsl:choose>
+                        <!-- adds an @column containing the numbered position of the column in the spreadsheet. This is used in the column-mapping template to 
+                            determine which column to grab data from for this element. -->
+                        <xsl:attribute name="column" select="position()"/>
+                    </xsl:element>
+                </xsl:if>
+<!--            </xsl:if>-->
         </xsl:for-each>
 
         <!-- MANUAL COLUMN MAPPING -->
         <!-- !!! Insert any manual column mapping here. Each column in the spreadsheet should have a unique name. Note that spaces in column names are converted to underscores (_). 
             For example ... -->
-        <persName xml:lang="en" sourceUriColumn="Source_2" syriaca-tags="#syriaca-headword"
+        <!-- ??? This might need a little debugging. Mainly, I'm not entirely sure that whether using column names instead of numbers 
+            works properly. If that's a problem, you could try it with column numbers instead of names. -->
+        <persName xml:lang="en" sourceUriColumn="Brooks_URI" syriaca-tags="#syriaca-headword"
             column="Name_in_Index"/>
         <note xml:lang="en" type="abstract" column="Additional_Info"/>
         <birth xml:lang="en" whenColumn="Birth_Standard" notBeforeColumn="Birth_Not_Before"
-            notAfterColumn="Birth_Not_After" sourceUriColumn="Source_2" column="Birth"/>
-        <citedRange unit="pp" sourceUriColumn="Source_2" column="page"/>
+            notAfterColumn="Birth_Not_After" sourceUriColumn="Brooks_URI" column="Birth"/>
+        <citedRange unit="pp" sourceUriColumn="Brooks_URI" column="page"/>
     </xsl:variable>
 
     <!-- DIRECTORY -->
     <!-- specifies where the output TEI files should go -->
     <!-- !!! Change this to where you want the output files to be placed relative to this stylesheet. 
         This should end with a trailing slash (/).-->
-    <xsl:variable name="directory">../../working-files-2/persons/tei/</xsl:variable>
+    <xsl:variable name="directory">../../working-files/persons/tei/</xsl:variable>
 
     <!-- CUSTOM FUNCTIONS -->
+    <!-- used in auto column-mapping to determine the element name and attributes that should be created for that column. 
+        Column naming format is "elementName attributeValueOrType.sourceColumnName.languageCode" -->
+    <xsl:function name="syriaca:column-name">
+        <xsl:param name="column-name" as="xs:string"/>
+        <!-- separates the column name into its relevant parts -->
+        <xsl:analyze-string select="$column-name"
+            regex="^([a-zA-Z0-9\-]+)(_([a-zA-Z0-9\-]+))?(\.(Source_[0-9]+))?(\.([a-zA-Z0-9\-]+))?$">
+            <xsl:matching-substring>
+                <elementName>
+                    <xsl:value-of select="regex-group(1)"/>
+                </elementName>
+                <attributeValueOrType>
+                    <xsl:value-of select="regex-group(3)"/>
+                </attributeValueOrType>
+                <sourceColumnName>
+                    <xsl:value-of select="regex-group(5)"/>
+                </sourceColumnName>
+                <languageCode>
+                    <xsl:value-of select="regex-group(7)"/>
+                </languageCode>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:function>
+
     <!-- date processing by Winona Salesky -->
     <!-- creates the dates to be used for @syriaca-computed-start and @syriaca-computed-end. 
         Called by the column-mapping template -->
@@ -564,7 +597,7 @@
                                 ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
                                 A. Michelson</name>
                         </respStmt>
-                        <biblScope unit="vol">2</biblScope>
+                        <biblScope unit="vol">1</biblScope>
                         <idno type="URI">http://syriaca.org/q</idno>
                     </seriesStmt>
                 </xsl:if>

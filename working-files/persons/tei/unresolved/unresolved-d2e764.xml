@@ -6,7 +6,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">The Roman army commanded by Demosthenes in July 531</title>
+            <title level="a" xml:lang="en">Andreas of Samosata — <foreign xml:lang="syr">ܐܢܕܪܐܘܣ ܕܫܡܝܫܛ</foreign>
+            </title>
+            <title level="m">A Guide to Syriac Authors</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,7 +49,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2226/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e764/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
@@ -92,7 +94,7 @@
                <name type="person"
                      ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
-            <biblScope unit="vol">3</biblScope>
+            <biblScope unit="vol">1</biblScope>
             <idno type="URI">http://syriaca.org/persons</idno>
          </seriesStmt>
          <sourceDesc>
@@ -157,25 +159,33 @@
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2226">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">The Roman army commanded by Demosthenes in July 531</persName>
-               <persName xml:lang="en" source="#bib2226-4">The Roman army commanded by Demosthenes in July 531</persName>
-               <note xml:lang="en" type="abstract">An anonymous person or group of persons mentioned in the &lt;title ref=”http://syriaca.org/work/119”&gt;The Chronicle of Edessa&lt;title&gt; (circa mid 6th century).</note>
-               <idno type="URI">http://syriaca.org/person/2226</idno>
-               <idno type="temporary">/Anonymi25</idno>
+            <person xml:id="person-unresolved-d2e764" ana="#syriaca-author">
+               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Andreas of Samosata</persName>
+               <persName xml:lang="en-x-gedsh">Andrewas of Samosata</persName>
+               <persName xml:lang="syr"
+                         source="#bibunresolved-d2e764-3"
+                         syriaca-tags="#syriaca-headword">ܐܢܕܪܐܘܣ ܕܫܡܝܫܛ</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e764-4">Andrew of Samosata</persName>
+               <idno type="temporary">/AndreosSamosata</idno>
                <floruit xml:lang="en"
-                        when="0531-07"
-                        syriaca-computed-start="0531-07-01"
-                        source="#bib2226-4">July 531</floruit>
-               <bibl xml:id="bib2226-3">
+                        notBefore="0428"
+                        syriaca-computed-start="0428-01-01"
+                        notAfter="0429"
+                        syriaca-computed-end="0429-01-01"
+                        source="#bibunresolved-d2e764-4">428/9</floruit>
+               <state xml:lang="en" type="office" source="#bibunresolved-d2e764-4">
+                  <desc>Bishop of Samosata</desc>
+               </state>
+               <sex xml:lang="en" source="#bibunresolved-d2e764-4" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e764-3">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">12</citedRange>
+                  <citedRange unit="pp">7</citedRange>
                </bibl>
-               <bibl xml:id="bib2226-4">
+               <bibl xml:id="bibunresolved-d2e764-4">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">100</citedRange>
+                  <citedRange unit="section">56</citedRange>
                </bibl>
             </person>
          </listPerson>
