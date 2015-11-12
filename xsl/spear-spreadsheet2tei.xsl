@@ -457,11 +457,12 @@
                     </title>
                     <!-- adds the saints series title if the person is a saint -->
                     <xsl:if test="$is-saint">
+                        <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                         <title level="s">Gateway to the Syriac Saints</title>
                     </xsl:if>
                     <!-- adds the authors series title if the person is an author -->
                     <xsl:if test="$is-author">
-                        <title level="s">A Guide to Syriac Authors</title>
+                        <title level="m">A Guide to Syriac Authors</title>
                     </xsl:if>
                     <title level="s">The Syriac Biographical Dictionary</title>
                     <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -565,93 +566,6 @@
                         </respStmt>
                         <biblScope unit="vol">2</biblScope>
                         <idno type="URI">http://syriaca.org/q</idno>
-                    </seriesStmt>
-                </xsl:if>
-                <!-- adds a series statement for authors dataset if the person is an author -->
-                <xsl:if test="$is-author">
-                    <seriesStmt>
-                        <title level="s">A Guide to Syriac Authors</title>
-                        <editor role="general"
-                            ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
-                            Michelson</editor>
-                        <editor role="general"
-                            ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
-                            Gibson</editor>
-                        <editor role="general"
-                            ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A.
-                            Carlson</editor>
-                        <respStmt>
-                            <resp>Edited by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
-                                >Jeanne-Nicole Mellon Saint-Laurent</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Edited by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
-                                A. Michelson</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Editing, document design, proofreading, data entry by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
-                                A. Michelson</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Matching with viaf.org records, data entry, data transformation,
-                                conversion to XML by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
-                                Gibson</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>GEDSH and Barsoum English name entry, matching with viaf.org
-                                records by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#jwalters">James E.
-                                Walters</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Editing, disambiguation research, conversion to XML by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas
-                                A. Carlson</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Syriac name entry by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#raydin">Robert
-                                Aydin</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Arabic name entry by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#jkaado">Jad
-                                Kaado</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Normalization of GEDSH dates and entry matching with viaf.org
-                                records by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#avawter">Alex
-                                Vawter</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>Editorial oversight for GEDSH and Barsoum English text entry, and
-                                proofreading by</resp>
-                            <name type="person"
-                                ref="http://syriaca.org/documentation/editors.xml#cjohnson"
-                                >Christopher Johnson</name>
-                        </respStmt>
-                        <respStmt>
-                            <resp>GEDSH and Barsoum English text entry and proofreading by</resp>
-                            <name type="org"
-                                ref="http://syriaca.org/documentation/editors.xml#uasyriacresearchgroup"
-                                >the Syriac Research Group, University of Alabama</name>
-                        </respStmt>
-                        <!-- ??? What is the correct URI? -->
-                        <idno type="URI">http://syriaca.org/authors</idno>
                     </seriesStmt>
                 </xsl:if>
                 <seriesStmt>
