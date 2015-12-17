@@ -640,15 +640,15 @@
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <!-- selects which vol. of SBD this record is contained in, depending on whether the person is a saint and/or author. 
-                        Vol. 1 for authors, vol. 2 for saints, vol. 3 for neither. -->
+                        Vol. 1 for saints, vol. 2 for authors, vol. 3 for neither. -->
                     <xsl:choose>
                         <xsl:when test="$is-saint and $is-author">
                             <biblScope unit="vol">1, 2</biblScope>
                         </xsl:when>
-                        <xsl:when test="$is-author">
+                        <xsl:when test="$is-saint">
                             <biblScope unit="vol">1</biblScope>
                         </xsl:when>
-                        <xsl:when test="$is-saint">
+                        <xsl:when test="$is-author">
                             <biblScope unit="vol">2</biblScope>
                         </xsl:when>
                         <xsl:otherwise>
