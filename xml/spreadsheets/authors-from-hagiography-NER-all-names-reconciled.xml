@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- TO DO:
+    1. Put author names inside persName element and move xml:lang tag there and copy source there
+    2. Make sure new authors have abstracts. 
+    3. Make sure any other sources are in order. 
+    4. Look for VIAF URIs for new authors. -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader/>
     <text>
@@ -279,7 +284,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/2065" xml:lang="fr" source="#bib1031-1"
+                    <author ref="http://syriaca.org/person/2065" xml:lang="fr" source="#bib1031-1"
                         >Sérapion</author>
 
 
@@ -395,9 +400,31 @@
 
                     <author source="#bib1046-1" xml:id="Atticus-de-Constantinople">
                         <persName xml:lang="fr">Atticus de Constantinople</persName>
-                        <persName xml:lang="en-x-gedsh" source="http://syriaca.org/bibl/446">Atticus
+                        <persName xml:lang="en-x-gedsh" source="#bibAtticus-de-Constantinople-1">Atticus
                             of Constantinople</persName>
+                        <persName xml:lang="en" source="#bibAtticus-de-Constantinople-3"><forename sort="1">Attikos</forename>, <roleName sort="2" type="office">bishop of <placeName ref="http://syriaca.org/place/2290">Constantinople</placeName></roleName></persName>
                     </author>
+                    <note type="abstract">Bishop of Constantinople (406-425) and author of <bibl>a homily on <persName ref="http://syriaca.org/person/624">the Virgin Mary</persName> extant in Syriac<ptr target="http://syriaca.org/work/1046"/></bibl></note>
+                    <idno type="URI">http://viaf.org/viaf/72202417</idno>
+                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Atticus of Constantinople&amp;sT=keywords</idno>
+                    <idno type="URI">http://pinakes.irht.cnrs.fr/notices/auteur/id/438</idno>
+                    <idno type="URI">https://en.wikipedia.org/wiki/Archbishop_Atticus_of_Constantinople</idno>
+                    <state type="office" role="bishop" from="0406-03" to="0425-10-10" source="#bibAtticus-de-Constantinople-3">bishop of Constantinople</state>
+                    <bibl xml:id="bibAtticus-de-Constantinople-1">
+                        <ptr target="http://syriaca.org/bibl/446"/>
+                        <citedRange unit="pp" from="340" to="340">340</citedRange>
+                        <citedRange unit="entry" from="437" to="437">437</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAtticus-de-Constantinople-2">
+                        <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Atticus of Constantinople&amp;sT=keywords">Bar Idta</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAtticus-de-Constantinople-3">
+                        <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
+                        <ptr target="http://syriaca.org/bibl/1655"/>
+                        <citedRange unit="entry" target="http://www.oxfordreference.com/view/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-0571">Attikos</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -468,7 +495,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" source="#bib1069-1" xml:id="Jean-le-moine">
+                    <author source="#bib1069-1" xml:id="Jean-le-moine">
                         <persName xml:lang="fr">Jean le moine</persName>
                         <note type="abstract">Chabot (Journal asiatique, 1895, pp. 111, 141)
                             identifies this author as a companion of <person
@@ -627,7 +654,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1084-1" ref="http://syriaca.org/person/901"
+                    <author xml:lang="fr" source="#bib1084-1" ref="http://syriaca.org/person/901"
                         >Mshiha-Zekha</author>
 
 
@@ -963,7 +990,10 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1128-1">Ps.-Jean Chrysostome</author>
+                    <author source="#bib1128-1">
+                        <persName xml:lang="fr">Ps.-Jean Chrysostome</persName>
+                        <note type="abstract">The author of a hagiographic work about the saint <persName ref="http://syriaca.org/person/2051">Sāhdā Marī d-Bēth-Sāhdē</persName>.</note>
+                    </author>
 
 
                     <note type="start-location">
@@ -1154,7 +1184,12 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1178-1">Livre des Himyarites</author>
+                    <author syriaca-tags="check" source="#bib1178-1" xml:id="author-of-Himyarites">
+                        <persName xml:lang="fr">Auteur du Livre des Himyarites</persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-headword">Author of the 'Book of the Ḥimyarites'</persName>
+                    </author>
+                    <note type="flag">According to http://contentdm.lib.byu.edu/cdm/ref/collection/CUA/id/45292 on page lxvii the author is MAYBE Bishop Sergius (Georgios) of Rusafa, need new URI and a modifier on attribution of author to uncertain.
+                        Also has been attributed to Simeon of Beth Arsham (see GEDSH, 197).</note>
 
 
                     <note type="start-location">
@@ -1321,8 +1356,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1035"
+                    <author ref="http://syriaca.org/person/1035"
                         xml:lang="fr" source="#bib1193-1">Saliba</author>
 
 
@@ -1478,8 +1512,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/33"
+                    <author ref="http://syriaca.org/person/33"
                         xml:lang="fr" source="#bib1206-1">Isaac</author>
 
 
@@ -2271,18 +2304,6 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1319-1" ref="http://syriaca.org/person/993"
-                        >Sabrisho’ de Soba</author>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>55</column>
-                    </note>
-
-                </person>
-                <person>
-
                     <author xml:lang="fr" source="#bib1320-1" ref="http://syriaca.org/person/928"
                         >Jean Bar-Kaldoun</author>
 
@@ -2607,28 +2628,6 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" source="#bib1354-1" xml-id="Élie-II">
-                        <persName xml:lang="fr">Élie II</persName>
-                        <persName xml:lang="en-x-gedsh" source="http://syriaca.org/bibl/681">Eliya
-                            II bar Molki (bar Maqli)</persName>
-                        <state type="office" from="1111" to="1132"
-                            source="http://syriaca.org/bibl/681" syriaca-computed-end="1132-01-01"
-                            syriaca-computed-start="1111-01-01">
-                            <desc xml:lang="en-x-gedsh">1111 - 1132</desc>
-                        </state>
-                    </author>
-                    <note type="flag">Does this refer to the Catholicos Eliya II, who does not seem to appear in our database? But there are several saints simply named "Eliya"
-                        these would need to be checked.</note>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>55</column>
-                    </note>
-
-                </person>
-                <person>
-
                     <author xml:lang="fr" source="#bib1355-1" ref="http://syriaca.org/person/933"
                         >Élie Abou Halim</author>
 
@@ -2713,7 +2712,23 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1370-1">Anastase</author>
+                    <author source="#bib1370-1" xml:id="Anastase">
+                        <persName xml:lang="fr"><forename>Anastase</forename></persName>
+                        <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword" source="#bibAnastase-1"><forename sort="1">Anastasios</forename> <addName type="untagged-title" sort="2">of Sinai</addName></persName>
+                        <idno type="URI">https://en.wikipedia.org/wiki/Anastasius_Sinaita</idno>
+                        <idno type="URI">https://viaf.org/viaf/13689964</idno>
+                        <idno type="URI">http://pinakes.irht.cnrs.fr/notices/auteur/id/172</idno>
+                        <birth notBefore="0600" notAfter="0620" resp="http://syriaca.org">early 7th century</birth>
+                        <death notBefore="0700" notAfter="0750" source="#bibAnastase-1">early 8th century</death>
+                        <note type="abstract">Theologian and author of numerous Greek works, of which <bibl>The Monks of Sinai<ptr target="http://syriaca.org/work/1370"/></bibl> survives in a Syriac version.</note>
+                        
+                    </author>
+                    
+                    <bibl xml:id="bibAnastase-1">
+                        <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
+                        <ptr target="http://syriaca.org/bibl/1655"/>
+                        <citedRange unit="entry" target="http://www.oxfordreference.com/view/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-0249">Anastasios of Sinai</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -2724,7 +2739,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/1578 http://syriaca.org/person/1577"
+                    <author ref="http://syriaca.org/person/1577"
                         xml:lang="fr" source="#bib1371-1">Ammonios</author>
 
 
@@ -2761,6 +2776,7 @@
                 <person>
 
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1379-1" ref="http://syriaca.org/person/587">Kamis bar Qardahé</author>
+                    <note type="flag">discuss</note>
                     <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
 
 
@@ -2819,8 +2835,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1035"
+                    <author ref="http://syriaca.org/person/1035"
                         xml:lang="fr" source="#bib1388-1">Saliba</author>
 
 
@@ -2846,6 +2861,7 @@
 
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1393-1">Phocas de Gagim ou Malké Saqqa de
                         Basibrina ou Jacques de Serugh</author>
+                    <note type="flag">Mark as two possible but uncertain authors /person/42 and the monk Phocas of Gagim also know as Malke etc. See: https://archive.org/stream/MinganaCatalogueOfTheMinganaCollection.I/Mingana_Catalogue%20of%20the%20Mingana%20Collection.I#page/n467/mode/2up</note>
 
 
                     <note type="start-location">
@@ -2893,7 +2909,8 @@
                 <person>
 
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1406-1">Georges de Resh ‘Ayna</author>
-                    <note type="flag">does this match any of the "Gewargis" ?</note>
+                    <note type="flag">Need new URI, cite 
+                        Brock, S. P. (1973) “An early Syriac life of Maximus the Confessor.” Analecta Bollandiana 91: 299–346.  as the source (FYI I have a copy but it is cut off does not give the authors name? Can you get a copy in Munich and see if Brock discusses the author?)</note>
 
 
                     <note type="start-location">
@@ -2905,6 +2922,9 @@
                 <person>
 
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1409-1">Agathange (résumé)</author>
+                    <note type="flag">This is an interesting challenge, besides pseudo we need continuator and abbreviator? Can you get:
+                        van Esbroeck, M. 1977.“Le résumé syriaque de l'Agathange.” AB 95: 291–358 (esp. 292). Pg. 292 says "Rappelons brièvement que diverse détails de cette forme de l'Agathange rendent son éclosion probable entre les années 604 à 610"
+                        Should we just use "editor" element with @type="abbreviator"? </note>
 
 
                     <note type="start-location">
@@ -3095,7 +3115,11 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1437-1">André de Crète</author>
+                    <author source="#bib1437-1" ref="http://syriaca.org/person/95">
+                        <persName xml:lang="fr" source="#bib1437-1">André de Crète</persName>
+                    </author>
+                    
+                    <note type="abstract" source="#bib95-1">Scriptural commentator and author of <bibl>a hagiographical work on <persName ref="http://syriaca.org/person/624">the Virgin Mary</persName><ptr target="http://syriaca.org/work/1437"/></bibl></note>
 
 
                     <note type="start-location">
@@ -3279,10 +3303,22 @@
 
                     <author syriaca-tags="check"
                         xml:id="Jean" source="#bib1453-1">
-                        <persName xml:lang="fr">Jean</persName>
-                        <persName xml:lang="en">John, disciple of Epiphanius</persName>
+                        <persName xml:lang="fr"><forename>Jean</forename></persName>
+                        <persName xml:lang="syr" source="#bibJean-1"><addName sort="3" type="untagged-title">ܛܘܒܢܐ</addName> <forename sort="1">ܝܘܚܢܢ</forename> <roleName sort="2">ܕܗܘ݂ܐ ܬܠܡܝܕܗ <persName ref="http://syriaca.org/person/477">ܕܩܕܝܫܐ ܡܪܝ ܐܦܝܦܢ ܐܦܝܣܩܘܦܐ ܕܩܘܦܪܘܣ</persName></roleName></persName>
+                        <persName xml:lang="en-x-gedsh" source="#bibJean-1"><addName sort="3" type="untagged-title">the blessed</addName> <forename sort="1">Yoḥannan</forename> <roleName sort="2">who was a disciple of <persName ref="http://syriaca.org/person/477">the holy Mar Epiphanius, bishop of Cyprus</persName></roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">Yoḥannan</forename> <roleName sort="2">disciple of <persName ref="http://syriaca.org/person/477">Epiphanius of Salamis</persName></roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-anglicized"><forename sort="1">John</forename> <roleName sort="2">disciple of <persName ref="http://syriaca.org/person/477">Epiphanius of Salamis</persName></roleName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܝܘܚܢܢ</forename> <roleName sort="2"> ܬܠܡܝܕܗ ܕ<persName ref="http://syriaca.org/person/477">ܐܦܝܦܐܢܝܘܣ ܕܩܘܦܪܘܣ</persName></roleName></persName>
+                        <floruit notBefore="0325" notAfter="0475">late 4th/early 5th century</floruit>
                     </author>
-                    <note type="abstract">John, a disciple of <persName ref="http://syriaca.org/person/477">Epiphanius of Salamis</persName>.</note>
+                    <note type="abstract">A disciple of <persName ref="http://syriaca.org/person/477">Epiphanius of Salamis</persName>.</note>
+                    
+                    <bibl xml:id="bibJean-1">
+                        <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="vol" from="2" to="2">2</citedRange>
+                        <citedRange unit="pp" from="780" to="780">780</citedRange>
+                    </bibl>
 
                     <note type="start-location">
                         <line>206</line>
@@ -3551,8 +3587,37 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1499-1">Grégoire le prêtre</author>
-
+                    <author syriaca-tags="check" source="#bib1499-1" xml:id="Grégoire-le-prêtre">
+                        <persName xml:lang="fr" source="#bib1499-1"><forename sort="1">Grégoire</forename> <roleName type="office" sort="2">le prêtre</roleName></persName>
+                        <persName xml:lang="en" source="#bibGrégoire-le-prêtre-1"><forename sort="1">Gregory</forename> <addName type="untagged-title" sort="2">of Caesarea in Cappadocia</addName></persName>
+                        <persName xml:lang="syr-Syrj" source="#bibGrégoire-le-prêtre-1"><forename sort="1">ܓܪܝܓܘܪܝܘܣ</forename> <addName type="untagged-title" sort="2">ܩܐܣܪܳܝܐ ܕܡܢ ܩܐܦܐܕܘܩܝܐ</addName></persName>
+                        <persName xml:lang="la" source="#bibGrégoire-le-prêtre-2"><forename sort="1">Gregorius</forename> <roleName type="office" sort="2">Presbyter</roleName></persName>
+                        <persName xml:lang="de" source="#bibGrégoire-le-prêtre-3"><forename sort="1">Gregorios</forename> <addName type="untagged-title" sort="2">v Kaisareia</addName></persName>
+                        <note type="abstract">Biographer of <persName ref="http://syriaca.org/person/511">Gregory of Nazianzus</persName></note>
+                        <floruit notBefore="0450" notAfter="0800" resp="http://syriaca.org">8th century or before</floruit>
+                        <idno type="URI">http://pinakes.irht.cnrs.fr/notices/auteur/id/1246</idno>
+                        <idno type="URI">http://viaf.org/viaf/307484301</idno>
+                        <idno type="URI">http://viaf.org/viaf/78819439</idno>
+                        <idno type="URI">http://viaf.org/viaf/227070011</idno>
+                        <idno type="URI">http://viaf.org/viaf/317275625</idno>
+                        <idno type="URI">http://viaf.org/viaf/196805171</idno>
+                    </author>
+                    <bibl xml:id="bibGrégoire-le-prêtre-1">
+                        <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="vol" from="3" to="3">3</citedRange>
+                        <citedRange unit="pp" from="1125" to="1125">1125</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibGrégoire-le-prêtre-2">
+                        <title level="m" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+                        <ptr target="http://syriaca.org/bibl/7"/>
+                        <citedRange unit="pp">III.2:23 n. 1</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibGrégoire-le-prêtre-3">
+                        <title level="m" xml:lang="de">Geschichte der syrischen Literatur</title>
+                        <ptr target="http://syriaca.org/bibl/638"/>
+                        <citedRange unit="pp" from="264" to="264">264</citedRange>
+                    </bibl>
 
                     <note type="start-location">
                         <line>206</line>
@@ -3909,8 +3974,8 @@
 
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1556-1" ref="http://syriaca.org/person/548"
                         >Isaïe</author>
-                    <note type="flag">Zanetti seems to intend the Isaiah who authored the Asceticon, i.e., "Isaiah of Scetis," but his citation of Drauget's edition does not exactly 
-                        match the CSCO volume mentioned in GEDSH (211-212) (see http://www.peeters-leuven.be/boekoverz.asp?nr=1171)</note>
+                    <note type="flag">Given the identity issues with Isaiah of Scetis, would be safest to just mark "attribution." (Zanetti seems to intend the Isaiah who authored the Asceticon, i.e., "Isaiah of Scetis," but his citation of Drauget's edition does not exactly 
+                        match the CSCO volume mentioned in GEDSH (211-212) (see http://www.peeters-leuven.be/boekoverz.asp?nr=1171).)</note>
 
 
                     <note type="start-location">
@@ -4029,8 +4094,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1035"
+                    <author ref="http://syriaca.org/person/1035"
                         xml:lang="fr" source="#bib1570-1">Saliba</author>
 
 
@@ -4247,7 +4311,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/480" xml:lang="fr" source="#bib1649-1"
+                    <author ref="http://syriaca.org/person/480" xml:lang="fr" source="#bib1649-1"
                         >Eusèbe</author>
 
 
@@ -4330,8 +4394,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1035"
+                    <author ref="http://syriaca.org/person/1035"
                         xml:lang="fr" source="#bib1661-1">Saliba</author>
 
 
@@ -4509,7 +4572,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/359" xml:lang="fr" source="#bib1687-1"
+                    <author ref="http://syriaca.org/person/359" xml:lang="fr" source="#bib1687-1"
                         >Babaï</author>
 
 
@@ -4664,10 +4727,9 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1715-1"
+                    <author xml:lang="fr" source="#bib1715-1"
                         ref="http://syriaca.org/person/531">Hnanisho’,
                         catholicos</author>
-                    <note type="flag">Isho‘yahb bar Bestohmag (Ishoʿyahb III) died 659, so this could be either of the Ḥenanishoʿs</note>
 
 
                     <note type="start-location">
@@ -4793,7 +4855,7 @@
                 <person>
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1742-1" ref="http://syriaca.org/person/33"
                         >Isaac d’Antioche</author>
-                    <note type="flag">note the issues regarding the identity of Isaac of Antioch</note>
+                    <note type="flag">At most this should be an "attribution." But Wright's catalogue doesn't even say Isaac for this work. So remove author altogether?</note>
 
 
                     <note type="start-location">
@@ -4979,7 +5041,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1789-1" ref="http://syriaca.org/person/1033">Berikhishô‘</author>
+                    <author xml:lang="fr" source="#bib1789-1" ref="http://syriaca.org/person/1033">Berikhishô‘</author>
 
 
                     <note type="start-location">
@@ -5229,8 +5291,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1834-1" ref="http://syriaca.org/person/537">Hippolyte de Rome</author>
-                    <note type="flag">note problematic identity</note>
+                    <author xml:lang="fr" source="#bib1834-1" ref="http://syriaca.org/person/537">Hippolyte de Rome</author>
 
 
                     <note type="start-location">
@@ -5321,7 +5382,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1850-1">Ishaï</author>
+                    <author xml:lang="fr" source="#bib1850-1" ref="#Ichaï">Ishaï</author>
 
 
                     <note type="start-location">
@@ -5673,7 +5734,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/855"
+                    <author ref="http://syriaca.org/person/1577"
                         xml:lang="fr" source="#bib1937-1">Ammonios</author>
 
 
@@ -5700,7 +5761,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1946-1">Côme le Diacre</author>
+                    <author syriaca-tags="check" xml:lang="fr" source="#bib1946-1" ref="http://syriaca.org/person/31">Côme le Diacre</author>
                     <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
 
 
@@ -5891,8 +5952,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="#Jean"
+                    <author ref="#Jean"
                         xml:lang="fr" source="#bib1984-1">Jean</author>
 
 
@@ -5964,7 +6024,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib2001-1" ref="http://syriaca.org/person/1035"
+                    <author xml:lang="fr" source="#bib2001-1" ref="http://syriaca.org/person/1035"
                         >Saliba de Mansouriya</author>
 
 
@@ -6202,17 +6262,6 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib221-1">Author</author>
-                    <note type="flag">what happened here?</note>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>54</column>
-                    </note>
-
-                </person>
-                <person>
                     <author syriaca-tags="check" xml:lang="fr" source="#bib225-1">Marin et Anatole, excepteurs</author>
 
 
@@ -6246,8 +6295,13 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/2121 http://syriaca.org/person/1958"
-                        xml:lang="fr" source="#bib228-1">Théophile</author>
+                    <author xml:id="Théophile" source="#bib228-1">
+                        <persName xml:lang="fr"><forename>Théophile</forename></persName>
+                        <persName xml:lang="en-x-gedsh"><forename>Theophilos</forename></persName>
+                        <note type="abstract">The author of a hagiography about the martyr <person ref="http://syriaca.org/person/1258">Habib</person>.</note>
+                        <floruit notBefore="0275" notAfter="0375">early 4th century</floruit>
+                        <relation name="syriaca:different-from" mutual="#Théophile http://syriaca.org/person/2121 http://syriaca.org/person/1958"/>
+                    </author>
 
 
                     <note type="start-location">
@@ -6591,9 +6645,24 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib260-1">Isaïe d’Arzoun</author>
-                    <note type="flag">this isn't a conflation with Ishoʾyahb of Arzoun, is it?</note>
+                    <author source="#bib260-1" xml:id="Isaïe-d-Arzoun">
+                        <persName xml:lang="fr" source="#bib260-1">Isaïe d’Arzoun</persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">Ishʿaya</forename> <addName sort="2" type="untagged-title">of Arzun</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܐܫܥܝܐ</forename> <addName sort="2" type="untagged-title">ܐܪܙܢܝܐ</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-anglicized"><forename sort="1">Isaiah</forename> <addName sort="2" type="untagged-title">of Arzun</addName></persName>
+                        <persName xml:lang="syr" syriaca-tags="#syriaca-headword" source="#bibIsaïe-d-Arzoun-1"><forename sort="1">ܐܫܥܝܐ</forename> <addName sort="2" type="untagged-title">ܒܪ ܚܕܒܘ ܘܐܪܙܢܝܐ</addName> <addName sort="3" type="untagged-title">ܡܢ ܦܪܫ̈ܐ ܕܡܠܟܐ</addName></persName>
+                        <persName xml:lang="la" source="#bibIsaïe-d-Arzoun-1"><forename sort="1">Esaias</forename>, <addName sort="2" type="untagged-title">Adabi Arzunitae filius</addName>, <addName sort="3" type="untagged-title">ex cohorte Regiorum equitum</addName></persName>
+                        <note type="abstract">Author of <bibl>a hagiographic text about persons martyred under Shapur II of Persia (r. 309-379)<ptr target="http://syriaca.org/work/260"/></bibl></note>
+                    </author>
+                    
+                    <bibl xml:id="bibIsaïe-d-Arzoun-1">
+                        <title level="m" xml:lang="la">Acta Sanctorum Martyrum Orientalium et Occidentalium</title>
+                        <ptr target="http://syriaca.org/bibl/652"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="224" to="224">224</citedRange>
+                    </bibl>
 
+                    <note type="flag">Are the additional names OK?</note>
 
                     <note type="start-location">
                         <line>206</line>
@@ -6625,8 +6694,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib316-1" ref="http://syriaca.org/person/42">Jacques de Serugh</author>
-                    <note type="flag">OK to correct from "Jacaques" to "Jacques"?</note>
+                    <author xml:lang="fr" source="#bib316-1" ref="http://syriaca.org/person/42">Jacques de Serugh</author>
 
 
                     <note type="start-location">
@@ -6694,7 +6762,7 @@
                 <person>
 
                     <author xml:lang="fr" source="#bib351-1" ref="http://syriaca.org/person/959">Syméon Bar-Apollon</author>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib351-1">Bar-Hatar</author>
+                    <author xml:lang="fr" source="#bib351-1" ref="http://syriaca.org/person/960">Bar-Hatar</author>
 
 
                     <note type="start-location">
@@ -6829,7 +6897,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib400-1" ref="http://syriaca.org/person/28">Jacques le diacre</author>
+                    <author xml:lang="fr" source="#bib400-1" ref="http://syriaca.org/person/28">Jacques le diacre</author>
 
 
                     <note type="start-location">
@@ -8766,8 +8834,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1705 http://syriaca.org/person/1704 http://syriaca.org/person/1703 http://syriaca.org/person/1702 http://syriaca.org/person/1700 http://syriaca.org/person/1699 http://syriaca.org/person/1698 http://syriaca.org/person/1990"
+                    <author ref="http://syriaca.org/person/63"
                         xml:lang="fr" source="#bib558-1">Élie</author>
 
 
@@ -10292,8 +10359,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib690-1">Denha de Tagrit</author>
-                    <note type="flag">This could be http://syriaca.org/person/97 but that record may itself be a conflation.</note>
+                    <author xml:lang="fr" source="#bib690-1" ref="http://syriaca.org/person/97">Denha de Tagrit</author>
 
 
                     <note type="start-location">
@@ -10315,9 +10381,12 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1405 http://syriaca.org/person/2008 http://syriaca.org/person/1990 http://syriaca.org/person/1987 http://syriaca.org/person/1986 http://syriaca.org/person/1985 http://syriaca.org/person/1984 http://syriaca.org/person/1983 http://syriaca.org/person/1982 http://syriaca.org/person/1981 http://syriaca.org/person/1980 http://syriaca.org/person/1978 http://syriaca.org/person/1977 http://syriaca.org/person/1976 http://syriaca.org/person/1975 http://syriaca.org/person/1974 http://syriaca.org/person/1958 http://syriaca.org/person/1951 http://syriaca.org/person/72 http://syriaca.org/person/675 http://syriaca.org/person/674 http://syriaca.org/person/673 http://syriaca.org/person/592 http://syriaca.org/person/47 http://syriaca.org/person/459 http://syriaca.org/person/395 http://syriaca.org/person/379 http://syriaca.org/person/2 http://syriaca.org/person/144 http://syriaca.org/person/876 http://syriaca.org/person/86 http://syriaca.org/person/84 http://syriaca.org/person/82"
-                        xml:lang="fr" source="#bib692-1">Paul</author>
+                    <author xml:id="Paul" source="#bib692-1">
+                        <persName xml:lang="fr"><forename>Paul</forename></persName>
+                        <persName xml:lang="en" syriaca-tags="#syriaca-headword"><forename>pseudo-Paul</forename></persName>
+                        <note type="abstract">A disciple of <person ref="http://syriaca.org/person/1092">Aaron of Serugh</person></note>
+                        <floruit notBefore="0275" notAfter="0375">early 4th century</floruit>
+                    </author>
 
 
                     <note type="start-location">
@@ -10591,8 +10660,36 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib718-1">Ichaï</author>
-                    <note type="flag">this is the same "Ishai" mentioned in GEDSH, 362 - possibly new to our dataset</note>
+                    <author source="#bib718-1" xml:id="Ichaï">
+                        <persName xml:lang="fr" source="#bib718-1"><forename>Ichaï</forename></persName>
+                        <persName xml:lang="en-x-gedsh" source="#bibIchaï-1"><forename>Ishai</forename></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-anglicized"><forename>Isaiah</forename></persName>
+                        <persName xml:lang="fr" source="#bibIchaï-2"><forename sort="1">Išaï</forename>, <roleName sort="2" type="office">prêtre et docteur</roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">Ishai</forename>, <roleName sort="2" type="office">priest and doctor</roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-anglicized"><forename sort="1">Jesse</forename>, <roleName sort="2" type="office">priest and doctor</roleName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܐܝܫܝ</forename> <roleName sort="2" type="office">ܩܫܝܫܐ ܘܡܠܦܢܐ</roleName></persName>
+                        <persName xml:lang="syr" source="#bibIchaï-2"><addName type="untagged-title" sort="3">ܡܪܝ</addName> <forename sort="1">ܐܝܫܝ</forename> <roleName sort="2" type="office">ܩܫܝܫܐ ܘܡܠܦܢܐ</roleName></persName>
+                        <note type="abstract" source="#bibIchaï-2">Honored as a doctor of the Church of the East, Ishai was a disciple of <persName ref="http://syriaca.org/person/306">Aba I</persName> and held the position of Interpreter of the school of Selucia-Ctesiphon. He also authored a <bibl>treatise on the Holy Martyrs<ptr target="http://syriaca.org/work/718"/></bibl>.</note>
+                        <floruit notBefore="0500" notAfter="0600" source="#bibIchaï-2">mid-6th century</floruit>
+                        <death notBefore="0570" source="#bibIchaï-2">after 570</death>
+                        <idno type="URI">http://viaf.org/viaf/286554322</idno>
+                        <idno type="URI">http://viaf.org/viaf/41984865</idno>
+                        <idno type="URI">http://viaf.org/viaf/311492790</idno>
+                        <idno type="URI">http://viaf.org/viaf/297706686</idno>
+                    </author>
+                    <bibl xml:id="bibIchaï-1">
+                        <title level="a" xml:lang="en">Scher, Addai</title>
+                        <ptr target="http://syriaca.org/bibl/486"/>
+                        <citedRange unit="pp" from="362" to="362">362</citedRange>
+                        <citedRange unit="entry" from="477" to="477">477</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibIchaï-2">
+                        <title level="a" xml:lang="fr">Traités d’Isaï le Docteur et de Hnana d’Adiabène sur les martyrs, le vendredi d’or et les rogations, suivis de la confession de foi à réciter par les évêques avant l’ordination</title>
+                        <title level="m" xml:lang="la">Tomus Septimus</title>
+                        <title xml:lang="la" level="s">Patrologia Orientalis</title>
+                        <ptr target="http://syriaca.org/bibl/1654"/>
+                        <citedRange unit="pp" from="5" to="6">5-6, 15</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -12591,7 +12688,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib901-1">Babai, archimandrite du <placeName ref="http://syriaca.org/place/100">mont
+                    <author xml:lang="fr" source="#bib901-1" ref="http://syriaca.org/person/359">Babai, archimandrite du <placeName ref="http://syriaca.org/place/100">mont
                         Izla</placeName></author>
 
 
@@ -12602,7 +12699,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/1578 http://syriaca.org/person/1577"
+                    <author ref="http://syriaca.org/person/1577"
                         xml:lang="fr" source="#bib905-1">Ammonios</author>
 
 
@@ -12704,7 +12801,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib916-1">Côme le diacre</author>
+                    <author xml:lang="fr" source="#bib916-1" ref="http://syriaca.org/person/31">Côme le diacre</author>
 
 
                     <note type="start-location">
@@ -13071,7 +13168,7 @@
                 </person>
                 <person>
                     <author syriaca-tags="check" xml:lang="fr" source="#bib960-1" ref="http://syriaca.org/person/33">Isaac d’Antioche</author>
-                    <note type="flag">note the problematic identity of Isaac of Antioch</note>
+                    <note type="flag">Probably safer to use "attributed"</note>
 
 
                     <note type="start-location">
@@ -13081,8 +13178,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1475 http://syriaca.org/person/1473 http://syriaca.org/person/1471 http://syriaca.org/person/2101 http://syriaca.org/person/2100 http://syriaca.org/person/2099 http://syriaca.org/person/2098 http://syriaca.org/person/2097 http://syriaca.org/person/2096 http://syriaca.org/person/2095 http://syriaca.org/person/2094 http://syriaca.org/person/2093"
+                    <author ref="http://syriaca.org/person/986"
                         xml:lang="fr" source="#bib963-1">Syméon</author>
 
 
@@ -13093,7 +13189,24 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib964-1">Abraham Zabaya</author>
+                    <author source="#bib964-1" xml:id="Abraham-Zabaya">
+                        <persName xml:lang="fr" source="#bib964-1">Abraham Zabaya</persName>
+                        <persName xml:lang="en" source="#bibAbraham-Zabaya-1"><addName type="role">the priest</addName> <forename sort="1">Abraham</forename> <addName>of Zābé</addName></persName>
+                        <persName xml:lang="syr" source="#bibAbraham-Zabaya-1"><forename>ܐܒܪܗܡ</forename> <addName>ܙܐܒܝܐ</addName> <addName type="role">ܩܫܝܫܐ</addName></persName>
+                    </author>
+                    <floruit source="#bibAbraham-Zabaya-2" notBefore="0611" notAfter="1150">soemtime after <persName ref="http://syriaca.org/person/366">Rabban Bar ʿEdta</persName>'s death, during the reign of a metropolitan named ʿAbdishoʿ</floruit>
+                    <note type="abstract" source="#bibAbraham-Zabaya-2">Author of <bibl>a metrical life of <persName ref="http://syriaca.org/person/366">Rabban Bar ʿEdta</persName><ptr target="http://syriaca.org/work/964"/></bibl>, possibly during the time of <persName ref="http://syriaca.org/person/309">ʿAbdishoʿ bar Bahrīz</persName></note>
+                    
+                    <bibl xml:id="bibAbraham-Zabaya-1">
+                        <ptr target="http://syriaca.org/bibl/637"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="162" to="162">162</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAbraham-Zabaya-2">
+                        <ptr target="http://syriaca.org/bibl/84"/>
+                        <citedRange unit="entry" from="75" to="75">75</citedRange>
+                        <citedRange unit="pp" from="56" to="56">56</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -13174,8 +13287,8 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/1751 http://syriaca.org/person/1750 http://syriaca.org/person/1749 http://syriaca.org/person/1250 http://syriaca.org/person/1755"
+                    <author
+                        ref="http://syriaca.org/person/978"
                         xml:lang="fr" source="#bib980-1">Georges</author>
 
 
