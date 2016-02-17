@@ -2908,9 +2908,37 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1406-1">Georges de Resh ‘Ayna</author>
-                    <note type="flag">Need new URI, cite 
-                        Brock, S. P. (1973) “An early Syriac life of Maximus the Confessor.” Analecta Bollandiana 91: 299–346.  as the source (FYI I have a copy but it is cut off does not give the authors name? Can you get a copy in Munich and see if Brock discusses the author?)</note>
+                    <author syriaca-tags="check" source="#bib1406-1" xml:id="Georges-de-Resh-‘Ayna">
+                        <persName xml:lang="fr" source="#bib1406-1"><forename sort="1">Georges</forename> <addName type="untagged-title" sort="2">de Resh ‘Ayna</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܓܝܘܪܓܝ</forename> <addName type="untagged-title">ܕܪܝܫ ܥܝܢܐ</addName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">Gewargis</forename> <addName type="untagged-title">of Reshʿayna</addName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-anglicized"><forename sort="1">George</forename> <addName type="untagged-title">of Reshʿayna</addName></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">George</forename> <addName type="untagged-title" sort="2">of Reshʿaina</addName></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">GRYGWRY</forename> <addName type="untagged-title" sort="2">of Reshʿaina</addName>, <roleName type="office">disciple of Sophronios</roleName></persName>
+                        <persName xml:lang="syr" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">ܓܪܝܓܘܪܝ</forename> <roleName type="office" sort="3">ܬܠܡܝܕܗ ܕܣܘܦܪܘܢܝܣ ܐܦܣܩܘܦܐ ܕܐܘܪܫܠܡ</roleName> <addName type="untagged-title" sort="2">ܕܐܝܬܝ ܡܢ ܪܝܫ ܥܝܢܐ</addName></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">Gregorios</forename> <addName type="untagged-title" sort="2">from Reshʿaina</addName>, <roleName type="office" sort="3">a disciple of Sophronios, the bishop of Jerusalem</roleName></persName>
+                        <persName xml:lang="syr" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">ܓܝܘܪܓܝ</forename></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">GYWRGY</forename></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1" syriaca-tags="#syriaca-anglicized"><forename sort="1">George</forename></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><forename sort="1">Gregory</forename> <addName type="untagged-title" sort="2">of Reshʿaina</addName></persName>
+                        <persName xml:lang="en" source="#bibGeorges-de-Resh-‘Ayna-1"><addName type="untagged-title" sort="4">ḥasya</addName> <forename sort="1">George</forename> (<forename sort="2">GYWRGY</forename>) <roleName type="office">the monk</roleName></persName>
+                        <note type="abstract" source="#bibGeorges-de-Resh-‘Ayna-1">Author of <bibl>a work about his contemporary Maximus the Confessor<ptr target="http://syriaca.org/work/1406"/></bibl> (d. 662), 
+                            and a bishop under <persName ref="http://syriaca.org/person/757">Sophronios of Jerusalem</persName> (r. 634-638). 
+                            The manuscript witness (BM Add. 7192, ff. 72b-78b) gives his name as both Gewargis and Gregorios, one of which is likely a scribal error.</note>
+                        <note type="disambiguation">Brock tentatively suggests the identification of this George with the author of an apparently monothelete Chalcedonian florilegium 
+                        contained in BM Add. 14535 ff. 1-20. He considers it unlikely that this author was late enough to be identified with the George present at the Sixth Council (680/681).</note>
+                        <death notBefore="0662" notAfter="0700" source="#bibGeorges-de-Resh-‘Ayna-1">after the death of Maximus the Confessor (662)</death>
+                    </author>
+                    
+                    <bibl xml:id="bibGeorges-de-Resh-‘Ayna-1">
+                        <title level="a" xml:lang="en">An Early Syriac Life of Maximus the Confessor</title>
+                        <title level="j" xml:lang="la">Analecta Bollandiana</title>
+                        <ptr target="http://syriaca.org/bibl/1081"/>
+                        <citedRange unit="pp">300, 315-316, 321, 332-336</citedRange>
+                    </bibl>
+                    
+                    <note type="flag">Do we need URIs for either the haṣya George or the George at the sixth council? See notes above.
+                    Also, how can we label his confession as Chalcedonian monothelete?</note>
 
 
                     <note type="start-location">
@@ -2921,8 +2949,37 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1409-1">Agathange (résumé)</author>
-                    <note type="flag">This is an interesting challenge, besides pseudo we need continuator and abbreviator? Can you get:
+                    <author source="#bib1409-1" xml:id="Agathange">
+                        <persName xml:lang="fr" source="#bib1409-1">Agathange</persName>
+                        <persName xml:lang="en" source="#bibAgathange-1 #bibAgathange-2" syriaca-tags="#syriaca-headword">Agathangelos</persName>
+                        <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Agathangelos&amp;sT=keywords</idno>
+                        <idno type="URI">http://viaf.org/viaf/79271288</idno>
+                        <idno type="URI">http://viaf.org/viaf/297583675</idno>
+                        <idno type="URI">http://viaf.org/viaf/307161413</idno>
+                        <floruit notBefore="0400" source="#bibAgathange-2">Not before the 5th century</floruit>
+                        <note type="abstract" source="#bibAgathange-2">Pseudonymous 5th century (or later) Armenian author of the <bibl>life of Gregory the Illuminator<ptr target="http://syriaca.org/work/1409"/></bibl></note>
+                        <state type="confession" ref="http://syriaca.org/documentation/confessions.xml#armenian">
+                            <label>Armenian</label>
+                        </state>
+                    </author>
+                    
+                    <bibl xml:id="bibAgathange-1">
+                        <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&sL=A&sK=Agathangelos&sT=keywords">Bar Idta</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAgathange-2">
+                        <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
+                        <ptr target="http://syriaca.org/bibl/1655"/>
+                        <citedRange unit="entry" target="http://www.oxfordreference.com/view/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-0098">Agathangelos</citedRange>
+                    </bibl>
+                    
+                    <note type="flag">I think this record is ready now.
+                        
+                        Agathange/Agathangelos was the author -- the name of the abbreviator is not given so far as I can tell.
+                        Nor is Agathange's name given in Syriac at the beginning or end of the work. 
+                        
+                        This is an interesting challenge, besides pseudo we need continuator and abbreviator? Can you get:
                         van Esbroeck, M. 1977.“Le résumé syriaque de l'Agathange.” AB 95: 291–358 (esp. 292). Pg. 292 says "Rappelons brièvement que diverse détails de cette forme de l'Agathange rendent son éclosion probable entre les années 604 à 610"
                         Should we just use "editor" element with @type="abbreviator"? </note>
 
@@ -3301,8 +3358,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check"
-                        xml:id="Jean" source="#bib1453-1">
+                    <author xml:id="Jean" source="#bib1453-1">
                         <persName xml:lang="fr"><forename>Jean</forename></persName>
                         <persName xml:lang="syr" source="#bibJean-1"><addName sort="3" type="untagged-title">ܛܘܒܢܐ</addName> <forename sort="1">ܝܘܚܢܢ</forename> <roleName sort="2">ܕܗܘ݂ܐ ܬܠܡܝܕܗ <persName ref="http://syriaca.org/person/477">ܕܩܕܝܫܐ ܡܪܝ ܐܦܝܦܢ ܐܦܝܣܩܘܦܐ ܕܩܘܦܪܘܣ</persName></roleName></persName>
                         <persName xml:lang="en-x-gedsh" source="#bibJean-1"><addName sort="3" type="untagged-title">the blessed</addName> <forename sort="1">Yoḥannan</forename> <roleName sort="2">who was a disciple of <persName ref="http://syriaca.org/person/477">the holy Mar Epiphanius, bishop of Cyprus</persName></roleName></persName>
