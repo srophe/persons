@@ -6,8 +6,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Theodosius II — <foreign xml:lang="syr">ܬܐܘܕܣܝܣ</foreign>
+            <title level="a" xml:lang="en">Sargis — <foreign xml:lang="syr">ܣܪܓܝܣ</foreign>
             </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <title level="s">Gateway to the Syriac Saints</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -48,15 +50,36 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2308/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e10254/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2015-11-12+01:00</date>
+            <date>2016-02-25+01:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
+                                A. Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
             <editor role="general"
@@ -93,7 +116,7 @@
                <name type="person"
                      ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
-            <biblScope unit="vol">3</biblScope>
+            <biblScope unit="vol">1</biblScope>
             <idno type="URI">http://syriaca.org/persons</idno>
          </seriesStmt>
          <sourceDesc>
@@ -152,39 +175,33 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2015-11-12+01:00">CREATED: person</change>
+                 when="2016-02-25+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2308">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Theodosius II</persName>
-               <persName xml:lang="en-x-gedsh">Tawdasis</persName>
-               <persName xml:lang="syr" source="#bib2308-3" syriaca-tags="#syriaca-headword">ܬܐܘܕܣܝܣ</persName>
-               <idno type="URI">http://syriaca.org/person/2308</idno>
-               <idno type="temporary">/TheodosiusII</idno>
-               <idno type="URI">https://en.wikipedia.org/wiki/Theodosius_II</idno>
-               <idno type="PLRE">Theodosius 6</idno>
-               <state xml:lang="en" type="office" source="#bib2308-4">
-                  <desc>Emperor of Rome</desc>
+            <person xml:id="person-unresolved-d2e10254" ana="#syriaca-saint">
+               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Sargis</persName>
+               <persName xml:lang="syr"
+                         source="#bibunresolved-d2e10254-3"
+                         syriaca-tags="#syriaca-headword">ܣܪܓܝܣ</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e10254-4">Mar Sergios</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e10254-4">Mar Sergius</persName>
+               <idno type="temporary">/MarSargis</idno>
+               <state xml:lang="en" type="office" source="#bibunresolved-d2e10254-4">
+                  <desc>Saint</desc>
                </state>
-               <sex xml:lang="en" source="#bib2308-4" value="M">male</sex>
-               <bibl xml:id="bib2308-3">
+               <sex xml:lang="en" source="#bibunresolved-d2e10254-4" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e10254-3">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">6</citedRange>
+                  <citedRange unit="pp">9</citedRange>
                </bibl>
-               <bibl xml:id="bib2308-4">
+               <bibl xml:id="bibunresolved-d2e10254-4">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">51</citedRange>
-               </bibl>
-               <bibl xml:id="bib2308-5">
-                  <title xml:lang="en">Martindale, The Prosopography of the Later Roman Empire, vol. 2: A.D. 395-527</title>
-                  <ptr target="http://syriaca.org/bibl/673"/>
-                  <citedRange unit="vol">II</citedRange>
-                  <citedRange unit="pp">1100</citedRange>
+                  <citedRange unit="section">81</citedRange>
                </bibl>
             </person>
          </listPerson>
