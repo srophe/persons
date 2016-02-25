@@ -416,6 +416,8 @@
                                             xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                         <xsl:copy-of select="$converted-columns/state"
                                             xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                        <xsl:copy-of select="$converted-columns/trait"
+                                            xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                         <xsl:copy-of select="$converted-columns/sex"
                                             xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
 
