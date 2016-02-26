@@ -6,7 +6,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">The poor and invalid of Edessa</title>
+            <title level="a" xml:lang="en">Person unresolved-d2e9882 — <foreign xml:lang="syr">ܣܪܓܝܣ</foreign>
+            </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <title level="s">Gateway to the Syriac Saints</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,15 +50,36 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2215/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e9882/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-02-25+01:00</date>
+            <date>2016-02-26+01:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
+                                A. Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
             <editor role="general"
@@ -92,7 +116,7 @@
                <name type="person"
                      ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
-            <biblScope unit="vol">3</biblScope>
+            <biblScope unit="vol">1</biblScope>
             <idno type="URI">http://syriaca.org/persons</idno>
          </seriesStmt>
          <sourceDesc>
@@ -151,32 +175,32 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-02-25+01:00">CREATED: person</change>
+                 when="2016-02-26+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2215">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">The poor and invalid of Edessa</persName>
-               <persName xml:lang="en" source="#bib2215-4">The poor and invalid of Edessa</persName>
-               <note xml:lang="en" type="abstract">An anonymous person or group of persons mentioned in the &lt;title ref=”http://syriaca.org/work/119”&gt;The Chronicle of Edessa&lt;title&gt; (circa mid 6th century).</note>
-               <idno type="URI">http://syriaca.org/person/2215</idno>
-               <idno type="temporary">/Anonymi15</idno>
-               <floruit xml:lang="en"
-                        when="0457"
-                        syriaca-computed-start="0457-01-01"
-                        source="#bib2215-4">457</floruit>
-               <trait xml:lang="en">anonymous</trait>
-               <bibl xml:id="bib2215-3">
+            <person xml:id="person-unresolved-d2e9882" ana="#syriaca-saint">
+               <persName xml:lang="syr"
+                         source="#bibunresolved-d2e9882-3"
+                         syriaca-tags="#syriaca-headword">ܣܪܓܝܣ</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e9882-4">Mar Sergios</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e9882-4">Mar Sergius</persName>
+               <idno type="temporary">/MarSargis</idno>
+               <state xml:lang="en" type="office" source="#bibunresolved-d2e9882-4">
+                  <desc>Saint</desc>
+               </state>
+               <sex xml:lang="en" source="#bibunresolved-d2e9882-4" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e9882-3">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">8</citedRange>
+                  <citedRange unit="pp">9</citedRange>
                </bibl>
-               <bibl xml:id="bib2215-4">
+               <bibl xml:id="bibunresolved-d2e9882-4">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">68</citedRange>
+                  <citedRange unit="section">81</citedRange>
                </bibl>
             </person>
          </listPerson>

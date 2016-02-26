@@ -6,8 +6,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Constantine I — <foreign xml:lang="syr">ܩܘܣܛܢܛܝܢܘܣ</foreign>
+            <title level="a" xml:lang="en">Person unresolved-d2e5644 — <foreign xml:lang="syr">ܩܘܙܡܐ</foreign>
             </title>
+            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+            <title level="s">Gateway to the Syriac Saints</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -48,15 +50,36 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/unresolved-d2e5757/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e5644/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-02-25+01:00</date>
+            <date>2016-02-26+01:00</date>
          </publicationStmt>
+         <seriesStmt>
+            <title level="s">Gateway to the Syriac Saints</title>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+            <editor role="general"
+                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                            Michelson</editor>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+            </respStmt>
+            <respStmt>
+               <resp>Edited by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David
+                                A. Michelson</name>
+            </respStmt>
+            <biblScope unit="vol">1</biblScope>
+            <idno type="URI">http://syriaca.org/q</idno>
+         </seriesStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
             <editor role="general"
@@ -93,7 +116,7 @@
                <name type="person"
                      ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
             </respStmt>
-            <biblScope unit="vol">3</biblScope>
+            <biblScope unit="vol">1</biblScope>
             <idno type="URI">http://syriaca.org/persons</idno>
          </seriesStmt>
          <sourceDesc>
@@ -152,37 +175,29 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-02-25+01:00">CREATED: person</change>
+                 when="2016-02-26+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-unresolved-d2e5757">
-               <persName xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Constantine I</persName>
-               <persName xml:lang="en-x-gedsh">Qusṭanṭinos</persName>
+            <person xml:id="person-unresolved-d2e5644" ana="#syriaca-saint">
                <persName xml:lang="syr"
-                         source="#bibunresolved-d2e5757-3"
-                         syriaca-tags="#syriaca-headword">ܩܘܣܛܢܛܝܢܘܣ</persName>
-               <idno type="temporary">/Constantine</idno>
-               <idno type="URI">https://en.wikipedia.org/wiki/Constantine_the_Great</idno>
-               <idno type="PLRE">Fl. Val. Constantinus 4</idno>
-               <sex xml:lang="en" source="#bibunresolved-d2e5757-4" value="M">male</sex>
-               <bibl xml:id="bibunresolved-d2e5757-3">
+                         source="#bibunresolved-d2e5644-3"
+                         syriaca-tags="#syriaca-headword">ܩܘܙܡܐ</persName>
+               <persName xml:lang="en" source="#bibunresolved-d2e5644-4">Mar Cosmas</persName>
+               <idno type="temporary">/Cosmas</idno>
+               <idno type="URI">https://en.wikipedia.org/wiki/Saints_Cosmas_and_Damian</idno>
+               <sex xml:lang="en" source="#bibunresolved-d2e5644-4" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e5644-3">
                   <title xml:lang="la">Chronica Minora</title>
                   <ptr target="http://syriaca.org/bibl/633"/>
-                  <citedRange unit="pp">4</citedRange>
+                  <citedRange unit="pp">8</citedRange>
                </bibl>
-               <bibl xml:id="bibunresolved-d2e5757-4">
+               <bibl xml:id="bibunresolved-d2e5644-4">
                   <title xml:lang="en">Cowper, Selections from the Syriac. No. 1: The Chronicle of Edessa</title>
                   <ptr target="http://syriaca.org/bibl/657"/>
-                  <citedRange unit="section">19</citedRange>
-               </bibl>
-               <bibl xml:id="bibunresolved-d2e5757-5">
-                  <title xml:lang="en">Jones, et al., The Prosopography of the Later Roman Empire, vol. 1: A.D. 260-395</title>
-                  <ptr target="http://syriaca.org/bibl/672"/>
-                  <citedRange unit="vol">I</citedRange>
-                  <citedRange unit="pp">223-24</citedRange>
+                  <citedRange unit="section">68</citedRange>
                </bibl>
             </person>
          </listPerson>
