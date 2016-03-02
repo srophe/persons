@@ -755,7 +755,7 @@
                     <xsl:variable name="this-column" select="."/>
                     <!-- gets the bibl URI number from the cell that contains the source for the spreadsheet cell being processed -->
                     <xsl:variable name="this-column-source"
-                        select="$columns-to-convert[name()=$this-column/@sourceUriColumn]"/>
+                        select="$columns-to-convert[name()=$this-column/@sourceUriColumn][1]"/>
                     <!-- turns that bibl URI number into a complete Syriaca.org URI -->
                     <xsl:variable name="column-uri"
                         select="concat('http://syriaca.org/bibl/',$this-column-source)"/>
@@ -920,9 +920,9 @@
                                 select="concat('bib',$record-id,'-',index-of($sources,$source-uri-column))"/>
                             <!-- grabs the title of the remote bibl record and imports it here. -->
                             <!-- ??? What info do we want to include here - just the title or more? The title of the TEI doc or the title of the described bibl? -->
-                            <xsl:copy-of
+                            <!--<xsl:copy-of
                                 select="document($bibl-url)/TEI/teiHeader/fileDesc/titleStmt/title"
-                                xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
+                                xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>-->
                             <!-- adds a pointer with this bibl's URI -->
                             <ptr target="{concat('http://syriaca.org/bibl/',.)}"/>
                             <!-- cycles through citedRange(s) and adds to bibl. This accepts multiple citedRanges for the same bibl (e.g., both page and section numbers), 
