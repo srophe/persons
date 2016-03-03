@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Patrophilus — <foreign xml:lang="syr">ܦܛܪܘܦܝܠܘܣ ܐܦܝܣܩܘܦܐ</foreign>
+            <title level="a" xml:lang="en">Emperor Theodosius II — <foreign xml:lang="syr">ܬܐܘܕܘܣܝܘܣ ܡܠܟܐ</foreign>
             </title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -48,14 +48,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2781    /tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e34988/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-03-02+01:00</date>
+            <date>2016-03-03+01:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -152,45 +152,24 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-03-02+01:00">CREATED: person</change>
+                 when="2016-03-03+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2781">
-               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Patrophilus</persName>
+            <person xml:id="person-unresolved-d2e34988">
+               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Emperor Theodosius II</persName>
                <persName xml:lang="syr"
-                         source="#bib2781 -1"
-                         syriaca-tags="#syriaca-headword">ܦܛܪܘܦܝܠܘܣ ܐܦܝܣܩܘܦܐ</persName>
-               <note xml:lang="en" type="abstract" source="#bib2781 -2">Bishop of Aegae and correspondent of Basil of Caesarea</note>
-               <idno type="URI">http://syriaca.org/person/2781    </idno>
-               <floruit xml:lang="en"
-                        when="0376"
-                        syriaca-computed-start="0376-01-01"
-                        source="#bib2781 -4">0376</floruit>
-               <sex xml:lang="en" source="#bib2781 -2" value="M">male</sex>
-               <bibl xml:id="bib2781 -1">
-                  <ptr target="http://syriaca.org/bibl/http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">303</citedRange>
-               </bibl>
-               <bibl xml:id="bib2781 -1">
-                  <ptr target="http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">303</citedRange>
-               </bibl>
-               <bibl xml:id="bib2781 -2">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">269</citedRange>
-               </bibl>
-               <bibl xml:id="bib2781 -3">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">269</citedRange>
-               </bibl>
-               <bibl xml:id="bib2781 -4">
-                  <ptr target="http://syriaca.org/bibl/1697"/>
-                  <citedRange unit="pp">290-91</citedRange>
-                  <citedRange unit="section"/>
-                  <citedRange unit="URL">http://www.ccel.org/ccel/schaff/npnf208.ix.ccli.html</citedRange>
+                         source="#bibunresolved-d2e34988-1"
+                         syriaca-tags="#syriaca-headword">ܬܐܘܕܘܣܝܘܣ ܡܠܟܐ</persName>
+               
+
+
+
+               <bibl xml:id="bibunresolved-d2e34988-1">
+                  <ptr target="http://syriaca.org/bibl/671"/>
+                  <citedRange unit="pp">85</citedRange>
                </bibl>
             </person>
          </listPerson>

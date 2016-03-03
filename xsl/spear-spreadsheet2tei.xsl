@@ -303,7 +303,7 @@
     <xsl:template match="/root">
         <!-- creates ids for new persons. -->
         <!-- ??? How should we deal with matched persons, where the existing TEI records need to be supplemented? -->
-        <xsl:for-each select="row">
+        <xsl:for-each select="row[not(contains(.,'***'))]">
             <xsl:variable name="record-id">
                 <!-- gets a record ID from the New_URI column, or generates one if that column is blank -->
                 <xsl:choose>
@@ -747,7 +747,7 @@
             <xsl:if test=".!=''">
                 <!-- grabs the contents of the column so that it can be used in nested for-each statements -->
                 <xsl:variable name="column-contents">
-                    <xsl:value-of select="."/>
+                    <xsl:value-of select="normalize-space(.)"/>
                 </xsl:variable>
                 <!-- cycles through each of the elements pre-defined in $column-mapping, checking whether they have the current spreadsheet column as @column 
                     and processing the data if they do. -->

@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Stephen — <foreign xml:lang="syr">ܣܛܦܢܘܣ ܐܦܝܣܩܘܦܐ ܕܐܦܡܝܐ</foreign>
+            <title level="a" xml:lang="en">Peter the Iberian — <foreign xml:lang="syr">ܦܛܪܘܣ ܕܡܢ ܝܒܗܪܝܐ</foreign>
             </title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
@@ -48,14 +48,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2760   /tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e37503/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-03-02+01:00</date>
+            <date>2016-03-03+01:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -152,47 +152,24 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-03-02+01:00">CREATED: person</change>
+                 when="2016-03-03+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2760">
-               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Stephen</persName>
+            <person xml:id="person-unresolved-d2e37503">
+               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Peter the Iberian</persName>
                <persName xml:lang="syr"
-                         source="#bib2760 -1"
-                         syriaca-tags="#syriaca-headword">ܣܛܦܢܘܣ ܐܦܝܣܩܘܦܐ ܕܐܦܡܝܐ</persName>
-               <note xml:lang="en" type="abstract" source="#bib2760 -3">Bishop of Apamea and a correspondent of Severus of Antioch</note>
-               <idno type="URI">http://syriaca.org/person/2760   </idno>
-               <floruit xml:lang="en"
-                        notBefore="0500"
-                        syriaca-computed-start="0500-01-01"
-                        notAfter="0525"
-                        syriaca-computed-end="0525-01-01"
-                        source="#bib2760 -3">first 1/4 6th century</floruit>
-               <sex xml:lang="en" source="#bib2760 -2" value="M">male</sex>
-               <bibl xml:id="bib2760 -1">
-                  <ptr target="http://syriaca.org/bibl/http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">428</citedRange>
-               </bibl>
-               <bibl xml:id="bib2760 -1">
-                  <ptr target="http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">428</citedRange>
-               </bibl>
-               <bibl xml:id="bib2760 -2">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">380</citedRange>
-               </bibl>
-               <bibl xml:id="bib2760 -3">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">380-82</citedRange>
-               </bibl>
-               <bibl xml:id="bib2760 -4">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">380-82</citedRange>
-                  <citedRange unit="section"/>
-                  <citedRange unit="URL"/>
+                         source="#bibunresolved-d2e37503-1"
+                         syriaca-tags="#syriaca-headword">ܦܛܪܘܣ ܕܡܢ ܝܒܗܪܝܐ</persName>
+               
+
+
+
+               <bibl xml:id="bibunresolved-d2e37503-1">
+                  <ptr target="http://syriaca.org/bibl/666"/>
+                  <citedRange unit="pp">8</citedRange>
                </bibl>
             </person>
          </listPerson>

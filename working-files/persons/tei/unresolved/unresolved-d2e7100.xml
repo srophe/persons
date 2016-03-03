@@ -6,8 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Pamphilus — <foreign xml:lang="syr">ܦܐܡܦܘܠܝܣ</foreign>
-            </title>
+            <title level="a" xml:lang="en">Acacius</title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -48,14 +47,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/unresolved-d2e625/tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e7100/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-03-02+01:00</date>
+            <date>2016-03-03+01:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -152,40 +151,33 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-03-02+01:00">CREATED: person</change>
+                 when="2016-03-03+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-unresolved-d2e625">
-               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Pamphilus</persName>
-               <persName xml:lang="syr"
-                         source="#bibunresolved-d2e625-1"
-                         syriaca-tags="#syriaca-headword">ܦܐܡܦܘܠܝܣ</persName>
-               <note xml:lang="en" type="abstract" source="#bibunresolved-d2e625-2">A presbyter of Caesarea in Palestine, martyr, and saint</note>
-               <idno type="URI">https://en.wikipedia.org/wiki/Pamphilus_of_Caesarea</idno>
-               <death xml:lang="en" source="#bibunresolved-d2e625-4">0310-02-26</death>
-               <sex xml:lang="en" source="#bibunresolved-d2e625-2" value="M">male</sex>
-               <bibl xml:id="bibunresolved-d2e625-1">
-                  <ptr target="http://syriaca.org/bibl/http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">441</citedRange>
+            <person xml:id="person-unresolved-d2e7100">
+               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Acacius</persName>
+               <note xml:lang="en" type="abstract" source="#bibunresolved-d2e7100-2">Bishop of Berrhoea and recipient of a letter from Cyril of Alexandria</note>
+               <floruit xml:lang="en"
+                        notBefore="0400"
+                        syriaca-computed-start="0400-01-01"
+                        notAfter="0450"
+                        syriaca-computed-end="0450-01-01"
+                        source="#bibunresolved-d2e7100-2">early 5th century</floruit>
+               <sex xml:lang="en" source="#bibunresolved-d2e7100-2" value="M">male</sex>
+               <bibl xml:id="bibunresolved-d2e7100-2">
+                  <ptr target="http://syriaca.org/bibl/670"/>
+                  <citedRange unit="pp">297</citedRange>
                </bibl>
-               <bibl xml:id="bibunresolved-d2e625-1">
-                  <ptr target="http://syriaca.org/bibl/667"/>
-                  <citedRange unit="pp">441</citedRange>
+               <bibl xml:id="bibunresolved-d2e7100-3">
+                  <ptr target="http://syriaca.org/bibl/670"/>
+                  <citedRange unit="pp">297</citedRange>
                </bibl>
-               <bibl xml:id="bibunresolved-d2e625-2">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">393</citedRange>
-               </bibl>
-               <bibl xml:id="bibunresolved-d2e625-3">
-                  <ptr target="http://syriaca.org/bibl/669"/>
-                  <citedRange unit="pp">393</citedRange>
-               </bibl>
-               <bibl xml:id="bibunresolved-d2e625-4">
-                  <ptr target="http://syriaca.org/bibl/1680"/>
-                  <citedRange unit="pp">31-32</citedRange>
+               <bibl xml:id="bibunresolved-d2e7100-4">
+                  <ptr target="http://syriaca.org/bibl/670"/>
+                  <citedRange unit="pp">297</citedRange>
                   <citedRange unit="section"/>
                   <citedRange unit="URL"/>
                </bibl>

@@ -6,7 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Paul</title>
+            <title level="a" xml:lang="en">Polycarp of Smyrna — <foreign xml:lang="syr">ܦܘܠܩܪܦܘܣ ܐܦܝܣܩܘܦܐ ܕܣܡܘܪܢܐ</foreign>
+            </title>
             <title level="s">The Syriac Biographical Dictionary</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -47,14 +48,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/2730  /tei</idno>
+            <idno type="URI">http://syriaca.org/person/unresolved-d2e1172/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported
                                 License.</p>
                </licence>
             </availability>
-            <date>2016-03-02+01:00</date>
+            <date>2016-03-03+01:00</date>
          </publicationStmt>
          <seriesStmt>
             <title level="s">The Syriac Biographical Dictionary</title>
@@ -151,34 +152,40 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#ngibson"
                  n="1.0"
-                 when="2016-03-02+01:00">CREATED: person</change>
+                 when="2016-03-03+01:00">CREATED: person</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPerson>
-            <person xml:id="person-2730">
-               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Paul</persName>
-               <note xml:lang="en" type="abstract" source="#bib2730 -2">A patrician mentioned in a letter from Severus of Antioch</note>
-               <idno type="URI">http://syriaca.org/person/2730  </idno>
-               <floruit xml:lang="en"
-                        notBefore="0500"
-                        syriaca-computed-start="0500-01-01"
-                        notAfter="0525"
-                        syriaca-computed-end="0525-01-01"
-                        source="#bib2730 -2">first 1/4 6th century</floruit>
-               <sex xml:lang="en" source="#bib2730 -2" value="M">male</sex>
-               <bibl xml:id="bib2730 -2">
-                  <ptr target="http://syriaca.org/bibl/671"/>
-                  <citedRange unit="pp">291</citedRange>
+            <person xml:id="person-unresolved-d2e1172">
+               <persName xml:lang="en" syriaca-tags="#syriaca-headword">Polycarp of Smyrna</persName>
+               <persName xml:lang="syr"
+                         source="#bibunresolved-d2e1172-1"
+                         syriaca-tags="#syriaca-headword">ܦܘܠܩܪܦܘܣ ܐܦܝܣܩܘܦܐ ܕܣܡܘܪܢܐ</persName>
+               <note xml:lang="en" type="abstract" source="#bibunresolved-d2e1172-2">Bishop of Smyrna, martyr, and disciple of John the Evangelist</note>
+               <idno type="URI">https://en.wikipedia.org/wiki/Polycarp</idno>
+               <death xml:lang="en" source="#bibunresolved-d2e1172-4">0167</death>
+               <sex xml:lang="en" source="#bibunresolved-d2e1172-2" value="M">male</sex>
+               
+
+
+
+               <bibl xml:id="bibunresolved-d2e1172-1">
+                  <ptr target="http://syriaca.org/bibl/666"/>
+                  <citedRange unit="pp">193</citedRange>
                </bibl>
-               <bibl xml:id="bib2730 -3">
-                  <ptr target="http://syriaca.org/bibl/671"/>
-                  <citedRange unit="pp">291</citedRange>
+               <bibl xml:id="bibunresolved-d2e1172-2">
+                  <ptr target="http://syriaca.org/bibl/668"/>
+                  <citedRange unit="pp">175</citedRange>
                </bibl>
-               <bibl xml:id="bib2730 -4">
-                  <ptr target="http://syriaca.org/bibl/671"/>
-                  <citedRange unit="pp">291</citedRange>
+               <bibl xml:id="bibunresolved-d2e1172-3">
+                  <ptr target="http://syriaca.org/bibl/668"/>
+                  <citedRange unit="pp">175</citedRange>
+               </bibl>
+               <bibl xml:id="bibunresolved-d2e1172-4">
+                  <ptr target="http://syriaca.org/bibl/1680"/>
+                  <citedRange unit="pp">248</citedRange>
                   <citedRange unit="section"/>
                   <citedRange unit="URL"/>
                </bibl>
