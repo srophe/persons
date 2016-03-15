@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- TO DO:
+    1. Delete ones with question marks (edit work records directly).
     1. Put author names inside persName element and move xml:lang tag there and copy source there
     2. Make sure new authors have abstracts. 
     3. Make sure any other sources are in order. 
@@ -406,7 +407,7 @@
                     </author>
                     <note type="abstract">Bishop of Constantinople (406-425) and author of <bibl>a homily on <persName ref="http://syriaca.org/person/624">the Virgin Mary</persName> extant in Syriac<ptr target="http://syriaca.org/work/1046"/></bibl></note>
                     <idno type="URI">http://viaf.org/viaf/72202417</idno>
-                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Atticus of Constantinople&amp;sT=keywords</idno>
+                    <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sK=Atticus of Constantinople&amp;sT=keywords</idno>
                     <idno type="URI">http://pinakes.irht.cnrs.fr/notices/auteur/id/438</idno>
                     <idno type="URI">https://en.wikipedia.org/wiki/Archbishop_Atticus_of_Constantinople</idno>
                     <state type="office" role="bishop" from="0406-03" to="0425-10-10" source="#bibAtticus-de-Constantinople-3">bishop of Constantinople</state>
@@ -418,7 +419,7 @@
                     <bibl xml:id="bibAtticus-de-Constantinople-2">
                         <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                         <ptr target="http://syriaca.org/bibl/5"/>
-                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=B&amp;sK=Atticus of Constantinople&amp;sT=keywords">Bar Idta</citedRange>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sK=Atticus of Constantinople&amp;sT=keywords">Atticus of Constantinople</citedRange>
                     </bibl>
                     <bibl xml:id="bibAtticus-de-Constantinople-3">
                         <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
@@ -2775,9 +2776,8 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1379-1" ref="http://syriaca.org/person/587">Kamis bar Qardahé</author>
-                    <note type="flag">discuss</note>
-                    <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
+                    <author type="attributed" xml:lang="fr" source="#bib1379-1" ref="http://syriaca.org/person/587">Kamis bar Qardahé</author>
+                    <note type="flag">Khamis is attributed (see, e.g., Wright, Cambridge, 1:162), but what @type should we put on the author?</note>
 
 
                     <note type="start-location">
@@ -2952,7 +2952,7 @@
                     <author source="#bib1409-1" xml:id="Agathange">
                         <persName xml:lang="fr" source="#bib1409-1">Agathange</persName>
                         <persName xml:lang="en" source="#bibAgathange-1 #bibAgathange-2" syriaca-tags="#syriaca-headword">Agathangelos</persName>
-                        <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Agathangelos&amp;sT=keywords</idno>
+                        <idno type="URI">http://www.csc.org.il/db/browse.aspx?db=SB&amp;sK=Agathangelos&amp;sT=keywords</idno>
                         <idno type="URI">http://viaf.org/viaf/79271288</idno>
                         <idno type="URI">http://viaf.org/viaf/297583675</idno>
                         <idno type="URI">http://viaf.org/viaf/307161413</idno>
@@ -2966,7 +2966,7 @@
                     <bibl xml:id="bibAgathange-1">
                         <title level="m" xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
                         <ptr target="http://syriaca.org/bibl/5"/>
-                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&sL=A&sK=Agathangelos&sT=keywords">Bar Idta</citedRange>
+                        <citedRange unit="entry" target="http://www.csc.org.il/db/browse.aspx?db=SB&amp;sK=Agathangelos&amp;sT=keywords">Agathangelos</citedRange>
                     </bibl>
                     <bibl xml:id="bibAgathange-2">
                         <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
@@ -3420,20 +3420,6 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1462-1" ref="#Atticus-de-Constantinople"
-                        >Atticus de Constantinople</author>
-                    <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
-                    <note type="flag">what do we do with the "?"</note>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>55</column>
-                    </note>
-
-                </person>
-                <person>
-
                     <author xml:lang="fr" source="#bib1463-1" ref="http://syriaca.org/person/42"
                         >Jacques de Serugh</author>
 
@@ -3446,9 +3432,24 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1464-1" ref="http://syriaca.org/person/1399"
-                        >Pantaléon de Byzance</author>
-
+                    <author syriaca-tags="check" source="#bib1464-1" xml:id="Pantaléon-de-Byzance"
+                        >
+                        <persName xml:lang="fr" source="#bib1464-1"><forename sort="1">Pantaléon</forename> <addName type="untagged title" sort="2">de Byzance</addName></persName>
+                        <persName xml:lang="en" source="#bibPantaléon-de-Byzance-1"><forename sort="1">Pantaleon</forename> <addName type="untagged title" sort="2">of Byzantium</addName></persName>
+                        <persName xml:lang="syr" source="#bibPantaléon-de-Byzance-1"><forename sort="1">ܦܐܢܛܠܝܘܢ</forename> <roleName type="office" sort="3">ܩܫܝܫܐ</roleName> <addName type="untagged title" sort="2">ܡܢ ܕܝܪܐ ܕܒܘܙܢܛܝܐ</addName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org"><forename sort="1">Pantaleon</forename>, a <roleName type="office" sort="3">priest</roleName> <addName type="untagged title" sort="2">from the monastery of the Byzantines</addName></persName>
+                    </author>
+                    
+                    <note type="disambiguation">Wright, in his Catalogue of Syriac Manuscripts in the British Museum, mistakenly calls him Pantaleon "of Byzantium," whereas his 
+                    Syriac description should actually be translated "from the monastery of the Byzantines."</note>
+                    
+                    <bibl xml:id="bibPantaléon-de-Byzance-1">
+                        <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="vol" from="2" to="2">2</citedRange>
+                        <citedRange unit="pp" from="850" to="850">850</citedRange>
+                    </bibl>
+    
 
                     <note type="start-location">
                         <line>200</line>
@@ -4028,7 +4029,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1556-1" ref="http://syriaca.org/person/548"
+                    <author type="attributed" syriaca-tags="check" xml:lang="fr" source="#bib1556-1" ref="http://syriaca.org/person/548"
                         >Isaïe</author>
                     <note type="flag">Given the identity issues with Isaiah of Scetis, would be safest to just mark "attribution." (Zanetti seems to intend the Isaiah who authored the Asceticon, i.e., "Isaiah of Scetis," but his citation of Drauget's edition does not exactly 
                         match the CSCO volume mentioned in GEDSH (211-212) (see http://www.peeters-leuven.be/boekoverz.asp?nr=1171).)</note>
@@ -4186,11 +4187,9 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1577-1" ref="http://syriaca.org/person/933"
+                    <author xml:lang="fr" source="#bib1577-1 #bib1577-4" ref="http://syriaca.org/person/933"
                         >Élie III</author>
-                    <note type="flag">presumably this refers to Catholicos Eliya III Abu Halim (r. 1176-1190) rather than the much later Eliya III Shakir (1867-1932).</note>
-
-
+                    
                     <note type="start-location">
                         <line>200</line>
                         <column>55</column>
@@ -4199,9 +4198,8 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1580-1" ref="http://syriaca.org/person/1010"
+                    <author xml:lang="fr" source="#bib1580-1" ref="http://syriaca.org/person/311"
                         >‘Abdisho‘ catholicos</author>
-                    <note type="flag">Abdisho I?</note>
 
 
                     <note type="start-location">
@@ -4212,8 +4210,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/311"
+                    <author ref="http://syriaca.org/person/311"
                         xml:lang="fr" source="#bib1581-1">‘Abdishô‘</author>
 
 
@@ -4484,9 +4481,8 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1668-1" ref="http://syriaca.org/person/310"
+                    <author xml:lang="fr" source="#bib1668-1" ref="http://syriaca.org/person/310"
                         >‘Abdîshô‘ de Nisibe</author>
-                    <note type="flag">is this the famous ʿAbdishoʿ bar Brikha or a different ʿAbdishoʿ of Nisibis?</note>
 
 
                     <note type="start-location">
@@ -4747,8 +4743,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check"
-                        ref="http://syriaca.org/person/311"
+                    <author ref="http://syriaca.org/person/311"
                         xml:lang="fr" source="#bib1706-1">‘Abdîshô‘</author>
 
 
@@ -4909,7 +4904,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1742-1" ref="http://syriaca.org/person/33"
+                    <author type="attributed" syriaca-tags="check" xml:lang="fr" source="#bib1742-1" ref="http://syriaca.org/person/33"
                         >Isaac d’Antioche</author>
                     <note type="flag">At most this should be an "attribution." But Wright's catalogue doesn't even say Isaac for this work. So remove author altogether?</note>
 
@@ -5300,8 +5295,29 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1826-1">Élie Mellous</author>
-                    <note type="flag">is this really a new person?</note>
+                    <author source="#bib1826-1" xml:id="Élie-Mellous">
+                        <persName xml:lang="en-x-gedsh" source="#bibÉlie-Mellous-2"><forename sort="2">Eliya Yoḥannan</forename> <addName type="family" sort="1">Millos</addName></persName>
+                        <persName xml:lang="fr" source="#bib1826-1"><forename sort="2">Élie</forename> Mellous</persName>
+                        <persName xml:lang="de" source="#bibÉlie-Mellous-1"><forename sort="2">Elias</forename> <addName type="family" sort="1">Milūs</addName></persName>
+                        <persName xml:lang="de" source="#bibÉlie-Mellous-1"><forename sort="2">Elias</forename> <addName type="family" sort="1">Milos</addName></persName>
+                        <persName xml:lang="de" source="#bibÉlie-Mellous-1"><forename sort="2">Elias</forename> <addName type="family" sort="1">Mellus</addName></persName>
+                        <persName xml:lang="de" source="#bibÉlie-Mellous-1"><forename sort="2">Ilīyā</forename> <addName type="family" sort="1">Milūs</addName></persName>
+                        <idno type="URI">https://viaf.org/viaf/36042699</idno>
+                        <idno type="URI">https://en.wikipedia.org/wiki/Elias_Mellus</idno>
+                        <note type="abstract" source="#bibÉlie-Mellous-1 #bibÉlie-Mellous-2">Chaldean metropolitan of ʿAqra and author of a history of the Oriental Chaldean Church</note>
+                        <death when="1909" source="#bibbibÉlie-Mellous-1">1909</death>
+                    </author>
+                    
+                    <bibl xml:id="bibÉlie-Mellous-1">
+                        <title level="m" xml:lang="de">Geschichte der christlichen arabischen Literatur</title>
+                        <ptr target="http://syriaca.org/bibl/686"/>
+                        <citedRange unit="pp" from="112" to="113">112-113</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibÉlie-Mellous-2">
+                        <title level="m" xml:lang="en">Yoḥannan of Mosul</title>
+                        <ptr target="http://syriaca.org/bibl/612"/>
+                        <citedRange unit="pp" from="443" to="443">443</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -5818,7 +5834,8 @@
                 </person>
                 <person>
                     <author syriaca-tags="check" xml:lang="fr" source="#bib1946-1" ref="http://syriaca.org/person/31">Côme le Diacre</author>
-                    <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
+                    <note type="flag">Wright, 3:1124 says this is written by Cosmas. Not sure why Zanetti had question mark. Should we mark 
+                        @type="attributed" or @type="disputed"?</note>
 
 
                     <note type="start-location">
@@ -5995,10 +6012,10 @@
                 </person>
                 <person>
 
-                    <author
+                    <author type="attributed"
                         ref="http://syriaca.org/person/13"
                         xml:lang="fr" source="#bib1978-1">Éphrem</author>
-                    <revisionDesc><change type="planned">Record Zanetti's uncertainty about authorship (marked by "?").</change></revisionDesc>
+                    <note type="flag">Wright, 2:819 "probably that ascribed to Ephrem"</note>
 
 
                     <note type="start-location">
@@ -6166,6 +6183,9 @@
                     <author syriaca-tags="check"
                         ref="http://syriaca.org/person/1513 http://syriaca.org/person/1405 http://syriaca.org/person/1323 http://syriaca.org/person/1322 http://syriaca.org/person/1320 http://syriaca.org/person/1308 http://syriaca.org/person/2155 http://syriaca.org/person/1826 http://syriaca.org/person/1825 http://syriaca.org/person/1824 http://syriaca.org/person/1823 http://syriaca.org/person/1821 http://syriaca.org/person/1820 http://syriaca.org/person/1818 http://syriaca.org/person/1817 http://syriaca.org/person/1816 http://syriaca.org/person/1815 http://syriaca.org/person/1814 http://syriaca.org/person/1813 http://syriaca.org/person/1811 http://syriaca.org/person/1810 http://syriaca.org/person/1808 http://syriaca.org/person/1807 http://syriaca.org/person/1806 http://syriaca.org/person/1805 http://syriaca.org/person/1804 http://syriaca.org/person/1803 http://syriaca.org/person/1802 http://syriaca.org/person/1801 http://syriaca.org/person/488 http://syriaca.org/person/411"
                         xml:lang="fr" source="#bib2021-1">Jean</author>
+                    <note type="flag">Can't figure out where Zanetti got the authorship info from. Univ. of Chicago catalog does not have that info.
+                        This article (http://documents.irevues.inist.fr/bitstream/handle/2042/35065/po1975_159.pdf?sequence=1) discusses a different work 
+                    of a "bishop John" contained in the same ms.</note>
 
 
                     <note type="start-location">
@@ -6770,7 +6790,14 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib338-1">Jean le Préfet</author>
+                    <author source="#bib338-1" xml:id="Jean-le-Préfet">
+                        <persName xml:lang="fr" source="#bib338-1"><forename>Jean</forename> <roleName type="office">le Préfet</roleName></persName>
+                        <persName xml:lang="syr" source="#bib338-1"><forename> ܝܘܚܢܢ</forename> <roleName type="office"> ܦܛܟܫܐ</roleName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org"><forename>John</forename> <roleName type="office">the prefect</roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org"><forename>Yoḥannan</forename> <roleName type="office">the prefect</roleName></persName>
+                        <note type="abstract">Author of a hagiographical work about <persName ref="http://syriaca.org/person/1194">the martyr Dodo</persName>.</note>
+                        <floruit notBefore="300" notAfter="0450">4th century</floruit>
+                    </author>
 
 
                     <note type="start-location">
@@ -13223,7 +13250,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib960-1" ref="http://syriaca.org/person/33">Isaac d’Antioche</author>
+                    <author type="attributed" syriaca-tags="check" xml:lang="fr" source="#bib960-1" ref="http://syriaca.org/person/33">Isaac d’Antioche</author>
                     <note type="flag">Probably safer to use "attributed"</note>
 
 
