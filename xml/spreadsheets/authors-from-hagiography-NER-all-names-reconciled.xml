@@ -4,7 +4,8 @@
     1. Put author names inside persName element and move xml:lang tag there and copy source there
     2. Make sure new authors have abstracts. 
     3. Make sure any other sources are in order. 
-    4. Look for VIAF URIs for new authors. -->
+    4. Look for VIAF URIs for new authors. 
+    5. Make sure new authors have headwords. -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader/>
     <text>
@@ -2859,9 +2860,33 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1393-1">Phocas de Gagim ou Malké Saqqa de
-                        Basibrina ou Jacques de Serugh</author>
-                    <note type="flag">Mark as two possible but uncertain authors /person/42 and the monk Phocas of Gagim also know as Malke etc. See: https://archive.org/stream/MinganaCatalogueOfTheMinganaCollection.I/Mingana_Catalogue%20of%20the%20Mingana%20Collection.I#page/n467/mode/2up</note>
+                    <author type="attributed" source="#bib1393-1" xml:id="Phocas-de-Gagim">
+                        <persName xml:lang="fr" source="#bib1393-1"><forename>Phocas</forename> <addName type="untagged-title">de Gagim</addName></persName>
+                        <persName xml:lang="fr" source="#bib1393-1"><forename>Malké Saqqa</forename> <addName type="untagged-title">de <placeName ref="http://syriaca.org/place/49">Basibrina</placeName></addName></persName>
+                        <persName xml:lang="en" source="#bibPhocas-de-Gagim-1"><forename>Phocas</forename> <addName type="untagged-title">of Gagīm</addName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Phocas</forename> <addName type="untagged-title">of Gagim</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܦܟܐܣ</forename> <addName type="untagged-title" sort="2">ܕܓܓܝܡ</addName></persName>
+                        <persName xml:lang="en" source="#bibPhocas-de-Gagim-1"><forename>Pakās</forename> <addName type="untagged-title">of Gagīm</addName></persName>
+                        <persName xml:lang="en" source="#bibPhocas-de-Gagim-1"><forename>Malké Saḳḳa</forename> <addName type="untagged-title">Sabīrīnāya</addName></persName>
+                        <persName xml:lang="syr" source="#bibPhocas-de-Gagim-1"><roleName type="office" sort="3">ܕܝܪܝܐ</roleName> <forename sort="1">ܦܟܐܣ</forename> <addName type="untagged-title" sort="2">ܕܓܓܝܡ</addName></persName>
+                        <persName xml:lang="syr-Syrj" source="#bibPhocas-de-Gagim-1"><roleName type="office" sort="3">ܕܝܪܝܐ</roleName> <forename sort="1">ܦܰܟܐܣ</forename> <addName type="untagged-title" sort="2">ܕܓܓܝܡ</addName></persName>
+                        <persName xml:lang="syr" source="#bibPhocas-de-Gagim-1"><forename>ܡܠܟܐ ܣܩܐ</forename> <addName type="untagged-title">ܣܒܝܪܝܢܝܐ</addName></persName>
+                        <floruit source="#bibPhocas-de-Gagim-1" notBefore="1300" notAfter="1500">about 1400</floruit>
+                        <note type="abstract">A monk to whom is attributed <bibl>a work about <persName ref="http://syriaca.org/person/624">the Virgin Mary</persName><ptr target="http://syriaca.org/work/1393"/></bibl></note>
+                    </author>
+                    <author type="attributed" xml:lang="fr" source="#bib1393-1" ref="http://syriaca.org/person/42">Jacques de Serugh</author>
+                    <note type="flag">Is this an OK way to mark two possible but uncertain authors /person/42 and the monk Phocas of Gagim also know as Malke etc. 
+                        See: https://archive.org/stream/MinganaCatalogueOfTheMinganaCollection.I/Mingana_Catalogue%20of%20the%20Mingana%20Collection.I#page/n467/mode/2up
+                        "Jacob" is attributed in Ms. Borg. sir. 128 f. 78v. (http://digi.vatlib.it/view/MSS_Borg.sir.128/0160)
+                    </note>
+                    
+                    <bibl xml:id="bibPhocas-de-Gagim-1">
+                        <title level="m" xml:lang="en">Catalogue of the Mingana Collection of Manuscripts</title>
+                        <ptr target="http://syriaca.org/bibl/637"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="col" from="921" to="921">921</citedRange>
+                        <citedRange unit="entry">Mingana 501 D</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -4055,7 +4080,14 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1558-1">Pseudo-Méthode d’Olympe</author>
+                    <author type="pseudo" source="#bib1558-1" xml:id="Méthode-d’Olympe">
+                        <persName xml:lang="fr" source="#bib1558-1"><forename>Méthode</forename> <addName type="untagged-title">d’Olympe</addName></persName>
+                        <persName xml:lang="en-x-gedsh" source="http://syriaca.org/bibl/381" syriaca-tags="#syriaca-headword #syriaca-anglicized"><roleName type="office">bp.</roleName> <forename>Methodius</forename> <addName type="untagged-title">of Olympus</addName></persName>
+                        <death source="http://syriaca.org/bibl/381" when="0312">312</death>
+                        <note type="abstract" source="http://syriaca.org/bibl/381">A bishop martyred in 312, whose name was pseudonymously attached to <bibl>an apocalyptic work<ptr target="http://syriaca.org/work/1558"/></bibl>.</note>
+                    </author>
+                    
+                    <note type="flag">Is @type="pseudo" an OK way to handle "Pseudo-Méthode d’Olympe"?</note>
 
 
                     <note type="start-location">
@@ -4102,9 +4134,8 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1563-1" ref="http://syriaca.org/person/708"
+                    <author xml:lang="fr" source="#bib1563-1" ref="http://syriaca.org/person/1026"
                         >Sabrisho catholicos</author>
-                    <note type="flag">Sabrisho' I or II?</note>
 
 
                     <note type="start-location">
@@ -4222,7 +4253,7 @@
                 </person>
                 <person>
 
-                    <author xml:lang="fr" source="#bib1582-1" ref="http://syriaca.org/person/708"
+                    <author xml:lang="fr" source="#bib1582-1" ref="http://syriaca.org/person/1026"
                         >Sabrisho catholicos</author>
 
 
@@ -4233,7 +4264,24 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1586-1">Jean l’Arabe</author>
+                    <author source="#bib1586-1" xml:id="Jean-l-’Arabe">
+                        <persName xml:lang="fr" source="#bib1586-1"><forename>Jean</forename> <addName type="untagged-title">l’Arabe</addName></persName>
+                        <persName xml:lang="syr" source="#bibJean-l-’Arabe-1"><addName type="untagged-title" sort="3">ܩܕܝܫܐ ܡܪܝ</addName> <forename sort="1">ܝܘܚܢܢ</forename> <addName type="untagged-title" sort="2">ܛܝܝܐ</addName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibJean-l-’Arabe-2"><addName type="untagged-title" sort="3">ܩܕܝܫܐ ܡܪܝ</addName> <forename sort="1">ܝܘܿܚܢܲܢ</forename> <addName type="untagged-title" sort="2">ܛܝܵܝܵܐ</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename sort="1">ܝܘܚܢܢ</forename> <addName type="untagged-title" sort="2">ܛܝܝܐ</addName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename sort="1">John</forename> <addName type="untagged-title" sort="2">the Arab</addName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org"><forename sort="1">Yoḥannan</forename> <addName type="untagged-title" sort="2">the Arab</addName></persName>
+                        <persName xml:lang="de" source="#bibJean-l-’Arabe-1"><addName type="untagged-title" sort="3">h.</addName> <forename sort="1">Johannes</forename> <addName type="untagged-title" sort="2">Arabs</addName></persName>
+                        <note type="abstract">Supposed author of a hagiographical work about his contemporary, <persName ref="http://syriaca.org/person/1717">Eulogius</persName>.</note>
+                    </author>
+                    
+                    <bibl xml:id="bibJean-l-’Arabe-1">
+                        <title level="m" xml:lang="de">Die Handschriften-Verzeichnisse der Königlichen Bibliothek zu Berlin</title>
+                        <ptr target="http://syriaca.org/bibl/1695"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="286" to="286">286</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibJean-l-’Arabe-2">ms Berlin, Königliche Bibliothek, syr. 74 (Sachau 9), f. 78</bibl>
 
 
                     <note type="start-location">
@@ -4470,8 +4518,10 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1664-1" ref="http://syriaca.org/person/1041"
+                    <author xml:lang="fr" source="#bib1664-1" ref="http://syriaca.org/person/1041"
                         >Shemkha de Beth-Saydaya</author>
+                    
+                    <note type="flag">Is Zanetti's "Shemkha" really a spelling we should keep? E.g., Scher spells it "Schemcha"</note>
 
 
                     <note type="start-location">
@@ -5034,7 +5084,9 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1779-1">Pseudo-Méthode d’Olympe</author>
+                    <author type="pseudo" xml:lang="fr" source="#bib1779-1" ref="#Méthode-d’Olympe">Méthode d’Olympe</author>
+                    
+                    <note type="flag">Is @type="pseudo" an OK way to handle "Pseudo-Méthode d’Olympe"?</note>
 
 
                     <note type="start-location">
@@ -6338,7 +6390,51 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib225-1">Marin et Anatole, excepteurs</author>
+                    <editor type="scribe" source="#bib225-1" xml:id="Marin">
+                        <persName xml:lang="fr" source="#bib225-1"><forename>Marin</forename></persName>
+                        <persName xml:lang="en" source="#bibMarin-1" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Marinus</forename> <roleName type="office">the notary</roleName></persName>
+                        <persName xml:lang="syr" source="#bibMarin-2" syriaca-tags="#syriaca-headword"><forename>ܡܪܝܢܘܣ</forename> <roleName type="office">ܐܟܣܩܦܛܘܪ</roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibMarin-2"><forename>ܡܵܪܝܼܢܘܿܣ</forename> <roleName type="office">ܐܲܟܣܩܲܦܛܘܿܪ</roleName></persName>
+                        <note type="abstract" source="#bibMarin-1">A notary, apparently of the city of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, who, along with <persName ref="#Anatole">Anatolus</persName>, is attested as 
+                            the recorder of <bibl>a hagiographic work about <persName ref="http://syriaca.org/person/1454">Sharbēl</persName><ptr target="http://syriaca.org/work/225"/></bibl></note>
+                    </editor>
+                    <editor type="scribe" source="#bib225-1" xml:id="Anatole">
+                        <persName xml:lang="fr" source="#bib225-1"><forename>Anatole</forename></persName>
+                        <persName xml:lang="en" source="#bibAnatole-1" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Anatolus</forename> <roleName type="office">the notary</roleName></persName>
+                        <persName xml:lang="syr" source="#bibAnatole-2" syriaca-tags="#syriaca-headword"><forename>ܐܢܛܘܠܘܣ</forename> <roleName type="office">ܐܟܣܩܦܛܘܪ</roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibAnatole-2"><forename>ܐܵܢܵܛܘܿܠܘܿܣ</forename> <roleName type="office">ܐܲܟܣܩܲܦܛܘܿܪ</roleName></persName>
+                        <note type="abstract" source="#bibAnatole-1">A notary, apparently of the city of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, who, along with <persName ref="#Marin">Marinus</persName>, is attested as 
+                            the recorder of <bibl>a hagiographic work about <persName ref="http://syriaca.org/person/1454">Sharbēl</persName><ptr target="http://syriaca.org/work/225"/></bibl></note>
+                    </editor>
+                    <note type="flag">Is editor @type="scribe" OK for "Marin et Anatole, excepteurs"? Actually, Marinus and Anatolius are 
+                        mentioned as "notaries" who wrote down the account for Edessa's archive (https://archive.org/stream/ancientsyriacdo00wriggoog#page/n82/mode/2up).
+                    So should they be recorded as scribes? 
+                    
+                    I'm checking with Dan on whether either of these might be identified with persons of the same name in SPEAR. </note>
+                    
+                    <bibl xml:id="bibMarin-1">
+                        <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
+                        <ptr target="http://syriaca.org/bibl/1696"/>
+                        <citedRange unit="pp" from="71" to="71">71</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibMarin-2">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="119" to="119">119</citedRange>
+                    </bibl>
+                    
+                    <bibl xml:id="bibAnatole-1">
+                        <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
+                        <ptr target="http://syriaca.org/bibl/1696"/>
+                        <citedRange unit="pp" from="71" to="71">71</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAnatole-2">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="119" to="119">119</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -6348,8 +6444,48 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib226-1">Zénophile et Patrophile,
-                        excepteurs</author>
+                    <editor type="scribe" source="#bib226-1" xml:id="Zénophile">
+                        <persName xml:lang="fr" source="#bib226-1"><forename>Zénophile</forename></persName>
+                        <persName xml:lang="en" source="#bibZénophile-1" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Zenophilus</forename></persName>
+                        <persName xml:lang="syr" source="#bibZénophile-2" syriaca-tags="#syriaca-headword"><forename>ܙܢܦܘܠܝܣ</forename></persName>
+                        <note type="abstract" source="#bibZénophile-1">A notary, apparently of the city of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, who along with <persName ref="#Patrophile">Patrophilus</persName> is attested as 
+                            the recorder of <bibl>a hagiographic work about <persName ref="http://syriaca.org/person/1162">the bishop Barsamyā</persName><ptr target="http://syriaca.org/work/226"/></bibl></note>
+                    </editor>
+                    
+                    <editor type="redactor" source="#bib226-1" xml:id="Patrophile">
+                        <persName xml:lang="fr" source="#bib226-1"><forename>Patrophile</forename></persName>
+                        <persName xml:lang="en" source="#bibPatrophile-1" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Patrophilus</forename></persName>
+                        <persName xml:lang="syr" source="#bibPatrophile-2" syriaca-tags="#syriaca-headword"><forename>ܦܛܪܦܝܠܘܣ</forename></persName>
+                        <note type="abstract" source="#bibPatrophile-1">A notary, apparently of the city of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>, who along with <persName ref="#Zénophile">Zenophilus</persName> is attested as 
+                            the recorder of <bibl>a hagiographic work about <persName ref="http://syriaca.org/person/1162">the bishop Barsamyā</persName><ptr target="http://syriaca.org/work/226"/></bibl></note>
+                    </editor>
+                    <note type="flag">What editor @type should we use for these "notaries" 
+                        (https://archive.org/stream/ancientsyriacdo00wriggoog#page/n93/mode/1up)?
+                    The names seem a bit suspicious to me.</note>
+                    
+                    <bibl xml:id="bibZénophile-1">
+                        <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
+                        <ptr target="http://syriaca.org/bibl/1696"/>
+                        <citedRange unit="pp" from="71" to="71">71</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibZénophile-2">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="130" to="130">130</citedRange>
+                    </bibl>
+                    
+                    <bibl xml:id="bibPatrophile-1">
+                        <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
+                        <ptr target="http://syriaca.org/bibl/1696"/>
+                        <citedRange unit="pp" from="71" to="71">71</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibPatrophile-2">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="130" to="130">130</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -6780,7 +6916,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib336-1">Mar Babaï</author>
+                    <author xml:lang="fr" source="#bib336-1" ref="http://syriaca.org/person/359">Mar Babaï</author>
 
 
                     <note type="start-location">
@@ -12761,7 +12897,21 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib897-1">Pierre le Solitaire</author>
+                    <author source="#bib897-1" xml:id="Pierre-le-Solitaire">
+                        <persName xml:lang="fr" source="#bib897-1"><persName>Pierre</persName> <roleName type="office">le Solitaire</roleName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-headword #syriaca-anglicized"><persName>Peter</persName> <roleName type="office">the solitary</roleName></persName>
+                        <persName xml:lang="en-x-gedsh" source="http://syriaca.org/bibl/469"><persName>Petros</persName> <roleName type="office">the solitary</roleName></persName>
+                        <persName xml:lang="syr" source="#bibPierre-le-Solitaire-1"><persName>ܦܛܪܘܣ</persName> <roleName type="office">ܝܚܝܕܝܐ</roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibPierre-le-Solitaire-1"><persName>ܦܲܛܪܘܿܣ</persName> <roleName type="office">ܝܑܼܚܼܝܕ݂ܵܝܵܐ</roleName></persName>
+                        <floruit source="http://syriaca.org/bibl/469" notBefore="0550" notAfter="0650">beginning of the 7th century</floruit>
+                        <note type="abstract" source="http://syriaca.org/bibl/469">A contemporary of <persName ref="http://syriaca.org/person/708">Sabrishoʿ I</persName>, to whom is attributed <bibl>a life of Sabrishoʿ<ptr target="http://syriaca.org/work/897"/></bibl>.</note>
+                    </author>
+                    
+                    <bibl xml:id="bibPierre-le-Solitaire-1">
+                        <title level="m" xml:lang="fr">Histoire de Mar-Jabalaha: de trois autres patriarches, d'un prêtre et de deux laïques, Nestoriens</title>
+                        <ptr target="http://syriaca.org/bibl/1698"/>
+                        <citedRange unit="pp" from="288" to="288">288</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
