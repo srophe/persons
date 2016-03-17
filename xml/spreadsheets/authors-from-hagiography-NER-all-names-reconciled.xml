@@ -288,6 +288,8 @@
 
                     <author ref="http://syriaca.org/person/2065" xml:lang="fr" source="#bib1031-1"
                         >Sérapion</author>
+                    
+                    <note type="flag">See note on other entry for Sérapion.</note>
 
 
                     <note type="start-location">
@@ -4901,8 +4903,19 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" ref="http://syriaca.org/person/2065" xml:lang="fr" source="#bib1728-1"
+                    <author ref="http://syriaca.org/person/2065" xml:lang="fr" source="#bib1728-1"
                         >Sérapion</author>
+                    
+                    <note type="flag">Checking with J-N about this:
+                        
+                        There are 2 texts (http://wwwb.library.vanderbilt.edu/work/1728 and http://wwwb.library.vanderbilt.edu/work/1031) 
+                        about Mark the Hermit of Tarmaqa, whom I take to be this Marqos (http://wwwb.library.vanderbilt.edu/exist/apps/srophe/person/1356, 
+                        fl. 4th cent.). These stories are said to be narrated by an Abba Serapion the monk while he was in the Egyptian desert/interior 
+                        of Scetis. I can’t seem to find out more information about this Serapion. Is he the same as 
+                        http://wwwb.library.vanderbilt.edu/exist/apps/srophe/person/2065 and/or 
+                        http://wwwb.library.vanderbilt.edu/exist/apps/srophe/person/2067? (These two look to me like they are probably the same, whereas 
+                        the Serapion here http://wwwb.library.vanderbilt.edu/exist/apps/srophe/person/2066 from a group of martyrs looks different.)
+                    </note>
 
 
                     <note type="start-location">
@@ -5897,7 +5910,30 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1956-1">Thomaïs</author>
+                    <author type="pseudo" source="#bib1956-1" xml:id="Thomaïs">
+                        <persName xml:lang="fr" source="#bib1956-1"><forename>Thomaïs</forename></persName>
+                        <persName xml:lang="syr" source="#bib1956-1"><forename>ܬܐܘܡܝܣܐ</forename></persName>
+                        <persName xml:lang="syr" source="#bibThomaïs-1" syriaca-tags="#syriaca-headword"><forename>ܬܐܘܡܐܝܣ</forename></persName>
+                        <persName xml:lang="en" source="#bibThomaïs-2" syriaca-tags="#syriaca-headword"><forename>Thomais</forename></persName>
+                        <note type="abstract">A nun pseudonymously credited with a <bibl>Life of Febronia<ptr target="http://syriaca.org/work/367"/></bibl>. 
+                            The author of this work claims to have been a fellow nun with Febronia and to have later received charge of the convent. 
+                        </note>
+                        <sex value="F" source="#bibThomaïs-2">female</sex>
+                    </author>
+                    
+                    <note type="flag">Is this an OK way to describe the purported author of a pseudonymous work?</note>
+                    
+                    <bibl xml:id="bibThomaïs-1">
+                        <title level="m" xml:lang="la">Bibliotheca Hagiographica
+                        Syriaca</title>
+                        <ptr target="http://syriaca.org/bibl/649"/>
+                        <citedRange unit="entry">147</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibThomaïs-2">
+                        <title level="m" xml:lang="en">Holy women of the Syrian Orient</title>
+                        <ptr target="http://syriaca.org/bibl/1702"/>
+                        <citedRange unit="pp" from="150" to="150">150</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -6408,9 +6444,7 @@
                     </editor>
                     <note type="flag">Is editor @type="scribe" OK for "Marin et Anatole, excepteurs"? Actually, Marinus and Anatolius are 
                         mentioned as "notaries" who wrote down the account for Edessa's archive (https://archive.org/stream/ancientsyriacdo00wriggoog#page/n82/mode/2up).
-                    So should they be recorded as scribes? 
-                    
-                    I'm checking with Dan on whether either of these might be identified with persons of the same name in SPEAR. </note>
+                    So should they be recorded as scribes? </note>
                     
                     <bibl xml:id="bibMarin-1">
                         <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
@@ -6461,7 +6495,7 @@
                     </editor>
                     <note type="flag">What editor @type should we use for these "notaries" 
                         (https://archive.org/stream/ancientsyriacdo00wriggoog#page/n93/mode/1up)?
-                    The names seem a bit suspicious to me.</note>
+                    Also, the names seem a bit suspicious to me.</note>
                     
                     <bibl xml:id="bibZénophile-1">
                         <title level="m" xml:lang="en">Ancient Syriac documents relative to earliest establishment of Christianity in Edessa and the neighbouring countries, from the year after our Lord's Ascension to the beginning of the fourth century</title>
@@ -7015,7 +7049,40 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib355-1">Sérapion de Thmouis</author>
+                    <author source="#bib355-1" xml:id="Sérapion-de-Thmouis">
+                        <persName xml:lang="fr" source="#bib355-1"><forename>Sérapion</forename> <addName type="untagged-title">de Thmouis</addName></persName>
+                        <persName xml:lang="syr" source="#bibSérapion-de-Thmouis-1"><addName type="untagged-title">ܐܒܐ</addName> <forename>ܣܪܦܝܘܢ</forename> <roleName type="office">ܪܫ ܬܠܡܝܕܘܗܝ ܕܝܠܗ ܕ<persName ref="http://syriaca.org/person/1594">ܡܪܝ ܐܢܛܘܢܝܘܣ</persName></roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibSérapion-de-Thmouis-1"><addName type="untagged-title">ܐܲܒܵܐ</addName> <forename>ܣܪܵܦܝܼܘܿܢ</forename> <roleName type="office">ܪܹܫ ܬܲܠܡܝܼܕ݂ܵܘ̈ܗܝ ܕܝܼܠܹܗ ܕ<persName ref="http://syriaca.org/person/1594">ܡܵܪܝ ܐܲܢܛܘܿܢܝܼܘܿܣ</persName></roleName></persName>
+                        <persName xml:lang="en" source="#bibSérapion-de-Thmouis-1"><addName type="untagged-title">Father</addName> <forename>Serapion</forename>, <roleName type="office">leader of the disciples of <persName ref="http://syriaca.org/person/1594">Mar Anthony</persName></roleName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Serapion</forename> <addName type="untagged-title">of Thmuis</addName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename>ܣܪܦܝܘܢ</forename></persName>
+                        <persName xml:lang="grc" source="#bibSérapion-de-Thmouis-2"><forename>Σαραπίων</forename></persName>
+                        <persName xml:lang="en" source="#bibSérapion-de-Thmouis-2"><forename>Serapion</forename>, <roleName type="office">bishop of Thmuis in Lower Egypt</roleName></persName>
+                        <note type="abstract">Bishop of Thmuis in Egypt, to whom is attributed <bibl>a biography of <persName ref="http://syriaca.org/person/856">Macarius the Great</persName><ptr target="http://syriaca.org/work/355"/></bibl></note>
+                        <state type="office" notBefore="0338" source="#bibSérapion-de-Thmouis-2">ca.339</state>
+                        <death notBefore="0362" notAfter="0420" source="#bibSérapion-de-Thmouis-2">after 362</death>
+                        <idno type="URI">http://viaf.org/viaf/24714373</idno>
+                        <idno type="URI">http://viaf.org/viaf/261263652</idno>
+                        <idno type="URI">http://viaf.org/viaf/202419124</idno>
+                        <idno type="URI">http://viaf.org/viaf/240972534</idno>
+                        <idno type="URI">http://viaf.org/viaf/261263652</idno>
+                        <idno type="URI">http://viaf.org/viaf/202893778</idno>
+                        <idno type="URI">https://en.wikipedia.org/wiki/Saint_Serapion_of_Thmuis</idno>
+                    </author>
+                    
+                    <note type="flag">Checking with J-N about whether we should identify this with any of our existing Serapions.</note>
+                    
+                    <bibl xml:id="bibSérapion-de-Thmouis-1">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="5" to="5">5</citedRange>
+                        <citedRange unit="pp" from="177" to="177">177</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibSérapion-de-Thmouis-2">
+                        <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
+                        <ptr target="http://syriaca.org/bibl/1655"/>
+                        <citedRange unit="entry" target="http://www.oxfordreference.com/view/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-4902">Serapion</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -7060,7 +7127,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib367-1">Thomaïs</author>
+                    <author xml:lang="fr" source="#bib367-1" ref="#Thomaïs">Thomaïs</author>
 
 
                     <note type="start-location">
