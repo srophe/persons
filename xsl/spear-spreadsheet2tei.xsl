@@ -719,7 +719,7 @@
                     <language ident="la">Latin</language>
                 </langUsage>
             </profileDesc>
-            <revisionDesc>
+            <revisionDesc status="draft">
 
                 <!-- FILE CREATOR -->
                 <change who="http://syriaca.org/documentation/editors.xml#ngibson" n="1.0">
