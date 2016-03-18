@@ -5,7 +5,8 @@
     2. Make sure new authors have abstracts. 
     3. Make sure any other sources are in order. 
     4. Look for VIAF URIs for new authors. 
-    5. Make sure new authors have headwords. -->
+    5. Make sure new authors have headwords. 
+    6. When running script, make sure you don't overwrite authors that already are identified by URI in the record (e.g., John Rufus in work/928). -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader/>
     <text>
@@ -5921,7 +5922,8 @@
                         <sex value="F" source="#bibThomaïs-2">female</sex>
                     </author>
                     
-                    <note type="flag">Is this an OK way to describe the purported author of a pseudonymous work?</note>
+                    <note type="flag">Is this an OK way to describe the purported author of a pseudonymous work? 
+                        See https://books.google.de/books?id=VwvByTL55jIC pg. 150 for more info.</note>
                     
                     <bibl xml:id="bibThomaïs-1">
                         <title level="m" xml:lang="la">Bibliotheca Hagiographica
@@ -9100,17 +9102,6 @@
                 <person>
 
                     <author xml:lang="fr" source="#bib555-1" ref="http://syriaca.org/person/58">Zacharie le Rhéteur</author>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>54</column>
-                    </note>
-
-                </person>
-                <person>
-
-                    <author xml:lang="fr" source="#bib556-1" ref="http://syriaca.org/person/58">Zacharie le Rhéteur</author>
 
 
                     <note type="start-location">
@@ -13111,7 +13102,9 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib928-1">Théodore d’Ascalon </author>
+                    <author type="disputed" xml:lang="fr" source="#bib928-1" ref="http://syriaca.org/person/2171">Théodore d’Ascalon</author>
+                    
+                    <note type="flag">Is @type="disputed" OK for this situation? See abstract in work/928.</note>
 
 
                     <note type="start-location">
