@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- TO DO:
-    1. Delete ones with question marks (edit work records directly).
     1. Put author names inside persName element and move xml:lang tag there and copy source there
     2. Make sure new authors have abstracts. 
     3. Make sure any other sources are in order. 
@@ -337,12 +336,58 @@
                 </person>
                 <person>
 
-                    <author source="#bib1039-1" xml:id="Amphiloque-d’Iconium">
-                        <persName xml:lang="fr">Amphiloque d’Iconium</persName>
-                        <persName xml:lang="en-x-gedsh" source="http://syriaca.org/bibl/233"
-                            >Amphilochius of Iconium</persName>
-                        <idno>https://en.wikipedia.org/wiki/Amphilochius_of_Iconium</idno>
+                    <author type="pseudo" source="#bib1039-1" xml:id="Amphiloque-d’Iconium">
+                        <persName xml:lang="fr" source="#bib1039-1"><forename>Amphiloque</forename> <addName type="untagged-title">d’<placeName>Iconium</placeName></addName></persName>
+                        <persName xml:lang="en-x-gedsh" source="#bibAmphiloque-d’Iconium-3" syriaca-tags="#syriaca-headword"
+                            ><forename>Amphilochius</forename> <addName type="untagged-title">of <placeName>Iconium</placeName></addName></persName>
+                        <persName xml:lang="de" source="#bibAmphiloque-d’Iconium-1"
+                            ><forename>Amphilochios</forename></persName>
+                        <persName xml:lang="syr" source="#bibAmphiloque-d’Iconium-2"><addName type="untagged-title">ܩܕܝܫܐ</addName> <forename>ܐܡܦܝܠܝܟܝܘܣ</forename> <roleName type="office">ܐܦܣܩܘܦܐ ܕ<placeName>ܐܝܩܘܢܝܘܢ</placeName></roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibAmphiloque-d’Iconium-2"><addName type="untagged-title">ܩܲܕܝܼܫܵܐ</addName> <forename>ܐܲܡܦܝܼܠܝܼܟ݁ܝܘܿܣ</forename> <roleName type="office">ܐܲܦܸܣܩܘܼܦܵܐ ܕ<placeName>ܐܝܼܩܘܿܢܝܘܿܢ</placeName></roleName></persName>
+                        <persName xml:lang="syr" source="#bibAmphiloque-d’Iconium-2" syriaca-tags="#syriaca-headword"><forename>ܐܡܦܝܠܝܟܝܘܣ</forename> <addName type="untagged-title">ܕ<placeName>ܐܝܩܘܢܝܘܢ</placeName></addName></persName>
+                        <persName xml:lang="en" source="#bibAmphiloque-d’Iconium-4"><forename>Amphilochios</forename> <addName type="untagged-title">of <placeName>Ikonion</placeName></addName></persName>
+                        <persName xml:lang="grc" source="#bibAmphiloque-d’Iconium-4"
+                            ><forename>᾽Αμφιλóχιος</forename></persName>
+                        <idno type="URI">https://en.wikipedia.org/wiki/Amphilochius_of_Iconium</idno>
+                        <idno type="URI">https://viaf.org/viaf/163862769</idno>
+                        <idno type="URI">https://viaf.org/viaf/172088237</idno>
+                        <idno type="URI">https://viaf.org/viaf/317291080</idno>
+                        <idno type="URI">https://viaf.org/viaf/601144647706030017236</idno>
+                        <idno type="URI">https://viaf.org/viaf/297324267</idno>
+                        <note type="abstract">Bishop of Iconium connected with the Cappadocian Fathers. 
+                            Syriac translations of works attributed to him include <bibl>an encomium on <persName ref="http://syriaca.org/person/376">Basil</persName><ptr target="http://syriaca.org/work/382"/></bibl>, 
+                            and <bibl>a hagiographic work about Athanasius of Alexandria<ptr target="http://syriaca.org/work/1039"/></bibl>.</note>
+                        <birth source="#bibAmphiloque-d’Iconium-4" notBefore="0335" notAfter="0350">between ca.340 and 345</birth>
+                        <death source="#bibAmphiloque-d’Iconium-4" notBefore="0394" notAfter="0450">after 394</death>
+                        <state type="office" source="#bibAmphiloque-d’Iconium-4" notBefore="0370"><desc>bishop ca. 373</desc></state>
                     </author>
+                    
+                    <bibl xml:id="bibAmphiloque-d’Iconium-1">
+                        <title level="m" xml:lang="de">Geschichte der syrischen Literatur</title>
+                        <ptr target="http://syriaca.org/bibl/638"/>
+                        <citedRange unit="pp" from="262" to="262">262</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAmphiloque-d’Iconium-2">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="6" to="6">6</citedRange>
+                        <citedRange unit="pp" from="297" to="297">297</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAmphiloque-d’Iconium-3">
+                        <title level="m" xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <title level="a" xml:lang="en">Gewargis I</title>
+                        <ptr target="http://syriaca.org/bibl/233"/>
+                        <citedRange unit="pp" from="175" to="175">175</citedRange>
+                        <citedRange unit="entry">224</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibAmphiloque-d’Iconium-4">
+                        <title level="m" xml:lang="en">The Oxford Dictionary of Byzantium</title>
+                        <ptr target="http://syriaca.org/bibl/1655"/>
+                        <citedRange unit="entry" target="http://www.oxfordreference.com/view/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-0223">Amphilochios of Ikonion</citedRange>
+                    </bibl>
+                    
+                    
+                    <note type="flag">Should we assume this is pseudonymous, like the works about Basil attributed to Amphilochius?</note>
 
 
                     <note type="start-location">
@@ -2057,8 +2102,11 @@
                 </person>
                 <person>
 
-                    <author ref="#Amphiloque-d’Iconium" xml:lang="fr" source="#bib1273-1">Amphiloque
+                    <author type="attributed" ref="#Amphiloque-d’Iconium" xml:lang="fr" source="#bib1273-1">Amphiloque
                         d’Iconium</author>
+                    
+                    <note type="flag">Other works of Amphiloque are of questionable authenticity. I haven't been able to find 
+                    out more about this one, so for now, I've put "attributed".</note>
 
 
                     <note type="start-location">
@@ -3300,9 +3348,21 @@
                 <person>
 
                     <author source="#bib1446-1" xml:id="Helladios-de-Césarée">
-                        <persName source="#bib1446-1" xml:lang="fr">Helladios de Césarée</persName>
-                        <persName xml:lang="en-x-gedsh">Helladios of Caesarea</persName>
+                        <persName source="#bib1446-1" xml:lang="fr"><forename>Helladios</forename> <addName type="untagged-title">de <placeName ref="http://syriaca.org/place/60">Césarée</placeName></addName></persName>
+                        <persName xml:lang="en-x-gedsh"><forename>Helladios</forename> <addName type="untagged-title">of <placeName ref="http://syriaca.org/place/60">Caesarea</placeName></addName></persName>
+                        <persName source="#bibHelladios-de-Césarée-1" xml:lang="en"><forename>Helladius</forename></persName>
+                        <persName source="#bibHelladios-de-Césarée-1" xml:lang="syr"><addName type="untagged-title">ܚܣܝܐ</addName> <forename>ܗܠܕܝܘܣ</forename> <addName type="untagged-title">ܐܦܝܣܩܘܦܐ <placeName ref="http://syriaca.org/place/60">ܕܩܣܪܝܐ ܩܦܕܘܩܝܐ</placeName></addName></persName>
+                        <note type="abstract">Bishop of <placeName ref="http://syriaca.org/place/60">Caesarea in Cappadocia</placeName>; 
+                            successor and biographer of <persName ref="http://syriaca.org/person/376">Basil of Caesarea</persName></note>
+                        <state type="office" notBefore="0379" notAfter="0450" source="#bibHelladios-de-Césarée-1">after the rule of Basil (late 4th century)</state>
                     </author>
+                    
+                    <bibl xml:id="bibHelladios-de-Césarée-1">
+                        <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="vol" from="2" to="2">2</citedRange>
+                        <citedRange unit="pp" from="722" to="722">722</citedRange>
+                    </bibl>
 
 
                     <note type="start-location">
@@ -3609,7 +3669,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1484-1" ref="http://syriaca.org/person/781"
+                    <author xml:lang="fr" source="#bib1484-1" ref="http://syriaca.org/person/781"
                         >Théodoret de Cyr</author>
                     <revisionDesc><change type="planned">Record Zanetti's author note: "Hist. Rel."</change></revisionDesc>
                     <note type="flag">what do we do with work info?</note>
@@ -3672,7 +3732,7 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" source="#bib1499-1" xml:id="Grégoire-le-prêtre">
+                    <author source="#bib1499-1" xml:id="Grégoire-le-prêtre">
                         <persName xml:lang="fr" source="#bib1499-1"><forename sort="1">Grégoire</forename> <roleName type="office" sort="2">le prêtre</roleName></persName>
                         <persName xml:lang="en" source="#bibGrégoire-le-prêtre-1"><forename sort="1">Gregory</forename> <addName type="untagged-title" sort="2">of Caesarea in Cappadocia</addName></persName>
                         <persName xml:lang="syr-Syrj" source="#bibGrégoire-le-prêtre-1"><forename sort="1">ܓܪܝܓܘܪܝܘܣ</forename> <addName type="untagged-title" sort="2">ܩܐܣܪܳܝܐ ܕܡܢ ܩܐܦܐܕܘܩܝܐ</addName></persName>
@@ -3932,7 +3992,9 @@
                 </person>
                 <person>
 
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib1539-1">ps.-Amphiloque d’Iconium</author>
+                    <author type="pseudo" xml:lang="fr" source="#bib1539-1">
+                        Amphiloque d’Iconium
+                    </author>
 
 
                     <note type="start-location">
@@ -5168,7 +5230,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" source="#bib1795-1">
+                    <author source="#bib1795-1" xml:id="Job-Metkarkana">
                         <persName xml:lang="fr" source="#bib1795-1">Job Metkarkana</persName>
                         <persName xml:lang="en-x-gedsh">Iyob Metkarkana</persName>
                         <note type="abstract">Iyob Metkarkana is attested from at least one work attributed to him: <title ref="http://syriaca.org/work/1795">Rabban Sargis (text)</title></note>
@@ -6883,7 +6945,25 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib257-1">Zadoy</author>
+                    <author source="#bib257-1" xml:id="Zadoy">
+                        <persName xml:lang="fr" source="#bib257-1"><forename>Zadoy</forename></persName>
+                        <persName xml:lang="syr" source="#bibZadoy-1"><addName type="untagged-title">ܡܪܝ</addName> <forename>ܙܐܕܘܝ</forename> <roleName type="office">ܩܫܝܫܐ ܘܝܚܝܕܝܐ ܘܪܫ ܥܘܡܪܵܐ ܕܡܪܝ ܬܐܘܡܐ <placeName ref="http://syriaca.org/place/500">ܕܒܐܬܪܐ ܕܗܢܕܘ</placeName></roleName></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibZadoy-1"><addName type="untagged-title">ܡܵܪܝ</addName> <forename>ܙܵܐܕܘܿܝ</forename> <roleName type="office">ܩܲܫܝܼܫܵܐ ܘܝܼܚܝܼܕ݂ܵܝܵܐ ܘܪܹܫ ܥܘܡܪܵܐ ܕܡܵܪܝ ܬܐܘܿܡܵܐ<placeName ref="http://syriaca.org/place/500">ܕܒܲܐܬ݂ܪܵܐ ܕܗܸܢܕܘܿ</placeName></roleName></persName>
+                        <persName xml:lang="syr" source="#bibZadoy-1" syriaca-tags="#syriaca-headword"><forename>ܙܐܕܘܝ</forename></persName>
+                        <persName xml:lang="syr" source="#bibZadoy-1"><addName type="untagged-title">ܪܒܢ</addName> <forename>ܙܕܘܝ</forename></persName>
+                        <persName xml:lang="syr-Syrn" source="#bibZadoy-1"><addName type="untagged-title">ܪܲܒܲܢ</addName> <forename>ܙܕܘܼܝܸ</forename></persName>
+                        <note type="abstract" source="#bibZadoy-1">The abbot of Mar Toma monastery in India and the author or redactor of 
+                            <bibl>a work about Jonas the Anchorite<ptr target="http://syriaca.org/work/257"/></bibl>.</note>
+                    </author>
+                    
+                    <bibl xml:id="bibZadoy-1">
+                        <title level="m" xml:lang="la">Acta martyrum et sanctorum</title>
+                        <ptr target="http://syriaca.org/bibl/1697"/>
+                        <citedRange unit="vol" from="1" to="1">1</citedRange>
+                        <citedRange unit="pp" from="466" to="466">466</citedRange>
+                    </bibl>
+                    
+                    <note type="flag">Is this person an author or redactor? See "ܥܒܝܕܐ ܒܦܣܝܩܬܐ" in https://archive.org/stream/Bedjan1890ActaMartyrumEtSanctorumVol.1/Bedjan%201890_Acta%20martyrum%20et%20sanctorum%2C%20vol.%201#page/n85/mode/2up</note>
 
 
                     <note type="start-location">
@@ -6909,8 +6989,6 @@
                         <citedRange unit="vol" from="1" to="1">1</citedRange>
                         <citedRange unit="pp" from="224" to="224">224</citedRange>
                     </bibl>
-
-                    <note type="flag">Are the additional names OK?</note>
 
                     <note type="start-location">
                         <line>206</line>
@@ -7139,7 +7217,7 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib373-1">cité dans Eusèbe de Césarée, Hist.
+                    <author xml:lang="fr" source="#bib373-1">cité dans Eusèbe de Césarée, Hist.
                         Eccl.</author>
                     <note type="flag">what to do with this?</note>
 
@@ -7152,8 +7230,9 @@
                 </person>
                 <person>
 
-                    <author ref="#Amphiloque-d’Iconium" xml:lang="fr" source="#bib382-1">Amphiloque
+                    <author type="attributed" ref="#Amphiloque-d’Iconium" xml:lang="fr" source="#bib382-1">Amphiloque
                         d’Iconium</author>
+                    <note type="flag">Pseudonymous according to Forness. Have not checked CPG yet.</note>
 
 
                     <note type="start-location">
@@ -7175,7 +7254,9 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib396-1">ps.-Ephrem</author>
+                    <author type="attributed" xml:lang="fr" source="#bib396-1" ref="http://syriaca.org/person/13">Ephrem</author>
+                    
+                    <note type="flag">Originally "ps.-Ephrem". See <!--https://books.google.de/books?id=VwvByTL55jIC&printsec=frontcover&dq=harvey+Holy+Women+of+the+Syrian+Orient&hl=en&sa=X&redir_esc=y#v=onepage&q&f=false--></note>
 
 
                     <note type="start-location">
@@ -13001,8 +13082,34 @@
 
                 </person>
                 <person>
-                    <author syriaca-tags="check" xml:lang="fr" source="#bib910-1">Zacharie évêque de Sakha</author>
-                    <note type="flag">seems to be new</note>
+                    <editor type="translator" source="#bib910-1" xml:id="Zacharie-évêque-de-Sakha">
+                        <persName xml:lang="fr" source="#bib910-1"><forename>Zacharie</forename> <roleName type="office">évêque de <placeName ref="http://syriaca.org/place/1467">Sakha</placeName></roleName></persName>
+                        <persName xml:lang="en" source="#bibZacharie-évêque-de-Sakha-1"><forename>Zachariah</forename>, <roleName type="office">bishop of <placeName ref="http://syriaca.org/place/1467">Sakhā</placeName></roleName></persName>
+                        <persName xml:lang="en" resp="http://syriaca.org" syriaca-tags="#syriaca-headword #syriaca-anglicized"><forename>Zachariah</forename>, <roleName type="office">bishop of <placeName ref="http://syriaca.org/place/1467">Sakha</placeName></roleName></persName>
+                        <persName xml:lang="en-x-gedsh" resp="http://syriaca.org"><forename>Zakarya</forename>, <roleName type="office">bishop of <placeName ref="http://syriaca.org/place/1467">Sakha</placeName></roleName></persName>
+                        <persName xml:lang="syr" source="#bibZacharie-évêque-de-Sakha-1"><addName type="untagged-title">ܐܒܘܢ ܩܕܝܫܐ ܡܪܝ</addName> <forename>ܙܟܐܪܝܐ</forename> <roleName type="office">ܐܦܝܣܩܘܦܐ ܕ<placeName ref="http://syriaca.org/place/1467">ܣܟܐ ܡܕܝܢܬܐ</placeName></roleName></persName>
+                        <persName xml:lang="syr" resp="http://syriaca.org" syriaca-tags="#syriaca-headword"><forename>ܙܟܐܪܝܐ</forename> <roleName type="office">ܐܦܝܣܩܘܦܐ ܕ<placeName ref="http://syriaca.org/place/1467">ܣܟܐ</placeName></roleName></persName>
+                        <floruit from="0725" to="0875" source="#bibZacharie-évêque-de-Sakha-2">end of the 8th century/beginning of 9th</floruit>
+                    </editor>
+                    
+                    <bibl xml:id="bibZacharie-évêque-de-Sakha-1">
+                        <title level="m" xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="vol" from="3" to="3">3</citedRange>
+                        <citedRange unit="pp" from="1115" to="1116">1115-1116</citedRange>
+                    </bibl>
+                    <bibl xml:id="bibZacharie-évêque-de-Sakha-2">
+                        <title level="m" xml:lang="fr">La Version syriaque de l’Histoire de Jean le Petit</title>
+                        <ptr target="http://syriaca.org/bibl/1708"/>
+                        <citedRange unit="vol">17</citedRange>
+                        <citedRange unit="pp" from="348" to="348">348</citedRange>
+                    </bibl>
+                    
+                    <note type="flag">Which editor @type should we use? 
+                        
+                        Nau says that Zachariah "prononcé" the original Coptic or Arabic version (https://archive.org/stream/revuedelorientch171912pari#page/348/mode/2up),
+                    whereas Wright takes the note at the beginning of the text to mean Zachariah was the translator (3:1115). However, the Syriac could mean "explain," etc.
+                    Include an abstract once we've decided how to handle this.</note>
 
 
                     <note type="start-location">
@@ -13093,18 +13200,6 @@
                 </person>
                 <person>
                     <author xml:lang="fr" source="#bib916-1" ref="http://syriaca.org/person/31">Côme le diacre</author>
-
-
-                    <note type="start-location">
-                        <line>206</line>
-                        <column>54</column>
-                    </note>
-
-                </person>
-                <person>
-                    <author type="disputed" xml:lang="fr" source="#bib928-1" ref="http://syriaca.org/person/2171">Théodore d’Ascalon</author>
-                    
-                    <note type="flag">Is @type="disputed" OK for this situation? See abstract in work/928.</note>
 
 
                     <note type="start-location">
