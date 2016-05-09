@@ -9,7 +9,7 @@ let $title := $row/titleabbr/text()
 let $zoteroid := $row/zotero/text()
 
 (: for each person record with unmatched title and no author :)
-for $biblnoauthor in fn:collection("zoteroid-insert")//TEI:person/TEI:bibl[not(TEI:ptr) and not(TEI:author)]
+for $biblnoauthor in fn:collection("Insert-Zotero-Ids")//TEI:person/TEI:bibl[not(TEI:ptr) and not(TEI:author)]
 let $titlenoauthor := $biblnoauthor/TEI:title/text()
 let $citedrange := $biblnoauthor/TEI:citedRange/text()
 
