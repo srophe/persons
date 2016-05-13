@@ -1,220 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://syriaca.org/documentation/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title level="a" xml:lang="en">Ephrem — <foreign xml:lang="syr">ܐܦܪܝܡ</foreign>
-            </title>
-            <title level="m">Qadishe: A Guide to the Syriac Saints</title>
-            <title level="s">Gateway to the Syriac Saints</title>
-            <title level="s">The Syriac Biographical Dictionary</title>
-            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-            <funder>The International Balzan Prize Foundation</funder>
-            <funder>The National Endowment for the Humanities</funder>
-            <principal>David A. Michelson</principal>
-            <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-            <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-            <editor role="creator"
-                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-            <editor role="creator"
-                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-            <respStmt>
-               <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
-            </respStmt>
-            <respStmt>
-               <resp>Data architecture and encoding by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
-            </respStmt>
-            <respStmt>
-               <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
-               <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
-            </respStmt>
-            <respStmt>
-               <resp>Editing and Syriac data proofreading by</resp>
-               <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
-            </respStmt>
-            <respStmt>
-               <resp>Entries adapted from the work of</resp>
-               <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
-            </respStmt>
-            <respStmt>
-               <resp>Entries adapted from the work of</resp>
-               <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
-            </respStmt>
-            <respStmt>
-               <resp>Entries adapted from the work of</resp>
-               <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
-            </respStmt>
-         </titleStmt>
-         <editionStmt>
-            <edition n="1.0"/>
-         </editionStmt>
-         <publicationStmt>
-            <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/13/tei</idno>
-            <availability>
-               <licence target="http://creativecommons.org/licenses/by/3.0/">
-                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
-               </licence>
-            </availability>
-            <date>2015-11-02-05:00</date>
-         </publicationStmt>
-         <seriesStmt>
-            <title level="s">Gateway to the Syriac Saints</title>
-            <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-            <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Ephrem — <foreign xml:lang="syr">ܐܦܪܝܡ</foreign>
+                </title>
+                <title level="m">Qadishe: A Guide to the Syriac Saints</title>
+                <title level="s">Gateway to the Syriac Saints</title>
+                <title level="s">The Syriac Biographical Dictionary</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The International Balzan Prize Foundation</funder>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>David A. Michelson</principal>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
+                <respStmt>
+                    <resp>Editing, proofreading, data entry and revision by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data architecture and encoding by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, Syriac data conversion, data entry, and reconciling by</resp>
+                    <name ref="http://syriaca.org/editors.xml#akane">Adam P. Kane</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing and Syriac data proofreading by</resp>
+                    <name ref="http://syriaca.org/editors.xml#abarschabo">Aram Bar Schabo</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from the work of</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#jmfiey">Jean Maurice Fiey</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from the work of</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#uzanetti">Ugo Zanetti</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Entries adapted from the work of</resp>
+                    <name type="person" ref="http://syriaca.org/editors.xml#cdetienne">Claude Detienne</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/person/13/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2015-11-02-05:00</date>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s">Gateway to the Syriac Saints</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</editor>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
-            </respStmt>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                             Michelson</name>
-            </respStmt>
-            <biblScope unit="vol">2</biblScope>
-            <idno type="URI">http://syriaca.org/q</idno>
-         </seriesStmt>
-         <seriesStmt>
-            <title level="s">The Syriac Biographical Dictionary</title>
-            <editor role="general"
-                    ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                </respStmt>
+                <biblScope unit="vol">2</biblScope>
+                <idno type="URI">http://syriaca.org/q</idno>
+            </seriesStmt>
+            <seriesStmt>
+                <title level="s">The Syriac Biographical Dictionary</title>
+                <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                         Michelson</editor>
-            <editor role="associate"
-                    ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
-            <editor role="associate"
-                    ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                <editor role="associate" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="associate" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
                         Gibson</editor>
-            <editor role="associate"
-                    ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
+                <editor role="associate" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
                             Michelson</name>
-            </respStmt>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
-            </respStmt>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#tcarlson">Thomas A. Carlson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
                             Gibson</name>
-            </respStmt>
-            <respStmt>
-               <resp>Edited by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
-            </respStmt>
-            <biblScope unit="vol">1</biblScope>
-                 <idno type="URI">http://syriaca.org/persons</idno>
-         </seriesStmt>
-         <sourceDesc>
-            <p>Born digital.</p>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <editorialDecl>
-            <p>This record created following the Syriaca.org guidelines.
+                </respStmt>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                </respStmt>
+                <biblScope unit="vol">1</biblScope>
+                <idno type="URI">http://syriaca.org/persons</idno>
+            </seriesStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines.
                         Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
-            <interpretation>
-               <p>Approximate dates described in terms of centuries or partial centuries
+                <interpretation>
+                    <p>Approximate dates described in terms of centuries or partial centuries
                             have been interpreted as documented in
                             <ref target="http://syriaca.org/documentation/dates.html">Syriaca.org Dates</ref>.</p>
-            </interpretation>
-         </editorialDecl>
-         <classDecl>
-            <taxonomy>
-               <category xml:id="syriaca-headword">
-                  <catDesc>The name used by Syriaca.org for document titles, citation, and
+                </interpretation>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-headword">
+                        <catDesc>The name used by Syriaca.org for document titles, citation, and
                                 disambiguation. These names have been created according to the
                                 Syriac.org guidelines for headwords: <ref target="http://syriaca.org/documentation/headwords.html">http://syriaca.org/documentation/headwords.html</ref>.</catDesc>
-               </category>
-               <category xml:id="syriaca-anglicized">
-                  <catDesc>An anglicized version of a name, included to facilitate
+                    </category>
+                    <category xml:id="syriaca-anglicized">
+                        <catDesc>An anglicized version of a name, included to facilitate
                                 searching.</catDesc>
-               </category>
-            </taxonomy>
-            <taxonomy>
-               <category xml:id="syriaca-author">
-                  <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
-               </category>
-               <category xml:id="syriaca-saint">
-                  <catDesc>A person who is relevant to the Bibliotheca Hagiographica
+                    </category>
+                </taxonomy>
+                <taxonomy>
+                    <category xml:id="syriaca-author">
+                        <catDesc>A person who is relevant to the Guide to Syriac Authors</catDesc>
+                    </category>
+                    <category xml:id="syriaca-saint">
+                        <catDesc>A person who is relevant to the Bibliotheca Hagiographica
                                 Syriaca.</catDesc>
-               </category>
-            </taxonomy>
-         </classDecl>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="syr">Unvocalized Syriac of any variety or period</language>
-            <language ident="syr-Syrj">Vocalized West Syriac</language>
-            <language ident="syr-Syrn">Vocalized East Syriac</language>
-            <language ident="en">English</language>
-            <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards
                         adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
-            <language ident="ar">Arabic</language>
-            <language ident="fr">French</language>
-            <language ident="de">German</language>
-            <language ident="la">Latin</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#dmichelson"
-                 n="1.0"
-                 when="2015-11-02-05:00">CREATED: person</change>
-      </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <listPerson>
-            <person xml:id="saint-13" ana="#syriaca-saint">
-               <persName xml:id="name13-1"
-                         xml:lang="syr"
-                         syriaca-tags="#syriaca-headword"
-                         source="#bib13-2">ܐܦܪܝܡ</persName>
-               <persName xml:id="name13-2"
-                         xml:lang="en-x-gedsh"
-                         syriaca-tags="#syriaca-headword">Ephrem</persName>
-               <persName xml:id="name13-4" xml:lang="en">Ephrem (Testament)</persName>
-               <persName xml:id="name13-5" xml:lang="en">Ephrem of Edessa</persName>
-               <persName xml:id="name13-6" xml:lang="en">Saint Ephrem</persName>
-               <persName xml:id="name13-7" xml:lang="fr-x-zanetti" source="#bib13-2">ʾAfrēm</persName>
-               <persName xml:id="name13-8" xml:lang="fr" source="#bib13-2">Éphrem</persName>
-               <persName xml:id="name13-9" xml:lang="fr" source="#bib13-2">Éphrem (Testament)</persName>
-               <persName xml:id="name13-10" xml:lang="fr" source="#bib13-2">Éphrem d’Édesse</persName>
-               <persName xml:id="name13-11" xml:lang="fr-x-fiey" source="#bib13-1">SAINT ÉPHREM</persName>
-               <idno type="URI">http://syriaca.org/person/13</idno>
-               <idno type="FIEY">147</idno>
-               <idno type="BHS">95</idno>
-               <idno type="BHS">96</idno>
-               <idno type="BHS">788</idno>
-               <idno type="BHS">789</idno>
-               <idno type="BHS">1158</idno>
-               <idno type="BHS">1892</idno>
-               <idno type="BHS">1593</idno>
-               <idno type="BHS">1255</idno>
-               <idno type="BHS">244</idno>
-               <sex value="M" source="#bib13-1">male</sex>
-               <death when="0373" syriaca-computed-start="0373-01-01" source="#bib13-1">0373</death>
-               <note>Fiey provides the following bibliographic citations: <quote source="#bib13-1">Saint Ephrem est celebre par les Syriaques le 28 janvier.
+                <language ident="ar">Arabic</language>
+                <language ident="fr">French</language>
+                <language ident="de">German</language>
+                <language ident="la">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/documentation/editors.xml#ngibson" when="2016-05-13+02:00">CHANGED: Corrected swapped source attributes for data from Fiey and Zanetti</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="saint-13" ana="#syriaca-saint">
+                    <persName xml:id="name13-1" xml:lang="syr" syriaca-tags="#syriaca-headword" source="#bib13-1">ܐܦܪܝܡ</persName>
+                    <persName xml:id="name13-2" xml:lang="en-x-gedsh" syriaca-tags="#syriaca-headword">Ephrem</persName>
+                    <persName xml:id="name13-4" xml:lang="en">Ephrem (Testament)</persName>
+                    <persName xml:id="name13-5" xml:lang="en">Ephrem of Edessa</persName>
+                    <persName xml:id="name13-6" xml:lang="en">Saint Ephrem</persName>
+                    <persName xml:id="name13-7" xml:lang="fr-x-zanetti" source="#bib13-1">ʾAfrēm</persName>
+                    <persName xml:id="name13-8" xml:lang="fr" source="#bib13-1">Éphrem</persName>
+                    <persName xml:id="name13-9" xml:lang="fr" source="#bib13-1">Éphrem (Testament)</persName>
+                    <persName xml:id="name13-10" xml:lang="fr" source="#bib13-1">Éphrem d’Édesse</persName>
+                    <persName xml:id="name13-11" xml:lang="fr-x-fiey" source="#bib13-2">SAINT ÉPHREM</persName>
+                    <idno type="URI">http://syriaca.org/person/13</idno>
+                    <idno type="FIEY">147</idno>
+                    <idno type="BHS">95</idno>
+                    <idno type="BHS">96</idno>
+                    <idno type="BHS">788</idno>
+                    <idno type="BHS">789</idno>
+                    <idno type="BHS">1158</idno>
+                    <idno type="BHS">1892</idno>
+                    <idno type="BHS">1593</idno>
+                    <idno type="BHS">1255</idno>
+                    <idno type="BHS">244</idno>
+                    <sex value="M" source="#bib13-2">male</sex>
+                    <death when="0373" syriaca-computed-start="0373-01-01" source="#bib13-2">0373</death>
+                    <note>Fiey provides the following bibliographic citations: <quote source="#bib13-2">Saint Ephrem est celebre par les Syriaques le 28 janvier.
 La bibliographie sur Ephrem est immense; v. K. den Biesen, Bibliography of Ephrem
 the Syrian (Giove in Umbria, 2002). La meilleure etude sur "Saint Ephrem d'apres
 sa biographie et ses ceuvres", me semble etre celle de Dom B. Outier dans PdO 4
@@ -225,58 +199,58 @@ Surles rapports de saint Ephrem avec les eveques de Nisibe, cf. J.M. Fiey, Nisib
 S.P. Brock, The Luminous Eye : the Spiritual World Vision of St Ephrem the Syrian.
 Kalamazoo, 1992.
 BS, IV, 944-49 (J.-M. Sauget).</quote>
-               </note>
-               <note type="abstract">Ephrem the Syrian is a doctor of the church and theologian. He was the author of hymns, homilies, and prose, and his fourth-century writings reflect a Golden Age of Syriac literature. His Vita differs greatly from the Ephrem of history.  The Vita, which transforms him into Byzantine monk, was nevertheless a tribute to his importance, in both the Syriac and Byzantine Greek churches.</note>
-               <note type="disambiguation">Ephrem the Syrian</note>
-               <bibl xml:id="bib13-1">
-                  <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
-                  <ptr target="http://syriaca.org/bibl/649"/>
-                  <citedRange unit="entry">95, 96, 788, 789, 1158, 1892, 1593, 1255, 244</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-2">
-                  <title level="m" xml:lang="fr">Saints Syriaques</title>
-                  <title level="a" xml:lang="fr">SAINT ÉPHREM</title>
-                  <ptr target="http://syriaca.org/bibl/650"/>
-                  <citedRange unit="entry">147</citedRange>
-               </bibl>
-               <note>Saint Ephrem is celebrated by the Syrians on January 28.</note>
-               <note>The bibliography on Ephrem is immense.</note>
-               <bibl xml:id="bib13-5">
-                  <author>K. den Biesen</author>
-                  <title>Bibliography of Ephrem the Syrian</title>
-                  <citedRange>(Giove in Umbria, 2002)</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-6">
-                  <title>"Saint Ephrem d'apres sa biographie et ses ceuvres"</title>
-                  <author>Dom B. Outier</author>
-                  <title>Parole d'Orient</title>
-                  <citedRange> 4 (1973), 12-53</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-7">
-                  <author>J. Amar</author>
-                  <title>"Byzantine Ascetic Monachism and Greek
+                    </note>
+                    <note type="abstract">Ephrem the Syrian is a doctor of the church and theologian. He was the author of hymns, homilies, and prose, and his fourth-century writings reflect a Golden Age of Syriac literature. His Vita differs greatly from the Ephrem of history.  The Vita, which transforms him into Byzantine monk, was nevertheless a tribute to his importance, in both the Syriac and Byzantine Greek churches.</note>
+                    <note type="disambiguation">Ephrem the Syrian</note>
+                    <bibl xml:id="bib13-1">
+                        <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
+                        <ptr target="http://syriaca.org/bibl/649"/>
+                        <citedRange unit="entry">95, 96, 788, 789, 1158, 1892, 1593, 1255, 244</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-2">
+                        <title level="m" xml:lang="fr">Saints Syriaques</title>
+                        <title level="a" xml:lang="fr">SAINT ÉPHREM</title>
+                        <ptr target="http://syriaca.org/bibl/650"/>
+                        <citedRange unit="entry">147</citedRange>
+                    </bibl>
+                    <note>Saint Ephrem is celebrated by the Syrians on January 28.</note>
+                    <note>The bibliography on Ephrem is immense.</note>
+                    <bibl xml:id="bib13-5">
+                        <author>K. den Biesen</author>
+                        <title>Bibliography of Ephrem the Syrian</title>
+                        <citedRange>(Giove in Umbria, 2002)</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-6">
+                        <title>"Saint Ephrem d'apres sa biographie et ses ceuvres"</title>
+                        <author>Dom B. Outier</author>
+                        <title>Parole d'Orient</title>
+                        <citedRange> 4 (1973), 12-53</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-7">
+                        <author>J. Amar</author>
+                        <title>"Byzantine Ascetic Monachism and Greek
                Bias in the Vita Tradition of Ephrem the Syrian"</title>
-                  <citedRange>OCP 58 (1992), 123-58.</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-8">
-                  <author>J.M. Fiey</author>
-                  <title>Nisibe</title>
-                  <citedRange>123-35</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-9">
-                  <author>S.P. Brock</author>
-                  <title>The Luminous Eye : the Spiritual World Vision of St Ephrem the
+                        <citedRange>OCP 58 (1992), 123-58.</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-8">
+                        <author>J.M. Fiey</author>
+                        <title>Nisibe</title>
+                        <citedRange>123-35</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-9">
+                        <author>S.P. Brock</author>
+                        <title>The Luminous Eye : the Spiritual World Vision of St Ephrem the
                Syrian.</title>
-                  <citedRange>Kalamazoo, 1992</citedRange>
-               </bibl>
-               <bibl xml:id="bib13-10">
-                  <author>J.-M. Sauget</author>
-                  <title>BS</title>
-                  <citedRange>IV,
+                        <citedRange>Kalamazoo, 1992</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib13-10">
+                        <author>J.-M. Sauget</author>
+                        <title>BS</title>
+                        <citedRange>IV,
                944-49</citedRange>
-               </bibl>
-            </person>
-         </listPerson>
-      </body>
-   </text>
+                    </bibl>
+                </person>
+            </listPerson>
+        </body>
+    </text>
 </TEI>
