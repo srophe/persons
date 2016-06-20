@@ -24,4 +24,4 @@ return
     where $bibltitle = $title and $biblauthor = $author
   
 return 
-  update insert <ptr target="{$biblURI}"/> preceding $biblecitedrange
+  update insert <ptr target="{$biblURI}"/> preceding $biblcitedrange
