@@ -15,13 +15,15 @@ let $biblURI :=
               let $uri := replace($biblfile/ancestor::tei:TEI/descendant::tei:publicationStmt/descendant::tei:idno[@type="URI"][starts-with(.,'http://syriaca.org/')]/text(),'/tei','')
               return $uri
 return 
-  (: for bibl records in each person record without a bibl URI :)
-  for $bibl in fn:collection("saints")//tei:person/tei:bibl[not(tei:ptr)]
-  let $bibltitle := $bibl/tei:title/text()
-  let $biblauthor := $bibl/tei:author/text()
-  let $biblcitedrange := $bibl/tei:citedRange/text()
-
-  where $bibltitle = $title and $biblauthor = $author
-
-  return 
-  $bibl
+  if(count($biblURI &gt; 1)) then (<zotero-id>{$zoteroid}</zotero-id>, <bibl-id>{$uri}</bibl-id>) 
+  else   
+    (: for bibl records in each person record without a bibl URI :)
+    for $bibl in fn:collection("saints")//tei:person/tei:bibl[not(tei:ptr)]
+    let $bibltitle := $bibl/tei:title/text()
+    let $biblauthor := $bibl/tei:author/text()
+    let $biblcitedrange := $bibl/tei:citedRange/text()
+  
+    where $bibltitle = $title and $biblauthor = $author
+  
+    return 
+    $bibl
