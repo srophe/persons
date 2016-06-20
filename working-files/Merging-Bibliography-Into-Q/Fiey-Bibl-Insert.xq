@@ -11,7 +11,7 @@ let $zoteroid := $row/zotero/text()
 (: for each zotero idno in Syriaca.org bibl records:)
 (: Get bibl uri:)
 let $biblURI := 
-              for $biblfile in fn:collection("bibl")//tei:idnotei:idno[@type="zotero"][. = $zoteroid][1]
+              for $biblfile in fn:collection("bibl")//tei:idnotei:idno[@type="zotero"][. = $zoteroid]
               let $uri := replace($biblfile/ancestor::tei:TEI/descendant::tei:publicationStmt/descendant::tei:idno[@type="URI"][starts-with(.,'http://syriaca.org/')]/text(),'/tei','')
               return $uri
 return 
