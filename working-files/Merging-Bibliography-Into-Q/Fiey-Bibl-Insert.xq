@@ -11,17 +11,17 @@ let $zoteroid := $row/zotero/text()
 (: for each zotero idno in Syriaca.org bibl records:)
 (: Get bibl uri:)
 let $biblURI := 
-              for $biblfile in fn:collection("bibl")//tei:idnotei:idno[@type="zotero"][. = $zoteroid]
+              for $biblfile in fn:collection("bibl")//tei:idnotei:idno[@type="zotero"][. = $zoteroid][1]
               let $uri := replace($biblfile/ancestor::tei:TEI/descendant::tei:publicationStmt/descendant::tei:idno[@type="URI"][starts-with(.,'http://syriaca.org/')]/text(),'/tei','')
               return $uri
-
-(: for bibl records in each person record without a bibl URI :)
-for $bibl in fn:collection("saints")//tei:person/tei:bibl[not(tei:ptr)]
-let $bibltitle := $bibl/tei:title/text()
-let $biblauthor := $bibl/tei:author/text()
-let $biblcitedrange := $bibl/tei:citedRange/text()
-
-where $bibltitle = $title and $biblauthor = $author
-
 return 
-$bibl
+  (: for bibl records in each person record without a bibl URI :)
+  for $bibl in fn:collection("saints")//tei:person/tei:bibl[not(tei:ptr)]
+  let $bibltitle := $bibl/tei:title/text()
+  let $biblauthor := $bibl/tei:author/text()
+  let $biblcitedrange := $bibl/tei:citedRange/text()
+
+  where $bibltitle = $title and $biblauthor = $author
+
+  return 
+  $bibl
