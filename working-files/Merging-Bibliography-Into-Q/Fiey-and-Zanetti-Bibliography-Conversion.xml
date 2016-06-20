@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+xquery version "3.1";
+
+let $zoteroid := 
 <root>
     <row>
         <zotero>1</zotero>
@@ -854,3 +856,5 @@
         <titleexp_>Zeitschrift der Deutschen Morgenländischen Gesellschaft</titleexp_>
     </row>
 </root>
+
+return $zoteroid
