@@ -1,5 +1,3 @@
-xquery version "3.1";
-
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
 (: for each row/record in the zoteroid file where there is no text node for the element uritype :)
@@ -11,11 +9,11 @@ let $zoteroid := $row/zotero/text()
 (: for each zotero idno in Syriaca.org bibl records:)
 (: Get bibl uri:)
 let $biblURI := 
-              for $biblfile in fn:collection("bibl")//tei:idnotei:idno[@type="zotero"][. = $zoteroid]
+              for $biblfile in fn:collection("bibl")//tei:idno[@type="zotero"][. = $zoteroid]
               let $uri := replace($biblfile/ancestor::tei:TEI/descendant::tei:publicationStmt/descendant::tei:idno[@type="URI"][starts-with(.,'http://syriaca.org/')]/text(),'/tei','')
               return $uri
 return 
-  if(count($biblURI &gt; 1)) then (<zotero-id>{$zoteroid}</zotero-id>, <bibl-id>{$uri}</bibl-id>) 
+  if(count($biblURI gt 1)) then (<zotero-id>{$zoteroid}</zotero-id>, <bibl-id>{$uri}</bibl-id>) 
   else   
     (: for bibl records in each person record without a bibl URI :)
     for $bibl in fn:collection("saints")//tei:person/tei:bibl[not(tei:ptr)]
