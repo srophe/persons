@@ -25,4 +25,5 @@ return
     where $bibltitle = $title and $biblauthor = $author
   
 return 
-  update insert <ptr target="{$biblURI}"/> preceding $biblcitedrange
+  (: if you do not include the tei namespace the new element will be inserted with a blank namespace. :)
+  update insert <ptr xmlns="http://www.tei-c.org/ns/1.0" target="{$biblURI}"/> preceding $biblcitedrange
