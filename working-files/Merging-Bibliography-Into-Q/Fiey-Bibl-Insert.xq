@@ -19,7 +19,8 @@ return
     for $bibl in fn:collection("/db/apps/srophe-data/data/persons/tei/saints/tei")//tei:person/tei:bibl[not(tei:ptr)]
     let $bibltitle := $bibl/tei:title/text()
     let $biblauthor := $bibl/tei:author/text()
-    let $biblcitedrange := $bibl/tei:citedRange/text()
+    (: text() was causing the ptr to be inserted in the citedRange element, before the text node :)
+    let $biblcitedrange := $bibl/tei:citedRange
   
     where $bibltitle = $title and $biblauthor = $author
   
