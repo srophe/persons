@@ -22,7 +22,10 @@ return
     (: text() was causing the ptr to be inserted in the citedRange element, before the text node :)
     let $biblcitedrange := $bibl/tei:citedRange
   
-    where $bibltitle = $title and $biblauthor = $author
+    where ($bibltitle = $title and $biblauthor = $author) 
+    or ($bibltitle = $title and not(exists($author))) 
+    or ($biblauthor = $author and not(exists($title)) )
+
   
 return 
   (: if you do not include the tei namespace the new element will be inserted with a blank namespace. :)
