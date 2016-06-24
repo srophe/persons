@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Moses</title>
+                <title level="a" xml:lang="en">Moses the Black</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +56,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +156,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,8 +165,8 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1386" ana="#syriaca-saint">
-                    <persName xml:id="name1386-2" xml:lang="en-x-gedsh">Mushe Luwbaya</persName>
-                    <persName xml:id="name1386-2" xml:lang="en" syriaca-tags="#syriaca-headword">Moses</persName>
+                    <persName xml:id="name1386-2" xml:lang="en" syriaca-tags="#syriaca-headword">Moses the Black</persName>
+                    <persName xml:id="name1386-2" xml:lang="en">Moses the Black</persName>
                     <persName xml:id="name1386-3" xml:lang="fr" source="#bib1386-2">Moïse l’Éthiopien</persName>
                     <persName xml:id="name1386-4" xml:lang="fr-x-fiey" source="#bib1386-1">MOÏSE</persName>
                     <idno type="URI">http://syriaca.org/person/1386</idno>
@@ -181,7 +182,9 @@ References dans Vies des saints, VIII, 554-55.
 Remarquer que son nom est tombe de l'Index du P. Peeters au Martyrologe, 200.
 BS, IX, 652- 54 (J.-M. Sauget).</quote>
                     </note>
-                    <note type="abstract">Moses the Black or the thief was instructed and baptized by Macarius. He was a man of great strength who performed many miracles. He was killed by Bedouins who attacked the monastery.</note>
+                    <note type="abstract">In hagiography: Moses the Black (or
+          Moses the Thief) was instructed and baptized by <persName>Macarius</persName>. He was a man of great physical and spiritual strength who
+          performed many miracles and overcame adversity. He was killed by Bedouins who attacked his <placeName>monastery</placeName>.</note>
                     <bibl xml:id="bib1386-1">
                         <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                         <ptr target="http://syriaca.org/bibl/649"/>

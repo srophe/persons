@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Abda</title>
+                <title level="a" xml:lang="en">ʿAbda</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +56,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +156,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,14 +165,15 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1096" ana="#syriaca-saint">
-                    <persName xml:id="name1096-2" xml:lang="en" syriaca-tags="#syriaca-headword">Abda</persName>
+                    <persName xml:id="name1096-2" xml:lang="en" syriaca-tags="#syriaca-headword">ʿAbda</persName>
                     <persName xml:id="name1096-3" xml:lang="fr-x-fiey" source="#bib1096-1">ABDA</persName>
                     <idno type="URI">http://syriaca.org/person/1096</idno>
                     <idno type="FIEY">6</idno>
                     <sex value="M" source="#bib1096-1">male</sex>
                     <note>Fiey provides the following bibliographic citations: <quote source="#bib1096-1">BSO, I, 8-9 (J.M. Fiey).</quote>
                     </note>
-                    <note type="abstract">ʿAbdā was a Bishop of Edessa.</note>
+                    <note type="abstract">In hagiography: ʿAbda was a bishop
+          of <placeName ref="http://syriaca.org/place/78">Edessa</placeName>.</note>
                     <event type="veneration" source="#bib1096-1">
                         <desc>The saint is venerated on 16- February, the only West Syrian commemorated in the Martyrloge of Peeters.</desc>
                     </event>

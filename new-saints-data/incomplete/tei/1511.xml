@@ -4,7 +4,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Jonas of Anbar</title>
+                <title level="a" xml:lang="en">Jonah of
+          Anbar</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +57,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +157,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,9 +166,12 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1511" ana="#syriaca-saint">
-                    <persName xml:id="name1511-2" xml:lang="en-x-gedsh">Yawnān Nūkhriṭā</persName>
-                    <persName xml:id="name1511-2" xml:lang="en" syriaca-tags="#syriaca-headword">Jonas of Anbar</persName>
-                    <persName xml:id="name1511-3" xml:lang="en">Yawnan the foreigner</persName>
+                    <persName xml:id="name1511-2" xml:lang="en" syriaca-tags="#syriaca-headword">Jonah of
+          Anbar</persName>
+                    <persName xml:id="name1511-2" xml:lang="en">Jonah of
+          Anbar</persName>
+                    <persName xml:id="name1511-3" xml:lang="en">Yawnan the
+          Foreigner</persName>
                     <persName xml:id="name1511-4" xml:lang="fr" source="#bib1511-2">Jonas d’Anbar</persName>
                     <persName xml:id="name1511-5" xml:lang="fr-x-fiey" source="#bib1511-1">YAWNĀN L'ETRANGER</persName>
                     <idno type="URI">http://syriaca.org/person/1511</idno>
@@ -181,7 +186,11 @@ BSO, II, 1354- 55 (J.M. Fiey) .
 Sur le christianisme dans le Golfe : Fiey, "Dioceses", 177-219, et les decouvertes
 recentes a Kharg et Faylaka (Kuwait).</quote>
                     </note>
-                    <note type="abstract">Yawnān Nūkhriṭā (the "stranger") was born Yuwanis in a noble family of the lineage of Constantine. He became a disciple of Mar Awgin. He changed his name to Yawnan. He journeyed to Jerusalem and Sqete. Awgin sent him to the land of the Persians, and he founded the monastery at Peroz Shapur on the Euphrates (Al-Anbar).</note>
+                    <note type="abstract">In hagiography: Jonah of Anbar (Yawnān Nūkhriṭā/the "Foreigner") was born <placeName>Yuwanis</placeName> in a noble family of the lineage of <persName ref="http://syriaca.org/person/1655">Constantine the Great</persName>. He became a
+          disciple of <persName ref="http://syriaca.org/person/356">Mar Awgin</persName>. He changed
+          his name to Jonah. He journeyed to <placeName ref="http://syriaca.org/place/104">Jerusalem</placeName> and <placeName ref="http://syriaca.org/place/289">Scetis</placeName>. <persName ref="http://syriaca.org/person/356">Mar
+              Awgin</persName> sent him to the <placeName ref="http://syriaca.org/place/526">land of the Persians</placeName>, and he founded <placeName>the monastery at
+          Peroz Shapur</placeName> on the <placeName ref="http://syriaca.org/place/82">Euphrates</placeName>.</note>
                     <bibl xml:id="bib1511-1">
                         <title level="m" xml:lang="la">Bibliotheca Hagiographica Syriaca</title>
                         <ptr target="http://syriaca.org/bibl/649"/>

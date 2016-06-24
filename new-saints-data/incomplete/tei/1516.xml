@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Yazdapnah</title>
+                <title level="a" xml:lang="en">Yazdapnah, bishop of Kashkar</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +56,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +156,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,7 +165,7 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1516" ana="#syriaca-saint">
-                    <persName xml:id="name1516-2" xml:lang="en" syriaca-tags="#syriaca-headword">Yazdapnah</persName>
+                    <persName xml:id="name1516-2" xml:lang="en" syriaca-tags="#syriaca-headword">Yazdapnah, bishop of Kashkar</persName>
                     <persName xml:id="name1516-3" xml:lang="fr-x-fiey" source="#bib1516-1">YAZDAPNAH</persName>
                     <idno type="URI">http://syriaca.org/person/1516</idno>
                     <idno type="FIEY">460</idno>
@@ -172,7 +173,10 @@
                     <floruit source="#bib1516-1" from="0600" syriaca-computed-start="0600" to="0700" syriaca-computed-end="0700" notBefore="0600" notAfter="0700">0600-07000600-0700</floruit>
                     <note>Fiey provides the following bibliographic citations: <quote source="#bib1516-1">BSO, II, 1356 (J .M. Fiey) .</quote>
                     </note>
-                    <note type="abstract">Yazdapnah was the Bishop of Kashkar. He was attested under the patriarch Mar Emmeh (646-49) and his contemporary was Rabban Theodore.</note>
+                    <note type="abstract">In hagiography: Yazdapnah was the
+          bishop of <placeName ref="http://syriaca.org/place/111">Kashkar</placeName>. He was
+          a contemporary of the <persName>Patriarch Mar Emmeh (646-49)</persName> and <persName ref="http://syriaca.org/person/1499">Rabban
+          Theodore</persName>.</note>
                     <bibl xml:id="bib1516-1">
                         <title level="m" xml:lang="fr">Saints Syriaques</title>
                         <title level="a" xml:lang="fr">YAZDAPNAH</title>

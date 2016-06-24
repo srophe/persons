@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Saba</title>
+                <title level="a" xml:lang="en">Saba Gushnazdad</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +56,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +156,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,7 +165,7 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1435" ana="#syriaca-saint">
-                    <persName xml:id="name1435-2" xml:lang="en" syriaca-tags="#syriaca-headword">Saba</persName>
+                    <persName xml:id="name1435-2" xml:lang="en" syriaca-tags="#syriaca-headword">Saba Gushnazdad</persName>
                     <persName xml:id="name1435-3" xml:lang="fr-x-fiey" source="#bib1435-1">SĀBĀ GŪŠNĀZDĀD</persName>
                     <idno type="URI">http://syriaca.org/person/1435</idno>
                     <idno type="FIEY">372</idno>
@@ -175,7 +176,9 @@ Suhadii ', II, 384- 96.
 Hoffmann, Auszuge, 68- 78.
 BSO, II, 894 (J.M. Fiey).</quote>
                     </note>
-                    <note type="abstract">Saba Gusnasdad was a monk from Beth Lashpar in Southeast Iraq. He was a Zoroastrian Convert who became a monk and converted many Kurdish pagans.</note>
+                    <note type="abstract">In hagiography: Saba Gushnazdad was
+          a monk from <placeName>Beth Lashpar</placeName>. He was a Zoroastrian convert who became a monk
+          and converted many Kurds.</note>
                     <bibl xml:id="bib1435-1">
                         <title level="m" xml:lang="fr">Saints Syriaques</title>
                         <title level="a" xml:lang="fr">SĀBĀ GŪŠNĀZDĀD</title>

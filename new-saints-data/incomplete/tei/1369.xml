@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">Martha , Martyr at Rome, see Mari and Martha</title>
+                <title level="a" xml:lang="en">Martha</title>
                 <title level="m">Qadishe: A Guide to the Syriac Saints</title>
                 <title level="s">Gateway to the Syriac Saints</title>
                 <title level="s">The Syriac Biographical Dictionary</title>
@@ -56,7 +56,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2016-06-22-04:00</date>
+                <date>2016-06-24-04:00</date>
             </publicationStmt>
             <seriesStmt>
                 <title level="s">Gateway to the Syriac Saints</title>
@@ -156,7 +156,8 @@
             </langUsage>
         </profileDesc>
         <revisionDesc status="draft">
-            
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" when="2016-06-24-04:00">Move headword attribute from Gedesh to first English name.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="2.0" when="2016-6-24-09:00">Change: tagged abstract for persons, places, titles and edited the "en" persNames</change>
             <change who="http://syriaca.org/documentation/editors.xml#dmichelson" n="1.0" when="2015-11-02-05:00">CREATED: person</change>
         </revisionDesc>
     </teiHeader>
@@ -164,7 +165,7 @@
         <body>
             <listPerson>
                 <person xml:id="saint-1369" ana="#syriaca-saint">
-                    <persName xml:id="name1369-2" xml:lang="en" syriaca-tags="#syriaca-headword">Martha , Martyr at Rome, see Mari and Martha</persName>
+                    <persName xml:id="name1369-2" xml:lang="en" syriaca-tags="#syriaca-headword">Martha</persName>
                     <persName xml:id="name1369-3" xml:lang="fr-x-fiey" source="#bib1369-1">MARTHA, MARTYRE À ROME</persName>
                     <idno type="URI">http://syriaca.org/person/1369</idno>
                     <idno type="FIEY">300</idno>
@@ -172,7 +173,10 @@
                     <death when="0271" syriaca-computed-start="0271-01-01" source="#bib1369-1">0271</death>
                     <note>Fiey provides the following bibliographic citations: <quote source="#bib1369-1">N/A</quote>
                     </note>
-                    <note type="abstract">Martha was the wife of Mari; she was martyred in Rome with her husband and children while they were on a pilgrimage.</note>
+                    <note type="abstract">In hagiography: Martha was
+          commorated for being martyred in <placeName ref="http://syriaca.org/place/641">Rome</placeName> with her husband, <persName ref="http://syriaca.org/person/1360">Mari</persName>, and children, <persName>Audifax</persName> and <persName>Abaq</persName>, while they were on a pilgrimage. They
+          were taken in the persecution of <persName>Cladius II</persName>. Mari and his two sons were decapitated and
+          Martha was drowned.</note>
                     <bibl xml:id="bib1369-1">
                         <title level="m" xml:lang="fr">Saints Syriaques</title>
                         <title level="a" xml:lang="fr">MARTHA, MARTYRE À ROME</title>
