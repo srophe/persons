@@ -137,12 +137,12 @@
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
                     <editor role="general"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                         Mellon Saint-Laurent</editor>
                     <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson"
                         >David A. Michelson</editor>
                     <editor role="creator"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                         Mellon Saint-Laurent</editor>
                     <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                     <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#uzanetti">Ugo Zanetti</editor>
@@ -150,7 +150,7 @@
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole
                             Mellon Saint-Laurent</name>
                     </respStmt>
                     <respStmt>

@@ -565,13 +565,13 @@
                     <funder>The International Balzan Prize Foundation</funder>
                     <funder>The National Endowment for the Humanities</funder>
                     <principal>David A. Michelson</principal>
-                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="general" ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="general" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
-                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
+                    <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="creator" ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A. Michelson</editor>
                     <respStmt>
                         <resp>Editing, proofreading, data entry and revision by</resp>
-                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent">Jeanne-Nicole Mellon Saint-Laurent</name>
+                        <name type="person" ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent">Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <respStmt>
                         <resp>Data architecture and encoding by</resp>
@@ -637,7 +637,7 @@
                 <seriesStmt>
                     <title level="s">Gateway to the Syriac Saints</title>
                     <editor role="general"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <editor role="general"
                         ref="http://syriaca.org/documentation/editors.xml#dmichelson">David A.
@@ -645,7 +645,7 @@
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <respStmt>
@@ -668,7 +668,7 @@
                         ref="http://syriaca.org/documentation/editors.xml#ngibson">Nathan P.
                         Gibson</editor>
                     <editor role="associate"
-                        ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                        ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                         >Jeanne-Nicole Mellon Saint-Laurent</editor>
                     <respStmt>
                         <resp>Edited by</resp>
@@ -690,7 +690,7 @@
                     <respStmt>
                         <resp>Edited by</resp>
                         <name type="person"
-                            ref="http://syriaca.org/documentation/editors.xml#jnmsaintlaurent"
+                            ref="http://syriaca.org/documentation/editors.xml#jnsaint-laurent"
                             >Jeanne-Nicole Mellon Saint-Laurent</name>
                     </respStmt>
                     <biblScope unit="vol">2</biblScope>
