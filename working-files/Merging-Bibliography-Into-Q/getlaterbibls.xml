@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p><bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1473-3">
+            <analytic><author>
+               <persName>
+                  <surname>Barsoum</surname>
+               </persName>
+            </author></analytic>
+            <monogr><title level="j">Revue patriarcale</title>
+               <imprint><date>1934</date></imprint></monogr>
+            <citedRange unit="vol">2</citedRange>
+            <citedRange>34-37</citedRange>
+         </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1376-5">
+               <author>
+                  <persName>
+                     <forename>J.</forename>
+                     <surname>Habbi</surname>
+                  </persName>
+               </author>
+               <title>Saint Michael Monastery</title>
+               <citedRange>(Bagdad, 1991)</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1278-3">
+               <author>
+                  <persName>
+                     <surname>Barsaum</surname>
+                  </persName>
+               </author>
+               <title>Revue patriarcale</title>
+               <citedRange unit="issue">2</citedRange>
+               <citedRange>(1934), 38</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1251-5">
+               <author>
+                  <persName>
+                     <surname>Kekelidze</surname>
+                  </persName>
+               </author>
+               <citedRange>(Tbilsi, 1955)</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1227-4">
+               <author>
+                  <persName>
+                     <forename>Y.</forename>
+                     <surname>Moubarac</surname>
+                  </persName>
+               </author>
+               <note>Study according to the</note>
+               <title>Opera Minora of L. Massignon</title>
+               <citedRange>(Beirut, 1963), III, 104-80</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib93-10">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>OS</title>
+               <citedRange>8 (1963) , 305-12</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib8-15">
+               <author>
+                  <persName>
+                     <forename>J.-M.</forename>
+                     <surname>Sauget</surname>
+                  </persName>
+               </author>
+               <title>BSCO</title>
+               <citedRange>IX, 482-84</citedRange>
+            </bibl>
+         </p>
+      </body>
+  </text>
+</TEI>

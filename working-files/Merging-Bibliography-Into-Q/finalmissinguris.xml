@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib321-10">
+               <title>Liber Superiorum</title>
+               <citedRange>II.17</citedRange>
+               <ptr target="http://syriaca.org/bibl/1361"/>
+               <note>His life, which is lost today, was written in the seventh century by the monk
+                  Sawrīshō' Rustam</note>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib306-9">
+               <author>
+                  <persName>
+                     <forename>P.</forename>
+                     <surname>Peeters</surname>
+                  </persName>
+               </author>
+               <title>"Observations sur Ia Vie syriaque de Mar Aba", in RHPO</title>
+               <ptr target="http://syriaca.org/bibl/2226"/>
+               <citedRange>I, 116-63</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1519-3">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>OS</title>
+               <citedRange>11 (1966), 134-37</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1178-7">
+               <note>On Christianity in Gilan, see</note>
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>PdO 2</title>
+               <ptr target="841"/>
+               <citedRange>(1971), 329-38</citedRange>
+            </bibl>
+            
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib26-11">
+               <author>
+                  <persName>
+                     <surname>Peeters</surname>
+                  </persName>
+               </author>
+               <title>RHPO</title>
+               <ptr target="116"/>
+               <citedRange>I, 139-70</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib26-17">
+               <title>RHR</title>
+               <ptr target="842"/>
+               <citedRange>103 (1931), 97-135</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib239-9">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Parole d'Orient</title>
+               <ptr target="842"/>
+               <citedRange>13 (1986), 279-312</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1489-7">
+               <author>
+                  <persName>
+                     <forename>M.</forename>
+                     <surname>van Esbroeck,</surname>
+                  </persName>
+               </author>
+               <title level="a">Le saint comme symbole</title>
+               <editor>S. Hackel</editor>
+               <title>The Byzantine Saint</title>
+               <ptr target="http://syriaca.org/bibl/2269"/>
+               <citedRange>(London, 1981), 128-40</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1098-6">
+               <author>
+                  <persName>
+                     <surname>Theodoret</surname>
+                  </persName>
+               </author>
+               <title>Hist. eccl.</title>
+               <citedRange>xxxix.1-11</citedRange>
+               <editor>L. Parmentier</editor>
+               <pubPlace>Leipzig</pubPlace>
+               <date>1911</date>
+               <ptr target="844"/>
+               <citedRange>342-44</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1466-4">
+               <title>E. Key Fowden</title>
+               <title>The Barbarian Plain : Saint Sergius between Rome and Iran </title>
+               <ptr target="http://syriaca.org/bibl/2113"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1454-7">
+               <author>
+                  <persName>
+                     <forename>R.</forename>
+                     <surname>Duval</surname>
+                  </persName>
+               </author>
+               <title>JA 8:14 (1889)</title>
+               <ptr target="http://syriaca.org/bibl/1046"/>
+               <citedRange>40-58</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1420-4">
+               <author>
+                  <persName>
+                     <forename>J .B.</forename>
+                     <surname>Abbeloos</surname>
+                  </persName>
+               </author>
+               <title>Acta</title>
+               <title>AB</title>
+               <ptr target="http://syriaca.org/bibl/1762"/>
+               <citedRange>5-106</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1417-3">
+               <author>
+                  <persName>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Notes</title>
+               <ptr target="845"/>
+               <citedRange>137-45</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1410-5">
+               <author>
+                  <persName>
+                     <forename>J .</forename>
+                     <surname>Corluy</surname>
+                  </persName>
+               </author>
+               <title>AB</title>
+               <ptr target="http://syriaca.org/bibl/1812"/>
+               <citedRange>8-44</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1410-9">
+               <title>Ms. Mingana syr. 214</title>
+               <citedRange>fol. 131a-132a</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1321-3">
+               <title>BHG</title>
+               <ptr target="http://syriaca.org/bibl/1347"/>
+               <citedRange>1476</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1321-5">
+               <editor>V. Ruggieri and L. Pieralli</editor>
+               <title>Eukosmia: studi miscellanei per il 75. di Vincenzo Poggi S.J.</title>
+               <ptr target="http://syriaca.org/bibl/2274"/>
+               <citedRange>104 n. 8</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1321-6">
+               <author>J.M. Fiey</author>
+               <title>BSO</title>
+               <ptr target="http://syriaca.org/bibl/1426"/>
+               <citedRange>II, 766</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1397-3">
+               <author>
+                  <persName>
+                     <surname>Palladius</surname>
+                  </persName>
+               </author>
+               <ptr target="http://syriaca.org/bibl/1208"/>
+               <citedRange>§LVI, 149-50, and 230 n. 102</citedRange>
+               
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1397-4">
+               <author>
+                  <persName>
+                     <surname>Sergis</surname>
+                  </persName>
+               </author>
+               <title>Panegyric</title>
+               <editor>J. Bousquet</editor>
+               <title>ROC</title>
+               <ptr target="846"/>
+               <citedRange>225-50</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1391-10">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>AB</title>
+               <ptr target="847"/>
+               <citedRange>259-71</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1359-4">
+               <author>
+                  <persName>
+                     <forename>F.</forename>
+                     <surname>Nau</surname>
+                  </persName>
+               </author>
+               <title>ROC</title>
+               <ptr target="http://syriaca.org/bibl/1402"/>
+               <citedRange>15 (1910), 191-92</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1341-4">
+               <author>
+                  <persName>
+                     <forename>G.</forename>
+                     <surname>Garitte</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+<ptr target="848"/>
+               <citedRange>415-40</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1341-5">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+               <ptr target="849"/>
+               <citedRange>77-98</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1293-8">
+               <author>
+                  <persName>
+                     <forename>J .M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>OS</title>
+               <ptr target="850"/>
+               <citedRange>265-302</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1265-6">
+               <author>
+                  <persName>
+                     <forename>J .M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+               <ptr target="851"/>
+               <citedRange>59-64</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1257-11">
+               <title>OCA</title>
+               <ptr target="http://syriaca.org/bibl/722"/>
+               <citedRange>195 n. 1</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1257-13">
+               <author>
+                  <persName>
+                     <forename>P.</forename>
+                     <surname>Chiesa</surname>
+                  </persName>
+               </author>
+               <title>
+                  <title level="a">Il dossier agiografico latino dei Santi Gurias, Samonas e
+                     Abibos</title>
+               </title>
+               <title>Aerum</title>
+               <ptr target="852"/>
+               <citedRange>221-58</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1251-4">
+               <author>
+                  <persName>
+                     <forename>G.</forename>
+                     <surname>Garitte</surname>
+                  </persName>
+               </author>
+               <title>AB</title>
+               <ptr target="853"/>
+               <citedRange>405-40</citedRange>
+            </bibl>
+            
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1251-7">
+               <author>
+                  <persName>
+                     <surname>Theophylact Simocatta</surname>
+                  </persName>
+               </author>
+               <title>Histoire ecclesiastique</title>
+               <author>
+                  <persName>
+                     <forename>A.J.</forename>
+                     <surname>Festugiere</surname>
+                  </persName>
+               </author>
+               <title>Byzantion 45</title>
+               <ptr target="http://syriaca.org/bibl/2214"/>
+               <citedRange>480-81</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1221-3">
+               <title>Qiṣṣat Mār Ilīyā</title>
+               <editor>Hersch Ram</editor>
+               <title>Die Legende vom III. Elias</title>
+               <ptr target="854"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1220-4">
+               <editor>Van Roey</editor>
+               <title>Eliae epistula apologetica ad Leonum, Syncellum harranensem</title>
+               <ptr target="855"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1207-3">
+               <author>
+                  <persName>
+                     <forename>P.</forename>
+                     <surname>Peeters</surname>
+                  </persName>
+               </author>
+               <title>AB 42</title>
+               <ptr target="856"/>
+               <citedRange>288-314</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1152-8">
+               <note>On Babylas :</note>
+               <author>
+                  <persName>
+                     <surname>John Chrysostom</surname>
+                  </persName>
+               </author>
+               <title>Panegyrici in Babylam martyrem</title>
+               <author>
+                  <persName>
+                     <forename>M.A.Schatkin et al.</forename>
+                     <surname/>
+                  </persName>
+               </author>
+               <title>Discours sur Babylas</title>
+               <ptr target="857"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1132-5">
+               <note>Arabic passion:</note>
+               <editor>J. Dick</editor>
+               <title>Le Museon</title>
+               <ptr target="858"/>
+               <citedRange>109-33</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1132-7">
+               <title>Le Museon</title>
+               <ptr target="859"/>
+               <citedRange>331-74</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1115-4">
+               <author>
+                  <persName>
+                     <forename>J.</forename>
+                     <surname>Ebersolt</surname>
+                  </persName>
+               </author>
+               <title>Orient et Occident</title>
+               <ptr target="860"/>
+               <citedRange>31</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1108-4">
+               <title>BHG</title>
+               <ptr target="http://syriaca.org/bibl/1347"/>
+               <citedRange>10-11</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1102-3">
+               <note>The primary texts (Syriac, Armenien, Arabic) and the studies are indicated
+                  in</note>
+               <author>
+                  <persName>
+                     <forename>J. .M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Muséon</title>
+               <ptr target="861"/>
+               <citedRange>205-23</citedRange>
+            </bibl>
+            
+            
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib9-10">
+               <author>
+                  <persName>
+                     <forename>M.</forename>
+                     <surname>Kmosko</surname>
+                  </persName>
+               </author>
+               <title>PS</title>
+               <ptr target="http://syriaca.org/bibl/2083"/>
+               <citedRange>1.2, 661-1054</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib883-7">
+               <author>
+                  <persName>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Assyrie chretienne,</title>
+               <ptr target="http://syriaca.org/bibl/1313"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib826-13">
+               <author>
+                  <persName>
+                     <forename>R.</forename>
+                     <surname>Beulay</surname>
+                  </persName>
+               </author>
+               <title>"Précisions touchant l'identité et la biographie de Jean Saba de
+                  Dalyatha"</title>
+               <title>Parole d'Orient</title>
+               <ptr target="http://syriaca.org/bibl/1113"/>
+               <citedRange>87-116</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib825-8">
+               <author>
+                  <persName>
+                     <forename>J .M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Jean de Dailam et l'imbroglio de ses fondations</title>
+               <title> POC</title>
+               <ptr target="http://syriaca.org/bibl/1135"/>
+               <citedRange>195-211</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib825-9">
+               <author>
+                  <persName>
+                     <forename>S.P.</forename>
+                     <surname>Brock</surname>
+                  </persName>
+               </author>
+               <title>Parole d'Orient</title>
+               <ptr target="http://syriaca.org/bibl/1793"/>
+               <citedRange>123-89</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib821-12">
+               <author>
+                  <persName>
+                     <forename>R.</forename>
+                     <surname>Beulay</surname>
+                  </persName>
+               </author>
+               <title>Parole d'Orient</title>
+               <ptr target="http://syriaca.org/bibl/1113"/>
+               <citedRange>90-95</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib815-5">
+               <author>
+                  <persName>
+                     <forename>J.B.</forename>
+                     <surname>Chabot</surname>
+                  </persName>
+               </author>
+               <title>Vie du moine Rabban Youssef Busnaya</title>
+               <title>ROC</title>
+               <ptr target="862"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib811-11">
+               <author>
+                  <persName>
+                     <forename>P.</forename>
+                     <surname>Peeters</surname>
+                  </persName>
+               </author>
+               <title>La légende de saint Jacques de Nisibe</title>
+               <title>AB 38</title>
+                  <ptr target="http://syriaca.org/bibl/903"/>
+               <citedRange>285-373</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib8-14">
+               <author>
+                  <persName>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>"Elam"</title>
+               <ptr target="http://syriaca.org/bibl/1341"/>
+               <citedRange>(Part 2: 1970), 141-42</citedRange>
+            </bibl>
+            
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib785-5">
+               <author>
+                  <persName>
+                     <forename>A.</forename>
+                     <surname>Vööbus</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+               <ptr target="http://syriaca.org/bibl/1141"/>
+               <citedRange>39-42</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib785-6">
+               <author>
+                  <persName>
+                     <surname>Palmer</surname>
+                  </persName>
+               </author>
+               <title>Parole d'Orient</title>
+               <ptr target="http://syriaca.org/bibl/1967"/>
+               <citedRange>253-60</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib733-9">
+               <author>
+                  <persName>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>"Saints"</title>
+               <ptr target="http://syriaca.org/bibl/1414"/>
+               <citedRange>35-40</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib69-12">
+               <author>
+                  <persName>
+                     <forename>D.</forename>
+                     <surname>Bundy</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+               <ptr target="http://syriaca.org/bibl/814"/>
+               <citedRange>45-86</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib69-13">
+               <author>
+                  <persName>
+                     <forename>M.A.</forename>
+                     <surname>Kugener</surname>
+                  </persName>
+               </author>
+               <title>ROC</title>
+               <citedRange>196-217</citedRange>
+               <ptr target=" http://syriaca.org/bibl/2006"/>
+               <note>On the theft of his body, see</note>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib680-16">
+               <author>
+                  <persName>
+                     <forename>J.B.</forename>
+                     <surname>Chabot</surname>
+                  </persName>
+               </author>
+               <title>Revue de l'Orient Latin</title>
+               <ptr target="863"/>
+               <citedRange>367-93</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib52-8">
+               <author>
+                  <persName>
+                     <surname>Nau</surname>
+                  </persName>
+               </author>
+               <title> ROC</title>
+               <ptr target="http://syriaca.org/bibl/1945"/>
+               <citedRange>97-135</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib51-8">
+               <author>
+                  <persName>
+                     <forename>G.</forename>
+                     <surname>Bardy</surname>
+                  </persName>
+               </author>
+               <title>DTC</title>
+               <ptr target="839"/>
+               <citedRange>XIV, col. 1988-2000</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib50-8">
+               <author>
+                  <persName>
+                     <surname>Nau</surname>
+                  </persName>
+               </author>
+               <title>Littérature canonique</title>
+               <ptr target="http://syriaca.org/bibl/1355"/>
+               <citedRange>1-30</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib50-10">
+               <author>
+                  <persName>
+                     <surname>Elie</surname>
+                  </persName>
+               </author>
+               <title>Vita</title>
+               <editor>Brooks</editor>
+               <title>Vitae vivorum</title>
+               <ptr target="http://syriaca.org/bibl/1706"/>
+               <citedRange>21-60</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib44-10">
+               <author>
+                  <persName>
+                     <forename>A.</forename>
+                     <surname>Mingana</surname>
+                  </persName>
+               </author>
+               <title>The Expositor</title>
+               <ptr target="http://syriaca.org/bibl/1975"/>
+               <citedRange>149-60</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib44-13">
+               <title>OLP </title>
+               <ptr target="http://syriaca.org/bibl/1941"/>
+               <citedRange>253-66</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib370-8">
+               <note>See the Life of Barsaum, with his 99 or 100 miracles, written in about
+                  550-61.</note>
+               <author>
+                  <persName>
+                     <surname>Nau</surname>
+                  </persName>
+               </author>
+               <title>Résumé</title>
+               <ptr target="http://syriaca.org/bibl/1416"/>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib370-13">
+               <author>
+                  <persName>
+                     <forename>H.</forename>
+                     <surname>Kaufhold</surname>
+                  </persName>
+               </author>
+               <title>Hugoye</title>
+               <ptr target="865"/>
+               <citedRange>223–246</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib366-11">
+               <author>
+                  <persName>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title> "Bar 'Eta"</title>
+               <ptr target="http://syriaca.org/bibl/725"/>
+               <citedRange>1-16</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib356-12">
+               <author>
+                  <persName>
+                     <forename>J.M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Aones, Awua et Awgia (Eugene)</title>
+               <ptr target="http://syriaca.org/bibl/916"/>
+               <citedRange>52-81</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib320-9">
+               <title>Vita</title>
+               <title>BHO</title>
+               <editor>Sachau</editor>
+               <ptr target="http://syriaca.org/bibl/1314"/>
+               <citedRange>Entry 14</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1165-5">
+               <author>
+                  <persName>
+                     <forename>J .M.</forename>
+                     <surname>Fiey</surname>
+                  </persName>
+               </author>
+               <title>Le Museon</title>
+               <ptr target="866"/>
+               <citedRange>75-79</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1487-4">
+               <author>
+                  <persName>
+                     <forename>F.</forename>
+                     <surname>Nau</surname>
+                  </persName>
+               </author>
+               <title>Revue sémitique</title>
+               <ptr target="http://syriaca.org/bibl/1089"/>
+               <citedRange>6 (1899), 356-63; 8 (1900), 153-67</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1097-6">
+               <author>
+                  <persName>
+                     <surname>Theodoret</surname>
+                  </persName>
+               </author>
+               <title>Hist. eccl.</title>
+               <editor>L. Parmentier</editor>
+               <pubPlace>Leipzig</pubPlace>
+               <date>1911</date>
+               <ptr target="844"/>
+               <citedRange unit="line">xxxix.1-11</citedRange>
+               <citedRange unit="page">342-44</citedRange>
+            </bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0" xml:id="bib1119-3">
+               <title>Les Actes d'Adorhormizd</title>
+               <note>in </note>
+               <title>AMS</title>
+               <ptr target="http://syriaca.org/bibl/1697"/>
+               <citedRange>II, 565-83</citedRange>
+            </bibl></p>
+      </body>
+   </text>
+</TEI>
